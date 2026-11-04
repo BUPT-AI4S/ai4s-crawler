@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="no-referrer">
+  <title>2024 论文采集 · 进度监控</title>
+  <link rel="stylesheet" href="style.css?v=20261104-backfill">
+  <script defer src="app.js?v=20261104-livejobs"></script>
+</head>
+<body>
+<main>
+  <header>
+    <div><h1>2024 论文采集</h1><p class="subtle">会议与期刊 · 只读进度监控</p></div>
+    <div class="header-actions"><span id="state" class="state">连接中</span><button id="refresh" type="button">立即刷新</button></div>
+  </header>
+  <p id="notice" class="notice" role="status" hidden></p>
+  <section class="overview" aria-labelledby="progress-title">
+    <div class="section-heading"><h2 id="progress-title">采集进度</h2><span id="updated" class="subtle">等待服务器数据…</span></div>
+    <div class="progress-caption"><span id="current">正在读取任务状态</span><span id="completed">— / — 个来源已完成</span></div>
+    <progress id="progress" max="1" value="0" aria-label="已处理来源比例"></progress>
+    <dl class="metrics">
+      <div><dt>已保存论文</dt><dd id="papers">—</dd></div>
+      <div><dt>包含摘要</dt><dd id="abstracts">—</dd></div>
+      <div><dt>AI4S 候选</dt><dd id="ai4s">—</dd></div>
+      <div><dt>失败来源（近期日志）</dt><dd id="failed">—</dd></div>
+      <div><dt>重试中来源</dt><dd id="retrying">—</dd></div>
+      <div><dt>缺摘要（有 DOI 无摘要）</dt><dd id="missing">—</dd></div>
+      <div><dt>本轮回填已补</dt><dd id="backfilled">—</dd></div>
+    </dl>
+    <p id="resources" class="subtle resource-line">正在读取任务资源上限…</p>
+    <p class="hint">每 15 秒更新一次。论文数以已写入的断点文件为准；各来源规模不同，来源比例不代表剩余时间。</p>
+  </section>
+  <section id="backfill-section" aria-labelledby="backfill-title" hidden>
+    <div class="section-heading"><h2 id="backfill-title">期刊摘要回填</h2><span id="backfill-summary" class="subtle"></span></div>
+    <div class="table-wrap"><table><thead><tr><th scope="col">期刊</th><th scope="col">状态</th><th scope="col" class="number">起始缺口</th><th scope="col" class="number">当前缺口</th><th scope="col" class="number">已补</th><th scope="col" class="number">进度</th><th scope="col">最后写入</th></tr></thead><tbody id="backfill-jobs"><tr><td colspan="7" class="empty">正在读取回填进度…</td></tr></tbody></table></div>
+    <p class="hint">按缺口从大到小回填：OpenAlex 两把 key 轮转（合计 12 路）→ EuropePMC → PubMed → OpenAIRE → 出版社页面兜底。整本期刊跑完才回写 papers.json，所以「当前缺口 / 已补」是阶段性跳变；「摘要缓存」条数会平滑增长，可作为实时进度参考。</p>
+  </section>
+  <section id="retry-section" aria-labelledby="retry-title" hidden>
+    <div class="section-heading"><h2 id="retry-title">会议重跑与待重试</h2><span id="retry-round" class="subtle"></span></div>
+    <div class="table-wrap"><table><thead><tr><th scope="col">来源</th><th scope="col">状态</th><th scope="col">第几次重试</th><th scope="col">最近错误</th><th scope="col" class="number">论文</th><th scope="col" class="number">含摘要</th><th scope="col">最后写入</th></tr></thead><tbody id="retry-sources"><tr><td colspan="7" class="empty">正在读取重试状态…</td></tr></tbody></table></div>
+    <p id="retry-note" class="hint">DBLP SPARQL 间歇性 503 / 超时：采集端会按 10→20→40… 秒退避重试，断点保留，不会直接判来源失败；重试仍不行会进入后续重试轮，最后才标记失败。</p>
+  </section>
+  <section aria-labelledby="sources-title">
+    <div class="section-heading"><h2 id="sources-title">来源明细</h2><label class="search"><span class="sr-only">查找来源</span><input id="search" type="search" placeholder="查找来源，如 cvpr、nature" autocomplete="off"></label></div>
+    <div class="table-wrap"><table><thead><tr><th scope="col">来源</th><th scope="col">状态</th><th scope="col" class="number">论文</th><th scope="col" class="number">含摘要</th><th scope="col" class="number">AI4S</th><th scope="col">最后写入</th></tr></thead><tbody id="sources"><tr><td colspan="6" class="empty">正在读取来源清单…</td></tr></tbody></table></div>
+    <p id="source-note" class="hint">已完成表示该来源已生成结果文件；空结果需要结合日志判断。</p>
+  </section>
+  <section aria-labelledby="log-title">
+    <div class="section-heading"><h2 id="log-title">最近日志</h2><span id="warnings" class="subtle">最多显示 60 行</span></div>
+    <pre id="logs" tabindex="0" aria-label="最近的采集日志">等待日志…</pre>
+    <p class="hint">403 / 429 表示上游拒绝访问或限流；可能缺少摘要，不一定导致整项采集停止。</p>
+    <p class="hint">成功记录按批次汇总，摘要获取警告按单篇输出，因此日志中的警告比例不代表论文采集失败率。</p>
+  </section>
+  <section class="outputs" aria-labelledby="outputs-title"><h2 id="outputs-title">年度汇总文件</h2><p id="merge-note" class="subtle">整批任务进入汇总步骤后生成。</p><dl><div><dt>全部论文</dt><dd><code id="output-papers">/mnt/figure/academic/metadata/2024/papers.json</code></dd></div><div><dt>AI4S 候选</dt><dd><code id="output-ai4s">/mnt/figure/academic/metadata/2024/ai4s.json</code></dd></div></dl></section>
+  <footer>专用监控链接，请勿转发。此页面只展示采集状态。</footer>
+</main>
+</body>
+</html>
