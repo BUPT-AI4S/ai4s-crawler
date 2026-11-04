@@ -2,8 +2,8 @@
 
 2024 年使用 [15,261 篇初筛候选](metadata/2024/ai4s.json)，快照时间为北京时间 2026-11-04 23:32。批次和来源计数见 [snapshot.json](metadata/2024/snapshot.json)。
 
-1. 按团队当期分工，用来源编号（论文 JSON 的 `venue`）找到自己负责的候选。使用 [AI4S 精筛技能](skills/ai4s-paper-review/SKILL.md) 逐篇判断、打标签并核对元数据。
-2. 在 [刊会核验清单](reviews/venue-review.csv) 填写自己负责的来源和「是否建议纳入」列。核对期刊中科院分区和 CCF B 会议当届的正式长文与评审证据，见 [刊会核验规则](skills/ai4s-paper-review/references/venue-review.md)。
+1. **先核验期刊和会议。** 按团队分工在 [刊会核验清单](reviews/venue-review.csv) 填写「是否建议纳入」，并记录依据。期刊核对中科院分区，CCF B 会议核对当届正式长文和评审证据。结论为「不建议纳入」的来源，直接跳过该来源的论文精筛和打标。「暂缓纳入」或「待核实」的来源，等结论明确后再处理。见 [刊会核验规则](skills/ai4s-paper-review/references/venue-review.md)。
+2. **只精筛「建议纳入」来源的论文。** 用来源编号（论文 JSON 的 `venue`）找到候选，使用 [AI4S 精筛技能](skills/ai4s-paper-review/SKILL.md) 逐篇判断、打标签并核对元数据。
 3. 对纳入论文核对 DOI、论文页、公开 PDF、代码和项目链接。按 [JSON 交付说明](skills/ai4s-paper-review/references/team-handoff.md) 每人交一个 `reviews/<批次>/<GitHub用户名>.json`。
 4. 论文精筛完成后，将本人论文 JSON 提交到仓库，并在提交说明中写明负责人、批次、来源编号和纳入/排除/待定/未审篇数。刊会核验可以先单独提交。
 
