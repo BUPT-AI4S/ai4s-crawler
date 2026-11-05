@@ -7,7 +7,7 @@
   <meta name="referrer" content="no-referrer">
   <title>2024 论文采集 · 进度监控</title>
   <link rel="stylesheet" href="style.css?v=20261105-abstract-colors">
-  <script defer src="app.js?v=20261105-abstract-rounds"></script>
+  <script defer src="app.js?v=20261105-recovery-progress"></script>
 </head>
 <body>
 <main>
@@ -36,6 +36,15 @@
     <div class="section-heading"><h2 id="backfill-title">期刊摘要回填</h2><span id="backfill-summary" class="subtle"></span></div>
     <div class="table-wrap"><table><thead><tr><th scope="col">期刊</th><th scope="col">状态</th><th scope="col" class="number">起始缺口</th><th scope="col" class="number">当前缺口</th><th scope="col" class="number">已补</th><th scope="col" class="number">进度</th><th scope="col">最后写入</th></tr></thead><tbody id="backfill-jobs"><tr><td colspan="7" class="empty">正在读取回填进度…</td></tr></tbody></table></div>
     <p class="hint">按缺口从大到小回填：OpenAlex 两把 key 轮转（合计 12 路）→ EuropePMC → PubMed → OpenAIRE → 出版社页面兜底。整本期刊跑完才回写 papers.json，所以「当前缺口 / 已补」是阶段性跳变；「摘要缓存」条数会平滑增长，可作为实时进度参考。</p>
+  </section>
+  <section id="recovery-section" aria-labelledby="recovery-title" hidden>
+    <div class="section-heading"><h2 id="recovery-title">会议补采</h2><span id="recovery-summary" class="subtle"></span></div>
+    <div class="table-wrap"><table><thead><tr><th scope="col">来源</th><th scope="col">状态</th><th scope="col" class="number">论文</th><th scope="col" class="number">含摘要</th><th scope="col" class="number">AI4S</th><th scope="col">最后写入</th></tr></thead><tbody id="recovery-sources"></tbody></table></div>
+  </section>
+  <section id="preload-section" aria-labelledby="preload-title" hidden>
+    <div class="section-heading"><h2 id="preload-title">全批次补摘要</h2></div>
+    <p id="preload-summary" class="status-backfilling"></p>
+    <p class="hint">首轮命中会先写入摘要缓存。写回论文文件后，顶部「含摘要」计数才会更新。</p>
   </section>
   <section id="retry-section" aria-labelledby="retry-title" hidden>
     <div class="section-heading"><h2 id="retry-title">会议重跑与待重试</h2><span id="retry-round" class="subtle"></span></div>

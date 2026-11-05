@@ -70,11 +70,7 @@ function renderRetries() {
     latest.retry_waiting && latest.retry_waiting.length ? `${latest.retry_waiting.length} 个等待下次运行` : ''].filter(Boolean).join(' · ');
 }
 
-function renderSources() {
-  if (!latest) return;
-  const query = $('search').value.trim().toLowerCase();
-  const rank = {abstract_queued:3,backfilling:1,abstract_incomplete:4,retrying:0,collecting:1,failed:2,unreadable:3,completed:4,not_held:4,pending:5};
-  const rows = latest.sources.filter(row => `${row.source} ${row.title || ''}`.toLowerCase().includes(query)).slice().sort((a,b) => rank[a.status]-rank[b.status] || (a.title || a.source).localeCompare(b.title || b.source));
+function renderSourceRows(id, rows) {
   const fragment = document.createDocumentFragment();
   for (const row of rows) {
     const tr = document.createElement('tr');
@@ -94,7 +90,30 @@ function renderSources() {
     const tr = document.createElement('tr'), td = document.createElement('td');
     td.colSpan = 6; td.className = 'empty'; td.textContent = '没有匹配的来源'; tr.append(td); fragment.append(tr);
   }
-  $('sources').replaceChildren(fragment);
+  $(id).replaceChildren(fragment);
+}
+
+function renderSources() {
+  if (!latest) return;
+  const query = $('search').value.trim().toLowerCase();
+  const rank = {abstract_queued:3,backfilling:1,abstract_incomplete:4,retrying:0,collecting:1,failed:2,unreadable:3,completed:4,not_held:4,pending:5};
+  const rows = latest.sources.filter(row => `${row.source} ${row.title || ''}`.toLowerCase().includes(query)).sort((a,b) => rank[a.status]-rank[b.status] || (a.title || a.source).localeCompare(b.title || b.source));
+  renderSourceRows('sources', rows);
+}
+
+function renderRecovery(data) {
+  const rows = data.recovery_sources || [];
+  $('recovery-section').hidden = !rows.length;
+  if (rows.length) {
+    $('recovery-summary').textContent = `${rows.filter(row => row.status === 'completed').length} / ${rows.length} 个来源已生成结果`;
+    renderSourceRows('recovery-sources', rows);
+  }
+  const preload = data.abstract_preload;
+  $('preload-section').hidden = !preload;
+  if (preload) {
+    const stage = preload.handed_off ? '首轮已交接给回写任务' : 'OpenAlex 首轮补查';
+    $('preload-summary').textContent = `${stage} · 覆盖 ${number(preload.sources)} 个来源 · 已查 ${number(preload.queried)} / ${number(preload.dois)} 个 DOI · 命中 ${number(preload.hits)} 条`;
+  }
 }
 
 function render(data) {
@@ -134,6 +153,7 @@ function render(data) {
   $('notice').textContent = data.monitor_error ? '本次状态采样未成功，正在展示上次数据；将自动重试。' : '';
   renderSources();
   renderRetries();
+  renderRecovery(data);
   renderBackfill();
 }
 

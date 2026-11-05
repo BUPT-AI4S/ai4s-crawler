@@ -27,6 +27,29 @@ class MonitorTests(unittest.TestCase):
             self.assertEqual(result['failed_sources'], 0)
             self.assertEqual([r['status'] for r in result['sources']], ['completed', 'pending'])
 
+    def test_completed_recovery_and_cached_abstract_progress_stay_visible(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).parent) as tmp:
+            root = Path(tmp)
+            metadata = root / 'metadata'
+            year = metadata / '2026'
+            year.mkdir(parents=True)
+            manifest = root / 'manifest.json'
+            manifest.write_text('{"year":2026,"sources":["rss"]}')
+            for filename, state in [('run-status.json','failed'), ('recovery-status.json','completed')]:
+                (year / filename).write_text(json.dumps([{'source':'rss','state':state}]))
+            dest = metadata / 'rss/2026'
+            dest.mkdir(parents=True)
+            (dest / 'papers.json').write_text('[{"abstract":"found"}]')
+            (dest / 'ai4s.json').write_text('[]')
+            log = root / 'crawl.log'
+            log.write_text('ABSTRACT_PRELOAD 2026 2 sources 50 DOIs\nABSTRACT_PRELOAD a 10 queried 6 hits\n')
+            result = Collector(metadata, manifest, log, lambda: {'ActiveState':'active'}).collect()
+            self.assertEqual(result['failed_sources'], 0)
+            self.assertEqual([(r['source'], r['status'], r['abstracts']) for r in result['recovery_sources']],
+                             [('rss','completed',1)])
+            self.assertEqual(result['abstract_preload'],
+                             {'sources':2, 'dois':50, 'queried':10, 'hits':6, 'handed_off':False})
+
     def test_upstream_retries_are_surfaced_without_failing_sources(self):
         from datetime import datetime
         stamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')

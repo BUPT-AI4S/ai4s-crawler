@@ -141,9 +141,11 @@ class Collector:
             task_states = {task['source']: task['state'] for task in tasks}
         except (OSError, ValueError, TypeError, KeyError):
             pass
+        recovery_sources = set()
         try:
             recovery = json.loads((self.root / str(year) / 'recovery-status.json').read_text(encoding='utf-8'))
             for row in recovery:
+                recovery_sources.add(row['source'])
                 if task_states.get(row['source']) == 'failed':
                     task_states[row['source']] = row['state']
         except (OSError, ValueError, TypeError, KeyError):
@@ -195,7 +197,7 @@ class Collector:
                     row['status'] = 'failed'
                 if task_states.get(source) == 'not_held':
                     row['status'] = 'not_held'
-                elif task_states.get(source) == 'running' and state == 'running':
+                elif task_states.get(source) == 'running' and (state == 'running' or source in recovery_sources):
                     row['status'] = 'collecting'
                 elif task_states.get(source) == 'failed':
                     row['status'] = 'failed'
@@ -255,6 +257,18 @@ class Collector:
         conference_jobs = [row for row in rows if not row['source'].startswith('j-')
                            and task_states.get(row['source']) in ('running', 'retryable')]
         backfill = self.backfill_report(rows) if year == 2024 else None
+        preload = None
+        if year == 2026:
+            preload_log = '\n'.join(lines)
+            starts = list(re.finditer(r'^ABSTRACT_PRELOAD 2026 (\d+) sources (\d+) DOIs$', preload_log, re.M))
+            if starts:
+                start = starts[-1]
+                run_log = preload_log[start.end():]
+                batches = re.findall(r'^ABSTRACT_PRELOAD \S+ (\d+) queried (\d+) hits$', run_log, re.M)
+                preload = {'sources': int(start[1]), 'dois': int(start[2]),
+                           'queried': sum(int(q) for q, _ in batches),
+                           'hits': sum(int(h) for _, h in batches),
+                           'handed_off': 'ABSTRACT_PRELOAD handoff' in run_log}
         return {'loading': False, 'year': year, 'updated_at': datetime.now(timezone.utc).isoformat(),
                 'service': {'state': state, 'detail': service.get('SubState', ''),
                             'memory_bytes': memory, 'memory_limit_bytes': memory_limit,
@@ -271,7 +285,8 @@ class Collector:
                                       'abstracts': row['abstracts'], 'updated': row['updated']}
                                      for row in {row['source']: row for row in retrying + conference_jobs}.values()],
                 'retry_round': retry_round, 'retry_waiting': retry_waiting,
-                'backfill': backfill,
+                'backfill': backfill, 'abstract_preload': preload,
+                'recovery_sources': [row for row in rows if row['source'] in recovery_sources],
                 'missing_with_doi': sum(row['missing'] for row in rows),
                 'saved_papers': saved, 'papers_with_abstract': abstracts, 'ai4s_candidates': ai4s,
                 'disk_available_bytes': disk.f_bavail * disk.f_frsize if disk else None,
