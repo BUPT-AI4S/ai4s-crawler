@@ -483,3 +483,11 @@ IEEE TCCA当届CFP确认身份；作者主页仅证实276投稿线索，没有�
 同快照全量778，有摘要765，候选66。
 证据：
 - [https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml](https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml)
+
+## 论文精筛完成记录
+
+857条原候选全部审核，另补审同快照全量书目内3条漏筛，共860条：纳入187、排除667、待定6、未审0。187篇核对DOI/题名/作者；23篇确认公开直达PDF，56篇确认作者代码库可访问。
+
+UbiComp当前19条候选全为Companion，主技术论文IMWUT路径仍需补采对齐。WWW官方目录432+346=778，与快照总数一致，66候选DOI匹配；总数一致不代替全量逐条完整性核查。ICDM D-Cube由官方日程确认为Short，故排除。
+
+补审3篇：10.1016/j.ipm.2024.103855、10.1016/j.chemolab.2024.105131、10.1016/j.chemolab.2023.105059。三者在快照全量书目已存在但未命中候选，属于漏筛，不是漏采。补审不是全部漏筛的估计；保留期刊仍须补摘要、重新初筛。详见handoff.md和coverage.csv。
