@@ -370,7 +370,7 @@ def main():
                     if venue in states and row.get('state') in ('failed', 'running', 'retryable'):
                         retry_sources.add(venue)
                     folder = root / _folder_name(venue) / str(args.year) if venue in states else None
-                    if folder and row.get('state') in ('completed', 'not_held') and all(
+                    if folder and row.get('state') in ('completed', 'not_held', 'abstract_queued', 'backfilling', 'abstract_incomplete') and all(
                             (folder / name).exists() for name in ('papers.json', 'ai4s.json')):
                         states[venue] = row['state']
             except OSError:
@@ -386,7 +386,7 @@ def main():
                 write_run_status(root, args.year, states)
 
         def crawl_one(venue):
-            if states[venue] in ('completed', 'not_held'):
+            if states[venue] in ('completed', 'not_held', 'abstract_queued', 'backfilling', 'abstract_incomplete'):
                 return 'ok'
             update(venue, 'running')
             try:
@@ -412,18 +412,23 @@ def main():
             return 'ok'
 
         logger.info(f'元数据来源 {len(venues)} 个，同时处理 {min(args.workers, len(venues))} 个')
-        from journal_abstract_backfill import backfill_journal_abstracts
+        from journal_abstract_backfill import complete_abstracts
         batch, backfills = [], []
+        def supplement(group):
+            by_folder = {_folder_name(venue): venue for venue in group}
+            complete_abstracts(root, args.year, list(by_folder),
+                               lambda folder, state: update(by_folder[folder], state))
+
         with ThreadPoolExecutor(max_workers=min(args.workers, len(venues))) as pool, \
                 ThreadPoolExecutor(max_workers=1) as backfill_pool:
             pending_retry: list[str] = []
 
             def note(venue, status):
                 if status == 'ok':
-                    if venue in deferred and states[venue] == 'completed':
-                        batch.append(_folder_name(venue))
+                    if args.limit is None and states[venue] in ('completed', 'abstract_queued', 'backfilling'):
+                        batch.append(venue)
                         if len(batch) == 8:
-                            backfills.append(backfill_pool.submit(backfill_journal_abstracts, root, args.year, batch))
+                            backfills.append(backfill_pool.submit(supplement, batch[:]))
                             del batch[:]
                 elif status == 'retryable':
                     pending_retry.append(venue)
@@ -452,7 +457,7 @@ def main():
                 failed.extend(pending_retry)
                 del pending_retry[:]
             if batch:
-                backfills.append(backfill_pool.submit(backfill_journal_abstracts, root, args.year, batch))
+                backfills.append(backfill_pool.submit(supplement, batch[:]))
             for future in backfills:
                 future.result()
         write_merged(root, args.year, venues)

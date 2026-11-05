@@ -65,6 +65,30 @@ class JournalBackfillTest(unittest.TestCase):
                     patch('journal_abstract_backfill.publisher_details', return_value={}):
                 backfill_journal_abstracts(root, 2024, ['a'])
 
+    def test_large_gaps_receive_three_rounds_and_keep_incomplete_state(self):
+        from journal_abstract_backfill import complete_abstracts
+
+        with tempfile.TemporaryDirectory(dir=Path(__file__).parent) as tmp:
+            root = Path(tmp)
+            for code, size in [('large', 25), ('small', 1), ('resolved', 6)]:
+                dump_records(root / code / '2024' / 'papers.json', [
+                    {'id': str(i), 'doi': f'10.1/{code}-{i}'}
+                    for i in range(size)
+                ])
+
+            def fill(root, year, folders, **options):
+                if 'resolved' in folders:
+                    path = root / 'resolved/2024/papers.json'
+                    dump_records(path, [dict(row, abstract='Recovered') for row in load_records(path)])
+
+            updates = []
+            with patch('journal_abstract_backfill.backfill_journal_abstracts', side_effect=fill) as run:
+                complete_abstracts(root, 2024, ['large', 'small', 'resolved'],
+                                   lambda *update: updates.append(update))
+            self.assertEqual([call.args[2] for call in run.call_args_list],
+                             [['large', 'resolved'], ['large'], ['large']])
+            self.assertEqual(dict(updates), {'large': 'abstract_incomplete', 'resolved': 'completed', 'small': 'completed'})
+
     def test_openalex_batches_are_bounded(self):
         with patch('journal_abstract_backfill.openalex_abstracts',
                    side_effect=lambda dois: {doi: 'abstract' for doi in dois}) as lookup:

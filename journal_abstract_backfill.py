@@ -40,6 +40,41 @@ def _parallel_openalex(dois, on_batch=None, *, pending_limit=None):
     return found
 
 
+def _has_abstract(row):
+    return bool(str(row.get('abstract') or '').strip())
+
+
+def _abstract_gap(root, year, folder):
+    rows = load_records(root / folder / str(year) / 'papers.json')
+    missing = [row for row in rows if not _has_abstract(row)]
+    large = len(missing) >= 20 or (len(missing) >= 5 and len(missing) * 10 >= len(rows))
+    return large, any(_doi_key(row.get('doi')) for row in missing)
+
+
+def complete_abstracts(root, year, folders, update):
+    pending = list(folders)
+    for round_no, options in enumerate(({'openalex_only': True}, {'biomedical_only': True}, {}), 1):
+        eligible = []
+        for folder in pending:
+            large, has_doi = _abstract_gap(root, year, folder)
+            if large and has_doi:
+                eligible.append(folder)
+                update(folder, 'backfilling')
+            else:
+                update(folder, 'abstract_incomplete' if large else 'completed')
+        if not eligible:
+            return
+        logger.info(f'{year} 摘要补查第 {round_no}/3 轮，{len(eligible)} 个来源')
+        try:
+            backfill_journal_abstracts(root, year, eligible, **options)
+        except Exception as exc:
+            logger.warning(f'{year} 第 {round_no}/3 轮摘要补查中断：{type(exc).__name__}')
+        pending = eligible
+    for folder in pending:
+        large, _ = _abstract_gap(root, year, folder)
+        update(folder, 'abstract_incomplete' if large else 'completed')
+
+
 def backfill_journal_abstracts(root, year, folders, *, openalex_only=False, biomedical_only=False):
     pending = {}
     sources = {}
@@ -49,7 +84,7 @@ def backfill_journal_abstracts(root, year, folders, *, openalex_only=False, biom
         sources[dest] = rows
         for row in rows:
             doi = _doi_key(row.get('doi'))
-            if doi and not row.get('abstract'):
+            if doi and not _has_abstract(row):
                 pending.setdefault(doi, []).append(row)
     if not pending:
         return
@@ -73,9 +108,9 @@ def backfill_journal_abstracts(root, year, folders, *, openalex_only=False, biom
     def apply_hits(hits):
         for doi, (abstract, host) in hits.items():
             for row in pending.get(doi, ()):
-                if not row.get('abstract'):
+                if not _has_abstract(row):
                     row['abstract'] = abstract
-                    row['source'] = f'crossref.org+{host}'
+                    row['source'] = f'{row.get("source") or "metadata"}+{host}'
                     row['screening_status'] = ('needs_article_type' if row.get('article_type') in (None, 'unknown')
                                                else 'ready')
                     changed.add(id(row))
@@ -105,7 +140,7 @@ def backfill_journal_abstracts(root, year, folders, *, openalex_only=False, biom
                     publish()
 
             hits = _parallel_openalex(dois, on_batch=save_batch,
-                                      pending_limit=2 if openalex_only else None)
+                                      pending_limit=None)
             publish(force=True)
             logger.info(f'OpenAlex 摘要首轮: {len(folders)} 个来源，查 {len(dois)} 个 DOI，命中 {len(hits)} 个')
             return hits
@@ -154,7 +189,7 @@ def backfill_journal_abstracts(root, year, folders, *, openalex_only=False, biom
                 if details.get(field):
                     row[field] = details[field]
             if row.get('abstract'):
-                row['source'] = 'crossref.org+publisher'
+                row['source'] = f'{row.get("source") or "metadata"}+publisher'
             row['screening_status'] = ('needs_abstract' if not row.get('abstract') else
                                        'needs_article_type' if row.get('article_type') in (None, 'unknown')
                                        else 'ready')

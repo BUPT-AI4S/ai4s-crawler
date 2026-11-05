@@ -3,7 +3,7 @@ const $ = id => document.getElementById(id);
 const number = value => Number.isFinite(value) ? value.toLocaleString('zh-CN') : '—';
 const clock = value => value ? new Intl.DateTimeFormat('zh-CN', {timeZone:'Asia/Shanghai',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false}).format(new Date(value)) : '—';
 const states = {running:'运行中',finished:'已结束',failed:'任务失败',inactive:'未运行',unknown:'状态未知'};
-const sourceStates = {collecting:'采集中',retrying:'上游抖动 · 重试中',completed:'已生成结果',failed:'采集失败',pending:'等待采集',unreadable:'文件暂不可读',not_held:'该年未举办'};
+const sourceStates = {abstract_queued:'等待补摘要',backfilling:'补摘要中',abstract_incomplete:'补查结束 · 仍缺摘要',collecting:'采集中',retrying:'上游抖动 · 重试中',completed:'已生成结果',failed:'采集失败',pending:'等待采集',unreadable:'文件暂不可读',not_held:'该年未举办'};
 const backfillStates = {running:'回填中',queued:'排队中',done:'本轮结束',failed:'回填失败',stopped:'已停止',idle:'未在队列'};
 let latest = null;
 let fetching = false;
@@ -73,7 +73,7 @@ function renderRetries() {
 function renderSources() {
   if (!latest) return;
   const query = $('search').value.trim().toLowerCase();
-  const rank = {retrying:0,collecting:1,failed:2,unreadable:3,completed:4,not_held:4,pending:5};
+  const rank = {abstract_queued:3,backfilling:1,abstract_incomplete:4,retrying:0,collecting:1,failed:2,unreadable:3,completed:4,not_held:4,pending:5};
   const rows = latest.sources.filter(row => `${row.source} ${row.title || ''}`.toLowerCase().includes(query)).slice().sort((a,b) => rank[a.status]-rank[b.status] || (a.title || a.source).localeCompare(b.title || b.source));
   const fragment = document.createDocumentFragment();
   for (const row of rows) {

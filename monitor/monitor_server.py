@@ -194,6 +194,8 @@ class Collector:
                     row['status'] = 'failed'
                 elif task_states.get(source) == 'completed' and ai4s_path.exists() and papers_path.exists():
                     row['status'] = 'completed'
+                elif task_states.get(source) in ('abstract_queued', 'backfilling', 'abstract_incomplete'):
+                    row['status'] = task_states[source]
                 elif task_states.get(source) == 'pending':
                     row['status'] = 'pending'
                 retry = retries.get(source)
@@ -213,7 +215,7 @@ class Collector:
             saved += row['papers']
             abstracts += row['abstracts']
             ai4s += row['ai4s']
-            completed += row['status'] in ('completed', 'not_held')
+            completed += row['status'] in ('completed', 'not_held', 'abstract_incomplete')
             rows.append(row)
         in_progress = [row for row in rows if row['status'] == 'collecting']
         if in_progress:
