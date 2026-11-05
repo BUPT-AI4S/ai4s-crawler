@@ -1,4 +1,4 @@
-"""RSS 2024 official proceedings independent of the DBLP endpoint."""
+"""Official RSS proceedings independent of the DBLP endpoint."""
 import re
 from urllib.parse import urljoin
 
@@ -7,21 +7,23 @@ from bs4 import BeautifulSoup
 from fetch_util import get_text, map_details
 from paper_record import make_record
 
-BASE = 'https://www.roboticsproceedings.org/rss20/'
+EDITIONS = {2024: (20, 'xx', 134), 2026: (22, 'xxii', 210)}
 
 
-def crawl_rss(limit, existing, on_new):
+def crawl_rss(limit, existing, on_new, *, year=2024):
     if limit is not None and limit <= 0:
         raise ValueError('limit 必须为正整数')
-    index = BeautifulSoup(get_text(BASE + 'index.html', timeout=20), 'lxml')
+    edition, roman, expected = EDITIONS[year]
+    base = f'https://www.roboticsproceedings.org/rss{edition}/'
+    index = BeautifulSoup(get_text(base + 'index.html', timeout=20), 'lxml')
     pages = list(dict.fromkeys(link['href'] for link in index.select('a[href]')
                                if re.fullmatch(r'p\d{3}\.html', link['href'])))
-    if len(pages) != 134:
-        raise RuntimeError(f'RSS 2024 官网目录应有 134 篇，实际解析 {len(pages)} 篇')
+    if len(pages) != expected:
+        raise RuntimeError(f'RSS {year} 官网目录应有 {expected} 篇，实际解析 {len(pages)} 篇')
 
     def detail(name):
-        url = urljoin(BASE, name)
-        doi = '10.15607/rss.2024.xx.' + name[1:4]
+        url = urljoin(base, name)
+        doi = f'10.15607/rss.{year}.{roman}.{name[1:4]}'
         cached = existing.get(doi)
         if cached and cached.get('abstract') and cached.get('authors'):
             return cached
@@ -36,7 +38,7 @@ def crawl_rss(limit, existing, on_new):
             raise RuntimeError(f'RSS 官网元数据不完整: {url}')
         return make_record(id=doi, doi=doi, title=title['content'], authors=authors,
                            abstract=abstract, venue='rss', venue_type='conference',
-                           conference_title='Robotics: Science and Systems', year=2024,
+                           conference_title='Robotics: Science and Systems', year=year,
                            url=url, source='www.roboticsproceedings.org',
                            article_type='Conference Paper', screening_status='ready')
 

@@ -141,6 +141,13 @@ class Collector:
             task_states = {task['source']: task['state'] for task in tasks}
         except (OSError, ValueError, TypeError, KeyError):
             pass
+        try:
+            recovery = json.loads((self.root / str(year) / 'recovery-status.json').read_text(encoding='utf-8'))
+            for row in recovery:
+                if task_states.get(row['source']) == 'failed':
+                    task_states[row['source']] = row['state']
+        except (OSError, ValueError, TypeError, KeyError):
+            pass
         service = self.service_reader()
         active = service.get('ActiveState', 'unknown')
         state = ('running' if active == 'active' else

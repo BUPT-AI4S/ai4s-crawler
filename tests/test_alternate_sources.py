@@ -54,3 +54,19 @@ class AlternateSourcesTest(unittest.TestCase):
             self.assertEqual(_crawl_one_metadata('rss', 2024, 1, {}, callback),
                              [{'id': 'official'}])
             crawl.assert_called_once_with(1, {}, callback)
+
+
+    def test_2026_official_proceedings_routes(self):
+        from academic import _crawl_one_metadata
+
+        callback = Mock()
+        with patch('mlsys_meta.crawl_mlsys', return_value=[]) as mlsys, \
+                patch('rss_meta.crawl_rss', return_value=[]) as rss, \
+                patch('journal_meta.crawl_journal', return_value=[]) as eccb, \
+                patch('academic.crawl_conference', return_value=[]):
+            for source in ('mlsys', 'rss', 'eccb'):
+                _crawl_one_metadata(source, 2026, 1, {}, callback)
+        mlsys.assert_called_once_with(2026, 1, {}, callback)
+        rss.assert_called_once_with(1, {}, callback, year=2026)
+        self.assertEqual(eccb.call_args.args[5]['volume'], '42')
+        self.assertEqual(eccb.call_args.args[5]['issue'], 'Supplement_2')

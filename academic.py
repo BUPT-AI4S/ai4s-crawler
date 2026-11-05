@@ -174,6 +174,21 @@ def _needs_openreview_now(venues: list[str], metadata_only: bool) -> bool:
 
 def _crawl_one_metadata(venue: str, year: int, limit: int | None, existing: dict, on_new, *,
                         flush=None, defer_abstracts=False) -> list[dict]:
+    if venue == 'eccb' and year == 2026:
+        from journal_meta import crawl_journal
+
+        def research_paper(row):
+            return row.get('doi') != '10.1093/bioinformatics/btag404'
+
+        def checkpoint_paper(row):
+            if limit is None and research_paper(row):
+                on_new(row)
+
+        records = crawl_journal(venue, year, None, existing, checkpoint_paper, {
+            'issns':['1367-4811'], 'volume':'42', 'issue':'Supplement_2',
+            'title':'European Conference on Computational Biology', 'venue_type':'conference'},
+            flush=flush, defer_abstracts=True, date_range=('08-01', '08-31'))
+        return [row for row in records if research_paper(row)][:limit]
     if venue == 'eccb' and year == 2024:
         from journal_meta import crawl_journal
         return crawl_journal(venue, year, limit, existing, on_new, {
@@ -221,12 +236,15 @@ def _crawl_one_metadata(venue: str, year: int, limit: int | None, existing: dict
         return crawl_aaai(year, limit, existing, on_new)
     if key == "kdd":
         return crawl_kdd(year, limit, existing, on_new)
-    if key == "mlsys" and year == 2024:
+    if key == "mlsys" and year in (2024, 2026):
         from mlsys_meta import crawl_mlsys
         return crawl_mlsys(year, limit, existing, on_new)
     if key == "rss" and year == 2024:
         from rss_meta import crawl_rss
         return crawl_rss(limit, existing, on_new)
+    if key == "rss" and year == 2026:
+        from rss_meta import crawl_rss
+        return crawl_rss(limit, existing, on_new, year=year)
     if key in CONFERENCES:
         return crawl_conference(key, year, limit, existing, on_new)
     if key in THECVF_VENUES:

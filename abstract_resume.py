@@ -10,6 +10,11 @@ root = Path('/mnt/figure/academic/metadata')
 states = {row['source']: row['state'] for row in load_records(root / str(year) / 'run-status.json')}
 if not states:
     raise SystemExit('No bibliography status')
+for row in load_records(root / str(year) / 'recovery-status.json'):
+    source, state = row['source'], row['state']
+    if states.get(source) == 'failed' and state in ('completed', 'abstract_incomplete'):
+        states[source] = state
+
 by_folder = {}
 for venue, state in states.items():
     if state not in ('completed', 'abstract_queued', 'backfilling'):
