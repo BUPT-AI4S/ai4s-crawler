@@ -104,11 +104,11 @@ def _local_epoch(stamp):
         return 0.0
 
 
-def service_properties():
+def service_properties(unit="academic-crawler.service"):
     names = ['ActiveState', 'SubState', 'Result', 'ExecMainStatus', 'MemoryCurrent',
              'MemoryMax', 'CPUQuotaPerSecUSec',
              'ExecMainStartTimestampMonotonic', 'ExecMainExitTimestampMonotonic']
-    result = subprocess.run(['systemctl', 'show', 'academic-crawler.service',
+    result = subprocess.run(['systemctl', 'show', unit,
                              *['--property=' + name for name in names]],
                             capture_output=True, text=True, timeout=3, check=True)
     return dict(line.split('=', 1) for line in result.stdout.splitlines() if '=' in line)
@@ -245,7 +245,7 @@ class Collector:
         retrying = [row for row in rows if row['status'] == 'retrying']
         conference_jobs = [row for row in rows if not row['source'].startswith('j-')
                            and task_states.get(row['source']) in ('running', 'retryable')]
-        backfill = self.backfill_report(rows)
+        backfill = self.backfill_report(rows) if year == 2024 else None
         return {'loading': False, 'year': year, 'updated_at': datetime.now(timezone.utc).isoformat(),
                 'service': {'state': state, 'detail': service.get('SubState', ''),
                             'memory_bytes': memory, 'memory_limit_bytes': memory_limit,
@@ -360,7 +360,7 @@ class Collector:
             time.sleep(15)
 
 
-def make_handler(secret, collector):
+def make_handler(secret, collector, collector_2026=None):
     asset_root = Path(__file__).resolve().parent
     assets = {'': ('index.html', 'text/html; charset=utf-8'),
               'app.js': ('app.js', 'text/javascript; charset=utf-8'),
@@ -392,19 +392,32 @@ def make_handler(secret, collector):
 
         def authorized_route(self):
             parts = urlsplit(self.path).path.split('/')
-            if len(parts) != 4 or parts[1] != 'academic-watch':
+            if len(parts) < 4 or parts[1] != 'academic-watch':
                 return None
             if not hmac.compare_digest(parts[2].encode(), secret.encode()):
                 return None
-            return parts[3]
+            if len(parts) == 4:
+                return 2024, parts[3]
+            if len(parts) == 5 and parts[3] == '2026' and collector_2026 is not None:
+                return 2026, parts[4]
+            return None
 
         def do_GET(self):
-            route = self.authorized_route()
+            authorized = self.authorized_route()
+            if authorized is None:
+                self.respond(404, b'Not found')
+                return
+            year, route = authorized
             if route == 'status':
-                self.respond(200, json.dumps(collector.snapshot, ensure_ascii=False).encode(), 'application/json; charset=utf-8')
+                selected = collector_2026 if year == 2026 else collector
+                self.respond(200, json.dumps(selected.snapshot, ensure_ascii=False).encode(), 'application/json; charset=utf-8')
             elif route in assets:
                 name, content_type = assets[route]
-                self.respond(200, (asset_root / name).read_bytes(), content_type)
+                body = (asset_root / name).read_bytes()
+                if name == 'index.html' and year == 2026:
+                    body = body.replace(b'2024', b'2026').replace(
+                        b'<a href="2026/">2026</a>', b'<a href="../">2024</a>')
+                self.respond(200, body, content_type)
             else:
                 self.respond(404, b'Not found')
 
@@ -422,8 +435,12 @@ if __name__ == '__main__':
         raise SystemExit('MONITOR_SECRET must contain at least 32 URL-safe characters')
     data = Path(os.environ.get('ACADEMIC_DATA', '/mnt/figure/academic'))
     collector = Collector(data / 'metadata', data / 'run-manifest-2024.json', data / 'logs/crawl.log')
-    threading.Thread(target=collector.refresh_forever, daemon=True).start()
+    collector_2026 = Collector(data / 'metadata', data / 'run-manifest-2026.json',
+                               data / 'logs/crawl-2026.log',
+                               lambda: service_properties('academic-crawler-2026.service'))
+    for dashboard in (collector, collector_2026):
+        threading.Thread(target=dashboard.refresh_forever, daemon=True).start()
     server = ThreadingHTTPServer(('127.0.0.1', int(os.environ.get('MONITOR_PORT', '18765'))),
-                                 make_handler(secret, collector))
+                                 make_handler(secret, collector, collector_2026))
     server.daemon_threads = True
     server.serve_forever()

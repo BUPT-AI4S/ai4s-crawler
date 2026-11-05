@@ -214,13 +214,15 @@ class MonitorTests(unittest.TestCase):
         secret = 'a' * 64
         class FakeCollector:
             snapshot = {'saved_papers': 12}
-        server = ThreadingHTTPServer(('127.0.0.1', 0), make_handler(secret, FakeCollector()))
+        class Collector2026:
+            snapshot = {'saved_papers': 26}
+        server = ThreadingHTTPServer(('127.0.0.1', 0), make_handler(secret, FakeCollector(), Collector2026()))
         thread = threading.Thread(target=server.serve_forever, daemon=True)
         thread.start()
         try:
             client = http.client.HTTPConnection('127.0.0.1', server.server_port, timeout=3)
             for path in ('/', '/academic-watch/wrong/status', '/academic-watch/' + secret + 'extra/status',
-                         '/academic-watch/' + secret + '/../monitor_server.py'):
+                         '/academic-watch/' + secret + '/../monitor_server.py', '/academic-watch/wrong/2026/status'):
                 client.request('GET', path)
                 response = client.getresponse()
                 self.assertEqual(response.status, 404, path)
@@ -235,6 +237,11 @@ class MonitorTests(unittest.TestCase):
             response = client.getresponse()
             self.assertEqual(response.status, 200)
             self.assertIn(b'2024', response.read())
+            for route, expected in [('2026/', b'2026'), ('2026/status', b'26')]:
+                client.request('GET', '/academic-watch/' + secret + '/' + route)
+                response = client.getresponse()
+                self.assertEqual(response.status, 200)
+                self.assertIn(expected, response.read())
             client.request('POST', '/academic-watch/' + secret + '/status')
             response = client.getresponse()
             self.assertEqual(response.status, 405)

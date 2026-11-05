@@ -1,6 +1,6 @@
 # AI4S 论文采集与精筛
 
-2024 年使用 [15,261 篇初筛候选](metadata/2024/ai4s.json)，快照时间为北京时间 2026-11-04 23:32。批次和来源计数见 [snapshot.json](metadata/2024/snapshot.json)。
+2024 年使用 [15,352 篇初筛候选](metadata/2024/ai4s.json)，快照时间为北京时间 2026-11-05 10:31。批次和来源计数见 [snapshot.json](metadata/2024/snapshot.json)。
 
 1. **先核验期刊和会议。** 按团队分工在 [刊会核验清单](reviews/venue-review.csv) 填写「是否建议纳入」，并记录依据。期刊核对中科院分区，CCF B 会议核对当届正式长文和评审证据。结论为「不建议纳入」的来源，直接跳过该来源的论文精筛和打标。「暂缓纳入」或「待核实」的来源，等结论明确后再处理。见 [刊会核验规则](skills/ai4s-paper-review/references/venue-review.md)。
 2. **只精筛「建议纳入」来源的论文。** 用来源编号（论文 JSON 的 `venue`）找到候选，使用 [AI4S 精筛技能](skills/ai4s-paper-review/SKILL.md) 逐篇判断、打标签并核对元数据。
