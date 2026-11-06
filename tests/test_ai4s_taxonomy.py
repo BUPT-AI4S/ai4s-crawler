@@ -138,6 +138,27 @@ class TaxonomyTests(unittest.TestCase):
                 self.assertEqual(select_ai4s([{'title': 'Deep learning for protein design',
                                  'venue_type': 'journal', 'article_type': article_type}]), [])
 
+    def test_review_vocabulary_adds_scientific_candidates_with_ai_evidence(self):
+        paper = {'title': 'Deep learning for AI 用于地球宇宙科学',
+                 'venue_type': 'journal', 'article_type': 'Article'}
+        row = select_ai4s([paper])[0]
+        self.assertEqual(row['ai4s_reason'], 'review_vocabulary')
+        self.assertIn('AI 用于地球宇宙科学', row['ai4s_vocabulary_hits'])
+
+    def test_review_vocabulary_does_not_admit_generic_methods_or_nonresearch(self):
+        papers = [
+            {'title': 'Instruction tuning for chatbot customer support'},
+            {'title': 'AI 用于地球宇宙科学', 'venue_type': 'journal'},
+            {'title': 'Deep learning for AI 用于地球宇宙科学',
+             'venue_type': 'journal', 'article_type': 'Editorial'},
+        ]
+        self.assertEqual(select_ai4s(papers), [])
+
+    def test_review_vocabulary_records_alias_matches_on_legacy_candidates(self):
+        row = select_ai4s([{'title': 'A GNN for protein structure prediction'}])[0]
+        self.assertEqual(row['ai4s_reason'], 'keyword')
+        self.assertIn('图神经网络', row['ai4s_vocabulary_hits'])
+
     def test_existing_reviewed_tags_are_preserved(self):
         paper = {'title': 'Protein structure prediction', 'ai4s_tags': ['人工复核标签'],
                  'ai4s_tagging': {'status': 'classified'}, 'ai4s_keywords': ['curated']}
