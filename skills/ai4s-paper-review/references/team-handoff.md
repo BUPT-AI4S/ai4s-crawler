@@ -27,17 +27,17 @@
         "evidence_urls": ["https://example.org/paper"]
       },
       "tags": [
-        {"axis": "training_stage", "label": "预训练", "evidence_location": "方法 §2", "rationale": "训练目标为预测被掩码的氨基酸。"},
-        {"axis": "method", "label": "掩码建模", "evidence_location": "方法 §2", "rationale": "训练时对输入序列随机掩码。"}
+        {"axis": "training_stage", "label": "预训练", "label_en": "Pretraining", "evidence_location": "方法 §2", "rationale": "训练目标为预测被掩码的氨基酸。"},
+        {"axis": "method", "label": "掩码建模", "label_en": "Masked modeling", "evidence_location": "方法 §2", "rationale": "训练时对输入序列随机掩码。"}
       ]
     }
   }
 ]
 ```
 
-`decision` 使用 `include`（纳入）、`exclude`（排除）、`pending`（已审但待定）或 `unreviewed`（未审）。四类都保留记录，汇总后按 `ai4s_review.decision == "include"` 导出最终纳入集。纳入至少带一个有证据的标签，其他状态的 `tags` 为空。待定原因写入 `rationale`，未审可用 `null`。来源文件缺失时在交付说明里列出，不构造占位论文。
+`decision` 使用 `include`（纳入）、`exclude`（排除）、`pending`（已审但待定）或 `unreviewed`（未审）。四类都保留记录，汇总后按 `ai4s_review.decision == "include"` 导出最终纳入集。纳入至少带一个有证据的标签。新交付每个标签都填写 `label`（中文）和 `label_en`（英文），沿用共享词表中的规范写法。其他状态的 `tags` 为空。待定原因写入 `rationale`，未审可用 `null`。来源文件缺失时在交付说明里列出，不构造占位论文。
 
-合并前核对批次和快照，按 `(venue, year, id)` 查重后合并数组。同一键若出现字段或判定冲突，交原负责人确认。跨来源相同 DOI 可关联，保留各来源出处。若现有读取器只读原字段，仍能读取这批记录。筛出最终纳入集、展示精筛标签时使用新增字段。
+交付说明记录词表提交版本、漏采与漏筛核验范围，以及新增词表条目。合并前核对批次和快照，按 `(venue, year, id)` 查重后合并数组。同一键若出现字段或判定冲突，交原负责人确认。跨来源相同 DOI 可关联，保留各来源出处。若现有读取器只读原字段，仍能读取这批记录。筛出最终纳入集、展示精筛标签时使用新增字段。
 
 > 使用 `$ai4s-paper-review`。我是【负责人】，处理【年份和来源】，初筛文件为【路径】。清洗候选，按维度打可复用的标签。交一个保留原字段、仅追加 `ai4s_review` 的论文数组 JSON。
 
@@ -46,7 +46,7 @@
 
 按来源和年份记录采集快照、全量采集数、官网同口径总数、差额、官网目录链接及差额的核实结果。官网总数未知时说明原因。列出已补录条目及证据；大批漏采时写明需补采的卷期或分轨。
 
-补录后通过初筛的论文沿用同样的论文对象格式和 `ai4s_review` 字段。用 DOI 或来源的稳定官方标识作为 `id`，在 `ai4s_review.rationale` 注明「官网漏采补录」及核实理由，并把官方证据链接放入 `ai4s_review.verified_metadata.evidence_urls`。与已有记录按 `(venue, year, id)`、DOI 和题名作者去重后再合并。
+核实后补入候选的论文沿用同样的论文对象格式和 `ai4s_review` 字段。已爬到但关键词未命中的论文沿用原始 `id`，在理由中注明「初筛漏筛补录」。官网确认漏采的论文用 DOI 或稳定官方标识作为 `id`，在 `ai4s_review.rationale` 注明「官网漏采补录」及核实理由。两类补录都把官方证据链接放入 `ai4s_review.verified_metadata.evidence_urls`。与已有记录按 `(venue, year, id)`、DOI 和题名作者去重后再合并。
 
 ## 摘要覆盖核验记录
 
