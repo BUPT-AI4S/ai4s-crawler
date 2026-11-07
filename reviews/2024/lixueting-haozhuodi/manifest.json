@@ -1,0 +1,275 @@
+{
+  "total": 58259,
+  "missing_abstracts": 15624,
+  "remaining_gap_after_document_scope": 2398,
+  "issue_ambiguities": 0,
+  "overlap": 984,
+  "conflict": 218,
+  "vocabulary_ref": "373425af4e4ab743d3c298b185599559fa95a5b0",
+  "owners": {
+    "李雪婷": {
+      "input": 28524,
+      "candidates": 1375,
+      "original_abs": 10403,
+      "backfill": 8704,
+      "linked_only": 0,
+      "added": 765,
+      "usable_abs": 19777,
+      "include": 1955,
+      "exclude": 25247,
+      "pending": 2087,
+      "unreviewed": 0,
+      "missed": 1113,
+      "new_include": 128,
+      "candidate_include": 714,
+      "candidate_exclude": 498,
+      "candidate_pending": 163,
+      "delivered": 2616
+    },
+    "郝卓迪": {
+      "input": 28611,
+      "candidates": 805,
+      "original_abs": 16006,
+      "backfill": 6623,
+      "linked_only": 1,
+      "added": 359,
+      "usable_abs": 22857,
+      "include": 884,
+      "exclude": 26002,
+      "pending": 2084,
+      "unreviewed": 0,
+      "missed": 456,
+      "new_include": 14,
+      "candidate_include": 414,
+      "candidate_exclude": 302,
+      "candidate_pending": 89,
+      "delivered": 1275
+    }
+  },
+  "new_vocabulary": [
+    {
+      "axis": "task",
+      "label": "蛋白质功能预测",
+      "label_en": "Protein function prediction",
+      "definition": "以序列、结构或实验测量为输入，预测蛋白质功能或生化活性。用于明确预测任务，与仅做结构功能关联分析或识别相互作用模块区分。",
+      "aliases": [
+        "Protein functional prediction"
+      ]
+    },
+    {
+      "axis": "task",
+      "label": "医学影像协调化",
+      "label_en": "Medical image harmonization",
+      "definition": "降低设备、中心或采集协议带来的影像或影像特征差异，同时保留医学或生物学信息。用于协调化本身或其对下游医学模型影响的研究。",
+      "aliases": [
+        "Medical image harmonisation",
+        "影像协调化",
+        "跨设备影像协调化"
+      ]
+    }
+  ],
+  "metadata_snapshot_commit": "4b5a1a874a4f7a5d2f68647e63e6eb75ea200dbd",
+  "scope_workbook": "AI4S会议期刊爬取清单1107.xlsx",
+  "scope_workbook_sha256": "578ba2a6ced6f14bc008ae004657aa522dc64cc88eba9d04af084670534266de",
+  "last_verified_repository_commit": "6b4ec976f57b0accf63c8bc8c57f72952083fe4f",
+  "candidate_counts": {
+    "李雪婷": 1375,
+    "郝卓迪": 805
+  },
+  "used_full_text_for_AI4S_decisions": false,
+  "semantic_review": {
+    "abstract_encoder": "sentence-transformers/all-MiniLM-L6-v2, full abstract in overlapping windows",
+    "local_reviewer": "Qwen3-4B-Instruct-2507 (4-bit, local MLX), full abstract plus source-sentence evidence",
+    "encoder_negative_training_n": 8788,
+    "encoder_negative_development_n": 3144,
+    "held_out_n": 2316,
+    "held_out_selected_negatives": 826,
+    "held_out_positive_disagreements": 0,
+    "separate_negative_sample_n": 350,
+    "separate_negative_sample_score_above_minus10": 0,
+    "evaluation_note": "保留区优先处理：原关键词候选、确认的补录、其他审核人的纳入记录和摘要中的AI线索均列入复核保障。抽查只反映所查样本。",
+    "subject_field_crosscheck": {
+      "training_samples_by_field": {
+        "society": 1329,
+        "engineering": 1389,
+        "life": 4617,
+        "information": 388,
+        "earth": 1500,
+        "math": 619,
+        "matter": 2649,
+        "computing": 1800
+      },
+      "four_fold_held_out_accuracy": 0.9082172551560307,
+      "external_subject_evidence": "学科参照使用专业期刊或既有审核的标签，预测仅输入被核论文的摘要。对拟纳入、证据矛盾和边界记录另外核对 AI 的作用、科学目标、文献类型和可定位的原摘要证据。"
+    }
+  },
+  "publisher_citation_export": {
+    "with_author_abstract": 8977,
+    "no_text_abstract_in_export": 13663,
+    "other_response": 419
+  },
+  "institutional_abstract_attempts": {
+    "unique_dois_attempted": 3181,
+    "matched_records_with_abstract": 122
+  },
+  "annual_publisher_deposit_check": {
+    "complete_annual_issn_queries": 97,
+    "registered_works": 49641,
+    "unmatched_journal_issue_dois": [
+      "10.1002/cac2.v44.1",
+      "10.1002/cac2.v44.2",
+      "10.1002/cac2.v44.3",
+      "10.1002/cac2.v44.4",
+      "10.1002/cac2.v44.5",
+      "10.1002/cac2.v44.6",
+      "10.1002/cac2.v44.7",
+      "10.1002/cac2.v44.8",
+      "10.1002/cac2.v44.9",
+      "10.1002/cac2.v44.10",
+      "10.1002/cac2.v44.11",
+      "10.1002/cac2.v44.12"
+    ],
+    "unmatched_paper_records": 0
+  },
+  "pmc_front_matter": {
+    "verified_records": 109,
+    "with_text_abstract": 5
+  },
+  "springer_article_metadata": {
+    "verified_records": 168,
+    "with_text_abstract": 0
+  },
+  "doi_and_subtitle_recheck": {
+    "verified_records": 333,
+    "with_text_abstract": 59
+  },
+  "additional_records_by_provenance": {
+    "publisher_crossref_verified_europepmc_issue": 476,
+    "publisher_2024_issue_table": 176,
+    "verified_2024_electronic_publication": 13,
+    "official_2024_proceedings": 459
+  },
+  "issue_year_exclusions_or_duplicates": 25,
+  "verified_issue_tables": {
+    "natchemeng": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 156,
+      "known_missing_or_paginated_pages": 2
+    },
+    "nrn": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 113,
+      "known_missing_or_paginated_pages": 0
+    },
+    "nmeth": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 415,
+      "known_missing_or_paginated_pages": 0
+    },
+    "natcancer": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 196,
+      "known_missing_or_paginated_pages": 1
+    },
+    "natmetab": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 235,
+      "known_missing_or_paginated_pages": 1
+    },
+    "nclimate": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 314,
+      "known_missing_or_paginated_pages": 0
+    },
+    "ni": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 339,
+      "known_missing_or_paginated_pages": 0
+    },
+    "natbiomedeng": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 168,
+      "known_missing_or_paginated_pages": 12
+    },
+    "ng": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 405,
+      "known_missing_or_paginated_pages": 0
+    },
+    "nataging": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 226,
+      "known_missing_or_paginated_pages": 2
+    },
+    "natfood": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 183,
+      "known_missing_or_paginated_pages": 1
+    },
+    "nchem": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 315,
+      "known_missing_or_paginated_pages": 0
+    },
+    "ncb": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 266,
+      "known_missing_or_paginated_pages": 0
+    },
+    "natsynth": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 260,
+      "known_missing_or_paginated_pages": 3
+    },
+    "nrpsychol": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 128,
+      "known_missing_or_paginated_pages": 2
+    },
+    "natrevearthenviron": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 117,
+      "known_missing_or_paginated_pages": 2
+    },
+    "nri": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 141,
+      "known_missing_or_paginated_pages": 0
+    },
+    "nrendo": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 131,
+      "known_missing_or_paginated_pages": 0
+    },
+    "nrneurol": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 138,
+      "known_missing_or_paginated_pages": 0
+    },
+    "nrrheum": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 135,
+      "known_missing_or_paginated_pages": 0
+    },
+    "natcardiovascres": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 183,
+      "known_missing_or_paginated_pages": 1
+    },
+    "nature-ijo": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 226,
+      "known_missing_or_paginated_pages": 0
+    },
+    "nature-bmt": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 291,
+      "known_missing_or_paginated_pages": 0
+    },
+    "nature-ejhg": {
+      "matched_2024_issue_pages": 12,
+      "distinct_dois_on_visible_pages": 245,
+      "known_missing_or_paginated_pages": 0
+    }
+  }
+}
