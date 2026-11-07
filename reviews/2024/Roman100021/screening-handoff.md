@@ -1,9 +1,9 @@
 # 乔徐阳 · 2024 年 AI4S 精筛复查
 
-补摘要、人工漏筛复查和最新统计见[精筛说明](Roman100021-screening-report.md)。本文保留首次复查的范围和刊会对账。
+补摘要、人工漏筛复查和最新统计见[精筛说明](screening-report.md)。本文保留首次复查的范围和刊会对账。
 
 - 分工依据为《AI4S会议期刊爬取清单_2020-2026_仅建议纳入 (7).xlsx》负责人列，范围为 34 本期刊和 CIKM。以仓库 README 当前指定的 2024 批次为准。采集快照时间为北京时间 2026-11-05 10:31:19。
-- 使用 GitHub main 提交 `373425af4e4ab743d3c298b185599559fa95a5b0` 的 [AI4S 精筛技能](../../skills/ai4s-paper-review/SKILL.md)、[双语词表](../../skills/ai4s-paper-review/references/tag-vocabulary.json)和[初筛词表](../../ai4s_keywords.txt)。标签按维度对照规范中英文，未新增共享词条。
+- 使用 GitHub main 提交 `373425af4e4ab743d3c298b185599559fa95a5b0` 的 [AI4S 精筛技能](../../../skills/ai4s-paper-review/SKILL.md)、[双语词表](../../../skills/ai4s-paper-review/references/tag-vocabulary.json)和[初筛词表](../../../ai4s_keywords.txt)。标签按维度对照规范中英文，未新增共享词条。
 - 复查快照候选 467 条，纳入 306 条、排除 112 条、待定 49 条。另补录 82 条已采集但旧初筛漏掉的研究。交付共 549 条，纳入 388 条、排除 112 条、待定 49 条、未审 0 条。
 - 期刊沿用已有分区与同行评审证据，按新分工逐篇复查。期刊纳入限有实质学术内容的原创研究和综述。单篇须有理工或医学研究问题，AI 须实际用于方法、分析或评测。评论、社论、来信、更正及撤回研究排除。仅题名相关但查不到可判定的摘要或原文段落，记录为待定。
 - CIKM 核对 CCF B（2026-v7）。程序主席报告 2024 年 Full Research Track 收稿 1,496 篇、录用 347 篇，约 23.2%。只纳入此分轨内且通过 AI4S 精筛的论文。78 条原候选中 42 条属正式长文，另外 36 条属其他分轨。全量快照 697 条跨分轨论文中，347 条与正式长文录用目录题名匹配。网站初始录用目录列 348 条长文，其中 fp0540 未在正式 DBLP 目录定位，且题名是通用语音理解；以程序主席正式统计为准。[CCF 目录](https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml) · [程序主席前言](https://research.tudelft.nl/files/235862358/3627673.fm.pdf) · [ACM 论文集](https://dl.acm.org/doi/proceedings/10.1145/3627673) · [会议录用目录](https://cikm2024.github.io/accepted-papers/) · [DBLP 分轨目录](https://dblp.org/db/conf/cikm/cikm2024.html)
