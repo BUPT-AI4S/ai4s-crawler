@@ -193,8 +193,8 @@
       "label_en": "Masked language modeling",
       "definition": "在语言或其他离散序列上预测被掩码的词元。",
       "aliases": [
-        "Masked language modelling",
-        "MLM"
+        "MLM",
+        "Masked language modelling"
       ]
     },
     {
@@ -317,9 +317,9 @@
       "label_en": "AI for engineering sciences",
       "definition": "用 AI 解决工程系统或工程过程中的具体技术研究问题，如结构、控制、制造或设备性能。",
       "aliases": [
+        "AI for engineering",
         "AI for 工程科学",
-        "工程科学",
-        "AI for engineering"
+        "工程科学"
       ]
     },
     {
@@ -328,7 +328,8 @@
       "label_en": "Medical image segmentation",
       "definition": "在医学图像或视频中标定器官、组织、病灶或其他临床相关结构的区域。",
       "aliases": [
-        "Clinical image segmentation"
+        "Clinical image segmentation",
+        "医学图像分割"
       ]
     },
     {
@@ -350,7 +351,10 @@
       "axis": "task",
       "label": "医学影像配准",
       "label_en": "Medical image registration",
-      "definition": "对齐不同患者、时点或成像模态的医学影像。"
+      "definition": "对齐不同患者、时点或成像模态的医学影像。",
+      "aliases": [
+        "医学图像配准"
+      ]
     },
     {
       "axis": "task",
@@ -362,7 +366,11 @@
       "axis": "task",
       "label": "医学影像合成",
       "label_en": "Medical image synthesis",
-      "definition": "生成或转换用于临床或生物医学研究的医学图像。"
+      "definition": "生成或转换用于临床或生物医学研究的医学图像。",
+      "aliases": [
+        "Medical image generation",
+        "医学图像生成"
+      ]
     },
     {
       "axis": "task",
@@ -410,13 +418,20 @@
       "axis": "method",
       "label": "卷积神经网络",
       "label_en": "Convolutional neural network",
-      "definition": "使用可训练卷积算子提取局部特征的神经网络。"
+      "definition": "使用可训练卷积算子提取局部特征的神经网络。",
+      "aliases": [
+        "CNN",
+        "深度卷积网络"
+      ]
     },
     {
       "axis": "method",
       "label": "随机森林",
       "label_en": "Random forest",
-      "definition": "通过对多棵随机化决策树的输出聚合进行推断。"
+      "definition": "通过对多棵随机化决策树的输出聚合进行推断。",
+      "aliases": [
+        "RF"
+      ]
     },
     {
       "axis": "method",
@@ -430,12 +445,15 @@
       "label_en": "Evolutionary optimization",
       "definition": "通过种群、适应度选择及变异或重组等演化机制搜索科学或工程问题的解、程序、控制器或特征；包括遗传算法、遗传编程与差分进化。不因模拟生物演化现象本身而使用，也不将所有群智能或树搜索方法并入。",
       "aliases": [
-        "Evolutionary computation",
         "Evolutionary algorithm",
         "Evolutionary algorithms",
+        "Evolutionary computation",
+        "Genetic algorithm",
+        "演化算法",
         "进化优化",
         "进化算法",
-        "演化算法"
+        "遗传优化",
+        "遗传算法"
       ]
     },
     {
@@ -455,8 +473,8 @@
       "definition": "通过递归隐状态建模序列依赖的神经网络，包括LSTM和GRU；需实际用于论文方法。",
       "aliases": [
         "RNN",
-        "循环网络",
-        "Recurrent neural networks"
+        "Recurrent neural networks",
+        "循环网络"
       ]
     },
     {
@@ -505,7 +523,9 @@
       "definition": "用计算模型辅助识别或筛查特定疾病及病理状态，包括依据影像、分子或生理数据进行的疾病判别。",
       "aliases": [
         "Computer-aided diagnosis",
-        "疾病筛查"
+        "Disease diagnosis",
+        "疾病筛查",
+        "疾病诊断"
       ]
     },
     {
@@ -534,8 +554,8 @@
       "label_en": "Domain adaptation",
       "definition": "在源域与目标域数据分布存在差异时，通过模型或表征调整提高目标域的任务表现。",
       "aliases": [
-        "域适应",
-        "Unsupervised domain adaptation"
+        "Unsupervised domain adaptation",
+        "域适应"
       ]
     },
     {
@@ -544,9 +564,4020 @@
       "label_en": "Traffic flow forecasting",
       "definition": "根据交通观测与路网信息预测未来的交通流量、速度、拥堵程度或其时空演变。",
       "aliases": [
-        "道路交通流预测",
-        "Road traffic forecasting"
+        "Road traffic forecasting",
+        "道路交通流预测"
       ]
+    },
+    {
+      "axis": "task",
+      "label": "吸附材料设计",
+      "label_en": "Adsorbent design",
+      "definition": "根据目标吸附质或分离用途筛选、生成或优化吸附材料结构与成分。"
+    },
+    {
+      "axis": "task",
+      "label": "吸附能预测",
+      "label_en": "Adsorption energy prediction",
+      "definition": "预测分子或原子在催化剂等表面的吸附能。"
+    },
+    {
+      "axis": "task",
+      "label": "吸附性能预测",
+      "label_en": "Adsorption performance prediction",
+      "definition": "预测吸附材料对特定吸附质的容量、选择性或其他吸附性能。"
+    },
+    {
+      "axis": "task",
+      "label": "药物不良反应预测",
+      "label_en": "Adverse drug reaction prediction",
+      "definition": "预测药物相关的不良反应或遗传易感风险。"
+    },
+    {
+      "axis": "task",
+      "label": "气动噪声重建",
+      "label_en": "Aeroacoustic reconstruction",
+      "definition": "从有限传感器信息重建气动声压、噪声谱或流动模态。"
+    },
+    {
+      "axis": "task",
+      "label": "气动设计优化",
+      "label_en": "Aerodynamic design optimization",
+      "definition": "按气动目标优化翼型、飞行器外形或相关设计参数。"
+    },
+    {
+      "axis": "task",
+      "label": "气动性能预测",
+      "label_en": "Aerodynamic performance prediction",
+      "definition": "预测翼型、飞行器或相关结构的气动力、压力与非定常气动响应。"
+    },
+    {
+      "axis": "task",
+      "label": "气溶胶性质反演",
+      "label_en": "Aerosol property retrieval",
+      "definition": "由遥感辐射或其他观测反演气溶胶光学厚度、吸收及散射性质。"
+    },
+    {
+      "axis": "task",
+      "label": "农业杂草检测",
+      "label_en": "Agricultural weed detection",
+      "definition": "在田间图像或遥感观测中识别并定位杂草与作物。"
+    },
+    {
+      "axis": "task",
+      "label": "空气质量预测",
+      "label_en": "Air quality forecasting",
+      "definition": "预测空气污染物浓度及其时空输运演化。"
+    },
+    {
+      "axis": "task",
+      "label": "厌氧消化建模",
+      "label_en": "Anaerobic digestion modeling",
+      "definition": "预测厌氧消化中的产气、出水或能量回收性能。"
+    },
+    {
+      "axis": "task",
+      "label": "厌氧消化优化",
+      "label_en": "Anaerobic digestion optimization",
+      "definition": "优化厌氧消化的材料添加或工艺条件以改善转化与能量回收。"
+    },
+    {
+      "axis": "task",
+      "label": "医学解剖形态建模",
+      "label_en": "Anatomical shape modeling",
+      "definition": "建模或重建解剖结构的几何形态及其与协变量的关系。"
+    },
+    {
+      "axis": "task",
+      "label": "动物行为分析",
+      "label_en": "Animal behavior analysis",
+      "definition": "检测、分类或量化实验动物行为、发声及其关系。"
+    },
+    {
+      "axis": "task",
+      "label": "抗生素耐药预测",
+      "label_en": "Antibiotic resistance prediction",
+      "definition": "利用基因组或其他生物数据预测微生物的抗生素耐药表型。"
+    },
+    {
+      "axis": "task",
+      "label": "抗体设计",
+      "label_en": "Antibody design",
+      "definition": "生成或优化抗体序列、结构或互补决定区，包括亲和力成熟。"
+    },
+    {
+      "axis": "task",
+      "label": "抗体人源性预测",
+      "label_en": "Antibody humanness prediction",
+      "definition": "根据抗体序列或表征预测其与人源抗体特征的接近程度。"
+    },
+    {
+      "axis": "task",
+      "label": "抗体免疫原性预测",
+      "label_en": "Antibody immunogenicity prediction",
+      "definition": "预测抗体诱发免疫反应的风险或程度。"
+    },
+    {
+      "axis": "task",
+      "label": "抗原表位预测",
+      "label_en": "Antigen epitope prediction",
+      "definition": "定位抗原中可能被抗体识别或结合的表位。"
+    },
+    {
+      "axis": "task",
+      "label": "抗菌肽活性预测",
+      "label_en": "Antimicrobial peptide activity prediction",
+      "definition": "预测肽对特定微生物的抑制活性或最低抑菌浓度。"
+    },
+    {
+      "axis": "task",
+      "label": "耐药基因传播分析",
+      "label_en": "Antimicrobial resistance gene transmission analysis",
+      "definition": "识别耐药基因载体及其宿主关系，以研究环境中的耐药传播风险。"
+    },
+    {
+      "axis": "task",
+      "label": "宇宙天体分类",
+      "label_en": "Astronomical object classification",
+      "definition": "根据天文观测区分天体类别。"
+    },
+    {
+      "axis": "task",
+      "label": "天体红移预测",
+      "label_en": "Astronomical redshift prediction",
+      "definition": "由天文观测估计天体红移。"
+    },
+    {
+      "axis": "task",
+      "label": "大气甲烷反演",
+      "label_en": "Atmospheric methane retrieval",
+      "definition": "从遥感光谱或相关观测估计大气甲烷含量或分布。"
+    },
+    {
+      "axis": "task",
+      "label": "细菌基因组分类",
+      "label_en": "Bacterial genome classification",
+      "definition": "根据细菌全基因组信息识别菌株、类别或侵袭相关表型。"
+    },
+    {
+      "axis": "task",
+      "label": "电池容量估计",
+      "label_en": "Battery capacity estimation",
+      "definition": "估计电池可用容量或恢复容量；容量本身不同于归一化健康状态及剩余能量。"
+    },
+    {
+      "axis": "task",
+      "label": "电池冷却设计",
+      "label_en": "Battery cooling design",
+      "definition": "优化电池冷却板或冷却系统结构以改善温度分布与热流性能。"
+    },
+    {
+      "axis": "task",
+      "label": "电池循环寿命预测",
+      "label_en": "Battery cycle life prediction",
+      "definition": "根据早期循环或老化实验预测电池达到寿命终点时的总循环寿命，区别于当前时刻的剩余寿命。"
+    },
+    {
+      "axis": "task",
+      "label": "电池退化拐点预测",
+      "label_en": "Battery degradation knee prediction",
+      "definition": "预测电池容量或性能退化进入加速阶段的拐点。"
+    },
+    {
+      "axis": "task",
+      "label": "电池退化预测",
+      "label_en": "Battery degradation prediction",
+      "definition": "预测电池老化参数、退化轨迹或模式随时间的变化。"
+    },
+    {
+      "axis": "task",
+      "label": "电池电化学场预测",
+      "label_en": "Battery electrochemical field prediction",
+      "definition": "预测电极颗粒或电池内部的锂分布等电化学状态场。"
+    },
+    {
+      "axis": "task",
+      "label": "电池电热建模",
+      "label_en": "Battery electrothermal modeling",
+      "definition": "预测电池电压、温度及电热耦合动力学。"
+    },
+    {
+      "axis": "task",
+      "label": "电池故障定位",
+      "label_en": "Battery fault localization",
+      "definition": "识别电池模块中发生故障或热失控的电芯位置。"
+    },
+    {
+      "axis": "task",
+      "label": "电池不一致性估计",
+      "label_en": "Battery inconsistency estimation",
+      "definition": "估计电池包内电芯容量、内阻等特征的差异。"
+    },
+    {
+      "axis": "task",
+      "label": "电池剩余能量预测",
+      "label_en": "Battery remaining energy prediction",
+      "definition": "预测电池在给定工况下尚可释放的电能。"
+    },
+    {
+      "axis": "task",
+      "label": "电池剩余寿命预测",
+      "label_en": "Battery remaining useful life prediction",
+      "definition": "根据已有老化或运行数据预测电池到达寿命终点前的剩余时间或循环数。",
+      "aliases": [
+        "电池RUL预测",
+        "Battery RUL prediction"
+      ]
+    },
+    {
+      "axis": "task",
+      "label": "电池荷电状态估计",
+      "label_en": "Battery state-of-charge estimation",
+      "definition": "根据电压、电流、温度或相关数据估计电池荷电状态SOC。",
+      "aliases": [
+        "锂电池SOC估计",
+        "电池荷电状态预测",
+        "Battery SOC estimation"
+      ]
+    },
+    {
+      "axis": "task",
+      "label": "电池健康状态估计",
+      "label_en": "Battery state-of-health estimation",
+      "definition": "估计或预测单体及电池包内电芯的健康状态SOH；与荷电状态SOC和剩余寿命RUL区分。",
+      "aliases": [
+        "电池健康状态预测",
+        "Battery SOH estimation"
+      ]
+    },
+    {
+      "axis": "task",
+      "label": "电池热失控检测",
+      "label_en": "Battery thermal runaway detection",
+      "definition": "识别、诊断或预警电池热失控及其异常状态。"
+    },
+    {
+      "axis": "task",
+      "label": "分岔分析",
+      "label_en": "Bifurcation analysis",
+      "definition": "识别动力系统随参数变化的分岔、拓扑变化或状态转变。"
+    },
+    {
+      "axis": "task",
+      "label": "生物年龄预测",
+      "label_en": "Biological age prediction",
+      "definition": "根据分子或生理特征估计反映衰老状态的生物年龄。"
+    },
+    {
+      "axis": "task",
+      "label": "生物表型重建",
+      "label_en": "Biological phenotype reconstruction",
+      "definition": "由成像或传感信息重建生物体形态及可定量表型。"
+    },
+    {
+      "axis": "task",
+      "label": "生物标志物评估",
+      "label_en": "Biomarker assessment",
+      "definition": "检验候选生物标志物的生理特异性、预测贡献或可靠性。"
+    },
+    {
+      "axis": "task",
+      "label": "生物标志物发现",
+      "label_en": "Biomarker discovery",
+      "definition": "识别能够指示生理状态、疾病、亚型或反应的分子、微生物或信号特征；关联候选不等同已验证的临床标志物。"
+    },
+    {
+      "axis": "task",
+      "label": "生物医学知识检索",
+      "label_en": "Biomedical knowledge retrieval",
+      "definition": "从文献、知识图谱或跨模态生物医学资源中检索研究证据及相关信息。"
+    },
+    {
+      "axis": "task",
+      "label": "血糖预测",
+      "label_en": "Blood glucose prediction",
+      "definition": "根据连续血糖监测、生理或治疗信息预测未来血糖水平及动态轨迹。"
+    },
+    {
+      "axis": "task",
+      "label": "脑龄预测",
+      "label_en": "Brain age prediction",
+      "definition": "从脑影像、电生理或其他脑特征估计功能或结构脑龄。"
+    },
+    {
+      "axis": "task",
+      "label": "脑结构功能耦合分析",
+      "label_en": "Brain structure-function coupling analysis",
+      "definition": "分析解剖脑连接、脑几何与动态功能活动之间的关系。"
+    },
+    {
+      "axis": "task",
+      "label": "脑机接口解码",
+      "label_en": "Brain-computer interface decoding",
+      "definition": "从脑信号解码意图、运动想象或控制指令。"
+    },
+    {
+      "axis": "task",
+      "label": "建筑热负荷预测",
+      "label_en": "Building thermal load prediction",
+      "definition": "预测建筑供冷、供热负荷及相关室温与空调功率动态。"
+    },
+    {
+      "axis": "task",
+      "label": "癌基因预测",
+      "label_en": "Cancer gene prediction",
+      "definition": "识别可能参与肿瘤发生或发展的基因。"
+    },
+    {
+      "axis": "task",
+      "label": "催化剂发现",
+      "label_en": "Catalyst discovery",
+      "definition": "预测催化剂性能并筛选或设计具有目标活性、选择性或稳定性的催化剂。"
+    },
+    {
+      "axis": "task",
+      "label": "催化吸附构型预测",
+      "label_en": "Catalytic adsorption configuration prediction",
+      "definition": "预测吸附物在催化表面的位点、取向或最低能量吸附构型。"
+    },
+    {
+      "axis": "task",
+      "label": "细胞图像分割",
+      "label_en": "Cell image segmentation",
+      "definition": "从显微图像中分割细胞及其形态区域。"
+    },
+    {
+      "axis": "task",
+      "label": "细胞轨迹推断",
+      "label_en": "Cell trajectory inference",
+      "definition": "推断细胞状态变化、发育分化轨迹或伪时间，包括RNA速度辅助分析。"
+    },
+    {
+      "axis": "task",
+      "label": "细胞类型识别",
+      "label_en": "Cell type identification",
+      "definition": "根据单细胞分子或空间数据注释、分类或识别细胞类型与身份。"
+    },
+    {
+      "axis": "task",
+      "label": "细胞通信推断",
+      "label_en": "Cell-cell communication inference",
+      "definition": "推断细胞间信号、空间共定位或相互作用网络。"
+    },
+    {
+      "axis": "task",
+      "label": "细胞衰老表型分析",
+      "label_en": "Cellular aging phenotype analysis",
+      "definition": "检测细胞分裂、出芽或死亡事件并量化寿命和衰老表型。"
+    },
+    {
+      "axis": "task",
+      "label": "细胞扰动响应预测",
+      "label_en": "Cellular perturbation response prediction",
+      "definition": "预测细胞在药物、基因或其他干预下的状态、表达或群体分布变化。"
+    },
+    {
+      "axis": "task",
+      "label": "脑血管闭塞检测",
+      "label_en": "Cerebral vessel occlusion detection",
+      "definition": "从脑血管影像识别大血管闭塞等脑血管阻塞状态。"
+    },
+    {
+      "axis": "task",
+      "label": "化学物质检测",
+      "label_en": "Chemical substance detection",
+      "definition": "依据光谱或其他传感数据识别目标化合物及其残留。"
+    },
+    {
+      "axis": "task",
+      "label": "化学合成规划",
+      "label_en": "Chemical synthesis planning",
+      "definition": "预测产品前体并规划、排序或优化多步化学合成路线。",
+      "aliases": [
+        "逆合成路线规划",
+        "Retrosynthetic planning"
+      ]
+    },
+    {
+      "axis": "task",
+      "label": "芯片逻辑综合",
+      "label_en": "Chip logic synthesis",
+      "definition": "优化布尔电路的逻辑表示或变换序列以改善面积、延时或综合效率。"
+    },
+    {
+      "axis": "task",
+      "label": "芯片物理设计预测",
+      "label_en": "Chip physical design prediction",
+      "definition": "学习芯片物理设计中的布线、时序、功耗等工程量或过程。"
+    },
+    {
+      "axis": "task",
+      "label": "芯片布局",
+      "label_en": "Chip placement",
+      "definition": "优化芯片宏单元等电路单元在物理空间中的位置。"
+    },
+    {
+      "axis": "task",
+      "label": "染色质区室预测",
+      "label_en": "Chromatin compartment prediction",
+      "definition": "根据表观遗传等信息预测染色质A/B区室及空间组织。"
+    },
+    {
+      "axis": "task",
+      "label": "气候场重建",
+      "label_en": "Climate field reconstruction",
+      "definition": "从稀疏或低分辨率观测恢复气候、气象或海温等连续场。"
+    },
+    {
+      "axis": "task",
+      "label": "气候建模",
+      "label_en": "Climate modeling",
+      "definition": "用学习模型代理、分析或预测气候系统状态及变化。"
+    },
+    {
+      "axis": "task",
+      "label": "临床队列发现",
+      "label_en": "Clinical cohort discovery",
+      "definition": "从临床记录中识别具有共同特征、共病或并发症关系的患者群体。"
+    },
+    {
+      "axis": "task",
+      "label": "临床文本分类",
+      "label_en": "Clinical text classification",
+      "definition": "对临床或病理文本进行语义、诊断或关系类别识别。"
+    },
+    {
+      "axis": "task",
+      "label": "燃烧室设计",
+      "label_en": "Combustion chamber design",
+      "definition": "优化发动机等燃烧装置的几何结构以改善燃烧性能。"
+    },
+    {
+      "axis": "task",
+      "label": "通信解码",
+      "label_en": "Communication decoding",
+      "definition": "从通信信道接收数据恢复信息或码字，包括纠错码解码。"
+    },
+    {
+      "axis": "task",
+      "label": "通信信号检测",
+      "label_en": "Communication signal detection",
+      "definition": "根据含噪接收信号识别发送信号或通信状态。"
+    },
+    {
+      "axis": "task",
+      "label": "材料本构发现",
+      "label_en": "Constitutive law discovery",
+      "definition": "从数据或模拟反馈发现描述材料力学响应的本构关系。"
+    },
+    {
+      "axis": "task",
+      "label": "宇宙微波背景重建",
+      "label_en": "Cosmic microwave background reconstruction",
+      "definition": "从含噪观测恢复宇宙微波背景信号或相关场。"
+    },
+    {
+      "axis": "task",
+      "label": "作物产量预测",
+      "label_en": "Crop yield prediction",
+      "definition": "根据气候、土壤、遥感或其他数据预测作物单产或产量。"
+    },
+    {
+      "axis": "task",
+      "label": "作物类型制图",
+      "label_en": "Crop-type mapping",
+      "definition": "识别农田种植作物类别及其空间分布。"
+    },
+    {
+      "axis": "task",
+      "label": "晶体性质预测",
+      "label_en": "Crystal property prediction",
+      "definition": "由晶体组成与周期结构预测材料性质。"
+    },
+    {
+      "axis": "task",
+      "label": "晶体结构生成",
+      "label_en": "Crystal structure generation",
+      "definition": "生成无机晶体的组成、晶格与原子位置，包括受对称性或性质约束的生成。"
+    },
+    {
+      "axis": "task",
+      "label": "晶体结构预测",
+      "label_en": "Crystal structure prediction",
+      "definition": "根据给定组成或其他条件预测可能的晶体结构。"
+    },
+    {
+      "axis": "task",
+      "label": "晶体张量性质预测",
+      "label_en": "Crystal tensor property prediction",
+      "definition": "预测晶体的介电、压电、弹性等张量性质及其对称性。"
+    },
+    {
+      "axis": "task",
+      "label": "微分方程求解",
+      "label_en": "Differential equation solving",
+      "definition": "通过学习辅助数值方法求解常微分或其他微分方程系统。"
+    },
+    {
+      "axis": "task",
+      "label": "疾病分子机制解析",
+      "label_en": "Disease molecular mechanism analysis",
+      "definition": "利用分子数据和模型提出或分析疾病相关分子过程与调控机制，不预设已获得因果证明。"
+    },
+    {
+      "axis": "task",
+      "label": "疾病进展预测",
+      "label_en": "Disease progression prediction",
+      "definition": "预测疾病状态随时间的发展、转化或严重程度变化。"
+    },
+    {
+      "axis": "task",
+      "label": "疾病风险预测",
+      "label_en": "Disease risk prediction",
+      "definition": "预测未来发生疾病、不良结局或并发风险的可能性。"
+    },
+    {
+      "axis": "task",
+      "label": "疾病分型",
+      "label_en": "Disease subtyping",
+      "definition": "根据分子、代谢、影像或其他表型区分疾病亚型或疾病状态。"
+    },
+    {
+      "axis": "task",
+      "label": "水体溶解氧预测",
+      "label_en": "Dissolved oxygen prediction",
+      "definition": "预测水体溶解氧浓度或骤降、缺氧事件。"
+    },
+    {
+      "axis": "task",
+      "label": "DNA序列设计",
+      "label_en": "DNA sequence design",
+      "definition": "生成或优化满足指定序列或功能目标的DNA序列。"
+    },
+    {
+      "axis": "task",
+      "label": "药物适应证预测",
+      "label_en": "Drug indication prediction",
+      "definition": "预测药物可能对应的疾病适应证或重定位用途。"
+    },
+    {
+      "axis": "task",
+      "label": "药物反应预测",
+      "label_en": "Drug response prediction",
+      "definition": "预测特定细胞、组织或个体对药物的反应，包括剂量反应曲线和抑制效应。"
+    },
+    {
+      "axis": "task",
+      "label": "药物靶点发现",
+      "label_en": "Drug target discovery",
+      "definition": "识别与疾病机制或干预相关的候选基因、蛋白或调控靶点。"
+    },
+    {
+      "axis": "task",
+      "label": "药物虚拟筛选",
+      "label_en": "Drug virtual screening",
+      "definition": "利用计算模型从候选化合物中优选可能具有目标生物活性或结合能力的药物候选。"
+    },
+    {
+      "axis": "task",
+      "label": "药物靶点相互作用预测",
+      "label_en": "Drug-target interaction prediction",
+      "definition": "预测药物或小分子与生物靶点之间是否存在作用关系。"
+    },
+    {
+      "axis": "task",
+      "label": "动力系统结构推断",
+      "label_en": "Dynamical interaction structure inference",
+      "definition": "推断动力系统变量或对象之间的相互作用结构。"
+    },
+    {
+      "axis": "task",
+      "label": "动力系统状态估计",
+      "label_en": "Dynamical state estimation",
+      "definition": "由带噪或部分观测估计动态系统的潜在当前状态或过滤分布。"
+    },
+    {
+      "axis": "task",
+      "label": "动力系统辨识",
+      "label_en": "Dynamical system identification",
+      "definition": "根据输入输出或轨迹观测识别动力系统参数、模型结构或可辨识性。"
+    },
+    {
+      "axis": "task",
+      "label": "动力系统建模",
+      "label_en": "Dynamical system modeling",
+      "definition": "从状态或观测数据学习系统演化规律、状态表示或转移模型。"
+    },
+    {
+      "axis": "task",
+      "label": "动力系统重建",
+      "label_en": "Dynamical system reconstruction",
+      "definition": "从不完整或低维观测重建系统的状态空间、吸引子或生成动力学。"
+    },
+    {
+      "axis": "task",
+      "label": "动力系统轨迹预测",
+      "label_en": "Dynamical trajectory prediction",
+      "definition": "预测动力系统未来状态或轨迹，包括长期、混沌与跨参数预测。"
+    },
+    {
+      "axis": "task",
+      "label": "电力负荷预测",
+      "label_en": "Electric load forecasting",
+      "definition": "预测建筑、区域或电网的电力需求及其时间变化。"
+    },
+    {
+      "axis": "task",
+      "label": "电磁场预测",
+      "label_en": "Electromagnetic field prediction",
+      "definition": "预测电磁场分布及其时空演化。"
+    },
+    {
+      "axis": "task",
+      "label": "电磁超表面设计",
+      "label_en": "Electromagnetic metasurface design",
+      "definition": "根据目标波束或电磁响应设计超表面的编码或结构。"
+    },
+    {
+      "axis": "task",
+      "label": "电子结构预测",
+      "label_en": "Electronic structure prediction",
+      "definition": "预测分子或材料的电子密度、哈密顿矩阵等电子结构量。"
+    },
+    {
+      "axis": "task",
+      "label": "电生理信号分析",
+      "label_en": "Electrophysiological signal analysis",
+      "definition": "从电生理记录中检测、分类或表征生理事件及异常状态。"
+    },
+    {
+      "axis": "task",
+      "label": "胚胎倍性预测",
+      "label_en": "Embryo ploidy prediction",
+      "definition": "由胚胎图像或相关特征预测染色体倍性状态。"
+    },
+    {
+      "axis": "task",
+      "label": "储能系统控制",
+      "label_en": "Energy storage system control",
+      "definition": "调节电池等储能设备的充放电功率及协同运行以满足能源系统约束与目标。"
+    },
+    {
+      "axis": "task",
+      "label": "能源系统优化",
+      "label_en": "Energy system optimization",
+      "definition": "优化能源转换、供冷供热或混合动力系统的设计和运行参数。"
+    },
+    {
+      "axis": "task",
+      "label": "能源系统性能预测",
+      "label_en": "Energy system performance prediction",
+      "definition": "预测能源装置及耦合系统的功率、温度、效率或其他物理运行性能。"
+    },
+    {
+      "axis": "task",
+      "label": "工程设计知识提取",
+      "label_en": "Engineering design knowledge extraction",
+      "definition": "从文献、方案或科学资料中提取支持工程设计的实体、关系和知识。"
+    },
+    {
+      "axis": "task",
+      "label": "工程传感数据重建",
+      "label_en": "Engineering sensor data reconstruction",
+      "definition": "恢复、去噪或补全用于工程计量与健康监测的传感数据。"
+    },
+    {
+      "axis": "task",
+      "label": "藻类环境驱动分析",
+      "label_en": "Environmental drivers of algal dynamics",
+      "definition": "识别水华、藻类演替、藻毒素或嗅味物质的环境驱动及关联。"
+    },
+    {
+      "axis": "task",
+      "label": "环境健康关系推断",
+      "label_en": "Environmental health association inference",
+      "definition": "估计环境暴露与健康结局的关系，在明确因果假设下研究环境健康效应。"
+    },
+    {
+      "axis": "task",
+      "label": "环境污染源检测",
+      "label_en": "Environmental pollution source detection",
+      "definition": "从观测中识别和定位露天垃圾等环境污染源。"
+    },
+    {
+      "axis": "task",
+      "label": "环境修复控制",
+      "label_en": "Environmental remediation control",
+      "definition": "根据污染状态预测与反馈调整环境修复过程或条件。"
+    },
+    {
+      "axis": "task",
+      "label": "酶设计",
+      "label_en": "Enzyme design",
+      "definition": "生成或优化具有目标催化功能、底物偏好或催化性能的酶序列及结构。"
+    },
+    {
+      "axis": "task",
+      "label": "酶筛选",
+      "label_en": "Enzyme screening",
+      "definition": "根据目标反应、底物或结构信息选择可能催化该反应的酶候选。"
+    },
+    {
+      "axis": "task",
+      "label": "方程发现",
+      "label_en": "Equation discovery",
+      "definition": "从观测数据或计算反馈中发现描述关系及演化规律的数学表达式或方程。"
+    },
+    {
+      "axis": "task",
+      "label": "方程响应预测",
+      "label_en": "Equation response prediction",
+      "definition": "学习方程模型参数到最大位移、最高温度等科学响应量的映射，不要求重建完整方程解。"
+    },
+    {
+      "axis": "task",
+      "label": "方程求解误差认证",
+      "label_en": "Equation solution error certification",
+      "definition": "对学习辅助方程解的残差或误差给出可验证的界限或证书。"
+    },
+    {
+      "axis": "task",
+      "label": "平衡态采样",
+      "label_en": "Equilibrium sampling",
+      "definition": "从统计物理或分子体系的平衡分布、能量分布或不变分布中产生样本。"
+    },
+    {
+      "axis": "task",
+      "label": "纠错码设计",
+      "label_en": "Error-correcting code design",
+      "definition": "设计或优化通信编码核、码结构及编码器以提高可靠性。"
+    },
+    {
+      "axis": "task",
+      "label": "洪水淹没制图",
+      "label_en": "Flood inundation mapping",
+      "definition": "识别洪水淹没范围与空间分布。"
+    },
+    {
+      "axis": "task",
+      "label": "洪涝风险预测",
+      "label_en": "Flood risk prediction",
+      "definition": "估计特定区域发生洪涝或遭受洪涝影响的可能性及风险。"
+    },
+    {
+      "axis": "task",
+      "label": "洪水模拟预报",
+      "label_en": "Flood simulation and forecasting",
+      "definition": "模拟或预测洪水水动力、洪峰及淹没演变。"
+    },
+    {
+      "axis": "task",
+      "label": "流场重建",
+      "label_en": "Flow field reconstruction",
+      "definition": "根据稀疏观测或低分辨率信息恢复流体状态场。"
+    },
+    {
+      "axis": "task",
+      "label": "流体动力学模拟",
+      "label_en": "Fluid dynamics simulation",
+      "definition": "预测或模拟流体速度、压力、湍流或多相流等动力演化，包括CFD代理。"
+    },
+    {
+      "axis": "task",
+      "label": "流体物性预测",
+      "label_en": "Fluid property prediction",
+      "definition": "预测流体自扩散系数、状态方程参数或其他热物性。"
+    },
+    {
+      "axis": "task",
+      "label": "森林可燃物估计",
+      "label_en": "Forest fuel estimation",
+      "definition": "估计森林冠层或其他可燃物的结构及数量参数以支持火行为研究。"
+    },
+    {
+      "axis": "task",
+      "label": "形式定理证明",
+      "label_en": "Formal theorem proving",
+      "definition": "构造或检验可由形式证明系统核查的数学证明，包括前提检索和自动形式化辅助证明。",
+      "aliases": [
+        "形式数学定理证明",
+        "Formalized theorem proving",
+        "形式化定理证明"
+      ]
+    },
+    {
+      "axis": "task",
+      "label": "气液含率估计",
+      "label_en": "Gas holdup estimation",
+      "definition": "根据压力或工况等观测估计气液反应器中的气体体积分数。"
+    },
+    {
+      "axis": "task",
+      "label": "基因调控网络推断",
+      "label_en": "Gene regulatory network inference",
+      "definition": "从表达、序列或干预数据推断基因间调控关系及网络结构。"
+    },
+    {
+      "axis": "task",
+      "label": "基因调控位点预测",
+      "label_en": "Gene regulatory site prediction",
+      "definition": "预测增强子、转录因子结合位点或其他基因调控序列位置。"
+    },
+    {
+      "axis": "task",
+      "label": "基因变异效应预测",
+      "label_en": "Genetic variant effect prediction",
+      "definition": "预测基因组序列变异对生物功能或表型的影响。"
+    },
+    {
+      "axis": "task",
+      "label": "基因组功能注释",
+      "label_en": "Genomic functional annotation",
+      "definition": "从基因组序列或相关表示识别功能类别、功能区段或调控注释。"
+    },
+    {
+      "axis": "task",
+      "label": "地下水位预测",
+      "label_en": "Groundwater level prediction",
+      "definition": "预测含水层或地下水位随时间的变化。"
+    },
+    {
+      "axis": "task",
+      "label": "地下水盐化预测",
+      "label_en": "Groundwater salinization prediction",
+      "definition": "预测含水层盐化程度及其空间分布。"
+    },
+    {
+      "axis": "task",
+      "label": "硬件资源调度",
+      "label_en": "Hardware resource scheduling",
+      "definition": "在资源约束下安排芯片或高性能计算设计中的计算与操作。"
+    },
+    {
+      "axis": "task",
+      "label": "中药质量鉴别",
+      "label_en": "Herbal medicine quality identification",
+      "definition": "由代谢或其他特征区分中药的品种、产地、生产条件或质量等级。"
+    },
+    {
+      "axis": "task",
+      "label": "高能物理数据分析",
+      "label_en": "High-energy physics data analysis",
+      "definition": "分析高能物理观测或模拟点云中的结构、类别或科学特征。"
+    },
+    {
+      "axis": "task",
+      "label": "组织病理分类",
+      "label_en": "Histopathology classification",
+      "definition": "对组织病理图像、全切片或细胞学切片进行疾病及组织类别识别。"
+    },
+    {
+      "axis": "task",
+      "label": "人机协作拆解",
+      "label_en": "Human-robot collaborative disassembly",
+      "definition": "规划或控制人类与机器人协作完成部件或电池包拆解。"
+    },
+    {
+      "axis": "task",
+      "label": "储氢焓预测",
+      "label_en": "Hydrogen-storage enthalpy prediction",
+      "definition": "预测储氢合金或氢化物的形成焓等储氢相关热力学量。"
+    },
+    {
+      "axis": "task",
+      "label": "冰架融化监测",
+      "label_en": "Ice-shelf melt monitoring",
+      "definition": "从多源观测识别或重建冰架表面融化的时空记录。"
+    },
+    {
+      "axis": "task",
+      "label": "免疫反应预测",
+      "label_en": "Immune response prediction",
+      "definition": "预测疫苗或其他免疫刺激引发的细胞、抗体等免疫响应。"
+    },
+    {
+      "axis": "task",
+      "label": "工业过程控制",
+      "label_en": "Industrial process control",
+      "definition": "根据物理状态及反馈调整冶炼、掘进等工业过程的运行变量。"
+    },
+    {
+      "axis": "task",
+      "label": "婴儿神经异常检测",
+      "label_en": "Infant neurological abnormality detection",
+      "definition": "由婴儿视频、姿态或生理信息识别神经功能异常状态。"
+    },
+    {
+      "axis": "task",
+      "label": "感染诊断",
+      "label_en": "Infection diagnosis",
+      "definition": "识别感染是否存在或区分病原感染类型。"
+    },
+    {
+      "axis": "task",
+      "label": "传染病监测",
+      "label_en": "Infectious disease surveillance",
+      "definition": "通过污水微生物组或其他观测监测病原与传染病发生变化。"
+    },
+    {
+      "axis": "task",
+      "label": "传染病传播干预",
+      "label_en": "Infectious disease transmission intervention",
+      "definition": "推断或优化传播网络上的干预策略以抑制传染事件。"
+    },
+    {
+      "axis": "task",
+      "label": "积分方程求解",
+      "label_en": "Integral equation solving",
+      "definition": "数值求解含未知函数积分关系的方程，包括Fredholm积分方程。"
+    },
+    {
+      "axis": "task",
+      "label": "集成电路设计",
+      "label_en": "Integrated circuit design",
+      "definition": "依据功能与性能目标生成或优化电路结构、拓扑及硬件描述。"
+    },
+    {
+      "axis": "task",
+      "label": "集成电路验证",
+      "label_en": "Integrated circuit verification",
+      "definition": "检验电路设计或硬件描述的功能正确性及一致性。"
+    },
+    {
+      "axis": "task",
+      "label": "积分微分方程求解",
+      "label_en": "Integro-differential equation solving",
+      "definition": "求解同时包含积分项与微分项的方程。"
+    },
+    {
+      "axis": "task",
+      "label": "原子间势建模",
+      "label_en": "Interatomic potential modeling",
+      "definition": "学习原子构型到势能及力的映射，用于原子或分子体系计算。"
+    },
+    {
+      "axis": "task",
+      "label": "离子浓度估计",
+      "label_en": "Ion concentration estimation",
+      "definition": "由电导率或工况等信息估计脱盐过程中的各离子浓度。"
+    },
+    {
+      "axis": "task",
+      "label": "激酶活性推断",
+      "label_en": "Kinase activity inference",
+      "definition": "由转录或其他分子数据估计激酶活性。"
+    },
+    {
+      "axis": "task",
+      "label": "地表覆盖变化检测",
+      "label_en": "Land-cover change detection",
+      "definition": "识别地表覆盖变化的位置、时间、类别或长期趋势。"
+    },
+    {
+      "axis": "task",
+      "label": "地表覆盖制图",
+      "label_en": "Land-cover mapping",
+      "definition": "识别和制图地表覆盖类别及其比例。"
+    },
+    {
+      "axis": "task",
+      "label": "滑坡易发性预测",
+      "label_en": "Landslide susceptibility prediction",
+      "definition": "根据地形地质及环境特征预测滑坡易发区域或类别。"
+    },
+    {
+      "axis": "task",
+      "label": "光刻光罩设计",
+      "label_en": "Lithography mask design",
+      "definition": "生成或优化光罩使制造成像匹配目标图案。"
+    },
+    {
+      "axis": "task",
+      "label": "肝纤维化分期",
+      "label_en": "Liver fibrosis staging",
+      "definition": "从影像及临床信息估计肝纤维化阶段。"
+    },
+    {
+      "axis": "task",
+      "label": "植被长期变化重建",
+      "label_en": "Long-term vegetation change reconstruction",
+      "definition": "协调多时相或多传感器观测以重建长期植被覆盖、指数及变化趋势。"
+    },
+    {
+      "axis": "task",
+      "label": "磁约束聚变分析",
+      "label_en": "Magnetic confinement fusion analysis",
+      "definition": "分析磁约束聚变中的物理现象、系统行为或相关科学数据。"
+    },
+    {
+      "axis": "task",
+      "label": "制造孔隙预测",
+      "label_en": "Manufacturing porosity prediction",
+      "definition": "依据工艺、热观测等信息预测制造形成的孔隙率或局部孔隙缺陷。"
+    },
+    {
+      "axis": "task",
+      "label": "制造过程模拟",
+      "label_en": "Manufacturing process simulation",
+      "definition": "预测制造过程中的热、应力、相变或物料反应等物理演化。"
+    },
+    {
+      "axis": "task",
+      "label": "材料损伤预测",
+      "label_en": "Material damage prediction",
+      "definition": "预测材料裂纹、损伤或缺陷的演化。"
+    },
+    {
+      "axis": "task",
+      "label": "材料能垒预测",
+      "label_en": "Material energy barrier prediction",
+      "definition": "预测材料构型之间的能垒并分析其结构相关因素。"
+    },
+    {
+      "axis": "task",
+      "label": "材料力学响应预测",
+      "label_en": "Material mechanical response prediction",
+      "definition": "预测材料或结构在力、冲击、波动等作用下的应力、形变或动态响应。"
+    },
+    {
+      "axis": "task",
+      "label": "材料微结构重建",
+      "label_en": "Material microstructure reconstruction",
+      "definition": "从二维显微图像或其他观测重建材料三维微结构。"
+    },
+    {
+      "axis": "task",
+      "label": "材料参数识别",
+      "label_en": "Material parameter identification",
+      "definition": "根据位移场或其他观测反演材料力学、相场或本构参数。"
+    },
+    {
+      "axis": "task",
+      "label": "材料稳定性预测",
+      "label_en": "Material stability prediction",
+      "definition": "预测材料的化学、热或结构稳定性，包括含能化合物的键解离相关稳定性。"
+    },
+    {
+      "axis": "task",
+      "label": "材料结构分析",
+      "label_en": "Material structure analysis",
+      "definition": "识别材料中的原子、掺杂、缺陷或结构模式以解释结构性质关系。"
+    },
+    {
+      "axis": "task",
+      "label": "材料设计",
+      "label_en": "Materials design",
+      "definition": "按目标性质或用途设计材料成分、配方或结构，包括材料筛选与优化。"
+    },
+    {
+      "axis": "task",
+      "label": "数学性质预测",
+      "label_en": "Mathematical property prediction",
+      "definition": "根据方程或数学对象预测其性质或类别。"
+    },
+    {
+      "axis": "task",
+      "label": "机械退化预测",
+      "label_en": "Mechanical degradation prediction",
+      "definition": "预测机械设备随使用的退化状态、趋势或阶段。"
+    },
+    {
+      "axis": "task",
+      "label": "机械故障诊断",
+      "label_en": "Mechanical fault diagnosis",
+      "definition": "从机械传感或振动数据识别轴承等部件的故障类型和状态。"
+    },
+    {
+      "axis": "task",
+      "label": "机械精度优化",
+      "label_en": "Mechanical precision optimization",
+      "definition": "预测加工或传动误差并优化制造公差以改善机械精度。"
+    },
+    {
+      "axis": "task",
+      "label": "机械预测维护",
+      "label_en": "Mechanical predictive maintenance",
+      "definition": "依据设备磨损和工况等状态优化维护或更换策略。"
+    },
+    {
+      "axis": "task",
+      "label": "医学影像异常检测",
+      "label_en": "Medical image anomaly detection",
+      "definition": "识别医学影像中偏离正常组织或健康分布的异常。"
+    },
+    {
+      "axis": "task",
+      "label": "医学图像增强",
+      "label_en": "Medical image enhancement",
+      "definition": "改善已有医学影像的对比度、清晰度或其他成像质量，并保持临床相关结构。"
+    },
+    {
+      "axis": "task",
+      "label": "医学成像采样设计",
+      "label_en": "Medical imaging acquisition design",
+      "definition": "选择医学成像的采样位置、通道或测量方案以满足下游成像及诊断任务。"
+    },
+    {
+      "axis": "task",
+      "label": "医学模型解释",
+      "label_en": "Medical model interpretation",
+      "definition": "分析医学预测模型使用的特征、决策依据或可检验的解释假设。"
+    },
+    {
+      "axis": "task",
+      "label": "医学光谱成像解析",
+      "label_en": "Medical spectral imaging analysis",
+      "definition": "校正、解混或解析医学光谱成像信号以识别组织及病灶相关成分。"
+    },
+    {
+      "axis": "task",
+      "label": "医学虚拟染色",
+      "label_en": "Medical virtual staining",
+      "definition": "由未染色或其他成像信号计算生成目标染色或免疫标记的影像。"
+    },
+    {
+      "axis": "task",
+      "label": "医学图像问答",
+      "label_en": "Medical visual question answering",
+      "definition": "根据医学图像及相关信息回答影像内容或临床语义问题。"
+    },
+    {
+      "axis": "task",
+      "label": "膜分离性能预测",
+      "label_en": "Membrane separation performance prediction",
+      "definition": "预测膜过程中的离子截留、分离效率或相关性能。"
+    },
+    {
+      "axis": "task",
+      "label": "宏基因组分箱",
+      "label_en": "Metagenomic binning",
+      "definition": "将宏基因组序列片段归入可能来自相同基因组的分箱。"
+    },
+    {
+      "axis": "task",
+      "label": "金属有机框架设计",
+      "label_en": "Metal-organic framework design",
+      "definition": "生成或优化金属有机框架的构筑单元、组成或三维结构。"
+    },
+    {
+      "axis": "task",
+      "label": "气象数据同化",
+      "label_en": "Meteorological data assimilation",
+      "definition": "联合观测与预报模型估计大气初始场或更新天气状态。"
+    },
+    {
+      "axis": "task",
+      "label": "微生物群落预测",
+      "label_en": "Microbial community prediction",
+      "definition": "预测微生物群落的丰度、组成、多样性或目标类群存在性。"
+    },
+    {
+      "axis": "task",
+      "label": "微生物代谢互作解析",
+      "label_en": "Microbial metabolic interaction analysis",
+      "definition": "解析微生物群落中的代谢交换、共营养关系或污染物代谢途径。"
+    },
+    {
+      "axis": "task",
+      "label": "微生物代谢网络补全",
+      "label_en": "Microbial metabolic network completion",
+      "definition": "推断微生物代谢模型中缺失的反应或网络连接。"
+    },
+    {
+      "axis": "task",
+      "label": "水体微生物污染预测",
+      "label_en": "Microbial water contamination prediction",
+      "definition": "预测水体细菌浓度、粪便污染或相关微生物污染风险。"
+    },
+    {
+      "axis": "task",
+      "label": "微生物组宿主关联分析",
+      "label_en": "Microbiome-host association analysis",
+      "definition": "识别微生物群落与宿主组织、生理、认知或疾病表型之间的关系。"
+    },
+    {
+      "axis": "task",
+      "label": "混合器设计",
+      "label_en": "Mixer design",
+      "definition": "根据混合、能耗或流动目标优化混合器几何与运行设计。"
+    },
+    {
+      "axis": "task",
+      "label": "分子构象生成",
+      "label_en": "Molecular conformation generation",
+      "definition": "在给定分子身份或连接结构下生成、预测或采样三维构象。"
+    },
+    {
+      "axis": "task",
+      "label": "分子构象优化",
+      "label_en": "Molecular conformation optimization",
+      "definition": "通过调整分子坐标降低能量或改善构象几何。"
+    },
+    {
+      "axis": "task",
+      "label": "分子对接",
+      "label_en": "Molecular docking",
+      "definition": "预测小分子配体相对蛋白质等受体的结合姿态或复合构象，包括柔性与盲对接。"
+    },
+    {
+      "axis": "task",
+      "label": "分子动力学模拟",
+      "label_en": "Molecular dynamics simulation",
+      "definition": "预测或模拟分子体系随时间的坐标、运动或相互作用演化。"
+    },
+    {
+      "axis": "task",
+      "label": "分子相互作用建模",
+      "label_en": "Molecular interaction modeling",
+      "definition": "建模分子内部或分子之间的作用关系，包括长程作用与不同粒度复合体的相互作用。"
+    },
+    {
+      "axis": "task",
+      "label": "分子气味预测",
+      "label_en": "Molecular odor prediction",
+      "definition": "由分子结构或相关特征预测气味属性。"
+    },
+    {
+      "axis": "task",
+      "label": "分子性质优化",
+      "label_en": "Molecular property optimization",
+      "definition": "修改、筛选或搜索分子以改善明确的目标性质或多性质目标。"
+    },
+    {
+      "axis": "task",
+      "label": "分子性质预测",
+      "label_en": "Molecular property prediction",
+      "definition": "从分子的组成、结构或表征预测量子、理化或生物性质；特定的气味、毒性和结合任务可另行细分。"
+    },
+    {
+      "axis": "task",
+      "label": "分子表征学习",
+      "label_en": "Molecular representation learning",
+      "definition": "学习可用于分子分析任务的序列、图或三维结构表示。"
+    },
+    {
+      "axis": "task",
+      "label": "分子生成",
+      "label_en": "Molecule generation",
+      "definition": "生成新的小分子组成、连接结构或三维结构，包括条件生成；给定分子连接关系的构象采样另列。"
+    },
+    {
+      "axis": "task",
+      "label": "运动功能评估",
+      "label_en": "Motor function assessment",
+      "definition": "由人体动作或运动轨迹评估功能运动表现及相关风险。"
+    },
+    {
+      "axis": "task",
+      "label": "MRI重建",
+      "label_en": "MRI reconstruction",
+      "definition": "从欠采样或受损磁共振测量恢复MR图像。",
+      "aliases": [
+        "磁共振成像重建",
+        "Magnetic resonance image reconstruction"
+      ]
+    },
+    {
+      "axis": "task",
+      "label": "多物理场融合",
+      "label_en": "Multiphysics data fusion",
+      "definition": "联合模拟与观测或多个物理量的数据以重建和预测耦合物理场。"
+    },
+    {
+      "axis": "task",
+      "label": "神经活动建模",
+      "label_en": "Neural activity modeling",
+      "definition": "建模神经尖峰、电生理或功能成像记录的时空活动、潜状态及演化。"
+    },
+    {
+      "axis": "task",
+      "label": "神经活动重建",
+      "label_en": "Neural activity reconstruction",
+      "definition": "从稀疏、部分或低分辨率神经记录恢复神经活动及动态场。"
+    },
+    {
+      "axis": "task",
+      "label": "神经连接推断",
+      "label_en": "Neural connectivity inference",
+      "definition": "从神经记录或功能影像推断神经元、脑区或功能网络的连接关系。"
+    },
+    {
+      "axis": "task",
+      "label": "神经学习机制建模",
+      "label_en": "Neural learning mechanism modeling",
+      "definition": "研究生物神经回路的学习、可塑性、临界期或多脑区学习交互机制。"
+    },
+    {
+      "axis": "task",
+      "label": "神经记忆机制建模",
+      "label_en": "Neural memory mechanism modeling",
+      "definition": "研究神经回路的记忆、认知地图、离线重放或时间尺度机制。"
+    },
+    {
+      "axis": "task",
+      "label": "神经概率推断建模",
+      "label_en": "Neural probabilistic inference modeling",
+      "definition": "建模生物神经回路表示先验或执行概率推断的机制。"
+    },
+    {
+      "axis": "task",
+      "label": "神经表征学习",
+      "label_en": "Neural representation learning",
+      "definition": "学习神经信号、神经影像或脑状态的表示以支持神经科学分析。"
+    },
+    {
+      "axis": "task",
+      "label": "神经刺激设计",
+      "label_en": "Neural stimulation design",
+      "definition": "设计或优化神经刺激的电极输入、刺激模式或自适应策略。"
+    },
+    {
+      "axis": "task",
+      "label": "神经系统辨识",
+      "label_en": "Neural system identification",
+      "definition": "根据神经记录识别生物神经动力模型、参数或隐藏神经元影响。"
+    },
+    {
+      "axis": "task",
+      "label": "神经时间序列对齐",
+      "label_en": "Neural time-series alignment",
+      "definition": "建立不同个体、动物或记录会话之间神经活动的对应表示。"
+    },
+    {
+      "axis": "task",
+      "label": "神经行为联合建模",
+      "label_en": "Neural-behavioral joint modeling",
+      "definition": "联合解析神经活动与行为状态或运动的对应关系。"
+    },
+    {
+      "axis": "task",
+      "label": "神经元功能分类",
+      "label_en": "Neuron functional classification",
+      "definition": "根据神经响应及刺激选择性识别神经元功能类型。"
+    },
+    {
+      "axis": "task",
+      "label": "神经元形态生成",
+      "label_en": "Neuron morphology generation",
+      "definition": "生成具有生物合理分支结构的神经元形态。"
+    },
+    {
+      "axis": "task",
+      "label": "核物理规律解析",
+      "label_en": "Nuclear physics pattern analysis",
+      "definition": "从核物理数据或模型表征中提取核物理规律及可解释概念。"
+    },
+    {
+      "axis": "task",
+      "label": "数值模拟误差校正",
+      "label_en": "Numerical simulation error correction",
+      "definition": "学习校正数值模拟离散误差、粗网格误差或模型偏差。"
+    },
+    {
+      "axis": "task",
+      "label": "数值求解器配置优化",
+      "label_en": "Numerical solver configuration optimization",
+      "definition": "选择或学习数值求解器的参数、预条件器或配置以改善收敛和计算效率。"
+    },
+    {
+      "axis": "task",
+      "label": "海洋缺氧重建",
+      "label_en": "Ocean deoxygenation reconstruction",
+      "definition": "重建海洋溶解氧或缺氧的历史时空变化。"
+    },
+    {
+      "axis": "task",
+      "label": "海洋涡旋识别",
+      "label_en": "Ocean eddy detection",
+      "definition": "从遥感等观测识别海洋涡旋及其空间分布。"
+    },
+    {
+      "axis": "task",
+      "label": "海面风速反演",
+      "label_en": "Ocean surface wind retrieval",
+      "definition": "由遥感及海气信息估计海面风速，包括热带气旋强风环境。"
+    },
+    {
+      "axis": "task",
+      "label": "海浪相位预测",
+      "label_en": "Ocean wave phase prediction",
+      "definition": "根据观测及波动模型预测相位分辨的海面波动。"
+    },
+    {
+      "axis": "task",
+      "label": "海浪谱反演",
+      "label_en": "Ocean wave spectrum retrieval",
+      "definition": "从遥感或其他测量反演海浪频率、方向或全向波谱。"
+    },
+    {
+      "axis": "task",
+      "label": "算子谱分解",
+      "label_en": "Operator spectral decomposition",
+      "definition": "计算算子的特征值、奇异值或对应函数分解。"
+    },
+    {
+      "axis": "task",
+      "label": "深浅水域识别",
+      "label_en": "Optically deep and shallow water classification",
+      "definition": "识别水体在光学上属于深水或浅水环境，以界定水质、水深和生境遥感条件。"
+    },
+    {
+      "axis": "task",
+      "label": "偏微分方程求解",
+      "label_en": "Partial differential equation solving",
+      "definition": "数值预测偏微分方程在给定初边值、参数或几何条件下的解，包括跨参数、几何及分辨率的解预测。",
+      "aliases": [
+        "PDE求解",
+        "PDE solving"
+      ]
+    },
+    {
+      "axis": "task",
+      "label": "偏微分方程反演",
+      "label_en": "PDE inverse inference",
+      "definition": "利用观测与偏微分方程约束反推未知物理参数、源项或初边条件。"
+    },
+    {
+      "axis": "task",
+      "label": "肽HLA结合预测",
+      "label_en": "Peptide-HLA binding prediction",
+      "definition": "预测肽与人类白细胞抗原分子的结合能力。"
+    },
+    {
+      "axis": "task",
+      "label": "光子器件设计",
+      "label_en": "Photonic device design",
+      "definition": "按光学性能与物理约束设计或优化光子器件结构。"
+    },
+    {
+      "axis": "task",
+      "label": "光伏故障检测",
+      "label_en": "Photovoltaic fault detection",
+      "definition": "从功率、气象或传感数据识别光伏设备的异常与故障。"
+    },
+    {
+      "axis": "task",
+      "label": "光伏损失分析",
+      "label_en": "Photovoltaic loss analysis",
+      "definition": "预测或识别太阳电池中的复合等物理损失及其主导机制。"
+    },
+    {
+      "axis": "task",
+      "label": "光伏潜力评估",
+      "label_en": "Photovoltaic potential assessment",
+      "definition": "估计屋顶等区域的可用光伏面积、装机容量或物理发电潜力。"
+    },
+    {
+      "axis": "task",
+      "label": "光伏功率预测",
+      "label_en": "Photovoltaic power forecasting",
+      "definition": "根据气象、历史功率或其他观测预测光伏发电功率及其概率分布。"
+    },
+    {
+      "axis": "task",
+      "label": "物理系统控制",
+      "label_en": "Physical system control",
+      "definition": "根据反馈或模型调节物理系统动作以满足稳定性、安全性或性能目标。"
+    },
+    {
+      "axis": "task",
+      "label": "管网状态重建",
+      "label_en": "Pipe-network state reconstruction",
+      "definition": "根据有限传感信息与水力模型重建管网瞬态压力及流量。"
+    },
+    {
+      "axis": "task",
+      "label": "植物病害识别",
+      "label_en": "Plant disease identification",
+      "definition": "通过图像识别、分割或跨模态检索定位植物病害及其症状。"
+    },
+    {
+      "axis": "task",
+      "label": "植物抗病性预测",
+      "label_en": "Plant disease resistance prediction",
+      "definition": "依据基因型或其他特征预测植物对病原侵染的抗性。"
+    },
+    {
+      "axis": "task",
+      "label": "污染源溯源",
+      "label_en": "Pollution source identification",
+      "definition": "利用化学指纹、观测或模型识别污染物来源。"
+    },
+    {
+      "axis": "task",
+      "label": "多项式优化",
+      "label_en": "Polynomial optimization",
+      "definition": "求解多项式目标与约束的数学优化问题。"
+    },
+    {
+      "axis": "task",
+      "label": "多项式正性认证",
+      "label_en": "Polynomial positivity certification",
+      "definition": "判定或认证多项式在指定范围内的非负性或正性。"
+    },
+    {
+      "axis": "task",
+      "label": "群体免疫动态分析",
+      "label_en": "Population immunity dynamics analysis",
+      "definition": "分析纵向群体免疫指标的变化及其驱动因素。"
+    },
+    {
+      "axis": "task",
+      "label": "多孔介质输运预测",
+      "label_en": "Porous-media transport prediction",
+      "definition": "预测多孔介质中的流动、污染物迁移或反应输运。"
+    },
+    {
+      "axis": "task",
+      "label": "术后并发症预测",
+      "label_en": "Postoperative complication prediction",
+      "definition": "预测手术后并发症发生的可能性或相关风险。"
+    },
+    {
+      "axis": "task",
+      "label": "电网调度控制",
+      "label_en": "Power grid dispatch and control",
+      "definition": "在电网安全及物理约束下安排功率、资源及运行控制。"
+    },
+    {
+      "axis": "task",
+      "label": "电网状态估计",
+      "label_en": "Power grid state estimation",
+      "definition": "从量测与电网拓扑物理关系估计电流、电压或其他运行状态。"
+    },
+    {
+      "axis": "task",
+      "label": "降水预报",
+      "label_en": "Precipitation forecasting",
+      "definition": "预测降水分布、强度或临近降水演变。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白质骨架生成",
+      "label_en": "Protein backbone generation",
+      "definition": "生成或设计蛋白质主链骨架，包括功能基序支架。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白质结合筛选",
+      "label_en": "Protein binder screening",
+      "definition": "从工程蛋白候选中筛选能够结合特定靶标的蛋白质。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白质结合位点设计",
+      "label_en": "Protein binding-site design",
+      "definition": "设计或修改蛋白质结合口袋的残基及空间结构以形成所需结合关系。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白质结合位点预测",
+      "label_en": "Protein binding-site prediction",
+      "definition": "定位蛋白质上可能与配体、肽或其他分子结合的残基、口袋或表面区域。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白质复合物结构预测",
+      "label_en": "Protein complex structure prediction",
+      "definition": "预测多条蛋白链或抗体抗原构成的复合物三维结构。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白质构象采样",
+      "label_en": "Protein conformation sampling",
+      "definition": "产生给定蛋白质的多个构象或构象集合以刻画柔性或平衡分布。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白冠组成预测",
+      "label_en": "Protein corona composition prediction",
+      "definition": "预测纳米颗粒表面吸附形成的蛋白冠中蛋白种类及相对丰度。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白质设计",
+      "label_en": "Protein design",
+      "definition": "生成或优化蛋白质序列、结构或功能，包括约束支架、荧光蛋白和功能蛋白的设计。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白质适应度优化",
+      "label_en": "Protein fitness optimization",
+      "definition": "搜索、编辑或定向进化蛋白质序列以提高目标适应度或性能。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白质适应度预测",
+      "label_en": "Protein fitness prediction",
+      "definition": "定量预测蛋白质序列的适应度或与目标表型相关的性能。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白质功能模块识别",
+      "label_en": "Protein functional module identification",
+      "definition": "在蛋白质相互作用网络中识别具有相关功能的模块或群组。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白质逆折叠",
+      "label_en": "Protein inverse folding",
+      "definition": "从给定蛋白质骨架或结构推断可折叠至该结构的氨基酸序列。",
+      "aliases": [
+        "蛋白质逆折叠设计",
+        "Inverse protein folding"
+      ]
+    },
+    {
+      "axis": "task",
+      "label": "蛋白质环结构建模",
+      "label_en": "Protein loop modeling",
+      "definition": "预测或重建蛋白质环区的主链和侧链构象。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白质模型解释",
+      "label_en": "Protein model interpretation",
+      "definition": "分析蛋白质模型依赖的残基、结构区域或特征归因，不预设这些区域具有已验证的生物功能。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白质突变效应预测",
+      "label_en": "Protein mutation effect prediction",
+      "definition": "预测氨基酸改变对蛋白质功能、适应度或相互作用的影响。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白质性质预测",
+      "label_en": "Protein property prediction",
+      "definition": "预测蛋白质的功能、理化性质或其他序列相关表型；明确的突变效应和亲和力任务可另列。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白质表征学习",
+      "label_en": "Protein representation learning",
+      "definition": "学习蛋白质序列、结构、表面或其联合表示以支持蛋白质分析。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白质序列结构共设计",
+      "label_en": "Protein sequence-structure co-design",
+      "definition": "联合生成或优化蛋白质氨基酸序列与相应三维结构。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白质结构建模",
+      "label_en": "Protein structure modeling",
+      "definition": "学习、预测、表征或重建蛋白质三维结构；专门的复合物、环区和构象任务可另行细分。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白质结构功能关联推断",
+      "label_en": "Protein structure-function association inference",
+      "definition": "估计蛋白质结构特征与功能、修饰或生物表型之间的统计关联。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白配体亲和力预测",
+      "label_en": "Protein-ligand affinity prediction",
+      "definition": "定量预测蛋白质与小分子或肽配体之间的结合亲和力。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白质结合亲和力预测",
+      "label_en": "Protein-protein binding affinity prediction",
+      "definition": "定量预测蛋白质之间结合的强弱，包括变体与其结合对象的亲和力。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白质对接",
+      "label_en": "Protein-protein docking",
+      "definition": "预测两种或多种蛋白质的相对结合位置与构象。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白质相互作用预测",
+      "label_en": "Protein-protein interaction prediction",
+      "definition": "预测蛋白质之间的相互作用关系或相互作用界面。"
+    },
+    {
+      "axis": "task",
+      "label": "蛋白质组分析",
+      "label_en": "Proteomic analysis",
+      "definition": "从质谱或空间蛋白组等数据识别蛋白质组模式、组织异质性或疾病相关特征。"
+    },
+    {
+      "axis": "task",
+      "label": "量子电路设计",
+      "label_en": "Quantum circuit design",
+      "definition": "搜索或优化用于量子化学等任务的量子电路结构与参数。"
+    },
+    {
+      "axis": "task",
+      "label": "量子关联函数预测",
+      "label_en": "Quantum correlation function prediction",
+      "definition": "预测量子体系的关联函数等相关观测量。"
+    },
+    {
+      "axis": "task",
+      "label": "量子动力学求解",
+      "label_en": "Quantum dynamics solving",
+      "definition": "求解或模拟量子波函数等状态随时间的演化。"
+    },
+    {
+      "axis": "task",
+      "label": "量子相互作用建模",
+      "label_en": "Quantum interaction modeling",
+      "definition": "表示或预测量子体系中的非局部相互作用。"
+    },
+    {
+      "axis": "task",
+      "label": "量子物相识别",
+      "label_en": "Quantum phase identification",
+      "definition": "根据量子体系观测或表征识别物相。"
+    },
+    {
+      "axis": "task",
+      "label": "量子态分类",
+      "label_en": "Quantum state classification",
+      "definition": "根据量子测量或状态表征区分量子态类别。"
+    },
+    {
+      "axis": "task",
+      "label": "反应动力学建模",
+      "label_en": "Reaction kinetics modeling",
+      "definition": "由反应器或实验数据辨识化学反应动力学模型及其参数。"
+    },
+    {
+      "axis": "task",
+      "label": "反应结果预测",
+      "label_en": "Reaction outcome prediction",
+      "definition": "根据反应物、催化剂与条件预测化学实验结果或反应性能。"
+    },
+    {
+      "axis": "task",
+      "label": "反应工艺优化",
+      "label_en": "Reaction process optimization",
+      "definition": "调整催化剂配比、操作条件或设备参数以改善化学转化性能。"
+    },
+    {
+      "axis": "task",
+      "label": "反应速率预测",
+      "label_en": "Reaction rate prediction",
+      "definition": "预测化学反应速率、速率常数或动力学参数。"
+    },
+    {
+      "axis": "task",
+      "label": "反应产率预测",
+      "label_en": "Reaction yield prediction",
+      "definition": "预测化学反应或转化工艺的产物产率及其对条件的依赖。"
+    },
+    {
+      "axis": "task",
+      "label": "遥感大气校正",
+      "label_en": "Remote sensing atmospheric correction",
+      "definition": "估计并去除大气对遥感测量的干扰以改善物理量反演。"
+    },
+    {
+      "axis": "task",
+      "label": "遥感影像分析",
+      "label_en": "Remote sensing image analysis",
+      "definition": "对遥感影像或卫星科学数据进行分类、分割或语义理解以支持对地观测。"
+    },
+    {
+      "axis": "task",
+      "label": "遥感影像重建",
+      "label_en": "Remote sensing image reconstruction",
+      "definition": "生成、补全、融合或提高遥感影像的时空分辨率。"
+    },
+    {
+      "axis": "task",
+      "label": "储层测井参数反演",
+      "label_en": "Reservoir log parameter inversion",
+      "definition": "从测井及相关观测估计储层孔隙度、含气量或岩体结构等地质参数。"
+    },
+    {
+      "axis": "task",
+      "label": "RNA设计",
+      "label_en": "RNA design",
+      "definition": "根据目标结构、功能或结合条件设计RNA序列及结构。"
+    },
+    {
+      "axis": "task",
+      "label": "RNA功能预测",
+      "label_en": "RNA function prediction",
+      "definition": "预测RNA的功能、靶标结合或相关生物效应。"
+    },
+    {
+      "axis": "task",
+      "label": "RNA相互作用预测",
+      "label_en": "RNA interaction prediction",
+      "definition": "预测RNA分子之间的调控或结合关系。"
+    },
+    {
+      "axis": "task",
+      "label": "RNA结构预测",
+      "label_en": "RNA structure prediction",
+      "definition": "由RNA序列或相关信息预测二级或三维结构。"
+    },
+    {
+      "axis": "task",
+      "label": "RNA速度推断",
+      "label_en": "RNA velocity inference",
+      "definition": "估计细胞转录状态的瞬时变化方向与速率。"
+    },
+    {
+      "axis": "task",
+      "label": "机器人动力学建模",
+      "label_en": "Robot dynamics modeling",
+      "definition": "学习机器人运动的物理演化、稳定性或动力响应以支持运动控制。"
+    },
+    {
+      "axis": "task",
+      "label": "机器人航迹规划",
+      "label_en": "Robot trajectory planning",
+      "definition": "为机器人或无人机规划满足环境及运动约束的路径或轨迹。"
+    },
+    {
+      "axis": "task",
+      "label": "机器人装配控制",
+      "label_en": "Robotic assembly control",
+      "definition": "学习或调整机器人装配动作及接触控制参数以完成零部件装配。"
+    },
+    {
+      "axis": "task",
+      "label": "机器人接触操作",
+      "label_en": "Robotic contact manipulation",
+      "definition": "利用接触力学或触觉反馈学习机器人对薄壳等对象的操作。"
+    },
+    {
+      "axis": "task",
+      "label": "机器人抓取",
+      "label_en": "Robotic grasping",
+      "definition": "识别可抓取对象并学习或执行机器人的抓取动作。"
+    },
+    {
+      "axis": "task",
+      "label": "机器人材料识别",
+      "label_en": "Robotic material recognition",
+      "definition": "通过机器人触觉、视觉等传感信息识别材料类别。"
+    },
+    {
+      "axis": "task",
+      "label": "科学事件分类",
+      "label_en": "Scientific event classification",
+      "definition": "根据科学观测或模拟特征区分机理生物、天体粒子等科学事件类别。"
+    },
+    {
+      "axis": "task",
+      "label": "科学实验设计",
+      "label_en": "Scientific experiment design",
+      "definition": "选择实验对象、测量条件、采样点或后续实验以提高科学信息获取或发现效率。"
+    },
+    {
+      "axis": "task",
+      "label": "科学问题推理",
+      "label_en": "Scientific problem reasoning",
+      "definition": "围绕化学、物理等明确科学问题进行推理及计算求解。"
+    },
+    {
+      "axis": "task",
+      "label": "科学模拟网格适配",
+      "label_en": "Scientific simulation mesh adaptation",
+      "definition": "移动、粗化或调整科学模拟网格以控制误差或计算成本。"
+    },
+    {
+      "axis": "task",
+      "label": "科学模拟网格生成",
+      "label_en": "Scientific simulation mesh generation",
+      "definition": "为科学或工程计算生成曲面或体网格。"
+    },
+    {
+      "axis": "task",
+      "label": "科学模拟参数反演",
+      "label_en": "Scientific simulator parameter inference",
+      "definition": "根据观测识别科学模拟器参数、模型组成或对应后验分布。"
+    },
+    {
+      "axis": "task",
+      "label": "科学训练数据生成",
+      "label_en": "Scientific training data generation",
+      "definition": "为科学模型学习生成或整理方程解、模拟轨迹等训练数据。"
+    },
+    {
+      "axis": "task",
+      "label": "海冰动力学分析",
+      "label_en": "Sea ice dynamics analysis",
+      "definition": "研究海冰输运、裂隙形成及其与大气和冰流动力的关系。"
+    },
+    {
+      "axis": "task",
+      "label": "海冰识别",
+      "label_en": "Sea ice identification",
+      "definition": "识别海冰覆盖、类型或裂隙等冰情空间特征。"
+    },
+    {
+      "axis": "task",
+      "label": "地震相分割",
+      "label_en": "Seismic facies segmentation",
+      "definition": "对地震数据进行地质相类别识别与空间分割。"
+    },
+    {
+      "axis": "task",
+      "label": "地震危险性评估",
+      "label_en": "Seismic hazard assessment",
+      "definition": "评估地震危险性、场地效应或地震工程风险。"
+    },
+    {
+      "axis": "task",
+      "label": "癫痫发作检测",
+      "label_en": "Seizure detection",
+      "definition": "根据脑电等神经信号识别癫痫发作事件或状态。"
+    },
+    {
+      "axis": "task",
+      "label": "单细胞数据生成",
+      "label_en": "Single-cell data generation",
+      "definition": "生成具有特定细胞条件或生物属性的单细胞分子数据。"
+    },
+    {
+      "axis": "task",
+      "label": "单细胞表征学习",
+      "label_en": "Single-cell representation learning",
+      "definition": "学习单细胞分子状态及细胞关系的表示，用于单细胞分析。"
+    },
+    {
+      "axis": "task",
+      "label": "单细胞转录本估计",
+      "label_en": "Single-cell transcript count estimation",
+      "definition": "从稀疏或有噪观测估计单细胞中的真实基因转录本数。"
+    },
+    {
+      "axis": "task",
+      "label": "睡眠分期",
+      "label_en": "Sleep staging",
+      "definition": "依据脑电、心电或其他生理记录识别睡眠阶段。"
+    },
+    {
+      "axis": "task",
+      "label": "睡眠呼吸异常检测",
+      "label_en": "Sleep-disordered breathing detection",
+      "definition": "从睡眠生理记录识别呼吸紊乱或异常事件。"
+    },
+    {
+      "axis": "task",
+      "label": "积雪深度反演",
+      "label_en": "Snow depth retrieval",
+      "definition": "根据遥感及地形等信息估计地面积雪深度。"
+    },
+    {
+      "axis": "task",
+      "label": "土壤湿度估计",
+      "label_en": "Soil moisture estimation",
+      "definition": "根据遥感或其他环境观测估计土壤含水状态。"
+    },
+    {
+      "axis": "task",
+      "label": "土壤有机碳预测",
+      "label_en": "Soil organic carbon prediction",
+      "definition": "根据环境、微生物或其他数据预测土壤有机碳含量及相关格局。"
+    },
+    {
+      "axis": "task",
+      "label": "太阳辐照预测",
+      "label_en": "Solar irradiance forecasting",
+      "definition": "预测太阳直射或地表太阳辐照的强度及时间变化。"
+    },
+    {
+      "axis": "task",
+      "label": "溶剂筛选设计",
+      "label_en": "Solvent screening and design",
+      "definition": "预测溶解或萃取性能并筛选、设计适合目标化学过程的溶剂。"
+    },
+    {
+      "axis": "task",
+      "label": "空间转录组分析",
+      "label_en": "Spatial transcriptomic analysis",
+      "definition": "解析空间转录组的组织结构、细胞空间分布及空间信号模式。"
+    },
+    {
+      "axis": "task",
+      "label": "物种分布预测",
+      "label_en": "Species distribution prediction",
+      "definition": "依据观测及生境条件预测物种出现或丰度的时空分布。"
+    },
+    {
+      "axis": "task",
+      "label": "随机动力学模拟",
+      "label_en": "Stochastic dynamics simulation",
+      "definition": "模拟或预测包含随机扰动的动力系统过程及其长期统计。"
+    },
+    {
+      "axis": "task",
+      "label": "随机过程得分估计",
+      "label_en": "Stochastic process score estimation",
+      "definition": "估计随机过程状态分布的对数密度梯度，以支持统计物理过程建模。"
+    },
+    {
+      "axis": "task",
+      "label": "河流流量预测",
+      "label_en": "Streamflow prediction",
+      "definition": "预测或由观测反演河流流量及其变化。"
+    },
+    {
+      "axis": "task",
+      "label": "结构控制",
+      "label_en": "Structural control",
+      "definition": "调整结构支座或其他控制量以改善受力、安全性或动态响应。"
+    },
+    {
+      "axis": "task",
+      "label": "结构疲劳寿命预测",
+      "label_en": "Structural fatigue life prediction",
+      "definition": "预测材料或结构在循环、振动等载荷下的疲劳寿命。"
+    },
+    {
+      "axis": "task",
+      "label": "结构健康监测",
+      "label_en": "Structural health monitoring",
+      "definition": "由传感、振动或无损检测信息识别土木或其他工程结构的损伤与健康状态。"
+    },
+    {
+      "axis": "task",
+      "label": "结构荷载反演",
+      "label_en": "Structural load identification",
+      "definition": "从结构响应及力学约束反推动态荷载或荷载分布。"
+    },
+    {
+      "axis": "task",
+      "label": "结构响应预测",
+      "label_en": "Structural response prediction",
+      "definition": "预测工程结构在载荷、运动或环境作用下的位移、应力或动态响应。"
+    },
+    {
+      "axis": "task",
+      "label": "结构拓扑优化",
+      "label_en": "Structural topology optimization",
+      "definition": "优化结构材料的空间布局以满足力学、性能或可靠性目标。"
+    },
+    {
+      "axis": "task",
+      "label": "地下结构成像",
+      "label_en": "Subsurface imaging",
+      "definition": "利用地球物理观测识别或重建地下物性、地质构造及空间结构。"
+    },
+    {
+      "axis": "task",
+      "label": "冰面湖监测",
+      "label_en": "Supraglacial lake monitoring",
+      "definition": "识别冰面湖并监测其季节、年际演化及相关气候驱动。"
+    },
+    {
+      "axis": "task",
+      "label": "地表形变预测",
+      "label_en": "Surface deformation forecasting",
+      "definition": "预测地表沉降、震后形变等形变时间序列。"
+    },
+    {
+      "axis": "task",
+      "label": "地表形变反演",
+      "label_en": "Surface deformation retrieval",
+      "definition": "从遥感或其他测量中估计地表及工程结构形变并分离物理分量。"
+    },
+    {
+      "axis": "task",
+      "label": "水体识别制图",
+      "label_en": "Surface water mapping",
+      "definition": "从遥感影像识别河流、湖塘或其他地表水体及覆盖比例。"
+    },
+    {
+      "axis": "task",
+      "label": "对称性发现",
+      "label_en": "Symmetry discovery",
+      "definition": "从系统数据或模型中识别对称变换及其破缺因素。"
+    },
+    {
+      "axis": "task",
+      "label": "症状严重度预测",
+      "label_en": "Symptom severity prediction",
+      "definition": "预测疾病相关症状的严重程度或评分。"
+    },
+    {
+      "axis": "task",
+      "label": "靶向分子设计",
+      "label_en": "Target-specific molecular design",
+      "definition": "根据特定靶蛋白、结合口袋或靶标选择性要求生成或优化小分子配体。"
+    },
+    {
+      "axis": "task",
+      "label": "TCR肽识别预测",
+      "label_en": "TCR-peptide recognition prediction",
+      "definition": "预测T细胞受体对特定肽的识别或相互作用。"
+    },
+    {
+      "axis": "task",
+      "label": "陆地碳通量反演",
+      "label_en": "Terrestrial carbon flux retrieval",
+      "definition": "从遥感、气象和模型信息估计总初级生产力、净初级生产力等陆地碳交换量。"
+    },
+    {
+      "axis": "task",
+      "label": "治疗肽设计",
+      "label_en": "Therapeutic peptide design",
+      "definition": "生成、筛选或优化用于治疗的肽序列及结构，包括靶向结合肽和多肽降解剂。"
+    },
+    {
+      "axis": "task",
+      "label": "热电器件设计",
+      "label_en": "Thermoelectric device design",
+      "definition": "设计热电器件的材料布置及结构以优化发电性能。"
+    },
+    {
+      "axis": "task",
+      "label": "热层大气密度反演",
+      "label_en": "Thermospheric density retrieval",
+      "definition": "根据卫星轨迹等观测估计热层大气密度。"
+    },
+    {
+      "axis": "task",
+      "label": "断层成像重建",
+      "label_en": "Tomographic reconstruction",
+      "definition": "从投影等测量重建断层图像，包括CT成像。"
+    },
+    {
+      "axis": "task",
+      "label": "毒性预测",
+      "label_en": "Toxicity prediction",
+      "definition": "预测分子或化合物对生物体系产生毒性作用的可能性或程度。"
+    },
+    {
+      "axis": "task",
+      "label": "转录组分析",
+      "label_en": "Transcriptomic analysis",
+      "definition": "从转录组数据识别生物状态、表达模式或相关生物过程。"
+    },
+    {
+      "axis": "task",
+      "label": "转录组整合",
+      "label_en": "Transcriptomic integration",
+      "definition": "对齐或联合分析不同物种、批次或条件的转录组，以比较细胞状态和表达模式。"
+    },
+    {
+      "axis": "task",
+      "label": "治疗决策建模",
+      "label_en": "Treatment decision modeling",
+      "definition": "建模、解释或优化随患者状态变化的治疗选择与策略。"
+    },
+    {
+      "axis": "task",
+      "label": "治疗效应估计",
+      "label_en": "Treatment effect estimation",
+      "definition": "在明确设计与假设下估计不同治疗或干预的潜在结局差异；模拟或事后结果不等同临床疗效证明。"
+    },
+    {
+      "axis": "task",
+      "label": "治疗反应预测",
+      "label_en": "Treatment response prediction",
+      "definition": "预测患者或病灶对化疗、放疗等治疗的响应或敏感性。"
+    },
+    {
+      "axis": "task",
+      "label": "树种识别",
+      "label_en": "Tree species identification",
+      "definition": "由遥感或近距离传感数据识别树木物种。"
+    },
+    {
+      "axis": "task",
+      "label": "热带气旋强度预报",
+      "label_en": "Tropical cyclone intensity forecasting",
+      "definition": "预测热带气旋未来强度及其增强变化。"
+    },
+    {
+      "axis": "task",
+      "label": "热带气旋轨迹预报",
+      "label_en": "Tropical cyclone track forecasting",
+      "definition": "预测台风或热带气旋中心未来移动路径。"
+    },
+    {
+      "axis": "task",
+      "label": "肿瘤分型",
+      "label_en": "Tumor classification",
+      "definition": "依据组织、影像等特征区分肿瘤类别；同一疾病内的分子亚型可另记疾病分型。"
+    },
+    {
+      "axis": "task",
+      "label": "肿瘤检测",
+      "label_en": "Tumor detection",
+      "definition": "识别肿瘤或癌症存在与否，包括筛查、早期检测和病理检测。"
+    },
+    {
+      "axis": "task",
+      "label": "肿瘤免疫图谱分析",
+      "label_en": "Tumor immune landscape analysis",
+      "definition": "识别肿瘤免疫细胞组成、状态或与病变相关的免疫特征。"
+    },
+    {
+      "axis": "task",
+      "label": "肿瘤转移预测",
+      "label_en": "Tumor metastasis prediction",
+      "definition": "检测或预测淋巴结及远处转移状态或风险。"
+    },
+    {
+      "axis": "task",
+      "label": "城市物质存量制图",
+      "label_en": "Urban material stock mapping",
+      "definition": "量化建筑、基础设施等实体物质存量及其空间分布。"
+    },
+    {
+      "axis": "task",
+      "label": "植被生物量估计",
+      "label_en": "Vegetation biomass estimation",
+      "definition": "估计作物、森林或草地的地上生物量、木材体积或碳储量。"
+    },
+    {
+      "axis": "task",
+      "label": "植被叶绿素反演",
+      "label_en": "Vegetation chlorophyll retrieval",
+      "definition": "从观测估计植被叶绿素含量。"
+    },
+    {
+      "axis": "task",
+      "label": "植被群落制图",
+      "label_en": "Vegetation community mapping",
+      "definition": "识别并制图生态群落、河岸林或海草等植被类型与覆盖。"
+    },
+    {
+      "axis": "task",
+      "label": "植被扰动监测",
+      "label_en": "Vegetation disturbance monitoring",
+      "definition": "识别森林或其他植被的扰动、单木死亡、退化及其时空变化。"
+    },
+    {
+      "axis": "task",
+      "label": "植被干旱监测",
+      "label_en": "Vegetation drought monitoring",
+      "definition": "识别和量化植被干旱状态或响应及其时空变化。"
+    },
+    {
+      "axis": "task",
+      "label": "植被高度反演",
+      "label_en": "Vegetation height retrieval",
+      "definition": "利用遥感、激光雷达或其他观测估计植被及森林冠层高度。"
+    },
+    {
+      "axis": "task",
+      "label": "植被叶面积反演",
+      "label_en": "Vegetation leaf area retrieval",
+      "definition": "由遥感或其他传感信息估计叶面积指数、绿面积或相关面积性状。"
+    },
+    {
+      "axis": "task",
+      "label": "植被氮含量反演",
+      "label_en": "Vegetation nitrogen retrieval",
+      "definition": "由光谱、遥感或相关观测估计叶片及冠层的氮含量。"
+    },
+    {
+      "axis": "task",
+      "label": "植被物候监测",
+      "label_en": "Vegetation phenology monitoring",
+      "definition": "识别植被落叶、叶色及季节性生长等物候变化。"
+    },
+    {
+      "axis": "task",
+      "label": "植被恢复监测",
+      "label_en": "Vegetation recovery monitoring",
+      "definition": "估计扰动后植被组成、覆盖或生态恢复的变化。"
+    },
+    {
+      "axis": "task",
+      "label": "植被光谱光照校正",
+      "label_en": "Vegetation spectral illumination correction",
+      "definition": "利用数据与辐射物理信息校正冠层光照对高光谱观测的影响。"
+    },
+    {
+      "axis": "task",
+      "label": "植被性状反演",
+      "label_en": "Vegetation trait retrieval",
+      "definition": "由遥感或其他观测估计植被生物物理参数及群落性状；已明确的氮、叶面积等目标可细分。"
+    },
+    {
+      "axis": "task",
+      "label": "病毒颗粒检测",
+      "label_en": "Virus particle detection",
+      "definition": "在电镜等成像数据中识别并定位病毒颗粒或衣壳。"
+    },
+    {
+      "axis": "task",
+      "label": "视觉神经机制建模",
+      "label_en": "Visual neural mechanism modeling",
+      "definition": "以计算模型或神经数据研究生物视觉的编码、选择性、学习、发育或整合机制。"
+    },
+    {
+      "axis": "task",
+      "label": "视觉感知解码",
+      "label_en": "Visual perception decoding",
+      "definition": "由EEG、MEG或fMRI等脑信号推断视觉内容、语义或重建感知图像。"
+    },
+    {
+      "axis": "task",
+      "label": "火山排放监测",
+      "label_en": "Volcanic emission monitoring",
+      "definition": "识别、量化或追踪火山气体排放的空间及时间变化。"
+    },
+    {
+      "axis": "task",
+      "label": "污水排放建模",
+      "label_en": "Wastewater emission modeling",
+      "definition": "预测污水处理过程中甲烷、氧化亚氮等温室气体排放。"
+    },
+    {
+      "axis": "task",
+      "label": "水质参数估计",
+      "label_en": "Water quality parameter estimation",
+      "definition": "估计水体化学、生物或光学水质参数及其时空分布。"
+    },
+    {
+      "axis": "task",
+      "label": "水系统控制",
+      "label_en": "Water system control",
+      "definition": "调节供水、管网或雨洪系统的运行与控制策略。"
+    },
+    {
+      "axis": "task",
+      "label": "水体温度估计",
+      "label_en": "Water temperature estimation",
+      "definition": "由卫星、环境或其他观测估计河流等水体温度。"
+    },
+    {
+      "axis": "task",
+      "label": "天气预报",
+      "label_en": "Weather forecasting",
+      "definition": "预测大气气象变量随时间的变化，包括全球、区域、极端天气及临近预报。"
+    },
+    {
+      "axis": "task",
+      "label": "湿地水文分析",
+      "label_en": "Wetland hydrological analysis",
+      "definition": "研究湿地水位、连通性、阻隔及恢复相关水文变化。"
+    },
+    {
+      "axis": "task",
+      "label": "风场重建",
+      "label_en": "Wind field reconstruction",
+      "definition": "由稀疏、带噪或多源风测量恢复风的时空矢量场。"
+    },
+    {
+      "axis": "task",
+      "label": "风电功率预测",
+      "label_en": "Wind power forecasting",
+      "definition": "根据气象、历史功率或风场条件预测风电功率及其概率分布。"
+    },
+    {
+      "axis": "task",
+      "label": "风速预报",
+      "label_en": "Wind speed forecasting",
+      "definition": "预测未来近地表或其他指定位置的风速。"
+    },
+    {
+      "axis": "task",
+      "label": "风机载荷控制",
+      "label_en": "Wind turbine load control",
+      "definition": "预测风机结构载荷并调整偏航等控制参数以降低载荷。"
+    },
+    {
+      "axis": "method",
+      "label": "Koopman 算子学习",
+      "label_en": "Koopman operator learning",
+      "definition": "学习可观测量演化的线性 Koopman 或相关转移算子，以表示非线性动力系统。"
+    },
+    {
+      "axis": "method",
+      "label": "Krylov 子空间方法",
+      "label_en": "Krylov subspace method",
+      "definition": "在矩阵作用于向量形成的子空间中迭代求解线性系统或相关数值问题。"
+    },
+    {
+      "axis": "method",
+      "label": "上下文老虎机",
+      "label_en": "Contextual bandit",
+      "definition": "根据上下文选择动作，并通过所选动作的反馈学习选择策略。"
+    },
+    {
+      "axis": "method",
+      "label": "不变表示学习",
+      "label_en": "Invariant representation learning",
+      "definition": "学习对指定输入变换或环境变化保持不变的表示。"
+    },
+    {
+      "axis": "method",
+      "label": "互信息学习",
+      "label_en": "Mutual information learning",
+      "definition": "通过估计或优化互信息学习变量之间的相关结构。"
+    },
+    {
+      "axis": "method",
+      "label": "低秩适配",
+      "label_en": "Low-rank adaptation",
+      "definition": "通过低秩参数更新适配已有模型。",
+      "aliases": [
+        "LoRA"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "低秩逼近",
+      "label_en": "Low-rank approximation",
+      "definition": "以低秩因子或子空间近似矩阵、张量或算子。"
+    },
+    {
+      "axis": "method",
+      "label": "保形预测",
+      "label_en": "Conformal prediction",
+      "definition": "通过校准样本构建具有覆盖保证的预测区间或集合。"
+    },
+    {
+      "axis": "method",
+      "label": "信息瓶颈",
+      "label_en": "Information bottleneck",
+      "definition": "通过压缩输入信息并保留目标相关信息约束表示学习。"
+    },
+    {
+      "axis": "method",
+      "label": "光学神经网络",
+      "label_en": "Optical neural network",
+      "definition": "利用光传播、衍射或光学器件实现可训练神经计算。"
+    },
+    {
+      "axis": "method",
+      "label": "光滑粒子流体动力学",
+      "label_en": "Smoothed particle hydrodynamics",
+      "definition": "以粒子和核平滑近似连续介质场与流体方程。",
+      "aliases": [
+        "SPH"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "典型相关分析",
+      "label_en": "Canonical correlation analysis",
+      "definition": "学习两组变量的投影，以最大化投影之间的相关性。",
+      "aliases": [
+        "CCA"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "分位数回归",
+      "label_en": "Quantile regression",
+      "definition": "直接估计条件分布的给定分位数以描述预测范围或尾部。"
+    },
+    {
+      "axis": "method",
+      "label": "切换动力系统",
+      "label_en": "Switching dynamical system",
+      "definition": "用离散模式控制连续或潜在状态的演化规律。",
+      "aliases": [
+        "切换状态空间模型"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "判别分析",
+      "label_en": "Discriminant analysis",
+      "definition": "通过类别分离方向或潜变量投影进行分类。"
+    },
+    {
+      "axis": "method",
+      "label": "区域分解",
+      "label_en": "Domain decomposition",
+      "definition": "将求解域分解为子域，协调各子域的解以处理整体问题。"
+    },
+    {
+      "axis": "method",
+      "label": "半监督学习",
+      "label_en": "Semi-supervised learning",
+      "definition": "联合使用有标签和无标签样本训练模型。"
+    },
+    {
+      "axis": "method",
+      "label": "即时局部学习",
+      "label_en": "Just-in-time learning",
+      "definition": "针对当前查询从历史数据选择相似样本并即时建立局部模型。",
+      "aliases": [
+        "JITL"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "卷积长短期记忆网络",
+      "label_en": "Convolutional long short-term memory network",
+      "definition": "在长短期记忆单元的状态更新中使用卷积，学习时空序列。",
+      "aliases": [
+        "ConvLSTM"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "压缩感知",
+      "label_en": "Compressed sensing",
+      "definition": "利用稀疏结构从少量测量中重建高维信号。"
+    },
+    {
+      "axis": "method",
+      "label": "原型学习",
+      "label_en": "Prototype learning",
+      "definition": "用代表性原型描述类别或群体并进行匹配和预测。"
+    },
+    {
+      "axis": "method",
+      "label": "参数高效微调",
+      "label_en": "Parameter-efficient fine-tuning",
+      "definition": "只调整少量参数或附加模块完成已有模型的任务适配。",
+      "aliases": [
+        "PEFT"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "双层优化",
+      "label_en": "Bilevel optimization",
+      "definition": "将一个优化问题的解作为另一个优化问题的约束或组成部分。"
+    },
+    {
+      "axis": "method",
+      "label": "变分推断",
+      "label_en": "Variational inference",
+      "definition": "通过优化可处理的分布近似难以计算的后验分布。"
+    },
+    {
+      "axis": "method",
+      "label": "可微优化",
+      "label_en": "Differentiable optimization",
+      "definition": "对优化过程或其解求导，使其能与可训练模块联合优化。"
+    },
+    {
+      "axis": "method",
+      "label": "可解释机器学习",
+      "label_en": "Explainable machine learning",
+      "definition": "分析或设计模型，使其表示、预测依据或机制能够被理解。"
+    },
+    {
+      "axis": "method",
+      "label": "向量量化",
+      "label_en": "Vector quantization",
+      "definition": "把连续表示映射到有限码本中的离散向量。"
+    },
+    {
+      "axis": "method",
+      "label": "图信号处理",
+      "label_en": "Graph signal processing",
+      "definition": "利用图的邻接、拉普拉斯或扩散算子处理节点信号与图上动态；不自动表示图神经网络。"
+    },
+    {
+      "axis": "method",
+      "label": "在线学习",
+      "label_en": "Online learning",
+      "definition": "随着样本或反馈逐步到达持续更新模型或策略。"
+    },
+    {
+      "axis": "method",
+      "label": "域泛化",
+      "label_en": "Domain generalization",
+      "definition": "从已有域学习能够泛化到未见目标域的模型。"
+    },
+    {
+      "axis": "method",
+      "label": "基于模型的强化学习",
+      "label_en": "Model-based reinforcement learning",
+      "definition": "利用已知或学习的环境动力模型指导策略学习和规划。",
+      "aliases": [
+        "模型基础强化学习"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "基于模拟的推断",
+      "label_en": "Simulation-based inference",
+      "definition": "利用模拟器生成的数据推断模型参数或潜在状态。",
+      "aliases": [
+        "SBI",
+        "无似然推断",
+        "Likelihood-free inference"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "多任务学习",
+      "label_en": "Multi-task learning",
+      "definition": "联合学习多个任务，并通过共享表示或参数利用任务联系。"
+    },
+    {
+      "axis": "method",
+      "label": "多实例学习",
+      "label_en": "Multiple-instance learning",
+      "definition": "以包含多个实例的集合及集合级监督进行学习。",
+      "aliases": [
+        "MIL"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "多层感知机",
+      "label_en": "Multilayer perceptron",
+      "definition": "使用多层前馈全连接网络学习输入到输出的映射。",
+      "aliases": [
+        "MLP"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "多智能体强化学习",
+      "label_en": "Multi-agent reinforcement learning",
+      "definition": "在多个智能体相互作用的环境中，用奖励学习协同或竞争策略。"
+    },
+    {
+      "axis": "method",
+      "label": "多目标优化",
+      "label_en": "Multi-objective optimization",
+      "definition": "联合处理多个可能相互冲突的优化目标。"
+    },
+    {
+      "axis": "method",
+      "label": "多重网格方法",
+      "label_en": "Multigrid method",
+      "definition": "在多个分辨率网格之间传递与修正误差以加速数值求解。"
+    },
+    {
+      "axis": "method",
+      "label": "大语言模型",
+      "label_en": "Large language model",
+      "definition": "使用大规模训练的语言模型进行理解、推理或生成；不由其名称推断当前研究实施的训练阶段。",
+      "aliases": [
+        "LLM"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "守恒约束学习",
+      "label_en": "Conservation-constrained learning",
+      "definition": "在模型结构、损失或数值更新中显式约束质量、能量或动量等守恒关系。"
+    },
+    {
+      "axis": "method",
+      "label": "安全强化学习",
+      "label_en": "Safe reinforcement learning",
+      "definition": "在学习奖励策略时同时处理状态、动作或风险安全约束。"
+    },
+    {
+      "axis": "method",
+      "label": "实验设计",
+      "label_en": "Experimental design",
+      "definition": "根据目标效用或信息收益选择实验条件、测量或采样方案。"
+    },
+    {
+      "axis": "method",
+      "label": "小样本学习",
+      "label_en": "Few-shot learning",
+      "definition": "在目标任务只有少量标注样本时学习或适配。",
+      "aliases": [
+        "少样本学习"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "广义线性模型",
+      "label_en": "Generalized linear model",
+      "definition": "通过链接函数把线性预测器与指定分布的响应期望相联系。",
+      "aliases": [
+        "GLM"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "张量分解",
+      "label_en": "Tensor decomposition",
+      "definition": "将多维数组分解为低维因子或分量，提取潜在结构。"
+    },
+    {
+      "axis": "method",
+      "label": "弱监督学习",
+      "label_en": "Weakly supervised learning",
+      "definition": "使用不完整、粗粒度或有噪声的监督信号学习。"
+    },
+    {
+      "axis": "method",
+      "label": "形式验证",
+      "label_en": "Formal verification",
+      "definition": "通过数学证明、可达性分析或可认证边界验证模型或系统的性质。"
+    },
+    {
+      "axis": "method",
+      "label": "影像组学",
+      "label_en": "Radiomics",
+      "definition": "从医学影像提取可量化特征并建立与临床或生物变量的关系。"
+    },
+    {
+      "axis": "method",
+      "label": "得分建模",
+      "label_en": "Score-based modeling",
+      "definition": "学习概率密度对输入的对数梯度，用于采样、去噪或分布估计。",
+      "aliases": [
+        "Score-based model"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "拓扑学习",
+      "label_en": "Topological learning",
+      "definition": "将连通性、同调或其他拓扑结构用于表示学习和预测。"
+    },
+    {
+      "axis": "method",
+      "label": "提示学习",
+      "label_en": "Prompt learning",
+      "definition": "设计或学习提示，以引导已有模型完成目标任务或领域适配。"
+    },
+    {
+      "axis": "method",
+      "label": "搜索与规划",
+      "label_en": "Search and planning",
+      "definition": "在候选状态、动作或方案空间中搜索并组合满足目标的解。"
+    },
+    {
+      "axis": "method",
+      "label": "支持向量机",
+      "label_en": "Support vector machine",
+      "definition": "通过最大间隔或相应核方法进行分类或回归。",
+      "aliases": [
+        "SVM"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "数字孪生",
+      "label_en": "Digital twin",
+      "definition": "构建与真实对象对应、可用于模拟和比较的计算表示。"
+    },
+    {
+      "axis": "method",
+      "label": "数据同化",
+      "label_en": "Data assimilation",
+      "definition": "将模型演化与观测结合，估计或校正系统状态。"
+    },
+    {
+      "axis": "method",
+      "label": "数据增强",
+      "label_en": "Data augmentation",
+      "definition": "通过变换、重采样或合成样本扩充训练数据的有效变化。",
+      "aliases": [
+        "虚拟样本生成"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "无监督学习",
+      "label_en": "Unsupervised learning",
+      "definition": "在缺少目标标签时从数据中学习结构、分布或表示。"
+    },
+    {
+      "axis": "method",
+      "label": "时序卷积网络",
+      "label_en": "Temporal convolutional network",
+      "definition": "沿时间维度进行卷积以建模序列依赖。",
+      "aliases": [
+        "TCN",
+        "时序卷积神经网络"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "最优传输",
+      "label_en": "Optimal transport",
+      "definition": "优化分布之间的质量搬运或相应映射，用于分布匹配和动态建模。",
+      "aliases": [
+        "最优输运"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "有限体积方法",
+      "label_en": "Finite volume method",
+      "definition": "通过控制体上的通量平衡离散守恒方程。",
+      "aliases": [
+        "FVM"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "机器学习",
+      "label_en": "Machine learning",
+      "definition": "从数据学习用于预测、表示或决策的规律；证据未说明具体算法时保留此泛称。"
+    },
+    {
+      "axis": "method",
+      "label": "机器学习原子势",
+      "label_en": "Machine-learned interatomic potential",
+      "definition": "从数据学习原子结构与体系能量、原子力之间的关系，用于原子尺度预测与模拟。",
+      "aliases": [
+        "Machine learning interatomic potential"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "极端随机树",
+      "label_en": "Extremely randomized trees",
+      "definition": "对树的特征和分割阈值加强随机化，并聚合多树预测。",
+      "aliases": [
+        "Extra Trees"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "核方法",
+      "label_en": "Kernel method",
+      "definition": "通过核函数表示样本或分布之间的相似关系，用于学习与检验。"
+    },
+    {
+      "axis": "method",
+      "label": "梯度提升",
+      "label_en": "Gradient boosting",
+      "definition": "以损失梯度指导逐步添加弱学习器，形成集成预测。"
+    },
+    {
+      "axis": "method",
+      "label": "检索增强学习",
+      "label_en": "Retrieval-augmented learning",
+      "definition": "将从外部数据或记忆中检索的结果用于学习、预测或决策。"
+    },
+    {
+      "axis": "method",
+      "label": "概率数值方法",
+      "label_en": "Probabilistic numerical method",
+      "definition": "用概率分布描述数值近似及其误差，并用于积分或方程求解。"
+    },
+    {
+      "axis": "method",
+      "label": "模仿学习",
+      "label_en": "Imitation learning",
+      "definition": "从示范行为或决策数据中学习策略。"
+    },
+    {
+      "axis": "method",
+      "label": "正则化学习",
+      "label_en": "Regularized learning",
+      "definition": "通过参数或函数约束控制模型复杂度并改善泛化。",
+      "aliases": [
+        "Regularization"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "残差网络",
+      "label_en": "Residual network",
+      "definition": "使用跨层跳跃连接学习残差映射；可用于卷积或全连接网络。",
+      "aliases": [
+        "残差神经网络"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "注意力机制",
+      "label_en": "Attention mechanism",
+      "definition": "通过依赖内容或上下文的权重聚合输入信息。"
+    },
+    {
+      "axis": "method",
+      "label": "深度 Ritz 方法",
+      "label_en": "Deep Ritz method",
+      "definition": "以神经网络参数化试探函数，通过最小化变分能量求解偏微分方程。"
+    },
+    {
+      "axis": "method",
+      "label": "深度均衡模型",
+      "label_en": "Deep equilibrium model",
+      "definition": "以隐式层的不动点定义网络表示，并通过均衡状态进行预测或学习。"
+    },
+    {
+      "axis": "method",
+      "label": "深度学习",
+      "label_en": "Deep learning",
+      "definition": "使用多层可训练表示进行学习；证据未说明具体深度架构时保留此泛称。"
+    },
+    {
+      "axis": "method",
+      "label": "混合专家",
+      "label_en": "Mixture of experts",
+      "definition": "由门控或分区机制组合多个专门化模型的输出。",
+      "aliases": [
+        "MoE"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "潜变量建模",
+      "label_en": "Latent-variable modeling",
+      "definition": "借助未直接观测的变量表示数据结构或系统状态。"
+    },
+    {
+      "axis": "method",
+      "label": "物理与数据融合建模",
+      "label_en": "Hybrid physics-data modeling",
+      "definition": "将显式机理模型与数据学习模块组合，补充机理参数、未知项或输出。",
+      "aliases": [
+        "数据驱动与机理混合建模",
+        "物理与机器学习混合建模",
+        "机理与神经网络融合"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "物理信息神经网络",
+      "label_en": "Physics-informed neural network",
+      "definition": "使用神经网络近似物理场，并以物理方程残差、初边值条件等约束其学习。",
+      "aliases": [
+        "PINN",
+        "PINNs"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "特征归因",
+      "label_en": "Feature attribution",
+      "definition": "估计输入特征或区域对模型输出的贡献。",
+      "aliases": [
+        "可解释特征归因"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "特征选择",
+      "label_en": "Feature selection",
+      "definition": "按与目标的关系或模型效用筛选输入变量与特征。"
+    },
+    {
+      "axis": "method",
+      "label": "状态空间建模",
+      "label_en": "State-space modeling",
+      "definition": "以潜在状态的演化和观测关系建模动态序列。"
+    },
+    {
+      "axis": "method",
+      "label": "生成建模",
+      "label_en": "Generative modeling",
+      "definition": "学习数据或对象的分布并生成候选样本；证据不足时不进一步指定生成架构。"
+    },
+    {
+      "axis": "method",
+      "label": "生成流网络",
+      "label_en": "Generative flow network",
+      "definition": "学习按目标奖励比例生成离散或结构化对象的随机构造策略。",
+      "aliases": [
+        "GFlowNet"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "监督学习",
+      "label_en": "Supervised learning",
+      "definition": "用输入与目标标签的对应关系训练模型。"
+    },
+    {
+      "axis": "method",
+      "label": "知识图谱",
+      "label_en": "Knowledge graph",
+      "definition": "用实体及其关系构成的图结构组织、检索或推断知识。"
+    },
+    {
+      "axis": "method",
+      "label": "知识引导学习",
+      "label_en": "Knowledge-guided learning",
+      "definition": "把领域知识、规则或先验关系引入特征、模型或学习目标。"
+    },
+    {
+      "axis": "method",
+      "label": "知识蒸馏",
+      "label_en": "Knowledge distillation",
+      "definition": "用教师模型的输出或表示指导学生模型学习。"
+    },
+    {
+      "axis": "method",
+      "label": "神经常微分方程",
+      "label_en": "Neural ordinary differential equation",
+      "definition": "以神经网络参数化连续时间常微分方程的动态项。",
+      "aliases": [
+        "Neural ODE",
+        "神经ODE"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "神经控制",
+      "label_en": "Neural control",
+      "definition": "使用神经网络表示控制器或控制规律，以调节动态系统。"
+    },
+    {
+      "axis": "method",
+      "label": "神经控制微分方程",
+      "label_en": "Neural controlled differential equation",
+      "definition": "使用控制路径驱动的神经微分方程建模不规则序列或干预轨迹。",
+      "aliases": [
+        "Neural CDE"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "神经渲染",
+      "label_en": "Neural rendering",
+      "definition": "用可训练神经表示模拟观测图像或场景的渲染过程。"
+    },
+    {
+      "axis": "method",
+      "label": "神经网络",
+      "label_en": "Neural network",
+      "definition": "用可训练的连接和非线性单元表示数据关系；不据此推断层数或具体架构。",
+      "aliases": [
+        "ANN",
+        "Artificial neural network",
+        "人工神经网络"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "神经过程",
+      "label_en": "Neural process",
+      "definition": "用神经网络从上下文观测学习函数的条件随机过程，以预测查询点及其不确定性。"
+    },
+    {
+      "axis": "method",
+      "label": "神经随机微分方程",
+      "label_en": "Neural stochastic differential equation",
+      "definition": "用神经网络参数化随机微分方程的漂移或扩散项。",
+      "aliases": [
+        "Neural SDE"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "离线强化学习",
+      "label_en": "Offline reinforcement learning",
+      "definition": "仅利用已收集的交互数据学习策略，而不依赖在线探索。"
+    },
+    {
+      "axis": "method",
+      "label": "稀疏学习",
+      "label_en": "Sparse learning",
+      "definition": "通过稀疏约束或正则化选择少量参数、变量或连接。",
+      "aliases": [
+        "Sparse modeling"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "策略学习",
+      "label_en": "Policy learning",
+      "definition": "从数据或目标函数学习状态到动作或查询决策的映射；不自动等同强化学习。"
+    },
+    {
+      "axis": "method",
+      "label": "粒子群优化",
+      "label_en": "Particle swarm optimization",
+      "definition": "利用群体粒子的位置与经验更新搜索连续优化解。",
+      "aliases": [
+        "PSO"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "约束学习",
+      "label_en": "Constrained learning",
+      "definition": "通过可行域投影、约束优化或结构设计，使学习和生成满足指定的硬约束或软约束。"
+    },
+    {
+      "axis": "method",
+      "label": "组合优化",
+      "label_en": "Combinatorial optimization",
+      "definition": "在离散结构或组合决策空间中寻找满足目标与约束的方案。"
+    },
+    {
+      "axis": "method",
+      "label": "统计推断",
+      "label_en": "Statistical inference",
+      "definition": "从观测或模型辅助信息估计总体参数、关联及其置信程度。"
+    },
+    {
+      "axis": "method",
+      "label": "聚类",
+      "label_en": "Clustering",
+      "definition": "按数据相似性或关系结构识别群体；可包括图社区划分。"
+    },
+    {
+      "axis": "method",
+      "label": "能量模型",
+      "label_en": "Energy-based model",
+      "definition": "通过能量函数表示对象的相对偏好或概率分布。",
+      "aliases": [
+        "EBM",
+        "能量生成模型"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "自动机器学习",
+      "label_en": "Automated machine learning",
+      "definition": "自动选择或优化数据处理、模型及超参数等机器学习流程。",
+      "aliases": [
+        "AutoML"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "自回归建模",
+      "label_en": "Autoregressive modeling",
+      "definition": "依据已生成或已观测的序列前缀，逐步预测后续元素。"
+    },
+    {
+      "axis": "method",
+      "label": "自然梯度优化",
+      "label_en": "Natural gradient optimization",
+      "definition": "依据参数或分布空间的几何度量修正梯度更新。"
+    },
+    {
+      "axis": "method",
+      "label": "自然语言处理",
+      "label_en": "Natural language processing",
+      "definition": "对文本或语言序列进行表示、抽取、理解或生成。",
+      "aliases": [
+        "NLP"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "自编码器",
+      "label_en": "Autoencoder",
+      "definition": "通过编码与重建学习数据的压缩表示。"
+    },
+    {
+      "axis": "method",
+      "label": "自训练",
+      "label_en": "Self-training",
+      "definition": "利用模型自身生成的预测或置信度筛选结果，迭代构造训练信号并更新模型。"
+    },
+    {
+      "axis": "method",
+      "label": "自适应网格方法",
+      "label_en": "Adaptive mesh method",
+      "definition": "根据几何、误差或动态变化调整网格的位置、分辨率或层次。"
+    },
+    {
+      "axis": "method",
+      "label": "蒙特卡洛采样",
+      "label_en": "Monte Carlo sampling",
+      "definition": "使用随机样本近似目标分布、积分或统计量。",
+      "aliases": [
+        "Monte Carlo method"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "表示学习",
+      "label_en": "Representation learning",
+      "definition": "学习有利于后续预测、检索或分析的数据表示。"
+    },
+    {
+      "axis": "method",
+      "label": "视觉语言模型",
+      "label_en": "Vision-language model",
+      "definition": "联合表示视觉与语言信息，用于跨模态理解、检索或生成。",
+      "aliases": [
+        "VLM"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "语言模型",
+      "label_en": "Language model",
+      "definition": "对语言或符号序列的词元关系和分布进行建模；可用于自然语言或生物分子序列。"
+    },
+    {
+      "axis": "method",
+      "label": "课程学习",
+      "label_en": "Curriculum learning",
+      "definition": "按难度或学习进度组织任务和样本训练顺序。"
+    },
+    {
+      "axis": "method",
+      "label": "贝叶斯学习",
+      "label_en": "Bayesian learning",
+      "definition": "结合先验与观测建立参数、状态或预测的后验分布。"
+    },
+    {
+      "axis": "method",
+      "label": "贝叶斯流网络",
+      "label_en": "Bayesian flow network",
+      "definition": "通过连续的贝叶斯信息更新与参数分布演化进行生成建模。",
+      "aliases": [
+        "BFN"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "超图学习",
+      "label_en": "Hypergraph learning",
+      "definition": "利用能连接多个节点的超边学习高阶关系及其表示；不要求特定神经网络架构。"
+    },
+    {
+      "axis": "method",
+      "label": "逻辑回归",
+      "label_en": "Logistic regression",
+      "definition": "通过逻辑链接将线性预测映射到类别概率。"
+    },
+    {
+      "axis": "method",
+      "label": "量子机器学习",
+      "label_en": "Quantum machine learning",
+      "definition": "利用可训练量子线路或量子计算机制实施学习与推断。"
+    },
+    {
+      "axis": "method",
+      "label": "镜像下降",
+      "label_en": "Mirror descent",
+      "definition": "利用非欧几何下的镜像映射或 Bregman 散度进行迭代优化。"
+    },
+    {
+      "axis": "method",
+      "label": "长短期记忆网络",
+      "label_en": "Long short-term memory network",
+      "definition": "通过门控记忆单元学习序列中的长期和短期依赖。",
+      "aliases": [
+        "LSTM"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "门控循环单元",
+      "label_en": "Gated recurrent unit",
+      "definition": "使用重置门和更新门控制循环状态的信息保留与更新。",
+      "aliases": [
+        "GRU"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "限制玻尔兹曼机",
+      "label_en": "Restricted Boltzmann machine",
+      "definition": "用可见层与隐层之间的能量相互作用表示数据分布。",
+      "aliases": [
+        "RBM"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "随机力学建模",
+      "label_en": "Stochastic mechanics modeling",
+      "definition": "通过随机过程及其动力学表示和计算物理体系的演化，可与神经函数逼近结合求解量子动态。"
+    },
+    {
+      "axis": "method",
+      "label": "随机插值建模",
+      "label_en": "Stochastic interpolant modeling",
+      "definition": "通过随机插值路径学习分布间的动态过程与条件生成。"
+    },
+    {
+      "axis": "method",
+      "label": "随机桥建模",
+      "label_en": "Stochastic bridge modeling",
+      "definition": "对连接给定端点条件或分布的随机过程建模，用于条件生成或变换。"
+    },
+    {
+      "axis": "method",
+      "label": "隐式神经表示",
+      "label_en": "Implicit neural representation",
+      "definition": "用以坐标或查询点为输入的神经函数连续表示信号、几何或物理场。",
+      "aliases": [
+        "INR",
+        "神经隐式表示"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "隐私保护学习",
+      "label_en": "Privacy-preserving learning",
+      "definition": "通过训练机制限制个人或机构敏感数据的泄露；不自动等同联邦学习。"
+    },
+    {
+      "axis": "method",
+      "label": "隐马尔可夫模型",
+      "label_en": "Hidden Markov model",
+      "definition": "以离散隐藏状态的马尔可夫转移与观测分布建模序列。",
+      "aliases": [
+        "HMM"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "集成学习",
+      "label_en": "Ensemble learning",
+      "definition": "组合多个模型的预测或表示以形成联合结果。",
+      "aliases": [
+        "集成机器学习"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "零样本学习",
+      "label_en": "Zero-shot learning",
+      "definition": "在没有目标类别或任务的标注训练样本时进行预测或迁移。"
+    },
+    {
+      "axis": "method",
+      "label": "零阶优化",
+      "label_en": "Zeroth-order optimization",
+      "definition": "仅使用目标函数值或差分估计更新参数，而不要求显式梯度。"
+    },
+    {
+      "axis": "method",
+      "label": "预条件方法",
+      "label_en": "Preconditioning",
+      "definition": "变换算子、参数或线性系统以改善条件数和迭代求解效率。"
+    },
+    {
+      "axis": "task",
+      "label": "传感器校准",
+      "label_en": "Sensor calibration",
+      "definition": "校准不同传感器或测量系统的响应与观测值。"
+    },
+    {
+      "axis": "task",
+      "label": "分子序列建模",
+      "label_en": "Molecular sequence modeling",
+      "definition": "用分子字符串或符号序列表示、预测或生成分子。"
+    },
+    {
+      "axis": "task",
+      "label": "功能注释",
+      "label_en": "Functional annotation",
+      "definition": "为基因、蛋白质或其他科学对象识别或赋予功能信息。"
+    },
+    {
+      "axis": "task",
+      "label": "图像超分辨率",
+      "label_en": "Image super-resolution",
+      "definition": "从低分辨率观测重建较高空间分辨率的图像或场。"
+    },
+    {
+      "axis": "task",
+      "label": "图像重建",
+      "label_en": "Image reconstruction",
+      "definition": "从不完整、间接或受噪观测中恢复图像或成像场。"
+    },
+    {
+      "axis": "task",
+      "label": "基因组序列建模",
+      "label_en": "Genomic sequence modeling",
+      "definition": "表示、预测或生成 DNA 等基因组序列及其相关模式。"
+    },
+    {
+      "axis": "task",
+      "label": "多肽设计",
+      "label_en": "Peptide design",
+      "definition": "设计满足靶标结合、活性或其他功能要求的多肽候选。"
+    },
+    {
+      "axis": "task",
+      "label": "异常检测",
+      "label_en": "Anomaly detection",
+      "definition": "识别偏离正常状态或常见分布的样本、区域或事件。"
+    },
+    {
+      "axis": "task",
+      "label": "目标检测",
+      "label_en": "Object detection",
+      "definition": "在图像或观测中定位并识别目标对象。"
+    },
+    {
+      "axis": "task",
+      "label": "神经系统建模",
+      "label_en": "Neural system modeling",
+      "definition": "建模生物神经元、神经回路或脑系统的结构、响应与动态机制。"
+    },
+    {
+      "axis": "task",
+      "label": "系统辨识",
+      "label_en": "System identification",
+      "definition": "从输入输出或观测轨迹中识别动态系统的状态、参数或演化关系。"
+    },
+    {
+      "axis": "task",
+      "label": "纠错编码与解码",
+      "label_en": "Error-correcting coding and decoding",
+      "definition": "设计或求解用于抵抗信道噪声的编码与解码过程。"
+    },
+    {
+      "axis": "task",
+      "label": "细胞表征建模",
+      "label_en": "Cell representation modeling",
+      "definition": "学习细胞状态、表达谱及细胞间关系的表示。"
+    },
+    {
+      "axis": "task",
+      "label": "自动形式化",
+      "label_en": "Autoformalization",
+      "definition": "把非形式数学陈述或证明转换为形式系统中的表达。"
+    },
+    {
+      "axis": "task",
+      "label": "表位预测",
+      "label_en": "Epitope prediction",
+      "definition": "预测抗原中可能被抗体或免疫系统识别的位点或区域。"
+    },
+    {
+      "axis": "task",
+      "label": "语义分割",
+      "label_en": "Semantic segmentation",
+      "definition": "为图像或时序中的像素、位置或片段赋予语义类别。"
+    },
+    {
+      "axis": "training_stage",
+      "label": "微调",
+      "label_en": "Fine-tuning",
+      "definition": "在已有模型参数基础上，使用目标数据或任务继续调整模型。"
+    },
+    {
+      "axis": "task",
+      "label": "植物表型测量",
+      "label_en": "Plant phenotyping",
+      "definition": "从观测数据定量测量植物器官、形态、结构或生长性状。"
+    },
+    {
+      "axis": "task",
+      "label": "作物成熟度识别",
+      "label_en": "Crop maturity identification",
+      "definition": "识别作物或果实的成熟阶段。"
+    },
+    {
+      "axis": "task",
+      "label": "植物养分估计",
+      "label_en": "Plant nutrient estimation",
+      "definition": "从观测数据估计植物养分含量或营养状态。"
+    },
+    {
+      "axis": "task",
+      "label": "植物胁迫识别",
+      "label_en": "Plant stress identification",
+      "definition": "识别或量化植物遭受的生物或非生物胁迫。",
+      "aliases": [
+        "Plant stress classification"
+      ]
+    },
+    {
+      "axis": "task",
+      "label": "植物光谱校正",
+      "label_en": "Plant spectral correction",
+      "definition": "校正植物光谱观测的干扰以支持可靠的生理或生化测量。"
+    },
+    {
+      "axis": "task",
+      "label": "植物类型识别",
+      "label_en": "Plant type identification",
+      "definition": "识别植物物种或农业植物类别。"
+    },
+    {
+      "axis": "task",
+      "label": "昆虫分类",
+      "label_en": "Insect classification",
+      "definition": "根据观测数据区分昆虫物种或类别。"
+    },
+    {
+      "axis": "task",
+      "label": "作物倒伏识别",
+      "label_en": "Crop lodging identification",
+      "definition": "检测或分割作物倒伏范围与状态。"
+    },
+    {
+      "axis": "task",
+      "label": "植物生长预测",
+      "label_en": "Plant growth prediction",
+      "definition": "预测植物生长、发育阶段或物候变化。"
+    },
+    {
+      "axis": "task",
+      "label": "植物生长优化",
+      "label_en": "Plant growth optimization",
+      "definition": "依据植物生理或表型反馈优化生长条件或结构。"
+    },
+    {
+      "axis": "task",
+      "label": "农业机器人定位",
+      "label_en": "Agricultural robot localization",
+      "definition": "为农业机器人感知或操作定位作物、器官或目标点。"
+    },
+    {
+      "axis": "method",
+      "label": "群智能优化",
+      "label_en": "Swarm intelligence optimization",
+      "definition": "利用多个相互作用的候选个体协同搜索优化方案。"
+    },
+    {
+      "axis": "method",
+      "label": "神经辐射场",
+      "label_en": "Neural radiance field",
+      "definition": "用神经网络表示空间辐射或密度场以重建场景或相关物理信号。"
+    },
+    {
+      "axis": "method",
+      "label": "实例分割",
+      "label_en": "Instance segmentation",
+      "definition": "预测不同对象实例的像素或点级区域。"
+    },
+    {
+      "axis": "task",
+      "label": "生理信号建模",
+      "label_en": "Physiological signal modeling",
+      "definition": "学习心电、光电容积脉搏等生理信号的表示、状态或变化，以支持生理及健康分析。"
+    },
+    {
+      "axis": "task",
+      "label": "组合优化求解",
+      "label_en": "Combinatorial optimization solving",
+      "definition": "利用学习方法直接求解独立的离散或组合数学优化问题，包括整数规划、装箱及路径组合等。"
+    },
+    {
+      "axis": "task",
+      "label": "系统发育推断",
+      "label_en": "Phylogenetic inference",
+      "definition": "根据生物序列等数据推断系统发育树、进化距离或其后验分布。"
+    },
+    {
+      "axis": "task",
+      "label": "交通场景建模",
+      "label_en": "Traffic scenario modeling",
+      "definition": "学习真实交通场景中车辆、行人等对象的动态关系与未来演化。"
+    },
+    {
+      "axis": "task",
+      "label": "电子健康记录生成",
+      "label_en": "Electronic health record generation",
+      "definition": "生成保持临床数据结构与效用的合成电子健康记录，以支持医学研究与隐私保护。"
+    },
+    {
+      "axis": "task",
+      "label": "自动驾驶感知",
+      "label_en": "Autonomous driving perception",
+      "definition": "从车辆传感数据识别周围对象、车道及道路结构，为真实驾驶工程感知提供输出。"
+    },
+    {
+      "axis": "task",
+      "label": "数学实例生成",
+      "label_en": "Mathematical instance generation",
+      "definition": "利用学习方法生成供数学求解器验证与开发的结构化数学问题实例。"
+    },
+    {
+      "axis": "task",
+      "label": "分子生物电子等排体设计",
+      "label_en": "Molecular bioisostere design",
+      "definition": "利用学习方法设计或选择替代分子局部结构的生物电子等排体。"
+    },
+    {
+      "axis": "task",
+      "label": "图匹配",
+      "label_en": "Graph matching",
+      "definition": "利用学习方法求解图节点或结构之间的对应关系这一独立组合数学问题。"
+    },
+    {
+      "axis": "task",
+      "label": "工业缺陷检测",
+      "label_en": "Industrial defect detection",
+      "definition": "从工业产品或制造对象的观测中识别并定位实际缺陷与异常。"
+    },
+    {
+      "axis": "task",
+      "label": "角同步求解",
+      "label_en": "Angular synchronization solving",
+      "definition": "根据带噪相对角度观测估计全局角度，求解独立的角同步数学问题。"
+    },
+    {
+      "axis": "task",
+      "label": "博弈均衡求解",
+      "label_en": "Game equilibrium solving",
+      "definition": "利用学习方法求解给定数学博弈的均衡策略或均衡值。"
+    },
+    {
+      "axis": "task",
+      "label": "混合整数线性规划求解",
+      "label_en": "Mixed-integer linear programming solving",
+      "definition": "计算满足线性约束和整数变量条件的优化解。"
+    },
+    {
+      "axis": "task",
+      "label": "向量场极分解",
+      "label_en": "Vector-field polar factorization",
+      "definition": "将向量场表示为凸势梯度与保测映射的复合。"
+    },
+    {
+      "axis": "task",
+      "label": "概率分布重心估计",
+      "label_en": "Distribution barycenter estimation",
+      "definition": "估计给定概率分布集合在指定几何度量下的平均分布。"
+    },
+    {
+      "axis": "task",
+      "label": "机器人操作控制",
+      "label_en": "Robotic manipulation control",
+      "definition": "生成和执行控制指令以完成实体机器人的物体操作。"
+    },
+    {
+      "axis": "task",
+      "label": "放疗叶片序列规划",
+      "label_en": "Radiotherapy leaf sequencing",
+      "definition": "将目标照射通量转为多叶准直器的叶片位置和运动序列。"
+    },
+    {
+      "axis": "task",
+      "label": "神经运动控制建模",
+      "label_en": "Neuromotor control modeling",
+      "definition": "研究神经系统如何协调肌肉或执行器产生运动。"
+    },
+    {
+      "axis": "task",
+      "label": "医学解剖结构检测",
+      "label_en": "Medical anatomical structure detection",
+      "definition": "在医学图像中定位和识别器官及其子结构。"
+    },
+    {
+      "axis": "task",
+      "label": "整数线性规划求解",
+      "label_en": "Integer linear programming solving",
+      "definition": "计算满足线性约束和整数变量要求的规划最优解。"
+    },
+    {
+      "axis": "task",
+      "label": "数学规划实例生成",
+      "label_en": "Mathematical programming instance generation",
+      "definition": "生成可用于求解器训练与评测且满足给定可行性条件的数学规划实例。"
+    },
+    {
+      "axis": "method",
+      "label": "字典学习",
+      "label_en": "Dictionary learning",
+      "definition": "从数据学习可组合的基元及系数以表示潜在结构。"
+    },
+    {
+      "axis": "task",
+      "label": "单纯循环生成",
+      "label_en": "Simplicial cycle generation",
+      "definition": "生成代数拓扑中满足单纯群循环条件的元素。"
+    },
+    {
+      "axis": "task",
+      "label": "临床结局预测",
+      "label_en": "Clinical outcome prediction",
+      "definition": "根据临床观测预测患者后续健康状态或医疗结局。"
+    },
+    {
+      "axis": "task",
+      "label": "量子本征值求解",
+      "label_en": "Quantum eigenvalue solving",
+      "definition": "通过量子可观测量和变分优化估计量子算子的本征值。"
+    },
+    {
+      "axis": "task",
+      "label": "室内声传播建模",
+      "label_en": "Room sound propagation modeling",
+      "definition": "建模室内声源到接收点的传播、反射、衍射和吸收响应。"
+    },
+    {
+      "axis": "task",
+      "label": "二次指派问题求解",
+      "label_en": "Quadratic assignment problem solving",
+      "definition": "计算二次指派组合优化问题的可行解与优质解。"
+    },
+    {
+      "axis": "task",
+      "label": "心律失常识别",
+      "label_en": "Arrhythmia classification",
+      "definition": "根据心电信号识别心脏节律异常类别。"
+    },
+    {
+      "axis": "task",
+      "label": "临床剂量设计",
+      "label_en": "Clinical dose design",
+      "definition": "根据毒性、疗效及参与者特征选择临床试验剂量。"
+    },
+    {
+      "axis": "task",
+      "label": "天体光谱参数反演",
+      "label_en": "Astronomical spectral parameter inference",
+      "definition": "根据天体光谱观测反推物理模型参数。"
+    },
+    {
+      "axis": "task",
+      "label": "组合优化算法发现",
+      "label_en": "Combinatorial optimization algorithm discovery",
+      "definition": "学习可用于组合优化求解器的规则、策略或算法。"
+    },
+    {
+      "axis": "task",
+      "label": "物理过程动态建模",
+      "label_en": "Physical process dynamics modeling",
+      "definition": "根据物理条件和守恒关系预测过程系统随时空的演化。"
+    },
+    {
+      "axis": "task",
+      "label": "电网优化误差认证",
+      "label_en": "Power-grid optimization error certification",
+      "definition": "验证学习型电网优化代理相对可行最优解的最坏误差。"
+    },
+    {
+      "axis": "task",
+      "label": "张量网络结构搜索",
+      "label_en": "Tensor-network structure search",
+      "definition": "搜索高维张量表示所采用的网络拓扑与分解结构。"
+    },
+    {
+      "axis": "task",
+      "label": "柔性传感关节跟踪",
+      "label_en": "Flexible-sensor joint tracking",
+      "definition": "根据柔性传感器观测估计人体或机械铰链关节运动。"
+    },
+    {
+      "axis": "task",
+      "label": "传染病住院量预测",
+      "label_en": "Infectious-disease hospitalization forecasting",
+      "definition": "根据流行病和健康观测预测因传染病住院的人数。"
+    },
+    {
+      "axis": "task",
+      "label": "随机规划求解",
+      "label_en": "Stochastic programming solving",
+      "definition": "求解含随机情景及跨阶段决策的数学规划问题。"
+    },
+    {
+      "axis": "task",
+      "label": "线性规划求解",
+      "label_en": "Linear programming solving",
+      "definition": "求解线性目标和线性约束定义的数学规划问题。"
+    },
+    {
+      "axis": "task",
+      "label": "傅里叶相位恢复",
+      "label_en": "Fourier phase retrieval",
+      "definition": "由傅里叶幅度等无相位观测恢复信号及其相位。"
+    },
+    {
+      "axis": "task",
+      "label": "纳米材料形貌预测",
+      "label_en": "Nanomaterial morphology prediction",
+      "definition": "预测纳米材料颗粒的形状、尺寸或形态。"
+    },
+    {
+      "axis": "task",
+      "label": "手内物体位姿估计",
+      "label_en": "In-hand object pose estimation",
+      "definition": "估计机器人手中物体的三维位置和姿态。"
+    },
+    {
+      "axis": "task",
+      "label": "无线信道预测",
+      "label_en": "Wireless channel prediction",
+      "definition": "根据有限观测预测空间位置的无线传播信道响应。"
+    },
+    {
+      "axis": "task",
+      "label": "医学检查选择",
+      "label_en": "Medical test selection",
+      "definition": "根据患者信息选择用于诊断和风险预测的临床检查。"
+    },
+    {
+      "axis": "task",
+      "label": "侧信道密钥推断",
+      "label_en": "Side-channel key inference",
+      "definition": "根据加密设备的物理泄漏与算法逻辑推断密钥。"
+    },
+    {
+      "axis": "method",
+      "label": "概率图模型",
+      "label_en": "Probabilistic graphical model",
+      "definition": "通过图结构表示变量依赖并进行概率推断。"
+    },
+    {
+      "axis": "task",
+      "label": "水处理性能预测",
+      "label_en": "Water treatment performance prediction",
+      "definition": "预测水处理工艺的污染物去除、资源回收或传质性能。"
+    },
+    {
+      "axis": "task",
+      "label": "供水管网泄漏检测",
+      "label_en": "Water network leakage detection",
+      "definition": "从供水流量或压力数据识别管网泄漏及其状态。"
+    },
+    {
+      "axis": "task",
+      "label": "污染物迁移预测",
+      "label_en": "Pollutant transport prediction",
+      "definition": "预测污染物在环境介质中的迁移、沉降或分布。"
+    },
+    {
+      "axis": "task",
+      "label": "膜完整性检测",
+      "label_en": "Membrane integrity detection",
+      "definition": "识别过滤膜破损、泄漏或失效以监测分离系统完整性。"
+    },
+    {
+      "axis": "task",
+      "label": "水面垃圾检测",
+      "label_en": "Floating litter detection",
+      "definition": "从水体图像识别漂浮垃圾的位置、数量或类别。"
+    },
+    {
+      "axis": "task",
+      "label": "多组学整合分析",
+      "label_en": "Multi-omics integration analysis",
+      "definition": "联合分析不同组学数据以识别生物关联、分型或机制。"
+    },
+    {
+      "axis": "task",
+      "label": "作物育种设计",
+      "label_en": "Crop breeding design",
+      "definition": "利用基因型、表型或环境数据选择、设计和改进作物品种。"
+    },
+    {
+      "axis": "task",
+      "label": "影像生物标志物提取",
+      "label_en": "Imaging biomarker extraction",
+      "definition": "从医学影像中自动测量或提取用于生理、疾病和预后分析的定量指标。"
+    },
+    {
+      "axis": "task",
+      "label": "药物制剂优化",
+      "label_en": "Drug formulation optimization",
+      "definition": "优化药物或疫苗制剂的组分比例、制备条件与质量属性。"
+    },
+    {
+      "axis": "task",
+      "label": "药物作用机制分类",
+      "label_en": "Drug mechanism-of-action classification",
+      "definition": "根据生物实验或分子特征判定候选化合物的药理作用机制类别。"
+    },
+    {
+      "axis": "task",
+      "label": "机器人运动控制",
+      "label_en": "Robot motion control",
+      "definition": "生成或学习机器人、无人载具的运动、轨迹跟随或行为控制策略。"
+    },
+    {
+      "axis": "task",
+      "label": "传感信号去噪",
+      "label_en": "Sensor signal denoising",
+      "definition": "从实际传感器信号中抑制噪声并保留有用物理信息。"
+    },
+    {
+      "axis": "task",
+      "label": "语义通信",
+      "label_en": "Semantic communication",
+      "definition": "学习并传输任务相关语义表示，以压缩、重建或可靠交换通信内容。"
+    },
+    {
+      "axis": "task",
+      "label": "生命体征估计",
+      "label_en": "Vital sign estimation",
+      "definition": "从生理、图像或传感信号中估计心率、脉搏、呼吸等生命体征。"
+    },
+    {
+      "axis": "task",
+      "label": "植物营养状态诊断",
+      "label_en": "Plant nutrient status diagnosis",
+      "definition": "根据植物图像或生理特征判断养分状况和营养缺乏。"
+    },
+    {
+      "axis": "task",
+      "label": "人体姿态识别",
+      "label_en": "Human posture recognition",
+      "definition": "从传感器或影像数据识别人体姿势、动作或肢体状态。"
+    },
+    {
+      "axis": "task",
+      "label": "自动驾驶决策",
+      "label_en": "Autonomous driving decision-making",
+      "definition": "学习或规划自动驾驶车辆的驾驶策略、行为选择或交互决策。"
+    },
+    {
+      "axis": "task",
+      "label": "行人轨迹预测",
+      "label_en": "Pedestrian trajectory prediction",
+      "definition": "预测行人未来位置、朝向或运动轨迹以支持无人系统安全交互。"
+    },
+    {
+      "axis": "task",
+      "label": "古生物化石分类",
+      "label_en": "Paleontological fossil classification",
+      "definition": "利用学习模型识别化石类群、属种或形态类别，以支持古生物演化及地层研究。"
+    },
+    {
+      "axis": "task",
+      "label": "疾病相关miRNA预测",
+      "label_en": "Disease-associated miRNA prediction",
+      "definition": "从分子、网络及疾病信息预测与疾病相关的miRNA。"
+    },
+    {
+      "axis": "task",
+      "label": "运动能量消耗预测",
+      "label_en": "Exercise energy expenditure prediction",
+      "definition": "利用生理或运动观测预测身体活动的能量消耗。"
+    },
+    {
+      "axis": "task",
+      "label": "药物相互作用预测",
+      "label_en": "Drug-drug interaction prediction",
+      "definition": "根据药物结构、生物网络或其他数据预测药物联合使用的相互作用与风险。"
+    },
+    {
+      "axis": "task",
+      "label": "细胞计数",
+      "label_en": "Cell counting",
+      "definition": "利用学习模型从细胞成像观测中估计细胞数量。"
+    },
+    {
+      "axis": "task",
+      "label": "微流控液滴预测",
+      "label_en": "Microfluidic droplet prediction",
+      "definition": "利用学习模型预测微流控装置中的液滴尺寸、生成状态或动力学。"
+    },
+    {
+      "axis": "task",
+      "label": "输血需求预测",
+      "label_en": "Blood transfusion requirement prediction",
+      "definition": "利用临床或术中数据预测患者是否需要输血及其需求。"
+    },
+    {
+      "axis": "task",
+      "label": "农业投入优化",
+      "label_en": "Agricultural input optimization",
+      "definition": "利用学习方法优化种子、肥料等农业投入以改善作物产量和环境表现。"
+    },
+    {
+      "axis": "task",
+      "label": "医学知识问答",
+      "label_en": "Medical knowledge question answering",
+      "definition": "针对具体疾病诊断、治疗与随访问题生成并评估医学知识回答。"
+    },
+    {
+      "axis": "task",
+      "label": "生物物理参数估计",
+      "label_en": "Biophysical parameter estimation",
+      "definition": "从实验或模拟观测估计组织、生物材料等对象的物理参数。"
+    },
+    {
+      "axis": "task",
+      "label": "生物传感信号分析",
+      "label_en": "Biosensor signal analysis",
+      "definition": "从生物传感信号提取生物分子、代谢物或生理状态信息。"
+    },
+    {
+      "axis": "task",
+      "label": "病原体识别",
+      "label_en": "Pathogen identification",
+      "definition": "从测序、图像、光谱或其他生物传感数据识别病原体及其类别。"
+    },
+    {
+      "axis": "task",
+      "label": "抗菌药敏预测",
+      "label_en": "Antimicrobial susceptibility prediction",
+      "definition": "根据病原体生长等数据预测其对抗菌药物的敏感性。"
+    },
+    {
+      "axis": "method",
+      "label": "决策树",
+      "label_en": "Decision tree",
+      "definition": "从训练数据学习树状特征划分以分类或回归。"
+    },
+    {
+      "axis": "method",
+      "label": "贝叶斯神经网络",
+      "label_en": "Bayesian neural network",
+      "definition": "对神经网络参数或预测分布建模并推断不确定性。"
+    },
+    {
+      "axis": "task",
+      "label": "液滴聚并预测",
+      "label_en": "Droplet coalescence prediction",
+      "definition": "利用学习方法预测液滴相互作用中的聚并概率与行为。"
+    },
+    {
+      "axis": "task",
+      "label": "病原微生物检测",
+      "label_en": "Pathogen detection",
+      "definition": "利用学习模型分析生物样本或光谱信号，检测和区分病原微生物。"
+    },
+    {
+      "axis": "task",
+      "label": "机器人定位",
+      "label_en": "Robot localization",
+      "definition": "利用学习方法和传感数据估计机器人在真实物理环境中的位置与姿态。"
+    },
+    {
+      "axis": "task",
+      "label": "微RNA靶基因预测",
+      "label_en": "MicroRNA target prediction",
+      "definition": "预测微RNA调控的基因或mRNA靶标，用于基因调控机制研究。"
     }
   ]
 }

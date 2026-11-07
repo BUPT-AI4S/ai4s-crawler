@@ -1,106 +1,118 @@
-# 陈晨：2024年AI4S论文精筛交付
+# 陈晨：2024年 AI4S 论文审核与全文补查
 
-原始候选 1356 条，已逐篇审核；补入经正式来源确认的缺摘要漏筛记录 13 条，共 1369 条。纳入 868，排除 501，待核实 0，未审 0。
+当前交付 2100 条：纳入 1594，排除 506。在前一摘要轮2077条的基础上，本轮从103条补查疑点中确认22篇AI4S论文补入；全文轮64篇排除，17篇当时待核实。按用户随后要求，仅依据摘要继续判断，其中16篇排除，最后用户提供生姜论文正式PDF，核实后纳入。当前103条累计纳入23、排除80、待核实0。原交付对象和原始字段全部保留。
 
-范围：43个已通过刊会核验的来源；11个已排除来源未进入论文精筛。输入锁定仓库 297469ea973ffa3fbc83e1277e8528c83222cf96，候选文件SHA-256为 e3cada0c94bfe7482de596b9ac7464860de5bf2635d5cc8375ba7117f728503a。快照时间 2026-11-05T10:31:19.144426+08:00；审核跨2026-11-05至2026-11-06。
+**本轮完成的是87篇已取得全文的疑点复核（含用户提供1篇），不是全量论文查全。** 主交付JSON中的候选待定为0；此前1条缺文字摘要疑点已用用户PDF解决；103条结论保留在 `fulltext-review.json`、`recall-audit.json` 和Excel第三表。35个来源的同口径官网全年总量仍未核实。
 
-交付JSON保留原论文对象全部字段及原值，仅追加 ai4s_review；新增13条来自同一全量快照，属于漏筛补入，并非新发现官网漏采。结论为相关性与文种审核，不是对每篇论文质量的保证。
+## 范围与输入
 
-## 执行口径
+- 负责人陈晨，GitHub chenchen052512，年份2024。
+- 按已完成的刊会核验，只处理本人54个来源中保留的43个（41期刊、ICLR、ICML）；11个排除来源未进入精筛。不改他人结果或刊会核验行。
+- 输入提交297469ea973ffa3fbc83e1277e8528c83222cf96；快照2026-11-05T10:31:19.144426+08:00。原候选1356条，旧补录13条。
+- 已同步远程至 4b5a1a874a4f7a5d2f68647e63e6eb75ea200dbd，共享词表以该提交的73条规范名及定义为先；本次按用户授权提交原分工的2024年补查和标签成果；不纳入新分工8个来源。
+- 原论文全部原字段、原值不变；查证后的补充放入 `ai4s_review.verified_metadata`。补录沿用原ID，理由标明“初筛漏筛补录”。
 
-- 不再使用AI4S数量或占比剔除来源。沿用已确认的刊会分区和学科决定。
-- 保留有明确科学或工程任务且AI发挥实质作用的研究、方法、科学数据及实质性综述。排除管理、经济、社科、人文、新闻社论、仅展望AI，以及缺乏独立领域贡献的通用性能演示。
-- 数学保留科学方程、数学研究与形式化定理证明。单纯教材或竞赛数学题准确率评测按本批严口径排除。
-- 仿真、回顾性队列、离线蛋白评价均保持证据边界，不写成实验室发现或临床部署。
-- 纳入包含3条会议补刊摘要（JACC 2条、JAAD 1条；其中1条综述摘要、2条原创研究摘要），已用conference_abstract单列，不计作完整期刊论文。
+## 本轮全文复核
 
-## 元数据与链接
+前轮全量补查待核实103条，实际获得65份PDF、21份出版方存档JATS全文XML，共86篇。PDF核验文件签名、页数和题名；PMLR论文按正式目录OpenReview ID和题名对应。XML按DOI/题名匹配并检查存在正文。Water Research综述取得的是作者接受稿，证据位置按该版本页码；ICML使用正式PMLR公开版本。
 
-原1356条均核对了出版方登记DOI或正式会议记录，并尝试访问论文页及可获得的公开PDF。纳入记录中 421 条具有通过文件头验证的公开直达PDF，其余未验证字段留空。Elsevier中转页HTTP200不算正文可读。未验证的原始链接仍按原值保存，不代表已核实。
+每篇根据疑点定向阅读方法、实验、结果和结论，记录实际阅读范围；不声称逐字通读全部证明与附录。完整获取记录在本地“待核实论文全文/核验结果.json”，复核结论与来源哈希在 `fulltext-review.json`。PDF和XML原文件只保存在本地输出目录，不加入仓库。
 
-多数结论依据完整标题摘要；对会影响判断的疑点定向补读正式全文、方法或实验，位置写在每条审核对象。训练阶段只在直接证据支持时填写。
+22篇纳入包含具体生物医学/植物/化学研究、科学参数反演、物理成像方法、工程约束设计及科学评测资源。64篇排除主要因为通用算法的领域演示不足以构成本轮AI4S研究，或实际只有常规统计、规则处理、传统计算及概念展望。这17篇随后按用户要求仅用摘要筛选：14篇按从严纳入口径排除，1篇重试补到GnRH原摘要后排除，1篇查明是更正公告排除；生姜论文索引虽只有Image 1.，现已通过用户下载的正式3页正文核实并纳入。
 
-## 官网覆盖及初筛风险
+物理模拟可支持纳入，不统一要求湿实验或实物验证；模拟、回顾性队列和预测毒性不写成实物成功、临床效益或湿实验确认。已有AI工具如果实质支撑科学分析也可纳入，不虚构作者重新训练模型。
 
-同快照43来源共采集40900条，28117条缺摘要；原候选1356条中170条缺摘要，已按证据补核或列待定。8个来源的官网目录记录集合已匹配，35个仍未核实同口径全年总量。
+一篇Journal of Pharmaceutical Analysis简报（DOI 10.1016/j.jpha.2023.11.007）出版方仅提供图形摘要及Highlights，没有独立文字摘要。已核对简报正文及补充材料§1.7、§3.1的实际ADMETlab预测分析后纳入；verified_metadata.abstract保留null并标注graphical_abstract_only，未拿Highlights或模型生成文字冒充原摘要。
 
-ICLR 2024官方目录2260条、ICML 2024正式PMLR目录2610条，与快照集合匹配；LaTeX/Unicode题名差异以稳定OpenReview标识对齐。Nature五刊及Carbon Neutrality目录集合亦已匹配。Archives of Computational Methods in Engineering的卷期年目录与在线发表年快照尚未对齐，不能直接把162对176的差值解释为漏采。其他官网访问受限的来源未用Crossref计数冒充官方总量。
+## 历史摘要轮与本轮衔接
 
-每期刊从缺摘要且未命中的记录序列三分位抽取最多2条，共80条。抽查确证13条漏筛，48条排除，19条证据不足；这是定点抽样，不能外推全量漏筛率。期刊全量初筛应在补齐摘要后重跑；本交付完成了指定候选批次，不宣称完成全量文献覆盖。
+前一轮从1369条扩至2077条，新增708条摘要确认漏筛；原纳入中5条按文献类型/研究实质改为排除，保留previous_review。对应JACC 500.29、JAAD 51749、JACC 500.22会议补刊摘要，以及Position: Mission Critical – Satellite Data is a Distinct Modality in Machine Learning、Engineering的Generative AI for Materials Discovery: Design Without Understanding（Views & Comments）。本轮这5条不变。
 
-## 用户补充PDF及JAAD浏览器摘要后的8条复核（2026-11-06）
+累计补录744条（旧13 + 摘要轮708 + 全文轮23）；旧补录中有1条现为排除，因此补录总记录数不等于当前纳入补录篇数。主交付纳入1594 = 历史868 + 708 − 5 + 23；主交付排除506。
 
-按用户要求，能取得PDF的定向读原文，其余依据实际取得的摘要。用户随后打开了JAAD 51749正式页，已读到完整摘要并补判纳入。原8条待定最终改为6条纳入、2条排除、0条待核实。两份用户PDF原件未改动，已记录文件名、读取页码和SHA-256。
+历史原交付补回175条来源原摘要，并恢复1条CanDo截断摘要。同快照全量40900条原缺摘要28117，前轮按来源/DOI/题名补回5409条，该旧统计中有19条实际为Image 1.图形占位，本次移出可用文字摘要并补回1条GnRH原摘要，上传前另将11条更正/撤稿说明、获奖备注、学科分类或图注移出可用摘要计数，当前真正文字摘要补充5380条，全量仍缺22737条。旧登记5409包含原交付175，不重复相加。本轮另从已读JATS抽取17条真正文字摘要，存入摘要补充文件的独立字段，可能与5409重复，不作为新增篇数累加；Highlights和图形摘要不计文字摘要。
 
-|原候选序号（从1计）|论文|本轮结论|依据与限制|
-|---:|---|---|---|
-|65|Comprehensive gridded dataset of photosynthetically active radiation in the upper ocean from 1958 to 2022|不建议纳入|摘要明确最终海洋PAR数据由ESM及DINEOF重建，GRNN只用于对比。另核对ESM原始方法：以邻近已知环境串作距离加权估计，属于插值型生态统计重建；按本批严口径，不将这一重建流程及神经网络比较项视为实质AI贡献，因此排除。这不表示数据集质量差。 依据完整摘要及公开的ESM原始方法核对，未阅读本篇付费全文；采用本批保守的AI4S边界。|
-|99|Development of a novel machine learning-based approach for brain function assessment and integrated software solution|建议纳入|完整摘要明确采集EEG与fNIRS，使用GCN融合神经电活动和血流动力学信息，并加入Granger因果及脑区邻接特征，比较运动想象任务的识别表现。AI实质处理神经生理信号，支持脑功能及康复研究，纳入。 按出版方摘要及贡献段判定；未核验全文实验细节，不将平台设想写成临床部署。|
-|159|Sustainable management and valorization of antibiotic waste|不建议纳入|用户提供的正式PDF第16页第9节把VOSviewer和Bibliometrix称为机器学习工具，实际处理的是314篇文献的词云与共现图（第17页Fig.5—6），并非用AI预测、设计或优化抗生素废物处理过程。主体为废物资源化及可持续性综述，缺乏实质AI4S方法内容，排除。 定向阅读全文中与AI判定有关的章节和图示，未声称逐字通读全部23页。|
-|180|Applicability analysis of transformer to wind speed forecasting by a novel deep learning framework with multiple atmospheric variables|建议纳入|作者机构完整摘要说明用VMD分解多气象变量、GNN提取变量依赖，再以Transformer等时序网络预测风速；另比较MLP、LSTM及GRU，结果GRU优于Transformer。AI直接预测风速物理量，属于气象及能源工程任务，纳入。 按作者机构提供的完整摘要判定，未阅读付费全文；未将题名中的Transformer写成最优模型。|
-|251|A multidisciplinary approach to select wind turbines for power-hydrogen production: Energy, exergy, economic, environmental under uncertainty prediction by artificial intelligence|建议纳入|出版方完整摘要和Highlights明确：对八种风机的风电制氢系统作能量、㶲、经济与环境评价，AI预测系统性能，蒙特卡洛另用于项目成功概率及经济风险分析。科学工程对象及AI性能预测作用已有摘要直接支持，按本次允许摘要判定的要求纳入；不因附带经济评价排除。 摘要未披露AI具体架构、逐项预测目标及训练验证细节，方法仅标人工智能预测。所谓3000年是计算场景，不能理解为实测或真实长期预报；本次只判相关性。|
-|339|500.29 Artificial Intelligence Based Optical Coherence Tomography Comparison of Plaque Characteristics and DNA Repair Activity in Patients with CAD|建议纳入|用户PDF第1页右栏500.29完整摘要：49名DECODE受试者使用OCTplus AI软件定量钙化、脂质、纤维等斑块成分，并与38人可用的DNA连接酶活性检测比较。AI实质提供冠心病机制研究的影像测量，纳入并单列会议摘要。组间差异未达显著，钙化趋势p=0.053，不能写成已证实关联。 采用现成AI软件；未声明新训练网络或临床部署。PDF文件名对应同页另一篇摘要，已按正文500.29及题名核实。|
-|341|51749 Deep ensemble learning with demographic data may out-perform deep learning in skin lesion classification on demographic data|建议纳入|用户打开的JAAD正式页现可读完整摘要：以HAM10000的7771个病灶及PAD-UFES-20的127个病灶构建分类数据，训练人口学风险模型，再将最佳梯度提升模型的风险输出加入CNN。AI直接区分黑色素瘤与良性黑素细胞痣，属于实质医学诊断研究，纳入并单列会议补刊摘要。 页面明确ABSTRACT ONLY，属于会议补刊摘要而非完整期刊论文。使用两公开数据集；作者承认仅3个人口学变量且泛化限于所用数据。只按摘要判相关性，不据此认定临床有效性，也不套用题名不同的2023年论文。|
-|366|Nonlinear elastic wave dispersions of solar cells strengthened by advanced functionally graded materials via both mathematical modeling and deep neural networks technique|建议纳入|出版方推荐文献区中题名完全匹配的摘要说明：解析求解3D功能梯度钙钛矿太阳能电池非线性PDE，生成相速度数据供DNN训练、测试与验证，再用DNN预测非线性相速度及其参数敏感性。属于用AI代理模型研究材料力学波传播，纳入；证据限于数值仿真。 本篇独立页面访问受限，摘要从出版方其他文章页内的推荐文献模块取得，按对应完整题名定位，未把页面主文摘要当成本篇，也未阅读付费全文或验证实物器件。|
+原交付外共5551条定位/补查记录；截至本次实际研究摘要阅读2053条，其中期刊1497、会议556（补1条GnRH摘要，另将1条勘误从摘要阅读改记文种核验）。标题定位未继续阅读摘要的记录明确未审，不伪称已完成摘要排除。本轮只跟进103条历史疑点，未扩大为全部5551条阅读全文。
 
-## 待核实记录
+## 官网目录与覆盖边界
 
-|来源|论文|缺口|
-|---|---|---|
-|本批候选|无|指定批次待核实记录已清零；官网覆盖及全量缺摘要风险仍另列。|
+8个来源已匹配目录集合：ICLR 2024正式目录2260条、ICML 2024 PMLR论文集2610条、Nature五刊及Carbon Neutrality。未给无DOI会议论文虚构DOI。
 
-## 各来源核验
+35个来源同口径全年总量仍未知。Archives of Computational Methods in Engineering卷期年与在线年不能直接相减。前轮发现的1668个索引首次上线条目经年份核对未确认为2024卷期漏采；这不证明其他来源完整。未审记录、未补全摘要和官网目录缺口仍需继续处理。
 
-|来源编号|刊会|全量|缺摘要|原候选|补入|纳入|排除|待定|官网状态|
-|---|---|---:|---:|---:|---:|---:|---:|---:|---|
-|j-c7fe39938d|Water Research|1573|1221|19|1|19|1|0|待核实：官网同口径总量未知|
-|j-ef7cd14dbc|Remote Sensing of Environment|495|277|66|2|66|2|0|待核实：官网同口径总量未知|
-|j-16256b0ce3|Earth-Science Reviews|282|190|4|0|4|0|0|待核实：官网同口径总量未知|
-|j-b9e88c9085|Additive Manufacturing|666|481|7|0|7|0|0|待核实：官网同口径总量未知|
-|j-8143dc670f|Advanced Engineering Informatics|668|623|11|2|13|0|0|待核实：官网同口径总量未知|
-|j-da866ae444|Automation in Construction|639|494|6|0|5|1|0|待核实：官网同口径总量未知|
-|j-c788b13dcd|International Journal of Mechanical Sciences|918|871|7|0|7|0|0|待核实：官网同口径总量未知|
-|j-6097563751|Carbon|1043|920|5|0|4|1|0|待核实：官网同口径总量未知|
-|j-8eff360546|Chemical Engineering Journal|10671|9858|44|0|39|5|0|待核实：官网同口径总量未知|
-|j-6cf9b89ec2|Journal of Catalysis|588|575|3|0|3|0|0|待核实：官网同口径总量未知|
-|j-31764e1eab|Physics of Life Reviews|147|126|1|0|0|1|0|待核实：官网同口径总量未知|
-|j-0fe19b9e20|Robotics and Autonomous Systems|199|141|2|0|2|0|0|待核实：官网同口径总量未知|
-|j-0cde8a3b99|Robotics and Computer-Integrated Manufacturing|170|135|2|1|3|0|0|待核实：官网同口径总量未知|
-|j-3488061829|Applied Energy|2124|1759|67|1|54|14|0|待核实：官网同口径总量未知|
-|j-b4ac12ae95|Energy Conversion and Management|1237|1052|13|1|12|2|0|待核实：官网同口径总量未知|
-|j-800d438108|Plant Phenomics|92|92|1|1|2|0|0|待核实：官网同口径总量未知|
-|j-e625b131f8|Agricultural Systems|294|294|3|0|3|0|0|待核实：官网同口径总量未知|
-|npjbiofilms|npj Biofilms and Microbiomes|158|9|6|0|5|1|0|已核对：目录记录集合匹配|
-|npjmgrav|npj Microgravity|115|4|2|0|2|0|0|已核对：目录记录集合匹配|
-|nature-aps|Acta Pharmacologica Sinica|232|212|2|0|1|1|0|已核对：目录记录集合匹配|
-|nature-laban|Lab Animal|186|168|1|0|1|0|0|已核对：目录记录集合匹配|
-|nature-pcan|Prostate Cancer and Prostatic Diseases|156|111|1|0|1|0|0|已核对：目录记录集合匹配|
-|j-283615fb03|Cell Host & Microbe|217|183|1|0|0|1|0|待核实：官网同口径总量未知|
-|j-5514e73d4c|Trends in Genetics|135|100|1|0|1|0|0|待核实：官网同口径总量未知|
-|j-32e2cb1c9f|Molecular Therapy|391|111|1|0|1|0|0|待核实：官网同口径总量未知|
-|j-8f443c7880|EBioMedicine|572|78|39|1|35|5|0|待核实：官网同口径总量未知|
-|j-8838d520aa|EClinicalMedicine|615|23|16|0|14|2|0|待核实：官网同口径总量未知|
-|j-a2f9b41c54|Carbon Neutrality|39|0|3|0|1|2|0|已核对：目录记录集合匹配|
-|j-00a21d67da|Ageing Research Reviews|382|300|1|0|1|0|0|待核实：官网同口径总量未知|
-|j-ca8fb4629a|Cancer Letters|637|503|3|0|3|0|0|待核实：官网同口径总量未知|
-|j-06b16d0494|JACC Cardiovascular Interventions|761|724|1|1|2|0|0|待核实：官网同口径总量未知|
-|j-165d67ba72|Journal of Pharmaceutical Analysis|175|175|1|0|0|1|0|待核实：官网同口径总量未知|
-|j-0f6b15d93b|Journal of the American Academy of Dermatology|2517|2278|1|0|1|0|0|待核实：官网同口径总量未知|
-|j-e2678b0db0|Pharmacological Research|510|176|6|0|3|3|0|待核实：官网同口径总量未知|
-|j-d6f749bf6c|Phytomedicine|1095|957|2|0|2|0|0|待核实：官网同口径总量未知|
-|j-bdffac0a5c|Biosensors and Bioelectronics|814|769|4|0|3|1|0|待核实：官网同口径总量未知|
-|j-4fc3d65983|Archives of Computational Methods in Engineering|176|148|10|1|10|1|0|待核实：卷期年与在线发表年尚未对齐|
-|j-29686b6ead|Aerospace Science and Technology|885|856|12|0|12|0|0|待核实：官网同口径总量未知|
-|iclr|International Conference on Learning Representations|2260|0|424|0|189|235|0|已核对：目录记录集合匹配|
-|icml|International Conference on Machine Learning|2610|0|420|0|223|197|0|已核对：目录记录集合匹配|
-|j-be601df25e|Research|269|8|15|0|10|5|0|待核实：官网同口径总量未知|
-|j-4143d04801|Engineering|294|119|13|1|10|4|0|待核实：官网同口径总量未知|
-|j-b6525f43da|iScience|2893|996|109|0|94|15|0|待核实：官网同口径总量未知|
+## 标签与元数据
 
-## 仓库交付文件
+最新远程73条共享词条的规范中英文和定义全部保留。将历史词表与本轮实际需要的概念合并后共 710 条；同义名归并，例如医学图像配准/医学影像配准、进化优化/演化优化、域适应/领域适应、生存预测/生存结局预测。宽窄不同的概念不硬合并。
 
-- [论文审核 JSON](../chenchen052512.json)：1369条论文对象数组，保留原字段；每条新增 `ai4s_review`。
-- [覆盖与摘要核验](coverage.json)：43个来源的官网核对状态、全量和候选缺摘要统计，以及80条缺摘要未命中记录的抽查证据。13条确证漏筛已补入论文JSON；19条抽样证据不足的记录仍保留未知，不计入本批候选待定数。
-- [校验记录](validation.json)：原字段保留、唯一键、判定及标签、来源分工、Excel一致性与文件哈希检查。
+全部纳入标签均有维度、中英文名、证据位置和理由，并与共享词表一致。排除与待核实记录标签为空。新22条有正式论文集或出版方存档来源，65份PDF的身份已核验；作者顺序、代码/项目/数据链接未逐项全部重核，未查到的值不编造。
 
-负责人：陈晨（chenchen052512）。仅交付本人2024候选批次；Excel及用户下载的PDF保留本地。官网同口径总量未核实的35个来源，以及全量缺摘要导致的漏筛风险仍需后续补证，不声明全年全量审核完成。
+## 各来源结果
+
+“补查待核实”与主交付待定分开；“仍缺摘要”为前轮同快照补回后的历史统计。
+
+|来源编号|刊会|交付纳入|交付排除|本轮全文补入|全文实审|补查待核实|仍缺摘要|官网同口径|
+|---|---|---:|---:|---:|---:|---:|---:|---|
+|j-c7fe39938d|Water Research|89|1|0|1|0|113|待核实：官网同口径总量未知|
+|j-ef7cd14dbc|Remote Sensing of Environment|90|2|0|0|0|260|待核实：官网同口径总量未知|
+|j-16256b0ce3|Earth-Science Reviews|7|0|0|0|0|187|待核实：官网同口径总量未知|
+|j-b9e88c9085|Additive Manufacturing|21|0|0|0|0|481|待核实：官网同口径总量未知|
+|j-8143dc670f|Advanced Engineering Informatics|25|0|0|0|0|613|待核实：官网同口径总量未知|
+|j-da866ae444|Automation in Construction|40|1|0|0|0|491|待核实：官网同口径总量未知|
+|j-c788b13dcd|International Journal of Mechanical Sciences|8|0|0|0|0|864|待核实：官网同口径总量未知|
+|j-6097563751|Carbon|5|1|0|0|0|916|待核实：官网同口径总量未知|
+|j-8eff360546|Chemical Engineering Journal|46|5|0|0|0|9832|待核实：官网同口径总量未知|
+|j-6cf9b89ec2|Journal of Catalysis|3|0|0|0|0|572|待核实：官网同口径总量未知|
+|j-31764e1eab|Physics of Life Reviews|1|1|0|0|0|109|待核实：官网同口径总量未知|
+|j-0fe19b9e20|Robotics and Autonomous Systems|17|0|0|0|0|141|待核实：官网同口径总量未知|
+|j-0cde8a3b99|Robotics and Computer-Integrated Manufacturing|14|0|0|0|0|133|待核实：官网同口径总量未知|
+|j-3488061829|Applied Energy|81|14|0|0|0|1720|待核实：官网同口径总量未知|
+|j-b4ac12ae95|Energy Conversion and Management|22|2|0|0|0|1043|待核实：官网同口径总量未知|
+|j-800d438108|Plant Phenomics|66|0|3|4|0|9|待核实：官网同口径总量未知|
+|j-e625b131f8|Agricultural Systems|3|0|0|0|0|288|待核实：官网同口径总量未知|
+|npjbiofilms|npj Biofilms and Microbiomes|6|1|0|0|0|9|已核对：目录记录集合匹配|
+|npjmgrav|npj Microgravity|4|0|0|0|0|4|已核对：目录记录集合匹配|
+|nature-aps|Acta Pharmacologica Sinica|3|1|0|0|0|33|已核对：目录记录集合匹配|
+|nature-laban|Lab Animal|1|0|0|0|0|156|已核对：目录记录集合匹配|
+|nature-pcan|Prostate Cancer and Prostatic Diseases|1|0|0|0|0|39|已核对：目录记录集合匹配|
+|j-283615fb03|Cell Host & Microbe|2|1|0|0|0|3|待核实：官网同口径总量未知|
+|j-5514e73d4c|Trends in Genetics|2|0|0|0|0|26|待核实：官网同口径总量未知|
+|j-32e2cb1c9f|Molecular Therapy|1|0|0|0|0|65|待核实：官网同口径总量未知|
+|j-8f443c7880|EBioMedicine|62|5|0|1|0|22|待核实：官网同口径总量未知|
+|j-8838d520aa|EClinicalMedicine|41|2|0|0|0|9|待核实：官网同口径总量未知|
+|j-a2f9b41c54|Carbon Neutrality|2|2|0|0|0|0|已核对：目录记录集合匹配|
+|j-00a21d67da|Ageing Research Reviews|10|0|0|0|0|14|待核实：官网同口径总量未知|
+|j-ca8fb4629a|Cancer Letters|9|0|0|0|0|110|待核实：官网同口径总量未知|
+|j-06b16d0494|JACC Cardiovascular Interventions|1|2|0|0|0|654|待核实：官网同口径总量未知|
+|j-165d67ba72|Journal of Pharmaceutical Analysis|5|1|2|5|0|63|待核实：官网同口径总量未知|
+|j-0f6b15d93b|Journal of the American Academy of Dermatology|0|1|0|0|0|2278|待核实：官网同口径总量未知|
+|j-e2678b0db0|Pharmacological Research|6|3|0|0|0|90|待核实：官网同口径总量未知|
+|j-d6f749bf6c|Phytomedicine|9|0|0|0|0|33|待核实：官网同口径总量未知|
+|j-bdffac0a5c|Biosensors and Bioelectronics|47|1|0|0|0|93|待核实：官网同口径总量未知|
+|j-4fc3d65983|Archives of Computational Methods in Engineering|17|1|0|0|0|141|待核实：卷期年与在线发表年尚未对齐|
+|j-29686b6ead|Aerospace Science and Technology|15|0|0|0|0|845|待核实：官网同口径总量未知|
+|iclr|International Conference on Learning Representations|250|235|0|0|0|0|已核对：目录记录集合匹配|
+|icml|International Conference on Machine Learning|298|198|14|64|0|0|已核对：目录记录集合匹配|
+|j-be601df25e|Research|23|5|2|3|0|6|待核实：官网同口径总量未知|
+|j-4143d04801|Engineering|21|5|0|0|0|115|待核实：官网同口径总量未知|
+|j-b6525f43da|iScience|220|15|2|9|0|146|待核实：官网同口径总量未知|
+
+## 交付与检查
+
+- `../chenchen052512.json`：2100条保留原字段的论文对象，纳入1594、排除506。
+- `coverage.json`：43来源统计与官网核对边界。
+- `fulltext-review.json`：本轮103条结论、此前判断、全文来源/哈希和实际阅读范围，103条均有结论。
+- `recall-audit.json`：5551条原定位与补查记录，103条原判断保留并更新当前结论。
+- `abstract-supplements.json`：5380条可用来源原摘要、19条单列图形占位、11条单列非摘要说明、既有截断更正及本轮JATS原摘要；独立字段间可能重复，不能相加当新增数。
+- `validation.json`：原字段、去重、分工范围、中英文词表和工作簿逐格检查结果。
+
+Excel保留“论文明细”“来源覆盖”“缺摘要抽样”三表，第三表前80条为历史抽样，后103条更新本轮结论，不重复追加另一批103。原历史样本与后103条可能重合，不能用其简单估计漏筛率。本次按仓库要求提交论文JSON、审计记录和共享词表；辅助Excel与原始PDF保留本地。
+
+## 后续摘要判断
+
+按用户要求，余17条不再要求正文补证。15条依据原摘要排除、1条按更正类型排除、1条缺文字摘要待核实；摘要不满足纳入证据标准时从严排除，不表示已经证明全文没有AI。补回的GnRH摘要以DOI和去标记后的题名核对；更正公告保留原题名，只在verified_metadata记录Erratum题名及2022原文DOI。辅助表格与审计记录已同步；本次通过Git提交交付。
+
+## 最后一篇用户PDF核实
+
+已核实生姜论文DOI、正式2024卷期、作者顺序和Short communication类型，读取3页正文及表1。科学任务为中药炮制质量鉴别，使用实测GC-IMS的9个指标成分训练SVM、随机森林、XGBoost等，纳入原创研究并复用既有标签，无新增词条。表1显示SVM-L测试准确率0.9412；验证限随机8:2划分，未读另附补充材料，不声称外部独立验证。该正式简报确无独立文字摘要，保留abstract=null及说明，与另一篇简报合计2条正文补证例外。
+
+当前103条疑点：纳入23、排除80、待核实0；主交付2100条，纳入1594、排除506。全量覆盖仍有缺口；本次提交仅对应原分工，未变更新分工及刊会核验行。
