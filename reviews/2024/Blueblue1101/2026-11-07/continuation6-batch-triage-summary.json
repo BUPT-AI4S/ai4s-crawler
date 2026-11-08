@@ -1,0 +1,37 @@
+{
+  "batch_records": 600,
+  "decisions": {
+    "exclude": 456,
+    "pending": 139,
+    "include": 5
+  },
+  "review_basis": {
+    "document_type_from_bibliographic_text": 232,
+    "invalid_abstract_metadata_only": 124,
+    "batch_abstract_semantic_review": 243,
+    "publisher_document_type_only": 1
+  },
+  "excluded_by_basis": {
+    "document_type_from_bibliographic_text": 232,
+    "batch_abstract_semantic_review": 223,
+    "publisher_document_type_only": 1
+  },
+  "pending_by_basis": {
+    "invalid_abstract_metadata_only": 124,
+    "batch_abstract_semantic_review": 15
+  },
+  "input_records": 12570,
+  "next_bulk_id": 600,
+  "missing_abstract_deferred": 6965,
+  "same_title_distinct_doi_flags": [
+    {
+      "bulk_ids": [
+        534,
+        535
+      ],
+      "note": "同题名同摘要、不同DOI；均排除，保留原始键，未冒称两篇新增AI4S论文。"
+    }
+  ],
+  "batch_input_sha256": "bb1702a060a310a5da499a057ac8b48347f537b743f3146c69bfc73c79d36b00",
+  "method": "Full supplied abstracts read in batches of 40-80; document types separately excluded; possible includes checked again; exclusion sample n=20; missing/invalid evidence pending. Sorting by abstract word count only controls reading order."
+}

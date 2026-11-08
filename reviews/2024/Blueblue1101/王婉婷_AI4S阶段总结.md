@@ -2,25 +2,25 @@
 
 负责人：王婉婷（GitHub：Blueblue1101）  
 论文年份：2024；统计截至本地成果 2026 年 11 月 8 日  
-规则版本：main `44e9ffc`；输入快照：2026-11-05 10:31（北京时间）
+核对版本：main `5eeb5cf`；输入快照：2026-11-05 10:31（北京时间）
 
 ## 一、当前进度
 
-**1,574 条初筛候选已全部复核；目前累计形成 10,933 条审核记录，纳入 2,355 篇。全量漏筛检查尚未完成，全部新增成果仍在本地，未上传 GitHub。** 本报告仅统计王婉婷的成果，不混入此前龙兆科的工作量。
+**1,574 条初筛候选已全部复核；目前累计形成 11,533 条审核记录，纳入 2,360 篇。全量漏筛检查尚未完成，本轮增量随个人JSON、词表和审计文件提交。** 本报告仅统计王婉婷的成果，不混入此前龙兆科的工作量。
 
 | 指标 | 结果 |
 |---|---|
 | 工作范围 | 52个来源、30,468条原始记录 |
-| 累计已审 | 10,933条（约35.9%） |
-| 累计判定 | 纳入2,355篇；排除8,014条（主要因无AI实质参与、仅研究通用AI模型或常规业务应用，或属于评论、社论、勘误等非研究文种及不属本批年份/轨道的记录）；待定564条 |
+| 累计已审 | 11,533条（约37.9%） |
+| 累计判定 | 纳入2,360篇；排除8,470条（主要因无AI实质参与、仅研究通用AI模型或常规业务应用，或属于评论、社论、勘误等非研究文种及不属本批年份/轨道的记录）；待定703条 |
 | 初筛候选复核 | 1,574条全部处理：纳入1,151、排除314条（虽命中初筛关键词，但摘要显示仅研究通用AI模型、缺少具体科学/工程任务，或仅用传统算法与物理模拟；另有少量观点评论等非研究内容）、待定109 |
 | 原有个人记录复核 | 1,383条全部复核，129条判定调整 |
-| 从未命中关键词记录中确认漏筛并纳入 | 累计1,204篇 |
-| 补齐并核验完整摘要 | 累计1,236条 |
+| 从未命中关键词记录中确认漏筛并纳入 | 累计1,209篇 |
+| 补齐并核验完整摘要 | 累计1,293条 |
 | 官网确认的新增漏采论文 | 目前0篇；不表示所有来源均无漏采 |
-| 仍未审 | 19,535条全量文章，并非19,535篇AI4S候选 |
+| 仍未审 | 18,935条全量文章，并非18,935篇AI4S候选 |
 
-这里的“已审”包含摘要判定、文献类型排除和证据不足的待定记录。按审核依据，8,986条归入摘要语义判断，1,808条归入文献类型判断，139条仅能完成缺失或错误摘要核查。**不能把10,933条都表述为“已读完完整摘要”。**
+这里的“已审”包含摘要判定、文献类型排除和证据不足的待定记录。按审核依据，9,229条归入摘要语义判断，2,041条归入文献类型判断，57条仅能完成缺失或错误摘要核查。**不能把11,533条都表述为“已读完完整摘要”。**
 
 ## 二、复核与精筛方法
 
@@ -30,9 +30,9 @@
 4. **查漏筛、补摘要。** 对全量记录与初筛候选作差集；关键词仅用于调整阅读顺序，不代替纳入/排除判断。缺摘要尝试从正式来源、Europe PMC、OpenAIRE及已保存仓库元数据补齐，并核对DOI、题名和内容。
 5. **修复“有字段但没摘要”的情况。** 检查致谢、作者贡献、审稿修改说明、补充材料介绍、截断片段和错配摘要。能找到同篇完整摘要则补回；找不到的保留问题状态，不计为完整摘要补齐。
 6. **按最新词表打标签。** 纳入论文按领域、任务、方法等有证据的维度选择中英文规范标签；其余状态标签为空。先查已有标签及同义词，再提出新词项。
-7. **并行审核后统一校验。** 三个子代理分源处理，主流程合并、检查边界案例、元数据和标签。保留原始论文字段，只更新`ai4s_review`；既有成果不重复计量。
+7. **并行审核后统一校验。** 此前三个子代理分源处理；本轮由主模型批量处理，统一检查边界案例、元数据和标签。保留原始论文字段，只更新`ai4s_review`；既有成果不重复计量。
 
-依据：[仓库精筛规则](https://github.com/BUPT-AI4S/ai4s-crawler/blob/9bba454261bfe1a0c48ffff4806e29151b80f3bb/skills/ai4s-paper-review/references/review-rules.md)。
+依据：[仓库精筛规则](https://github.com/BUPT-AI4S/ai4s-crawler/blob/5eeb5cf8cb8e2d16a07050896698d4148c58b7b5/skills/ai4s-paper-review/references/review-rules.md)。
 
 ### 原有1,383条记录的复核结果
 
@@ -75,7 +75,7 @@
 
 质量依据及局限：期刊按ISSN对照公开的2025分区表，并结合出版方信息及正式出版记录核验；综述刊作为综述来源使用。大多数JCR分区、具体盲审形式和完整编委名单未独立核实，因此本表不补写未经核实的影响因子或JCR等级。Advances in Applied Energy的专属审稿政策仍待补证。CVPR和Advances in Applied Energy在仓库分别登记于丁利军、乔徐阳名下，本次按用户清单补查，未改负责人登记。
 
-依据：[source-quality-audit.json](repository-files/reviews/2024/Blueblue1101/2026-11-07/source-quality-audit.json)；[分区公开材料入口](https://cce.ncepu.edu.cn/xzzx/yjsjx1/7632005045644e61a0d12c7bbeff6204.htm)。
+依据：[source-quality-audit.json](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101/2026-11-07/source-quality-audit.json)；[分区公开材料入口](https://cce.ncepu.edu.cn/xzzx/yjsjx1/7632005045644e61a0d12c7bbeff6204.htm)。
 
 ### 11个新增来源的实际审核进度
 
@@ -83,18 +83,18 @@
 
 | 来源 | 原采集 | 已审 | 纳入 | 排除 | 待定 | 未审 | 补齐完整摘要 |
 |---|---|---|---|---|---|---|---|
-| CVPR | 2716 | 1683 | 247 | 1381 | 55 | 1033 | 0 |
+| CVPR | 2716 | 1706 | 250 | 1400 | 56 | 1010 | 0 |
 | Advances in Applied Energy | 41 | 40 | 11 | 26 | 3 | 1 | 40 |
 | The Lancet Healthy Longevity | 145 | 114 | 1 | 72 | 41 | 31 | 26 |
-| The Lancet Haematology | 206 | 0 | 0 | 0 | 0 | 206 | 0 |
+| The Lancet Haematology | 206 | 4 | 0 | 1 | 3 | 202 | 0 |
 | Pharmacological Reviews | 65 | 43 | 0 | 42 | 1 | 22 | 42 |
-| Seminars in Cancer Biology | 53 | 1 | 0 | 1 | 0 | 52 | 1 |
-| Trends in Cognitive Sciences | 152 | 45 | 9 | 28 | 8 | 107 | 45 |
+| Seminars in Cancer Biology | 53 | 3 | 0 | 3 | 0 | 50 | 3 |
+| Trends in Cognitive Sciences | 152 | 81 | 9 | 60 | 12 | 71 | 69 |
 | Trends in Endocrinology and Metabolism | 140 | 108 | 1 | 107 | 0 | 32 | 88 |
-| Trends in Microbiology | 179 | 1 | 1 | 0 | 0 | 178 | 1 |
+| Trends in Microbiology | 179 | 64 | 1 | 63 | 0 | 115 | 22 |
 | Trends in Molecular Medicine | 156 | 114 | 1 | 111 | 2 | 42 | 85 |
 | Science Immunology | 171 | 162 | 0 | 134 | 28 | 9 | 0 |
-| **合计** | 4024 | 2311 | 271 | 1902 | 138 | 1713 | 328 |
+| **合计** | 4024 | 2439 | 274 | 2019 | 146 | 1585 | 375 |
 
 ## 四、新开展审计的方法与结果
 
@@ -102,13 +102,13 @@
 |---|---|---|
 | 来源资格 | 复用并核对main刊会清单、ISSN、分区、正式出版及文种依据 | 52个范围内来源登记为建议纳入；新增11源的评级和局限见上表 |
 | 官网漏采 | 按年份与正式轨道比对年总量，再核DOI或题名成员 | 12个Nature系列来源、CVPR及ECAI已完成相应成员比对；已核验范围未确认具体漏采；其余不能宣称补漏完成 |
-| 关键词漏筛 | 全量与候选作差集，逐篇读摘要判定 | 累计补入1,204篇；是已采集论文中的漏筛，不是新爬1,204篇 |
-| 摘要补录与真实性 | DOI/题名匹配后检查完整性，剔除致谢、修订说明及错配文本 | 累计1,236条完整摘要核验补齐；自动API返回数不直接计为完成量 |
-| 文献类型 | 依据出版方类型及明确书目说明排除非研究条目 | 1,808条审核以文献类型为主要依据，其中900条为明确类型的程序化排除 |
+| 关键词漏筛 | 全量与候选作差集，批量读取摘要并逐条保存语义判定 | 累计补入1,209篇；是已采集论文中的漏筛，不是新爬1,209篇 |
+| 摘要补录与真实性 | DOI/题名匹配后检查完整性，剔除致谢、修订说明及错配文本 | 累计1,293条完整摘要核验补齐；自动API返回数不直接计为完成量 |
+| 文献类型 | 依据出版方类型及明确书目说明排除非研究条目 | 2,041条审核以文献类型为主要依据，其中900条为明确类型的程序化排除 |
 | 元数据链接 | 检查失效或验证页链接，区分原值保留与重新核验 | 累计撤销605条异常PDF核验记录；上一轮另核实21个作者给出的公开代码/项目链接；尚未逐条重新核完所有纳入论文的DOI/PDF/代码 |
-| 标签规范 | 对照最新中英文词表和别名，逐条校验标签与证据 | 共享基础词表748项＋本地新增6项＝754项；累计新增词项此前已上传，本轮无新词项 |
-| 跨审核人重复 | 按来源、年份和ID对照其他个人JSON | 发现890条同键重合，其中46条判定不同；本轮新增100条与他人文件同键重合为0；未覆盖他人结果 |
-| 交付完整性 | 检查唯一键、原字段、候选覆盖、标签、总量闭合及压缩包校验和 | 校验通过；10,933已审＋19,535未审＝30,468；输出为本地待上传状态 |
+| 标签规范 | 对照最新中英文词表和别名，逐条校验标签与证据 | 本轮共享词表754项＋本轮新增3项＝757项（历史累计贡献9项）；本轮新增3项随本次提交 |
+| 跨审核人重复 | 按来源、年份和ID对照其他个人JSON | 发现890条同键重合，其中46条判定不同；本轮新增600条与他人文件同键重合为0；未覆盖他人结果 |
+| 交付完整性 | 检查唯一键、原字段、候选覆盖、标签、总量闭合及压缩包校验和 | 校验通过；11,533已审＋18,935未审＝30,468；本轮交付随本次提交 |
 
 ### 官网与论文集核验明细
 
@@ -133,22 +133,29 @@
 | Nature Communications | 10926 | 10926 | 年总量一致；仅逐条核对41页、820条，尚未核完整成员 |
 | ISBI | 800 | 官方总量未独立确认 | 出版社Crossref登记的800篇研究DOI全部匹配；官网程序题名774条匹配、26条变体待核 |
 
-12个完成目录比对的Nature系列来源合计3,172条。Nature Communications虽年总量一致，仍只核了部分目录成员，不能据总数相同推断完全无漏项。访问受限的来源按效率优先要求暂缓。依据：[official-directory-audit.json](repository-files/reviews/2024/Blueblue1101/2026-11-07/official-directory-audit.json)。
+12个完成目录比对的Nature系列来源合计3,172条。Nature Communications虽年总量一致，仍只核了部分目录成员，不能据总数相同推断完全无漏项。访问受限的来源按效率优先要求暂缓。依据：[official-directory-audit.json](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101/2026-11-07/official-directory-audit.json)。
 
 ### 最近一轮续审结果
 
-在已完成10,833条的基础上，最近一轮又完成100条，新增漏筛纳入6篇、补齐完整摘要29条：
+在已完成10,933条的基础上，最近一轮又完成600条，新增漏筛纳入5篇、补齐完整摘要57条：
 
 | 处理组 | 本轮已审 | 纳入 | 排除 | 待定 |
 |---|---|---|---|---|
-| 材料、能源及工程刊源 | 100 | 6 | 88 | 6 |
-| **合计** | 100 | 6 | 88 | 6 |
+| 材料、能源及工程刊源 | 38 | 0 | 32 | 6 |
+| 生物医学刊源 | 408 | 1 | 281 | 126 |
+| Nature Communications | 61 | 1 | 58 | 2 |
+| Nature Communications（系统组） | 32 | 0 | 31 | 1 |
+| CVPR / ECAI | 23 | 3 | 19 | 1 |
+| Nature Communications（补查） | 38 | 0 | 35 | 3 |
+| **合计** | 600 | 5 | 456 | 139 |
 
-这轮不是重做此前记录；已完成结果与本轮新增按唯一键去重。原有判定均保留。本轮由主模型继续逐篇阅读摘要，已保存实际完成的结果和断点，未把计划量计入完成量。
+这轮不是重做此前记录；已完成结果与本轮新增按唯一键去重。原有判定均保留。本轮由主模型批量读取摘要、逐条保存语义判定，并重点复核可能纳入项和抽查排除项，已保存实际完成的结果和断点，未把计划量计入完成量。
+
+本轮600条：纳入5篇；排除456条（233条非研究文种、223条摘要未显示AI4S实质关系）；待定139条（124条摘要残缺或字段错误、15条关系或文种仍不明确）。补齐57条完整摘要。排除结果分层抽查20条，另核对边界案例；未将抽查正确率外推到全量。详见《王婉婷_AI4S批量续审600条_2026-11-08.md》。
 
 ## 五、标签更新
 
-已统一“梯度提升树”到现有“梯度提升”；“支持向量机”复用最新共享词表中的条目。累计新增的6个标签如下；11月8日新增地基承载力预测、模糊推理和飞行燃油消耗预测：
+已统一“梯度提升树”到现有“梯度提升”；“支持向量机”复用最新共享词表中的条目。累计贡献9个词项；本轮新增3项，均按现有词表查重后追加：
 
 | 中文标签 | 英文标签 | 适用范围 |
 |---|---|---|
@@ -158,21 +165,24 @@
 | 地基承载力预测 | Foundation bearing capacity prediction | 根据土体、地基几何及荷载条件预测地基承载能力，支持岩土工程设计与安全评估。 |
 | 模糊推理 | Fuzzy inference | 通过模糊集合、规则与隶属度推理实现具有不确定性的预测或决策；单纯提及模糊性不足以使用本标签。 |
 | 飞行燃油消耗预测 | Flight fuel consumption prediction | 根据航路、天气、机型或运行信息预测航班燃油消耗，支持航空能耗与排放评估及优化。 |
+| DNA甲基化预测 | DNA methylation prediction | 利用学习或概率推断模型，从序列、片段组学或其他观测预测DNA甲基化状态或水平。 |
+| 视觉同步定位与建图 | Visual simultaneous localization and mapping | 利用视觉数据与学习模型联合估计相机轨迹并构建或对齐物理环境地图。 |
+| 自动驾驶场景重建 | Autonomous driving scene reconstruction | 从车辆传感数据重建道路环境与动态对象的三维场景，用于自动驾驶工程研究中的场景表示或视图合成。 |
 
-标签均与对应纳入论文一起保存在本地JSON中。依据：[tag-additions.json](repository-files/reviews/2024/Blueblue1101/2026-11-07/tag-additions.json)。
+标签均与对应纳入论文一起保存在本地JSON中。依据：[tag-additions.json](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101/2026-11-07/tag-additions.json)。
 
 ## 六、未完成事项与交付状态
 
-- **继续精筛：** 全量尚余19,535条，其中6,965条仍缺可用摘要，12,570条已有摘要或待核描述但尚未完成审核。
-- **补证与核对：** 564条待定需补完整摘要、明确AI方法或确认文种；46条跨审核人判定差异需在汇总时协调；未核完的来源目录和论文链接继续保留审计状态。
-- **上传状态：** 当前个人JSON、词表和审计材料均在本地。此前成果已上传，本轮增量随本次提交；并行精筛仍受使用额度限制，主模型已恢复处理并保存断点。
+- **继续精筛：** 全量尚余18,935条，其中6,965条仍缺可用摘要，11,970条已有摘要或待核描述但尚未完成审核。
+- **补证与核对：** 703条待定需补完整摘要、明确AI方法或确认文种；46条跨审核人判定差异需在汇总时协调；未核完的来源目录和论文链接继续保留审计状态。
+- **上传状态：** 此前成果已上传，本轮个人JSON、词表与审计文件随本次提交；并行精筛仍受使用额度限制，主模型已恢复处理并保存断点。
 - **恢复方式：** 从已保存断点过滤已审唯一键后续做；上传前再同步main及共享词表，不重跑覆盖已有成果。
 
-本地个人交付文件：[Blueblue1101.json](repository-files/reviews/2024/Blueblue1101.json)。统计与续审依据：[summary.json](repository-files/reviews/2024/Blueblue1101/2026-11-07/summary.json)、[validation.json](repository-files/reviews/2024/Blueblue1101/2026-11-07/validation.json)、[coverage.json](repository-files/reviews/2024/Blueblue1101/2026-11-07/coverage.json)、[continuation-checkpoint.json](repository-files/reviews/2024/Blueblue1101/2026-11-07/continuation-checkpoint.json)。
+本地个人交付文件：[Blueblue1101.json](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101.json)。统计与续审依据：[summary.json](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101/2026-11-07/summary.json)、[validation.json](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101/2026-11-07/validation.json)、[coverage.json](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101/2026-11-07/coverage.json)、[continuation-checkpoint.json](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101/2026-11-07/continuation-checkpoint.json)。
 
 ## 七、漏筛纳入的具体论文（节选）
 
-累计1,204篇漏筛纳入论文来自45个来源，均未进入原初筛候选。已按DOI及同来源规范化题名检查，与原候选没有重复。这是已采集论文中的漏筛补录，不是新增爬取数量；仅部分论文能进一步确认具体漏判原因。
+累计1,209篇漏筛纳入论文来自45个来源，均未进入原初筛候选。已按DOI及同来源规范化题名检查，与原候选没有重复。这是已采集论文中的漏筛补录，不是新增爬取数量；仅部分论文能进一步确认具体漏判原因。
 
 | 方向 | 论文原题名／链接 | 来源 | 为什么纳入 |
 |---|---|---|---|
@@ -185,7 +195,7 @@
 | 生态保护 | [Unlocking ground-based imagery for habitat mapping](https://doi.org/10.1016/j.tree.2023.11.005) | Trends in Ecology & Evolution | 利用地面影像与计算机视觉进行栖息地制图和物种分布预测。 |
 | 疾病量化 | [TULIP: Multi-camera 3D Precision Assessment of Parkinson's Disease](https://openaccess.thecvf.com/content/CVPR2024/html/Kim_TULIP_Multi-camera_3D_Precision_Assessment_of_Parkinsons_Disease_CVPR_2024_paper.html) | CVPR | 机器学习从三维姿态预测帕金森运动症状评分。 |
 
-其余论文的题名、来源、标签、DOI/论文页和摘要判定依据，见[全部1,204篇漏筛纳入详细清单](王婉婷_AI4S漏筛纳入详细清单.md)。
+其余论文的题名、来源、标签、DOI/论文页和摘要判定依据，见[全部1,209篇漏筛纳入详细清单](王婉婷_AI4S漏筛纳入详细清单.md)。
 
 ## 附录：全部52个来源的累计结果
 
@@ -193,56 +203,56 @@
 
 | 来源 | 全量 | 纳入 | 排除 | 待定 | 未审 | 漏筛纳入 | 补摘要 |
 |---|---|---|---|---|---|---|---|
-| Nature Communications | 10926 | 689 | 2296 | 95 | 7846 | 205 | 3 |
-| CVPR | 2716 | 247 | 1381 | 55 | 1033 | 156 | 0 |
-| Nano Energy | 1248 | 14 | 4 | 0 | 1230 | 8 | 12 |
+| Nature Communications | 10926 | 690 | 2420 | 101 | 7715 | 206 | 3 |
+| CVPR | 2716 | 250 | 1400 | 56 | 1010 | 159 | 0 |
+| Nano Energy | 1248 | 14 | 5 | 0 | 1229 | 8 | 13 |
 | Applied Catalysis B Environment and Energy | 1198 | 3 | 120 | 4 | 1071 | 1 | 68 |
 | Renewable and Sustainable Energy Reviews | 864 | 35 | 261 | 27 | 541 | 25 | 118 |
 | ISBI | 800 | 648 | 96 | 56 | 0 | 363 | 0 |
-| Energy Storage Materials | 798 | 14 | 2 | 7 | 775 | 1 | 10 |
+| Energy Storage Materials | 798 | 14 | 2 | 8 | 774 | 1 | 10 |
 | Journal of Materials Science & Technology | 790 | 1 | 2 | 0 | 787 | 0 | 2 |
-| Journal of Energy Chemistry | 687 | 14 | 1 | 2 | 670 | 2 | 15 |
+| Journal of Energy Chemistry | 687 | 14 | 1 | 3 | 669 | 2 | 15 |
 | ECAI | 675 | 127 | 502 | 46 | 0 | 93 | 1 |
-| Clinical Gastroenterology and Hepatology | 527 | 10 | 10 | 8 | 499 | 8 | 10 |
-| Information Fusion | 522 | 40 | 48 | 9 | 425 | 35 | 95 |
-| Trends in Food Science & Technology | 462 | 4 | 5 | 16 | 437 | 2 | 5 |
-| Molecular Cell | 418 | 8 | 17 | 0 | 393 | 7 | 21 |
-| Nature Physics | 418 | 3 | 190 | 1 | 224 | 1 | 0 |
+| Clinical Gastroenterology and Hepatology | 527 | 10 | 14 | 33 | 470 | 8 | 11 |
+| Information Fusion | 522 | 40 | 50 | 11 | 421 | 35 | 97 |
+| Trends in Food Science & Technology | 462 | 4 | 5 | 18 | 435 | 2 | 5 |
+| Molecular Cell | 418 | 8 | 116 | 3 | 291 | 7 | 24 |
+| Nature Physics | 418 | 3 | 196 | 1 | 218 | 1 | 0 |
 | Artificial Intelligence Review | 414 | 111 | 198 | 16 | 89 | 75 | 22 |
 | npj Digital Medicine | 385 | 172 | 185 | 28 | 0 | 124 | 0 |
 | Matter | 364 | 13 | 64 | 3 | 284 | 5 | 52 |
 | Neuron | 346 | 11 | 311 | 19 | 5 | 7 | 232 |
-| Nature Ecology & Evolution | 342 | 2 | 158 | 1 | 181 | 1 | 0 |
-| The Lancet Regional Health - Europe | 333 | 3 | 13 | 4 | 313 | 2 | 1 |
-| Nature Microbiology | 329 | 5 | 105 | 0 | 219 | 1 | 0 |
-| Nature Neuroscience | 313 | 14 | 162 | 13 | 124 | 5 | 0 |
-| Chem | 309 | 2 | 15 | 3 | 289 | 1 | 7 |
+| Nature Ecology & Evolution | 342 | 2 | 161 | 1 | 178 | 1 | 0 |
+| The Lancet Regional Health - Europe | 333 | 3 | 53 | 50 | 227 | 2 | 1 |
+| Nature Microbiology | 329 | 5 | 108 | 1 | 215 | 1 | 0 |
+| Nature Neuroscience | 313 | 14 | 169 | 15 | 115 | 5 | 0 |
+| Chem | 309 | 2 | 30 | 5 | 272 | 1 | 10 |
 | Science Translational Medicine | 303 | 15 | 250 | 19 | 19 | 6 | 0 |
-| Nature Human Behaviour | 300 | 14 | 147 | 5 | 134 | 2 | 0 |
+| Nature Human Behaviour | 300 | 15 | 147 | 5 | 133 | 3 | 0 |
 | Nature Chemical Biology | 290 | 6 | 142 | 1 | 141 | 0 | 0 |
-| Nature Geoscience | 257 | 8 | 104 | 0 | 145 | 2 | 0 |
-| Journal of Advanced Research | 218 | 11 | 15 | 0 | 192 | 9 | 26 |
-| The Lancet Haematology | 206 | 0 | 0 | 0 | 206 | 0 | 0 |
+| Nature Geoscience | 257 | 8 | 112 | 0 | 137 | 2 | 0 |
+| Journal of Advanced Research | 218 | 11 | 15 | 1 | 191 | 9 | 26 |
+| The Lancet Haematology | 206 | 0 | 1 | 3 | 202 | 0 | 0 |
 | Trends in Biotechnology | 179 | 2 | 139 | 3 | 35 | 1 | 119 |
-| The Lancet Planetary Health | 179 | 2 | 5 | 1 | 171 | 1 | 0 |
-| Trends in Microbiology | 179 | 1 | 0 | 0 | 178 | 1 | 1 |
+| The Lancet Planetary Health | 179 | 2 | 17 | 33 | 127 | 1 | 0 |
+| Trends in Microbiology | 179 | 1 | 63 | 0 | 115 | 1 | 22 |
 | Science Immunology | 171 | 0 | 134 | 28 | 9 | 0 | 0 |
 | Trends in Ecology & Evolution | 171 | 1 | 134 | 4 | 32 | 1 | 0 |
 | Nature Computational Science | 167 | 36 | 120 | 11 | 0 | 6 | 0 |
-| Nature Protocols | 165 | 7 | 27 | 0 | 131 | 2 | 0 |
+| Nature Protocols | 165 | 7 | 28 | 0 | 130 | 2 | 0 |
 | Trends in Molecular Medicine | 156 | 1 | 111 | 2 | 42 | 1 | 85 |
-| Trends in Cognitive Sciences | 152 | 9 | 28 | 8 | 107 | 9 | 45 |
+| Trends in Cognitive Sciences | 152 | 9 | 60 | 12 | 71 | 9 | 69 |
 | The Lancet Healthy Longevity | 145 | 1 | 72 | 41 | 31 | 1 | 26 |
 | Trends in Endocrinology and Metabolism | 140 | 1 | 107 | 0 | 32 | 1 | 88 |
 | Trends in Neurosciences | 128 | 2 | 100 | 2 | 24 | 2 | 78 |
 | International Journal of Mining Science and Technology | 126 | 8 | 7 | 0 | 111 | 5 | 0 |
-| Cell Discovery | 126 | 6 | 3 | 6 | 111 | 1 | 0 |
-| Molecular Neurodegeneration | 100 | 1 | 36 | 1 | 62 | 0 | 0 |
+| Cell Discovery | 126 | 6 | 10 | 12 | 98 | 1 | 0 |
+| Molecular Neurodegeneration | 100 | 1 | 42 | 2 | 55 | 0 | 0 |
 | eTransportation | 80 | 5 | 5 | 2 | 68 | 2 | 11 |
 | npj Science of Learning | 80 | 5 | 66 | 9 | 0 | 2 | 0 |
 | Pharmacological Reviews | 65 | 0 | 42 | 1 | 22 | 0 | 42 |
-| Smart Learning Environments | 64 | 7 | 12 | 1 | 44 | 7 | 0 |
-| Seminars in Cancer Biology | 53 | 0 | 1 | 0 | 52 | 0 | 1 |
+| Smart Learning Environments | 64 | 7 | 13 | 1 | 43 | 7 | 0 |
+| Seminars in Cancer Biology | 53 | 0 | 3 | 0 | 50 | 0 | 3 |
 | PhotoniX | 43 | 5 | 35 | 3 | 0 | 4 | 0 |
 | Advances in Applied Energy | 41 | 11 | 26 | 3 | 1 | 10 | 40 |
-| **合计** | 30468 | 2355 | 8014（无AI实质参与、通用AI/常规业务应用、非研究文种或不属本批范围） | 564 | 19535 | 1204 | 1236 |
+| **合计** | 30468 | 2360 | 8470（无AI实质参与、通用AI/常规业务应用、非研究文种或不属本批范围） | 703 | 18935 | 1209 | 1293 |

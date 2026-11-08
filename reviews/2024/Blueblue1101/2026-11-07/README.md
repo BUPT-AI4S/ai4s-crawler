@@ -1,15 +1,17 @@
-# 王婉婷（Blueblue1101）2024 年 AI4S 阶段交付
+# 王婉婷（Blueblue1101）2024年AI4S交付
 
-主文件：[`../../Blueblue1101.json`](../../Blueblue1101.json)。本次接续此前已上传成果，没有重做或覆盖此前判定。
+主文件：[`../../Blueblue1101.json`](../../Blueblue1101.json)。此前10,933条完整记录保持一致，本轮接续未审队列。
 
-- 累计已审 **10,933** 条：纳入 **2,355**、排除 **8,014**、待定 **564**。
-- 本轮新审 **100** 条：纳入 **6**、排除 **88**、待定 **6**，补齐完整摘要 **29** 条。
-- 累计确认关键词漏筛纳入 **1,204** 篇；完整摘要核验补齐 **1,236** 条。
-- 全量 30,468 条中仍有 **19,535** 条未审，见 `unreviewed.jsonl`，全量补漏尚未完成。
-- 本轮使用已同步的 **754** 项共享词表，无新增词项。
-- [本轮100条汇报](王婉婷_AI4S续审100条_2026-11-08.md)列明三刊处理量、6篇漏筛论文、标签与核验限制。
-- `summary.json`、`validation.json`、`coverage.json`为当前统计与校验；`continuation-checkpoint.json`是续审断点。
-- `continuation5-current-doi-checks.json`保存6篇DOI匹配结果；`continuation5-current-link-checks.json`保存HEAD检查，Cookie跳转导致PDF访问性仍未确认，未下载正文。
-- 跨审核文件仍有890条同键重合、46条判定差异；本轮新增与他人文件重合为0。团队汇总需去重并协调历史差异，未修改他人结果。
+- 本轮批量审核 **600条**：纳入 **5篇**、排除 **456条**（233条文种排除、223条相关性排除）、待定 **139条**（124条摘要问题、15条关系或类型证据不足）。
+- 本轮补齐完整摘要 **57条**；追加 **3个任务标签**，共享词表共 **757项**。
+- 累计已审 **11,533条**：纳入 **2,360**、排除 **8,470**、待定 **703**。
+- 累计确认漏筛纳入 **1,209篇**，完整摘要补齐 **1,293条**。
+- 全量仍有 **18,935条未审**（6,965条缺可用摘要，11,970条有摘要或待核描述）。全量审核和官网补漏尚未完成。
 
-审计文件中的 `upload_performed: false`描述生成时状态；是否已上传以GitHub提交记录为准。历史续审报告按各自批次阅读，最新统计以本README和summary.json为准。
+[本轮600条汇报](王婉婷_AI4S批量续审600条_2026-11-08.md)列明27个来源的处理量、5篇新增纳入论文、标签、核验方法与限制。历史报告按其批次阅读，最新数量以本README及summary.json为准。
+
+本轮按40—80条读取摘要后逐条判定；抽查20条排除记录，重点复核可能纳入和边界项。未用关键词代替语义判断，未读取正文。5篇书目逐项匹配；3篇CVPR补DOI及PDF HEAD核验，2个Nature PDF仍因Cookie跳转待核。
+
+审计入口：`continuation6-batch-triage-summary.json`、`continuation6-batch-decisions.jsonl`、`continuation6-batch-qc.json`、`continuation6-current-metadata-checks.json`、`continuation6-targeted-checks.json`。全量断点见`unreviewed.jsonl`及`continuation-checkpoint.json`。
+
+历史跨审核文件重合890条、判定差异46条，本轮新增重合0；未修改他人文件或负责人登记。校验文件中的`upload_performed: false`是生成时状态，实际上传以GitHub提交记录为准。
