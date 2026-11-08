@@ -1,5 +1,29 @@
 # 2024 年论文摘要复核
 
+## 李雪婷 383 条缺摘要记录的补查（2026 年 11 月 8 日）
+
+核对 17 种期刊的 383 条记录，从作者所在机构或国家科研成果库找回 8 份英文摘要。逐篇按这些摘要复核，8 篇排除，新增纳入 0 篇。其余 375 条仍缺可核实的完整文字摘要。个人交付文件现有 399 条待定，其中 375 条缺摘要，另有 24 条已有摘要、研究证据仍不足。[逐条检索记录](lixueting-383-abstract-search.jsonl.gz) · [个人交付 JSON](../zch66883-lixueting.json) · [全量审核台账](full-corpus-decisions.jsonl.gz)
+
+| 找回摘要的论文 | 摘要版本 | 按摘要筛选的依据 |
+|---|---|---|
+| [Linguatula serrata](<https://researchoutput.csu.edu.au/en/publications/linguatula-serrata/>) | 作者所在大学科研成果库摘要 | 摘要描述寄生节肢动物在食草动物和食肉动物等宿主体内的发育与传播，未涉及 AI 方法。 |
+| [Babesia divergens](<https://asep.lib.cas.cz/arl-cav/en/detail/?zf=SHORTANOT&idx=cav_un_epca*0604188>) | 捷克科学院成果库英文摘要 | 摘要概述巴贝虫在牛、蜱和人群中的感染、传播及生活史，未涉及 AI 方法。 |
+| [Sphaerospora molnari](<https://asep.lib.cas.cz/arl-cav/en/detail/?zf=SHORTANOT&idx=cav_un_epca*0604076>) | 捷克科学院成果库英文摘要 | 摘要介绍鲤鱼寄生虫的宿主特异性、在血液中的增殖和孢子形成，未涉及 AI 方法。 |
+| [Amirthalingamia macracantha](<https://asep.lib.cas.cz/arl-cav/en/detail/?zf=SHORTANOT&idx=cav_un_epca*0604825>) | 捷克科学院成果库英文摘要 | 摘要描述绦虫的三个宿主及其随鸬鹚迁徙扩散的风险，未涉及 AI 方法。 |
+| [Fasciola nyanzae](<https://www.africamuseum.be/en/research/discover/publications/repository/pub_view?pubid=6753>) | 作者所在研究机构的成果库摘要 | 摘要描述河马肝片吸虫的宿主、患病情况及分子监测手段，未涉及 AI 方法。 |
+| [Dicyema moschatum](<https://asep.lib.cas.cz/arl-cav/en/detail/?zf=SHORTANOT&idx=cav_un_epca*0604077>) | 捷克科学院成果库英文摘要 | 摘要概述寄生虫的宿主、体细胞结构与繁殖，也提到用基因组资料研究系统发育，未报告使用 AI 方法。 |
+| [Ixodes uriae (The seabird tick)](<https://bicyt.conicet.gov.ar/fichas/produccion/12037505>) | 作者在 CONICET 科研系统登记的摘要 | 摘要概述海鸟蜱的宿主、生活史、低温耐受性与可能传播的病原体，未涉及 AI 方法。 |
+| [Dermanyssus gallinae (Poultry red mite)](<https://asep.lib.cas.cz/arl-cav/en/detail/?zf=SHORTANOT&idx=cav_un_epca*0604241>) | 捷克科学院成果库英文摘要 | 摘要介绍家禽红螨的生活史、养殖损失和综合虫害管理，未涉及 AI 方法。 |
+
+354 条记录核实了 PubMed 的 DOI 及常规、其他语言或替代摘要字段。33 条同时取得 PMC 结构化存档，其中 32 条没有摘要元素，1 条只有图形摘要。另在 32 条心脏病学记录中为期刊的“临床问题和主要发现”标出单独链接，供查阅。这些研究要点未计入文字摘要。访问受限、记录未匹配及字段为空均在逐条记录内区分。
+
+| 这次复核后的范围 | 纳入 | 排除 | 待定 | 总计 |
+|---|---:|---:|---:|---:|
+| 李雪婷个人交付 | 2,107 | 1,207 | 399 | 3,713 |
+| 李雪婷全量审核台账 | 2,107 | 25,938 | 1,244 | 29,289 |
+
+以下各轮记录保留当时的统计。
+
 ## 李雪婷个人文件中的 137 条已有摘要待定记录（2026 年 11 月 8 日）
 
 逐篇按摘要复查，纳入 71 条，排除 42 条，仍待定 24 条。纳入论文按共享词表标注。最新词表新增 7 个任务标签。[137 条判定、摘要证据句和标签](lixueting-137-abstract-review.json)。
