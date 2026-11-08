@@ -165,7 +165,7 @@
 
 - **继续精筛：** 全量尚余19,635条，其中6,965条仍缺可用摘要，12,670条已有摘要或待核描述但尚未完成审核。
 - **补证与核对：** 558条待定需补完整摘要、明确AI方法或确认文种；46条跨审核人判定差异需在汇总时协调；未核完的来源目录和论文链接继续保留审计状态。
-- **上传状态：** 当前个人JSON、词表和审计材料均在本地。浏览器已恢复登录，GitHub CLI新增授权仍待确认，尚未创建远程提交或PR；并行精筛仍受使用额度限制，主模型已恢复处理并保存断点。
+- **上传状态：** 当前个人JSON、词表和审计材料均在本地。GitHub CLI已授权，成果随本目录提交；并行精筛仍受使用额度限制，主模型已恢复处理并保存断点。
 - **恢复方式：** 从已保存断点过滤已审唯一键后续做；上传前再同步main及共享词表，不重跑覆盖已有成果。
 
 本地个人交付文件：[Blueblue1101.json](repository-files/reviews/2024/Blueblue1101.json)。统计与续审依据：[summary.json](repository-files/reviews/2024/Blueblue1101/2026-11-07/summary.json)、[validation.json](repository-files/reviews/2024/Blueblue1101/2026-11-07/validation.json)、[coverage.json](repository-files/reviews/2024/Blueblue1101/2026-11-07/coverage.json)、[continuation-checkpoint.json](repository-files/reviews/2024/Blueblue1101/2026-11-07/continuation-checkpoint.json)。

@@ -1,14 +1,14 @@
-# 本地待上传包
+# 王婉婷（Blueblue1101）2024 年 AI4S 阶段交付
 
-用户已恢复浏览器登录；GitHub CLI 新增授权仍待确认，本包没有上传，主任务的全量漏筛检查也尚未全部完成。请先阅读`work-report.md`。
+本目录随个人论文 JSON 和共享词表一并提交。主文件：[`../../Blueblue1101.json`](../../Blueblue1101.json)。
 
-- `repository-files/` 按仓库根目录结构组织。个人论文结果为 `reviews/2024/Blueblue1101.json`；词表与核验材料也在相应目录。
-- `reviews/2024/Blueblue1101/2026-11-07/summary.json` 和 `validation.json` 是最终统计与校验。
-- `coverage.json` 按来源列已审/未审；`unreviewed.jsonl` 保留 19635 条续查记录；`full-corpus-audit.jsonl` 对全部 30468 条记录列明状态。
-- `official-directory-audit.json` 明确区分完整、部分和未核验；`source-quality-audit.json` 保存既有来源核验依据。
-- `abstract-backfill-europepmc.json` 是索引摘要补抓；`openaire-descriptions-to-check.json` 仍需内容检查。二者不代表其中每篇已完成精筛。
-- `metadata-quality-audit.json` 内含中间审计及最终修复说明；最新计数以summary为准。
-- `continuation-quality-rechecks.json` 记录合并前的边界复判和文献类型修复；各组 coverage 是交叉复核前的冻结记录，最终数量以 `summary.json`、`coverage.json` 及个人论文 JSON 为准。
-- `checksums.json` 用于检验提交包文件完整性；《待提交说明.md》可用于恢复登录后的提交说明。
+- 已审 **10,833** 条：纳入 **2,349**、排除 **7,926**、待定 **558**。
+- 全量 30,468 条中仍有 **19,635** 条未审，见 `unreviewed.jsonl`；全量补漏尚未完成。
+- 累计确认关键词漏筛纳入 **1,198** 篇；补齐并核验完整摘要 **1,207** 条。
+- 最新续审增加 106 条：排除 102、待定 4，补摘要 32 条。
+- 词表保留最新 main 的 748 项，追加 6 项，总计 754 项。
+- `summary.json`、`validation.json`、`coverage.json` 为当前统计与校验；`continuation-checkpoint.json` 是续审断点。
+- 历史记录与其他审核文件存在 890 条同键重合、46 条判定差异，见 `cross-review-overlap.json`；团队汇总时需去重并协调，未修改他人文件。
+- `work-report.md` 为工作汇报；`王婉婷_AI4S阶段总结.md` 包含来源统计及新刊源水平；漏筛详细清单另附。
 
-恢复上传时，先再次同步最新main并合并共享词表，再应用repository-files；只更新Blueblue1101个人文件、个人核验目录与共享词表，不覆盖其他人的文件。新增词项若届时已有同义项，按仓库规则合并。
+生成时的审计文件可能保留“本地待上传”或 `upload_performed: false`：这些描述生成时状态，不代表本目录未提交；远程版本以 GitHub 提交记录为准。历史续审报告按各自批次阅读，最新数量以本 README 和 summary.json 为准。
