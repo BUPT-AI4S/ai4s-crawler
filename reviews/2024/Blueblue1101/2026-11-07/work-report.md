@@ -1,104 +1,103 @@
-# 王婉婷｜AI4S批量续审工作汇报
+# 王婉婷｜AI4S论文摘要批量审核工作汇报
 
-2026年11月8日 · 2024年论文 · Blueblue1101 · continuation10
+2026年11月8日 · 2024年论文 · Blueblue1101 · continuation11
 
-**本轮新处理1,000条，比上一轮多100条：纳入25篇、排除912条、待定63条；补齐并核验完整摘要32条。** 覆盖18个刊会来源，旧13,633条完整记录保持一致。
+**本轮完成1,200条，比上一轮多200条：纳入21篇、排除1109条、待定70条；补齐并核验完整摘要42条。** 覆盖20个来源，旧14,633条完整记录保持不变。
 
-25篇新增纳入均来自已经采集、但未进入初筛候选的记录，属于**漏筛补录**。本轮新爬论文为0篇，不计作官网漏采补齐。
+新增纳入均来自既有采集、未进入关键词初筛候选的记录，属于**漏筛补录**。本轮新爬0篇，未扩展官网漏采核验。缺摘要或抓取异常项按要求暂缓。
 
-## 审核方法与结果
+## 审核方法
 
-按仓库main `f054fad` 的当前skill和757项共享词表，每批读取40条供给摘要，逐条记录判定、理由和摘要哈希；显示被截断的内容单独重读。根据具体科学／工程任务、AI作用和二者关系判断，不读正文或PDF，也不以关键词代替语义审核。缺可用摘要及抓取异常记录先暂缓。
+采用仓库main `b8abd30` 的现行skill和757项共享词表。按30—50条一批读取完整供给摘要；被截断部分另行重读。逐条保存结论、理由、摘要哈希和队列位置，根据科学／工程任务、AI作用及二者关系判断，未用关键词规则代替语义判断，未读正文或PDF。
 
-| 处理结果 | 条数 | 原因 |
+28条拟纳入再次核对，7条因摘要未说清AI方法转待定；保留21篇并打标签。固定随机种子抽查20条初判排除，排除结论均维持；其中2条修正排除理由：不能仅因栏目叫Perspective或Protocol就否定学术价值，这两篇排除的依据是没有AI实质作用。抽查结果不代表全量准确率。
+
+## 本轮结果及原因
+
+| 结果 | 条数 | 原因 |
 |---|---|---|
-| 纳入 | 25 | 摘要支持AI对具体科学或工程任务的贡献，书目及标签已复核 |
-| 相关性排除 | 910 | 未显示AI实质参与，或仅通用模型／基准评测而无具体科学工程贡献 |
-| 文种排除 | 2 | 欧盟卫生治理倡议、研究注册倡议，属于观点建议而非本批保留的研究或实质性综述 |
-| 待定：摘要问题 | 1 | 题名是金属大环框架，摘要却描述脑视觉行波，明显错配；未将错配文本回填 |
-| 待定：证据不足 | 62 | 摘要未说清AI算法、科学任务或两者关系；包括复核后从拟纳入转待定的1篇 |
+| 纳入 | 21 | 摘要支持AI用于明确科学或工程研究任务 |
+| 相关性排除 | 1107 | 没有AI实质参与，或只有通用模型／基准而缺少科学研究任务 |
+| 文种排除 | 2 | 视觉交互讨论回复、Reaction评论栏目，不属于本批保留的研究或实质综述 |
+| 待定：证据不足 | 69 | 摘要未说明AI算法、贡献或文种，包含7条复查后转待定 |
+| 待定：摘要问题 | 1 | 两个不同DOI条目却取得相同题名和摘要，页码不同，疑似更正关联错误；未回填可疑文本 |
 
-1,000条中，997条完成摘要语义判断，2条按明确文种处理，1条完成摘要质量核查。固定随机种子重读20条初判排除记录（18条相关性、2条文种），全部维持。26篇初步拟纳入均再次检查：25篇保留，1篇幼儿信息搜索研究因Markov分析是否构成AI尚不明确转待定。抽查结果不外推为全量准确率。
+两条同题名记录保留各自原始键，不删原数据；其中原研究按无AI排除，疑似关联错误项暂缓。本轮数量是审核记录数，不能当作独立论文去重数。
 
-## 各刊会本轮工作量
+## 各来源本轮工作量
 
-下表均为既有数据续审；补摘要数是元数据工作量，不与纳入数相加。
+“补摘要”是元数据补录工作量，已包含在已审记录中，不与纳入篇数相加。
 
-| 来源 | 本轮已审 | 纳入 | 排除 | 待定 | 补齐完整摘要 |
-|---|---|---|---|---|---|
-| Nature Communications | 822 | 15 | 753 | 54 | 0 |
-| Molecular Cell | 44 | 0 | 44 | 0 | 24 |
-| Nature Microbiology | 36 | 0 | 35 | 1 | 0 |
-| CVPR | 23 | 4 | 19 | 0 | 0 |
-| Nature Human Behaviour | 15 | 2 | 10 | 3 | 0 |
-| Nature Chemical Biology | 15 | 0 | 13 | 2 | 0 |
-| Nature Neuroscience | 14 | 3 | 9 | 2 | 0 |
-| Chem | 12 | 0 | 11 | 1 | 6 |
-| Nature Physics | 5 | 1 | 4 | 0 | 0 |
-| Cell Discovery | 4 | 0 | 4 | 0 | 0 |
-| Energy Storage Materials | 2 | 0 | 2 | 0 | 0 |
-| Nature Ecology & Evolution | 2 | 0 | 2 | 0 | 0 |
-| International Journal of Mining Science and Technology | 1 | 0 | 1 | 0 | 0 |
-| Trends in Food Science & Technology | 1 | 0 | 1 | 0 | 1 |
-| The Lancet Haematology | 1 | 0 | 1 | 0 | 1 |
-| The Lancet Regional Health - Europe | 1 | 0 | 1 | 0 | 0 |
-| Nano Energy | 1 | 0 | 1 | 0 | 0 |
-| Nature Protocols | 1 | 0 | 1 | 0 | 0 |
-| **合计** | 1000 | 25 | 912 | 63 | 32 |
+| 来源 | 本轮已审 | 新爬 | 纳入 | 排除 | 待定 | 补齐完整摘要 |
+|---|---|---|---|---|---|---|
+| Nature Communications | 964 | 0 | 17 | 890 | 57 | 0 |
+| Molecular Cell | 58 | 0 | 0 | 56 | 2 | 32 |
+| Nature Microbiology | 43 | 0 | 1 | 41 | 1 | 0 |
+| Nature Chemical Biology | 27 | 0 | 0 | 26 | 1 | 0 |
+| CVPR | 26 | 0 | 2 | 23 | 1 | 0 |
+| Nature Neuroscience | 19 | 0 | 1 | 15 | 3 | 0 |
+| Nature Human Behaviour | 17 | 0 | 0 | 14 | 3 | 0 |
+| Chem | 9 | 0 | 0 | 9 | 0 | 5 |
+| Cell Discovery | 8 | 0 | 0 | 8 | 0 | 0 |
+| Nature Physics | 7 | 0 | 0 | 7 | 0 | 0 |
+| Nature Ecology & Evolution | 5 | 0 | 0 | 5 | 0 | 0 |
+| Nano Energy | 3 | 0 | 0 | 2 | 1 | 3 |
+| Nature Protocols | 3 | 0 | 0 | 2 | 1 | 0 |
+| International Journal of Mining Science and Technology | 2 | 0 | 0 | 2 | 0 | 0 |
+| Energy Storage Materials | 2 | 0 | 0 | 2 | 0 | 0 |
+| Journal of Energy Chemistry | 2 | 0 | 0 | 2 | 0 | 1 |
+| The Lancet Regional Health - Europe | 2 | 0 | 0 | 2 | 0 | 0 |
+| Seminars in Cancer Biology | 1 | 0 | 0 | 1 | 0 | 1 |
+| Trends in Cognitive Sciences | 1 | 0 | 0 | 1 | 0 | 0 |
+| The Lancet Planetary Health | 1 | 0 | 0 | 1 | 0 | 0 |
+| **合计** | 1200 | 0 | 21 | 1109 | 70 | 42 |
 
-## 25篇漏筛纳入论文与标签
+## 新增漏筛纳入论文与标签
 
 | 来源 | 论文 | 摘要依据 | 标签 |
 |---|---|---|---|
-| CVPR | [Multi-agent Collaborative Perception via Motion-aware Robust Communication Network](https://openaccess.thecvf.com/content/CVPR2024/html/Hong_Multi-agent_Collaborative_Perception_via_Motion-aware_Robust_Communication_Network_CVPR_2024_paper.html) | 初筛漏筛补录。运动感知神经网络融合车辆与基础设施信息，在噪声和带宽约束下提升协同三维目标检测，服务交通感知工程。 | AI 用于工程科学、自动驾驶感知、神经网络 |
-| CVPR | [Category-Level Multi-Part Multi-Joint 3D Shape Assembly](https://openaccess.thecvf.com/content/CVPR2024/html/Li_Category-Level_Multi-Part_Multi-Joint_3D_Shape_Assembly_CVPR_2024_paper.html) | 初筛漏筛补录。分层图表示学习同时对齐零件几何和物理接头，直接服务机器人装配与CAD部件设计。 | AI 用于工程科学、机器人装配控制、图神经网络 |
-| CVPR | [EvDiG: Event-guided Direct and Global Components Separation](https://openaccess.thecvf.com/content/CVPR2024/html/Zhou_EvDiG_Event-guided_Direct_and_Global_Components_Separation_CVPR_2024_paper.html) | 初筛漏筛补录。事件相机记录快速照明变化并用网络去噪恢复颜色，实现直接与全局光分量的视频率分离，改进光学测量能力。 | AI 用于工程科学、图像重建、神经网络 |
-| CVPR | [Retrieval-Augmented Embodied Agents](https://openaccess.thecvf.com/content/CVPR2024/html/Zhu_Retrieval-Augmented_Embodied_Agents_CVPR_2024_paper.html) | 初筛漏筛补录。多模态策略检索和生成支持具身机器人操作，在仿真与现实机器人任务验证，直接贡献机器人控制。 | AI 用于工程科学、机器人操作控制、检索增强学习、多模态学习 |
-| Nature Human Behaviour | [Images with harder-to-reconstruct visual representations leave stronger memory traces](https://www.nature.com/articles/s41562-024-01870-3) | 初筛漏筛补录。稀疏编码模型压缩图像表征，以重构误差解释记忆准确率和检索反应时，并用模型驱动心理物理实验验证感知记忆机制。 | AI 用于生命科学、神经记忆机制建模、稀疏学习 |
-| Nature Human Behaviour | [Principled distillation of UK Biobank phenotype data reveals underlying structure in human variation](https://www.nature.com/articles/s41562-024-01909-5) | 初筛漏筛补录。大规模因子分析从生物库表型学习35个潜在构念，用于澄清遗传信号和疾病健康关联，直接贡献表型结构发现。 | AI 用于生命科学、潜变量建模 |
-| Nature Communications | [Computational design of ultra-robust strain sensors for soft robot perception and autonomy](https://www.nature.com/articles/s41467-024-45786-y) | 初筛漏筛补录。机器智能结合软体机器人应变传感器预测运动轨迹和地形高度，直接改善机器人感知与自主能力。 | AI 用于工程科学、机器学习 |
-| Nature Communications | [Early detection of emerging viral variants through analysis of community structure of coordinated substitution networks](https://www.nature.com/articles/s41467-024-47304-6) | 初筛漏筛补录。从协同替换网络的稠密社区推断新病毒单倍型并提前检测已知毒株，网络社区发现直接支持病原演化监测。 | AI 用于生命科学、传染病监测、聚类 |
-| Nature Communications | [Cross-modality mapping using image varifolds to align tissue-scale atlases to molecular-scale measures with application to 2D brain sections](https://www.nature.com/articles/s41467-024-47883-4) | 初筛漏筛补录。联合估计潜在转录特征分布与形变映射，将分子空间组学对齐脑组织图谱，直接支持生物图谱整合。 | AI 用于生命科学、医学影像配准、空间转录组分析、潜变量建模 |
-| Nature Communications | [Deciphering complexity in Pd–catalyzed cross-couplings](https://www.nature.com/articles/s41467-024-47939-5) | 初筛漏筛补录。主成分分析与层次聚类解析高通量钯催化反应的产物分布和溶剂效应，直接支持化学反应机制发现。 | AI 用于物质科学、聚类、无监督学习 |
-| Nature Communications | [Recent wetting trend over Taklamakan and Gobi Desert dominated by internal variability](https://www.nature.com/articles/s41467-024-48743-x) | 初筛漏筛补录。结合气候模拟与聚类分析区分天气尺度降水事件，检验沙漠增湿与北大西洋环流的机制联系。 | AI 用于地球宇宙科学、气候建模、聚类 |
-| Nature Communications | [Occipital-temporal cortical tuning to semantic and affective features of natural images predicts associated behavioral responses](https://www.nature.com/articles/s41467-024-49073-8) | 初筛漏筛补录。体素建模、主成分分析和行为预测比较揭示视觉皮层对语义情感特征的表征，直接研究神经信息编码与行为关系。 | AI 用于生命科学、视觉神经机制建模、监督学习 |
-| Nature Communications | [Simultaneous enhancement of multiple functional properties using evolution-informed protein design](https://www.nature.com/articles/s41467-024-49119-x) | 初筛漏筛补录。从同源蛋白序列学习共变模型EVcouplings，设计多突变酶并实验验证活性和稳定性提升，直接支持蛋白质工程。 | AI 用于生命科学、蛋白质设计、酶设计、蛋白质序列建模、无监督学习 |
-| Nature Communications | [A model-free method to learn multiple skills in parallel on modular robots](https://www.nature.com/articles/s41467-024-50131-4) | 初筛漏筛补录。基于中央模式发生器搜索初始状态，在多种真实模块机器人上快速学习运动技能，直接实现机器人控制。 | AI 用于工程科学、机器人运动控制、策略学习 |
-| Nature Communications | [A multi-modal, asymmetric, weighted, and signed description of anatomical connectivity](https://www.nature.com/articles/s41467-024-50248-6) | 初筛漏筛补录。多模态回归模型从训练数据学习个体有向带符号脑连接权重，提升连接组建模及脑行为关联分析。 | AI 用于生命科学、神经连接推断、监督学习 |
-| Nature Communications | [Symbolic metaprogram search improves learning efficiency and explains rule learning in humans](https://www.nature.com/articles/s41467-024-50966-x) | 初筛漏筛补录。对元程序开展符号搜索，在人类规则学习行为基准上解释学习效率和表现，直接研究人类认知机制。 | AI 用于社会科学、程序合成、搜索与规划 |
-| Nature Communications | [Reducing herbivory in mixed planting by genomic prediction of neighbor effects in the field](https://www.nature.com/articles/s41467-024-52374-7) | 初筛漏筛补录。利用基因组预测与Ising启发模型筛选抗食草混种基因型组合，并以田间实验验证减害，直接服务农业设计。 | AI 用于生命科学、作物育种设计、监督学习 |
-| Nature Communications | [Sensory experience steers representational drift in mouse visual cortex](https://www.nature.com/articles/s41467-024-53326-x) | 初筛漏筛补录。神经网络模型结合Hebbian学习和突触波动解释小鼠视觉皮层表征漂移，并与成像及视觉剥夺实验对照。 | AI 用于生命科学、神经学习机制建模、神经网络 |
-| Nature Communications | [Integrative spatial and genomic analysis of tumor heterogeneity with Tumoroscope](https://www.nature.com/articles/s41467-024-53374-3) | 初筛漏筛补录。Tumoroscope概率模型融合病理、外显子和空间转录数据，学习肿瘤克隆组成及空间位置，直接解析肿瘤异质性。 | AI 用于生命科学、空间转录组分析、多组学整合分析、潜变量建模 |
-| Nature Communications | [Warm Arctic-Cold Eurasia pattern helps predict spring wildfire burned area in West Siberia](https://www.nature.com/articles/s41467-024-53470-4) | 初筛漏筛补录。多元线性回归学习冬季气候指标与春季火灾面积关系，并独立预测2019和2020年烧毁面积及排放，支持环境灾害预测。 | AI 用于地球宇宙科学、监督学习 |
-| Nature Communications | [Spatial transcriptomics reveals substantial heterogeneity in triple-negative breast cancer with potential clinical implications](https://www.nature.com/articles/s41467-024-54145-w) | 初筛漏筛补录。整合空间转录组和组织学并以分步聚类识别九种乳腺癌空间类型，经外部数据验证并关联预后和治疗。 | AI 用于生命科学、肿瘤分型、空间转录组分析、聚类 |
-| Nature Neuroscience | [The logic of recurrent circuits in the primary visual cortex](https://www.nature.com/articles/s41593-023-01510-5) | 初筛漏筛补录。循环兴奋和抑制连接计算模型解释光遗传操控视觉皮层的实验现象，直接研究神经信息处理机制。 | AI 用于生命科学、视觉神经机制建模、循环神经网络 |
-| Nature Neuroscience | [Co-dependent excitatory and inhibitory plasticity accounts for quick, stable and long-lasting memories in biological networks](https://www.nature.com/articles/s41593-024-01597-4) | 初筛漏筛补录。兴奋与抑制突触协同可塑性模型解释快速稳定记忆，并在循环神经网络重现运动皮层动力学，直接研究神经学习机制。 | AI 用于生命科学、神经学习机制建模、循环神经网络 |
-| Nature Neuroscience | [Maintaining and updating accurate internal representations of continuous variables with a handful of neurons](https://www.nature.com/articles/s41593-024-01766-5) | 初筛漏筛补录。结合果蝇钙成像与可调小型神经网络分析，解释连续头方向表征及噪声敏感性，直接研究神经记忆编码机制。 | AI 用于生命科学、神经记忆机制建模、神经网络 |
-| Nature Physics | [Heavy-tailed neuronal connectivity arises from Hebbian self-organization](https://www.nature.com/articles/s41567-023-02332-9) | 初筛漏筛补录。结合Hebbian可塑性的神经网络自组织模型解释连接重尾和聚类，并在多动物连接组验证，直接研究神经网络形成机制。 | AI 用于生命科学、神经学习机制建模、神经连接推断、神经网络 |
+| CVPR | [MLIP: Enhancing Medical Visual Representation with Divergence Encoder and Knowledge-guided Contrastive Learning](https://openaccess.thecvf.com/content/CVPR2024/html/Li_MLIP_Enhancing_Medical_Visual_Representation_with_Divergence_Encoder_and_Knowledge-guided_CVPR_2024_paper.html) | 初筛漏筛补录。医学知识引导图文对比预训练，用于医学影像分类、检测和分割。 | AI 用于生命科学、医学影像分类、医学影像分割、预训练、多模态学习、对比学习、知识引导学习 |
+| CVPR | [Deep Single Image Camera Calibration by Heatmap Regression to Recover Fisheye Images Under Manhattan World Assumption](https://openaccess.thecvf.com/content/CVPR2024/html/Wakai_Deep_Single_Image_Camera_Calibration_by_Heatmap_Regression_to_Recover_CVPR_2024_paper.html) | 初筛漏筛补录。热图回归学习相机方向并校正鱼眼畸变，在实际商用相机验证，直接改进测量标定能力。 | AI 用于工程科学、深度学习、监督学习 |
+| Nature Communications | [Global evaluation of lineage-specific human papillomavirus capsid antigenicity using antibodies elicited by natural infection](https://www.nature.com/articles/s41467-024-45807-w) | 初筛漏筛补录。对中和抗体数据开展抗原聚类，识别HPV谱系特异性抗原分群及血清型，聚类用于病毒免疫研究。 | AI 用于生命科学、聚类 |
+| Nature Communications | [Nuclei-specific hypothalamus networks predict a dimensional marker of stress in humans](https://www.nature.com/articles/s41467-024-46275-y) | 初筛漏筛补录。从下丘脑核团功能连接建立可样本外预测压力评分的模型，研究特定脑网络与人类压力的关系。 | AI 用于生命科学、症状严重度预测、监督学习 |
+| Nature Communications | [Neuromorphic antennal sensory system](https://www.nature.com/articles/s41467-024-46393-7) | 初筛漏筛补录。人工突触神经形态感知系统完成触觉纹理分类和磁导航，具有实测仿生传感工程任务。 | AI 用于工程科学、神经网络 |
+| Nature Communications | [Optimal blade pitch control for enhanced vertical-axis wind turbine performance](https://www.nature.com/articles/s41467-024-46988-0) | 初筛漏筛补录。遗传算法与自动化风机实验闭环搜索叶片变桨策略，提高发电性能并降低结构载荷。 | AI 用于工程科学、风机载荷控制、演化优化 |
+| Nature Communications | [Ozone as an environmental driver of influenza](https://www.nature.com/articles/s41467-024-48199-z) | 初筛漏筛补录。采用PC条件独立图模型因果发现并与状态重建及回归交叉验证，识别臭氧对流感活动的影响。 | AI 用于生命科学、传染病监测、因果推断、概率图模型 |
+| Nature Communications | [Sustained IFN signaling is associated with delayed development of SARS-CoV-2-specific immunity](https://www.nature.com/articles/s41467-024-48556-y) | 初筛漏筛补录。使用k-means整合纵向血浆数据并验证患者分群，揭示COVID-19免疫响应和预后差异。 | AI 用于生命科学、聚类 |
+| Nature Communications | [Memristor-based adaptive neuromorphic perception in unstructured environments](https://www.nature.com/articles/s41467-024-48908-8) | 初筛漏筛补录。忆阻器神经形态在线适应完成机器人触觉抓握和驾驶环境识别，有真实工程验证。 | AI 用于工程科学、机器人抓取、自动驾驶感知、在线学习 |
+| Nature Communications | [Heterogeneous associations of multiplexed environmental factors and multidimensional aging metrics](https://www.nature.com/articles/s41467-024-49283-0) | 初筛漏筛补录。自组织映射学习环境暴露亚群，结合衰老指标揭示不同污染组合的健康关联。 | AI 用于生命科学、聚类、无监督学习 |
+| Nature Communications | [Data-driven approaches linking wastewater and source estimation hazardous waste for environmental management](https://www.nature.com/articles/s41467-024-49817-6) | 初筛漏筛补录。用因果发现筛选特征和数据平衡算法建立废水到危险废物的预测框架，验证1024家企业环境管理任务。 | AI 用于地球宇宙科学、因果推断、特征选择、机器学习 |
+| Nature Communications | [Single cell expression and chromatin accessibility of the Toxoplasma gondii lytic cycle identifies AP2XII-8 as an essential ribosome regulon driver](https://www.nature.com/articles/s41467-024-51011-7) | 初筛漏筛补录。聚类和伪时间轨迹整合单细胞转录及染色质图谱，揭示弓形虫细胞周期调控与核糖体基因调控子。 | AI 用于生命科学、细胞轨迹推断、聚类 |
+| Nature Communications | [Differential stability of task variable representations in retrosplenial cortex](https://www.nature.com/articles/s41467-024-51227-7) | 初筛漏筛补录。线性分类器解码纵向神经群体记录，比较情境、结果及运动选择表征稳定性，直接研究记忆编码机制。 | AI 用于生命科学、神经记忆机制建模、监督学习 |
+| Nature Communications | [Multiscale mapping of transcriptomic signatures for cardiotoxic drugs](https://www.nature.com/articles/s41467-024-52145-4) | 初筛漏筛补录。奇异值分解提取药物特异转录模式并结合离群分析和基因组预测心脏毒性相关变异，服务药物安全研究。 | AI 用于生命科学、毒性预测、低秩逼近 |
+| Nature Communications | [Changes in cortical manifold structure following stroke and its relation to behavioral recovery in the male macaque](https://www.nature.com/articles/s41467-024-53365-4) | 初筛漏筛补录。将皮质功能连接投影到低维流形，比较卒中前后表征变化并联系行为恢复，降维用于脑损伤机制研究。 | AI 用于生命科学、脑结构功能耦合分析、表示学习 |
+| Nature Communications | [Genetic basis of right and left ventricular heart shape](https://www.nature.com/articles/s41467-024-53594-7) | 初筛漏筛补录。PCA从心脏影像学习形态潜在维度，结合GWAS发现心脏形态遗传位点及疾病关系。 | AI 用于生命科学、潜变量建模 |
+| Nature Communications | [Integrating spoken instructions into flight trajectory prediction to optimize automation in air traffic control](https://www.nature.com/articles/s41467-024-54069-5) | 初筛漏筛补录。多模态学习融合口头管制指令与轨迹，降低真实航迹预测误差并支持航空安全工程。 | AI 用于工程科学、动力系统轨迹预测、多模态学习 |
+| Nature Communications | [Soil carbon in the world’s tidal marshes](https://www.nature.com/articles/s41467-024-54572-9) | 初筛漏筛补录。利用3710处训练数据及环境因子预测潮汐沼泽土壤碳，形成30米全球碳储量图与预测误差估计。 | AI 用于地球宇宙科学、土壤有机碳预测、监督学习 |
+| Nature Communications | [Systematic, computational discovery of multicomponent and one-pot reactions](https://www.nature.com/articles/s41467-024-54611-5) | 初筛漏筛补录。将反应机理知识和物理有机规则编码为自主推理系统，设计新多组分反应并实验验证，AI用于化学反应发现。 | AI 用于物质科学、反应结果预测、反应产率预测、知识引导学习、搜索与规划 |
+| Nature Neuroscience | [The cell-type underpinnings of the human functional cortical connectome](https://www.nature.com/articles/s41593-024-01812-2) | 初筛漏筛补录。训练分类器从细胞类型分布预测皮质功能网络归属，解释人脑细胞组成与功能连接的关系。 | AI 用于生命科学、脑结构功能耦合分析、监督学习 |
+| Nature Microbiology | [Prediction of strain level phage–host interactions across the Escherichia genus using only genomic information](https://www.nature.com/articles/s41564-024-01832-5) | 初筛漏筛补录。训练基因组预测算法推断噬菌体宿主相互作用，并在病原菌上验证个体化噬菌体组合。 | AI 用于生命科学、监督学习 |
 
-## 元数据与标签核验
+## 元数据和标签核验
 
-- 25篇均匹配正式页面的题名、作者和2024年出版信息；24篇核实DOI。EvDiG的Crossref查询失败，官方页未提供DOI，保留空值及失败记录，未反复重试。
-- 23篇另取得题名与年份匹配的Crossref信息。其中《Category-Level Multi-Part Multi-Joint 3D Shape Assembly》的Crossref作者列表多出两人，与CVF官方列表冲突；保留CVF作者列表并记录差异，未把Crossref作者核验标成一致。
-- 4篇CVPR公开PDF端点通过HTTP HEAD检查；21篇Nature系列PDF发生Cookie验证跳转，标为未核验。没有下载或读取PDF，本轮没有新增代码／项目链接可用性声明。
-- 本轮复用38种现有标签，无新增词项，词表保持757项。只保留有摘要依据的维度；对词表中不完全匹配的任务不硬套标签。
+- 21篇核对正式页面引用元数据；18篇取得题名、年份匹配的Crossref书目；21篇核实DOI。作者冲突、缺失或访问失败按审计文件原样保留，不将未核实项写成已核实。
+- 2个公开PDF端点通过HTTP HEAD，其余无可验证端点或出现验证跳转，留空或标为未核验。没有下载或读取PDF。代码／项目链接保持已有数据，本轮未声明新增可用性核验。
+- 复用38种现有标签，无新增词项；共享词表仍为757项。未明确支持的方法或训练阶段不打标签。
 
-## 累计进度与剩余工作
+## 累计进度
 
-| 指标 | 累计结果 |
+| 指标 | 累计 |
 |---|---|
-| 已审记录 | 14,633 |
-| 纳入 | 2,415篇 |
-| 排除 | 11,317条（无AI4S实质关系、非研究文种或不属本批范围） |
-| 待定 | 901条 |
-| 确认漏筛纳入 | 1,264篇（已包含在纳入总数内） |
-| 核验补齐完整摘要 | 1,515条 |
-| 仍未审 | 15,835条 |
+| 已审 | 15,833条 |
+| 纳入 | 2,436篇 |
+| 排除 | 12,426条（无AI4S实质关系、非研究文种或不属本批范围） |
+| 待定 | 971条 |
+| 漏筛纳入 | 1,285篇（已含在纳入总数内） |
+| 核验补齐完整摘要 | 1,557条 |
+| 尚未审核 | 14,635条 |
 
-**全量审核尚未完成。** 剩余15,835条中，6,965条缺可用摘要暂缓，8,870条有供给摘要或待核描述可继续审核；其中仍可能存在摘要质量问题。已审待定901条不包含在未审15,835条中。
+**仍有7,670条供给摘要／待核描述可继续审核，另6,965条缺可用摘要暂缓。** 二者合计14,635条未审。已审待定971条另列，不包含在未审数量中。全量审核与官网补漏尚未完成。
 
-此前1,574条初筛候选（包含1,383条个人旧记录）均已复核。本轮不扩大官网漏采核验范围，不能把漏筛纳入写成新爬论文。
+唯一键、原字段、旧14,633条完整记录、标签规范和数量闭合校验通过：15,833已审＋14,635未审＝30,468。跨审核同键重合890条、判定不同46条，本轮新增重合0条；未修改他人文件或负责人登记。
 
-唯一键、原字段、旧13,633条完整记录、757项词表和计数闭合校验通过：14,633已审＋15,835未审＝30,468。跨审核文件同键重合890条、判定不同46条，本轮新增重合0条；未修改他人文件或负责人登记。
-
-交付：[个人JSON](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101.json)、[累计统计](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101/2026-11-07/summary.json)、[本轮逐条审计](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101/2026-11-07/continuation10-batch-decisions.jsonl)、[抽查记录](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101/2026-11-07/continuation10-batch-qc.json)。实际上传以GitHub提交记录及本地publication.json为准。
+交付：[个人JSON](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101.json)、[累计统计](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101/2026-11-07/summary.json)、[逐条审计](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101/2026-11-07/continuation11-batch-decisions.jsonl)、[抽查记录](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101/2026-11-07/continuation11-batch-qc.json)。实际上传以GitHub提交和本地publication.json为准。
