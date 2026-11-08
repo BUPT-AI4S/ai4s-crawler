@@ -1,0 +1,56 @@
+{
+  "assigned_queue_indices": [
+    0,
+    499
+  ],
+  "assigned_count": 500,
+  "reviewed_count": 500,
+  "decisions": {
+    "exclude": 457,
+    "include": 2,
+    "pending": 41
+  },
+  "unreviewed_indices": [],
+  "scope_complete": true,
+  "scope_note": "仅本轮队列0至499；摘要逐篇语义判断，关键词未用作最终排除。",
+  "publication_status": "local_only",
+  "source_counts": {
+    "input_abstract": 249,
+    "EuropePMC": 238,
+    "OpenAIRE": 13
+  },
+  "quality_flags": 18,
+  "quality_status_counts": {
+    "original_abstract_reviewed": 235,
+    "abstract_content_manually_reviewed": 247,
+    "invalid_version_linkage_uncertain": 4,
+    "partial_original_abstract": 1,
+    "invalid_original_fulltext_not_used": 3,
+    "invalid_original_article_abstract_on_correction": 1,
+    "invalid_letter_fulltext_not_used": 1,
+    "fragment_background_only": 8
+  },
+  "proposed_tag_count": 1,
+  "remaining_outside_assigned_range": 5159,
+  "validation": {
+    "keys_match_queue": true,
+    "indices_unique_contiguous": true,
+    "tags_existing_or_proposed": true,
+    "prior_output_overlap_checks": [
+      {
+        "file": "work/rereview-20261107/biomedical_agent/reviewed.jsonl",
+        "overlap": 0
+      },
+      {
+        "file": "work/rereview-20261107/physical_supplement/reviewed.jsonl",
+        "overlap": 0
+      },
+      {
+        "file": "work/rereview-20261107/physical_priority/reviewed.jsonl",
+        "overlap": 0
+      }
+    ]
+  },
+  "metadata_note": "复用队列输入及缓存索引；作者、PDF未重新HTTP核验。invalid/fragment/partial及版本不明记录不应计入完整有效摘要补全。",
+  "reading_note": "逐篇读取可用完整摘要；检测到正文/引言混入时停止内容判断并记录质量问题；正式类型可据类型排除。无正文用于AI4S语义结论。"
+}
