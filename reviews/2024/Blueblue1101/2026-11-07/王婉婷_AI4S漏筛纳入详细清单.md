@@ -1,12 +1,12 @@
-# 王婉婷｜AI4S漏筛纳入论文详细清单（1,198篇）
+# 王婉婷｜AI4S漏筛纳入论文详细清单（1,204篇）
 
 统计截至本地成果2026年11月8日，论文按2024年批次归档。负责人：王婉婷（Blueblue1101）。
 
 ## 统计口径
 
-本清单包含**已在全量数据中、未进入原初筛候选、后经摘要精筛判定纳入**的1,198篇论文，共45个刊会来源。它们是累计2,349篇纳入论文的子集，不是另加1,198篇，也不代表新爬取了1,198篇论文。
+本清单包含**已在全量数据中、未进入原初筛候选、后经摘要精筛判定纳入**的1,204篇论文，共45个刊会来源。它们是累计2,355篇纳入论文的子集，不是另加1,204篇，也不代表新爬取了1,204篇论文。
 
-已核对原初筛候选：唯一键、DOI及同来源规范化题名均未发现重复。清单内部DOI或稳定ID去重后仍为1,198条。DOI中的年份字符串不一定等于正式归档年份，例如部分包含2023的DOI在本批按2024年出版记录处理。
+已核对原初筛候选：唯一键、DOI及同来源规范化题名均未发现重复。清单内部DOI或稳定ID去重后仍为1,204条。DOI中的年份字符串不一定等于正式归档年份，例如部分包含2023的DOI在本批按2024年出版记录处理。
 
 **可以确认的是“未进入原候选、现已纳入”；不能仅凭这个差集断定每篇都是某一个关键词规则漏掉。** 部分个案已确认存在摘要缺失、作者贡献或审稿修改说明误作摘要等问题，其余未逐篇复盘初筛程序的具体漏判环节。
 
@@ -40,7 +40,7 @@
 | CVPR | 156 |
 | npj Digital Medicine | 124 |
 | ECAI | 93 |
-| Artificial Intelligence Review | 69 |
+| Artificial Intelligence Review | 75 |
 | Information Fusion | 35 |
 | Renewable and Sustainable Energy Reviews | 25 |
 | Advances in Applied Energy | 10 |
@@ -80,9 +80,9 @@
 | Cell Discovery | 1 |
 | Nature Microbiology | 1 |
 | Nature Physics | 1 |
-| **合计** | 1198 |
+| **合计** | 1204 |
 
-## 全部1,198篇明细
+## 全部1,204篇明细
 
 以下按来源分组。每条列出原题名、DOI或稳定ID、标签及已经保存的纳入理由；理由反映摘要证据，不构成论文复现实验结果。
 
@@ -5747,7 +5747,7 @@
 - 纳入依据：领域预训练语言模型修正生物医学文献概念标注假阴性，支持无标注新概念的精细科研检索。
 
 
-### Artificial Intelligence Review（69篇）
+### Artificial Intelligence Review（75篇）
 
 #### 942. [A comprehensive assessment of artificial intelligence applications for cancer diagnosis](https://doi.org/10.1007/s10462-024-10783-6)
 
@@ -5821,556 +5821,592 @@
 - 标签：AI 用于工程科学；主动学习；卷积神经网络
 - 纳入依据：主动学习CNN用于听障辅助沟通中的手语识别，结合迭代反馈并在手语数据上验证，属于具体无障碍工程系统研究。
 
-#### 954. [An experimental evaluation of deep reinforcement learning algorithms for HVAC control](https://doi.org/10.1007/s10462-024-10819-x)
+#### 954. [Ameliorated Fick’s law algorithm based multi-threshold medical image segmentation](https://doi.org/10.1007/s10462-024-10919-8)
+
+- DOI／稳定ID：`10.1007/s10462-024-10919-8`
+- 标签：AI 用于生命科学；医学影像分割；演化优化
+- 纳入依据：摘要针对多阈值医学图像分割改进 Fick 定律优化策略，并在 COVID-19、脑部及肺结肠病理图像分割中验证，直接支持医学图像结构提取。
+
+#### 955. [An experimental evaluation of deep reinforcement learning algorithms for HVAC control](https://doi.org/10.1007/s10462-024-10819-x)
 
 - DOI／稳定ID：`10.1007/s10462-024-10819-x`
 - 标签：AI 用于工程科学；能源系统优化；强化学习
 - 纳入依据：在建筑暖通控制系统上系统评估深度强化学习的能耗、舒适度及鲁棒性，直接支持实际能源控制研究。
 
-#### 955. [An experimental evaluation of Siamese Neural Networks for robot localization using omnidirectional imaging in indoor environments](https://doi.org/10.1007/s10462-024-10840-0)
+#### 956. [An experimental evaluation of Siamese Neural Networks for robot localization using omnidirectional imaging in indoor environments](https://doi.org/10.1007/s10462-024-10840-0)
 
 - DOI／稳定ID：`10.1007/s10462-024-10840-0`
 - 标签：AI 用于工程科学；卷积神经网络
 - 纳入依据：孪生卷积网络学习全景视觉表征，在不同光照下验证室内机器人全局定位，具有具体机器人导航工程任务。
 
-#### 956. [Application of artificial intelligence technology in the field of orthopedics: a narrative review](https://doi.org/10.1007/s10462-023-10638-6)
+#### 957. [Anomalous citations detection in academic networks](https://doi.org/10.1007/s10462-023-10655-5)
+
+- DOI／稳定ID：`10.1007/s10462-023-10655-5`
+- 标签：AI 用于社会科学；异常检测；表示学习
+- 纳入依据：摘要以异常引文为科学计量研究对象，结合非负矩阵分解与网络表示学习检测异构学术网络中的不相关引用，并构建三个评估数据集。AI 直接支持引文关系分析。
+
+#### 958. [Application of artificial intelligence technology in the field of orthopedics: a narrative review](https://doi.org/10.1007/s10462-023-10638-6)
 
 - DOI／稳定ID：`10.1007/s10462-023-10638-6`
 - 标签：AI 用于生命科学；疾病辅助诊断
 - 纳入依据：骨科AI方法实质综述覆盖疾病分级、诊断、治疗及康复，并评价技术优缺点。
 
-#### 957. [Applications of deep learning in Alzheimer’s disease: a systematic literature review of current trends, methodologies, challenges, innovations, and future directions](https://doi.org/10.1007/s10462-024-11041-5)
+#### 959. [Applications of deep learning in Alzheimer’s disease: a systematic literature review of current trends, methodologies, challenges, innovations, and future directions](https://doi.org/10.1007/s10462-024-11041-5)
 
 - DOI／稳定ID：`10.1007/s10462-024-11041-5`
 - 标签：AI 用于生命科学；疾病辅助诊断；卷积神经网络
 - 纳入依据：OpenAIRE为综述摘要；系统比较阿尔茨海默病深度学习诊断、分类和药物应用，评述解释性、数据及临床适用性。
 
-#### 958. [Applications, technologies, and evaluation methods in smart aquaponics: a systematic literature review](https://doi.org/10.1007/s10462-024-11003-x)
+#### 960. [Applications, technologies, and evaluation methods in smart aquaponics: a systematic literature review](https://doi.org/10.1007/s10462-024-11003-x)
 
 - DOI／稳定ID：`10.1007/s10462-024-11003-x`
 - 标签：AI 用于生命科学；机器学习
 - 纳入依据：系统综述鱼菜共生系统中机器学习和深度学习用于状态预测、异常检测及资源优化，讨论农业生产系统的真实评测与局限。
 
-#### 959. [Artificial intelligence and edge computing for machine maintenance-review](https://doi.org/10.1007/s10462-024-10748-9)
+#### 961. [Artificial intelligence and edge computing for machine maintenance-review](https://doi.org/10.1007/s10462-024-10748-9)
 
 - DOI／稳定ID：`10.1007/s10462-024-10748-9`
 - 标签：AI 用于工程科学
 - 纳入依据：综述工业设备在边缘端部署AI诊断与预测维护的技术，直接面向设备健康及寿命研究。
 
-#### 960. [Artificial intelligence for literature reviews: opportunities and challenges](https://doi.org/10.1007/s10462-024-10902-3)
+#### 962. [Artificial intelligence for literature reviews: opportunities and challenges](https://doi.org/10.1007/s10462-024-10902-3)
 
 - DOI／稳定ID：`10.1007/s10462-024-10902-3`
 - 标签：科学信息抽取；大语言模型
 - 纳入依据：实质综述系统综述筛选与信息抽取的 AI 工具，比较 21 项工具及 11 项语言模型工具，直接支持科研证据综合。
 
-#### 961. [Artificial intelligence in optical lens design](https://doi.org/10.1007/s10462-024-10842-y)
+#### 963. [Artificial intelligence in optical lens design](https://doi.org/10.1007/s10462-024-10842-y)
 
 - DOI／稳定ID：`10.1007/s10462-024-10842-y`
 - 标签：AI 用于工程科学；机器学习；光子器件设计
 - 纳入依据：实质综述 AI 自动生成折射光学镜头初始设计的方法和限制，直接支持光学器件设计。
 
-#### 962. [Artificial intelligence strategies for simulating the integrated energy systems](https://doi.org/10.1007/s10462-024-10704-7)
+#### 964. [Artificial intelligence strategies for simulating the integrated energy systems](https://doi.org/10.1007/s10462-024-10704-7)
 
 - DOI／稳定ID：`10.1007/s10462-024-10704-7`
 - 标签：AI 用于工程科学；能源系统性能预测；物理与数据融合建模
 - 纳入依据：实质综述 AI 与数值模拟融合用于可再生能源耦合系统的建模、控制和实验分析。
 
-#### 963. [Artificial intelligence techniques for dynamic security assessments - a survey](https://doi.org/10.1007/s10462-024-10993-y)
+#### 965. [Artificial intelligence techniques for dynamic security assessments - a survey](https://doi.org/10.1007/s10462-024-10993-y)
 
 - DOI／稳定ID：`10.1007/s10462-024-10993-y`
 - 标签：AI 用于工程科学；机器学习
 - 纳入依据：综述 AI 学习电力运行条件与稳定性的非线性关系，替代昂贵动力学模拟并扩大电网动态安全评估覆盖。
 
-#### 964. [Artificial intelligence-based optimization techniques for optimal reactive power dispatch problem: a contemporary survey, experiments, and analysis](https://doi.org/10.1007/s10462-024-10982-1)
+#### 966. [Artificial intelligence-based optimization techniques for optimal reactive power dispatch problem: a contemporary survey, experiments, and analysis](https://doi.org/10.1007/s10462-024-10982-1)
 
 - DOI／稳定ID：`10.1007/s10462-024-10982-1`
 - 标签：AI 用于工程科学；能源系统优化
 - 纳入依据：研究群体智能优化电力系统无功调度，在多规模电网检验功率损耗及电压偏差改进，直接解决能源工程优化任务。
 
-#### 965. [Cost-sensitive learning for imbalanced medical data: a review](https://doi.org/10.1007/s10462-023-10652-8)
+#### 967. [Automatic fruit picking technology: a comprehensive review of research advances](https://doi.org/10.1007/s10462-023-10674-2)
+
+- DOI／稳定ID：`10.1007/s10462-023-10674-2`
+- 标签：AI 用于工程科学
+- 纳入依据：摘要实质综述机器视觉在水果自动识别、感知及采摘系统中的应用、工作原理与实验结果，直接服务农业采摘装备的效率和无损作业研究。
+
+#### 968. [Cost-sensitive learning for imbalanced medical data: a review](https://doi.org/10.1007/s10462-023-10652-8)
 
 - DOI／稳定ID：`10.1007/s10462-023-10652-8`
 - 标签：AI 用于生命科学；机器学习
 - 纳入依据：系统综述成本敏感学习处理不平衡医学数据的 173 项研究，按医学任务、模态与模型效果分析医疗应用。
 
-#### 966. [Data augmentation in predictive maintenance applicable to hydrogen combustion engines: a review](https://doi.org/10.1007/s10462-024-11021-9)
+#### 969. [Data augmentation in predictive maintenance applicable to hydrogen combustion engines: a review](https://doi.org/10.1007/s10462-024-11021-9)
 
 - DOI／稳定ID：`10.1007/s10462-024-11021-9`
 - 标签：AI 用于工程科学；机械故障诊断；机器学习
 - 纳入依据：综述生成模型增广传感故障数据以支持氢燃烧发动机预测维护，讨论生成信号质量与物理可信性评价。
 
-#### 967. [Deep learning for surgical instrument recognition and segmentation in robotic-assisted surgeries: a systematic review](https://doi.org/10.1007/s10462-024-10979-w)
+#### 970. [Deep learning for surgical instrument recognition and segmentation in robotic-assisted surgeries: a systematic review](https://doi.org/10.1007/s10462-024-10979-w)
 
 - DOI／稳定ID：`10.1007/s10462-024-10979-w`
 - 标签：AI 用于生命科学；深度学习
 - 纳入依据：系统综述深度学习识别与分割机器人手术器械的 48 项研究，支持真实手术导航、技能评估与安全。
 
-#### 968. [Deep learning for survival analysis: a review](https://doi.org/10.1007/s10462-023-10681-3)
+#### 971. [Deep learning for survival analysis: a review](https://doi.org/10.1007/s10462-023-10681-3)
 
 - DOI／稳定ID：`10.1007/s10462-023-10681-3`
 - 标签：AI 用于生命科学；生存结局预测；深度学习
 - 纳入依据：系统综述深度学习从图像和组学等数据进行生存时间与事件风险分析，整理删失、竞争风险等科学分析任务及方法。
 
-#### 969. [Deep learning for thyroid nodule examination: a technical review](https://doi.org/10.1007/s10462-023-10635-9)
+#### 972. [Deep learning for thyroid nodule examination: a technical review](https://doi.org/10.1007/s10462-023-10635-9)
 
 - DOI／稳定ID：`10.1007/s10462-023-10635-9`
 - 标签：AI 用于生命科学；医学影像分类；深度学习；医学影像分割
 - 纳入依据：综述深度学习在甲状腺超声结节分类、检测与分割中的技术、数据和限制，直接支持疾病影像分析。
 
-#### 970. [Deep learning implementation of image segmentation in agricultural applications: a comprehensive review](https://doi.org/10.1007/s10462-024-10775-6)
+#### 973. [Deep learning implementation of image segmentation in agricultural applications: a comprehensive review](https://doi.org/10.1007/s10462-024-10775-6)
 
 - DOI／稳定ID：`10.1007/s10462-024-10775-6`
 - 标签：AI 用于生命科学；卷积神经网络；Transformer 架构；图神经网络
 - 纳入依据：实质综述深度分割用于作物病害、杂草、产量及生长监测，整理领域数据和算法评测。
 
-#### 971. [Deep learning model using classification for diabetic retinopathy detection: an overview](https://doi.org/10.1007/s10462-024-10806-2)
+#### 974. [Deep learning model using classification for diabetic retinopathy detection: an overview](https://doi.org/10.1007/s10462-024-10806-2)
 
 - DOI／稳定ID：`10.1007/s10462-024-10806-2`
 - 标签：AI 用于生命科学；疾病辅助诊断；深度学习
 - 纳入依据：深度多层感知模型结合眼底区域与纹理特征识别糖尿病视网膜病变分级，给出疾病检测效果。
 
-#### 972. [Deep learning-based authentication for insider threat detection in critical infrastructure](https://doi.org/10.1007/s10462-024-10893-1)
+#### 975. [Deep learning-based authentication for insider threat detection in critical infrastructure](https://doi.org/10.1007/s10462-024-10893-1)
 
 - DOI／稳定ID：`10.1007/s10462-024-10893-1`
 - 标签：AI 用于信息科学；卷积神经网络
 - 纳入依据：OpenAIRE为研究摘要；CNN孪生网络学习击键行为身份特征，验证对关键设施冒用凭据的检测机制。
 
-#### 973. [Development and trending of deep learning methods for wind power predictions](https://doi.org/10.1007/s10462-024-10728-z)
+#### 976. [Development and trending of deep learning methods for wind power predictions](https://doi.org/10.1007/s10462-024-10728-z)
 
 - DOI／稳定ID：`10.1007/s10462-024-10728-z`
 - 标签：AI 用于工程科学
 - 纳入依据：系统综述并实验比较深度学习风电预测方法、输入输出及评价指标，直接服务电力不确定性建模。
 
-#### 974. [Development of Z number-based fuzzy inference system to predict bearing capacity of circular foundations](https://doi.org/10.1007/s10462-024-10772-9)
+#### 977. [Development of Z number-based fuzzy inference system to predict bearing capacity of circular foundations](https://doi.org/10.1007/s10462-024-10772-9)
 
 - DOI／稳定ID：`10.1007/s10462-024-10772-9`
 - 标签：AI 用于工程科学；地基承载力预测；模糊推理
 - 纳入依据：摘要构建Z数模糊推理模型，根据土体及基础参数预测圆形地基承载力，并用训练/测试数据和敏感性分析验证，明确服务岩土工程。
 
-#### 975. [Digital deception: generative artificial intelligence in social engineering and phishing](https://doi.org/10.1007/s10462-024-10973-2)
+#### 978. [Digital deception: generative artificial intelligence in social engineering and phishing](https://doi.org/10.1007/s10462-024-10973-2)
 
 - DOI／稳定ID：`10.1007/s10462-024-10973-2`
 - 标签：AI 用于信息科学；AI 用于社会科学
 - 纳入依据：系统综述生成式AI如何改变社会工程攻击机制、目标个性化和攻击基础设施，并构建威胁分析框架与对策。
 
-#### 976. [Digital phenotypes and digital biomarkers for health and diseases: a systematic review of machine learning approaches utilizing passive non-invasive signals collected via wearable devices and smartphones](https://doi.org/10.1007/s10462-024-11009-5)
+#### 979. [Digital phenotypes and digital biomarkers for health and diseases: a systematic review of machine learning approaches utilizing passive non-invasive signals collected via wearable devices and smartphones](https://doi.org/10.1007/s10462-024-11009-5)
 
 - DOI／稳定ID：`10.1007/s10462-024-11009-5`
 - 标签：AI 用于生命科学；临床结局预测；机器学习
 - 纳入依据：系统综述机器学习从可穿戴设备及手机被动信号识别健康状态和疾病，明确讨论数字生物标志物及临床结局预测。
 
-#### 977. [Disinformation detection using graph neural networks: a survey](https://doi.org/10.1007/s10462-024-10702-9)
+#### 980. [Disinformation detection using graph neural networks: a survey](https://doi.org/10.1007/s10462-024-10702-9)
 
 - DOI／稳定ID：`10.1007/s10462-024-10702-9`
 - 标签：AI 用于社会科学；图神经网络
 - 纳入依据：系统综述图神经网络利用社交网络结构检测虚假信息，比较内容传播特征、检测机制与开放问题。
 
-#### 978. [Enhancing keratoconus detection with transformer technology and multi-source integration](https://doi.org/10.1007/s10462-024-11016-6)
+#### 981. [Enhancing keratoconus detection with transformer technology and multi-source integration](https://doi.org/10.1007/s10462-024-11016-6)
 
 - DOI／稳定ID：`10.1007/s10462-024-11016-6`
 - 标签：AI 用于生命科学；Transformer 架构；多模态学习；疾病辅助诊断
 - 纳入依据：Transformer融合角膜形态、厚度、像差和生物力学数据检测圆锥角膜进展，并与既有模型比较。
 
-#### 979. [Explainable deep learning approach for advanced persistent threats (APTs) detection in cybersecurity: a review](https://doi.org/10.1007/s10462-024-10890-4)
+#### 982. [Explainable deep learning approach for advanced persistent threats (APTs) detection in cybersecurity: a review](https://doi.org/10.1007/s10462-024-10890-4)
 
 - DOI／稳定ID：`10.1007/s10462-024-10890-4`
 - 标签：AI 用于信息科学
 - 纳入依据：实质综述深度学习检测高级持续性网络威胁，分析远程到本地及提权攻击与SHAP/LIME解释的作用和局限。
 
-#### 980. [Exploring data mining and machine learning in gynecologic oncology](https://doi.org/10.1007/s10462-023-10666-2)
+#### 983. [Exploring data mining and machine learning in gynecologic oncology](https://doi.org/10.1007/s10462-023-10666-2)
 
 - DOI／稳定ID：`10.1007/s10462-023-10666-2`
 - 标签：AI 用于生命科学；疾病辅助诊断
 - 纳入依据：系统综述181项妇科肿瘤机器学习研究，分析诊断任务、神经网络、临床数据和跨队列泛化问题。
 
-#### 981. [Feature selection of microarray data using multidimensional graph neural network and supernode hierarchical clustering](https://doi.org/10.1007/s10462-023-10700-3)
+#### 984. [Feature selection of microarray data using multidimensional graph neural network and supernode hierarchical clustering](https://doi.org/10.1007/s10462-023-10700-3)
 
 - DOI／稳定ID：`10.1007/s10462-023-10700-3`
 - 标签：AI 用于生命科学；疾病辅助诊断；图神经网络
 - 纳入依据：以图神经网络建模基因关系并筛选微阵列特征，在癌症数据上进行生物标志物筛选和疾病分类。
 
-#### 982. [Fire Identification Based on Novel Dense Generative Adversarial Networks](https://doi.org/10.1007/s10462-024-10848-6)
+#### 985. [Fire Identification Based on Novel Dense Generative Adversarial Networks](https://doi.org/10.1007/s10462-024-10848-6)
 
 - DOI／稳定ID：`10.1007/s10462-024-10848-6`
 - 标签：AI 用于工程科学；生成对抗网络
 - 纳入依据：Dense GAN识别火灾和烟雾，在五数据集验证连续火情监测系统，服务火灾感知工程。
 
-#### 983. [From rule-based models to deep learning transformers architectures for natural language processing and sign language translation systems: survey, taxonomy and performance evaluation](https://doi.org/10.1007/s10462-024-10895-z)
+#### 986. [From rule-based models to deep learning transformers architectures for natural language processing and sign language translation systems: survey, taxonomy and performance evaluation](https://doi.org/10.1007/s10462-024-10895-z)
 
 - DOI／稳定ID：`10.1007/s10462-024-10895-z`
 - 标签：AI 用于工程科学；Transformer 架构
 - 纳入依据：OpenAIRE为综述摘要；系统评述面向听障实时沟通的端到端手语翻译及Transformer架构、动态语言特点和服务技术要求。
 
-#### 984. [Gene selection for high dimensional biological datasets using hybrid island binary artificial bee colony with chaos game optimization](https://doi.org/10.1007/s10462-023-10675-1)
+#### 987. [Gene selection for high dimensional biological datasets using hybrid island binary artificial bee colony with chaos game optimization](https://doi.org/10.1007/s10462-023-10675-1)
 
 - DOI／稳定ID：`10.1007/s10462-023-10675-1`
 - 标签：AI 用于生命科学；特征选择；群智能优化；支持向量机
 - 纳入依据：摘要采用人工蜂群与混沌优化及SVM选择基因表达特征，在15个生物数据集验证并给出所选基因的生物学解释，支持生物标志特征识别。
 
-#### 985. [Geological adaptive intelligent control of earth pressure balance shield machine based on deep reinforcement learning](https://doi.org/10.1007/s10462-024-10850-y)
+#### 988. [Geological adaptive intelligent control of earth pressure balance shield machine based on deep reinforcement learning](https://doi.org/10.1007/s10462-024-10850-y)
 
 - DOI／稳定ID：`10.1007/s10462-024-10850-y`
 - 标签：AI 用于工程科学；强化学习
 - 纳入依据：用 DDPG 强化学习根据地质与舱压状态控制盾构机螺旋输送速度，在多种土层切换中验证安全精准控制。
 
-#### 986. [Handling imbalanced medical datasets: review of a decade of research](https://doi.org/10.1007/s10462-024-10884-2)
+#### 989. [Handling imbalanced medical datasets: review of a decade of research](https://doi.org/10.1007/s10462-024-10884-2)
 
 - DOI／稳定ID：`10.1007/s10462-024-10884-2`
 - 标签：AI 用于生命科学；疾病辅助诊断；机器学习
 - 纳入依据：综述医学类别不平衡处理的预处理、训练和融合策略，明确分析疾病预测与诊断可靠性。
 
-#### 987. [Learning team-based navigation: a review of deep reinforcement learning techniques for multi-agent pathfinding](https://doi.org/10.1007/s10462-023-10670-6)
+#### 990. [Learning team-based navigation: a review of deep reinforcement learning techniques for multi-agent pathfinding](https://doi.org/10.1007/s10462-023-10670-6)
 
 - DOI／稳定ID：`10.1007/s10462-023-10670-6`
 - 标签：AI 用于工程科学；机器人运动控制；强化学习
 - 纳入依据：综述深度强化学习用于多机器人路径规划的技术与评测指标，明确面向大型机器人系统的运动规划问题。
 
-#### 988. [Link prediction for hypothesis generation: an active curriculum learning infused temporal graph-based approach](https://doi.org/10.1007/s10462-024-10885-1)
+#### 991. [Link prediction for hypothesis generation: an active curriculum learning infused temporal graph-based approach](https://doi.org/10.1007/s10462-024-10885-1)
 
 - DOI／稳定ID：`10.1007/s10462-024-10885-1`
 - 标签：AI 用于生命科学；科学知识模型；机器学习
 - 纳入依据：时序图学习从科学文献预测未来概念关系，支持营养健康假设生成，并在食物领域真实数据上评测链路预测性能。
 
-#### 989. [Lq-norm multiple kernel fusion regression for self-cleansing sediment transport](https://doi.org/10.1007/s10462-023-10673-3)
+#### 992. [Lq-norm multiple kernel fusion regression for self-cleansing sediment transport](https://doi.org/10.1007/s10462-023-10673-3)
 
 - DOI／稳定ID：`10.1007/s10462-023-10673-3`
 - 标签：AI 用于工程科学；机器学习
 - 纳入依据：多核学习融合实验和历史矩形水渠数据，预测自清洁泥沙输运条件并支持排水管渠工程设计。
 
-#### 990. [Machine learning techniques for coffee classification: a comprehensive review of scientific research](https://doi.org/10.1007/s10462-024-11004-w)
+#### 993. [Machine learning techniques for coffee classification: a comprehensive review of scientific research](https://doi.org/10.1007/s10462-024-11004-w)
 
 - DOI／稳定ID：`10.1007/s10462-024-11004-w`
 - 标签：AI 用于生命科学
 - 纳入依据：OpenAIRE为综述摘要；总结机器学习识别咖啡豆叶成熟度、病害、烘焙和品质特性，支持农业及食品研究。
 
-#### 991. [Methodology and real-world applications of dynamic uncertain causality graph for clinical diagnosis with explainability and invariance](https://doi.org/10.1007/s10462-024-10763-w)
+#### 994. [Methodology and real-world applications of dynamic uncertain causality graph for clinical diagnosis with explainability and invariance](https://doi.org/10.1007/s10462-024-10763-w)
 
 - DOI／稳定ID：`10.1007/s10462-024-10763-w`
 - 标签：AI 用于生命科学；疾病辅助诊断
 - 纳入依据：基于因果知识推理构建多病种辅助诊断模型，进行医院回顾验证和真实病例应用，AI 作用与临床任务明确。
 
-#### 992. [Multi-objective coyote optimization algorithm based on hybrid elite framework and Meta-Lamarckian learning strategy for optimal power flow problem](https://doi.org/10.1007/s10462-024-10752-z)
+#### 995. [Multi-objective coyote optimization algorithm based on hybrid elite framework and Meta-Lamarckian learning strategy for optimal power flow problem](https://doi.org/10.1007/s10462-024-10752-z)
 
 - DOI／稳定ID：`10.1007/s10462-024-10752-z`
 - 标签：AI 用于工程科学；电网调度控制；群智能优化；多目标优化
 - 纳入依据：摘要针对最优潮流问题改造群智能算法，并在IEEE30与57节点电力系统上优化燃料成本、损耗和排放，明确支持电网运行优化。
 
-#### 993. [Multi-robot social-aware cooperative planning in pedestrian environments using attention-based actor-critic](https://doi.org/10.1007/s10462-024-10739-w)
+#### 996. [Multi-robot social-aware cooperative planning in pedestrian environments using attention-based actor-critic](https://doi.org/10.1007/s10462-024-10739-w)
 
 - DOI／稳定ID：`10.1007/s10462-024-10739-w`
 - 标签：AI 用于工程科学；机器人运动控制；多智能体强化学习
 - 纳入依据：多智能体强化学习结合社会关系编码，在行人混合环境中学习多机器人协同安全运动规划。
 
-#### 994. [Multistage transfer learning for medical images](https://doi.org/10.1007/s10462-024-10855-7)
+#### 997. [Multistage transfer learning for medical images](https://doi.org/10.1007/s10462-024-10855-7)
 
 - DOI／稳定ID：`10.1007/s10462-024-10855-7`
 - 标签：AI 用于生命科学；深度学习；迁移学习
 - 纳入依据：实质综述多阶段迁移学习应对医学图像稀缺及跨数据泛化，分析医用成像领域的模型与训练策略。
 
-#### 995. [New formulation for predicting total dissolved gas supersaturation in dam reservoir: application of hybrid artificial intelligence models based on multiple signal decomposition](https://doi.org/10.1007/s10462-024-10707-4)
+#### 998. [New formulation for predicting total dissolved gas supersaturation in dam reservoir: application of hybrid artificial intelligence models based on multiple signal decomposition](https://doi.org/10.1007/s10462-024-10707-4)
 
 - DOI／稳定ID：`10.1007/s10462-024-10707-4`
 - 标签：AI 用于地球宇宙科学；AI 用于工程科学；高斯过程；随机森林
 - 纳入依据：机器学习与多尺度信号分解预测水库总溶解气体，基于实测水温、气压和流量验证水环境风险监测。
 
-#### 996. [Noise suppression zeroing neural network for online solving the time-varying inverse kinematics problem of four-wheel mobile manipulators with external disturbances](https://doi.org/10.1007/s10462-024-10804-4)
+#### 999. [Noise suppression zeroing neural network for online solving the time-varying inverse kinematics problem of four-wheel mobile manipulators with external disturbances](https://doi.org/10.1007/s10462-024-10804-4)
 
 - DOI／稳定ID：`10.1007/s10462-024-10804-4`
 - 标签：AI 用于工程科学；反问题
 - 纳入依据：抗噪零化神经网络求解移动机械臂时变逆运动学，在混合干扰和ROS轨迹跟踪实验验证控制鲁棒性。
 
-#### 997. [Optimizing long-short-term memory models via metaheuristics for decomposition aided wind energy generation forecasting](https://doi.org/10.1007/s10462-023-10678-y)
+#### 1000. [Optimizing long-short-term memory models via metaheuristics for decomposition aided wind energy generation forecasting](https://doi.org/10.1007/s10462-023-10678-y)
 
 - DOI／稳定ID：`10.1007/s10462-023-10678-y`
 - 标签：AI 用于工程科学；能源系统性能预测；深度学习；风电功率预测
 - 纳入依据：调优 LSTM 结合信号分解预测风力发电，在真实小时级风电数据上比较多步预测并解释特征影响。
 
-#### 998. [Plant disease management: a fine-tuned enhanced CNN approach with mobile app integration for early detection and classification](https://doi.org/10.1007/s10462-024-10809-z)
+#### 1001. [Plant disease management: a fine-tuned enhanced CNN approach with mobile app integration for early detection and classification](https://doi.org/10.1007/s10462-024-10809-z)
 
 - DOI／稳定ID：`10.1007/s10462-024-10809-z`
 - 标签：AI 用于生命科学；植物病害识别；卷积神经网络
 - 纳入依据：优化卷积神经网络识别苹果、玉米和马铃薯叶片病害，明确支持农业病害早期检测并评估不同病类表现。
 
-#### 999. [Prediction of the creeping of AFC based on fuzzy reasoning and Bi-LSTM fusion iteration](https://doi.org/10.1007/s10462-024-10773-8)
+#### 1002. [Prediction of the creeping of AFC based on fuzzy reasoning and Bi-LSTM fusion iteration](https://doi.org/10.1007/s10462-024-10773-8)
 
 - DOI／稳定ID：`10.1007/s10462-024-10773-8`
 - 标签：AI 用于工程科学；深度学习
 - 纳入依据：融合力学分析、模糊推理和双向 LSTM 预测煤矿输送机运行轨迹及窜动事故风险，服务采矿设备安全。
 
-#### 1000. [Reinforcement learning-based drone simulators: survey, practice, and challenge](https://doi.org/10.1007/s10462-024-10933-w)
+#### 1003. [Reinforcement learning-based drone simulators: survey, practice, and challenge](https://doi.org/10.1007/s10462-024-10933-w)
 
 - DOI／稳定ID：`10.1007/s10462-024-10933-w`
 - 标签：AI 用于工程科学；强化学习
 - 纳入依据：实质综述无人机强化学习仿真平台及现实差距，比较用于导航和机器人控制的模拟训练方法。
 
-#### 1001. [Review of few-shot learning application in CSI human sensing](https://doi.org/10.1007/s10462-024-10812-4)
+#### 1004. [Review of few-shot learning application in CSI human sensing](https://doi.org/10.1007/s10462-024-10812-4)
 
 - DOI／稳定ID：`10.1007/s10462-024-10812-4`
 - 标签：AI 用于工程科学；人体姿态识别；机器学习
 - 纳入依据：综述少样本学习利用 Wi-Fi 信道随人体活动变化的信号实现真实人体感知，比较跨环境迁移与识别系统。
 
-#### 1002. [Silent no more: a comprehensive review of artificial intelligence, deep learning, and machine learning in facilitating deaf and mute communication](https://doi.org/10.1007/s10462-024-10816-0)
+#### 1005. [Review on PID, fuzzy and hybrid fuzzy PID controllers for controlling non-linear dynamic behaviour of chemical plants](https://doi.org/10.1007/s10462-024-10743-0)
+
+- DOI／稳定ID：`10.1007/s10462-024-10743-0`
+- 标签：AI 用于工程科学；工业过程控制；模糊推理
+- 纳入依据：摘要实质综述化工装置非线性运行的 PID、模糊逻辑及混合模糊 PID 控制，明确比较智能模糊控制对化工过程运行效率和稳定性的作用。
+
+#### 1006. [Silent no more: a comprehensive review of artificial intelligence, deep learning, and machine learning in facilitating deaf and mute communication](https://doi.org/10.1007/s10462-024-10816-0)
 
 - DOI／稳定ID：`10.1007/s10462-024-10816-0`
 - 标签：AI 用于工程科学
 - 纳入依据：实质综述AI手语解释、语音识别与语音合成的听障辅助沟通系统，研究具体无障碍工程技术及限制。
 
-#### 1003. [Small data challenges for intelligent prognostics and health management: a review](https://doi.org/10.1007/s10462-024-10820-4)
+#### 1007. [Small data challenges for intelligent prognostics and health management: a review](https://doi.org/10.1007/s10462-024-10820-4)
 
 - DOI／稳定ID：`10.1007/s10462-024-10820-4`
 - 标签：AI 用于工程科学；机械故障诊断；迁移学习
 - 纳入依据：综述设备健康管理在小样本条件下的深度学习、迁移和增广方法，明确面向设备可靠性与故障维护研究。
 
-#### 1004. [Software advancements in automatic epilepsy diagnosis and seizure detection: 10-year review](https://doi.org/10.1007/s10462-024-10799-y)
+#### 1008. [Software advancements in automatic epilepsy diagnosis and seizure detection: 10-year review](https://doi.org/10.1007/s10462-024-10799-y)
 
 - DOI／稳定ID：`10.1007/s10462-024-10799-y`
 - 标签：AI 用于生命科学；疾病辅助诊断；机器学习
 - 纳入依据：系统综述 AI 分析 EEG 实现癫痫诊断及发作检测，比较数据、模型、硬件与诊断可靠性。
 
-#### 1005. [SRGAN-enhanced unsafe operation detection and classification of heavy construction machinery using cascade learning](https://doi.org/10.1007/s10462-024-10839-7)
+#### 1009. [SRGAN-enhanced unsafe operation detection and classification of heavy construction machinery using cascade learning](https://doi.org/10.1007/s10462-024-10839-7)
 
 - DOI／稳定ID：`10.1007/s10462-024-10839-7`
 - 标签：AI 用于工程科学；Transformer 架构
 - 纳入依据：级联生成模型和视觉 Transformer 从施工监控识别五类重型机械的不安全操作，直接支持工程设备安全检测。
 
-#### 1006. [State-of-the-art review on the use of AI-enhanced computational mechanics in geotechnical engineering](https://doi.org/10.1007/s10462-024-10836-w)
+#### 1010. [State-of-the-art review on the use of AI-enhanced computational mechanics in geotechnical engineering](https://doi.org/10.1007/s10462-024-10836-w)
 
 - DOI／稳定ID：`10.1007/s10462-024-10836-w`
 - 标签：AI 用于工程科学；材料力学响应预测；随机森林
 - 纳入依据：综述神经网络、随机森林及 SVM 用于岩土材料物理、力学性质与本构模型，直接支持计算力学研究。
 
-#### 1007. [Survey of automatic plankton image recognition: challenges, existing solutions and future perspectives](https://doi.org/10.1007/s10462-024-10745-y)
+#### 1011. [Survey of automatic plankton image recognition: challenges, existing solutions and future perspectives](https://doi.org/10.1007/s10462-024-10745-y)
 
 - DOI／稳定ID：`10.1007/s10462-024-10745-y`
 - 标签：AI 用于生命科学；机器学习
 - 纳入依据：综述机器学习识别浮游生物图像以监测水生生态，分析物种识别、仪器域偏移和专家标注不确定性。
 
-#### 1008. [Towards the automation of systematic reviews using natural language processing, machine learning, and deep learning: a comprehensive review](https://doi.org/10.1007/s10462-024-10844-w)
+#### 1012. [Tire wear monitoring using feature fusion and CatBoost classifier](https://doi.org/10.1007/s10462-024-10999-6)
+
+- DOI／稳定ID：`10.1007/s10462-024-10999-6`
+- 标签：AI 用于工程科学；机械故障诊断；机械预测维护；梯度提升
+- 纳入依据：摘要以不同磨损等级轮胎的振动信号为对象，结合统计和 ARMA 特征与 CatBoost 分类诊断磨损状态，AI 直接服务机械状态监测与预测维护。
+
+#### 1013. [Towards the automation of systematic reviews using natural language processing, machine learning, and deep learning: a comprehensive review](https://doi.org/10.1007/s10462-024-10844-w)
 
 - DOI／稳定ID：`10.1007/s10462-024-10844-w`
 - 标签：科学信息抽取；机器学习
 - 纳入依据：系统综述 52 项 AI 辅助系统综述工作，覆盖科学文献检索、筛选、数据提取及偏倚评估，直接支持科研证据综合。
 
-#### 1009. [Transformers in health: a systematic review on architectures for longitudinal data analysis](https://doi.org/10.1007/s10462-023-10677-z)
+#### 1014. [Transformers in health: a systematic review on architectures for longitudinal data analysis](https://doi.org/10.1007/s10462-023-10677-z)
 
 - DOI／稳定ID：`10.1007/s10462-023-10677-z`
 - 标签：AI 用于生命科学；Transformer 架构
 - 纳入依据：系统综述Transformer针对纵向多特征健康数据的结构改进，明确处理生理与症状的时序医疗研究任务。
 
-#### 1010. [Transformers-based architectures for stroke segmentation: a review](https://doi.org/10.1007/s10462-024-10900-5)
+#### 1015. [Transformers-based architectures for stroke segmentation: a review](https://doi.org/10.1007/s10462-024-10900-5)
 
 - DOI／稳定ID：`10.1007/s10462-024-10900-5`
 - 标签：AI 用于生命科学；Transformer 架构；医学影像分割
 - 纳入依据：已核对OpenAIRE描述为综述摘要：系统评述Transformer脑卒中医学影像分割架构、模态及性能限制。
 
+#### 1016. [UoloNet: based on multi-tasking enhanced small target medical segmentation model](https://doi.org/10.1007/s10462-023-10671-5)
+
+- DOI／稳定ID：`10.1007/s10462-023-10671-5`
+- 标签：AI 用于生命科学；医学影像分割；多任务学习；卷积神经网络
+- 纳入依据：摘要将 UNET 语义分割与 YOLO 检测联合学习，用于医学影像中的小目标分割并减少离散噪声，在 MRI 和 LITS 数据集验证，AI 直接支持医学影像分析。
+
 
 ### Information Fusion（35篇）
 
-#### 1011. [3D Human Pose Estimation from multi-view thermal vision sensors](https://doi.org/10.1016/j.inffus.2023.102154)
+#### 1017. [3D Human Pose Estimation from multi-view thermal vision sensors](https://doi.org/10.1016/j.inffus.2023.102154)
 
 - DOI／稳定ID：`10.1016/j.inffus.2023.102154`
 - 标签：AI 用于工程科学；人体姿态识别；卷积神经网络
 - 纳入依据：在真实智能家居部署多视角热成像传感器，训练神经网络重建三维姿态并验证遮挡及低照条件下的感知。
 
-#### 1012. [A comprehensive survey of research towards AI-enabled unmanned aerial systems in pre-, active-, and post-wildfire management](https://doi.org/10.1016/j.inffus.2024.102369)
+#### 1018. [A comprehensive survey of research towards AI-enabled unmanned aerial systems in pre-, active-, and post-wildfire management](https://doi.org/10.1016/j.inffus.2024.102369)
 
 - DOI／稳定ID：`10.1016/j.inffus.2024.102369`
 - 标签：AI 用于地球宇宙科学；深度学习
 - 纳入依据：综述无人机遥感与 AI 在森林火灾前、期间及灾后监测、燃料分析、损害评估和动态建模中的应用。
 
-#### 1013. [A survey of multimodal information fusion for smart healthcare: Mapping the journey from data to wisdom](https://doi.org/10.1016/j.inffus.2023.102040)
+#### 1019. [A survey of multimodal information fusion for smart healthcare: Mapping the journey from data to wisdom](https://doi.org/10.1016/j.inffus.2023.102040)
 
 - DOI／稳定ID：`10.1016/j.inffus.2023.102040`
 - 标签：AI 用于生命科学；机器学习
 - 纳入依据：实质综述机器学习与深度学习融合多模态医学数据以理解患者状态、预测及个性化治疗，并组织医学分析框架。
 
-#### 1014. [Advancements in point cloud-based 3D defect classification and segmentation for industrial systems: A comprehensive survey](https://doi.org/10.1016/j.inffus.2024.102575)
+#### 1020. [Advancements in point cloud-based 3D defect classification and segmentation for industrial systems: A comprehensive survey](https://doi.org/10.1016/j.inffus.2024.102575)
 
 - DOI／稳定ID：`10.1016/j.inffus.2024.102575`
 - 标签：AI 用于工程科学；深度学习；工业缺陷检测
 - 纳入依据：系统综述深度学习从三维点云识别与分割工业缺陷，支持设备状态监测、维护和剩余寿命研究。
 
-#### 1015. [Advancing crowd forecasting with graphs across microscopic trajectory to macroscopic dynamics](https://doi.org/10.1016/j.inffus.2024.102275)
+#### 1021. [Advancing crowd forecasting with graphs across microscopic trajectory to macroscopic dynamics](https://doi.org/10.1016/j.inffus.2024.102275)
 
 - DOI／稳定ID：`10.1016/j.inffus.2024.102275`
 - 标签：AI 用于工程科学；AI 用于社会科学；图神经网络
 - 纳入依据：图神经网络联合预测交通枢纽个人轨迹、区域风险和宏观人群动力学，分析拥挤人流的多尺度演化。
 
-#### 1016. [Adversarial Deep Learning based Dampster–Shafer data fusion model for intelligent transportation system](https://doi.org/10.1016/j.inffus.2023.102050)
+#### 1022. [Adversarial Deep Learning based Dampster–Shafer data fusion model for intelligent transportation system](https://doi.org/10.1016/j.inffus.2023.102050)
 
 - DOI／稳定ID：`10.1016/j.inffus.2023.102050`
 - 标签：AI 用于工程科学；AI 用于信息科学；多模态学习；卷积神经网络
 - 纳入依据：OpenAIRE为研究摘要；多传感信息融合与深度对抗防御研究智能交通感知安全，验证交通标志等场景的攻击检测和鲁棒性。
 
-#### 1017. [Adversarial filtering based evasion and backdoor attacks to EEG-based brain-computer interfaces](https://doi.org/10.1016/j.inffus.2024.102316)
+#### 1023. [Adversarial filtering based evasion and backdoor attacks to EEG-based brain-computer interfaces](https://doi.org/10.1016/j.inffus.2024.102316)
 
 - DOI／稳定ID：`10.1016/j.inffus.2024.102316`
 - 标签：AI 用于工程科学；机器学习
 - 纳入依据：提出针对 EEG 脑机接口的信号滤波攻击，并在不同脑机范式验证机器学习解码受干扰的风险，研究专门神经接口安全。
 
-#### 1018. [CasFormer: Cascaded transformers for fusion-aware computational hyperspectral imaging](https://doi.org/10.1016/j.inffus.2024.102408)
+#### 1024. [CasFormer: Cascaded transformers for fusion-aware computational hyperspectral imaging](https://doi.org/10.1016/j.inffus.2024.102408)
 
 - DOI／稳定ID：`10.1016/j.inffus.2024.102408`
 - 标签：AI 用于工程科学；Transformer 架构
 - 纳入依据：结合编码孔径成像物理约束与级联 Transformer 重建高光谱图像，解决光谱仪器的反演成像问题。
 
-#### 1019. [CD-GAN: A robust fusion-based generative adversarial network for unsupervised remote sensing change detection with heterogeneous sensors](https://doi.org/10.1016/j.inffus.2024.102313)
+#### 1025. [CD-GAN: A robust fusion-based generative adversarial network for unsupervised remote sensing change detection with heterogeneous sensors](https://doi.org/10.1016/j.inffus.2024.102313)
 
 - DOI／稳定ID：`10.1016/j.inffus.2024.102313`
 - 标签：AI 用于地球宇宙科学；地表覆盖变化检测；生成对抗网络
 - 纳入依据：生成对抗学习结合物理异构光学传感器图像融合，检测地球观测中的时间变化，解决跨分辨率遥感监测问题。
 
-#### 1020. [COMIC: An unsupervised change detection method for heterogeneous remote sensing images based on copula mixtures and Cycle-Consistent Adversarial Networks](https://doi.org/10.1016/j.inffus.2024.102240)
+#### 1026. [COMIC: An unsupervised change detection method for heterogeneous remote sensing images based on copula mixtures and Cycle-Consistent Adversarial Networks](https://doi.org/10.1016/j.inffus.2024.102240)
 
 - DOI／稳定ID：`10.1016/j.inffus.2024.102240`
 - 标签：AI 用于地球宇宙科学；地表覆盖变化检测；生成对抗网络
 - 纳入依据：摘要明确以异构遥感影像的地表变化检测为任务，CycleGAN完成模态转换、copula混合建模联合特征并以K-means生成变化图，在真实遥感数据上验证，AI直接服务地表观测。
 
-#### 1021. [COOL: A Conjoint Perspective on Spatio-Temporal Graph Neural Network for Traffic Forecasting](https://doi.org/10.1016/j.inffus.2024.102341)
+#### 1027. [COOL: A Conjoint Perspective on Spatio-Temporal Graph Neural Network for Traffic Forecasting](https://doi.org/10.1016/j.inffus.2024.102341)
 
 - DOI／稳定ID：`10.1016/j.inffus.2024.102341`
 - 标签：AI 用于工程科学；图神经网络；交通流预测
 - 纳入依据：时空图神经网络预测真实交通状态，联合建模道路观测的时空关系，直接支持交通系统预测研究。
 
-#### 1022. [Designing interpretable ML system to enhance trust in healthcare: A systematic review to proposed responsible clinician-AI-collaboration framework](https://doi.org/10.1016/j.inffus.2024.102412)
+#### 1028. [Designing interpretable ML system to enhance trust in healthcare: A systematic review to proposed responsible clinician-AI-collaboration framework](https://doi.org/10.1016/j.inffus.2024.102412)
 
 - DOI／稳定ID：`10.1016/j.inffus.2024.102412`
 - 标签：AI 用于生命科学；可解释机器学习
 - 纳入依据：系统综述医疗决策中 AI 可解释性方法与质量评估，整理临床相关实验并提出医师协作评价流程。
 
-#### 1023. [Diffusion model with disentangled modulations for sharpening multispectral and hyperspectral images](https://doi.org/10.1016/j.inffus.2023.102158)
+#### 1029. [Diffusion model with disentangled modulations for sharpening multispectral and hyperspectral images](https://doi.org/10.1016/j.inffus.2023.102158)
 
 - DOI／稳定ID：`10.1016/j.inffus.2023.102158`
 - 标签：AI 用于地球宇宙科学；扩散模型；反问题
 - 纳入依据：OpenAIRE为研究摘要；扩散模型以风格和小波条件调制融合遥感多光谱与高光谱图像，验证全色锐化及光谱融合。
 
-#### 1024. [EHR-KnowGen: Knowledge-enhanced multimodal learning for disease diagnosis generation](https://doi.org/10.1016/j.inffus.2023.102069)
+#### 1030. [EHR-KnowGen: Knowledge-enhanced multimodal learning for disease diagnosis generation](https://doi.org/10.1016/j.inffus.2023.102069)
 
 - DOI／稳定ID：`10.1016/j.inffus.2023.102069`
 - 标签：AI 用于生命科学；疾病辅助诊断；大语言模型
 - 纳入依据：语言模型融合病历、检验与外部医学知识生成疾病诊断，在真实 EHR 数据上验证诊断性能与证据解释。
 
-#### 1025. [Emotion recognition and artificial intelligence: A systematic review (2014–2023) and research recommendations](https://doi.org/10.1016/j.inffus.2023.102019)
+#### 1031. [Emotion recognition and artificial intelligence: A systematic review (2014–2023) and research recommendations](https://doi.org/10.1016/j.inffus.2023.102019)
 
 - DOI／稳定ID：`10.1016/j.inffus.2023.102019`
 - 标签：AI 用于生命科学；机器学习
 - 纳入依据：系统综述 AI 从 EEG、ECG、皮电等生理观测推断情绪的研究，涉及心理状态测量、刺激设计与数据评测。
 
-#### 1026. [Evaluation of uncertainty quantification methods in multi-label classification: A case study with automatic diagnosis of electrocardiogram](https://doi.org/10.1016/j.inffus.2023.101978)
+#### 1032. [Evaluation of uncertainty quantification methods in multi-label classification: A case study with automatic diagnosis of electrocardiogram](https://doi.org/10.1016/j.inffus.2023.101978)
 
 - DOI／稳定ID：`10.1016/j.inffus.2023.101978`
 - 标签：AI 用于生命科学；疾病辅助诊断；深度学习
 - 纳入依据：对自动心电诊断的深度模型比较不确定性与外部验证，研究域偏移、拒绝预测及主动选样对临床分类可靠性的影响。
 
-#### 1027. [FDiff-Fusion: Denoising diffusion fusion network based on fuzzy learning for 3D medical image segmentation](https://doi.org/10.1016/j.inffus.2024.102540)
+#### 1033. [FDiff-Fusion: Denoising diffusion fusion network based on fuzzy learning for 3D medical image segmentation](https://doi.org/10.1016/j.inffus.2024.102540)
 
 - DOI／稳定ID：`10.1016/j.inffus.2024.102540`
 - 标签：AI 用于生命科学；深度学习；医学影像分割；扩散模型
 - 纳入依据：当前索引摘要有省略，但保留完整任务和主要方法证据：扩散模型与模糊学习融合 U-Net，对脑肿瘤及腹部器官进行三维分割并评估。
 
-#### 1028. [Fuel consumption prediction for pre-departure flights using attention-based multi-modal fusion](https://doi.org/10.1016/j.inffus.2023.101983)
+#### 1034. [Fuel consumption prediction for pre-departure flights using attention-based multi-modal fusion](https://doi.org/10.1016/j.inffus.2023.101983)
 
 - DOI／稳定ID：`10.1016/j.inffus.2023.101983`
 - 标签：AI 用于工程科学；飞行燃油消耗预测；图神经网络；卷积长短期记忆网络；多模态学习
 - 纳入依据：同一DOI缓存中的完整摘要表明FCPNet结合图卷积、ConvLSTM及注意力融合航路、天气与运行信息，在起飞前预测燃油消耗并支持减排；原选版权说明已替换。
 
-#### 1029. [Fundus-DeepNet: Multi-label deep learning classification system for enhanced detection of multiple ocular diseases through data fusion of fundus images](https://doi.org/10.1016/j.inffus.2023.102059)
+#### 1035. [Fundus-DeepNet: Multi-label deep learning classification system for enhanced detection of multiple ocular diseases through data fusion of fundus images](https://doi.org/10.1016/j.inffus.2023.102059)
 
 - DOI／稳定ID：`10.1016/j.inffus.2023.102059`
 - 标签：AI 用于生命科学；医学影像分类；疾病辅助诊断
 - 纳入依据：OpenAIRE为研究摘要；深度特征融合双眼眼底图像并用判别受限玻尔兹曼模型识别八类眼病，在医学数据验证。
 
-#### 1030. [Fuzzy decision-making framework for explainable golden multi-machine learning models for real-time adversarial attack detection in Vehicular Ad-hoc Networks](https://doi.org/10.1016/j.inffus.2023.102208)
+#### 1036. [Fuzzy decision-making framework for explainable golden multi-machine learning models for real-time adversarial attack detection in Vehicular Ad-hoc Networks](https://doi.org/10.1016/j.inffus.2023.102208)
 
 - DOI／稳定ID：`10.1016/j.inffus.2023.102208`
 - 标签：AI 用于信息科学；随机森林；可解释机器学习
 - 纳入依据：摘要（已校对英文原摘要）完整描述车辆短距通信网络的干扰/正常数据，比较 kNN 与随机森林等模型并分析对抗攻击检测及可解释性，服务通信工程安全。
 
-#### 1031. [GRAPHITE — Generative Reasoning and Analysis for Predictive Handling in Traffic Efficiency](https://doi.org/10.1016/j.inffus.2024.102265)
+#### 1037. [GRAPHITE — Generative Reasoning and Analysis for Predictive Handling in Traffic Efficiency](https://doi.org/10.1016/j.inffus.2024.102265)
 
 - DOI／稳定ID：`10.1016/j.inffus.2024.102265`
 - 标签：AI 用于工程科学；图神经网络；生成对抗网络
 - 纳入依据：OpenAIRE内容为完整研究摘要；图神经网络和GAN结合路网知识图与传感器流量预测交通状态，并在多数据集验证。
 
-#### 1032. [IMPORTANT-Net: Integrated MRI multi-parametric increment fusion generator with attention network for synthesizing absent data](https://doi.org/10.1016/j.inffus.2024.102381)
+#### 1038. [IMPORTANT-Net: Integrated MRI multi-parametric increment fusion generator with attention network for synthesizing absent data](https://doi.org/10.1016/j.inffus.2024.102381)
 
 - DOI／稳定ID：`10.1016/j.inffus.2024.102381`
 - 标签：AI 用于生命科学；深度学习；医学影像重建
 - 纳入依据：注意力融合神经网络从已有 MRI 参数生成缺失序列，改善医学成像信息及后续诊断任务。
 
-#### 1033. [Machine learning meets advanced robotic manipulation](https://doi.org/10.1016/j.inffus.2023.102221)
+#### 1039. [Machine learning meets advanced robotic manipulation](https://doi.org/10.1016/j.inffus.2023.102221)
 
 - DOI／稳定ID：`10.1016/j.inffus.2023.102221`
 - 标签：AI 用于工程科学；机器人运动控制；机器学习
 - 纳入依据：综述机器学习从专家示范学习机器人控制器，用于工业、医疗、农业等真实机械臂操作并讨论安全与效率。
 
-#### 1034. [MamlFormer: Priori-experience guiding transformer network via manifold adversarial multi-modal learning for laryngeal histopathological grading](https://doi.org/10.1016/j.inffus.2024.102333)
+#### 1040. [MamlFormer: Priori-experience guiding transformer network via manifold adversarial multi-modal learning for laryngeal histopathological grading](https://doi.org/10.1016/j.inffus.2024.102333)
 
 - DOI／稳定ID：`10.1016/j.inffus.2024.102333`
 - 标签：AI 用于生命科学；组织病理分类；Transformer 架构
 - 纳入依据：利用多模态 Transformer 融合不同倍率病理图像进行喉鳞癌分级，并以宫颈鳞癌验证泛化与临床可用性。
 
-#### 1035. [Multi-modal detection of fetal movements using a wearable monitor](https://doi.org/10.1016/j.inffus.2023.102124)
+#### 1041. [Multi-modal detection of fetal movements using a wearable monitor](https://doi.org/10.1016/j.inffus.2023.102124)
 
 - DOI／稳定ID：`10.1016/j.inffus.2023.102124`
 - 标签：AI 用于生命科学；机器学习
 - 纳入依据：融合可穿戴多类传感器和机器学习，区分胎动及母体活动伪迹，并在居家记录中验证胎儿健康监测能力。
 
-#### 1036. [Multi-modal heart failure risk estimation based on short ECG and sampled long-term HRV](https://doi.org/10.1016/j.inffus.2024.102337)
+#### 1042. [Multi-modal heart failure risk estimation based on short ECG and sampled long-term HRV](https://doi.org/10.1016/j.inffus.2024.102337)
 
 - DOI／稳定ID：`10.1016/j.inffus.2024.102337`
 - 标签：AI 用于生命科学；生存结局预测；梯度提升；Transformer 架构；疾病风险预测
 - 纳入依据：梯度提升生存模型及 ResNet/Transformer 融合短心电和长期心率变异，预测心衰住院风险并做外部验证。
 
-#### 1037. [Multi-modality approaches for medical support systems: A systematic review of the last decade](https://doi.org/10.1016/j.inffus.2023.102134)
+#### 1043. [Multi-modality approaches for medical support systems: A systematic review of the last decade](https://doi.org/10.1016/j.inffus.2023.102134)
 
 - DOI／稳定ID：`10.1016/j.inffus.2023.102134`
 - 标签：AI 用于生命科学；疾病辅助诊断；深度学习
 - 纳入依据：系统综述深度学习融合医学图像、生理信号与病历，实现疾病诊断和预后分析。
 
-#### 1038. [Non-contact multimodal indoor human monitoring systems: A survey](https://doi.org/10.1016/j.inffus.2024.102457)
+#### 1044. [Non-contact multimodal indoor human monitoring systems: A survey](https://doi.org/10.1016/j.inffus.2024.102457)
 
 - DOI／稳定ID：`10.1016/j.inffus.2024.102457`
 - 标签：AI 用于工程科学；机器学习
 - 纳入依据：综述相机及无线传感的非接触室内人体监测，明确利用多模态机器学习提高老年照护监测的感知可靠性。
 
-#### 1039. [ODFormer: Semantic fundus image segmentation using Transformer for optic nerve head detection](https://doi.org/10.1016/j.inffus.2024.102533)
+#### 1045. [ODFormer: Semantic fundus image segmentation using Transformer for optic nerve head detection](https://doi.org/10.1016/j.inffus.2024.102533)
 
 - DOI／稳定ID：`10.1016/j.inffus.2024.102533`
 - 标签：AI 用于生命科学；Transformer 架构；医学影像分割；科学数据
 - 纳入依据：OpenAIRE为研究摘要；Swin Transformer分割眼底视神经头，并提供多相机、多分辨率医学影像数据和跨队列评测。
 
-#### 1040. [RT-GCN: Gaussian-based spatiotemporal graph convolutional network for robust traffic prediction](https://doi.org/10.1016/j.inffus.2023.102078)
+#### 1046. [RT-GCN: Gaussian-based spatiotemporal graph convolutional network for robust traffic prediction](https://doi.org/10.1016/j.inffus.2023.102078)
 
 - DOI／稳定ID：`10.1016/j.inffus.2023.102078`
 - 标签：AI 用于工程科学；交通流预测；图神经网络
 - 纳入依据：图卷积网络建模交通传感器噪声与缺失，在真实道路数据上进行鲁棒交通状态预测。
 
-#### 1041. [Self-supervised spatial–temporal transformer fusion based federated framework for 4D cardiovascular image segmentation](https://doi.org/10.1016/j.inffus.2024.102256)
+#### 1047. [Self-supervised spatial–temporal transformer fusion based federated framework for 4D cardiovascular image segmentation](https://doi.org/10.1016/j.inffus.2024.102256)
 
 - DOI／稳定ID：`10.1016/j.inffus.2024.102256`
 - 标签：AI 用于生命科学；深度学习；Transformer 架构；医学影像分割；自监督学习；联邦学习
 - 纳入依据：自监督时空 Transformer 和联邦学习用于心脏 MRI 心室及心肌分割，结合跨数据源生成迁移提高医学成像分析。
 
-#### 1042. [The survey on multi-source data fusion in cyber-physical-social systems: Foundational infrastructure for industrial metaverses and industries 5.0](https://doi.org/10.1016/j.inffus.2024.102321)
+#### 1048. [The survey on multi-source data fusion in cyber-physical-social systems: Foundational infrastructure for industrial metaverses and industries 5.0](https://doi.org/10.1016/j.inffus.2024.102321)
 
 - DOI／稳定ID：`10.1016/j.inffus.2024.102321`
 - 标签：AI 用于工程科学；深度学习
 - 纳入依据：结合深度学习与知识图谱融合工业多源数据，构建制造过程优化架构并以织造案例检验。
 
-#### 1043. [Transformer-based multimodal change detection with multitask consistency constraints](https://doi.org/10.1016/j.inffus.2024.102358)
+#### 1049. [Transformer-based multimodal change detection with multitask consistency constraints](https://doi.org/10.1016/j.inffus.2024.102358)
 
 - DOI／稳定ID：`10.1016/j.inffus.2024.102358`
 - 标签：AI 用于地球宇宙科学；Transformer 架构；地表覆盖变化检测
 - 纳入依据：融合地表模型与航拍图像检测地表语义及高度变化，建立荷兰三城市多模态观测数据，直接支持地球观测。
 
-#### 1044. [Unsupervised hyperspectral pansharpening via low-rank diffusion model](https://doi.org/10.1016/j.inffus.2024.102325)
+#### 1050. [Unsupervised hyperspectral pansharpening via low-rank diffusion model](https://doi.org/10.1016/j.inffus.2024.102325)
 
 - DOI／稳定ID：`10.1016/j.inffus.2024.102325`
 - 标签：AI 用于地球宇宙科学；扩散模型；反问题
 - 纳入依据：OpenAIRE为研究摘要；低秩分解与预训练遥感扩散模型恢复高分辨高光谱图像，验证空间光谱重建及泛化。
 
-#### 1045. [Zero-shot semi-supervised learning for pansharpening](https://doi.org/10.1016/j.inffus.2023.102001)
+#### 1051. [Zero-shot semi-supervised learning for pansharpening](https://doi.org/10.1016/j.inffus.2023.102001)
 
 - DOI／稳定ID：`10.1016/j.inffus.2023.102001`
 - 标签：AI 用于工程科学；图像重建；深度学习
@@ -6379,151 +6415,151 @@
 
 ### Renewable and Sustainable Energy Reviews（25篇）
 
-#### 1046. [A comprehensive review on deep learning approaches for short-term load forecasting](https://doi.org/10.1016/j.rser.2023.114031)
+#### 1052. [A comprehensive review on deep learning approaches for short-term load forecasting](https://doi.org/10.1016/j.rser.2023.114031)
 
 - DOI／稳定ID：`10.1016/j.rser.2023.114031`
 - 标签：AI 用于工程科学
 - 纳入依据：OpenAIRE为综述摘要；系统比较深度学习短期电力负荷预测方法、数据、不确定性与需求响应集成。
 
-#### 1047. [A systematic review of data analytics applications in above-ground geothermal energy operations](https://doi.org/10.1016/j.rser.2023.113998)
+#### 1053. [A systematic review of data analytics applications in above-ground geothermal energy operations](https://doi.org/10.1016/j.rser.2023.113998)
 
 - DOI／稳定ID：`10.1016/j.rser.2023.113998`
 - 标签：AI 用于工程科学；能源系统优化；神经网络
 - 纳入依据：系统综述地热能源地面设施中机器学习的设计优化、性能监控及故障检测，明确大部分模型为神经网络。
 
-#### 1048. [Adaptive systematic optimization of a multi-axis ocean wave energy converter](https://doi.org/10.1016/j.rser.2023.113920)
+#### 1054. [Adaptive systematic optimization of a multi-axis ocean wave energy converter](https://doi.org/10.1016/j.rser.2023.113920)
 
 - DOI／稳定ID：`10.1016/j.rser.2023.113920`
 - 标签：AI 用于工程科学；能源系统优化；演化优化
 - 纳入依据：摘要将边界元水动力求解与NSGA-III、R-NSGA-III和MOEA/D演化算法结合，优化多轴波浪能装置几何和阵列布局，直接服务海洋能源工程设计。
 
-#### 1049. [Can AI predict the impact of its implementation in greenhouse farming?](https://doi.org/10.1016/j.rser.2024.114423)
+#### 1055. [Can AI predict the impact of its implementation in greenhouse farming?](https://doi.org/10.1016/j.rser.2024.114423)
 
 - DOI／稳定ID：`10.1016/j.rser.2024.114423`
 - 标签：AI 用于生命科学；机器学习；作物产量预测
 - 纳入依据：对温室作物 AI 控制节能效益进行分析，并用径向基模型预测单位面积产量，支持农业生产与资源优化研究。
 
-#### 1050. [Can renewable energy prosumerism cater for sufficiency and inclusion?](https://doi.org/10.1016/j.rser.2024.114410)
+#### 1056. [Can renewable energy prosumerism cater for sufficiency and inclusion?](https://doi.org/10.1016/j.rser.2024.114410)
 
 - DOI／稳定ID：`10.1016/j.rser.2024.114410`
 - 标签：AI 用于社会科学；机器学习
 - 纳入依据：以机器学习主题模型结合质性编码研究能源产消者的社会叙事、包容性与充分性，直接支持能源社会科学分析。
 
-#### 1051. [Challenges and opportunities in European smart buildings energy management: A critical review](https://doi.org/10.1016/j.rser.2024.114472)
+#### 1057. [Challenges and opportunities in European smart buildings energy management: A critical review](https://doi.org/10.1016/j.rser.2024.114472)
 
 - DOI／稳定ID：`10.1016/j.rser.2024.114472`
 - 标签：AI 用于工程科学；能源系统优化
 - 纳入依据：实质综述 AI 融合建筑监测、物理与情境数据进行能源生产、储存和分配优化的技术与局限。
 
-#### 1052. [Computer vision to advance the sensing and control of built environment towards occupant-centric sustainable development: A critical review](https://doi.org/10.1016/j.rser.2023.114165)
+#### 1058. [Computer vision to advance the sensing and control of built environment towards occupant-centric sustainable development: A critical review](https://doi.org/10.1016/j.rser.2023.114165)
 
 - DOI／稳定ID：`10.1016/j.rser.2023.114165`
 - 标签：AI 用于工程科学；目标检测
 - 纳入依据：摘要实质综述计算机视觉感知人员状态、行为和舒适度以支持建筑通风、热环境与照明控制，并比较检测精度、融合与训练改进，明确连接AI与建筑环境工程。
 
-#### 1053. [Dams for hydropower and irrigation: Trends, challenges, and alternatives](https://doi.org/10.1016/j.rser.2024.114439)
+#### 1059. [Dams for hydropower and irrigation: Trends, challenges, and alternatives](https://doi.org/10.1016/j.rser.2024.114439)
 
 - DOI／稳定ID：`10.1016/j.rser.2024.114439`
 - 标签：AI 用于地球宇宙科学；机器学习
 - 纳入依据：融合全球水坝数据并利用机器学习建立水电与灌溉设施数据集，研究未来水资源和能源基础设施潜力及冲突。
 
-#### 1054. [Deep learning based on Transformer architecture for power system short-term voltage stability assessment with class imbalance](https://doi.org/10.1016/j.rser.2023.113913)
+#### 1060. [Deep learning based on Transformer architecture for power system short-term voltage stability assessment with class imbalance](https://doi.org/10.1016/j.rser.2023.113913)
 
 - DOI／稳定ID：`10.1016/j.rser.2023.113913`
 - 标签：AI 用于工程科学；Transformer 架构；生成对抗网络
 - 纳入依据：Transformer预测电网短时电压稳定性，并通过条件WGAN补齐类别不平衡，在IEEE电力系统验证工程效果。
 
-#### 1055. [DP 2 -NILM: A distributed and privacy-preserving framework for non-intrusive load monitoring](https://doi.org/10.1016/j.rser.2023.114091)
+#### 1061. [DP 2 -NILM: A distributed and privacy-preserving framework for non-intrusive load monitoring](https://doi.org/10.1016/j.rser.2023.114091)
 
 - DOI／稳定ID：`10.1016/j.rser.2023.114091`
 - 标签：AI 用于工程科学；深度学习；联邦学习
 - 纳入依据：联邦深度学习从家庭智能电表总读数分解电器用能，在真实数据上比较隐私保护和负荷分解效用。
 
-#### 1056. [Geospatial and socioeconomic prediction of value-driven clean cooking uptake](https://doi.org/10.1016/j.rser.2023.114199)
+#### 1062. [Geospatial and socioeconomic prediction of value-driven clean cooking uptake](https://doi.org/10.1016/j.rser.2023.114199)
 
 - DOI／稳定ID：`10.1016/j.rser.2023.114199`
 - 标签：AI 用于社会科学；机器学习
 - 纳入依据：用机器学习联系家庭调查中的清洁烹饪价值偏好与地理、人口变量，量化能源技术接受的社会因素。
 
-#### 1057. [Global, regional, and local acceptance of solar power](https://doi.org/10.1016/j.rser.2024.114296)
+#### 1063. [Global, regional, and local acceptance of solar power](https://doi.org/10.1016/j.rser.2024.114296)
 
 - DOI／稳定ID：`10.1016/j.rser.2024.114296`
 - 标签：AI 用于社会科学；大语言模型
 - 纳入依据：用意见挖掘与生成式语言模型分析不同区域公众对太阳能技术的接受度和情绪，研究技术部署的社会环境因素。
 
-#### 1058. [Identifying green citizen typologies by mining household-level survey data](https://doi.org/10.1016/j.rser.2023.113957)
+#### 1064. [Identifying green citizen typologies by mining household-level survey data](https://doi.org/10.1016/j.rser.2023.113957)
 
 - DOI／稳定ID：`10.1016/j.rser.2023.113957`
 - 标签：AI 用于社会科学；机器学习
 - 纳入依据：结合自组织映射、聚类与决策树分析家庭调查，识别环境行为群体及影响因素，直接研究可持续消费与人群行为。
 
-#### 1059. [Load frequency control in smart grids: A review of recent developments](https://doi.org/10.1016/j.rser.2023.114013)
+#### 1065. [Load frequency control in smart grids: A review of recent developments](https://doi.org/10.1016/j.rser.2023.114013)
 
 - DOI／稳定ID：`10.1016/j.rser.2023.114013`
 - 标签：AI 用于工程科学；能源系统优化；强化学习
 - 纳入依据：综述智能电网频率控制，明确讨论机器学习和强化学习处理可再生能源、通信不确定性及稳定性控制。
 
-#### 1060. [Machine learning scopes on microgrid predictive maintenance: Potential frameworks, challenges, and prospects](https://doi.org/10.1016/j.rser.2023.114088)
+#### 1066. [Machine learning scopes on microgrid predictive maintenance: Potential frameworks, challenges, and prospects](https://doi.org/10.1016/j.rser.2023.114088)
 
 - DOI／稳定ID：`10.1016/j.rser.2023.114088`
 - 标签：AI 用于工程科学
 - 纳入依据：OpenAIRE内容为综述摘要；系统讨论机器学习在微电网故障预测、诊断及剩余寿命维护中的方法和技术缺口。
 
-#### 1061. [Machine learning-based digital district heating/cooling with renewable integrations and advanced low-carbon transition](https://doi.org/10.1016/j.rser.2024.114466)
+#### 1067. [Machine learning-based digital district heating/cooling with renewable integrations and advanced low-carbon transition](https://doi.org/10.1016/j.rser.2024.114466)
 
 - DOI／稳定ID：`10.1016/j.rser.2024.114466`
 - 标签：AI 用于工程科学
 - 纳入依据：OpenAIRE为综述摘要；系统分析机器学习在区域供暖制冷需求预测、代理建模、控制和参数设计中的技术作用。
 
-#### 1062. [Mapping the spatial turn in social science energy research. A computational literature review](https://doi.org/10.1016/j.rser.2024.114607)
+#### 1068. [Mapping the spatial turn in social science energy research. A computational literature review](https://doi.org/10.1016/j.rser.2024.114607)
 
 - DOI／稳定ID：`10.1016/j.rser.2024.114607`
 - 标签：AI 用于社会科学；自然语言处理；主题建模
 - 纳入依据：摘要采用命名实体识别和结构主题模型分析7879篇能源空间研究论文，量化研究地域与方法偏向，支持社会科学能源研究的证据综合。
 
-#### 1063. [Multi-objective electricity generation expansion planning towards renewable energy policy objectives under uncertainties](https://doi.org/10.1016/j.rser.2024.114406)
+#### 1069. [Multi-objective electricity generation expansion planning towards renewable energy policy objectives under uncertainties](https://doi.org/10.1016/j.rser.2024.114406)
 
 - DOI／稳定ID：`10.1016/j.rser.2024.114406`
 - 标签：能源系统优化；演化优化；多目标优化
 - 纳入依据：摘要提出基于分散目标搜索的多目标演化算法，求解含不确定性和能源政策约束的电源扩展规划，并以中国电力系统实测数据比较验证，明确AI优化与能源工程任务的关系。
 
-#### 1064. [Multi-sensor data fusion framework for energy optimization in smart homes](https://doi.org/10.1016/j.rser.2023.114235)
+#### 1070. [Multi-sensor data fusion framework for energy optimization in smart homes](https://doi.org/10.1016/j.rser.2023.114235)
 
 - DOI／稳定ID：`10.1016/j.rser.2023.114235`
 - 标签：AI 用于工程科学；能源系统优化；机器学习
 - 纳入依据：融合家居环境、相机与设备数据，用机器学习和深度学习生成节能建议并触发物理执行器，评估建筑能源优化系统。
 
-#### 1065. [Optimal design of multiuse hybrid microgrids power by green hydrogen–ammonia](https://doi.org/10.1016/j.rser.2023.114174)
+#### 1071. [Optimal design of multiuse hybrid microgrids power by green hydrogen–ammonia](https://doi.org/10.1016/j.rser.2023.114174)
 
 - DOI／稳定ID：`10.1016/j.rser.2023.114174`
 - 标签：能源系统优化；粒子群优化
 - 纳入依据：摘要明确以粒子群优化同时确定氢—氨混合微电网设备容量与逐时运行，在可靠性和负荷约束下降低成本，属于AI优化参与能源系统设计。
 
-#### 1066. [Process design, integration, and optimization of a novel compressed air energy storage for the coproduction of electricity, cooling, and water](https://doi.org/10.1016/j.rser.2023.114034)
+#### 1072. [Process design, integration, and optimization of a novel compressed air energy storage for the coproduction of electricity, cooling, and water](https://doi.org/10.1016/j.rser.2023.114034)
 
 - DOI／稳定ID：`10.1016/j.rser.2023.114034`
 - 标签：AI 用于工程科学；能源系统优化；群智能优化
 - 纳入依据：用多目标蚱蜢群智能优化算法权衡压缩空气储能、LNG再气化和淡化联供系统的热力、经济及环境性能，直接服务能源工程设计。
 
-#### 1067. [Solar irradiance component separation benchmarking: The critical role of dynamically-constrained sky conditions](https://doi.org/10.1016/j.rser.2024.114678)
+#### 1073. [Solar irradiance component separation benchmarking: The critical role of dynamically-constrained sky conditions](https://doi.org/10.1016/j.rser.2024.114678)
 
 - DOI／稳定ID：`10.1016/j.rser.2024.114678`
 - 标签：AI 用于地球宇宙科学；机器学习
 - 纳入依据：以全球 118 个观测站验证太阳辐射分解模型，机器学习改善复杂天空条件下直射和散射分量估计。
 
-#### 1068. [Spatial bayesian approach for socio-economic assessment of pumped hydro storage](https://doi.org/10.1016/j.rser.2023.114007)
+#### 1074. [Spatial bayesian approach for socio-economic assessment of pumped hydro storage](https://doi.org/10.1016/j.rser.2023.114007)
 
 - DOI／稳定ID：`10.1016/j.rser.2023.114007`
 - 标签：AI 用于工程科学；能源基础设施选址；概率图模型
 - 纳入依据：以贝叶斯网络整合空间统计、专家条件概率和正向推断来筛选抽水蓄能电站位置，并进行敏感度和强度验证，概率图模型直接参与能源基础设施选址。
 
-#### 1069. [Surrogate-assisted level-based learning evolutionary search for geothermal heat extraction optimization](https://doi.org/10.1016/j.rser.2023.113860)
+#### 1075. [Surrogate-assisted level-based learning evolutionary search for geothermal heat extraction optimization](https://doi.org/10.1016/j.rser.2023.113860)
 
 - DOI／稳定ID：`10.1016/j.rser.2023.113860`
 - 标签：AI 用于工程科学；AI 用于地球宇宙科学；演化优化
 - 纳入依据：OpenAIRE内容为完整研究摘要；分类器辅助代理与演化搜索优化地热取热井控，在二维裂隙和三维地热系统验证。
 
-#### 1070. [Uncovering gender dimensions in energy policy using Natural Language Processing](https://doi.org/10.1016/j.rser.2024.114281)
+#### 1076. [Uncovering gender dimensions in energy policy using Natural Language Processing](https://doi.org/10.1016/j.rser.2024.114281)
 
 - DOI／稳定ID：`10.1016/j.rser.2024.114281`
 - 标签：AI 用于社会科学；自然语言处理
@@ -6532,61 +6568,61 @@
 
 ### Advances in Applied Energy（10篇）
 
-#### 1071. [Active learning concerning sampling cost for enhancing AI-enabled building energy system modeling](https://doi.org/10.1016/j.adapen.2024.100189)
+#### 1077. [Active learning concerning sampling cost for enhancing AI-enabled building energy system modeling](https://doi.org/10.1016/j.adapen.2024.100189)
 
 - DOI／稳定ID：`10.1016/j.adapen.2024.100189`
 - 标签：AI 用于工程科学；主动学习
 - 纳入依据：主动学习以距离及信息密度选择建筑能耗模型训练工况，在真实高层建筑冷却塔数据验证泛化与采样成本。
 
-#### 1072. [Advancing state of health estimation for electric vehicles: Transformer-based approach leveraging real-world data](https://doi.org/10.1016/j.adapen.2024.100188)
+#### 1078. [Advancing state of health estimation for electric vehicles: Transformer-based approach leveraging real-world data](https://doi.org/10.1016/j.adapen.2024.100188)
 
 - DOI／稳定ID：`10.1016/j.adapen.2024.100188`
 - 标签：AI 用于工程科学；Transformer 架构；预训练；自监督学习
 - 纳入依据：OpenAIRE为研究摘要；Transformer以真实电动车时间序列估计电池健康，并用无标签序数预训练提高样本效率。
 
-#### 1073. [Data-driven energy management of virtual power plants: A review](https://doi.org/10.1016/j.adapen.2024.100170)
+#### 1079. [Data-driven energy management of virtual power plants: A review](https://doi.org/10.1016/j.adapen.2024.100170)
 
 - DOI／稳定ID：`10.1016/j.adapen.2024.100170`
 - 标签：AI 用于工程科学；强化学习
 - 纳入依据：OpenAIRE为综述摘要；虚拟电厂能源管理系统总结强化学习决策、数据共享与电网服务研究，并整理真实工程实践。
 
-#### 1074. [Energy flexibility quantification of a tropical net-zero office building using physically consistent neural network-based model predictive control](https://doi.org/10.1016/j.adapen.2024.100167)
+#### 1080. [Energy flexibility quantification of a tropical net-zero office building using physically consistent neural network-based model predictive control](https://doi.org/10.1016/j.adapen.2024.100167)
 
 - DOI／稳定ID：`10.1016/j.adapen.2024.100167`
 - 标签：AI 用于工程科学；物理信息学习
 - 纳入依据：OpenAIRE内容为完整研究摘要；物理一致神经模型结合MPC优化热带净零建筑能量灵活性，验证光伏储能运行效果及稳定性。
 
-#### 1075. [Multi-scale electricity consumption prediction model based on land use and interpretable machine learning: A case study of China](https://doi.org/10.1016/j.adapen.2024.100197)
+#### 1081. [Multi-scale electricity consumption prediction model based on land use and interpretable machine learning: A case study of China](https://doi.org/10.1016/j.adapen.2024.100197)
 
 - DOI／稳定ID：`10.1016/j.adapen.2024.100197`
 - 标签：AI 用于工程科学；可解释机器学习；电力负荷预测
 - 纳入依据：基于可解释机器学习的土地利用模型预测城市及县域用电量，量化不同用地类型的边际作用并推断能源热点。
 
-#### 1076. [Optimal scheduling of smart home energy systems: A user-friendly and adaptive home intelligent agent with self-learning capability](https://doi.org/10.1016/j.adapen.2024.100182)
+#### 1082. [Optimal scheduling of smart home energy systems: A user-friendly and adaptive home intelligent agent with self-learning capability](https://doi.org/10.1016/j.adapen.2024.100182)
 
 - DOI／稳定ID：`10.1016/j.adapen.2024.100182`
 - 标签：AI 用于工程科学；能源系统优化
 - 纳入依据：摘要提出从运行数据自学习并更新模型参数的家庭能源智能体，联动次日优化调度与自动控制，并通过实验室能源系统验证成本和排放改善。
 
-#### 1077. [Probabilistic load forecasting for integrated energy systems using attentive quantile regression temporal convolutional network](https://doi.org/10.1016/j.adapen.2024.100165)
+#### 1083. [Probabilistic load forecasting for integrated energy systems using attentive quantile regression temporal convolutional network](https://doi.org/10.1016/j.adapen.2024.100165)
 
 - DOI／稳定ID：`10.1016/j.adapen.2024.100165`
 - 标签：AI 用于工程科学；电力负荷预测；能源系统性能预测；深度学习
 - 纳入依据：摘要明确用注意力和分位数时序卷积网络联合预测综合能源系统电、热、冷负荷及不确定性，真实负荷与气象数据验证，AI直接承担能源系统预测任务。
 
-#### 1078. [SkyGPT: Probabilistic ultra-short-term solar forecasting using synthetic sky images from physics-constrained VideoGPT](https://doi.org/10.1016/j.adapen.2024.100172)
+#### 1084. [SkyGPT: Probabilistic ultra-short-term solar forecasting using synthetic sky images from physics-constrained VideoGPT](https://doi.org/10.1016/j.adapen.2024.100172)
 
 - DOI／稳定ID：`10.1016/j.adapen.2024.100172`
 - 标签：AI 用于工程科学；能源系统性能预测；深度学习；光伏功率预测
 - 纳入依据：物理约束视频生成模型预测云层变化，并耦合 U-Net 在真实光伏系统中预测 15 分钟功率分布，提升可再生能源预测可靠性。
 
-#### 1079. [Techno–Economic Modeling and Safe Operational Optimization of Multi-Network Constrained Integrated Community Energy Systems](https://doi.org/10.1016/j.adapen.2024.100183)
+#### 1085. [Techno–Economic Modeling and Safe Operational Optimization of Multi-Network Constrained Integrated Community Energy Systems](https://doi.org/10.1016/j.adapen.2024.100183)
 
 - DOI／稳定ID：`10.1016/j.adapen.2024.100183`
 - 标签：AI 用于工程科学；能源系统优化；安全强化学习
 - 纳入依据：安全强化学习将电气热多网络物理约束纳入社区能源调度，在收益与约束违规之间进行学习优化。
 
-#### 1080. [Toward global rooftop PV detection with Deep Active Learning](https://doi.org/10.1016/j.adapen.2024.100191)
+#### 1086. [Toward global rooftop PV detection with Deep Active Learning](https://doi.org/10.1016/j.adapen.2024.100191)
 
 - DOI／稳定ID：`10.1016/j.adapen.2024.100191`
 - 标签：AI 用于工程科学；主动学习
@@ -6595,55 +6631,55 @@
 
 ### Trends in Cognitive Sciences（9篇）
 
-#### 1081. [A cognitive-computational account of mood swings in adolescence](https://doi.org/10.1016/j.tics.2024.02.006)
+#### 1087. [A cognitive-computational account of mood swings in adolescence](https://doi.org/10.1016/j.tics.2024.02.006)
 
 - DOI／稳定ID：`10.1016/j.tics.2024.02.006`
 - 标签：AI 用于生命科学；强化学习
 - 纳入依据：正式Review整合强化学习模型解释青春期情绪、学习与选择的双向动力学及精神病理发展。
 
-#### 1082. [Naturalistic reinforcement learning](https://doi.org/10.1016/j.tics.2023.08.016)
+#### 1088. [Naturalistic reinforcement learning](https://doi.org/10.1016/j.tics.2023.08.016)
 
 - DOI／稳定ID：`10.1016/j.tics.2023.08.016`
 - 标签：AI 用于社会科学；强化学习
 - 纳入依据：正式Review综述强化学习计算框架解释复杂自然情境的人类决策，连接实验范式和真实决策机制。
 
-#### 1083. [Political reinforcement learners](https://doi.org/10.1016/j.tics.2023.12.001)
+#### 1089. [Political reinforcement learners](https://doi.org/10.1016/j.tics.2023.12.001)
 
 - DOI／稳定ID：`10.1016/j.tics.2023.12.001`
 - 标签：AI 用于社会科学；强化学习
 - 纳入依据：正式Review以强化学习算法框架区分政治认知差异的表征、运算与环境来源，直接提出计算社会认知解释。
 
-#### 1084. [The causal structure and computational value of narratives](https://doi.org/10.1016/j.tics.2024.04.003)
+#### 1090. [The causal structure and computational value of narratives](https://doi.org/10.1016/j.tics.2024.04.003)
 
 - DOI／稳定ID：`10.1016/j.tics.2024.04.003`
 - 标签：AI 用于社会科学；强化学习
 - 纳入依据：正式Review将叙事因果结构的行为与神经证据同强化学习计算模型联系，解释复杂环境中的因果学习和记忆。
 
-#### 1085. [The computational foundations of dynamic coding in working memory](https://doi.org/10.1016/j.tics.2024.02.011)
+#### 1091. [The computational foundations of dynamic coding in working memory](https://doi.org/10.1016/j.tics.2024.02.011)
 
 - DOI／稳定ID：`10.1016/j.tics.2024.02.011`
 - 标签：AI 用于生命科学
 - 纳入依据：综述任务优化神经网络与经典工作记忆模型，说明动态编码的数学基础及认知功能。
 
-#### 1086. [The computational structure of consummatory anhedonia](https://doi.org/10.1016/j.tics.2024.01.006)
+#### 1092. [The computational structure of consummatory anhedonia](https://doi.org/10.1016/j.tics.2024.01.006)
 
 - DOI／稳定ID：`10.1016/j.tics.2024.01.006`
 - 标签：AI 用于生命科学；强化学习
 - 纳入依据：正式Review以强化学习和目标进展重构快感缺失的计算模型，解释压力与认知信念对享乐体验的影响。
 
-#### 1087. [The Dimensions of dimensionality](https://doi.org/10.1016/j.tics.2024.07.005)
+#### 1093. [The Dimensions of dimensionality](https://doi.org/10.1016/j.tics.2024.07.005)
 
 - DOI／稳定ID：`10.1016/j.tics.2024.07.005`
 - 标签：AI 用于社会科学
 - 纳入依据：综述认知科学中的学习嵌入空间、潜表示推断与维度解释，直接支持文本、神经影像及行为表征研究方法。
 
-#### 1088. [The relational bottleneck as an inductive bias for efficient abstraction](https://doi.org/10.1016/j.tics.2024.04.001)
+#### 1094. [The relational bottleneck as an inductive bias for efficient abstraction](https://doi.org/10.1016/j.tics.2024.04.001)
 
 - DOI／稳定ID：`10.1016/j.tics.2024.04.001`
 - 标签：AI 用于生命科学
 - 纳入依据：综述关系瓶颈神经网络如何从有限经验学习抽象概念，作为人脑认知模型连接符号与联结主义。
 
-#### 1089. [Why concepts are (probably) vectors](https://doi.org/10.1016/j.tics.2024.06.011)
+#### 1095. [Why concepts are (probably) vectors](https://doi.org/10.1016/j.tics.2024.06.011)
 
 - DOI／稳定ID：`10.1016/j.tics.2024.06.011`
 - 标签：AI 用于社会科学
@@ -6652,55 +6688,55 @@
 
 ### Journal of Advanced Research（9篇）
 
-#### 1090. [An interpretable artificial intelligence framework for designing synthetic lethality-based anti-cancer combination therapies](https://doi.org/10.1016/j.jare.2023.11.035)
+#### 1096. [An interpretable artificial intelligence framework for designing synthetic lethality-based anti-cancer combination therapies](https://doi.org/10.1016/j.jare.2023.11.035)
 
 - DOI／稳定ID：`10.1016/j.jare.2023.11.035`
 - 标签：AI 用于生命科学；药物筛选
 - 纳入依据：知识与数据驱动的可解释AI预测合成致死交互，设计药物组合并在体内外验证抗癌效果。
 
-#### 1091. [Chamber Attention Network (CAN): Towards interpretable diagnosis of pulmonary artery hypertension using echocardiography](https://doi.org/10.1016/j.jare.2023.10.013)
+#### 1097. [Chamber Attention Network (CAN): Towards interpretable diagnosis of pulmonary artery hypertension using echocardiography](https://doi.org/10.1016/j.jare.2023.10.013)
 
 - DOI／稳定ID：`10.1016/j.jare.2023.10.013`
 - 标签：AI 用于生命科学；卷积神经网络；医学影像分类
 - 纳入依据：卷积网络和心腔注意力模型从超声心动图识别肺动脉高压，内外部验证并解释心脏结构变化。
 
-#### 1092. [Effects of lifestyle and associated diseases on serum CC16 suggest complex interactions among metabolism, heart and lungs](https://doi.org/10.1016/j.jare.2023.06.005)
+#### 1098. [Effects of lifestyle and associated diseases on serum CC16 suggest complex interactions among metabolism, heart and lungs](https://doi.org/10.1016/j.jare.2023.06.005)
 
 - DOI／稳定ID：`10.1016/j.jare.2023.06.005`
 - 标签：AI 用于生命科学；随机森林
 - 纳入依据：随机森林验证血清CC16与代谢、心血管、肺疾病及生活方式的决定因素关联，补充生理机制研究。
 
-#### 1093. [Efficient improvement of the proliferation, differentiation, and anti-arthritic capacity of mesenchymal stem cells by simply culturing on the immobilized FGF2 derived peptide, 44-ERGVVSIKGV-53](https://doi.org/10.1016/j.jare.2023.09.041)
+#### 1099. [Efficient improvement of the proliferation, differentiation, and anti-arthritic capacity of mesenchymal stem cells by simply culturing on the immobilized FGF2 derived peptide, 44-ERGVVSIKGV-53](https://doi.org/10.1016/j.jare.2023.09.041)
 
 - DOI／稳定ID：`10.1016/j.jare.2023.09.041`
 - 标签：AI 用于生命科学；蛋白质结构预测
 - 纳入依据：利用AlphaFold2及对接预测肽受体交互，并结合间充质干细胞及骨关节炎小鼠验证FGF2肽治疗作用。
 
-#### 1094. [Immune response and mesenchymal transition of papillary thyroid carcinoma reflected in ultrasonography features assessed by radiologists and deep learning](https://doi.org/10.1016/j.jare.2023.09.043)
+#### 1100. [Immune response and mesenchymal transition of papillary thyroid carcinoma reflected in ultrasonography features assessed by radiologists and deep learning](https://doi.org/10.1016/j.jare.2023.09.043)
 
 - DOI／稳定ID：`10.1016/j.jare.2023.09.043`
 - 标签：AI 用于生命科学；卷积神经网络；医学影像分类
 - 纳入依据：CNN评估甲状腺癌超声表征，结合转录组分析揭示免疫反应与上皮间质转化分子机制。
 
-#### 1095. [Industrial Internet of Water Things architecture for data standarization based on blockchain and digital twin technology☆](https://doi.org/10.1016/j.jare.2023.10.005)
+#### 1101. [Industrial Internet of Water Things architecture for data standarization based on blockchain and digital twin technology☆](https://doi.org/10.1016/j.jare.2023.10.005)
 
 - DOI／稳定ID：`10.1016/j.jare.2023.10.005`
 - 标签：AI 用于工程科学；卷积神经网络；循环神经网络
 - 纳入依据：CNN-LSTM处理多源水质传感数据，解决供水系统数据标准化并在仿真实验验证，是具体工程监测研究。
 
-#### 1096. [Modulating autophagy to treat diseases: A revisited review on in silico methods](https://doi.org/10.1016/j.jare.2023.05.002)
+#### 1102. [Modulating autophagy to treat diseases: A revisited review on in silico methods](https://doi.org/10.1016/j.jare.2023.05.002)
 
 - DOI／稳定ID：`10.1016/j.jare.2023.05.002`
 - 标签：AI 用于生命科学；药物筛选
 - 纳入依据：综述AI预测自噬靶点、设计小分子并分类疾病的具体计算方法，直接服务自噬治疗研究。
 
-#### 1097. [Plasma glycoproteomics delivers high-specificity disease biomarkers by detecting site-specific glycosylation abnormalities](https://doi.org/10.1016/j.jare.2023.09.002)
+#### 1103. [Plasma glycoproteomics delivers high-specificity disease biomarkers by detecting site-specific glycosylation abnormalities](https://doi.org/10.1016/j.jare.2023.09.002)
 
 - DOI／稳定ID：`10.1016/j.jare.2023.09.002`
 - 标签：AI 用于生命科学
 - 纳入依据：监督机器学习从血浆糖蛋白组发现遗传糖基化缺陷的特异标志物，研究糖链位点与病理机制。
 
-#### 1098. [Ten metabolites-based algorithm predicts the future development of type 2 diabetes in Chinese](https://doi.org/10.1016/j.jare.2023.11.026)
+#### 1104. [Ten metabolites-based algorithm predicts the future development of type 2 diabetes in Chinese](https://doi.org/10.1016/j.jare.2023.11.026)
 
 - DOI／稳定ID：`10.1016/j.jare.2023.11.026`
 - 标签：AI 用于生命科学
@@ -6709,49 +6745,49 @@
 
 ### Clinical Gastroenterology and Hepatology（8篇）
 
-#### 1099. [A Liver Stiffness–Based Etiology-Independent Machine Learning Algorithm to Predict Hepatocellular Carcinoma](https://doi.org/10.1016/j.cgh.2023.11.005)
+#### 1105. [A Liver Stiffness–Based Etiology-Independent Machine Learning Algorithm to Predict Hepatocellular Carcinoma](https://doi.org/10.1016/j.cgh.2023.11.005)
 
 - DOI／稳定ID：`10.1016/j.cgh.2023.11.005`
 - 标签：AI 用于生命科学
 - 纳入依据：机器学习整合肝硬度与临床特征预测多病因肝癌风险，在香港和欧洲前瞻性队列外部验证。
 
-#### 1100. [A Machine Learning Algorithm Avoids Unnecessary Paracentesis for Exclusion of SBP in Cirrhosis in Resource-limited Settings](https://doi.org/10.1016/j.cgh.2024.06.015)
+#### 1106. [A Machine Learning Algorithm Avoids Unnecessary Paracentesis for Exclusion of SBP in Cirrhosis in Resource-limited Settings](https://doi.org/10.1016/j.cgh.2024.06.015)
 
 - DOI／稳定ID：`10.1016/j.cgh.2024.06.015`
 - 标签：AI 用于生命科学；梯度提升
 - 纳入依据：XGBoost从肝硬化常规临床变量排除自发性细菌性腹膜炎，独立及前瞻队列验证减少不必要穿刺的潜力。
 
-#### 1101. [ChatGPT4 Outperforms Endoscopists for Determination of Postcolonoscopy Rescreening and Surveillance Recommendations](https://doi.org/10.1016/j.cgh.2024.04.022)
+#### 1107. [ChatGPT4 Outperforms Endoscopists for Determination of Postcolonoscopy Rescreening and Surveillance Recommendations](https://doi.org/10.1016/j.cgh.2024.04.022)
 
 - DOI／稳定ID：`10.1016/j.cgh.2024.04.022`
 - 标签：AI 用于生命科学
 - 纳入依据：ChatGPT4依据505名患者临床、结肠镜与病理资料推荐复查间隔，与专家指南及医生真实实践比较。
 
-#### 1102. [Dynamics of the Gut Mycobiome in Patients With Ulcerative Colitis](https://doi.org/10.1016/j.cgh.2023.09.023)
+#### 1108. [Dynamics of the Gut Mycobiome in Patients With Ulcerative Colitis](https://doi.org/10.1016/j.cgh.2023.09.023)
 
 - DOI／稳定ID：`10.1016/j.cgh.2023.09.023`
 - 标签：AI 用于生命科学；随机森林
 - 纳入依据：随机森林用肠道真菌丰度区分溃疡性结肠炎活动度，并结合纵向真菌变化研究病理关联。
 
-#### 1103. [Effect of Real-Time Computer-Aided Polyp Detection System (ENDO-AID) on Adenoma Detection in Endoscopists-in-Training: A Randomized Trial](https://doi.org/10.1016/j.cgh.2023.10.019)
+#### 1109. [Effect of Real-Time Computer-Aided Polyp Detection System (ENDO-AID) on Adenoma Detection in Endoscopists-in-Training: A Randomized Trial](https://doi.org/10.1016/j.cgh.2023.10.019)
 
 - DOI／稳定ID：`10.1016/j.cgh.2023.10.019`
 - 标签：AI 用于生命科学；医学病灶检测
 - 纳入依据：实时计算机辅助息肉检测ENDO-AID用于结肠镜检查并开展随机对照试验，摘要完整报告腺瘤检出率等临床结果，计算机视觉检测实质参与医学任务；算法架构未写明，不推定深度学习。
 
-#### 1104. [Lack of Effectiveness of Computer Aided Detection for Colorectal Neoplasia: A Systematic Review and Meta-Analysis of Nonrandomized Studies](https://doi.org/10.1016/j.cgh.2023.11.029)
+#### 1110. [Lack of Effectiveness of Computer Aided Detection for Colorectal Neoplasia: A Systematic Review and Meta-Analysis of Nonrandomized Studies](https://doi.org/10.1016/j.cgh.2023.11.029)
 
 - DOI／稳定ID：`10.1016/j.cgh.2023.11.029`
 - 标签：AI 用于生命科学；医学病灶检测
 - 纳入依据：系统综述与Meta分析比较真实世界CADe结肠镜辅助检测和常规检查，汇总8项研究9782名患者，实质评价医学辅助病灶检测的效益和风险；阴性结果不影响纳入。
 
-#### 1105. [Machine Learning–Based Models for Advanced Fibrosis and Cirrhosis Diagnosis in Chronic Hepatitis B Patients With Hepatic Steatosis](https://doi.org/10.1016/j.cgh.2024.06.014)
+#### 1111. [Machine Learning–Based Models for Advanced Fibrosis and Cirrhosis Diagnosis in Chronic Hepatitis B Patients With Hepatic Steatosis](https://doi.org/10.1016/j.cgh.2024.06.014)
 
 - DOI／稳定ID：`10.1016/j.cgh.2024.06.014`
 - 标签：AI 用于生命科学；随机森林
 - 纳入依据：随机森林在多中心乙肝伴脂肪变患者中诊断进展性纤维化/肝硬化，并以独立队列和决策曲线验证。
 
-#### 1106. [The Efficacy of Real-time Computer-aided Detection of Colonic Neoplasia in Community Practice: A Pragmatic Randomized Controlled Trial](https://doi.org/10.1016/j.cgh.2024.02.021)
+#### 1112. [The Efficacy of Real-time Computer-aided Detection of Colonic Neoplasia in Community Practice: A Pragmatic Randomized Controlled Trial](https://doi.org/10.1016/j.cgh.2024.02.021)
 
 - DOI／稳定ID：`10.1016/j.cgh.2024.02.021`
 - 标签：AI 用于生命科学；医学病灶检测
@@ -6760,49 +6796,49 @@
 
 ### Nano Energy（8篇）
 
-#### 1107. [A multi-dimensional tactile perception system based on triboelectric sensors: Towards intelligent sorting without seeing](https://doi.org/10.1016/j.nanoen.2024.109398)
+#### 1113. [A multi-dimensional tactile perception system based on triboelectric sensors: Towards intelligent sorting without seeing](https://doi.org/10.1016/j.nanoen.2024.109398)
 
 - DOI／稳定ID：`10.1016/j.nanoen.2024.109398`
 - 标签：AI 用于工程科学；机器学习
 - 纳入依据：机器学习解码摩擦电与量子棒触觉传感器信号，在微控制器上区分 18 种真实物体，实现无视觉机器人分拣。
 
-#### 1108. [Advancing triboelectric human machine interfaces with core-sheath nanocomposite fibres: Enhanced flexibility and motion identification via machine learning](https://doi.org/10.1016/j.nanoen.2024.109737)
+#### 1114. [Advancing triboelectric human machine interfaces with core-sheath nanocomposite fibres: Enhanced flexibility and motion identification via machine learning](https://doi.org/10.1016/j.nanoen.2024.109737)
 
 - DOI／稳定ID：`10.1016/j.nanoen.2024.109737`
 - 标签：AI 用于工程科学；机器学习
 - 纳入依据：以新型摩擦电纳米纤维传感器获取触压信号，机器学习实现真实用户识别，验证器件在人机接口中的功能。
 
-#### 1109. [All-in-one multifunctional and deformation-insensitive carbon nanotube nerve patches enabling on-demand interactions](https://doi.org/10.1016/j.nanoen.2023.109104)
+#### 1115. [All-in-one multifunctional and deformation-insensitive carbon nanotube nerve patches enabling on-demand interactions](https://doi.org/10.1016/j.nanoen.2023.109104)
 
 - DOI／稳定ID：`10.1016/j.nanoen.2023.109104`
 - 标签：AI 用于工程科学
 - 纳入依据：将新型柔性碳纳米管传感贴片的时空信号与 AI 识别集成，实验验证高精度物理触觉交互，属于传感器工程研究。
 
-#### 1110. [Deep-learning assisted biomimetic self-powered wireless electronic noses system enabled by triboelectric discharge](https://doi.org/10.1016/j.nanoen.2023.109156)
+#### 1116. [Deep-learning assisted biomimetic self-powered wireless electronic noses system enabled by triboelectric discharge](https://doi.org/10.1016/j.nanoen.2023.109156)
 
 - DOI／稳定ID：`10.1016/j.nanoen.2023.109156`
 - 标签：AI 用于工程科学；化学物质检测；深度学习
 - 纳入依据：深度学习解析摩擦电放电产生的无线气体信号，实验区分 60 类气体及压力组合，构成无源电子鼻的关键识别方法。
 
-#### 1111. [Graphene-supported single atom catalysts for high performance lithium-oxygen batteries](https://doi.org/10.1016/j.nanoen.2024.109279)
+#### 1117. [Graphene-supported single atom catalysts for high performance lithium-oxygen batteries](https://doi.org/10.1016/j.nanoen.2024.109279)
 
 - DOI／稳定ID：`10.1016/j.nanoen.2024.109279`
 - 标签：AI 用于物质科学；催化剂发现；机器学习
 - 纳入依据：用机器学习建立单原子催化剂电子化学属性与活性的描述符，结合量子计算和电化学实验指导锂氧电池催化剂设计。
 
-#### 1112. [Highly resilient aerogel/sponge nested structures assisted multimodal tactile sensory system for robotic embodied perception](https://doi.org/10.1016/j.nanoen.2024.110279)
+#### 1118. [Highly resilient aerogel/sponge nested structures assisted multimodal tactile sensory system for robotic embodied perception](https://doi.org/10.1016/j.nanoen.2024.110279)
 
 - DOI／稳定ID：`10.1016/j.nanoen.2024.110279`
 - 标签：AI 用于工程科学；机器人材料识别；大语言模型
 - 纳入依据：Mamba 时序模型分析柔性多模态触觉信号，结合语言模型推断真实物体的材料、柔顺性与隔热性质。
 
-#### 1113. [Liquid-like thermal conductivity in solid materials: Dynamic behavior of silver ions in argyrodites](https://doi.org/10.1016/j.nanoen.2024.109324)
+#### 1119. [Liquid-like thermal conductivity in solid materials: Dynamic behavior of silver ions in argyrodites](https://doi.org/10.1016/j.nanoen.2024.109324)
 
 - DOI／稳定ID：`10.1016/j.nanoen.2024.109324`
 - 标签：AI 用于物质科学；机器学习原子势
 - 纳入依据：训练机器学习原子势进行大尺度分子动力学，解释银离子动态、热传输与超离子态的联系。
 
-#### 1114. [Machine-assisted quantification of droplet boiling upon multiple solid materials](https://doi.org/10.1016/j.nanoen.2024.109560)
+#### 1120. [Machine-assisted quantification of droplet boiling upon multiple solid materials](https://doi.org/10.1016/j.nanoen.2024.109560)
 
 - DOI／稳定ID：`10.1016/j.nanoen.2024.109560`
 - 标签：AI 用于数理科学；机器学习
@@ -6811,43 +6847,43 @@
 
 ### Neuron（7篇）
 
-#### 1115. [A unifying framework for functional organization in early and higher ventral visual cortex](https://doi.org/10.1016/j.neuron.2024.04.018)
+#### 1121. [A unifying framework for functional organization in early and higher ventral visual cortex](https://doi.org/10.1016/j.neuron.2024.04.018)
 
 - DOI／稳定ID：`10.1016/j.neuron.2024.04.018`
 - 标签：AI 用于生命科学
 - 纳入依据：拓扑深度神经网络预测灵长类多视觉皮层区的功能组织，揭示任务表征与空间平滑/连线长度的权衡。
 
-#### 1116. [Acquiring musculoskeletal skills with curriculum-based reinforcement learning](https://doi.org/10.1016/j.neuron.2024.09.002)
+#### 1122. [Acquiring musculoskeletal skills with curriculum-based reinforcement learning](https://doi.org/10.1016/j.neuron.2024.09.002)
 
 - DOI／稳定ID：`10.1016/j.neuron.2024.09.002`
 - 标签：AI 用于生命科学；强化学习；循环神经网络
 - 纳入依据：课程强化学习训练循环网络控制39肌肉手部模型，检验运动协同并与人类运动数据对比。
 
-#### 1117. [Functional architecture of cerebral cortex during naturalistic movie watching](https://doi.org/10.1016/j.neuron.2024.10.005)
+#### 1123. [Functional architecture of cerebral cortex during naturalistic movie watching](https://doi.org/10.1016/j.neuron.2024.10.005)
 
 - DOI／稳定ID：`10.1016/j.neuron.2024.10.005`
 - 标签：AI 用于生命科学；聚类
 - 纳入依据：数据驱动聚类176名受试者自然电影fMRI，将全脑皮层划分为24个功能区域/网络并解释感知认知组织，聚类直接服务脑功能图谱研究。
 
-#### 1118. [Glioblastoma functional heterogeneity and enrichment of cancer stem cells with tumor recurrence](https://doi.org/10.1016/j.neuron.2024.10.012)
+#### 1124. [Glioblastoma functional heterogeneity and enrichment of cancer stem cells with tumor recurrence](https://doi.org/10.1016/j.neuron.2024.10.012)
 
 - DOI／稳定ID：`10.1016/j.neuron.2024.10.012`
 - 标签：AI 用于生命科学；无监督学习；细胞类型识别
 - 纳入依据：患者来源胶质母细胞瘤异种移植物的无监督单细胞转录分析识别6类肿瘤状态，再以移植和化疗验证细胞层级及复发演化，AI无监督分析实质参与肿瘤生物学研究。
 
-#### 1119. [Predictive sequence learning in the hippocampal formation](https://doi.org/10.1016/j.neuron.2024.05.024)
+#### 1125. [Predictive sequence learning in the hippocampal formation](https://doi.org/10.1016/j.neuron.2024.05.024)
 
 - DOI／稳定ID：`10.1016/j.neuron.2024.05.024`
 - 标签：AI 用于生命科学；自监督学习；循环神经网络
 - 纳入依据：预测自编码器以自监督循环网络模拟海马CA3序列预测，结合小鼠神经元记录验证，并解释位置细胞和回放。
 
-#### 1120. [Single-neuron projectomes of mouse paraventricular hypothalamic nucleus oxytocin neurons reveal mutually exclusive projection patterns](https://doi.org/10.1016/j.neuron.2023.12.022)
+#### 1126. [Single-neuron projectomes of mouse paraventricular hypothalamic nucleus oxytocin neurons reveal mutually exclusive projection patterns](https://doi.org/10.1016/j.neuron.2023.12.022)
 
 - DOI／稳定ID：`10.1016/j.neuron.2023.12.022`
 - 标签：AI 用于生命科学；聚类
 - 纳入依据：完整摘要明确对264个催产素神经元全脑投射进行层次聚类，识别具有不同形态/转录特征及互斥投射的两类神经元，聚类实质用于生命科学细胞群体研究。
 
-#### 1121. [Zero-shot counting with a dual-stream neural network model](https://doi.org/10.1016/j.neuron.2024.10.008)
+#### 1127. [Zero-shot counting with a dual-stream neural network model](https://doi.org/10.1016/j.neuron.2024.10.008)
 
 - DOI／稳定ID：`10.1016/j.neuron.2024.10.008`
 - 标签：AI 用于生命科学
@@ -6856,43 +6892,43 @@
 
 ### Molecular Cell（7篇）
 
-#### 1122. [2′-O-methylation at internal sites on mRNA promotes mRNA stability](https://doi.org/10.1016/j.molcel.2024.04.011)
+#### 1128. [2′-O-methylation at internal sites on mRNA promotes mRNA stability](https://doi.org/10.1016/j.molcel.2024.04.011)
 
 - DOI／稳定ID：`10.1016/j.molcel.2024.04.011`
 - 标签：AI 用于生命科学
 - 纳入依据：NanoNm机器学习结合纳米孔测序识别mRNA单碱基甲基化位点，揭示FBL调控RNA稳定性机制。
 
-#### 1123. [A high-throughput synthetic biology approach for studying combinatorial chromatin-based transcriptional regulation](https://doi.org/10.1016/j.molcel.2024.05.025)
+#### 1129. [A high-throughput synthetic biology approach for studying combinatorial chromatin-based transcriptional regulation](https://doi.org/10.1016/j.molcel.2024.05.025)
 
 - DOI／稳定ID：`10.1016/j.molcel.2024.05.025`
 - 标签：AI 用于生命科学；蛋白质序列建模
 - 纳入依据：监督学习基于氨基酸嵌入预测染色质调节蛋白组合对转录的作用，并结合1900余组合的实验筛选。
 
-#### 1124. [ERMA (TMEM94) is a P-type ATPase transporter for Mg2+ uptake in the endoplasmic reticulum](https://doi.org/10.1016/j.molcel.2024.02.033)
+#### 1130. [ERMA (TMEM94) is a P-type ATPase transporter for Mg2+ uptake in the endoplasmic reticulum](https://doi.org/10.1016/j.molcel.2024.02.033)
 
 - DOI／稳定ID：`10.1016/j.molcel.2024.02.033`
 - 标签：AI 用于生命科学；蛋白质结构预测
 - 纳入依据：AlphaFold2结构预测与实验共同揭示ERMA镁离子转运结构与功能，验证关键残基和心肌生理作用。
 
-#### 1125. [Genome-wide quantification of RNA flow across subcellular compartments reveals determinants of the mammalian transcript life cycle](https://doi.org/10.1016/j.molcel.2024.06.008)
+#### 1131. [Genome-wide quantification of RNA flow across subcellular compartments reveals determinants of the mammalian transcript life cycle](https://doi.org/10.1016/j.molcel.2024.06.008)
 
 - DOI／稳定ID：`10.1016/j.molcel.2024.06.008`
 - 标签：AI 用于生命科学
 - 纳入依据：机器学习定位预测mRNA亚细胞流动和寿命的分子特征，与TimeLapse-seq定量实验共同研究转录本生命周期。
 
-#### 1126. [Molecular insights into the activation of Mre11-Rad50 endonuclease activity by Sae2/CtIP](https://doi.org/10.1016/j.molcel.2024.05.019)
+#### 1132. [Molecular insights into the activation of Mre11-Rad50 endonuclease activity by Sae2/CtIP](https://doi.org/10.1016/j.molcel.2024.05.019)
 
 - DOI／稳定ID：`10.1016/j.molcel.2024.05.019`
 - 标签：AI 用于生命科学；蛋白质结构预测
 - 纳入依据：AlphaFold2结构建模结合生化及遗传实验解释Sae2/CtIP激活Mre11-Rad50核酸酶机制。
 
-#### 1127. [Systematic dissection of sequence features affecting binding specificity of a pioneer factor reveals binding synergy between FOXA1 and AP-1](https://doi.org/10.1016/j.molcel.2024.06.022)
+#### 1133. [Systematic dissection of sequence features affecting binding specificity of a pioneer factor reveals binding synergy between FOXA1 and AP-1](https://doi.org/10.1016/j.molcel.2024.06.022)
 
 - DOI／稳定ID：`10.1016/j.molcel.2024.06.022`
 - 标签：AI 用于生命科学
 - 纳入依据：神经网络结合高通量ChIP-ISO与体外实验解析先驱因子FOXA1序列结合规则和AP-1协同。
 
-#### 1128. [Time-resolved profiling of RNA binding proteins throughout the mRNA life cycle](https://doi.org/10.1016/j.molcel.2024.03.012)
+#### 1134. [Time-resolved profiling of RNA binding proteins throughout the mRNA life cycle](https://doi.org/10.1016/j.molcel.2024.03.012)
 
 - DOI／稳定ID：`10.1016/j.molcel.2024.03.012`
 - 标签：AI 用于生命科学；科学数据
@@ -6901,43 +6937,43 @@
 
 ### Smart Learning Environments（7篇）
 
-#### 1129. [Cultivating writing skills: the role of ChatGPT as a learning assistant—a case study](https://doi.org/10.1186/s40561-024-00296-8)
+#### 1135. [Cultivating writing skills: the role of ChatGPT as a learning assistant—a case study](https://doi.org/10.1186/s40561-024-00296-8)
 
 - DOI／稳定ID：`10.1186/s40561-024-00296-8`
 - 标签：AI 用于社会科学
 - 纳入依据：11名参与者的前实验研究用ChatGPT支持不同语域写作学习，分析AI对语体知识获取的作用。
 
-#### 1130. [Exploring the application of ChatGPT in ESL/EFL education and related research issues: a systematic review of empirical studies](https://doi.org/10.1186/s40561-024-00342-5)
+#### 1136. [Exploring the application of ChatGPT in ESL/EFL education and related research issues: a systematic review of empirical studies](https://doi.org/10.1186/s40561-024-00342-5)
 
 - DOI／稳定ID：`10.1186/s40561-024-00342-5`
 - 标签：AI 用于社会科学
 - 纳入依据：系统综述70项ChatGPT在ESL/EFL学习中的实证研究，综合语言学习支持及学习效果证据。
 
-#### 1131. [I see you: teacher analytics with GPT-4 vision-powered observational assessment](https://doi.org/10.1186/s40561-024-00335-4)
+#### 1137. [I see you: teacher analytics with GPT-4 vision-powered observational assessment](https://doi.org/10.1186/s40561-024-00335-4)
 
 - DOI／稳定ID：`10.1186/s40561-024-00335-4`
 - 标签：AI 用于社会科学；多模态学习
 - 纳入依据：GPT-4视觉分析课堂视频并生成教师行为评估，通过在职教师可用性测试支持课堂观察研究方法。
 
-#### 1132. [Impact of ChatGPT on ESL students’ academic writing skills: a mixed methods intervention study](https://doi.org/10.1186/s40561-024-00295-9)
+#### 1138. [Impact of ChatGPT on ESL students’ academic writing skills: a mixed methods intervention study](https://doi.org/10.1186/s40561-024-00295-9)
 
 - DOI／稳定ID：`10.1186/s40561-024-00295-9`
 - 标签：AI 用于社会科学
 - 纳入依据：混合方法干预研究用ChatGPT形成性反馈改善ESL写作，通过多次测试与焦点讨论检验学习效果。
 
-#### 1133. [Investigating the use of chatGPT as a tool for enhancing critical thinking and argumentation skills in international relations debates among undergraduate students](https://doi.org/10.1186/s40561-024-00347-0)
+#### 1139. [Investigating the use of chatGPT as a tool for enhancing critical thinking and argumentation skills in international relations debates among undergraduate students](https://doi.org/10.1186/s40561-024-00347-0)
 
 - DOI／稳定ID：`10.1186/s40561-024-00347-0`
 - 标签：AI 用于社会科学
 - 纳入依据：随机对照研究将ChatGPT用于国际关系辩论，前后测验证批判性思维及论证能力的提升。
 
-#### 1134. [The effects of over-reliance on AI dialogue systems on students' cognitive abilities: a systematic review](https://doi.org/10.1186/s40561-024-00316-7)
+#### 1140. [The effects of over-reliance on AI dialogue systems on students' cognitive abilities: a systematic review](https://doi.org/10.1186/s40561-024-00316-7)
 
 - DOI／稳定ID：`10.1186/s40561-024-00316-7`
 - 标签：AI 用于社会科学
 - 纳入依据：系统综述AI对话系统过度依赖对学生决策、批判思维及分析能力的影响，直接研究人机认知作用。
 
-#### 1135. [Why explainable AI may not be enough: predictions and mispredictions in decision making in education](https://doi.org/10.1186/s40561-024-00343-4)
+#### 1141. [Why explainable AI may not be enough: predictions and mispredictions in decision making in education](https://doi.org/10.1186/s40561-024-00343-4)
 
 - DOI／稳定ID：`10.1186/s40561-024-00343-4`
 - 标签：AI 用于社会科学；随机森林
@@ -6946,37 +6982,37 @@
 
 ### Science Translational Medicine（6篇）
 
-#### 1136. [Deep learning assists detection of esophageal cancer and precursor lesions in a prospective, randomized controlled study](https://doi.org/10.1126/scitranslmed.adk5395)
+#### 1142. [Deep learning assists detection of esophageal cancer and precursor lesions in a prospective, randomized controlled study](https://doi.org/10.1126/scitranslmed.adk5395)
 
 - DOI／稳定ID：`10.1126/scitranslmed.adk5395`
 - 标签：AI 用于生命科学；卷积神经网络
 - 纳入依据：随机对照研究验证深度CNN辅助内镜提升食管癌及癌前病变检出率，具有明确临床效果。
 
-#### 1137. [Mechanical ventilation guided by driving pressure optimizes local pulmonary biomechanics in an ovine model](https://doi.org/10.1126/scitranslmed.ado1097)
+#### 1143. [Mechanical ventilation guided by driving pressure optimizes local pulmonary biomechanics in an ovine model](https://doi.org/10.1126/scitranslmed.ado1097)
 
 - DOI／稳定ID：`10.1126/scitranslmed.ado1097`
 - 标签：AI 用于生命科学；卷积神经网络；医学影像分割
 - 纳入依据：CNN分割四维肺CT以量化绵羊局部应变，揭示驱动压引导通气优化肺生物力学。
 
-#### 1138. [Multiple sclerosis endophenotypes identified by high-dimensional blood signatures are associated with distinct disease trajectories](https://doi.org/10.1126/scitranslmed.ade8560)
+#### 1144. [Multiple sclerosis endophenotypes identified by high-dimensional blood signatures are associated with distinct disease trajectories](https://doi.org/10.1126/scitranslmed.ade8560)
 
 - DOI／稳定ID：`10.1126/scitranslmed.ade8560`
 - 标签：AI 用于生命科学；无监督学习；聚类；疾病分型
 - 纳入依据：高维血流式细胞及血清蛋白组使用无监督聚类，在独立发现和验证队列识别3种多发性硬化免疫内表型并关联病程和治疗反应，符合AI医学疾病分型。
 
-#### 1139. [Neural landscape is associated with functional outcomes in irradiated patients with oropharyngeal squamous cell carcinoma](https://doi.org/10.1126/scitranslmed.abq5585)
+#### 1145. [Neural landscape is associated with functional outcomes in irradiated patients with oropharyngeal squamous cell carcinoma](https://doi.org/10.1126/scitranslmed.abq5585)
 
 - DOI／稳定ID：`10.1126/scitranslmed.abq5585`
 - 标签：AI 用于生命科学
 - 纳入依据：机器学习分析免疫荧光病理神经分布并关联口咽癌治疗后吞咽结局，动物干预验证神经通路作用。
 
-#### 1140. [Proteomic analysis of Alzheimer’s disease cerebrospinal fluid reveals alterations associated with APOE ε4 and atomoxetine treatment](https://doi.org/10.1126/scitranslmed.adn3504)
+#### 1146. [Proteomic analysis of Alzheimer’s disease cerebrospinal fluid reveals alterations associated with APOE ε4 and atomoxetine treatment](https://doi.org/10.1126/scitranslmed.adn3504)
 
 - DOI／稳定ID：`10.1126/scitranslmed.adn3504`
 - 标签：AI 用于生命科学；聚类
 - 纳入依据：以300人脑脊液两种蛋白组测量构建网络，并明确对个体蛋白组谱进行聚类，揭示传统Aβ与tau不能反映的阿尔茨海默病病理异质性；聚类直接服务疾病机制和亚型研究。
 
-#### 1141. [Synovial fibroblast gene expression is associated with sensory nerve growth and pain in rheumatoid arthritis](https://doi.org/10.1126/scitranslmed.adk3506)
+#### 1147. [Synovial fibroblast gene expression is associated with sensory nerve growth and pain in rheumatoid arthritis](https://doi.org/10.1126/scitranslmed.adk3506)
 
 - DOI／稳定ID：`10.1126/scitranslmed.adk3506`
 - 标签：AI 用于生命科学
@@ -6985,37 +7021,37 @@
 
 ### Nature Computational Science（6篇）
 
-#### 1142. [A simulated annealing algorithm for randomizing weighted networks](https://doi.org/10.1038/s43588-024-00735-z)
+#### 1148. [A simulated annealing algorithm for randomizing weighted networks](https://doi.org/10.1038/s43588-024-00735-z)
 
 - DOI／稳定ID：`10.1038/s43588-024-00735-z`
 - 标签：AI 用于生命科学
 - 纳入依据：模拟退火启发式搜索生成保持加权度的随机网络，用于连接组零模型并揭示不同脑网络组织推断。
 
-#### 1143. [A spatiotemporal style transfer algorithm for dynamic visual stimulus generation](https://doi.org/10.1038/s43588-024-00746-w)
+#### 1149. [A spatiotemporal style transfer algorithm for dynamic visual stimulus generation](https://doi.org/10.1038/s43588-024-00746-w)
 
 - DOI／稳定ID：`10.1038/s43588-024-00746-w`
 - 标签：AI 用于生命科学；AI 用于社会科学
 - 纳入依据：时空风格迁移生成受控视觉刺激，探测深度预测网络并开展人类观察实验，揭示动态视觉编码的空间偏向。
 
-#### 1144. [Automated discovery of algorithms from data](https://doi.org/10.1038/s43588-024-00593-9)
+#### 1150. [Automated discovery of algorithms from data](https://doi.org/10.1038/s43588-024-00593-9)
 
 - DOI／稳定ID：`10.1038/s43588-024-00593-9`
 - 标签：AI 用于数理科学；程序合成
 - 纳入依据：符号神经网络从数据学习并无损蒸馏为含循环与逻辑的可执行算法，在算术等任务发现可外推的数学计算规律。
 
-#### 1145. [Biophysically interpretable inference of cell types from multimodal sequencing data](https://doi.org/10.1038/s43588-024-00689-2)
+#### 1151. [Biophysically interpretable inference of cell types from multimodal sequencing data](https://doi.org/10.1038/s43588-024-00689-2)
 
 - DOI／稳定ID：`10.1038/s43588-024-00689-2`
 - 标签：AI 用于生命科学；多模态学习；物理信息学习
 - 纳入依据：机制K-means联合新生与成熟RNA模态学习细胞共享生物物理状态，发现细胞类型及转录动力学差异。
 
-#### 1146. [Directional multiobjective optimization of metal complexes at the billion-system scale](https://doi.org/10.1038/s43588-024-00616-5)
+#### 1152. [Directional multiobjective optimization of metal complexes at the billion-system scale](https://doi.org/10.1038/s43588-024-00616-5)
 
 - DOI／稳定ID：`10.1038/s43588-024-00616-5`
 - 标签：AI 用于物质科学；演化优化；逆向设计
 - 纳入依据：多目标遗传算法以整配体交叉变异搜索金属配合物，联合优化极化率与能隙并生成高多样性候选。
 
-#### 1147. [Population-level comparisons of gene regulatory networks modeled on high-throughput single-cell transcriptomics data](https://doi.org/10.1038/s43588-024-00597-5)
+#### 1153. [Population-level comparisons of gene regulatory networks modeled on high-throughput single-cell transcriptomics data](https://doi.org/10.1038/s43588-024-00597-5)
 
 - DOI／稳定ID：`10.1038/s43588-024-00597-5`
 - 标签：AI 用于生命科学
@@ -7024,31 +7060,31 @@
 
 ### Matter（5篇）
 
-#### 1148. [Designing complex concentrated alloys with quantum machine learning and language modeling](https://doi.org/10.1016/j.matt.2024.05.035)
+#### 1154. [Designing complex concentrated alloys with quantum machine learning and language modeling](https://doi.org/10.1016/j.matt.2024.05.035)
 
 - DOI／稳定ID：`10.1016/j.matt.2024.05.035`
 - 标签：AI 用于物质科学；支持向量机；材料性质预测；逆向设计
 - 纳入依据：OpenAIRE为研究摘要；量子核支持向量机预测复杂浓集合金单相形成，结合文本挖掘筛选轻量合金候选并分析噪声影响。
 
-#### 1149. [Human-in-the-loop for Bayesian autonomous materials phase mapping](https://doi.org/10.1016/j.matt.2024.01.005)
+#### 1155. [Human-in-the-loop for Bayesian autonomous materials phase mapping](https://doi.org/10.1016/j.matt.2024.01.005)
 
 - DOI／稳定ID：`10.1016/j.matt.2024.01.005`
 - 标签：AI 用于物质科学；材料结构分析；机器学习
 - 纳入依据：将专家给定相区与边界知识转化为概率先验，用机器学习结合 X 射线衍射数据加速材料成分结构相图绘制。
 
-#### 1150. [Nobility vs. mobility: Insights into molten salt corrosion mechanisms of high-entropy alloys via high-throughput experiments and machine learning](https://doi.org/10.1016/j.matt.2024.05.004)
+#### 1156. [Nobility vs. mobility: Insights into molten salt corrosion mechanisms of high-entropy alloys via high-throughput experiments and machine learning](https://doi.org/10.1016/j.matt.2024.05.004)
 
 - DOI／稳定ID：`10.1016/j.matt.2024.05.004`
 - 标签：AI 用于物质科学；材料性质预测；机器学习
 - 纳入依据：机器学习分析 110 种合金腐蚀实验数据，发现 Ni 迁移率对熔盐腐蚀的预测作用并解释材料机理。
 
-#### 1151. [Synthesizability of materials stoichiometry using semi-supervised learning](https://doi.org/10.1016/j.matt.2024.05.002)
+#### 1157. [Synthesizability of materials stoichiometry using semi-supervised learning](https://doi.org/10.1016/j.matt.2024.05.002)
 
 - DOI／稳定ID：`10.1016/j.matt.2024.05.002`
 - 标签：AI 用于物质科学；材料设计；半监督学习
 - 纳入依据：同DOI元数据的真正作者摘要描述正例—未标注半监督学习预测无机材料可合成性，指导Cu–Fe–V氧化物成分探索并实验发现新相Cu4FeV3O13，AI直接服务材料合成与发现。原选描述为作者贡献，已替换为摘要。
 
-#### 1152. [WyCryst: Wyckoff inorganic crystal generator framework](https://doi.org/10.1016/j.matt.2024.05.042)
+#### 1158. [WyCryst: Wyckoff inorganic crystal generator framework](https://doi.org/10.1016/j.matt.2024.05.042)
 
 - DOI／稳定ID：`10.1016/j.matt.2024.05.042`
 - 标签：AI 用于物质科学；材料设计；变分自编码器；晶体结构生成
@@ -7057,31 +7093,31 @@
 
 ### International Journal of Mining Science and Technology（5篇）
 
-#### 1153. [Classifying rockburst with confidence: A novel conformal prediction approach](https://doi.org/10.1016/j.ijmst.2023.12.005)
+#### 1159. [Classifying rockburst with confidence: A novel conformal prediction approach](https://doi.org/10.1016/j.ijmst.2023.12.005)
 
 - DOI／稳定ID：`10.1016/j.ijmst.2023.12.005`
 - 标签：AI 用于工程科学；梯度提升；随机森林
 - 纳入依据：使用梯度提升与随机森林构建岩爆等级的共形预测框架，在真实金矿评估工程风险分类置信度和可靠性。
 
-#### 1154. [Enhancing XRF sensor-based sorting of porphyritic copper ore using particle swarm optimization-support vector machine (PSO-SVM) algorithm](https://doi.org/10.1016/j.ijmst.2024.04.002)
+#### 1160. [Enhancing XRF sensor-based sorting of porphyritic copper ore using particle swarm optimization-support vector machine (PSO-SVM) algorithm](https://doi.org/10.1016/j.ijmst.2024.04.002)
 
 - DOI／稳定ID：`10.1016/j.ijmst.2024.04.002`
 - 标签：AI 用于工程科学；支持向量机
 - 纳入依据：以粒子群优化支持向量机解释 XRF 元素信号并进行斑岩铜矿分选，实验验证品位、回收率和矿物关联作用。
 
-#### 1155. [Ensemble prediction modeling of flotation recovery based on machine learning](https://doi.org/10.1016/j.ijmst.2024.11.012)
+#### 1161. [Ensemble prediction modeling of flotation recovery based on machine learning](https://doi.org/10.1016/j.ijmst.2024.11.012)
 
 - DOI／稳定ID：`10.1016/j.ijmst.2024.11.012`
 - 标签：AI 用于工程科学；支持向量机；随机森林
 - 纳入依据：SVR、随机森林与集成学习预测矿物浮选回收率，用现场数据验证工艺预测准确性。
 
-#### 1156. [Rock mass quality prediction on tunnel faces with incomplete multi-source dataset via tree-augmented naive Bayesian network](https://doi.org/10.1016/j.ijmst.2024.03.003)
+#### 1162. [Rock mass quality prediction on tunnel faces with incomplete multi-source dataset via tree-augmented naive Bayesian network](https://doi.org/10.1016/j.ijmst.2024.03.003)
 
 - DOI／稳定ID：`10.1016/j.ijmst.2024.03.003`
 - 标签：AI 用于工程科学；Transformer 架构
 - 纳入依据：Swin Transformer 识别隧道渗水、裂缝和夹层，贝叶斯网络融合不完整多源数据预测围岩质量，并分析强度和裂缝的影响。
 
-#### 1157. [Utilizing spatio-temporal feature fusion in videos for detecting the fluidity of coal water slurry](https://doi.org/10.1016/j.ijmst.2024.11.001)
+#### 1163. [Utilizing spatio-temporal feature fusion in videos for detecting the fluidity of coal water slurry](https://doi.org/10.1016/j.ijmst.2024.11.001)
 
 - DOI／稳定ID：`10.1016/j.ijmst.2024.11.001`
 - 标签：AI 用于工程科学；梯度提升；深度学习
@@ -7090,31 +7126,31 @@
 
 ### Nature Neuroscience（5篇）
 
-#### 1158. [Dimensionality reduction beyond neural subspaces with slice tensor component analysis](https://doi.org/10.1038/s41593-024-01626-2)
+#### 1164. [Dimensionality reduction beyond neural subspaces with slice tensor component analysis](https://doi.org/10.1038/s41593-024-01626-2)
 
 - DOI／稳定ID：`10.1038/s41593-024-01626-2`
 - 标签：AI 用于生命科学；无监督学习；张量分解；神经活动建模
 - 纳入依据：sliceTCA无监督张量降维解耦神经活动共变类别，在灵长类和小鼠记录中揭示任务相关潜在结构。
 
-#### 1159. [Distributional reinforcement learning in prefrontal cortex](https://doi.org/10.1038/s41593-023-01535-w)
+#### 1165. [Distributional reinforcement learning in prefrontal cortex](https://doi.org/10.1038/s41593-023-01535-w)
 
 - DOI／稳定ID：`10.1038/s41593-023-01535-w`
 - 标签：AI 用于生命科学；强化学习
 - 纳入依据：分布式强化学习模型比期望奖励模型更好解释猕猴前扣带皮层神经元反应，支持奖赏学习机制。
 
-#### 1160. [Higher-order interactions between hippocampal CA1 neurons are disrupted in amnestic mice](https://doi.org/10.1038/s41593-024-01713-4)
+#### 1166. [Higher-order interactions between hippocampal CA1 neurons are disrupted in amnestic mice](https://doi.org/10.1038/s41593-024-01713-4)
 
 - DOI／稳定ID：`10.1038/s41593-024-01713-4`
 - 标签：AI 用于生命科学；生理信号分析
 - 纳入依据：不同交互表达能力的机器学习分类器分析海马神经活动，揭示记忆相关高阶交互及治疗恢复，AI直接支持神经机制发现。
 
-#### 1161. [Inferring neural activity before plasticity as a foundation for learning beyond backpropagation](https://doi.org/10.1038/s41593-023-01514-1)
+#### 1167. [Inferring neural activity before plasticity as a foundation for learning beyond backpropagation](https://doi.org/10.1038/s41593-023-01514-1)
 
 - DOI／稳定ID：`10.1038/s41593-023-01514-1`
 - 标签：AI 用于生命科学
 - 纳入依据：前瞻配置学习原则用于皮层神经网络模型，复现人类及大鼠学习实验中神经活动与行为模式。
 
-#### 1162. [Striatal dopamine signals reflect perceived cue–action–outcome associations in mice](https://doi.org/10.1038/s41593-023-01567-2)
+#### 1168. [Striatal dopamine signals reflect perceived cue–action–outcome associations in mice](https://doi.org/10.1038/s41593-023-01567-2)
 
 - DOI／稳定ID：`10.1038/s41593-023-01567-2`
 - 标签：AI 用于生命科学；强化学习
@@ -7123,25 +7159,25 @@
 
 ### PhotoniX（4篇）
 
-#### 1163. [Characterization of cancer-associated adipocytes by Raman spectroscopy and trajectory inference](https://doi.org/10.1186/s43074-024-00146-3)
+#### 1169. [Characterization of cancer-associated adipocytes by Raman spectroscopy and trajectory inference](https://doi.org/10.1186/s43074-024-00146-3)
 
 - DOI／稳定ID：`10.1186/s43074-024-00146-3`
 - 标签：AI 用于生命科学
 - 纳入依据：拉曼光谱结合基于图分区的轨迹推断，识别癌相关脂肪细胞亚群和分子变化，支持肿瘤细胞交互机制研究。
 
-#### 1164. [Deep-learning-enabled temporally super-resolved multiplexed fringe projection profilometry: high-speed kHz 3D imaging with low-speed camera](https://doi.org/10.1186/s43074-024-00139-2)
+#### 1170. [Deep-learning-enabled temporally super-resolved multiplexed fringe projection profilometry: high-speed kHz 3D imaging with low-speed camera](https://doi.org/10.1186/s43074-024-00139-2)
 
 - DOI／稳定ID：`10.1186/s43074-024-00139-2`
 - 标签：AI 用于工程科学；反问题
 - 纳入依据：嵌入傅里叶与相移的深神经网络分解复用条纹，实现低速相机千赫兹三维测量并验证瞬态运动场景。
 
-#### 1165. [Self-supervised denoising for multimodal structured illumination microscopy enables long-term super-resolution live-cell imaging](https://doi.org/10.1186/s43074-024-00121-y)
+#### 1171. [Self-supervised denoising for multimodal structured illumination microscopy enables long-term super-resolution live-cell imaging](https://doi.org/10.1186/s43074-024-00121-y)
 
 - DOI／稳定ID：`10.1186/s43074-024-00121-y`
 - 标签：AI 用于生命科学；自监督学习
 - 纳入依据：像素重排自监督去噪仅由噪声图像训练，提升结构光超分辨活细胞成像并揭示细胞器相互作用。
 
-#### 1166. [Surmounting photon limits and motion artifacts for biological dynamics imaging via dual-perspective self-supervised learning](https://doi.org/10.1186/s43074-023-00117-0)
+#### 1172. [Surmounting photon limits and motion artifacts for biological dynamics imaging via dual-perspective self-supervised learning](https://doi.org/10.1186/s43074-023-00117-0)
 
 - DOI／稳定ID：`10.1186/s43074-023-00117-0`
 - 标签：AI 用于生命科学；自监督学习
@@ -7150,13 +7186,13 @@
 
 ### Trends in Neurosciences（2篇）
 
-#### 1167. [A survey of brain functional network extraction methods using fMRI data](https://doi.org/10.1016/j.tins.2024.05.011)
+#### 1173. [A survey of brain functional network extraction methods using fMRI data](https://doi.org/10.1016/j.tins.2024.05.011)
 
 - DOI／稳定ID：`10.1016/j.tins.2024.05.011`
 - 标签：AI 用于生命科学
 - 纳入依据：系统综述fMRI脑功能网络提取的矩阵分解、聚类和深度学习方法，比较静态及动态脑网络研究能力。
 
-#### 1168. [Representational spaces in orbitofrontal and ventromedial prefrontal cortex: task states, values, and beyond](https://doi.org/10.1016/j.tins.2024.10.005)
+#### 1174. [Representational spaces in orbitofrontal and ventromedial prefrontal cortex: task states, values, and beyond](https://doi.org/10.1016/j.tins.2024.10.005)
 
 - DOI／稳定ID：`10.1016/j.tins.2024.10.005`
 - 标签：AI 用于生命科学；强化学习
@@ -7165,13 +7201,13 @@
 
 ### eTransportation（2篇）
 
-#### 1169. [An advanced spatial decision model for strategic placement of off-site hydrogen refueling stations in urban areas](https://doi.org/10.1016/j.etran.2024.100375)
+#### 1175. [An advanced spatial decision model for strategic placement of off-site hydrogen refueling stations in urban areas](https://doi.org/10.1016/j.etran.2024.100375)
 
 - DOI／稳定ID：`10.1016/j.etran.2024.100375`
 - 标签：AI 用于工程科学；能源基础设施选址；聚类；演化优化
 - 纳入依据：摘要明确将模糊C均值聚类与遗传算法用于加氢站空间布局和地点排序，并在布拉格进行适宜性、可达性及敏感度验证，AI直接参与能源基础设施设计。
 
-#### 1170. [State of health estimation for battery modules with parallel-connected cells under cell-to-cell variations](https://doi.org/10.1016/j.etran.2024.100346)
+#### 1176. [State of health estimation for battery modules with parallel-connected cells under cell-to-cell variations](https://doi.org/10.1016/j.etran.2024.100346)
 
 - DOI／稳定ID：`10.1016/j.etran.2024.100346`
 - 标签：AI 用于工程科学；电池健康状态估计；特征选择；机器学习
@@ -7180,13 +7216,13 @@
 
 ### Trends in Food Science & Technology（2篇）
 
-#### 1171. [Chemometrics as an efficient tool for food authentication: Golden pillars for building reliable models](https://doi.org/10.1016/j.tifs.2024.104429)
+#### 1177. [Chemometrics as an efficient tool for food authentication: Golden pillars for building reliable models](https://doi.org/10.1016/j.tifs.2024.104429)
 
 - DOI／稳定ID：`10.1016/j.tifs.2024.104429`
 - 标签：AI 用于生命科学
 - 纳入依据：实质综述单类机器学习分类、层级与多平台方法用于食品鉴真，讨论检测限和可靠建模原则。
 
-#### 1172. [Meat provenance - Advances and opportunities in rapid spectral techniques for authentication of dietary background and geographical origin of meat](https://doi.org/10.1016/j.tifs.2024.104557)
+#### 1178. [Meat provenance - Advances and opportunities in rapid spectral techniques for authentication of dietary background and geographical origin of meat](https://doi.org/10.1016/j.tifs.2024.104557)
 
 - DOI／稳定ID：`10.1016/j.tifs.2024.104557`
 - 标签：AI 用于工程科学；食品来源鉴别
@@ -7195,13 +7231,13 @@
 
 ### Journal of Energy Chemistry（2篇）
 
-#### 1173. [Accuracy comparison and improvement for state of health estimation of lithium-ion battery based on random partial recharges and feature engineering](https://doi.org/10.1016/j.jechem.2024.01.037)
+#### 1179. [Accuracy comparison and improvement for state of health estimation of lithium-ion battery based on random partial recharges and feature engineering](https://doi.org/10.1016/j.jechem.2024.01.037)
 
 - DOI／稳定ID：`10.1016/j.jechem.2024.01.037`
 - 标签：AI 用于工程科学；机器学习；电池健康状态估计
 - 纳入依据：从真实不完整充电轨迹提取特征，用高斯过程和支持向量回归估计锂电池健康状态，比较不同充电窗口的误差。
 
-#### 1174. [Data-driven diagnosis of high temperature PEM fuel cells based on the electrochemical impedance spectroscopy: Robustness improvement and evaluation](https://doi.org/10.1016/j.jechem.2024.05.014)
+#### 1180. [Data-driven diagnosis of high temperature PEM fuel cells based on the electrochemical impedance spectroscopy: Robustness improvement and evaluation](https://doi.org/10.1016/j.jechem.2024.05.014)
 
 - DOI／稳定ID：`10.1016/j.jechem.2024.05.014`
 - 标签：AI 用于工程科学；支持向量机；随机森林
@@ -7210,13 +7246,13 @@
 
 ### The Lancet Regional Health - Europe（2篇）
 
-#### 1175. [European validation of an image-derived AI-based short-term risk model for individualized breast cancer screening—a nested case-control study](https://doi.org/10.1016/j.lanepe.2023.100798)
+#### 1181. [European validation of an image-derived AI-based short-term risk model for individualized breast cancer screening—a nested case-control study](https://doi.org/10.1016/j.lanepe.2023.100798)
 
 - DOI／稳定ID：`10.1016/j.lanepe.2023.100798`
 - 标签：AI 用于生命科学
 - 纳入依据：AI从乳腺影像提取密度、钙化等特征，在欧洲多筛查人群验证两年乳腺癌风险模型。
 
-#### 1176. [Long-term autonomy, professional activities, cognition, and overall survival after awake functional-based surgery in patients with IDH-mutant grade 2 gliomas: a retrospective cohort study](https://doi.org/10.1016/j.lanepe.2024.101078)
+#### 1182. [Long-term autonomy, professional activities, cognition, and overall survival after awake functional-based surgery in patients with IDH-mutant grade 2 gliomas: a retrospective cohort study](https://doi.org/10.1016/j.lanepe.2024.101078)
 
 - DOI／稳定ID：`10.1016/j.lanepe.2024.101078`
 - 标签：AI 用于生命科学
@@ -7225,13 +7261,13 @@
 
 ### Nature Human Behaviour（2篇）
 
-#### 1177. [A neurofunctional signature of subjective disgust generalizes to oral distaste and socio-moral contexts](https://doi.org/10.1038/s41562-024-01868-x)
+#### 1183. [A neurofunctional signature of subjective disgust generalizes to oral distaste and socio-moral contexts](https://doi.org/10.1038/s41562-024-01868-x)
 
 - DOI／稳定ID：`10.1038/s41562-024-01868-x`
 - 标签：AI 用于生命科学；AI 用于社会科学
 - 纳入依据：fMRI与机器学习预测建立主观厌恶神经特征，并跨感官及道德情境独立验证，解释情绪神经表征。
 
-#### 1178. [Identifying behaviour-related and physiological risk factors for suicide attempts in the UK Biobank](https://doi.org/10.1038/s41562-024-01903-x)
+#### 1184. [Identifying behaviour-related and physiological risk factors for suicide attempts in the UK Biobank](https://doi.org/10.1038/s41562-024-01903-x)
 
 - DOI／稳定ID：`10.1038/s41562-024-01903-x`
 - 标签：AI 用于生命科学；因果推断
@@ -7240,13 +7276,13 @@
 
 ### Nature Geoscience（2篇）
 
-#### 1179. [Global riverine land-to-ocean carbon export constrained by observations and multi-model assessment](https://doi.org/10.1038/s41561-024-01524-z)
+#### 1185. [Global riverine land-to-ocean carbon export constrained by observations and multi-model assessment](https://doi.org/10.1038/s41561-024-01524-z)
 
 - DOI／稳定ID：`10.1038/s41561-024-01524-z`
 - 标签：AI 用于地球宇宙科学；机器学习
 - 纳入依据：机器学习融合多模型与观测估计全球河流碳输出，缩小不同碳组分及流域通量的不确定性。
 
-#### 1180. [Substantial contribution of slush to meltwater area across Antarctic ice shelves](https://doi.org/10.1038/s41561-024-01466-6)
+#### 1186. [Substantial contribution of slush to meltwater area across Antarctic ice shelves](https://doi.org/10.1038/s41561-024-01466-6)
 
 - DOI／稳定ID：`10.1038/s41561-024-01466-6`
 - 标签：AI 用于地球宇宙科学；机器学习
@@ -7255,13 +7291,13 @@
 
 ### npj Science of Learning（2篇）
 
-#### 1181. [Evaluating large language models in analysing classroom dialogue](https://doi.org/10.1038/s41539-024-00273-3)
+#### 1187. [Evaluating large language models in analysing classroom dialogue](https://doi.org/10.1038/s41539-024-00273-3)
 
 - DOI／稳定ID：`10.1038/s41539-024-00273-3`
 - 标签：AI 用于社会科学；科学信息抽取
 - 纳入依据：定制GPT-4编码数学与语文课堂对话，专家对照验证定性教育研究数据分析方法。
 
-#### 1182. [Three mechanisms of language comprehension are revealed through cluster analysis of individuals with language deficits](https://doi.org/10.1038/s41539-024-00284-0)
+#### 1188. [Three mechanisms of language comprehension are revealed through cluster analysis of individuals with language deficits](https://doi.org/10.1038/s41539-024-00284-0)
 
 - DOI／稳定ID：`10.1038/s41539-024-00284-0`
 - 标签：AI 用于生命科学；AI 用于社会科学
@@ -7270,13 +7306,13 @@
 
 ### Nature Protocols（2篇）
 
-#### 1183. [CellChat for systematic analysis of cell–cell communication from single-cell transcriptomics](https://doi.org/10.1038/s41596-024-01045-4)
+#### 1189. [CellChat for systematic analysis of cell–cell communication from single-cell transcriptomics](https://doi.org/10.1038/s41596-024-01045-4)
 
 - DOI／稳定ID：`10.1038/s41596-024-01045-4`
 - 标签：AI 用于生命科学
 - 纳入依据：CellChat协议将机器学习与配体受体质量作用模型结合，系统比较单细胞转录组中的细胞通信。
 
-#### 1184. [Easy and accurate protein structure prediction using ColabFold](https://doi.org/10.1038/s41596-024-01060-5)
+#### 1190. [Easy and accurate protein structure prediction using ColabFold](https://doi.org/10.1038/s41596-024-01060-5)
 
 - DOI／稳定ID：`10.1038/s41596-024-01060-5`
 - 标签：AI 用于生命科学；蛋白质结构预测
@@ -7285,7 +7321,7 @@
 
 ### Trends in Biotechnology（1篇）
 
-#### 1185. [Virtual staining for histology by deep learning](https://doi.org/10.1016/j.tibtech.2024.02.009)
+#### 1191. [Virtual staining for histology by deep learning](https://doi.org/10.1016/j.tibtech.2024.02.009)
 
 - DOI／稳定ID：`10.1016/j.tibtech.2024.02.009`
 - 标签：AI 用于生命科学；医学影像合成
@@ -7294,7 +7330,7 @@
 
 ### The Lancet Healthy Longevity（1篇）
 
-#### 1186. [Application of a deep-learning marker for morbidity and mortality prediction derived from retinal photographs: a cohort development and validation study](https://doi.org/10.1016/s2666-7568(24)00089-8)
+#### 1192. [Application of a deep-learning marker for morbidity and mortality prediction derived from retinal photographs: a cohort development and validation study](https://doi.org/10.1016/s2666-7568(24)00089-8)
 
 - DOI／稳定ID：`10.1016/s2666-7568(24)00089-8`
 - 标签：AI 用于生命科学；卷积神经网络
@@ -7303,7 +7339,7 @@
 
 ### Trends in Endocrinology and Metabolism（1篇）
 
-#### 1187. [Digital twins and artificial intelligence in metabolic disease research](https://doi.org/10.1016/j.tem.2024.04.019)
+#### 1193. [Digital twins and artificial intelligence in metabolic disease research](https://doi.org/10.1016/j.tem.2024.04.019)
 
 - DOI／稳定ID：`10.1016/j.tem.2024.04.019`
 - 标签：AI 用于生命科学
@@ -7312,7 +7348,7 @@
 
 ### Applied Catalysis B Environment and Energy（1篇）
 
-#### 1188. [Visible-light photocatalytic activity of rare-earth-metal-doped TiO2: Experimental analysis and machine learning for virtual design](https://doi.org/10.1016/j.apcatb.2024.123744)
+#### 1194. [Visible-light photocatalytic activity of rare-earth-metal-doped TiO2: Experimental analysis and machine learning for virtual design](https://doi.org/10.1016/j.apcatb.2024.123744)
 
 - DOI／稳定ID：`10.1016/j.apcatb.2024.123744`
 - 标签：AI 用于物质科学；催化剂发现；机器学习
@@ -7321,7 +7357,7 @@
 
 ### Trends in Ecology & Evolution（1篇）
 
-#### 1189. [Unlocking ground-based imagery for habitat mapping](https://doi.org/10.1016/j.tree.2023.11.005)
+#### 1195. [Unlocking ground-based imagery for habitat mapping](https://doi.org/10.1016/j.tree.2023.11.005)
 
 - DOI／稳定ID：`10.1016/j.tree.2023.11.005`
 - 标签：AI 用于地球宇宙科学；栖息地制图；物种分布预测
@@ -7330,7 +7366,7 @@
 
 ### Trends in Molecular Medicine（1篇）
 
-#### 1190. [Exploring new frontiers in type 1 diabetes through advanced mass-spectrometry-based molecular measurements](https://doi.org/10.1016/j.molmed.2024.07.009)
+#### 1196. [Exploring new frontiers in type 1 diabetes through advanced mass-spectrometry-based molecular measurements](https://doi.org/10.1016/j.molmed.2024.07.009)
 
 - DOI／稳定ID：`10.1016/j.molmed.2024.07.009`
 - 标签：AI 用于生命科学
@@ -7339,7 +7375,7 @@
 
 ### Chem（1篇）
 
-#### 1191. [A high-throughput workflow to analyze sequence-conformation relationships and explore hydrophobic patterning in disordered peptoids](https://doi.org/10.1016/j.chempr.2024.07.025)
+#### 1197. [A high-throughput workflow to analyze sequence-conformation relationships and explore hydrophobic patterning in disordered peptoids](https://doi.org/10.1016/j.chempr.2024.07.025)
 
 - DOI／稳定ID：`10.1016/j.chempr.2024.07.025`
 - 标签：AI 用于物质科学；机器学习
@@ -7348,7 +7384,7 @@
 
 ### Energy Storage Materials（1篇）
 
-#### 1192. [Forecasting battery degradation trajectory under domain shift with domain generalization](https://doi.org/10.1016/j.ensm.2024.103725)
+#### 1198. [Forecasting battery degradation trajectory under domain shift with domain generalization](https://doi.org/10.1016/j.ensm.2024.103725)
 
 - DOI／稳定ID：`10.1016/j.ensm.2024.103725`
 - 标签：AI 用于工程科学；深度学习；电池退化预测
@@ -7357,7 +7393,7 @@
 
 ### The Lancet Planetary Health（1篇）
 
-#### 1193. [Effects of fine particulate matter from wildfire and non-wildfire sources on emergency-department visits in people who were housed and unhoused in San Diego County (CA, USA) during 2012–20: a time-stratified case–crossover study](https://doi.org/10.1016/s2542-5196(24)00239-0)
+#### 1199. [Effects of fine particulate matter from wildfire and non-wildfire sources on emergency-department visits in people who were housed and unhoused in San Diego County (CA, USA) during 2012–20: a time-stratified case–crossover study](https://doi.org/10.1016/s2542-5196(24)00239-0)
 
 - DOI／稳定ID：`10.1016/s2542-5196(24)00239-0`
 - 标签：AI 用于地球宇宙科学；AI 用于生命科学
@@ -7366,7 +7402,7 @@
 
 ### Trends in Microbiology（1篇）
 
-#### 1194. [Bioinformatics challenges for profiling the microbiome in cancer: pitfalls and opportunities](https://doi.org/10.1016/j.tim.2024.08.011)
+#### 1200. [Bioinformatics challenges for profiling the microbiome in cancer: pitfalls and opportunities](https://doi.org/10.1016/j.tim.2024.08.011)
 
 - DOI／稳定ID：`10.1016/j.tim.2024.08.011`
 - 标签：AI 用于生命科学
@@ -7375,7 +7411,7 @@
 
 ### Nature Ecology & Evolution（1篇）
 
-#### 1195. [Heterogeneous selectivity and morphological evolution of marine clades during the Permian–Triassic mass extinction](https://doi.org/10.1038/s41559-024-02438-0)
+#### 1201. [Heterogeneous selectivity and morphological evolution of marine clades during the Permian–Triassic mass extinction](https://doi.org/10.1038/s41559-024-02438-0)
 
 - DOI／稳定ID：`10.1038/s41559-024-02438-0`
 - 标签：AI 用于生命科学；AI 用于地球宇宙科学
@@ -7384,7 +7420,7 @@
 
 ### Cell Discovery（1篇）
 
-#### 1196. [Cryo-EM structure of PML RBCC dimer reveals CC-mediated octopus-like nuclear body assembly mechanism](https://doi.org/10.1038/s41421-024-00735-3)
+#### 1202. [Cryo-EM structure of PML RBCC dimer reveals CC-mediated octopus-like nuclear body assembly mechanism](https://doi.org/10.1038/s41421-024-00735-3)
 
 - DOI／稳定ID：`10.1038/s41421-024-00735-3`
 - 标签：AI 用于生命科学；蛋白质结构预测
@@ -7393,7 +7429,7 @@
 
 ### Nature Microbiology（1篇）
 
-#### 1197. [Diverse plasmid systems and their ecology across human gut metagenomes revealed by PlasX and MobMess](https://doi.org/10.1038/s41564-024-01610-3)
+#### 1203. [Diverse plasmid systems and their ecology across human gut metagenomes revealed by PlasX and MobMess](https://doi.org/10.1038/s41564-024-01610-3)
 
 - DOI／稳定ID：`10.1038/s41564-024-01610-3`
 - 标签：AI 用于生命科学
@@ -7402,7 +7438,7 @@
 
 ### Nature Physics（1篇）
 
-#### 1198. [Bragg glass signatures in PdxErTe3 with X-ray diffraction temperature clustering](https://doi.org/10.1038/s41567-023-02380-1)
+#### 1204. [Bragg glass signatures in PdxErTe3 with X-ray diffraction temperature clustering](https://doi.org/10.1038/s41567-023-02380-1)
 
 - DOI／稳定ID：`10.1038/s41567-023-02380-1`
 - 标签：AI 用于数理科学；材料结构分析；机器学习
