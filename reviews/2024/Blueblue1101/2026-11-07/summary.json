@@ -16,21 +16,21 @@
     "include": 1151,
     "pending": 109
   },
-  "all_reviewed_records": 11533,
+  "all_reviewed_records": 11933,
   "all_reviewed_counts": {
-    "exclude": 8470,
-    "pending": 703,
-    "include": 2360
+    "exclude": 8834,
+    "pending": 734,
+    "include": 2365
   },
   "review_basis_counts": {
-    "abstract_semantics": 9229,
+    "abstract_semantics": 9612,
     "missing_abstract_metadata_only": 28,
-    "document_type_only": 2041,
-    "invalid_abstract_metadata_only": 235
+    "document_type_only": 2046,
+    "invalid_abstract_metadata_only": 247
   },
-  "new_keyword_miss_includes": 1209,
+  "new_keyword_miss_includes": 1214,
   "old_decision_changes": 129,
-  "unreviewed_full_corpus": 18935,
+  "unreviewed_full_corpus": 18535,
   "full_screened_sources": [
     "ecai",
     "isbi",
@@ -39,7 +39,7 @@
     "npjdigitalmed",
     "npjscilearn"
   ],
-  "verified_review_abstract_backfills": 1293,
+  "verified_review_abstract_backfills": 1384,
   "original_blank_abstracts": 10390,
   "original_unusable_abstracts_including_two_short_fields": 10392,
   "automatic_document_type_exclusions": 900,
@@ -49,7 +49,7 @@
   "metadata_links_invalidated_in_assembly": 150,
   "invalid_pdf_verifications_withdrawn": 605,
   "input_base_commit": "95af745",
-  "latest_public_main_checked": "5eeb5cf8cb8e2d16a07050896698d4148c58b7b5",
+  "latest_public_main_checked": "6de707f7668f96506f0c58f27d9cccf642e5d5b3",
   "rules_changed_since_input": false,
   "upload_status": "SUBMISSION_SNAPSHOT",
   "overall_status": "initial_candidates_rereviewed; full_corpus_omission_screening_partial",
@@ -182,20 +182,44 @@
     {
       "path": "continuation6/physical/reviewed.jsonl",
       "sha256": "b633c8cea4d54f99a9ea0bbd4ce30aa8bfa00e0fb4f28b4d4660ece39f395e50"
+    },
+    {
+      "path": "continuation7/biomedical/reviewed.jsonl",
+      "sha256": "a053c613220657b4f7b4da01562b527a74b55582e0a516ff3c489e3b95afd822"
+    },
+    {
+      "path": "continuation7/conferences/reviewed.jsonl",
+      "sha256": "54786f7b02037ebe73fb0315e73458ebd34cf7c4da4e11fc15acf929185d63ff"
+    },
+    {
+      "path": "continuation7/ncomms/reviewed.jsonl",
+      "sha256": "e501a9a94b5acfde370c9fbd1a3f8539941df9406cdeb3886fe9f61bc70d3100"
+    },
+    {
+      "path": "continuation7/ncomms_parent/reviewed.jsonl",
+      "sha256": "113b248ea9166b46768560f176e7da5dbc3a9e8fd510113aca7cc666a829da22"
+    },
+    {
+      "path": "continuation7/ncomms_systems/reviewed.jsonl",
+      "sha256": "09cadcac509756ed9fcb33896330fff69426dc4dbb184d176e757647ecf602bf"
+    },
+    {
+      "path": "continuation7/physical/reviewed.jsonl",
+      "sha256": "97c98a4775d3079493e46adbb4ca80bfbe1e9258cf63ce6b72a5bbe0ba06c18d"
     }
   ],
-  "shared_vocabulary_count_at_latest_main": 754,
+  "shared_vocabulary_count_at_latest_main": 757,
   "vocabulary_base_commit": "285a23823a4edfdacc65cd3d9f334b18880796a3",
   "continuation": {
     "baseline_reviewed": 4790,
-    "newly_reviewed": 6743,
+    "newly_reviewed": 7143,
     "new_decisions": {
-      "exclude": 5854,
-      "pending": 467,
-      "include": 422
+      "exclude": 6218,
+      "pending": 498,
+      "include": 427
     },
-    "new_keyword_miss_includes": 422,
-    "new_verified_abstract_backfills": 1113,
+    "new_keyword_miss_includes": 427,
+    "new_verified_abstract_backfills": 1204,
     "baseline_unreviewed": 25678,
     "latest_vocabulary_base_count": 748,
     "tag_alias_normalization": {
@@ -203,55 +227,21 @@
     },
     "previous_support_vector_machine_proposal_reused_from_latest_main": true
   },
-  "active_pass": "continuation6",
-  "author_links_verified_this_pass": 2,
+  "active_pass": "continuation7",
+  "author_links_verified_this_pass": 1,
   "latest_pass": {
-    "pass_id": "continuation6",
-    "baseline_reviewed": 10933,
-    "newly_reviewed": 600,
+    "pass_id": "continuation7",
+    "baseline_reviewed": 11533,
+    "newly_reviewed": 400,
     "new_decisions": {
-      "exclude": 456,
-      "pending": 139,
-      "include": 5
+      "exclude": 364,
+      "include": 5,
+      "pending": 31
     },
     "new_keyword_miss_includes": 5,
-    "new_verified_abstract_backfills": 57,
-    "baseline_unreviewed": 19535,
-    "new_tag_additions": [
-      {
-        "axis": "task",
-        "label": "DNA甲基化预测",
-        "label_en": "DNA methylation prediction",
-        "definition": "利用学习或概率推断模型，从序列、片段组学或其他观测预测DNA甲基化状态或水平。",
-        "aliases": [
-          "DNA methylation inference"
-        ],
-        "evidence_dois": [
-          "10.1038/s41467-024-47196-6"
-        ]
-      },
-      {
-        "axis": "task",
-        "label": "视觉同步定位与建图",
-        "label_en": "Visual simultaneous localization and mapping",
-        "definition": "利用视觉数据与学习模型联合估计相机轨迹并构建或对齐物理环境地图。",
-        "aliases": [
-          "Visual SLAM"
-        ],
-        "evidence_dois": [
-          "10.1109/CVPR52733.2024.01856"
-        ]
-      },
-      {
-        "axis": "task",
-        "label": "自动驾驶场景重建",
-        "label_en": "Autonomous driving scene reconstruction",
-        "definition": "从车辆传感数据重建道路环境与动态对象的三维场景，用于自动驾驶工程研究中的场景表示或视图合成。",
-        "evidence_dois": [
-          "10.1109/CVPR52733.2024.02044"
-        ]
-      }
-    ],
+    "new_verified_abstract_backfills": 91,
+    "baseline_unreviewed": 18935,
+    "new_tag_additions": [],
     "baseline_decisions_preserved": true
   },
   "cross_review_overlap": {
@@ -259,8 +249,8 @@
     "different_decisions": 46,
     "new_continuation_overlaps": 0,
     "note": "Audit only; other reviewer files unchanged. Reconcile historical differing decisions before repository-wide merge.",
-    "checked_commit": "5eeb5cf8cb8e2d16a07050896698d4148c58b7b5"
+    "checked_commit": "6de707f7668f96506f0c58f27d9cccf642e5d5b3"
   },
-  "previous_published_records": 10933,
-  "this_increment_records": 600
+  "previous_published_records": 11533,
+  "this_increment_records": 400
 }
