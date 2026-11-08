@@ -1,5 +1,49 @@
 # 2024 年论文摘要复核
 
+## 李雪婷个人文件中的 137 条已有摘要待定记录（2026 年 11 月 8 日）
+
+逐篇按摘要复查，纳入 71 条，排除 42 条，仍待定 24 条。纳入论文按共享词表标注。最新词表新增 7 个任务标签。[137 条判定、摘要证据句和标签](lixueting-137-abstract-review.json)。
+
+| 统计范围 | 纳入 | 排除 | 待定 | 总数 |
+|---|---:|---:|---:|---:|
+| [个人文件](../zch66883-lixueting.json) | 2,107 | 1,199 | 407 | 3,713 |
+| [全量台账](full-corpus-decisions.jsonl.gz)中李雪婷负责的记录 | 2,107 | 25,930 | 1,252 | 29,289 |
+
+个人文件的 407 条待定中，383 条缺少可核实的作者摘要，24 条虽有摘要但证据不足。台账另有 845 条待定记录不在个人文件中，不属于本轮 137 条。
+
+### 本轮仍待定的论文及缺少的证据
+
+| 编号 | 论文 | 摘要里还缺什么 |
+|---:|---|---|
+| 1 | [Multivariate analyses and machine learning link sex and age with antibody responses to SARS-CoV-2 and vaccination](<https://linkinghub.elsevier.com/retrieve/pii/S2589004224017097>) | 摘要用网络分析和抗体滴度相关性描述年龄、性别差异，没有说明网络由什么学习算法估计。缺少能把机器学习具体对应到中和反应分析的步骤。 |
+| 2 | [Bridging Geometric States via Geometric Diffusion Bridge](<https://proceedings.neurips.cc/paper_files/paper/2024/hash/c565514eb8cf8808d82a612c5f7a1920-Abstract-Conference.html>) | 扩散桥生成几何状态之间的轨迹。量子化学和材料是引言中的应用动机，摘要未指明实际评测的分子、材料或物理过程，不能确定领域贡献。 |
+| 3 | [Bridging Model-Based Optimization and Generative Modeling via Conservative Fine-Tuning of Diffusion Models](<https://proceedings.neurips.cc/paper_files/paper/2024/hash/e68274fc4f158dbcbd4dddc672f7ee9c-Abstract-Conference.html>) | BRAID 在离线数据上优化扩散模型的奖励；DNA 和蛋白质只作为设计示例。摘要没有交代实验究竟设计了哪类对象、优化了何种可测性质。 |
+| 23 | [Deep Learning in Medical Image Registration: Magic or Mirage?](<https://proceedings.neurips.cc/paper_files/paper/2024/hash/c3fe2a07ec47b89c50e89706d2e23358-Abstract-Conference.html>) | 作者比较可变形图像配准算法，并报告弱监督下的强度和标签对齐。摘要未说明实际配准的影像模态、解剖结构或数据来源，仅凭摘要无法核实医学应用。 |
+| 25 | [Advancing Spiking Neural Networks for Sequential Modeling with Central Pattern Generators](<https://proceedings.neurips.cc/paper_files/paper/2024/hash/2f55a8b7b1c2c6312eb86557bb9a2bd5-Abstract-Conference.html>) | 作者从中枢模式发生器推导位置编码并在分类等任务上测试。摘要又称探索了其脑内功能，却未给出对应的生理预测、神经现象或验证结果。 |
+| 29 | [Variational Distillation of Diffusion Policies into Mixture of Experts](<https://proceedings.neurips.cc/paper_files/paper/2024/hash/175fa4fc8f275f877ec85340131c5d7a-Abstract-Conference.html>) | 蒸馏模型在九项行为学习任务上验证，机器人控制在摘要中仅用于说明实时推理需求。尚缺任务所控制的设备、操作目标和相应的控制结果。 |
+| 40 | [Diffusion Twigs with Loop Guidance for Conditional Graph Generation](<https://proceedings.neurips.cc/paper_files/paper/2024/hash/f90338be8ad676ee02cc32d239fc40e7-Abstract-Conference.html>) | Twigs 的实验明确验证了条件图生成，但分子逆设计和性质优化仅被列为潜在应用。缺少实际生成的分子、目标性质或分子基准说明。 |
+| 51 | [pcaGAN: Improving Posterior-Sampling cGANs via Principal Component Regularization](<https://proceedings.neurips.cc/paper_files/paper/2024/hash/fa9e9b2a5176c6f72e78269087b9fe60-Abstract-Conference.html>) | 条件 GAN 对成像逆问题进行后验采样；摘要未列出采用的测量过程、成像仪器或实验对象，难以区分科学成像反演和通用图像恢复。 |
+| 52 | [Physics-Regularized Multi-Modal Image Assimilation for Brain Tumor Localization](<https://proceedings.neurips.cc/paper_files/paper/2024/hash/49fb58cfd482a33619d48a5c5910cf3c-Abstract-Conference.html>) | 胶质瘤定位及患者队列验证都明确，但作者只说代价函数类似物理信息神经网络，实际在离散网格上直接参数化解。尚不能分辨是否训练了学习模型，还是逐例优化物理参数。 |
+| 82 | [Pretraining with Random Noise for Fast and Robust Learning without Weight Transport](<https://proceedings.neurips.cc/paper_files/paper/2024/hash/18d3a2f3068d6c669dcae19ceca1bc24-Abstract-Conference.html>) | 随机噪声预训练可使人工网络的前向与反馈权重对齐。尚不清楚这一结果是否作为真实自发神经活动的机制接受检验，还是仅用于解释人工网络训练。 |
+| 89 | [Improving Neural ODE Training with Temporal Adaptive Batch Normalization](<https://proceedings.neurips.cc/paper_files/paper/2024/hash/adf7fa39d65e2983d724ff7da57f00ac-Abstract-Conference.html>) | 时变批归一化的主要定量结果来自 CIFAR-10。摘要称另做了物理系统建模实验，却未交代系统名称、预测变量或物理指标，难以判断其领域贡献。 |
+| 91 | [Graph Diffusion Policy Optimization](<https://proceedings.neurips.cc/paper_files/paper/2024/hash/124256ed80af5d4bf4c4de17b66c4298-Abstract-Conference.html>) | 强化学习优化图扩散模型的任意目标；药物设计出现在动机里。摘要未指明实验中的图是否为分子、优化了哪种分子性质。 |
+| 99 | [FIDE: Frequency-Inflated Conditional Diffusion Model for Extreme-Aware Time Series Generation](<https://proceedings.neurips.cc/paper_files/paper/2024/hash/cfce727868dcaf5295c0125f9d6fbc0b-Abstract-Conference.html>) | FIDE 能按区块最大值生成极端事件序列。医疗、金融、气候均为潜在用途，实际数据的观测对象未写明，无法判断生成了哪类科学过程。 |
+| 113 | [Emergence of integrated behaviors through direct optimization for homeostasis](<https://linkinghub.elsevier.com/retrieve/pii/S0893608024003034>) | 深度强化学习智能体会随模拟体内状态调整行为。摘要未说明这些变化对应哪种可观测的动物稳态行为，或是否复现某项生物学预测。 |
+| 114 | [Spiking generative adversarial network with attention scoring decoding](<https://linkinghub.elsevier.com/retrieve/pii/S0893608024003472>) | 生成网络主要在图像基准上评估；摘要还称其处理模式与小鼠更吻合，但没说明测量了何种小鼠神经信号、怎样与模型对齐。 |
+| 121 | [Brain Cortical Surface Can Predict Fiber Trajectories.](<https://ieeexplore.ieee.org/document/10635365/>) | 利用纤维端点和皮层参考点预测白质纤维坐标，但摘要没说明这种映射是否从数据学习，还是按几何关系直接计算。 |
+| 125 | [A Pipeline for Histopathology Analysis of Prostate Cancer Guided by Mass Spectrometry Imaging.](<https://ieeexplore.ieee.org/document/10635223/>) | 研究将质谱图像与前列腺组织纹理特征结合，区分肿瘤区域；未说明分区由受训分类器完成、依靠固定纹理规则，还是依据人工判读。 |
+| 126 | [Mild Cognitive Impairment Classification Using A Novel Finer-Scale Brain Connectome.](<https://ieeexplore.ieee.org/document/10635558/>) | 研究比较两种脑连接组表示对轻度认知障碍的区分效果，但摘要未写明预测器、训练过程或决策规则，无法认定 AI 承担分类。 |
+| 127 | [A Joint Training and Confidence Calibration Procedure That is Robust to Label Noise.](<https://ieeexplore.ieee.org/document/10635160/>) | 训练网络并校准噪声标签下的置信度，这一点明确；医学图像出现在动机中，但验证部分未说明用了什么医学任务、影像或临床标签。 |
+| 128 | [Unsupervised high-throughput segmentation of cells and cell nuclei in quantitative phase images.](<https://ieeexplore.ieee.org/document/10635287/>) | 方法在患者全息显微图像上分割细胞与细胞核，但“无监督”也可能指不需人工标注的固定图像处理流程。摘要未说明从数据学习了什么。 |
+| 129 | [Double Functionally Independent Primitives Provide Disorder Specific Fingerprints of Mental Illnesses.](<https://ieeexplore.ieee.org/document/10635116/>) | 在 5,805 人脑影像中提取功能连接模式并关联精神障碍；摘要只描述了分层提取，没有说明用于获得这些模式的学习模型或拟合步骤。 |
+| 130 | [DNA-DIR: 2D-3D Geometry Embedding for Intraoperative Partial-to-Full Registration.](<https://ieeexplore.ieee.org/document/10635158/>) | 提供带标注的内窥镜肝脏配准数据和逐步配准流程，摘要未说明是由学习模型预测变形，还是传统几何优化，也未说明使用 AI 做了数据集基准评测。 |
+| 134 | [SegReg: Segmenting OARs by Registering MR Images and CT Annotations.](<https://ieeexplore.ieee.org/document/10635437/>) | 放疗危及器官的分割效果有量化结果，但摘要只指明弹性对称归一化配准，没有说明是否另有训练得到的分割或变形预测模块。 |
+| 137 | [Local Monotone Operator Learning Using Non-Monotone Operators: MNM-MOL.](<https://ieeexplore.ieee.org/document/10635476/>) | 作者训练 CNN 并证明局部单调条件下的不动点收敛，但实验没有指明待反演的物理量、成像模态或实际测量系统，无法确认科学应用。 |
+
+## 此前的复查记录
+
+下方保留此前工作结束时的数字，可查看[当时的文件版本](https://github.com/BUPT-AI4S/ai4s-crawler/blob/81b7d3d31edecfd2c852d97e14c36d3cfd72af30/reviews/2024/lixueting-haozhuodi/handoff.md)。
+
 ## 李雪婷 797 条缺摘要记录的复查结果（2026 年 11 月 8 日）
 
 从[上轮交付说明](https://github.com/BUPT-AI4S/ai4s-crawler/blob/9bba454261bfe1a0c48ffff4806e29151b80f3bb/reviews/2024/lixueting-haozhuodi/handoff.md)中，取出李雪婷个人 JSON 中仍缺摘要且判为待定的全部 797 条。逐 DOI 核对，原始采集字段予以保留。

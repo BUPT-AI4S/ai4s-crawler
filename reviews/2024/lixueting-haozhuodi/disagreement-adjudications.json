@@ -24,13 +24,17 @@
     "changed_own_decision": true,
     "agrees_with_other_original": true,
     "outcome": "复核后与另一份记录一致",
-    "rationale": "5,805人的影像显示独立连接基元与精神障碍有关。摘要说明了分层提取，却未交代该步骤是否通过学习模型估计；仅凭“数据驱动”不足以定为 AI，也不足以断定完全没有学习成分。",
+    "rationale": "在 5,805 人脑影像中提取功能连接模式并关联精神障碍；摘要只描述了分层提取，没有说明用于获得这些模式的学习模型或拟合步骤。",
     "abstract_source": "输入摘要",
     "abstract_sha256": "ad0a6e6fab7e11be9921f0ec95abe0f347f83b598097897623f3fa6ad64a80c9",
     "evidence_sentences": [
       {
         "sentence": 3,
         "text": "Here we apply a hierarchical approach to extract doubly functionally independent primitives (dFIPs), i.e., canonical overlapping functional network connectivity patterns."
+      },
+      {
+        "sentence": 4,
+        "text": "We then evaluate the relationship of combinations of these dFIPs to various mental disorders."
       },
       {
         "sentence": 6,
@@ -42,10 +46,12 @@
       }
     ],
     "evidence_urls": [
-      "https://doi.org/10.1109/ISBI56570.2024.10635116",
-      "https://doi.org/10.1109/isbi56570.2024.10635116"
+      "https://ieeexplore.ieee.org/document/10635116/",
+      "https://doi.org/10.1109/isbi56570.2024.10635116",
+      "https://doi.org/10.1109/ISBI56570.2024.10635116"
     ],
-    "tags": []
+    "tags": [],
+    "subsequent_abstract_review": "lixueting-137-abstract-review.json"
   },
   {
     "number": 2,
@@ -321,7 +327,7 @@
     "changed_own_decision": true,
     "agrees_with_other_original": true,
     "outcome": "复核后与另一份记录一致",
-    "rationale": "150 例肝脏内镜配准及非刚性对齐的外科任务明确。但摘要没有说明配准步骤是否包含训练的模型，也未把该数据集明确限定为机器学习训练或评测资源。",
+    "rationale": "提供带标注的内窥镜肝脏配准数据和逐步配准流程，摘要未说明是由学习模型预测变形，还是传统几何优化，也未说明使用 AI 做了数据集基准评测。",
     "abstract_source": "输入摘要",
     "abstract_sha256": "6e68298258df90813a364e28e5c95f42c4142b29b48a7b158d8f3912cd88d0de",
     "evidence_sentences": [
@@ -339,10 +345,13 @@
       }
     ],
     "evidence_urls": [
+      "https://ieeexplore.ieee.org/document/10635158/",
+      "https://doi.org/10.1109/isbi56570.2024.10635158",
       "https://doi.org/10.1109/ISBI56570.2024.10635158",
-      "https://doi.org/10.1109/isbi56570.2024.10635158"
+      "https://api.crossref.org/works/10.1109/isbi56570.2024.10635158"
     ],
-    "tags": []
+    "tags": [],
+    "subsequent_abstract_review": "lixueting-137-abstract-review.json"
   },
   {
     "number": 8,
@@ -369,7 +378,7 @@
     "changed_own_decision": true,
     "agrees_with_other_original": true,
     "outcome": "复核后与另一份记录一致",
-    "rationale": "确实训练并校准了抗标签噪声的网络，但验证终点仅是校准效果。摘要没有指出具体疾病、影像对象或医学预测任务，无法据此确认领域贡献。",
+    "rationale": "训练网络并校准噪声标签下的置信度，这一点明确；医学图像出现在动机中，但验证部分未说明用了什么医学任务、影像或临床标签。",
     "abstract_source": "输入摘要",
     "abstract_sha256": "664ce410ddcb49219652bed70c7691211e031044d5962b3259d14995b14804e0",
     "evidence_sentences": [
@@ -378,8 +387,8 @@
         "text": "Manually annotated medical imaging data tend to have unreliable labels due to the complexity of the medical data and the considerable variability across experts."
       },
       {
-        "sentence": 3,
-        "text": "This study presents a joint training and confidence calibration procedure that is robust to label noise."
+        "sentence": 4,
+        "text": "The method is based on estimating the noise level as part of a noise-robust training procedure."
       },
       {
         "sentence": 5,
@@ -391,10 +400,13 @@
       }
     ],
     "evidence_urls": [
+      "https://ieeexplore.ieee.org/document/10635160/",
+      "https://doi.org/10.1109/isbi56570.2024.10635160",
       "https://doi.org/10.1109/ISBI56570.2024.10635160",
-      "https://doi.org/10.1109/isbi56570.2024.10635160"
+      "https://api.crossref.org/works/10.1109/isbi56570.2024.10635160"
     ],
-    "tags": []
+    "tags": [],
+    "subsequent_abstract_review": "lixueting-137-abstract-review.json"
   },
   {
     "number": 9,
@@ -417,11 +429,11 @@
       "file": "Blueblue1101.json",
       "url": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/e41587b9271028183191e2395146ec7904f56041/reviews/2024/Blueblue1101.json"
     },
-    "final_decision": "pending",
-    "changed_own_decision": true,
-    "agrees_with_other_original": true,
-    "outcome": "复核后与另一份记录一致",
-    "rationale": "作者训练网络预测保形阈值，但方法可用于任意分类器，验证只报告未指名医学数据集上的预测集合大小和覆盖率。医学任务的独立贡献仍缺证据。",
+    "final_decision": "include",
+    "changed_own_decision": false,
+    "agrees_with_other_original": false,
+    "outcome": "复核后维持本组原判",
+    "rationale": "训练网络估计逐例保形阈值，在多个医学影像分类数据集上验证规定覆盖率下的预测集合大小。",
     "abstract_source": "输入摘要",
     "abstract_sha256": "a8f41d58d3647babc273c3020fc17bcc2c7ba0f5849d8e673f0afb21ce5b13c7",
     "evidence_sentences": [
@@ -443,10 +455,18 @@
       }
     ],
     "evidence_urls": [
+      "https://ieeexplore.ieee.org/document/10635187/",
+      "https://doi.org/10.1109/isbi56570.2024.10635187",
       "https://doi.org/10.1109/ISBI56570.2024.10635187",
-      "https://doi.org/10.1109/isbi56570.2024.10635187"
+      "https://api.crossref.org/works/10.1109/isbi56570.2024.10635187"
     ],
-    "tags": []
+    "tags": [
+      "AI 用于生命科学",
+      "医学影像分类",
+      "保形预测",
+      "不确定性量化"
+    ],
+    "subsequent_abstract_review": "lixueting-137-abstract-review.json"
   },
   {
     "number": 10,
@@ -524,14 +544,18 @@
       "file": "Blueblue1101.json",
       "url": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/e41587b9271028183191e2395146ec7904f56041/reviews/2024/Blueblue1101.json"
     },
-    "final_decision": "pending",
-    "changed_own_decision": true,
-    "agrees_with_other_original": true,
-    "outcome": "复核后与另一份记录一致",
-    "rationale": "对比表示与 Dice 损失确属学习方法。摘要声称改善医学分割，但没有报告分割的解剖或病理对象，也未指明验证数据，领域贡献仍待确定。",
+    "final_decision": "include",
+    "changed_own_decision": false,
+    "agrees_with_other_original": false,
+    "outcome": "复核后维持本组原判",
+    "rationale": "把对比学习与 Dice 损失用于分割医学影像中的解剖或病理结构，并报告在标注受限条件下的表现。",
     "abstract_source": "输入摘要",
     "abstract_sha256": "e92cd8b21ab2349647cd4a38474a57b4bf374a0d3a1d5448212f57711721aa5e",
     "evidence_sentences": [
+      {
+        "sentence": 2,
+        "text": "It involves partitioning of an image into multiple regions, representing distinct anatomical or pathological structures."
+      },
       {
         "sentence": 4,
         "text": "To overcome this, we propose Feature-Enhanced Spatial Segmentation Loss (FESS Loss), that integrates the benefits of contrastive learning (which extracts intricate features, particularly in the nuanced domain of medical imaging) with the spatial accuracy inherent in the Dice loss."
@@ -546,10 +570,17 @@
       }
     ],
     "evidence_urls": [
+      "https://ieeexplore.ieee.org/document/10635209/",
+      "https://doi.org/10.1109/isbi56570.2024.10635209",
       "https://doi.org/10.1109/ISBI56570.2024.10635209",
-      "https://doi.org/10.1109/isbi56570.2024.10635209"
+      "https://api.crossref.org/works/10.1109/isbi56570.2024.10635209"
     ],
-    "tags": []
+    "tags": [
+      "AI 用于生命科学",
+      "医学影像分割",
+      "对比学习"
+    ],
+    "subsequent_abstract_review": "lixueting-137-abstract-review.json"
   },
   {
     "number": 12,
@@ -576,7 +607,7 @@
     "changed_own_decision": true,
     "agrees_with_other_original": true,
     "outcome": "复核后与另一份记录一致",
-    "rationale": "质谱引导的前列腺癌组织区域识别是具体任务，但摘要仅列计算成像和病理纹理特征，没有交代是否用学习算法作判别。",
+    "rationale": "研究将质谱图像与前列腺组织纹理特征结合，区分肿瘤区域；未说明分区由受训分类器完成、依靠固定纹理规则，还是依据人工判读。",
     "abstract_source": "输入摘要",
     "abstract_sha256": "3ef28b7b1193814ce999aea7eafed6cc95410597d13297d7b80f02868bcb6a53",
     "evidence_sentences": [
@@ -594,10 +625,12 @@
       }
     ],
     "evidence_urls": [
-      "https://doi.org/10.1109/ISBI56570.2024.10635223",
-      "https://doi.org/10.1109/isbi56570.2024.10635223"
+      "https://ieeexplore.ieee.org/document/10635223/",
+      "https://doi.org/10.1109/isbi56570.2024.10635223",
+      "https://doi.org/10.1109/ISBI56570.2024.10635223"
     ],
-    "tags": []
+    "tags": [],
+    "subsequent_abstract_review": "lixueting-137-abstract-review.json"
   },
   {
     "number": 13,
@@ -779,7 +812,7 @@
     "changed_own_decision": true,
     "agrees_with_other_original": true,
     "outcome": "复核后与另一份记录一致",
-    "rationale": "患者样本上确实检验了细胞和细胞核分割，但“无监督多阶段”也可能指无需标注的传统图像处理。摘要未交代哪个环节从数据学习。",
+    "rationale": "方法在患者全息显微图像上分割细胞与细胞核，但“无监督”也可能指不需人工标注的固定图像处理流程。摘要未说明从数据学习了什么。",
     "abstract_source": "输入摘要",
     "abstract_sha256": "33f54ca7eb58fd976622f3eb9f3327a4e99f5fe6a2c4207bdd67ad028d4f8b76",
     "evidence_sentences": [
@@ -792,15 +825,21 @@
         "text": "We propose an unsupervised multistage method that segments correctly without confusing noise or reflections with cells and without missing cells that also includes the detection of relevant inner structures, especially the cell nucleus in the unstained cell."
       },
       {
+        "sentence": 4,
+        "text": "To make the information reasonable and interpretable for cytopathologists, we designed and collected cytoplasmic and nuclear features of potential help for cytologic diagnoses which exploit the quantitative phase information inherent to the measurement scheme."
+      },
+      {
         "sentence": 5,
         "text": "We show that the segmentation provides consistently good results over many experiments on patient samples in a reasonable percell analysis time."
       }
     ],
     "evidence_urls": [
-      "https://doi.org/10.1109/ISBI56570.2024.10635287",
-      "https://doi.org/10.1109/isbi56570.2024.10635287"
+      "https://ieeexplore.ieee.org/document/10635287/",
+      "https://doi.org/10.1109/isbi56570.2024.10635287",
+      "https://doi.org/10.1109/ISBI56570.2024.10635287"
     ],
-    "tags": []
+    "tags": [],
+    "subsequent_abstract_review": "lixueting-137-abstract-review.json"
   },
   {
     "number": 17,
@@ -1070,14 +1109,18 @@
       "file": "Blueblue1101.json",
       "url": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/e41587b9271028183191e2395146ec7904f56041/reviews/2024/Blueblue1101.json"
     },
-    "final_decision": "pending",
+    "final_decision": "include",
     "changed_own_decision": true,
-    "agrees_with_other_original": true,
-    "outcome": "复核后与另一份记录一致",
-    "rationale": "PCA 和 IVF-PQ 用于加速冷冻电镜取向对齐，实测了速度与精度。摘要没有交代是否针对分子测量学习了表征，还是仅使用压缩检索索引。",
+    "agrees_with_other_original": false,
+    "outcome": "复核为双方原判以外的状态",
+    "rationale": "将 PCA 和 IVF-PQ 向量压缩用于冷冻电镜单颗粒图像的方向对齐，在多组冷冻电镜数据上测量加速效果与精度损失。",
     "abstract_source": "输入摘要",
     "abstract_sha256": "6f924c40e7b6fea5d0208728eecd1c6dd6d2cc34c6fe43ed5e8eb484df480699",
     "evidence_sentences": [
+      {
+        "sentence": 1,
+        "text": "In cryo-electron microscopy (Cryo-EM), single-particle analysis involves aligning two-dimensional images of individual protein molecules."
+      },
       {
         "sentence": 3,
         "text": "The goal of image alignment is to computationally determine the relative orientations and positions of the particles in each image."
@@ -1092,10 +1135,16 @@
       }
     ],
     "evidence_urls": [
-      "https://doi.org/10.1109/ISBI56570.2024.10635352",
-      "https://doi.org/10.1109/isbi56570.2024.10635352"
+      "https://ieeexplore.ieee.org/document/10635352/",
+      "https://doi.org/10.1109/isbi56570.2024.10635352",
+      "https://doi.org/10.1109/ISBI56570.2024.10635352"
     ],
-    "tags": []
+    "tags": [
+      "AI 用于生命科学",
+      "冷冻电镜颗粒对齐",
+      "向量量化"
+    ],
+    "subsequent_abstract_review": "lixueting-137-abstract-review.json"
   },
   {
     "number": 23,
@@ -1122,7 +1171,7 @@
     "changed_own_decision": true,
     "agrees_with_other_original": true,
     "outcome": "复核后与另一份记录一致",
-    "rationale": "作者由皮层参考点和纤维端点预测白质轨迹，给出了验证结果，却没有说明坐标是经学习模型预测还是依几何规则计算。",
+    "rationale": "利用纤维端点和皮层参考点预测白质纤维坐标，但摘要没说明这种映射是否从数据学习，还是按几何关系直接计算。",
     "abstract_source": "输入摘要",
     "abstract_sha256": "4927f507cae23cde9f58a5cca5c055a55e35fb975f3ba6de32d8d06c8dc4df25",
     "evidence_sentences": [
@@ -1137,13 +1186,19 @@
       {
         "sentence": 4,
         "text": "Both qualitative analysis and extensive quantitative experiments confirm that information derived from the brain's cortical surface can be employed to predict fiber trajectories."
+      },
+      {
+        "sentence": 5,
+        "text": "Furthermore, this conclusion remains robust across diverse fiber tracking and surface reconstruction techniques."
       }
     ],
     "evidence_urls": [
-      "https://doi.org/10.1109/ISBI56570.2024.10635365",
-      "https://doi.org/10.1109/isbi56570.2024.10635365"
+      "https://ieeexplore.ieee.org/document/10635365/",
+      "https://doi.org/10.1109/isbi56570.2024.10635365",
+      "https://doi.org/10.1109/ISBI56570.2024.10635365"
     ],
-    "tags": []
+    "tags": [],
+    "subsequent_abstract_review": "lixueting-137-abstract-review.json"
   },
   {
     "number": 24,
@@ -1166,11 +1221,11 @@
       "file": "Blueblue1101.json",
       "url": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/e41587b9271028183191e2395146ec7904f56041/reviews/2024/Blueblue1101.json"
     },
-    "final_decision": "pending",
+    "final_decision": "include",
     "changed_own_decision": true,
-    "agrees_with_other_original": false,
-    "outcome": "复核为双方原判以外的状态",
-    "rationale": "前列腺和肺病灶两个实例证实了分割模型选择的医学意义，故不能径直排除。但摘要只称确定性及不确定性模型，没有说明被比较的方法是否包含学习模型。",
+    "agrees_with_other_original": true,
+    "outcome": "复核后与另一份记录一致",
+    "rationale": "用前列腺与肺病灶分割案例评估模型不确定性，分析标注差异和分布距离怎样影响医学分割模型的选择。",
     "abstract_source": "输入摘要",
     "abstract_sha256": "97e08351ab03b38778009e1f6f318f5511dd78485c7435a132ac32251292032f",
     "evidence_sentences": [
@@ -1181,13 +1236,23 @@
       {
         "sentence": 2,
         "text": "Our findings lead to guidelines for accurately choosing and developing uncertain segmentation models, that integrate aleatoric and epistemic components."
+      },
+      {
+        "sentence": 3,
+        "text": "These guidelines are designed to aid researchers and practitioners in better developing, selecting, and evaluating uncertain segmentation methods, thereby facilitating enhanced adoption and effective application of segmentation uncertainty in practice."
       }
     ],
     "evidence_urls": [
-      "https://doi.org/10.1109/ISBI56570.2024.10635367",
-      "https://doi.org/10.1109/isbi56570.2024.10635367"
+      "https://ieeexplore.ieee.org/document/10635367/",
+      "https://doi.org/10.1109/isbi56570.2024.10635367",
+      "https://doi.org/10.1109/ISBI56570.2024.10635367"
     ],
-    "tags": []
+    "tags": [
+      "AI 用于生命科学",
+      "医学影像分割",
+      "不确定性量化"
+    ],
+    "subsequent_abstract_review": "lixueting-137-abstract-review.json"
   },
   {
     "number": 25,
@@ -1589,10 +1654,14 @@
     "changed_own_decision": true,
     "agrees_with_other_original": true,
     "outcome": "复核后与另一份记录一致",
-    "rationale": "3HG 脑连接组区分轻度认知障碍与对照的任务明确，但摘要仅比较两种连接组的预测表现，没有指出用什么学习或分类方法得到预测。",
+    "rationale": "研究比较两种脑连接组表示对轻度认知障碍的区分效果，但摘要未写明预测器、训练过程或决策规则，无法认定 AI 承担分类。",
     "abstract_source": "输入摘要",
     "abstract_sha256": "3eba94731b031c43cfa8e872d66abc2536ef4b9ee0343acfe098632bbf2bbb20",
     "evidence_sentences": [
+      {
+        "sentence": 3,
+        "text": "Traditionally, brain networks are generated using coarse-grained brain regions, where the regions serve as nodes and their functional or structural connections are used as edges."
+      },
       {
         "sentence": 6,
         "text": "In this study, our objective is to construct a novel 3HG-based finer-scale brain connectome and comprehensively compare its performance with traditional region-based connectome in predicting MCI against Normal Controls (NC)."
@@ -1603,10 +1672,12 @@
       }
     ],
     "evidence_urls": [
-      "https://doi.org/10.1109/ISBI56570.2024.10635558",
-      "https://doi.org/10.1109/isbi56570.2024.10635558"
+      "https://ieeexplore.ieee.org/document/10635558/",
+      "https://doi.org/10.1109/isbi56570.2024.10635558",
+      "https://doi.org/10.1109/ISBI56570.2024.10635558"
     ],
-    "tags": []
+    "tags": [],
+    "subsequent_abstract_review": "lixueting-137-abstract-review.json"
   },
   {
     "number": 33,
@@ -2252,14 +2323,18 @@
       "file": "Blueblue1101.json",
       "url": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/e41587b9271028183191e2395146ec7904f56041/reviews/2024/Blueblue1101.json"
     },
-    "final_decision": "pending",
+    "final_decision": "include",
     "changed_own_decision": true,
-    "agrees_with_other_original": true,
-    "outcome": "复核后与另一份记录一致",
-    "rationale": "研究确实分析医学视觉语言模型 MedCLIP 的解释方法，但摘要没有说明考察哪种影像、疾病任务或临床推断。只能确认模型解释研究。",
+    "agrees_with_other_original": false,
+    "outcome": "复核为双方原判以外的状态",
+    "rationale": "用多种解释方法专门评估医学视觉语言模型 MedCLIP，并针对这些解释方法的局限提出评估流程。",
     "abstract_source": "输入摘要",
     "abstract_sha256": "7517b1562e3abeb77e1bc74246a01935ba5f57626f2e1d9c79531befb835e835",
     "evidence_sentences": [
+      {
+        "sentence": 1,
+        "text": "Explaining Deep Learning models is becoming increasingly important in the face of daily emerging multimodal models, particularly in safety-critical domains like medical imaging."
+      },
       {
         "sentence": 3,
         "text": "In this work, we analyze the performance of various explainable AI methods on a vision-language model, MedCLIP, to demystify its inner workings."
@@ -2274,10 +2349,17 @@
       }
     ],
     "evidence_urls": [
-      "https://doi.org/10.1109/ISBI56570.2024.10635843",
-      "https://doi.org/10.1109/isbi56570.2024.10635843"
+      "https://ieeexplore.ieee.org/document/10635843/",
+      "https://doi.org/10.1109/isbi56570.2024.10635843",
+      "https://doi.org/10.1109/ISBI56570.2024.10635843"
     ],
-    "tags": []
+    "tags": [
+      "AI 用于生命科学",
+      "医学模型解释",
+      "视觉语言模型",
+      "可解释机器学习"
+    ],
+    "subsequent_abstract_review": "lixueting-137-abstract-review.json"
   },
   {
     "number": 46,
@@ -3344,11 +3426,11 @@
       "file": "wangmengran8789.json",
       "url": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/e41587b9271028183191e2395146ec7904f56041/reviews/2024/wangmengran8789.json"
     },
-    "final_decision": "pending",
-    "changed_own_decision": true,
+    "final_decision": "include",
+    "changed_own_decision": false,
     "agrees_with_other_original": false,
-    "outcome": "复核为双方原判以外的状态",
-    "rationale": "输入确为心率、速度和距离，模型识别身体活动；摘要主要比较分类与集成算法，没有说明是否用结果回答生理、健康或运动测量问题。",
+    "outcome": "复核后维持本组原判",
+    "rationale": "初筛漏筛补录。利用心率、速度和距离的实测时序识别人体活动，强化学习融合多个分类器，并在真实数据上验证识别效果。摘要支持活动测量这项工程任务。",
     "abstract_source": "输入摘要",
     "abstract_sha256": "45bfe71b003905eafb010d95feaa6794d7a277e99ac2e22f2e6048d12334b1ec",
     "evidence_sentences": [
@@ -3357,20 +3439,31 @@
         "text": "In this paper, we propose a novel ensemble method for physical activity recognition based on a deep transformer-based time-series classification model that uses heart rate, speed, and distance time-series data to recognize physical activities."
       },
       {
-        "sentence": 7,
-        "text": "In particular, we develop a modified arithmetic optimization algorithm to automatically adjust the optimal values of the classification models' hyperparameters."
-      },
-      {
         "sentence": 8,
         "text": "Moreover, a reinforcement learning-based ensemble approach is proposed to optimally integrate the results of the classification models obtained using heart rate, speed, and distance time-series data and, subsequently, recognize the physical activities."
+      },
+      {
+        "sentence": 9,
+        "text": "Experiments performed on a real-world dataset demonstrated that the proposed method achieves promising efficiency in comparison to other state-of-the-art models."
+      },
+      {
+        "sentence": 10,
+        "text": "More specifically, the proposed method increases the performance compared to the second-best performer by around 3.44 %, 9.45 %, 5.43 %, 2.54 %, and 7.53 % based on accuracy, precision, recall, specificity, and F1-score evaluation metrics, respectively."
       }
     ],
     "evidence_urls": [
+      "https://linkinghub.elsevier.com/retrieve/pii/S0893608024000832",
       "https://doi.org/10.1016/j.neunet.2024.106159",
       "https://pubmed.ncbi.nlm.nih.gov/38342080/",
       "https://api.crossref.org/works/10.1016/j.neunet.2024.106159"
     ],
-    "tags": []
+    "tags": [
+      "AI 用于工程科学",
+      "生理信号分析",
+      "人体姿态识别",
+      "强化学习"
+    ],
+    "subsequent_abstract_review": "lixueting-137-abstract-review.json"
   },
   {
     "number": 67,
@@ -3775,29 +3868,35 @@
     "changed_own_decision": true,
     "agrees_with_other_original": false,
     "outcome": "复核为双方原判以外的状态",
-    "rationale": "受训智能体随模拟生理状态变化而改变行为，但摘要只给出人工环境中的结果，未说明计算假设与哪项生物观察相对应。",
+    "rationale": "深度强化学习智能体会随模拟体内状态调整行为。摘要未说明这些变化对应哪种可观测的动物稳态行为，或是否复现某项生物学预测。",
     "abstract_source": "输入摘要",
     "abstract_sha256": "1cb91e46ae207df49dca77c7182d62783a40df76220994109febfdcf4a255cab",
     "evidence_sentences": [
       {
+        "sentence": 2,
+        "text": "Homeostatic reinforcement learning (RL) is a framework recently proposed in computational neuroscience to explain animal behavior."
+      },
+      {
+        "sentence": 6,
+        "text": "To overcome this restriction, we developed an advanced method to realize scaled-up homeostatic RL using deep RL."
+      },
+      {
+        "sentence": 9,
+        "text": "We created two benchmark environments for homeostasis and performed a behavioral analysis."
+      },
+      {
         "sentence": 10,
         "text": "The analysis showed that the trained agents in each environment changed their behavior based on their internal physiological states."
-      },
-      {
-        "sentence": 11,
-        "text": "Finally, we extended our method to address vision using deep convolutional neural networks."
-      },
-      {
-        "sentence": 12,
-        "text": "The analysis of a trained agent revealed that it has visual saliency rooted in the survival environment and internal representations resulting from multimodal input."
       }
     ],
     "evidence_urls": [
+      "https://linkinghub.elsevier.com/retrieve/pii/S0893608024003034",
       "https://doi.org/10.1016/j.neunet.2024.106379",
       "https://pubmed.ncbi.nlm.nih.gov/38762941/",
       "https://api.crossref.org/works/10.1016/j.neunet.2024.106379"
     ],
-    "tags": []
+    "tags": [],
+    "subsequent_abstract_review": "lixueting-137-abstract-review.json"
   },
   {
     "number": 75,
@@ -3820,17 +3919,21 @@
       "file": "wangmengran8789.json",
       "url": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/e41587b9271028183191e2395146ec7904f56041/reviews/2024/wangmengran8789.json"
     },
-    "final_decision": "pending",
+    "final_decision": "include",
     "changed_own_decision": true,
-    "agrees_with_other_original": false,
-    "outcome": "复核为双方原判以外的状态",
-    "rationale": "多中心疾病诊断提供应用动机，模型投影算法明确。摘要实际报告的是准确率、收敛和通信成本，未指明验证的疾病、临床数据或诊断终点。",
+    "agrees_with_other_original": true,
+    "outcome": "复核后与另一份记录一致",
+    "rationale": "初筛漏筛补录。针对医疗中心间分布不同的诊断训练，提出模型投影和联邦聚合，并比较诊断模型的准确率与通信开销。",
     "abstract_source": "输入摘要",
     "abstract_sha256": "d450ae775054515ade6bda9b4a4b96205647f05be090339dc383c08b576693ac",
     "evidence_sentences": [
       {
         "sentence": 1,
         "text": "Multi-center disease diagnosis aims to build a global model for all involved medical centers."
+      },
+      {
+        "sentence": 3,
+        "text": "Federated Learning (FL) is a decentralized framework that enables multiple clients (e.g., medical centers) to collaboratively train a global model while retaining patient data locally for privacy."
       },
       {
         "sentence": 4,
@@ -3846,11 +3949,17 @@
       }
     ],
     "evidence_urls": [
+      "https://linkinghub.elsevier.com/retrieve/pii/S0893608024003332",
       "https://doi.org/10.1016/j.neunet.2024.106409",
       "https://pubmed.ncbi.nlm.nih.gov/38823069/",
       "https://api.crossref.org/works/10.1016/j.neunet.2024.106409"
     ],
-    "tags": []
+    "tags": [
+      "AI 用于生命科学",
+      "疾病辅助诊断",
+      "联邦学习"
+    ],
+    "subsequent_abstract_review": "lixueting-137-abstract-review.json"
   },
   {
     "number": 76,
@@ -3873,11 +3982,11 @@
       "file": "wangmengran8789.json",
       "url": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/e41587b9271028183191e2395146ec7904f56041/reviews/2024/wangmengran8789.json"
     },
-    "final_decision": "pending",
-    "changed_own_decision": false,
-    "agrees_with_other_original": false,
-    "outcome": "维持本组原判",
-    "rationale": "从宏表情迁移到微表情的图卷积识别有实验依据，但摘要未说明是否用识别结果研究具体人群、行为差异或心理机制。",
+    "final_decision": "exclude",
+    "changed_own_decision": true,
+    "agrees_with_other_original": true,
+    "outcome": "复核后与另一份记录一致",
+    "rationale": "图卷积模型在四个数据集上提高了面部微表情分类准确率。测谎和心理咨询仅是背景，实验未研究情绪机制或具体临床任务。",
     "abstract_source": "输入摘要",
     "abstract_sha256": "6296fefd2dc6c8f1b6c27a4a5717e569fc35ce3e33252b562951654bd7513b45",
     "evidence_sentences": [
@@ -3886,20 +3995,26 @@
         "text": "In this paper, we propose a novel graph convolution network (GCN) for MER achieving state-of-the-art accuracy."
       },
       {
-        "sentence": 8,
-        "text": "That is, different stochastic GCNs (SGCN) have been trained by the macro-expression dataset in the source network."
+        "sentence": 6,
+        "text": "The whole network consists of two branches, one is the spatial branch taking micro-expression images as input, the other is the temporal branch taking optical flow images as input."
       },
       {
-        "sentence": 9,
-        "text": "Then the well-trained SGCNs are transferred to the target network."
+        "sentence": 7,
+        "text": "Because the micro-expression dataset does not have enough images for training the GCN, we employ the transfer learning mechanism."
+      },
+      {
+        "sentence": 10,
+        "text": "It is shown that our proposed method achieves the state-of-art performance on all four well-known datasets."
       }
     ],
     "evidence_urls": [
+      "https://linkinghub.elsevier.com/retrieve/pii/S0893608024003459",
       "https://doi.org/10.1016/j.neunet.2024.106421",
       "https://pubmed.ncbi.nlm.nih.gov/38850638/",
       "https://api.crossref.org/works/10.1016/j.neunet.2024.106421"
     ],
-    "tags": []
+    "tags": [],
+    "subsequent_abstract_review": "lixueting-137-abstract-review.json"
   },
   {
     "number": 77,
@@ -3925,14 +4040,22 @@
     "final_decision": "pending",
     "changed_own_decision": false,
     "agrees_with_other_original": false,
-    "outcome": "维持本组原判",
-    "rationale": "主要贡献是脉冲生成对抗网络。摘要提到与小鼠信息处理的一致性，却没有说明对应的神经记录或生物学验证，领域贡献仍不确定。",
+    "outcome": "复核后维持本组原判",
+    "rationale": "生成网络主要在图像基准上评估；摘要还称其处理模式与小鼠更吻合，但没说明测量了何种小鼠神经信号、怎样与模型对齐。",
     "abstract_source": "输入摘要",
     "abstract_sha256": "afc22743a4c4e2f9b61ed806cb7388c9dd1fd801d0bc1a3aa921f35f2292715b",
     "evidence_sentences": [
       {
-        "sentence": 5,
-        "text": "Particularly, previous works on generative adversarial networks based on spiking neural networks are conducted on simple datasets and do not perform well."
+        "sentence": 6,
+        "text": "In this work, we pioneer constructing a spiking generative adversarial network capable of handling complex images and having higher performance."
+      },
+      {
+        "sentence": 9,
+        "text": "Experimental results reveal that our approach outperforms existing methods on the MNIST, FashionMNIST, CIFAR10, and CelebA."
+      },
+      {
+        "sentence": 10,
+        "text": "In addition to our examination of static datasets, this study marks our inaugural investigation into event-based data, through which we achieved noteworthy results."
       },
       {
         "sentence": 11,
@@ -3940,11 +4063,13 @@
       }
     ],
     "evidence_urls": [
+      "https://linkinghub.elsevier.com/retrieve/pii/S0893608024003472",
       "https://doi.org/10.1016/j.neunet.2024.106423",
       "https://pubmed.ncbi.nlm.nih.gov/38906053/",
       "https://api.crossref.org/works/10.1016/j.neunet.2024.106423"
     ],
-    "tags": []
+    "tags": [],
+    "subsequent_abstract_review": "lixueting-137-abstract-review.json"
   },
   {
     "number": 78,
@@ -4064,17 +4189,21 @@
       "file": "wangmengran8789.json",
       "url": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/e41587b9271028183191e2395146ec7904f56041/reviews/2024/wangmengran8789.json"
     },
-    "final_decision": "pending",
-    "changed_own_decision": false,
+    "final_decision": "include",
+    "changed_own_decision": true,
     "agrees_with_other_original": false,
-    "outcome": "维持本组原判",
-    "rationale": "单细胞 RNA 数据上确实报告了聚类指标，但目标是通用无监督表征；摘要未说明是否识别了细胞类型、状态或其他生物学结构。",
+    "outcome": "复核为双方原判以外的状态",
+    "rationale": "构建学习细胞间邻接关系的表征网络，在真实单细胞转录组上直接评估聚类准确率与互信息。",
     "abstract_source": "输入摘要",
     "abstract_sha256": "afc4f7a24b68e33e959fc24401e48ede99adad1c7f261aba50d6e1b2dc4414b5",
     "evidence_sentences": [
       {
         "sentence": 2,
         "text": "In this paper, we propose a simple end-to-end T-distributed Stochastic Neighbor Network (TsNet) for URL with clustering downstream task."
+      },
+      {
+        "sentence": 3,
+        "text": "Concretely, our TsNet model has three major components: (1) an adaptive connectivity distribution learning module is presented to construct a pairwise graph for preserving the local structure of generic data; (2) a T-distributed stochastic neighbor embedding based loss function is designed to learn a transformation between embeddings and original data, which improves the discrimination of representations; (3) a nonlinear parametric mapping is learned via our TsNet on an unsupervised generalized manner, which can address the \"out-of-sample\" issue."
       },
       {
         "sentence": 4,
@@ -4086,11 +4215,17 @@
       }
     ],
     "evidence_urls": [
+      "https://linkinghub.elsevier.com/retrieve/pii/S0893608024004441",
       "https://doi.org/10.1016/j.neunet.2024.106520",
       "https://pubmed.ncbi.nlm.nih.gov/39024709/",
       "https://api.crossref.org/works/10.1016/j.neunet.2024.106520"
     ],
-    "tags": []
+    "tags": [
+      "AI 用于生命科学",
+      "单细胞表征学习",
+      "聚类"
+    ],
+    "subsequent_abstract_review": "lixueting-137-abstract-review.json"
   },
   {
     "number": 81,
@@ -4612,11 +4747,11 @@
       "file": "wangmengran8789.json",
       "url": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/e41587b9271028183191e2395146ec7904f56041/reviews/2024/wangmengran8789.json"
     },
-    "final_decision": "pending",
-    "changed_own_decision": false,
-    "agrees_with_other_original": false,
-    "outcome": "维持本组原判",
-    "rationale": "双眼视觉生理用于构造图像质量估计器。摘要未清楚说明评价是否检验了视觉机制，而不只是比较图像质量预测误差。",
+    "final_decision": "exclude",
+    "changed_own_decision": true,
+    "agrees_with_other_original": true,
+    "outcome": "复核后与另一份记录一致",
+    "rationale": "双眼融合与皮层机理为设计提供启发，模型实际在立体图像质量数据库上预测失真评分，没有检验视觉皮层反应。",
     "abstract_source": "输入摘要",
     "abstract_sha256": "8ae998a6e60ace827b1fd7ec540b854340eda04ffe95704a3aeaa34710e48aa2",
     "evidence_sentences": [
@@ -4627,14 +4762,24 @@
       {
         "sentence": 4,
         "text": "The method mainly includes an innovative end-to-end NR-SIQA neural network with a picture patch generation algorithm."
+      },
+      {
+        "sentence": 6,
+        "text": "The proposed models are validated and compared based on publicly available databases."
+      },
+      {
+        "sentence": 7,
+        "text": "The results show that the model and algorithm together outperform the state-of-the-art NR-SIQA metric in the LIVE 3D database and the WIVC 3D database, and have excellent results in the specific noise metric."
       }
     ],
     "evidence_urls": [
+      "https://linkinghub.elsevier.com/retrieve/pii/S0893608024006762",
       "https://doi.org/10.1016/j.neunet.2024.106752",
       "https://pubmed.ncbi.nlm.nih.gov/39340969/",
       "https://api.crossref.org/works/10.1016/j.neunet.2024.106752"
     ],
-    "tags": []
+    "tags": [],
+    "subsequent_abstract_review": "lixueting-137-abstract-review.json"
   },
   {
     "number": 92,
@@ -6334,7 +6479,7 @@
     "changed_own_decision": true,
     "agrees_with_other_original": false,
     "outcome": "复核为双方原判以外的状态",
-    "rationale": "摘要只说明网络分析、抗体中和关联和相关分析，没有记载 ReliefF 或邻域成分学习。对方引用的全文细节超出本轮证据范围。",
+    "rationale": "摘要用网络分析和抗体滴度相关性描述年龄、性别差异，没有说明网络由什么学习算法估计。缺少能把机器学习具体对应到中和反应分析的步骤。",
     "abstract_source": "输入摘要",
     "abstract_sha256": "fe59b9f2134d7914893b818df89289fb244b5e61a26e9b626bf37ba5ab19f502",
     "evidence_sentences": [
@@ -6352,11 +6497,13 @@
       }
     ],
     "evidence_urls": [
+      "https://linkinghub.elsevier.com/retrieve/pii/S2589004224017097",
       "https://doi.org/10.1016/j.isci.2024.110484",
       "https://pubmed.ncbi.nlm.nih.gov/39156648/",
       "https://api.crossref.org/works/10.1016/j.isci.2024.110484"
     ],
-    "tags": []
+    "tags": [],
+    "subsequent_abstract_review": "lixueting-137-abstract-review.json"
   },
   {
     "number": 125,
@@ -7164,12 +7311,12 @@
       "file": "chenchen052512.json",
       "url": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/e41587b9271028183191e2395146ec7904f56041/reviews/2024/chenchen052512.json"
     },
-    "final_decision": "pending",
-    "changed_own_decision": true,
+    "final_decision": "exclude",
+    "changed_own_decision": false,
     "agrees_with_other_original": false,
-    "outcome": "复核为双方原判以外的状态",
-    "rationale": "摘要明确 Fezf2、miR-193b～365 与 MAPK8 的调控实验，但没有写出预测工具或学习模型。不能用对方从正文查到的 miRDB 方法替代摘要证据。",
-    "abstract_source": "https://pubmed.ncbi.nlm.nih.gov/39759000/",
+    "outcome": "复核后维持本组原判",
+    "rationale": "摘要用基因调控、微 RNA 过表达及树突形态变化解释皮层投射神经元发育，所报告的证据没有涉及 AI 预测或学习模型。",
+    "abstract_source": "补入的作者摘要",
     "abstract_sha256": "2225e29aa665597b7352cb8c81bcb6abe2ab706037a6c7c35d41b16b60ec7227",
     "evidence_sentences": [
       {
@@ -7190,11 +7337,13 @@
       }
     ],
     "evidence_urls": [
-      "https://pubmed.ncbi.nlm.nih.gov/39759000/",
+      "https://linkinghub.elsevier.com/retrieve/pii/S2589004224027275",
       "https://doi.org/10.1016/j.isci.2024.111500",
+      "https://pubmed.ncbi.nlm.nih.gov/39759000/",
       "https://api.crossref.org/works/10.1016/j.isci.2024.111500"
     ],
-    "tags": []
+    "tags": [],
+    "subsequent_abstract_review": "lixueting-137-abstract-review.json"
   },
   {
     "number": 141,
