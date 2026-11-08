@@ -14,3 +14,5 @@
 3. 保存 CSV 后提交并推送到仓库，也可以在 GitHub 网页直接编辑提交。提交标题写「刊会核验 + GitHub 用户名」，提交说明列出来源编号。只改本人负责的行，核验完成即可提交。
 
 [2024 原始书目](metadata/2024/papers.json) 使用 Git LFS，可用 `git lfs pull --include="metadata/2024/papers.json"` 取回。各年份的元数据都在 [metadata](metadata/) 下。2024 年的 436 本期刊另按来源编号存放在 `metadata/<来源编号>/2024/`，每刊提供全量书目 `papers.json` 和初筛候选 `ai4s.json`。分刊文件与年度汇总使用同一快照。运行说明见 [CRAWLER.md](CRAWLER.md)，来源配置见 [teacher_sources.json](teacher_sources.json)。
+
+2026 年的 [全量书目](metadata/2026/papers.json) 共 367,930 篇，[初筛候选](metadata/2026/ai4s.json) 共 29,342 篇。年度文件已并入早期顶会，逐来源结果在 `metadata/<来源编号>/2026/`。各来源覆盖情况、摘要计数和词表版本见 [2026 快照](metadata/2026/snapshot.json)。下载通过 LFS 保存的 2026 文件可运行 `git lfs pull --include="metadata/2026/*,metadata/*/2026/*"`。精筛范围仍以团队的刊会核验结论为准。

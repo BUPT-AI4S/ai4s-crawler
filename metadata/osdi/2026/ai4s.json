@@ -1,0 +1,223 @@
+[
+  {
+    "id": "https://dblp.org/rec/conf/osdi/HeLSYCMS26",
+    "venue": "osdi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Neuro-Symbolic Proof Generation for Scaling Systems Software Verification.",
+    "authors": [
+      "Baoding He",
+      "Zenan Li",
+      "Wei Sun",
+      "Yuan Yao 0001",
+      "Taolue Chen 0001",
+      "Xiaoxing Ma",
+      "Zhendong Su 0001"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/432/9948",
+      "https://dblp.org/pid/242/2285",
+      "https://dblp.org/pid/09/5042",
+      "https://dblp.org/pid/25/4120-1",
+      "https://dblp.org/pid/28/4743",
+      "https://dblp.org/pid/67/3058",
+      "https://dblp.org/pid/s/ZhendongSu"
+    ],
+    "abstract": "Formal verification via interactive theorem proving is increasingly used to ensure the correctness of critical systems, yet constructing large proof scripts remains highly manual and limits scalability. Advances in large language models (LLMs), especially in mathematical reasoning, make their integration into software verification increasingly promising. This paper introduces a neuro-symbolic proof generation framework designed to automate proof search for system-level verification projects. The framework performs a best-first tree search over proof states, repeatedly querying an LLM for the next candidate proof step. On the neural side, we fine-tune LLMs using datasets of proof state–step pairs; on the symbolic side, we incorporate a range of ITP tools to repair rejected steps, filter and rank proof states, and automatically discharge subgoals when search progress stalls. This synergy enables data-efficient LLM adaptation and semantics-informed pruning of the search space. We implement the framework on a new Isabelle REPL that exposes fine-grained proof states and automation tools, and evaluate it on the FVEL seL4 benchmark and additional Isabelle developments. On seL4, the system proves up to 77.6% of the theorems, substantially surpassing previous LLM-based approaches and standalone Sledgehammer, while solving significantly more multi-step proofs. Results across further Isabelle benchmarks demonstrate strong generalization, indicating a viable path toward scalable automated software verification.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": null,
+    "pages": "2533-2550",
+    "bibtex": null,
+    "url": "https://www.usenix.org/conference/osdi26/presentation/he-baoding",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+publisher",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "USENIX Symposium on Operating Systems Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/osdi/HeLSYCMS26",
+    "dblp_toc": "https://dblp.org/db/conf/osdi/osdi2026",
+    "booktitle": "OSDI",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "大语言模型",
+      "形式验证"
+    ],
+    "ai4s_tags": [
+      "AI for 数理科学"
+    ],
+    "ai4s_keywords": [
+      "theorem proving"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 数理科学": [
+          "theorem proving"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "https://dblp.org/rec/conf/osdi/JiangGHCLYGZ26",
+    "venue": "osdi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Kairox: Adaptive GPU-CPU Hybrid LLM Inference via Online Neuron Balancing.",
+    "authors": [
+      "Yapeng Jiang",
+      "Minghao Gan",
+      "Zicong Hong",
+      "Wuhui Chen",
+      "Junyuan Liang",
+      "Yue Yu 0001",
+      "Meng Guo",
+      "Zibin Zheng"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/411/1716",
+      "https://dblp.org/pid/448/6171",
+      "https://dblp.org/pid/239/5523",
+      "https://dblp.org/pid/02/8379",
+      "https://dblp.org/pid/40/35",
+      "https://dblp.org/pid/55/2008-1",
+      "https://dblp.org/pid/93/356",
+      "https://dblp.org/pid/z/ZibinZheng"
+    ],
+    "abstract": "Hybrid LLM inference systems exploit both GPU and CPU for computation and memory but are bottlenecked by the CPU’s lower computational capabilities. Recent approaches leverage activation sparsity by offline partitioning FFN neurons into \"hot\" (frequently activated) and \"cold\" (rarely activated) sets. This approach retains critical computations on the GPU, yet static partitioning struggles to adapt to runtime activation changes, leading to suboptimal throughput. We present Kairox, an adaptive GPU-CPU hybrid inference system that addresses these limitations through online neuron balancing, a mechanism that dynamically redistributes neurons between the GPU and CPU based on activation patterns. To realize this, Kairox introduces a Live Pipeline designed to prefetch neurons by predicting next-layer activation patterns. Furthermore, leveraging activation locality, we develop a Temporal Activation Momentum cache policy to prioritize neurons with sustained utility while minimizing transient, wasteful transfers. Finally, an Adaptive Neuron Balancer modulates the balancing intensity according to runtime resource conditions, maintaining an optimal equilibrium between competing system bottlenecks. For standard completion on consumer-grade PCs, Kairox improves end-to-end throughput by up to 7.57×, 3.70×, 6.35×, and 3.76× over llama.cpp, PowerInfer, Neuralink, and Q-Infer, respectively. Across all evaluated settings, it achieves geomean speedups of 3.15× and 3.93× over llama.cpp on two representative PCs and around 2.1× over the three sparse baselines.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": null,
+    "pages": "1839-1856",
+    "bibtex": null,
+    "url": "https://www.usenix.org/conference/osdi26/presentation/jiang-yapeng",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+publisher",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "USENIX Symposium on Operating Systems Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/osdi/JiangGHCLYGZ26",
+    "dblp_toc": "https://dblp.org/db/conf/osdi/osdi2026",
+    "booktitle": "OSDI",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "大语言模型"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "neuroscience"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "neuroscience"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "https://dblp.org/rec/conf/osdi/TornowGSMB26",
+    "venue": "osdi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "qTPU: Hybrid Tensor Networks for Quantum-Classical Acceleration.",
+    "authors": [
+      "Nathaniel Tornow",
+      "Emmanouil Giortamis",
+      "Dennis Sprokholt",
+      "Christian Mendl",
+      "Pramod Bhatotia"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/354/5466",
+      "https://dblp.org/pid/354/5235",
+      "https://dblp.org/pid/321/5750",
+      "https://dblp.org/pid/448/6080",
+      "https://dblp.org/pid/35/8319"
+    ],
+    "abstract": "Classical accelerators (GPUs, TPUs) excel at high-performance computing but cannot efficiently represent problems that scale exponentially, such as highly entangled quantum states. Quantum processors (QPUs) address these intractable problems but are constrained by noise, high error rates, and low throughput. This necessitates hybrid quantum-classical execution: computationally complex kernels are offloaded to QPUs, while scalable computation runs on classical accelerators. Despite this clear need for hybrid systems, we currently lack a concise programming paradigm for expressing and optimizing them. Developers must manually partition and orchestrate applications across quantum and classical hardware through ad hoc approaches that produce fragmented, inflexible workflows. This prevents holistic optimization across the quantum-classical interface and limits scalability. To this end, we introduce the hybrid tensor network (hTN) abstraction—a unified representation capturing quantum-classical computation—realized in qTPU, an end-to-end system comprising: the qTPU programming model for declarative hybrid computation specification; the qTPU compiler for holistic hTN optimization balancing classical cost against quantum error; and the qTPU runtime for scalable execution across heterogeneous QPUs and classical accelerators. Our evaluation demonstrates that qTPU achieves 3–4 orders of magnitude lower classical overhead, up to 7.2× lower quantum error rates, up to 53× faster compilation, and over 20× end-to-end speedups across hybrid ML, circuit knitting, and quantum error mitigation.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": null,
+    "pages": "2367-2388",
+    "bibtex": null,
+    "url": "https://www.usenix.org/conference/osdi26/presentation/tornow",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+publisher",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "USENIX Symposium on Operating Systems Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/osdi/TornowGSMB26",
+    "dblp_toc": "https://dblp.org/db/conf/osdi/osdi2026",
+    "booktitle": "OSDI",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "量子误差缓解"
+    ],
+    "ai4s_tags": [
+      "AI for 数理科学"
+    ],
+    "ai4s_keywords": [
+      "quantum physics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 数理科学": [
+          "quantum physics"
+        ]
+      },
+      "method_evidence": []
+    }
+  }
+]

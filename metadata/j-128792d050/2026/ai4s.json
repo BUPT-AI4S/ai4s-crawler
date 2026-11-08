@@ -1,0 +1,2868 @@
+[
+  {
+    "id": "10.1186/s13073-025-01595-6",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "Detection of primary cancer types via fragment size selection in circulating cell-free extrachromosomal circular DNA",
+    "authors": [
+      "Jingwen Fang",
+      "Songwen Luo",
+      "Shouzhen Li",
+      "Yehong Xu",
+      "Jing Wang",
+      "Benjie Shan",
+      "Mingjun Hu",
+      "Qiaoni Yu",
+      "Wen Zhang",
+      "Ke Liu",
+      "Yunying Shao",
+      "Jiaxuan Yang",
+      "YouYang Zhou",
+      "Guangtao Xu",
+      "Xinfeng Yao",
+      "Ruoming Sun",
+      "Mengyuan Zhang",
+      "Kun Li",
+      "Xihai Xu",
+      "Yongliang Zhang",
+      "Zhihong Zhang",
+      "Xinghua Han",
+      "Yueyin Pan",
+      "Chuang Guo",
+      "Kun Qu"
+    ],
+    "author_ids": [],
+    "abstract": "BACKGROUND: Extrachromosomal circular DNA has emerged as a pivotal factor in tumor biology, contributing to intratumor heterogeneity, oncogene amplification, and tumor evolution. Despite its relevance, the presence and molecular characteristics of plasma-derived cell-free extrachromosomal circular DNA (eccDNA) in cancer patients remain insufficiently explored. METHODS: In this study, we profiled plasma-derived cell-free eccDNA from a multi-cancer cohort consisting of 413 cancer patients and 239 healthy individuals. We analyzed eccDNA fragment size distributions using a patient-derived xenograft (PDX) mouse model and identified fragment size features to distinguish tumor-derived eccDNA from non-tumor-derived eccDNA. We further performed in silico fragment size selection and developed a gene-based annotation method to characterize the gene content carried by cell-free eccDNA across different cancer types. By utilizing these cell-free eccDNA signatures, we developed ScanTecc (screening cancer types with cell-free eccDNA), a machine learning-based approach for cancer detection and tissue-of-origin classification. The classification performance of ScanTecc was further evaluated at the individual sample level using multiple machine learning classifiers, including adaptive boosting and logistic regression. RESULTS: We observed a significantly higher abundance and longer fragment lengths of eccDNA in cancer patients’ plasma. Analysis of the PDX mouse model revealed a distinct fragment size threshold of approximately 1,000 base pairs that effectively differentiates tumor-derived eccDNA from non-tumor-derived counterparts. Following fragment size selection, gene-based annotation of large-sized eccDNA revealed cancer type–specific enrichment of tumor-associated genes. Leveraging these features, ScanTecc achieved an overall AUC of 0.92 for distinguishing cancer patients from healthy individuals, with consistently high performance across disease stages, including stage I (AUC = 0.92) and stage IV (AUC = 0.93). ScanTecc also enabled accurate tissue-of-origin classification and achieved an overall AUC of 0.79 in identifying specific cancer types, with AUC values ranging from 0.70 for gastric cancer to 0.81 for ovarian cancer. CONCLUSIONS: Our study establishes a multi-cancer plasma cell-free eccDNA landscape and introduces a non-invasive cancer screening framework based on cell-free eccDNA features, highlighting the potential of plasma cell-free eccDNA for early cancer detection and tumor classification.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-025-01595-6",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-025-01595-6",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-01-06",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://link.springer.com/10.1186/s13073-025-01595-6",
+    "ai4s_hits": [
+      "\\bmolecular\\b",
+      "\\bdna\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "肿瘤分型",
+      "机器学习",
+      "逻辑回归"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学",
+      "AI for 物质科学"
+    ],
+    "ai4s_keywords": [
+      "DNA",
+      "molecule"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "DNA"
+        ],
+        "AI for 物质科学": [
+          "molecule"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01598-x",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "Exploring phenotype-related single-cells through attention-enhanced representation learning",
+    "authors": [
+      "Qinhua Wu",
+      "Junxiang Ding",
+      "Ruikun He",
+      "Lijian Hui",
+      "Junwei Liu",
+      "Yixue Li"
+    ],
+    "author_ids": [],
+    "abstract": "BACKGROUND: Atlas-level single-cell investigations elucidate disease pathogenesis and progression. Accurate interpretation of phenotype-related single-cell data necessitates pre-defining cell subtypes and identifying their abundance variations. However, batch correction and clustering resolution biases can impact this interpretation. To overcome these challenges, an end-to-end integrative approach that combines both cell- and gene-level information is needed to more accurately connect single-cell characteristics to clinical phenotypes. METHODS: We developed scPhase, a deep learning framework using attention-based multiple instance learning (AMIL). It treats each patient sample as a bag of single cells, learning a comprehensive representation from their gene expression profiles. By incorporating a Mixture-of-Experts (MoE) aggregation layer, it predicts clinical phenotypes that generalize across patient cohorts. Furthermore, it includes an interpretability framework that uses cellular attention and gene attribution scores to pinpoint the key cell profiles that drive its predictions. RESULTS: We evaluated scPhase across diverse single-cell disease atlases, covering COVID-19 infection, aging, neurodegeneration, and oncology, using single-cell data from peripheral blood mononuclear cells (PBMCs), brain, and tumor tissues. The model consistently outperforms baselines in classifying diverse clinical phenotypes, achieving area under the curve (AUC) scores of 0.895 for COVID-19, 0.840 for Alzheimer’s disease, and 0.951 and 0.962 for lung and colorectal cancers. It shows robust performance in age regression with a Pearson correlation coefficient (PCC) of 0.87. The model’s interpretability framework effectively pinpointed clinically relevant cell populations, enhancing its utility in identifying disease-specific cellular signatures. CONCLUSIONS: scPhase offers an interpretable supervised learning framework for single-cell data, accurately predicting sample-level clinical phenotypes while uncovering key biological mechanisms. Furthermore, it can be readily adapted for broader atlas-level clinical phenotype analyses.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01598-x",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01598-x",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-01-21",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://link.springer.com/10.1186/s13073-026-01598-x",
+    "ai4s_hits": [
+      "single-cell",
+      "single cell",
+      "gene expression"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "深度学习",
+      "混合专家",
+      "监督学习",
+      "聚类",
+      "表示学习"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "single-cell",
+      "gene expression",
+      "neuroscience"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "single-cell",
+          "gene expression",
+          "neuroscience"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-025-01586-7",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "Aligned cross-modal integration and regulatory heterogeneity characterization of single-cell multiomic data with deep contrastive learning",
+    "authors": [
+      "Yue Cheng",
+      "Yanchi Su",
+      "Yi Fan",
+      "Yuning Yang",
+      "Xingjian Chen",
+      "Fuzhou Wang",
+      "Ka-Chun Wong",
+      "Xiangtao Li"
+    ],
+    "author_ids": [],
+    "abstract": "BACKGROUND: Single-cell multi-omics (scMulti-omics) technologies have revolutionized our understanding of cellular functions and interactions by enabling the simultaneous measurement of diverse cellular modalities. Integrating these heterogeneous data types presents significant challenges due to differences in scale, resolution, and biological variability across the omics layers. Traditional computational methods often fail to reconcile these differences, leading to a loss of critical biological variability and subtle intermolecular interactions. METHODS: To address these challenges, we have developed a single-cell multi-omics deep learning model (scMDCF) based on contrastive learning, tailored for the efficient characterization and integration of scMulti-omics data. scMDCF features a cross-modality contrastive learning module that harmonizes data representations across different omics types, ensuring consistency and preserving data heterogeneity by accommodating information entropy. Furthermore, a cross-modality feature fusion module extracts common low-dimensional latent representations of scMulti-omics data, effectively balancing the diverse characteristics of these data types. RESULTS: Extensive empirical studies demonstrate that scMDCF outperforms existing state-of-the-art scMulti-omics models across various types of scMulti-omics data. In particular, scMDCF exhibits advanced analytical capabilities in extracting cell-type-specific peak-gene associations and cis-regulatory elements from SNARE-seq data, and in elucidating immune regulation from CITE-seq data. In a post-BNT162b2 mRNA SARS-CoV-2 vaccination dataset, scMDCF successfully annotates specific vaccine-induced B cell subpopulations, uncovering dynamic interactions and regulatory mechanisms within the immune system post-vaccination. Most importantly, using Alzheimer's disease-specific data, scMDCF identifies computational minority Microglia and Endothelial cell populations, revealing ELF1 as a putative candidate transcription factor biomarker in Microglia, which potentially influences GTPase activity and may suppresses Alzheimer's pathology. CONCLUSIONS: We propose scMDCF, a contrastive learning based framework for single-cell multi-omics integration that harmonizes cross-modality representations while preserving biological heterogeneity. Applications across diverse scMulti-omics datasets demonstrate improved clustering performance, effective batch-effect mitigation, and mechanistic insights into underlying biological processes. Code and reproducible workflows are openly available.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-025-01586-7",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-025-01586-7",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-01-26",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://link.springer.com/10.1186/s13073-025-01586-7",
+    "ai4s_hits": [
+      "single-cell"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "对比学习",
+      "深度学习",
+      "聚类"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "single-cell",
+      "biomedical imaging",
+      "contrastive learning"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "single-cell",
+          "biomedical imaging"
+        ]
+      },
+      "method_evidence": [
+        "contrastive learning"
+      ]
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01601-5",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "Multi-omics data integration from patients with carotid stenosis illuminates key molecular signatures of atherosclerotic instability",
+    "authors": [
+      "Vivek Das",
+      "Sampath Narayanan",
+      "Xiang Zhang",
+      "Otto Bergman",
+      "Djordje Djordjevic",
+      "Malin Kronqvist",
+      "Melody Chemaly",
+      "Glykeria Karadimou",
+      "Sofija Sundman",
+      "Inika Prasad",
+      "Andrew J. Buckler",
+      "Karin Conde Knape",
+      "Natasha Barascuk Michaelsen",
+      "Ulf Hedin",
+      "Ljubica Matic"
+    ],
+    "author_ids": [],
+    "abstract": "Abstract Background Understanding the pathophysiology of unstable atherosclerosis is imperative to prevent myocardial infarction and stroke. Here, we used multi-omics integration to identify key molecular targets with diagnostic and therapeutic potential. Methods Biobank of Karolinska Endarterectomies encompassing patients with symptomatic (S) and asymptomatic (AS) carotid atherosclerosis was the main resource. Plaques, peripheral blood monocytes and plasma sampled locally from around plaque or periphery of n > 700 individuals, were profiled by transcriptomics, proteomics and metabolomics. A supervised machine learning method DIABLO was used for patient data integration. Multi-omics layers were integrated separately across local and peripheral disease sites, and their intersection, with stratification for symptomatology. Identified analytes were investigated using scRNAseq, clinical and outcome data. Results In peripheral circulation, FABP4, IL6, Bilirubin and Sphingomyelin were the most prominent analytes. F11, ANGPTL3, ICOSLG, ITGB1 and Sphingomyelin were enriched in the local disease site, while FABP4, C1R, IL6, Bilirubin and Sphingomyelin appeared at the intersection. Coagulation, necroptosis, inflammation and cholesterol metabolism were confirmed as key pathways determining symptomatology. Clinical analyses showed an impact of lipid-lowering therapy on ICOSLG expression, anti-hypertensives on plasma FABP4 and BLVRB levels, anti-diabetics on plasma Sphingomyelins, while no medications affected ANGPTL3. Association with future adverse events was shown for plasma Bilirubin, Sphingomyelin, ANGPTL3 and ICOSLG plaque levels. Open-source target analyses suggested genetic involvement of F11, C1S, EGFR, IL6, ANGPTL3 in the disease. Conclusions Using an innovative, multi-modal data integration machine learning framework, this study provides confirmatory and novel information on mechanisms behind atherosclerotic instability. The findings raise possibilities for translational prioritizations to aid personalized medicine.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01601-5",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01601-5",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-02-06",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_hits": [
+      "\\bmolecular\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "机器学习"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学",
+      "AI for 物质科学"
+    ],
+    "ai4s_keywords": [
+      "transcriptomics",
+      "proteomics",
+      "metabolomics",
+      "molecule"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "transcriptomics",
+          "proteomics",
+          "metabolomics"
+        ],
+        "AI for 物质科学": [
+          "molecule"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01604-2",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "TiRank prioritizes phenotypic niches in tumor microenvironment for clinical biomarker discovery",
+    "authors": [
+      "Yuxiang Lin",
+      "Zening Huang",
+      "Ziyan Lin",
+      "Yating Lin",
+      "Jinsheng Song",
+      "Ling Luo",
+      "Jiayao Chi",
+      "Yeyang Zheng",
+      "Youxin Gao",
+      "Junjie Lin",
+      "Xinyu Li",
+      "Chenyu Liang",
+      "Lei Zhang",
+      "Xinkang Wang",
+      "Yuqin Sun",
+      "Rongshan Yu",
+      "Qiyue Chen",
+      "Mengsha Tong"
+    ],
+    "author_ids": [],
+    "abstract": "BACKGROUND: Tumor microenvironment (TME) plays a crucial role in cancer progression, metastasis, and treatment response. Recent advances in single-cell RNA sequencing (scRNA-seq) and spatial transcriptomics (ST) have provided valuable insights into the cellular diversity and spatial organization of the TME. However, prioritizing clinically relevant cellular subpopulations in spatial contexts using high-dimensional and sparse data remains a challenge. METHODS: We introduce TiRank, a novel framework designed to prioritize clinically relevant spatial niches. TiRank incorporates a relative expression ordering (REO)-transformation module to mitigate systematic biases across modalities and utilizes a multitask transfer learning framework to align scRNA-seq, ST, and bulk transcriptomes into a unified embedding space. We benchmarked TiRank using multiple public datasets and pan-cancer clinical cohorts, demonstrating its capability to identify phenotypic cell subpopulations and spatial niches. RESULTS: By integrating scRNA-seq, ST, and bulk transcriptomics with clinical phenotypes, TiRank demonstrates high accuracy in identifying drug-sensitive cells and clinically relevant spatial niches across various cancer types. As a case study, we applied TiRank to gastric cancer (GC) to prioritize spatial niches associated with patient outcomes. In our clinical cohort, TiRank successfully revealed a distinct spatial niche at the tumor boundary, characterized by an enrichment of cancer-associated fibroblasts (CAFs). This niche was associated with the efficacy of different treatment regimens. To validate this finding, we further performed multiplex protein imaging on an independent cohort to confirm the spatial distribution of the CAFs-enriched barrier. Moreover, this barrier, termed Fibro-Bar, was strongly correlated with treatment response to neo-adjuvant chemoimmunotherapy. To improve accessibility, we developed TiRank as an open-source tool with an interactive graphical user interface for both researchers and clinicians. CONCLUSIONS: TiRank offers a phenotype-guided, cross-modal strategy to prioritize clinically relevant spatial niches by coupling an REO-based representation with transfer learning from bulk clinical cohorts. This design enables clinically supervised niche prioritization without requiring large, matched single-cell or spatial clinical cohorts, advancing biomarker discovery and supporting precision oncology.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01604-2",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01604-2",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-02-13",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://link.springer.com/10.1186/s13073-026-01604-2",
+    "ai4s_hits": [
+      "single-cell",
+      "\\bproteins?\\b",
+      "\\brna\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "迁移学习",
+      "生物标志物发现"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "protein",
+      "RNA",
+      "single-cell",
+      "spatial transcriptomics",
+      "transcriptomics",
+      "transfer learning"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "protein",
+          "RNA",
+          "single-cell",
+          "spatial transcriptomics",
+          "transcriptomics"
+        ]
+      },
+      "method_evidence": [
+        "transfer learning"
+      ]
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01636-8",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "Attention-based deep learning for analysis of pathology images and gene expression data in lung squamous premalignant lesions",
+    "authors": [
+      "Lingyi Xu",
+      "Yohana Kefella",
+      "Yichi Zhang",
+      "Regan D. Conrad",
+      "Kelley E. Anderson",
+      "Kostyantyn Krysan",
+      "Gang Liu",
+      "Erin Kane",
+      "Adam Pennycuick",
+      "Daniel T. Merrick",
+      "Sam M. Janes",
+      "Mary E. Reid",
+      "Eric J. Burks",
+      "Ehab Billatos",
+      "Sarah A. Mazzilli",
+      "Vijaya B. Kolachalama",
+      "Jennifer E. Beane"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0002-6699-2132"
+    ],
+    "abstract": "Abstract Background Molecular and cellular alterations to the normal pseudostratified columnar bronchial epithelium results in the development of bronchial premalignant lesions representing a spectrum of histology from normal to hyperplasia, metaplasia, dysplasia (mild, moderate, and severe), carcinoma in situ and invasive carcinoma. Several studies have identified molecular alterations associated with lesion histology and progression. The broad and continuous spectrum of histologic and molecular changes makes reproducible stratification of lesions across multiple studies challenging. Methods We developed a transformer-based framework that flexibly utilizes transcriptomic and histologic patterns to distinguish lesions with bronchial dysplasia or worse from normal, hyperplasia, and metaplasia. We leveraged H&E whole slide images (WSIs) of endobronchial biopsies and bulk gene expression data (GE) derived from endobronchial biopsies and brushings from previously published studies and on-going lung precancer atlas efforts obtained from patients at high-risk for lung cancer. Results On an external testing dataset of WSIs, the model trained on WSIs plus GE achieved an area under the ROC curve (AUROC) of 0.884 ± 0.040 compared to 0.829 ± 0.046 for the model trained on WSIs alone. On external testing datasets of GE, the model trained on WSIs plus GE achieved an AUROC of 0.857 ± 0.033 versus 0.713 ± 0.098 for a model trained on GE alone. Based on these results, we leveraged data across 4 studies to train a flexible fusion model that allows one or both data modalities (WSIs and GE) to be used in training. The model achieved an AUROC of 0.906 ± 0.034 on external testing WSIs data and 0.870 ± 0.023 on external testing GE data. Despite model training on a binary label, model probabilities were associated with histologic grade and the model identified gene expression alterations associated with bronchial dysplasia across multiple studies. Conclusions Our multimodal transformer outperformed models trained on a single data modality and enabled the inclusion of samples with one or both modalities during training and/or testing. It increases the flexibility, scalability, and real-world applicability of disease severity assessment that better risk stratifies bronchial premalignant lesions even when only routine histology data is accessible.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01636-8",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01636-8",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-04-08",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_hits": [
+      "\\bmolecular\\b",
+      "gene expression"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "Transformer 架构",
+      "深度学习"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学",
+      "AI for 物质科学"
+    ],
+    "ai4s_keywords": [
+      "gene expression",
+      "biomedical imaging",
+      "transcriptomics",
+      "molecule",
+      "transformer"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "gene expression",
+          "biomedical imaging",
+          "transcriptomics"
+        ],
+        "AI for 物质科学": [
+          "molecule"
+        ]
+      },
+      "method_evidence": [
+        "transformer"
+      ]
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01645-7",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "SpaPheno: linking spatial transcriptomics to clinical phenotypes with interpretable machine learning",
+    "authors": [
+      "Bin Duan",
+      "Xiaojie Cheng",
+      "Hua Zou"
+    ],
+    "author_ids": [],
+    "abstract": "Abstract Linking spatial transcriptomic data to clinically relevant phenotypes is essential for advancing spatially informed precision oncology. Here, we present SpaPheno, an interpretable machine learning framework that integrates spatial transcriptomics with clinically annotated bulk RNA-seq to identify spatially resolved biomarkers predictive of patient outcomes, including survival, tumor stage, and immunotherapy response. SpaPheno provides multi-scale interpretability from tissue regions to cell types and individual spatial spots, enabling clear biological insights from complex spatial data. We validate SpaPheno through extensive simulations and applications to multiple cancer cohorts—primary liver cancer, clear cell renal cell carcinoma, breast cancer, and melanoma—demonstrating robust predictive performance alongside biologically meaningful spatial patterns. SpaPheno offers a generalizable strategy to translate spatial omics data into clinically actionable knowledge, facilitating precision oncology informed by tumor spatial architecture. SpaPheno is available at https://github.com/Duan-Lab1/SpaPheno .",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01645-7",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01645-7",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-04-13",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_hits": [
+      "\\brna\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "机器学习"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "RNA",
+      "spatial transcriptomics",
+      "transcriptomics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "RNA",
+          "spatial transcriptomics",
+          "transcriptomics"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01648-4",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "Single-cell omics data-driven decoding of tumor clonal evolution through reinforcement learning",
+    "authors": [
+      "Qiushun He",
+      "Zhilong Zhang",
+      "Yuanmei Wang",
+      "Xinghao Du",
+      "Chenxi Xie",
+      "Yueyuxiao Yang",
+      "Huanming Yang",
+      "Yang Yu",
+      "Meng Yang"
+    ],
+    "author_ids": [],
+    "abstract": "BACKGROUND: Tumor evolution is driven by substantial cellular heterogeneity, yet its reconstruction remains challenging with conventional bulk sequencing approaches. Single-cell transcriptomic data provide opportunities to study clonal diversity and evolutionary dynamics, but accurate inference of clonal structure and lineage relationships from these data remains difficult. METHODS: We developed single-cell reinforcement learning (RL) for evolution modeling (scRevol), an RL-based model for inferring tumor evolution from single-cell RNA sequencing (scRNA-seq) data. Using copy number variation (CNV) profiles inferred from scRNA-seq data, scRevol employs a label assignment learning strategy to generate informative embeddings, identify clonal populations, and reconstruct evolutionary trajectories. We evaluated scRevol using simulated datasets, lineage tracing data, and ovarian cancer scRNA-seq datasets. RESULTS: In simulated datasets, scRevol showed robust intra-cluster coherence and accurately recovered lineage topology across varying levels of clonal complexity and noise. Compared with clustering baselines and existing methods for single-cell tumor evolution analysis, tscRevol achieved strong agreement with ground truth. In lineage tracing data, scRevol identified clonal groups associated with metastatic potential and revealed substantial metastatic heterogeneity. In ovarian cancer datasets, scRevol resolved subclonal structures across primary and metastatic lesions and associated inferred clones with distinct transcriptional and pathway-level features. CONCLUSIONS: These results support scRevol as a practical framework for reconstructing tumor evolution from single-cell transcriptomic data and for characterizing clonal architecture and subclonal diversity.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01648-4",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01648-4",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-04-18",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://link.springer.com/10.1186/s13073-026-01648-4",
+    "ai4s_hits": [
+      "single-cell",
+      "\\brna\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "强化学习",
+      "聚类"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "RNA",
+      "single-cell",
+      "transcriptomics",
+      "reinforcement learning"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "RNA",
+          "single-cell",
+          "transcriptomics"
+        ]
+      },
+      "method_evidence": [
+        "reinforcement learning"
+      ]
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01657-3",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "DposFinder: an interpretable transformer model for predicting phage-derived polysaccharide depolymerases and their host capsular serotypes",
+    "authors": [
+      "Yanxiang Shen",
+      "Heyuan Lun",
+      "Yumeng Zhang",
+      "Zhikang Wang",
+      "Cui Tai",
+      "Xiaohua Chen",
+      "Jiangning Song",
+      "Ping He",
+      "Hong-Yu Ou"
+    ],
+    "author_ids": [],
+    "abstract": "BACKGROUND: Polysaccharide depolymerases derived from phages play a pivotal role in the degradation of bacterial surface polysaccharides, offering a promising strategy to address antibiotic-resistant bacterial strains. However, the identification of these enzymes along with their associated host capsular serotypes poses significant challenges. This study introduces DposFinder, a transformer-based deep learning framework designed to predict depolymerases alongside their host capsular serotypes, thereby facilitating large-scale discovery and application of these enzymes. METHODS: We developed DposFinder as an interpretable model based on transformer architecture, utilizing the pre-trained protein language model ESM-2. The model’s attention mechanism was harnessed to pinpoint β-helix domains of depolymerases and predict their corresponding host capsular serotypes. DposFinder’s performance was evaluated through extensive benchmarking and experimental validation involving sequenced phages of Klebsiella pneumoniae. RESULTS: DposFinder achieved state-of-the-art performance, with an area under the ROC curve (AUC) of 0.991 on an independent test dataset, outperforming existing depolymerase prediction tools. Experimental validation confirmed the predictions of six novel depolymerases, which exhibited less than 50% sequence identity with known depolymerases. Furthermore, DposFinder successfully predicted the host capsular serotypes for the identified depolymerases. The utility of the model was further demonstrated through improved plasmid electroporation efficiency in hypermucoviscous K. pneumoniae isolates and the facilitation of host-serotype-labeled phage library construction. A publicly accessible database was also established, containing over 100,000 putative depolymerases derived from more than 440,000 phage genomic sequences. CONCLUSIONS: DposFinder is a novel framework capable of predicting both depolymerases and their associated host capsular serotypes. Its interpretative capabilities and scalability render it a powerful tool for expediting the discovery and application of phage-derived depolymerases in biomedical research and phage therapy.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01657-3",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01657-3",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-04-20",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://link.springer.com/10.1186/s13073-026-01657-3",
+    "ai4s_hits": [
+      "protein language",
+      "\\bproteins?\\b",
+      "\\bgenomics?\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "Transformer 架构",
+      "注意力机制",
+      "深度学习",
+      "语言模型"
+    ],
+    "ai4s_tags": [
+      "科学基础模型",
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "pretrained model",
+      "protein language model",
+      "protein",
+      "genomics",
+      "transformer",
+      "pretraining"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "科学基础模型": [
+          "pretrained model",
+          "protein language model"
+        ],
+        "AI for 生命科学": [
+          "protein",
+          "genomics"
+        ]
+      },
+      "method_evidence": [
+        "transformer",
+        "pretraining"
+      ]
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01646-6",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "Strain-level microbial signatures and inferred functional alterations in infants with food protein-induced allergic proctocolitis",
+    "authors": [
+      "Chen Goldstein",
+      "Itamar Lavy",
+      "Timothy Sun",
+      "Dena Ennis",
+      "Wayne G. Shreffler",
+      "Qian Yuan",
+      "Yamini V. Virkud",
+      "Victoria M. Martin",
+      "Moran Yassour"
+    ],
+    "author_ids": [],
+    "abstract": "BACKGROUND: The complex relationship between the gut microbiome and immune system development during infancy is considered a key factor in the rising rates of pediatric allergic diseases. Food protein-induced allergic proctocolitis (AP), the earliest identified form of non-IgE-mediated food allergy in infants, occurs at the mucosal surface where dietary proteins, intestinal microbes, and immune cells directly interact, and increases the risk for life threatening IgE-mediated food allergy, making it an important model for understanding early food allergic disease development. The question of how specific microbial compositions and functional pathways contribute to AP development and progression remains poorly understood. METHODS: We performed metagenomic sequencing on 740 longitudinal stool samples from 163 infants (84 with AP, 79 without AP) enrolled in the prospective GMAP cohort. Taxonomic profiling, functional pathway analysis, strain-level characterization, and machine learning-based classification were applied to identify microbial differences across disease stages. RESULTS: Here we show that infants with AP exhibit different microbial compositions, characterized by enrichment of Escherichia coli and Bifidobacterium bifidum during early life, including pre-symptomatic stages, while species like Bifidobacterium breve and Klebsiella species are more abundant in infants without AP. These findings suggest the presence of microbial signatures that may be detectable before clinical symptoms emerge, and demonstrate that strain-level differences within E. coli populations may represent AP-associated lineages with distinct gene content profiles that were not previously recognized. For example, biofilm formation and cell adhesion genes in E. coli were particularly enriched in AP-associated clades. Short chain fatty acid (SCFA) and other functional pathways were also associated with AP, including reduced SCFA production during the symptomatic phase, and then a potentially compensatory increased production following AP resolution. CONCLUSIONS: Our results provide the first comprehensive strain-level characterization of the gut microbiome in AP, and functional implications, and generate new hypotheses to be tested regarding candidate microbial features associated with AP for future biomarker discovery and/or intervention targets. This work advances our understanding of how specific microbial taxa and functional pathways may contribute to non-IgE-mediated food allergies and opens new avenues for microbiome-targeted therapeutic approaches as well as novel prevention targets for IgE-mediated food allergies.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01646-6",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01646-6",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-04-20",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://link.springer.com/10.1186/s13073-026-01646-6",
+    "ai4s_hits": [
+      "\\bproteins?\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "生物标志物发现",
+      "机器学习"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "protein",
+      "microbiome"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "protein",
+          "microbiome"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01650-w",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "DNA methylation biomarkers-based pan-cancer classifier: predictive modeling for cancer classification",
+    "authors": [
+      "Jan Bińkowski",
+      "Tomasz K. Wojdacz"
+    ],
+    "author_ids": [],
+    "abstract": "BACKGROUND: Machine-learning (ML) driven molecular diagnostics based on omics data has a potential to revolutionize personalized medicine. However, implementation of ML into diagnostic protocols is hindered by methodological challenges which often lead to inflated performance assessment of models during development followed by poor performance of these models in implementation phase. Here, we aimed to develop and validate a pan-cancer classification framework based on DNA methylation data, that addresses methodological challenges of omics data powered ML. METHODS: We curated a primary dataset of DNA methylation profiles for 10756 samples, that included 54 healthy and cancer tissue types and validation dataset comprising data for 2306 samples from 28 independent studies. The classification framework was build using custom biomarkers selection strategy based on effect size metric that considers variance and class imbalance. The ML models were trained, tuned and evaluated using nested cross-validation approach. Local outlier factor algorithm was built into the inference pipelines to identify and filter samples displaying technical or biological anomalies. Additionally, for methodological validation of our framework we used methylation profiles for 3905 central nervous system (CNS) tumors. RESULTS: We found that relatively simple ML models outperformed complex algorithms such as deep neural network. A logistic regression classifier achieved a balanced accuracy (BACC) of 0.90 to classify 54 cancer and healthy tissue types using methylation levels at 1208 CpG sites. Similarly, our CNS tumor classifier also based on logistic regression algorithm reached a BACC of 0.94 across 59 CNS tumor subtypes. The anomaly filtering improved performance across all categories of samples tested. CONCLUSIONS: Our study demonstrates that DNA methylation profiling, when combined with carefully controlled ML practices allows for development of robust solutions that might substantially increase the efficacy of oncological diagnosis. Finally, we deployed our inference pipelines for public access via secure web platform - https://opp.pum.edu.pl/ .",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01650-w",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01650-w",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-05-19",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://link.springer.com/10.1186/s13073-026-01650-w",
+    "ai4s_hits": [
+      "\\bmolecular\\b",
+      "\\bdna\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "神经网络",
+      "逻辑回归"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学",
+      "AI for 物质科学"
+    ],
+    "ai4s_keywords": [
+      "DNA",
+      "epigenomics",
+      "molecule"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "DNA",
+          "epigenomics"
+        ],
+        "AI for 物质科学": [
+          "molecule"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01661-7",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "From text to translation: using language models to prioritize variants for clinical review",
+    "authors": [
+      "Weijiang Li",
+      "Xiaomin Li",
+      "Ethan Lavallee",
+      "Alice Saparov",
+      "Marinka Zitnik",
+      "Christopher Cassa"
+    ],
+    "author_ids": [],
+    "abstract": "BACKGROUND: Despite rapid advances in genomic sequencing, most rare coding variants remain insufficiently characterized for clinical use, limiting the potential of personalized medicine. When classifying whether a variant is pathogenic, clinical labs adhere to diagnostic guidelines that integrate many forms of evidence, including case data, computational predictions, and functional screening data. While a great deal of clinical evidence has been curated for many variants, the majority still cannot be definitively classified as 'pathogenic' or 'benign', and thus persist as 'Variants of Uncertain Significance' (VUS). Variant Curation Expert Panels (VCEPs) are tasked with analyzing the available evidence for each variant to reach a classification. METHODS: To make use of previously curated evidence, we processed over 2.3 million free-text variant summaries from ClinVar, employing sentence-level classification to restrict to sentences that contain different forms of evidence, and removing uninformative or similar summaries. We then used labeled text summaries to train ClinVar-BERT, a model that can discern evidence of pathogenicity or benignity within variant text summaries. RESULTS: We validated ClinVar-BERT model predictions for variant summaries that are classified as uncertain using variants curated by expert panels, orthogonal functional screening data, and computational predictions. ClinVar-BERT model predictions of VUS had significantly different estimates of functional impact in clinically actionable genes, including BRCA1 (p = [Formula: see text]), TP53 (p = [Formula: see text]), and PTEN (p = [Formula: see text]) with an AUROC = 0.927 when classifying whether variants are damaging or are expected to retain function. Similarly, ClinVar-BERT model predictions of VUS had significantly different AlphaMissense computational scores: BRCA1 (p = [Formula: see text]), TP53 (p = [Formula: see text]), and PTEN (p = [Formula: see text]). In genes screened for secondary findings or included on ClinGen expert panels, ClinVar-BERT prioritizes 7,644 variants for expert review, where 2 or more clinical summaries related to the same VUS were model-predicted to contain pathogenic evidence, and 7,042 variants with 2 or more summaries predicted to contain benign evidence. This would result in the average VCEP having 143 variants prioritized for review, ranging from 8 to 907 variants across VCEPs. CONCLUSIONS: These findings suggest that ClinVar-BERT can discern evidence from diagnostic reports, useful for prioritizing variants for re-assessment by expert curation panels.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01661-7",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01661-7",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-05-19",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://link.springer.com/10.1186/s13073-026-01661-7",
+    "ai4s_hits": [
+      "\\bgenomics?\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "genomics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "genomics"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01682-2",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "High-fidelity genome and prime editing enabled by the AI-designed openCRISPR-1",
+    "authors": [
+      "Hye-Yeon Hwang",
+      "Hwalin Yi",
+      "Yuju Gwon",
+      "Eunju Jeon",
+      "Daesik Kim"
+    ],
+    "author_ids": [],
+    "abstract": "RNA-guided nucleases such as CRISPR-Cas9 systems have revolutionized genome engineering by enabling programmable DNA modifications. Although structure-guided and evolution-derived high-fidelity Cas9 variants improve target specificity, they often compromise on-target activity or constrain guide RNA (gRNA) design. We performed head-to-head comparisons of OpenCRISPR-1 and Cas9 in human cells using amplicon sequencing, multiplex Digenome-seq, and off-target validation by targeted sequencing. Editing activity was assessed across 28 endogenous loci in HEK293T cells and further evaluated in human induced pluripotent stem cells (iPSCs) and MRC-5 fibroblasts. To test clinically relevant delivery, Cas9 and OpenCRISPR-1 ribonucleoproteins were delivered using engineered virus-like particles (eVLPs). We also generated OpenCRISPR-based prime editors, OpenCRISPR-PE2 and OpenCRISPR-PE7, and compared them with PE2max and PE7 using pegRNAs and engineered epegRNAs. Here, we show that OpenCRISPR-1, an AI-designed, Cas9-like nuclease, retains Cas9-level editing efficiency across multiple genomic loci while significantly reducing off-target mutations. Using multiplex Digenome-seq and targeted deep sequencing, OpenCRISPR-1 exhibits up to a 553-fold reduction in off-target mutations compared to Cas9 and achieves off-target indices that match or surpass those of high-fidelity Cas9 variants. OpenCRISPR-1 also sustains robust editing across diverse gRNA formats (GX 19 , gX 19 , and gX 20 ), highlighting its enhanced versatility. Furthermore, converting OpenCRISPR-1 into a prime editor yields comparable editing efficiencies while lowering the relative specificity ratio by up to 97%. These findings establish generative AI-guided protein design as a powerful strategy to overcome the specificity-efficiency trade-off, expanding the genome editing toolkit for both research and therapeutic use, and ushering in a new era of rational protein design.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01682-2",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01682-2",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-05-26",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://link.springer.com/10.1186/s13073-026-01682-2",
+    "ai4s_hits": [
+      "\\bproteins?\\b",
+      "\\bgenomics?\\b",
+      "\\bdna\\b",
+      "\\brna\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "蛋白质设计"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "protein",
+      "genomics",
+      "DNA",
+      "RNA",
+      "protein design",
+      "CRISPR design"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "protein",
+          "genomics",
+          "DNA",
+          "RNA",
+          "protein design",
+          "CRISPR design"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01683-1",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "MGCL-ST: multi-view graph contrastive learning for spatial transcriptomics imputation",
+    "authors": [
+      "Jiazhou Chen",
+      "Weitian Huang",
+      "Xiaojia Chen",
+      "Siqi Ding",
+      "Yi Liao",
+      "Shangyan Cai",
+      "Hongmin Cai"
+    ],
+    "author_ids": [],
+    "abstract": "High-resolution, continuous spatial gene expression profiling is critical for dissecting complex tissue microenvironments, yet current spatial transcriptomics (ST) platforms suffer from spatial gaps and insufficient resolution. Here, we present MGCL-ST, a multi-view graph contrastive learning method for super-resolution ST imputation. By jointly modeling local and global spatial graphs with histological features derived from a pathology foundation model, MGCL-ST accurately imputes unmeasured gene expression across the tissue space. Evaluated across three diverse platforms, MGCL-ST outperforms state-of-the-art methods in imputation accuracy and spatial clustering, significantly enhancing biological interpretability and enabling the precise mapping of tumor microenvironments. MGCL-ST is available at https://github.com/guxin2002/MGCL-ST .",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01683-1",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01683-1",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-06-04",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://link.springer.com/10.1186/s13073-026-01683-1",
+    "ai4s_hits": [
+      "gene expression"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "对比学习",
+      "聚类"
+    ],
+    "ai4s_tags": [
+      "科学基础模型",
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "foundation model",
+      "gene expression",
+      "biomedical imaging",
+      "spatial transcriptomics",
+      "transcriptomics",
+      "contrastive learning"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "科学基础模型": [
+          "foundation model"
+        ],
+        "AI for 生命科学": [
+          "gene expression",
+          "biomedical imaging",
+          "spatial transcriptomics",
+          "transcriptomics"
+        ]
+      },
+      "method_evidence": [
+        "contrastive learning"
+      ]
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01697-9",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "Circulating DNA reveals nucleosome occupancy patterns that are associated with nucleosome-DNA affinity and are affected in cancer",
+    "authors": [
+      "Marianne Richaud",
+      "Ekaterina Pisareva",
+      "Paul Burgat",
+      "Alain R. Thierry",
+      "Jacques Colinge"
+    ],
+    "author_ids": [],
+    "abstract": "BACKGROUND: The study of cell-free circulating DNA (cirDNA) fragments (fragmentomics) from liquid biopsies has received increasing attention to detect biomarkers. CirDNA found in blood plasma originates from cells in diverse tissues with a predominance for hematopoietic cells. CirDNA fragments are associated with nucleosomes which protect them against DNAse degradation. METHODS: The genomic positions of CirDNA fragments originating from different cohorts of healthy individual and cancer patients were obtained from the public database FinaleDB. Various bioinformatic and statistical analyses were conducted on these fragments. RESULTS: By mapping a large ensemble of well-positioned nucleosomes (WPNs), we found that nucleosome occupancy was associated with histone-DNA affinity, as evidenced by codon usage bias and differences in cirDNA fragment sizes. Moreover, nucleosome occupancy was different in healthy and cancer samples, thus allowing developing a high-performance machine learning approach for cancer detection (specificity and sensitivity > 0.95 for seven cancer types). Cancer influenced nucleosome occupancy in a global manner, although distinct cancer types retained specific features. WPN occupancy at transcription factor binding sites revealed shared, pan-cancer regulation of transcriptional programs involved in hematopoietic cell differentiation and neutrophil biology, the main cirDNA sources. CONCLUSIONS: This work provides new fundamental insights into cirDNA and DNA sequence using cirDNA as a physical readout. It also bares translational significance by disclosing a new high-performance strategy for cancer detection from liquid biopsies.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01697-9",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01697-9",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-06-13",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://link.springer.com/10.1186/s13073-026-01697-9",
+    "ai4s_hits": [
+      "\\bgenomics?\\b",
+      "\\bdna\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "机器学习"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "genomics",
+      "DNA"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "genomics",
+          "DNA"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01675-1",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "VariantMedium: sensitive and generalizable somatic point mutation calling with 3D DenseNets trained and evaluated on experimental data",
+    "authors": [
+      "Özlem Muslu",
+      "Thomas Bukur",
+      "Pablo Riesgo-Ferreiro",
+      "Sameesh Kher",
+      "Shaya Akbarinejad",
+      "Luis Kress",
+      "Stefania Gangi Maurici",
+      "Muhammad Nabeel Asim",
+      "Alina Henrich",
+      "Sheraz Ahmed",
+      "Andreas Dengel",
+      "Martin Löwer",
+      "Jonas Ibn-Salem",
+      "Ugur Sahin"
+    ],
+    "author_ids": [],
+    "abstract": "Abstract Background Accurately identifying somatic variants from genomic sequencing is crucial for understanding and treating cancer. Previously, methods based on statistics and heuristics, as well as methods based on machine learning were proposed for somatic single nucleotide variant (SNV) calling from matched tumor-normal data, but they suffer from low sensitivity especially in certain genomic regions. Methods Here we present VariantMedium, a somatic variant caller that combines a tree-based classifier with a 3D densely connected convolutional network (DenseNet) architecture. We trained and evaluated our model on experimentally confirmed variant data and improved it with an active learning strategy by experimentally confirming the predicted variants via targeted deep sequencing experiments. Overall, we used 336,839 variants from 2,956 samples with whole exome or genome sequencing for training and validation, and 118,887 variants from two independent studies with deep sequencing data for evaluation and benchmarking. Results VariantMedium shows highest sensitivity amongst benchmarked callers and achieves similar or better F1 scores in SNV calling. Its performance is particularly pronounced on genomic regions characterized by high sequencing error rates, achieving higher F1 scores than Mutect2 and Strelka2. Conclusions Our results demonstrate the strength of combining machine learning with high-quality experimental confirmation, enabling accurate somatic mutation detection even in low-mappability regions. We provide VariantMedium ( https://github.com/TRON-Bioinformatics/VariantMedium ) as an end-to-end pipeline to advance somatic mutation calling for precision medicine.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01675-1",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01675-1",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-06-19",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_hits": [
+      "\\bgenomics?\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "主动学习",
+      "机器学习"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "genomics",
+      "active learning"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "genomics"
+        ]
+      },
+      "method_evidence": [
+        "active learning"
+      ]
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01694-y",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "Tumor-naïve ctDNA detection with deep learning-enhanced error suppression for sensitive mutation calling",
+    "authors": [
+      "Shaya Akbarinejad",
+      "Sarah Doppler",
+      "Jos de Graaf",
+      "Jelena Pistolic-Kraft",
+      "Valesca Bukur",
+      "Christian Albrecht",
+      "Nathalie Buchholz",
+      "Simge Özenoglu",
+      "Ugur Sahin",
+      "Jonas Ibn-Salem",
+      "David Weber"
+    ],
+    "author_ids": [],
+    "abstract": "Abstract Background Circulating tumor DNA (ctDNA) detection offers minimally invasive monitoring of cancer from blood samples. While tumor-informed approaches are sensitive, their clinical application is limited by cost, tissue availability, and turnaround time. In contrast, tumor-naïve assays offer faster turnaround times and broader applicability, but often sacrifice sensitivity. Methods Here, we developed DEEPctMUT, a computational pipeline for tumor-naïve ctDNA detection that integrates unique molecular identifiers (UMIs) with three complementary error-polishing strategies: (1) machine learning-based sequencing error suppression, (2) deep learning-based background noise filtering (DeepES), and (3) removal of clonal hematopoietic and germline variants using patient matched PBMC. We designed an efficient sequencing panel and developed and validated DEEPctMUT using cell lines, spike-in samples, healthy, and CRC plasma samples. Results DEEPctMUT accurately detected mutations down to 0.03% variant allele frequency (VAF), outperforming other tumor-naïve methods. In a head-to-head comparison, our pipeline identified pre-surgical CRC cases with 100% sensitivity, whereas the Roche Avenio Surveillance Kit achieved only 50% sensitivity. Furthermore, a panel-independent version of DEEPctMUT could improve the performance of Roche Avenio data without additional assay-specific training. We provide an extensive ground-truth dataset and make DEEPctMUT, including all trained models, available as an easy-to-use Nextflow pipeline. Conclusions By using advanced computational error-polishing techniques, DEEPctMUT can substantially reduce technical artifacts, allowing our tumor-naïve method to achieve a sensitivity comparable to tumor-informed approaches.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01694-y",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01694-y",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-06-23",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_hits": [
+      "\\bmolecular\\b",
+      "\\bdna\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "机器学习",
+      "深度学习"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学",
+      "AI for 物质科学"
+    ],
+    "ai4s_keywords": [
+      "DNA",
+      "molecule"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "DNA"
+        ],
+        "AI for 物质科学": [
+          "molecule"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01701-2",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "RankVar: machine learning-based variant ranking and reinterpretation for rare genetic diseases",
+    "authors": [
+      "Yuan Zhang",
+      "Mian Umair Ahsan",
+      "Peng Wang",
+      "Xiaoqi Lin",
+      "Ian M. Campbell",
+      "Cong Liu",
+      "Wendy K. Chung",
+      "Chunhua Weng",
+      "Kai Wang"
+    ],
+    "author_ids": [],
+    "abstract": "BACKGROUND: Prior biological knowledge and phenotype information can help identify disease genes from whole genome/exome sequencing studies, but how best to incorporate external knowledge with variant data remains challenging. We developed a machine learning algorithm called RankVar to prioritize causative variants for rare diseases, based on clinical notes and genome/exome sequencing profiles. METHODS: RankVar uses a random forest classifier trained on ~ 1 million variants from the 1000 Genomes Project with spiked-in pathogenic variants. For testing, we compiled sequencing data and phenotype information from several independent datasets: 260 subjects from the Children's Hospital of Philadelphia (CHOP) with positive genetic diagnosis of various Mendelian diseases, 135 subjects from Birth Defects Biorepository (BDB), as well as 356 and 97 subjects with candidate causal variants for autism spectrum disorders from the Simons Simplex Collection (SSC) and the Simons Foundation Powering Autism Research for Knowledge (SPARK), respectively. RESULTS: RankVar achieves a top 10 variant accuracy of 90.0%, 81.5%, 46.1%, and 76.3% for CHOP, BDB, SSC, and SPARK, respectively, with improved performance over existing approaches. Notably, RankVar successfully identified X-linked and Y-linked disease-causal variants, such as KDM6A (p.N915Kfs5*) and SRY (p.W98X), as the top candidate variants. Moreover, we evaluated RankVar for genomic reinterpretation of 130 unsolved CHOP cases with hearing loss and successfully identified 61 candidate causal variants after manual review. CONCLUSIONS: In summary, RankVar performed favorably relative to existing methods in our evaluation, accommodated different genetic models and X/Y chromosome variants, and may provide a useful framework for prioritizing variants in monogenic or oligogenic diseases. We anticipate that RankVar may aid in primary genetic diagnosis, genome reinterpretation of previously unsolved cases, and the discovery of novel disease genes.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01701-2",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01701-2",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-07-04",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://link.springer.com/10.1186/s13073-026-01701-2",
+    "ai4s_hits": [
+      "\\bgenomics?\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "随机森林",
+      "机器学习"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "genomics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "genomics"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01722-x",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "Multi-threshold polygenic risk improves hippocampal-based cognitive decline prediction",
+    "authors": [
+      "Mohammed Janahi",
+      "Luigi Lorenzini",
+      "Neil P. Oxtoby",
+      "Frederik Barkhof",
+      "Younes Mokrab",
+      "Jonathan M. Schott",
+      "Andre Altmann",
+      "for the Alzheimer’s Disease Neuroim Initiative"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0001-7442-2298"
+    ],
+    "abstract": "Abstract Background Predicting cognitive decline from brain MRI is a central question in neuroscience. Hippocampal volume (HV) is a key cognitive biomarker, and normative models can be augmented with multimodal information. Here we augment normative models with genetic information and show improvements in cognitive decline prediction across multiple experimental setups. Methods We improve normative models for HV by integrating multi-threshold polygenic scores (PGS) with demographic and imaging data using Gaussian Process Regression (GPR). Models were trained on 23,997 participants from UK Biobank (UKBB) and validated on 3,000 out-of-sample participants from the Alzheimer’s Disease Neuroimaging Initiative (ADNI) and the European Prevention of Alzheimer's Disease (EPAD) cohorts. Results Our genetically-informed models significantly strengthened associations across six experimental designs and 13 key neurocognitive measures, including Mini-Mental State Examination (MMSE), Clinical Dementia Rating (CDR), and Alzheimer’s Disease Assessment Scale (ADAS), while enhancing prediction of future cognitive decline. Conclusions Together, these findings underscore the promise of integrating multi-threshold PGS with neuroimaging-based predictive models to improve prognostication and early intervention strategies for neurodegenerative diseases.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01722-x",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01722-x",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-07-17",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "高斯过程"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学",
+      "AI for 社会科学"
+    ],
+    "ai4s_keywords": [
+      "biomedical imaging",
+      "neuroscience",
+      "demography",
+      "Gaussian process"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "biomedical imaging",
+          "neuroscience"
+        ],
+        "AI for 社会科学": [
+          "demography"
+        ]
+      },
+      "method_evidence": [
+        "Gaussian process"
+      ]
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01733-8",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "clinTALL: machine learning-driven multimodal subtype classification and treatment outcome prediction in pediatric T-ALL",
+    "authors": [
+      "Lukas Stoiber",
+      "Željko Antić",
+      "Stefano Rebellato",
+      "Grazia Fazio",
+      "Annika Rademacher",
+      "Lennart Lenk",
+      "Franco Locatelli",
+      "Adriana Balduzzi",
+      "Gunnar Cario",
+      "Carmelo Rizzari",
+      "Giovanni Cazzaniga",
+      "Jiangyan Yu",
+      "Anke Katharina Bergmann"
+    ],
+    "author_ids": [],
+    "abstract": "Abstract Background Childhood T-lineage acute lymphoblastic leukemia (T-ALL) is an aggressive hematologic malignancy with poor prognosis. Differently from B-cell precursor ALL, T-ALL lacks effective risk stratification strategies. A recent study has integrated whole genome and whole transcriptome data to define 17 distinct molecular subtypes with prognostic significance. However, clinical translation of this knowledge remains challenging due to the complexity of interpreting high-dimensional multi-omics-based data. Methods Here, we present clinTALL, a deep learning based multi-task pipeline for pediatric T-ALL subtype classification and treatment outcome estimation. The model integrates multimodal input data and uses a neural network architecture to generate a shared latent embedding for jointly learned multi-task prediction. The competing risk-based model was used to predict event-specific outcomes. The model was trained on a publicly available multimodal dataset comprising clinical, genomic and transcriptomic features of 1309 pediatric T-ALL samples. Results We observed that the transcriptomic-only model achieved superior single-modality results, with 92.2% accuracy for subtype prediction and a 65.9% concordance index (C-index) for event-free survival (EFS) in a cross-validation setup. Integrating all data modalities maintained high subtype classification accuracy (91.7%) and improved the overall concordance index for EFS estimation to 67.5%. The competing risk-based model enables accurate predictions of induction failure (C-index = 96.0%) and second malignant neoplasm (C-index = 62.1%). We validated molecular subtype predictions on an internal dataset of 120 pediatric T-ALL samples and obtained an accuracy of 81.8%. To facilitate the broad application of multi-omics based subtype prediction and treatment outcome inference, we provide clinTALL as a Docker based application, allowing for user friendly access to the tool. Conclusions Together, our machine learning-based framework allows for automated, accurate subtype classification and treatment outcome inference using multimodal input data, advancing precision risk stratification for pediatric T-ALL. The full source code of clinTALL is available on GitHub ( https://github.com/UKWgenommedizin/clinTALL ).",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01733-8",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01733-8",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-07-22",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_hits": [
+      "\\bmolecular\\b",
+      "\\bgenomics?\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "机器学习",
+      "深度学习",
+      "神经网络"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学",
+      "AI for 物质科学"
+    ],
+    "ai4s_keywords": [
+      "genomics",
+      "transcriptomics",
+      "molecule"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "genomics",
+          "transcriptomics"
+        ],
+        "AI for 物质科学": [
+          "molecule"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01735-6",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "Early and accurate detection of ovarian cancer by profiling cell-free mitochondrial DNA fragmentomics in multi-ethnic population",
+    "authors": [
+      "Xinyan Guo",
+      "Zhiyun Gong",
+      "Ziyi Li",
+      "Tianlei Sun",
+      "Yue Fu",
+      "Huanmin Jiao",
+      "Huanqin Zhang",
+      "Siyuan Wang",
+      "Yue Liu",
+      "Wenying Yang",
+      "Fan Peng",
+      "Zhiyang Xu",
+      "Mengxin Wang",
+      "Tianyi Cheng",
+      "Ke Dong",
+      "Zhaoquan Su",
+      "Xiumin Ma",
+      "Jinliang Xing",
+      "Shujuan Liu",
+      "Renquan Lu",
+      "Yang Liu"
+    ],
+    "author_ids": [
+      "https://orcid.org/0009-0007-3811-6163"
+    ],
+    "abstract": "BACKGROUND: Ovarian cancer (OC) remains highly lethal due to frequent late-stage diagnosis and the challenge of distinguishing malignant from benign adnexal masses (BAM) preoperatively. Reliable non-invasive diagnostic biomarkers remain an unmet clinical need. This multi-center study aimed to evaluate the diagnostic potential of plasma circulating cell-free mitochondrial DNA (ccf-mtDNA) fragmentomics for improving OC management. METHODS: We developed two machine learning models based on ccf-mtDNA features: an OC Detection (OD) model to distinguishing OC from healthy controls (HC), and a Benign vs. Malignant Differential diagnosis (BMD) model to discriminate OC from BAM. RESULTS: The OD model achieved an area under the curve (AUC) of 0.987 in the training cohort and maintained high performance (AUC above 0.979) in internal and external validation cohorts, with 91.67% sensitivity for Stage I OC at 95% specificity. The BMD model demonstrated strong discriminatory power (AUC = 0.982) and generalizability (AUC ranging from 0.961 to 0.980 in four validation cohorts), significantly outperforming serum biomarkers. Remarkably, both models performed robustly in the Chinese minority cohort. CONCLUSIONS: These findings establish ccf-mtDNA fragmentomics as a powerful liquid biopsy approach for the early and accurate detection of OC, with significant potential for clinical translation in high-risk populations and differential diagnosis of benign vs. malignant adnexal masses.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01735-6",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01735-6",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-07-27",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://link.springer.com/article/10.1186/s13073-026-01735-6",
+    "ai4s_hits": [
+      "\\bdna\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "机器学习"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "DNA"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "DNA"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01727-6",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "Transcriptome signatures for the identification of bevacizumab responders in ovarian cancer",
+    "authors": [
+      "Olga Zolotareva",
+      "Karen Legler",
+      "Olga Tsoy",
+      "Anna Esteve",
+      "Alexey Sergushichev",
+      "Vladimir Sukhov",
+      "Jan Baumbach",
+      "Kathrin Eylmann",
+      "Minyue Qi",
+      "Malik Alawi",
+      "Stefan Kommoss",
+      "Barbara Schmalfeldt",
+      "Leticia Oliveira-Ferrer"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0002-9424-8052"
+    ],
+    "abstract": "Abstract Background Bevacizumab is widely used as an anti-angiogenic maintenance therapy in ovarian cancer; however, there are currently no validated clinical criteria to guide patient selection for its use. Methods To satisfy the urgent need for bevacizumab response biomarkers, we created a novel RNA-seq dataset ( n = 244) and applied unsupervised and supervised machine learning to identify expression signatures associated with benefit from adding bevacizumab to standard treatment and validated our findings using a previously published microarray dataset ( n = 377). Additionally, we validated the existence of the discovered signatures using RNA-seq data from the TCGA-OV cohort ( n = 426) and performed public expression data mining to provide a biological interpretation of the prioritized signature. Results Among expression signatures reproducibly detected in independent datasets, one was prioritized as a potential predictive biomarker for bevacizumab benefit. Further stratified analysis revealed that over-expression of this signature was associated with improved overall survival in patients who received bevacizumab in addition to standard chemotherapy in both novel (HR = 0.41, 95% CI: (0.23–0.74), adj. p -value = 0.008) and previously published cohorts (HR = 0.51, 95% CI: (0.34–0.75), adj. p -value = 0.003), while no significant survival benefit from bevacizumab was observed in patients negative for this signature. We hypothesize that this signature may be associated with stemness-like features, possibly driven by CTCFL . In addition, we identified several other signatures reproducible in independent datasets and not related to known molecular subtypes of ovarian cancer, which may also represent biomarker candidates and require further validation in additional RNA-seq data. Conclusions We identified a previously undescribed expression signature with potential predictive value for bevacizumab benefit, and revealed transcriptional heterogeneity of ovarian cancer that extends beyond current molecular classifications. Given the high heterogeneity of ovarian cancer and that the novel signature only partially explains variation in survival outcomes under bevacizumab treatment, larger RNA-seq datasets are required to further improve predictive models.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01727-6",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01727-6",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-08-05",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_hits": [
+      "\\bmolecular\\b",
+      "\\brna\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "机器学习"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学",
+      "AI for 物质科学"
+    ],
+    "ai4s_keywords": [
+      "RNA",
+      "transcriptomics",
+      "molecule"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "RNA",
+          "transcriptomics"
+        ],
+        "AI for 物质科学": [
+          "molecule"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01740-9",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "Challenges and approaches to genetic variants of uncertain significance in clinical practice and research",
+    "authors": [
+      "Qifei Li",
+      "Sarah U. Morton",
+      "Shiyu Luo",
+      "Zornitza Stark",
+      "Pankaj B. Agrawal"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0003-3255-0456"
+    ],
+    "abstract": "Despite advances in sequencing technologies and variant interpretation frameworks, many variants identified in genetic testing, particularly missense variants, remain classified as variants of uncertain significance (VUS), posing ongoing challenges in diagnosis and clinical management. This review explores the ongoing challenges of VUS interpretation in clinical genomics and its impact on patients, clinicians, and healthcare systems. We summarize established strategies that support VUS resolution, including large population reference databases, data-sharing initiatives, computational prediction tools, consensus-based guidelines, deep phenotyping, and functional validation assays. Building on these foundations, we highlight emerging approaches that leverage multi-omics analyses, high-throughput experimental platforms (e.g., saturation genome editing and cell-based morphological assays), and artificial intelligence-driven tools to improve scalability and interpretive accuracy. Together, these complementary approaches aim to reduce uncertainty, increase diagnostic yield, and enhance the clinical utility of genomic testing in both research and precision medicine.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01740-9",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01740-9",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-08-10",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://link.springer.com/10.1186/s13073-026-01740-9",
+    "ai4s_hits": [
+      "\\bgenomics?\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "genomics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "genomics"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01744-5",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "Towards a deep-learning genomic tool for risk stratification and diagnostic support in sporadic ALS",
+    "authors": [
+      "Jiajing Hu",
+      "Oliver Pain",
+      "Ahmad Al Khleifat",
+      "Aleksey Shatunov",
+      "Peter Munch Andersen",
+      "Nazli Ayşe Başak",
+      "Johnathan Cooper-Knock",
+      "Philippe Corcia",
+      "Philippe Couratier",
+      "Mamede de Carvalho",
+      "Vivian Drory",
+      "Marc Gotkine",
+      "John Edward Landers",
+      "Jonathan David Glass",
+      "Russell McLaughlin",
+      "Jesus Santos Mora Pardina",
+      "Karen Elaine Morrison",
+      "Susana Pinto",
+      "Monica Povedano",
+      "Christopher Edward Shaw",
+      "Pamela Jean Shaw",
+      "Vincenzo Silani",
+      "Nicola Ticozzi",
+      "Philip van Damme",
+      "Leonard Hendrik van den Berg",
+      "Patrick Vourc’h",
+      "Markus Weber",
+      "Orla Hardiman",
+      "Jan Herman Veldink",
+      "Project MinE A. L. S. Sequencing Consortium",
+      "Richard James Butler Dobson",
+      "Alexander Schönhuth",
+      "Ammar Al-Chalabi",
+      "Alfredo Iacoangeli"
+    ],
+    "author_ids": [],
+    "abstract": "Abstract Background A variety of common and rare genetic factors have been implicated in the development of amyotrophic lateral sclerosis (ALS), and the evidence is that a genetic component is present in most affected individuals. However, our current understanding of ALS genetics causally explains only a small proportion of sporadic ALS, which accounts for over 90% of all people with ALS. This limits the utility of genetic testing in screening, diagnosis and management to the 15–20% of people with ALS who carry a known pathogenic variant. Capsule Networks (CapsNets) constitute a deep learning method that has demonstrated strong performance in using genotyping data to predict individuals at risk for ALS. However, their use is constrained by a lack of generalised, flexible, and externally validated implementations across comprehensive datasets that account for the technical, biological, and clinical heterogeneity found in real-world disease scenarios. Methods In this study, we build upon this method to address existing limitations using large-scale datasets from over 47,000 individuals from 13 countries, genotyped with nine different genotyping platforms. We developed a new model that is validated across diverse ALS populations, can handle discrepancies between genotyping technologies, and is applicable to individual external samples. Results Our model achieved high precision and sensitivity in distinguishing between individuals with ALS and non-affected controls. Moreover, in simulations of population screening for ALS, its predictive performance under a simulated population screening scenario was comparable to published estimates for screening based on major ALS-causing mutations, such as FUS and C9orf72 . Conclusions Our results demonstrate that this flexible and externally validated method could support genetic risk stratification and, following further prospective clinical validation, future diagnostic support in sporadic ALS. Complementing current genetic testing approaches based on known ALS mutations, it has the potential to extend genetic risk assessment to all individuals, regardless of their family history or the presence of known ALS mutations.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01744-5",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01744-5",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-09-02",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_hits": [
+      "\\bgenomics?\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "深度学习"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "genomics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "genomics"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01686-y",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "Machine learning-based definition of cellular senescence reveals pro-senescence potential implications in lung adenocarcinoma",
+    "authors": [
+      "Lifei Ma",
+      "Huiyang Li",
+      "Yiling Li",
+      "Zhi-Ai Lin",
+      "Jia-Qi Li",
+      "Yu-Zi Zhang",
+      "Peng Zhang",
+      "Zehao Yao",
+      "Jialing Li",
+      "Min Xiong",
+      "Yinghao Cao",
+      "Ruidong Li",
+      "Chen Yang",
+      "Xiaoqiang Tang",
+      "Minjiang Chen",
+      "He-Ping Wang",
+      "Wenjie Zheng",
+      "Jing Yang",
+      "Xiaoyue Wang",
+      "Gong-Hong Wei",
+      "Xiaoman Wang",
+      "Hou-Zao Chen"
+    ],
+    "author_ids": [],
+    "abstract": "Despite growing evidence implicating cellular senescence in tumor progression, methodological challenges in objectively quantifying senescent cell burden across cancer types continue to limit mechanistic studies and clinical translation. To establish a robust quantification framework, we curated a comprehensive compendium of 888 transcriptomic profiles spanning diverse cell types and senescence-inducing conditions. Following rigorous normalization and batch-effect correction, the Boruta algorithm was employed to derive a stable consensus cellular senescence-related gene signature (CSGS). By benchmarking ten machine learning algorithms within a rigorous cross-validation framework, we developed the Predictive Cellular Senescence Model (PreCSenM), which integrates the CSGS to compute a continuous cellular senescence (CS) score as a standardized metric for senescence level. Benchmarking analyses demonstrated that PreCSenM achieves robust and consistent performance, providing more reliable prediction of senescent states than existing methods across both normal and cancer transcriptomic datasets. In lung adenocarcinoma (LUAD), PreCSenM identified the CS score as a robust predictor of clinical outcomes. Multi-omics analyses further revealed that higher CS levels correlate with greater genomic stability and enhanced immune-related features, aligning with clinical observations. Notably, drug discovery using PreCSenM identified histone deacetylase inhibitors (HDACis) as potent inducers of CS in LUAD. Transcriptional and epigenetic profiling of HDACi-treated cells pinpointed FOSB as a core transcription factor driving CS, and FOSB knockdown reduced HDACi-induced senescence. Our study establishes PreCSenM as a multidimensional senescence quantification tool, bridging computational prediction with clinical relevance and mechanistic validation to enable senescence-directed therapies in precision oncology. A user-accessible web portal for PreCSenM is available at http://precsenm.bmicc.org/ .",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01686-y",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01686-y",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-09-08",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://link.springer.com/10.1186/s13073-026-01686-y",
+    "ai4s_hits": [
+      "drug discovery",
+      "\\bgenomics?\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "机器学习"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "genomics",
+      "drug discovery",
+      "transcriptomics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "genomics",
+          "drug discovery",
+          "transcriptomics"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01759-y",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "Systematic prioritisation of context-specific paralog pair vulnerabilities in cancer",
+    "authors": [
+      "Narod Daldal",
+      "Hamda B. Ajmal",
+      "David J. Adams",
+      "Colm J. Ryan"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0003-2750-9854"
+    ],
+    "abstract": "Abstract Background Genome-wide CRISPR screening has enabled the development of dependency maps in hundreds of cancer cell lines, facilitating the identification of genetic vulnerabilities associated with specific biomarkers and supporting precision oncology efforts. However, current dependency maps largely capture single-gene effects and systematically miss vulnerabilities where functional compensation between paralogs masks the underlying dependency. Combinatorial screens have revealed that paralog pairs are often synthetic lethal but that these effects are highly context-dependent across tumour types and genetic backgrounds. To enable the clinical translation of paralog synthetic lethality, it is therefore necessary to identify which paralog pairs constitute actionable vulnerabilities in specific cancer contexts. Methods We developed a machine learning classifier to predict cell-line-specific synthetic lethality between paralog pairs using features derived from transcriptomics, genomics, gene essentiality, and network context. We designed an evaluation framework spanning three biologically relevant scenarios: predicting synthetic lethality for seen paralog pairs in unseen cell lines, for unseen pairs in seen cell lines, and for unseen pairs in unseen cell lines. We applied the model to 33,419 pairs across 1,005 cancer cell lines and validated predictions using independent combinatorial CRISPR screens. Results We found that the cell-line-specific expression and essentiality of paralogs and their interaction partners are informative for predicting synthetic lethal interactions. Our model generalised to unseen paralog pairs and to unseen cell lines, though the combination of both was the most challenging scenario. The agreement between predicted and experimentally observed interactions was comparable to that between independent experimental studies, suggesting that predictive accuracy may be constrained as much by experimental reproducibility as by the model itself. When applied to HER2-amplified breast cancer, the model recovered known synergies and predicted novel biomarker-associated vulnerabilities. Conclusions We present a comprehensive, context-resolved resource of paralog synthetic lethal vulnerabilities across 1,005 cancer cell lines. This resource enables systematic, disease-stratified prioritisation of paralog-pair dependencies. Genome-scale predictions are made available through an interactive web portal ( https://cancergenetics.github.io/paralogmap/ ) to support hypothesis generation, guide targeted combinatorial screening, and facilitate the identification of clinically actionable paralog targets.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01759-y",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01759-y",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-09-12",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_hits": [
+      "\\bgenomics?\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "机器学习"
+    ],
+    "ai4s_tags": [
+      "科学智能体",
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "hypothesis generation",
+      "genomics",
+      "transcriptomics",
+      "CRISPR design"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "科学智能体": [
+          "hypothesis generation"
+        ],
+        "AI for 生命科学": [
+          "genomics",
+          "transcriptomics",
+          "CRISPR design"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01767-y",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "Updated TB-Profiler: enhanced genotypic antimicrobial resistance prediction and relatedness analysis powered by a database of over 171,000 Mycobacterium tuberculosis genomes",
+    "authors": [
+      "Jody E. Phelan",
+      "Waritta Sawaengdee",
+      "Joseph Thorpe",
+      "Naphatcha Thawong",
+      "Pundharika Piboonsiri",
+      "Nina Billows",
+      "Linfeng Wang",
+      "Peter van Heusden",
+      "Conor Meehan",
+      "Claudio U. Köser",
+      "Surakameth Mahasirimongkol",
+      "Susana Campino",
+      "Taane G. Clark"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0001-8985-9265"
+    ],
+    "abstract": "Abstract Background TB-Profiler is a user-friendly bioinformatics tool developed to genotypically profile Mycobacterium tuberculosis from next-generation sequencing data. It provides predictions of drug resistance and assigns sub-lineages to support clinical management of tuberculosis (TB) and public health surveillance. The platform has become widely adopted for genotypic antimicrobial susceptibility prediction, initially covering 16 anti-TB drugs. However, increasing clinical and epidemiological demands have highlighted the need for expanded functionality, including updated resistance mutation libraries, integration of large-scale genomic datasets, and tools to infer genomic relatedness for identifying transmission events and outbreaks. Results TB-Profiler (v6.6.5) has been extended to address these needs. Resistance mutation libraries have been expanded to include 17 anti-TB drugs, including delamanid and pretomanid, incorporating WHO-endorsed interpretation rules and curated loss-of-function mutations. Supported drugs include bedaquiline and clofazimine, cycloserine/terizidone, and para -aminosalicylic acid. A curated and continuously expanding global M. tuberculosis genomic database comprising more than 170,000 isolates from 136 countries and representing all major lineages has been integrated into the platform. This resource enables allele frequency comparisons within a global population context. The database is linked to new analytical functionality for calculating and visualising genomic relatedness between isolates. We demonstrate its utility by identifying potential transmission events among isolates from Uganda. The usefulness of TB-Profiler for both clinical decision-making and surveillance is further enhanced through multilingual reporting capabilities, facilitating broader accessibility and implementation. Conclusions These enhancements to TB-Profiler reflect the evolving needs of genomic research and public health practice. Future developments will leverage the expanding sequencing database to implement AI approaches for refining lineage assignment, drug resistance prediction, and transmission classification, including the identification of previously uncharacterised resistance-associated mutations. Stand-alone and web-based versions of TB-Profiler, along with associated databases, are available at https://tbdr.lshtm.ac.uk .",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01767-y",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01767-y",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-09-14",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_hits": [
+      "\\bgenomics?\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "抗菌药敏预测"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "genomics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "genomics"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01765-0",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "Machine learning identifies microbiome and clinical predictors of sustained weight loss following prolonged fasting",
+    "authors": [
+      "Gelsomina Kaufhold",
+      "Theda U. P. Bartolomaeus",
+      "Kristin Schütte",
+      "Till Schütte",
+      "Sakshi Kamboj",
+      "Ulrike Löber",
+      "Gabriele Rahn",
+      "Victoria McParland",
+      "Lena Braun",
+      "Lajos Markó",
+      "Matanat Mammadli",
+      "Alexander Krannich",
+      "Lina S. Bahr",
+      "Friederike Gutmann",
+      "Friedemann Paul",
+      "Quinten R. Ducarmon",
+      "Georg Zeller",
+      "Robin Mesnage",
+      "Nicola Wilck",
+      "Alma Zernecke",
+      "Peter J. Oefner",
+      "Wolfram Gronwald",
+      "Dominik N. Müller",
+      "Sofia K. Forslund-Startceva",
+      "Sylvia Bähring",
+      "Hendrik Bartolomaeus",
+      "Nadja Siebert"
+    ],
+    "author_ids": [],
+    "abstract": "Abstract Background Prolonged fasting may improve metabolic health, but controlled data in healthy adults with longer follow-up and multi-omics profiling are limited. We investigated the immediate and 12-week follow-up effects of a 5-day fasting intervention on body composition, gut microbiome, and circulating and fecal metabolites, and assessed whether baseline characteristics predict individual weight-loss response. Methods In a randomized, waitlist-controlled trial, 38 healthy adults completed a 5-day fasting intervention with 12-week follow-up (LEANER study). Outcomes included body mass index and body composition, gut microbiome composition, and plasma and fecal metabolites. Changes over time and between groups were evaluated using regression-based models and paired non-parametric tests, as appropriate. Additionally, permutation-based multivariate testing was performed on microbiome and metabolome data. Twelve-week body weight response was predicted using data-driven machine learning with cross-validation, followed by external validation in three independent cohorts undergoing prolonged fasting protocols. Results Fasting reduced body mass index acutely, predominantly driven by loss of fat mass, and these improvements partially persisted at 12 weeks. Fasting induced marked shifts in gut microbiome composition and in plasma and fecal metabolites. Post-fasting and longer-term changes in microbial diversity were associated with baseline microbiome diversity. A model combining baseline microbiome and clinical variables predicted body mass index response at 12 weeks; prominent predictors included an unclassified Faecalibacterium species, Oscillibacter sp. 50_27, low-density lipoprotein cholesterol, and systolic blood pressure. The model generalized to three independent cohorts, including individuals with metabolic syndrome, patients with multiple sclerosis exposed to repeated fasting, and healthy volunteers fasting for 6–12 days. Conclusions In healthy adults, a 5-day prolonged fasting intervention produces robust short-term metabolic changes with partial persistence and consistent remodeling of the gut microbiome and metabolite profiles. Baseline microbiome and clinical characteristics can help stratify expected longer-term responses, supporting the development of individualized fasting-based interventions. Trial registration ClinicalTrials.gov, NCT04452916. Prospectively registered on June 29, 2020.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01765-0",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01765-0",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-09-16",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "机器学习"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "metabolomics",
+      "microbiome"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "metabolomics",
+          "microbiome"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01778-9",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "SCmapST enables single-cell spatial reconstruction by seeded matches-driven integration of single-cell and spatial transcriptomics",
+    "authors": [
+      "Yi Liu",
+      "Pinglu Zhang",
+      "Ximei Luo",
+      "Quan Zou"
+    ],
+    "author_ids": [],
+    "abstract": "Single cell (SC) RNA sequencing and spatial transcriptomics (ST) exhibit complementary limitations: they struggle to balance the cellular granularity inherent in SC data and the spatial coordinate unique to ST data. Here, we present SCmapST, a deep learning framework that leverages a novel seeded matches strategy to map single cells in SC data to spatial locations in ST data. SCmapST surpasses existing methods by consistently and robustly reconstructing global tissue topology while preserving local tissue heterogeneity. SCmapST successfully deciphers spatial co-localization patterns, resolves location-dependent neuronal heterogeneity, and delineates cell-type distributions within both discrete tumor domains and continuous liver zonation.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01778-9",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01778-9",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-09-23",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://link.springer.com/10.1186/s13073-026-01778-9",
+    "ai4s_hits": [
+      "single-cell",
+      "single cell",
+      "\\brna\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "深度学习"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "RNA",
+      "single-cell",
+      "spatial transcriptomics",
+      "transcriptomics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "RNA",
+          "single-cell",
+          "spatial transcriptomics",
+          "transcriptomics"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01781-0",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "DrugSAGE: a transcriptome aggregation approach using cell lines for drug response imputation",
+    "authors": [
+      "Peilin Jia",
+      "Zhongming Zhao"
+    ],
+    "author_ids": [],
+    "abstract": "Abstract Accurate prediction of drug response is critical for optimizing the clinical application of cancer therapies. Nevertheless, owing to genetic and genomic heterogeneity and the complex tumor microenvironment, cancer samples may exhibit heterogeneous responses to the same therapeutic agents, even when harboring identical driver mutations or genes. In this study, we developed DrugSAGE, a novel framework that leverages Graph Neural Networks (GNNs) to model cellular heterogeneity and accurately predict drug response from transcriptomic data. DrugSAGE enhances prediction by aggregating features from a sample and its most similar counterparts. Critically, we introduce a customized linear layer incorporating gene-pathway annotations to provide biological interpretability, facilitating the identification of key pathways driving the prediction. We benchmarked DrugSAGE using TCGA bulk data, six public bulk datasets, and four scRNA-seq datasets. Predictions from DrugSAGE showed significant associations between drugs and their known target genes (e.g., HER2 + inhibitors, MET inhibitors, BRAF inhibitors) or significant differences between patient groups stratified by their treatments (e.g., Erlotinib, PLX4720, 5-Fluorouracil). Furthermore, we show DrugSAGE can effectively predict drug response at the single-cell level. Additionally, by analyzing pathway-based embeddings, we identified pathways crucial to the models, including those involved in cancer, MAPK signaling, endocytosis, and JAK-STAT signaling, among others. Compared to previous methods, DrugSAGE demonstrated superior or comparable performance, offering a novel approach for predicting drug responses.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01781-0",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01781-0",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-09-30",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://link.springer.com/10.1186/s13073-026-01781-0",
+    "ai4s_hits": [
+      "single-cell",
+      "\\bgenomics?\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "genomics",
+      "single-cell",
+      "transcriptomics",
+      "graph neural network"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "genomics",
+          "single-cell",
+          "transcriptomics"
+        ]
+      },
+      "method_evidence": [
+        "graph neural network"
+      ]
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01791-y",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "MOSAIC: Intra-tumoral heterogeneity characterization through large-scale spatial and cell-resolved multi-omics profiling",
+    "authors": [
+      "MOSAIC Consortium",
+      "Alex J. Cornish",
+      "Quentin Bayard",
+      "Andy Karabajakian",
+      "Elo Madissoon",
+      "Ginevra Ferrarini",
+      "Almoatazbellah Youssef",
+      "Cécile Badoual",
+      "Laurence de Leval",
+      "Devin Dressman",
+      "Eric Y. Durand",
+      "Ramona Erber",
+      "Stefan Florian",
+      "Ingrid Garberis",
+      "Carla Haignere",
+      "Krisztian Homicsko",
+      "Ulrich Keilholz",
+      "Adrian V. Lee",
+      "Joseph Lehar",
+      "Vassili Soumelis",
+      "Markus Eckstein",
+      "Raphaël Gottardo",
+      "Markus Morkel",
+      "Caroline Hoffmann"
+    ],
+    "author_ids": [],
+    "abstract": "Abstract Precision oncology remains challenging due to gaps in understanding tumor biology and immunology, as well as the scarcity of consistent data across large cohorts. Here, we introduce MOSAIC (Multi-Omics Spatial Atlas in Cancer), a multi-center clinical Omics study designed to systematically profile thousands of cancer samples, with a focus on spatial and single-cell data across multiple tumor types. MOSAIC exploits recent technological advances to integrate spatial and single-cell data with complementary data modalities, including hematoxylin-eosin histology scans, bulk RNA and exome sequences, to generate comprehensive representations of cancer histology, genomics, and transcriptomics. MOSAIC also collects extensive and curated clinical information to ensure that patients meet the precise inclusion criteria for each cohort. The consortium aims to integrate all data modalities using artificial intelligence and other computational approaches in order to identify clinically-relevant biomarkers and cancer subtypes. This paper outlines the core objectives of MOSAIC, its potential impact, early proofs-of-concept, design, and experimental considerations. Additionally, we introduce the MOSAIC Window initiative, featuring the first released dataset from 60 patients, offering a glimpse into the project’s groundbreaking potential. Using four selected patients, we demonstrate the power of multi-omic approaches to analyze and interpret intra-tumoral variability within and across patients, providing insights on specific drug sensitivity of cancer subpopulations and revealing potential impacts on therapeutic recommendations.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01791-y",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01791-y",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-10-07",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://link.springer.com/10.1186/s13073-026-01791-y",
+    "ai4s_hits": [
+      "single-cell",
+      "\\bgenomics?\\b",
+      "\\brna\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "genomics",
+      "RNA",
+      "single-cell",
+      "transcriptomics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "genomics",
+          "RNA",
+          "single-cell",
+          "transcriptomics"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01783-y",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "MAC-explorer: bridging genome-based taxonomy and an identification tool for the Mycobacterium avium complex",
+    "authors": [
+      "Corentin Poignon",
+      "Mariette Matondo",
+      "Quentin Giai Gianetto",
+      "Thibaut Douché",
+      "Azadeh Saffarian",
+      "Nicolas Veziris",
+      "Alexandra Aubry",
+      "Alexandre Godmer"
+    ],
+    "author_ids": [],
+    "abstract": "The Mycobacterium avium complex (MAC) comprises genetically close nontuberculous mycobacteria responsible for human and animal infections worldwide. Increasing availability of whole-genome sequencing (WGS) data offers new opportunities for genomic surveillance and lineage tracking of these pathogens. However, the taxonomy of the MAC remains unstable, with inconsistent species and subspecies boundaries that hinder reproducible genome-based identification complicating diagnostics and antimicrobial management. Furthermore, a major barrier to the clinical and epidemiological integration of WGS is the current lack of standardized, accessible identification tools capable of translating complex genomic similarity into harmonized taxonomic assignments. We performed a comprehensive in silico analysis of 2,737 MAC genomes using pairwise average nucleotide identity (ANI). Species and subspecies boundaries were statistically modeled at 95% and 98% ANI thresholds. A consensus genome-based framework combining FastANI and dRep clustering was developed. Machine learning classifiers based on k-mer frequency profiles were trained to reproduce genomic delineations. Fifteen species-level clusters were identified, with 99.9% concordance to GTDB-Tk reference classifications. Within M. avium , subsp. avium , subsp. hominissuis , and subsp. silvaticum formed a single genomic continuum, while the IS900-positive M. avium subsp. avium lineage paratuberculosis remained distinct but did not reach subspecies level divergence. Within M. intracellulare , subsp. chimaera showed deep internal structure, supporting recognition of M. intracellulare subsp. yongonense , whereas genomes assigned to M. paraintracellulare clustered within M. intracellulare subsp. intracellulare . Several nominal species ( M. bouchedurhonense , M. timonense ) lacked genomic coherence. The MAC displayed an open pangenome (191,904 gene clusters; 0.8% universal core). Machine learning classifiers trained on k-mer frequency profiles accurately reproduced whole-genome delineations, achieving near-perfect performances (Cohen’s kappa = 0.994). We provide a standardized, genome-based framework for classification of the MAC and implement it in MAC-Explorer (https://mycobacteriaexplorer.fr), an open-access web tool for automated MAC identification. By integrating k-mer -based classification and insertion sequence screening, MAC-Explorer delivers reproducible and harmonized species- and lineage-level assignments, providing a robust foundation for genome-based identification and lineage tracking of MAC isolates.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01783-y",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01783-y",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-10-10",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://link.springer.com/10.1186/s13073-026-01783-y",
+    "ai4s_hits": [
+      "\\bgenomics?\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "机器学习",
+      "聚类"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "genomics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "genomics"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01795-8",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "Senescent cancer-associated fibroblasts secrete Tenascin-C to promote tumor progression in high-grade serous ovarian cancer",
+    "authors": [
+      "Runrong Li",
+      "Yue Chen",
+      "Xizhan Huang",
+      "Jiating Cai",
+      "Yue Yang",
+      "Haiqing Fan",
+      "Yunfei Xiang",
+      "Fanliang Meng",
+      "Liping Huang",
+      "Yan Li",
+      "Yunshan Ning"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0002-3660-0249"
+    ],
+    "abstract": "Cellular senescence is a hallmark of cancer, and senescent cancer-associated fibroblasts (seneCAFs) contribute to tumor progression across multiple malignancies. However, how seneCAFs promote high-grade serous ovarian (HGSOC) remains unclear. We integrated public single-cell RNA sequencing (scRNA-seq), spatial transcriptomic data, and clinical specimens to characterize seneCAFs and define their transcriptomic signature. A prognostic model based on the seneCAFs signature was developed using least absolute shrinkage and selection operator (LASSO)-based machine learning to predict survival outcomes. Cell-cell communication analysis was performed to identify candidate seneCAFs-derived effectors. In vitro and in vivo functional assays were conducted to investigate the pro-tumorigenic role of seneCAFs and the regulatory mechanisms governing the expression of key effector. Furthermore, pan-cancer analysis was carried out to evaluate the prognostic value of the seneCAFs risk model and the candidate effector across multiple cancer types. CAFs in HGSOC exhibited elevated cellular senescence, and the seneCAFs-based risk model predicted poor survival. Among its prognostic genes, Tenascin-C (TNC) emerged as a key seneCAFs-secreted effector that signals to tumor cells. Functional assays confirmed that seneCAFs-derived TNC promoted HGSOC progression. Mechanistically, TNC activated SDC4-ERK signaling in tumor cells to induce epithelial-mesenchymal transition (EMT), while NF-κB activation in seneCAFs transcriptionally upregulated TNC expression. Pan-cancer analysis linked high seneCAFs risk score and TNC expression to worse overall survival. The seneCAFs transcriptomic signature and its risk model stratify HGSOC patients and predict worse clinical outcomes. Our study offers a novel insight about seneCAFs promote tumor progression and identifies TNC as a potential therapeutic target for HGSOC and other solid tumors.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01795-8",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01795-8",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-10-11",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://link.springer.com/10.1186/s13073-026-01795-8",
+    "ai4s_hits": [
+      "single-cell",
+      "\\brna\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "机器学习"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "RNA",
+      "single-cell",
+      "spatial transcriptomics",
+      "transcriptomics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "RNA",
+          "single-cell",
+          "spatial transcriptomics",
+          "transcriptomics"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01810-y",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "Individuals with autism-associated intellectual disability have an increased burden of de novo variants in cis-regulatory elements of glutamatergic neurons",
+    "authors": [
+      "Eric A. Sosa",
+      "Dónal O’Shea",
+      "Samuel Rosean",
+      "Caroline Yoon",
+      "Jacob Stauber",
+      "Pablo E. Castillo",
+      "Cathal Seoighe",
+      "Melissa J. Fazzari",
+      "John M. Greally"
+    ],
+    "author_ids": [],
+    "abstract": "ABSTRACT To understand the role of non-coding sequence variation in neurodevelopmental disorders, we studied 709,222 de novo variants (DNVs) using the genomes of 20,366 individuals. We found enrichment of DNVs at cis -regulatory elements (CREs) of all somatic cell types, attributable to the deamination of 5-methylcytosine at CG dinucleotide-dense CREs. In neurodivergent individuals with or without intellectual disability (ID), the DNVs were enriched at genes implicated in autism/ID at promoter-proximal CREs of brain cell types specifically. As the properties of the DNVs were not sufficiently distinctive to explain the phenotypic associations, we performed a multivariate category-wide association study (CWAS) that revealed enrichment of DNVs in CREs of glutamatergic neurons in individuals with ID, with a random forest analysis demonstrating an increased burden of these events in these individuals with ID. Our findings are consistent with a model of non-coding variants contributing to the oligogenic heritability of neurodevelopmental disorders.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01810-y",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01810-y",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-10-24",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://link.springer.com/article/10.1186/s13073-026-01810-y",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "随机森林"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "genomics",
+      "neuroscience"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "genomics",
+          "neuroscience"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01797-6",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "Using SpliceAI to triage splice-altering variants in 7,220 individuals with rare conditions highlights limitations of the precomputed scores",
+    "authors": [
+      "Alexandra C. Martin-Geary",
+      "Francois Lecoquierre",
+      "Susan Walker",
+      "Nicola Whiffin",
+      "Ruebena Dawes"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0002-5818-1962"
+    ],
+    "abstract": "Abstract Background SpliceAI is a deep learning algorithm that predicts whether genetic variants are likely to affect splicing. Precomputed SpliceAI predictions for all theoretical SNVs and small indels were released in 2019, and are used by variant annotation tools such as VEP and dbNSFP to batch annotate large numbers of variants quickly. While the use of precomputed scores vastly reduces the computational cost of retrieving SpliceAI predictions, several limitations to their utility have emerged, for which the impact on the prioritisation of likely splice-altering variants in cohort studies has not been established. Methods We identify transcript annotation and genome version inconsistencies impacting the precomputed SpliceAI scores by comparing the original gene annotation file with MANE v1.0 Select transcripts. To quantify the impact that these factors may have in variant prioritisation pipelines for diagnostic purposes, we re-analysed variants in 660 genes linked to neurodevelopmental disorders (NDD), identified in 7,221 participants with NDD from the Genomics England 100,000 Genomes Project (100kGP). Results We find outdated gene annotations and genome version inconsistencies impact 8.34% of theoretical SNVs included in the SpliceAI precomputed scores, and affect the accuracy of SpliceAI predictions in 34.98% of disease-associated panelApp green genes. In 7,221 Genomics England participants, re-running SpliceAI with updated annotations and parameters results in an increase of 18.2% predicted splice-altering variants compared with variants identified using precomputed scores alone. These variants constitute a diagnostic increase of 11.7% versus the precomputed scores, assessed retrospectively using confirmed diagnoses in 100kGP. To mitigate issues with the precomputed scores we provide ‘SpliceAI-splint’- a command-line tool to allow users to identify variants within a VCF file whose potential splice-altering effects would be missed by the precomputed scores. Conclusions: Although the precomputed scores continue to represent a useful resource in the annotation of variants in cohorts with genetic disorders, we find key limitations that can lead to their missing clinically relevant splice-altering variants, and provide a command-line tool to mitigate these issues.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01797-6",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01797-6",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-10-27",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_hits": [
+      "\\bgenomics?\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "深度学习"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "genomics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "genomics"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1186/s13073-026-01757-0",
+    "venue": "j-128792d050",
+    "year": 2026,
+    "track": null,
+    "title": "Multikingdom and functional gut microbiota markers for cholangiocarcinoma",
+    "authors": [
+      "Benchen Rao",
+      "Shanshuo Liu",
+      "Guangying Cui",
+      "Jianwen Jiang",
+      "Na Li",
+      "Ji Hu",
+      "Ranran Sun",
+      "Ang Li",
+      "Ruiqing Zhang",
+      "Haifeng Lu",
+      "Peihao Wen",
+      "Jianfeng Xue",
+      "Tuerganaili Aji",
+      "Haiyu Wang",
+      "Xiaolong Chen",
+      "Shusen Zheng",
+      "Zujiang Yu",
+      "Zhigang Ren"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0003-0798-3444"
+    ],
+    "abstract": "BACKGROUND: While the association between gut microbiota and cholangiocarcinoma (CCA) has been explored, existing research has been limited to bacterial components. The alterations in non-bacterial members (fungi, archaea, and viruses) and their functional characteristics in CCA remain unclear. This study aimed to comprehensively characterize the multi-kingdom gut microbiota and functional profiles in CCA patients and develop a non-invasive diagnostic model. METHODS: We performed metagenomic sequencing on 700 fecal samples collected from three distinct regions in China, comprising 289 CCA patients, 312 healthy controls, and 99 hepatocellular carcinoma (HCC) patients. Multi-kingdom microbial composition and functional profiles were analyzed. We integrated multiple machine learning algorithms to generate 117 distinct modeling schemes for constructing and screening the optimal CCA diagnostic model. The model was validated across three independent cohorts and tested for specificity against HCC. We also benchmarked the model against established diagnostic approaches by reviewing 15 CCA clinical practice guidelines/consensus statements and their cited evidence and by evaluating model detection in CA19-9-positive and CA19-9-negative patients. RESULTS: Extensive alterations were identified in CCA patients across multi-kingdom and functional layers, including 198 archaeal, 154 bacterial, 78 fungal, and 120 viral species, as well as 278 genes, 99 pathways, and 151 carbohydrate-active enzymes (CAZymes). A panel of 21 multi-kingdom and functional markers demonstrated superior diagnostic accuracy with an average AUC of 91% across three validation cohorts, outperforming any single-kingdom model. The model exhibited high specificity in distinguishing CCA from HCC, achieving an AUC of 99.74% with a false positive rate of 11.11%. Benchmarking supported a complementary role as a noninvasive screening aid, the model showed pooled sensitivity and specificity of 96.2%, and 78.5%, respectively, and detected 97.6% of CA19-9-negative CCA cases. CONCLUSIONS: This study represents the first comprehensive characterization of multi-kingdom gut microbiome and functional markers in cholangiocarcinoma. Gut multi-kingdom and functional microbial signatures represent a promising noninvasive tool that may aid the screening and early identification of cholangiocarcinoma in high-risk populations, complementing existing diagnostic approaches.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1186/s13073-026-01757-0",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1186/s13073-026-01757-0",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-10-17",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Genome Medicine",
+    "issn": "1756-994X",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://link.springer.com/article/10.1186/s13073-026-01757-0",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "典型相关分析",
+      "机器学习"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "microbiome"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "microbiome"
+        ]
+      },
+      "method_evidence": []
+    }
+  }
+]

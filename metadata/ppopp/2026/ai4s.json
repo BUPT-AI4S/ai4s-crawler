@@ -1,0 +1,209 @@
+[
+  {
+    "id": "10.1145/3774934.3786449",
+    "venue": "ppopp",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Root-Down Exposure for Maximal Clique Enumeration on GPUs.",
+    "authors": [
+      "Zhe Pan 0001",
+      "Peng Qu 0001",
+      "Youhui Zhang 0001"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/232/1625-1",
+      "https://dblp.org/pid/20/3008-1",
+      "https://dblp.org/pid/00/5995-1"
+    ],
+    "abstract": "Maximal clique enumeration (MCE) in large-scale graphs is critical across various application domains, including social network analysis, bioinformatics, and computer vision. However, existing GPU-based MCE solutions suffer from inefficient load-balancing mechanisms. These mechanisms force busy workers to pause and hand over workloads to idle workers, which introduces significant synchronization overhead and increases memory usage. To address these limitations, we introduce a root-down exposure mechanism where busy workers dynamically expose their current root, enabling idle workers to pull workloads from the exposed node directly without synchronization. We then propose a bitmap-centric MCE scheme and an aggressive node generation rule to further simplify the memory layout and accelerate enumeration. We combine them into RDMCE, a Root-Down MCE solution on GPUs. Across large real-world graphs with up to 146 billion maximal cliques, RDMCE is 1.25-5.38× faster than any next-best state-of-the-art GPU-based solutions and is the only one that completes enumeration on every test dataset, offering a more efficient and scalable MCE solution.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3774934.3786449",
+    "pages": "190-203",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3774934.3786449",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Symposium on Principles & Practice of Parallel Programming",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/ppopp/PanQZ26",
+    "dblp_toc": "https://dblp.org/db/conf/ppopp/ppopp2026",
+    "booktitle": "PPoPP",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 社会科学"
+    ],
+    "ai4s_keywords": [
+      "social networks"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 社会科学": [
+          "social networks"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3774934.3786451",
+    "venue": "ppopp",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Rethinking Thread Scheduling under Oversubscription: A User-Space Framework for Coordinating Multi-runtime and Multi-process Workloads.",
+    "authors": [
+      "Aleix Roca",
+      "Vicenç Beltran 0001"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/286/1963",
+      "https://dblp.org/pid/08/2158"
+    ],
+    "abstract": "The convergence of high-performance computing (HPC) and artificial intelligence (AI) is driving the emergence of increasingly complex parallel applications and workloads. These workloads often combine multiple parallel runtimes within the same application or across co-located jobs, creating scheduling demands that place significant stress on traditional OS schedulers. When oversubscribed (there are more ready threads than cores), OS schedulers rely on periodic preemptions to multiplex cores, often introducing interference that may degrade performance. In this paper, we present: (1) The User-space Scheduling Framework (USF), a novel seamless process scheduling framework completely implemented in user-space. USF enables users to implement their own process scheduling algorithms without requiring special permissions. We evaluate USF with its default cooperative policy, (2) SCHED_COOP, designed to reduce interference by switching threads only upon blocking. This approach mitigates well-known issues such as Lock-Holder Preemption (LHP), Lock-Waiter Preemption (LWP), and scalability collapse. We implement USF and SCHED_COOP by extending the GNU C library with the nOS-V runtime, enabling seamless coordination across multiple runtimes (e.g., OpenMP) without requiring invasive application changes. Evaluations show gains up to 2.4x in oversubscribed multi-process scenarios, including nested BLAS workloads, multi-process PyTorch inference with LLaMA-3, and Molecular Dynamics (MD) simulations.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3774934.3786451",
+    "pages": "53-67",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3774934.3786451",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Symposium on Principles & Practice of Parallel Programming",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/ppopp/Roca026",
+    "dblp_toc": "https://dblp.org/db/conf/ppopp/ppopp2026",
+    "booktitle": "PPoPP",
+    "ai4s_hits": [
+      "molecular dynamics",
+      "\\bmolecular\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 物质科学"
+    ],
+    "ai4s_keywords": [
+      "molecule",
+      "molecular dynamics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 物质科学": [
+          "molecule",
+          "molecular dynamics"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3774934.3786433",
+    "venue": "ppopp",
+    "year": 2026,
+    "track": "unverified",
+    "title": "HierCut: Enabling 16-bit Format Mixed Precision for Molecular Dynamics through Hierarchical Cutoff.",
+    "authors": [
+      "Zeyu Song",
+      "Lin Gan 0001",
+      "Xiaohui Duan",
+      "Zhengrui Li",
+      "Jiayu Fu 0002",
+      "Yinuo Wang",
+      "Guangzhao Li",
+      "Guangwen Yang 0002"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/181/7575",
+      "https://dblp.org/pid/120/9592-1",
+      "https://dblp.org/pid/85/5001",
+      "https://dblp.org/pid/218/5795",
+      "https://dblp.org/pid/145/9723-2",
+      "https://dblp.org/pid/275/7744",
+      "https://dblp.org/pid/409/7937",
+      "https://dblp.org/pid/67/3001-2"
+    ],
+    "abstract": "Mixed-precision methods offer the potential to achieve better performance while maintaining accuracy comparable to that of high-precision formats. However, the adoption of mixed precision—particularly with 16-bit formats—in scientific computing remains limited due to precision truncation.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3774934.3786433",
+    "pages": "315-328",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3774934.3786433",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Symposium on Principles & Practice of Parallel Programming",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/ppopp/SongGDLFWLY26",
+    "dblp_toc": "https://dblp.org/db/conf/ppopp/ppopp2026",
+    "booktitle": "PPoPP",
+    "ai4s_hits": [
+      "molecular dynamics",
+      "\\bmolecular\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 物质科学"
+    ],
+    "ai4s_keywords": [
+      "molecule",
+      "molecular dynamics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 物质科学": [
+          "molecule",
+          "molecular dynamics"
+        ]
+      },
+      "method_evidence": []
+    }
+  }
+]

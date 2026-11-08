@@ -1,0 +1,1692 @@
+[
+  {
+    "id": "10.1109/isca66397.2026.00150",
+    "venue": "isca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Leveraging Phase Polynomials for Quantum Circuit Optimization.",
+    "authors": [
+      "Zihan Chen 0005",
+      "Henry Chen",
+      "Yuwei Jin",
+      "Enhyeok Jang",
+      "Mingkuan Xu",
+      "Vannessa Chan",
+      "Won Woo Ro",
+      "Eddy Z. Zhang"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/139/3503-5",
+      "https://dblp.org/pid/06/1202",
+      "https://dblp.org/pid/125/0848",
+      "https://dblp.org/pid/357/2981",
+      "https://dblp.org/pid/254/2688",
+      "https://dblp.org/pid/444/1831",
+      "https://dblp.org/pid/r/WonWooRo",
+      "https://dblp.org/pid/93/1040"
+    ],
+    "abstract": "Quantum circuits on resource-limited hardware require optimizing regions dominated by $\\{\\mathrm{CNOT}, R_z\\}$, which account for a large fraction of operations and often dominate execution cost. This optimization can be challenging because phase-polynomial blocks are fragmented by basis-changing gates such as $H$, and optimizing phase parities alone may increase the cost of downstream basis transformations. Existing phase-polynomial approaches are limited to single-block or phase-only optimization, while subcircuit rewriting approaches are local and scale poorly beyond small rewrite windows. We introduce \\emph{PhasePoly}, a compiler optimization pass that jointly optimizes phase-parity and output-parity networks and employs a cross-block intermediate representation to reuse parities across phase-polynomial block barriers. This approach is effective because its unified parity-matrix representation exposes long-range $\\{\\mathrm{CNOT}, R_z\\}$ structure that local rewriting and single-block methods cannot capture. \\emph{PhasePoly} reduces total gate count by up to 50.00\\% (34.70\\% on average) and CNOT count by up to 48.57\\% (26.83\\% on average), while scaling to large circuits and improving both fault-tolerant compilation and near-term hardware execution. \\emph{PhasePoly} is available at https://github.com/ruadapt/PhasePoly.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/isca66397.2026.00150",
+    "pages": "2111-2126",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00150",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Symposium on Computer Architecture",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/isca/ChenCJJXCRZ26",
+    "dblp_toc": "https://dblp.org/db/conf/isca/isca2026",
+    "booktitle": "ISCA",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "quantum circuit"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "quantum circuit"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/isca66397.2026.00069",
+    "venue": "isca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Triage: An Adaptive Parallel Window Decoding Scheduler for Real-Time Fault-Tolerant Quantum Computation.",
+    "authors": [
+      "Jiahan Chen",
+      "Chenghong Zhu",
+      "Ge Bai",
+      "Xin Wang 0022"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/62/1064",
+      "https://dblp.org/pid/342/3486",
+      "https://dblp.org/pid/59/10452",
+      "https://dblp.org/pid/10/5630-22"
+    ],
+    "abstract": "Fault-tolerant quantum computation (FTQC) critically depends on real-time classical decoding, which is rapidly emerging as a system bottleneck. As quantum systems scale, decoding latency and throughput limitations lead to exponential syndrome backlogs and logical operation stalls. While hardware accelerators and parallel windowing offer pathways to speed up decoding, dynamically deploying a finite pool of decoders across a vast quantum error correction architecture remains an unresolved resource allocation problem. To address this, we formulate FTQC decoding as a constrained dynamic scheduling problem by utilizing a spatio-temporal framework based on slices. We propose Triage, a dual-mode architecture that mitigates operation stalls by adaptively combining a cost-efficient heuristic scheduler with a priority-aware emergency mode to rapidly resolve the causal cone of critical operations. Our evaluation shows that Triage maintains low algorithm stalls and logical error rates even under scarce classical resource constraints. Across various benchmarks, Triage achieves an average logical error rate reduction of 52.6% compared to standard temporal parallelism, enabling an efficient classical control plane for scalable FTQC architectures.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/isca66397.2026.00069",
+    "pages": "842-856",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00069",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Symposium on Computer Architecture",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/isca/ChenZBW26",
+    "dblp_toc": "https://dblp.org/db/conf/isca/isca2026",
+    "booktitle": "ISCA",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "quantum computing",
+      "quantum error correction"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "quantum computing",
+          "quantum error correction"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/isca66397.2026.00163",
+    "venue": "isca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "TUSQ: Tracking, Uncomputation, and Sampling for Noisy Quantum Simulation.",
+    "authors": [
+      "Siddharth Dangwal",
+      "Tina Oberoi",
+      "Ajay Sailopal",
+      "Dhirpal Shah",
+      "Frederic T. Chong"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/257/8354",
+      "https://dblp.org/pid/438/2278",
+      "https://dblp.org/pid/343/2016",
+      "https://dblp.org/pid/358/4645",
+      "https://dblp.org/pid/c/FTChong"
+    ],
+    "abstract": "Quantum computers have improved in size and quality in recent years, enabling the execution of complex circuits. However, for most researchers, access to compute time is limited. This necessitates the development of simulators that mimic noisy quantum hardware accurately and scalably. The ideal way to simulate noisy systems is via Density Matrix Simulation (DMS). However, its high memory footprint limits its scalability. Consequently, noisy simulations are performed in two steps: (a) sampling multiple circuits with fixed noisy gates from the stochastic noise channels, (b) performing the State Vector Simulations (SVS) of these circuits and averaging their output to obtain the effective noisy simulation result. This often leads to a substantial increase in compute overhead, slowing down the simulation. Existing methods solve this problem by caching critical intermediate results in memory and reusing them. However, when a simulation task is both compute and memory-intensive, we need to eliminate computational overheads without incurring extra memory overheads. To enable fast simulation in the compute and memory bound regime, we propose TUSQ - Tracking, Uncomputation, and Sampling for Noisy Quantum Simulation. TUSQ is composed of two modules: the Error Characterization Module (ECM), and Depth First Tree Traversal (DFTT). The ECM characterizes errors so that the simulator can eliminate redundant circuit instances (via ER Tallying and ER Commutation), followed by importance sampling (in the Pruning stage), significantly reducing the number of circuits to be simulated relative to the baseline strategy of simulating all circuits. This is followed by DFTT, which computes the statevectors for these sampled circuits efficiently by taking advantage of circuit similarity, representing similar circuits in a tree and using computation and uncomputation to traverse the tree efficiently. TUSQ is evaluated for a total of 198 benchmarks, executed for 1 million shots and reports an average speedup of$59.06 \\times$and$13.38 \\times$over Qiskit and CUDA-Q, with a maximum speedup of$7878.03 \\times$and$439.38 \\times$respectively. We also compare TUSQ against TQSim in the time and memory critical regime. We observe an average and maximum speedup of$39.32 \\times$and 3134.31×, respectively.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/isca66397.2026.00163",
+    "pages": "2318-2332",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00163",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Symposium on Computer Architecture",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/isca/DangwalOSSC26",
+    "dblp_toc": "https://dblp.org/db/conf/isca/isca2026",
+    "booktitle": "ISCA",
+    "ai4s_hits": [
+      "quantum simulation"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 数理科学"
+    ],
+    "ai4s_keywords": [
+      "dynamical systems"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 数理科学": [
+          "dynamical systems"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/isca66397.2026.00073",
+    "venue": "isca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Kernpiler: Compiler Optimization for Quantum Hamiltonian Simulation with Partial Trotterization.",
+    "authors": [
+      "Ethan Decker",
+      "Lucas Goetz",
+      "Evan McKinney",
+      "Erik Gustafson",
+      "Junyu Zhou 0005",
+      "Yuhao Liu 0017",
+      "Alex K. Jones",
+      "Ang Li 0006",
+      "Alexander Schuckert",
+      "Samuel A. Stein",
+      "Eleanor Crane",
+      "Gushu Li"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/378/4175",
+      "https://dblp.org/pid/436/0506",
+      "https://dblp.org/pid/343/5244",
+      "https://dblp.org/pid/342/9809",
+      "https://dblp.org/pid/29/4103-5",
+      "https://dblp.org/pid/139/8699-17",
+      "https://dblp.org/pid/j/AKJones",
+      "https://dblp.org/pid/33/2805-6",
+      "https://dblp.org/pid/363/3522",
+      "https://dblp.org/pid/274/7675",
+      "https://dblp.org/pid/329/8112",
+      "https://dblp.org/pid/163/3591"
+    ],
+    "abstract": "Description This artifact contains the core implementation of Kernpiler, a compiler framework for optimizing quantum circuits, and supports full reproducibility of all experimental results presented in the associated paper. The artifact includes all code, data pipelines, and scripts required to regenerate Figures 5–11. System Used for Data Collection NVIDIA A100 GPU with 80GB memory AMD EPYC 9654P 96-core processor x86_64 Linux system Python 3.13.5 Experiments may be computationally intensive, but they are fully parallelizable across multiple devices. Installation Clone or download the repository and navigate to the project directory. Create a virtual environment: python3 -m venv validate source validate/bin/activate Install dependencies: python -m pip install -r requirements.txt Install torch-scatter: python -m pip install --no-cache-dir torch-scatter -f https://data.pyg.org/whl/torch-2.10.0+cu128.html Experiment Workflow All experiment scripts are located in: src/compiler/optimization_passes/experiments Each figure can be reproduced by running its corresponding data collection and graphing scripts: Figure 5exp_gatecount_datacollection.py→ graph using:graph_data_scripts/graph_absolute.py Figure 6exp_partition_scaling_datacollection_o1exp_partition_scaling_datacollection→ graph using:graph_data_scripts/graph_o1_o2_side_by_side.py Figure 7exp_runtime_per_pass.py→ graph using:graph_data_scripts/graph_runtime_per_pass.py Figure 8exp_partition_scaling_datacollectiono1_phoenixFT→ graph using:graph_data_scripts/graph_firstorder_scalingFT.py Figure 9exp_partitionalgvsrandom.py→ graph using:graph_data_scripts/graph_partition_vs_random.py Figure 10exp_scaling_data_rewriteradius.py→ graph using:graph_data_scripts/graph_scalingdata.py Figure 11exp_error_scaling_systemsize.py→ output generated directly (no additional graph script required) Execution Notes All experiments are independent Parallel execution is supported Runtime varies depending on system size and hardware",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/isca66397.2026.00073",
+    "pages": "905-920",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00073",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Symposium on Computer Architecture",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/isca/DeckerGMGZLJLSSCL26",
+    "dblp_toc": "https://dblp.org/db/conf/isca/isca2026",
+    "booktitle": "ISCA",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 数理科学",
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "dynamical systems",
+      "quantum circuit"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 数理科学": [
+          "dynamical systems"
+        ],
+        "AI for 信息科学": [
+          "quantum circuit"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/isca66397.2026.00028",
+    "venue": "isca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "RHODES: Robust Optimization for Uncertainty-Aware Design of CO2-Efficient Computing Systems.",
+    "authors": [
+      "Mariam Elgamal",
+      "Abdulrahman Mahmoud",
+      "Gu-Yeon Wei",
+      "David Brooks 0001",
+      "Gage Hills"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/321/3583",
+      "https://dblp.org/pid/126/0708",
+      "https://dblp.org/pid/21/5583",
+      "https://dblp.org/pid/30/135",
+      "https://dblp.org/pid/127/7667"
+    ],
+    "abstract": "The inherent uncertainty in quantifying carbon footprint is a major challenge for designing environmentally sustainable computing systems. While existing efforts propose a variety of approaches to address this uncertainty, optimizing carbon footprint and energy efficiency together, while also accounting for uncertainty in carbon footprint, remains challenging. We identify two types of uncertainty in$\\mathbf{C O}_{2}$-aware hardware design: data value$\\left(\\mathcal{D}_{\\mathbf{V}}\\right)$uncertainty, where probability distributions of$\\mathbf{C O}_{\\mathbf{2}}$-related parameters exhibit high standard deviation (e.g., fluctuations in CO2emissions of the power grid), and data availability$\\left(\\mathcal{D}_{\\mathbf{A}}\\right)$uncertainty, in which probability distributions of$\\mathbf{C O}_{\\mathbf{2}}$-related parameters cannot even be reliably estimated due to a lack of data (e.g., carbon emissions during integrated circuit fabrication, with very few data points available).$\\mathcal{D}_{A}$uncertainty is especially challenging. To address this challenge, we leverage mathematical Robust Optimization (RO) techniques that enable uncertainty-aware decision-making without requiring explicit probability distributions. We present RHODES, a robust optimization framework for designing$\\mathbf{C O}_{\\mathbf{2}}$-efficient computing systems under carbon footprint data uncertainty. RHODES jointly models$\\mathcal{D}_{\\mathrm{v}}$and$\\mathcal{D}_{\\mathrm{A}}$uncertainties at multiple layers of the computing stack to optimize total carbon (tC) under uncertainty, and can target 3 different primary objectives (we include example results for specific systems, details in the full paper): (1) minimizing execution time given a performance constraint: designs that do not account for uncertainty incur 1.7× worse tC for the same performance constraint; (2) minimizing execution time given a tC constraint: RHODES produces robust designs with$\\mathbf{1. 3 6} \\times$lower tC and only 0.2% execution time degradation, for complex heterogeneous system-on-chip (SoC), considering domain specific accelerators and workload level parallelism; and (3) minimizing total carbon delay product (tCDP, a metric of$\\boldsymbol{C} O_{2}$efficiency): improves tCDP by 1.3-3.17× vs. state-of-the-art$\\mathbf{C O}_{2}$-aware optimization frameworks.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/isca66397.2026.00028",
+    "pages": "179-193",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00028",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Symposium on Computer Architecture",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/isca/ElgamalMWBH26",
+    "dblp_toc": "https://dblp.org/db/conf/isca/isca2026",
+    "booktitle": "ISCA",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "circuit design"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "circuit design"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/isca66397.2026.00122",
+    "venue": "isca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "WaferBRAIN: Whole-Brain Scale Neuromorphic Architecture Based on Wafer-Scale Integration.",
+    "authors": [
+      "Yukun Feng",
+      "Hao Jia",
+      "Liangyu Gan",
+      "Haoming Chu",
+      "Yufan He",
+      "Jiaxin Yin",
+      "Lirong Zheng 0001",
+      "Ning Ma",
+      "Yuxiang Huan"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/59/9428",
+      "https://dblp.org/pid/08/7315",
+      "https://dblp.org/pid/333/3635",
+      "https://dblp.org/pid/228/3454",
+      "https://dblp.org/pid/167/4028",
+      "https://dblp.org/pid/195/0806",
+      "https://dblp.org/pid/15/7206",
+      "https://dblp.org/pid/60/3634",
+      "https://dblp.org/pid/167/8478"
+    ],
+    "abstract": "Scaling neuromorphic systems to whole-brain models is constrained by inefficient processing paradigms and long, sparse off-chip links in PCB integration. We present WaferBRAIN, a wafer-scale neuromorphic architecture that co-designs event representation, routing, storage, and topology for wholebrain scale cortical models. WaferBRAIN adopts a neuron-axon hybrid paradigm: local broadcast within brain regions, targeted unicast across regions, and boundary-triggered scheduling to mitigate hotspots, reducing router traffic by up to$300 \\times$, latency by up to$\\mathbf{1 4} \\times$, and indexing storage by up to$\\mathbf{7, 4 0 0} \\times$. For further scaling-out of the single neuromorphic wafer chips, a switchless dragonfly inter-wafer network shortens paths and balances traffic, reducing inter-wafer congestion by$\\mathbf{3. 4 - 3. 7} \\times$. Calibrated with a 12-inch prototype Lyra X, WaferBRAIN sustains the firing rates required for biological real-time simulation, achieving per-step communication latencies consistently below the 1 ms simulation time step. Furthermore, 3D Wafer-Scale Integration provides sufficient DRAM capacity to support 1B neurons and 256B synapses per wafer, and compared with neuromorphic processors by PCB-level integration, it improves sustainable firing rates by$\\mathbf{1 3} \\times$. Together, these advances enable real-time whole-brain neuromorphic simulation on digital wafer-scale platforms.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/isca66397.2026.00122",
+    "pages": "1674-1688",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00122",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Symposium on Computer Architecture",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/isca/FengJGCHYZMH26",
+    "dblp_toc": "https://dblp.org/db/conf/isca/isca2026",
+    "booktitle": "ISCA",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "neuroscience"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "neuroscience"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/isca66397.2026.00067",
+    "venue": "isca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Lembas: Cost-Efficient Genome Alignment with External Memory and FPGA Acceleration.",
+    "authors": [
+      "Seongyoung Kang",
+      "Se-Min Lim",
+      "Sang-Woo Jun"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/271/6724",
+      "https://dblp.org/pid/233/7104",
+      "https://dblp.org/pid/124/7201"
+    ],
+    "abstract": "We present Lembas, a cost-efficient long-read genome alignment system designed to scale to the escalating memory and computational requirements of future genomic workloads. Conventional long-read aligners face two distinct scalability constraints in different stages of the pipeline: seeding demands large memory capacity, while extension demands high computational throughput, making larger genomes and deeper sequencing increasingly costly to support. Lembas improves scalability by reducing both the memory capacity required for seeding and the compute resources required for extension through a combination of reconfigurable FPGA acceleration and external-memory algorithms over NVMe SSDs. To our knowledge, Lembas is the first long-read genome alignment system to address both limitations in a single end-to-end system using offthe-shelf components, while preserving the algorithmic behavior of Minimap2. Lembas introduces two novel accelerators: The external-memory columnsort-based seeding accelerator to minimize memory requirements without performance loss, and a tiled Smith-Waterman-Gotoh extension accelerator which achieves competitive traceback performance despite the low clock speed of FPGAs. These novel accelerators, in addition to a conventional streaming chaining accelerator, time-shares each FPGA in the system. We built a prototype using an affordable desktop-class host with 16 GB of DRAM and 12 x86 cores, augmented with two mid-range Xilinx U50 FPGAs and M. 2 NVMe SSDs. The resulting system performs on par with$\\mathbf{3} \\times$costlier state-of-the-art A100 GPU-accelerated system and outperforms a$2 \\times$costlier state-ofthe-art FPGA-accelerated system, resulting in corresponding cost and power efficiency. More importantly, Lembas achieves higher relative performance with larger genomes or deeper sequencing depth, ensuring current and future scalability.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/isca66397.2026.00067",
+    "pages": "810-824",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00067",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Symposium on Computer Architecture",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/isca/KangLJ26",
+    "dblp_toc": "https://dblp.org/db/conf/isca/isca2026",
+    "booktitle": "ISCA",
+    "ai4s_hits": [
+      "\\bgenomics?\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "genomics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "genomics"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/isca66397.2026.00119",
+    "venue": "isca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Omelet: A Packaging-Aware Hierarchical Interconnect Simulator for 2.5D/3D Chiplet Architectures.",
+    "authors": [
+      "Jiho Kim",
+      "Danish Baig",
+      "Faaiq Waqar",
+      "Ashita Victor",
+      "Shimeng Yu",
+      "Muhannad S. Bakir",
+      "Cong Hao"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/50/5515",
+      "https://dblp.org/pid/444/1758",
+      "https://dblp.org/pid/345/5252",
+      "https://dblp.org/pid/279/6612",
+      "https://dblp.org/pid/60/11358",
+      "https://dblp.org/pid/52/7357",
+      "https://dblp.org/pid/129/2059"
+    ],
+    "abstract": "Monolithic integration of SoCs is reaching practical and economic limits, motivating the transition to disaggregated chiplet-based 2.5D/3D systems. In these systems, system performance depends not only on microarchitecture, but is tightly coupled to integration decisions such as stacking, interposers, and bonding methods. These packaging decisions directly shape communication characteristics, including link latency, bandwidth, energy, and I/O density. At the same time, communication is no longer confined to a uniform on-chip network. Instead, data movement traverses multiple interconnect domains, including on-chip wires, lateral interposer links, and vertical die-to-die connections. Since each domain is implemented using different physical technologies, they exhibit distinct electrical and communication characteristics, naturally forming a hierarchical interconnect structure. However, existing simulators rely on packaging-agnostic, decoupled abstractions that fail to capture technology-specific link behavior and cross-layer interactions. This disconnect obscures integration-driven bottlenecks and limits accurate system-level design space exploration. We present Omelet, a packaging-aware hierarchical interconnect simulator for 2.5D/3D chiplet systems. The simulator integrates intra-chiplet networks (Network-on-Chip, NoC), interposer-level communication (Network-on-Interposer, NoI), and vertical tier-to-tier links (Network-on-Layer, NoL) within a unified cycle-level framework, with link parameters derived from electromagnetic extraction and compact SPICE models of advanced packaging interconnects. This unified hierarchy enables architects to evaluate how packaging technologies, network architectures, and chiplet organizations jointly influence latency, congestion, and bottleneck formation in multi-chiplet 2.5D/3D systems. Omelet, with documentation and examples, is publicly available on GitHub11https://github.com/sharc-lab/Omelet.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/isca66397.2026.00119",
+    "pages": "1628-1642",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00119",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Symposium on Computer Architecture",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/isca/KimBWVYBH26",
+    "dblp_toc": "https://dblp.org/db/conf/isca/isca2026",
+    "booktitle": "ISCA",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 社会科学"
+    ],
+    "ai4s_keywords": [
+      "economics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 社会科学": [
+          "economics"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/isca66397.2026.00070",
+    "venue": "isca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Coset Ensemble Decoder for Quantum Error Correction with Algorithm-Hardware Co-Design.",
+    "authors": [
+      "Shuang Liang 0012",
+      "Jubo Xu",
+      "Giulio Bassanino",
+      "Qianzhou Wang",
+      "Yidong Zhou",
+      "Yuncheng Lu",
+      "Zhiwen Mo",
+      "Paul H. J. Kelly",
+      "Bo Yuan",
+      "Wayne Luk",
+      "Hongxiang Fan"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/20/1080-12",
+      "https://dblp.org/pid/430/5353",
+      "https://dblp.org/pid/439/9546",
+      "https://dblp.org/pid/322/4185",
+      "https://dblp.org/pid/337/7286",
+      "https://dblp.org/pid/237/3613",
+      "https://dblp.org/pid/99/3235",
+      "https://dblp.org/pid/60/732",
+      "https://dblp.org/pid/41/1662",
+      "https://dblp.org/pid/l/WayneLuk",
+      "https://dblp.org/pid/200/2748"
+    ],
+    "abstract": "Reliable large-scale quantum computation relies on fault-tolerant architectures, where quantum error correction (QEC) continuously extracts and decodes error syndromes in real time. A critical component in QEC is the decoder, a classical subsystem that must simultaneously deliver high logical accuracy and ultra-low latency. This paper presents a novel algorithmhardware co-design that improves the accuracy-latency trade-off over existing approaches such as vanilla Minimum-Weight Perfect Matching (MWPM) and Union-Find (UF) decoders. At the algorithmic level, we introduce coset ensemble decoding, which improves UF decoding by explicitly exploiting logically equivalent cosets. Our method performs ensemble forest exploration to generate multiple coset-consistent candidates and aggregates them to approximate coset-level maximum-likelihood decoding. We further reduce computational and memory complexity via reverseorder elimination and lossless graph compression, without sacrificing accuracy. At the hardware level, we design a domainspecific architecture that temporally reuses resources, avoiding the code-distance-proportional resource growth in prior spatial architectures. Several optimizations, such as multi-bank memory hashing and hierarchical ID mapping, are proposed to mitigate pipeline stalls and memory conflicts under highly concurrent access patterns. Under a circuit-level depolarizing noise model, our co-design approach achieves a better accuracy-latency tradeoff than prior MWPM-and UF-based decoders, while reducing FPGA LUT consumption by up to 8.2 times compared with reported UF-based decoder resources. The tunable candidate number further exposes a flexible design knob, enabling users to tailor decoding performance to the requirements of different fault-tolerant workloads. Our implementation is publicly available at https://github.com/IMSeonL/coset-ensemble-decoder.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/isca66397.2026.00070",
+    "pages": "857-871",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00070",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Symposium on Computer Architecture",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/isca/LiangXBWZLMKYLF26",
+    "dblp_toc": "https://dblp.org/db/conf/isca/isca2026",
+    "booktitle": "ISCA",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "quantum computing",
+      "quantum error correction"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "quantum computing",
+          "quantum error correction"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/isca66397.2026.00030",
+    "venue": "isca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "CAPA: Manufacturing Carbon Estimation for Advanced-Packaged Architectures.",
+    "authors": [
+      "Jingyang Liu",
+      "Gwenith Bowker-Bafna",
+      "Yuke Zhang",
+      "Natalie Enright Jerger"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/134/1689",
+      "https://dblp.org/pid/444/1508",
+      "https://dblp.org/pid/230/3802",
+      "https://dblp.org/pid/61/5482"
+    ],
+    "abstract": "To meet growing compute demand, hyperscalers are rapidly deploying new data centre hardware, which embodies significant carbon. This aggressive growth of compute infrastructure jeopardizes their carbon reduction goals. While existing carbon tools estimate the manufacturing carbon footprint of integrated circuits (ICs), they do not reasonably model the high-performance advanced-packaged processors that dominate data centres and supercomputers. To bridge this gap, we propose a tool called CAPA, which models manufacturing Carbon for Advanced-Packaged Architectures. CAPA incorporates a binning yield model, high-bandwidth memory (HBM) carbon estimates, and support for complex architectures that use a mixture of integration techniques, such as 3.5D. By using CAPA to study widely used high-performance processors, we reveal opportunities for carbon savings through systematic binning and testing strategies, and we highlight HBM as a major carbon contributor. CAPA provides insights about the carbon footprint of cutting-edge architectures, opening new avenues for mitigating the environmental impact of the ever-growing computing industry.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/isca66397.2026.00030",
+    "pages": "211-227",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00030",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Symposium on Computer Architecture",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/isca/LiuBZJ26",
+    "dblp_toc": "https://dblp.org/db/conf/isca/isca2026",
+    "booktitle": "ISCA",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "circuit design"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "circuit design"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/isca66397.2026.00066",
+    "venue": "isca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "GRAINS: Enabling High-Performance and Low-Cost Graph-Based Genome Analysis via Storage-Aware Algorithm-Architecture Co-Design.",
+    "authors": [
+      "Nika Mansouri-Ghiasi",
+      "Harun Mustafa",
+      "Talu Güloglu",
+      "Rakesh Nadig",
+      "Konstantina Koliogeorgi",
+      "Susana Rebolledo Ruiz",
+      "Marc Rautmann",
+      "Furkan Eris",
+      "Mohammad Sadrosadati",
+      "Jisung Park 0001",
+      "Onur Mutlu"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/205/1623",
+      "https://dblp.org/pid/235/6534",
+      "https://dblp.org/pid/405/2204",
+      "https://dblp.org/pid/320/3430",
+      "https://dblp.org/pid/202/2924",
+      "https://dblp.org/pid/377/8260",
+      "https://dblp.org/pid/440/3425",
+      "https://dblp.org/pid/218/1089",
+      "https://dblp.org/pid/161/0904",
+      "https://dblp.org/pid/123/2642-1",
+      "https://dblp.org/pid/m/OnurMutlu"
+    ],
+    "abstract": "Graph-based representations of genome sequences have emerged as a powerful approach for representing massive genomic databases in an expressive and efficient way. Compared to traditional, linear genome sequences, genome graphs enable more accurate and efficient genome analyses, particularly in complex, population-scale settings (e.g., public health, precision medicine, and agriculture). Despite their benefits, analysis on large-scale genome graphs incurs significant data movement overhead from the storage system due to accessing large amounts of low-reuse data. Processing data directly inside the storage device, where data originally resides, can be a fundamental solution for mitigating this overhead. However, none of the existing tools for graph-based genome analysis can be efficiently used inside the storage system due to the limited internal hardware resources in modern SSDs. At the same time, prior storage-centric systems developed for (i) traditional, linear non-graph-based genome analysis or (ii) conventional, non-genomic graph analysis are not suitable for the unique data structures and access patterns of graph-based genome analysis. We propose GRAINS, the first system for analysis with largescale genome graphs in storage. Through our detailed examination of typical analysis pipelines that operate on genome graphs, we perform storage-aware algorithm-architecture co-design to (i) make the graph-based genome analysis pipelines more storagefriendly and (ii) further improve performance, energy-efficiency, and cost via in-storage and in-flash processing. GRAINS's codesign is based on three key aspects. First, we propose a new batching technique and execution flow, based on unique features of genome graphs, that reduces the number of random accesses to graph nodes. Second, via in-flash and in-storage processing, we avoid transferring low-reuse or unused flash pages, preventing SSD channel and external I/O bandwidth waste. Third, to leverage the full parallelism of flash dies during in-flash processing, we design an effective, yet lightweight, scheduling technique, enabled by re-purposing the existing SSD structures. GRAINS's design is versatile and flexible as it supports key operations on genome graphs and can be integrated in various analysis pipelines. GRAINS provides$2.7 \\times-47.8 \\times$speedup$(4.4 \\times-31.6 \\times$energy reduction) over the state-of-the-art software baselines, and$1.5 \\times-17.0 \\times$speedup$(3.1 \\times-20.7 \\times$energy reduction) over a hardware-accelerated baseline.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/isca66397.2026.00066",
+    "pages": "785-809",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00066",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Symposium on Computer Architecture",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/isca/MansouriGhiasiMGNKRRESP26",
+    "dblp_toc": "https://dblp.org/db/conf/isca/isca2026",
+    "booktitle": "ISCA",
+    "ai4s_hits": [
+      "\\bgenomics?\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "genomics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "genomics"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/isca66397.2026.00071",
+    "venue": "isca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "A Streaming Architecture for Quantum Error Syndrome Compression at 4 Kelvin.",
+    "authors": [
+      "Panagiotis Papanikolaou",
+      "Ryan Hou",
+      "Jennifer Volk",
+      "George Tzimpragos"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/383/6845",
+      "https://dblp.org/pid/317/0074",
+      "https://dblp.org/pid/260/5616",
+      "https://dblp.org/pid/136/3888"
+    ],
+    "abstract": "Scaling quantum computers with more qubits increases the data volume transferred through cables between the millikelvin (mK) and room-temperature (300 K) domains. Advances in cryogenic qubit control aim to nearly eliminate 300 K-to-mK (downstream) communication, leaving mK-to-300 K (upstream) communication as a bandwidth bottleneck (periodic qubit measurement and data transfer for decoding are still needed). One potential solution, assuming digital qubit readout, is an intermediate processing stage at 4 K using digital superconducting electronics, to bring all or part of the error decoding closer to the measurement target. However, resource and thermal constraints at 4 K limit the amount of processing possible, which degrades decoding accuracy. We propose IcePack, a streaming superconducting architecture for lossless quantum error syndrome compression. IcePack reduces the number of syndrome indices transmitted through spatial and temporal clustering, encodes the remaining indices more efficiently than traditional binary schemes, and microarchitecturally exploits superconducting delay elements and deep pipelines to satisfy stringent integration and thermal constraints. Our results demonstrate a 300× reduction in upstream data volume over digital readout without compression and$2.4-4 \\times$over emerging compression techniques. This contributes to a Pareto improvement, cutting per-qubit upstream thermal load by 11× and latency by 10×, all while being compatible with existing decoders and available superconductor electronics processes. Prototypes of the key system components were fabricated and experimentally validated.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/isca66397.2026.00071",
+    "pages": "872-888",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00071",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Symposium on Computer Architecture",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/isca/PapanikolaouHVT26",
+    "dblp_toc": "https://dblp.org/db/conf/isca/isca2026",
+    "booktitle": "ISCA",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "聚类"
+    ],
+    "ai4s_tags": [
+      "AI for 物质科学"
+    ],
+    "ai4s_keywords": [
+      "superconductors"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 物质科学": [
+          "superconductors"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/isca66397.2026.00083",
+    "venue": "isca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Prometheus: Toward Resilient Data Centers through Optimized Cooling Infrastructure.",
+    "authors": [
+      "Sourav Patel",
+      "Pratyush Kumar",
+      "Youzhi Liang",
+      "Thomas Kowalski",
+      "Nick Care",
+      "Wenjie Dong",
+      "Greg Imwalle",
+      "Rita Lu",
+      "Jeremy Rice",
+      "Nick Saddock",
+      "Rick Vengalath",
+      "Urs Hölzle",
+      "Benjamin C. Lee",
+      "Parthasarathy Ranganathan"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/205/2971",
+      "https://dblp.org/pid/25/2468",
+      "https://dblp.org/pid/249/2917",
+      "https://dblp.org/pid/211/5881",
+      "https://dblp.org/pid/295/9865",
+      "https://dblp.org/pid/28/2711",
+      "https://dblp.org/pid/231/7671",
+      "https://dblp.org/pid/444/2849",
+      "https://dblp.org/pid/67/9337",
+      "https://dblp.org/pid/444/2739",
+      "https://dblp.org/pid/444/2340",
+      "https://dblp.org/pid/h/UrsHolzle",
+      "https://dblp.org/pid/l/BenjaminCLee",
+      "https://dblp.org/pid/12/6848"
+    ],
+    "abstract": "Data center design assumptions are increasingly at risk from severe weather events. The framework Prometheus forecasts future temperatures and guides infrastructure design on multiple timescales. Using machine learning on historical and simulated climate data, Prometheus indicates that data centers must increase cooling capacity by 11% on average and up to 48% at the sites most challenged. 30% of data centers lack sufficient load flexibility and 12% already face a high probability of exceeding their design temperatures and require upgrades.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/isca66397.2026.00083",
+    "pages": "1056-1069",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00083",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Symposium on Computer Architecture",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/isca/PatelKLKCDILRSVHLR26",
+    "dblp_toc": "https://dblp.org/db/conf/isca/isca2026",
+    "booktitle": "ISCA",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "机器学习"
+    ],
+    "ai4s_tags": [
+      "AI for 地球宇宙科学"
+    ],
+    "ai4s_keywords": [
+      "weather forecasting",
+      "climate"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 地球宇宙科学": [
+          "weather forecasting",
+          "climate"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/isca66397.2026.00164",
+    "venue": "isca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Photonic Quantum Computing on Spin Memory Architecture with Tree-Encoded Fusion.",
+    "authors": [
+      "Xiangyu Ren",
+      "Yuexun Huang",
+      "Zhemin Zhang",
+      "Yuchen Zhu",
+      "Tsung-Yi Ho",
+      "Antonio Barbalace",
+      "Zhiding Liang"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/197/0269",
+      "https://dblp.org/pid/395/8335",
+      "https://dblp.org/pid/13/9827",
+      "https://dblp.org/pid/190/4457",
+      "https://dblp.org/pid/63/4181",
+      "https://dblp.org/pid/132/0327",
+      "https://dblp.org/pid/302/0791"
+    ],
+    "abstract": "Photonic quantum computer (PQC) is a promising quantum computation platform, realizing the measurementbased quantum computation (MBQC) model. In MBQC, computation proceeds by preparing a graph state, and this preparation mainly relies on fusion operations. However, fusion operations on a PQC are prone to two types of errors: fusion failure and fusion erasure. Therefore, the MBQC compiler must be carefully designed to tolerate these errors. Previous state-of-the-art MBQC compiler - OneAdapt, is tailored to all-photonic architectures and primarily address fusion failures. However, it neglects fusion erasure errors caused by photon loss, which are more detrimental than fusion failures. To address the challenge of fusion erasure, we propose a novel MBQC scheme that is based on quantum spin memory architecture. We design a tree-encoded fusion scheme that effectively suppresses erasure errors. Then, we integrate this scheme into our compiler framework, with compilation algorithms that reduce execution overhead of quantum programs. We evaluate our framework on a realistic PQC simulator across six typical quantum algorithm benchmarks with various program sizes. Our results show that the proposed tree-encoding scheme outperforms other fusion encoding schemes, and that our compilation framework outperforms OneAdapt with exponential improvement. Moreover, we demonstrate a small-scale QAOA experiment on real PQC hardware, where it outperforms the latest superconducting hardware.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/isca66397.2026.00164",
+    "pages": "2333-2348",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00164",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Symposium on Computer Architecture",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/isca/RenHZZHBL26",
+    "dblp_toc": "https://dblp.org/db/conf/isca/isca2026",
+    "booktitle": "ISCA",
+    "ai4s_hits": [
+      "quantum computing"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 物质科学",
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "superconductors",
+      "quantum computing",
+      "quantum circuit"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 物质科学": [
+          "superconductors"
+        ],
+        "AI for 信息科学": [
+          "quantum computing",
+          "quantum circuit"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/isca66397.2026.00087",
+    "venue": "isca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "IroKnight: Ownership-Preserving Neural Acceleration for Inference Serving.",
+    "authors": [
+      "Harsha Santhanam",
+      "Ashwin Rohit Alagiri Rajan",
+      "Hadi Esmaeilzadeh"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/407/8479",
+      "https://dblp.org/pid/392/5122",
+      "https://dblp.org/pid/00/809"
+    ],
+    "abstract": "With the rise of Large Language Models (LLMs), cloud-hosted inference serving has become the norm, requiring users to relinquish data ownership to the ethereal cloud. This surrender of ownership is particularly concerning, as citizens' data is exposed to the cloud en masse and LLMs are increasingly deployed in highly regulated domains. Yet, existing approaches to preserving data ownership are either insufficient or impractical. Trusted Execution Environments (TEEs) incur modest overheads but expose plaintext in on-chip storage, thereby failing to preserve ownership and also presenting a well-exploited attack surface. Fully Homomorphic Encryption (FHE) keeps data encrypted onchip and thus theoretically provides cryptographic data ownership, but it remains impractical due to immense overheads. FHE's overheads stem from performing Arithmetic Logic Unit (ALU) operations directly on encrypted data. However, transient electrical signals within ALU wires and combinational logic gates are unobservable unless they are stored in registers or other onchip storage in plaintext. Thus, if plaintext assets never persist beyond these transient ALU signals and all stored values remain encrypted on-chip, FHE-level data ownership becomes attainable. Our work proposes this new paradigm for ownership-preserving inference, instantiated in a novel design point called the IroKnight Neural Processing Unit (NPU). IroKnight exposes plaintext only ephemerally within the wires and gates of ALUs-flashing for a literal nanosecond-while all on-chip storage (e.g., pipe-registers, buffers, etc.) remains encrypted and integrity-protected. To make this practical, IroKnight leverages two domain-specific insights: (1) the regular accesses in fine-grained tiled and vectored neural calculations enable same-cycle in-ALU encryption and decryption; (2) the mathematics of integrity checks mirrors the multiply-andaccumulate flow of neural operators, enabling mid-execution data authentication. By leveraging these LLM-specific properties, IroKnight achieves near-FHE-level data ownership with just 3.3% runtime and 15.2% energy overheads, whereas FHE NPUs increase runtime and energy by$\\mathbf{1 1 1 0} \\times$and$\\mathbf{2 8 7 2} \\times$, respectively.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/isca66397.2026.00087",
+    "pages": "1-18",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00087",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Symposium on Computer Architecture",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/isca/SanthanamRE26",
+    "dblp_toc": "https://dblp.org/db/conf/isca/isca2026",
+    "booktitle": "ISCA",
+    "ai4s_hits": [
+      "neural operator"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "大语言模型"
+    ],
+    "ai4s_tags": [
+      "AI for 数理科学"
+    ],
+    "ai4s_keywords": [
+      "neural operator",
+      "operator learning"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 数理科学": [
+          "neural operator"
+        ]
+      },
+      "method_evidence": [
+        "operator learning"
+      ]
+    }
+  },
+  {
+    "id": "10.1109/isca66397.2026.00043",
+    "venue": "isca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "BAAP: Coupling Compute-in-SRAM with DRAM Banks for Near-Memory Processing.",
+    "authors": [
+      "Cecilio C. Tamarit",
+      "Socrates S. Wong",
+      "Akshati Vaishnav",
+      "José F. Martínez"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/357/2929",
+      "https://dblp.org/pid/357/2910",
+      "https://dblp.org/pid/444/2316",
+      "https://dblp.org/pid/m/JFMartinez"
+    ],
+    "abstract": "Near-DRAM-bank logic is a form of processing-inmemory (PIM) that lowers access latency and exploits bank-level parallelism to achieve increased throughput. Major classes of memory-bound applications, including pattern matching, vector processing, and graph algorithms, stand to benefit from adding processing capabilities at the bank level. While custom banklevel PIM solutions exist for individual domains, a performant programmable solution that is able to tackle all three remains elusive, as DRAM technology imposes limitations on the complexity and scale of computing logic that can be integrated. Recently, a number of commercial in-DRAM PIM products feature small SRAM-based scratchpads that bridge the last gap between on-die compute logic and DRAM storage. In this paper, we examine the potential and synergies of augmenting such scratchpads with Compute-in-SRAM support. Our BankAdjacent Associative Processor (BAAP) repurposes part of the scratchpad to provide additional in situ computing capabilities that are complementary to the existing PIM logic, primarily acting as either a SIMD unit or pattern-matching engine. We employ the commercially available UPMEM PIM architecture as a realistic foundation, although we believe that our insights are also relevant to other scratchpad-augmented PIM designs. We evaluate BAAP using system-level, cycle-approximate, execution-driven simulations, comparing it against detailed models of commercial bank-level designs and other academic proposals, including a host-side associative processor that is also SRAM-based. Our results demonstrate that BAAP can deliver performance improvements of more than an order of magnitude across diverse workloads, including computational genomics, and the Phoenix and PrIM benchmarks.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/isca66397.2026.00043",
+    "pages": "416-430",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00043",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Symposium on Computer Architecture",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/isca/TamaritWVM26",
+    "dblp_toc": "https://dblp.org/db/conf/isca/isca2026",
+    "booktitle": "ISCA",
+    "ai4s_hits": [
+      "\\bgenomics?\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "genomics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "genomics"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/isca66397.2026.00072",
+    "venue": "isca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Transpiler-Architecture Co-Design to Curb Clifford Costs in Fault-Tolerant Quantum Computing.",
+    "authors": [
+      "Meng Wang 0033",
+      "Chenxu Liu",
+      "Samuel A. Stein",
+      "Yufei Ding 0001",
+      "Poulami Das 0005",
+      "Prashant J. Nair",
+      "Ang Li 0006"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/93/6765-33",
+      "https://dblp.org/pid/238/7812",
+      "https://dblp.org/pid/274/7675",
+      "https://dblp.org/pid/127/9591",
+      "https://dblp.org/pid/236/5061",
+      "https://dblp.org/pid/159/0073",
+      "https://dblp.org/pid/33/2805-6"
+    ],
+    "abstract": "Quantum Error Correction (QEC) codes form the foundation of Fault-Tolerant Quantum Computing (FTQC) and predominantly use the Clifford+T gate set. Recently, Clifford operations have become the key performance bottleneck in implementing QEC. While state-of-the-art approaches like Pauli-Based Compilation (PBC) reduce Clifford overhead by transforming Clifford gates into Pauli measurements, they do so at the cost of gate-level parallelism, inflating circuit depth and execution times. To overcome these limitations, we introduce TACO, a Transpiler-Architecture Co-design framework that tackles the Clifford bottleneck through circuit and architectural optimization. TACO uses FTQC insights to guide hardware-aware Clifford gate elimination and circuit restructuring, and leverages the resulting optimized circuits to refine architectural design. TACO applies FTQC-specific transformations to aggressively reduce Clifford overhead from rotation synthesis and Toffoli decompositions, while preserving gate-level parallelism. The resulting architecture is optimized for the locality and data-movement patterns of these circuits, enabling high-throughput, resource-efficient execution. Our evaluation across diverse benchmarks shows that TACO achieves up to 21.9x (mean 4.4x) reduction in execution time compared to the state-of-the-art baseline.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/isca66397.2026.00072",
+    "pages": "889-904",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00072",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Symposium on Computer Architecture",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/isca/WangLSDDNL26",
+    "dblp_toc": "https://dblp.org/db/conf/isca/isca2026",
+    "booktitle": "ISCA",
+    "ai4s_hits": [
+      "quantum computing"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "quantum computing",
+      "quantum error correction"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "quantum computing",
+          "quantum error correction"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/isca66397.2026.00123",
+    "venue": "isca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "DS-ISA: Instruction Set Architecture for Dynamical System Units.",
+    "authors": [
+      "Chunshu Wu",
+      "Ruibing Song",
+      "Chuan Liu 0001",
+      "Tong Geng",
+      "Ang Li 0006"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/243/1631",
+      "https://dblp.org/pid/283/6506",
+      "https://dblp.org/pid/31/3472-1",
+      "https://dblp.org/pid/188/5531",
+      "https://dblp.org/pid/33/2805-6"
+    ],
+    "abstract": "Dynamical System Units (DSUs), leveraging CMOScompatible electronics and natural energy evolution, represent a promising post-Moore computing paradigm with potentially 105energy-efficiency gains. However, the absence of standardized abstraction layers severely limits their programmability and broad adoption. In this paper, we present a fundamental effort to establish the first Instruction Set Architecture (ISA) for DSUs. This is achieved by comprehensively analyzing DSU execution patterns and fundamental functional operations across various application scenarios. Our analysis identifies a unified loadlock-evolve-store execution model. Based on this model, we propose a 9-instruction ISA that provides the desired abstraction and flexibility. Building on this ISA, we propose a supporting microarchitecture for DSU control. In particular, this work introduces a new group-based execution model and a two-level masking scheme to support effective resource sharing and unique execution patterns. By providing the ISA and the supporting microarchitecture, this work lays the foundation for constructing a software stack for DSUs.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/isca66397.2026.00123",
+    "pages": "1689-1703",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00123",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Symposium on Computer Architecture",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/isca/WuSLGL26",
+    "dblp_toc": "https://dblp.org/db/conf/isca/isca2026",
+    "booktitle": "ISCA",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 数理科学"
+    ],
+    "ai4s_keywords": [
+      "dynamical systems"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 数理科学": [
+          "dynamical systems"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/isca66397.2026.00148",
+    "venue": "isca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Distilling Magic States in the Bicycle Architecture.",
+    "authors": [
+      "Shifan Xu",
+      "Kun Liu",
+      "Patrick Rall",
+      "Zhiyang He",
+      "Yongshan Ding 0001"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/349/0495",
+      "https://dblp.org/pid/06/2592",
+      "https://dblp.org/pid/247/9376",
+      "https://dblp.org/pid/24/10650",
+      "https://dblp.org/pid/64/3901-1"
+    ],
+    "abstract": "Magic State Distillation is considered to be one of the promising methods for supplying the non-Clifford resources required to achieve universal fault tolerance. Conventional MSD protocols implemented in surface codes often require multiple code blocks and lattice surgery rounds, resulting in substantial qubit overhead, especially at low target error rates. In this work, we present practical magic state distillation factories on Bivariate Bicycle (BB) codes that execute Paulimeasurement-based Clifford circuits inside a single BB code block. We formulate distillation circuit design as a joint optimization of logical qubit mapping, gate scheduling, measurement nativization, and protocol compression via qubit recycling. Based on detailed resource analysis and simulations, our BB factories have spacetime volume comparable to that of leading distillation factories while delivering lower target error at a smaller qubit footprint, and are particularly compelling as second-round distillers following magic state cultivations.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/isca66397.2026.00148",
+    "pages": "2081-2095",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00148",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Symposium on Computer Architecture",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/isca/XuLRHD26",
+    "dblp_toc": "https://dblp.org/db/conf/isca/isca2026",
+    "booktitle": "ISCA",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "circuit design"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "circuit design"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/isca66397.2026.00185",
+    "venue": "isca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "TAGT: An Efficient Graph Transformer Accelerator with Topology-aware Sparsification and Merging.",
+    "authors": [
+      "Hui Yu 0029",
+      "Wei Zhang 0138",
+      "Ligang He",
+      "Jin Zhao 0003",
+      "Yu Zhang 0027",
+      "Zixiao Wang 0005"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/26/6190-29",
+      "https://dblp.org/pid/10/4661-138",
+      "https://dblp.org/pid/36/5655",
+      "https://dblp.org/pid/97/4765-3",
+      "https://dblp.org/pid/50/671-27",
+      "https://dblp.org/pid/141/1943-5"
+    ],
+    "abstract": "Graph Transformers (GTs) have emerged as a powerful paradigm for graph representation learning, as their attention mechanism can capture long-range dependencies and model complex structural interactions beyond the local message passing scope of conventional Graph Neural Networks (GNNs). This capability has enabled GTs to achieve strong accuracy across important domains, including recommendation systems and VLSI congestion prediction. However, the global attention mechanism in GTs requires each vertex to attend to all other vertices, incurring O(N 2 ) computation and intermediate data movement. As graph size increases, this quadratic complexity leads to prohibitive computational overhead and excessive off chip memory traffic, fundamentally limiting the scalability and efficiency of GT execution. In this paper, we propose TAGT, the first efficient topology aware Graph Transformer accelerator designed to mitigate these performance bottlenecks. Specifically, we integrate a topology aware sparsification and merging approach into the accelerator design that dramatically reduces the O(N 2 ) complexity. TAGT introduces a structure-aware sparse subgraph, termed the Topology Dependency Subgraph (TDS), which exploits inherent topological dependencies and reduces the number of attended edges to O(N log N) on average. The TDS is designed to retain local neighborhood structure while capturing essential higher order interrelationships. By performing attention on the TDS, TAGT approximates global attention over the entire graph with negligible accuracy loss while eliminating most unnecessary computations and off-chip data movements. To fully harness the performance potential of this approach, TAGT incorporates a data driven loading and merging engine to minimize off-chip memory accesses and reduce TDS construction overhead on the fly. TAGT also introduces a TDS-based fast attention unit to improve the parallelism of attention computation. We implement and evaluate TAGT on a Xilinx Alveo U280 FPGA card. Experimental results show that TAGT achieves average speedups of 175.4× and 18.6×, together with energy savings of 217.2× and 24.8×, over state-of-the-art software GT solutions on Intel Xeon CPUs and NVIDIA A100 GPUs, respectively. Compared with representative GNN accelerators, including FlowGNN, MEGA, and BingoGCN, TAGT delivers average speedups of 8.2×, 6.9×, and 4.7×, and energy savings of 9.3×, 7.5×, and 5.2×, respectively.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/isca66397.2026.00185",
+    "pages": "2664-2678",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00185",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Symposium on Computer Architecture",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/isca/YuZHZZW26",
+    "dblp_toc": "https://dblp.org/db/conf/isca/isca2026",
+    "booktitle": "ISCA",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "图神经网络",
+      "Transformer 架构",
+      "注意力机制",
+      "表示学习"
+    ],
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "electronic design automation",
+      "graph neural network",
+      "transformer"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "electronic design automation"
+        ]
+      },
+      "method_evidence": [
+        "graph neural network",
+        "transformer"
+      ]
+    }
+  },
+  {
+    "id": "10.1109/isca66397.2026.00031",
+    "venue": "isca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Five-Minute Rule 40 Years Later: A First-Principles Revisit for Modern Memory Hierarchy.",
+    "authors": [
+      "Tong Zhang 0002",
+      "Vikram Sharma Mailthody",
+      "Fei Sun",
+      "Linsen Ma",
+      "Chris J. Newburn",
+      "Teresa Zhang",
+      "Yang Liu 0256",
+      "Jiangpeng Li",
+      "Hao Zhong 0006",
+      "Wen-Mei Hwu"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/07/4227-2",
+      "https://dblp.org/pid/231/3752",
+      "https://dblp.org/pid/51/394",
+      "https://dblp.org/pid/349/0074",
+      "https://dblp.org/pid/52/2708",
+      "https://dblp.org/pid/420/9628",
+      "https://dblp.org/pid/51/3710-256",
+      "https://dblp.org/pid/01/9848",
+      "https://dblp.org/pid/06/5514-6",
+      "https://dblp.org/pid/03/4630"
+    ],
+    "abstract": "In 1987, Jim Gray and Gianfranco Putzolu introduced the five-minute rule, a simple, storage-memory-economics-based heuristic for deciding when data should live in DRAM rather than on storage. Subsequent revisits to the rule largely retained that economics-only view, leaving host costs, feasibility limits, and workload behavior out of scope. This paper revisits the rule from first principles, integrating host costs, DRAM bandwidth/capacity, and physics-grounded models of SSD performance and cost, and then embedding these elements in a constraint- and workload-aware framework that yields actionable provisioning guidance. We show that, for modern AI platforms, especially GPU-centric hosts paired with ultra-high-IOPS SSDs engineered for fine-grained random access, the DRAM$\\leftrightarrow$flash caching threshold collapses from minutes to a few seconds. This shift reframes NAND flash memory as an \\emph{active data tier} and exposes a broad research space across the hardware-software stack. We further introduce MQSim-Next, a calibrated SSD simulator that supports validation and sensitivity analysis and facilitates future architectural and system research. Finally, we present two concrete case studies that showcase the software system design space opened by such memory hierarchy paradigm shift. Overall, we turn a classical heuristic into an actionable, feasibility-aware analysis and provisioning framework and set the stage for further research on AI-era memory hierarchy.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/isca66397.2026.00031",
+    "pages": "228-242",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00031",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Symposium on Computer Architecture",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/isca/ZhangMSMNZLLZH26",
+    "dblp_toc": "https://dblp.org/db/conf/isca/isca2026",
+    "booktitle": "ISCA",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 社会科学"
+    ],
+    "ai4s_keywords": [
+      "economics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 社会科学": [
+          "economics"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/isca66397.2026.00026",
+    "venue": "isca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "HBM-CASO: A Coordinated Approach to HBM System-Level and On-Die ECC.",
+    "authors": [
+      "Ruizhi Zhu 0002",
+      "Yanan Guo 0002",
+      "Huize Li",
+      "Weidong Cao 0001",
+      "Qian Lou",
+      "Xin Xin 0008"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/358/0223-2",
+      "https://dblp.org/pid/120/5486-2",
+      "https://dblp.org/pid/278/8981",
+      "https://dblp.org/pid/61/5251-1",
+      "https://dblp.org/pid/207/3962",
+      "https://dblp.org/pid/35/1895-8"
+    ],
+    "abstract": "HBM (High-Bandwidth Memory) has progressively strengthened its reliability by employing more advanced ECC (Error Correction Code) techniques, such as Reed-Solomon (RS) codes, to meet the increasing reliability challenges raised from continued technology scaling. Over time, the protection paradigm has shifted from a system-centric approach (i.e., system ECC), where the processor primarily manages error correction, to a memory-centric approach (i.e., on-die ECC), where HBM handles errors independently. Although this shift generally reduces the ECC burden on the processor side, it constrains the flexibility to implement stronger protection schemes, particularly when the processor is capable of supporting more advanced ECC. To address this problem, we propose HBM-CASO, a new protection mode designed to accommodate advanced system ECC. It strategically reorganizes the on-die ECC resources to generate a stronger on-die codeword as a supplement to the system ECC. Furthermore, due to limited on-die computing resources, HBM cannot directly verify the advanced system ECC. HBM-CASO therefore introduces a delayed verification strategy, which accumulates on-die parity across a batch of writes, rather than verifying each write individually, and validates the entire batch as a whole. Our extensive evaluation results demonstrate that HBM-CASO has effectively enhanced error correction capability, allowing the system to correct a broader range of error patterns with minimal performance and bandwidth overhead.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/isca66397.2026.00026",
+    "pages": "147-162",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00026",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Symposium on Computer Architecture",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/isca/ZhuGLCLX26",
+    "dblp_toc": "https://dblp.org/db/conf/isca/isca2026",
+    "booktitle": "ISCA",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "error-correcting codes"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "error-correcting codes"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/isca66397.2026.00149",
+    "venue": "isca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "O3LS: Optimizing Lattice Surgery via Automatic Layout Searching and Loose Scheduling.",
+    "authors": [
+      "Chenghong Zhu",
+      "Xian Wu",
+      "Jiahan Chen",
+      "Keming He",
+      "Junjie Wu",
+      "Xin Wang 0022",
+      "Lingling Lao"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/342/3486",
+      "https://dblp.org/pid/03/5595",
+      "https://dblp.org/pid/62/1064",
+      "https://dblp.org/pid/363/8877",
+      "https://dblp.org/pid/35/118",
+      "https://dblp.org/pid/10/5630-22",
+      "https://dblp.org/pid/180/8171"
+    ],
+    "abstract": "Toward the large-scale, practical realization of quantum computing, quantum error correction is essential. Among various quantum error-correcting codes, the surface code stands out as a leading candidate, and lattice surgery based on surface codes has emerged as a promising technique for faulttolerant quantum computation (FTQC). However, implementing quantum algorithms using lattice surgery introduces both resource and time overhead. Existing approaches typically focus on large layout designs, with compiler passes aimed primarily at optimizing time overhead. This often overlooks the trade-off between rotation bottlenecks and movement distance, which leads to inefficient resource utilization and prevents further reduction of the quantum computation failure rate. To address these challenges, we introduce O3LS, a framework for optimizing lattice surgery through automatic layout search and loose scheduling. O3LS achieves an optimal balance by automatically generating squeezed data layouts to reduce space requirements and employing loose scheduling algorithms combined with circuit synthesis techniques to reduce time overhead, thereby effectively minimizing overall logical error rates. Numerical results indicate that O3LS can reduce space overhead by 28.0% over standard layouts and 46.7% over sparse layouts without increasing the number of time steps, leading to suppression of logical error rates by up to 16% relative to larger data layout designs. O3LS can also achieve time overhead reductions of$\\mathbf{3 6. 0 7 \\%}$and$\\mathbf{2 4. 7 6 \\%}$in compact and standard data layout designs, respectively. It suppresses logical error rates by up to an order of magnitude compared to prior compilers that focus primarily on maximizing parallelism.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/isca66397.2026.00149",
+    "pages": "2096-2110",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ISCA66397.2026.00149",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Symposium on Computer Architecture",
+    "ccf_rank": "A",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/isca/ZhuWCHWWL26",
+    "dblp_toc": "https://dblp.org/db/conf/isca/isca2026",
+    "booktitle": "ISCA",
+    "ai4s_hits": [
+      "quantum computing"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "error-correcting codes",
+      "quantum computing",
+      "quantum circuit",
+      "quantum error correction"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "error-correcting codes",
+          "quantum computing",
+          "quantum circuit",
+          "quantum error correction"
+        ]
+      },
+      "method_evidence": []
+    }
+  }
+]

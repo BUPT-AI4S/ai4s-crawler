@@ -1,0 +1,1025 @@
+[
+  {
+    "id": "10.1145/3832810.3832911",
+    "venue": "icpp",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Contraction Hierarchies for Parallel Sequence-to-Graph Alignment.",
+    "authors": [
+      "Aranya Banerjee",
+      "Srinivas Aluru"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/385/7309",
+      "https://dblp.org/pid/a/SAluru"
+    ],
+    "abstract": "Sequence-to-graph alignment is fundamental to pangenome analysis, and efficient parallel algorithms are necessary to scale to modern genomic datasets. Prior works largely focused on efficient batch processing of multiple problem instances, while each instance itself is executed serially. Recently, the first parallel algorithm (ParSGA) for aligning a single sequence to a pangenome graph has been developed [2]. Although work-optimal, this algorithm incurs significant preprocessing and storage costs and requires a specific assumption about how ambiguous nucleotides are handled for efficient performance. In this paper, we present CHSGA, a new parallel algorithm for optimal sequence-to-graph alignment that relies on contraction hierarchies built upon the pangenome graph. CHSGA significantly reduces preprocessing time and storage requirements by constructing a single compact index while retaining broad applicability. Across large genome graphs, CHSGA produces indices that are up to two orders of magnitude smaller and achieves index load times up to 67 × faster compared to ParSGA.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3832810.3832911",
+    "pages": "315-325",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3832810.3832911",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Conference on Parallel Processing",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/icpp/BanerjeeA26",
+    "dblp_toc": "https://dblp.org/db/conf/icpp/icpp2026",
+    "booktitle": "ICPP",
+    "ai4s_hits": [
+      "\\bgenomics?\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "genomics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "genomics"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3832810.3832847",
+    "venue": "icpp",
+    "year": 2026,
+    "track": "unverified",
+    "title": "FAST: A Holistic Framework for Optimizing Memory-I/O, Computation, and Sampling in Temporal GNN Training.",
+    "authors": [
+      "Yushu Cai",
+      "Qingrui Zhu",
+      "Lei Liu",
+      "Kai Sheng",
+      "Hao Chen 0002",
+      "Xin He 0054"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/414/8501",
+      "https://dblp.org/pid/405/5119",
+      "https://dblp.org/pid/21/2715",
+      "https://dblp.org/pid/205/0371",
+      "https://dblp.org/pid/86/475-2",
+      "https://dblp.org/pid/69/1798-54"
+    ],
+    "abstract": "Temporal Graph Neural Networks (TGNNs) are widely used for learning from dynamic graphs in applications such as recommendation, social network analysis, and traffic forecasting. However, scaling TGNN training to large dynamic graphs remains challenging due to three intertwined bottlenecks: memory-I/O, irregular computation, and temporal neighbor sampling. Existing systems often optimize these stages in isolation, leaving substantial performance headroom on the table. We present FAST , a holistic framework that accelerates end-to-end TGNN training by jointly optimizing sampling, memory-I/O, and computation. FAST introduces SlimCache , which exploits within-batch compression and cross-batch caching to reduce host-device data movement under limited GPU memory budgets. It further designs thread-efficient graph operators tailored to sparse temporal subgraphs, improving GPU cache locality and reducing the latency of aggregation and edge softmax. In addition, FAST employs a topology-aware sampling strategy that improves CPU cache locality and accelerates temporal neighbor sampling. Extensive experiments on real-world large dynamic graphs show that FAST achieves an average of 2.1 × (up to 4.7 ×) speedup over state-of-the-art systems without sacrificing model accuracy. The code of FAST is publicly available at https://github.com/NoneBone/FAST.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3832810.3832847",
+    "pages": "490-500",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3832810.3832847",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Conference on Parallel Processing",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/icpp/CaiZLSCH26",
+    "dblp_toc": "https://dblp.org/db/conf/icpp/icpp2026",
+    "booktitle": "ICPP",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "图神经网络"
+    ],
+    "ai4s_tags": [
+      "AI for 社会科学"
+    ],
+    "ai4s_keywords": [
+      "social networks",
+      "graph neural network"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 社会科学": [
+          "social networks"
+        ]
+      },
+      "method_evidence": [
+        "graph neural network"
+      ]
+    }
+  },
+  {
+    "id": "10.1145/3832810.3832871",
+    "venue": "icpp",
+    "year": 2026,
+    "track": "unverified",
+    "title": "A Neuromorphic Dual-Stage Swin Transformer for Wetland Classification on Edge Platforms.",
+    "authors": [
+      "Hongjiang Deng",
+      "Wenhua Hu",
+      "Haohui Peng",
+      "Yixing Li",
+      "Mengying Hu",
+      "Jianwen Xiang",
+      "Rui Hao"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/446/0075",
+      "https://dblp.org/pid/46/7506",
+      "https://dblp.org/pid/441/6415",
+      "https://dblp.org/pid/32/6426",
+      "https://dblp.org/pid/241/5508",
+      "https://dblp.org/pid/66/5911",
+      "https://dblp.org/pid/02/7131"
+    ],
+    "abstract": "Accurate coastal wetland classification using hyperspectral remote sensing is crucial for conservation, restoration, and sustainable management of these ecologically vital regions. With the proliferation of edge computing, there is a growing demand for real-time hyperspectral analysis on sensing platforms such as satellites and unmanned aerial vehicles. However, the spectral complexity of wetland scenes, the high computational cost of modern CNNs and Transformers, and frequent memory accesses impose substantial overhead on resource-constrained edge platforms. To address these challenges, we propose the Dual-Stage Spiking Swin Transformer (D2S-SwinT), a neuromorphic architecture that integrates the feature representation capability of Swin Transformers with the event-driven efficiency of brain-inspired computation. The model employs a compact dual-stage design to reduce architectural redundancy and leverages the Expectation Compensation and Multi-Threshold (ECMT) mechanism to transform dense arithmetic operations into sparse, event-driven processes. Extensive experiments on four wetland datasets show that D2S-SwinT reaches 99.62% OA on Huanghekou at T = 4. Additional experiments on IP and SA provide evidence that the model generalizes beyond wetland-specific scenes. At T = 1, its normalized operation-level energy is reduced to 8% of the ANN-proxy reference. At T = 3, a memristor-based architecture-level mapping yields a projected OA of 96.69% and an energy per sample equal to 0.66% of the software reference. These results indicate the potential of D2S-SwinT for accurate and energy-efficient hyperspectral wetland monitoring on resource-constrained edge platforms.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3832810.3832871",
+    "pages": "468-478",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3832810.3832871",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Conference on Parallel Processing",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/icpp/DengHPLHXH26",
+    "dblp_toc": "https://dblp.org/db/conf/icpp/icpp2026",
+    "booktitle": "ICPP",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "Transformer 架构",
+      "神经网络"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学",
+      "AI for 地球宇宙科学"
+    ],
+    "ai4s_keywords": [
+      "neuroscience",
+      "earth system",
+      "transformer"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "neuroscience"
+        ],
+        "AI for 地球宇宙科学": [
+          "earth system"
+        ]
+      },
+      "method_evidence": [
+        "transformer"
+      ]
+    }
+  },
+  {
+    "id": "10.1145/3832810.3832862",
+    "venue": "icpp",
+    "year": 2026,
+    "track": "unverified",
+    "title": "NeuroPrefetcher: Storage-Aware Sparse LLM Inference via Delta Prefetching.",
+    "authors": [
+      "Nobel Dhar",
+      "Md Romyull Islam",
+      "Xuechen Zhang 0001",
+      "Gongjin Sun",
+      "Sahidul Islam",
+      "Bobin Deng",
+      "Kun Suo"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/306/7422",
+      "https://dblp.org/pid/240/6686",
+      "https://dblp.org/pid/51/7435-1",
+      "https://dblp.org/pid/248/4972",
+      "https://dblp.org/pid/87/5265",
+      "https://dblp.org/pid/58/10076",
+      "https://dblp.org/pid/184/5707"
+    ],
+    "abstract": "Deploying large language models on edge devices is increasingly limited by a widening gap between model size and available memory. Existing approaches such as quantization, smaller models, and offloading can raise the effective memory limit, but they still assume that the model can be compressed or partitioned to fit within some budget. We target the harder model-exceeds-memory setting, in which the model remains larger than resident memory throughout execution and storage becomes an active source of weights on the critical path. We observe that MLP activity during autoregressive decoding has strong temporal locality: approximately 82–85% of active neurons persist from one token to the next. This means that most sparse weights needed for the current token are already resident, and only the newly needed rows must be fetched from storage. We present NeuroPrefetcher, a storage-backed LLM inference system that exploits this property through predictive delta prefetching. After layer 0, a single GPU-resident predictor, occupying 2.86% of base model parameters, predicts sparse activity for all downstream MLP layers in one forward pass. The runtime compares these predictions against resident GPU buffers and issues application-scheduled NVMe reads only for incoming delta rows, replacing reactive operating-system demand paging with explicit, model-aware weight movement. On real unified-memory edge hardware, NeuroPrefetcher achieves 7.9–12.0 × speedup over llama.cpp across constrained memory budgets.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3832810.3832862",
+    "pages": "523-532",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3832810.3832862",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Conference on Parallel Processing",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/icpp/DharIZSIDS26",
+    "dblp_toc": "https://dblp.org/db/conf/icpp/icpp2026",
+    "booktitle": "ICPP",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "多层感知机",
+      "大语言模型"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "neuroscience"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "neuroscience"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3832810.3832920",
+    "venue": "icpp",
+    "year": 2026,
+    "track": "unverified",
+    "title": "AtomFlow: Accelerating GNN-Based Molecular Dynamics with ab initio Accuracy on Fugaku Supercomputer.",
+    "authors": [
+      "Yiming Du",
+      "Mingzhen Li 0001",
+      "Lijun Liu",
+      "Guangming Tan",
+      "Weile Jia 0002"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/230/6249",
+      "https://dblp.org/pid/230/3070-1",
+      "https://dblp.org/pid/52/2829",
+      "https://dblp.org/pid/80/2272",
+      "https://dblp.org/pid/41/10441-2"
+    ],
+    "abstract": "Molecular dynamics (MD) simulations with ab initio accuracy have become indispensable for studying microscopic phenomena. Although graph neural network (GNN)-based MD models provide higher accuracy than deep neural network (DNN)-based models, their complex message-passing architectures introduce substantial computational and communication bottlenecks for large-scale inference. In this paper, we propose AtomFlow, a holistic acceleration for a representative GNN-based MD model on the Fugaku supercomputer. Our key optimizations include: (1) we design a fused domain-specific EC kernel that avoids materializing large edge-related intermediate tensors; (2) we design an inter-process communication operator that leverages Fugaku’s uTofu interconnect to accelerate atomic-feature exchange; and (3) we redesign the inference workflow with a framework-free implementation to avoid the overhead of the PyTorch framework on Fugaku. Experimental results show that AtomFlow achieves up to a 9.77 × speedup over the baseline implementation, reaching up to 26.14 nanoseconds per day for a 576,000-atom system with 12,000 nodes on Fugaku.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3832810.3832920",
+    "pages": "122-132",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3832810.3832920",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Conference on Parallel Processing",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/icpp/DuLLTJ26",
+    "dblp_toc": "https://dblp.org/db/conf/icpp/icpp2026",
+    "booktitle": "ICPP",
+    "ai4s_hits": [
+      "molecular dynamics",
+      "\\bmolecular\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "图神经网络",
+      "神经网络"
+    ],
+    "ai4s_tags": [
+      "AI for 物质科学"
+    ],
+    "ai4s_keywords": [
+      "molecule",
+      "molecular dynamics",
+      "graph neural network"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 物质科学": [
+          "molecule",
+          "molecular dynamics"
+        ]
+      },
+      "method_evidence": [
+        "graph neural network"
+      ]
+    }
+  },
+  {
+    "id": "10.1145/3832810.3832903",
+    "venue": "icpp",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Offline Signal Reconstruction and Time-dependent Roofline analysis for Always-on Monitoring.",
+    "authors": [
+      "Bengisu Elis",
+      "Cristian Santiago Vargas Ortiz",
+      "Josef Weidendorfer",
+      "Martin Schulz 0001"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/247/5657",
+      "https://dblp.org/pid/445/9960",
+      "https://dblp.org/pid/10/1152",
+      "https://dblp.org/pid/07/6559"
+    ],
+    "abstract": "Always-on monitoring provides system administrators with invaluable insights into system health, anomalies, and the performance of user applications. In HPC systems, low overhead and seamless instrumentation is especially important for always-on monitoring, as it enables continuous metrics observation with negligible impact to application performance. Hence it ensures the system continues to deliver high-performance computing capabilities. Function introspection via dynamic linking is a method used to collect performance measurements at application runtime without modifying the source code. It enables the collection of relational data linked to application characteristics, such as function parameters, call locations, and similar attributes. Although powerful, function introspection via dynamic linking cannot be applied to always-on monitoring due to the high overhead incurred when intercepting every monitored function call. In this paper, we propose a method for low-overhead function introspection to support always-on monitoring. Our approach randomly samples a minimal number of measurements at runtime and reconstructs the original time series signal from these samples using compressive sensing— a technique widely used for data compression and signal reconstruction. We evaluate our approach by comparing the reconstructed signal with the signal obtained from full instrumentation, in terms of signal pattern, frequency, cumulated energy as well as the statistical analysis of the error distributions of each signal point. We show that our approach can reconstruct 88% of the cumulated original signal energy with 84% less overhead by sampling only 15% of the signal.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3832810.3832903",
+    "pages": "931-941",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3832810.3832903",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Conference on Parallel Processing",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/icpp/ElisOWS26",
+    "dblp_toc": "https://dblp.org/db/conf/icpp/icpp2026",
+    "booktitle": "ICPP",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "compressive sensing"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "compressive sensing"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3832810.3832864",
+    "venue": "icpp",
+    "year": 2026,
+    "track": "unverified",
+    "title": "PipeTree: Decision Tree Partitioning for Efficient Inference on Programmable Switches.",
+    "authors": [
+      "Jiawei Huang 0001",
+      "Xin Li",
+      "Yijun Li 0002",
+      "Xiaojuan Lu",
+      "Zhaoyi Li",
+      "Tao Zhang 0019",
+      "Jingling Liu",
+      "Zhangwen Lu",
+      "Shaodong Huang"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/13/4208-1",
+      "https://dblp.org/pid/09/1365",
+      "https://dblp.org/pid/52/6049-2",
+      "https://dblp.org/pid/228/1164",
+      "https://dblp.org/pid/78/2545",
+      "https://dblp.org/pid/15/4777-19",
+      "https://dblp.org/pid/160/7597",
+      "https://dblp.org/pid/446/0040",
+      "https://dblp.org/pid/287/7052"
+    ],
+    "abstract": "In recent years, there has been a growing trend in deploying machine learning models directly in the data plane, taking advantage of the high throughput and low latency offered by modern programmable switches to conduct various tasks such as line-rate traffic classification and anomaly detection. Among these models, decision tree has gained popularity due to its simple structure and top-down matching pattern, which aligns well with the typical pipeline architecture of programmable switches. However, deploying decision tree on pipeline-based programmable switches, such as Tofino, is challenging due to uneven resource utilization, together with the depth and width limitations imposed by the pipeline resources. In this paper, we propose a novel tree partitioning approach called PipeTree that enables parallel execution of decision tree through making full use of the pipeline resources. Specifically, PipeTree cuts the deep decision tree into multiple short subtrees which could be executed in parallel and uses a composition table to aggregate the outputs of all subtrees. The experimental results on programmable switches show that, compared with state-of-the-art data plane decision tree approaches, PipeTree enhances the scalability of decision tree and effectively reduces the inference time.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3832810.3832864",
+    "pages": "1019-1029",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3832810.3832864",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Conference on Parallel Processing",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/icpp/HuangLLLLZLLH26",
+    "dblp_toc": "https://dblp.org/db/conf/icpp/icpp2026",
+    "booktitle": "ICPP",
+    "ai4s_hits": [],
+    "ai4s_reason": "review_vocabulary",
+    "ai4s_vocabulary_hits": [
+      "机器学习",
+      "异常检测",
+      "决策树"
+    ],
+    "ai4s_tags": [],
+    "ai4s_keywords": [],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "unclassified",
+      "evidence": {},
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3832810.3832919",
+    "venue": "icpp",
+    "year": 2026,
+    "track": "unverified",
+    "title": "High-Performance Virtual Screening Based on Parallel Molecular Dynamics Simulations with Early Termination.",
+    "authors": [
+      "Shingo Okuno",
+      "Natsuki Kanazawa",
+      "Takuto Koyama",
+      "Takashi Katoh",
+      "Shigeyuki Matsumoto",
+      "Yasushi Okuno"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/177/6864",
+      "https://dblp.org/pid/446/0032",
+      "https://dblp.org/pid/299/3010",
+      "https://dblp.org/pid/89/4161",
+      "https://dblp.org/pid/301/2694",
+      "https://dblp.org/pid/79/6343"
+    ],
+    "abstract": "We propose a parallel implementation of molecular dynamics (MD) simulations whose execution times vary significantly across simulations. Although MD is a useful tool for drug discovery, evaluating all candidate compounds with MD is computationally infeasible in a straightforward manner. One promising approach is to reduce the computational cost per simulation while improving overall throughput through parallelization. The former is achieved by terminating a simulation as soon as it is judged to be unproductive. Because such a termination mechanism causes significant variations in execution time among simulations, load imbalances occur unless the execution order is scheduled properly, resulting in parallel performance degradation. Although knowing each simulation’s execution time in advance would simplify scheduling, accurately predicting it as a regression task is extremely difficult. We therefore developed a scheduler based on a binary classification task that predicts whether the execution time of each simulation is short. Simulations classified as negative are executed before those classified as positive. Because false positives with long execution times cause load imbalances, we adopted cost-sensitive learning to suppress such false positives during the training of a machine learning model for the classification task. In the performance evaluations, we confirmed that the termination mechanism reduced node-hours by up to 85.55%. In addition, our scheduler reduced the gap between the minimum and maximum wall times by 2.883 hours, an 84.94% reduction compared with random scheduling. As a result, we achieved a 6.773-fold speedup in wall time compared with the baseline implementation without the termination mechanism.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3832810.3832919",
+    "pages": "111-121",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3832810.3832919",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Conference on Parallel Processing",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/icpp/OkunoKKKMO26",
+    "dblp_toc": "https://dblp.org/db/conf/icpp/icpp2026",
+    "booktitle": "ICPP",
+    "ai4s_hits": [
+      "molecular dynamics",
+      "\\bmolecular\\b",
+      "drug discovery"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "机器学习"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学",
+      "AI for 物质科学"
+    ],
+    "ai4s_keywords": [
+      "drug discovery",
+      "molecule",
+      "molecular dynamics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "drug discovery"
+        ],
+        "AI for 物质科学": [
+          "molecule",
+          "molecular dynamics"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3832810.3832924",
+    "venue": "icpp",
+    "year": 2026,
+    "track": "unverified",
+    "title": "S2PAR: Scalable Surface Code Ancilla Routing Card for Distributed Fault-Tolerant Quantum Computing.",
+    "authors": [
+      "Samuel A. Stein",
+      "Shuwen Kan",
+      "Charles Guinn",
+      "Esin Tureci",
+      "Guus Avis",
+      "Chenxu Liu",
+      "Zefan Du",
+      "Margaret Martonosi",
+      "Stefan Krastanov",
+      "Ying Mao 0001",
+      "Andrew A. Houck",
+      "Ang Li 0006"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/274/7675",
+      "https://dblp.org/pid/378/3889",
+      "https://dblp.org/pid/272/4339",
+      "https://dblp.org/pid/263/2634",
+      "https://dblp.org/pid/350/5025",
+      "https://dblp.org/pid/238/7812",
+      "https://dblp.org/pid/353/5262",
+      "https://dblp.org/pid/m/MargaretMartonosi",
+      "https://dblp.org/pid/320/8508",
+      "https://dblp.org/pid/40/1837-1",
+      "https://dblp.org/pid/180/1669",
+      "https://dblp.org/pid/33/2805-6"
+    ],
+    "abstract": null,
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3832810.3832924",
+    "pages": "909-919",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3832810.3832924",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "needs_abstract",
+    "conference_title": "International Conference on Parallel Processing",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/icpp/SteinKGTALDMKMH26",
+    "dblp_toc": "https://dblp.org/db/conf/icpp/icpp2026",
+    "booktitle": "ICPP",
+    "ai4s_hits": [
+      "quantum computing"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "quantum computing"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "quantum computing"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3832810.3832854",
+    "venue": "icpp",
+    "year": 2026,
+    "track": "unverified",
+    "title": "AccESM: Packed-Total Exact Inference for CPU ESM2 Embedding.",
+    "authors": [
+      "Wenhao Sun",
+      "Panpan Cui",
+      "Yiqi Liu",
+      "Wanyu Wang"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/212/7482",
+      "https://dblp.org/pid/204/1446",
+      "https://dblp.org/pid/151/9906",
+      "https://dblp.org/pid/24/5140"
+    ],
+    "abstract": "Protein language models such as ESM2 are now common tools in biology, and a common task is to compute pooled embeddings for large sequence sets. In many labs, this workload runs on shared CPU servers rather than GPUs, making CPU inference an important systems problem. Existing CPU stacks are general-purpose: they are not built for repeated packed ESM2 embedding inference on variable-length queues, so they incur extra overhead on the FP32 path and waste work on padding. We present AccESM, a CPU runtime for this setting. AccESM treats packed-total requests as the execution unit and uses this same view to organize reusable state, segmented attention, fused RoPE, layout handling, prewarm, and scheduling while keeping approximation-free FP32 inference as the default path. On a dual-socket Xeon server, AccESM improves steady-state latency over torch.compile by 1.32 × at sequence length 512 and 1.50 × at sequence length 1024. On a fair mixed-length queue, it improves throughput by up to 3.52 ×. The backend contributes a 1.37 × advantage even under globally sorted input where padding waste is minimized for all backends; the remaining gain comes from the runtime staying stable under arrival order while torch.compile degrades from padding. Fixed-thread reruns on an Intel Core i9-14900K and an AMD EPYC 9684X further show that the gains are not unique to one host.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3832810.3832854",
+    "pages": "726-735",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3832810.3832854",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Conference on Parallel Processing",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/icpp/SunCLW26",
+    "dblp_toc": "https://dblp.org/db/conf/icpp/icpp2026",
+    "booktitle": "ICPP",
+    "ai4s_hits": [
+      "protein language",
+      "\\bproteins?\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "科学基础模型",
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "protein language model",
+      "protein"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "科学基础模型": [
+          "protein language model"
+        ],
+        "AI for 生命科学": [
+          "protein"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3832810.3832825",
+    "venue": "icpp",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Online Scheduling of Battery-Aware Speculative Decoding for Energy-Efficient Cloud-Edge Collaborative LLM Inference.",
+    "authors": [
+      "Hengdi Wang",
+      "Lei Jiao 0002",
+      "Konglin Zhu",
+      "Lin Zhang 0013"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/361/5503",
+      "https://dblp.org/pid/47/91-2",
+      "https://dblp.org/pid/45/10585",
+      "https://dblp.org/pid/37/1629-13"
+    ],
+    "abstract": "While distributed speculative decoding can offer efficient acceleration for Large Language Model (LLM) inference in cloud-edge environments, unleashing its full potential confronts significant challenges, including complex token draft-length management, uncertain prompt arrivals and system conditions, and joint edge battery orchestration under fluctuating grid-energy prices. To systematically address these challenges, we conduct an intensive mathematical and algorithmic study. We first formulate a long-term cost minimization problem that captures all the challenges. Then, we decompose this problem into two subproblems and solve them alternately as time goes in an online manner. Particularly, we design a learning-centric algorithmic framework which employs bandit learning to address the intractability and manage draft length selection in the first subproblem and applies online learning to address the online uncertainty and manage battery states and grid-energy use in the second subproblem, both without relying on future inputs. We further conduct rigorous theoretical analysis, proving sub-linear regrets against offline optimal objectives and asymptotically-diminishing violation of long-term constraints. Extensive evaluations with real-world LLM inference demonstrate that our approach substantially outperforms several state-of-the-art methods, with many additional advantages.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3832810.3832825",
+    "pages": "542-552",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3832810.3832825",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Conference on Parallel Processing",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/icpp/WangJZZ26",
+    "dblp_toc": "https://dblp.org/db/conf/icpp/icpp2026",
+    "booktitle": "ICPP",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "在线学习",
+      "大语言模型",
+      "语言模型"
+    ],
+    "ai4s_tags": [
+      "AI for 物质科学"
+    ],
+    "ai4s_keywords": [
+      "battery"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 物质科学": [
+          "battery"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3832810.3832819",
+    "venue": "icpp",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Large-Scale Quantum Circuit Simulation on HPC Cluster via Cache Blocking, Boosting, and Gate Fusion Optimization.",
+    "authors": [
+      "Chuan-Chi Wang",
+      "Yan-Jie Wang",
+      "Chia-Heng Tu",
+      "Shih-Hao Hung"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/279/5467",
+      "https://dblp.org/pid/125/9303",
+      "https://dblp.org/pid/79/3912",
+      "https://dblp.org/pid/04/1410"
+    ],
+    "abstract": "Quantum circuit simulation is crucial for the development of quantum algorithms, particularly given the high cost and noise limitations of physical quantum hardware. While full-state quantum circuit simulation is commonly employed for prototyping and debugging, it poses challenges because of the exponential increase in simulation time for large quantum systems. In this work, we propose an extensible framework designed to enhance simulation performance by optimizing both data locality and computational efficiency, thereby addressing these challenges. This framework is seamlessly integrated with an optimizer that restructures quantum circuits and a simulator that adjusts execution strategies for various quantum operations. For the newly developed components, merge booster and diagonal detector, the underlying algorithms are inspired by the principles of quantum entanglement and gate fusion, as well as by the limitations identified in existing third-party simulation libraries. The experiments were conducted on eight DGX-H100 workstations, each equipped with eight NVIDIA H100 GPUs, employing both gate-level and circuit-level benchmarks. The results indicate a speedup of up to 160× for circuit-level benchmarks and up to 34× for diagonal-heavy gate-level benchmarks compared to existing simulators. The proposed methodologies are anticipated to deliver more robust and faster quantum circuit simulations, thereby fostering the advancement of novel quantum algorithms.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3832810.3832819",
+    "pages": "89-99",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3832810.3832819",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Conference on Parallel Processing",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/icpp/WangWTH26",
+    "dblp_toc": "https://dblp.org/db/conf/icpp/icpp2026",
+    "booktitle": "ICPP",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "quantum circuit"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "quantum circuit"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3832810.3832833",
+    "venue": "icpp",
+    "year": 2026,
+    "track": "unverified",
+    "title": "SCPFL: A Safety Reinforcement Learning Framework for Joint Energy-Fairness Optimization in Long-term Federated Learning.",
+    "authors": [
+      "Siwei Xue",
+      "Gang Li 0028"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/380/7613",
+      "https://dblp.org/pid/62/2655-28"
+    ],
+    "abstract": "Federated Learning (FL) enables heterogeneous clients to collaboratively train a shared model while keeping raw data local. In practical FL systems, client participation is often constrained by limited battery energy, and long-term unselection of clients may lower their willingness to participate, which further reduces the number of training data. Existing studies mainly focus on either energy-aware training or fairness-aware participation, while ignoring to design a long-term FL from both aspects. To address this issue, this paper proposes a Safe Client Pool FL framework (SCPFL) to jointly optimize client selection and local iteration under both energy and fairness constraints. Specifically, we first model the long-term energy consumption and fairness participation as probabilistic constraints. Based on these two constraints, we further prove that the conditions to obtain feasible client sets by satisfying either energy or fairness constraint. Finally, the considered problem is converted to an unconstrained long-term optimization problem, which can be solved by designed Actor-Critic (AC) architecture. Experiments on MNIST, Fashion-MNIST, CIFAR-10, CIFAR-100, and UCF-101 show that SCPFL consistently outperforms baselines and improves the energy-training performance by 11% on average.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3832810.3832833",
+    "pages": "1201-1210",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3832810.3832833",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Conference on Parallel Processing",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/icpp/XueL26",
+    "dblp_toc": "https://dblp.org/db/conf/icpp/icpp2026",
+    "booktitle": "ICPP",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "强化学习",
+      "联邦学习"
+    ],
+    "ai4s_tags": [
+      "AI for 物质科学"
+    ],
+    "ai4s_keywords": [
+      "battery",
+      "reinforcement learning",
+      "federated learning"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 物质科学": [
+          "battery"
+        ]
+      },
+      "method_evidence": [
+        "reinforcement learning",
+        "federated learning"
+      ]
+    }
+  },
+  {
+    "id": "10.1145/3832810.3832913",
+    "venue": "icpp",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Bit-Efficient Tensor Core Acceleration for High-Order Shallow-Water Dynamical Core.",
+    "authors": [
+      "Jienan Yao",
+      "Lilong Zhou",
+      "Heng Li",
+      "Wei Xue 0003"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/359/5927",
+      "https://dblp.org/pid/440/7567",
+      "https://dblp.org/pid/02/3672",
+      "https://dblp.org/pid/75/3841-3"
+    ],
+    "abstract": "Modern accelerators offer substantial performance opportunities through high-throughput low-precision arithmetic. However, exploiting this capability in high-order PDE solvers is challenging: the numerical method imposes strict accuracy requirements and prescribes structured computation patterns. This work addresses the difficulty in HOPE, a PyTorch-based high-order finite-volume dynamical core, to enable efficient mixed-precision execution on Tensor Cores. In particular, this work proposes (1) a modification of the Ozaki II scheme to improve input mantissa bit utilization in compute-intensive kernels, such as convolution-reformulated stencil computations; and (2) a low-precision storage strategy for error-tolerant components in memory-bound sections, such as Riemann solvers, without degrading solution fidelity. Across standard shallow-water benchmarks, the proposed optimizations improve end-to-end performance by 1.13 × –1.34 × relative to the existing channel-stacked Ozaki convolution baseline, while preserving the expected convergence behavior across the validated resolutions and orders. These results demonstrate the effectiveness of exploiting low-precision Tensor Core hardware in high-order dynamical cores.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3832810.3832913",
+    "pages": "1242-1252",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3832810.3832913",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Conference on Parallel Processing",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/icpp/YaoZLX26",
+    "dblp_toc": "https://dblp.org/db/conf/icpp/icpp2026",
+    "booktitle": "ICPP",
+    "ai4s_hits": [
+      "\\bpdes?\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 数理科学"
+    ],
+    "ai4s_keywords": [
+      "partial differential equation"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 数理科学": [
+          "partial differential equation"
+        ]
+      },
+      "method_evidence": []
+    }
+  }
+]

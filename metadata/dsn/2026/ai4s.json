@@ -1,0 +1,627 @@
+[
+  {
+    "id": "10.1109/dsn-s70715.2026.00020",
+    "venue": "dsn",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Event Burst Trigger: An Availability Backdoor Attack on Event-Based SNN Object Detection.",
+    "authors": [
+      "Jaesun Baek",
+      "Chanwook Lee",
+      "Eun-Kyu Lee"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/442/8554",
+      "https://dblp.org/pid/442/8912",
+      "https://dblp.org/pid/51/6686"
+    ],
+    "abstract": "Event-based vision and spiking neural networks (SNNs) are increasingly adopted for edge intelligence under strict latency and energy constraints. However, the vulnerability of event-based SNN object detection models to availability backdoor attacks remains insufficiently studied. This paper presents Event Burst Trigger (EBT), an availability backdoor attack targeting SNN-based object detection models. EBT injects carefully crafted event-based triggers into the training data, which induce temporally concentrated event streams during inference. These burst-like activations increase the number of phantom (i.e., spurious) object candidates, and consequently inflate the computational cost of the post-processing stage, particularly Non-Maximum Suppression (NMS). We evaluate EBT on SpikeYOLO, the state-of-the-art SNN-based object detector, under a poison-only threat model that does not require modifications to the model architecture, loss function, or inference pipeline. Experimental results show that while detection accuracy remains largely preserved, with mAP@0.5 decreasing by less than 0.099, the latency of the NMS stage increases by up to 38%. This indicates that NMS can become a dominant availability bottleneck in event-based SNN object detection. Experiments on an edge platform further show that the proposed attack elevates baseline resource utilization and reduces scheduling slack without inducing conspicuous peaks in resource usage. In addition, STRIP-based backdoor detection fails to reliably distinguish the proposed attack from benign inputs. These results characterize a previously underexplored availability backdoor threat in event-based SNN object detection systems.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/dsn-s70715.2026.00020",
+    "pages": "1-7",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/DSN-S70715.2026.00020",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Conference on Dependable Systems and Networks",
+    "ccf_rank": "B",
+    "ccf_field": "网络与信息安全",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/dsn/BaekLL26",
+    "dblp_toc": "https://dblp.org/db/conf/dsn/dsn2026s",
+    "booktitle": "DSN-S",
+    "ai4s_hits": [],
+    "ai4s_reason": "review_vocabulary",
+    "ai4s_vocabulary_hits": [
+      "脉冲神经网络",
+      "目标检测"
+    ],
+    "ai4s_tags": [],
+    "ai4s_keywords": [],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "unclassified",
+      "evidence": {},
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/dsn69566.2026.00072",
+    "venue": "dsn",
+    "year": 2026,
+    "track": "unverified",
+    "title": "From MIRAGE to CLEAR: Component-Level Explainable Anomaly Reasoning for Autonomous Vehicle Perception Systems.",
+    "authors": [
+      "David Fernandez",
+      "Pedram MohajerAnsari",
+      "Amir Salarpour",
+      "Cigdem Kokenoz",
+      "Bing Li",
+      "Mert D. Pesé"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/35/7004",
+      "https://dblp.org/pid/381/8750",
+      "https://dblp.org/pid/171/6223",
+      "https://dblp.org/pid/411/4882",
+      "https://dblp.org/pid/13/2692",
+      "https://dblp.org/pid/214/8289"
+    ],
+    "abstract": "Autonomous vehicle (AV) perception systems remain vulnerable to failures that current anomaly detectors can flag but cannot trace to a specific component; an attribution gap that impedes forensics and emerging transparency mandates like the EU AI Act. We introduce a unified framework comprising MIRAGE and CLEAR. MIRAGE (MUTCD-Informed Realistic Anomalous Generation Engine) integrates 48,022 real-world driving scenes from nuScenes, Waymo Open, and Argoverse 2 with structured rules from the Manual on Uniform Traffic Control Devices (MUTCD), generating 5,847 annotated anomalous scenarios with known module-level ground truth across four violation types: direct, subtle, contextual, and environmental. This data powers CLEAR, a hierarchical three-layer LLM pipeline that detects anomalies, classifies violations, and attributes failures to Traffic Sign Recognition (TSR), Automated Lane Centering (ALC), or Object Detection (OD) with interpretable justifications. Confidence-gated propagation and schema-constrained outputs prevent error cascades and minimize hallucinations. CLEAR achieves 95.2% detection accuracy, 62.3% classification accuracy, and 84% attribution accuracy on direct TSR violations. A Top-2 evaluation paired with per-module confidence analysis raises overall attribution to 74.6%, confirming that apparent misattributions largely reflect the multi-module nature of anomaly types rather than reasoning failures. These results show that grounding LLM reasoning in structured traffic regulations enables reliable, interpretable forensics for AV perception systems, offering a practical path toward auditable, regulation-compliant safety analysis. The code for this work is available at https://github.com/David-FR/MIRAGE_CLEAR.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/dsn69566.2026.00072",
+    "pages": "718-731",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/DSN69566.2026.00072",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Conference on Dependable Systems and Networks",
+    "ccf_rank": "B",
+    "ccf_field": "网络与信息安全",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/dsn/FernandezMSKLP26",
+    "dblp_toc": "https://dblp.org/db/conf/dsn/dsn2026",
+    "booktitle": "DSN",
+    "ai4s_hits": [],
+    "ai4s_reason": "review_vocabulary",
+    "ai4s_vocabulary_hits": [
+      "大语言模型",
+      "目标检测"
+    ],
+    "ai4s_tags": [],
+    "ai4s_keywords": [],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "unclassified",
+      "evidence": {},
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/dsn-s70715.2026.00023",
+    "venue": "dsn",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Decentralized Root Cause Analysis for Cloud-Native Microservices - Experience with Distributed PageRank in Production.",
+    "authors": [
+      "Shabbir Hussain",
+      "Hari Charan Panjwani"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/30/8743",
+      "https://dblp.org/pid/445/4248"
+    ],
+    "abstract": "Root cause analysis in microservice systems typically relies on centralized telemetry aggregation, which becomes a bottleneck as deployments scale. We present an architecture that removes the central component entirely: each microservice runs a sidecar diagnostic agent that computes a local anomaly score and participates in gossip-based distributed Personalized PageRank over the service dependency graph. On the RCAEval benchmark (735 failure cases, 12-64 services), Top-1 accuracy is 94.7%, statistically indistinguishable from centralized PageRank at 94.1%, with roughly a third lower diagnosis latency and 74.5% less network traffic. We deployed the system for four weeks on a 15-node AWS EKS cluster handling 1% of live ecommerce traffic. The deployment processed 112 injected faults$(\\mathbf{9 4. 6 \\%}$Top-1) and 3 organic incidents$(\\mathbf{1}$of 3 correct). The production experience exposed problems that benchmarks do not expose: cross-availability-zone gossip asymmetry causing split-brain diagnoses, inadequate global anomaly thresholds, and external-dependency blind spots. We also ran into operational issues we had not anticipated, such as log volume from agents overwhelming the existing logging pipeline.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/dsn-s70715.2026.00023",
+    "pages": "50-56",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/DSN-S70715.2026.00023",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Conference on Dependable Systems and Networks",
+    "ccf_rank": "B",
+    "ccf_field": "网络与信息安全",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/dsn/HussainP26",
+    "dblp_toc": "https://dblp.org/db/conf/dsn/dsn2026s",
+    "booktitle": "DSN-S",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "neuroscience"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "neuroscience"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/dsn-s70715.2026.00033",
+    "venue": "dsn",
+    "year": 2026,
+    "track": "unverified",
+    "title": "An IPsec Tunnel Recovery Protocol to Overcome QKD Key Desynchronization.",
+    "authors": [
+      "Hong-Sung Kim",
+      "Hyong-Shik Kim"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/445/4380",
+      "https://dblp.org/pid/07/5479"
+    ],
+    "abstract": "Modern cryptographic systems face increasing threats from quantum computing. Quantum Key Distribution (QKD) offers a promising defense by enabling quantum-secure key exchange. Recently, QKD has been integrated with conventional key-exchange protocols to derive final encryption keys for secure networks. However, vulnerabilities in QKD devices-such as key exposure, depletion, or synchronization failures-can propagate to QKD-dependent cryptographic services, leading to plaintext leakage or service disruption. The standard IKEv2 protocol lacks mechanisms to detect or recover from such incidents. This paper presents the QRIKE (Quantum-Resistant IKEv2) protocol, which integrates QKD devices into IKEv2, detects key-synchronization failures, and restores IPsec VPN tunnels via an IKE SA rollback mechanism. In experiments with 1,000 tunnels carrying 3 Gbps of IPsec traffic, encryptors without QRIKE support suffered about 40% throughput degradation, whereas QRIKE maintained all tunnels and processed encrypted traffic stably without disruption, demonstrating strong resilience under quantum-era threats.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/dsn-s70715.2026.00033",
+    "pages": "120-126",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/DSN-S70715.2026.00033",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Conference on Dependable Systems and Networks",
+    "ccf_rank": "B",
+    "ccf_field": "网络与信息安全",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/dsn/KimK26",
+    "dblp_toc": "https://dblp.org/db/conf/dsn/dsn2026s",
+    "booktitle": "DSN-S",
+    "ai4s_hits": [
+      "quantum computing"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "quantum computing"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "quantum computing"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/dsn-w70714.2026.00045",
+    "venue": "dsn",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Quantum Generative Adversarial Networks for EEG-Based Sleep Stage Classification in Noiseless and Noisy Scenarios.",
+    "authors": [
+      "Sthefanie Jofer Gomes Passo",
+      "Ikram U. Khan",
+      "John J. Prevost"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/394/4897",
+      "https://dblp.org/pid/441/0621",
+      "https://dblp.org/pid/126/6614"
+    ],
+    "abstract": "Sleep disorders affect about one billion people worldwide, yet automated sleep staging is limited by class imbalance in polysomnographic datasets and the representational capacity of classical generative models. This work compares a classical Generative Adversarial Network (GAN) with two Quantum Wasserstein GAN-GP (QWGAN-GP) variants—noiseless and noisy simulator—for synthetic EEG augmentation in sleep stage classification using the ANPHY-Sleep dataset [1]. Models are trained under a Wasserstein GAN with Gradient Penalty (WGAN-GP) across subsets of 2–4 statistical EEG features over 50 epochs. Results show consistent quantum-enhanced variance matching: QWGAN-GP variants achieve lower standard deviation mean absolute error (StdMAE) than the classical GAN, with reductions up to 70.9% at 3 features. The 6-qubit generator (26= 64-dimensional Hilbert space) captures EEG variance more faithfully than a classical multilayer perceptron. Moderate Gaussian noise (σ = 0.1) during QGAN training acts as implicit regularisation, yielding the best StdMAE (0.064) and competitive classification (Accuracy = 0.880, F1 = 0.880). The classical GAN suffers mode collapse at higher dimensions, dropping to 0.535–0.585 accuracy, while the noiseless QGAN reaches 0.905 at 3 features. A downstream classification evaluation on real PSG labels confirms that the quantum generator preserves N1 minority-class F1 (up to 0.1053 at 4 features) where the classical GAN consistently collapses to N1 F1 = 0.000 across all feature configurations. These results demonstrate that hybrid quantum-classical generative models provide a structurally distinct and empirically superior approach for minority-class distribution learning in imbalanced clinical time-series, albeit with higher classical simulation overhead.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/dsn-w70714.2026.00045",
+    "pages": "161-168",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/DSN-W70714.2026.00045",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Conference on Dependable Systems and Networks",
+    "ccf_rank": "B",
+    "ccf_field": "网络与信息安全",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/dsn/PassoKP26",
+    "dblp_toc": "https://dblp.org/db/conf/dsn/dsn2026w",
+    "booktitle": "DSN-W",
+    "ai4s_hits": [],
+    "ai4s_reason": "review_vocabulary",
+    "ai4s_vocabulary_hits": [
+      "生成对抗网络",
+      "睡眠分期",
+      "多层感知机"
+    ],
+    "ai4s_tags": [],
+    "ai4s_keywords": [],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "unclassified",
+      "evidence": {},
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/dsn-w70714.2026.00040",
+    "venue": "dsn",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Trust Without Safeguards: A Red-Teaming Study of ProteinMPNN in Open Protein Design Pipelines.",
+    "authors": [
+      "Tia Pope",
+      "Ahmad Patooghy"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/369/4239",
+      "https://dblp.org/pid/25/5234"
+    ],
+    "abstract": "Generative protein design models such as ProteinMPNN enable rapid and accurate sequence generation conditioned on target structures, but their open availability raises dual-use concerns. We present a red-teaming, system-level evaluation of ProteinMPNN under unconstrained usage. Using a sensitive protein (human prion, 1HJM) and a control (1BDD), we generate sequences across sampling conditions and evaluate outputs using sequence metrics and AlphaFold confidence scores. We find that ProteinMPNN consistently produces structurally plausible sequences (pLDDT 0.70–0.84) despite low sequence similarity to native proteins (recovery 0.15–0.30), demonstrating a decoupling between sequence identity and structural outcomes. When combined with downstream validation, this behavior yields high-confidence outputs without enforcing meaningful biological or safety constraints. In open deployment settings, however, this capability enables the generation of plausible variants of sensitive proteins under unconstrained conditions. We characterize this as a dependability gap and highlight the need for safeguards in generative bio-AI systems.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/dsn-w70714.2026.00040",
+    "pages": "130-136",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/DSN-W70714.2026.00040",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Conference on Dependable Systems and Networks",
+    "ccf_rank": "B",
+    "ccf_field": "网络与信息安全",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/dsn/PopeP26",
+    "dblp_toc": "https://dblp.org/db/conf/dsn/dsn2026w",
+    "booktitle": "DSN-W",
+    "ai4s_hits": [
+      "alphafold",
+      "\\bproteins?\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "蛋白质设计"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "protein",
+      "protein design"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "protein",
+          "protein design"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/dsn69566.2026.00073",
+    "venue": "dsn",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Fault-tolerant and Self-recovering Sharing of Multicast Transmission.",
+    "authors": [
+      "Sinchan Sengupta",
+      "Matthieu Perrin",
+      "Arannya Mukherjee"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/275/2189",
+      "https://dblp.org/pid/157/8438",
+      "https://dblp.org/pid/441/2365"
+    ],
+    "abstract": "Multicast transmission is a fundamental operation in overlay networks, enabling efficient data delivery from a source to multiple receivers via a logical tree. However, maintaining such overlays incurs a transmission cost at intermediate nodes, requiring fair cost sharing to prevent selfish behavior and ensure sustainability. Existing approaches address either fault tolerance or economic fairness, but not both, leaving multicast overlays vulnerable to faults or strategic manipulation.We present a fault-tolerant algorithm for multicast overlays that jointly ensures structural recovery and faithful cost sharing. Following transient faults that do not corrupt cryptographic keys, the algorithm autonomously reconstructs a correct multicast tree while distributing transmission costs using a Shapley-based mechanism. Lightweight cryptographic proofs enforce strategyproofness and prevent manipulation. We formally prove convergence, budget balance, and resistance to selfish deviations. Simulations on overlays demonstrate rapid recovery, low steady-state overhead, and robust fairness under adversarial conditions. Our results bridge fault tolerance and economic incentives in multicast overlay systems.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/dsn69566.2026.00073",
+    "pages": "732-744",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/DSN69566.2026.00073",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Conference on Dependable Systems and Networks",
+    "ccf_rank": "B",
+    "ccf_field": "网络与信息安全",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/dsn/SenguptaPM26",
+    "dblp_toc": "https://dblp.org/db/conf/dsn/dsn2026",
+    "booktitle": "DSN",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 社会科学"
+    ],
+    "ai4s_keywords": [
+      "economics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 社会科学": [
+          "economics"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/dsn-w70714.2026.00046",
+    "venue": "dsn",
+    "year": 2026,
+    "track": "unverified",
+    "title": "A Dependability Profile for Hybrid Quantum-Classical Systems.",
+    "authors": [
+      "Piyush Anil Sonawane",
+      "Andrew Kelly",
+      "Naveed Mahmud"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/378/5636",
+      "https://dblp.org/pid/66/1414",
+      "https://dblp.org/pid/234/0138"
+    ],
+    "abstract": "Hybrid quantum–classical computing is a key paradigm for executing quantum algorithms on Noisy Intermediate-Scale Quantum (NISQ) devices. However, the dependability of quantum–classical workflows under realistic system conditions remains underexplored. These workflows often involve heterogeneous resources, including CPUs, GPUs, FPGAs, and cloud-accessible QPUs, introducing variability, resource constraints, and trust concerns. In this work, we propose a methodology for benchmarking the dependability of quantum–classical workflows and their execution on hybrid systems. Our methodology involves establishing a dependability profile for workloads and corresponding systems using empirical measurements and evaluations of standard metrics of speed, scalability, and security of the overall system. Experimental evaluation includes two variational algorithms as case studies deployed on a hybrid CPU–FPGA system with QPU emulation backends that replicate the noise characteristics and gate sets of real quantum processors. For the dependability profile, we define iteration-level metrics for speed: variance, jitter, worst-case latency, stability, and resource-aware scalability metrics: Circuit Layer Operations Per Second (CLOPS). Results demonstrate that the proposed dependability profile enables practical decision-making by linking system behavior to deployability and performance limitations.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/dsn-w70714.2026.00046",
+    "pages": "169-175",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/DSN-W70714.2026.00046",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Conference on Dependable Systems and Networks",
+    "ccf_rank": "B",
+    "ccf_field": "网络与信息安全",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/dsn/SonawaneKM26",
+    "dblp_toc": "https://dblp.org/db/conf/dsn/dsn2026w",
+    "booktitle": "DSN-W",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "quantum circuit"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "quantum circuit"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/dsn69566.2026.00055",
+    "venue": "dsn",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Computationally Efficient Anomaly Detection and Exclusion for Practical and Robust Federated Learning.",
+    "authors": [
+      "Raman Zatsarenko",
+      "Dmitrii Korobeinikov",
+      "Sergei Chuprov",
+      "Leon Reznik"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/381/3460",
+      "https://dblp.org/pid/381/3579",
+      "https://dblp.org/pid/322/9705",
+      "https://dblp.org/pid/59/2041"
+    ],
+    "abstract": "We introduce a practical anomaly detection and exclusion algorithm in Federated Learning (FL), titled PID-MADE (Proportional-Integral-Derivative Model Anomaly Detection and Exclusion from aggregation). Inspired by the PID structure, our algorithm enhances robustness and security in FL by accumulating clients’ model deviation history and precisely detecting and excluding anomalies. Contrary to existing defenses, PID-MADE maintains a lightweight computational complexity of O(nd), where n is the number of clients and d is the dimensionality of the model parameter space. PID-MADE’s simple structure makes it easily deployable, without relying on impractical assumptions, such as root-of-trust datasets or prior knowledge of attacker counts. We analyze existing attack models and show theoretically that employing anomaly detection mechanisms in FL provably accelerates convergence. Furthermore, we provide theoretically-grounded recommendations for setting and tuning hyperparameters of our method in practice. Our empirical investigations, conducted across various domains, datasets, model architectures, and attack types, show that PID-MADE not only converges faster than common baselines, but also provides superior attack detection and mitigation, achieving 50× lower server-side computation time compared to the next fastest robust baseline, while reducing the attack success rates by as much as 34% in some cases, highlighting the robustness, security and efficiency enhancement. This paper demonstrates that adoption of anomaly detection and exclusion algorithms is indispensable for practical dependable FL deployments.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/dsn69566.2026.00055",
+    "pages": "498-510",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/DSN69566.2026.00055",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Conference on Dependable Systems and Networks",
+    "ccf_rank": "B",
+    "ccf_field": "网络与信息安全",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/dsn/ZatsarenkoKCR26",
+    "dblp_toc": "https://dblp.org/db/conf/dsn/dsn2026",
+    "booktitle": "DSN",
+    "ai4s_hits": [],
+    "ai4s_reason": "review_vocabulary",
+    "ai4s_vocabulary_hits": [
+      "联邦学习",
+      "异常检测"
+    ],
+    "ai4s_tags": [],
+    "ai4s_keywords": [],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "unclassified",
+      "evidence": {},
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/dsn-s70715.2026.00025",
+    "venue": "dsn",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Knowledge Transfer from LLMs to Provenance Analysis: Semantic-Augmented APT Detection.",
+    "authors": [
+      "Fei Zuo",
+      "Junghwan Rhee",
+      "Yung Ryn Choe",
+      "Chung Hwan Kim"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/08/2047",
+      "https://dblp.org/pid/27/5932",
+      "https://dblp.org/pid/82/5827",
+      "https://dblp.org/pid/122/2010"
+    ],
+    "abstract": "Advanced Persistent Threats (APTs) have caused significant losses across a wide range of sectors, including the theft of sensitive data and harm to system integrity. As attack techniques grow increasingly sophisticated and stealthy, the arms race between cyber defenders and attackers continues to intensify. The revolutionary impact of Large Language Models (LLMs) has opened up numerous opportunities in various fields, including cybersecurity. An intriguing question arises: can the extensive knowledge embedded in LLMs be harnessed for provenance analysis and play a positive role in identifying previously unknown malicious events? To seek a deeper understanding of this issue, we propose a new strategy for taking advantage of LLMs in provenance-based APT detection. In our design, the state-of-the-art LLM offers additional details in provenance data interpretation, leveraging their knowledge of system calls, software identity, and high-level understanding of application execution context. The advanced contextualized embedding capability is further utilized to capture the rich semantics of event descriptions. We conducted an empirical analysis of how LLMs interpret system events and obtained multiple insightful findings. We also verified through comparison that the contextualized embeddings generated by LLMs for provenance data outperform existing counterparts. Finally, our evaluation using real-world data shows that supervised threat detection achieves a precision of 99.0%, and semi-supervised anomaly detection attains a precision of 96.9%. The findings suggest that LLMs play a positive role in provenance-based APT detection and demonstrate promising potential for future applications in this area.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/dsn-s70715.2026.00025",
+    "pages": "1-7",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/DSN-S70715.2026.00025",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "International Conference on Dependable Systems and Networks",
+    "ccf_rank": "B",
+    "ccf_field": "网络与信息安全",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/dsn/ZuoRCK26",
+    "dblp_toc": "https://dblp.org/db/conf/dsn/dsn2026s",
+    "booktitle": "DSN-S",
+    "ai4s_hits": [],
+    "ai4s_reason": "review_vocabulary",
+    "ai4s_vocabulary_hits": [
+      "大语言模型",
+      "异常检测"
+    ],
+    "ai4s_tags": [],
+    "ai4s_keywords": [],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "unclassified",
+      "evidence": {},
+      "method_evidence": []
+    }
+  }
+]

@@ -1,0 +1,85 @@
+[
+  {
+    "id": "10.1111/cgf.70560",
+    "venue": "sca",
+    "year": 2026,
+    "track": "unverified",
+    "title": "F3AMD: Fast FiLM-Conditioned Fourier Autoregressive Motion Diffusion.",
+    "authors": [
+      "Calvin Z. Qiao",
+      "Benjamin MacAdam",
+      "Mohammadarsh Khokhar",
+      "Pranav Balaji",
+      "Jiaqing Hu",
+      "KangKang Yin"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/304/4169",
+      "https://dblp.org/pid/251/3254",
+      "https://dblp.org/pid/443/5127",
+      "https://dblp.org/pid/355/4614",
+      "https://dblp.org/pid/443/5097",
+      "https://dblp.org/pid/59/6741"
+    ],
+    "abstract": "Abstract Recent advances in generative motion synthesis have enabled realtime autoregressive generation of diverse and realistic character animations conditioned on user inputs, as demonstrated by models such as the Conditional Autoregressive Motion Diffusion Model (CAMDM). However, real‐world applications (e.g., computer games) often demand faster‐than‐realtime performance for large numbers of characters. We introduce F3AMD (Fast FiLM‐conditioned Fourier Autoregressive Motion Diffusion), a framework that achieves an order of magnitude speedup over state‐of‐the‐art systems for multi‐character animation on both GPUs and CPUs while maintaining high motion quality. Our key insight is that autoregressive motion diffusion is primarily bottlenecked by architectural and sampling inefficiencies. To address this, F3AMD employs Fourier Neural Operators (FNOs) as encoder‐decoder modules, substitutes Transformer backbones with FNO blocks, replaces condition concatenation with lightweight Feature‐wise Linear Modulation (FiLM), and adopts a variance‐exploding noise schedule with a deterministic sampler. This design enables a substantially lower‐dimensional latent space, facilitates learning in both the spectral and temporal domains, and significantly improves sample efficiency. We conduct systematic ablations of key design factors, including latent dimension, backbone type, diffusion window length, and number of denoising steps. Our recommended configuration, F3AMD‐FNO‐96, achieves 20x speedup over the baseline CAMDM model, while maintaining comparable motion quality.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1111/cgf.70560",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://doi.org/10.1111/CGF.70560",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGGRAPH/Eurographics Symposium on Computer Animation",
+    "ccf_rank": "B",
+    "ccf_field": "计算机图形学与多媒体",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/cgf/QiaoMKBHY26",
+    "dblp_toc": "https://dblp.org/db/journals/cgf/cgf45",
+    "booktitle": "Comput. Graph. Forum",
+    "ai4s_hits": [
+      "neural operator",
+      "fourier neural operator"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "Transformer 架构",
+      "扩散模型"
+    ],
+    "ai4s_tags": [
+      "AI for 数理科学"
+    ],
+    "ai4s_keywords": [
+      "neural operator",
+      "transformer",
+      "diffusion model",
+      "operator learning"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 数理科学": [
+          "neural operator"
+        ]
+      },
+      "method_evidence": [
+        "transformer",
+        "diffusion model",
+        "operator learning"
+      ]
+    }
+  }
+]

@@ -1,0 +1,330 @@
+[
+  {
+    "id": "10.1109/cgo68049.2026.11394841",
+    "venue": "cgo",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Dependence-Driven, Scalable Quantum Circuit Mapping with Affine Abstractions.",
+    "authors": [
+      "Marouane Benbetka",
+      "Merwan Bekkar",
+      "Riyadh Baghdadi",
+      "Martin Kong"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/420/4579",
+      "https://dblp.org/pid/420/4280",
+      "https://dblp.org/pid/56/10541",
+      "https://dblp.org/pid/130/6633"
+    ],
+    "abstract": "Qubit Mapping is a critical task in Quantum Compilation, as modern Quantum Processing Units (QPUs) are constrained to nearest-neighbor interactions defined by a qubit coupling graph. This compiler pass repairs the connectivity of two-qubit gates whose operands are not adjacent by inserting SWAP gates that move the state of qubits between directly connected qubits. Deciding when to introduce SWAPs while minimizing their count is critical because the error in quantum programs increases exponentially with the circuit latency, measured in number of gates along the critical path of the circuit. Prior work for this problem relied on heuristics and exact methods that partition the circuit into two or more layers, but failed to exploit valuable dependence information in any form.This paper introduces a novel qubit mapping algorithm based on the weight of transitive dependences. The introduced mapper models quantum circuits with affine abstractions, thereby providing the ability to compute transitive dependences. In turn, the newfound information is used to partition circuits by dependence distances and compute, efficiently, distinct weights for each layer. We evaluate the efficiency of our mapper on IBM and Rigetti QPUs, using the large datasets from the QUEKO and QASMBench benchmark suites, and against four baseline tools (QMAP, Sabre, Cirq and TKET), demonstrating notable improvements in circuit depth and swap count while delivering competitive scalability.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/cgo68049.2026.11394841",
+    "pages": "268-280",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/CGO68049.2026.11394841",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "The International Symposium on Code Generation and Optimization",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/cgo/BenbetkaBBK26",
+    "dblp_toc": "https://dblp.org/db/conf/cgo/cgo2026",
+    "booktitle": "CGO",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "quantum circuit"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "quantum circuit"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/cgo68049.2026.11395228",
+    "venue": "cgo",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Thinking Fast and Correct: Automated Rewriting of Numerical Code through Compiler Augmentation.",
+    "authors": [
+      "Siyuan Brant Qian",
+      "Vimarsh Sathia",
+      "Ivan R. Ivanov",
+      "Jan Hückelheim",
+      "Paul D. Hovland",
+      "William S. Moses"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/362/5788",
+      "https://dblp.org/pid/304/8232",
+      "https://dblp.org/pid/252/4597",
+      "https://dblp.org/pid/203/9187",
+      "https://dblp.org/pid/79/3143",
+      "https://dblp.org/pid/183/6515"
+    ],
+    "abstract": "Floating-point numbers are finite-precision approximations to real numbers and are ubiquitous in computer applications in nearly every field. Selecting the right floating-point representation that balances performance and numerical accuracy is a difficult task – one that has become even more critical as hardware trends toward high-performance, low-precision operations. Although the common wisdom around changing floating-point precision implies that accuracy and performance are inversely correlated, more advanced techniques can often circumvent this tradeoff. Applying complex numerical optimizations to real-world code, however, is an arduous engineering task that requires expertise in numerical analysis and performance engineering, and application-specific numerical context. While there is a plethora of existing tools that partially automate this process, they are limited in the scope of optimization techniques or still require substantial human intervention. We present Poseidon, a modular and extensible framework that fully automates floating-point optimizations for real-world applications within a production compiler. Our key insight is that a small surrogate profile often reveals sufficient numerical context to drive effective rewrites. Poseidon operates as a two-phase compiler: the first compilation instruments the program to capture numerical context; the second compilation consumes profiled data, generates and evaluates candidate rewrites, and solves for optimal performance/accuracy tradeoffs. Poseidon’s interoperability with standard compiler analyses and optimizations grants it analysis and optimization advantages unavailable to existing source- and binary-level approaches. On multiple large-scale applications, Poseidon leads to outsized benefits in performance without substantially changing accuracy, and outsized accuracy benefits without diminishing performance. On a quaternion differentiator, Poseidon enables a 1.46× speedup with a relative error of 10−7. On DOE’s LULESH hydrodynamics application, Poseidon improves program accuracy to exactly match a 512-bit simulation run without substantially reducing performance.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/cgo68049.2026.11395228",
+    "pages": "548-562",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/CGO68049.2026.11395228",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "The International Symposium on Code Generation and Optimization",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/cgo/QianSIHHSIHHM26",
+    "dblp_toc": "https://dblp.org/db/conf/cgo/cgo2026",
+    "booktitle": "CGO",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 数理科学"
+    ],
+    "ai4s_keywords": [
+      "numerical analysis"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 数理科学": [
+          "numerical analysis"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/cgo68049.2026.11395205",
+    "venue": "cgo",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Space-Time Optimisations for Early Fault-Tolerant Quantum Computation.",
+    "authors": [
+      "Sanaa Sharma",
+      "Prakash Murali"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/429/2971",
+      "https://dblp.org/pid/165/5180"
+    ],
+    "abstract": "Fault-tolerance is the future of quantum computing, ensuring error-corrected quantum computation that can be used for practical applications. Resource requirements for fault-tolerant quantum computing (FTQC) are daunting, and hence, compilation techniques must be designed to ensure resource efficiency. There is a growing need for compilation strategies tailored to the early FTQC regime, which refers to the first generation of fault-tolerant machines operating under stringent resource constraints of fewer physical qubits and limited distillation capacity. Present-day compilation techniques are largely focused on overprovisioning of routing paths and make liberal assumptions regarding the availability of distillation factories. Our work develops compilation techniques that are tailored to the needs of early FTQC systems, including distillation-adaptive qubit layouts and routing techniques. In particular, we show that simple greedy heuristics are extremely effective for this problem, offering significant reduction in the number of qubits compared to prior works. Our techniques offer results with an average overhead of 1.2× in execution time for a 53 % reduction in qubits against the theoretical lower bounds. As the industry develops early FTQC systems with tens to hundreds of logical qubits over the coming years, our work has the potential to be widely useful for optimising program executions.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/cgo68049.2026.11395205",
+    "pages": "281-294",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/CGO68049.2026.11395205",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "The International Symposium on Code Generation and Optimization",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/cgo/SharmaM26",
+    "dblp_toc": "https://dblp.org/db/conf/cgo/cgo2026",
+    "booktitle": "CGO",
+    "ai4s_hits": [
+      "quantum computing"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "quantum computing"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "quantum computing"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/cgo68049.2026.11394840",
+    "venue": "cgo",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Dr.avx: A Dynamic Compilation System for Seamlessly Executing Hardware-Unsupported Vectorization Instructions.",
+    "authors": [
+      "Yue Tang",
+      "Mianzhi Wu",
+      "Yufeng Li",
+      "Haoyu Liao",
+      "Jianmei Guo",
+      "Bo Huang 0002"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/07/11244",
+      "https://dblp.org/pid/429/1713",
+      "https://dblp.org/pid/72/1022",
+      "https://dblp.org/pid/377/6009",
+      "https://dblp.org/pid/69/6953",
+      "https://dblp.org/pid/95/6229-2"
+    ],
+    "abstract": "Modern processors are breaking a fundamental rule: backward compatibility within their own ISA families. We term this Generational ISA Fragmentation (GIF), where newer processors cannot execute instructions supported by prior generations within the same ISA family. This phenomenon is exemplified by Intel’s removal of AVX-512 from Alder Lake processors after years of deployment, ARM’s inconsistent support for SVE across cores, and RISC-V’s incompatible vector specifications. GIF causes illegal instruction crashes when running applications optimized for earlier processors on newer hardware, threatening the foundation of software portability that has underpinned decades of computing evolution.We introduce Dr.avx, a dynamic compilation system that enables seamless execution of AVX-512 instructions on hardware that lacks native support. Dr.avx addresses the most instructive GIF instance, x86 AVX-512 fragmentation, by targeting the integer and floating-point operations that dominate real workloads. Our rewrite engine performs a fine-grained classification of AVX-512 opcode-operand patterns and employs three complementary strategies: Instr Mirroring, AVX Lowering, and Scalar Fallback. Experiments show that Dr.avx incurs a geometric mean overhead of 1.44× on SPEC CINT2017 relative to native AVX-512 execution, 17.3% better than Intel’s closed-source SDE. On production databases, Dr.avx sustains 75%–88% (MySQL) and 86%–99% (MongoDB) of native throughput, yielding 2.0–2.7× higher throughput than SDE. For LLM inference (llama.cpp), Dr.avx keeps 95%–99% of native tokens/s and delivers 2.5–4.8× speedup over SDE. Unlike Intel’s proprietary SDE, which provides no visibility into its implementation details, Dr.avx achieves functional correctness while providing an open, extensible, near-native performance implementation. Our work offers both a remedy for AVX-512 fragmentation and a blueprint for addressing similar compatibility challenges emerging across all major ISAs.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/cgo68049.2026.11394840",
+    "pages": "403-415",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/CGO68049.2026.11394840",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "The International Symposium on Code Generation and Optimization",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/cgo/TangWLLGH26",
+    "dblp_toc": "https://dblp.org/db/conf/cgo/cgo2026",
+    "booktitle": "CGO",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "大语言模型"
+    ],
+    "ai4s_tags": [
+      "AI for 数理科学"
+    ],
+    "ai4s_keywords": [
+      "stochastic differential equation"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 数理科学": [
+          "stochastic differential equation"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/cgo68049.2026.11394847",
+    "venue": "cgo",
+    "year": 2026,
+    "track": "unverified",
+    "title": "OpenQudit: Extensible and Accelerated Numerical Quantum Compilation via a JIT-Compiled DSL.",
+    "authors": [
+      "Ed Younis"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/296/0316"
+    ],
+    "abstract": "High-performance numerical quantum compilers rely on classical optimization, but are limited by slow numerical evaluations and a design that makes extending them with new instructions a difficult, error-prone task for domain experts. This paper introduces OpenQudit, a compilation framework that solves these problems by allowing users to define quantum operations symbolically in the Qudit Gate Language (QGL), a mathematically natural DSL. OpenQudit’s ahead-of-time compiler uses a tensor network representation and an e-graph-based pass for symbolic simplification before a runtime tensor network virtual machine (TNVM) JIT-compiles the expressions into high-performance native code. The evaluation shows that this symbolic approach is highly effective, accelerating the core instantiation task by up to ~20× on common quantum circuit synthesis problems compared to state-of-the-art tools.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/cgo68049.2026.11394847",
+    "pages": "295-305",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/CGO68049.2026.11394847",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "The International Symposium on Code Generation and Optimization",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/cgo/Younis26",
+    "dblp_toc": "https://dblp.org/db/conf/cgo/cgo2026",
+    "booktitle": "CGO",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "quantum circuit"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "quantum circuit"
+        ]
+      },
+      "method_evidence": []
+    }
+  }
+]

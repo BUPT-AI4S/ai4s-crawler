@@ -1,0 +1,541 @@
+[
+  {
+    "id": "10.1145/3808314",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Hybrid Path-Sums for Hybrid Quantum Programs.",
+    "authors": [
+      "Christophe Chareton",
+      "Jad Issa",
+      "Mathieu Nguyen",
+      "Nicolas Blanco",
+      "Sébastien Bardin"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/04/10479",
+      "https://dblp.org/pid/436/0429",
+      "https://dblp.org/pid/351/6112",
+      "https://dblp.org/pid/201/0008",
+      "https://dblp.org/pid/b/SebastienBardin"
+    ],
+    "abstract": "As quantum computing becomes an emerging reality, designing efficient quantum programming capabilities is becoming more and more important. Particularly, the debugging and validation of quantum programs is of paramount importance, as these programs are by definition hard to test. Static analysis and formal verification methods for quantum programs started to emerge a few years now, yet they often miss hybrid quantum/classical reasoning facilities with, e.g., generic quantum control, classical control and classical computation instructions. In this paper, we lay out the foundations of a framework for the automated formal verification of (full) hybrid quantum programs featuring both classical and quantum control, measurement and hybrid data structures. In particular, we propose: (1) a novel symbolic representation for describing and manipulating sets of hybrid quantum/classical states called Hybrid Path-Sums (HPS); (2) a set of rewriting rules providing a rich mechanism for simplifying and reasoning on these symbolic hybrid states, and (3) a core assertion language to specify equivalence of hybrid quantum programs, the satisfaction of properties on (parts of) hybrid states, and the extraction of probabilistic statements about the program behavior. We prove the correctness of the novel symbolic representation, of its rewriting system and of the specification system. Finally, we propose a full implementation of this framework as a dedicated symbolic execution engine for hybrid programs. We present an evaluation of a set of representative hybrid case-studies from the literature, showcasing the advantage of our approach and its efficiency compared to state-of-the-art solutions.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808314",
+    "pages": "1687-1713",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808314",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/CharetonINBB26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_hits": [
+      "quantum computing"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "形式验证"
+    ],
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "quantum computing"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "quantum computing"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3808299",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Improving Equality Saturation for EDA via Semantic E-Graphs.",
+    "authors": [
+      "Sijie Kong",
+      "Jingtao Xia",
+      "Daniel Ruelas-Petrisko",
+      "Zachary D. Sisco",
+      "Jonathan Balkind",
+      "Gus Henry Smith"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/259/0105",
+      "https://dblp.org/pid/136/5165",
+      "https://dblp.org/pid/184/8263",
+      "https://dblp.org/pid/354/1475",
+      "https://dblp.org/pid/157/2812",
+      "https://dblp.org/pid/194/8207"
+    ],
+    "abstract": "Equality saturation (eqsat) is a program optimization technique that uses syntax-based term rewriting to simultaneously explore many possible optimizations of a program, storing equivalent programs efficiently in a data structure called an e-graph. By exploring optimizations simultaneously, eqsat mitigates the phase ordering problem , where the order of optimizations significantly affects quality of results. Eqsat is especially promising for Electronics Design Automation (EDA), whose tools suffer from phase ordering. Previous eqsat-for-EDA efforts have focused on single tool stages; while they demonstrate significant benefits within a stage, they do not address phase ordering between stages. When we investigated the reason for their limited scope, we found that previous works struggle to implement an efficient hardware representation useful in both high-level (e.g. arithmetic optimization) and low-level (e.g. logic synthesis) tasks. The root issue is that such a representation must maintain equivalences between the high- and low-level portions of the language. While these equalities are conceptually simple—e.g., two high-level bitvectors are equal if they contain the same low-level bits—maintaining them using syntax-based rewrites alone proves inefficient in modern eqsat engines. In response, this paper makes two contributions. First, we introduce semantic e-graphs , an enhancement to e-graphs that improves performance of a narrow but highly useful class of semantics-based equalities. Second, we present Nextmap , a new eqsat-based hardware optimization engine whose representation uses semantic e-graphs to efficiently bridge high- and low-level hardware expressions. As a result, Nextmap simultaneously runs more EDA stages than previous eqsat-based works, more effectively mitigating phase ordering and reaching previously inaccessible optimizations. Compared with open-source and commercial tools, Nextmap provides competitive quality of results on a range of designs.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808299",
+    "pages": "1303-1326",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808299",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/KongXRSBS26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "circuit placement"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "circuit placement"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3808272",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "CoTenN: Constrained Optimization with Tensor Networks.",
+    "authors": [
+      "Ritvik Sharma",
+      "Cheng Peng 0012",
+      "Siddharth Dangwal",
+      "Sara Achour"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/283/0097",
+      "https://dblp.org/pid/82/3044-12",
+      "https://dblp.org/pid/257/8354",
+      "https://dblp.org/pid/152/5845"
+    ],
+    "abstract": "Simulation of physics problems is one of the most important use cases of quantum computing. For this class of problems, the goal is typically to find the minimum energy state, or the ground state, of a physical system’s Hamiltonian. These problems frequently have constraints, such as symmetry conditions, which must also be satisfied. To solve such problems, researchers in computational physics use quantum-inspired algorithms that execute on classical computers. In particular, tensor network-based eigensolvers such as DMRG have become popular. However, to use these eigensolvers, the constrained optimization problem must first be encoded as a tensor network that implements a low-rank decomposition of the system’s Hamiltonian and state vector. These tensor network encodings are highly flexible, allowing for variables with ≥2 quantum states and supporting efficient constraint encodings that directly constrain the state vector. A critical challenge to developing tensor networkbased encodings is that, currently, the encoding process is manual; significant effort is required to identify an efficient encoding for a new physics problem. In this work, we introduce a quantum constrained optimization problem (QCOP), a general abstraction for describing minimization problems over quantum variables that are subject to hard constraints. We present Masq , the first constraint programming language for QCOPs implementable with tensor networks, and CoTenN , a compiler that automatically maps QCOPs specified with Masq programs to tensor networks. To demonstrate the utility of Masq and CoTenN , we formulate two physics problems in Masq and then use CoTenN to find their ground states. We find the CoTenN -generated tensor networks generally outperform SOTA problem formulations, providing between 2.05 × − 53.32 × total speedups across runs for QCOPs and yielding up to 2.49 ⋅ 10 7 × lower truncation errors for otherwise unconstrained problems.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808272",
+    "pages": "629-655",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808272",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/SharmaPDA26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_hits": [
+      "quantum computing"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 数理科学",
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "dynamical systems",
+      "quantum physics",
+      "quantum computing"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 数理科学": [
+          "dynamical systems",
+          "quantum physics"
+        ],
+        "AI for 信息科学": [
+          "quantum computing"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3808345",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Compiling to Recurrent Neurons.",
+    "authors": [
+      "Joey Velez-Ginorio",
+      "Nada Amin",
+      "Konrad P. Kording",
+      "Steve Zdancewic"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/183/9948",
+      "https://dblp.org/pid/88/11209",
+      "https://dblp.org/pid/93/2724",
+      "https://dblp.org/pid/99/3437"
+    ],
+    "abstract": "Discrete structures are currently second-class in differentiable programming. Since functions over discrete structures lack overt derivatives, differentiable programs do not differentiate through them and limit where they can be used. For example, when programming a neural network, conditionals and iteration cannot be used everywhere; they can break the derivatives necessary for gradient-based learning to work. This limits the class of differentiable algorithms we can directly express, imposing restraints on how we build neural networks and differentiable programs more generally. However, these restraints are not fundamental. Recent work shows conditionals can be first-class, by compiling them into differentiable form as linear neurons. Similarly, this work shows iteration can be first-class—by compiling to linear recurrent neurons. We present a minimal typed, higher-order and linear programming language with iteration called Cajal ( ⊸ , 𝟚 , ℕ ) . We prove its programs compile correctly to recurrent neurons, allowing discrete algorithms to be expressed in a differentiable form compatible with gradient-based learning. With our implementation, we conduct two experiments where we link these recurrent neurons against a neural network solving an iterative image transformation task. This determines part of its function prior to learning. As a result, the network learns faster and with greater data-efficiency relative to a neural network programmed without first-class iteration. A key lesson is that recurrent neurons enable a rich interplay between learning and the discrete structures of ordinary programming.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808345",
+    "pages": "2452-2473",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808345",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/Velez-GinorioAK26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "神经网络"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "neuroscience"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "neuroscience"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3808254",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Equality Saturation for Quantum Circuit Optimization.",
+    "authors": [
+      "Ganxiang Yang",
+      "Paige Raun",
+      "Runzhou Tao 0001",
+      "Ronghui Gu"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/379/5070",
+      "https://dblp.org/pid/444/3204",
+      "https://dblp.org/pid/228/8097-1",
+      "https://dblp.org/pid/155/8148"
+    ],
+    "abstract": "Optimizing a quantum circuit is hard because it requires exploring a vast space of functionally equivalent circuits, produced by applying local circuit rewrites such as gate cancellation and commutation. Each additional rewrite can exponentially expand the space of equivalent circuits, so existing optimizers can only explore a tiny fraction of this space and often produce suboptimal results. We present Quasar , a new quantum circuit optimizer that can generate a step-limited optimal circuit: given a bound on rewrite iterations, it returns the lowest-cost circuit reachable within that bound. To achieve this, Quasar constructs two complementary e-graphs for the quantum circuit’s graph and sequence representations. Quasar then infers an atomic rewrite set for application on both e-graphs, which improves optimization performance by orders of magnitude. Finally, Quasar employs a series of new optimization techniques to ensure both soundness and scalability of equality saturation on quantum circuits. Across standard benchmarks, Quasar achieves geometric-mean reductions of 20.2% in 2-qubit gate count, 33.5% in total gate count, and 24.2% in circuit depth, and a 21.4% fidelity improvement over unoptimized circuits, outperforming or matching state-of-the-art rewrite-based optimizers on 75%, 92%, 62%, and 80% of circuits, respectively.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808254",
+    "pages": "174-199",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808254",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/YangRTG26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "quantum circuit"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "quantum circuit"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3808273",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Verification of Recursively Defined Quantum Circuits.",
+    "authors": [
+      "Mingsheng Ying",
+      "Zhicheng Zhang 0010"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/13/6525",
+      "https://dblp.org/pid/92/6707-10"
+    ],
+    "abstract": "Recursive techniques have recently been introduced into quantum programming so that a variety of large quantum circuits and algorithms can be elegantly and compactly programmed. In this paper, we present a proof system for formal verification of the correctness of recursively defined quantum circuits. The soundness and (relative) completeness of the proof system are established. To demonstrate its effectiveness, we present a series of application examples, including formal verification of multi-qubit controlled gates, a quantum circuit for generating multi-qubit GHZ (Greenberger-Horne-Zeilinger) states, and more sophisticated quantum algorithms with recursive structures such as the quantum Fourier transform, quantum state preparation, and quantum random access memories (QRAMs).",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808273",
+    "pages": "656-680",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808273",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/YingZ26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "形式验证"
+    ],
+    "ai4s_tags": [
+      "AI for 数理科学",
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "quantum physics",
+      "quantum circuit"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 数理科学": [
+          "quantum physics"
+        ],
+        "AI for 信息科学": [
+          "quantum circuit"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3808255",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Cobble: Compiling Block Encodings for Quantum Computational Linear Algebra.",
+    "authors": [
+      "Charles Yuan"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/303/1102"
+    ],
+    "abstract": "Quantum algorithms for computational linear algebra promise up to exponential speedups for applications such as simulation and regression, making them prime candidates for hardware realization. But these algorithms execute in a model that cannot efficiently store matrices in memory like a classical algorithm does, instead requiring developers to implement complex expressions for matrix arithmetic in terms of correct and efficient quantum circuits. Among the challenges for the developer is navigating a cost model in which conventional optimizations for linear algebra, such as subexpression reuse, can be inapplicable or unprofitable. In this work, we present Cobble, a language for programming with quantum computational linear algebra. Cobble enables developers to express and manipulate the quantum representations of matrices, known as block encodings, using high-level notation that automatically compiles to correct quantum circuits. Cobble features analyses that compute the time and space usage of programs, as well as optimizations that reduce overhead and generate efficient circuits using state-of-the-art techniques such as the quantum singular value transformation. We evaluate Cobble on benchmark kernels for simulation, regression, search, and other applications, showing 2.6×−25.4× speedups on these benchmarks compared to the unoptimized baseline.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808255",
+    "pages": "200-225",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808255",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/Yuan26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "quantum circuit"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "quantum circuit"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3808284",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "SAQR-QC: A Logic for Scalable but Approximate Quantitative Reasoning about Quantum Circuits.",
+    "authors": [
+      "Nengkun Yu",
+      "Jens Palsberg",
+      "Thomas Reps"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/93/9828",
+      "https://dblp.org/pid/p/JPalsberg",
+      "https://dblp.org/pid/r/TWReps"
+    ],
+    "abstract": "Reasoning about quantum programs remains a fundamental challenge, regardless of the programming model or computational paradigm. Existing verification techniques are insufficient—even for quantum circuits, a deliberately restricted model that lacks classical control, but still underpins many current quantum algorithms. Many existing formal methods require exponential time and space to represent and manipulate (representations of) assertions and judgments, making them impractical for quantum circuits with many qubits. This paper presents SAQR-QC, a logic for S calable but A pproximate Q uantitative R easoning about Q uantum C ircuits. SAQR-QC has three characteristics: (i) some deliberate loss of precision is built into it; (ii) it has a mechanism to help the accumulated loss of precision during a sequence of reasoning steps remain small; and (iii) every reasoning step is local—involving just a small number of qubits—making reasoning scalable. We demonstrate the effectiveness of SAQR-QC via two case studies: the verification of GHZ circuits involving non-Clifford gates, and the analysis of quantum phase estimation—a core subroutine in Shor’s factoring algorithm.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808284",
+    "pages": "928-952",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808284",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/YuPR26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "quantum circuit"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "quantum circuit"
+        ]
+      },
+      "method_evidence": []
+    }
+  }
+]
