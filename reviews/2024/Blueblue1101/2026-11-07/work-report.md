@@ -1,85 +1,102 @@
 # 王婉婷｜AI4S批量续审工作汇报
 
-2026年11月8日 · 2024年论文 · Blueblue1101 · continuation7
+2026年11月8日 · 2024年论文 · Blueblue1101 · continuation8
 
-**本轮接续审核400条：纳入5篇、排除364条、待定31条，补齐并核验完整摘要91条。** 此前已上传的11,533条完整记录保持一致。本轮覆盖21个刊会来源，新增确认的5篇均来自已采集但未进入初筛候选的记录；新爬论文为0篇。
+**本轮新处理800条，是上一轮400条的两倍：纳入15篇、排除739条、待定46条；补齐并核验完整摘要53条。** 覆盖27个刊会来源，旧11,933条完整记录保持一致。
 
-## 方法与结果
+15篇新增纳入均来自已经采集、但未进入初筛候选的记录，属于**漏筛补录**；本轮新爬论文为0篇，不计作官网漏采补齐。
 
-按每批40条读取已有完整摘要，逐条保存判断和理由。检查科学／工程任务、AI实际作用及两者关系；仅保留原创研究、正式会议研究论文和有实质学术内容的综述。关键词没有用于代替语义判定，正文和PDF均未用于审核。
+## 审核方法与结果
 
-| 结果 | 条数 | 原因 |
+使用main `b3d3f97` 的当前规则和共享词表，按每批20—40条读取摘要，逐条保存结论、理由和摘要哈希。分别核对具体科学／工程任务、AI的实际作用及两者关系。只保留原创研究、正式会议研究论文和有实质内容的综述；不读取正文或PDF，不以关键词命中代替语义判断。
+
+| 处理结果 | 条数 | 原因 |
 |---|---|---|
-| 纳入 | 5 | 摘要明确支持AI对具体科学或工程任务的贡献，复核元数据及标签 |
-| 相关性排除 | 359 | 无AI实质参与，或仅通用视觉、生成、常规计算等，缺少具体科学工程贡献 |
-| 文种排除 | 5 | 明确的Comment、Viewpoint、Opinion及读者评论 |
-| 待定：摘要问题 | 12 | 致谢、背景片段等不构成完整摘要，先放置 |
-| 待定：关系或类型证据不足 | 19 | 摘要尚未说清AI作用，或正式文种与记录匹配仍有疑点 |
+| 纳入 | 15 | 摘要支持AI对具体科学或工程任务的贡献；书目和标签已复核 |
+| 相关性排除 | 734 | 没有AI实质参与，或仅通用算法、视觉生成与性能评测，缺少具体科学工程任务 |
+| 文种排除 | 5 | 明确的专家评论、观点文章或针对他文的评论 |
+| 待定：摘要问题 | 4 | 摘要截断，或仅有背景／目的，缺少完整结果与结论 |
+| 待定：证据不足 | 42 | 未说明AI算法、具体科学贡献或两者关系，需补方法证据 |
 
-本轮383条按摘要语义处理、5条按明确文种处理、12条仅完成摘要问题核查，不能将400条全称为完整摘要精筛。按固定随机种子抽查20条排除记录：纳入／排除结论未变，但6条改为按相关性排除，避免仅凭Perspective等名称排除实质综述。另复核5篇纳入及通用姿态估计边界项；抽查不代表全量准确率保证。
+其中791条完成摘要语义判断，5条按明确文种处理，4条只完成摘要质量核查，不能将800条全部称为完整摘要精筛。固定随机种子抽查20条排除记录（5条文种、15条相关性），重读后均维持结论；另核对全部15篇纳入。抽查结果不能代表全量准确率。
 
 ## 各刊会本轮工作量
 
-补摘要是元数据工作量，与纳入数不相加；下表均为既有采集数据的续审。
+补摘要数属于元数据工作量，与纳入数不相加。以下均为既有数据续审，缺摘要或访问异常的其他记录继续暂缓。
 
 | 来源 | 本轮已审 | 纳入 | 排除 | 待定 | 补齐完整摘要 |
 |---|---|---|---|---|---|
-| Nature Communications | 200 | 1 | 191 | 8 | 0 |
-| Trends in Microbiology | 44 | 0 | 40 | 4 | 43 |
-| CVPR | 42 | 4 | 37 | 1 | 0 |
-| Trends in Cognitive Sciences | 27 | 0 | 22 | 5 | 27 |
-| Nature Physics | 18 | 0 | 18 | 0 | 0 |
-| Clinical Gastroenterology and Hepatology | 10 | 0 | 5 | 5 | 3 |
-| Chem | 8 | 0 | 8 | 0 | 5 |
-| Molecular Cell | 7 | 0 | 6 | 1 | 6 |
-| Nature Ecology & Evolution | 6 | 0 | 6 | 0 | 0 |
-| Nature Microbiology | 6 | 0 | 6 | 0 | 0 |
-| Nature Chemical Biology | 5 | 0 | 5 | 0 | 0 |
-| The Lancet Regional Health - Europe | 4 | 0 | 3 | 1 | 0 |
-| The Lancet Planetary Health | 4 | 0 | 2 | 2 | 0 |
-| Cell Discovery | 4 | 0 | 1 | 3 | 0 |
-| Energy Storage Materials | 3 | 0 | 3 | 0 | 2 |
-| Nano Energy | 3 | 0 | 2 | 1 | 2 |
-| Seminars in Cancer Biology | 2 | 0 | 2 | 0 | 2 |
-| Nature Human Behaviour | 2 | 0 | 2 | 0 | 0 |
-| Nature Neuroscience | 2 | 0 | 2 | 0 | 0 |
+| Nature Communications | 570 | 5 | 535 | 30 | 0 |
+| CVPR | 67 | 9 | 56 | 2 | 0 |
+| Molecular Cell | 24 | 0 | 22 | 2 | 11 |
+| Nature Physics | 19 | 0 | 19 | 0 | 0 |
+| Nature Chemical Biology | 16 | 0 | 14 | 2 | 0 |
+| Nature Neuroscience | 16 | 0 | 15 | 1 | 0 |
+| Trends in Microbiology | 14 | 0 | 13 | 1 | 14 |
+| Nature Human Behaviour | 10 | 0 | 9 | 1 | 0 |
+| Journal of Energy Chemistry | 8 | 0 | 8 | 0 | 5 |
+| Nature Microbiology | 8 | 0 | 8 | 0 | 0 |
+| Nano Energy | 7 | 0 | 7 | 0 | 4 |
+| Chem | 5 | 0 | 5 | 0 | 4 |
+| Trends in Cognitive Sciences | 5 | 0 | 2 | 3 | 5 |
+| The Lancet Regional Health - Europe | 4 | 0 | 4 | 0 | 0 |
+| Information Fusion | 4 | 1 | 2 | 1 | 4 |
+| Energy Storage Materials | 3 | 0 | 3 | 0 | 1 |
+| Seminars in Cancer Biology | 3 | 0 | 3 | 0 | 3 |
+| Clinical Gastroenterology and Hepatology | 3 | 0 | 1 | 2 | 0 |
+| Trends in Food Science & Technology | 2 | 0 | 2 | 0 | 0 |
+| The Lancet Planetary Health | 2 | 0 | 2 | 0 | 0 |
+| Nature Ecology & Evolution | 2 | 0 | 2 | 0 | 0 |
+| Cell Discovery | 2 | 0 | 1 | 1 | 0 |
 | Nature Geoscience | 2 | 0 | 2 | 0 | 0 |
-| Information Fusion | 1 | 0 | 1 | 0 | 1 |
-| **合计** | 400 | 5 | 364 | 31 | 91 |
+| The Lancet Haematology | 1 | 0 | 1 | 0 | 1 |
+| Journal of Materials Science & Technology | 1 | 0 | 1 | 0 | 1 |
+| Smart Learning Environments | 1 | 0 | 1 | 0 | 0 |
+| Nature Protocols | 1 | 0 | 1 | 0 | 0 |
+| **合计** | 800 | 15 | 739 | 46 | 53 |
 
-## 新确认纳入的5篇论文与标签
+## 15篇漏筛纳入论文与标签
 
 | 来源 | 论文 | 摘要依据 | 标签 |
 |---|---|---|---|
-| CVPR | [PIE-NeRF: Physics-based Interactive Elastodynamics with NeRF](https://openaccess.thecvf.com/content/CVPR2024/html/Feng_PIE-NeRF_Physics-based_Interactive_Elastodynamics_with_NeRF_CVPR_2024_paper.html) | 初筛漏筛补录。将神经辐射场与非线性超弹性无网格模拟耦合，利用学习密度表示设置离散核，支持真实物体弹性动力学模拟。 | AI 用于数理科学、物理过程动态建模、神经辐射场、物理与数据融合建模 |
-| CVPR | [HouseCat6D - A Large-Scale Multi-Modal Category Level 6D Object Perception Dataset with Household Objects in Realistic Scenarios](https://openaccess.thecvf.com/content/CVPR2024/html/Jung_HouseCat6D_-_A_Large-Scale_Multi-Modal_Category_Level_6D_Object_Perception_CVPR_2024_paper.html) | 初筛漏筛补录：多模态物体位姿数据集提供高精度标注及密集机器人平行夹爪抓取标注，并评估位姿网络，直接支持机器人感知与抓取研究。 | AI 用于工程科学、机器人抓取、科学数据 |
-| CVPR | [Text-Guided Variational Image Generation for Industrial Anomaly Detection and Segmentation](https://openaccess.thecvf.com/content/CVPR2024/html/Lee_Text-Guided_Variational_Image_Generation_for_Industrial_Anomaly_Detection_and_Segmentation_CVPR_2024_paper.html) | 初筛漏筛补录。文本引导生成无缺陷图像，缓解制造业缺陷检测训练样本不足，直接改善工业异常检测与分割。 | AI 用于工程科学、工业缺陷检测、生成建模 |
-| CVPR | [CLIP-BEVFormer: Enhancing Multi-View Image-Based BEV Detector with Ground Truth Flow](https://openaccess.thecvf.com/content/CVPR2024/html/Pan_CLIP-BEVFormer_Enhancing_Multi-View_Image-Based_BEV_Detector_with_Ground_Truth_Flow_CVPR_2024_paper.html) | 初筛漏筛补录：对比学习以真值信息监督自动驾驶多视图BEV表征，直接改进驾驶场景三维目标检测。 | AI 用于工程科学、自动驾驶感知、对比学习 |
-| Nature Communications | [Bio-inspired multimodal learning with organic neuromorphic electronics for behavioral conditioning in robotics](https://www.nature.com/articles/s41467-024-48881-2) | 初筛漏筛补录：有机神经形态电路在线融合多模态感觉，通过关联学习使机器人识别并回避危险物体，具有实体机器人行为验证。 | AI 用于工程科学、机器人操作控制、多模态学习 |
+| CVPR | [Multimodal Industrial Anomaly Detection by Crossmodal Feature Mapping](https://openaccess.thecvf.com/content/CVPR2024/html/Costanzino_Multimodal_Industrial_Anomaly_Detection_by_Crossmodal_Feature_Mapping_CVPR_2024_paper.html) | 初筛漏筛补录。跨模态学习点云与图像特征映射，直接用于工业制造缺陷检测并降低部署资源开销。 | AI 用于工程科学、工业缺陷检测、多模态学习 |
+| CVPR | [Producing and Leveraging Online Map Uncertainty in Trajectory Prediction](https://openaccess.thecvf.com/content/CVPR2024/html/Gu_Producing_and_Leveraging_Online_Map_Uncertainty_in_Trajectory_Prediction_CVPR_2024_paper.html) | 初筛漏筛补录：在线高精地图模型输出不确定性并用于自动驾驶轨迹预测，直接改善真实驾驶数据的预测性能。 | AI 用于工程科学、自动驾驶感知、不确定性量化 |
+| CVPR | [Multi-Space Alignments Towards Universal LiDAR Segmentation](https://openaccess.thecvf.com/content/CVPR2024/html/Liu_Multi-Space_Alignments_Towards_Universal_LiDAR_Segmentation_CVPR_2024_paper.html) | 初筛漏筛补录：跨数据、特征和标签空间对齐训练统一LiDAR分割模型，针对多传感器驾驶场景感知并在多个驾驶数据集验证。 | AI 用于工程科学、自动驾驶感知、多模态学习 |
+| CVPR | [Learnable Earth Parser: Discovering 3D Prototypes in Aerial Scans](https://openaccess.thecvf.com/content/CVPR2024/html/Loiseau_Learnable_Earth_Parser_Discovering_3D_Prototypes_in_Aerial_Scans_CVPR_2024_paper.html) | 初筛漏筛补录：无监督概率重建学习三维原型，对真实航空LiDAR大尺度点云进行可解释分解和语义分割，直接服务航空测绘。 | AI 用于地球宇宙科学、地表覆盖制图、无监督学习 |
+| CVPR | [Hierarchical Diffusion Policy for Kinematics-Aware Multi-Task Robotic Manipulation](https://openaccess.thecvf.com/content/CVPR2024/html/Ma_Hierarchical_Diffusion_Policy_for_Kinematics-Aware_Multi-Task_Robotic_Manipulation_CVPR_2024_paper.html) | 初筛漏筛补录。分层扩散策略结合可微机器人运动学，直接解决多任务机械臂规划和轨迹控制并有实机验证。 | AI 用于工程科学、机器人操作控制、扩散模型 |
+| CVPR | [Driving into the Future: Multiview Visual Forecasting and Planning with World Model for Autonomous Driving](https://openaccess.thecvf.com/content/CVPR2024/html/Wang_Driving_into_the_Future_Multiview_Visual_Forecasting_and_Planning_with_CVPR_2024_paper.html) | 初筛漏筛补录：驾驶世界模型生成多视角未来视频，以图像奖励比较驾驶动作并规划轨迹，直接支持安全自动驾驶规划。 | AI 用于工程科学、自动驾驶决策、生成建模 |
+| CVPR | [Panacea: Panoramic and Controllable Video Generation for Autonomous Driving](https://openaccess.thecvf.com/content/CVPR2024/html/Wen_Panacea_Panoramic_and_Controllable_Video_Generation_for_Autonomous_Driving_CVPR_2024_paper.html) | 初筛漏筛补录。生成时空一致且可控的多视角驾驶视频，直接扩充自动驾驶BEV感知训练数据。 | AI 用于工程科学、科学训练数据生成、生成建模 |
+| CVPR | [PARA-Drive: Parallelized Architecture for Real-time Autonomous Driving](https://openaccess.thecvf.com/content/CVPR2024/html/Weng_PARA-Drive_Parallelized_Architecture_for_Real-time_Autonomous_Driving_CVPR_2024_paper.html) | 初筛漏筛补录：系统研究端到端自动驾驶模块连接，提出并行感知、预测、规划架构，提升驾驶性能与实时性。 | AI 用于工程科学、自动驾驶感知、自动驾驶决策 |
+| CVPR | [Binding Touch to Everything: Learning Unified Multimodal Tactile Representations](https://openaccess.thecvf.com/content/CVPR2024/html/Yang_Binding_Touch_to_Everything_Learning_Unified_Multimodal_Tactile_Representations_CVPR_2024_paper.html) | 初筛漏筛补录：统一多传感器触觉表征与视觉语言模态对齐，展示零样本机器人抓取预测，直接支持机器人触觉感知。 | AI 用于工程科学、机器人抓取、多模态学习 |
+| Information Fusion | [Utility-based context-aware multi-agent recommendation system for energy efficiency in residential buildings](https://doi.org/10.1016/j.inffus.2024.102559) | 初筛漏筛补录。上下文感知多智能体推荐模型结合用电行为和价格，直接优化住宅负荷转移并评估节能成本。 | AI 用于工程科学、能源系统优化 |
+| Nature Communications | [Pianno: a probabilistic framework automating semantic annotation for spatial transcriptomics](https://www.nature.com/articles/s41467-024-47152-4) | 初筛漏筛补录：贝叶斯框架基于标志基因自动注释空间转录组结构语义和细胞分布，并结合聚类发现人脑特异神经元亚型。 | AI 用于生命科学、空间转录组分析、贝叶斯学习 |
+| Nature Communications | [Curriculum learning for ab initio deep learned refractive optics](https://www.nature.com/articles/s41467-024-50835-7) | 初筛漏筛补录：课程学习从随机曲面自动设计复合折射透镜，并设计手机形态大视场景深光学系统，AI直接参与光学工程设计。 | AI 用于工程科学、光子器件设计、课程学习 |
+| Nature Communications | [Interpretable semi-supervised clustering enables universal detection and intensity assessment of diverse aviation hazardous winds](https://www.nature.com/articles/s41467-024-51597-y) | 初筛漏筛补录。可解释半监督聚类融合风场先验和概率模型，直接从雷达激光雷达检测航空危险风并评估强度。 | AI 用于地球宇宙科学、半监督学习、聚类 |
+| Nature Communications | [Human detection of political speech deepfakes across transcripts, audio, and video](https://www.nature.com/articles/s41467-024-51998-z) | 初筛漏筛补录。以AI语音合成深伪刺激开展预注册随机人类实验，检验政治信息辨识机制及视听模态作用。 | AI 用于社会科学、生成建模 |
+| Nature Communications | [Dopamine builds and reveals reward-associated latent behavioral attractors](https://www.nature.com/articles/s41467-024-53976-x) | 初筛漏筛补录。具身循环网络决策模型模拟多巴胺学习和动机吸引子，并以小鼠光遗传实验验证神经机制预测。 | AI 用于生命科学、神经学习机制建模、循环神经网络 |
 
-## 元数据与词表核对
+## 元数据与标签核验
 
-- 5篇均按官方页面的题名、作者顺序和2024年出版日期核对；4篇CVPR匹配Crossref并补DOI，Nature Communications论文DOI由出版社引用元数据确认。
-- 4个CVF PDF端点通过HTTP HEAD核验，未下载正文；Nature PDF仍有Cookie错误跳转，已标未核验，不将HTTP 200视为有效公开PDF。
-- HouseCat6D的Crossref作者顺序与CVF不同，保留CVF正式论文集顺序，并记录差异。
-- PIE-NeRF摘要给出的项目页已检查可访问；其他未查到的代码、项目及数据链接不猜填。
-- 使用main `6de707f` 的757项共享词表；5篇共使用13种已有规范标签，本轮无新增词项，词表完整保留。包括工业缺陷检测、生成建模、物理过程动态建模、神经辐射场、物理与数据融合建模、自动驾驶感知、对比学习、机器人操作控制、多模态学习、机器人抓取、科学数据及两个领域标签。
-- 两条同题名的微生物组疾病预测综述均因AI方法证据不足保留待定，记录重复线索，未计为两篇新增纳入。
+- 15篇均核对题名、作者和2024年出版信息：14篇匹配官方页面引用元数据，Information Fusion的1篇匹配出版社登记的Crossref元数据。该文摘要明确报告推荐系统及家庭实证结果，但出版社落地页未提供可用引用元数据，已记录局限。
+- 15篇均取得核验DOI，其中9篇CVPR补入原记录缺失的DOI；13篇匹配Crossref，另2篇以Nature官方引用元数据确认。
+- 9个CVF公开PDF端点通过HTTP HEAD核验，未下载或读取正文；5篇Nature论文的PDF出现Cookie错误跳转，1篇Information Fusion没有已核实的公开PDF，均明确留空或标为未核验。
+- Learnable Earth Parser摘要声明的作者项目页通过HEAD检查；其余代码和项目链接未获证实的不猜填。
+- 本轮复用757项共享词表中的25种标签，无新增词项。任务标签包括工业缺陷检测、光子器件设计、空间转录组分析、自动驾驶感知与决策、机器人抓取与操作控制、能源系统优化、神经学习机制建模等；方法包括课程学习、多模态学习、扩散模型、贝叶斯学习、半监督学习等。逐篇完整标签见上表。
 
 ## 累计进度与剩余工作
 
 | 指标 | 累计结果 |
 |---|---|
-| 已审记录 | 11,933 |
-| 纳入 | 2,365篇 |
-| 排除 | 8,834条（无AI4S实质关系、非研究文种或不属本批范围） |
-| 待定 | 734条 |
-| 确认漏筛纳入 | 1,214篇（已包含在纳入总数内） |
-| 核验补齐完整摘要 | 1,384条 |
-| 仍未审 | 18,535条 |
+| 已审记录 | 12,733 |
+| 纳入 | 2,380篇 |
+| 排除 | 9,573条（无AI4S实质关系、非研究文种或不属本批范围） |
+| 待定 | 780条 |
+| 确认漏筛纳入 | 1,229篇（已包含在纳入总数内） |
+| 核验补齐完整摘要 | 1,437条 |
+| 仍未审 | 17,735条 |
 
-**全量审核尚未完成。** 余下18,535条中，6,965条缺可用摘要先暂缓，11,570条有供给摘要或待核描述保留续审。队列包含摘要质量问题，不能将11,570条都视为合格完整摘要。本批按摘要长度安排阅读顺序，其纳入比例不能外推到剩余记录。官网漏采核验沿用历史审计，本轮没有扩大已核验范围。
+**全量审核尚未完成。** 未审17,735条中，6,965条缺可用摘要先暂缓，10,770条有供给摘要或待核描述，可从断点继续。其中仍可能有摘要质量问题，不能全部视为合格完整摘要。按摘要长度安排阅读顺序，本轮纳入比例不外推到剩余记录。官网漏采核验沿用既有审计，本轮没有扩大其已核验范围。
 
-此前1,574条初筛候选及其中1,383条个人旧记录均已复核。本轮唯一键、原字段、旧11,533条完整记录、共享757项词表及总量闭合校验通过：11,933已审＋18,535未审＝30,468。历史跨审核人同键重合890条、判定不同46条，本轮新增重合0；未修改他人文件或负责人登记。
+此前1,574条初筛候选（包括1,383条个人旧记录）均已复核。唯一键、原字段、旧11,933条完整记录、757项词表和总量闭合校验通过：12,733已审＋17,735未审＝30,468。跨审核文件同键重合890条、判定不同46条，本轮新增重合0条；未修改他人文件或负责人登记。
 
-交付：[个人JSON](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101.json)、[累计统计](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101/2026-11-07/summary.json)、[本轮逐条审计](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101/2026-11-07/continuation7-batch-decisions.jsonl)、[抽查记录](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101/2026-11-07/continuation7-batch-qc.json)。本轮成果随本次提交，实际上传以GitHub提交记录和本地publication.json为准。
+交付：[个人JSON](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101.json)、[累计统计](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101/2026-11-07/summary.json)、[本轮逐条审计](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101/2026-11-07/continuation8-batch-decisions.jsonl)、[抽查记录](https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/Blueblue1101/2026-11-07/continuation8-batch-qc.json)。实际上传以GitHub提交记录及本地publication.json为准。
