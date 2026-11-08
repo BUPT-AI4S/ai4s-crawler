@@ -1,5 +1,29 @@
 # 2024 年论文摘要复核
 
+## 李雪婷 797 条缺摘要记录的复查结果（2026 年 11 月 8 日）
+
+从[上轮交付说明](https://github.com/BUPT-AI4S/ai4s-crawler/blob/9bba454261bfe1a0c48ffff4806e29151b80f3bb/reviews/2024/lixueting-haozhuodi/handoff.md)中，取出李雪婷个人 JSON 中仍缺摘要且判为待定的全部 797 条。逐 DOI 核对，原始采集字段予以保留。
+
+| 这 797 条的去向 | 条数 |
+|---|---:|
+| 核实文献类型后排除 | 412 |
+| 补入可追溯的作者版本摘要，按摘要排除 | 2 |
+| 本轮确认纳入 | 0 |
+| 仍缺可核实的作者文字摘要，保留待定 | 383 |
+
+排除的条目包括 12 份会员申请表、50 条音频导读、16 个整期 PDF 下载入口，以及会议摘要汇编、编委名单、社论和读者来信。研究短文或研究来函即使被数据库笼统列为 Letter，也需结合具体证据判断。两份找回的摘要分别来自作者预印本和作者所在机构公开稿的 Research Summary，均单独标注版本、出处和存放字段。将两份作者摘要都读过后，本次没有发现需新增的 AI4S 论文或标签。
+
+| 李雪婷的统计范围 | 纳入 | 排除 | 待定 | 合计 |
+|---|---:|---:|---:|---:|
+| [个人交付 JSON](../zch66883-lixueting.json) | 2,036 | 1,157 | 520 | 3,713 |
+| [全量审核台账](full-corpus-decisions.jsonl.gz) | 2,036 | 25,888 | 1,365 | 29,289 |
+
+个人文件另有 137 条已有摘要仍待定，全量台账另有 982 条已有摘要仍待定，本次只复查上述 797 条。[本轮逐条理由与核验链接](lixueting-797-recheck.jsonl.gz) · [按刊源统计](coverage.csv) · [累计摘要补充](verified-abstract-updates.jsonl.gz) · [全部缺摘要记录](abstract-gaps.jsonl.gz)
+
+## 上一轮工作记录（截至 2026 年 11 月 7 日）
+
+以下保留上一轮结束时的数字。上轮版本的附件及对应统计可通过[当时的提交](https://github.com/BUPT-AI4S/ai4s-crawler/blob/9bba454261bfe1a0c48ffff4806e29151b80f3bb/reviews/2024/lixueting-haozhuodi/handoff.md)查阅。
+
 李雪婷负责 51 个来源，郝卓迪负责 50 个来源。本轮从[上一批交付](https://github.com/BUPT-AI4S/ai4s-crawler/blob/e41587b9271028183191e2395146ec7904f56041/reviews/2024/lixueting-haozhuodi/handoff.md)中取出 2,398 条缺摘要待定记录、218 条判定分歧记录，两组没有重复。
 
 ## 缺摘要的 2,398 条
