@@ -64,10 +64,28 @@ jobs:
           cp monitor-tools/static/review-monitor-guide.md crawler/monitor-feedback-format.md
       - name: Commit changed action lists
         working-directory: crawler
+        # 这个仓库在晚上的提交高峰里每分钟都有几个人在推，直接 push 会被非快进拒绝，
+        # 所以每次失败都 rebase 到最新的 main 再试，最多 5 次。
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add reviews monitor-feedback-format.md
-          if git diff --cached --quiet; then exit 0; fi
-          git commit -m '更新论文审核行动清单'
-          git push origin HEAD:main
+          for attempt in 1 2 3 4 5; do
+            git add reviews monitor-feedback-format.md
+            if git diff --cached --quiet && [ -z "$(git log origin/main..HEAD --oneline)" ]; then
+              echo "没有需要提交的改动。"
+              exit 0
+            fi
+            if [ -n "$(git diff --cached --name-only)" ]; then
+              git commit -m '更新论文审核行动清单'
+            fi
+            if out=$(git push origin HEAD:main 2>&1); then
+              echo "第 ${attempt} 次尝试推送成功。"
+              exit 0
+            fi
+            echo "::warning::第 ${attempt} 次推送失败：$(echo "$out" | tail -n 3 | tr '\n' ' ')"
+            git fetch origin main
+            git rebase --autostash origin/main || git rebase --abort
+            sleep 5
+          done
+          echo "::error::连续 5 次推送都被拒绝，本次行动清单没有提交：$(echo "$out" | tail -n 5 | tr '\n' ' ')"
+          exit 1
