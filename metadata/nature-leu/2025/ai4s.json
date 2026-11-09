@@ -1,0 +1,575 @@
+[
+  {
+    "id": "10.1038/s41375-025-02533-6",
+    "venue": "nature-leu",
+    "year": 2025,
+    "track": null,
+    "title": "Subgrouping germinal center-derived B-cell lymphomas based on machine learning-deduced DNA methylation modules",
+    "authors": [
+      "Selina Glaser",
+      "Anja Fischer",
+      "Juan Emilio Martínez-Manjón",
+      "Cristina López",
+      "Helene Kretzmer",
+      "Birgit Burkhardt",
+      "Daniel Hübschmann",
+      "Michael Hummel",
+      "Wolfram Klapper",
+      "Julia Kolarova",
+      "Markus Kreuz",
+      "German Ott",
+      "Bernhard Radlwimmer",
+      "Maciej Rosolowski",
+      "Matthias Schlesner",
+      "Andreas Rosenwald",
+      "Stephan Stilgenbauer",
+      "Rabea Wagener",
+      "Igor Zwir",
+      "Lorenz Trümper",
+      "Ralf Küppers",
+      "Peter Lichter",
+      "Ole Ammerpohl",
+      "Coral del Val",
+      "Reiner Siebert",
+      "on behalf of ICGC MMML-Seq consortium"
+    ],
+    "author_ids": [
+      "https://orcid.org/0009-0008-2923-1829",
+      "https://orcid.org/0000-0002-7145-2544",
+      "https://orcid.org/0000-0002-0723-4980",
+      "https://orcid.org/0000-0002-6041-7049",
+      "https://orcid.org/0000-0001-6717-605X",
+      "https://orcid.org/0000-0001-7208-4117",
+      "https://orcid.org/0000-0003-3204-748X",
+      "https://orcid.org/0000-0002-5896-4086",
+      "https://orcid.org/0000-0002-6830-9296",
+      "https://orcid.org/0000-0002-9798-4573",
+      "https://orcid.org/0000-0002-6691-7191",
+      "https://orcid.org/0000-0002-2212-2039",
+      "https://orcid.org/0000-0001-7433-3703"
+    ],
+    "abstract": "Follicular lymphoma (FL) and diffuse large B-cell lymphoma (DLBCL) are the most common lymphomas, both exhibiting features of germinal center-derived B-cells (gcBCs). DLBCL can arise de novo or through transformation of a low-grade lymphoma like FL. FL and DLBCL are heterogeneous with regard to clinical outcome as well as morphologic, immunophenotypic, genetic, transcriptomic and other biological aspects [ 1 ]. Besides classic FL harboring the IGH :: BCL2 translocation, several subtypes with varying morphologic and genetic features exist [ 1 ]. Regarding DLBCL, cell-of-origin (COO) gene expression signatures classify them into germinal center B-cell-like (GCB) and activated B-cell-like (ABC) subtypes [ 2 ]. Additionally, several groups have identified clusters of DLBCL based on the mutational landscape and linked to clinical outcome [ 3 , 4 , 5 , 6 , 7 , 8 ]. While DNA methylation (DNAme) has emerged as biomarker for tumor classification, e.g. in brain tumors or sarcomas [ 9 , 10 ], its use for the subtyping of gcBC lymphomas, including FL and DLBCL, is still lagging behind. Therefore, we performed BeadChip array-based DNAme analysis on DNA extracted from 177 molecularly well-characterized cases of gcBC lymphomas included in the ICGC MMML-Seq consortium. These comprised cryo-preserved tumor cell-rich tissues of 85 FL, 75 DLBCL, and 17 FL-DLBCL (Supplementary Table S1 ), as presented by Hübschmann and colleagues [ 8 ]. In standard clustering and dimension-reduction analyses of the 10,000 most variable CpGs of this dataset, FL and DLBCL appear as a continuum or cloud of cases, mostly organized by the amount of DNAme of the investigated CpGs (Supplementary Fig. S1 ). To nevertheless identify potential subgroups of these lymphomas, we applied the Phenotype-Genotype Many-to-Many Relations Analysis (PGMRA) algorithm to the data [ 11 ]. The PGMRA algorithm is an unsupervised machine learning method that employs a fuzzy non-negative matrix factorization method to identify significant biclusters of features (e.g. CpG loci) and cases. For this approach, we first selected the 10,000 most variable CpGs based on standard deviation and applied k-means clustering to organize them into 1000 clusters. By selecting representative CpGs from each cluster, we reduced the CpG set to 1938 CpGs. These CpGs were then analyzed using PGMRA to identify significant biclusters, i.e. clusters of both CpGs and lymphoma samples (Supplementary methods). PGMRA identified 300 significant CpGs across 119 significant samples. We applied k-means clustering to organize the 300 CpGs and 177 samples (Fig. 1A ). This analysis revealed four CpG modules (M1: 68 CpGs, M2: 50 CpGs, M3: 94 CpGs, M4: 88 CpGs, Supplementary Table S2 ), which organized the lymphomas into seven distinct methylation patterns (MP1-MP7, Supplementary Fig. S2 ). Fig. 1: DNA methylation profiling and characterization of germinal center-derived B-cell lymphomas. Using PGMRA on DNA methylation array data from germinal center-derived B-cell lymphomas (FL, DLBCL, FL-DLBCL), we identified 300 CpGs, which were subsequently organized into four modules (M1-M4) and seven methylation patterns (MPs) through k-means clustering. A Heatmap depicting DNA methylation levels of the 300 CpGs differentiating seven MPs (MP1-7). Sample features are annotated at the top of the heatmap. The mutation clusters were calculated for the entire dataset and DLBCL cases separately as described by Hübschmann et al. [ 8 ]. The TCC was calculated based on WGS data. Rows represent individual CpGs, and columns represent samples. CpG sites and samples are organized according to the k-mean clustering. B Radar plots illustrate the key defining features of each MP, including lymphoma classification, patient age, cell-of-origin (COO), BCL2 or BCL6 rearrangements, and mutational clusters identified by Hübschmann et al. C Boxplots display the distribution of biological age, Horvath’s epigenetic age, Ki-67 expression, and proliferation history (based on the epiCMIT package) across MPs. For statistical testing a pairwise Wilcoxon rank sum test with Bonferroni correction was applied (see Supplementary Tables S3 and S4 ). FL Follicular lymphoma, DLBCL Diffuse large B-cell lymphoma, ABC activated B-cell-like, GCB germinal center B-cell-like, TCC tumor cell content, WGS whole genome sequencing, r rearranged, n. a. not applicable. Full size image By correlating the methylation patterns (MPs) with the recently published epidemiologic, histopathologic, transcriptomic and genetic aberration characteristics of these lymphomas [ 8 ], we unraveled strong, though non-perfect, association with the histopathologic diagnoses, with two MPs mainly containing FL, four MPs mostly containing DLBCL, leaving one intermediate MP (Fig. 1B ). In particular, MP1 and MP2 are predominantly composed of FL cases (MP1: 37/41 [90%]; MP2: 24/36 [67%]), with MP2 showing a higher age at diagnosis compared to MP1 (median [range] age: MP2: 70 [44–78] years vs. MP1: 60 [33–80] years; p = 0.047) (Fig. 1C ). Additionally, MP2 displays a higher proliferation history, calculated using the mitotic clock epiCMIT [ 12 ], compared to MP1 (median [range]: MP2: 0.7 [0.6–0.9] vs. MP1: 0.6 [0.4–0.7]; p < 0.001) and a higher mutational load of single nucleotide variants (median [range]: MP2: 8439 [4512–31,343] vs. MP1: 4658 [1335–12,417]; p < 0.001) (Supplementary Fig. S3 ). Both MP1 and MP2 exhibit a high frequency of cases with BCL2 rearrangement (MP1: 36/41 [88%]; MP2: 36/36 [100%]) and GCB subtype (MP1: 32/41 [78%]; MP2: 28/36 [78%]), in line with the enrichment of FL. Intriguingly, while our DNAme analysis revealed distinct patterns related with clinical characteristics for MP1 and MP2, these differences were not reflected in the RNA expression profiles. MP3 comprises a mixture of FL (13/22 [59%]), DLBCL (8/22 [36%]) and FL-DLBCL (1/22 [5%]) cases. It is characterized by fewer cases with BCL2 rearrangement (11/22 [50%]) compared to MP1 and MP2 ( p < 0.001), while similarly showing a predominance of the GCB subtype (17/22 [77%]). The remaining MPs, i.e. MP4-7, consist in the majority of DLBCL cases (MP4: 20/28 [71%]; MP5: 17/26 [65%]; MP6: 10/11 [91%], MP7: 11/13 [85%]). Among these, MP4 and MP5 mainly contain cases of GCB subtype (MP4: 21/28 [82%]; MP5: 16/26 [62%]), while MP6 and MP7 are associated with the ABC subtype (MP6: 10/11 [91%]; MP7: 7/13 [54%]) (Supplementary Table S3 ). Using the mutational clusters identified by Hübschmann et al. for the whole set of cases as well as for the DLBCL subset [ 8 ], we found that MP4 exhibits the highest proportion of cases belonging to the PIM1 -like mutational cluster derived from clustering of the entire dataset (OR = 6.1, p = 0.001). Furthermore, MP6 shows an enrichment of cases of the mutational cluster containing MYD88 and/or CD79B mutation as hallmark (entire dataset: OR = 26.0, p < 0.001), thus reflecting the so-called C5/MCD cluster [ 3 , 4 ]. This is in line with the ABC subtype enrichment (OR = 78.6, p < 0.001) and absence of BCL2 rearrangements (0/11 [0%]) in MP6. While nodal involvement was higher in MP1 ( p = 0.014) likely due to the enrichment of FL cases, we observed no significant differences between the MPs in clinical parameters like stage or International Prognostic Index, given the low power of the analyses relying on small sample sizes (Supplementary Fig. S4 ). To elucidate whether the DNAme clustering might be driven by tumor or bystander cells, we evaluated the tumor cell content (TCC) using whole genome sequencing data and several DNAme-based purity parameters (Supplementary Fig. S5 ). The lowest median TCC was detected in MP3 (30%) and MP4 (40%). Remarkably, MP4 and MP5 exhibit similarities in the DNAme for the CpG modules M1–M3, besides these CpGs are less methylated in MP4 as compared to MP5 cases (median [range] beta-value for M1-3: MP4: 0.41 [0.09–0.51] vs. MP5: 0.61 [0.50–0.85]; p < 0.001) (Supplementary Fig. S6 ). This lower DNAme, coupled with a significantly lower proliferation history ( p < 0.001), B-cell presence ( p < 0.001), and TCC ( p < 0.001) as compared to MP5, correlates with a higher predicted proportion of bystander cells within MP4 cases (CD4 + T-cells p < 0.001). We next conducted a Uniform Manifold Approximation and Projection (UMAP) analysis based on the 300 CpGs (Fig. 2 , Supplementary Fig. S7 ). Notably, UMAP1 (x-axis) stratifies samples according to their histopathologic diagnoses while UMAP2 (y-axis) correlates with the median DNAme levels. Furthermore, although a continuum is still present within this sample distribution, discernible clustering tendencies emerge, which expectedly align well with the seven MPs previously identified through k-means clustering. Fig. 2: UMAP analysis of the 300 CpGs in germinal center-derived B-cell lymphomas. UMAP analysis based on 300 CpGs identified by PGMRA, using Manhattan distance and 15 neighbors. The UMAP plots are colored according to various features: lymphoma classification, median DNA methylation levels, methylation patterns (MPs) and tumor cell content based on whole genome sequencing. FL Follicular lymphoma, DLBCL Diffuse large B-cell lymphoma. Full size image To elucidate how the 300 CpGs perform on other common mature B-cell lymphomas derived from gcBCs, we included into the UMAP additional array-based DNAme data from cryo-preserved tissues of 31 sporadic EBV-negative Burkitt lymphomas (BL), 7 high-grade B-cell lymphomas with 11q aberration (HGBCL-11q) and 7 nodal marginal zone lymphomas (nMZL) from the MMML cohorts (Supplementary Fig. S8 ) [ 13 , 14 , 15 ]. BL segregated clearly apart as separate cluster from DLBCL, FL and also HGBCL-11q, suggesting that the selected CpGs might also be able to differentiate BL and HGBCL-11q. Notably, nMZL cases showed heterogeneous methylation profiles and, thus, clustered into the areas of several MPs, probably due to lower TCC or diverse biological backgrounds. To validate our findings, we analyzed publicly available datasets of DLBCLs ( n = 69) and primary central nervous system lymphomas (PCNSLs; Carlund et al.: n = 8, Vogt et al.: n = 26) [ 16 , 17 ]. DLBCLs were mainly distributed across MP4-6 similarly to the DLBCL of the ICGC MMML-Seq cohort. In contrast, the PCNSLs known to mostly belong to the MCD/C5 group, predominantly clustered with cases in MP7 (33/34 [97%]) enriched for DLBCL of the MYD88 subgroup within the ICGC MMML-Seq cohort (Supplementary Fig. S9 ). By displaying the CpG modules to non-malignant (pre-)B-cell subpopulations, we found that the DNAme levels of these 300 CpGs are remarkably uniform, with low DNAme in M1-3 (median [range] beta-value: M1: 0.05 [0.03–0.22]; M2: 0.05 [0.03–0.18]; M3: 0.06 [0.03–0.29]) and mostly high DNAme in M4 (median [range] beta-value: 0.86 [0.69–0.91]) (Supplementary Fig. S10 ). Finally, we aimed at investigating the 300 CpGs in more detail though they were not selected for biologic function (Supplementary Fig. S11 ). Modules M1-3, showing varying DNAme levels across the seven MPs, are significantly enriched within CpG islands (M1–3: p < 0.001), in poised promoter regions defined in gcBCs (M2-3: p < 0.001), and in bivalent transcription start sites defined in a human embryonic stem cell line (M2-3: p < 0.001). They belong predominantly to module 20 (M1: 75%; M2: 100%, M3: 83%) of the dynamically methylated CpGs during B-cell development described by Kulis et al. [ 18 ] (Supplementary Table S5 ). The increase in DNAme levels particularly in M3 in part correlates with the number of cell cycles the tumor cells had experienced within the germinal center (Supplementary Fig. S12 ). Conversely, CpGs in M4 are located in enhancer, transcription, and heterochromatic regions, not linked to CpG islands. Despite their predominately high methylation (median [range] beta-value: 0.66 [0.24–0.88]) in M4 they contribute to the MP structure and, thus, potentially hold significant value as biomarkers for diagnostic and prognostic applications in lymphoid malignancies. DNAme-based classification of several solid tumor types has entered clinical practice and DNAme studies of predominately leukemic haematologic neoplasms including B- and T-cell leukemias have shown clear subgroups based on the lineages and maturation stages of the tumor cells [ 18 ]. Despite this progress, DNAme-based grouping of the most common mature B-cell lymphomas, i.e. FL and DLBCL, has been challenging and mostly revealed an amorphic crowd of cases with a continuum of DNAme levels (Supplementary Fig. S1 ). Here, the use of unsupervised fuzzy non-negative matrix factorization methods, identified 300 CpGs in DNA from cryo-preserved FL and DLBCL that categorize these lymphomas into subgroups. These subgroups correlate with known mutational groups but also reflect biological features like age at diagnosis and proliferation history. Thus, they provide subgrouping information orthogonal to current systems using morphology, transcriptomics, or genetic alterations. Though not designed for this aim, we show that the selected CpG modules and DNAme profiles also have the potential to differentiate other gcBC lymphomas, like BL, as well as non-malignant (pre-)B-cell populations. Both the underlying PGMRA approach as well as the presented set of CpGs, if validated in independent cohorts, might in the future contribute to the application of DNAme biomarkers in common lymphomas similar to other tumor entities.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1038/s41375-025-02533-6",
+    "pages": "967-971",
+    "bibtex": null,
+    "url": "https://doi.org/10.1038/s41375-025-02533-6",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025-03-10",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Leukemia",
+    "issn": "0887-6924",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://www.nature.com/articles/s41375-025-02533-6",
+    "ai4s_hits": [
+      "gene expression",
+      "\\bdna\\b",
+      "\\brna\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "肿瘤分型",
+      "机器学习",
+      "聚类"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "genomics",
+      "DNA",
+      "RNA",
+      "gene expression",
+      "neuroscience",
+      "transcriptomics",
+      "epigenomics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "genomics",
+          "DNA",
+          "RNA",
+          "gene expression",
+          "neuroscience",
+          "transcriptomics",
+          "epigenomics"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1038/s41375-025-02623-5",
+    "venue": "nature-leu",
+    "year": 2025,
+    "track": null,
+    "title": "Prediction of resistance to hydroxyurea therapy in patients with polycythemia vera: a machine learning study (PV-AIM) validated in a prospective interventional phase IV trial (HU-F-AIM)",
+    "authors": [
+      "Florian H. Heidel",
+      "Valerio De Stefano",
+      "Matthias Zaiss",
+      "Jens Kisro",
+      "Eva Gückel",
+      "Susanne Großer",
+      "Mike W. Zuurman",
+      "Kirsi Manz",
+      "Kenneth Bryan",
+      "Armita Afsharinejad",
+      "Martin Griesshammer",
+      "Jean-Jacques Kiladjian"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0003-2438-1955",
+      "https://orcid.org/0000-0002-5178-5827",
+      "https://orcid.org/0000-0002-7740-4076",
+      "https://orcid.org/0000-0001-8718-7004"
+    ],
+    "abstract": "Abstract Polycythemia vera (PV) is a myeloproliferative neoplasm associated with increased thromboembolic (TE) risk and hematologic complications. Hydroxyurea (HU) serves as the most frequently used first-line cytoreductive therapy worldwide; however, resistance to HU (HU-RES) develops in a significant subset of patients, leading to increased morbidity and necessitating alternative treatments. This study, part of the PV-AIM project, employed machine learning techniques on real-world evidence (RWE) from the Optum® EHR database containing 82.960 PV patients to identify baseline predictors of HU-RES within the first 6–9 months of therapy. Using a Random Forest model, the study analyzed data from 1850 patients, focusing on laboratory parameters and clinical characteristics. Key predictive markers included red cell distribution width (RDW) and hemoglobin (HGB), showing the strongest association with HU-RES. A synergistic interaction between RDW and HGB was identified, enabling TE risk stratification. This study provides a robust framework for early detection of HU-RES using readily available clinical data, facilitating timely intervention. These findings underscore the importance of personalized treatment approaches in managing PV and highlight the utility of machine learning in enhancing predictive accuracy and clinical outcomes. Based on the results of PV-AIM we initiated an open-label, prospective, single-arm, interventional, phase IV study (HU-F-AIM) evaluating HU-resistance/intolerance. Validation of predictive biomarkers may facilitate identification of patients at risk of HU resistance who may benefit from alternative treatment options, possibly preventing ongoing phlebotomy during HU treatment, a frequent therapeutic choice in high-risk PV associated with early disease progression and increased thromboembolic complications. We propose an updated terminology that differentiates between true molecular resistance and clinical resistance, that may indicate the requirement for alternative therapeutic strategies.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1038/s41375-025-02623-5",
+    "pages": "1692-1701",
+    "bibtex": null,
+    "url": "https://doi.org/10.1038/s41375-025-02623-5",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025-04-25",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Leukemia",
+    "issn": "0887-6924",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_hits": [
+      "\\bmolecular\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "随机森林",
+      "机器学习"
+    ],
+    "ai4s_tags": [
+      "AI for 物质科学"
+    ],
+    "ai4s_keywords": [
+      "molecule"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 物质科学": [
+          "molecule"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1038/s41375-025-02723-2",
+    "venue": "nature-leu",
+    "year": 2025,
+    "track": null,
+    "title": "Underlying biology, challenges and emergent concepts in the treatment of relapsed and refractory pediatric T-cell acute lymphoblastic leukemia",
+    "authors": [
+      "Patrícia Amaral",
+      "Rhona Christie",
+      "Daisy O. F. Gresham",
+      "Emma J. M. Lucas",
+      "Luyao Kevin Xu",
+      "Lena Behrmann",
+      "Jonathan Bond",
+      "Sofie Degerman",
+      "Frederik W. van Delft",
+      "Steven Goossens",
+      "Melanie Hagleitner",
+      "Chris Halsey",
+      "Nicholas Jones",
+      "Tim Lammens",
+      "Frank N. van Leeuwen",
+      "Marc R. Mansour",
+      "Panagiotis Ntziachristos",
+      "David O’Connor",
+      "João T. Barata"
+    ],
+    "author_ids": [
+      "https://orcid.org/0009-0008-7240-4123",
+      "https://orcid.org/0009-0007-1043-2631",
+      "https://orcid.org/0009-0008-3255-7504",
+      "https://orcid.org/0000-0002-2783-0712",
+      "https://orcid.org/0000-0002-3704-3720",
+      "https://orcid.org/0000-0002-5693-8570",
+      "https://orcid.org/0000-0001-5449-5246",
+      "https://orcid.org/0000-0003-4846-5117",
+      "https://orcid.org/0000-0001-8733-4027",
+      "https://orcid.org/0000-0003-1107-6513",
+      "https://orcid.org/0000-0001-6835-3791",
+      "https://orcid.org/0000-0001-6374-8954",
+      "https://orcid.org/0000-0002-4826-8976"
+    ],
+    "abstract": "Relapsed and refractory disease in children with T-cell acute lymphoblastic leukemia (R/R T-ALL) remains a major clinical challenge. Outcomes for children who relapse or exhibit resistance to initial treatments are dismal, with survival rates frequently below 25% despite aggressive therapy. To minimize toxicities and improve outcomes, individualized precision medicine approaches targeting the underlying biology of R/R T-ALL are especially important, considering that T-ALL is characterized by genetic, epigenetic and posttranscriptional heterogeneity, and organ and niche specificities (e.g. the central nervous system), all of which underlie disease progression and therapy resistance. Here, we summarize the current understanding of the complexity of pediatric T-ALL biology and how such knowledge may be clinically leveraged, emphasizing the need for innovative therapeutic routes to improve outcomes for children with R/R T-ALL. Emerging approaches that hold promise or show palpable results include proteasome inhibitors, BCL-2 antagonists, and JAK (for JAK- and IL-7R-driven cases), ABL and SRC family tyrosine kinase (for LCK-activated cases), MEK or PI3K-mTOR inhibitors. MYC-targeting agents, DNA demethylating agents, histone deacetylase inhibitors, splicing modulators, or drugs exploring T-ALL metabolic vulnerabilities, are other examples for potential pharmacological intervention. Immunotherapies, particularly CAR T-cell products targeting CD7 and other markers, but also biologics (e.g. targeting CD38), are under development and increasing interest. These agents should be rationally integrated into precision medicine combination therapies informed by genetic, epigenetic, and posttranscriptional insights that will be essential to refine risk stratification and minimize the risk of resistance. Novel strategies leveraging artificial intelligence and machine learning could accelerate discovery and optimize treatment frameworks.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1038/s41375-025-02723-2",
+    "pages": "2575-2589",
+    "bibtex": null,
+    "url": "https://doi.org/10.1038/s41375-025-02723-2",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025-08-14",
+    "source": "crossref.org+openaire.eu",
+    "venue_type": "journal",
+    "journal_title": "Leukemia",
+    "issn": "0887-6924",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://www.nature.com/articles/s41375-025-02723-2",
+    "ai4s_hits": [
+      "\\bdna\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "机器学习"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "DNA"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "DNA"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1038/s41375-025-02769-2",
+    "venue": "nature-leu",
+    "year": 2025,
+    "track": null,
+    "title": "Granulocyte abundance and maturation state at diagnosis predicts treatment-free remission in CML",
+    "authors": [
+      "Mikko Purhonen",
+      "Mikael Tatun",
+      "Katariina Luukkainen",
+      "Kevin Hung",
+      "Henri Sundquist",
+      "Oda Tafjord",
+      "Stina Söderlund",
+      "Shady Adnan-Awad",
+      "Anni Dohlen",
+      "Johanna Heikkinen",
+      "Perttu Koskenvesa",
+      "Sanna Siitonen",
+      "Satu Mustjoki",
+      "Naranie Shanmuganathan",
+      "Coral Bryce",
+      "Signe Danielsson",
+      "Henrik Hjorth-Hansen",
+      "Ulla Olsson-Strömberg",
+      "Takashi Kumagai",
+      "Shinya Kimura",
+      "David M. Ross",
+      "Oscar Brück"
+    ],
+    "author_ids": [
+      "https://orcid.org/0009-0001-9354-5864",
+      "https://orcid.org/0009-0008-8145-9994",
+      "https://orcid.org/0000-0001-6205-7799",
+      "https://orcid.org/0000-0002-0816-8241",
+      "https://orcid.org/0000-0001-5895-8797",
+      "https://orcid.org/0000-0002-2670-5696",
+      "https://orcid.org/0000-0003-1717-6208",
+      "https://orcid.org/0000-0001-7171-2935",
+      "https://orcid.org/0000-0002-7842-9419"
+    ],
+    "abstract": "Abstract Treatment-free remission (TFR) has become a therapeutic objective for selected chronic-phase chronic myeloid leukemia (CP CML). However, no standardized biomarker is yet in clinical use. In this multi-center study, we explored the potential of bone marrow (BM) cytomorphology given its global accessibility and integral role in clinical diagnostics. We included diagnostic BM aspirate samples of 113 CP CML patients from seven clinical sites having attempted first TKI discontinuation. We digitized cytomorphological slides into 100x-magnified high-resolution images and analyzed these with deep learning-based image analysis. We profiled the BM cytomorphological fingerprint of CP CML patients and recapitulated the known granulocytic predominance and reduction of lymphoid, monocytic and erythroid cells in comparison to an extensive cohort of 942 control BM samples. We discovered neutrophil abundance and granulocytic maturation to associate with sustained TFR. We confirmed these visually and demonstrated their independent impact over known clinical factors. Our study underlines the potential of computational BM cytomorphology to identify novel clinical biomarkers and suggests that granulocytic expansion and maturation at diagnosis could reflect intrinsic disease pathology influencing TFR maintenance.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1038/s41375-025-02769-2",
+    "pages": "2968-2977",
+    "bibtex": null,
+    "url": "https://doi.org/10.1038/s41375-025-02769-2",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025-09-16",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Leukemia",
+    "issn": "0887-6924",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "深度学习"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "biomedical imaging"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "biomedical imaging"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1038/s41375-025-02779-0",
+    "venue": "nature-leu",
+    "year": 2025,
+    "track": null,
+    "title": "DNA methylation alterations in acute lymphoblastic leukemia survivors with late neurocognitive deficits",
+    "authors": [
+      "Sarah J. Goodman",
+      "Darci T. Butcher",
+      "Sharon L. Guger",
+      "Eric Diehl",
+      "Jack Brzezinski",
+      "Brenda Spiegler",
+      "Brian J. Nieman",
+      "Prajkta Kallurkar",
+      "Aubrée Boulet Craig",
+      "Maja Krajinovic",
+      "Julie Laniel",
+      "Caroline Laverdière",
+      "Daniel Sinnett",
+      "Sarah Lippé",
+      "Andrei Turinsky",
+      "Mary Shago",
+      "Lisa J. Strug",
+      "Shinya Ito",
+      "Johann K. Hitzler",
+      "Russell Schachar",
+      "Rosanna Weksberg"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0003-3625-6676",
+      "https://orcid.org/0000-0003-1158-186X",
+      "https://orcid.org/0000-0002-6501-4150"
+    ],
+    "abstract": "While 5-year survival rates for acute lymphoblastic leukemia (ALL) approach 90%, [ 1 , 2 ], many ALL survivors develop adverse late effects months to years after completion of therapy, which severely impact their quality of life [ 3 , 4 , 5 , 6 , 7 ]. Neurocognitive deficits are common, often impacting attention and executive function and manifesting as learning and behavioral problems, which can lead to poor educational achievement, unemployment, and lower quality of life [ 7 , 8 ]. Despite the removal of cranial radiotherapy (CRT) from standard CNS prophylaxis due to its known link to long-term neurocognitive deficits [ 9 ], estimates of neurocognitive deficits remain at 25–40% in ALL survivors treated with chemotherapy only [ 10 , 11 , 12 ]. This raises questions of the mechanistic link between chemotherapy and late effects and highlights the need to understand and predict individual risks for neurocognitive impairments following ALL therapy to provide more personalized treatments and interventions [ 13 , 14 ]. DNA methylation (DNAm) has recently been proposed as a possible molecular underpinning of late effects based on a growing body of evidence of chemotherapy-related DNAm changes. In a study of over 2000 adult survivors of childhood cancer, an epigenome-wide association analysis identified over 1000 CpG sites associated with exposure to specific chemotherapy agents or radiotherapy, with a subset of these associated with cardiometabolic late effects [ 15 ]. Evidence of robust DNAm differences between cancer survivors, irrespective of late effects, and individuals with no history of cancer or exposure to chemotherapeutic agents is still needed as foundational evidence on which to build the study of epigenetic biomarkers and mechanisms of late effects. Using multiple independent cohorts of ALL survivors, survivors of other childhood cancers, and healthy individuals with no history of cancer, we identified a genome-wide DNAm signature comprised of altered DNAm levels specific to ALL survivors. N-PhenoGENICS (NPG) is a study of ALL survivors based at SickKids Hospital, Toronto, Canada(16 in Supplementary methods and materials); participants ranged from 8–20 years of age, were diagnosed with ALL between the ages of 0.7–13 years and included individuals treated with only chemotherapy. The NPG cohort of ALL survivors ( n = 140) was separated into discovery ( n = 91) and validation sets ( n = 49), such that training samples were balanced with healthy control samples for age, sex, and technical batch (Supplementary Table S1 ). Running an epigenome-wide analysis identified a signature of 452 differentially methylated CpGs between the NPG discovery cases and controls ( q -value < 0.05, Δβ > 5%; Fig. 1 ; Supplementary Fig. S1 ; Table S2 ); 38% of sites (173 CpGs) exhibited hypomethylation in the ALL survivors, as compared to controls. Of the 452 CpG signature sites differentially methylated between ALL survivors and healthy controls, 154 had been previously reported by Song et al. as correlating with exposure to one or more chemotherapy agents in the St. Jude LIFE study population (Song et al. reported 652 unique CpGs total) [ 15 ]. These findings support the idea that lasting molecular, including epigenetic, and physiological changes, likely result not from a single chemotherapy agent, but rather a combination of multiple agents. Fig. 1: differentially methylated CpGs between ALL survivors in the NPG discovery group and healthy controls and predictive efficacy of differentially methylated sites. A 452 CpGs (red) that met genome-wide significance ( q -value < 0.05; db > 5%) in testing for differential methylation between ALL survivors (NPG discovery) and controls. B PCA at 33 CpGs, derived from filtering the 452 differentially methylated CpGs, cluster controls from ALL survivors in NPG discovery ( n = 91) and controls ( n = 70), and indepedent samples (PETALE all survivors without CRT, n = 25 and additional control samples, n = 50). PC1 accounts for 53% of variability across samples at these 33 CpGs. All samples plotted were used as training samples of RF model. C Probability scores from RF model demonstrate 98% sensitivity and 85% specificity in 110 additional ALL survivors (PETALE, PETALE CRT) and 394 controls (controls Weksberg and control GEO). All NPG validations ( n = 49) were classified correctly. The threshold was set to 50% as indicated by the dashed line. D Applying the classification model to St. Jude's LIFE cohort (GSE169156), with the cohort split into two groups. “SJ leukemia” ( n = 510) were individuals presumed to be treated for leukemia or lymphoma and “SJ other” ( n = 1023) were individuals treated for all other cancers reported in this cohort. RF probability scores in SJ leukemia (99% positive) and SJ other (77%) were significantly different. Full size image We trained a random forest (RF) classification model to assess the sensitivity and specificity of DNAm to predict past treatment for ALL; training samples included NPG and control discovery samples described above, in addition to 25 ALL survivors from PETALE with no CRT exposure, and 50 additional healthy controls (Supplementary Table S1 ). The RF classification model was trained using DNAm patterns at 33 CpGs, filtered from the full 452 CpGs, that demonstrated robust DNAm differences between survivors and healthy controls and could appropriately cluster samples (Fig. 1B , see Supplementary methods and materials). For each sample, the classifier produced a probability of a DNAm profile originating from an ALL survivor, with scores above 0.5 were deemed “ALL-survivor-like” and scores below that threshold were “control-like”. The model demonstrated 98% sensitivity when applied to the remaining 110 ALL survivors from PETALE (note: all 49 NPG validation samples were correctly classified), and 85% specificity when applied to 394 healthy controls (Fig. 1C , Supplementary Fig. S2 , Supplementary Table S1 ). Age at the time of sample collection was correlated with the length of time since treatment ended (in years) but had no association with probability scores, nor did age at diagnosis, or CRT (Supplementary Fig. S3 ), suggesting that the DNAm associated with treatment did not weaken over time. PBMC-derived DNAm data from the St. Jude LIFE cohort, restricted to age 40 years or younger, were separated into two groups for which we inferred primary diagnosis based on the chemotherapy treatment. Group 1 ( n = 510) was predicted “leukemia/lymphoma” group based on treatment with vinca alkaloids, asparaginase, antimetabolites, and corticosteroids; 200 of these individuals received CRT. Group 2 ( n = 1023) included all remaining samples, which consisted of primary diagnoses of sarcoma, CNS tumors, embryonal tumors and “other” (Supplementary Table S1 ) [ 15 ]. Using an RF model trained on an expanded CpG set (AUC > 80 filter reduced to AUC > 70), 99% of the leukemia/lymphoma samples were correctly classified as ALL-survivor-like (504 of 510), while significantly fewer (77%) of the “other” samples were classified as ALL-survivor-like (789 of 1023; Wilcoxin p < 0.05; Fig. 1D ). This finding indicated that a similar but demonstrably different DNAm profile was present in PBMCs of these two groups of cancer survivors, years to decades after treatment. To measure neurocognitive impairments, specifically in executive functioning, participants of PETALE and NPG were assessed on the DIVERGT test battery (Fig. 2A ). In PETALE, DIVERGT was previously reported to accurately predict General Ability Index, mathematics, and verbal memory in adult ALL survivors (17 in Supplementary methods and materials). Within each cohort, we found low to moderate pairwise correlations between the four subtests, Digit Span (WAIS/WISC/IV), Verbal Fluency (D-KEFS), Grooved Pegboard, and Trail Making Test (D-KEFS); the strongest correlation in both cohorts was between Digit Span and Trail Making Test (NPG r = 0.42, PETALE r = 0.49; Supplementary Fig. S4 ). “Low performance”, defined by scoring below the 2 nd percentile on one or more tests, or scoring below the 10 th percentile on two or more tests, was found in 40% ( n = 54) of individuals in the PETALE cohort and 30% ( n = 42) of NPG, commensurate with current estimates of ALL-treatment-related neurocognitive deficits (18–20 in Supplementary methods and materials). Fig. 2: Associations between neurocognitive deficits and DNA methylation in two cohorts of ALL survivors, NPG and PETALE. A Percentile of DIVERGT test scores with dotted lines indicating the 2 nd and 10 th percentile, which were used to categorize neurocognitive deficits or low performance (40% of the PETALE cohort and 30% of the NPG cohort). The difference in scores between NPG (red) and PETALE (yellow) was not significant at any test. Population scores for all tests are normally distributed about the 50 th percentile. B Significant GO enrichment terms (13 terms) from genes mapping to the 43 CpGs significantly associated with one or more DIVERGT test scores in meta-analysis. C PC1 and PC2 of 43 CpGs in NPG (left) and PETALE (right) showing associations with grooved pegboard scores (as percentiles) and sex. Statistical measures correspond to the PC and cohort in the plot above. Full size image To test for DNAm correlates of executive functioning, we applied a linear regression to each of the four DIVERGT tests against DNAm levels at each CpG, separately in each cohort, and applied a meta-analysis to identify CpGs independently associated with the same test score in both PETALE and NPG. Digit Span scores were associated with 2 CpGs, Verbal Fluency (D-KEFS) scores were associated with 1 CpG, and Grooved Pegboard was significantly associated with 43 CpGs ( q -values for all CpGs < 0.05; Supplementary Table S3 ). As expected, based on the interrelatedness of the test scores, there was overlap in these sets and the 43 CpGs associated with Grooved Pegboard were inclusive of the CpGs associated with other tests. These CpGs mapped to genes significantly enriched for 13 GO terms (Fig. 2B ), which organized into two clusters relating to neuronal cell features such as “dendritic spine” and cell adhesion; these ontologies were composed of genes including, SHANK3 , DNM1 , and CADPS2 , each of which displayed loss of DNA methylation in the gene body in correlation with lower DIVERGT scores. Dendritic spines specifically are thought of as the structural basis of learning and memory, and therefore play a critical role in executive functioning. The Grooved Pegboard scores were significantly lower in males (Student’s t p -value < 0.05; Supplementary Fig. S5 ) in the PETALE cohort and trended in the same direction in the NPG cohort. A PCA of the 43 Grooved Pegboard sites did in fact show separation between males and females on PC1, as well as a relationship between PC1 scores and Pegboard scores (Fig. 2C ). PC2 also exhibited an association with less delineation between sexes. Within each sex, PC1 and PC2 loadings were significantly associated with test scores in the NPG cohort (Fig. 2D ). Together, these findings illustrated a modest but reproducible relationship between Grooved Pegboard scores and DNAm levels in the blood of ALL survivors. While the p -values were significant, the DNAm levels account for only a small proportion of the variation in Grooved Pegboard scores. As a biomarker, using DNAm to predict individuals at the highest risk of neurocognitive deficits would still be highly valuable even if the model was subject to some noise. Moreover, the biological mechanism of late effects we aimed to identify does not encompass all variation in cognition but only the contribution of past chemotherapy to this variation. Therefore, we expected that a large proportion of Grooved Pegboard scores, i.e., the population-based distribution, would not be accounted for in our model and would not be relevant to predicting depressed scores related to late effects. In conclusion, we propose DNAm as a potential biomarker that could predict patients most likely to experience neurocognitive deficits following ALL treatment. We also suggest a link between cytotoxic chemotherapy and neurocognitive outcomes, at least in part, via differential methylation at genes regulating dendritic morphology and synaptogenesis. Given the prevalence of ALL, we expect it will be feasible in future studies to build on the findings presented here. These could target the collection of large cohorts to support studies stratified by sex, and also address risk protocol, primary diagnosis, and timing of the establishment of DNAm marks associated with neurocognitive outcomes or other common late effects. Ultimately, this work may inform the exploration of rational therapy modifications to mitigate late effects in ALL survivors.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1038/s41375-025-02779-0",
+    "pages": "3042-3046",
+    "bibtex": null,
+    "url": "https://doi.org/10.1038/s41375-025-02779-0",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025-10-17",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Leukemia",
+    "issn": "0887-6924",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://www.nature.com/articles/s41375-025-02779-0",
+    "ai4s_hits": [
+      "\\bmolecular\\b",
+      "\\bdna\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "随机森林"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学",
+      "AI for 物质科学"
+    ],
+    "ai4s_keywords": [
+      "genomics",
+      "DNA",
+      "epigenomics",
+      "molecule",
+      "battery"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "genomics",
+          "DNA",
+          "epigenomics"
+        ],
+        "AI for 物质科学": [
+          "molecule",
+          "battery"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1038/s41375-025-02804-2",
+    "venue": "nature-leu",
+    "year": 2025,
+    "track": null,
+    "title": "Role of common host genome variants in Childhood Acute Lymphoblastic Leukemia",
+    "authors": [
+      "Theis Mikkelsen",
+      "Marianne Helenius",
+      "Mirella Ampatzidou",
+      "Andishe Attarbaschi",
+      "Liv Andres-Jensen",
+      "Arndt Borkhardt",
+      "Nuria Conde Cuevas",
+      "Gabriele Escherich",
+      "Melanie M. Hagleitner",
+      "Christina Halsey",
+      "Jonathan Josephs-Spaulding",
+      "Louise Lundgren",
+      "Simone Pehn",
+      "Sophia Polychronopoulou",
+      "Ulrik Stoltze",
+      "Linea Natalie Toksvang",
+      "Ayo Wahlberg",
+      "Stefanie Verena Junk",
+      "Kjeld Schmiegelow"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0003-2748-4001",
+      "https://orcid.org/0000-0003-3613-8338",
+      "https://orcid.org/0000-0002-9285-6898",
+      "https://orcid.org/0000-0003-3437-8338",
+      "https://orcid.org/0000-0002-6121-4737",
+      "https://orcid.org/0000-0003-2167-3805",
+      "https://orcid.org/0000-0001-5449-5246",
+      "https://orcid.org/0000-0001-9716-9264",
+      "https://orcid.org/0000-0001-5862-3292",
+      "https://orcid.org/0000-0002-9871-7637",
+      "https://orcid.org/0000-0002-0829-4993"
+    ],
+    "abstract": "Childhood acute lymphoblastic leukemia (ALL) is a genetically heterogeneous disease, and while somatic alterations inform diagnosis and treatment stratification, germline variants - particularly common host genome variants - rarely influence clinical care. Over the past decade, various host genome variant studies have uncovered numerous common variants associated with ALL susceptibility, treatment efficacy, and toxicity risk. Yet, less than a handful have reached clinical implementation, with TPMT and NUDT15 variants being the only ones widely used clinically. Whether a variant can be readily translated into the clinical setting primarily depends on four features: (1) Phenotype severity, (2) phenotype rarity and the proportion of cases (overall or in subsets of patients) accounted for by genetic variants, (3) the application of the variant as an add-on clinical decision support tool, and (4) the availability, cost, and potential side effects of interventions and/or prophylaxis. Key barriers for such clinical translation include insufficient effect sizes, lack of replication across diverse populations, and lack of well-established treatment modification strategies. However, large-scale international collaborations can generate the necessary statistical power, including enabling more complex bioinformatic approaches, such as polygenic risk scores and more advanced machine learning strategies. In this review, we outline the necessary steps toward bridging the gap between genetic discovery and clinical practice.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1038/s41375-025-02804-2",
+    "pages": "3-24",
+    "bibtex": null,
+    "url": "https://doi.org/10.1038/s41375-025-02804-2",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025-12-08",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Leukemia",
+    "issn": "0887-6924",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://www.nature.com/articles/s41375-025-02804-2",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "机器学习"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "genomics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "genomics"
+        ]
+      },
+      "method_evidence": []
+    }
+  }
+]

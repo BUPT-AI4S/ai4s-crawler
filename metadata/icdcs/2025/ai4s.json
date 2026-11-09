@@ -1,0 +1,621 @@
+[
+  {
+    "id": "10.1109/icdcs63083.2025.00103",
+    "venue": "icdcs",
+    "year": 2025,
+    "track": "unverified",
+    "title": "The Cloud, Like Building and Running Go Binaries.",
+    "authors": [
+      "Diana Arroyo",
+      "Paul Castro",
+      "Thuan Doan",
+      "Nick Mitchell",
+      "Sara Kokkila Schumacher",
+      "Ed Seabolt",
+      "Aleksander Slominski",
+      "Ansu Varghese",
+      "Lionel Villard",
+      "Cora Coleman"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/24/11531",
+      "https://dblp.org/pid/307/3274",
+      "https://dblp.org/pid/418/3011",
+      "https://dblp.org/pid/25/3824",
+      "https://dblp.org/pid/252/2928",
+      "https://dblp.org/pid/219/8137",
+      "https://dblp.org/pid/39/4743",
+      "https://dblp.org/pid/418/3139",
+      "https://dblp.org/pid/v/LionelVillard",
+      "https://dblp.org/pid/198/1474"
+    ],
+    "abstract": "We document the UX challenges of targeting distributed batch-processing code to Cloud resources. The challenges largely stem from the need for every team member to know everything about the mechanics of achieving scale. Thus, both running and writing code become overwhelming tasks. We present Lunchpail, a tool designed to address these challenges.We present two case studies, one of a team running AI/ML workloads and one of the code they wrote to make it happen. We quantify the challenges with two novel UX metrics: multiplicity and divergence. We show that the code base manifests a multitude of concerns, including distribution, packaging, and automation; 64–98% of the team’s code diverges from the main goal of the application. The story is paralleled when running workloads. Users switch between 3–7 types of tasks on a daily basis (high multiplicity). The nature of these tasks differ greatly from the users’ core competencies (high divergence). In particular, we show that all users assume the daily burdens of cluster operators.We demonstrate that four angles of attack, combined, can yield significant reductions in complexity: 1) Adopt a Serverless approach, allowing code to focus on that core \"2%\". 2) Treat application packaging like building a Golang binary via go build. This binary embeds source, configuration, deployment logic, and a lightweight runtime that channels data to workers with fan-out and queuing. 3) Treat running distributed applications pipelines against Cloud resources like launching said binaries, with simple bash \"|\" syntax; 4) When possible, avoid multi-tenancy, and instead target Cloud virtual machines directly.We present a large experimental study to quantify the viability of obtaining a dedicated \"burst\" of cloud resources for every job run. We show VMs can be ready in well under a minute, which is 10-20x faster than scaling a Kubernetes cluster.We embody this approach in Lunchpail. Lunchpail itself is small, weighing in at 12k lines of code (10% of the size of Kubeflow, 2.5% of Ray, 1% of Kueue). We validate Lunchpail against AI/ML code, legacy chip design workloads, and show that it adds little overhead on top of acquiring Cloud VMs.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/icdcs63083.2025.00103",
+    "pages": "1022-1032",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ICDCS63083.2025.00103",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "IEEE International Conference on Distributed Computing Systems",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/icdcs/ArroyoCDMSSSVVC25",
+    "dblp_toc": "https://dblp.org/db/conf/icdcs/icdcs2025",
+    "booktitle": "ICDCS",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "circuit design"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "circuit design"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/icdcs63083.2025.00035",
+    "venue": "icdcs",
+    "year": 2025,
+    "track": "unverified",
+    "title": "Efficient Joint Communication and Computation Placement for Large-scale SNN Simulation on Supercomputers.",
+    "authors": [
+      "Yubing Bao",
+      "Zhihui Lu 0002",
+      "Xin Du 0002",
+      "Qiang Duan 0002",
+      "Jirui Yang",
+      "Jin Zhao 0001",
+      "Geyong Min",
+      "Yang Chen 0001",
+      "Shijing Hu 0001",
+      "Xin Wang 0002"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/231/2101",
+      "https://dblp.org/pid/51/4748",
+      "https://dblp.org/pid/18/4833-2",
+      "https://dblp.org/pid/67/6644-2",
+      "https://dblp.org/pid/207/9492",
+      "https://dblp.org/pid/97/4765-1",
+      "https://dblp.org/pid/96/3727",
+      "https://dblp.org/pid/48/4792-1",
+      "https://dblp.org/pid/321/8871-1",
+      "https://dblp.org/pid/10/5630-2"
+    ],
+    "abstract": "Spiking Neural Network (SNN) simulation involves emulating the activation and firing of spiking neurons on hardware platforms. This is a highly time-sensitive task, requiring the simulation of billions of neurons and their intercommunication within a few milliseconds. Each neuron performs a complex, interdependent multi-stage communication and computation task. We consider the task placement of SNN on supercomputers to accelerate SNN simulation. Existing task placement methods for SNN simulations have two major limitations. First, they lack the capability to handle large-scale SNNs with billions of neurons. Second, they focus primarily on optimizing communication delay, while neglecting multi-stage computation delays in SNN simulations. In this paper, we formalize the SNN Joint Multi-stage Communication and Computation Placement (SJCCP) problem. We demonstrate that SJCCP can be solved using an approximation algorithm with an approximation ratio of $O\\left( {{k^2}\\sqrt {\\log n\\log k} } \\right)$, where n is the number of voxels in the SNN and k is the number of GPUs. To further reduce the time complexity of solving SJCCP in practice, we propose a novel efficient framework, FastSJP, tailored for large-scale SNN placement. Then we apply the FastSJP framework to a human brain simulation that runs a large-scale SNN model derived from authentic biological data on a supercomputer equipped with 1024 GPUs. Experimental results verify that our framework notably reduces time overhead, ranging from 17.31% to 28.45%, compared to state-of-the-art methods. Leveraging the computational power of the supercomputer, FastSJP maximizes the problem size and processing performance, significantly advancing the development of brain-inspired intelligence.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/icdcs63083.2025.00035",
+    "pages": "275-285",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ICDCS63083.2025.00035",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "IEEE International Conference on Distributed Computing Systems",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/icdcs/Bao0DDYZMCHW25",
+    "dblp_toc": "https://dblp.org/db/conf/icdcs/icdcs2025",
+    "booktitle": "ICDCS",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "neuroscience"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "neuroscience"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/icdcs63083.2025.00093",
+    "venue": "icdcs",
+    "year": 2025,
+    "track": "unverified",
+    "title": "Shared memory consensus on a ring: Epigenetic Consensus.",
+    "authors": [
+      "Petra Berenbrink",
+      "Funda Ergün",
+      "Anna Geisler",
+      "Yannic Maus"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/b/PetraBerenbrink",
+      "https://dblp.org/pid/e/FundaErgun",
+      "https://dblp.org/pid/398/7773",
+      "https://dblp.org/pid/164/5605"
+    ],
+    "abstract": "We study the epigenetic consensus problem, in which simple processors move across and modify a shared memory, seeking to achieve consensus across the cells of the memory. The memory topology is a ring with the cells initialised to 0 or 1. The ring is traversed by multiple processors moving clockwise in synchronous steps. Each processor belongs to one of four types: There are two types of erasers that erase either memory cells holding a 0 adjacent to a 1 or those holding a 1 adjacent to a 0. There are also two types of writers; those writing 1 or those writing 0 into empty cells.We are interested whether and how fast the above process converges to a consensus state where all memory cells have the same value. The origin of this process lies in biology, in the modelling of the activation and deactivation of DNA sequences. A variant of this process has been introduced and studied by Rashid, Taubenfeld, and Bar-Joseph.The convergence properties of the process depend on the initialisation of the shared memory, as well as on the number and types of processors and their initial locations. We show that, with adversarial initial processor positions, consensus cannot be reached.Having observed that a deterministic or adversarial model can be very powerful with regards to reaching consensus, we focus our attention on randomised initialisations. As our main contribution, we show the following two results that depend on a measure of processor bias describing whether the processors are biased towards increasing 0s or 1s in the cells: (a) With randomised initialisation of the memory cells and random processor placement, eventually consensus is reached with high probability, even with sublinear processor bias. (b) With high probability, consensus is reached quickly whenever there is an arbitrarily small constant factor processor bias. These two results hold even if the memory cell initialisation has a bias that is in the opposite direction compared to the bias in the processors.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/icdcs63083.2025.00093",
+    "pages": "912-922",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ICDCS63083.2025.00093",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "IEEE International Conference on Distributed Computing Systems",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/icdcs/BerenbrinkEGM25",
+    "dblp_toc": "https://dblp.org/db/conf/icdcs/icdcs2025",
+    "booktitle": "ICDCS",
+    "ai4s_hits": [
+      "\\bdna\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "DNA"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "DNA"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/icdcs63083.2025.00021",
+    "venue": "icdcs",
+    "year": 2025,
+    "track": "unverified",
+    "title": "BEyes: Unseen Eyes Snooping Pattern Lock via BFI.",
+    "authors": [
+      "Hao Chen",
+      "Penghao Wang 0004",
+      "Feng Hong 0001",
+      "Zhongwen Guo",
+      "Chao Liu 0008"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/175/3324",
+      "https://dblp.org/pid/97/8711-4",
+      "https://dblp.org/pid/255/3257",
+      "https://dblp.org/pid/58/566",
+      "https://dblp.org/pid/15/5923-8"
+    ],
+    "abstract": "With the proliferation of smartphone application services, the pattern lock remains widely used for authentication. Notably, the risks associated with password entry in public spaces have attracted significant attention from researchers. Various attacks have been explored to steal passwords, but each comes with limitations, such as requiring good lighting conditions, close proximity, pre-deployed devices, or system intrusion. To address these challenges, we propose an attack method called BEyes, which utilizes beamforming feedback information (BFI) to eavesdrop on pattern passwords drawn on smartphone screens. Since BFI is transmitted in clear text and describes the downlink channel state information (CSI), any Wi-Fi 5-enabled device can capture it out of the victim’s view, reducing the likelihood of the attack being detected. To avoid missing critical pattern drawing information, we propose a traffic generation mechanism based on traffic competition, which ensures stable BFI. To mitigate the effects of frequency-selective fading and noise, we apply subcarrier alignment and principal component analysis (PCA) to improve efficiency. Additionally, we introduce a motion-based joint inference model, enabling BEyes to generalize its inference from a few known pattern passwords to unknown ones. Extensive experiments demonstrate that BEyes achieves an accuracy of 89.2% in inferring a 3-line pattern password within the Top-10 attempts.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/icdcs63083.2025.00021",
+    "pages": "122-132",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ICDCS63083.2025.00021",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "IEEE International Conference on Distributed Computing Systems",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/icdcs/ChenW0G025",
+    "dblp_toc": "https://dblp.org/db/conf/icdcs/icdcs2025",
+    "booktitle": "ICDCS",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "wireless communications"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "wireless communications"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/icdcs63083.2025.00034",
+    "venue": "icdcs",
+    "year": 2025,
+    "track": "unverified",
+    "title": "Efficient Deterministic Distributed Computing in Ad-Hoc Wireless Networks.",
+    "authors": [
+      "Tomasz Jurdzinski",
+      "Dariusz R. Kowalski"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/74/441",
+      "https://dblp.org/pid/43/6109"
+    ],
+    "abstract": "We study the problem of distributed construction of efficient de-centralized communication schedules for ad-hoc wireless networks. We consider a model which is close to real scenarios: (1) the SINR interference model, which covers most important distinctive features of contemporary wireless communication, such as signal fading, collisions and accumulation of signal, and (2) any underlying metric of bounded growth, which includes Euclidean space with certain type of obstacles. Most of efficient solutions in the SINR model rely on probabilistic algorithms, assuming access of nodes to the sources of independent truly random bits, which in practice is hard to get by wireless devices.In this paper we show that key efficient de-centralized communication abstraction primitives, such as aggregation and broadcast schedules (which are bases of many other communication tasks), can be efficiently built by distributed algorithms in SINR networks without using any randomization. In particular, the length of the built communication schedules are asymptotically as efficient as those significantly relying on randomization, and close to the theoretic lower bounds. Importantly, the time (round) complexity of our solutions grows only logarithmically with respect to the growth of the density of a network, which makes them scalable in real-life scenarios.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/icdcs63083.2025.00034",
+    "pages": "264-274",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ICDCS63083.2025.00034",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "IEEE International Conference on Distributed Computing Systems",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/icdcs/JurdzinskiK25",
+    "dblp_toc": "https://dblp.org/db/conf/icdcs/icdcs2025",
+    "booktitle": "ICDCS",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "wireless communications"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "wireless communications"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/icdcs63083.2025.00029",
+    "venue": "icdcs",
+    "year": 2025,
+    "track": "unverified",
+    "title": "Depermissioning Web3: a Permissionless Accountable RPC Protocol for Blockchain Networks.",
+    "authors": [
+      "Weihong Wang",
+      "Tom Van Cutsem"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/82/3559",
+      "https://dblp.org/pid/20/6382"
+    ],
+    "abstract": "In blockchain networks, so-called \"full nodes\" serve data to and relay transactions from clients through an RPC interface. This serving layer enables integration of \"Web3\" data, stored on blockchains, with \"Web2\" mobile or web applications that cannot directly participate as peers in a blockchain network. In practice, the serving layer is dominated by a small number of centralized services (\"node providers\") that offer permissioned access to RPC endpoints. Clients register with these providers because they offer reliable and convenient access to blockchain data: operating a full node themselves requires significant computational and storage resources, and public (permissionless) RPC nodes lack financial incentives to serve large numbers of clients with consistent performance.Permissioned access to an otherwise permissionless blockchain network raises concerns regarding the privacy, integrity, and availability of data access. To address this, we propose a Permissionless Accountable RPC Protocol (PARP). It enables clients and full nodes to interact pseudonymously while keeping both parties accountable. PARP leverages \"light client\" schemes for essential data integrity checks, combined with fraud proofs, to keep full nodes honest and accountable. It integrates payment channels to facilitate micro-payments, holding clients accountable for the resources they consume and providing an economic incentive for full nodes to serve. Our prototype implementation for Ethereum demonstrates the feasibility of PARP, and we quantify its overhead compared to the base RPC protocol.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/icdcs63083.2025.00029",
+    "pages": "210-220",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ICDCS63083.2025.00029",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "IEEE International Conference on Distributed Computing Systems",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/icdcs/WangC25",
+    "dblp_toc": "https://dblp.org/db/conf/icdcs/icdcs2025",
+    "booktitle": "ICDCS",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 社会科学"
+    ],
+    "ai4s_keywords": [
+      "economics"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 社会科学": [
+          "economics"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/icdcs63083.2025.00087",
+    "venue": "icdcs",
+    "year": 2025,
+    "track": "unverified",
+    "title": "Remote Gate Scheduling in Distributed Quantum Computing.",
+    "authors": [
+      "Xu Xu",
+      "Yu Liu 0057",
+      "Yingling Mao",
+      "Yuanyuan Yang 0001"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/50/5827",
+      "https://dblp.org/pid/97/2274-57",
+      "https://dblp.org/pid/222/5327",
+      "https://dblp.org/pid/10/2031-1"
+    ],
+    "abstract": "Quantum computing has the potential to outperform classical computing in solving specific problems. However, the limited qubit capacity of existing Quantum Processing Units (QPUs) poses significant barriers to the practical implementation of quantum computing. Distributed quantum computing (DQC) offers a promising approach to scaling the qubit capacity of quantum systems by interconnecting multiple QPUs and enabling collaborative computation. Nevertheless, DQC necessitates implementing remote quantum gate operations that consume entangled qubit pairs, which poses a significant challenge for DQC. In this work, we formulate and investigate the remote gate scheduling (RGS) problem, considering two approaches for remote gate operations: Telegate and Teledata. We propose a hybrid heuristic algorithm that dynamically schedules quantum gate operations within a circuit, executed on distributed QPUs, while minimizing entanglement consumption. We conducted extensive simulations using real-world quantum circuits and processors to evaluate the proposed approach. The results show that our approach reduces entanglement consumption by up to 90% and 25% compared to the two baselines, Telegate-SA and Teledata-ZS, respectively. Furthermore, the execution time of our approach is significantly shorter than that of the baselines.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/icdcs63083.2025.00087",
+    "pages": "846-856",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ICDCS63083.2025.00087",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "IEEE International Conference on Distributed Computing Systems",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/icdcs/XuLM025",
+    "dblp_toc": "https://dblp.org/db/conf/icdcs/icdcs2025",
+    "booktitle": "ICDCS",
+    "ai4s_hits": [
+      "quantum computing"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "quantum computing",
+      "quantum circuit"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "quantum computing",
+          "quantum circuit"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/icdcs63083.2025.00064",
+    "venue": "icdcs",
+    "year": 2025,
+    "track": "unverified",
+    "title": "mmUAVsense: mmWave Radar-based UAV Detection via Fine-grained Rotary Sensing.",
+    "authors": [
+      "Wenhao Xu",
+      "Chuyu Wang",
+      "Qiancheng Jin",
+      "Yanling Bu",
+      "Lei Xie 0004",
+      "Sanglu Lu"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/89/8375",
+      "https://dblp.org/pid/145/0641",
+      "https://dblp.org/pid/269/9379",
+      "https://dblp.org/pid/202/6619",
+      "https://dblp.org/pid/70/1741-4",
+      "https://dblp.org/pid/24/3318"
+    ],
+    "abstract": "As the low-altitude economy expands, Unmanned Aerial Vehicles (UAVs) have become essential across a variety of applications. However, non-cooperative UAVs threaten personal privacy and public safety, especially when carrying dangerous payloads. Current UAV detection methods primarily rely on computer vision, which often fails in severe weather conditions. This paper introduces mmUAVsense, a mmWave-based system designed for detecting and identifying UAVs in complex environments. In addition to detecting UAVs, mmUAVsense can also estimate the rotational speed of their propellers, which offers valuable information for assessing the potential payload. A key challenge in detecting UAVs is their small Radar Cross Section (RCS), which makes them easily masked by the environment, especially when flying near large objects. To address this issue, we propose a Moving Target Indicator (MTI) to calculate the time-spatial difference, which helps suppress static environmental clutter and make the dynamic reflection from the UAV more noticeable. To differentiate UAVs from other flying objects, we exploit the unique harmonic feature in the UAV’s Doppler spectrum, caused by the rapid spinning of its propellers, to identify UAVs among other airborne objects. To estimate the UAV’s rotational speed, we analyze the relationship between harmonic features and propeller speed, and propose to use Chirp-Z Transformation (CZT) to accurately extract the frequency from the spectrum. We have implemented a system prototype in various outdoor environments, and extensive experiments demonstrate that our system can identify UAVs with over 95% accuracy, with an average rotational speed error of just 3.8%. Based on the existing UAV model, our rotary-sensing-based system can sense the UAV’s extra load weight with only 8 grams of average error.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/icdcs63083.2025.00064",
+    "pages": "593-603",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ICDCS63083.2025.00064",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "IEEE International Conference on Distributed Computing Systems",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/icdcs/XuWJB0L25",
+    "dblp_toc": "https://dblp.org/db/conf/icdcs/icdcs2025",
+    "booktitle": "ICDCS",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 地球宇宙科学"
+    ],
+    "ai4s_keywords": [
+      "weather forecasting"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 地球宇宙科学": [
+          "weather forecasting"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1109/icdcs63083.2025.00024",
+    "venue": "icdcs",
+    "year": 2025,
+    "track": "unverified",
+    "title": "CloudQC: A Network-aware Framework for Multi-tenant Distributed Quantum Computing.",
+    "authors": [
+      "Ruilin Zhou",
+      "Yuhang Gan",
+      "Yi Liu 0115",
+      "Chen Qian 0001"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/78/11410",
+      "https://dblp.org/pid/142/6240",
+      "https://dblp.org/pid/97/4626-115",
+      "https://dblp.org/pid/70/3604-1"
+    ],
+    "abstract": "Distributed quantum computing (DQC) that allows a large quantum circuit to be executed simultaneously on multiple quantum processing units (QPUs) becomes a promising approach to increase the scalability of quantum computing. It is natural to envision the near-future DQC platform as a multi-tenant cluster of QPUs, called a Quantum Cloud. However, no existing DQC work has addressed the two key problems of running DQC in a multi-tenant quantum cloud: placing multiple quantum circuits to QPUs and scheduling network resources to complete these jobs. This work is the first attempt to design a circuit placement and resource scheduling framework for a multi-tenant environment. The proposed framework is called CloudQC, which includes two main functional components, circuit placement and network scheduler, with the objectives of optimizing both quantum network cost and quantum computing time. Experimental results with real quantum circuit workloads show that CloudQC significantly reduces the average job completion time compared to existing DQC placement algorithms for both single-circuit and multi-circuit DQC. We envision this work will motivate more future work on network-aware quantum cloud.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1109/icdcs63083.2025.00024",
+    "pages": "155-165",
+    "bibtex": null,
+    "url": "https://doi.org/10.1109/ICDCS63083.2025.00024",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "IEEE International Conference on Distributed Computing Systems",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/icdcs/ZhouG0025",
+    "dblp_toc": "https://dblp.org/db/conf/icdcs/icdcs2025",
+    "booktitle": "ICDCS",
+    "ai4s_hits": [
+      "quantum computing"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "quantum computing",
+      "circuit placement",
+      "quantum circuit"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "quantum computing",
+          "circuit placement",
+          "quantum circuit"
+        ]
+      },
+      "method_evidence": []
+    }
+  }
+]
