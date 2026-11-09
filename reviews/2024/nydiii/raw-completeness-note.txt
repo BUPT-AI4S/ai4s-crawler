@@ -1,0 +1,36 @@
+2024年49本期刊原始书目完整性核查
+
+仓库快照：2026-11-05T10:31:19.144426+08:00
+固定提交：391f4d81424ef84e879654013c01f89b0f54efcd
+核查日期：北京时间2026-11-07（保留11月6日基础证据，补入11月7日浏览器核查）
+快照链接：https://github.com/BUPT-AI4S/ai4s-crawler/blob/391f4d81424ef84e879654013c01f89b0f54efcd/metadata/2024/snapshot.json
+
+范围为49本期刊、25,346条全量书目记录，包含所有文章类型，不是ai4s.json初筛候选。排除Nature Water、Nature Reviews Bioengineering、Nature Reviews Electrical Engineering以及全部会议。总数直接采用快照papers字段；下载分刊papers.json用于文章编号/DOI集合核验。
+
+结果：42本与本次所核官网目录按明确口径逐条一致；The Innovation官网已列162条全覆盖，另有1条已核更正；Science官网2037条全覆盖，仓库另保留2条错误DOI登记；The Lancet正式卷期1746条全覆盖，另有2条已核在线记录；合计确认16条目录缺项（其中Nature和Nature Medicine原有14条）；1本官网全年完整性未核实。
+
+1. 确认的16条缺项
+Nature官网4,400条，仓库4,387条：缺12条Milestones（里程碑回顾）和1条Nature Briefing（新闻简报）。Nature Medicine官网714条，仓库713条：缺1条Research Highlight（研究亮点）。已逐条核实正式页面的DOI、日期和类型。它们不是14篇原创研究论文；也不能据此推断剩余未核实期刊没有研究论文漏项。
+Nature和Nature Medicine这14条当前Crossref单DOI查询都返回404。原爬虫以Crossref为入口，官方目录因此是必要的独立检查。当前404不证明历史抓取时的状态，也不能简单归因于非研究类型过滤，因为新闻和研究亮点也可在Crossref登记为journal-article。
+
+Annals of Oncology：官网4083条，仓库4081条，确认缺2条。自有官网全部16期，共91页目录；常规期201条＋增刊3882条＝4083条；raw4081条均匹配，缺2条、0多余、0跨页重复。缺项为两条2024更正，出版方明确DOI/在线日期，Crossref当前works均404；不是已证实的爬虫分页故障。另1条BRCA2题名缺词来自Crossref元数据，已按正式DOI认定同文，不计缺项。 正式卷期2024与首次在线2024是不同口径，本结果不声称后者的独立全集。 AX省略了多数文章链接，完整PII实际读出194条；采用同卷期唯一题名、摘要编号及页码核对，不能表述为独立官网DOI/PII集合完全相等。
+
+2. 年份及目录口径
+原爬虫优先published-online，其次published、issued、published-print，再筛选所选日期的2024年。官网正式卷期的年份可能不同：例如2024年在线发表后编入2025或更晚卷期，也可能2023年在线发表后编入2024卷期。不能将两个口径直接相减后判定漏项。
+Science China Earth Sciences：2024卷期243条；按在线2024并合入后续卷期后245条。
+Science China Technological Sciences：2024卷期目录312条；按在线2024归一后270条。
+Nano-Micro Letters：2024卷期280条；按在线2024归一后319条。
+Computational Mechanics：2024卷期134条；其中2024在线62条，2025卷期另84条，2026卷期另13条，合计159条。还检查了当前Online First目录。不能把134与159的差额视为多爬。
+The Innovation：官网自有站六期目录162条均在仓库中；仓库第163条为2024更正10.1016/j.xinn.2024.100585，出版方PMC存档可核实。官网目录数本身不应机械视作实际全年出版总量。
+11月7日浏览器补核：Environmental Modelling & Software的12个正式2024卷期目录260条；Progress in Materials Science的6个正式2024卷期目录92条；Progress in Polymer Science的12个正式2024卷期目录59条；Progress in Energy and Combustion Science的6个正式2024卷期目录31条；Joule的12个正式2024卷期目录235条；Molecular Plant的12个正式2024卷期目录173条；Cancer Cell的12个正式2024卷期目录196条；Cell的26个正式2024卷期目录548条；The Lancet Oncology的12个正式2024卷期目录501条；The Lancet Respiratory Medicine的12个正式2024卷期目录244条；Journal of Hepatology的13个正式2024卷期目录2400条；Computers & Structures的16个正式2024卷期目录272条，均与固定快照双向匹配。此结论按官方正式卷期年表述，不将其泛化为已独立核实首次在线2024年的所有条目。
+Science：51期共2037个主文章卡片全部逐条匹配到raw。原始2039条额外保留两条同题同页错误DOI：ade0789应为adr0789（官网明确生产错误更正），adr0965对应官网adr0956；两个旧/错DOI官网均Page not found。不是漏爬，也不是集合完全相等。 核验口径：官网2024正式51期All types主文章目录；Vol383–386、Issues6678–6728。Science的Crossref2039条均无published-online，爬虫采用published/正式卷期年；本次不声称首次在线2024全集。
+Space Science & Technology：已完整检查卷3/4/5/6：54/64/71/86条。卷3全2023、卷5全2025；卷6仅Exoatmospheric Intercept Guidance...为2024在线（DOI10.34133/space.0112，正式页明确Published online 8 May2024、cite2026;6），其余85条2026。合计65条2024在线记录全部在raw。 核验口径：实际在线2024口径：2024卷4目录64篇＋2026卷6目录中1篇2024在线文章；按唯一完整题名及出版日期匹配，All types。
+The Lancet：官网51常规期1651条＋1增刊95条＝1746条全部覆盖；另2条无卷期记录在官网明确Online first、2024发表，合计核实raw全部1748条。其中23组70条Department of Error以题名＋期次＋页码多重集合核实，未任意绑定单条DOI。 没有独立查遍所有首次在线2024记录；正式卷期全集与两条已知在线记录分开核实。 更正的组级多重集合覆盖不能表述为每一条的独立DOI集合相等。
+
+3. 尚未完成官网全年验证的1本
+- Analytica Chimica Acta：已取得官网2024年度卷期清单，共48个卷期；有效完整目录26个，已核其中614条。另有3个目录快照未通过完整性检查。局部条数不是全年总数；其余目录仍待核，访问失败不记为0篇。Crossref同爬虫口径集合一致仅作辅助。
+这些期刊的仓库DOI集合均与当前Crossref同爬虫口径集合一致。11月7日已经使用解锁后的浏览器补核；部分官网仍有HTTP403、ScienceDirect CPE00002等访问或加载限制。已取得的年度卷期清单、有效局部目录和失败快照分别保留，未把Crossref数或局部条数冒充官网全年数，也未将访问失败记为0篇。
+
+Excel中“官网可比目录数”按本轮实际可比范围填写；“2024卷期条目数”单列卷期口径的文章条数（不是期数）；官网未核实的计数、差额与缺项数留空。每刊保留证据链接，逐期完整链接见核查证据.json。第二张表是本轮已确认缺项的题名、DOI、发布日期和正式页面。
+
+本轮核查仅判断书目记录是否覆盖，不表示摘要、PDF或全文已完整下载。没有修改仓库原始数据或AI4S筛选结果。
