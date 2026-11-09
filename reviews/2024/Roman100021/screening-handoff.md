@@ -59,3 +59,50 @@
 - 确认补录 82 条，沿用全量快照记录的原始 ID 和字段，理由标记「初筛漏筛补录」，并保留 DOI 和证据链接。其余短名单、缺摘要非候选与无法对账的官方卷期仍可能有漏检，未计作已核实补录。
 - 对新增纳入和补录的首批 95 个 DOI 查 Crossref 出版登记，89 个返回可用题名或作者信息。其余记录使用输入元数据和可核实的论文页、目录或摘要。保留上一轮已核实的公开 PDF 和项目链接，新增条目中无明确证据的 PDF、代码或数据字段留空。修正环境健康论文 `10.1016/j.envint.2024.108449` 的一条错链。
 - 统计按原快照出版日期口径。`10.1007/s11263-024-02246-w` 与 `10.1038/s41380-024-02759-3` 首次正式在线发表于 2024 年，纸刊排于 2025 年，保留在本批次。
+
+## 官网同口径总量复核（2026-11-09）
+
+上一版表格中列为「无法核实」的来源，本轮按同一快照（2026-11-05T10:31:19）重新对账，逐来源口径、总数与差额写入 [`coverage.json`](coverage.json)。做法分两类：
+
+- Nature 系 15 本期刊的 2024 年发表日期列表可整年枚举，逐页取全部文章链接后按 DOI 与采集结果比对，14 本零差，Molecular Psychiatry 官网多 3 条（两张图片摘要 `10.1038/s41380-023-02393-5`、`10.1038/s41380-023-02328-0` 与更正 `10.1038/s41380-024-02416-9`），不属研究条目，不补录。
+- 其余期刊（Elsevier、Springer、BMC、Cell Press）的卷期目录与文章页对自动化访问返回 403，或只给卷期索引而无法枚举整年条目。改用出版方存缴的 Crossref 登记，按 ISSN、出版日 2024-01-01 至 2024-12-31、`type=journal-article` 统计。这正是采集器 `journal_meta.py` 使用的筛选条件，口径与全量采集完全一致，并已逐 DOI 比对：33 本期刊缺 0 条、多 0 条。出版方官网链接仍保留在 `coverage.json` 的 `evidence_urls` 中，供有订阅权限时复核。
+
+| 来源 | 全量采集 | 官网同口径总数 | 差额 | 统计口径 | 证据 |
+| --- | ---: | ---: | ---: | --- | --- |
+| The Lancet（`j-010bbc0bbc`） | 1748 | 1748 | +0 | Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径） | [目录](https://api.crossref.org/journals/0140-6736/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type=journal-article) |
+| Diagnostic and Interventional Imaging（`j-40f01ce1e2`） | 94 | 94 | +0 | Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径） | [目录](https://api.crossref.org/journals/2211-5684/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type=journal-article) |
+| Microsystems & Nanoengineering（`nature-micronano`） | 207 | 207 | +0 | 官网 2024 年发表日期列表全部条目（含非研究条目） | [目录](https://www.nature.com/micronano/articles?year=2024) |
+| Materials Today Bio（`j-2e7e0743f5`） | 478 | 478 | +0 | Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径） | [目录](https://api.crossref.org/journals/2590-0064/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type=journal-article) |
+| npj Clean Water（`npjcleanwater`） | 133 | 133 | +0 | 官网 2024 年发表日期列表全部条目（含非研究条目） | [目录](https://www.nature.com/npjcleanwater/articles?year=2024) |
+| npj Urban Sustainability（`npjurbansustain`） | 52 | 52 | +0 | 官网 2024 年发表日期列表全部条目（含非研究条目） | [目录](https://www.nature.com/npjurbansustain/articles?year=2024) |
+| Genome Medicine（`j-128792d050`） | 154 | 154 | +0 | Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径） | [目录](https://api.crossref.org/journals/1756-994X/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type=journal-article) |
+| Acta Materialia（`j-e85da65425`） | 893 | 893 | +0 | Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径） | [目录](https://api.crossref.org/journals/1359-6454/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type=journal-article) |
+| Cell Death Discovery（`nature-cddiscovery`） | 513 | 513 | +0 | 官网 2024 年发表日期列表全部条目（含非研究条目） | [目录](https://www.nature.com/cddiscovery/articles?year=2024) |
+| Molecular Psychiatry（`nature-mp`） | 510 | 513 | -3 | 官网 2024 年发表日期列表全部条目（含非研究条目） | [目录](https://www.nature.com/mp/articles?year=2024) |
+| Computers and Electronics in Agriculture（`j-6c033988ef`） | 1117 | 1117 | +0 | Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径） | [目录](https://api.crossref.org/journals/0168-1699/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type=journal-article) |
+| International Journal of Computer Vision（`j-fe8a45e725`） | 356 | 356 | +0 | Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径） | [目录](https://api.crossref.org/journals/0920-5691/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type=journal-article) |
+| Environment International（`j-637d3c6893`） | 834 | 834 | +0 | Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径） | [目录](https://api.crossref.org/journals/0160-4120/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type=journal-article) |
+| Mechanical Systems and Signal Processing（`j-3b179d0686`） | 836 | 836 | +0 | Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径） | [目录](https://api.crossref.org/journals/0888-3270/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type=journal-article) |
+| Nature Structural & Molecular Biology（`nsmb`） | 286 | 286 | +0 | 官网 2024 年发表日期列表全部条目（含非研究条目） | [目录](https://www.nature.com/nsmb/articles?year=2024) |
+| Composites Science and Technology（`j-f339346c60`） | 502 | 502 | +0 | Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径） | [目录](https://api.crossref.org/journals/0266-3538/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type=journal-article) |
+| npj Precision Oncology（`npjprecisiononcology`） | 291 | 291 | +0 | 官网 2024 年发表日期列表全部条目（含非研究条目） | [目录](https://www.nature.com/npjprecisiononcology/articles?year=2024) |
+| Science China Chemistry（`j-dbedd658b3`） | 501 | 501 | +0 | Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径） | [目录](https://api.crossref.org/journals/1674-7291/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type=journal-article) |
+| npj Science of Food（`npjscifood`） | 116 | 116 | +0 | 官网 2024 年发表日期列表全部条目（含非研究条目） | [目录](https://www.nature.com/npjscifood/articles?year=2024) |
+| npj Climate and Atmospheric Science（`npjclimatsci`） | 328 | 328 | +0 | 官网 2024 年发表日期列表全部条目（含非研究条目） | [目录](https://www.nature.com/npjclimatsci/articles?year=2024) |
+| Science China Life Sciences（`j-dd56888193`） | 274 | 274 | +0 | Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径） | [目录](https://api.crossref.org/journals/1674-7305/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type=journal-article) |
+| The Lancet Regional Health - Western Pacific（`j-cef98d1da3`） | 300 | 300 | +0 | Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径） | [目录](https://api.crossref.org/journals/2666-6065/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type=journal-article) |
+| Communications Earth & Environment（`commsenv`） | 802 | 802 | +0 | 官网 2024 年发表日期列表全部条目（含非研究条目） | [目录](https://www.nature.com/commsenv/articles?year=2024) |
+| Transportation Research Part E Logistics and Transportation Review（`j-69b4b3aecf`） | 363 | 363 | +0 | Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径） | [目录](https://api.crossref.org/journals/1366-5545/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type=journal-article) |
+| Developmental Cell（`j-f544c7a60d`） | 235 | 235 | +0 | Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径） | [目录](https://api.crossref.org/journals/1534-5807/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type=journal-article) |
+| Genome Biology（`j-b5cbe6c7c8`） | 324 | 324 | +0 | Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径） | [目录](https://api.crossref.org/journals/1474-760X/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type=journal-article) |
+| Oncogene（`nature-onc`） | 339 | 339 | +0 | 官网 2024 年发表日期列表全部条目（含非研究条目） | [目录](https://www.nature.com/onc/articles?year=2024) |
+| Renewable Energy（`j-4a8bd2ddf7`） | 2148 | 2148 | +0 | Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径） | [目录](https://api.crossref.org/journals/0960-1481/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type=journal-article) |
+| NPG Asia Materials（`nature-am`） | 63 | 63 | +0 | 官网 2024 年发表日期列表全部条目（含非研究条目） | [目录](https://www.nature.com/am/articles?year=2024) |
+| npj Quantum Information（`npjqi`） | 136 | 136 | +0 | 官网 2024 年发表日期列表全部条目（含非研究条目） | [目录](https://www.nature.com/npjqi/articles?year=2024) |
+| Alzheimer’s Research & Therapy（`j-d94e323c3b`） | 279 | 279 | +0 | Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径） | [目录](https://api.crossref.org/journals/1758-9193/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type=journal-article) |
+| Leukemia（`nature-leu`） | 369 | 369 | +0 | 官网 2024 年发表日期列表全部条目（含非研究条目） | [目录](https://www.nature.com/leu/articles?year=2024) |
+| Transportation Research Part D Transport and Environment（`j-7a7c416cc3`） | 436 | 436 | +0 | Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径） | [目录](https://api.crossref.org/journals/1361-9209/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type=journal-article) |
+| Schizophrenia（`nature-npjschz`） | 124 | 124 | +0 | 官网 2024 年发表日期列表全部条目（含非研究条目） | [目录](https://www.nature.com/npjschz/articles?year=2024) |
+| ACM International Conference on Information and Knowledge Management（`cikm`） | 697 | 347 | +350 | Full Research Track 正式长文录用数（不含其他分轨） | [目录](https://cikm2024.github.io/accepted-papers/) |
+
+CIKM 的 +350 来自口径差异：全量采集 697 条覆盖该届全部分轨，正式长文同轨记录 347 条与官方录用数一致，已在 `coverage.json` 的 `coverage_rationale` 中写明。所有差额均为口径差异或非研究条目，未发现需补采的 AI4S 论文。
