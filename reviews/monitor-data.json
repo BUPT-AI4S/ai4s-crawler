@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-09T11:03:41.269464+00:00",
-  "commit": "ac43e3951bcd3f83e98bb2ecae3a267f866ea488",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ac43e3951bcd3f83e98bb2ecae3a267f866ea488/",
+  "generated_at": "2026-11-09T11:07:21.990491+00:00",
+  "commit": "4431307a7ea8b49b829ad1b20f3e688bf69df756",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/4431307a7ea8b49b829ad1b20f3e688bf69df756/",
   "years": [
     {
       "year": 2024,
@@ -87,9 +87,11 @@
           "candidates": 20,
           "missing_abstract": 0,
           "official_total": 834,
-          "official_scope": "出版方官网（https://www.sciencedirect.com/journal/environment-international）对自动化访问返回 403 或只提供卷期索引，无法枚举整年条目；改用出版方存缴的 Crossref 登记，按 ISSN 0160-4120,1873-6750、出版日 2024-01-01 至 2024-12-31、type=journal-article 统计，与采集器口径完全一致，共 834 条。逐 DOI 比对：采集 834 条，官网有而采集无 0 条，采集有而官网无 0 条。",
-          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致",
+          "official_scope": "Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径）",
+          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致。逐篇交付 25 条：纳入 17、排除 8、待定 0、未审 0（含初筛漏筛补录 4 条）；当前候选文件 20 条，候选缺摘要 0 条。候选池已移出 1 条仅更正作者单位的 Corrigendum，交付保留 exclude 判定并注明类型。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0160-4120/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
+            "https://www.sciencedirect.com/journal/environment-international",
             "https://api.crossref.org/journals/0160-4120/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.sciencedirect.com/journal/environment-international"
           ],
@@ -101,11 +103,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -437,9 +441,10 @@
           "candidates": 40,
           "missing_abstract": 0,
           "official_total": 802,
-          "official_scope": "官网 commsenv 2024 年发表日期列表逐页枚举（41 页）全部条目 802 条，含各文章类型（原创研究、综述、更正、图片摘要等）；按 DOI 与采集比对，采集 802 条，官网有而采集无 0 条、采集有而官网无 0 条。同口径 journal-article 计数（Crossref ISSN 登记）None 条。",
-          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对",
+          "official_scope": "官网 2024 年发表日期列表全部条目（含非研究条目）",
+          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对。逐篇交付 42 条：纳入 38、排除 4、待定 0、未审 0（含初筛漏筛补录 2 条）；当前候选文件 40 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://www.nature.com/commsenv/articles?year=2024",
             "https://www.nature.com/commsenv/articles?year=2024"
           ],
           "decisions": {
@@ -450,11 +455,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -640,9 +647,11 @@
           "candidates": 7,
           "missing_abstract": 0,
           "official_total": 133,
-          "official_scope": "官网 npjcleanwater 2024 年发表日期列表逐页枚举（7 页）全部条目 133 条，含各文章类型（原创研究、综述、更正、图片摘要等）；按 DOI 与采集比对，采集 133 条，官网有而采集无 0 条、采集有而官网无 0 条。同口径 journal-article 计数（Crossref ISSN 登记）133 条。",
-          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对",
+          "official_scope": "官网 2024 年发表日期列表全部条目（含非研究条目）",
+          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对。逐篇交付 10 条：纳入 9、排除 1、待定 0、未审 0（含初筛漏筛补录 3 条）；当前候选文件 7 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://www.nature.com/npjcleanwater/articles?year=2024",
+            "https://api.crossref.org/journals/2059-7037/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.nature.com/npjcleanwater/articles?year=2024",
             "https://api.crossref.org/journals/2059-7037/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article"
           ],
@@ -654,11 +663,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -673,9 +684,11 @@
           "candidates": 31,
           "missing_abstract": 0,
           "official_total": 328,
-          "official_scope": "官网 npjclimatsci 2024 年发表日期列表逐页枚举（17 页）全部条目 328 条，含各文章类型（原创研究、综述、更正、图片摘要等）；按 DOI 与采集比对，采集 328 条，官网有而采集无 0 条、采集有而官网无 0 条。同口径 journal-article 计数（Crossref ISSN 登记）328 条。",
-          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对",
+          "official_scope": "官网 2024 年发表日期列表全部条目（含非研究条目）",
+          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对。逐篇交付 32 条：纳入 30、排除 2、待定 0、未审 0（含初筛漏筛补录 1 条）；当前候选文件 31 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://www.nature.com/npjclimatsci/articles?year=2024",
+            "https://api.crossref.org/journals/2397-3722/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.nature.com/npjclimatsci/articles?year=2024",
             "https://api.crossref.org/journals/2397-3722/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article"
           ],
@@ -687,11 +700,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -706,9 +721,11 @@
           "candidates": 2,
           "missing_abstract": 0,
           "official_total": 52,
-          "official_scope": "官网 npjurbansustain 2024 年发表日期列表逐页枚举（3 页）全部条目 52 条，含各文章类型（原创研究、综述、更正、图片摘要等）；按 DOI 与采集比对，采集 52 条，官网有而采集无 0 条、采集有而官网无 0 条。同口径 journal-article 计数（Crossref ISSN 登记）52 条。",
-          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对",
+          "official_scope": "官网 2024 年发表日期列表全部条目（含非研究条目）",
+          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对。逐篇交付 2 条：纳入 1、排除 1、待定 0、未审 0；当前候选文件 2 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://www.nature.com/npjurbansustain/articles?year=2024",
+            "https://api.crossref.org/journals/2661-8001/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.nature.com/npjurbansustain/articles?year=2024",
             "https://api.crossref.org/journals/2661-8001/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article"
           ],
@@ -720,11 +737,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -1429,9 +1448,11 @@
           "candidates": 19,
           "missing_abstract": 0,
           "official_total": 836,
-          "official_scope": "出版方官网（https://www.sciencedirect.com/journal/mechanical-systems-and-signal-processing）对自动化访问返回 403 或只提供卷期索引，无法枚举整年条目；改用出版方存缴的 Crossref 登记，按 ISSN 0888-3270,1096-1216、出版日 2024-01-01 至 2024-12-31、type=journal-article 统计，与采集器口径完全一致，共 836 条。逐 DOI 比对：采集 836 条，官网有而采集无 0 条，采集有而官网无 0 条。",
-          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致",
+          "official_scope": "Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径）",
+          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致。逐篇交付 179 条：纳入 60、排除 119、待定 0、未审 0（含初筛漏筛补录 17 条）；当前候选文件 19 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0888-3270/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
+            "https://www.sciencedirect.com/journal/mechanical-systems-and-signal-processing",
             "https://api.crossref.org/journals/0888-3270/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.sciencedirect.com/journal/mechanical-systems-and-signal-processing"
           ],
@@ -1443,11 +1464,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -1938,9 +1961,11 @@
           "candidates": 5,
           "missing_abstract": 0,
           "official_total": 207,
-          "official_scope": "官网 micronano 2024 年发表日期列表逐页枚举（11 页）全部条目 207 条，含各文章类型（原创研究、综述、更正、图片摘要等）；按 DOI 与采集比对，采集 207 条，官网有而采集无 0 条、采集有而官网无 0 条。同口径 journal-article 计数（Crossref ISSN 登记）207 条。",
-          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对",
+          "official_scope": "官网 2024 年发表日期列表全部条目（含非研究条目）",
+          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对。逐篇交付 9 条：纳入 7、排除 2、待定 0、未审 0（含初筛漏筛补录 4 条）；当前候选文件 5 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://www.nature.com/micronano/articles?year=2024",
+            "https://api.crossref.org/journals/2055-7434/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.nature.com/micronano/articles?year=2024",
             "https://api.crossref.org/journals/2055-7434/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article"
           ],
@@ -1952,11 +1977,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -1971,9 +1998,11 @@
           "candidates": 4,
           "missing_abstract": 0,
           "official_total": 63,
-          "official_scope": "官网 am 2024 年发表日期列表逐页枚举（4 页）全部条目 63 条，含各文章类型（原创研究、综述、更正、图片摘要等）；按 DOI 与采集比对，采集 63 条，官网有而采集无 0 条、采集有而官网无 0 条。同口径 journal-article 计数（Crossref ISSN 登记）63 条。",
-          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对",
+          "official_scope": "官网 2024 年发表日期列表全部条目（含非研究条目）",
+          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对。逐篇交付 4 条：纳入 4、排除 0、待定 0、未审 0；当前候选文件 4 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://www.nature.com/am/articles?year=2024",
+            "https://api.crossref.org/journals/1884-4049/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.nature.com/am/articles?year=2024",
             "https://api.crossref.org/journals/1884-4049/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article"
           ],
@@ -1985,11 +2014,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -2279,9 +2310,11 @@
           "candidates": 2,
           "missing_abstract": 0,
           "official_total": 501,
-          "official_scope": "出版方官网（https://link.springer.com/journal/11426）对自动化访问返回 403 或只提供卷期索引，无法枚举整年条目；改用出版方存缴的 Crossref 登记，按 ISSN 1674-7291,1869-1870、出版日 2024-01-01 至 2024-12-31、type=journal-article 统计，与采集器口径完全一致，共 501 条。逐 DOI 比对：采集 501 条，官网有而采集无 0 条，采集有而官网无 0 条。",
-          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致",
+          "official_scope": "Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径）",
+          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致。逐篇交付 271 条：纳入 3、排除 268、待定 0、未审 0；当前候选文件 2 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1674-7291/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
+            "https://link.springer.com/journal/11426",
             "https://api.crossref.org/journals/1674-7291/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://link.springer.com/journal/11426"
           ],
@@ -2293,11 +2326,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -2345,9 +2380,11 @@
           "candidates": 15,
           "missing_abstract": 0,
           "official_total": 893,
-          "official_scope": "出版方官网（https://www.sciencedirect.com/journal/acta-materialia）对自动化访问返回 403 或只提供卷期索引，无法枚举整年条目；改用出版方存缴的 Crossref 登记，按 ISSN 1359-6454,1873-2453、出版日 2024-01-01 至 2024-12-31、type=journal-article 统计，与采集器口径完全一致，共 893 条。逐 DOI 比对：采集 893 条，官网有而采集无 0 条，采集有而官网无 0 条。",
-          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致",
+          "official_scope": "Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径）",
+          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致。逐篇交付 346 条：纳入 40、排除 306、待定 0、未审 0（含初筛漏筛补录 4 条）；当前候选文件 15 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1359-6454/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
+            "https://www.sciencedirect.com/journal/acta-materialia",
             "https://api.crossref.org/journals/1359-6454/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.sciencedirect.com/journal/acta-materialia"
           ],
@@ -2359,11 +2396,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -2803,9 +2842,11 @@
           "candidates": 1,
           "missing_abstract": 0,
           "official_total": 502,
-          "official_scope": "出版方官网（https://www.sciencedirect.com/journal/composites-science-and-technology）对自动化访问返回 403 或只提供卷期索引，无法枚举整年条目；改用出版方存缴的 Crossref 登记，按 ISSN 0266-3538,1879-1050、出版日 2024-01-01 至 2024-12-31、type=journal-article 统计，与采集器口径完全一致，共 502 条。逐 DOI 比对：采集 502 条，官网有而采集无 0 条，采集有而官网无 0 条。",
-          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致",
+          "official_scope": "Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径）",
+          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致。逐篇交付 74 条：纳入 7、排除 67、待定 0、未审 0（含初筛漏筛补录 1 条）；当前候选文件 1 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0266-3538/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
+            "https://www.sciencedirect.com/journal/composites-science-and-technology",
             "https://api.crossref.org/journals/0266-3538/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.sciencedirect.com/journal/composites-science-and-technology"
           ],
@@ -2817,11 +2858,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -3101,9 +3144,11 @@
           "candidates": 1,
           "missing_abstract": 0,
           "official_total": 478,
-          "official_scope": "出版方官网（https://api.crossref.org/journals/2590-0064）对自动化访问返回 403 或只提供卷期索引，无法枚举整年条目；改用出版方存缴的 Crossref 登记，按 ISSN 2590-0064、出版日 2024-01-01 至 2024-12-31、type=journal-article 统计，与采集器口径完全一致，共 478 条。逐 DOI 比对：采集 478 条，官网有而采集无 0 条，采集有而官网无 0 条。",
-          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致",
+          "official_scope": "Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径）",
+          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致。逐篇交付 365 条：纳入 5、排除 360、待定 0、未审 0（含初筛漏筛补录 1 条）；当前候选文件 1 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2590-0064/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
+            "https://api.crossref.org/journals/2590-0064",
             "https://api.crossref.org/journals/2590-0064/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://api.crossref.org/journals/2590-0064"
           ],
@@ -3115,11 +3160,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -5266,9 +5313,13 @@
           "candidates": 78,
           "missing_abstract": 0,
           "official_total": 347,
-          "official_scope": "会议官网录用目录与程序主席报告：2024 年 Full Research Track 正式长文录用 347 篇；本次全量采集 697 条覆盖该届全部分轨（含短文、资源、演示与工作坊），其中与正式长文录用目录题名匹配的同轨记录 347 条，与官方数一致。",
-          "coverage_note": "已核对：正式长文同轨一致",
+          "official_scope": "Full Research Track 正式长文录用数（不含其他分轨）",
+          "coverage_note": "已核对：正式长文同轨一致。逐篇交付 81 条：纳入 17、排除 64、待定 0、未审 0（含初筛漏筛补录 2 条）；当前候选文件 78 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://cikm2024.github.io/accepted-papers/",
+            "https://research.tudelft.nl/files/235862358/3627673.fm.pdf",
+            "https://dblp.org/db/conf/cikm/cikm2024.html",
+            "https://dl.acm.org/doi/proceedings/10.1145/3627673",
             "https://cikm2024.github.io/accepted-papers/",
             "https://research.tudelft.nl/files/235862358/3627673.fm.pdf",
             "https://dblp.org/db/conf/cikm/cikm2024.html",
@@ -5280,13 +5331,18 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [],
+          "issues": [
+            "官网总数 347 条只覆盖 Full Research Track 正式长文，采集 697 条覆盖该届全部分轨，两者口径不同，不能直接相减或计算覆盖率。"
+          ],
           "actions": [
+            "需要与全部分轨对比时，按 Full Research Track 目录单列统计。",
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -5726,9 +5782,11 @@
           "candidates": 6,
           "missing_abstract": 0,
           "official_total": 356,
-          "official_scope": "出版方官网（https://link.springer.com/journal/11263）对自动化访问返回 403 或只提供卷期索引，无法枚举整年条目；改用出版方存缴的 Crossref 登记，按 ISSN 0920-5691,1573-1405、出版日 2024-01-01 至 2024-12-31、type=journal-article 统计，与采集器口径完全一致，共 356 条。逐 DOI 比对：采集 356 条，官网有而采集无 0 条，采集有而官网无 0 条。",
-          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致",
+          "official_scope": "Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径）",
+          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致。逐篇交付 279 条：纳入 25、排除 254、待定 0、未审 0（含初筛漏筛补录 8 条）；当前候选文件 6 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0920-5691/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
+            "https://link.springer.com/journal/11263",
             "https://api.crossref.org/journals/0920-5691/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://link.springer.com/journal/11263"
           ],
@@ -5740,11 +5798,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -6713,9 +6773,11 @@
           "candidates": 24,
           "missing_abstract": 0,
           "official_total": 2148,
-          "official_scope": "出版方官网（https://www.sciencedirect.com/journal/renewable-energy）对自动化访问返回 403 或只提供卷期索引，无法枚举整年条目；改用出版方存缴的 Crossref 登记，按 ISSN 0960-1481,1879-0682、出版日 2024-01-01 至 2024-12-31、type=journal-article 统计，与采集器口径完全一致，共 2148 条。逐 DOI 比对：采集 2148 条，官网有而采集无 0 条，采集有而官网无 0 条。",
-          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致",
+          "official_scope": "Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径）",
+          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致。逐篇交付 239 条：纳入 56、排除 183、待定 0、未审 0（含初筛漏筛补录 11 条）；当前候选文件 24 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0960-1481/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
+            "https://www.sciencedirect.com/journal/renewable-energy",
             "https://api.crossref.org/journals/0960-1481/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.sciencedirect.com/journal/renewable-energy"
           ],
@@ -6727,11 +6789,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -6810,9 +6874,11 @@
           "candidates": 4,
           "missing_abstract": 0,
           "official_total": 116,
-          "official_scope": "官网 npjscifood 2024 年发表日期列表逐页枚举（6 页）全部条目 116 条，含各文章类型（原创研究、综述、更正、图片摘要等）；按 DOI 与采集比对，采集 116 条，官网有而采集无 0 条、采集有而官网无 0 条。同口径 journal-article 计数（Crossref ISSN 登记）116 条。",
-          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对",
+          "official_scope": "官网 2024 年发表日期列表全部条目（含非研究条目）",
+          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对。逐篇交付 4 条：纳入 4、排除 0、待定 0、未审 0；当前候选文件 4 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://www.nature.com/npjscifood/articles?year=2024",
+            "https://api.crossref.org/journals/2396-8370/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.nature.com/npjscifood/articles?year=2024",
             "https://api.crossref.org/journals/2396-8370/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article"
           ],
@@ -6824,11 +6890,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -7268,9 +7336,11 @@
           "candidates": 49,
           "missing_abstract": 0,
           "official_total": 1117,
-          "official_scope": "出版方官网（https://www.sciencedirect.com/journal/computers-and-electronics-in-agriculture）对自动化访问返回 403 或只提供卷期索引，无法枚举整年条目；改用出版方存缴的 Crossref 登记，按 ISSN 0168-1699,1872-7107、出版日 2024-01-01 至 2024-12-31、type=journal-article 统计，与采集器口径完全一致，共 1117 条。逐 DOI 比对：采集 1117 条，官网有而采集无 0 条，采集有而官网无 0 条。",
-          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致",
+          "official_scope": "Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径）",
+          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致。逐篇交付 154 条：纳入 126、排除 28、待定 0、未审 0（含初筛漏筛补录 28 条）；当前候选文件 49 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0168-1699/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
+            "https://www.sciencedirect.com/journal/computers-and-electronics-in-agriculture",
             "https://api.crossref.org/journals/0168-1699/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.sciencedirect.com/journal/computers-and-electronics-in-agriculture"
           ],
@@ -7282,11 +7352,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -7650,9 +7722,11 @@
           "candidates": 3,
           "missing_abstract": 0,
           "official_total": 436,
-          "official_scope": "出版方官网（https://www.sciencedirect.com/journal/transportation-research-part-d-transport-and-environment）对自动化访问返回 403 或只提供卷期索引，无法枚举整年条目；改用出版方存缴的 Crossref 登记，按 ISSN 1361-9209,1879-2340、出版日 2024-01-01 至 2024-12-31、type=journal-article 统计，与采集器口径完全一致，共 436 条。逐 DOI 比对：采集 436 条，官网有而采集无 0 条，采集有而官网无 0 条。",
-          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致",
+          "official_scope": "Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径）",
+          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致。逐篇交付 101 条：纳入 10、排除 91、待定 0、未审 0（含初筛漏筛补录 4 条）；当前候选文件 3 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1361-9209/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
+            "https://www.sciencedirect.com/journal/transportation-research-part-d-transport-and-environment",
             "https://api.crossref.org/journals/1361-9209/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.sciencedirect.com/journal/transportation-research-part-d-transport-and-environment"
           ],
@@ -7664,11 +7738,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -7683,9 +7759,11 @@
           "candidates": 2,
           "missing_abstract": 0,
           "official_total": 363,
-          "official_scope": "出版方官网（https://www.sciencedirect.com/journal/transportation-research-part-e-logistics-and-transportation-review）对自动化访问返回 403 或只提供卷期索引，无法枚举整年条目；改用出版方存缴的 Crossref 登记，按 ISSN 1366-5545,1878-5794、出版日 2024-01-01 至 2024-12-31、type=journal-article 统计，与采集器口径完全一致，共 363 条。逐 DOI 比对：采集 363 条，官网有而采集无 0 条，采集有而官网无 0 条。",
-          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致",
+          "official_scope": "Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径）",
+          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致。逐篇交付 105 条：纳入 14、排除 91、待定 0、未审 0（含初筛漏筛补录 3 条）；当前候选文件 2 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1366-5545/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
+            "https://www.sciencedirect.com/journal/transportation-research-part-e-logistics-and-transportation-review",
             "https://api.crossref.org/journals/1366-5545/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.sciencedirect.com/journal/transportation-research-part-e-logistics-and-transportation-review"
           ],
@@ -7697,11 +7775,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -7914,9 +7994,11 @@
           "candidates": 14,
           "missing_abstract": 0,
           "official_total": 513,
-          "official_scope": "官网 mp 2024 年发表日期列表逐页枚举（26 页）全部条目 513 条，含各文章类型（原创研究、综述、更正、图片摘要等）；官网多出的 3 条经逐条核实为10.1038/s41380-023-02393-5（图片摘要）、10.1038/s41380-023-02328-0（图片摘要）、10.1038/s41380-024-02416-9（更正），不属研究条目，不补录；按 DOI 与采集比对，采集 510 条，官网有而采集无 3 条、采集有而官网无 0 条。同口径 journal-article 计数（Crossref ISSN 登记）510 条。",
-          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对",
+          "official_scope": "官网 2024 年发表日期列表全部条目（含非研究条目）",
+          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对。逐篇交付 160 条：纳入 18、排除 142、待定 0、未审 0（含初筛漏筛补录 5 条）；当前候选文件 14 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://www.nature.com/mp/articles?year=2024",
+            "https://api.crossref.org/journals/1359-4184/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.nature.com/mp/articles?year=2024",
             "https://api.crossref.org/journals/1359-4184/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article"
           ],
@@ -7926,13 +8008,18 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [],
+          "issues": [
+            "官网口径 513 条比采集多 3 条，经逐条核实为 2 张图片摘要与 1 条更正，属文献类型差异而非漏采，因此不补录。"
+          ],
           "actions": [
+            "若今后补采，只按研究论文类型统计，不补录图片摘要与更正。",
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -9197,9 +9284,10 @@
           "candidates": 2,
           "missing_abstract": 0,
           "official_total": 286,
-          "official_scope": "官网 nsmb 2024 年发表日期列表逐页枚举（15 页）全部条目 286 条，含各文章类型（原创研究、综述、更正、图片摘要等）；按 DOI 与采集比对，采集 286 条，官网有而采集无 0 条、采集有而官网无 0 条。同口径 journal-article 计数（Crossref ISSN 登记）None 条。",
-          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对",
+          "official_scope": "官网 2024 年发表日期列表全部条目（含非研究条目）",
+          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对。逐篇交付 2 条：纳入 2、排除 0、待定 0、未审 0；当前候选文件 2 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://www.nature.com/nsmb/articles?year=2024",
             "https://www.nature.com/nsmb/articles?year=2024"
           ],
           "decisions": {
@@ -9210,11 +9298,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -9461,9 +9551,11 @@
           "candidates": 45,
           "missing_abstract": 0,
           "official_total": 291,
-          "official_scope": "官网 npjprecisiononcology 2024 年发表日期列表逐页枚举（15 页）全部条目 291 条，含各文章类型（原创研究、综述、更正、图片摘要等）；按 DOI 与采集比对，采集 291 条，官网有而采集无 0 条、采集有而官网无 0 条。同口径 journal-article 计数（Crossref ISSN 登记）291 条。",
-          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对",
+          "official_scope": "官网 2024 年发表日期列表全部条目（含非研究条目）",
+          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对。逐篇交付 58 条：纳入 57、排除 1、待定 0、未审 0（含初筛漏筛补录 12 条）；当前候选文件 45 条，候选缺摘要 0 条。候选池已移出 1 条 RETRACTED ARTICLE，交付保留 exclude 判定并注明学术不端公告类型。",
           "evidence_urls": [
+            "https://www.nature.com/npjprecisiononcology/articles?year=2024",
+            "https://api.crossref.org/journals/2397-768X/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.nature.com/npjprecisiononcology/articles?year=2024",
             "https://api.crossref.org/journals/2397-768X/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article"
           ],
@@ -9475,11 +9567,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -9733,9 +9827,11 @@
           "candidates": 1,
           "missing_abstract": 0,
           "official_total": 513,
-          "official_scope": "官网 cddiscovery 2024 年发表日期列表逐页枚举（26 页）全部条目 513 条，含各文章类型（原创研究、综述、更正、图片摘要等）；按 DOI 与采集比对，采集 513 条，官网有而采集无 0 条、采集有而官网无 0 条。同口径 journal-article 计数（Crossref ISSN 登记）513 条。",
-          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对",
+          "official_scope": "官网 2024 年发表日期列表全部条目（含非研究条目）",
+          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对。逐篇交付 2 条：纳入 1、排除 1、待定 0、未审 0；当前候选文件 1 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://www.nature.com/cddiscovery/articles?year=2024",
+            "https://api.crossref.org/journals/2058-7716/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.nature.com/cddiscovery/articles?year=2024",
             "https://api.crossref.org/journals/2058-7716/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article"
           ],
@@ -9747,11 +9843,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -9955,9 +10053,11 @@
           "candidates": 3,
           "missing_abstract": 0,
           "official_total": 369,
-          "official_scope": "官网 leu 2024 年发表日期列表逐页枚举（19 页）全部条目 369 条，含各文章类型（原创研究、综述、更正、图片摘要等）；按 DOI 与采集比对，采集 369 条，官网有而采集无 0 条、采集有而官网无 0 条。同口径 journal-article 计数（Crossref ISSN 登记）369 条。",
-          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对",
+          "official_scope": "官网 2024 年发表日期列表全部条目（含非研究条目）",
+          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对。逐篇交付 121 条：纳入 2、排除 119、待定 0、未审 0；当前候选文件 3 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://www.nature.com/leu/articles?year=2024",
+            "https://api.crossref.org/journals/0887-6924/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.nature.com/leu/articles?year=2024",
             "https://api.crossref.org/journals/0887-6924/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article"
           ],
@@ -9969,11 +10069,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -10012,9 +10114,11 @@
           "candidates": 2,
           "missing_abstract": 0,
           "official_total": 339,
-          "official_scope": "官网 onc 2024 年发表日期列表逐页枚举（17 页）全部条目 339 条，含各文章类型（原创研究、综述、更正、图片摘要等）；按 DOI 与采集比对，采集 339 条，官网有而采集无 0 条、采集有而官网无 0 条。同口径 journal-article 计数（Crossref ISSN 登记）339 条。",
-          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对",
+          "official_scope": "官网 2024 年发表日期列表全部条目（含非研究条目）",
+          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对。逐篇交付 177 条：纳入 6、排除 171、待定 0、未审 0（含初筛漏筛补录 1 条）；当前候选文件 2 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://www.nature.com/onc/articles?year=2024",
+            "https://api.crossref.org/journals/0950-9232/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.nature.com/onc/articles?year=2024",
             "https://api.crossref.org/journals/0950-9232/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article"
           ],
@@ -10026,11 +10130,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -10108,9 +10214,11 @@
           "candidates": 5,
           "missing_abstract": 0,
           "official_total": 124,
-          "official_scope": "官网 npjschz 2024 年发表日期列表逐页枚举（7 页）全部条目 124 条，含各文章类型（原创研究、综述、更正、图片摘要等）；按 DOI 与采集比对，采集 124 条，官网有而采集无 0 条、采集有而官网无 0 条。同口径 journal-article 计数（Crossref ISSN 登记）124 条。",
-          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对",
+          "official_scope": "官网 2024 年发表日期列表全部条目（含非研究条目）",
+          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对。逐篇交付 18 条：纳入 5、排除 13、待定 0、未审 0（含初筛漏筛补录 1 条）；当前候选文件 5 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://www.nature.com/npjschz/articles?year=2024",
+            "https://api.crossref.org/journals/2754-6993/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.nature.com/npjschz/articles?year=2024",
             "https://api.crossref.org/journals/2754-6993/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article"
           ],
@@ -10120,13 +10228,17 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [],
+          "issues": [
+            "官网发表日期口径含图片摘要、更正等非研究条目，与 journal-article 同口径计数不可混用。"
+          ],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -10670,9 +10782,11 @@
           "candidates": 1,
           "missing_abstract": 0,
           "official_total": 235,
-          "official_scope": "出版方官网（https://www.cell.com/developmental-cell/home）对自动化访问返回 403 或只提供卷期索引，无法枚举整年条目；改用出版方存缴的 Crossref 登记，按 ISSN 1534-5807,1878-1551、出版日 2024-01-01 至 2024-12-31、type=journal-article 统计，与采集器口径完全一致，共 235 条。逐 DOI 比对：采集 235 条，官网有而采集无 0 条，采集有而官网无 0 条。",
-          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致",
+          "official_scope": "Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径）",
+          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致。逐篇交付 206 条：纳入 5、排除 201、待定 0、未审 0（含初筛漏筛补录 1 条）；当前候选文件 1 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1534-5807/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
+            "https://www.cell.com/developmental-cell/home",
             "https://api.crossref.org/journals/1534-5807/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.cell.com/developmental-cell/home"
           ],
@@ -10684,11 +10798,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -11495,9 +11611,11 @@
           "candidates": 3,
           "missing_abstract": 0,
           "official_total": 1748,
-          "official_scope": "出版方官网（https://www.thelancet.com/journals/lancet/home）对自动化访问返回 403 或只提供卷期索引，无法枚举整年条目；改用出版方存缴的 Crossref 登记，按 ISSN 0140-6736,1474-547X、出版日 2024-01-01 至 2024-12-31、type=journal-article 统计，与采集器口径完全一致，共 1748 条。逐 DOI 比对：采集 1748 条，官网有而采集无 0 条，采集有而官网无 0 条。",
-          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致",
+          "official_scope": "Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径）",
+          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致。逐篇交付 208 条：纳入 4、排除 204、待定 0、未审 0；当前候选文件 3 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0140-6736/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
+            "https://www.thelancet.com/journals/lancet/home",
             "https://api.crossref.org/journals/0140-6736/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.thelancet.com/journals/lancet/home"
           ],
@@ -11509,11 +11627,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -11959,9 +12079,11 @@
           "candidates": 1,
           "missing_abstract": 0,
           "official_total": 300,
-          "official_scope": "出版方官网（https://www.thelancet.com/journals/lanwpc/home）对自动化访问返回 403 或只提供卷期索引，无法枚举整年条目；改用出版方存缴的 Crossref 登记，按 ISSN 2666-6065、出版日 2024-01-01 至 2024-12-31、type=journal-article 统计，与采集器口径完全一致，共 300 条。逐 DOI 比对：采集 300 条，官网有而采集无 0 条，采集有而官网无 0 条。",
-          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致",
+          "official_scope": "Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径）",
+          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致。逐篇交付 85 条：纳入 3、排除 82、待定 0、未审 0（含初筛漏筛补录 2 条）；当前候选文件 1 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2666-6065/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
+            "https://www.thelancet.com/journals/lanwpc/home",
             "https://api.crossref.org/journals/2666-6065/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.thelancet.com/journals/lanwpc/home"
           ],
@@ -11973,11 +12095,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -12078,9 +12202,11 @@
           "candidates": 10,
           "missing_abstract": 0,
           "official_total": 279,
-          "official_scope": "出版方官网（https://alzres.biomedcentral.com/）对自动化访问返回 403 或只提供卷期索引，无法枚举整年条目；改用出版方存缴的 Crossref 登记，按 ISSN 1758-9193、出版日 2024-01-01 至 2024-12-31、type=journal-article 统计，与采集器口径完全一致，共 279 条。逐 DOI 比对：采集 279 条，官网有而采集无 0 条，采集有而官网无 0 条。",
-          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致",
+          "official_scope": "Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径）",
+          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致。逐篇交付 58 条：纳入 11、排除 47、待定 0、未审 0（含初筛漏筛补录 1 条）；当前候选文件 10 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1758-9193/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
+            "https://alzres.biomedcentral.com/",
             "https://api.crossref.org/journals/1758-9193/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://alzres.biomedcentral.com/"
           ],
@@ -12092,11 +12218,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -12251,9 +12379,11 @@
           "candidates": 39,
           "missing_abstract": 0,
           "official_total": 324,
-          "official_scope": "出版方官网（https://genomebiology.biomedcentral.com/）对自动化访问返回 403 或只提供卷期索引，无法枚举整年条目；改用出版方存缴的 Crossref 登记，按 ISSN 1474-760X、出版日 2024-01-01 至 2024-12-31、type=journal-article 统计，与采集器口径完全一致，共 324 条。逐 DOI 比对：采集 324 条，官网有而采集无 0 条，采集有而官网无 0 条。",
-          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致",
+          "official_scope": "Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径）",
+          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致。逐篇交付 54 条：纳入 40、排除 14、待定 0、未审 0（含初筛漏筛补录 3 条）；当前候选文件 39 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1474-760X/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
+            "https://genomebiology.biomedcentral.com/",
             "https://api.crossref.org/journals/1474-760X/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://genomebiology.biomedcentral.com/"
           ],
@@ -12265,11 +12395,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -12284,9 +12416,11 @@
           "candidates": 12,
           "missing_abstract": 0,
           "official_total": 154,
-          "official_scope": "出版方官网（https://genomemedicine.biomedcentral.com/）对自动化访问返回 403 或只提供卷期索引，无法枚举整年条目；改用出版方存缴的 Crossref 登记，按 ISSN 1756-994X、出版日 2024-01-01 至 2024-12-31、type=journal-article 统计，与采集器口径完全一致，共 154 条。逐 DOI 比对：采集 154 条，官网有而采集无 0 条，采集有而官网无 0 条。",
-          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致",
+          "official_scope": "Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径）",
+          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致。逐篇交付 34 条：纳入 14、排除 20、待定 0、未审 0（含初筛漏筛补录 1 条）；当前候选文件 12 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1756-994X/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
+            "https://genomemedicine.biomedcentral.com/",
             "https://api.crossref.org/journals/1756-994X/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://genomemedicine.biomedcentral.com/"
           ],
@@ -12298,11 +12432,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -12572,9 +12708,11 @@
           "candidates": 0,
           "missing_abstract": 0,
           "official_total": 274,
-          "official_scope": "出版方官网（https://link.springer.com/journal/11427）对自动化访问返回 403 或只提供卷期索引，无法枚举整年条目；改用出版方存缴的 Crossref 登记，按 ISSN 1674-7305,1869-1889、出版日 2024-01-01 至 2024-12-31、type=journal-article 统计，与采集器口径完全一致，共 274 条。逐 DOI 比对：采集 274 条，官网有而采集无 0 条，采集有而官网无 0 条。",
-          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致",
+          "official_scope": "Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径）",
+          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致。逐篇交付 175 条：纳入 7、排除 168、待定 0、未审 0（含初筛漏筛补录 1 条）；当前候选文件 0 条，候选缺摘要 0 条。候选池已移出 1 条 Research Highlight，交付保留 exclude 判定并注明类型。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1674-7305/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
+            "https://link.springer.com/journal/11427",
             "https://api.crossref.org/journals/1674-7305/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://link.springer.com/journal/11427"
           ],
@@ -12586,11 +12724,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -13060,9 +13200,11 @@
           "candidates": 1,
           "missing_abstract": 0,
           "official_total": 94,
-          "official_scope": "出版方官网（https://api.crossref.org/journals/2211-5684）对自动化访问返回 403 或只提供卷期索引，无法枚举整年条目；改用出版方存缴的 Crossref 登记，按 ISSN 2211-5684、出版日 2024-01-01 至 2024-12-31、type=journal-article 统计，与采集器口径完全一致，共 94 条。逐 DOI 比对：采集 94 条，官网有而采集无 0 条，采集有而官网无 0 条。",
-          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致",
+          "official_scope": "Crossref 出版登记：ISSN + 2024 出版年 + journal-article（与采集器同口径）",
+          "coverage_note": "已核对：Crossref 同口径登记与采集逐 DOI 一致。逐篇交付 51 条：纳入 14、排除 37、待定 0、未审 0（含初筛漏筛补录 2 条）；当前候选文件 1 条，候选缺摘要 0 条。候选池已移出 2 条非研究类型（Editorial、Letter to the Editor），交付保留其 exclude 判定并注明类型。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2211-5684/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
+            "https://api.crossref.org/journals/2211-5684",
             "https://api.crossref.org/journals/2211-5684/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://api.crossref.org/journals/2211-5684"
           ],
@@ -13074,11 +13216,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -14148,9 +14292,11 @@
           "candidates": 10,
           "missing_abstract": 0,
           "official_total": 136,
-          "official_scope": "官网 npjqi 2024 年发表日期列表逐页枚举（7 页）全部条目 136 条，含各文章类型（原创研究、综述、更正、图片摘要等）；按 DOI 与采集比对，采集 136 条，官网有而采集无 0 条、采集有而官网无 0 条。同口径 journal-article 计数（Crossref ISSN 登记）136 条。",
-          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对",
+          "official_scope": "官网 2024 年发表日期列表全部条目（含非研究条目）",
+          "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对。逐篇交付 10 条：纳入 3、排除 7、待定 0、未审 0；当前候选文件 10 条，候选缺摘要 0 条。",
           "evidence_urls": [
+            "https://www.nature.com/npjqi/articles?year=2024",
+            "https://api.crossref.org/journals/2056-6387/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article",
             "https://www.nature.com/npjqi/articles?year=2024",
             "https://api.crossref.org/journals/2056-6387/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article"
           ],
@@ -14162,11 +14308,13 @@
           },
           "issues": [],
           "actions": [
+            "官网总数与采集数只在同口径下比较；后续新增来源沿用同一口径登记并留证据链接。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Roman100021.json",
-            "reviews/2024/Roman100021/coverage.json"
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
