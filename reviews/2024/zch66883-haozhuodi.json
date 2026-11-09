@@ -307,18 +307,33 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第1句：Additive manufacturing has enabled the fabrication of advanced reactor geometries, permitting larger, more complex design spaces.",
+      "decision": "include",
+      "rationale": "完整摘要明确将机器学习、高维反应器参数化、流体力学模拟及多保真贝叶斯优化结合，寻找化学反应器设计，并以实验验证活塞流性能改善；AI与工程研究任务的关系充分。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s44286-024-00099-1",
           "https://api.crossref.org/works/10.1038/s44286-024-00099-1"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "完整摘要明确将机器学习、高维反应器参数化、流体力学模拟及多保真贝叶斯优化结合，寻找化学反应器设计，并以实验验证活塞流性能改善；AI与工程研究任务的关系充分。"
+        },
+        {
+          "axis": "method",
+          "label": "贝叶斯优化",
+          "label_en": "Bayesian optimization",
+          "evidence_location": "输入摘要",
+          "rationale": "完整摘要明确将机器学习、高维反应器参数化、流体力学模拟及多保真贝叶斯优化结合，寻找化学反应器设计，并以实验验证活塞流性能改善；AI与工程研究任务的关系充分。"
+        }
+      ]
     }
   },
   {
@@ -1597,21 +1612,42 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-fulltext",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "exclude",
-      "rationale": "出版社正式归入 LETTER TO THE JOURNAL 栏目，PubMed 同列为 Letter，按本批仅保留研究正文和实质性综述的类型规则排除。",
+      "decision": "include",
+      "rationale": "全文核实为报告独立数据、分析和结果的原创研究来函，而非评论性来信。深度学习参与基因变异的重要性分析，并与全基因组和RNA测序研究相连接；仅因Letter栏目排除不成立，依原创研究正文的实质标准改为纳入。正式XML无abstract节点，PubMed明确No abstract available；不将正文引言冒充原摘要。",
       "verified_metadata": {
         "evidence_urls": [
           "https://spj.science.org/doi/abs/10.1002/cac2.12612",
           "https://pubmed.ncbi.nlm.nih.gov/39387321/",
           "https://api.crossref.org/works/10.1002/cac2.12612",
           "https://europepmc.org/article/MED/39387321",
-          "https://doi.org/10.1002/cac2.12612"
-        ]
+          "https://doi.org/10.1002/cac2.12612",
+          "https://spj.science.org/doi/10.1002/cac2.12612",
+          "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11570770/fullTextXML"
+        ],
+        "article_type": "Original research letter",
+        "full_text_summary_zh": "研究分析2452份全基因组测序和284份RNA测序样本，使用深度学习计算基因变异的重要性，并结合线性代数模型识别与唐氏综合征儿童癌症表型相关的保护性和易感变异，再进行表达与通路分析。",
+        "full_text_evidence_location": "正式全文：研究样本说明；§1 Cancer protective and predisposing variants in DS；§2 RNA-seq分析；Figure 1",
+        "abstract_status": "not_provided_by_publisher",
+        "abstract_note": "正式版本无独立文字摘要；本条已依全文完成审核。中文内容为审核概述，不是作者原摘要。"
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "正式全文：研究样本说明；§1 Cancer protective and predisposing variants in DS；§2 RNA-seq分析；Figure 1",
+          "rationale": "研究分析2452份全基因组测序和284份RNA测序样本，使用深度学习计算基因变异的重要性，并结合线性代数模型识别与唐氏综合征儿童癌症表型相关的保护性和易感变异，再进行表达与通路分析。"
+        }
+      ],
+      "abstract_resolution": {
+        "status": "publisher_no_text_abstract_full_text_reviewed",
+        "requires_abstract_backfill": false,
+        "basis": "正式全文及文献类型复核",
+        "original_abstract_preserved": true
+      }
     }
   },
   {
@@ -1687,11 +1723,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第1句：Abstract In alignment with the World Health Organization's strategy to eliminate cervical cancer, substantial progress has been made in the treatment of this malignancy.",
+      "rationale": "摘要为宫颈癌管理的广泛综述，AI辅助诊断仅列为多种进展之一；需查正文AI诊断部分，确认是否提供足够实质的方法、证据或系统评述，不能仅凭出现AI纳入。",
       "verified_metadata": {
         "evidence_urls": [
           "https://api.crossref.org/works/10.1002/cac2.12629",
@@ -1789,11 +1825,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第1句：Leveraging iterative alignment search through genomic and metagenome sequence databases, we report the DeepMSA2 pipeline for uniform protein single- and multichain multiple-sequence alignment (MSA) constru…",
+      "decision": "include",
+      "rationale": "DeepMSA2通过改进蛋白质多序列比对和模型选择，提高深度学习蛋白单体及复合体结构预测质量，并在CASP15验证；对科学任务的直接方法贡献明确。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s41592-023-02130-4",
@@ -1801,7 +1837,22 @@
           "https://api.crossref.org/works/10.1038/s41592-023-02130-4"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "DeepMSA2通过改进蛋白质多序列比对和模型选择，提高深度学习蛋白单体及复合体结构预测质量，并在CASP15验证；对科学任务的直接方法贡献明确。"
+        },
+        {
+          "axis": "task",
+          "label": "蛋白质结构预测",
+          "label_en": "Protein structure prediction",
+          "evidence_location": "输入摘要",
+          "rationale": "DeepMSA2通过改进蛋白质多序列比对和模型选择，提高深度学习蛋白单体及复合体结构预测质量，并在CASP15验证；对科学任务的直接方法贡献明确。"
+        }
+      ]
     }
   },
   {
@@ -4609,11 +4660,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第1句：T cells are essential immune cells responsible for identifying and eliminating pathogens.",
+      "rationale": "出版类型为Perspective；摘要虽概述结构数据库和深度学习模型，但需核实正文是否构成有实质学术内容的综述，还是以未来展望为主的评论。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s41592-024-02240-7",
@@ -6143,11 +6194,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第1句：To comprehensively understand tissue and organism physiology and pathophysiology, it is essential to create complete three-dimensional (3D) cellular maps.",
+      "rationale": "出版类型为Perspective，摘要主要提出3D组织学的发展方向，并预期深度学习将发挥作用；需核实正文中AI方法的实质综述内容和文献类型。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s41592-024-02327-1",
@@ -7042,11 +7093,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第5句：Here we first describe the transformer architecture and its single-cell adaptations and then present a comprehensive review of the existing applications of transformers in single-cell analysis and critical…",
+      "decision": "include",
+      "rationale": "该Perspective的摘要明确说明系统介绍Transformer结构及单细胞适配、综述已有单细胞分析应用并批判讨论局限；依实质综述条款纳入，而非仅依据展望或标题。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s41592-024-02353-z",
@@ -7054,7 +7105,22 @@
           "https://api.crossref.org/works/10.1038/s41592-024-02353-z"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "该Perspective的摘要明确说明系统介绍Transformer结构及单细胞适配、综述已有单细胞分析应用并批判讨论局限；依实质综述条款纳入，而非仅依据展望或标题。"
+        },
+        {
+          "axis": "method",
+          "label": "Transformer 架构",
+          "label_en": "Transformer",
+          "evidence_location": "输入摘要",
+          "rationale": "该Perspective的摘要明确说明系统介绍Transformer结构及单细胞适配、综述已有单细胞分析应用并批判讨论局限；依实质综述条款纳入，而非仅依据展望或标题。"
+        }
+      ]
     }
   },
   {
@@ -7316,11 +7382,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第4句：Based on collaborative group intelligence augmented by AI, we developed a collaborative augmented reconstruction (CAR) platform for neuron reconstruction at scale.",
+      "decision": "include",
+      "rationale": "CAR将AI自动重建工具与神经解剖学家协作编辑结合，用于小鼠及人脑神经元三维形态重建，并验证规模化生物学数据生产能力。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s41592-024-02401-8",
@@ -7328,7 +7394,15 @@
           "https://api.crossref.org/works/10.1038/s41592-024-02401-8"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "CAR将AI自动重建工具与神经解剖学家协作编辑结合，用于小鼠及人脑神经元三维形态重建，并验证规模化生物学数据生产能力。"
+        }
+      ]
     }
   },
   {
@@ -10442,18 +10516,40 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第2句：Here we evaluate five large language models (LLMs) for their ability to discover the common functions represented by a gene set, supported by molecular rationale and a self-confidence assessment.",
+      "decision": "include",
+      "rationale": "研究评估五种LLM从基因集发现共同功能，使用GO基因集、随机集和组学基因簇检验准确性、置信度及生物学解释；科学任务和评测贡献明确。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s41592-024-02525-x",
           "https://api.crossref.org/works/10.1038/s41592-024-02525-x"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "研究评估五种LLM从基因集发现共同功能，使用GO基因集、随机集和组学基因簇检验准确性、置信度及生物学解释；科学任务和评测贡献明确。"
+        },
+        {
+          "axis": "method",
+          "label": "语言模型",
+          "label_en": "Language model",
+          "evidence_location": "输入摘要",
+          "rationale": "研究评估五种LLM从基因集发现共同功能，使用GO基因集、随机集和组学基因簇检验准确性、置信度及生物学解释；科学任务和评测贡献明确。"
+        },
+        {
+          "axis": "evaluation",
+          "label": "科学评测",
+          "label_en": "Scientific evaluation",
+          "evidence_location": "输入摘要",
+          "rationale": "研究评估五种LLM从基因集发现共同功能，使用GO基因集、随机集和组学基因簇检验准确性、置信度及生物学解释；科学任务和评测贡献明确。"
+        }
+      ]
     }
   },
   {
@@ -12615,11 +12711,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第1句：Pathologists’ assessment of sentinel lymph nodes (SNs) for breast cancer (BC) metastases is a treatment-guiding yet labor-intensive and costly task because of the performance of immunohistochemistry (IHC) …",
+      "decision": "include",
+      "rationale": "临床试验在190份淋巴结样本中比较AI辅助和常规病理工作流，检验乳腺癌转移检测的安全性、敏感性及免疫组化使用；为具体生物医学研究。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s43018-024-00788-z",
@@ -12627,7 +12723,15 @@
           "https://api.crossref.org/works/10.1038/s43018-024-00788-z"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "临床试验在190份淋巴结样本中比较AI辅助和常规病理工作流，检验乳腺癌转移检测的安全性、敏感性及免疫组化使用；为具体生物医学研究。"
+        }
+      ]
     }
   },
   {
@@ -12913,11 +13017,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第1句：Cancer evolution lays the groundwork for predictive oncology.",
+      "decision": "include",
+      "rationale": "使用深度学习量化前列腺癌组织切片的形态异质性，结合基因组和长期随访识别复发标志物；AI直接参与肿瘤演化与预后研究。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s43018-024-00787-0",
@@ -12925,7 +13029,15 @@
           "https://api.crossref.org/works/10.1038/s43018-024-00787-0"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "使用深度学习量化前列腺癌组织切片的形态异质性，结合基因组和长期随访识别复发标志物；AI直接参与肿瘤演化与预后研究。"
+        }
+      ]
     }
   },
   {
@@ -13611,11 +13723,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第2句：Here we argue that now is the time to push the frontiers of machine learning beyond state-of-the-art approaches, not only by developing machine-learning-based Earth system models with greater fidelity, but…",
+      "rationale": "该Perspective主要倡议机器学习地球系统模型、极端事件模拟及归因等未来方向；需核实是否满足实质学术综述的类型要求，不能用领域愿景代替实际贡献。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s41558-024-02095-y",
@@ -14625,18 +14737,33 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第1句：The applicability of cytosine base editors is hindered by their dependence on sequence context and by off-target effects.",
+      "decision": "include",
+      "rationale": "AlphaFold2预测1483个胞嘧啶脱氨酶结构，结构聚类指导实验筛选并发现高效、低脱靶编辑酶；现成AI预测已实质参与科学发现，无需声称本文训练新模型。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s41551-024-01220-8",
           "https://api.crossref.org/works/10.1038/s41551-024-01220-8"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "AlphaFold2预测1483个胞嘧啶脱氨酶结构，结构聚类指导实验筛选并发现高效、低脱靶编辑酶；现成AI预测已实质参与科学发现，无需声称本文训练新模型。"
+        },
+        {
+          "axis": "task",
+          "label": "蛋白质结构预测",
+          "label_en": "Protein structure prediction",
+          "evidence_location": "输入摘要",
+          "rationale": "AlphaFold2预测1483个胞嘧啶脱氨酶结构，结构聚类指导实验筛选并发现高效、低脱靶编辑酶；现成AI预测已实质参与科学发现，无需声称本文训练新模型。"
+        }
+      ]
     }
   },
   {
@@ -14855,18 +14982,33 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第2句：Here we describe a digital pathology framework, nuclei.io, that incorporates active learning and human-in-the-loop real-time feedback for the rapid creation of diverse datasets and models.",
+      "decision": "include",
+      "rationale": "nuclei.io结合主动学习和病理医生实时反馈，并在子宫内膜浆细胞识别及结直肠癌转移检测的交叉用户研究中验证诊断性能。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s41551-024-01223-5",
           "https://api.crossref.org/works/10.1038/s41551-024-01223-5"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "nuclei.io结合主动学习和病理医生实时反馈，并在子宫内膜浆细胞识别及结直肠癌转移检测的交叉用户研究中验证诊断性能。"
+        },
+        {
+          "axis": "method",
+          "label": "主动学习",
+          "label_en": "Active learning",
+          "evidence_location": "输入摘要",
+          "rationale": "nuclei.io结合主动学习和病理医生实时反馈，并在子宫内膜浆细胞识别及结直肠癌转移检测的交叉用户研究中验证诊断性能。"
+        }
+      ]
     }
   },
   {
@@ -15461,18 +15603,33 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第2句：Here we report a method that leverages a sequential proximity ligation assay for the multiplexed profiling of PPIs with up to 47 proteins involved in multisignalling crosstalk pathways.",
+      "decision": "include",
+      "rationale": "研究以图卷积网络编码亚细胞蛋白互作的空间信息，预测肺癌单细胞的药物处理状态，支持解释药物扰动下的蛋白互作组织。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s41551-024-01271-x",
           "https://api.crossref.org/works/10.1038/s41551-024-01271-x"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "研究以图卷积网络编码亚细胞蛋白互作的空间信息，预测肺癌单细胞的药物处理状态，支持解释药物扰动下的蛋白互作组织。"
+        },
+        {
+          "axis": "method",
+          "label": "图神经网络",
+          "label_en": "Graph neural network",
+          "evidence_location": "输入摘要",
+          "rationale": "研究以图卷积网络编码亚细胞蛋白互作的空间信息，预测肺癌单细胞的药物处理状态，支持解释药物扰动下的蛋白互作组织。"
+        }
+      ]
     }
   },
   {
@@ -15969,18 +16126,33 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第3句：Here we explore a much simpler alternative: leveraging ChatGPT embeddings of genes based on the literature.",
+      "decision": "include",
+      "rationale": "GenePT利用GPT-3.5基因文本嵌入构建单细胞表示，并验证基因属性、细胞类型等生物学任务；属于使用已有语言模型开展单细胞研究。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s41551-024-01284-6",
           "https://api.crossref.org/works/10.1038/s41551-024-01284-6"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "GenePT利用GPT-3.5基因文本嵌入构建单细胞表示，并验证基因属性、细胞类型等生物学任务；属于使用已有语言模型开展单细胞研究。"
+        },
+        {
+          "axis": "method",
+          "label": "语言模型",
+          "label_en": "Language model",
+          "evidence_location": "输入摘要",
+          "rationale": "GenePT利用GPT-3.5基因文本嵌入构建单细胞表示，并验证基因属性、细胞类型等生物学任务；属于使用已有语言模型开展单细胞研究。"
+        }
+      ]
     }
   },
   {
@@ -19639,11 +19811,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第5句：We aimed to conduct an environmental-sustainability analysis of a theoretical implementation of deep learning in patient-care pathology.",
+      "decision": "include",
+      "rationale": "以真实乳腺和前列腺病理切片工作流建立模型，量化不同深度学习部署方案的能耗与碳排放并比较肾癌分类性能；属于具体医学AI系统的环境影响研究。",
       "verified_metadata": {
         "evidence_urls": [
           "https://pubmed.ncbi.nlm.nih.gov/37996339/",
@@ -19651,7 +19823,22 @@
           "https://doi.org/10.1016/s2589-7500(23)00219-4"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "以真实乳腺和前列腺病理切片工作流建立模型，量化不同深度学习部署方案的能耗与碳排放并比较肾癌分类性能；属于具体医学AI系统的环境影响研究。"
+        },
+        {
+          "axis": "evaluation",
+          "label": "科学评测",
+          "label_en": "Scientific evaluation",
+          "evidence_location": "输入摘要",
+          "rationale": "以真实乳腺和前列腺病理切片工作流建立模型，量化不同深度学习部署方案的能耗与碳排放并比较肾癌分类性能；属于具体医学AI系统的环境影响研究。"
+        }
+      ]
     }
   },
   {
@@ -19952,11 +20139,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第3句：We aimed to assess whether GPT-4 encodes racial and gender biases that impact its use in health care.",
+      "decision": "include",
+      "rationale": "以临床病例和疾病患病率检验GPT-4在诊断、治疗计划等任务中的种族和性别偏差，报告跨群体差异；有明确医学评测问题及实验。",
       "verified_metadata": {
         "evidence_urls": [
           "https://pubmed.ncbi.nlm.nih.gov/38123252/",
@@ -19964,7 +20151,29 @@
           "https://doi.org/10.1016/s2589-7500(23)00225-x"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "以临床病例和疾病患病率检验GPT-4在诊断、治疗计划等任务中的种族和性别偏差，报告跨群体差异；有明确医学评测问题及实验。"
+        },
+        {
+          "axis": "method",
+          "label": "语言模型",
+          "label_en": "Language model",
+          "evidence_location": "输入摘要",
+          "rationale": "以临床病例和疾病患病率检验GPT-4在诊断、治疗计划等任务中的种族和性别偏差，报告跨群体差异；有明确医学评测问题及实验。"
+        },
+        {
+          "axis": "evaluation",
+          "label": "科学评测",
+          "label_en": "Scientific evaluation",
+          "evidence_location": "输入摘要",
+          "rationale": "以临床病例和疾病患病率检验GPT-4在诊断、治疗计划等任务中的种族和性别偏差，报告跨群体差异；有明确医学评测问题及实验。"
+        }
+      ]
     }
   },
   {
@@ -22335,11 +22544,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第1句：The rapid evolution of generative artificial intelligence (AI) models including OpenAI's ChatGPT signals a promising era for medical research.",
+      "decision": "exclude",
+      "rationale": "摘要自称Viewpoint，主要讨论数字病理LLM工具的愿景、风险与倡议，未报告原创研究或实质系统综述；依评论/观点文献类型排除。",
       "verified_metadata": {
         "evidence_urls": [
           "https://pubmed.ncbi.nlm.nih.gov/38987117/",
@@ -23455,11 +23664,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第1句：The growth of artificial intelligence (AI) has led to an increase in the adoption of computer vision and deep learning (DL) techniques for the evaluation of microscopy images and movies.",
+      "decision": "include",
+      "rationale": "该综述系统梳理显微图像及视频中的AI分割、分类、追踪方法、工具和数据集，直接服务细胞及亚细胞动态研究。",
       "verified_metadata": {
         "evidence_urls": [
           "https://pubmed.ncbi.nlm.nih.gov/38030542/",
@@ -23467,7 +23676,15 @@
           "https://doi.org/10.1016/j.tcb.2023.10.010"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "该综述系统梳理显微图像及视频中的AI分割、分类、追踪方法、工具和数据集，直接服务细胞及亚细胞动态研究。"
+        }
+      ]
     }
   },
   {
@@ -24733,11 +24950,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第2句：Here we use computational modelling and artificial intelligence (AI) to examine plant–environment interactions across ten diverse global locations with distinct climates.",
+      "decision": "include",
+      "rationale": "通过计算模型和AI研究十种气候条件下植物工厂的植物—环境关系，优化照明和气候控制并量化能耗与资源权衡；具体工程任务明确。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s43016-024-01045-3",
@@ -24745,7 +24962,15 @@
           "https://api.crossref.org/works/10.1038/s43016-024-01045-3"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "通过计算模型和AI研究十种气候条件下植物工厂的植物—环境关系，优化照明和气候控制并量化能耗与资源权衡；具体工程任务明确。"
+        }
+      ]
     }
   },
   {
@@ -24825,11 +25050,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第3句：Here we challenge this view by combining surface-specific heterodyne-detected vibrational sum-frequency generation with neural network-assisted ab initio molecular dynamics simulations.",
+      "decision": "include",
+      "rationale": "将神经网络辅助的从头算分子动力学与界面光谱实验结合，揭示电解质溶液的离子分层及界面水结构，AI直接支持物理化学机制研究。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s41557-023-01416-6",
@@ -24837,7 +25062,15 @@
           "https://api.crossref.org/works/10.1038/s41557-023-01416-6"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "将神经网络辅助的从头算分子动力学与界面光谱实验结合，揭示电解质溶液的离子分层及界面水结构，AI直接支持物理化学机制研究。"
+        }
+      ]
     }
   },
   {
@@ -25285,11 +25518,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第4句：Here we report a two-step data-driven approach to the targeted synthesis of OPCs and the subsequent reaction optimization for metallophotocatalysis, demonstrated for decarboxylative sp 3 – sp 2 cross-coupl…",
+      "decision": "include",
+      "rationale": "贝叶斯优化结合分子物性描述符，从候选分子库选择有机光氧化还原催化剂并优化交叉偶联反应，报告实际配方搜索结果。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s41557-024-01546-5",
@@ -25297,7 +25530,22 @@
           "https://api.crossref.org/works/10.1038/s41557-024-01546-5"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "贝叶斯优化结合分子物性描述符，从候选分子库选择有机光氧化还原催化剂并优化交叉偶联反应，报告实际配方搜索结果。"
+        },
+        {
+          "axis": "method",
+          "label": "贝叶斯优化",
+          "label_en": "Bayesian optimization",
+          "evidence_location": "输入摘要",
+          "rationale": "贝叶斯优化结合分子物性描述符，从候选分子库选择有机光氧化还原催化剂并优化交叉偶联反应，报告实际配方搜索结果。"
+        }
+      ]
     }
   },
   {
@@ -27261,11 +27509,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第1句：Generative biology combines artificial intelligence (AI), advanced life sciences technologies, and automation to revolutionize the process of designing novel biomolecules with prescribed properties, giving…",
+      "rationale": "摘要讨论生成式生物学及蛋白药物发现方向，但未充分区分实质方法综述和观点文章；需核对出版栏目及正文对AI方法的具体评述。",
       "verified_metadata": {
         "evidence_urls": [
           "https://pubmed.ncbi.nlm.nih.gov/38378385/",
@@ -27782,18 +28030,33 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第1句：This paper explores the potential of large language models, specifically ChatGPT, to reframe problems from probability theory and statistics, making them accessible to students across diverse academic fiel…",
+      "decision": "include",
+      "rationale": "使用ChatGPT改写概率统计题目，并由23名领域专家和44名学生评价语义保真、教育价值及学习偏好；属于AI辅助教育研究的原创实验。",
       "verified_metadata": {
         "evidence_urls": [
           "https://api.crossref.org/works/10.1016/j.caeai.2023.100194",
           "https://doi.org/10.1016/j.caeai.2023.100194"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于社会科学",
+          "label_en": "AI for social sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "使用ChatGPT改写概率统计题目，并由23名领域专家和44名学生评价语义保真、教育价值及学习偏好；属于AI辅助教育研究的原创实验。"
+        },
+        {
+          "axis": "method",
+          "label": "语言模型",
+          "label_en": "Language model",
+          "evidence_location": "输入摘要",
+          "rationale": "使用ChatGPT改写概率统计题目，并由23名领域专家和44名学生评价语义保真、教育价值及学习偏好；属于AI辅助教育研究的原创实验。"
+        }
+      ]
     }
   },
   {
@@ -28441,18 +28704,40 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第4句：Employing a diverse set of LLMs from the GPT family and prompting techniques on an asynchronous online discussion dataset from a blended-learning bachelor-level course, our research examines the reliabilit…",
+      "decision": "include",
+      "rationale": "在真实大学课程讨论数据上比较GPT模型与人类的教育内容编码一致性，分析复杂类别的可靠性和局限；AI直接参与教育研究测量。",
       "verified_metadata": {
         "evidence_urls": [
           "https://api.crossref.org/works/10.1016/j.caeai.2024.100216",
           "https://doi.org/10.1016/j.caeai.2024.100216"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于社会科学",
+          "label_en": "AI for social sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "在真实大学课程讨论数据上比较GPT模型与人类的教育内容编码一致性，分析复杂类别的可靠性和局限；AI直接参与教育研究测量。"
+        },
+        {
+          "axis": "method",
+          "label": "语言模型",
+          "label_en": "Language model",
+          "evidence_location": "输入摘要",
+          "rationale": "在真实大学课程讨论数据上比较GPT模型与人类的教育内容编码一致性，分析复杂类别的可靠性和局限；AI直接参与教育研究测量。"
+        },
+        {
+          "axis": "evaluation",
+          "label": "科学评测",
+          "label_en": "Scientific evaluation",
+          "evidence_location": "输入摘要",
+          "rationale": "在真实大学课程讨论数据上比较GPT模型与人类的教育内容编码一致性，分析复杂类别的可靠性和局限；AI直接参与教育研究测量。"
+        }
+      ]
     }
   },
   {
@@ -29291,18 +29576,33 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第1句：Machine learning (ML) techniques are commonly seen as an inductive learning procedure, typically involving the identification of patterns in a specific training dataset to make predictions in novel context…",
+      "decision": "include",
+      "rationale": "比较真实、改写及合成学生回答对机器学习评分的影响，研究化学学生反应机理推理的因果层级编码及跨条件泛化，构成教育研究。",
       "verified_metadata": {
         "evidence_urls": [
           "https://api.crossref.org/works/10.1016/j.caeai.2024.100265",
           "https://doi.org/10.1016/j.caeai.2024.100265"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于社会科学",
+          "label_en": "AI for social sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "比较真实、改写及合成学生回答对机器学习评分的影响，研究化学学生反应机理推理的因果层级编码及跨条件泛化，构成教育研究。"
+        },
+        {
+          "axis": "method",
+          "label": "语言模型",
+          "label_en": "Language model",
+          "evidence_location": "输入摘要",
+          "rationale": "比较真实、改写及合成学生回答对机器学习评分的影响，研究化学学生反应机理推理的因果层级编码及跨条件泛化，构成教育研究。"
+        }
+      ]
     }
   },
   {
@@ -33121,11 +33421,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 补查摘要第1句：Photocatalysis, an essential technology for sustainable fuel production and environmental remediation often encounters challenges due to the complexity and vastness of potential catalyst materials.",
+      "decision": "include",
+      "rationale": "综述机器学习在光催化材料预测、筛选、性能优化及反应器设计中的方法和应用，覆盖水分解及污染物降解；实质学术综述的科学任务明确。",
       "verified_metadata": {
         "abstract": "Photocatalysis, an essential technology for sustainable fuel production and environmental remediation often encounters challenges due to the complexity and vastness of potential catalyst materials. Machine learning (ML), a branch of artificial intelligence, offers transformative potential to accelerate catalyst exploration by leveraging data-driven models to predict and optimize photocatalysts. Recent developments in artificial intelligence and data science hold enormous promise for accelerating the discovery of new materials in environmental science and photocatalysis technologies. This review delves into the integration of ML in photocatalysis, focusing on its role in improving light absorption, charge separation, and photoreactor design. In addition, the content emphasizes the importance of ML in photocatalytic applications such as drug degradation, water splitting, and organic dye degradation. ML techniques can enhance these applications by predicting the behavior of photocatalysts, improving their efficiency, and accelerating the discovery of new materials. With the help of ML, advanced next-generation catalysts can be developed, and the review serves as a guide for the scientific community regarding the use of ML in photocatalysis and environmental applications.",
         "evidence_urls": [
@@ -33134,7 +33434,15 @@
           "https://doi.org/10.1016/j.mser.2024.100880"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "已核验发表记录摘要（ai4s_review.verified_metadata.abstract）",
+          "rationale": "综述机器学习在光催化材料预测、筛选、性能优化及反应器设计中的方法和应用，覆盖水分解及污染物降解；实质学术综述的科学任务明确。"
+        }
+      ]
     }
   },
   {
@@ -34199,11 +34507,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第1句：Personalized pain medicine aims to tailor pain treatment strategies for the specific needs and characteristics of an individual patient, holding the potential for improving treatment outcomes, reducing sid…",
+      "decision": "include",
+      "rationale": "该综述梳理疼痛监测、评估和缓解的传感器与设备，并讨论AI镇痛设备、可穿戴感知及个体化疼痛医疗的技术进展。",
       "verified_metadata": {
         "evidence_urls": [
           "https://pubmed.ncbi.nlm.nih.gov/39282019/",
@@ -34211,7 +34519,15 @@
           "https://doi.org/10.34133/cbsystems.0160"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "该综述梳理疼痛监测、评估和缓解的传感器与设备，并讨论AI镇痛设备、可穿戴感知及个体化疼痛医疗的技术进展。"
+        }
+      ]
     }
   },
   {
@@ -34768,11 +35084,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-fulltext",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "第一作者公开的同 DOI 摘要报告 3D Geoformer 的海气耦合预测及输入时段敏感性试验，给出了热带太平洋海表温度预测的结果。研究对象、学习方法和所做实验均可由摘要核实。",
+      "rationale": "已通过正式出版PDF补充核验：正文pp.2323–2325及Figure 1给出3D-Geoformer海气耦合、回报预测及输入时间窗敏感性试验，AI与ENSO科学任务的关系明确，维持纳入。正式版本没有独立文字摘要；作者页面的摘要链接保留为作者提供的说明，不能冒充期刊原摘要。",
       "verified_metadata": {
         "abstract_url": "https://www.researchgate.net/publication/380049844_A_transformer-based_coupled_ocean-atmosphere_model_for_ENSO_studies",
         "abstract_summary_zh": "作者用 Transformer 同时预测热带太平洋上层海温和海面风应力，以表示 ENSO 过程中的海气反馈。模型以此前数月的状态滚动预测。作者改变输入时段进行敏感性试验，考察了东赤道太平洋海表温度的预测技巧及其物理解释。",
@@ -34792,32 +35108,38 @@
           "https://europepmc.org/article/MED/38719667",
           "https://www.sciencedirect.com/sdfe/arp/cite?pii=S2095927324002974&format=text%2Fx-bibtex&withabstract=true",
           "https://doi.org/10.1016/j.scib.2024.04.048",
-          "https://www.researchgate.net/publication/380049844_A_transformer-based_coupled_ocean-atmosphere_model_for_ENSO_studies"
-        ]
+          "https://www.researchgate.net/publication/380049844_A_transformer-based_coupled_ocean-atmosphere_model_for_ENSO_studies",
+          "https://dds.sciengine.com/cfs/files/pdfs/2095-9273/36F40D233A7A49088628E3FF810F08F1.pdf"
+        ],
+        "article_type": "Perspective with original research analyses",
+        "full_text_summary_zh": "正文说明3D-Geoformer以海温和表面风应力共同建模海气耦合，滚动预测未来状态，并用回报试验和输入时间窗敏感性分析研究ENSO预测技巧。虽然栏目为Perspective，但包含具体模型分析和实验结果。",
+        "full_text_evidence_location": "正式PDF pp.2323–2325，3D-Geoformer说明、Figure 1及输入时间窗敏感性实验",
+        "abstract_status": "not_provided_by_publisher",
+        "abstract_note": "正式版本无独立文字摘要；本条已依全文完成审核。中文内容为审核概述，不是作者原摘要。",
+        "pdf_url": "https://dds.sciengine.com/cfs/files/pdfs/2095-9273/36F40D233A7A49088628E3FF810F08F1.pdf"
       },
       "tags": [
         {
           "axis": "domain",
           "label": "AI 用于地球宇宙科学",
           "label_en": "AI for Earth and space sciences",
-          "evidence_location": "作者公开记录的 Abstract 摘要第1至3句",
-          "rationale": "研究目标是热带太平洋的海气相互作用与 ENSO 预测。"
-        },
-        {
-          "axis": "task",
-          "label": "气候建模",
-          "label_en": "Climate modeling",
-          "evidence_location": "作者公开记录的 Abstract 摘要第2至6句",
-          "rationale": "通过耦合海温与风应力并比较输入设置，研究 ENSO 的预测技巧。"
+          "evidence_location": "正式PDF pp.2323–2325，3D-Geoformer说明、Figure 1及输入时间窗敏感性实验",
+          "rationale": "正文说明3D-Geoformer以海温和表面风应力共同建模海气耦合，滚动预测未来状态，并用回报试验和输入时间窗敏感性分析研究ENSO预测技巧。虽然栏目为Perspective，但包含具体模型分析和实验结果。"
         },
         {
           "axis": "method",
           "label": "Transformer 架构",
           "label_en": "Transformer",
-          "evidence_location": "作者公开记录的 Abstract 摘要第1句",
-          "rationale": "作者明确给出模型架构及名称 3D Geoformer。"
+          "evidence_location": "正式PDF pp.2323–2325，3D-Geoformer说明、Figure 1及输入时间窗敏感性实验",
+          "rationale": "正文说明3D-Geoformer以海温和表面风应力共同建模海气耦合，滚动预测未来状态，并用回报试验和输入时间窗敏感性分析研究ENSO预测技巧。虽然栏目为Perspective，但包含具体模型分析和实验结果。"
         }
-      ]
+      ],
+      "abstract_resolution": {
+        "status": "publisher_no_text_abstract_full_text_reviewed",
+        "requires_abstract_backfill": false,
+        "basis": "正式全文及文献类型复核",
+        "original_abstract_preserved": true
+      }
     }
   },
   {
@@ -35715,11 +36037,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-fulltext",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "出版方仅列图形摘要，作者简介、图片和正文片段均不提供可核实的文字摘要。",
+      "decision": "include",
+      "rationale": "已阅读正式全文。出版方标注Mini review，PDF栏目为Perspective；正文梳理已有遥感基础模型、六类具体遥感/地学任务及方法局限，并引用补充模型与任务对照表，构成有实质学术内容的综述，依综述纳入规则由待定改为纳入。不把未来展望写成已完成实验。正式版本无独立文字摘要，仅有图形摘要及正文；保留原摘要空值，以全文作为判断依据。",
       "verified_metadata": {
         "evidence_urls": [
           "https://doi.org/10.1016/j.scib.2024.09.017",
@@ -35728,15 +36050,36 @@
           "https://api.crossref.org/works/10.1016/j.scib.2024.09.017",
           "https://api.crossref.org/works/10.1016/j.scib.2024.09.017/transform/application/vnd.crossref.unixref+xml",
           "https://europepmc.org/article/MED/39358111",
-          "https://www.sciencedirect.com/sdfe/arp/cite?pii=S2095927324006510&format=text%2Fx-bibtex&withabstract=true"
-        ]
+          "https://www.sciencedirect.com/sdfe/arp/cite?pii=S2095927324006510&format=text%2Fx-bibtex&withabstract=true",
+          "https://dds.sciengine.com/cfs/files/pdfs/2095-9273/D71A7E5EB7AE405BB812503B49590749.pdf"
+        ],
+        "article_type": "Substantive mini-review / Perspective",
+        "full_text_summary_zh": "正文综述遥感基础模型的多模态框架及已有模型，并按场景分类、目标检测、土地利用分类、变化检测、视频目标追踪和地学应用梳理研究，进一步讨论地理知识、反馈和评价方面的局限。不是本论文新训练模型的实验报告。",
+        "full_text_evidence_location": "正式PDF pp.3652–3655，模型框架、静态/动态遥感解译及六类应用梳理；Figure 1，Tables S1–S5引用",
+        "abstract_status": "not_provided_by_publisher",
+        "abstract_note": "正式版本无独立文字摘要；本条已依全文完成审核。中文内容为审核概述，不是作者原摘要。",
+        "pdf_url": "https://dds.sciengine.com/cfs/files/pdfs/2095-9273/D71A7E5EB7AE405BB812503B49590749.pdf"
       },
-      "tags": [],
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于地球宇宙科学",
+          "label_en": "AI for Earth and space sciences",
+          "evidence_location": "正式PDF pp.3652–3655，模型框架、静态/动态遥感解译及六类应用梳理；Figure 1，Tables S1–S5引用",
+          "rationale": "正文综述遥感基础模型的多模态框架及已有模型，并按场景分类、目标检测、土地利用分类、变化检测、视频目标追踪和地学应用梳理研究，进一步讨论地理知识、反馈和评价方面的局限。不是本论文新训练模型的实验报告。"
+        }
+      ],
       "abstract_gap_review": {
         "previous_decision": "pending",
         "outcome": "unresolved",
         "official_document_type": null,
         "detail_file": "lixueting-haozhuodi/abstract-gap-recheck.jsonl.gz"
+      },
+      "abstract_resolution": {
+        "status": "publisher_no_text_abstract_full_text_reviewed",
+        "requires_abstract_backfill": false,
+        "basis": "正式全文及文献类型复核",
+        "original_abstract_preserved": true
       }
     }
   },
@@ -37005,11 +37348,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第5句：We present MHCXAI, eXplainable AI (XAI) techniques to help interpret the outputs from MHC class I predictors in terms of input peptide features.",
+      "decision": "include",
+      "rationale": "MHCXAI对四种MHC-I肽呈递预测器提供肽特征解释，并用真实参照与稳健性检验验证解释，直接服务免疫反应预测。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s42003-024-05968-2",
@@ -37017,7 +37360,22 @@
           "https://api.crossref.org/works/10.1038/s42003-024-05968-2"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "MHCXAI对四种MHC-I肽呈递预测器提供肽特征解释，并用真实参照与稳健性检验验证解释，直接服务免疫反应预测。"
+        },
+        {
+          "axis": "evaluation",
+          "label": "科学评测",
+          "label_en": "Scientific evaluation",
+          "evidence_location": "输入摘要",
+          "rationale": "MHCXAI对四种MHC-I肽呈递预测器提供肽特征解释，并用真实参照与稳健性检验验证解释，直接服务免疫反应预测。"
+        }
+      ]
     }
   },
   {
@@ -39433,11 +39791,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第3句：Here, we analyze the protein structural universe using recently developed artificial intelligence-based structure prediction tools, and find an unexpected link between prominent groups of microbial transpo…",
+      "decision": "include",
+      "rationale": "使用AI蛋白结构预测工具分析结构空间，发现细菌转运蛋白与受体的共同折叠及进化关联；AI预测直接支持生物学发现。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s42003-024-06295-2",
@@ -39445,7 +39803,22 @@
           "https://api.crossref.org/works/10.1038/s42003-024-06295-2"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "使用AI蛋白结构预测工具分析结构空间，发现细菌转运蛋白与受体的共同折叠及进化关联；AI预测直接支持生物学发现。"
+        },
+        {
+          "axis": "task",
+          "label": "蛋白质结构预测",
+          "label_en": "Protein structure prediction",
+          "evidence_location": "输入摘要",
+          "rationale": "使用AI蛋白结构预测工具分析结构空间，发现细菌转运蛋白与受体的共同折叠及进化关联；AI预测直接支持生物学发现。"
+        }
+      ]
     }
   },
   {
@@ -40129,11 +40502,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第4句：Using state-of-the-art mass-spectrometry proteomics, assisted by artificial intelligence (AI), we aimed to identify a diagnostic signature for MIS-C and to gain insights into disease mechanisms.",
+      "decision": "include",
+      "rationale": "AI辅助质谱蛋白组分析识别儿童多系统炎症综合征的四蛋白诊断特征和差异蛋白簇，用于研究疾病机制及早期诊断。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s42003-024-06370-8",
@@ -40141,7 +40514,15 @@
           "https://api.crossref.org/works/10.1038/s42003-024-06370-8"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "AI辅助质谱蛋白组分析识别儿童多系统炎症综合征的四蛋白诊断特征和差异蛋白簇，用于研究疾病机制及早期诊断。"
+        }
+      ]
     }
   },
   {
@@ -47420,11 +47801,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第1句：The functional organization of the human object vision pathway distinguishes between animate and inanimate objects.",
+      "decision": "include",
+      "rationale": "通过不同DNN训练条件检验拟动物体的知觉偏差，比较形状、类别、循环连接等解释，为人类视觉学习机制提供计算证据。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s42003-024-07415-8",
@@ -47432,7 +47813,15 @@
           "https://api.crossref.org/works/10.1038/s42003-024-07415-8"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "通过不同DNN训练条件检验拟动物体的知觉偏差，比较形状、类别、循环连接等解释，为人类视觉学习机制提供计算证据。"
+        }
+      ]
     }
   },
   {
@@ -48334,11 +48723,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第4句：Here we map and quantify linguistic divergence across the partisan left-right divide in the United States, using social media data.",
+      "decision": "include",
+      "rationale": "结合机器学习、LLM、词汇统计与人工标注，分析美国不同政治群体社交媒体中的话题、情感和语义分化，回答明确社会语言学问题。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s41599-024-02922-9",
@@ -48346,7 +48735,22 @@
           "https://doi.org/10.1057/s41599-024-02922-9"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于社会科学",
+          "label_en": "AI for social sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "结合机器学习、LLM、词汇统计与人工标注，分析美国不同政治群体社交媒体中的话题、情感和语义分化，回答明确社会语言学问题。"
+        },
+        {
+          "axis": "method",
+          "label": "语言模型",
+          "label_en": "Language model",
+          "evidence_location": "输入摘要",
+          "rationale": "结合机器学习、LLM、词汇统计与人工标注，分析美国不同政治群体社交媒体中的话题、情感和语义分化，回答明确社会语言学问题。"
+        }
+      ]
     }
   },
   {
@@ -49744,11 +50148,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第4句：Our research employs socio-demographic data from the World Values Survey to evaluate ChatGPT’s performance in diverse contexts.",
+      "decision": "include",
+      "rationale": "用世界价值观调查的真实社会人口数据评估ChatGPT公共意见模拟的跨国家、人口群体和议题偏差；对社会科学测量具有直接贡献。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s41599-024-03609-x",
@@ -49756,7 +50160,29 @@
           "https://doi.org/10.1057/s41599-024-03609-x"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于社会科学",
+          "label_en": "AI for social sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "用世界价值观调查的真实社会人口数据评估ChatGPT公共意见模拟的跨国家、人口群体和议题偏差；对社会科学测量具有直接贡献。"
+        },
+        {
+          "axis": "method",
+          "label": "语言模型",
+          "label_en": "Language model",
+          "evidence_location": "输入摘要",
+          "rationale": "用世界价值观调查的真实社会人口数据评估ChatGPT公共意见模拟的跨国家、人口群体和议题偏差；对社会科学测量具有直接贡献。"
+        },
+        {
+          "axis": "evaluation",
+          "label": "科学评测",
+          "label_en": "Scientific evaluation",
+          "evidence_location": "输入摘要",
+          "rationale": "用世界价值观调查的真实社会人口数据评估ChatGPT公共意见模拟的跨国家、人口群体和议题偏差；对社会科学测量具有直接贡献。"
+        }
+      ]
     }
   },
   {
@@ -49984,11 +50410,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第7句：We propose raising public awareness as a means to mitigate these biases, advocating for proactive measures over relying solely on human intervention.",
+      "decision": "include",
+      "rationale": "通过LLM实验和统计检验研究会计职业名称的性别标注、工资关联及性别刻板印象，属于具体社会科学偏差研究。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s41599-024-03660-8",
@@ -49996,7 +50422,22 @@
           "https://doi.org/10.1057/s41599-024-03660-8"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于社会科学",
+          "label_en": "AI for social sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "通过LLM实验和统计检验研究会计职业名称的性别标注、工资关联及性别刻板印象，属于具体社会科学偏差研究。"
+        },
+        {
+          "axis": "method",
+          "label": "语言模型",
+          "label_en": "Language model",
+          "evidence_location": "输入摘要",
+          "rationale": "通过LLM实验和统计检验研究会计职业名称的性别标注、工资关联及性别刻板印象，属于具体社会科学偏差研究。"
+        }
+      ]
     }
   },
   {
@@ -52205,11 +52646,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第4句：We present , a physics-based approach that endows static 3D objects with interactive dynamics by leveraging the object dynamics priors learned by video generation models.",
+      "decision": "exclude",
+      "rationale": "主要从视频生成先验合成虚拟物体交互，并以视觉逼真度和用户研究评估；摘要未显示对真实材料物性或科学规律的发现、估计及验证，依通用图形生成范围排除。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/270_ECCV_2024_paper.php"
@@ -54075,17 +54516,39 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第1句：\"Biomedical imaging datasets are often small and biased, meaning that real-world performance of predictive models can be substantially lower than expected from internal testing.",
+      "decision": "include",
+      "rationale": "训练胸部X线文本到图像扩散模型，模拟采集、病变及人群分布变化以诊断医学视觉模型失效和稳健性；具体医学评测任务明确。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/1923_ECCV_2024_paper.php"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "训练胸部X线文本到图像扩散模型，模拟采集、病变及人群分布变化以诊断医学视觉模型失效和稳健性；具体医学评测任务明确。"
+        },
+        {
+          "axis": "method",
+          "label": "扩散模型",
+          "label_en": "Diffusion model",
+          "evidence_location": "输入摘要",
+          "rationale": "训练胸部X线文本到图像扩散模型，模拟采集、病变及人群分布变化以诊断医学视觉模型失效和稳健性；具体医学评测任务明确。"
+        },
+        {
+          "axis": "evaluation",
+          "label": "科学评测",
+          "label_en": "Scientific evaluation",
+          "evidence_location": "输入摘要",
+          "rationale": "训练胸部X线文本到图像扩散模型，模拟采集、病变及人群分布变化以诊断医学视觉模型失效和稳健性；具体医学评测任务明确。"
+        }
+      ]
     }
   },
   {
@@ -54371,17 +54834,32 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第4句：To address these challenges, we propose efficient architecture-agnostic techniques to directly modulate the spectral bias of network priors: 1) bandwidth-constrained input, 2) bandwidth-controllable upsamp…",
+      "decision": "include",
+      "rationale": "将无训练数据的神经网络先验和频率正则化用于MRI反演重建，联合改善重建质量、过拟合和运行时间；有明确医学成像测量恢复任务。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/2230_ECCV_2024_paper.php"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "将无训练数据的神经网络先验和频率正则化用于MRI反演重建，联合改善重建质量、过拟合和运行时间；有明确医学成像测量恢复任务。"
+        },
+        {
+          "axis": "task",
+          "label": "医学影像重建",
+          "label_en": "Medical image reconstruction",
+          "evidence_location": "输入摘要",
+          "rationale": "将无训练数据的神经网络先验和频率正则化用于MRI反演重建，联合改善重建质量、过拟合和运行时间；有明确医学成像测量恢复任务。"
+        }
+      ]
     }
   },
   {
@@ -56294,11 +56772,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第3句：In this paper, we target this weakness and propose a sentence generation-based retrieval formulation for attribute recognition that is novel in 1) explicitly modeling a to-be-measured and retrieved object-…",
+      "decision": "exclude",
+      "rationale": "研究VLM通用视觉属性识别和生成式检索，在通用视觉属性数据集评测；未显示实质科学或工程领域研究任务。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/3880_ECCV_2024_paper.php"
@@ -56745,17 +57223,39 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第3句：To address this issue, we introduce OmniSat, a novel architecture able to merge diverse EO modalities into expressive features without labels by exploiting their alignment.",
+      "decision": "include",
+      "rationale": "OmniSat通过自监督多模态融合学习地球观测表示，并在林业、土地覆盖分类及作物制图上验证，科学对象和应用贡献明确。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/4127_ECCV_2024_paper.php"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于地球宇宙科学",
+          "label_en": "AI for Earth and space sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "OmniSat通过自监督多模态融合学习地球观测表示，并在林业、土地覆盖分类及作物制图上验证，科学对象和应用贡献明确。"
+        },
+        {
+          "axis": "method",
+          "label": "自监督学习",
+          "label_en": "Self-supervised learning",
+          "evidence_location": "输入摘要",
+          "rationale": "OmniSat通过自监督多模态融合学习地球观测表示，并在林业、土地覆盖分类及作物制图上验证，科学对象和应用贡献明确。"
+        },
+        {
+          "axis": "method",
+          "label": "多模态学习",
+          "label_en": "Multimodal learning",
+          "evidence_location": "输入摘要",
+          "rationale": "OmniSat通过自监督多模态融合学习地球观测表示，并在林业、土地覆盖分类及作物制图上验证，科学对象和应用贡献明确。"
+        }
+      ]
     }
   },
   {
@@ -56819,11 +57319,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第1句：\"We propose a method to distill a complex multistep diffusion model into a single-step conditional GAN student model, dramatically accelerating inference, while preserving image quality.",
+      "decision": "exclude",
+      "rationale": "将多步扩散模型蒸馏为单步GAN，主要目标为通用图像生成的推理加速，并在COCO评测；不以科学研究任务为目标。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/4129_ECCV_2024_paper.php"
@@ -57641,17 +58141,39 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第3句：To harness these advancements for HSI classification, we make the following contributions: i) We propose HyTAS, the first benchmark on transformer architecture search for Hyperspectral imaging, ii) We comp…",
+      "decision": "include",
+      "rationale": "针对遥感高光谱影像分类提出Transformer架构搜索基准，在五个数据集比较12种方法并分析因素；有具体地球观测数据和评测任务。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/4703_ECCV_2024_paper.php"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于地球宇宙科学",
+          "label_en": "AI for Earth and space sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "针对遥感高光谱影像分类提出Transformer架构搜索基准，在五个数据集比较12种方法并分析因素；有具体地球观测数据和评测任务。"
+        },
+        {
+          "axis": "method",
+          "label": "Transformer 架构",
+          "label_en": "Transformer",
+          "evidence_location": "输入摘要",
+          "rationale": "针对遥感高光谱影像分类提出Transformer架构搜索基准，在五个数据集比较12种方法并分析因素；有具体地球观测数据和评测任务。"
+        },
+        {
+          "axis": "evaluation",
+          "label": "科学评测",
+          "label_en": "Scientific evaluation",
+          "evidence_location": "输入摘要",
+          "rationale": "针对遥感高光谱影像分类提出Transformer架构搜索基准，在五个数据集比较12种方法并分析因素；有具体地球观测数据和评测任务。"
+        }
+      ]
     }
   },
   {
@@ -57710,11 +58232,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第3句：In this work, we focus on bridging the performance gap between ANNs and SNNs on object detection.",
+      "decision": "exclude",
+      "rationale": "提出脉冲神经元与SpikeYOLO以提高通用目标检测精度及能效；生物启发仅为架构动机，未研究真实神经机制或其他科学任务。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/4704_ECCV_2024_paper.php"
@@ -59240,17 +59762,25 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第3句：In this paper, we propose a new approach for cross-view image geo-localization, i.e., the Panorama-BEV Co-Retrieval Network.",
+      "decision": "include",
+      "rationale": "研究街景与卫星影像间的跨视角地理定位，提出BEV协同检索网络及跨区域、跨时间数据集，服务具体定位工程问题。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/5379_ECCV_2024_paper.php"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "研究街景与卫星影像间的跨视角地理定位，提出BEV协同检索网络及跨区域、跨时间数据集，服务具体定位工程问题。"
+        }
+      ]
     }
   },
   {
@@ -60292,11 +60822,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第3句：We introduce Feature Splatting, an approach that unifies physics-based dynamic scene synthesis with rich semantics from vision language foundation models that are grounded by natural language.",
+      "decision": "exclude",
+      "rationale": "主要将视觉语言特征、3D高斯和粒子模拟组合用于交互式场景合成编辑；摘要以图形表示和编辑为贡献，未核实物性反演或科学模拟精度。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/5788_ECCV_2024_paper.php"
@@ -60712,11 +61242,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第1句：\"Unsupervised domain adaptation (UDA) in 3D segmentation tasks presents a formidable challenge, primarily stemming from the sparse and unordered nature of point clouds.",
+      "rationale": "摘要为跨域点云分割的通用域适配方法，虽提到LiDAR及天气，但未交代具体工程系统目标及相应验证；需查实验任务后区分领域贡献和通用基准改进。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/5934_ECCV_2024_paper.php"
@@ -61598,17 +62128,32 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第9句：To make EvINR feasible for online requisites, we propose several acceleration techniques that substantially expedite the training process.",
+      "decision": "include",
+      "rationale": "以事件相机亮度变化的生成方程作为约束，优化隐式神经表示以重建强度视频；属于基于传感器测量模型的计算成像反问题。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/6586_ECCV_2024_paper.php"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "以事件相机亮度变化的生成方程作为约束，优化隐式神经表示以重建强度视频；属于基于传感器测量模型的计算成像反问题。"
+        },
+        {
+          "axis": "task",
+          "label": "反问题",
+          "label_en": "Inverse problem",
+          "evidence_location": "输入摘要",
+          "rationale": "以事件相机亮度变化的生成方程作为约束，优化隐式神经表示以重建强度视频；属于基于传感器测量模型的计算成像反问题。"
+        }
+      ]
     }
   },
   {
@@ -62148,11 +62693,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第4句：We introduce the problem of generating length-aware 3D human motion sequences from textual descriptors, and we propose a novel model to synthesize motions of variable target lengths, which we dub “Length-A…",
+      "decision": "exclude",
+      "rationale": "贡献为文本条件的人体动作序列长度控制，在通用动作合成基准评测；摘要未展示人体运动科学、生物力学或机器人控制研究。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/6952_ECCV_2024_paper.php"
@@ -62827,17 +63372,39 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第3句：To this end, we propose Text2LiDAR, the first efficient, diverse, and text-controllable LiDAR data generation model.",
+      "decision": "include",
+      "rationale": "针对自动驾驶交通和天气条件下LiDAR数据难采集的问题，构建文本可控点云生成模型和数据集，并在KITTI-360及nuScenes验证。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7328_ECCV_2024_paper.php"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "针对自动驾驶交通和天气条件下LiDAR数据难采集的问题，构建文本可控点云生成模型和数据集，并在KITTI-360及nuScenes验证。"
+        },
+        {
+          "axis": "method",
+          "label": "Transformer 架构",
+          "label_en": "Transformer",
+          "evidence_location": "输入摘要",
+          "rationale": "针对自动驾驶交通和天气条件下LiDAR数据难采集的问题，构建文本可控点云生成模型和数据集，并在KITTI-360及nuScenes验证。"
+        },
+        {
+          "axis": "contribution",
+          "label": "科学数据",
+          "label_en": "Scientific data",
+          "evidence_location": "输入摘要",
+          "rationale": "针对自动驾驶交通和天气条件下LiDAR数据难采集的问题，构建文本可控点云生成模型和数据集，并在KITTI-360及nuScenes验证。"
+        }
+      ]
     }
   },
   {
@@ -63560,11 +64127,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第2句：To facilitate prototypes of virtual production and bypass the need for complex materials and lighting setups, we introduce the first vision-and-text-driven texture stylization system for large-scale urban …",
+      "decision": "exclude",
+      "rationale": "研究虚拟城市场景的视觉与文本驱动纹理风格迁移，以虚拟制作和主观偏好为目标；并非城市、气候或其他科学研究。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7682_ECCV_2024_paper.php"
@@ -64077,17 +64644,32 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第3句：We introduce a novel multi-sensor fusion approach tailored to adverse weather conditions.",
+      "decision": "include",
+      "rationale": "通过RGB、LiDAR、近红外门控相机及雷达的学习融合，提升恶劣天气下自动驾驶行人检测，报告雾天远距离目标识别结果。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7882_ECCV_2024_paper.php"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "通过RGB、LiDAR、近红外门控相机及雷达的学习融合，提升恶劣天气下自动驾驶行人检测，报告雾天远距离目标识别结果。"
+        },
+        {
+          "axis": "method",
+          "label": "多模态学习",
+          "label_en": "Multimodal learning",
+          "evidence_location": "输入摘要",
+          "rationale": "通过RGB、LiDAR、近红外门控相机及雷达的学习融合，提升恶劣天气下自动驾驶行人检测，报告雾天远距离目标识别结果。"
+        }
+      ]
     }
   },
   {
@@ -64382,17 +64964,39 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第1句：\"We present the first publicly-available RGB-thermal dataset designed for aerial robotics operating in natural environments.",
+      "decision": "include",
+      "rationale": "发布面向自然环境空中机器人的同步RGB热成像数据和分割标注，建立分割、翻译及追踪基准并验证时空域迁移；属于直接支持机器人感知的研究数据资源。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/8026_ECCV_2024_paper.php"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "发布面向自然环境空中机器人的同步RGB热成像数据和分割标注，建立分割、翻译及追踪基准并验证时空域迁移；属于直接支持机器人感知的研究数据资源。"
+        },
+        {
+          "axis": "contribution",
+          "label": "科学数据",
+          "label_en": "Scientific data",
+          "evidence_location": "输入摘要",
+          "rationale": "发布面向自然环境空中机器人的同步RGB热成像数据和分割标注，建立分割、翻译及追踪基准并验证时空域迁移；属于直接支持机器人感知的研究数据资源。"
+        },
+        {
+          "axis": "evaluation",
+          "label": "科学评测",
+          "label_en": "Scientific evaluation",
+          "evidence_location": "输入摘要",
+          "rationale": "发布面向自然环境空中机器人的同步RGB热成像数据和分割标注，建立分割、翻译及追踪基准并验证时空域迁移；属于直接支持机器人感知的研究数据资源。"
+        }
+      ]
     }
   },
   {
@@ -64887,11 +65491,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第3句：In response to these challenges, we propose the Asynchronous Bioplausible Neuron (ABN), a dynamic spike firing mechanism that offers a simple yet potent auto-adjustment to variations in input signals.",
+      "decision": "exclude",
+      "rationale": "用生物启发神经元改善通用图像分类、分割及计算能效；摘要未报告对真实生物稳态机制的检验，不能把生物启发等同于生命科学研究。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/8133_ECCV_2024_paper.php"
@@ -66282,11 +66886,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第3句：To address this issue, we introduce MetaWeather, a universal approach that can handle diverse and novel weather conditions with a single unified model.",
+      "decision": "exclude",
+      "rationale": "任务为雨雪等天气退化图像的通用视觉恢复；并非天气变量预测、气候机制或其他明确科学研究，仅出现天气词汇不足以纳入。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/9270_ECCV_2024_paper.php"
@@ -66592,11 +67196,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第4句：To contribute in an impactful manner, we propose 3R-INN, a single invertible network that does three tasks at once: given a hr grainy image, it Rescales it to a lower resolution, Removes film grain and Red…",
+      "rationale": "主要贡献是视频压缩、去颗粒和显示能耗优化；需核对团队对信息工程范围的边界，判断是否属于具体工程研究，还是应排除的通用模型效率优化。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/9564_ECCV_2024_paper.php"
@@ -69956,17 +70560,39 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第3句：We propose a novel detection and quantification of the impact of potential shortcut features via a fast diffusion-based counterfactual image generation that can synthetically remove or add shortcuts.",
+      "decision": "include",
+      "rationale": "通过扩散反事实编辑在胸片和皮肤病变数据中移除或添加捷径特征，量化医学分类器对伪相关的依赖，具有实际医学模型可靠性评测。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/11674_ECCV_2024_paper.php"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "通过扩散反事实编辑在胸片和皮肤病变数据中移除或添加捷径特征，量化医学分类器对伪相关的依赖，具有实际医学模型可靠性评测。"
+        },
+        {
+          "axis": "method",
+          "label": "扩散模型",
+          "label_en": "Diffusion model",
+          "evidence_location": "输入摘要",
+          "rationale": "通过扩散反事实编辑在胸片和皮肤病变数据中移除或添加捷径特征，量化医学分类器对伪相关的依赖，具有实际医学模型可靠性评测。"
+        },
+        {
+          "axis": "evaluation",
+          "label": "科学评测",
+          "label_en": "Scientific evaluation",
+          "evidence_location": "输入摘要",
+          "rationale": "通过扩散反事实编辑在胸片和皮肤病变数据中移除或添加捷径特征，量化医学分类器对伪相关的依赖，具有实际医学模型可靠性评测。"
+        }
+      ]
     }
   },
   {
@@ -75400,11 +76026,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第1句：Tire plastic and road-wear particles (TPR-WP) are a current research priority as one of the main environmental sources of microplastics.",
+      "decision": "include",
+      "rationale": "在实采公路土壤和尘埃数据中使用随机森林分析轮胎及道路磨损颗粒与经济、气候等因素的关系，服务污染分布与生态风险研究。",
       "verified_metadata": {
         "evidence_urls": [
           "https://pubmed.ncbi.nlm.nih.gov/38402682/",
@@ -75412,7 +76038,22 @@
           "https://doi.org/10.1016/j.jhazmat.2024.133860"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于地球宇宙科学",
+          "label_en": "AI for Earth and space sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "在实采公路土壤和尘埃数据中使用随机森林分析轮胎及道路磨损颗粒与经济、气候等因素的关系，服务污染分布与生态风险研究。"
+        },
+        {
+          "axis": "method",
+          "label": "随机森林",
+          "label_en": "Random forest",
+          "evidence_location": "输入摘要",
+          "rationale": "在实采公路土壤和尘埃数据中使用随机森林分析轮胎及道路磨损颗粒与经济、气候等因素的关系，服务污染分布与生态风险研究。"
+        }
+      ]
     }
   },
   {
@@ -76020,11 +76661,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第2句：In this work, we developed a magnetic solid-phase extraction (MSPE) pretreatment material coated with a multilayered metal-organic framework (MOF), Fe 3 O 4 @ (ZIF-8) 3 , for the separation and enrichment …",
+      "decision": "include",
+      "rationale": "将AI解码与免疫传感器结合，用于鱼样本中氯霉素的高灵敏检测，并报告检出限和实样验证；AI直接参与化学检测工程。",
       "verified_metadata": {
         "evidence_urls": [
           "https://pubmed.ncbi.nlm.nih.gov/38552394/",
@@ -76032,7 +76673,15 @@
           "https://doi.org/10.1016/j.jhazmat.2024.134150"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "将AI解码与免疫传感器结合，用于鱼样本中氯霉素的高灵敏检测，并报告检出限和实样验证；AI直接参与化学检测工程。"
+        }
+      ]
     }
   },
   {
@@ -78316,11 +78965,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第1句：The environmental pollution caused by mineral exploitation and energy consumption poses a serious threat to ecological security and human health, particularly in resource-based cities.",
+      "decision": "include",
+      "rationale": "使用随机森林及地理探测分析实采道路粉尘中有毒元素的时空分布与环境影响因素，并结合风险评价；有明确环境科学对象。",
       "verified_metadata": {
         "evidence_urls": [
           "https://pubmed.ncbi.nlm.nih.gov/38795490/",
@@ -78328,7 +78977,22 @@
           "https://doi.org/10.1016/j.jhazmat.2024.134708"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于地球宇宙科学",
+          "label_en": "AI for Earth and space sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "使用随机森林及地理探测分析实采道路粉尘中有毒元素的时空分布与环境影响因素，并结合风险评价；有明确环境科学对象。"
+        },
+        {
+          "axis": "method",
+          "label": "随机森林",
+          "label_en": "Random forest",
+          "evidence_location": "输入摘要",
+          "rationale": "使用随机森林及地理探测分析实采道路粉尘中有毒元素的时空分布与环境影响因素，并结合风险评价；有明确环境科学对象。"
+        }
+      ]
     }
   },
   {
@@ -82462,11 +83126,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第1句：The development of multifunctional nanofibrous membranes (NFMs) that enable anti-viral protection during air purification and respiratory disease diagnosis for health management is of increasing importance…",
+      "decision": "include",
+      "rationale": "开发可过滤和自灭菌的纳米纤维膜，并以CNN识别呼吸模式，实现传感材料与呼吸健康监测结合的工程研究。",
       "verified_metadata": {
         "evidence_urls": [
           "https://pubmed.ncbi.nlm.nih.gov/39293169/",
@@ -82474,7 +83138,22 @@
           "https://doi.org/10.1016/j.jhazmat.2024.135862"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "开发可过滤和自灭菌的纳米纤维膜，并以CNN识别呼吸模式，实现传感材料与呼吸健康监测结合的工程研究。"
+        },
+        {
+          "axis": "method",
+          "label": "卷积神经网络",
+          "label_en": "Convolutional neural network",
+          "evidence_location": "输入摘要",
+          "rationale": "开发可过滤和自灭菌的纳米纤维膜，并以CNN识别呼吸模式，实现传感材料与呼吸健康监测结合的工程研究。"
+        }
+      ]
     }
   },
   {
@@ -84335,11 +85014,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "仅据摘要尚不能确定AI作用与具体科学问题的关系。 输入摘要第8句：Through rational protein engineering focused on stabilizing and modifying the linear substrate binding conformation, we developed LSPET4 M6 (D130P, N127F, Y96F, Q209E, A238K, D241S), a variant that achieve…",
+      "decision": "include",
+      "rationale": "从AlphaFold预测结构数据库筛选PET水解酶，并经蛋白工程和实验验证其塑料降解活性；使用已有AI结构数据直接支持酶发现。",
       "verified_metadata": {
         "evidence_urls": [
           "https://pubmed.ncbi.nlm.nih.gov/39500192/",
@@ -84347,7 +85026,22 @@
           "https://doi.org/10.1016/j.jhazmat.2024.136389"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "从AlphaFold预测结构数据库筛选PET水解酶，并经蛋白工程和实验验证其塑料降解活性；使用已有AI结构数据直接支持酶发现。"
+        },
+        {
+          "axis": "task",
+          "label": "蛋白质结构预测",
+          "label_en": "Protein structure prediction",
+          "evidence_location": "输入摘要",
+          "rationale": "从AlphaFold预测结构数据库筛选PET水解酶，并经蛋白工程和实验验证其塑料降解活性；使用已有AI结构数据直接支持酶发现。"
+        }
+      ]
     }
   },
   {
@@ -85314,11 +86008,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "pending",
-      "rationale": "树木点云及图模型有林学价值并作了人工测量核对，但机器学习仅列为多种可能用途之一；摘要未明确专门的学习任务或模型验证。",
+      "rationale": "数据集提供城市树木标注点云、结构及图模型，具有明确林业研究用途；但摘要对机器学习的描述仍为可用方向，需核实正文中的AI任务设计或基准，解决与另一份纳入记录的分歧。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s41597-023-02873-x",
@@ -93127,11 +93821,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "ReMIND 提供术前与术中配对影像和分割标注，具有脑移位研究价值；摘要未说明是否专为某个 AI 任务设计、划分训练集或进行了模型验证。",
+      "decision": "include",
+      "rationale": "发布114名脑肿瘤患者的术前MRI、术中超声、术中MRI和分割数据，明确为医学AI图像分析及脑移位研究提供可复用数据；符合直接支持科学任务的数据资源纳入规则。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s41597-024-03295-z",
@@ -93140,7 +93834,22 @@
           "https://doi.org/10.1038/s41597-024-03295-z"
         ]
       },
-      "tags": [],
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "发布114名脑肿瘤患者的术前MRI、术中超声、术中MRI和分割数据，明确为医学AI图像分析及脑移位研究提供可复用数据；符合直接支持科学任务的数据资源纳入规则。"
+        },
+        {
+          "axis": "contribution",
+          "label": "科学数据",
+          "label_en": "Scientific data",
+          "evidence_location": "输入摘要",
+          "rationale": "发布114名脑肿瘤患者的术前MRI、术中超声、术中MRI和分割数据，明确为医学AI图像分析及脑移位研究提供可复用数据；符合直接支持科学任务的数据资源纳入规则。"
+        }
+      ],
       "disagreement_review": {
         "number": 173,
         "baseline_commit": "e41587b9271028183191e2395146ec7904f56041",
@@ -102403,11 +103112,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "pending",
-      "rationale": "失语队列提供用影像预测损伤的脚本，但摘要未说明脚本使用学习模型还是传统统计拟合，也没有清楚说明针对特定模型的训练设计。",
+      "rationale": "卒中纵向影像与行为数据具有科学价值，摘要提到预测损伤和机器学习潜力，但未说明预测脚本的学习方法；需查实际模型及验证，解决AI实质参与或直接贡献的证据缺口。",
       "verified_metadata": {
         "evidence_urls": [
           "https://www.nature.com/articles/s41597-024-03819-7",
@@ -109666,11 +110375,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "pending",
-      "rationale": "作者用既有自动计分法分析真实记忆表现，但摘要没有指明该评分器是否通过学习获得。后文关于机器学习的新用途不能单独补上这一证据。",
+      "rationale": "叙事回忆数据用于记忆研究且采用自动评分，但摘要未明确所用评分是否包含学习模型；需核实评分方法及AI基准，避免把未来NLP用途直接当成已完成AI贡献。",
       "verified_metadata": {
         "title": "The “Naturalistic Free Recall” dataset: four stories, hundreds of participants, and high-fidelity transcriptions",
         "doi": "10.1038/s41597-024-04082-6",
@@ -161465,7 +162174,7 @@
     "booktitle": null,
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "verified_metadata": {
@@ -161477,7 +162186,7 @@
         ]
       },
       "decision": "pending",
-      "rationale": "本轮查验的 DOI 登记、索引与可定位的公开版本未提供可核实的完整文字摘要，尚无法仅据摘要判断科学任务与 AI 的具体作用。",
+      "rationale": "当前摘要仅重复题名，不能作为完整作者摘要；需查Science Robotics正式栏目和正文，判断是否为研究正文、评论或新闻，再评AI作用。",
       "tags": [],
       "abstract_gap_review": {
         "previous_decision": "pending",
@@ -163720,7 +164429,7 @@
     "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S0003496724003510",
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "verified_metadata": {
@@ -163732,7 +164441,7 @@
         ]
       },
       "decision": "pending",
-      "rationale": "本轮查验的 DOI 登记、索引与可定位的公开版本未提供可核实的完整文字摘要，尚无法仅据摘要判断科学任务与 AI 的具体作用。",
+      "rationale": "当前可用文字仅为MTX缺失信息处理的一句片段，并非完整作者摘要；需查正式全文摘要及AI方法，不能据此判定纳入或排除。",
       "tags": [],
       "abstract_gap_review": {
         "previous_decision": "pending",
@@ -164919,7 +165628,7 @@
     "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S0003496724000670",
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-1107-haozhuodi",
+      "batch_id": "2024-20261109-haozhuodi-followup",
       "owner": "郝卓迪",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "verified_metadata": {
@@ -164931,7 +165640,7 @@
         ]
       },
       "decision": "pending",
-      "rationale": "本轮查验的 DOI 登记、索引与可定位的公开版本未提供可核实的完整文字摘要，尚无法仅据摘要判断科学任务与 AI 的具体作用。",
+      "rationale": "当前可用文字为医院工作人员致谢片段，并非作者摘要；需查正式论文类型、完整摘要及AI作用，保留待定。",
       "tags": [],
       "abstract_gap_review": {
         "previous_decision": "pending",
