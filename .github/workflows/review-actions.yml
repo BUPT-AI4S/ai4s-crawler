@@ -16,6 +16,9 @@ permissions:
 concurrency:
   # 高峰时一分钟内会有好几次推送，每次都完整重算并把 1.7MB 的快照重写一遍太浪费：
   # 让新推送直接取代正在跑的这一次，只对最新提交出结果（去抖）。
+  # 注意：这个 bot 只是把 main 的当前状态重算成派生文件，不负责合并别人内容，
+  # 所以「只让最后一次落地」不会丢任何人的改动——最后一次读到的是包含全部提交的 main。
+  # 若 main 在生成期间又被推进，下面的推送重试会同步到最新 main 重新生成。
   group: review-actions
   cancel-in-progress: true
 jobs:
@@ -64,12 +67,6 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          # 如果 main 已经前进（这次运行已被更新的推送取代），直接退出，别算过期数据。
-          git fetch --depth=1 origin main
-          if [ "$(git rev-parse HEAD)" != "$(git rev-parse FETCH_HEAD)" ]; then
-            echo "::notice::main 已经前进，本次运行放弃，由更新的运行出结果。"
-            exit 0
-          fi
           generate() {
             python ../monitor-tools/tools/build_owner_activity.py --repo . --output reviews/owner-activity.json || echo '::warning::owner activity unavailable (shallow history)'
             python ../monitor-tools/tools/build_review_monitor.py --source . --output reviews/monitor-data.json
