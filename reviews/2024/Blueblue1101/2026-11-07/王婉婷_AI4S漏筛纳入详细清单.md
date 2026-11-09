@@ -7712,7 +7712,7 @@
 
 - DOI／稳定ID：`10.1016/j.inffus.2024.102540`
 - 标签：AI 用于生命科学；深度学习；医学影像分割；扩散模型
-- 纳入依据：当前索引摘要有省略，但保留完整任务和主要方法证据：扩散模型与模糊学习融合 U-Net，对脑肿瘤及腹部器官进行三维分割并评估。
+- 纳入依据：完整作者公开版本摘要确认：将去噪扩散模型与U-Net结合，以模糊学习模块处理分割边界不确定性，并用迭代注意力融合多时间步预测；在BRATS 2020脑肿瘤与BTCV腹部器官数据集评估三维医学影像分割。
 
 #### 1269. [Fuel consumption prediction for pre-departure flights using attention-based multi-modal fusion](https://doi.org/10.1016/j.inffus.2023.101983)
 

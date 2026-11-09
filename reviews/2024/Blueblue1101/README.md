@@ -12,3 +12,5 @@
 本轮审计以continuation14为前缀；本轮92篇拟纳入全复核、30条排除抽查；全文/PDF未用于筛选。冻结队列已到末尾bulk_id=12570。缺摘要未审名单见unreviewed.jsonl。
 
 历史报告和upload_performed=false按生成批次解读，实际发布以GitHub提交记录为准。
+
+2026-11-09更新：FDiff-Fusion完整作者版本摘要已补齐；累计完整摘要补齐2,226条。2,624篇纳入记录均无缺失／部分摘要标记。详见 `2026-11-07/fdiff-abstract-repair-20261109.json`（本目录内则直接查看同名文件）。
