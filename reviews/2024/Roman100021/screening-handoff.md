@@ -165,3 +165,13 @@ CIKM 的 +350 来自口径差异：全量采集 697 条覆盖该届全部分轨�
 
 - 7 条逐篇读原文的记录把核实到的原摘要写入了顶层 `abstract`（原值为空）。`team-handoff.md` 的「与采集格式对齐」要求只追加 `ai4s_review`，但「纳入论文的交付字段」要求 `abstract` 为来源可查的原摘要；本处按后者优先，同时在 `ai4s_review.verified_metadata.abstract` 保留同一份值，理由段已写明读取页面。
 - `reviews/2024/Roman100021/coverage.json` 是监控可识别的 coverage 适配格式，继续保留；标准反馈以 `reviews/2024/feedback/Roman100021.json` 为准。
+
+## 三条口径提示的收口（2026-11-09，第五轮）
+
+行动清单仅剩的三条"问题"都是上一轮把口径说明写进 `issues` 造成的：监控对 `issues` 原文照搬展示，不区分"已核实闭环"与"待处理"。本轮按 `monitor-feedback-format.md` 的口径重新归类——已核实、无需行动的差额与类型差异属于 `coverage_note`，`issues` 只留给真正待办。
+
+- **CIKM**：官网录用页 7 张分轨表逐行解析，Full Research Track 录用 348 条，347 条与采集的 697 条逐篇对应；余 1 条 `fp0540`（Towards Cross-Lingual Spoken Language Understanding…）在 Crossref 与 ACM proceedings 均无出版记录，属录用未出版。其余分轨官网 330 条、对应 324 条。采集 697 条为该届 proceedings 全部条目。`official_total` 维持 347，口径改记为"正式出版长文"。
+- **Molecular Psychiatry**：官网 2024 列表 513 条中有 2 条单页图片摘要（`10.1038/s41380-023-02328-0`、`10.1038/s41380-023-02393-5`）与 1 条更正（`10.1038/s41380-024-02416-9`），三条印刷年为 2023、仅在线日期落在 2024；按 Crossref 出版年 journal-article 同口径为 510 条，与采集 510 条逐 DOI 一致。`official_total` 由 513 改为 **510**。
+- **npj Schizophrenia**：官网列表 124 条、Crossref 124 条、采集 124 条三者一致，逐 DOI 无缺无多，`official_total` 维持 124。
+
+`official_total` 合计 16,491 → 16,488。35 个来源的反馈 `issues` 与 `next_actions` 全部为空，交付判定未改动。

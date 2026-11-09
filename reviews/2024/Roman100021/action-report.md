@@ -110,6 +110,18 @@
 
 同时把 7 篇的原摘要回填到交付记录的 `abstract` 与 `verified_metadata.abstract`，`evidence_urls` 改为实际读取的文章页/补充材料地址。新增 3 条纳入的标签：`粒子群优化`+`群智能优化`（120892）、`神经网络`（121211）、`实例分割`+`卷积神经网络`（108683），均配 `AI 用于工程科学`/`AI 用于生命科学` 与对应任务标签。
 
+## 9. 三条口径提示的收口（2026-11-09，第五轮）
+
+行动清单里仅剩的三条"问题"（CIKM、Molecular Psychiatry、npj Schizophrenia）复核后都不是待办，而是上一轮把口径说明写进了 `issues`。监控对 `issues` 是原文照搬展示，所以一直显示为问题。本轮把说明移入 `coverage_note`、`issues` 与 `next_actions` 清空，并把 MP 的 `official_total` 从官网列表口径改成同口径。
+
+| 来源 | 原提示 | 复核后的事实 | 处理 |
+| --- | --- | --- | --- |
+| CIKM | 官网 347 只覆盖 Full Research Track，采集 697 覆盖全部分轨 | 官网录用页 7 张分轨表逐行解析：Full Track 录用 348 条，347 条与采集逐篇对应；余 1 条 fp0540 在 Crossref 与 ACM proceedings 均无出版记录（录用未出版）；其余分轨官网合计 330 条、对应 324 条；采集 697 条为该届 proceedings（10.1145/3627673）全部条目，含未列入录用页的 Workshops 等 | `official_total` 维持 347，口径改记为"Full Research Track 正式出版长文"，分轨构成写入 `coverage_note` |
+| Molecular Psychiatry | 官网 513 比采集多 3 条 | 3 条为 2 条单页图片摘要（`10.1038/s41380-023-02328-0`、`10.1038/s41380-023-02393-5`）与 1 条更正（`10.1038/s41380-024-02416-9`）；三条印刷年均为 2023、仅在线日期落在 2024，属出版年与在线日期口径差异。Crossref 出版年 journal-article 同口径 510 条，与采集 510 条逐 DOI 完全一致 | `official_total` 513 → **510**（同口径），三条差异条目的 DOI 与成因写入 `coverage_note` |
+| npj Schizophrenia | 官网口径含图片摘要、更正等非研究条目 | 官网 2024 列表 124 条、Crossref journal-article 124 条、采集 124 条三者一致，逐 DOI 无缺无多 | `official_total` 维持 124，三者一致性写入 `coverage_note` |
+
+结果：`official_total` 合计由 16,491 调整为 16,488（仅 MP 变动），35 个来源的反馈 `issues` 全部为空，交付与判定未改动。
+
 ## 交付统计（更新后）
 
 | 指标 | 数量 |

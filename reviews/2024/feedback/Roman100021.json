@@ -249,19 +249,15 @@
     "github_username": "Roman100021",
     "updated_at": "2026-11-09",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-    "official_total": 513,
-    "official_scope": "官网 2024 年发表日期列表全部条目（含非研究条目）",
-    "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对。逐篇交付 160 条：纳入 18、排除 142、待定 0、未审 0（含初筛漏筛补录 5 条）；当前候选文件 14 条，候选缺摘要 0 条。",
+    "official_total": 510,
+    "official_scope": "Crossref 出版登记同口径：ISSN + 2024 出版年 + journal-article",
+    "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对。逐篇交付 160 条：纳入 18、排除 142、待定 0、未审 0（含初筛漏筛补录 5 条）；当前候选文件 14 条，候选缺摘要 0 条。官网 2024 年发表日期列表 513 条中，10.1038/s41380-023-02328-0 与 10.1038/s41380-023-02393-5 为单页图片摘要、10.1038/s41380-024-02416-9 为更正，三条印刷年均为 2023、仅在线日期落在 2024；按 Crossref 出版年 journal-article 同口径为 510 条，与采集 510 条逐 DOI 完全一致（missing 0 / not_in_official 0），official_total 按同口径记 510 条。",
     "evidence_urls": [
       "https://www.nature.com/mp/articles?year=2024",
       "https://api.crossref.org/journals/1359-4184/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article"
     ],
-    "issues": [
-      "官网口径 513 条比采集多 3 条，经逐条核实为 2 张图片摘要与 1 条更正，属文献类型差异而非漏采，因此不补录。"
-    ],
-    "next_actions": [
-      "若今后补采，只按研究论文类型统计，不补录图片摘要与更正"
-    ],
+    "issues": [],
+    "next_actions": [],
     "candidate_count_current": 14,
     "candidate_missing_abstract": 0,
     "delivery_counts": {
@@ -901,14 +897,12 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": 124,
     "official_scope": "官网 2024 年发表日期列表全部条目（含非研究条目）",
-    "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对。逐篇交付 18 条：纳入 5、排除 13、待定 0、未审 0（含初筛漏筛补录 1 条）；当前候选文件 5 条，候选缺摘要 0 条。",
+    "coverage_note": "已核对：官网目录逐页枚举并与采集逐 DOI 比对。逐篇交付 18 条：纳入 5、排除 13、待定 0、未审 0（含初筛漏筛补录 1 条）；当前候选文件 5 条，候选缺摘要 0 条。官网 2024 年发表日期列表 124 条、Crossref journal-article 124 条与采集 124 条三者一致，逐 DOI 无缺无多，三种计数可直接比较。",
     "evidence_urls": [
       "https://www.nature.com/npjschz/articles?year=2024",
       "https://api.crossref.org/journals/2754-6993/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article"
     ],
-    "issues": [
-      "官网发表日期口径含图片摘要、更正等非研究条目，与 journal-article 同口径计数不可混用。"
-    ],
+    "issues": [],
     "next_actions": [],
     "candidate_count_current": 5,
     "candidate_missing_abstract": 0,
@@ -929,20 +923,16 @@
     "updated_at": "2026-11-09",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": 347,
-    "official_scope": "Full Research Track 正式长文录用数（不含其他分轨）",
-    "coverage_note": "已核对：正式长文同轨一致。逐篇交付 81 条：纳入 17、排除 64、待定 0、未审 0（含初筛漏筛补录 2 条）；当前候选文件 78 条，候选缺摘要 0 条。",
+    "official_scope": "Full Research Track 正式出版长文（官网录用 348 条中 1 条未进入 proceedings）",
+    "coverage_note": "已核对：Full Research Track 正式出版 347 条与采集逐篇一致。逐篇交付 81 条：纳入 17、排除 64、待定 0、未审 0（含初筛漏筛补录 2 条）；当前候选文件 78 条，候选缺摘要 0 条。官网 accepted-papers 页 7 张分轨表逐行解析：Full Research Track 录用 348 条，其中 347 条与采集逐篇对应；余 1 条（fp0540，Towards Cross-Lingual Spoken Language Understanding…）在 Crossref 与 ACM proceedings 均无出版记录，属录用未出版。其余分轨官网合计 330 条、对应 324 条。采集 697 条为该届 ACM proceedings（10.1145/3627673）全部条目，含未列入录用页的 Workshops 等；697 与 347 属统计范围不同，不可相减。",
     "evidence_urls": [
       "https://cikm2024.github.io/accepted-papers/",
       "https://research.tudelft.nl/files/235862358/3627673.fm.pdf",
       "https://dblp.org/db/conf/cikm/cikm2024.html",
       "https://dl.acm.org/doi/proceedings/10.1145/3627673"
     ],
-    "issues": [
-      "官网总数 347 条只覆盖 Full Research Track 正式长文，采集 697 条覆盖该届全部分轨，两者口径不同，不能直接相减或计算覆盖率。"
-    ],
-    "next_actions": [
-      "需要与全部分轨对比时，按 Full Research Track 目录单列统计"
-    ],
+    "issues": [],
+    "next_actions": [],
     "candidate_count_current": 78,
     "candidate_missing_abstract": 0,
     "delivery_counts": {
