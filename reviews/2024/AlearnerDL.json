@@ -155245,17 +155245,19 @@
       "batch_id": "2024-20261105-103119",
       "owner": "龙兆科",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "摘要给出卫星端与地面端的计算划分，未说明 AI 在地球观测任务中的实际作用。",
+      "decision": "exclude",
+      "rationale": "摘要给出的贡献是利用可预测轨道拆分在轨与地面计算，测量查询延迟；未给出 AI 研究方法。",
       "verified_metadata": {
         "abstract": "Earth observation satellites, in low Earth orbits, are increasingly approaching near-continuous imaging of the Earth. Today, these satellites capture an image of every part of Earth every few hours. However, the networking capabilities haven’t caught up, and can introduce delays of few hours to days in getting these images to Earth. While this delay is acceptable for delay-tolerant applications like land cover maps, crop type identification, etc., it is unacceptable for latency-sensitive applications like forest fire detection or disaster monitoring. We design Serval to enable near-realtime insights from Earth imagery for latency-sensitive applications despite the networking bottlenecks by leveraging the emerging computational capabilities on the satellites and ground stations. The key challenge for our work stems from the limited computational capabilities and power resources available on a satellite. We solve this challenge by leveraging predictability in satellite orbits to bifurcate computation across satellites and ground stations. We evaluate Serval using trace-driven simulations and hardware emulations on a dataset comprising ten million images captured using the Planet Dove constellation comprising nearly 200 satellites. Serval reduces end-to-end latency for high priority queries from 71.71 hours (incurred by state of the art) to 2 minutes, and 90-th percentile from 149 hours to 47 minutes.",
         "title": "Known Knowns and Unknowns: Near-realtime Earth Observation Via Query Bifurcation in Serval",
         "url": "https://www.usenix.org/conference/nsdi24/presentation/tao",
         "evidence_urls": [
+          "https://experts.illinois.edu/en/publications/known-knowns-and-unknowns-near-realtime-earth-observation-via-que/",
           "https://www.usenix.org/system/files/nsdi24spring_prepub_tao.pdf",
           "https://www.usenix.org/conference/nsdi24/presentation/tao",
           "https://www.usenix.org/conference/nsdi24/technical-sessions"
-        ]
+        ],
+        "abstract_source_url": "https://experts.illinois.edu/en/publications/known-knowns-and-unknowns-near-realtime-earth-observation-via-que/"
       },
       "tags": []
     }
