@@ -5,16 +5,17 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "出版社 2024 卷期或年度正式目录；保留出版类型，日期和增刊须与快照口径一致。",
-    "coverage_note": "已定位出版社卷期目录，尚缺本年度逐期 DOI 集合，在线优先、正式卷年及增刊需单独核对。 已按 Gastroenterology 第 166 卷第 5 期增刊识别 13 个会议摘要。 候选中原始摘要为空 14 篇，逐篇证据见个人 monitor-audit 文件。",
+    "coverage_note": "已逐 DOI 核对 2024 年出版社在 Crossref 登记的 5,156 条 journal-article，与快照逐项相符；按卷统计见 doi_register_comparison。出版社独立逐期目录尚未完整核实。 已确认第 166 卷第 5 期增刊内的 13 个候选为会议摘要。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/gastroenterology/issues",
-      "https://www.sciencedirect.com/journal/gastroenterology/vol/166/issue/5/suppl/S"
+      "https://www.sciencedirect.com/journal/gastroenterology/vol/166/issue/5/suppl/S",
+      "https://api.crossref.org/journals/0016-5085/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article"
     ],
     "issues": [
-      "已定位出版社卷期目录，尚缺本年度逐期 DOI 集合，在线优先、正式卷年及增刊需单独核对。 已按 Gastroenterology 第 166 卷第 5 期增刊识别 13 个会议摘要。"
+      "官方卷期目录尚未独立核完，年度官网总数暂空。"
     ],
     "next_actions": [
-      "按正式卷期和发表类型导出 DOI，与快照作双向集合差，核实差项后再补录。"
+      "待可公开读取的出版社卷期目录齐备后，按卷比较文献类型、增刊与未标卷条目。"
     ],
     "source_title": "Gastroenterology",
     "snapshot_papers": 5156,
@@ -33,7 +34,22 @@
       "exclude": 13
     },
     "submitted_record_count": 16,
-    "rechecked_on": "2026-11-09"
+    "rechecked_on": "2026-11-09",
+    "doi_register_comparison": {
+      "source": "Crossref，出版方登记",
+      "issn": "0016-5085",
+      "year_filter": "from-pub-date:2024-01-01,until-pub-date:2024-12-31",
+      "distinct_registered": 5156,
+      "snapshot_dois": 5156,
+      "register_only": 0,
+      "snapshot_only": 0,
+      "registered_by_volume": {
+        "166": 4873,
+        "167": 277,
+        "未标卷": 6
+      },
+      "evidence_url": "https://api.crossref.org/journals/0016-5085/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article"
+    }
   },
   {
     "year": 2024,
