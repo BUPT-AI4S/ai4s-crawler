@@ -139,3 +139,29 @@ CIKM 的 +350 来自口径差异：全量采集 697 条覆盖该届全部分轨�
 剩余 7 条待定按逐篇读原文落定，不再依赖摘要源：6 篇 Elsevier 论文直接读 ScienceDirect 文章页的摘要、引言与方法段；Molecular Psychiatry 一篇正文在订阅墙内，改读出版方补充材料 DOCX（基因型质控、填充、荧光素酶实验）与补充表 PDF——表 11–13 明确预测模型是「临床变量 + PRS + 基因型 + 性别」的多项逻辑回归，据此排除。
 
 结果：3 条纳入（`10.1016/j.renene.2024.120892`、`10.1016/j.renene.2024.121211`、`10.1016/j.compag.2024.108683`）、4 条排除，待定清零。7 篇原摘要已回填到交付记录的 `abstract` 与 `verified_metadata.abstract`。逐条依据见 [`action-report.md`](action-report.md) 第 7、8 节。
+
+## 交付格式自查（2026-11-09，第四轮）
+
+按仓库 `skills/ai4s-paper-review/references/team-handoff.md` 与 `monitor-feedback.md` 逐条核对本轮交付，结果：
+
+| 检查项 | 结果 |
+| --- | --- |
+| 顶层为论文对象数组，保留原字段 | 通过（3,741 条；467 条保留原 `ai4s_hits`/`ai4s_tags`/`ai4s_tagging` 等初筛字段） |
+| `ai4s_review` 八个字段齐全 | 通过（`schema_version` 全为 2；`batch_id` 统一为 `2024-Roman100021-20261105T103119+0800`） |
+| `decision` 取值合法 | 通过（include 665 / exclude 3,076 / pending 0 / unreviewed 0） |
+| 纳入至少一个带证据标签，其他状态为空 | 通过（665 篇全部有标签，exclude 无标签；2,167 个标签均含 `axis`/`label`/`label_en`/`evidence_location`/`rationale`） |
+| 标签用共享词表规范名 | 通过（319 组去重标签全部命中仓库词表 777 条，维度与词表一致，未新增词条） |
+| `(venue, year, id)` 查重 | 通过（无重复键） |
+| `rationale`、`evidence_urls` 非空 | 通过（0 条为空） |
+| 刊会核验表 | 通过（`reviews/venue-review.csv` 本人 35 行均已填负责人、核验年份、分区、证据与结论） |
+
+本轮补齐的缺项：
+
+1. **阶段反馈**：此前只有自建的 `reviews/2024/Roman100021/coverage.json`，网站监控对该文件只识别 `official_total`、`coverage_rationale`、`evidence_urls` 等字段，**不读 `issues`/`next_actions`**，无法进入监控的问题与下一步。现按 `monitor-feedback.md` 新增 `reviews/2024/feedback/Roman100021.json`，逐来源 35 个对象，含 `year`、`source_code`、`snapshot_at`（与 `metadata/2024/snapshot.json` 的 `captured_at` 完全一致）、`official_total`、`official_scope`、`coverage_note`、`evidence_urls`、`issues`、`next_actions`。
+2. **批次标识**：交付内 `batch_id` 原为 `2024`，与同批其他人（如 `2024-wangwanting-rereview-20261107`）及本目录 `coverage.json` 记录的批次不一致，已统一为 `2024-Roman100021-20261105T103119+0800`。
+3. **口径说明**：`coverage.json` 新增一条 policy note，说明 `original_candidates` 是当前候选文件条数，而 `delivery_decisions` 是快照候选的判定合计，两者时点不同、不可相减。
+
+两点保留说明：
+
+- 7 条逐篇读原文的记录把核实到的原摘要写入了顶层 `abstract`（原值为空）。`team-handoff.md` 的「与采集格式对齐」要求只追加 `ai4s_review`，但「纳入论文的交付字段」要求 `abstract` 为来源可查的原摘要；本处按后者优先，同时在 `ai4s_review.verified_metadata.abstract` 保留同一份值，理由段已写明读取页面。
+- `reviews/2024/Roman100021/coverage.json` 是监控可识别的 coverage 适配格式，继续保留；标准反馈以 `reviews/2024/feedback/Roman100021.json` 为准。
