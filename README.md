@@ -1,18 +1,16 @@
 # AI4S 论文采集与精筛
 
-2024 年使用 [15,352 篇初筛候选](metadata/2024/ai4s.json)，快照时间为北京时间 2026-11-05 10:31。批次和来源计数见 [snapshot.json](metadata/2024/snapshot.json)。
+本仓库按**来源和年份**采集论文并开展 AI4S 精筛。各年份遵循相同流程；每次任务使用该年份最新确认的来源清单、负责人分工和采集快照，不把其他年份的分工或统计直接套用过来。[论文采集与审核监控](https://bupt-ai4s.github.io/review-monitor.html)展示已接入的年份及其进展。
 
-1. **先核验期刊和会议。** 按团队分工在 [刊会核验清单](reviews/venue-review.csv) 填写「是否建议纳入」，并记录依据。期刊核对中科院分区，CCF B 会议核对当届正式长文和评审证据。结论为「不建议纳入」的来源，直接跳过该来源的论文精筛和打标。「暂缓纳入」或「待核实」的来源，等结论明确后再处理。见 [刊会核验规则](skills/ai4s-paper-review/references/venue-review.md)。
-2. **只精筛「建议纳入」来源的论文。** 用来源编号（论文 JSON 的 `venue`）找到候选，使用 [AI4S 精筛技能](skills/ai4s-paper-review/SKILL.md) 逐篇判断、打标签并核对元数据。
-3. 对纳入论文核对 DOI、论文页、公开 PDF、代码和项目链接。按 [JSON 交付说明](skills/ai4s-paper-review/references/team-handoff.md) 每人交一个 JSON。2024 年的文件放到 [reviews/2024/](reviews/2024/)，命名为 `<GitHub用户名>.json`。后续年份按 `reviews/<年份>/` 存放。
-4. 论文精筛完成后，将本人论文 JSON 提交到仓库，并在提交说明中写明负责人、批次、来源编号和纳入/排除/待定/未审篇数。刊会核验可以先单独提交。
+1. **确认来源和分工。** 查看目标年份的 `reviews/source-assignments-<年份>.json` 或团队明确提供的最新分工表；来源已移出清单时不再分配。相应年份的清单或负责人尚未确认时，先核实再处理。刊会核验结论及依据记录在[刊会核验清单](reviews/venue-review.csv)，核验方式见[刊会核验规则](skills/ai4s-paper-review/references/venue-review.md)。
+2. **核对采集与候选。** 用来源编号和年份找到该来源全量书目、AI4S 初筛候选及采集快照，对照官网核对总数时注明相同的统计口径。摘要缺漏只统计 AI4S 候选；候选文件未取得时记为未知。
+3. **负责人各自精筛。** 每位同学使用自己的 Agent，按 [AI4S 论文审核 skill](skills/ai4s-paper-review/SKILL.md) 处理本人负责的来源。对纳入论文核对 DOI、论文页、公开 PDF、代码和项目链接。按[交付说明](skills/ai4s-paper-review/references/team-handoff.md)保留原字段并追加 `ai4s_review`。
+4. **提交并反馈。** 每人将论文数组提交至 `reviews/<年份>/<GitHub用户名>.json`；按[统一阶段反馈规范](skills/ai4s-paper-review/references/monitor-feedback.md)将各来源进展提交至 `reviews/<年份>/feedback/<GitHub用户名>.json`。拉取 `reviews/<年份>/actions/<负责人>.md` 查看个人行动清单。不存在的年份分工或清单需先确认，不视为已完成。
 
-## 核验完期刊或会议怎么提交
+## 刊会核验提交
 
-1. 打开 [刊会核验清单](reviews/venue-review.csv)，按来源编号（`source_code`）找到自己负责的行。在「是否建议纳入」填写「建议纳入」「暂缓纳入」「不建议纳入」或「待核实」。空白表示尚未填写。
-2. 同一行填负责人（`owner`）、核验年份（`review_year`）、相应分区或等级、证据链接（`evidence_urls`）和理由（`rationale`）。例如，建议剔除时填写「不建议纳入」，并写明具体问题和可核查的出处。
-3. 保存 CSV 后提交并推送到仓库，也可以在 GitHub 网页直接编辑提交。提交标题写「刊会核验 + GitHub 用户名」，提交说明列出来源编号。只改本人负责的行，核验完成即可提交。
+在[刊会核验清单](reviews/venue-review.csv)按 `source_code` 查找本人负责的来源，填写结论、负责人、核验年份、评级、证据链接和理由；空白表示未填写。只修改自己负责的行，结论及其适用范围以目标年份的最新确认情况为准。刊会核验可单独提交。
 
-[2024 原始书目](metadata/2024/papers.json) 使用 Git LFS，可用 `git lfs pull --include="metadata/2024/papers.json"` 取回。各年份的元数据都在 [metadata](metadata/) 下。2024 年的 436 本期刊另按来源编号存放在 `metadata/<来源编号>/2024/`，每刊提供全量书目 `papers.json` 和初筛候选 `ai4s.json`。分刊文件与年度汇总使用同一快照。运行说明见 [CRAWLER.md](CRAWLER.md)，来源配置见 [teacher_sources.json](teacher_sources.json)。
+## 文件与运行
 
-2026 年的 [全量书目](metadata/2026/papers.json) 共 367,930 篇，[初筛候选](metadata/2026/ai4s.json) 共 29,342 篇。年度文件已并入早期顶会，逐来源结果在 `metadata/<来源编号>/2026/`。各来源覆盖情况、摘要计数和词表版本见 [2026 快照](metadata/2026/snapshot.json)。下载通过 LFS 保存的 2026 文件可运行 `git lfs pull --include="metadata/2026/*,metadata/*/2026/*"`。精筛范围仍以团队的刊会核验结论为准。
+各年份的全量书目、初筛候选及采集快照分别位于 `metadata/<年份>/papers.json`、`metadata/<年份>/ai4s.json` 和 `metadata/<年份>/snapshot.json`。各来源按 `metadata/<来源编号>/<年份>/` 存放，实际覆盖以仓库文件和快照为准。部分文件使用 Git LFS，需要时针对目标年份执行 `git lfs pull --include="metadata/<年份>/*,metadata/*/<年份>/*"`。采集运行说明见 [CRAWLER.md](CRAWLER.md)。

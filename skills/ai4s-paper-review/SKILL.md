@@ -5,7 +5,7 @@ description: Review AI4S paper candidates and assigned venues, assign evidence-b
 
 # AI4S 初筛候选清洗
 
-以负责人提供的代码初筛结果（通常是 `ai4s.json`）为起点。经正式来源核实的漏采论文可按规则补入审核。2024 年按 [最新来源与负责人表](../../reviews/source-assignments-2024.json) 处理，不继续分配已删除来源。每位负责人使用自己的 Agent 独立处理本人来源并提交，不需要额外的多 Agent 调度系统。
+以负责人提供的代码初筛结果（通常是 `ai4s.json`）为起点。经正式来源核实的漏采论文可按规则补入审核。每次按目标年份最新确认的 `reviews/source-assignments-<年份>.json` 或团队明确提供的来源与负责人表处理，不继续分配已删除来源；对应年份分工未确认时，先核实，不沿用其他年份。每位负责人使用自己的 Agent 独立处理本人来源并提交，不需要额外的多 Agent 调度系统。
 
 1. **同步词表并锁定输入。** 每次精筛前从团队仓库拉取最新的 [中英文精筛标签词表](references/tag-vocabulary.json)，记录使用的 Git 提交。 按本次分工读取候选文件，保留来源代码、年份和论文标识。优先使用指定快照的来源文件。用 (venue, year, id) 识别同一条来源记录。相同记录只处理一次，字段冲突先交负责人确认。
 2. **核对爬取总量与官网。** 按来源和年份，对照出版社卷期或会议正式论文集，核对全量采集数和官网在同一口径下的论文数。如发现已爬到但未命中关键词的疑似漏筛，可核实后补入候选；不要求对非候选论文开展摘要缺漏统计或逐条补齐。经核实的漏采和漏筛论文均可补入候选。见 [精筛与标签规则](references/review-rules.md#官网总量与漏采核验)。
@@ -13,6 +13,6 @@ description: Review AI4S paper candidates and assigned venues, assign evidence-b
 4. **筛文献类型并逐篇精筛。** 只保留原创研究正文、正式会议研究论文和有实质学术内容的综述。评论、社论、广告等按文献类型排除。优先用摘要判断科学任务、AI 的实际作用及两者关系。证据足够就直接判定，只有会影响结论或标签的疑点才打开论文页，按需读方法、实验或结果。证据仍不足时记为「待定」并说明缺什么。具体口径见 [精筛与标签规则](references/review-rules.md)。
 5. **打标签。** 每篇「纳入」论文由模型按维度选择简洁、可复用的标签。拆开训练阶段、方法与科学对象，优先复用共享词表中的中英文规范名。确有新概念时设计中英文标签，补进共享词表并提交到团队仓库。可查阅随技能附带的 [AI4S 分类表](references/ai4s_taxonomy.json)。每项记录维度、名称和证据。其他状态的标签数组留空。
 6. **核对来源与论文元数据。** 按 [刊会核验规则](references/venue-review.md) 核对本人负责的期刊和会议。对纳入论文核对 DOI、论文页、公开 PDF 和其他交付字段，将已查证的补充值放入 ai4s_review.verified_metadata。
-7. **交付与阶段反馈。** 按 [JSON 交付说明](references/team-handoff.md) 输出论文对象数组，保留原字段并追加 ai4s_review。按[统一阶段反馈规范](references/monitor-feedback.md)逐来源提交可机器读取的进展，拉取 [个人行动清单](../../reviews/2024/actions/) 并逐项处理；未审保留 unreviewed。
+7. **交付与阶段反馈。** 按 [JSON 交付说明](references/team-handoff.md) 输出论文对象数组，保留原字段并追加 ai4s_review。按[统一阶段反馈规范](references/monitor-feedback.md)逐来源提交可机器读取的进展，拉取 `reviews/<年份>/actions/<负责人>.md` 中的个人行动清单并逐项处理；清单不存在时先核实该年份分工；未审保留 unreviewed。
 
 缺摘要监控仅统计 AI4S 候选，不要求统计全部采集论文的摘要缺漏。精筛和交付涵盖本批初筛候选及已核实的补录候选。保留原始数据。
