@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-09T13:25:15.874863+00:00",
-  "commit": "fa0543a371076ddee48880d65e72eeb61960d748",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/fa0543a371076ddee48880d65e72eeb61960d748/",
+  "generated_at": "2026-11-09T13:26:56.713635+00:00",
+  "commit": "b58f039826dc208c063189219ba90825a06b3dab",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/b58f039826dc208c063189219ba90825a06b3dab/",
   "years": [
     {
       "year": 2024,
@@ -183,20 +183,30 @@
           "missing_abstract": 12,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
+          "coverage_note": "已定位出版社卷期目录，尚缺本年度逐期 DOI 集合，在线优先、正式卷年及增刊需单独核对。 候选中原始摘要为空 12 篇，逐篇证据见个人 monitor-audit 文件。",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/journal/environmental-research/issues"
+          ],
+          "decisions": {
+            "include": 18,
+            "exclude": 3,
+            "pending": 0,
+            "unreviewed": 0
+          },
           "issues": [
+            "已定位出版社卷期目录，尚缺本年度逐期 DOI 集合，在线优先、正式卷年及增刊需单独核对。",
             "官网同口径总数尚未确认。",
-            "AI4S候选缺少摘要：12 篇。",
-            "尚未找到逐篇审核交付。"
+            "AI4S候选缺少摘要：12 篇。"
           ],
           "actions": [
+            "按正式卷期和发表类型导出 DOI，与快照作双向集合差，核实差项后再补录。",
             "核对官网全年目录，记录统计口径及证据。",
-            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
-            "提交逐篇审核结果或说明当前进度。"
+            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2024/AlearnerDL.json",
+            "reviews/2024/feedback/AlearnerDL.json"
+          ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
         {
@@ -835,20 +845,34 @@
           "missing_abstract": 4,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
+          "coverage_note": "已定位出版社卷期目录，尚缺本年度逐期 DOI 集合，在线优先、正式卷年及增刊需单独核对。 候选中原始摘要为空 4 篇，逐篇证据见个人 monitor-audit 文件。",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/journal/ecological-indicators/issues"
+          ],
+          "decisions": {
+            "include": 104,
+            "exclude": 2,
+            "pending": 2,
+            "unreviewed": 0
+          },
           "issues": [
+            "已定位出版社卷期目录，尚缺本年度逐期 DOI 集合，在线优先、正式卷年及增刊需单独核对。",
+            "原候选中有 2 篇未取得充分的摘要证据。",
             "官网同口径总数尚未确认。",
             "AI4S候选缺少摘要：4 篇。",
-            "尚未找到逐篇审核交付。"
+            "交付中存在待定或未审论文。"
           ],
           "actions": [
+            "按正式卷期和发表类型导出 DOI，与快照作双向集合差，核实差项后再补录。",
+            "按个人逐篇文件中的 pending 记录补查作者摘要，核对其中说明的研究任务和 AI 方法。",
             "核对官网全年目录，记录统计口径及证据。",
             "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
-            "提交逐篇审核结果或说明当前进度。"
+            "按交付文件逐篇补证并处理待定、未审记录。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2024/AlearnerDL.json",
+            "reviews/2024/feedback/AlearnerDL.json"
+          ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
         {
@@ -1470,8 +1494,11 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "coverage_note": "已对照出版方向 Crossref 登记的 DOI：66 条，快照 66 条，单向差数分别为 0 和 0。出版社逐期目录仍须核对。",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/issues",
+            "https://api.crossref.org/journals/0890-6955/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article&rows=1000&select=DOI%2Ctitle%2Cauthor%2Cabstract%2Cpublished%2Cpublished-online%2Cpublished-print%2Ctype%2CURL%2Cvolume%2Cissue%2Clink%2Cresource"
+          ],
           "decisions": {
             "include": 1,
             "exclude": 0,
@@ -1479,14 +1506,17 @@
             "unreviewed": 0
           },
           "issues": [
+            "已对照出版方向 Crossref 登记的 DOI：66 条，快照 66 条，单向差数分别为 0 和 0。出版社逐期目录仍须核对。",
             "官网同口径总数尚未确认。"
           ],
           "actions": [
+            "按正式卷期和发表类型导出 DOI，与快照作双向集合差，核实差项后再补录。",
             "核对官网全年目录，记录统计口径及证据。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -4210,8 +4240,11 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "coverage_note": "已对照出版方向 Crossref 登记的 DOI：42 条，快照 42 条，单向差数分别为 0 和 0。出版社逐期目录仍须核对。",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/journal/annual-reviews-in-control/issues",
+            "https://api.crossref.org/journals/1367-5788/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article&rows=1000&select=DOI%2Ctitle%2Cauthor%2Cabstract%2Cpublished%2Cpublished-online%2Cpublished-print%2Ctype%2CURL%2Cvolume%2Cissue%2Clink%2Cresource"
+          ],
           "decisions": {
             "include": 6,
             "exclude": 0,
@@ -4219,14 +4252,17 @@
             "unreviewed": 0
           },
           "issues": [
+            "已对照出版方向 Crossref 登记的 DOI：42 条，快照 42 条，单向差数分别为 0 和 0。出版社逐期目录仍须核对。",
             "官网同口径总数尚未确认。"
           ],
           "actions": [
+            "按正式卷期和发表类型导出 DOI，与快照作双向集合差，核实差项后再补录。",
             "核对官网全年目录，记录统计口径及证据。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -6325,20 +6361,34 @@
           "missing_abstract": 5,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
+          "coverage_note": "已定位出版社卷期目录，尚缺本年度逐期 DOI 集合，在线优先、正式卷年及增刊需单独核对。 候选中原始摘要为空 5 篇，逐篇证据见个人 monitor-audit 文件。",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/journal/pattern-recognition/issues"
+          ],
+          "decisions": {
+            "include": 4,
+            "exclude": 4,
+            "pending": 4,
+            "unreviewed": 0
+          },
           "issues": [
+            "已定位出版社卷期目录，尚缺本年度逐期 DOI 集合，在线优先、正式卷年及增刊需单独核对。",
+            "原候选中有 4 篇未取得充分的摘要证据。",
             "官网同口径总数尚未确认。",
             "AI4S候选缺少摘要：5 篇。",
-            "尚未找到逐篇审核交付。"
+            "交付中存在待定或未审论文。"
           ],
           "actions": [
+            "按正式卷期和发表类型导出 DOI，与快照作双向集合差，核实差项后再补录。",
+            "按个人逐篇文件中的 pending 记录补查作者摘要，核对其中说明的研究任务和 AI 方法。",
             "核对官网全年目录，记录统计口径及证据。",
             "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
-            "提交逐篇审核结果或说明当前进度。"
+            "按交付文件逐篇补证并处理待定、未审记录。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2024/AlearnerDL.json",
+            "reviews/2024/feedback/AlearnerDL.json"
+          ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
         {
@@ -6436,20 +6486,34 @@
           "missing_abstract": 37,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
+          "coverage_note": "已定位出版社卷期目录，尚缺本年度逐期 DOI 集合，在线优先、正式卷年及增刊需单独核对。 候选中原始摘要为空 37 篇，逐篇证据见个人 monitor-audit 文件。",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/journal/expert-systems-with-applications/issues"
+          ],
+          "decisions": {
+            "include": 73,
+            "exclude": 13,
+            "pending": 22,
+            "unreviewed": 0
+          },
           "issues": [
+            "已定位出版社卷期目录，尚缺本年度逐期 DOI 集合，在线优先、正式卷年及增刊需单独核对。",
+            "原候选中有 22 篇未取得充分的摘要证据。",
             "官网同口径总数尚未确认。",
             "AI4S候选缺少摘要：37 篇。",
-            "尚未找到逐篇审核交付。"
+            "交付中存在待定或未审论文。"
           ],
           "actions": [
+            "按正式卷期和发表类型导出 DOI，与快照作双向集合差，核实差项后再补录。",
+            "按个人逐篇文件中的 pending 记录补查作者摘要，核对其中说明的研究任务和 AI 方法。",
             "核对官网全年目录，记录统计口径及证据。",
             "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
-            "提交逐篇审核结果或说明当前进度。"
+            "按交付文件逐篇补证并处理待定、未审记录。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2024/AlearnerDL.json",
+            "reviews/2024/feedback/AlearnerDL.json"
+          ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
         {
@@ -6643,8 +6707,11 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "coverage_note": "已对照出版方向 Crossref 登记的 DOI：63 条，快照 63 条，单向差数分别为 0 和 0。出版社逐期目录仍须核对。",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/journal/computer-science-review/issues",
+            "https://api.crossref.org/journals/1574-0137/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article&rows=1000&select=DOI%2Ctitle%2Cauthor%2Cabstract%2Cpublished%2Cpublished-online%2Cpublished-print%2Ctype%2CURL%2Cvolume%2Cissue%2Clink%2Cresource"
+          ],
           "decisions": {
             "include": 8,
             "exclude": 0,
@@ -6652,14 +6719,17 @@
             "unreviewed": 0
           },
           "issues": [
+            "已对照出版方向 Crossref 登记的 DOI：63 条，快照 63 条，单向差数分别为 0 和 0。出版社逐期目录仍须核对。",
             "官网同口径总数尚未确认。"
           ],
           "actions": [
+            "按正式卷期和发表类型导出 DOI，与快照作双向集合差，核实差项后再补录。",
             "核对官网全年目录，记录统计口径及证据。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -7395,20 +7465,30 @@
           "missing_abstract": 1,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
+          "coverage_note": "已定位出版社卷期目录，尚缺本年度逐期 DOI 集合，在线优先、正式卷年及增刊需单独核对。 候选中原始摘要为空 1 篇，逐篇证据见个人 monitor-audit 文件。",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/journal/food-chemistry/issues"
+          ],
+          "decisions": {
+            "include": 42,
+            "exclude": 6,
+            "pending": 0,
+            "unreviewed": 0
+          },
           "issues": [
+            "已定位出版社卷期目录，尚缺本年度逐期 DOI 集合，在线优先、正式卷年及增刊需单独核对。",
             "官网同口径总数尚未确认。",
-            "AI4S候选缺少摘要：1 篇。",
-            "尚未找到逐篇审核交付。"
+            "AI4S候选缺少摘要：1 篇。"
           ],
           "actions": [
+            "按正式卷期和发表类型导出 DOI，与快照作双向集合差，核实差项后再补录。",
             "核对官网全年目录，记录统计口径及证据。",
-            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
-            "提交逐篇审核结果或说明当前进度。"
+            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2024/AlearnerDL.json",
+            "reviews/2024/feedback/AlearnerDL.json"
+          ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
         {
@@ -7863,25 +7943,29 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "coverage_note": "正式论文、海报、展示等分别出版，会议归档网页与快照的全分轨数仍需按 ACM DOI 对应。",
+          "evidence_urls": [
+            "https://uist.acm.org/2024/program/",
+            "https://uist.acm.org/2024/archive/"
+          ],
           "decisions": {
-            "include": 21,
-            "exclude": 20,
-            "pending": 2,
+            "include": 22,
+            "exclude": 21,
+            "pending": 0,
             "unreviewed": 0
           },
           "issues": [
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
+            "正式论文、海报、展示等分别出版，会议归档网页与快照的全分轨数仍需按 ACM DOI 对应。",
+            "官网同口径总数尚未确认。"
           ],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "按官网正式研究分轨导出 DOI 或稳定标识，对照当届快照，核对名称或版本不同的条目。",
+            "核对官网全年目录，记录统计口径及证据。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -7897,8 +7981,12 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "coverage_note": "官网主会研究分轨长文 15 篇、短文 7 篇，附属活动出版目录 163 条。快照按 DOI 为主会 23、附属卷 163；主会第 23 条的类型有待核实。",
+          "evidence_urls": [
+            "https://percom.org/2024/list-of-accepted-paper/",
+            "https://www.proceedings.com/content/074/074292webtoc.pdf",
+            "https://www.proceedings.com/content/074/074455webtoc.pdf"
+          ],
           "decisions": {
             "include": 6,
             "exclude": 27,
@@ -7906,16 +7994,21 @@
             "unreviewed": 0
           },
           "issues": [
+            "官网主会研究分轨长文 15 篇、短文 7 篇，附属活动出版目录 163 条。快照按 DOI 为主会 23、附属卷 163；主会第 23 条的类型有待核实。",
+            "原候选中有 1 篇未取得充分的摘要证据。",
             "官网同口径总数尚未确认。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
+            "按官网正式研究分轨导出 DOI 或稳定标识，对照当届快照，核对名称或版本不同的条目。",
+            "按个人逐篇文件中的 pending 记录补查作者摘要，核对其中说明的研究任务和 AI 方法。",
             "核对官网全年目录，记录统计口径及证据。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -7931,25 +8024,34 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "coverage_note": "已定位 AAAI 第 18 卷和 2024 年议程；研究论文与数据、海报、演示等分类尚未与快照逐条对照。",
+          "evidence_urls": [
+            "https://ojs.aaai.org/index.php/ICWSM/issue/view/605",
+            "https://aaai.org/wp-content/uploads/2024/05/ICWSM-24-Program-05.29.pdf"
+          ],
           "decisions": {
-            "include": 65,
-            "exclude": 7,
-            "pending": 9,
+            "include": 67,
+            "exclude": 8,
+            "pending": 6,
             "unreviewed": 0
           },
           "issues": [
+            "已定位 AAAI 第 18 卷和 2024 年议程；研究论文与数据、海报、演示等分类尚未与快照逐条对照。",
+            "原候选中有 6 篇未取得充分的摘要证据。",
+            "本次访问 AAAI 卷期页返回 Access Denied，全年总数暂留待核。",
             "官网同口径总数尚未确认。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
+            "按官网正式研究分轨导出 DOI 或稳定标识，对照当届快照，核对名称或版本不同的条目。",
+            "按个人逐篇文件中的 pending 记录补查作者摘要，核对其中说明的研究任务和 AI 方法。",
             "核对官网全年目录，记录统计口径及证据。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -8722,10 +8824,14 @@
           "snapshot_candidates": 21,
           "candidates": 21,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "official_total": 25,
+          "official_scope": "ECCB 2024 正式出版专辑的全部 DOI，包括序言 1 篇与研究论文 24 篇，与快照 25 条的条目口径一致。",
+          "coverage_note": "牛津出版的 Bioinformatics 第 40 卷 Supplement_2 逐篇列出 25 个 DOI，其中专题研究论文 24 篇、序言 1 篇（btae422）。25 个 DOI 与快照双向比对，差集均为空。",
+          "evidence_urls": [
+            "https://academic.oup.com/bioinformatics/issue/40/Supplement_2",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC11373319/",
+            "https://doi.org/10.1093/bioinformatics/btae422"
+          ],
           "decisions": {
             "include": 19,
             "exclude": 4,
@@ -8733,16 +8839,18 @@
             "unreviewed": 0
           },
           "issues": [
-            "官网同口径总数尚未确认。",
+            "原候选中有 1 篇未取得充分的摘要证据。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。",
+            "按个人逐篇文件中的 pending 记录补查作者摘要，核对其中说明的研究任务和 AI 方法。",
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -9377,19 +9485,20 @@
           "snapshot_candidates": 0,
           "candidates": 0,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
-          "issues": [
-            "官网同口径总数尚未确认。"
+          "official_total": 128,
+          "official_scope": "出版社 2024 卷期或年度正式目录；保留出版类型，日期和增刊须与快照口径一致。",
+          "coverage_note": "已按出版社年度目录的 DOI 集合逐篇对照。官网与快照均为 128 篇，未发现差项。",
+          "evidence_urls": [
+            "https://www.nature.com/nrcardio/articles?year=2024"
           ],
+          "decisions": null,
+          "issues": [],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -10305,27 +10414,26 @@
           "snapshot_candidates": 2,
           "candidates": 2,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "official_total": 258,
+          "official_scope": "出版社 2024 卷期或年度正式目录；保留出版类型，日期和增刊须与快照口径一致。",
+          "coverage_note": "已按出版社年度目录的 DOI 集合逐篇对照。官网与快照均为 258 篇，未发现差项。",
+          "evidence_urls": [
+            "https://www.nature.com/npjvaccines/articles?year=2024"
+          ],
           "decisions": {
             "include": 5,
-            "exclude": 0,
-            "pending": 1,
+            "exclude": 1,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -11270,8 +11378,11 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "coverage_note": "已对照出版方向 Crossref 登记的 DOI：193 条，快照 193 条，单向差数分别为 0 和 0。出版社逐期目录仍须核对。",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/journal/cell-metabolism/issues",
+            "https://api.crossref.org/journals/1550-4131/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article&rows=1000&select=DOI%2Ctitle%2Cauthor%2Cabstract%2Cpublished%2Cpublished-online%2Cpublished-print%2Ctype%2CURL%2Cvolume%2Cissue%2Clink%2Cresource"
+          ],
           "decisions": {
             "include": 3,
             "exclude": 0,
@@ -11279,14 +11390,17 @@
             "unreviewed": 0
           },
           "issues": [
+            "已对照出版方向 Crossref 登记的 DOI：193 条，快照 193 条，单向差数分别为 0 和 0。出版社逐期目录仍须核对。",
             "官网同口径总数尚未确认。"
           ],
           "actions": [
+            "按正式卷期和发表类型导出 DOI，与快照作双向集合差，核实差项后再补录。",
             "核对官网全年目录，记录统计口径及证据。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -14225,20 +14339,35 @@
           "missing_abstract": 14,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
+          "coverage_note": "已定位出版社卷期目录，尚缺本年度逐期 DOI 集合，在线优先、正式卷年及增刊需单独核对。 已按 Gastroenterology 第 166 卷第 5 期增刊识别 13 个会议摘要。 候选中原始摘要为空 14 篇，逐篇证据见个人 monitor-audit 文件。",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/journal/gastroenterology/issues",
+            "https://www.sciencedirect.com/journal/gastroenterology/vol/166/issue/5/suppl/S"
+          ],
+          "decisions": {
+            "include": 2,
+            "exclude": 13,
+            "pending": 1,
+            "unreviewed": 0
+          },
           "issues": [
+            "已定位出版社卷期目录，尚缺本年度逐期 DOI 集合，在线优先、正式卷年及增刊需单独核对。 已按 Gastroenterology 第 166 卷第 5 期增刊识别 13 个会议摘要。",
+            "原候选中有 1 篇未取得充分的摘要证据。",
             "官网同口径总数尚未确认。",
             "AI4S候选缺少摘要：14 篇。",
-            "尚未找到逐篇审核交付。"
+            "交付中存在待定或未审论文。"
           ],
           "actions": [
+            "按正式卷期和发表类型导出 DOI，与快照作双向集合差，核实差项后再补录。",
+            "按个人逐篇文件中的 pending 记录补查作者摘要，核对其中说明的研究任务和 AI 方法。",
             "核对官网全年目录，记录统计口径及证据。",
             "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
-            "提交逐篇审核结果或说明当前进度。"
+            "按交付文件逐篇补证并处理待定、未审记录。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2024/AlearnerDL.json",
+            "reviews/2024/feedback/AlearnerDL.json"
+          ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
         {
@@ -15624,27 +15753,31 @@
           "missing_abstract": 33,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "coverage_note": "已对照出版方向 Crossref 登记的 DOI：733 条，快照 733 条，单向差数分别为 0 和 0。出版社逐期目录仍须核对。 候选中原始摘要为空 33 篇，逐篇证据见个人 monitor-audit 文件。",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/journal/journal-of-computational-physics/issues",
+            "https://api.crossref.org/journals/0021-9991/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article&rows=1000&select=DOI%2Ctitle%2Cauthor%2Cabstract%2Cpublished%2Cpublished-online%2Cpublished-print%2Ctype%2CURL%2Cvolume%2Cissue%2Clink%2Cresource"
+          ],
           "decisions": {
             "include": 122,
-            "exclude": 2,
-            "pending": 1,
+            "exclude": 3,
+            "pending": 0,
             "unreviewed": 0
           },
           "issues": [
+            "已对照出版方向 Crossref 登记的 DOI：733 条，快照 733 条，单向差数分别为 0 和 0。出版社逐期目录仍须核对。",
             "官网同口径总数尚未确认。",
-            "AI4S候选缺少摘要：33 篇。",
-            "交付中存在待定或未审论文。"
+            "AI4S候选缺少摘要：33 篇。"
           ],
           "actions": [
+            "按正式卷期和发表类型导出 DOI，与快照作双向集合差，核实差项后再补录。",
             "核对官网全年目录，记录统计口径及证据。",
-            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -16015,27 +16148,32 @@
           "snapshot_candidates": 123,
           "candidates": 123,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "official_total": 1760,
+          "official_scope": "2024 年当届正式论文集与本来源快照同口径的论文；分轨录用量另列。",
+          "coverage_note": "IEEE RAS 会议纪要报告正会录用论文 1,760 篇；快照的 1,760 条均带 ICRA 主卷 DOI。已核对总量，未完成全卷题名逐篇比对。",
+          "evidence_urls": [
+            "https://www.ieee-ras.org/images/AdCom_Meeting_Minutes/2024/APPROVED_AdCom_Meeting_Minutes__ICRA_2024_05172024pdf_1.pdf"
+          ],
           "decisions": {
-            "include": 188,
-            "exclude": 52,
-            "pending": 16,
+            "include": 191,
+            "exclude": 59,
+            "pending": 6,
             "unreviewed": 0
           },
           "issues": [
-            "官网同口径总数尚未确认。",
+            "原候选中有 6 篇未取得充分的摘要证据。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。",
+            "按年度会议论文集 DOI 或稳定论文标识完成全量逐篇成员比对。",
+            "按个人逐篇文件中的 pending 记录补查作者摘要，核对其中说明的研究任务和 AI 方法。",
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -16086,27 +16224,32 @@
           "snapshot_candidates": 84,
           "candidates": 84,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "official_total": 846,
+          "official_scope": "2024 年当届正式论文集与本来源快照同口径的论文；分轨录用量另列。",
+          "coverage_note": "CVF 目录 846 篇，快照 845 篇；差项 CycleCL 已在此前个人交付中按正式记录补入，本次保留原记录。",
+          "evidence_urls": [
+            "https://openaccess.thecvf.com/WACV2024?day=all",
+            "https://openaccess.thecvf.com/content/WACV2024/html/Destro_CycleCL_Self-Supervised_Learning_for_Periodic_Videos_WACV_2024_paper.html"
+          ],
           "decisions": {
-            "include": 246,
+            "include": 247,
             "exclude": 23,
-            "pending": 2,
+            "pending": 1,
             "unreviewed": 0
           },
           "issues": [
-            "官网同口径总数尚未确认。",
+            "原候选中有 1 篇未取得充分的摘要证据。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。",
+            "按个人逐篇文件中的 pending 记录补查作者摘要，核对其中说明的研究任务和 AI 方法。",
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -16120,25 +16263,26 @@
           "snapshot_candidates": 6,
           "candidates": 6,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "official_total": 82,
+          "official_scope": "2024 年当届正式论文集与本来源快照同口径的论文；分轨录用量另列。",
+          "coverage_note": "已按正式论文目录的题名逐篇对照。官网与快照均为 82 篇，未发现差项。",
+          "evidence_urls": [
+            "https://ojs.aaai.org/index.php/ICAPS/issue/view/606"
+          ],
           "decisions": {
             "include": 15,
             "exclude": 5,
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -16187,15 +16331,20 @@
           "snapshot_candidates": 0,
           "candidates": 0,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "official_total": 0,
+          "official_scope": "该会议 2024 年的正式届次。",
+          "coverage_note": "ICCV 官方历届列表中相邻届次为 2023 与 2025，2024 年未举办。",
+          "evidence_urls": [
+            "https://tc.computer.org/tcpami/iccv/"
+          ],
           "decisions": null,
           "issues": [],
-          "actions": [],
+          "actions": [
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
+          ],
           "files": [
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -16283,25 +16432,26 @@
           "snapshot_candidates": 3,
           "candidates": 3,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "official_total": 91,
+          "official_scope": "2024 年当届正式论文集与本来源快照同口径的论文；分轨录用量另列。",
+          "coverage_note": "官网 92 个条目包含 1 篇前言，剔除后为 91 篇正式研究论文，已按题名核对。",
+          "evidence_urls": [
+            "https://proceedings.kr.org/2024/"
+          ],
           "decisions": {
             "include": 0,
             "exclude": 3,
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -16352,8 +16502,10 @@
           "missing_abstract": 7,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "coverage_note": "官网八个分轨合计 460 条，与快照匹配 460 条；另 12 条来自其他届次的工作坊。正会 Full Papers 有 230 篇，各分轨单列。 候选中原始摘要为空 7 篇，逐篇证据见个人 monitor-audit 文件。",
+          "evidence_urls": [
+            "https://www.ifaamas.org/Proceedings/aamas2024/forms/contents.htm"
+          ],
           "decisions": {
             "include": 54,
             "exclude": 7,
@@ -16361,16 +16513,19 @@
             "unreviewed": 0
           },
           "issues": [
+            "官网八个分轨合计 460 条，与快照匹配 460 条；另 12 条来自其他届次的工作坊。正会 Full Papers 有 230 篇，各分轨单列。",
             "官网同口径总数尚未确认。",
             "AI4S候选缺少摘要：7 篇。"
           ],
           "actions": [
+            "按官网正式研究分轨导出 DOI 或稳定标识，对照当届快照，核对名称或版本不同的条目。",
             "核对官网全年目录，记录统计口径及证据。",
             "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -16384,27 +16539,29 @@
           "snapshot_candidates": 33,
           "candidates": 33,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "official_total": 858,
+          "official_scope": "2024 年当届正式论文集与本来源快照同口径的论文；分轨录用量另列。",
+          "coverage_note": "ACL Anthology 长文 487、短文 75、Findings 296；三个卷的论文 ID 均已逐卷比对，卷首语另计。",
+          "evidence_urls": [
+            "https://aclanthology.org/events/naacl-2024/",
+            "https://aclanthology.org/volumes/2024.naacl-long/",
+            "https://aclanthology.org/volumes/2024.naacl-short/",
+            "https://aclanthology.org/volumes/2024.findings-naacl/"
+          ],
           "decisions": {
-            "include": 82,
+            "include": 83,
             "exclude": 21,
-            "pending": 1,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -16418,25 +16575,30 @@
           "snapshot_candidates": 14,
           "candidates": 14,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "official_total": 101,
+          "official_scope": "2024 年当届正式论文集与本来源快照同口径的论文；分轨录用量另列。",
+          "coverage_note": "Springer 四卷共收录 101 篇。快照 DOI 分卷分别为 25、24、25、27；飞页及前后记不计入研究章节。",
+          "evidence_urls": [
+            "https://link.springer.com/book/10.1007/978-3-031-70055-2",
+            "https://link.springer.com/book/10.1007/978-3-031-70068-2",
+            "https://link.springer.com/book/10.1007/978-3-031-70071-2",
+            "https://link.springer.com/book/10.1007/978-3-031-70085-9"
+          ],
           "decisions": {
             "include": 13,
             "exclude": 10,
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。"
+            "按年度会议论文集 DOI 或稳定论文标识完成全量逐篇成员比对。",
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -16608,8 +16770,10 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "coverage_note": "官网所列分轨为12 个正式论文会场 60 篇；快照 116 条，覆盖的分轨和正式发表范围仍需逐项对应。",
+          "evidence_urls": [
+            "https://sensys.acm.org/2024/program/"
+          ],
           "decisions": {
             "include": 22,
             "exclude": 20,
@@ -16617,16 +16781,21 @@
             "unreviewed": 0
           },
           "issues": [
+            "官网所列分轨为12 个正式论文会场 60 篇；快照 116 条，覆盖的分轨和正式发表范围仍需逐项对应。",
+            "原候选中有 1 篇未取得充分的摘要证据。",
             "官网同口径总数尚未确认。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
+            "按官网正式研究分轨导出 DOI 或稳定标识，对照当届快照，核对名称或版本不同的条目。",
+            "按个人逐篇文件中的 pending 记录补查作者摘要，核对其中说明的研究任务和 AI 方法。",
             "核对官网全年目录，记录统计口径及证据。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -16640,25 +16809,29 @@
           "snapshot_candidates": 52,
           "candidates": 52,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "official_total": 449,
+          "official_scope": "2024 主会与当届工作坊两个正式出版卷。",
+          "coverage_note": "正式目录主会 256 条、工作坊 193 条，两个 DOI 前缀的快照分别有 256 与 193 条。 已核对卷别和总量，尚未逐篇核对全部成员。",
+          "evidence_urls": [
+            "https://www.proceedings.com/content/075/075735webtoc.pdf",
+            "https://www.proceedings.com/content/075/075763webtoc.pdf",
+            "https://infocom2024.ieee-infocom.org/program/accepted-paper-list-main-conference",
+            "https://www.ee.columbia.edu/news/ee-prof-javad-ghaderi-and-phd-student-christos-tsanikidis-win-best-paper-award-ieee-infocom"
+          ],
           "decisions": {
             "include": 55,
             "exclude": 40,
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -16672,25 +16845,27 @@
           "snapshot_candidates": 6,
           "candidates": 6,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "official_total": 85,
+          "official_scope": "ICNP 正式卷内主会、研讨会及海报演示的全部有页码条目。",
+          "coverage_note": "完整目录 85 条，快照 85 个 DOI 均属 ICNP61940；主会录用 48 篇是其中一个分轨。 已核对卷别和总量，尚未逐篇核对全部成员。",
+          "evidence_urls": [
+            "https://www.proceedings.com/content/078/078708webtoc.pdf",
+            "https://icnp24.cs.ucr.edu/acceptedpapers.html"
+          ],
           "decisions": {
             "include": 10,
             "exclude": 6,
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -16704,27 +16879,27 @@
           "snapshot_candidates": 3,
           "candidates": 3,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "official_total": 42,
+          "official_scope": "IEEE 正式卷的全部有页码论文及海报、演示。",
+          "coverage_note": "逐项核对正式目录的 42 段论文页码；快照中 42 个 DOI 均属 SECON64284。 已核对卷别和总量，尚未逐篇核对全部成员。",
+          "evidence_urls": [
+            "https://www.proceedings.com/content/079/079494webtoc.pdf",
+            "https://secon2024.ieee-secon.org/program/"
+          ],
           "decisions": {
             "include": 13,
-            "exclude": 1,
-            "pending": 2,
+            "exclude": 3,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -16738,27 +16913,37 @@
           "snapshot_candidates": 9,
           "candidates": 9,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "official_total": 128,
+          "official_scope": "当届 IWQoS 正式论文集全部有正文页码的条目，包含短篇。",
+          "coverage_note": "正式目录 128 条，快照 127 个本卷 DOI。会议程序号 1570999683 的 FCC 列在数据中心网络分会场，目录第 943 页起，DOI 10.1109/IWQoS61813.2024.10682920 在快照中缺失。已补录，因未取得可核验摘要，相关性待定。",
+          "evidence_urls": [
+            "https://www.proceedings.com/content/076/076388webtoc.pdf",
+            "https://iwqos2024.ieee-iwqos.org/program/",
+            "https://doi.org/10.1109/iwqos61813.2024.10682920",
+            "https://iwqos2024.ieee-iwqos.org/sites/iwqos2024.ieee-iwqos.org/files/IWQoS2024-Full-Program.pdf",
+            "https://sonar.eurekamag.com/research/096/136/096136102.php"
+          ],
           "decisions": {
             "include": 24,
             "exclude": 5,
-            "pending": 1,
+            "pending": 2,
             "unreviewed": 0
           },
           "issues": [
-            "官网同口径总数尚未确认。",
+            "正式目录 128 条，快照 127 个本卷 DOI。会议程序号 1570999683 的 FCC 列在数据中心网络分会场，目录第 943 页起，DOI 10.1109/IWQoS61813.2024.10682920 在快照中缺失。已补录，因未取得可核验摘要，相关性待定。",
+            "原候选中有 1 篇未取得充分的摘要证据。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。",
+            "将已核实的 FCC 记录同步至下一版采集快照。",
+            "按个人逐篇文件中的 pending 记录补查作者摘要，核对其中说明的研究任务和 AI 方法。",
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -16774,8 +16959,10 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "coverage_note": "官网所列分轨为正式录用列表 37 篇；快照 56 条，覆盖的分轨和正式发表范围仍需逐项对应。",
+          "evidence_urls": [
+            "https://www.sigmobile.org/mobihoc/2024/accepted-papers.html"
+          ],
           "decisions": {
             "include": 8,
             "exclude": 8,
@@ -16783,16 +16970,21 @@
             "unreviewed": 0
           },
           "issues": [
+            "官网所列分轨为正式录用列表 37 篇；快照 56 条，覆盖的分轨和正式发表范围仍需逐项对应。",
+            "原候选中有 1 篇未取得充分的摘要证据。",
             "官网同口径总数尚未确认。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
+            "按官网正式研究分轨导出 DOI 或稳定标识，对照当届快照，核对名称或版本不同的条目。",
+            "按个人逐篇文件中的 pending 记录补查作者摘要，核对其中说明的研究任务和 AI 方法。",
             "核对官网全年目录，记录统计口径及证据。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -16806,10 +16998,12 @@
           "snapshot_candidates": 6,
           "candidates": 6,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "official_total": 112,
+          "official_scope": "2024 年当届正式论文集与本来源快照同口径的论文；分轨录用量另列。",
+          "coverage_note": "已按正式论文目录的题名逐篇对照。官网与快照均为 112 篇，未发现差项。",
+          "evidence_urls": [
+            "https://www.usenix.org/conference/nsdi24/technical-sessions"
+          ],
           "decisions": {
             "include": 12,
             "exclude": 5,
@@ -16817,16 +17011,18 @@
             "unreviewed": 0
           },
           "issues": [
-            "官网同口径总数尚未确认。",
+            "原候选中有 1 篇未取得充分的摘要证据。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。",
+            "按个人逐篇文件中的 pending 记录补查作者摘要，核对其中说明的研究任务和 AI 方法。",
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -16840,10 +17036,17 @@
           "snapshot_candidates": 8,
           "candidates": 8,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "official_total": 115,
+          "official_scope": "2024 主会与工作坊两个正式卷，统计有正文页码的论文。",
+          "coverage_note": "两个出版卷 83 与 32 篇，快照 DOI 分别 83 与 31。WAITI 工作坊会议程序及作者页面均证实第 178 页的 Automating AWS Security Controls，属工作坊，未计入主会研究论文。",
+          "evidence_urls": [
+            "https://www.proceedings.com/content/079/079256webtoc.pdf",
+            "https://www.proceedings.com/content/079/079290webtoc.pdf",
+            "https://www.acsac.org/2024/program/final/schedule.php",
+            "https://www.acsac.org/2024/files/web/acsac24-opening-programchairs.pdf",
+            "https://www.acsac.org/2024/workshops/iot-scti/WAITI2024-Program.pdf",
+            "https://www.amazon.science/publications/automating-aws-security-controls-leveraging-generative-ai-for-gherkin-script-generation"
+          ],
           "decisions": {
             "include": 20,
             "exclude": 8,
@@ -16851,14 +17054,16 @@
             "unreviewed": 0
           },
           "issues": [
-            "官网同口径总数尚未确认。"
+            "两个出版卷 83 与 32 篇，快照 DOI 分别 83 与 31。WAITI 工作坊会议程序及作者页面均证实第 178 页的 Automating AWS Security Controls，属工作坊，未计入主会研究论文。"
           ],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。"
+            "用 WAITI 程序和工作坊出版目录核对 AWS Security Controls 的独立记录，归入对应工作坊。",
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -16872,25 +17077,27 @@
           "snapshot_candidates": 2,
           "candidates": 2,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "official_total": 33,
+          "official_scope": "SRDS 正式论文集全部有正文页码的条目，含卷内分轨。",
+          "coverage_note": "正式目录 33 篇，不计作者索引及前置页。快照 33 个 DOI 均属 SRDS64841。 已核对卷别和总量，尚未逐篇核对全部成员。",
+          "evidence_urls": [
+            "https://www.proceedings.com/content/078/078235webtoc.pdf",
+            "https://srds-conference.org/2024/conference-program.html"
+          ],
           "decisions": {
             "include": 3,
             "exclude": 2,
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -16906,8 +17113,12 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "coverage_note": "官网三轮名单逐篇计数合计 261 篇，与 SP54263 主卷的 261 个快照 DOI 数量相符。另有 36 个 SPW63631 工作坊 DOI；工作坊的论文及非正文出版物仍须与全卷比对。",
+          "evidence_urls": [
+            "https://www.ieee-security.org/TC/SP2024/accepted-papers.html",
+            "https://www.proceedings.com/content/076/076013webtoc.pdf",
+            "https://www.proceedings.com/content/075/075224webtoc.pdf"
+          ],
           "decisions": {
             "include": 36,
             "exclude": 12,
@@ -16915,14 +17126,17 @@
             "unreviewed": 0
           },
           "issues": [
+            "官网三轮名单逐篇计数合计 261 篇，与 SP54263 主卷的 261 个快照 DOI 数量相符。另有 36 个 SPW63631 工作坊 DOI；工作坊的论文及非正文出版物仍须与全卷比对。",
             "官网同口径总数尚未确认。"
           ],
           "actions": [
+            "按官网正式研究分轨导出 DOI 或稳定标识，对照当届快照，核对名称或版本不同的条目。",
             "核对官网全年目录，记录统计口径及证据。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -16938,8 +17152,14 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "coverage_note": "主卷、补充卷与工作坊卷具正文页码的论文分别 42、36、16 条；快照三个 DOI 前缀分别有 43、36、19 条。仍须核对附加 4 条的文献类型。",
+          "evidence_urls": [
+            "https://dsn2024uq.github.io/program.html",
+            "https://dsn2024.hotcrp.com/",
+            "https://www.proceedings.com/content/076/076014webtoc.pdf",
+            "https://www.proceedings.com/content/076/076081webtoc.pdf",
+            "https://www.proceedings.com/content/076/076019webtoc.pdf"
+          ],
           "decisions": {
             "include": 9,
             "exclude": 4,
@@ -16947,14 +17167,17 @@
             "unreviewed": 0
           },
           "issues": [
+            "主卷、补充卷与工作坊卷具正文页码的论文分别 42、36、16 条；快照三个 DOI 前缀分别有 43、36、19 条。仍须核对附加 4 条的文献类型。",
             "官网同口径总数尚未确认。"
           ],
           "actions": [
+            "按官网正式研究分轨导出 DOI 或稳定标识，对照当届快照，核对名称或版本不同的条目。",
             "核对官网全年目录，记录统计口径及证据。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -16968,10 +17191,12 @@
           "snapshot_candidates": 1,
           "candidates": 1,
           "missing_abstract": 1,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "official_total": 140,
+          "official_scope": "2024 年当届正式论文集与本来源快照同口径的论文；分轨录用量另列。",
+          "coverage_note": "官网 Accepted Papers 的 140 个论文标题与快照数量相等；尚未逐条映射全体 DBLP ID。 候选中原始摘要为空 1 篇，逐篇证据见个人 monitor-audit 文件。",
+          "evidence_urls": [
+            "https://www.ndss-symposium.org/ndss2024/accepted-papers/"
+          ],
           "decisions": {
             "include": 28,
             "exclude": 1,
@@ -16979,16 +17204,17 @@
             "unreviewed": 0
           },
           "issues": [
-            "官网同口径总数尚未确认。",
             "AI4S候选缺少摘要：1 篇。"
           ],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。",
+            "按年度会议论文集 DOI 或稳定论文标识完成全量逐篇成员比对。",
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -17004,8 +17230,10 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "coverage_note": "官方议程的 417 篇研究论文均已与快照匹配，另有 1 场主题报告。快照另外有来自 SOUPS、WOOT 等的条目，及当前官网目录中未列出的 Prefetch for Fun and Profit；该条须核对版本或撤下情况。",
+          "evidence_urls": [
+            "https://www.usenix.org/conference/usenixsecurity24/technical-sessions"
+          ],
           "decisions": {
             "include": 38,
             "exclude": 14,
@@ -17013,14 +17241,17 @@
             "unreviewed": 0
           },
           "issues": [
+            "官方议程的 417 篇研究论文均已与快照匹配，另有 1 场主题报告。快照另外有来自 SOUPS、WOOT 等的条目，及当前官网目录中未列出的 Prefetch for Fun and Profit；该条须核对版本或撤下情况。",
             "官网同口径总数尚未确认。"
           ],
           "actions": [
+            "按官网正式研究分轨导出 DOI 或稳定标识，对照当届快照，核对名称或版本不同的条目。",
             "核对官网全年目录，记录统计口径及证据。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -17034,25 +17265,27 @@
           "snapshot_candidates": 7,
           "candidates": 7,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "official_total": 89,
+          "official_scope": "已正式刊入 PACMPL 第 8 卷 PLDI 专刊 Papers 栏目的研究论文。",
+          "coverage_note": "SIGPLAN OpenTOC 正式出版卷 PACMPL 8 (PLDI) 的 89 篇均可解析出独立的 ACM DOI，与快照 89 个 DOI 双向匹配。官网录用日程列 90 个题名，卷期出版口径采用已核对的 89 篇。",
+          "evidence_urls": [
+            "https://www.sigplan.org/OpenTOC/pldi24.html",
+            "https://pldi24.sigplan.org/track/pldi-2024-papers"
+          ],
           "decisions": {
             "include": 1,
             "exclude": 7,
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -17110,25 +17343,28 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "coverage_note": "官网 Technical Track 的 26 个题名均能在快照中找到。快照另外包含附属分轨，不能用 182 减去 26 推断漏采。",
+          "evidence_urls": [
+            "https://conf.researchr.org/track/models-2024/models-2024-technical-track"
+          ],
           "decisions": {
             "include": 1,
-            "exclude": 7,
-            "pending": 4,
+            "exclude": 11,
+            "pending": 0,
             "unreviewed": 0
           },
           "issues": [
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
+            "官网 Technical Track 的 26 个题名均能在快照中找到。快照另外包含附属分轨，不能用 182 减去 26 推断漏采。",
+            "官网同口径总数尚未确认。"
           ],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "按官网正式研究分轨导出 DOI 或稳定标识，对照当届快照，核对名称或版本不同的条目。",
+            "核对官网全年目录，记录统计口径及证据。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -17142,25 +17378,27 @@
           "snapshot_candidates": 1,
           "candidates": 1,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "official_total": 46,
+          "official_scope": "当届 ICPC 正式论文集全部有正文页码的条目。",
+          "coverage_note": "正式论文集 46 篇，不计作者索引及前置页。快照的 46 个 ACM DOI 都属于 3643916 正式卷。 已核对卷别和总量，尚未逐篇核对全部成员。",
+          "evidence_urls": [
+            "https://www.proceedings.com/content/075/075081webtoc.pdf",
+            "https://conf.researchr.org/track/icpc-2024/icpc-2024-research"
+          ],
           "decisions": {
             "include": 3,
             "exclude": 1,
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -17176,25 +17414,34 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "coverage_note": "快照 33 条均为 SANER-C 附属卷。官网主会 Research Papers 分轨 61 篇已逐篇与出版记录对应，61 篇均补入个人审核（13 篇纳入、29 篇排除、19 篇待定）。60 篇有 DOI，1 篇以会议官网页面标识。年度主卷与附属卷合并后的总数尚待核对。 主卷正式出版目录有 105 条具正文页码的条目，附属卷另有 31 条及 2 篇 Editorial。主卷研究分轨以外的 44 条须继续按分轨与类型对照。",
+          "evidence_urls": [
+            "https://conf.researchr.org/track/saner-2024/saner-2024-papers",
+            "https://dblp.org/db/conf/wcre/saner2024.html",
+            "https://www.proceedings.com/content/075/075369webtoc.pdf",
+            "https://www.proceedings.com/content/075/075777webtoc.pdf"
+          ],
           "decisions": {
-            "include": 0,
-            "exclude": 6,
-            "pending": 1,
+            "include": 13,
+            "exclude": 36,
+            "pending": 19,
             "unreviewed": 0
           },
           "issues": [
+            "快照 33 条均为 SANER-C 附属卷。官网主会 Research Papers 分轨 61 篇已逐篇与出版记录对应，61 篇均补入个人审核（13 篇纳入、29 篇排除、19 篇待定）。60 篇有 DOI，1 篇以会议官网页面标识。年度主卷与附属卷合并后的总数尚待核对。 主卷正式出版目录有 105 条具正文页码的条目，附属卷另有 31 条及 2 篇 Editorial。主卷研究分轨以外的 44 条须继续按分轨与类型对照。",
             "官网同口径总数尚未确认。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
+            "按个人核验清单将 61 篇并入采集快照，按稳定标识去重；核对主卷其他分轨、待定论文方法及未确认的 DOI。",
+            "按个人逐篇文件中的 pending 记录补查作者摘要，核对其中说明的研究任务和 AI 方法。",
             "核对官网全年目录，记录统计口径及证据。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -17208,25 +17455,28 @@
           "snapshot_candidates": 10,
           "candidates": 10,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "official_total": 129,
+          "official_scope": "2024 正式主卷和 Workshops 卷，统计带起始页的论文条目。",
+          "coverage_note": "主卷 53 条、工作坊卷 76 条，均与两组快照 DOI 数量相符；工作坊的两个带数字的会场标题与作者索引均未计为论文。 已核对卷别和总量，尚未逐篇核对全部成员。",
+          "evidence_urls": [
+            "https://www.proceedings.com/content/077/077639webtoc.pdf",
+            "https://www.proceedings.com/content/077/077662webtoc.pdf",
+            "https://issre.github.io/2024/program_research.html"
+          ],
           "decisions": {
             "include": 1,
             "exclude": 9,
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -17242,8 +17492,10 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "coverage_note": "官网所列分轨为会议官方研究分轨 Accepted Papers 清单 155 篇；快照 298 条，覆盖的分轨和正式发表范围仍需逐项对应。",
+          "evidence_urls": [
+            "https://conf.researchr.org/track/ase-2024/ase-2024-research"
+          ],
           "decisions": {
             "include": 0,
             "exclude": 5,
@@ -17251,14 +17503,17 @@
             "unreviewed": 0
           },
           "issues": [
+            "官网所列分轨为会议官方研究分轨 Accepted Papers 清单 155 篇；快照 298 条，覆盖的分轨和正式发表范围仍需逐项对应。",
             "官网同口径总数尚未确认。"
           ],
           "actions": [
+            "按官网正式研究分轨导出 DOI 或稳定标识，对照当届快照，核对名称或版本不同的条目。",
             "核对官网全年目录，记录统计口径及证据。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -17307,25 +17562,29 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "coverage_note": "官网研究分轨与综合会议日程分别编排，快照也含 Posters / Companion。已利用官方分轨核验个人候选；尚缺全卷 DOI 对照。",
+          "evidence_urls": [
+            "https://conf.researchr.org/track/icse-2024/icse-2024-research-track",
+            "https://conf.researchr.org/program/icse-2024/program-icse-2024/"
+          ],
           "decisions": {
-            "include": 0,
-            "exclude": 12,
-            "pending": 6,
+            "include": 2,
+            "exclude": 16,
+            "pending": 0,
             "unreviewed": 0
           },
           "issues": [
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
+            "官网研究分轨与综合会议日程分别编排，快照也含 Posters / Companion。已利用官方分轨核验个人候选；尚缺全卷 DOI 对照。",
+            "官网同口径总数尚未确认。"
           ],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "按官网正式研究分轨导出 DOI 或稳定标识，对照当届快照，核对名称或版本不同的条目。",
+            "核对官网全年目录，记录统计口径及证据。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -17339,10 +17598,13 @@
           "snapshot_candidates": 2,
           "candidates": 2,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "official_total": 90,
+          "official_scope": "2024 ICSME 主卷所有具正文页码的出版条目，含博士生论坛和工具展示。",
+          "coverage_note": "正式目录 90 篇，快照 89 个本卷 DOI。博士生论坛第 848 页列 Smart Software Bug Management Using Issue Commit Analysis（Abhishek Kumar）；已记录题名、作者和出版类型，独立文章标识仍待证实。",
+          "evidence_urls": [
+            "https://www.proceedings.com/content/077/077923webtoc.pdf",
+            "https://conf.researchr.org/track/icsme-2024/icsme-2024-papers"
+          ],
           "decisions": {
             "include": 0,
             "exclude": 2,
@@ -17350,14 +17612,16 @@
             "unreviewed": 0
           },
           "issues": [
-            "官网同口径总数尚未确认。"
+            "正式目录 90 篇，快照 89 个本卷 DOI。博士生论坛第 848 页列 Smart Software Bug Management Using Issue Commit Analysis（Abhishek Kumar）；已记录题名、作者和出版类型，独立文章标识仍待证实。"
           ],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。"
+            "按博士生论坛论文题名、作者与正式页码查询独立 DOI 或官方条目标识，核实后入库。",
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -17373,8 +17637,10 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "coverage_note": "官网所列分轨为会议官方研究分轨 Accepted Papers 清单 143 篇；快照 170 条，覆盖的分轨和正式发表范围仍需逐项对应。",
+          "evidence_urls": [
+            "https://2024.issta.org/track/issta-2024-papers"
+          ],
           "decisions": {
             "include": 1,
             "exclude": 8,
@@ -17382,14 +17648,17 @@
             "unreviewed": 0
           },
           "issues": [
+            "官网所列分轨为会议官方研究分轨 Accepted Papers 清单 143 篇；快照 170 条，覆盖的分轨和正式发表范围仍需逐项对应。",
             "官网同口径总数尚未确认。"
           ],
           "actions": [
+            "按官网正式研究分轨导出 DOI 或稳定标识，对照当届快照，核对名称或版本不同的条目。",
             "核对官网全年目录，记录统计口径及证据。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -17403,25 +17672,26 @@
           "snapshot_candidates": 3,
           "candidates": 3,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "official_total": 53,
+          "official_scope": "2024 年当届正式论文集与本来源快照同口径的论文；分轨录用量另列。",
+          "coverage_note": "已按正式论文目录的题名逐篇对照。官网与快照均为 53 篇，未发现差项。",
+          "evidence_urls": [
+            "https://www.usenix.org/conference/osdi24/technical-sessions"
+          ],
           "decisions": {
             "include": 0,
             "exclude": 3,
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "核对官网全年目录，记录统计口径及证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -17714,15 +17984,20 @@
           "snapshot_candidates": 0,
           "candidates": 0,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "",
-          "evidence_urls": [],
+          "official_total": 0,
+          "official_scope": "该会议 2024 年的正式届次。",
+          "coverage_note": "Springer 的 IPMI 论文集序列相邻届次为 2023 与 2025，2024 年未举办。",
+          "evidence_urls": [
+            "https://link.springer.com/conference/ipmi"
+          ],
           "decisions": null,
           "issues": [],
-          "actions": [],
+          "actions": [
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
+          ],
           "files": [
-            "reviews/2024/AlearnerDL/coverage.json"
+            "reviews/2024/AlearnerDL/coverage.json",
+            "reviews/2024/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
         },
@@ -18164,18 +18439,15 @@
           "open_issues": 48,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-09T20:41:52+08:00",
-            "author": "zch66883",
-            "subject": "Restore repository paths after accidental carriage returns",
+            "at": "2026-11-09T21:26:22+08:00",
+            "author": "nydiii",
+            "subject": "提交2024类型及Science DOI更正 nydiii",
             "area": "reviews",
             "paths": [
-              "metadata/2024/ai4s.json",
-              "metadata/2024/papers.json",
-              "metadata/2024/snapshot.json",
-              "metadata/2025/ai4s.json"
+              "reviews/2024/nydiii/metadata-corrections-20261109.json"
             ]
           },
-          "commits_7d": 10
+          "commits_7d": 12
         },
         {
           "owner": "朱长昊",
@@ -18227,18 +18499,18 @@
           "open_issues": 50,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-09T20:41:52+08:00",
-            "author": "zch66883",
-            "subject": "Restore repository paths after accidental carriage returns",
+            "at": "2026-11-09T21:14:39+08:00",
+            "author": "jodiehao",
+            "subject": "Complete Hao Zhuodi 2024 abstract and full-text follow-up",
             "area": "reviews",
             "paths": [
               "metadata/2024/ai4s.json",
-              "metadata/2024/papers.json",
-              "metadata/2024/snapshot.json",
-              "metadata/2025/ai4s.json"
+              "metadata/j-04135a0409/2024/ai4s.json",
+              "metadata/j-18fb82c92b/2024/ai4s.json",
+              "metadata/j-2787efe2f4/2024/ai4s.json"
             ]
           },
-          "commits_7d": 3
+          "commits_7d": 4
         },
         {
           "owner": "丁利军",
@@ -18287,24 +18559,23 @@
         {
           "owner": "龙兆科",
           "sources": 49,
-          "delivered": 40,
-          "official": 0,
-          "pending": 51,
-          "open_issues": 47,
+          "delivered": 46,
+          "official": 24,
+          "pending": 68,
+          "open_issues": 33,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-09T20:41:52+08:00",
-            "author": "zch66883",
-            "subject": "Restore repository paths after accidental carriage returns",
+            "at": "2026-11-09T05:23:51-08:00",
+            "author": "AlearnerDL",
+            "subject": "Add source-by-source handoff, abstract audit and checksums",
             "area": "reviews",
             "paths": [
-              "metadata/2024/ai4s.json",
-              "metadata/2024/papers.json",
-              "metadata/2024/snapshot.json",
-              "metadata/2025/ai4s.json"
+              "reviews/2024/AlearnerDL/checksums.json",
+              "reviews/2024/AlearnerDL/handoff.md",
+              "reviews/2024/AlearnerDL/monitor-audit-2026-11-09.json"
             ]
           },
-          "commits_7d": 5
+          "commits_7d": 8
         },
         {
           "owner": "王梦冉",
@@ -18334,18 +18605,16 @@
           "open_issues": 47,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-09T21:08:53+08:00",
+            "at": "2026-11-09T21:20:44+08:00",
             "author": "chenchen",
-            "subject": "刊会审核 chenchen052512：统一 PhotoniX 负责人判定与官网核验反馈",
+            "subject": "审核反馈 chenchen052512：恢复8个旧刊源全量审核待关注",
             "area": "reviews",
             "paths": [
-              "reviews/2024/Blueblue1101.json",
-              "reviews/2024/chenchen052512.json",
-              "reviews/2024/chenchen052512/new-eight/followup-items.json",
-              "reviews/2024/chenchen052512/new-eight/handoff.md"
+              "reviews/2024/chenchen052512/full-corpus-alert-restoration-20261109.json",
+              "reviews/2024/feedback/chenchen052512.json"
             ]
           },
-          "commits_7d": 8
+          "commits_7d": 9
         },
         {
           "owner": "乔徐阳",
@@ -18372,12 +18641,12 @@
       ],
       "owner_progress": {
         "龙兆科": {
-          "records_total": 2282,
-          "abstract_usable": 2279,
-          "abstract_missing": 3,
-          "include": 1641,
-          "exclude": 568,
-          "pending": 73,
+          "records_total": 2657,
+          "abstract_usable": 2531,
+          "abstract_missing": 126,
+          "include": 1907,
+          "exclude": 660,
+          "pending": 90,
           "unreviewed": 0,
           "semantic_include": 0,
           "semantic_exclude": 0,
@@ -18397,45 +18666,6 @@
           "semantic_pending": 0,
           "semantic_unreviewed": 0
         },
-        "陈晨": {
-          "records_total": 5010,
-          "abstract_usable": 4963,
-          "abstract_missing": 47,
-          "include": 1961,
-          "exclude": 3049,
-          "pending": 0,
-          "unreviewed": 0,
-          "semantic_include": 0,
-          "semantic_exclude": 0,
-          "semantic_pending": 0,
-          "semantic_unreviewed": 0
-        },
-        "丁利军": {
-          "records_total": 1799,
-          "abstract_usable": 1309,
-          "abstract_missing": 490,
-          "include": 1769,
-          "exclude": 30,
-          "pending": 0,
-          "unreviewed": 0,
-          "semantic_include": 0,
-          "semantic_exclude": 0,
-          "semantic_pending": 0,
-          "semantic_unreviewed": 0
-        },
-        "南耀笛": {
-          "records_total": 904,
-          "abstract_usable": 837,
-          "abstract_missing": 67,
-          "include": 449,
-          "exclude": 454,
-          "pending": 1,
-          "unreviewed": 0,
-          "semantic_include": 0,
-          "semantic_exclude": 0,
-          "semantic_pending": 0,
-          "semantic_unreviewed": 0
-        },
         "乔徐阳": {
           "records_total": 3741,
           "abstract_usable": 886,
@@ -18449,9 +18679,48 @@
           "semantic_pending": 0,
           "semantic_unreviewed": 0
         },
+        "陈晨": {
+          "records_total": 5304,
+          "abstract_usable": 5257,
+          "abstract_missing": 47,
+          "include": 1961,
+          "exclude": 3049,
+          "pending": 0,
+          "unreviewed": 0,
+          "semantic_include": 0,
+          "semantic_exclude": 0,
+          "semantic_pending": 0,
+          "semantic_unreviewed": 0
+        },
+        "丁利军": {
+          "records_total": 2001,
+          "abstract_usable": 1511,
+          "abstract_missing": 490,
+          "include": 1769,
+          "exclude": 30,
+          "pending": 0,
+          "unreviewed": 0,
+          "semantic_include": 0,
+          "semantic_exclude": 0,
+          "semantic_pending": 0,
+          "semantic_unreviewed": 0
+        },
+        "南耀笛": {
+          "records_total": 905,
+          "abstract_usable": 885,
+          "abstract_missing": 20,
+          "include": 449,
+          "exclude": 454,
+          "pending": 1,
+          "unreviewed": 0,
+          "semantic_include": 0,
+          "semantic_exclude": 0,
+          "semantic_pending": 0,
+          "semantic_unreviewed": 0
+        },
         "王梦冉": {
-          "records_total": 27738,
-          "abstract_usable": 15613,
+          "records_total": 27888,
+          "abstract_usable": 15763,
           "abstract_missing": 12125,
           "include": 1270,
           "exclude": 1072,
@@ -18463,8 +18732,8 @@
           "semantic_unreviewed": 11307
         },
         "郝卓迪": {
-          "records_total": 2473,
-          "abstract_usable": 1132,
+          "records_total": 2620,
+          "abstract_usable": 1279,
           "abstract_missing": 1341,
           "include": 845,
           "exclude": 687,
@@ -18476,8 +18745,8 @@
           "semantic_unreviewed": 0
         },
         "李雪婷": {
-          "records_total": 2778,
-          "abstract_usable": 1722,
+          "records_total": 3713,
+          "abstract_usable": 2657,
           "abstract_missing": 1056,
           "include": 1255,
           "exclude": 1215,
@@ -18489,9 +18758,9 @@
           "semantic_unreviewed": 0
         },
         "朱长昊": {
-          "records_total": 4221,
-          "abstract_usable": 2290,
-          "abstract_missing": 1931,
+          "records_total": 4293,
+          "abstract_usable": 2361,
+          "abstract_missing": 1932,
           "include": 1135,
           "exclude": 3086,
           "pending": 0,
@@ -31729,18 +31998,15 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-09T20:41:52+08:00",
-            "author": "zch66883",
-            "subject": "Restore repository paths after accidental carriage returns",
+            "at": "2026-11-09T21:26:22+08:00",
+            "author": "nydiii",
+            "subject": "提交2024类型及Science DOI更正 nydiii",
             "area": "reviews",
             "paths": [
-              "metadata/2024/ai4s.json",
-              "metadata/2024/papers.json",
-              "metadata/2024/snapshot.json",
-              "metadata/2025/ai4s.json"
+              "reviews/2024/nydiii/metadata-corrections-20261109.json"
             ]
           },
-          "commits_7d": 10
+          "commits_7d": 12
         },
         {
           "owner": "朱长昊",
@@ -31792,18 +32058,18 @@
           "open_issues": 49,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-09T20:41:52+08:00",
-            "author": "zch66883",
-            "subject": "Restore repository paths after accidental carriage returns",
+            "at": "2026-11-09T21:14:39+08:00",
+            "author": "jodiehao",
+            "subject": "Complete Hao Zhuodi 2024 abstract and full-text follow-up",
             "area": "reviews",
             "paths": [
               "metadata/2024/ai4s.json",
-              "metadata/2024/papers.json",
-              "metadata/2024/snapshot.json",
-              "metadata/2025/ai4s.json"
+              "metadata/j-04135a0409/2024/ai4s.json",
+              "metadata/j-18fb82c92b/2024/ai4s.json",
+              "metadata/j-2787efe2f4/2024/ai4s.json"
             ]
           },
-          "commits_7d": 3
+          "commits_7d": 4
         },
         {
           "owner": "丁利军",
@@ -31858,18 +32124,17 @@
           "open_issues": 49,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-09T20:41:52+08:00",
-            "author": "zch66883",
-            "subject": "Restore repository paths after accidental carriage returns",
+            "at": "2026-11-09T05:23:51-08:00",
+            "author": "AlearnerDL",
+            "subject": "Add source-by-source handoff, abstract audit and checksums",
             "area": "reviews",
             "paths": [
-              "metadata/2024/ai4s.json",
-              "metadata/2024/papers.json",
-              "metadata/2024/snapshot.json",
-              "metadata/2025/ai4s.json"
+              "reviews/2024/AlearnerDL/checksums.json",
+              "reviews/2024/AlearnerDL/handoff.md",
+              "reviews/2024/AlearnerDL/monitor-audit-2026-11-09.json"
             ]
           },
-          "commits_7d": 5
+          "commits_7d": 8
         },
         {
           "owner": "王梦冉",
@@ -31899,18 +32164,16 @@
           "open_issues": 48,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-09T21:08:53+08:00",
+            "at": "2026-11-09T21:20:44+08:00",
             "author": "chenchen",
-            "subject": "刊会审核 chenchen052512：统一 PhotoniX 负责人判定与官网核验反馈",
+            "subject": "审核反馈 chenchen052512：恢复8个旧刊源全量审核待关注",
             "area": "reviews",
             "paths": [
-              "reviews/2024/Blueblue1101.json",
-              "reviews/2024/chenchen052512.json",
-              "reviews/2024/chenchen052512/new-eight/followup-items.json",
-              "reviews/2024/chenchen052512/new-eight/handoff.md"
+              "reviews/2024/chenchen052512/full-corpus-alert-restoration-20261109.json",
+              "reviews/2024/feedback/chenchen052512.json"
             ]
           },
-          "commits_7d": 8
+          "commits_7d": 9
         },
         {
           "owner": "乔徐阳",
@@ -45117,18 +45380,15 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-09T20:41:52+08:00",
-            "author": "zch66883",
-            "subject": "Restore repository paths after accidental carriage returns",
+            "at": "2026-11-09T21:26:22+08:00",
+            "author": "nydiii",
+            "subject": "提交2024类型及Science DOI更正 nydiii",
             "area": "reviews",
             "paths": [
-              "metadata/2024/ai4s.json",
-              "metadata/2024/papers.json",
-              "metadata/2024/snapshot.json",
-              "metadata/2025/ai4s.json"
+              "reviews/2024/nydiii/metadata-corrections-20261109.json"
             ]
           },
-          "commits_7d": 10
+          "commits_7d": 12
         },
         {
           "owner": "朱长昊",
@@ -45180,18 +45440,18 @@
           "open_issues": 50,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-09T20:41:52+08:00",
-            "author": "zch66883",
-            "subject": "Restore repository paths after accidental carriage returns",
+            "at": "2026-11-09T21:14:39+08:00",
+            "author": "jodiehao",
+            "subject": "Complete Hao Zhuodi 2024 abstract and full-text follow-up",
             "area": "reviews",
             "paths": [
               "metadata/2024/ai4s.json",
-              "metadata/2024/papers.json",
-              "metadata/2024/snapshot.json",
-              "metadata/2025/ai4s.json"
+              "metadata/j-04135a0409/2024/ai4s.json",
+              "metadata/j-18fb82c92b/2024/ai4s.json",
+              "metadata/j-2787efe2f4/2024/ai4s.json"
             ]
           },
-          "commits_7d": 3
+          "commits_7d": 4
         },
         {
           "owner": "丁利军",
@@ -45246,18 +45506,17 @@
           "open_issues": 47,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-09T20:41:52+08:00",
-            "author": "zch66883",
-            "subject": "Restore repository paths after accidental carriage returns",
+            "at": "2026-11-09T05:23:51-08:00",
+            "author": "AlearnerDL",
+            "subject": "Add source-by-source handoff, abstract audit and checksums",
             "area": "reviews",
             "paths": [
-              "metadata/2024/ai4s.json",
-              "metadata/2024/papers.json",
-              "metadata/2024/snapshot.json",
-              "metadata/2025/ai4s.json"
+              "reviews/2024/AlearnerDL/checksums.json",
+              "reviews/2024/AlearnerDL/handoff.md",
+              "reviews/2024/AlearnerDL/monitor-audit-2026-11-09.json"
             ]
           },
-          "commits_7d": 5
+          "commits_7d": 8
         },
         {
           "owner": "王梦冉",
@@ -45287,18 +45546,16 @@
           "open_issues": 48,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-09T21:08:53+08:00",
+            "at": "2026-11-09T21:20:44+08:00",
             "author": "chenchen",
-            "subject": "刊会审核 chenchen052512：统一 PhotoniX 负责人判定与官网核验反馈",
+            "subject": "审核反馈 chenchen052512：恢复8个旧刊源全量审核待关注",
             "area": "reviews",
             "paths": [
-              "reviews/2024/Blueblue1101.json",
-              "reviews/2024/chenchen052512.json",
-              "reviews/2024/chenchen052512/new-eight/followup-items.json",
-              "reviews/2024/chenchen052512/new-eight/handoff.md"
+              "reviews/2024/chenchen052512/full-corpus-alert-restoration-20261109.json",
+              "reviews/2024/feedback/chenchen052512.json"
             ]
           },
-          "commits_7d": 8
+          "commits_7d": 9
         },
         {
           "owner": "乔徐阳",
@@ -45365,18 +45622,15 @@
         "2026"
       ],
       "last_update": {
-        "at": "2026-11-09T20:41:52+08:00",
-        "author": "zch66883",
-        "subject": "Restore repository paths after accidental carriage returns",
+        "at": "2026-11-09T21:26:22+08:00",
+        "author": "nydiii",
+        "subject": "提交2024类型及Science DOI更正 nydiii",
         "area": "reviews",
         "paths": [
-          "metadata/2024/ai4s.json",
-          "metadata/2024/papers.json",
-          "metadata/2024/snapshot.json",
-          "metadata/2025/ai4s.json"
+          "reviews/2024/nydiii/metadata-corrections-20261109.json"
         ]
       },
-      "commits_7d": 10
+      "commits_7d": 12
     },
     {
       "owner": "朱长昊",
@@ -45506,18 +45760,18 @@
         "2026"
       ],
       "last_update": {
-        "at": "2026-11-09T20:41:52+08:00",
-        "author": "zch66883",
-        "subject": "Restore repository paths after accidental carriage returns",
+        "at": "2026-11-09T21:14:39+08:00",
+        "author": "jodiehao",
+        "subject": "Complete Hao Zhuodi 2024 abstract and full-text follow-up",
         "area": "reviews",
         "paths": [
           "metadata/2024/ai4s.json",
-          "metadata/2024/papers.json",
-          "metadata/2024/snapshot.json",
-          "metadata/2025/ai4s.json"
+          "metadata/j-04135a0409/2024/ai4s.json",
+          "metadata/j-18fb82c92b/2024/ai4s.json",
+          "metadata/j-2787efe2f4/2024/ai4s.json"
         ]
       },
-      "commits_7d": 3
+      "commits_7d": 4
     },
     {
       "owner": "丁利军",
@@ -45620,10 +45874,10 @@
       "years": {
         "2024": {
           "sources": 49,
-          "delivered": 40,
-          "official": 0,
-          "pending": 51,
-          "open_issues": 47,
+          "delivered": 46,
+          "official": 24,
+          "pending": 68,
+          "open_issues": 33,
           "status": "in_progress"
         },
         "2025": {
@@ -45644,24 +45898,23 @@
         }
       },
       "sources": 147,
-      "delivered": 40,
+      "delivered": 46,
       "not_started": [
         "2025",
         "2026"
       ],
       "last_update": {
-        "at": "2026-11-09T20:41:52+08:00",
-        "author": "zch66883",
-        "subject": "Restore repository paths after accidental carriage returns",
+        "at": "2026-11-09T05:23:51-08:00",
+        "author": "AlearnerDL",
+        "subject": "Add source-by-source handoff, abstract audit and checksums",
         "area": "reviews",
         "paths": [
-          "metadata/2024/ai4s.json",
-          "metadata/2024/papers.json",
-          "metadata/2024/snapshot.json",
-          "metadata/2025/ai4s.json"
+          "reviews/2024/AlearnerDL/checksums.json",
+          "reviews/2024/AlearnerDL/handoff.md",
+          "reviews/2024/AlearnerDL/monitor-audit-2026-11-09.json"
         ]
       },
-      "commits_7d": 5
+      "commits_7d": 8
     },
     {
       "owner": "王梦冉",
@@ -45743,18 +45996,16 @@
         "2026"
       ],
       "last_update": {
-        "at": "2026-11-09T21:08:53+08:00",
+        "at": "2026-11-09T21:20:44+08:00",
         "author": "chenchen",
-        "subject": "刊会审核 chenchen052512：统一 PhotoniX 负责人判定与官网核验反馈",
+        "subject": "审核反馈 chenchen052512：恢复8个旧刊源全量审核待关注",
         "area": "reviews",
         "paths": [
-          "reviews/2024/Blueblue1101.json",
-          "reviews/2024/chenchen052512.json",
-          "reviews/2024/chenchen052512/new-eight/followup-items.json",
-          "reviews/2024/chenchen052512/new-eight/handoff.md"
+          "reviews/2024/chenchen052512/full-corpus-alert-restoration-20261109.json",
+          "reviews/2024/feedback/chenchen052512.json"
         ]
       },
-      "commits_7d": 8
+      "commits_7d": 9
     },
     {
       "owner": "乔徐阳",
@@ -45807,9 +46058,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-09T13:17:38.280467+00:00",
+    "generated_at": "2026-11-09T13:26:45.327514+00:00",
     "history_available": true,
-    "commit": "b118b08bb7ce2f893f6a98475f259a71f919fb82",
-    "commits_scanned": 184
+    "commit": "b58f039826dc208c063189219ba90825a06b3dab",
+    "commits_scanned": 195
   }
 }
