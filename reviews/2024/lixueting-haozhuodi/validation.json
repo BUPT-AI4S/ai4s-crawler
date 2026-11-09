@@ -8,9 +8,9 @@
       "original_candidates": 1375,
       "delivered": 3713,
       "decisions": {
-        "include": 2107,
-        "exclude": 1207,
-        "pending": 399
+        "include": 2109,
+        "exclude": 1286,
+        "pending": 318
       },
       "sources": 51
     },
@@ -32,9 +32,9 @@
   "included_with_abstract_and_bilingual_evidence": 3041,
   "missing_original_abstract_count": 15586,
   "audited_decision_counts": {
-    "exclude": 52325,
-    "include": 3041,
-    "pending": 2893
+    "exclude": 52404,
+    "include": 3043,
+    "pending": 2812
   },
   "review_basis_counts": {
     "校准语义分类": 6270,
@@ -48,7 +48,7 @@
     "分歧逐篇摘要复核": 197,
     "2026-11-08 文献类型复核": 412,
     "2026-11-08 已有摘要逐篇复核": 137,
-    "2026-11-08 缺摘要复查": 375,
+    "2026-11-09 负责人工作簿复核": 375,
     "2026-11-08 作者摘要复核": 2,
     "2026-11-08 机构存档摘要复核": 8,
     "年份或重复核查": 62
@@ -132,5 +132,72 @@
     "no_article_body_used_for_AI4S": true,
     "new_vocabulary": 0,
     "detail_file": "lixueting-383-abstract-search.jsonl.gz"
+  },
+  "included_total": 3043,
+  "included_with_method_or_supplement_evidence_without_abstract": 2,
+  "lixueting_375_workbook_review": {
+    "owner": "李雪婷",
+    "year": 2024,
+    "date": "2026-11-09",
+    "baseline_commit": "0347b115202745cfeaa8316eea7ba5db8b41b504",
+    "imported_at": "2026-11-09T12:32:13.008995+00:00",
+    "checked": 375,
+    "journals": 17,
+    "source_workbook": "lixueting-375-review-20261109.xlsx",
+    "source_sha256": "54de449190cc082e95f8649187097e2cce8b904a324c86104e6eeecc749d0e71",
+    "source_sheets": [
+      "复核结果",
+      "逐篇明细"
+    ],
+    "source_recommendations": {
+      "建议纳入": 2,
+      "待核实": 23,
+      "已核实不建议纳入": 79,
+      "初步不推荐": 271
+    },
+    "decision_mapping": {
+      "建议纳入": "include",
+      "待核实": "pending",
+      "已核实不建议纳入": "exclude",
+      "初步不推荐": "pending"
+    },
+    "decisions": {
+      "include": 2,
+      "pending": 294,
+      "exclude": 79
+    },
+    "provisional_recommendations_retained_as_pending": 271,
+    "new_abstract_texts": 0,
+    "owner_personal_decisions": {
+      "include": 2109,
+      "exclude": 1286,
+      "pending": 318
+    },
+    "owner_ledger_decisions": {
+      "exclude": 26017,
+      "include": 2109,
+      "pending": 1163
+    },
+    "owner_personal_missing_abstract_pending": 294,
+    "other_personal_pending_with_abstract": 24,
+    "new_vocabulary": 0,
+    "evidence_basis": "按负责人工作簿逐条导入结论、说明、证据位置和超链接；本次导入未重新独立核验论文全文。",
+    "metadata_issues": [
+      {
+        "doi": "10.1016/j.jacc.2024.08.084",
+        "original_review_number": 154,
+        "issue": "工作簿题名与仓库同 DOI 题名明显不同，需先核实 DOI 与题名对应关系；本轮保留待定，未改动原始题名。"
+      }
+    ],
+    "detail_file": "lixueting-375-review-20261109.json",
+    "original_fields_preserved": true,
+    "unchanged_outside_targets": true,
+    "other_owner_records_unchanged": true,
+    "all_new_tags_in_shared_vocabulary": true,
+    "source_summary_matches_detail": true,
+    "matched_by_doi_and_previous_audit_number": 375,
+    "duplicate_records": 0,
+    "changed_decisions": 81,
+    "unchanged_pending_decisions": 294
   }
 }
