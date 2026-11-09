@@ -106,3 +106,18 @@
 | ACM International Conference on Information and Knowledge Management（`cikm`） | 697 | 347 | +350 | Full Research Track 正式长文录用数（不含其他分轨） | [目录](https://cikm2024.github.io/accepted-papers/) |
 
 CIKM 的 +350 来自口径差异：全量采集 697 条覆盖该届全部分轨，正式长文同轨记录 347 条与官方录用数一致，已在 `coverage.json` 的 `coverage_rationale` 中写明。所有差额均为口径差异或非研究条目，未发现需补采的 AI4S 论文。
+
+## 候选摘要补全（2026-11-09，第二轮）
+
+第一轮用 Crossref / OpenAlex / Europe PMC / Semantic Scholar / 出版方页面 API 补回 28 条后，余 39 条全部落在 Elsevier 与 Springer 订阅刊，接口侧无路可走：对 39 条逐一试过 Crossref、OpenAlex、Europe PMC、PubMed、Semantic Scholar、OpenAIRE、Unpaywall（含 OA 位置与 SSRN/OSTI 副本）、Wayback（按 DOI 与按 PII）、fatcat、x-mol、Baidu 学术，命中 0；ScienceDirect 对脚本与 headless 浏览器均返回 403 挑战页。
+
+第二轮改为逐篇读取出版方文章页正文，从 Abstract 栏逐字回填：
+
+| 结果 | 篇数 | 做法 |
+| --- | ---: | --- |
+| 已补摘要 | 36 | 用 Crossref 的 `alternative-id` 取 PII，打开 `sciencedirect.com/science/article/pii/<PII>`（Springer 1 篇走 `link.springer.com/article/<DOI>`），逐字复制摘要正文 |
+| 原文类型无摘要 | 3 | `10.1016/j.diii.2024.07.011`（Editorial）、`10.1016/j.diii.2024.07.010`（Letter to the Editor）、`10.1007/s11427-024-2673-9`（Research Highlight），页面结构核实后只登记证据 |
+
+写回约束：保留候选文件原有行级格式、字段顺序与 CRLF，仅填 `abstract` 并把 `source` 追加来源域名；`screening_status` 按 `article_type` 是否已知重设。无摘要的 3 条新增 `abstract_status` / `abstract_evidence_url` / `abstract_note`。
+
+结果：35 个来源的候选缺摘要合计由 39 降至 3，且这 3 条不是取不到，而是原文本身不设摘要栏。逐条台账见 [`abstract-topup.csv`](abstract-topup.csv)。

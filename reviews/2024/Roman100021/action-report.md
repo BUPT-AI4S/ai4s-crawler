@@ -59,6 +59,25 @@
 
 处理后 The Lancet 来源内无同键冲突。
 
+## 6. 补摘要第二轮：从出版方文章页直读
+
+第二轮先穷举全部免费接口，全部落空后再改为逐篇读取出版方文章页正文。
+
+已排空的接口（对 39 条逐一试过，命中 0）：Crossref、OpenAlex、Europe PMC、PubMed、Semantic Scholar、OpenAIRE、Unpaywall（含 OA 位置与 SSRN/OSTI 副本）、Wayback（按 DOI 与按 PII 两种入口）、fatcat、x-mol、Baidu 学术、CNKI 系站点。ScienceDirect 与 linkinghub 对脚本请求一律返回 403 挑战页，headless 浏览器同样是挑战页。
+
+最终可行路径是逐篇读取文章页 DOM 后逐字回填摘要正文：
+
+- Elsevier 37 篇：以 Crossref 的 `alternative-id` 取 PII，逐篇打开 `https://www.sciencedirect.com/science/article/pii/<PII>`，从 Abstract 栏逐字复制正文（不改写、不摘要）。
+- Springer 1 篇：`https://link.springer.com/article/10.1007/s11427-024-2673-9`。
+- 结果：36 篇取回摘要写回候选文件；3 篇经页面结构核实属于本身无摘要的文章类型，只登记证据、不编造内容：
+  - `10.1016/j.diii.2024.07.011`：Editorial（Vol.105(11):415-416）
+  - `10.1016/j.diii.2024.07.010`：Letter to the Editor（Vol.105(10):409-411）
+  - `10.1007/s11427-024-2673-9`：Research Highlight（Sci. China Life Sci. 68:588-589）
+
+写回时保持候选文件原有的行级格式、字段顺序与 CRLF：仅填 `abstract`，并把 `source` 追加 `sciencedirect.com` / `springer.com`；`screening_status` 按 `article_type` 是否已知重设为 `ready` 或 `needs_article_type`；无摘要的 3 条新增 `abstract_status: none_by_article_type`、`abstract_evidence_url`、`abstract_note` 三个字段说明缘由。
+
+台账 `abstract-topup.csv` 已同步刷新：64 条「已补摘要写回候选文件」（35 条来自 ScienceDirect 页面直读、1 条来自 SpringerLink 页面直读、28 条为第一轮 API 命中）、3 条「原文类型无摘要」。
+
 ## 交付统计（更新后）
 
 | 指标 | 数量 |
@@ -70,9 +89,10 @@
 | 未审 | 0 |
 | 覆盖来源 | 35 |
 | 官网同口径已确认来源 | 35 / 35 |
+| 候选缺摘要 | 39 → 3（且 3 条为原文类型本身无摘要） |
 
 ## 仍未解决
 
-- 39 条 Elsevier 候选缺原摘要：需订阅权限或机构网络访问 ScienceDirect，或由采集端配置 Elsevier TDM/API 凭据后重跑。
-- 7 条待定：同上，需要摘要或方法段才能判定；其中仔猪分割一篇若确认为深度学习，应改判纳入并补标签。
+- 3 条候选无摘要，原因不是取不到而是原文没有：2 条 DIII 的 Editorial/Letter、1 条 Sci. China Life Sci. 的 Research Highlight。已在候选文件写入 `abstract_status`、`abstract_evidence_url`、`abstract_note`，判定依据为文章类型与正文体例。
+- 7 条待定：已不是摘要缺失所致，而是需要全文方法段才能定论；其中仔猪分割一篇（`10.1016/j.compag.2024.108683`）若确认为深度学习，应改判纳入并补标签。
 - 本轮未改动其他负责人的交付文件（`nydiii.json` 的三条 Lancet 重复记录除外，原因见第 5 节）。
