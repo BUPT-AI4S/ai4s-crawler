@@ -16,40 +16,41 @@
     "include": 1151,
     "pending": 109
   },
-  "all_reviewed_records": 17333,
+  "all_reviewed_records": 20333,
   "all_reviewed_counts": {
-    "exclude": 13826,
-    "pending": 1050,
-    "include": 2457
+    "exclude": 16608,
+    "include": 2534,
+    "pending": 1191
   },
   "review_basis_counts": {
-    "abstract_semantics": 14985,
+    "abstract_semantics": 17960,
     "missing_abstract_metadata_only": 28,
-    "document_type_only": 2063,
-    "invalid_abstract_metadata_only": 257
+    "document_type_only": 2077,
+    "invalid_abstract_metadata_only": 268
   },
-  "new_keyword_miss_includes": 1306,
+  "new_keyword_miss_includes": 1383,
   "old_decision_changes": 129,
-  "unreviewed_full_corpus": 13135,
+  "unreviewed_full_corpus": 10135,
   "full_screened_sources": [
     "ecai",
     "isbi",
     "j-b1526e25bf",
     "natcomputsci",
+    "nchembio",
     "npjdigitalmed",
     "npjscilearn"
   ],
-  "verified_review_abstract_backfills": 1620,
+  "verified_review_abstract_backfills": 1712,
   "original_blank_abstracts": 10390,
   "original_unusable_abstracts_including_two_short_fields": 10392,
   "automatic_document_type_exclusions": 900,
-  "new_tag_count": 14,
-  "vocabulary_total": 762,
+  "new_tag_count": 23,
+  "vocabulary_total": 771,
   "vocabulary_base_count": 748,
   "metadata_links_invalidated_in_assembly": 150,
   "invalid_pdf_verifications_withdrawn": 605,
   "input_base_commit": "95af745",
-  "latest_public_main_checked": "e572dda549736a44a41fdb73e7dd1f916d7da81c",
+  "latest_public_main_checked": "cf3f0bff23627330c9bf6c2fb67ff672296be2b6",
   "rules_changed_since_input": false,
   "upload_status": "SUBMISSION_SNAPSHOT",
   "overall_status": "initial_candidates_rereviewed; full_corpus_omission_screening_partial",
@@ -178,6 +179,30 @@
     {
       "path": "continuation12/physical/reviewed.jsonl",
       "sha256": "6753009704d110102347831665adfbde5c0be26dc572fa52a8f7fd573699268e"
+    },
+    {
+      "path": "continuation13/biomedical/reviewed.jsonl",
+      "sha256": "bfda78913901aa5df41d7849e3d18bead61b818ba378ecf437a35b5d4fc47d6a"
+    },
+    {
+      "path": "continuation13/conferences/reviewed.jsonl",
+      "sha256": "c4ed0e03192c56c0c5917f83fba91e1e6b1abf41e14082f584d20a565dbb550b"
+    },
+    {
+      "path": "continuation13/ncomms/reviewed.jsonl",
+      "sha256": "730d00ced6ee0704892bd12e8ee1ae55efb61946862c1382241349de561e89b3"
+    },
+    {
+      "path": "continuation13/ncomms_parent/reviewed.jsonl",
+      "sha256": "8245681427bf1d42285e5e0caaf7038f33a2406a40c54fd6dc5104d293f0b1d1"
+    },
+    {
+      "path": "continuation13/ncomms_systems/reviewed.jsonl",
+      "sha256": "1bcc871dddcae57874da3868b6a09af49d0ed4e2d1c4d6ab319883d965c61e9e"
+    },
+    {
+      "path": "continuation13/physical/reviewed.jsonl",
+      "sha256": "30c26fb25781bb11c8d83683153ea88bf761617949a543c6090ba93bd2a30388"
     },
     {
       "path": "continuation2/biomedical/reviewed.jsonl",
@@ -328,18 +353,18 @@
       "sha256": "6b7f6f7be0243d5e710fd824f574b8ce8b8a2b64c5eac234713962c69637e347"
     }
   ],
-  "shared_vocabulary_count_at_latest_main": 757,
+  "shared_vocabulary_count_at_latest_main": 762,
   "vocabulary_base_commit": "285a23823a4edfdacc65cd3d9f334b18880796a3",
   "continuation": {
     "baseline_reviewed": 4790,
-    "newly_reviewed": 12543,
+    "newly_reviewed": 15543,
     "new_decisions": {
-      "exclude": 11210,
-      "pending": 814,
-      "include": 519
+      "exclude": 13992,
+      "include": 596,
+      "pending": 955
     },
-    "new_keyword_miss_includes": 519,
-    "new_verified_abstract_backfills": 1440,
+    "new_keyword_miss_includes": 596,
+    "new_verified_abstract_backfills": 1532,
     "baseline_unreviewed": 25678,
     "latest_vocabulary_base_count": 748,
     "tag_alias_normalization": {
@@ -347,64 +372,87 @@
     },
     "previous_support_vector_machine_proposal_reused_from_latest_main": true
   },
-  "active_pass": "continuation12",
+  "active_pass": "continuation13",
   "author_links_verified_this_pass": 0,
   "latest_pass": {
-    "pass_id": "continuation12",
-    "baseline_reviewed": 15833,
-    "newly_reviewed": 1500,
+    "pass_id": "continuation13",
+    "baseline_reviewed": 17333,
+    "newly_reviewed": 3000,
     "new_decisions": {
-      "exclude": 1400,
-      "include": 21,
-      "pending": 79
+      "include": 77,
+      "exclude": 2782,
+      "pending": 141
     },
-    "new_keyword_miss_includes": 21,
-    "new_verified_abstract_backfills": 63,
-    "baseline_unreviewed": 14635,
+    "new_keyword_miss_includes": 77,
+    "new_verified_abstract_backfills": 92,
+    "baseline_unreviewed": 13135,
     "new_tag_additions": [
       {
         "axis": "method",
-        "label": "主成分分析",
-        "label_en": "Principal component analysis",
-        "definition": "通过正交线性投影提取最大方差方向，用于科学观测的降维、结构识别或特征表示。",
+        "label": "独立成分分析",
+        "label_en": "Independent component analysis",
+        "definition": "将多变量观测分解为统计独立成分，用于生物信号或科学数据结构识别。",
         "aliases": [
-          "PCA"
+          "ICA"
         ]
       },
       {
         "axis": "method",
-        "label": "非负矩阵分解",
-        "label_en": "Non-negative matrix factorization",
-        "definition": "将非负观测分解为非负因子，用于信号解混、潜在组分发现或科学数据表示。",
+        "label": "降维",
+        "label_en": "Dimensionality reduction",
+        "definition": "从高维科学数据提取低维结构或表示，适用于未明确具体算法的降维贡献。",
+        "aliases": []
+      },
+      {
+        "axis": "task",
+        "label": "建筑属性制图",
+        "label_en": "Building attribute mapping",
+        "definition": "利用遥感及地面观测推断建筑属性并生成空间分布图。",
+        "aliases": []
+      },
+      {
+        "axis": "task",
+        "label": "视觉注视轨迹预测",
+        "label_en": "Visual scanpath prediction",
+        "definition": "根据个体和任务信息预测人类视觉注视位置及其序列。",
+        "aliases": []
+      },
+      {
+        "axis": "task",
+        "label": "高精道路地图构建",
+        "label_en": "High-definition road map construction",
+        "definition": "从传感数据构建车道、道路边界等矢量化高精度地图。",
         "aliases": [
-          "NMF",
-          "Nonnegative matrix factorization"
+          "HD map construction"
         ]
       },
       {
         "axis": "task",
-        "label": "水下图像增强",
-        "label_en": "Underwater image enhancement",
-        "definition": "针对水下光传播造成的色偏、散射和对比度退化，增强水下图像或视频的可用质量。",
-        "aliases": [
-          "水下视频增强",
-          "Underwater video enhancement"
-        ]
+        "label": "交通参与者轨迹预测",
+        "label_en": "Traffic participant trajectory prediction",
+        "definition": "预测车辆、行人等道路交通参与者的未来运动轨迹。",
+        "aliases": []
       },
       {
         "axis": "task",
-        "label": "野生动物识别",
-        "label_en": "Wildlife identification",
-        "definition": "从自然环境观测或航空影像中检测、定位并识别野生动物物种，支持种群调查和生态保护。",
-        "aliases": [
-          "Wildlife detection"
-        ]
+        "label": "微震声发射源定位",
+        "label_en": "Microseismic and acoustic emission source localization",
+        "definition": "从监测信号估计微震或声发射事件空间位置，服务岩土工程及结构安全监测。",
+        "aliases": []
       },
       {
         "axis": "task",
-        "label": "量子态性质学习",
-        "label_en": "Quantum state property learning",
-        "definition": "由量子测量样本学习量子态参数或可观测量期望值，包括基态和热态性质；不要求学习算法在量子硬件上运行。"
+        "label": "细胞图像批次校正",
+        "label_en": "Cell image batch correction",
+        "definition": "校正细胞成像表型数据跨批次、设备或实验室的系统性差异。",
+        "aliases": []
+      },
+      {
+        "axis": "task",
+        "label": "手物接触估计",
+        "label_en": "Hand-object contact estimation",
+        "definition": "从观测数据重建手与物体的抓握接触区域，服务操作测量与接触行为研究。",
+        "aliases": []
       }
     ],
     "baseline_decisions_preserved": true
@@ -414,8 +462,8 @@
     "different_decisions": 46,
     "new_continuation_overlaps": 0,
     "note": "Audit only; other reviewer files unchanged. Reconcile historical differing decisions before repository-wide merge.",
-    "checked_commit": "e572dda549736a44a41fdb73e7dd1f916d7da81c"
+    "checked_commit": "cf3f0bff23627330c9bf6c2fb67ff672296be2b6"
   },
-  "previous_published_records": 15833,
-  "this_increment_records": 1500
+  "previous_published_records": 17333,
+  "this_increment_records": 3000
 }
