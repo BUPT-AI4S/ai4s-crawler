@@ -16,21 +16,21 @@
     "include": 1151,
     "pending": 109
   },
-  "all_reviewed_records": 15833,
+  "all_reviewed_records": 17333,
   "all_reviewed_counts": {
-    "exclude": 12426,
-    "pending": 971,
-    "include": 2436
+    "exclude": 13826,
+    "pending": 1050,
+    "include": 2457
   },
   "review_basis_counts": {
-    "abstract_semantics": 13487,
+    "abstract_semantics": 14985,
     "missing_abstract_metadata_only": 28,
-    "document_type_only": 2061,
+    "document_type_only": 2063,
     "invalid_abstract_metadata_only": 257
   },
-  "new_keyword_miss_includes": 1285,
+  "new_keyword_miss_includes": 1306,
   "old_decision_changes": 129,
-  "unreviewed_full_corpus": 14635,
+  "unreviewed_full_corpus": 13135,
   "full_screened_sources": [
     "ecai",
     "isbi",
@@ -39,17 +39,17 @@
     "npjdigitalmed",
     "npjscilearn"
   ],
-  "verified_review_abstract_backfills": 1557,
+  "verified_review_abstract_backfills": 1620,
   "original_blank_abstracts": 10390,
   "original_unusable_abstracts_including_two_short_fields": 10392,
   "automatic_document_type_exclusions": 900,
-  "new_tag_count": 9,
-  "vocabulary_total": 757,
+  "new_tag_count": 14,
+  "vocabulary_total": 762,
   "vocabulary_base_count": 748,
   "metadata_links_invalidated_in_assembly": 150,
   "invalid_pdf_verifications_withdrawn": 605,
   "input_base_commit": "95af745",
-  "latest_public_main_checked": "b8abd30d5fbc3cc23af73c425cd0a360b4cb3ed4",
+  "latest_public_main_checked": "e572dda549736a44a41fdb73e7dd1f916d7da81c",
   "rules_changed_since_input": false,
   "upload_status": "SUBMISSION_SNAPSHOT",
   "overall_status": "initial_candidates_rereviewed; full_corpus_omission_screening_partial",
@@ -154,6 +154,30 @@
     {
       "path": "continuation11/physical/reviewed.jsonl",
       "sha256": "331cdc6eb58481d0a270679ffd379385b37cd85f2f6e7a52ea8575537e387064"
+    },
+    {
+      "path": "continuation12/biomedical/reviewed.jsonl",
+      "sha256": "54a410432475ddaa7dbc31c5628aa304cbf4724ff129f6a76db7c98388ce8891"
+    },
+    {
+      "path": "continuation12/conferences/reviewed.jsonl",
+      "sha256": "49c90882ece2644fbc4aed000a9ce1944ff10bf0d68eb29df08b63415cea235b"
+    },
+    {
+      "path": "continuation12/ncomms/reviewed.jsonl",
+      "sha256": "98d3d3fabb407bcbea0e59440363cec14457c058d053ada193fabe7718c2c0a9"
+    },
+    {
+      "path": "continuation12/ncomms_parent/reviewed.jsonl",
+      "sha256": "97753c7ca0acc8e8e37b2f140ad7ce3d4885f76781fa3c230d07b38ef1d459fe"
+    },
+    {
+      "path": "continuation12/ncomms_systems/reviewed.jsonl",
+      "sha256": "2ae7dac8e0ea4750b3153efb7d8d416d276ea606c0a06b90fb920c91a49810a0"
+    },
+    {
+      "path": "continuation12/physical/reviewed.jsonl",
+      "sha256": "6753009704d110102347831665adfbde5c0be26dc572fa52a8f7fd573699268e"
     },
     {
       "path": "continuation2/biomedical/reviewed.jsonl",
@@ -308,14 +332,14 @@
   "vocabulary_base_commit": "285a23823a4edfdacc65cd3d9f334b18880796a3",
   "continuation": {
     "baseline_reviewed": 4790,
-    "newly_reviewed": 11043,
+    "newly_reviewed": 12543,
     "new_decisions": {
-      "exclude": 9810,
-      "pending": 735,
-      "include": 498
+      "exclude": 11210,
+      "pending": 814,
+      "include": 519
     },
-    "new_keyword_miss_includes": 498,
-    "new_verified_abstract_backfills": 1377,
+    "new_keyword_miss_includes": 519,
+    "new_verified_abstract_backfills": 1440,
     "baseline_unreviewed": 25678,
     "latest_vocabulary_base_count": 748,
     "tag_alias_normalization": {
@@ -323,21 +347,66 @@
     },
     "previous_support_vector_machine_proposal_reused_from_latest_main": true
   },
-  "active_pass": "continuation11",
+  "active_pass": "continuation12",
   "author_links_verified_this_pass": 0,
   "latest_pass": {
-    "pass_id": "continuation11",
-    "baseline_reviewed": 14633,
-    "newly_reviewed": 1200,
+    "pass_id": "continuation12",
+    "baseline_reviewed": 15833,
+    "newly_reviewed": 1500,
     "new_decisions": {
-      "exclude": 1109,
-      "pending": 70,
-      "include": 21
+      "exclude": 1400,
+      "include": 21,
+      "pending": 79
     },
     "new_keyword_miss_includes": 21,
-    "new_verified_abstract_backfills": 42,
-    "baseline_unreviewed": 15835,
-    "new_tag_additions": [],
+    "new_verified_abstract_backfills": 63,
+    "baseline_unreviewed": 14635,
+    "new_tag_additions": [
+      {
+        "axis": "method",
+        "label": "主成分分析",
+        "label_en": "Principal component analysis",
+        "definition": "通过正交线性投影提取最大方差方向，用于科学观测的降维、结构识别或特征表示。",
+        "aliases": [
+          "PCA"
+        ]
+      },
+      {
+        "axis": "method",
+        "label": "非负矩阵分解",
+        "label_en": "Non-negative matrix factorization",
+        "definition": "将非负观测分解为非负因子，用于信号解混、潜在组分发现或科学数据表示。",
+        "aliases": [
+          "NMF",
+          "Nonnegative matrix factorization"
+        ]
+      },
+      {
+        "axis": "task",
+        "label": "水下图像增强",
+        "label_en": "Underwater image enhancement",
+        "definition": "针对水下光传播造成的色偏、散射和对比度退化，增强水下图像或视频的可用质量。",
+        "aliases": [
+          "水下视频增强",
+          "Underwater video enhancement"
+        ]
+      },
+      {
+        "axis": "task",
+        "label": "野生动物识别",
+        "label_en": "Wildlife identification",
+        "definition": "从自然环境观测或航空影像中检测、定位并识别野生动物物种，支持种群调查和生态保护。",
+        "aliases": [
+          "Wildlife detection"
+        ]
+      },
+      {
+        "axis": "task",
+        "label": "量子态性质学习",
+        "label_en": "Quantum state property learning",
+        "definition": "由量子测量样本学习量子态参数或可观测量期望值，包括基态和热态性质；不要求学习算法在量子硬件上运行。"
+      }
+    ],
     "baseline_decisions_preserved": true
   },
   "cross_review_overlap": {
@@ -345,8 +414,8 @@
     "different_decisions": 46,
     "new_continuation_overlaps": 0,
     "note": "Audit only; other reviewer files unchanged. Reconcile historical differing decisions before repository-wide merge.",
-    "checked_commit": "b8abd30d5fbc3cc23af73c425cd0a360b4cb3ed4"
+    "checked_commit": "e572dda549736a44a41fdb73e7dd1f916d7da81c"
   },
-  "previous_published_records": 14633,
-  "this_increment_records": 1200
+  "previous_published_records": 15833,
+  "this_increment_records": 1500
 }
