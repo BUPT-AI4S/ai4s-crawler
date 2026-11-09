@@ -1866,15 +1866,16 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "出版社 2024 卷期或年度正式目录；保留出版类型，日期和增刊须与快照口径一致。",
-    "coverage_note": "已定位出版社卷期目录，尚缺本年度逐期 DOI 集合，在线优先、正式卷年及增刊需单独核对。 候选中原始摘要为空 12 篇，逐篇证据见个人 monitor-audit 文件。",
+    "coverage_note": "已逐 DOI 核对 2024 年出版社在 Crossref 登记的 2,638 条 journal-article，与快照逐项相符；按卷统计见 doi_register_comparison。出版社独立逐期目录尚未完整核实。",
     "evidence_urls": [
-      "https://www.sciencedirect.com/journal/environmental-research/issues"
+      "https://www.sciencedirect.com/journal/environmental-research/issues",
+      "https://api.crossref.org/journals/0013-9351/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article"
     ],
     "issues": [
-      "已定位出版社卷期目录，尚缺本年度逐期 DOI 集合，在线优先、正式卷年及增刊需单独核对。"
+      "官方卷期目录尚未独立核完，年度官网总数暂空。"
     ],
     "next_actions": [
-      "按正式卷期和发表类型导出 DOI，与快照作双向集合差，核实差项后再补录。"
+      "待可公开读取的出版社卷期目录齐备后，按卷比较文献类型、增刊与未标卷条目。"
     ],
     "source_title": "Environmental Research",
     "snapshot_papers": 2638,
@@ -1892,7 +1893,44 @@
       "exclude": 3
     },
     "submitted_record_count": 21,
-    "rechecked_on": "2026-11-09"
+    "rechecked_on": "2026-11-09",
+    "doi_register_comparison": {
+      "source": "Crossref，出版方登记",
+      "issn": "0013-9351",
+      "year_filter": "from-pub-date:2024-01-01,until-pub-date:2024-12-31",
+      "distinct_registered": 2638,
+      "snapshot_dois": 2638,
+      "register_only": 0,
+      "snapshot_only": 0,
+      "registered_by_volume": {
+        "240": 141,
+        "241": 92,
+        "242": 95,
+        "243": 88,
+        "244": 91,
+        "245": 95,
+        "246": 95,
+        "247": 93,
+        "248": 92,
+        "249": 85,
+        "250": 91,
+        "251": 189,
+        "252": 340,
+        "253": 11,
+        "254": 16,
+        "255": 55,
+        "256": 38,
+        "257": 93,
+        "258": 91,
+        "259": 89,
+        "260": 93,
+        "261": 89,
+        "262": 189,
+        "263": 286,
+        "未标卷": 1
+      },
+      "evidence_url": "https://api.crossref.org/journals/0013-9351/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article"
+    }
   },
   {
     "year": 2024,
