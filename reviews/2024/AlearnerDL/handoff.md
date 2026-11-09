@@ -1,3 +1,69 @@
+# 龙兆科 · 2024 年论文审核
+
+分工表涵盖 49 个来源，采集快照时间为 `2026-11-05T10:31:19.144426+08:00`。原始候选 972 篇，纳入 495 篇，排除 429 篇，待定 48 篇。
+
+相关性以论文摘要判断。官网目录用来核对文献类型、分轨及漏采。研究范围内未取得摘要、或可读片段不足以判断的条目保留为待定。
+
+原候选缺摘要 114 篇。其中 50 篇已有个人或团队核对的摘要字段，18 篇从公开摘要取得足够证据，14 篇仅取得信息不足的摘要片段，15 篇未取得可核验摘要，17 篇按出版类型或会议分轨排除。
+
+24 个来源已核实与快照同口径的官网总数，25 个保留已核分轨和待查原因。另补录 SANER 主会 61 篇（纳入／排除／待定为 13／29／19），以及 IWQoS 的 FCC 1 篇（待定）。个人文件共 2,657 条，含此前已提交的历史记录。本轮沿用 GitHub 主分支已移除 12 条非本次分工 ACL 记录的结果。
+
+[阶段反馈](../feedback/AlearnerDL.json) · [缺摘要与补录明细](monitor-audit-2026-11-09.json) · [逐篇审核](../AlearnerDL.json)
+
+| 来源 | 快照条目 | 同口径官网数 | 原候选纳入／排除／待定 | 原缺摘要 | 核验依据 |
+| --- | ---: | ---: | --- | ---: | --- |
+| Gastroenterology（j-aba2a5c1d5） | 5156 | 待核 | 2／13／1 | 14 | 已定位出版社卷期目录，尚缺本年度逐期 DOI 集合，在线优先、正式卷年及增刊需单独核对。 已按 Gastroenterology 第 166 卷第 5 期增刊识别 13 个会议摘要。 [来源](https://www.sciencedirect.com/journal/gastroenterology/issues) |
+| Nature Reviews Cardiology（nrcardio） | 128 | 128 | 0／0／0 | 0 | 已按出版社年度目录的 DOI 集合逐篇对照。官网与快照均为 128 篇，未发现差项。 [来源](https://www.nature.com/nrcardio/articles?year=2024) |
+| Cell Metabolism（j-dbcb0fcd74） | 193 | 待核 | 0／0／0 | 0 | 已对照出版方向 Crossref 登记的 DOI：193 条，快照 193 条，单向差数分别为 0 和 0。出版社逐期目录仍须核对。 [来源](https://www.sciencedirect.com/journal/cell-metabolism/issues) |
+| International Journal of Machine Tools and Manufacture（j-0b805d1731） | 66 | 待核 | 0／0／0 | 0 | 已对照出版方向 Crossref 登记的 DOI：66 条，快照 66 条，单向差数分别为 0 和 0。出版社逐期目录仍须核对。 [来源](https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/issues) |
+| Computer Science Review（j-8d1b1806d8） | 63 | 待核 | 0／0／0 | 0 | 已对照出版方向 Crossref 登记的 DOI：63 条，快照 63 条，单向差数分别为 0 和 0。出版社逐期目录仍须核对。 [来源](https://www.sciencedirect.com/journal/computer-science-review/issues) |
+| Annual Reviews in Control（j-82b1ddfc1d） | 42 | 待核 | 0／0／0 | 0 | 已对照出版方向 Crossref 登记的 DOI：42 条，快照 42 条，单向差数分别为 0 和 0。出版社逐期目录仍须核对。 [来源](https://www.sciencedirect.com/journal/annual-reviews-in-control/issues) |
+| npj Vaccines（npjvaccines） | 258 | 258 | 1／1／0 | 0 | 已按出版社年度目录的 DOI 集合逐篇对照。官网与快照均为 258 篇，未发现差项。 [来源](https://www.nature.com/npjvaccines/articles?year=2024) |
+| Journal of Computational Physics（j-ce9a52b1f6） | 733 | 待核 | 48／3／0 | 33 | 已对照出版方向 Crossref 登记的 DOI：733 条，快照 733 条，单向差数分别为 0 和 0。出版社逐期目录仍须核对。 [来源](https://www.sciencedirect.com/journal/journal-of-computational-physics/issues) |
+| ACM SIGPLAN Conference on Programming Language Design and Implementation（pldi） | 89 | 89 | 0／7／0 | 0 | SIGPLAN OpenTOC 正式出版卷 PACMPL 8 (PLDI) 的 89 篇均可解析出独立的 ACM DOI，与快照 89 个 DOI 双向匹配。官网录用日程列 90 个题名，卷期出版口径采用已核对的 89 篇。 [来源](https://www.sigplan.org/OpenTOC/pldi24.html) |
+| ACM Symposium on User Interface Software and Technology（uist） | 261 | 待核 | 3／21／0 | 0 | 正式论文、海报、展示等分别出版，会议归档网页与快照的全分轨数仍需按 ACM DOI 对应。 [来源](https://uist.acm.org/2024/program/) |
+| ACM/IEEE International Conference on Embedded Artificial Intelligence and Sensing Systems（sensys） | 116 | 待核 | 3／20／1 | 0 | 官网所列分轨为12 个正式论文会场 60 篇；快照 116 条，覆盖的分轨和正式发表范围仍需逐项对应。 [来源](https://sensys.acm.org/2024/program/) |
+| ACM/IEEE International Conference on Model Driven Engineering Languages and Systems（models） | 182 | 待核 | 0／11／0 | 0 | 官网 Technical Track 的 26 个题名均能在快照中找到。快照另外包含附属分轨，不能用 182 减去 26 推断漏采。 [来源](https://conf.researchr.org/track/models-2024/models-2024-technical-track) |
+| Annual Computer Security Applications Conference（acsac） | 114 | 115 | 0／8／0 | 0 | 两个出版卷 83 与 32 篇，快照 DOI 分别 83 与 31。WAITI 工作坊会议程序及作者页面均证实第 178 页的 Automating AWS Security Controls，属工作坊，未计入主会研究论文。 [来源](https://www.proceedings.com/content/079/079256webtoc.pdf) |
+| European Conference on Computational Biology（eccb） | 25 | 25 | 16／4／1 | 0 | 牛津出版的 Bioinformatics 第 40 卷 Supplement_2 逐篇列出 25 个 DOI，其中专题研究论文 24 篇、序言 1 篇（btae422）。25 个 DOI 与快照双向比对，差集均为空。 [来源](https://academic.oup.com/bioinformatics/issue/40/Supplement_2) |
+| IEEE International Conference on Computer Communications（infocom） | 449 | 449 | 12／40／0 | 0 | 正式目录主会 256 条、工作坊 193 条，两个 DOI 前缀的快照分别有 256 与 193 条。 已核对卷别和总量，尚未逐篇核对全部成员。 [来源](https://www.proceedings.com/content/075/075735webtoc.pdf) |
+| IEEE International Conference on Network Protocols（icnp） | 85 | 85 | 0／6／0 | 0 | 完整目录 85 条，快照 85 个 DOI 均属 ICNP61940；主会录用 48 篇是其中一个分轨。 已核对卷别和总量，尚未逐篇核对全部成员。 [来源](https://www.proceedings.com/content/078/078708webtoc.pdf) |
+| IEEE International Conference on Pervasive Computing and Communications（percom） | 186 | 待核 | 1／27／1 | 0 | 官网主会研究分轨长文 15 篇、短文 7 篇，附属活动出版目录 163 条。快照按 DOI 为主会 23、附属卷 163；主会第 23 条的类型有待核实。 [来源](https://percom.org/2024/list-of-accepted-paper/) |
+| IEEE International Conference on Program Comprehension（icpc） | 46 | 46 | 0／1／0 | 0 | 正式论文集 46 篇，不计作者索引及前置页。快照的 46 个 ACM DOI 都属于 3643916 正式卷。 已核对卷别和总量，尚未逐篇核对全部成员。 [来源](https://www.proceedings.com/content/075/075081webtoc.pdf) |
+| IEEE International Conference on Robotics and Automation（icra） | 1760 | 1760 | 58／59／6 | 0 | IEEE RAS 会议纪要报告正会录用论文 1,760 篇；快照的 1,760 条均带 ICRA 主卷 DOI。已核对总量，未完成全卷题名逐篇比对。 [来源](https://www.ieee-ras.org/images/AdCom_Meeting_Minutes/2024/APPROVED_AdCom_Meeting_Minutes__ICRA_2024_05172024pdf_1.pdf) |
+| IEEE International Conference on Sensing, Communication, and Networking（secon） | 42 | 42 | 0／3／0 | 0 | 逐项核对正式目录的 42 段论文页码；快照中 42 个 DOI 均属 SECON64284。 已核对卷别和总量，尚未逐篇核对全部成员。 [来源](https://www.proceedings.com/content/079/079494webtoc.pdf) |
+| IEEE International Conference on Software Analysis, Evolution,and Reengineering（saner） | 33 | 待核 | 0／7／0 | 0 | 快照 33 条均为 SANER-C 附属卷。官网主会 Research Papers 分轨 61 篇已逐篇与出版记录对应，61 篇均补入个人审核（13 篇纳入、29 篇排除、19 篇待定）。60 篇有 DOI，1 篇以会议官网页面标识。年度主卷与附属卷合并后的总数尚待核对。 主卷正式出版目录有 105 条具正文页码的条目，附属卷另有 31 条及 2 篇 Editorial。主卷研究分轨以外的 44 条须继续按分轨与类型对照。 [来源](https://conf.researchr.org/track/saner-2024/saner-2024-papers) |
+| IEEE International Symposium on Reliable Distributed Systems（srds） | 33 | 33 | 0／2／0 | 0 | 正式目录 33 篇，不计作者索引及前置页。快照 33 个 DOI 均属 SRDS64841。 已核对卷别和总量，尚未逐篇核对全部成员。 [来源](https://www.proceedings.com/content/078/078235webtoc.pdf) |
+| IEEE International Symposium on Software Reliability Engineering（issre） | 129 | 129 | 1／9／0 | 0 | 主卷 53 条、工作坊卷 76 条，均与两组快照 DOI 数量相符；工作坊的两个带数字的会场标题与作者索引均未计为论文。 已核对卷别和总量，尚未逐篇核对全部成员。 [来源](https://www.proceedings.com/content/077/077639webtoc.pdf) |
+| IEEE Symposium on Security and Privacy（sp） | 297 | 待核 | 1／12／0 | 0 | 官网三轮名单逐篇计数合计 261 篇，与 SP54263 主卷的 261 个快照 DOI 数量相符。另有 36 个 SPW63631 工作坊 DOI；工作坊的论文及非正文出版物仍须与全卷比对。 [来源](https://www.ieee-security.org/TC/SP2024/accepted-papers.html) |
+| IEEE/ACM International Workshop on Quality of Service（iwqos） | 127 | 128 | 3／5／1 | 0 | 正式目录 128 条，快照 127 个本卷 DOI。会议程序号 1570999683 的 FCC 列在数据中心网络分会场，目录第 943 页起，DOI 10.1109/IWQoS61813.2024.10682920 在快照中缺失。已补录，因未取得可核验摘要，相关性待定。 [来源](https://www.proceedings.com/content/076/076388webtoc.pdf) |
+| IEEE/CVF Winter Conference on Applications of Computer Vision（wacv） | 845 | 846 | 61／22／1 | 0 | CVF 目录 846 篇，快照 845 篇；差项 CycleCL 已在此前个人交付中按正式记录补入，本次保留原记录。 [来源](https://openaccess.thecvf.com/WACV2024?day=all) |
+| International Conference on Automated Planning and Scheduling（icaps） | 82 | 82 | 1／5／0 | 0 | 已按正式论文目录的题名逐篇对照。官网与快照均为 82 篇，未发现差项。 [来源](https://ojs.aaai.org/index.php/ICAPS/issue/view/606) |
+| International Conference on Automated Software Engineering（ase） | 298 | 待核 | 0／5／0 | 0 | 官网所列分轨为会议官方研究分轨 Accepted Papers 清单 155 篇；快照 298 条，覆盖的分轨和正式发表范围仍需逐项对应。 [来源](https://conf.researchr.org/track/ase-2024/ase-2024-research) |
+| International Conference on Computer Vision（iccv） | 0 | 0 | 0／0／0 | 0 | ICCV 官方历届列表中相邻届次为 2023 与 2025，2024 年未举办。 [来源](https://tc.computer.org/tcpami/iccv/) |
+| International Conference on Dependable Systems and Networks（dsn） | 98 | 待核 | 1／4／0 | 0 | 主卷、补充卷与工作坊卷具正文页码的论文分别 42、36、16 条；快照三个 DOI 前缀分别有 43、36、19 条。仍须核对附加 4 条的文献类型。 [来源](https://dsn2024uq.github.io/program.html) |
+| International Conference on Information Processing in Medical Imaging（ipmi） | 0 | 0 | 0／0／0 | 0 | Springer 的 IPMI 论文集序列相邻届次为 2023 与 2025，2024 年未举办。 [来源](https://link.springer.com/conference/ipmi) |
+| International Conference on Principles of Knowledge Representation and Reasoning（kr） | 91 | 91 | 0／3／0 | 0 | 官网 92 个条目包含 1 篇前言，剔除后为 91 篇正式研究论文，已按题名核对。 [来源](https://proceedings.kr.org/2024/) |
+| International Conference on Software Engineering（icse） | 434 | 待核 | 2／16／0 | 0 | 官网研究分轨与综合会议日程分别编排，快照也含 Posters / Companion。已利用官方分轨核验个人候选；尚缺全卷 DOI 对照。 [来源](https://conf.researchr.org/track/icse-2024/icse-2024-research-track) |
+| International Conference on Software Maintenance and Evolution（icsme） | 89 | 90 | 0／2／0 | 0 | 正式目录 90 篇，快照 89 个本卷 DOI。博士生论坛第 848 页列 Smart Software Bug Management Using Issue Commit Analysis（Abhishek Kumar）；已记录题名、作者和出版类型，独立文章标识仍待证实。 [来源](https://www.proceedings.com/content/077/077923webtoc.pdf) |
+| International Joint Conference on Autonomous Agents and Multi-agent Systems（aamas） | 472 | 待核 | 3／7／0 | 7 | 官网八个分轨合计 460 条，与快照匹配 460 条；另 12 条来自其他届次的工作坊。正会 Full Papers 有 230 篇，各分轨单列。 [来源](https://www.ifaamas.org/Proceedings/aamas2024/forms/contents.htm) |
+| International Symposium on Software Testing and Analysis（issta） | 170 | 待核 | 1／8／0 | 0 | 官网所列分轨为会议官方研究分轨 Accepted Papers 清单 143 篇；快照 170 条，覆盖的分轨和正式发表范围仍需逐项对应。 [来源](https://2024.issta.org/track/issta-2024-papers) |
+| International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing（mobihoc） | 56 | 待核 | 3／8／1 | 0 | 官网所列分轨为正式录用列表 37 篇；快照 56 条，覆盖的分轨和正式发表范围仍需逐项对应。 [来源](https://www.sigmobile.org/mobihoc/2024/accepted-papers.html) |
+| Network and Distributed System Security Symposium（ndss） | 140 | 140 | 0／1／0 | 1 | 官网 Accepted Papers 的 140 个论文标题与快照数量相等；尚未逐条映射全体 DBLP ID。 [来源](https://www.ndss-symposium.org/ndss2024/accepted-papers/) |
+| North American Chapter of the Associationfor Computational Linguistics（naacl） | 858 | 858 | 12／21／0 | 0 | ACL Anthology 长文 487、短文 75、Findings 296；三个卷的论文 ID 均已逐卷比对，卷首语另计。 [来源](https://aclanthology.org/events/naacl-2024/) |
+| Parallel Problem Solving from Nature（ppsn） | 101 | 101 | 4／10／0 | 0 | Springer 四卷共收录 101 篇。快照 DOI 分卷分别为 25、24、25、27；飞页及前后记不计入研究章节。 [来源](https://link.springer.com/book/10.1007/978-3-031-70055-2) |
+| Symposium on Network System Design and Implementation（nsdi） | 112 | 112 | 0／5／1 | 0 | 已按正式论文目录的题名逐篇对照。官网与快照均为 112 篇，未发现差项。 [来源](https://www.usenix.org/conference/nsdi24/technical-sessions) |
+| The International AAAI Conference on Web and Social Media（icwsm） | 161 | 待核 | 14／8／6 | 0 | 已定位 AAAI 第 18 卷和 2024 年议程；研究论文与数据、海报、演示等分类尚未与快照逐条对照。 [来源](https://ojs.aaai.org/index.php/ICWSM/issue/view/605) |
+| USENIX Security Symposium（usenix-security） | 481 | 待核 | 3／14／0 | 0 | 官方议程的 417 篇研究论文均已与快照匹配，另有 1 场主题报告。快照另外有来自 SOUPS、WOOT 等的条目，及当前官网目录中未列出的 Prefetch for Fun and Profit；该条须核对版本或撤下情况。 [来源](https://www.usenix.org/conference/usenixsecurity24/technical-sessions) |
+| USENIX Symposium on Operating Systems Design and Implementation（osdi） | 53 | 53 | 0／3／0 | 0 | 已按正式论文目录的题名逐篇对照。官网与快照均为 53 篇，未发现差项。 [来源](https://www.usenix.org/conference/osdi24/technical-sessions) |
+| Expert Systems with Applications（j-a6cfe198b1） | 3793 | 待核 | 73／13／22 | 37 | 已定位出版社卷期目录，尚缺本年度逐期 DOI 集合，在线优先、正式卷年及增刊需单独核对。 [来源](https://www.sciencedirect.com/journal/expert-systems-with-applications/issues) |
+| Environmental Research（j-e3cffa92a3） | 2638 | 待核 | 18／3／0 | 12 | 已定位出版社卷期目录，尚缺本年度逐期 DOI 集合，在线优先、正式卷年及增刊需单独核对。 [来源](https://www.sciencedirect.com/journal/environmental-research/issues) |
+| Food Chemistry（j-c8af77652d） | 3710 | 待核 | 42／6／0 | 1 | 已定位出版社卷期目录，尚缺本年度逐期 DOI 集合，在线优先、正式卷年及增刊需单独核对。 [来源](https://www.sciencedirect.com/journal/food-chemistry/issues) |
+| Pattern Recognition（j-704f11b185） | 866 | 待核 | 4／4／4 | 5 | 已定位出版社卷期目录，尚缺本年度逐期 DOI 集合，在线优先、正式卷年及增刊需单独核对。 [来源](https://www.sciencedirect.com/journal/pattern-recognition/issues) |
+| Ecological Indicators（j-3c29fd056f） | 1662 | 待核 | 104／2／2 | 4 | 已定位出版社卷期目录，尚缺本年度逐期 DOI 集合，在线优先、正式卷年及增刊需单独核对。 [来源](https://www.sciencedirect.com/journal/ecological-indicators/issues) |
+
+## 历史批次记录
+
 # 龙兆科 2024 年论文摘要精筛：阶段交付
 
 本次为**未完成全量漏筛检查的阶段结果**。三个并行代理触发服务额度上限后，保存并提交已完成判断；尚有 5,148 条全量书目未审，见 `unreviewed.json`。用户已明确要求效率优先，爬取失败或受阻项暂缓，不再反复补抓。
