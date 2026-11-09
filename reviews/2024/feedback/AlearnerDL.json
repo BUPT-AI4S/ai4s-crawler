@@ -293,16 +293,21 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "出版社 2024 卷期或年度正式目录；保留出版类型，日期和增刊须与快照口径一致。",
-    "coverage_note": "已对照出版方向 Crossref 登记的 DOI：733 条，快照 733 条，单向差数分别为 0 和 0。出版社逐期目录仍须核对。 候选中原始摘要为空 33 篇，逐篇证据见个人 monitor-audit 文件。",
+    "coverage_note": "已对照出版方向 Crossref 登记的 DOI：733 条，快照 733 条，单向差数分别为 0 和 0。出版社逐期目录仍须核对。 候选中原始摘要为空 33 篇，逐篇证据见个人 monitor-audit 文件。 另复核 57 条旧审计非候选：补入 3 篇、排除 47 条，7 条保留未审。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/journal-of-computational-physics/issues",
-      "https://api.crossref.org/journals/0021-9991/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article&rows=1000&select=DOI%2Ctitle%2Cauthor%2Cabstract%2Cpublished%2Cpublished-online%2Cpublished-print%2Ctype%2CURL%2Cvolume%2Cissue%2Clink%2Cresource"
+      "https://api.crossref.org/journals/0021-9991/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article&rows=1000&select=DOI%2Ctitle%2Cauthor%2Cabstract%2Cpublished%2Cpublished-online%2Cpublished-print%2Ctype%2CURL%2Cvolume%2Cissue%2Clink%2Cresource",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0021999123006733",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0021999123006770",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0021999124002250"
     ],
     "issues": [
-      "已对照出版方向 Crossref 登记的 DOI：733 条，快照 733 条，单向差数分别为 0 和 0。出版社逐期目录仍须核对。"
+      "已对照出版方向 Crossref 登记的 DOI：733 条，快照 733 条，单向差数分别为 0 和 0。出版社逐期目录仍须核对。",
+      "非候选旧清单还有 7 条未取得足以判定的作者摘要或出版类型。"
     ],
     "next_actions": [
-      "按正式卷期和发表类型导出 DOI，与快照作双向集合差，核实差项后再补录。"
+      "按正式卷期和发表类型导出 DOI，与快照作双向集合差，核实差项后再补录。",
+      "对 noncandidate_recheck.unresolved_ids 列出的条目，待有公开作者摘要或正式出版类型时继续审核。"
     ],
     "source_title": "Journal of Computational Physics",
     "snapshot_papers": 733,
@@ -316,11 +321,31 @@
       "prior_personal_abstract_field": 33
     },
     "submitted_record_decisions": {
-      "include": 122,
+      "include": 125,
       "exclude": 3
     },
-    "submitted_record_count": 125,
-    "rechecked_on": "2026-11-09"
+    "submitted_record_count": 128,
+    "rechecked_on": "2026-11-09",
+    "noncandidate_recheck": {
+      "original_non_candidates_unreviewed": 57,
+      "newly_included": 3,
+      "newly_excluded": 47,
+      "unresolved": 7,
+      "newly_included_dois": [
+        "10.1016/j.jcp.2023.112578",
+        "10.1016/j.jcp.2023.112582",
+        "10.1016/j.jcp.2024.112976"
+      ],
+      "unresolved_ids": [
+        "10.1016/j.jcp.2024.112793",
+        "10.1016/j.jcp.2024.112814",
+        "10.1016/j.jcp.2024.112815",
+        "10.1016/j.jcp.2024.112919",
+        "10.1016/j.jcp.2024.112949",
+        "10.1016/j.jcp.2024.112945",
+        "10.1016/j.jcp.2024.113297"
+      ]
+    }
   },
   {
     "year": 2024,
