@@ -1,0 +1,572 @@
+[
+  {
+    "id": "10.1145/3706628.3708823",
+    "venue": "fpga",
+    "year": 2025,
+    "track": "unverified",
+    "title": "ReducedLUT: Table Decomposition with \"Don't Care\" Conditions.",
+    "authors": [
+      "Oliver Cassidy",
+      "Marta Andronic",
+      "Samuel Coward",
+      "George A. Constantinides"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/395/7017",
+      "https://dblp.org/pid/356/2624",
+      "https://dblp.org/pid/273/6026",
+      "https://dblp.org/pid/38/1966"
+    ],
+    "abstract": "Lookup tables (LUTs) are frequently used to efficiently store arrays of precomputed values for complex mathematical computations. When used in the context of neural networks, these functions exhibit a lack of recognizable patterns which presents an unusual challenge for conventional logic synthesis techniques. Several approaches are known to break down a single large lookup table into multiple smaller ones that can be recombined. Traditional methods, such as plain tabulation, piecewise linear approximation, and multipartite table methods, often yield inefficient hardware solutions when applied to LUT-based NNs.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3706628.3708823",
+    "pages": "36-42",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3706628.3708823",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM/SIGDA International Symposium on Field-Programmable Gate Arrays",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/fpga/CassidyACC25",
+    "dblp_toc": "https://dblp.org/db/conf/fpga/fpga2025",
+    "booktitle": "FPGA",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "circuit placement"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "circuit placement"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3706628.3708858",
+    "venue": "fpga",
+    "year": 2025,
+    "track": "unverified",
+    "title": "No Time to Lose: Enabling Real-Time Fluorescence Lifetime Imaging on Resource-constrained FPGAs Through Efficient Scheduling.",
+    "authors": [
+      "Ismail Erbas",
+      "Aporva Amarnath",
+      "Vikas Pandey",
+      "Karthik Swaminathan",
+      "Naigang Wang",
+      "Xavier Intes"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/391/6766",
+      "https://dblp.org/pid/204/4396",
+      "https://dblp.org/pid/146/2418",
+      "https://dblp.org/pid/13/3711",
+      "https://dblp.org/pid/78/11176",
+      "https://dblp.org/pid/61/4662"
+    ],
+    "abstract": "Fluorescence lifetime imaging (FLI) is a widely used technique in the biomedical field for measuring the decay times of fluorescent molecules, providing insights into metabolic states, protein interactions, and ligand-receptor bindings [1, 5]. However, its broader application in fast biological processes, such as dynamic activity monitoring, and clinical use, such as in guided surgery, is limited by long data acquisition times and computationally demanding data processing. While deep learning has reduced post-processing times, time-resolved data acquisition remains a bottleneck for real-time applications. To address this,we propose a method to achieve near realtime FLI using an FPGA-based hardware accelerator. Specifically,we implemented a GRU-based sequence-to-sequence (Seq2Seq) model [3] on an FPGA board compatible with time-resolved cameras. The GRU model balances accurate processing with the resource constraints of FPGAs, which have limited DSP units and BRAM. The limited memory and computational resources on the FPGA require efficient scheduling of operations and memory allocation to deploy deep learning models for low-latency applications.We address these challenges by using STOMP, a queue-based discrete-event simulator that automates and optimizes task scheduling and memory management on hardware [4]. By integrating a GRU-based Seq2Seq model and its compressed version, called Seq2SeqLite [2], generated through knowledge distillation (KD), we were able to process multiple pixels in parallel, reducing latency compared to sequential processing. We explore various levels of parallelism to achieve an optimal balance between performance and resource utilization. Our results indicate that the proposed techniques achieved a 17.7x and 52.0x speedup over manual scheduling for the Seq2Seq model and the Seq2SeqLite model, respectively. Furthermore, the Seq2SeqLite model achieved a 98% reduction in parameters compared to the Seq2Seq model.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3706628.3708858",
+    "pages": "186",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3706628.3708858",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM/SIGDA International Symposium on Field-Programmable Gate Arrays",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/fpga/ErbasAPSWI25",
+    "dblp_toc": "https://dblp.org/db/conf/fpga/fpga2025",
+    "booktitle": "FPGA",
+    "ai4s_hits": [
+      "\\bmolecules?\\b",
+      "\\bproteins?\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 生命科学",
+      "AI for 物质科学"
+    ],
+    "ai4s_keywords": [
+      "protein",
+      "molecule"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "protein"
+        ],
+        "AI for 物质科学": [
+          "molecule"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3706628.3708827",
+    "venue": "fpga",
+    "year": 2025,
+    "track": "unverified",
+    "title": "wa-hls4ml and lui-gnn: A Benchmark and GNN based Surrogate Model for hls4ml Resource and Latency Estimation.",
+    "authors": [
+      "Benjamin Hawks",
+      "Dennis Plotnikov",
+      "Nhan Tran",
+      "Karla Tame-Narvaez",
+      "Mohammad Mehdi Rahimifar",
+      "Hamza Ezzaoui Rahali",
+      "Audrey C. Therrien",
+      "Giuseppe Di Guglielmo",
+      "Javier M. Duarte",
+      "Vladimir Loncar"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/274/3076",
+      "https://dblp.org/pid/398/7053",
+      "https://dblp.org/pid/54/5945",
+      "https://dblp.org/pid/395/8416",
+      "https://dblp.org/pid/361/6744",
+      "https://dblp.org/pid/370/9496",
+      "https://dblp.org/pid/367/6358",
+      "https://dblp.org/pid/03/880",
+      "https://dblp.org/pid/218/6528",
+      "https://dblp.org/pid/177/0119"
+    ],
+    "abstract": "As machine learning (ML) increasingly serves as a tool for addressing real-time challenges in scientific applications, the development of advanced tooling has significantly reduced the time required to iterate on various designs. These advancements have solved major obstacles, but also exposed new challenges. For example, processes that were not previously considered bottlenecks, such as model synthesis, are now becoming limiting factors in the rapid iteration of designs. To reduce these emerging constraints, multiple efforts are being launched toward designing an ML-based surrogate model that estimates resource usage of synthesized accelerator architectures. This model would reduce the design iteration time, especially when designing within a set of given hardware constraints. This approach shows considerable potential, but as it stands, the effort is early and would benefit from coordination and standardization to assist future work as it emerges.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3706628.3708827",
+    "pages": "43",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3706628.3708827",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM/SIGDA International Symposium on Field-Programmable Gate Arrays",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/fpga/HawksPTTRRTGDL25",
+    "dblp_toc": "https://dblp.org/db/conf/fpga/fpga2025",
+    "booktitle": "FPGA",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "图神经网络"
+    ],
+    "ai4s_tags": [
+      "科学知识模型",
+      "科学评测"
+    ],
+    "ai4s_keywords": [
+      "surrogate model",
+      "benchmark",
+      "graph neural network"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "科学知识模型": [
+          "surrogate model"
+        ],
+        "科学评测": [
+          "benchmark"
+        ]
+      },
+      "method_evidence": [
+        "graph neural network"
+      ]
+    }
+  },
+  {
+    "id": "10.1145/3706628.3708877",
+    "venue": "fpga",
+    "year": 2025,
+    "track": "unverified",
+    "title": "TreeLUT: An Efficient Alternative to Deep Neural Networks for Inference Acceleration Using Gradient Boosted Decision Trees.",
+    "authors": [
+      "Alireza Khataei",
+      "Kia Bazargan"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/339/8936",
+      "https://dblp.org/pid/b/KiaBazargan"
+    ],
+    "abstract": "Accelerating machine learning inference has been an active research area in recent years. In this context, field-programmable gate arrays (FPGAs) have demonstrated compelling performance by providing massive parallelism in deep neural networks (DNNs). Neural networks (NNs) are computationally intensive during inference, as they require massive amounts of multiplication and addition, which makes their implementations costly. Numerous studies have recently addressed this challenge to some extent using a combination of sparsity induction, quantization, and transformation of neurons or sub-networks into lookup tables (LUTs) on FPGAs. Gradient boosted decision trees (GBDTs) are a high-accuracy alternative to DNNs in a wide range of regression and classification tasks, particularly for tabular datasets. The basic building block of GBDTs is a decision tree, which resembles the structure of binary decision diagrams. FPGA design flows are heavily optimized to implement such a structure efficiently. In addition to decision trees, GBDTs perform simple operations during inference, including comparison and addition. We present TreeLUT as an open-source tool for implementing GBDTs using an efficient quantization scheme, hardware architecture, and pipelining strategy. It primarily utilizes LUTs with no BRAMs or DSPs on FPGAs, resulting in high efficiency. We show the effectiveness of TreeLUT using multiple classification datasets, commonly used to evaluate ultra-low area and latency architectures. Using these benchmarks, we compare our implementation results with existing DNN and GBDT methods, such as DWN, PolyLUT-Add, NeuraLUT, LogicNets, FINN, hls4ml, and others. Our results show that TreeLUT significantly improves hardware utilization, latency, and throughput at competitive accuracy compared to previous works. For instance, it achieves an accuracy of around 97% on the MNIST dataset while delivering around 4 to 101 times lower hardware cost in terms of area-delay product than recent LUT-based NNs.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3706628.3708877",
+    "pages": "14-24",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3706628.3708877",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM/SIGDA International Symposium on Field-Programmable Gate Arrays",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/fpga/KhataeiB25",
+    "dblp_toc": "https://dblp.org/db/conf/fpga/fpga2025",
+    "booktitle": "FPGA",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "neuroscience"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "neuroscience"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3706628.3708875",
+    "venue": "fpga",
+    "year": 2025,
+    "track": "unverified",
+    "title": "HUMA: Heterogeneous, Ultra Low-Latency Model Accelerator for The Virtual Brain on a Versal Adaptive SoC.",
+    "authors": [
+      "Amirreza Movahedin",
+      "Lennart P. L. Landsmeer",
+      "Christos Strydis"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/398/7069",
+      "https://dblp.org/pid/339/0300",
+      "https://dblp.org/pid/23/1111"
+    ],
+    "abstract": "Brain modeling can occur at different levels of abstraction, each aimed at a different purpose. The Virtual Brain (TVB) is an open-source platform for constructing and simulating personalized brain-network models, favoring whole-brain macro-scales while reducing micro-level detail. Among other purposes, TVB is used to build patient-specific, digital, brain twins that can be used in different clinical settings, such as the study and treatment of epilepsy. However, fitting patient-specific TVB models requires a large number of successive and time-consuming simulations. By studying the internal structure of TVB, we observed heterogeneous computation needs in its models which could be leveraged to accelerate simulations. In this work, we designed and implemented HUMA, a heterogeneous, ultra low-latency, dataflow architecture on an AMD Versal Adaptive SoC to accelerate TVB fitting to different patient-brain makeups. Our heterogeneous solution runs about 27× faster compared to a modern-day, server-class, 32-core CPU while consuming a fraction of its power. Additionally, it delivers on average about 14× lower latency, 1.7× better power efficiency and an order-of-magnitude lower energy consumption when compared against the high-performance GPU version of TVB. The achieved latency savings reveal a significant potential in model-fitting for individual patients as well as in closed-loop biohybrid experiments.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3706628.3708875",
+    "pages": "223-233",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3706628.3708875",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM/SIGDA International Symposium on Field-Programmable Gate Arrays",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/fpga/MovahedinLS25",
+    "dblp_toc": "https://dblp.org/db/conf/fpga/fpga2025",
+    "booktitle": "FPGA",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "neuroscience"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "neuroscience"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3706628.3710807",
+    "venue": "fpga",
+    "year": 2025,
+    "track": "unverified",
+    "title": "Lessons from 40 Years of Reconfigurable Computing.",
+    "authors": [
+      "John Wawrzynek"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/w/JohnWawrzynek"
+    ],
+    "abstract": "Since the introduction of the first FPGAs in the mid 1980's, reconfigurable devices have offered a promising alternative to conventional computing devices. Computing structures are organized by spatially wiring a fabric of simple logic units, as opposed to serially executing instructions, as with conventional processors. Reconfigurable devices occupy the region between conventional processors, which offer highly flexible, yet relatively inefficient execution, and application specific integrated circuits (ASICs), which offer highly optimized yet inflexible behavior. Field Programmable Gate Arrays (FPGAs) and other reconfigurable devices provide the flexibility of software processors with their ability to be customized or specialized on a per application basis, along with the power, performance, and cost efficiency approaching that of fixed function application specific integrated circuits (ASICs). It has long been understood that reconfigurable devices can provide significant advantages over conventional processors; and because of their fine-grain parallelism and flexibility, they can be adapted over a wide range of applications and scale over a variety of problem sizes.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3706628.3710807",
+    "pages": "146",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3706628.3710807",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM/SIGDA International Symposium on Field-Programmable Gate Arrays",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/fpga/Wawrzynek25",
+    "dblp_toc": "https://dblp.org/db/conf/fpga/fpga2025",
+    "booktitle": "FPGA",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "circuit design"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "circuit design"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3706628.3708874",
+    "venue": "fpga",
+    "year": 2025,
+    "track": "unverified",
+    "title": "Greater than the Sum of its LUTs: Scaling Up LUT-based Neural Networks with AmigoLUT.",
+    "authors": [
+      "Olivia Weng",
+      "Marta Andronic",
+      "Danial Zuberi",
+      "Jiaqing Chen",
+      "Caleb Geniesse",
+      "George A. Constantinides",
+      "Nhan Tran",
+      "Nicholas J. Fraser",
+      "Javier Mauricio Duarte",
+      "Ryan Kastner"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/284/7960",
+      "https://dblp.org/pid/356/2624",
+      "https://dblp.org/pid/398/7159",
+      "https://dblp.org/pid/05/10445",
+      "https://dblp.org/pid/198/1483",
+      "https://dblp.org/pid/38/1966",
+      "https://dblp.org/pid/54/5945",
+      "https://dblp.org/pid/140/2391",
+      "https://dblp.org/pid/218/6528",
+      "https://dblp.org/pid/15/3231"
+    ],
+    "abstract": "Applications like high-energy physics and cybersecurity require extremely high throughput and low latency neural network (NN) inference. Lookup-table-based NNs address these constraints by implementing NNs as lookup tables (LUTs), achieving inference latency on the order of nanoseconds. Since LUTs are a fundamental FPGA building block, LUT-based NNs efficiently map to FPGAs. LogicNets (and its successors) form one class of LUT-based NNs that target FPGAs, mapping neurons directly to LUTs to meet low latency constraints with minimal resources. However, it is difficult to build larger, more performant LUT-based NNs like LogicNets because LUT usage increases exponentially with respect to neuron fan-in (i.e., number of synapses X synapse bitwidth). A large LUT-based NN quickly runs out of LUTs on an FPGA. Our work AmigoLUT addresses this issue by creating ensembles of smaller LUT-based NNs that scale linearly with respect to the number of models. AmigoLUT improves the scalability of LUT-based NNs, reaching higher throughput with up to an order of magnitude fewer LUTs than the largest LUT-based NNs.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3706628.3708874",
+    "pages": "25-35",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3706628.3708874",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM/SIGDA International Symposium on Field-Programmable Gate Arrays",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/fpga/WengAZCGCTFDK25",
+    "dblp_toc": "https://dblp.org/db/conf/fpga/fpga2025",
+    "booktitle": "FPGA",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 数理科学",
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "particle physics",
+      "neuroscience"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 数理科学": [
+          "particle physics"
+        ],
+        "AI for 生命科学": [
+          "neuroscience"
+        ]
+      },
+      "method_evidence": []
+    }
+  },
+  {
+    "id": "10.1145/3706628.3708835",
+    "venue": "fpga",
+    "year": 2025,
+    "track": "unverified",
+    "title": "HiGTR: High-Performance FPGA Implementation of Complete GNN-based Trajectory Reconstruction for HEP.",
+    "authors": [
+      "Yun-Chen Yang",
+      "Hsuan-Wei Yu",
+      "Bo-Cheng Lai",
+      "Shih-Chieh Hsu",
+      "Mark S. Neubauer",
+      "Santosh Parajuli"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/349/8238",
+      "https://dblp.org/pid/398/7068",
+      "https://dblp.org/pid/l/BoChengLai",
+      "https://dblp.org/pid/95/11410",
+      "https://dblp.org/pid/223/1854",
+      "https://dblp.org/pid/241/6173"
+    ],
+    "abstract": "Charged particle trajectory reconstruction is a critical task in high-energy physics (HEP), particularly for collision analysis in the Large Hadron Collider (LHC). In the LHC, the Level-1 Trigger (L1T) system must perform trajectory reconstruction with ultralow latency and very high throughput. Graph Neural Networks (GNNs)-based trajectory reconstruction on FPGAs has shown promising performance. However, the existing FPGA-based implementations are incomplete, supporting only the GNN processing stage and lacking the graph construction and track building parts of the task flow.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3706628.3708835",
+    "pages": "47",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3706628.3708835",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM/SIGDA International Symposium on Field-Programmable Gate Arrays",
+    "ccf_rank": "B",
+    "ccf_field": "计算机体系结构/并行与分布计算/存储系统",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/fpga/YangYLHNP25",
+    "dblp_toc": "https://dblp.org/db/conf/fpga/fpga2025",
+    "booktitle": "FPGA",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "图神经网络"
+    ],
+    "ai4s_tags": [
+      "AI for 数理科学"
+    ],
+    "ai4s_keywords": [
+      "particle physics",
+      "graph neural network"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 数理科学": [
+          "particle physics"
+        ]
+      },
+      "method_evidence": [
+        "graph neural network"
+      ]
+    }
+  }
+]
