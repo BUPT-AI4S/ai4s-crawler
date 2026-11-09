@@ -121,3 +121,21 @@ CIKM 的 +350 来自口径差异：全量采集 697 条覆盖该届全部分轨�
 写回约束：保留候选文件原有行级格式、字段顺序与 CRLF，仅填 `abstract` 并把 `source` 追加来源域名；`screening_status` 按 `article_type` 是否已知重设。无摘要的 3 条新增 `abstract_status` / `abstract_evidence_url` / `abstract_note`。
 
 结果：35 个来源的候选缺摘要合计由 39 降至 3，且这 3 条不是取不到，而是原文本身不设摘要栏。逐条台账见 [`abstract-topup.csv`](abstract-topup.csv)。
+
+## 文献类型清理与待定清零（2026-11-09，第三轮）
+
+第二轮补回摘要后仍留在候选里的 3 条「原文类型无摘要」，实为初筛收录了不该收的文献类型。按 `review-rules.md` 的文献类型口径（评论、社论、读者来信、更正、撤稿公告按类型排除），连同扫描中发现的另 2 条同类型记录，一并从候选池移出：
+
+| DOI | 类型 | 来源 |
+| --- | --- | --- |
+| `10.1016/j.diii.2024.07.011` | Editorial | Diagnostic and Interventional Imaging |
+| `10.1016/j.diii.2024.07.010` | Letter to the Editor | Diagnostic and Interventional Imaging |
+| `10.1007/s11427-024-2673-9` | Research Highlight | Science China Life Sciences |
+| `10.1016/j.envint.2024.108561` | Corrigendum | Environment International |
+| `10.1038/s41698-024-00510-3` | Retracted article | npj Precision Oncology |
+
+交付 JSON 仍保留这 5 条的 `exclude` 记录并注明文献类型（规则要求对已有候选保留排除记录）。候选池删除 5 行后，`coverage.json` 的 `candidate_missing_abstract` 在 35 个来源上全部归零。
+
+剩余 7 条待定按逐篇读原文落定，不再依赖摘要源：6 篇 Elsevier 论文直接读 ScienceDirect 文章页的摘要、引言与方法段；Molecular Psychiatry 一篇正文在订阅墙内，改读出版方补充材料 DOCX（基因型质控、填充、荧光素酶实验）与补充表 PDF——表 11–13 明确预测模型是「临床变量 + PRS + 基因型 + 性别」的多项逻辑回归，据此排除。
+
+结果：3 条纳入（`10.1016/j.renene.2024.120892`、`10.1016/j.renene.2024.121211`、`10.1016/j.compag.2024.108683`）、4 条排除，待定清零。7 篇原摘要已回填到交付记录的 `abstract` 与 `verified_metadata.abstract`。逐条依据见 [`action-report.md`](action-report.md) 第 7、8 节。

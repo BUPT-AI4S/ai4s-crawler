@@ -78,21 +78,52 @@
 
 台账 `abstract-topup.csv` 已同步刷新：64 条「已补摘要写回候选文件」（35 条来自 ScienceDirect 页面直读、1 条来自 SpringerLink 页面直读、28 条为第一轮 API 命中）、3 条「原文类型无摘要」。
 
+## 7. 文献类型清理：5 条非研究型条目移出候选池
+
+第 6 节留下的 3 条「原文类型无摘要」不应停留在候选里——它们本就不是原创研究正文，是初筛收录了不该收的文献类型。按 `review-rules.md` 的文献类型口径（只纳入原创研究正文、正式会议研究论文和有实质学术内容的综述；评论、社论、读者来信、更正、撤稿公告按类型排除），连同扫描中发现的另 2 条同类型记录，一并从候选池移除：
+
+| DOI | 出版方类型 | 来源 | 依据 |
+| --- | --- | --- | --- |
+| `10.1016/j.diii.2024.07.011` | Editorial | Diagnostic and Interventional Imaging | Vol.105(11):415-416，无摘要栏 |
+| `10.1016/j.diii.2024.07.010` | Letter to the Editor | Diagnostic and Interventional Imaging | Vol.105(10):409-411，正文以 “To the Editor,” 开头 |
+| `10.1007/s11427-024-2673-9` | Research Highlight | Science China Life Sciences | 68:588-589，SpringerLink 标注类型即 Research Highlight |
+| `10.1016/j.envint.2024.108561` | Corrigendum | Environment International | 题名 “Corrigendum to …”，仅更正作者单位 |
+| `10.1038/s41698-024-00510-3` | Retracted article | npj Precision Oncology | 题名 “RETRACTED ARTICLE: …”，出版方已撤回 |
+
+处理方式：候选文件（`metadata/2024/ai4s.json` 与 4 个分来源文件，共 5 行）按行删除，其余记录的顺序、字段与 CRLF 不变；交付 JSON 保留这 5 条的 `exclude` 记录并注明文献类型——规则要求「对已有候选保留排除记录，并在理由中注明类型」，删候选不等于删判定。
+
+清理后候选缺摘要归零：`coverage.json` 的 `candidate_missing_abstract` 35 个来源全部为 0。
+
+## 8. 7 条待定：逐篇读原文后落定
+
+第 6 节之后剩余的 7 条待定不是摘要缺失，而是方法不明。逐篇打开出版方文章页读摘要、引言与方法段（Molecular Psychiatry 一篇正文在订阅墙内，改读出版方补充材料 DOCX 与补充表 PDF），全部落定：
+
+| DOI | 来源 | 判定 | 读到的方法 |
+| --- | --- | --- | --- |
+| `10.1016/j.ymssp.2023.110886` | Mech. Syst. Signal Process. | exclude | 传输零点直接配置 + 谱横坐标最小化的约束优化，最右特征根用 TDS-CONTROL 计算；经典控制理论，无学习型方法 |
+| `10.1016/j.ymssp.2024.111513` | Mech. Syst. Signal Process. | exclude | 两层 Krylov-Craig-Bampton 子结构降阶 + 增广 CCM + Newmark-Beta 双层接触时程积分；确定性数值降阶 |
+| `10.1016/j.renene.2024.120892` | Renewable Energy | include | GWO 元优化整定 PSO，再用 PSO 寻优光伏 MPPT 的 D-PID 增益；报告相对 INC/PSO/P&O 提升 9.1%–21.6% |
+| `10.1016/j.renene.2024.121211` | Renewable Energy | include | 人工神经网络拟合三种海藻厌氧消化逐日产甲烷，R²>0.999、RMSE<4.537，优于 Gompertz/一级/Transfer/Cone 等经验模型 |
+| `10.1016/j.compag.2024.108683` | Comput. Electron. Agric. | include | Mask R-CNN（ResNeXt-101）+ 自适应框扩展 + vMF 编码 + 贝叶斯栅格分类器的两阶段非模态实例分割，五档遮挡 IoU 0.834–0.930 |
+| `10.1016/j.compag.2024.109218` | Comput. Electron. Agric. | exclude | PCA 与 t-SNE 做相关性与降维可视化，逐性状偏最小二乘回归/预测；经典统计建模 |
+| `10.1038/s41380-024-02841-w` | Molecular Psychiatry | exclude | 补充表 11–13：临床变量 + PRS + 基因型 + 性别的多项逻辑回归（含系数、残差偏差与 AIC），非机器学习 |
+
+同时把 7 篇的原摘要回填到交付记录的 `abstract` 与 `verified_metadata.abstract`，`evidence_urls` 改为实际读取的文章页/补充材料地址。新增 3 条纳入的标签：`粒子群优化`+`群智能优化`（120892）、`神经网络`（121211）、`实例分割`+`卷积神经网络`（108683），均配 `AI 用于工程科学`/`AI 用于生命科学` 与对应任务标签。
+
 ## 交付统计（更新后）
 
 | 指标 | 数量 |
 | --- | ---: |
 | 交付记录 | 3,741 |
-| 纳入 | 662 |
-| 排除 | 3,072 |
-| 待定 | 7 |
+| 纳入 | 665 |
+| 排除 | 3,076 |
+| 待定 | 0 |
 | 未审 | 0 |
 | 覆盖来源 | 35 |
 | 官网同口径已确认来源 | 35 / 35 |
-| 候选缺摘要 | 39 → 3（且 3 条为原文类型本身无摘要） |
+| 候选缺摘要 | 39 → 0（其中 5 条非研究型条目已移出候选池） |
 
 ## 仍未解决
 
-- 3 条候选无摘要，原因不是取不到而是原文没有：2 条 DIII 的 Editorial/Letter、1 条 Sci. China Life Sci. 的 Research Highlight。已在候选文件写入 `abstract_status`、`abstract_evidence_url`、`abstract_note`，判定依据为文章类型与正文体例。
-- 7 条待定：已不是摘要缺失所致，而是需要全文方法段才能定论；其中仔猪分割一篇（`10.1016/j.compag.2024.108683`）若确认为深度学习，应改判纳入并补标签。
+- 无待定、无未审、候选缺摘要为 0，行动清单的自动提示项已全部消除。
 - 本轮未改动其他负责人的交付文件（`nydiii.json` 的三条 Lancet 重复记录除外，原因见第 5 节）。

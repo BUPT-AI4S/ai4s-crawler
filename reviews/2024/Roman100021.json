@@ -143724,7 +143724,7 @@
    "https://orcid.org/0000-0002-4220-7291",
    "https://orcid.org/0000-0002-1544-8575"
   ],
-  "abstract": null,
+  "abstract": "We present an active control method for achieving non-collocated vibration absorption, implemented on a lumped mass system. The task of suppressing vibrations at a number of frequencies, at a target mass is recast into a problem of assigning zeros of the transfer function from the external excitation force to the position of the target mass. The controller design involves computing the controller parameters by utilizing the available output feedback to directly assign a set of zeros on the imaginary axis while simultaneously preserving the overall stability with a sufficient margin. The design also takes into account delays in the feedback path. The presence of delays leads to an infinite dimensional system for which, there exists in general, infinitely many characteristic roots. The requirement of achieving sufficient damping in the resulting closed-loop system together with suppressing vibrations of the desired frequency leads to a constrained optimization problem of minimizing the spectral abscissa function subject to zero-location constraints. These constraints exhibit polynomial dependence on the controller parameters. We present two approaches for controller parameterization for the single and multiple input case. Both approaches are based on constraint elimination and exploit the property that the constraints are affine in a selection of the gain parameters. Finally, the methodology is verified by simulating on a spring-mass-damper system following which, it is then validated experimentally on a laboratory setup.",
   "keywords": [],
   "tldr": null,
   "primary_area": null,
@@ -143757,16 +143757,16 @@
    "batch_id": "2024",
    "owner": "乔徐阳",
    "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-   "decision": "pending",
-   "rationale": "待定：题名涉及时滞系统零极点约束下的稳定性优化，可能使用智能优化算法，须读方法确认。本轮已用 Crossref、OpenAlex、Europe PMC、Semantic Scholar 与出版方页面五路核实，ScienceDirect 对自动化访问返回 403 且四路摘要源均无记录，暂无可判定的摘要或原文段落；需订阅权限或机构网络重跑后再判。",
+   "decision": "exclude",
+   "rationale": "读文章页方法与结论：控制器参数由传输零点在虚轴上的直接配置求得，再以谱横坐标函数最小化为目标做约束优化（约束对增益参数仿射，用约束消元求解），最右特征根依赖 TDS-CONTROL 计算；全流程为经典控制理论与确定性数值优化，未见机器学习、神经网络或群智能算法参与，按 AI4S 判定排除。",
    "verified_metadata": {
     "doi": "10.1016/j.ymssp.2023.110886",
     "url": "https://doi.org/10.1016/j.ymssp.2023.110886",
     "pdf_url": null,
     "evidence_urls": [
-     "https://doi.org/10.1016/j.ymssp.2023.110886",
-     "https://api.openaire.eu/search/publications?doi=10.1016%2Fj.ymssp.2023.110886&format=json"
-    ]
+     "https://www.sciencedirect.com/science/article/pii/S088832702300794X"
+    ],
+    "abstract": "We present an active control method for achieving non-collocated vibration absorption, implemented on a lumped mass system. The task of suppressing vibrations at a number of frequencies, at a target mass is recast into a problem of assigning zeros of the transfer function from the external excitation force to the position of the target mass. The controller design involves computing the controller parameters by utilizing the available output feedback to directly assign a set of zeros on the imaginary axis while simultaneously preserving the overall stability with a sufficient margin. The design also takes into account delays in the feedback path. The presence of delays leads to an infinite dimensional system for which, there exists in general, infinitely many characteristic roots. The requirement of achieving sufficient damping in the resulting closed-loop system together with suppressing vibrations of the desired frequency leads to a constrained optimization problem of minimizing the spectral abscissa function subject to zero-location constraints. These constraints exhibit polynomial dependence on the controller parameters. We present two approaches for controller parameterization for the single and multiple input case. Both approaches are based on constraint elimination and exploit the property that the constraints are affine in a selection of the gain parameters. Finally, the methodology is verified by simulating on a spring-mass-damper system following which, it is then validated experimentally on a laboratory setup."
    },
    "tags": []
   }
@@ -149951,7 +149951,7 @@
    "https://orcid.org/0000-0001-8542-001X",
    "https://orcid.org/0000-0002-6287-7524"
   ],
-  "abstract": null,
+  "abstract": "Bolted joints play a crucial role in mechanical systems by connecting different components and materials. The performance of these systems heavily relies on the behavior of the bolted connections. High-fidelity finite element (FE) models are commonly used to predict their dynamic behavior, but they suffer from long computation times due to large model sizes and iterative solution procedures for contact nonlinearity. To address this, a substructuring-based parametric model order reduction strategy is proposed to improve the computational efficiency of FE models of bolted structures with frictional contact. The strategy involves dividing the model into substructures, including joint substructures, and applying a two-layer Krylov-based Craig-Bampton (CB) method for reduction. The augmented characteristic constraint modes, combined with joint interface modes, are proposed for contact interface reduction. This approach is valid for different numerical representations of contact and does not rely on full model results for bolted joints. Consequently, a sampling-free parametric reduced order model can be generated to analyze changes in pretension and friction coefficient. For time domain simulations, a dual loop contact algorithm integrated in the Newmark-Beta method is present for time integration of the parametric reduced model. The performance of the approach is validated through investigation of overall dynamic responses and local contact variations in two bolted joint structures.",
   "keywords": [],
   "tldr": null,
   "primary_area": null,
@@ -149984,16 +149984,16 @@
    "batch_id": "2024",
    "owner": "乔徐阳",
    "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-   "decision": "pending",
-   "rationale": "待定：题名为子结构参数化降阶建模，是否使用数据驱动/机器学习降阶须读方法确认。本轮已用 Crossref、OpenAlex、Europe PMC、Semantic Scholar 与出版方页面五路核实，ScienceDirect 对自动化访问返回 403 且四路摘要源均无记录，暂无可判定的摘要或原文段落；需订阅权限或机构网络重跑后再判。",
+   "decision": "exclude",
+   "rationale": "读文章页方法与结论：两层 Krylov 子空间的 Craig-Bampton 子结构降阶、增广特征约束模态加连接界面模态做接触面缩减，配合 Newmark-Beta 双层接触算法做时程积分，得到采样无关的参数化降阶模型；为确定性数值降阶方法，未使用机器学习或数据驱动代理模型，按 AI4S 判定排除。",
    "verified_metadata": {
     "doi": "10.1016/j.ymssp.2024.111513",
     "url": "https://doi.org/10.1016/j.ymssp.2024.111513",
     "pdf_url": null,
     "evidence_urls": [
-     "https://doi.org/10.1016/j.ymssp.2024.111513",
-     "https://api.openaire.eu/search/publications?doi=10.1016%2Fj.ymssp.2024.111513&format=json"
-    ]
+     "https://www.sciencedirect.com/science/article/pii/S0888327024004114"
+    ],
+    "abstract": "Bolted joints play a crucial role in mechanical systems by connecting different components and materials. The performance of these systems heavily relies on the behavior of the bolted connections. High-fidelity finite element (FE) models are commonly used to predict their dynamic behavior, but they suffer from long computation times due to large model sizes and iterative solution procedures for contact nonlinearity. To address this, a substructuring-based parametric model order reduction strategy is proposed to improve the computational efficiency of FE models of bolted structures with frictional contact. The strategy involves dividing the model into substructures, including joint substructures, and applying a two-layer Krylov-based Craig-Bampton (CB) method for reduction. The augmented characteristic constraint modes, combined with joint interface modes, are proposed for contact interface reduction. This approach is valid for different numerical representations of contact and does not rely on full model results for bolted joints. Consequently, a sampling-free parametric reduced order model can be generated to analyze changes in pretension and friction coefficient. For time domain simulations, a dual loop contact algorithm integrated in the Newmark-Beta method is present for time integration of the parametric reduced model. The performance of the approach is validated through investigation of overall dynamic responses and local contact variations in two bolted joint structures."
    },
    "tags": []
   }
@@ -161871,7 +161871,7 @@
    "https://orcid.org/0000-0002-9259-8374",
    "https://orcid.org/0000-0001-8416-9601"
   ],
-  "abstract": null,
+  "abstract": "Environmental factors and load conditions influence the efficiency of power converters - key elements in Photovoltaic (PV) systems. This study employs optimization algorithms to fine-tune the converter's operation, focusing on metaoptimization, an algorithm increasing attention in recent research. The analysis introduces the Grey Wolf Optimizer (GWO) to enhance the Particle Swarm Optimization (PSO) algorithm. The optimized PSO algorithm is integrated into a PV system's Maximum Power Point Tracking (MPPT) controller. Implemented in MATLAB/Simulink, this approach is validated by combining measured data and simulation scenarios: 1. staggered vs 2. real irradiation changes. The results underscore the efficacy of the GWO-optimized PSO MPPT algorithm in enhancing the MPPT controller's performance. In Scenario 1, the GWO-optimized PSO algorithm demonstrated 9.1 % higher energy generation than the Incremental Conductance MPPT, 19.8 % more than the PSO MPPT, and 20.7 % more than the Perturb and Observe MPPT. Scenario 2 showed the superior performance of the GWO-optimized PSO MPPT, showcasing a 15.36 % increase in generation over the PSO and a 21.62 % improvement compared to the Perturb and Observe MPPT, with a 4.74 % advantage over the Incremental Conductance MPPT. The results highlight the GWO-optimized PSO MPPT's robustness under diverse conditions, emphasizing its potential PV technologies by optimizing MPPT controllers.",
   "keywords": [],
   "tldr": null,
   "primary_area": null,
@@ -161904,18 +161904,47 @@
    "batch_id": "2024",
    "owner": "乔徐阳",
    "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-   "decision": "pending",
-   "rationale": "待定：题名以 GWO-Enhanced PSO 做光伏系统元优化，须确认群体智能优化是否构成核心 AI 方法。本轮已用 Crossref、OpenAlex、Europe PMC、Semantic Scholar 与出版方页面五路核实，ScienceDirect 对自动化访问返回 403 且四路摘要源均无记录，暂无可判定的摘要或原文段落；需订阅权限或机构网络重跑后再判。",
+   "decision": "include",
+   "rationale": "读摘要与引言、方法段：以灰狼优化器（GWO）作为外层元优化整定粒子群优化（PSO）的超参数，再把优化后的 PSO 用于光伏 MPPT 的 D-PID 控制器增益寻优，并在 MATLAB/Simulink 与实测辐照数据上验证，报告相对 INC/PSO/P&O 的发电量提升 9.1%–21.6%。群智能算法是核心方法且服务于光伏系统优化任务，按 AI4S 纳入。",
    "verified_metadata": {
     "doi": "10.1016/j.renene.2024.120892",
     "url": "https://doi.org/10.1016/j.renene.2024.120892",
     "pdf_url": null,
     "evidence_urls": [
-     "https://doi.org/10.1016/j.renene.2024.120892",
-     "https://api.openaire.eu/search/publications?doi=10.1016%2Fj.renene.2024.120892&format=json"
-    ]
+     "https://www.sciencedirect.com/science/article/pii/S0960148124009601"
+    ],
+    "abstract": "Environmental factors and load conditions influence the efficiency of power converters - key elements in Photovoltaic (PV) systems. This study employs optimization algorithms to fine-tune the converter's operation, focusing on metaoptimization, an algorithm increasing attention in recent research. The analysis introduces the Grey Wolf Optimizer (GWO) to enhance the Particle Swarm Optimization (PSO) algorithm. The optimized PSO algorithm is integrated into a PV system's Maximum Power Point Tracking (MPPT) controller. Implemented in MATLAB/Simulink, this approach is validated by combining measured data and simulation scenarios: 1. staggered vs 2. real irradiation changes. The results underscore the efficacy of the GWO-optimized PSO MPPT algorithm in enhancing the MPPT controller's performance. In Scenario 1, the GWO-optimized PSO algorithm demonstrated 9.1 % higher energy generation than the Incremental Conductance MPPT, 19.8 % more than the PSO MPPT, and 20.7 % more than the Perturb and Observe MPPT. Scenario 2 showed the superior performance of the GWO-optimized PSO MPPT, showcasing a 15.36 % increase in generation over the PSO and a 21.62 % improvement compared to the Perturb and Observe MPPT, with a 4.74 % advantage over the Incremental Conductance MPPT. The results highlight the GWO-optimized PSO MPPT's robustness under diverse conditions, emphasizing its potential PV technologies by optimizing MPPT controllers."
    },
-   "tags": []
+   "tags": [
+    {
+     "axis": "domain",
+     "label": "AI 用于工程科学",
+     "label_en": "AI for engineering sciences",
+     "evidence_location": "输入摘要",
+     "rationale": "光伏发电系统的最大功率点跟踪属能源工程控制问题。"
+    },
+    {
+     "axis": "task",
+     "label": "能源系统优化",
+     "label_en": "Energy system optimization",
+     "evidence_location": "输入摘要",
+     "rationale": "以元优化整定 MPPT 控制器增益，提升不同辐照与负载条件下的发电量。"
+    },
+    {
+     "axis": "method",
+     "label": "粒子群优化",
+     "label_en": "Particle swarm optimization",
+     "evidence_location": "输入摘要",
+     "rationale": "以 PSO 作为 MPPT 控制器参数寻优的主算法。"
+    },
+    {
+     "axis": "method",
+     "label": "群智能优化",
+     "label_en": "Swarm intelligence optimization",
+     "evidence_location": "输入摘要",
+     "rationale": "GWO 与 PSO 两级群体协同搜索构成元优化框架。"
+    }
+   ]
   }
  },
  {
@@ -163475,7 +163504,7 @@
    "https://orcid.org/0000-0001-6601-7452",
    "https://orcid.org/0000-0003-3295-1604"
   ],
-  "abstract": null,
+  "abstract": "Third-generation biomass constitutes a renewable energy source that could substitute fossil fuels. This study evaluated the biomethane potential (BMP) of Ulva sp., Codium sp. and Undaria pinnatifida through anaerobic digestion. The daily production of biomethane was evaluated using different models, including Modified Gompertz, Chen and Hashimoto, First-order, Transfer and Cone models, as well as an Artificial Neural Network (ANN) model. The experimental BMP was 0.17, 0.26, and 0.32 Nm3/kg VS for Ulva sp., Codium sp., and U pinnatifida, respectively. Among the non-linear regression models, the Transfer model (R2 > 0.9915) and the First-order model (R2 > 0.9889) are the ones that best fit the experimental data. However, the ANN shows a better fit (R2 > 0.999 and RMSE<4.537) to the data compared to the non-linear regression models. Furthermore, ANN can capture the complexity of biological systems, allowing for more accurate and detailed modelling of the processes involved. The identification and optimization of the biomethane potential of macroalgae contribute to developing sustainable energy alternatives, offering a renewable energy source that could mitigate the environmental stress associated with traditional fossil fuels.",
   "keywords": [],
   "tldr": null,
   "primary_area": null,
@@ -163508,18 +163537,40 @@
    "batch_id": "2024",
    "owner": "乔徐阳",
    "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-   "decision": "pending",
-   "rationale": "待定：题名为第三代生物质制生物甲烷的产气建模，须区分机理/统计模型与机器学习模型。本轮已用 Crossref、OpenAlex、Europe PMC、Semantic Scholar 与出版方页面五路核实，ScienceDirect 对自动化访问返回 403 且四路摘要源均无记录，暂无可判定的摘要或原文段落；需订阅权限或机构网络重跑后再判。",
+   "decision": "include",
+   "rationale": "读摘要与方法：以改进 Gompertz、Chen-Hashimoto、一级动力学、Transfer、Cone 等非线性回归模型与人工神经网络（ANN）并行拟合三种大型海藻的厌氧消化逐日产甲烷曲线，ANN 拟合优度最高（R2>0.999，RMSE<4.537）并优于全部经验模型；ANN 为数据驱动核心方法，用于生物质产气建模这一科学任务，按 AI4S 纳入。",
    "verified_metadata": {
     "doi": "10.1016/j.renene.2024.121211",
     "url": "https://doi.org/10.1016/j.renene.2024.121211",
     "pdf_url": null,
     "evidence_urls": [
-     "https://doi.org/10.1016/j.renene.2024.121211",
-     "https://api.openaire.eu/search/publications?doi=10.1016%2Fj.renene.2024.121211&format=json"
-    ]
+     "https://www.sciencedirect.com/science/article/pii/S0960148124012795"
+    ],
+    "abstract": "Third-generation biomass constitutes a renewable energy source that could substitute fossil fuels. This study evaluated the biomethane potential (BMP) of Ulva sp., Codium sp. and Undaria pinnatifida through anaerobic digestion. The daily production of biomethane was evaluated using different models, including Modified Gompertz, Chen and Hashimoto, First-order, Transfer and Cone models, as well as an Artificial Neural Network (ANN) model. The experimental BMP was 0.17, 0.26, and 0.32 Nm3/kg VS for Ulva sp., Codium sp., and U pinnatifida, respectively. Among the non-linear regression models, the Transfer model (R2 > 0.9915) and the First-order model (R2 > 0.9889) are the ones that best fit the experimental data. However, the ANN shows a better fit (R2 > 0.999 and RMSE<4.537) to the data compared to the non-linear regression models. Furthermore, ANN can capture the complexity of biological systems, allowing for more accurate and detailed modelling of the processes involved. The identification and optimization of the biomethane potential of macroalgae contribute to developing sustainable energy alternatives, offering a renewable energy source that could mitigate the environmental stress associated with traditional fossil fuels."
    },
-   "tags": []
+   "tags": [
+    {
+     "axis": "domain",
+     "label": "AI 用于工程科学",
+     "label_en": "AI for engineering sciences",
+     "evidence_location": "输入摘要",
+     "rationale": "以大型海藻厌氧消化制生物甲烷，属能源转化工程。"
+    },
+    {
+     "axis": "task",
+     "label": "厌氧消化建模",
+     "label_en": "Anaerobic digestion modeling",
+     "evidence_location": "输入摘要",
+     "rationale": "拟合三种海藻的逐日产甲烷量并比较模型精度。"
+    },
+    {
+     "axis": "method",
+     "label": "神经网络",
+     "label_en": "Neural network",
+     "evidence_location": "输入摘要",
+     "rationale": "以 ANN 建模产气过程，R2>0.999、RMSE<4.537，优于非线性回归模型。"
+    }
+   ]
   }
  },
  {
@@ -171680,7 +171731,7 @@
   "author_ids": [
    "https://orcid.org/0000-0001-7620-1018"
   ],
-  "abstract": null,
+  "abstract": "Precise segmentation is an important computer vision task for the automated animal monitoring, with potential application in the quantitative analysis of piglet crushing. However, automated instance segmentation of piglets under crushing events has rarely been reported in computer vision community. In this study, a two-stage amodal instance segmentation method is proposed for piglets under crushing events. In the first stage, a Mask R-CNN framework is used for the initial instance segmentation of piglets. Upon the segmentation, the masks are used to obtain the minimum bounding boxes which are then extended by using the proposed self-adaptive bounding box extension approach. The extended bounding boxes overlapping with sow will be reflected on the feature maps F output by ResNeXt-101 otherwise are not further processed. The sub-feature maps cropped by the extended bounding box are encoded by using von Mises-Fisher (vMF) Distributions. The vMF cluster centers {mu_k} resembles feature activation patterns that frequently occur in the training dataset. The encoded features are then input into the Bayesian lattice classifier (BLC) that is trained by using foreground prior and visibility prior. The lattice states (foreground or not and visible or not) estimated by the BLC are reflected on original RGB images. Then the reflected masks are refined by using image morphology processing to finalize the amodal instance segmentation of piglets under crushing events. Extracted from 104 video clips of Danish Genetics piglets and sows, the training dataset consisted of 836 images where piglets were not occluded and the test dataset consisted of 412 images where crushing events occurred. The proposed method achieved segmentation results with a IoUs of 0.930, 0.911, 0.888, 0.853, and 0.834, respectively over five occlusion levels and a IoU of 0.893, a mIoU of 0.883, and a wIoU of 0.902. The method proposed in this study outperformed other state-of-the-art methods by a large margin. The favorable segmentation performance manifested the superiorities of our amodal instance segmentation method and tapped the potential of automated and quantitative analysis of piglet crushing events.",
   "keywords": [],
   "tldr": null,
   "primary_area": null,
@@ -171713,18 +171764,47 @@
    "batch_id": "2024",
    "owner": "乔徐阳",
    "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-   "decision": "pending",
-   "rationale": "待定：题名为遮挡条件下的仔猪分割，分割网络很可能构成 AI 实质参与，须由摘要或原文确认。本轮已用 Crossref、OpenAlex、Europe PMC、Semantic Scholar 与出版方页面五路核实，ScienceDirect 对自动化访问返回 403 且四路摘要源均无记录，暂无可判定的摘要或原文段落；需订阅权限或机构网络重跑后再判。",
+   "decision": "include",
+   "rationale": "读摘要与结论：两阶段非模态实例分割，第一阶段用 Mask R-CNN（ResNeXt-101 主干）做初始分割，配合自适应框扩展与 vMF 编码，再由贝叶斯栅格分类器判定前景与可见性，实现被母猪压覆仔猪的分割，训练 836 幅未遮挡图像、测试 412 幅压覆图像，五个遮挡层级 IoU 0.834–0.930。深度学习是核心方法，任务为畜群表型的自动量化，按 AI4S 纳入。",
    "verified_metadata": {
     "doi": "10.1016/j.compag.2024.108683",
     "url": "https://doi.org/10.1016/j.compag.2024.108683",
     "pdf_url": null,
     "evidence_urls": [
-     "https://doi.org/10.1016/j.compag.2024.108683",
-     "https://api.openaire.eu/search/publications?doi=10.1016%2Fj.compag.2024.108683&format=json"
-    ]
+     "https://www.sciencedirect.com/science/article/pii/S0168169924000747"
+    ],
+    "abstract": "Precise segmentation is an important computer vision task for the automated animal monitoring, with potential application in the quantitative analysis of piglet crushing. However, automated instance segmentation of piglets under crushing events has rarely been reported in computer vision community. In this study, a two-stage amodal instance segmentation method is proposed for piglets under crushing events. In the first stage, a Mask R-CNN framework is used for the initial instance segmentation of piglets. Upon the segmentation, the masks are used to obtain the minimum bounding boxes which are then extended by using the proposed self-adaptive bounding box extension approach. The extended bounding boxes overlapping with sow will be reflected on the feature maps F output by ResNeXt-101 otherwise are not further processed. The sub-feature maps cropped by the extended bounding box are encoded by using von Mises-Fisher (vMF) Distributions. The vMF cluster centers {mu_k} resembles feature activation patterns that frequently occur in the training dataset. The encoded features are then input into the Bayesian lattice classifier (BLC) that is trained by using foreground prior and visibility prior. The lattice states (foreground or not and visible or not) estimated by the BLC are reflected on original RGB images. Then the reflected masks are refined by using image morphology processing to finalize the amodal instance segmentation of piglets under crushing events. Extracted from 104 video clips of Danish Genetics piglets and sows, the training dataset consisted of 836 images where piglets were not occluded and the test dataset consisted of 412 images where crushing events occurred. The proposed method achieved segmentation results with a IoUs of 0.930, 0.911, 0.888, 0.853, and 0.834, respectively over five occlusion levels and a IoU of 0.893, a mIoU of 0.883, and a wIoU of 0.902. The method proposed in this study outperformed other state-of-the-art methods by a large margin. The favorable segmentation performance manifested the superiorities of our amodal instance segmentation method and tapped the potential of automated and quantitative analysis of piglet crushing events."
    },
-   "tags": []
+   "tags": [
+    {
+     "axis": "domain",
+     "label": "AI 用于生命科学",
+     "label_en": "AI for life sciences",
+     "evidence_location": "输入摘要",
+     "rationale": "面向生猪养殖的仔猪压覆事件自动监测与量化。"
+    },
+    {
+     "axis": "task",
+     "label": "生物表型重建",
+     "label_en": "Biological phenotype reconstruction",
+     "evidence_location": "输入摘要",
+     "rationale": "由视频图像分割仔猪个体并量化压覆程度，属形态与表型定量。"
+    },
+    {
+     "axis": "method",
+     "label": "实例分割",
+     "label_en": "Instance segmentation",
+     "evidence_location": "输入摘要",
+     "rationale": "两阶段非模态实例分割输出每头仔猪的像素区域。"
+    },
+    {
+     "axis": "method",
+     "label": "卷积神经网络",
+     "label_en": "Convolutional neural network",
+     "evidence_location": "输入摘要",
+     "rationale": "以 Mask R-CNN 与 ResNeXt-101 主干完成初始实例分割与特征提取。"
+    }
+   ]
   }
  },
  {
@@ -173127,7 +173207,7 @@
   "author_ids": [
    "https://orcid.org/0000-0002-5904-1638"
   ],
-  "abstract": null,
+  "abstract": "With the increasing food demand, it is essential to plan for a future where climate change affects the food sector. The policy making necessary to ensure the food demand must be driven by a thorough assessment of the impact climate change has on the food sector. Such an assessment can be facilitated by building impact models focusing on different aspects of the food industry. In this paper, we build an impact model to demonstrate the effect the climate has on the dairy (raw milk) industry. This impact model is built using raw milk data collected from more than 200 dairy farms in two climate zones over a 6-year timespan. The analysis using dairy variables like milk volume, fat, lactose, protein, somatic cell counts, and total bacterial counts (TBC) revealed correlations with climate variables such as temperature, humidity, wind, radiation, and precipitation. To enable prediction of these dairy variables over different climate scenarios, regression and forecasting models are built individually. Rather than temperature, the most significant predictors are the radiation, humidity, wind, and precipitation. These models are tested for their generalizability over multiple climate zones. With prediction errors always below 20%, these models can be exploited to quantitatively assess the effect of climate change on milk production. Overall, this research contributes to the design of strategies towards a resilient, climate change-proof food system.",
   "keywords": [],
   "tldr": null,
   "primary_area": null,
@@ -173160,16 +173240,16 @@
    "batch_id": "2024",
    "owner": "乔徐阳",
    "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-   "decision": "pending",
-   "rationale": "待定：题名为气候对产奶量的影响建模，须确认是否使用机器学习方法。本轮已用 Crossref、OpenAlex、Europe PMC、Semantic Scholar 与出版方页面五路核实，ScienceDirect 对自动化访问返回 403 且四路摘要源均无记录，暂无可判定的摘要或原文段落；需订阅权限或机构网络重跑后再判。",
+   "decision": "exclude",
+   "rationale": "读摘要与关键词：用主成分分析与 t-SNE 做乳成分与气候变量的相关性分析与降维可视化，再对每个乳性状分别建立偏最小二乘回归与预测模型并在两个气候区间检验泛化（误差<20%）；建模主体为经典统计回归，未见学习型模型或数据驱动预测器，AI 未实质参与，按 AI4S 判定排除。",
    "verified_metadata": {
     "doi": "10.1016/j.compag.2024.109218",
     "url": "https://doi.org/10.1016/j.compag.2024.109218",
     "pdf_url": null,
     "evidence_urls": [
-     "https://doi.org/10.1016/j.compag.2024.109218",
-     "https://api.openaire.eu/search/publications?doi=10.1016%2Fj.compag.2024.109218&format=json"
-    ]
+     "https://www.sciencedirect.com/science/article/pii/S0168169924006094"
+    ],
+    "abstract": "With the increasing food demand, it is essential to plan for a future where climate change affects the food sector. The policy making necessary to ensure the food demand must be driven by a thorough assessment of the impact climate change has on the food sector. Such an assessment can be facilitated by building impact models focusing on different aspects of the food industry. In this paper, we build an impact model to demonstrate the effect the climate has on the dairy (raw milk) industry. This impact model is built using raw milk data collected from more than 200 dairy farms in two climate zones over a 6-year timespan. The analysis using dairy variables like milk volume, fat, lactose, protein, somatic cell counts, and total bacterial counts (TBC) revealed correlations with climate variables such as temperature, humidity, wind, radiation, and precipitation. To enable prediction of these dairy variables over different climate scenarios, regression and forecasting models are built individually. Rather than temperature, the most significant predictors are the radiation, humidity, wind, and precipitation. These models are tested for their generalizability over multiple climate zones. With prediction errors always below 20%, these models can be exploited to quantitatively assess the effect of climate change on milk production. Overall, this research contributes to the design of strategies towards a resilient, climate change-proof food system."
    },
    "tags": []
   }
@@ -285065,7 +285145,7 @@
    "https://orcid.org/0000-0003-1461-5762",
    "https://orcid.org/0000-0002-8458-5960"
   ],
-  "abstract": null,
+  "abstract": "Schizophrenia (SCZ) is a severe mental disorder affecting around 1% of individuals worldwide. The variability in response to antipsychotic drugs (APDs) among SCZ patients presents a significant challenge for clinicians in determining the most effective medication. In this study, we investigated the biological markers and established a predictive model for APD response based on a large-scale genome-wide association study using 3269 Chinese schizophrenia patients. Each participant underwent an 8-week treatment regimen with one of five mono-APDs: olanzapine, risperidone, aripiprazole, quetiapine, or amisulpride. By dividing the response into ordinal groups of \"high\", \"medium\", and \"low\", we mitigated the bias of unclear treatment outcome and identified three novel significantly associated genetic loci in or near CDH12, WDR11, and ELAVL2. Additionally, we developed predictive models of response to each specific APDs, with accuracies ranging from 79.5% to 98.0%. In sum, we established an effective method to predict schizophrenia patients' response to APDs across three categories, integrating novel biomarkers to guide personalized medicine strategies.",
   "keywords": [],
   "tldr": null,
   "primary_area": null,
@@ -285098,16 +285178,15 @@
    "batch_id": "2024",
    "owner": "乔徐阳",
    "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-   "decision": "pending",
-   "rationale": "待定：摘要仅称建立预测模型并报告 79.5%–98.0% 准确率，未说明模型类别；全文与方法是付费内容，参考文献含多基因风险评分工具，无法确认是否使用机器学习。本轮已用 Crossref、OpenAlex、Europe PMC、Semantic Scholar 与出版方页面五路核实，ScienceDirect 对自动化访问返回 403 且四路摘要源均无记录，暂无可判定的摘要或原文段落；需订阅权限或机构网络重跑后再判。",
+   "decision": "exclude",
+   "rationale": "读补充表 11–13：预测模型为临床变量+多基因风险评分+基因型+性别的多项逻辑回归，表 11 比较 CI+P、CI+P+G、CI+P+G+Sex 三档模型的性能指标，表 12–13 给出回归系数与残差偏差/AIC；补充方法仅涉及基因型质控、填充与荧光素酶实验。属经典统计遗传学建模，未见机器学习方法，正文方法段虽在订阅墙内但补充表足以定性，按 AI4S 排除。",
    "verified_metadata": {
     "doi": "10.1038/s41380-024-02841-w",
     "url": "https://doi.org/10.1038/s41380-024-02841-w",
     "pdf_url": null,
     "evidence_urls": [
-     "https://doi.org/10.1038/s41380-024-02841-w",
-     "https://www.nature.com/articles/s41380-024-02841-w?error=cookies_not_supported&code=8ab5bc7a-e235-4d60-b4f0-58c4e857395b",
-     "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:%2210.1038/s41380-024-02841-w%22&format=json"
+     "https://www.nature.com/articles/s41380-024-02841-w",
+     "https://static-content.springer.com/esm/art%3A10.1038%2Fs41380-024-02841-w/MediaObjects/41380_2024_2841_MOESM2_ESM.pdf"
     ],
     "abstract": "Schizophrenia (SCZ) is a severe mental disorder affecting around 1% of individuals worldwide. The variability in response to antipsychotic drugs (APDs) among SCZ patients presents a significant challenge for clinicians in determining the most effective medication. In this study, we investigated the biological markers and established a predictive model for APD response based on a large-scale genome-wide association study using 3269 Chinese schizophrenia patients. Each participant underwent an 8-week treatment regimen with one of five mono-APDs: olanzapine, risperidone, aripiprazole, quetiapine, or amisulpride. By dividing the response into ordinal groups of \"high\", \"medium\", and \"low\", we mitigated the bias of unclear treatment outcome and identified three novel significantly associated genetic loci in or near CDH12, WDR11, and ELAVL2. Additionally, we developed predictive models of response to each specific APDs, with accuracies ranging from 79.5% to 98.0%. In sum, we established an effective method to predict schizophrenia patients' response to APDs across three categories, integrating novel biomarkers to guide personalized medicine strategies."
    },
