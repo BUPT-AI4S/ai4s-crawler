@@ -8,6 +8,7 @@ on:
       - 'reviews/**'
       - '!reviews/**/actions/**'
       - '!reviews/monitor-data.json'
+      - '!reviews/owner-activity.json'
       - '.github/workflows/review-actions.yml'
   workflow_dispatch:
 permissions:
@@ -23,11 +24,15 @@ jobs:
         with:
           path: crawler
           lfs: false
+          fetch-depth: 0
+          filter: blob:none
           sparse-checkout-cone-mode: false
           sparse-checkout: |
             /metadata/*/snapshot.json
             /metadata/*/ai4s.json
             /reviews/venue-review.csv
+            /reviews/owners.json
+            /reviews/owner-activity.json
             /reviews/monitor-data.json
             /reviews/source-assignments-*.json
             /reviews/*/*.json
@@ -42,6 +47,7 @@ jobs:
           repository: BUPT-AI4S/BUPT-AI4S.github.io
           path: monitor-tools
           sparse-checkout: |
+            tools/build_owner_activity.py
             tools/build_review_monitor.py
             tools/generate_review_actions.py
             static/review-monitor-guide.md
@@ -51,6 +57,7 @@ jobs:
           python-version: '3.12'
       - name: Generate action lists
         run: |
+          python monitor-tools/tools/build_owner_activity.py --repo crawler --output crawler/reviews/owner-activity.json || echo '::warning::owner activity unavailable (shallow history)'
           python monitor-tools/tools/build_review_monitor.py --source crawler --output "$RUNNER_TEMP/review-monitor.json"
           python monitor-tools/tools/generate_review_actions.py --input "$RUNNER_TEMP/review-monitor.json" --reviews crawler/reviews
           cp "$RUNNER_TEMP/review-monitor.json" crawler/reviews/monitor-data.json
