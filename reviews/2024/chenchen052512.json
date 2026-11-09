@@ -43677,9 +43677,9 @@
       "batch_id": "2024-chenchen052512-20261105T103119+0800",
       "owner": "陈晨",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "reviewed_at": "2026-11-07",
+      "reviewed_at": "2026-11-09",
       "decision": "exclude",
-      "rationale": "公开全文明确为Commentary，以生成生物学发展、AI代理趋势与未来生物学家角色为主，缺少独立科学实现或足够系统的技术方法评价，按本批严口径排除观点稿。",
+      "rationale": "正式存档XML无独立abstract节点；原文为生物学AI代理观点评论，按文献类型排除。 负责人明确要求：其余无法补独立摘要的记录直接不纳入。",
       "verified_metadata": {
         "doi": "10.1016/j.ebiom.2024.105446",
         "title": "Generative AI agents are transforming biology research: high resolution functional genome annotation for multiscale understanding of life",
@@ -43691,8 +43691,18 @@
         ],
         "evidence_urls": [
           "https://api.crossref.org/works/10.1016%2Fj.ebiom.2024.105446",
-          "https://pmc.ncbi.nlm.nih.gov/articles/PMC11583719/"
-        ]
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC11583719/",
+          "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11583719/fullTextXML"
+        ],
+        "abstract_status": "no_independent_text_abstract_in_verified_source",
+        "abstract_absence_evidence": {
+          "checked_at": "2026-11-09",
+          "publication_type": "commentary",
+          "note": "正式存档XML无独立abstract节点；原文为生物学AI代理观点评论，按文献类型排除。",
+          "evidence_urls": [
+            "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11583719/fullTextXML"
+          ]
+        }
       },
       "tags": [],
       "collection": null,
@@ -43708,7 +43718,13 @@
       },
       "registered_document_type": "journal-article",
       "pdf_verification_note": "本次未验证到公开PDF，保留空值；原始PDF字段原样保存不等同已核实",
-      "vocabulary_base_commit": "4b5a1a874a4f7a5d2f68647e63e6eb75ea200dbd"
+      "vocabulary_base_commit": "4b5a1a874a4f7a5d2f68647e63e6eb75ea200dbd",
+      "owner_decision_confirmation": {
+        "owner": "陈晨",
+        "date": "2026-11-09",
+        "instruction": "把能补的补了，其余的直接不纳入",
+        "decision": "exclude"
+      }
     }
   },
   {
@@ -47124,9 +47140,9 @@
       "batch_id": "2024-chenchen052512-20261105T103119+0800",
       "owner": "陈晨",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "reviewed_at": "2026-11-07",
+      "reviewed_at": "2026-11-09",
       "decision": "exclude",
-      "rationale": "文献类型复核：JACC会议补刊摘要，按新版仅保留原创研究正文/正式会议研究论文/实质综述的规则排除；保留既有摘要级研究内容判断作为历史依据。",
+      "rationale": "已从用户提供的正式PDF第1页（印刷页S56右栏500.29）恢复完整会议摘要，并同步年度及分刊候选abstract。该条属于JACC会议补刊摘要，不是完整期刊研究论文；按本批文献类型规则不纳入。补齐摘要不改变排除结论。",
       "verified_metadata": {
         "doi": "10.1016/j.jcin.2024.01.208",
         "title": "500.29 Artificial Intelligence Based Optical Coherence Tomography Comparison of Plaque Characteristics and DNA Repair Activity in Patients with CAD",
@@ -47145,12 +47161,25 @@
           "https://api.crossref.org/works/10.1016%2Fj.jcin.2024.01.208",
           "https://doi.org/10.1016/j.jcin.2024.01.208"
         ],
-        "pdf_url": null
+        "pdf_url": null,
+        "abstract": "BACKGROUND Previous CAD studies have demonstrated associations between DNA repair activity (which may be measured in vitro using DNA ligase assays), telomere length, and atherosclerosis. We intend to explore the relationship between atherosclerotic plaque characteristics and DNA ligase activity.\n\nMETHODS 49 subjects (25 stable angina, 24 NSTEMI) were included from the DECODE study (ClinicalTrials.gov, NCT02335086). OCT imaging of the culprit vessel was performed and it was analyzed using OCTplus, an artificial intelligence-based software evaluating for the area (in mm²) of calcium, cholesterol crystal, fibrous tissue, lipid and macrophage. DNA ligase activity was measured in blood mononuclear cells using microplate-based assays and was available for 38 patients. Continuous variables are reported as mean ± SD. Comparisons of means between groups were performed with Student T tests. A p-value of < 0.05 was considered statistically significant.\n\nRESULTS Baseline characteristics were similar between stable angina and NSTEMI patients. Grouping patients based on median DNA ligase activity revealed no significant differences in plaque characteristics in both patient cohorts. Calcification was 66.96 % larger in the high ligase activity group (0.53 ± 0.48 mm²) vs low ligase assay (0.18 ± 0.15 mm²), absolute difference of 0.35 ± 0.33 mm², p = 0.053. See table.\n\nCONCLUSIONS We found a trend toward larger calcium content in the stable angina group with high ligase activity. We previously found that expression of DNA damage response pathway genes in patients with stable angina was strongly associated with fibrocalcific plaques.",
+        "abstract_status": "complete_conference_abstract_extracted_from_owner_pdf",
+        "abstract_provenance": {
+          "source_kind": "owner_provided_publisher_pdf",
+          "filename": "The Preclinical Efficacy and Safety of SA016, a Small.pdf",
+          "sha256": "b67348a46456bce785ff654d4f357a2ee12d0f8a333c77a75245820b3e11cbb5",
+          "pdf_page": 1,
+          "printed_page": "S56",
+          "column": "right",
+          "item": "500.29",
+          "checked_at": "2026-11-09",
+          "transcription_note": "逐字转录BACKGROUND/METHODS/RESULTS/CONCLUSIONS四段，按原页核对断行、连字及±符号；不混入500.27、500.28或结果表。"
+        }
       },
       "tags": [],
       "collection": "conference_abstract",
       "review_method": "individual_semantic_review",
-      "evidence_location": "已取得摘要及正式页面文献类型",
+      "evidence_location": "正式PDF第1页（印刷页S56）右栏500.29完整摘要，已逐字转录并核对原页",
       "local_fulltext_evidence": {
         "filename": "The Preclinical Efficacy and Safety of SA016, a Small.pdf",
         "pages_read": [
@@ -47268,9 +47297,9 @@
       "batch_id": "2024-chenchen052512-20261105T103119+0800",
       "owner": "陈晨",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "reviewed_at": "2026-11-07",
+      "reviewed_at": "2026-11-09",
       "decision": "exclude",
-      "rationale": "PubMed明确文种为Editorial，文章围绕诺贝尔奖及AI药物发现发表社论，不作为实质研究或方法综述收入。",
+      "rationale": "原文为Perspective观点稿，PubMed归Editorial并注明No abstract available，正式存档XML无独立abstract节点；按文献类型排除。 负责人明确要求：其余无法补独立摘要的记录直接不纳入。",
       "verified_metadata": {
         "doi": "10.1016/j.jpha.2024.101160",
         "title": "AI comes to the Nobel Prize and drug discovery",
@@ -47284,8 +47313,21 @@
         ],
         "evidence_urls": [
           "https://api.crossref.org/works/10.1016%2Fj.jpha.2024.101160",
-          "https://pubmed.ncbi.nlm.nih.gov/39850961/"
-        ]
+          "https://pubmed.ncbi.nlm.nih.gov/39850961/",
+          "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11755333/fullTextXML",
+          "https://idrblab.org/Publication/j.jpha.2024.101160.pdf"
+        ],
+        "abstract_status": "no_independent_text_abstract_in_verified_source",
+        "abstract_absence_evidence": {
+          "checked_at": "2026-11-09",
+          "publication_type": "perspective",
+          "note": "原文为Perspective观点稿，PubMed归Editorial并注明No abstract available，正式存档XML无独立abstract节点；按文献类型排除。",
+          "evidence_urls": [
+            "https://pubmed.ncbi.nlm.nih.gov/39850961/",
+            "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11755333/fullTextXML",
+            "https://idrblab.org/Publication/j.jpha.2024.101160.pdf"
+          ]
+        }
       },
       "tags": [],
       "collection": null,
@@ -47301,7 +47343,13 @@
       },
       "registered_document_type": "journal-article",
       "pdf_verification_note": "本次未验证到公开PDF，保留空值；原始PDF字段原样保存不等同已核实",
-      "vocabulary_base_commit": "4b5a1a874a4f7a5d2f68647e63e6eb75ea200dbd"
+      "vocabulary_base_commit": "4b5a1a874a4f7a5d2f68647e63e6eb75ea200dbd",
+      "owner_decision_confirmation": {
+        "owner": "陈晨",
+        "date": "2026-11-09",
+        "instruction": "把能补的补了，其余的直接不纳入",
+        "decision": "exclude"
+      }
     }
   },
   {
@@ -50182,9 +50230,9 @@
       "batch_id": "2024-chenchen052512-20261105T103119+0800",
       "owner": "陈晨",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "reviewed_at": "2026-11-07",
+      "reviewed_at": "2026-11-09",
       "decision": "exclude",
-      "rationale": "出版方正式页明确为PIML基础设施综述的Correction，更正记录不作为独立科学研究或方法综述重复纳入。",
+      "rationale": "出版方明确为Correction，已核对页面不提供独立文字摘要；更正通知不作为独立研究论文纳入。 负责人明确要求：其余无法补独立摘要的记录直接不纳入。",
       "verified_metadata": {
         "doi": "10.1007/s11831-024-10162-y",
         "title": "Correction: Physics Informed Machine Learning (PIML) for Design, Management and Resilience-Development of Urban Infrastructures: A Review",
@@ -50199,7 +50247,16 @@
           "https://api.crossref.org/works/10.1007%2Fs11831-024-10162-y",
           "https://link.springer.com/article/10.1007/s11831-024-10162-y",
           "https://link.springer.com/content/pdf/10.1007/s11831-024-10162-y.pdf"
-        ]
+        ],
+        "abstract_status": "no_independent_text_abstract_in_verified_source",
+        "abstract_absence_evidence": {
+          "checked_at": "2026-11-09",
+          "publication_type": "correction",
+          "note": "出版方明确为Correction，已核对页面不提供独立文字摘要；更正通知不作为独立研究论文纳入。",
+          "evidence_urls": [
+            "https://link.springer.com/article/10.1007/s11831-024-10162-y"
+          ]
+        }
       },
       "tags": [],
       "collection": null,
@@ -50213,7 +50270,13 @@
         "publisher_html_verified": true
       },
       "registered_document_type": "journal-article",
-      "vocabulary_base_commit": "4b5a1a874a4f7a5d2f68647e63e6eb75ea200dbd"
+      "vocabulary_base_commit": "4b5a1a874a4f7a5d2f68647e63e6eb75ea200dbd",
+      "owner_decision_confirmation": {
+        "owner": "陈晨",
+        "date": "2026-11-09",
+        "instruction": "把能补的补了，其余的直接不纳入",
+        "decision": "exclude"
+      }
     }
   },
   {
@@ -165679,9 +165742,9 @@
       "batch_id": "2024-chenchen052512-20261105T103119+0800",
       "owner": "陈晨",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "reviewed_at": "2026-11-07",
+      "reviewed_at": "2026-11-09",
       "decision": "exclude",
-      "rationale": "出版方明确列在News & Highlights，由科技记者报道GraphCast等既有成果，非独立研究或系统技术综述。",
+      "rationale": "出版方栏目为News & Highlights，正式页面提供图形摘要及新闻正文，无独立文字摘要；按新闻类型排除。 负责人明确要求：其余无法补独立摘要的记录直接不纳入。",
       "verified_metadata": {
         "doi": "10.1016/j.eng.2024.07.003",
         "title": "Promising Results Predict Role for Artificial Intelligence in Weather Forecasting",
@@ -165691,8 +165754,18 @@
         ],
         "evidence_urls": [
           "https://api.crossref.org/works/10.1016%2Fj.eng.2024.07.003",
-          "https://www.engineering.org.cn/engi/EN/PDF/10.1016/j.eng.2024.07.003"
-        ]
+          "https://www.engineering.org.cn/engi/EN/PDF/10.1016/j.eng.2024.07.003",
+          "https://www.engineering.org.cn/engi/EN/10.1016/j.eng.2024.07.003"
+        ],
+        "abstract_status": "no_independent_text_abstract_in_verified_source",
+        "abstract_absence_evidence": {
+          "checked_at": "2026-11-09",
+          "publication_type": "news",
+          "note": "出版方栏目为News & Highlights，正式页面提供图形摘要及新闻正文，无独立文字摘要；按新闻类型排除。",
+          "evidence_urls": [
+            "https://www.engineering.org.cn/engi/EN/10.1016/j.eng.2024.07.003"
+          ]
+        }
       },
       "tags": [],
       "collection": null,
@@ -165708,7 +165781,13 @@
       },
       "registered_document_type": "journal-article",
       "pdf_verification_note": "本次未验证到公开PDF，保留空值；原始PDF字段原样保存不等同已核实",
-      "vocabulary_base_commit": "4b5a1a874a4f7a5d2f68647e63e6eb75ea200dbd"
+      "vocabulary_base_commit": "4b5a1a874a4f7a5d2f68647e63e6eb75ea200dbd",
+      "owner_decision_confirmation": {
+        "owner": "陈晨",
+        "date": "2026-11-09",
+        "instruction": "把能补的补了，其余的直接不纳入",
+        "decision": "exclude"
+      }
     }
   },
   {
@@ -165777,9 +165856,9 @@
       "batch_id": "2024-chenchen052512-20261105T103119+0800",
       "owner": "陈晨",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "reviewed_at": "2026-11-07",
+      "reviewed_at": "2026-11-09",
       "decision": "exclude",
-      "rationale": "文献类型复核：Engineering正式页面明确归类为Views & Comments（观点与评论），并无独立文字摘要。按新版排除评论的规则剔除；不再因其中讨论生成材料设计而当作实质综述保留。",
+      "rationale": "出版方栏目为Views & Comments，正式页面提供图形摘要及观点正文，无独立文字摘要；按观点评论类型排除。 负责人明确要求：其余无法补独立摘要的记录直接不纳入。",
       "verified_metadata": {
         "doi": "10.1016/j.eng.2024.07.008",
         "title": "Generative AI for Materials Discovery: Design Without Understanding",
@@ -165793,7 +165872,16 @@
           "https://api.crossref.org/works/10.1016%2Fj.eng.2024.07.008",
           "https://www.engineering.org.cn/engi/EN/10.1016/j.eng.2024.07.008"
         ],
-        "pdf_url": null
+        "pdf_url": null,
+        "abstract_status": "no_independent_text_abstract_in_verified_source",
+        "abstract_absence_evidence": {
+          "checked_at": "2026-11-09",
+          "publication_type": "commentary",
+          "note": "出版方栏目为Views & Comments，正式页面提供图形摘要及观点正文，无独立文字摘要；按观点评论类型排除。",
+          "evidence_urls": [
+            "https://www.engineering.org.cn/engi/EN/10.1016/j.eng.2024.07.008"
+          ]
+        }
       },
       "tags": [],
       "collection": "commentary",
@@ -165841,6 +165929,12 @@
           }
         ],
         "evidence_location": "正式全文§2及§3材料生成方法"
+      },
+      "owner_decision_confirmation": {
+        "owner": "陈晨",
+        "date": "2026-11-09",
+        "instruction": "把能补的补了，其余的直接不纳入",
+        "decision": "exclude"
       }
     }
   },
