@@ -55,6 +55,7 @@ jobs:
             tools/build_owner_activity.py
             tools/build_review_monitor.py
             tools/generate_review_actions.py
+            tools/restore_abstracts.py
             static/review-monitor-guide.md
           sparse-checkout-cone-mode: false
       - uses: actions/setup-python@v6
@@ -69,18 +70,32 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           generate() {
             python ../monitor-tools/tools/build_owner_activity.py --repo . --output reviews/owner-activity.json || echo '::warning::owner activity unavailable (shallow history)'
+            # 候选文件里的摘要是 papers.json（LFS，体积太大不进 CI）的副本。有人用 papers.json
+            # 重新生成 ai4s.json 时，已经回填过的摘要会变回 null，监控就会把做过的工作报成缺失。
+            # 这里拿上一版 main 对比，只把「原本有、现在空」的摘要补回来，其余字段不动。
+            if git rev-parse --verify -q HEAD~1 >/dev/null; then
+              for year_dir in metadata/[0-9][0-9][0-9][0-9]; do
+                [ -d "$year_dir" ] || continue
+                python ../monitor-tools/tools/restore_abstracts.py --repo . --year "$(basename "$year_dir")" --base-rev HEAD~1 \
+                  || echo "::warning::$(basename "$year_dir") 候选摘要恢复失败"
+              done
+            fi
             python ../monitor-tools/tools/build_review_monitor.py --source . --output reviews/monitor-data.json
             python ../monitor-tools/tools/generate_review_actions.py --input reviews/monitor-data.json --reviews reviews
             cp ../monitor-tools/static/review-monitor-guide.md monitor-feedback-format.md
           }
           for attempt in 1 2 3 4 5; do
             generate
-            git add reviews monitor-feedback-format.md
+            git add reviews monitor-feedback-format.md metadata
             if git diff --cached --quiet; then
               echo "没有需要提交的改动。"
               exit 0
             fi
-            git commit -m '更新论文审核行动清单'
+            summary='更新论文审核行动清单'
+            if git diff --cached --name-only | grep -q '^metadata/.*/ai4s\.json$'; then
+              summary='更新论文审核行动清单（恢复被覆盖的候选摘要）'
+            fi
+            git commit -m "$summary"
             if out=$(git push origin HEAD:main 2>&1); then
               echo "第 ${attempt} 次尝试推送成功。"
               exit 0
