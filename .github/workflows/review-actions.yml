@@ -55,19 +55,35 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
-      - name: Generate action lists
-        run: |
-          python monitor-tools/tools/build_owner_activity.py --repo crawler --output crawler/reviews/owner-activity.json || echo '::warning::owner activity unavailable (shallow history)'
-          python monitor-tools/tools/build_review_monitor.py --source crawler --output "$RUNNER_TEMP/review-monitor.json"
-          python monitor-tools/tools/generate_review_actions.py --input "$RUNNER_TEMP/review-monitor.json" --reviews crawler/reviews
-          cp "$RUNNER_TEMP/review-monitor.json" crawler/reviews/monitor-data.json
-          cp monitor-tools/static/review-monitor-guide.md crawler/monitor-feedback-format.md
-      - name: Commit changed action lists
+      - name: Generate and commit action lists
         working-directory: crawler
+        # 这个仓库在晚上的提交高峰里每分钟都有几个人在推，同一个生成文件在两边都会被改，
+        # rebase 必然冲突。所以每次推送失败就丢掉本地改动、同步到最新 main、重新生成再推，最多 5 次。
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add reviews monitor-feedback-format.md
-          if git diff --cached --quiet; then exit 0; fi
-          git commit -m '更新论文审核行动清单'
-          git push origin HEAD:main
+          generate() {
+            python ../monitor-tools/tools/build_owner_activity.py --repo . --output reviews/owner-activity.json || echo '::warning::owner activity unavailable (shallow history)'
+            python ../monitor-tools/tools/build_review_monitor.py --source . --output reviews/monitor-data.json
+            python ../monitor-tools/tools/generate_review_actions.py --input reviews/monitor-data.json --reviews reviews
+            cp ../monitor-tools/static/review-monitor-guide.md monitor-feedback-format.md
+          }
+          for attempt in 1 2 3 4 5; do
+            generate
+            git add reviews monitor-feedback-format.md
+            if git diff --cached --quiet; then
+              echo "没有需要提交的改动。"
+              exit 0
+            fi
+            git commit -m '更新论文审核行动清单'
+            if out=$(git push origin HEAD:main 2>&1); then
+              echo "第 ${attempt} 次尝试推送成功。"
+              exit 0
+            fi
+            echo "::warning::第 ${attempt} 次推送失败：$(echo "$out" | tail -n 2 | tr '\n' ' ')"
+            git fetch origin main
+            git reset --hard origin/main
+            sleep 5
+          done
+          echo "::error::连续 5 次推送都被拒绝，本次行动清单没有提交：$(echo "$out" | tail -n 5 | tr '\n' ' ')"
+          exit 1
