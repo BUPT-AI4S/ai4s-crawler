@@ -180535,16 +180535,19 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-chenchen052512-20261105T103119+0800",
-      "owner": "陈晨",
+      "batch_id": "2024-20261111-lixueting-final327",
+      "owner": "李雪婷",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "reviewed_at": "2026-11-07",
-      "decision": "exclude",
-      "rationale": "通过操纵LLM神经元研究语言情绪概念与情绪推断，主问题属于认知心理与语言概念表征，未有生理或神经机制验证，按排除社科口径剔除。",
+      "decision": "include",
+      "rationale": "2026-11-11 最终排查：以LLM作为可操控的计算模型，定位并干预情绪概念属性相关神经元，研究语言表征对情绪推断的作用；属于认知/社会科学研究，不把模型干预结果等同于人脑因果证据。",
       "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1016/j.isci.2024.111401",
+          "https://pubmed.ncbi.nlm.nih.gov/39669430/",
+          "https://api.crossref.org/works/10.1016/j.isci.2024.111401"
+        ],
         "doi": "10.1016/j.isci.2024.111401",
         "title": "Language-specific representation of emotion-concept knowledge causally supports emotion inference",
-        "url": "https://doi.org/10.1016/j.isci.2024.111401",
         "authors": [
           "Ming Li",
           "Yusheng Su",
@@ -180559,25 +180562,69 @@
           "Zhiyuan Liu",
           "Dan Zhang"
         ],
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S2589004224026269"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于社会科学",
+          "label_en": "AI for social sciences",
+          "evidence_location": "输入摘要",
+          "rationale": "以LLM作为可操控的计算模型，定位并干预情绪概念属性相关神经元，研究语言表征对情绪推断的作用；属于认知/社会科学研究，不把模型干预结果等同于人脑因果证据。",
+          "evidence_urls": [
+            "https://doi.org/10.1016/j.isci.2024.111401"
+          ]
+        },
+        {
+          "axis": "method",
+          "label": "大语言模型",
+          "label_en": "Large language model",
+          "evidence_location": "输入摘要",
+          "rationale": "以LLM作为可操控的计算模型，定位并干预情绪概念属性相关神经元，研究语言表征对情绪推断的作用；属于认知/社会科学研究，不把模型干预结果等同于人脑因果证据。",
+          "evidence_urls": [
+            "https://doi.org/10.1016/j.isci.2024.111401"
+          ]
+        }
+      ],
+      "disagreement_review": {
+        "number": 135,
+        "baseline_commit": "e41587b9271028183191e2395146ec7904f56041",
+        "prior_own_decision": "pending",
+        "other_file": "chenchen052512.json",
+        "prior_other_decision": "exclude",
+        "outcome": "复核为双方原判以外的状态",
+        "abstract_evidence_sentences": [
+          3,
+          4,
+          5
+        ],
+        "detail_file": "lixueting-haozhuodi/disagreement-adjudications.json"
+      },
+      "reviewed_at": "2026-11-11",
+      "review_method": "abstract",
+      "review_basis": "2026-11-11 剩余327条最终排查",
+      "rules_commit": "898397594f006f9c1210da671d5354592ea8a3aa",
+      "vocabulary_base_commit": "898397594f006f9c1210da671d5354592ea8a3aa",
+      "previous_decision": "include",
+      "final327_review": {
+        "date": "2026-11-11",
+        "owner": "李雪婷",
+        "baseline_commit": "898397594f006f9c1210da671d5354592ea8a3aa",
+        "detail_file": "lixueting-haozhuodi/lixueting-final327-review-20261111.json",
+        "audit_entry": 257,
+        "initial_issue": "conflict",
+        "prior_decision": "include",
+        "decision_category": "ai4s",
+        "evidence_limited": false,
+        "read_scope": "abstract",
+        "evidence_location": "输入摘要",
         "evidence_urls": [
-          "https://api.crossref.org/works/10.1016%2Fj.isci.2024.111401"
-        ]
-      },
-      "tags": [],
-      "collection": null,
-      "review_method": "individual_semantic_review",
-      "evidence_location": "输入摘要",
-      "metadata_verification": {
-        "source": "publisher_deposited_crossref",
-        "http_status": 200,
-        "normalized_title_match": true,
-        "publisher_page_status": 200,
-        "publisher_html_verified": false,
-        "access_note": "DOI指向Elsevier中转页，HTTP200不代表已读取出版论文页"
-      },
-      "registered_document_type": "journal-article",
-      "pdf_verification_note": "本次未验证到公开PDF，保留空值；原始PDF字段原样保存不等同已核实",
-      "vocabulary_base_commit": "4b5a1a874a4f7a5d2f68647e63e6eb75ea200dbd"
+          "https://doi.org/10.1016/j.isci.2024.111401"
+        ],
+        "user_requested_no_pending": true,
+        "closure_policy": "证据不足时本轮不纳入，不据此宣称已证明非AI4S。",
+        "new_author_abstract": false
+      }
     }
   },
   {
@@ -214624,57 +214671,57 @@
     "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S2589004224008617",
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-chenchen052512-20261105T103119+0800",
-      "owner": "陈晨",
+      "batch_id": "2024-20261111-lixueting-final327",
+      "owner": "李雪婷",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "reviewed_at": "2026-11-07",
-      "decision": "include",
-      "rationale": "初筛漏筛补录：完整摘要利用CycleGAN中间域及对抗特征对齐，在Citypersons、KITTI、BDD100K直接验证不同传感和天气条件的行人检测。",
-      "collection": "original_research",
-      "tags": [
-        {
-          "axis": "domain",
-          "label": "AI 用于数理科学",
-          "label_en": "AI for mathematical and physical sciences",
-          "evidence_location": "输入完整摘要",
-          "rationale": "完整摘要利用CycleGAN中间域及对抗特征对齐，在Citypersons、KITTI、BDD100K直接验证不同传感和天气条件的行人检测。"
-        },
-        {
-          "axis": "task",
-          "label": "自动驾驶感知",
-          "label_en": "Autonomous driving perception",
-          "evidence_location": "输入完整摘要",
-          "rationale": "完整摘要利用CycleGAN中间域及对抗特征对齐，在Citypersons、KITTI、BDD100K直接验证不同传感和天气条件的行人检测。"
-        },
-        {
-          "axis": "method",
-          "label": "领域适应",
-          "label_en": "Domain adaptation",
-          "evidence_location": "输入完整摘要",
-          "rationale": "完整摘要利用CycleGAN中间域及对抗特征对齐，在Citypersons、KITTI、BDD100K直接验证不同传感和天气条件的行人检测。"
-        },
-        {
-          "axis": "method",
-          "label": "生成对抗网络",
-          "label_en": "Generative adversarial network",
-          "evidence_location": "输入完整摘要",
-          "rationale": "完整摘要利用CycleGAN中间域及对抗特征对齐，在Citypersons、KITTI、BDD100K直接验证不同传感和天气条件的行人检测。"
-        }
-      ],
       "verified_metadata": {
-        "url": "https://doi.org/10.1016/j.isci.2024.109639",
+        "evidence_urls": [
+          "https://doi.org/10.1016/j.isci.2024.109639",
+          "https://pubmed.ncbi.nlm.nih.gov/38623330/",
+          "https://api.crossref.org/works/10.1016/j.isci.2024.109639"
+        ]
+      },
+      "decision": "exclude",
+      "rationale": "2026-11-11 最终排查：以Citypersons、KITTI、BDD100K评估跨域行人检测，贡献为通用视觉域适配；没有明确的自然科学或本项目范围内的科学研究任务。",
+      "tags": [],
+      "disagreement_review": {
+        "number": 109,
+        "baseline_commit": "e41587b9271028183191e2395146ec7904f56041",
+        "prior_own_decision": "pending",
+        "other_file": "chenchen052512.json",
+        "prior_other_decision": "include",
+        "outcome": "复核为双方原判以外的状态",
+        "abstract_evidence_sentences": [
+          2,
+          3,
+          4
+        ],
+        "detail_file": "lixueting-haozhuodi/disagreement-adjudications.json"
+      },
+      "reviewed_at": "2026-11-11",
+      "review_method": "abstract",
+      "review_basis": "2026-11-11 剩余327条最终排查",
+      "rules_commit": "898397594f006f9c1210da671d5354592ea8a3aa",
+      "vocabulary_base_commit": "898397594f006f9c1210da671d5354592ea8a3aa",
+      "previous_decision": "exclude",
+      "final327_review": {
+        "date": "2026-11-11",
+        "owner": "李雪婷",
+        "baseline_commit": "898397594f006f9c1210da671d5354592ea8a3aa",
+        "detail_file": "lixueting-haozhuodi/lixueting-final327-review-20261111.json",
+        "audit_entry": 256,
+        "initial_issue": "conflict",
+        "prior_decision": "exclude",
+        "decision_category": "outside_ai4s_scope",
+        "evidence_limited": false,
+        "read_scope": "abstract",
+        "evidence_location": "输入摘要",
         "evidence_urls": [
           "https://doi.org/10.1016/j.isci.2024.109639"
         ],
-        "doi": "10.1016/j.isci.2024.109639"
-      },
-      "review_method": "individual_semantic_abstract_review",
-      "evidence_location": "输入完整摘要",
-      "vocabulary_base_commit": "4b5a1a874a4f7a5d2f68647e63e6eb75ea200dbd",
-      "supplementation": {
-        "type": "keyword_screening_miss",
-        "outside_index": 33729,
-        "source_snapshot_preserved": true
+        "user_requested_no_pending": true,
+        "closure_policy": "证据不足时本轮不纳入，不据此宣称已证明非AI4S。",
+        "new_author_abstract": false
       }
     }
   },
@@ -254416,70 +254463,73 @@
     "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S2589004224027275",
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-chenchen052512-20261105T103119+0800",
-      "owner": "陈晨",
+      "batch_id": "2024-20261111-lixueting-final327",
+      "owner": "李雪婷",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "reviewed_at": "2026-11-07",
-      "decision": "include",
-      "rationale": "初筛漏筛补录：全文复核。主文明确使用miRDB等工具预测miR-193b/365靶基因并据此选择Mapk8开展调控机制验证；miRDB引用方法为训练得到的MirTarget支持向量模型，属于实际使用AI进行基因靶标推断。本文未新训练该模型，不能标训练阶段；后续分子和神经形态实验支撑生物学机制。",
-      "collection": "original_research",
-      "tags": [
-        {
-          "axis": "domain",
-          "label": "AI 用于生命科学",
-          "label_en": "AI for life sciences",
-          "evidence_location": "XML Results sec2.2及Fig.2、STAR Methods sec8.3.5；所引MirTarget/miRDB方法论文及官方方法说明",
-          "rationale": "主文明确使用miRDB等工具预测miR-193b/365靶基因并据此选择Mapk8开展调控机制验证；miRDB引用方法为训练得到的MirTarget支持向量模型，属于实际使用AI进行基因靶标推断。本文未新训练该模型，不能标训练阶段；后续分子和神经形态实验支撑生物学机制。"
-        },
-        {
-          "axis": "task",
-          "label": "微RNA靶基因预测",
-          "label_en": "MicroRNA target prediction",
-          "evidence_location": "XML Results sec2.2及Fig.2、STAR Methods sec8.3.5；所引MirTarget/miRDB方法论文及官方方法说明",
-          "rationale": "主文明确使用miRDB等工具预测miR-193b/365靶基因并据此选择Mapk8开展调控机制验证；miRDB引用方法为训练得到的MirTarget支持向量模型，属于实际使用AI进行基因靶标推断。本文未新训练该模型，不能标训练阶段；后续分子和神经形态实验支撑生物学机制。"
-        },
-        {
-          "axis": "method",
-          "label": "支持向量机",
-          "label_en": "Support vector machine",
-          "evidence_location": "XML Results sec2.2及Fig.2、STAR Methods sec8.3.5；所引MirTarget/miRDB方法论文及官方方法说明",
-          "rationale": "主文明确使用miRDB等工具预测miR-193b/365靶基因并据此选择Mapk8开展调控机制验证；miRDB引用方法为训练得到的MirTarget支持向量模型，属于实际使用AI进行基因靶标推断。本文未新训练该模型，不能标训练阶段；后续分子和神经形态实验支撑生物学机制。"
-        }
-      ],
       "verified_metadata": {
-        "url": "https://europepmc.org/article/MED/39759000",
         "evidence_urls": [
-          "https://europepmc.org/article/MED/39759000",
-          "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11697703/fullTextXML",
-          "https://mirdb.org/faq.html",
-          "https://doi.org/10.1186/s13059-019-1629-z"
+          "https://linkinghub.elsevier.com/retrieve/pii/S2589004224027275",
+          "https://doi.org/10.1016/j.isci.2024.111500",
+          "https://pubmed.ncbi.nlm.nih.gov/39759000/",
+          "https://api.crossref.org/works/10.1016/j.isci.2024.111500"
         ],
-        "doi": "10.1016/j.isci.2024.111500",
-        "abstract": "Summary Different neuron types develop characteristic axonal and dendritic arborizations that determine their inputs, outputs, and functions. Expression of fate-determinant transcription factors is essential for specification of their distinct identities. However, the mechanisms downstream of fate-determinant factors coordinating different aspects of neuron identity are not understood. Specifically, how distinct projection neurons develop appropriate dendritic arbors that determine their inputs is unknown. Here, we investigate this question in corticospinal and callosal projection neurons. We identified a mechanism linking the corticospinal/corticofugal identity gene Fezf2 with the regulation of dendritic development. We show that miR-193b∼365 microRNA cluster is regulated by Fezf2 and enriched in corticospinal neurons. miR-193b∼365 represses mitogen-activated protein kinase 8 (MAPK8) to regulate corticospinal dendritic development. miR-193b∼365 overexpression in callosal neurons abnormally reduces MAPK8 signal and dendritic complexity. Our findings show that regulation of MAPK8 via miR-193b∼365 cluster regulates dendritic development, providing a mechanism that coordinates projection neuron identity, specified by Fezf2 , and neuron-specific dendritic morphology. Subject areas: Biological sciences, Epigenetics, Developmental neuroscience"
+        "abstract": "Different neuron types develop characteristic axonal and dendritic arborizations that determine their inputs, outputs, and functions. Expression of fate-determinant transcription factors is essential for specification of their distinct identities. However, the mechanisms downstream of fate-determinant factors coordinating different aspects of neuron identity are not understood. Specifically, how distinct projection neurons develop appropriate dendritic arbors that determine their inputs is unknown. Here, we investigate this question in corticospinal and callosal projection neurons. We identified a mechanism linking the corticospinal/corticofugal identity gene Fezf2 with the regulation of dendritic development. We show that miR-193b∼365 microRNA cluster is regulated by Fezf2 and enriched in corticospinal neurons. miR-193b∼365 represses mitogen-activated protein kinase 8 (MAPK8) to regulate corticospinal dendritic development. miR-193b∼365 overexpression in callosal neurons abnormally reduces MAPK8 signal and dendritic complexity. Our findings show that regulation of MAPK8 via miR-193b∼365 cluster regulates dendritic development, providing a mechanism that coordinates projection neuron identity, specified by Fezf2 , and neuron-specific dendritic morphology.",
+        "abstract_url": "https://pubmed.ncbi.nlm.nih.gov/39759000/"
       },
-      "review_method": "targeted_fulltext_review",
-      "evidence_location": "XML Results sec2.2及Fig.2、STAR Methods sec8.3.5；所引MirTarget/miRDB方法论文及官方方法说明",
-      "reviewed_scope": "定向阅读完整摘要、靶基因发现结果、靶点预测/验证方法及所用AI工具的原始方法说明",
-      "vocabulary_base_commit": "4b5a1a874a4f7a5d2f68647e63e6eb75ea200dbd",
-      "supplementation": {
-        "type": "keyword_screening_miss",
-        "outside_index": 35485,
-        "source_snapshot_preserved": true
+      "decision": "exclude",
+      "rationale": "2026-11-11 最终排查：通过Fezf2、miR-193b-365和MAPK8的生物实验研究皮层投射神经元身份与树突发育；摘要所述机制证据未显示AI实际参与。",
+      "tags": [],
+      "disagreement_review": {
+        "number": 140,
+        "baseline_commit": "e41587b9271028183191e2395146ec7904f56041",
+        "prior_own_decision": "exclude",
+        "other_file": "chenchen052512.json",
+        "prior_other_decision": "include",
+        "outcome": "复核后维持本组原判",
+        "abstract_evidence_sentences": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "detail_file": "lixueting-haozhuodi/disagreement-adjudications.json"
       },
-      "fulltext_evidence": {
-        "status": "fulltext_xml_obtained",
-        "identity_basis": "Exact DOI and matching title in Europe PMC",
-        "reviewed_scope": "定向阅读完整摘要、靶基因发现结果、靶点预测/验证方法及所用AI工具的原始方法说明",
-        "format": "jats_xml",
-        "sha256": "40ee1c21cfebd6ab06bd6d178cbe6c0badedf76c8dd4c42029168fb8a386c8da",
-        "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11697703/fullTextXML",
-        "version": "publisher_deposited_fulltext_xml"
+      "abstract_recheck": {
+        "previous_decision": "pending",
+        "number": 136,
+        "detail_file": "lixueting-haozhuodi/lixueting-137-abstract-review.json",
+        "evidence_sentences": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "abstract_sha256": "2225e29aa665597b7352cb8c81bcb6abe2ab706037a6c7c35d41b16b60ec7227"
       },
-      "previous_abstract_review": {
-        "decision": "pending",
-        "rationale": "原始摘要缺失且未获得满足DOI、来源及近同标题匹配的完整恢复摘要，未作纳入排除判断。",
-        "evidence_location": null,
-        "evidence_urls": null
+      "reviewed_at": "2026-11-11",
+      "review_method": "abstract",
+      "review_basis": "2026-11-11 剩余327条最终排查",
+      "rules_commit": "898397594f006f9c1210da671d5354592ea8a3aa",
+      "vocabulary_base_commit": "898397594f006f9c1210da671d5354592ea8a3aa",
+      "previous_decision": "exclude",
+      "final327_review": {
+        "date": "2026-11-11",
+        "owner": "李雪婷",
+        "baseline_commit": "898397594f006f9c1210da671d5354592ea8a3aa",
+        "detail_file": "lixueting-haozhuodi/lixueting-final327-review-20261111.json",
+        "audit_entry": 258,
+        "initial_issue": "conflict",
+        "prior_decision": "exclude",
+        "decision_category": "outside_ai4s_scope",
+        "evidence_limited": false,
+        "read_scope": "abstract",
+        "evidence_location": "输入摘要",
+        "evidence_urls": [
+          "https://doi.org/10.1016/j.isci.2024.111500"
+        ],
+        "user_requested_no_pending": true,
+        "closure_policy": "证据不足时本轮不纳入，不据此宣称已证明非AI4S。",
+        "new_author_abstract": false
       }
     }
   },
