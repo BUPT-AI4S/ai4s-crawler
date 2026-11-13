@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-13T09:45:33.179331+00:00",
-  "commit": "097e95a2c2abab9a25ed8cef349a980b1381a343",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/097e95a2c2abab9a25ed8cef349a980b1381a343/",
+  "generated_at": "2026-11-13T10:32:57.255769+00:00",
+  "commit": "c991dcb38c919a8cc5aff41b8b4189ea1d02eead",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/c991dcb38c919a8cc5aff41b8b4189ea1d02eead/",
   "years": [
     {
       "year": 2024,
@@ -4187,30 +4187,39 @@
           "state": "completed",
           "papers": 1160,
           "snapshot_candidates": 548,
-          "candidates": 548,
-          "missing_abstract": 2,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "2026-11-09新分配来源，尚未纳入本人历史908条交付；未开展本人官网总量核验和逐篇精筛。 当前AI4S候选548条，其中原摘要缺失2条；统计仅针对候选，文件版本见本条candidate_file_commit与candidate_file_sha256。",
+          "candidates": 556,
+          "missing_abstract": 0,
+          "official_total": 1158,
+          "official_scope": "2024届IEEE BIBM正式论文集研究书目，覆盖合并出版的正会、短文、Workshop与Poster论文；当前IEEE电子目录1166项中8项封面/作者索引/Contributor/Commentary单列排除，规范研究书目1158项；按会议年而非IEEE首次上线年。原采集1160含2条同文重复旧版本，规范去重后1158与官网集合一致。",
+          "coverage_note": "2026-11-13完成新分工BIBM初始548条候选的逐篇审核，并对已观察到的官网目录线索补录8条确证漏筛：当前556条，纳入477、排除78、待定1、未审0；原字段保留并新增ai4s_review，纳入标签均复用当次1333条共享中英文词表。原缺摘要2条均已补原摘要并同步年度候选元数据，当前缺摘要0条。10822651为ProGen2同文重复旧版本，用已核IEEE规范版本10821712的原摘要补证并排除重复；10947607同样排除重复。10821791已补正式IEEE完整原摘要并纳入。浏览器逐页读取当届IEEE电子目录12页、1166项，8项前置非研究内容单列；原1160项扣除2条不在当前官网的同文重复旧版本后1158项，与官网研究书目标识集合完全一致，未确认研究论文漏采。印刷目录1152项属另一版本，不能代替当前电子目录；与电子目录的增补差异逐条记录。官网总数1158按规范研究书目口径，不与原始1160直接冒称相等，也不把2025上线日期混作会议年。原548候选及固定原始书目均不删除。保留1条待定10822326：公开会议页原摘要只有一句，相关期刊版本作者名单不同，尚不能据此确定会议版本的类型及AI作用；不以填充摘要或改监控隐藏该待定。 8条漏筛论文原已在固定全量书目中、均有完整原摘要；已核IEEE正式目录身份并按原摘要完成纳入和规范标签，同时补入候选与本人审核。补录检查范围为本轮目录中已观察到的明确线索，不声称对全部非候选穷尽精筛。",
           "evidence_urls": [
             "https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/990d642d8cb137db0db9873f16d4b004079869e5/reviews/source-assignments-2024.json"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/990d642d8cb137db0db9873f16d4b004079869e5/reviews/source-assignments-2024.json",
+            "https://ieeexplore.ieee.org/xpl/conhome/10821710/proceeding",
+            "https://ieeebibm.org/BIBM2024/",
+            "https://ieeebibm.org/BIBM2024/documents/BIBM2024-ProgramDec2.pdf",
+            "https://ieeebibm.org/BIBM2024/documents/IEEE%20BIBM%202024PublicationPaperList.pdf",
+            "https://www.proceedings.com/content/078/078510webtoc.pdf",
+            "https://ieeexplore.ieee.org/document/10821791",
+            "https://ieeexplore.ieee.org/document/10821712",
+            "https://liuq-lab.com/publication/2024-bibm-shao/"
           ],
-          "decisions": null,
+          "decisions": {
+            "include": 477,
+            "exclude": 78,
+            "pending": 1,
+            "unreviewed": 0
+          },
           "issues": [
-            "新分工来源有548条当前候选，本人尚未提交逐篇审核。",
-            "官网同口径总数尚未确认。",
-            "AI4S候选缺少摘要：2 篇。",
-            "尚未找到逐篇审核交付。"
+            "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "按最新词表与类型要求开展候选精筛；同时核对官网同口径总量，记录未完成部分。",
-            "为尚未审的缺摘要候选查正式摘要或可靠全文证据，不足则逐篇标pending。",
-            "核对官网全年目录，记录统计口径及证据。",
-            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
-            "提交逐篇审核结果或说明当前进度。"
+            "补取10.1109/BIBM62325.2024.10822326会议版本的完整正文或作者原摘要，核实是一页会议摘要还是研究正文及其AI作用；不以同题名期刊论文代替。",
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
+            "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
+            "reviews/2024/nydiii.json",
             "reviews/2024/feedback/nydiii.json"
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00"
@@ -18970,23 +18979,22 @@
         {
           "owner": "南耀笛",
           "sources": 51,
-          "delivered": 48,
-          "official": 47,
-          "pending": 1,
+          "delivered": 49,
+          "official": 48,
+          "pending": 2,
           "open_issues": 24,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-13T01:43:32-08:00",
+            "at": "2026-11-13T02:31:23-08:00",
             "author": "ebo",
-            "subject": "Sync verified Polymer Science abstract and candidate article types",
+            "subject": "Record institutional evidence for the remaining BIBM pending paper",
             "area": "reviews",
             "paths": [
-              "metadata/2024/ai4s.json",
               "reviews/2024/feedback/nydiii.json",
               "reviews/2024/nydiii.json"
             ]
           },
-          "commits_7d": 16
+          "commits_7d": 17
         },
         {
           "owner": "朱长昊",
@@ -32400,17 +32408,16 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-13T01:43:32-08:00",
+            "at": "2026-11-13T02:31:23-08:00",
             "author": "ebo",
-            "subject": "Sync verified Polymer Science abstract and candidate article types",
+            "subject": "Record institutional evidence for the remaining BIBM pending paper",
             "area": "reviews",
             "paths": [
-              "metadata/2024/ai4s.json",
               "reviews/2024/feedback/nydiii.json",
               "reviews/2024/nydiii.json"
             ]
           },
-          "commits_7d": 16
+          "commits_7d": 17
         },
         {
           "owner": "朱长昊",
@@ -45778,17 +45785,16 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-13T01:43:32-08:00",
+            "at": "2026-11-13T02:31:23-08:00",
             "author": "ebo",
-            "subject": "Sync verified Polymer Science abstract and candidate article types",
+            "subject": "Record institutional evidence for the remaining BIBM pending paper",
             "area": "reviews",
             "paths": [
-              "metadata/2024/ai4s.json",
               "reviews/2024/feedback/nydiii.json",
               "reviews/2024/nydiii.json"
             ]
           },
-          "commits_7d": 16
+          "commits_7d": 17
         },
         {
           "owner": "朱长昊",
@@ -45986,9 +45992,9 @@
       "years": {
         "2024": {
           "sources": 51,
-          "delivered": 48,
-          "official": 47,
-          "pending": 1,
+          "delivered": 49,
+          "official": 48,
+          "pending": 2,
           "open_issues": 24,
           "status": "in_progress"
         },
@@ -46010,23 +46016,22 @@
         }
       },
       "sources": 153,
-      "delivered": 48,
+      "delivered": 49,
       "not_started": [
         "2025",
         "2026"
       ],
       "last_update": {
-        "at": "2026-11-13T01:43:32-08:00",
+        "at": "2026-11-13T02:31:23-08:00",
         "author": "ebo",
-        "subject": "Sync verified Polymer Science abstract and candidate article types",
+        "subject": "Record institutional evidence for the remaining BIBM pending paper",
         "area": "reviews",
         "paths": [
-          "metadata/2024/ai4s.json",
           "reviews/2024/feedback/nydiii.json",
           "reviews/2024/nydiii.json"
         ]
       },
-      "commits_7d": 16
+      "commits_7d": 17
     },
     {
       "owner": "朱长昊",
@@ -46449,9 +46454,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-13T09:45:20.297176+00:00",
+    "generated_at": "2026-11-13T10:32:40.726405+00:00",
     "history_available": true,
-    "commit": "097e95a2c2abab9a25ed8cef349a980b1381a343",
-    "commits_scanned": 357
+    "commit": "c991dcb38c919a8cc5aff41b8b4189ea1d02eead",
+    "commits_scanned": 360
   }
 }
