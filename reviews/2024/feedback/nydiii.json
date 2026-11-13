@@ -8,7 +8,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": 1158,
     "official_scope": "2024届IEEE BIBM正式论文集研究书目，覆盖合并出版的正会、短文、Workshop与Poster论文；当前IEEE电子目录1166项中8项封面/作者索引/Contributor/Commentary单列排除，规范研究书目1158项；按会议年而非IEEE首次上线年。原采集1160含2条同文重复旧版本，规范去重后1158与官网集合一致。",
-    "coverage_note": "2026-11-13完成新分工BIBM初始548条候选的逐篇审核，并对已观察到的官网目录线索补录8条确证漏筛：当前556条，纳入477、排除78、待定1、未审0；原字段保留并新增ai4s_review，纳入标签均复用当次1333条共享中英文词表。原缺摘要2条均已补原摘要并同步年度候选元数据，当前缺摘要0条。10822651为ProGen2同文重复旧版本，用已核IEEE规范版本10821712的原摘要补证并排除重复；10947607同样排除重复。10821791已补正式IEEE完整原摘要并纳入。浏览器逐页读取当届IEEE电子目录12页、1166项，8项前置非研究内容单列；原1160项扣除2条不在当前官网的同文重复旧版本后1158项，与官网研究书目标识集合完全一致，未确认研究论文漏采。印刷目录1152项属另一版本，不能代替当前电子目录；与电子目录的增补差异逐条记录。官网总数1158按规范研究书目口径，不与原始1160直接冒称相等，也不把2025上线日期混作会议年。原548候选及固定原始书目均不删除。保留1条待定10822326：公开会议页原摘要只有一句，相关期刊版本作者名单不同，尚不能据此确定会议版本的类型及AI作用；不以填充摘要或改监控隐藏该待定。 8条漏筛论文原已在固定全量书目中、均有完整原摘要；已核IEEE正式目录身份并按原摘要完成纳入和规范标签，同时补入候选与本人审核。补录检查范围为本轮目录中已观察到的明确线索，不声称对全部非候选穷尽精筛。",
+    "coverage_note": "2026-11-13完成新分工BIBM初始548条候选的逐篇审核，并对已观察到的官网目录线索补录8条确证漏筛：当前556条，纳入477、排除78、待定1、未审0；原字段保留并新增ai4s_review，纳入标签均复用当次1333条共享中英文词表。原缺摘要2条均已补原摘要并同步年度候选元数据，当前缺摘要0条。10822651为ProGen2同文重复旧版本，用已核IEEE规范版本10821712的原摘要补证并排除重复；10947607同样排除重复。10821791已补正式IEEE完整原摘要并纳入。浏览器逐页读取当届IEEE电子目录12页、1166项，8项前置非研究内容单列；原1160项扣除2条不在当前官网的同文重复旧版本后1158项，与官网研究书目标识集合完全一致，未确认研究论文漏采。印刷目录1152项属另一版本，不能代替当前电子目录；与电子目录的增补差异逐条记录。官网总数1158按规范研究书目口径，不与原始1160直接冒称相等，也不把2025上线日期混作会议年。原548候选及固定原始书目均不删除。保留1条待定10822326：公开会议页原摘要只有一句，相关期刊版本作者名单不同，尚不能据此确定会议版本的类型及AI作用；不以填充摘要或改监控隐藏该待定。 8条漏筛论文原已在固定全量书目中、均有完整原摘要；已核IEEE正式目录身份并按原摘要完成纳入和规范标签，同时补入候选与本人审核。补录检查范围为本轮目录中已观察到的明确线索，不声称对全部非候选穷尽精筛。 本轮接续核查：IEEE PDF明确要求机构或会员登录；作者釜山大学机构库也仅有同一句背景原摘要，OpenAlex及Semantic Scholar均无公开全文。当前无机构访问权限，按用户要求记录全文获取受限及续接路径，477纳入、78排除、1待定、未审0和缺摘要0的计数保留。",
     "evidence_urls": [
       "https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/990d642d8cb137db0db9873f16d4b004079869e5/reviews/source-assignments-2024.json",
@@ -19,16 +19,19 @@
       "https://www.proceedings.com/content/078/078510webtoc.pdf",
       "https://ieeexplore.ieee.org/document/10821791",
       "https://ieeexplore.ieee.org/document/10821712",
-      "https://liuq-lab.com/publication/2024-bibm-shao/"
+      "https://liuq-lab.com/publication/2024-bibm-shao/",
+      "https://scholar.pusan.ac.kr/publications/152164",
+      "https://api.openalex.org/works/https://doi.org/10.1109/BIBM62325.2024.10822326",
+      "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/BIBM62325.2024.10822326?fields=title,authors,year,openAccessPdf,url"
     ],
     "issues": [],
     "next_actions": [
-      "补取10.1109/BIBM62325.2024.10822326会议版本的完整正文或作者原摘要，核实是一页会议摘要还是研究正文及其AI作用；不以同题名期刊论文代替。"
+      "取得机构授权可访问的IEEE正文或作者合法公开版本后，按题名、DOI及14位作者确认版本，读取方法和研究结果，再决定include或exclude并同步反馈。"
     ],
-    "work_status": "catalogue_reconciled_candidates_reviewed_one_pending",
+    "work_status": "reviewed_one_pending_full_text_access",
     "candidate_count": 556,
     "candidate_missing_abstract": 0,
-    "candidate_file_commit": "1137649eadede45d7659d8f1574f384f9ae7142c",
+    "candidate_file_commit": "87e93900a2e8759d263ace7f7907120d2452745f",
     "candidate_file_sha256": "e1e0b38be65e59a9b763d5a897128778b43a938a51a14e523b06ece86f2ebb2a",
     "own_review_counts": {
       "include": 477,
@@ -80,7 +83,8 @@
         "10.1109/bibm62325.2024.10822114",
         "10.1109/bibm62325.2024.10822219",
         "10.1109/bibm62325.2024.10821863"
-      ]
+      ],
+      "latest_verification_main_commit": "87e93900a2e8759d263ace7f7907120d2452745f"
     },
     "catalogue_reconciliation": {
       "checked_at": "2026-11-13",
@@ -1398,14 +1402,19 @@
     "pending_records": [
       {
         "id": "10.1109/bibm62325.2024.10822326",
-        "reason": "IEEE正式页仅提供一句臭氧背景，虽查到同题名期刊研究，但作者列表与发表载体不同，不能替代本会议版本；需会议正文核实文献形式及AI实际作用。",
+        "reason": "本会议记录的公开原摘要仅一句臭氧背景；IEEE全文入口需订阅，作者两所机构库及开放文献索引均未提供完整会议正文，当前无机构访问权限。科学主题可确认，但会议版本的文献形式及AI实质作用仍缺证据，保留待定；同题名且作者名单不同的期刊版本不替代本会议正文。",
         "evidence_url": "https://ieeexplore.ieee.org/document/10822326",
-        "related_journal_not_substituted": "https://pubmed.ncbi.nlm.nih.gov/39096989/",
-        "institutional_evidence_url": "https://snu.elsevierpure.com/en/publications/relationship-between-short-term-ozone-exposure-cause-specific-mor/",
-        "note": "IEEE及作者机构库均只提供一句背景原摘要，已核对DOI及14位作者；需完整会议正文。"
+        "institutional_evidence_urls": [
+          "https://snu.elsevierpure.com/en/publications/relationship-between-short-term-ozone-exposure-cause-specific-mor/",
+          "https://scholar.pusan.ac.kr/publications/152164"
+        ],
+        "access_status": "subscription_required_no_institutional_access",
+        "full_text_obtained": false,
+        "next_step": "取得机构授权可访问的IEEE正文或作者合法公开版本后，按题名、DOI及14位作者确认版本，读取方法和研究结果，再决定include或exclude并同步反馈。",
+        "related_journal_not_substituted": "https://pubmed.ncbi.nlm.nih.gov/39096989/"
       }
     ],
-    "monitor_feedback_note": "唯一剩余待定由监控根据逐篇pending状态自动提示，避免再用issues重复计数；coverage_note、pending_records和next_actions保留具体缺口。",
+    "monitor_feedback_note": "唯一待定继续由逐篇pending状态自动提示；具体全文访问限制与续接证据记录在full_text_followup和pending_records，issues不重复计数。",
     "supplemented_screening_omissions": [
       {
         "id": "10.1109/bibm62325.2024.10822846",
@@ -1462,7 +1471,56 @@
         "title": "Autonomous Pharmaceutical Care with Large Language Models",
         "reason": "摘要主要为药事照护代理的任务执行及专家性能评价，尚不足以确认实质科学研究贡献，本轮不将此通用临床代理线索冒报为确证AI4S漏筛。"
       }
-    ]
+    ],
+    "full_text_followup": {
+      "checked_at": "2026-11-13",
+      "input_main_commit": "87e93900a2e8759d263ace7f7907120d2452745f",
+      "skill_commit": "87e93900a2e8759d263ace7f7907120d2452745f",
+      "vocabulary_commit": "87e93900a2e8759d263ace7f7907120d2452745f",
+      "status": "not_obtained_subscription_required",
+      "institutional_access_available": false,
+      "access_status_note": "本轮已确认目前无可用机构全文权限，用户要求将此问题记录在交付中。",
+      "attempts": [
+        {
+          "source": "IEEE正式全文入口",
+          "url": "https://ieeexplore.ieee.org/document/10822326",
+          "result": "点击PDF后显示需institutional或member sign in，未取得PDF。"
+        },
+        {
+          "source": "作者所属首尔大学机构库",
+          "url": "https://snu.elsevierpure.com/en/publications/relationship-between-short-term-ozone-exposure-cause-specific-mor/",
+          "result": "同DOI、同14位作者，仅有一句背景原摘要，无公开全文附件。"
+        },
+        {
+          "source": "作者所属釜山大学机构库",
+          "url": "https://scholar.pusan.ac.kr/publications/152164",
+          "result": "同DOI会议成果详情同样仅有一句背景原摘要，Extra Link只有Scopus及DOI，无全文附件。"
+        },
+        {
+          "source": "ResearchGate会议记录",
+          "url": "https://www.researchgate.net/publication/387928076",
+          "result": "No full-text available；未联系作者。"
+        },
+        {
+          "source": "OpenAlex",
+          "url": "https://api.openalex.org/works/https://doi.org/10.1109/BIBM62325.2024.10822326",
+          "result": "closed；any_repository_has_fulltext=false；无公开PDF地址。",
+          "work_id": "https://openalex.org/W4406259828",
+          "response_sha256": "b5397c9ec6d04c8d85cf89948f7bb9898fc6f4625eb24a425d9400d34b4c7622"
+        },
+        {
+          "source": "Semantic Scholar",
+          "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/BIBM62325.2024.10822326?fields=title,authors,year,openAccessPdf,url",
+          "result": "openAccessPdf.status=CLOSED，URL为空。",
+          "paper_id": "567376036921c29b238e9629fbfb0ffeddfb780f",
+          "response_sha256": "aefd6faec7cfe8bf134080d70693bf9088b6ebe6003942bedeb88c2870fe217e"
+        }
+      ],
+      "still_needed": [
+        "本会议DOI对应的完整正文或合法作者全文，以核实文献形式及AI的实际研究作用。"
+      ],
+      "resume_action": "取得机构授权可访问的IEEE正文或作者合法公开版本后，按题名、DOI及14位作者确认版本，读取方法和研究结果，再决定include或exclude并同步反馈。"
+    }
   },
   {
     "year": 2024,

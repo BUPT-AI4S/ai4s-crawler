@@ -165743,10 +165743,10 @@
       "owner": "南耀笛",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "reviewed_at": "2026-11-13",
-      "skill_commit": "1137649eadede45d7659d8f1574f384f9ae7142c",
-      "vocabulary_commit": "1137649eadede45d7659d8f1574f384f9ae7142c",
+      "skill_commit": "87e93900a2e8759d263ace7f7907120d2452745f",
+      "vocabulary_commit": "87e93900a2e8759d263ace7f7907120d2452745f",
       "decision": "pending",
-      "rationale": "IEEE正式页仅提供一句臭氧背景，虽查到同题名期刊研究，但作者列表与发表载体不同，不能替代本会议版本；需会议正文核实文献形式及AI实际作用。",
+      "rationale": "本会议记录的公开原摘要仅一句臭氧背景；IEEE全文入口需订阅，作者两所机构库及开放文献索引均未提供完整会议正文，当前无机构访问权限。科学主题可确认，但会议版本的文献形式及AI实质作用仍缺证据，保留待定；同题名且作者名单不同的期刊版本不替代本会议正文。",
       "verified_metadata": {
         "doi": "10.1109/bibm62325.2024.10822326",
         "url": "https://ieeexplore.ieee.org/document/10822326",
@@ -165754,7 +165754,10 @@
           "https://ieeexplore.ieee.org/xpl/conhome/10821710/proceeding",
           "https://ieeexplore.ieee.org/document/10822326",
           "https://api.crossref.org/works/10.1109/bibm62325.2024.10822326",
-          "https://snu.elsevierpure.com/en/publications/relationship-between-short-term-ozone-exposure-cause-specific-mor/"
+          "https://snu.elsevierpure.com/en/publications/relationship-between-short-term-ozone-exposure-cause-specific-mor/",
+          "https://scholar.pusan.ac.kr/publications/152164",
+          "https://api.openalex.org/works/https://doi.org/10.1109/BIBM62325.2024.10822326",
+          "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/BIBM62325.2024.10822326?fields=title,authors,year,openAccessPdf,url"
         ],
         "article_type": "Conference Paper",
         "conference_title": "2024 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)",
@@ -165785,7 +165788,8 @@
         "conference_track_verification": {
           "status": "published_proceedings_track_unspecified",
           "note": "已核正式论文集身份；未把正会、Workshop、短文或Poster统一认作CCF B正式长文。"
-        }
+        },
+        "pdf_url": null
       },
       "tags": [],
       "evidence_location": "输入摘要",
@@ -165797,7 +165801,7 @@
         "url": "https://pubmed.ncbi.nlm.nih.gov/39096989/",
         "note": "同题名期刊论文作者名单/顺序与会议条目不同，不将其原摘要或方法直接冒作会议版本。"
       },
-      "access_limitations": "IEEE公开完整Abstract实际仅一句，正文需订阅；已检查正式页、公开引言、索引及同题名期刊记录。",
+      "access_limitations": "IEEE PDF入口明确要求机构或会员订阅登录；当前无可用机构权限。首尔大学、釜山大学机构库均无全文附件；OpenAlex和Semantic Scholar均未提供公开全文。完整会议正文尚未取得。",
       "abstract_verification": {
         "status": "official_available_abstract_insufficient_for_decision",
         "checked_at": "2026-11-13",
@@ -165806,6 +165810,55 @@
           "https://snu.elsevierpure.com/en/publications/relationship-between-short-term-ozone-exposure-cause-specific-mor/"
         ],
         "note": "已核IEEE与作者所属首尔大学机构库，两处同DOI、同作者的正式会议记录均只有同一句臭氧背景，不能据此判断AI实质作用；不是空摘要，也未以期刊版本替代。"
+      },
+      "full_text_verification": {
+        "checked_at": "2026-11-13",
+        "input_main_commit": "87e93900a2e8759d263ace7f7907120d2452745f",
+        "skill_commit": "87e93900a2e8759d263ace7f7907120d2452745f",
+        "vocabulary_commit": "87e93900a2e8759d263ace7f7907120d2452745f",
+        "status": "not_obtained_subscription_required",
+        "institutional_access_available": false,
+        "access_status_note": "本轮已确认目前无可用机构全文权限，用户要求将此问题记录在交付中。",
+        "attempts": [
+          {
+            "source": "IEEE正式全文入口",
+            "url": "https://ieeexplore.ieee.org/document/10822326",
+            "result": "点击PDF后显示需institutional或member sign in，未取得PDF。"
+          },
+          {
+            "source": "作者所属首尔大学机构库",
+            "url": "https://snu.elsevierpure.com/en/publications/relationship-between-short-term-ozone-exposure-cause-specific-mor/",
+            "result": "同DOI、同14位作者，仅有一句背景原摘要，无公开全文附件。"
+          },
+          {
+            "source": "作者所属釜山大学机构库",
+            "url": "https://scholar.pusan.ac.kr/publications/152164",
+            "result": "同DOI会议成果详情同样仅有一句背景原摘要，Extra Link只有Scopus及DOI，无全文附件。"
+          },
+          {
+            "source": "ResearchGate会议记录",
+            "url": "https://www.researchgate.net/publication/387928076",
+            "result": "No full-text available；未联系作者。"
+          },
+          {
+            "source": "OpenAlex",
+            "url": "https://api.openalex.org/works/https://doi.org/10.1109/BIBM62325.2024.10822326",
+            "result": "closed；any_repository_has_fulltext=false；无公开PDF地址。",
+            "work_id": "https://openalex.org/W4406259828",
+            "response_sha256": "b5397c9ec6d04c8d85cf89948f7bb9898fc6f4625eb24a425d9400d34b4c7622"
+          },
+          {
+            "source": "Semantic Scholar",
+            "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/BIBM62325.2024.10822326?fields=title,authors,year,openAccessPdf,url",
+            "result": "openAccessPdf.status=CLOSED，URL为空。",
+            "paper_id": "567376036921c29b238e9629fbfb0ffeddfb780f",
+            "response_sha256": "aefd6faec7cfe8bf134080d70693bf9088b6ebe6003942bedeb88c2870fe217e"
+          }
+        ],
+        "still_needed": [
+          "本会议DOI对应的完整正文或合法作者全文，以核实文献形式及AI的实际研究作用。"
+        ],
+        "resume_action": "取得机构授权可访问的IEEE正文或作者合法公开版本后，按题名、DOI及14位作者确认版本，读取方法和研究结果，再决定include或exclude并同步反馈。"
       }
     }
   },
