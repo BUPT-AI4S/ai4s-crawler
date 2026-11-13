@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-14",
+  "scope": "陈晨当前2024分工；本次新增5刊全量快照中剩余1101条。已有判定不重复计为新增。",
+  "records": 1101,
+  "decisions": {
+    "exclude": 1025,
+    "pending": 66,
+    "include": 10
+  },
+  "sources": [
+    {
+      "title": "Research",
+      "source_code": "j-be601df25e",
+      "checked_records": 211,
+      "decisions": {
+        "exclude": 200,
+        "pending": 7,
+        "include": 4
+      },
+      "reviewed_scope_counts": {
+        "完整输入摘要": 201,
+        "正式EuropePMC文种元数据及原摘要补查；未取得研究摘要": 7,
+        "Crossref和EuropePMC元数据、PMC XML front摘要字段；未读取body正文": 1,
+        "完整输入更正通知及正式EuropePMC文种元数据": 2
+      },
+      "pending_without_usable_abstract": 1,
+      "pending_with_abstract": 6
+    },
+    {
+      "title": "Physics of Life Reviews",
+      "source_code": "j-31764e1eab",
+      "checked_records": 135,
+      "decisions": {
+        "exclude": 115,
+        "pending": 20
+      },
+      "reviewed_scope_counts": {
+        "正式索引文种及索引题名核验，未取得作者摘要": 88,
+        "完整作者摘要逐条语义审核": 26,
+        "DOI索引与摘要可用性核验，未取得作者摘要": 17,
+        "出版方登记的DOI与完整书目题名核验；行政条目不声称有作者摘要": 4
+      },
+      "pending_without_usable_abstract": 17,
+      "pending_with_abstract": 3
+    },
+    {
+      "title": "Engineering",
+      "source_code": "j-4143d04801",
+      "checked_records": 251,
+      "decisions": {
+        "include": 6,
+        "exclude": 233,
+        "pending": 12
+      },
+      "reviewed_scope_counts": {
+        "完整输入摘要": 132,
+        "工程院官网citation_abstract完整原摘要": 57,
+        "publisher_document_type": 59,
+        "publisher_registered_crossref_correction_type": 2,
+        "publisher_header_verified_but_no_author_abstract": 1
+      },
+      "pending_without_usable_abstract": 1,
+      "pending_with_abstract": 11
+    },
+    {
+      "title": "Molecular Therapy",
+      "source_code": "j-32e2cb1c9f",
+      "checked_records": 378,
+      "decisions": {
+        "exclude": 357,
+        "pending": 21
+      },
+      "reviewed_scope_counts": {
+        "input_complete_abstract": 248,
+        "document_type_metadata": 113,
+        "metadata_lookup_abstract_and_specific_type_unavailable": 17
+      },
+      "pending_without_usable_abstract": 17,
+      "pending_with_abstract": 4
+    },
+    {
+      "title": "Trends in Genetics",
+      "source_code": "j-5514e73d4c",
+      "checked_records": 126,
+      "decisions": {
+        "exclude": 120,
+        "pending": 6
+      },
+      "reviewed_scope_counts": {
+        "完整作者摘要（输入EuropePMC补证）": 100,
+        "输入缺摘要记录及已补正式索引文种元数据；未读正文": 3,
+        "出版方登记的DOI与完整书目题名核验；行政条目不声称有作者摘要": 23
+      },
+      "pending_without_usable_abstract": 2,
+      "pending_with_abstract": 4
+    }
+  ],
+  "evidence_limits": [
+    "本文件的全量指锁定的2024采集快照；不等于已经核清官网全年目录，官网目录事项继续保留。",
+    "Research有2条原字段为更正通知而非实质研究摘要；没有把这些作为新科学研究摘要。",
+    "Engineering的正式栏目支持排除新闻/评论，Crossref更正关系支持排除2条更正；仅研究栏目但没有正式摘要的条目仍待定。",
+    "Molecular Therapy已用249份EuropePMC作者摘要校准原字段；无可用正式摘要或AI方法不明的记录仍待定。",
+    "Trends in Genetics中23条无摘要行政书目已另获Crossref出版方登记题名证据，改为文种排除；1条行政条目登记接口429仍保留待定。",
+    "未用全文补猜作者摘要，也没有凭关键词对未读摘要直接判定AI相关性。"
+  ],
+  "new_tag": [
+    {
+      "axis": "task",
+      "label": "制造质量控制",
+      "label_en": "Manufacturing quality control",
+      "definition": "在实际制造过程中，利用AI学习或知识推理支持产品或工序质量监测、检测、异常诊断及维护决策，不包括一般企业经营管理。",
+      "evidence_urls": [
+        "https://www.engineering.org.cn/engi/EN/10.1016/j.eng.2024.03.022"
+      ]
+    }
+  ],
+  "front_matter_audit": "front-matter-verification.json"
+}
