@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-13T08:47:48.552513+00:00",
-  "commit": "1fe295180a37b64663df8bdf71e195c49fc58b4f",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/1fe295180a37b64663df8bdf71e195c49fc58b4f/",
+  "generated_at": "2026-11-13T08:54:49.437889+00:00",
+  "commit": "b71594c781466170eba5b899afa4979068a32054",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/b71594c781466170eba5b899afa4979068a32054/",
   "years": [
     {
       "year": 2024,
@@ -132,10 +132,10 @@
           "papers": 260,
           "snapshot_candidates": 25,
           "candidates": 25,
-          "missing_abstract": 9,
+          "missing_abstract": 0,
           "official_total": 260,
           "official_scope": "全类型书目；官网正式2024卷期目录；未将卷期年份直接视为首次在线发表年份。",
-          "coverage_note": "2026-11-07已核查固定快照260条：官网卷期目录一致。 浏览器逐期核实官网2024年全部12个卷期目录，260条全类型记录与固定快照双向匹配。按PII或无歧义题名、卷号及文章编号/页码匹配；编委页、目录和其他非研究内容均保留。这是正式卷期年口径，不等于逐篇核实首次在线发表年。另记录3条题名展示/元数据差异，已用卷号及唯一文章编号核实身份，不作缺项。 已完成该刊原生类型表（10条分层类型/栏目/指南记录），尚未实际运行过滤。 本人已交付25条：纳入23、排除2、待定0、未审0。 当前AI4S候选25条，其中原摘要缺失9条；统计仅针对候选，文件版本见本条candidate_file_commit与candidate_file_sha256。 2026-11-09已完成本人纳入论文的中英文标签规范化，标签均在共享词表中，原判定与逐条证据保留。 原始全量书目260条类型unknown/缺失中，已交付260条原生类型更正，仍有0条原生类型未确证；栏目/文献形式另列，固定原始字段未覆盖。 已审原缺摘要记录9条：9条已补正式来源原摘要，0条正式来源不提供独立摘要，0条原摘要访问受限，0条尚未取得。全部原判定保留；原候选缺摘要计数不变，监控的自动提示仍按原始候选字段生成。",
+          "coverage_note": "沿用2026-11-07固定采集快照与官网正式2024年全部12卷期目录的双向匹配证据：260条全类型书目，无已确认缺项；包含编委页及非研究内容，不以25条候选比较官网260条，也不把卷期年等同首次在线发表年。本轮复核既有范围说明及证据记录，未重新声称开展全年官网普查。25条候选逐篇判定维持23纳入、2排除。原缺摘要9条均已有正式来源原摘要，本轮按DOI、题名及出版方证据逐条核对，将其写入metadata/2024/ai4s.json，当前候选缺摘要降为0；审核清单保留原输入值与verified_metadata补证。两篇正式Review article（106033、106119）已按现行有实质学术内容的综述规则逐篇重核，保持纳入；106182为Research article栏目下的任务导向方法介绍，沿用实质内容判断，不把栏目误作综述批量纳入。历史类型规则文件的暂挂说明已被本条逐篇结论替代，不改动该历史文件。",
           "evidence_urls": [
             "https://www.sciencedirect.com/journal/environmental-modelling-and-software/issues",
             "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/nydiii/raw-completeness-2024.json",
@@ -143,7 +143,16 @@
             "https://www.sciencedirect.com/journal/environmental-modelling-and-software",
             "https://github.com/BUPT-AI4S/ai4s-crawler/blob/990d642d8cb137db0db9873f16d4b004079869e5/reviews/source-assignments-2024.json",
             "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/nydiii.json",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/nydiii/metadata-corrections-20261109.json"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/nydiii/metadata-corrections-20261109.json",
+            "https://www.sciencedirect.com/science/article/abs/pii/S1364815224000306",
+            "https://www.sciencedirect.com/science/article/abs/pii/S1364815224000355",
+            "https://www.sciencedirect.com/science/article/abs/pii/S1364815224000902",
+            "https://www.sciencedirect.com/science/article/abs/pii/S1364815224001038",
+            "https://www.sciencedirect.com/science/article/abs/pii/S1364815224001336",
+            "https://www.sciencedirect.com/science/article/abs/pii/S136481522400152X",
+            "https://www.sciencedirect.com/science/article/abs/pii/S1364815224001804",
+            "https://www.sciencedirect.com/science/article/pii/S136481522400207X",
+            "https://www.sciencedirect.com/science/article/abs/pii/S1364815224002263"
           ],
           "decisions": {
             "include": 23,
@@ -151,13 +160,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "AI4S候选缺少摘要：9 篇。"
-          ],
+          "issues": [],
           "actions": [
-            "类型表中11月8日暂挂的综述按11月9日现行“有实质学术内容的综述”规则对齐，再逐篇判断AI4S；不整类自动纳入。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
-            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/nydiii.json",
@@ -18951,7 +18956,7 @@
           "delivered": 48,
           "official": 46,
           "pending": 1,
-          "open_issues": 27,
+          "open_issues": 26,
           "status": "in_progress",
           "last_update": {
             "at": "2026-11-13T00:28:05-08:00",
@@ -18964,7 +18969,7 @@
               "reviews/2024/nydiii.json"
             ]
           },
-          "commits_7d": 12
+          "commits_7d": 13
         },
         {
           "owner": "朱长昊",
@@ -32388,7 +32393,7 @@
               "reviews/2024/nydiii.json"
             ]
           },
-          "commits_7d": 12
+          "commits_7d": 13
         },
         {
           "owner": "朱长昊",
@@ -45766,7 +45771,7 @@
               "reviews/2024/nydiii.json"
             ]
           },
-          "commits_7d": 12
+          "commits_7d": 13
         },
         {
           "owner": "朱长昊",
@@ -45967,7 +45972,7 @@
           "delivered": 48,
           "official": 46,
           "pending": 1,
-          "open_issues": 27,
+          "open_issues": 26,
           "status": "in_progress"
         },
         "2025": {
@@ -46004,7 +46009,7 @@
           "reviews/2024/nydiii.json"
         ]
       },
-      "commits_7d": 12
+      "commits_7d": 13
     },
     {
       "owner": "朱长昊",
@@ -46427,9 +46432,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-13T08:47:32.102410+00:00",
+    "generated_at": "2026-11-13T08:54:31.819253+00:00",
     "history_available": true,
-    "commit": "1fe295180a37b64663df8bdf71e195c49fc58b4f",
-    "commits_scanned": 347
+    "commit": "b71594c781466170eba5b899afa4979068a32054",
+    "commits_scanned": 349
   }
 }
