@@ -83515,6 +83515,19 @@
         "count_comparison": "无法核实同口径全年总数：未取得与快照统计口径一致的2024全年完整文章数；目录/主页访问不等于全年完整性验证。",
         "completeness_verified": false,
         "processing": "正常复审本批证据充分的综述；候选缺摘要逐篇补证。全量缺摘要可能导致初筛漏检，未对未命中记录做穷尽审核。"
+      },
+      "review_policy_recheck": {
+        "checked_at": "2026-11-13",
+        "skill_commit": "b3902c101c860adecb77240a8a37ee45eadc4594",
+        "basis": "按现行有实质学术内容的综述政策，复核既有逐篇rationale、正文证据位置及出版方元信息；不以文献类型自动纳入。",
+        "decision": "exclude",
+        "evidence_location": "完整PDF第3—5节，尤其§3.4、§4.1与§5（第13页）",
+        "evidence_urls": [
+          "https://link.springer.com/article/10.1007/s11431-024-2762-5",
+          "https://api.crossref.org/works/10.1007/s11431-024-2762-5",
+          "https://link.springer.com/content/pdf/10.1007/s11431-024-2762-5.pdf",
+          "https://link.springer.com/journal/11431/volumes-and-issues/67-8"
+        ]
       }
     }
   },
@@ -83730,6 +83743,19 @@
         "count_comparison": "无法核实同口径全年总数：未取得与快照统计口径一致的2024全年完整文章数；目录/主页访问不等于全年完整性验证。",
         "completeness_verified": false,
         "processing": "正常复审本批证据充分的综述；候选缺摘要逐篇补证。全量缺摘要可能导致初筛漏检，未对未命中记录做穷尽审核。"
+      },
+      "review_policy_recheck": {
+        "checked_at": "2026-11-13",
+        "skill_commit": "b3902c101c860adecb77240a8a37ee45eadc4594",
+        "basis": "按现行有实质学术内容的综述政策，复核既有逐篇rationale、正文证据位置及出版方元信息；不以文献类型自动纳入。",
+        "decision": "include",
+        "evidence_location": "官方PDF第11–12页（期刊2292–2293页）§4.4 AI4BI",
+        "evidence_urls": [
+          "https://api.crossref.org/works/10.1007%2Fs11431-024-2732-9",
+          "https://link.springer.com/article/10.1007/s11431-024-2732-9",
+          "https://link.springer.com/content/pdf/10.1007/s11431-024-2732-9.pdf",
+          "https://link.springer.com/journal/11431/volumes-and-issues/67-8"
+        ]
       }
     }
   },
@@ -84118,6 +84144,19 @@
         "count_comparison": "无法核实同口径全年总数：未取得与快照统计口径一致的2024全年完整文章数；目录/主页访问不等于全年完整性验证。",
         "completeness_verified": false,
         "processing": "正常复审本批证据充分的综述；候选缺摘要逐篇补证。全量缺摘要可能导致初筛漏检，未对未命中记录做穷尽审核。"
+      },
+      "review_policy_recheck": {
+        "checked_at": "2026-11-13",
+        "skill_commit": "b3902c101c860adecb77240a8a37ee45eadc4594",
+        "basis": "按现行有实质学术内容的综述政策，复核既有逐篇rationale、正文证据位置及出版方元信息；不以文献类型自动纳入。",
+        "decision": "include",
+        "evidence_location": "官方PDF§2.2.2（约2300—2301页）；§5.1与Fig.4（2305页）；§6",
+        "evidence_urls": [
+          "https://link.springer.com/article/10.1007/s11431-024-2755-x",
+          "https://link.springer.com/content/pdf/10.1007/s11431-024-2755-x.pdf",
+          "https://api.crossref.org/works/10.1007/s11431-024-2755-x",
+          "https://link.springer.com/journal/11431/volumes-and-issues/67-8"
+        ]
       }
     }
   },
@@ -84184,9 +84223,9 @@
       "batch_id": "2024-nydiii-research-ai4s-20261105",
       "owner": "南耀笛",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "reviewed_at": "2026-11-05",
+      "reviewed_at": "2026-11-13",
       "decision": "exclude",
-      "rationale": "沿用已完成的文章类型筛选，本次只要原创研究文章。来源文章类型为 Preface，不属于本次要求的原创研究文章。",
+      "rationale": "正式出版方类型为Preface，内容为专题导言和所收论文介绍，按现行规则排除前言等非研究文献；允许有实质学术内容的综述不改变该前言的类型。正式页面无Abstract栏目，出版方PDF索引亦从前言正文开始，因此属于官方不提供独立摘要，不是待补采。保留原始abstract=null及排除记录。",
       "verified_metadata": {
         "article_type": "Preface",
         "article_type_verification": {
@@ -84206,17 +84245,34 @@
           "https://link.springer.com/article/10.1007/s11431-024-2763-0",
           "https://www.sciengine.com/doi/pdf/21F7CB2C40934A019303E115F2A3B4D1"
         ],
-        "abstract": null
+        "abstract": null,
+        "abstract_verification": {
+          "status": "not_provided_by_official_source",
+          "checked_at": "2026-11-13",
+          "requires_backfill": false,
+          "basis": "excluded_preface_no_official_abstract",
+          "article_type": "Preface",
+          "evidence_urls": [
+            "https://link.springer.com/article/10.1007/s11431-024-2763-0",
+            "https://www.sciengine.com/doi/pdf/21F7CB2C40934A019303E115F2A3B4D1"
+          ],
+          "evidence_location": "Springer正式文章页：Preface；67卷2281页；无Abstract栏目。出版方PDF搜索索引标示Preface并直接进入专题导言正文。",
+          "limitations": "SciEngine PDF直接访问本轮返回403；已核对正式页面及出版方PDF索引，未宣称重新下载全文。",
+          "note": "这是一页专题前言，按非研究文献类型排除；无独立摘要，保留abstract=null，不以正文或生成摘要填充。"
+        },
+        "doi": "10.1007/s11431-024-2763-0",
+        "title": "Preface: Brain-Inspired AI Research",
+        "url": "https://link.springer.com/article/10.1007/s11431-024-2763-0"
       },
       "tags": [],
       "research_type_review": {
         "decision": "exclude",
         "category": "preface",
         "confidence": "high",
-        "reason_zh": "来源文章类型为 Preface，不属于本次要求的原创研究文章。",
-        "evidence": "article_type=Preface",
+        "reason_zh": "专题前言为非研究文献，现行规则排除；不是将综述整类排除。",
+        "evidence": "Springer正式Preface标签、单页2281及出版方PDF索引",
         "method": "publisher_type_rule",
-        "evidence_url": "https://doi.org/10.1007/s11431-024-2763-0",
+        "evidence_url": "https://link.springer.com/article/10.1007/s11431-024-2763-0",
         "index": 503,
         "doi": "10.1007/s11431-024-2763-0",
         "original_article_type": "Preface"
@@ -84228,13 +84284,30 @@
       ],
       "abstract_verification": {
         "status": "not_provided_by_official_source",
-        "checked_at": "2026-11-09",
-        "evidence_files": [
-          "work/metadata_standardization_20261109/abstracts/evidence/preface_springer.json",
-          "work/metadata_standardization_20261109/abstracts/evidence/web_26.json"
+        "checked_at": "2026-11-13",
+        "requires_backfill": false,
+        "basis": "excluded_preface_no_official_abstract",
+        "article_type": "Preface",
+        "evidence_urls": [
+          "https://link.springer.com/article/10.1007/s11431-024-2763-0",
+          "https://www.sciengine.com/doi/pdf/21F7CB2C40934A019303E115F2A3B4D1"
         ],
-        "note": "Springer正式页标Preface、仅1页（2281），页面无Abstract栏目；出版方PDF搜索索引从前言正文直接开始。未把前言正文当摘要；付费PDF未直接取得。"
-      }
+        "evidence_location": "Springer正式文章页：Preface；67卷2281页；无Abstract栏目。出版方PDF搜索索引标示Preface并直接进入专题导言正文。",
+        "limitations": "SciEngine PDF直接访问本轮返回403；已核对正式页面及出版方PDF索引，未宣称重新下载全文。",
+        "note": "这是一页专题前言，按非研究文献类型排除；无独立摘要，保留abstract=null，不以正文或生成摘要填充。"
+      },
+      "abstract_verification_history": [
+        {
+          "status": "not_provided_by_official_source",
+          "checked_at": "2026-11-09",
+          "evidence_files": [
+            "work/metadata_standardization_20261109/abstracts/evidence/preface_springer.json",
+            "work/metadata_standardization_20261109/abstracts/evidence/web_26.json"
+          ],
+          "note": "Springer正式页标Preface、仅1页（2281），页面无Abstract栏目；出版方PDF搜索索引从前言正文直接开始。未把前言正文当摘要；付费PDF未直接取得。"
+        }
+      ],
+      "skill_commit": "b3902c101c860adecb77240a8a37ee45eadc4594"
     }
   },
   {
