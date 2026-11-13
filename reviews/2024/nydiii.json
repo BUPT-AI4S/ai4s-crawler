@@ -73710,12 +73710,22 @@
       "resource_access_checks": {},
       "abstract_verification": {
         "status": "verified_original_abstract",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-13",
         "method": "Europe_PMC_core_PubMed_original_abstract",
         "evidence_files": [
           "/Users/ydiiiiin/Documents/Codex/2026-11-05/https-github-com-bupt-ai4s-ai4s-2/work/metadata_standardization_20261109/abstracts/evidence/442_epmc_retry.txt"
         ],
-        "note": "来源原摘要；仅移除网页导航、标记和摘要之后的声明，不另写总结。原始abstract及审核结论不变。"
+        "note": "已重核PubMed 38462343的DOI、正式题名及作者原摘要；本轮将既有完整原摘要同步到年度候选元数据，审核输入abstract仍保留null。"
+      },
+      "metadata_sync": {
+        "checked_at": "2026-11-13",
+        "target_file": "metadata/2024/ai4s.json",
+        "fields": [
+          "abstract",
+          "article_type",
+          "screening_status"
+        ],
+        "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/38462343/"
       }
     }
   },
@@ -143865,6 +143875,200 @@
         "commit": "b43e98b93acf08de211f349d053fa311d227b54b",
         "path": "metadata/2024/ai4s.json",
         "annual_sha256": "b4d9addf3c7362e80672e348952e003e125569e1df7ed1263261c82b448d811c"
+      }
+    }
+  },
+  {
+    "id": "10.1016/j.aca.2023.342116",
+    "venue": "j-472852446c",
+    "year": 2024,
+    "track": null,
+    "title": "Screening and identification of unknown chemical contaminants in food based on liquid chromatography–high-resolution mass spectrometry and machine learning",
+    "authors": [
+      "Tiantian Chen",
+      "Wenying Liang",
+      "Xiuqiong Zhang",
+      "Yuting Wang",
+      "Xin Lu",
+      "Yujie Zhang",
+      "Zhaohui Zhang",
+      "Lei You",
+      "Xinyu Liu",
+      "Chunxia Zhao",
+      "Guowang Xu"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0002-1221-8184",
+      "https://orcid.org/0000-0003-0392-8720",
+      "https://orcid.org/0000-0003-4298-3554"
+    ],
+    "abstract": "Unknown or unexpected chemical contaminants and/or their transformation products in food that may be harmful to humans need to be discovered for comprehensive safety evaluation. Liquid chromatography-high-resolution mass spectrometry (LC-HRMS) is a powerful tool for detecting chemical contaminants in food samples. However, identifying all of peaks in LC-HRMS is not possible, but if class information is known in advance, further identification will become easier. In this work, a novel MS2 spectra classification-driven screening strategy was constructed based on LC-HRMS and machine learning. First, the classification model was developed based on machine learning algorithm using class information and experimental MS2 data of chemical contaminants and other non-contaminants. By using the developed artificial neural network classification model, in total 32 classes of pesticides, veterinary drugs and mycotoxins were classified with good prediction accuracy and low false-positive rate. Based on the classification model, a screening procedure was developed in which the classes of unknown features in LC-HRMS were first predicted through the classification model, and then their structures were identified under the guidance of class information. Finally, the developed strategy was tentatively applied to the analysis of pork and aquatic products, and 8 chemical contaminants and 11 transformation products belonging to 8 classes were found. This strategy enables screening of unknown chemical contaminants and transformation products in complex food matrices.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.aca.2023.342116",
+    "pages": "342116",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.aca.2023.342116",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2024-01",
+    "source": "crossref.org+europepmc.org",
+    "venue_type": "journal",
+    "journal_title": "Analytica Chimica Acta",
+    "issn": "0003-2670",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "2024-nydiii-aca-20261113",
+      "owner": "南耀笛",
+      "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
+      "reviewed_at": "2026-11-13",
+      "skill_commit": "8f447555c919d38c2c59a82151595f36bb6bcfe3",
+      "vocabulary_commit": "8f447555c919d38c2c59a82151595f36bb6bcfe3",
+      "decision": "include",
+      "rationale": "初筛漏筛补录。神经网络从串联质谱预测化学污染物类别，缩小未知物结构鉴定范围，并在真实食品样本中验证，直接服务食品分析化学。",
+      "verified_metadata": {
+        "doi": "10.1016/j.aca.2023.342116",
+        "title": "Screening and identification of unknown chemical contaminants in food based on liquid chromatography–high-resolution mass spectrometry and machine learning",
+        "article_type": "Research article",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0003267023013375",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S0003267023013375"
+        ]
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "化学物质检测",
+          "label_en": "Chemical substance detection",
+          "evidence_location": "输入原摘要及出版方正文/摘要",
+          "rationale": "初筛漏筛补录。神经网络从串联质谱预测化学污染物类别，缩小未知物结构鉴定范围，并在真实食品样本中验证，直接服务食品分析化学。"
+        },
+        {
+          "axis": "method",
+          "label": "神经网络",
+          "label_en": "Neural network",
+          "evidence_location": "输入原摘要及出版方正文/摘要",
+          "rationale": "初筛漏筛补录。神经网络从串联质谱预测化学污染物类别，缩小未知物结构鉴定范围，并在真实食品样本中验证，直接服务食品分析化学。"
+        }
+      ],
+      "supplementation": {
+        "reason": "verified_initial_screening_omission",
+        "source_file": "metadata/j-472852446c/2024/papers.json",
+        "source_commit": "8f447555c919d38c2c59a82151595f36bb6bcfe3",
+        "official_volume": 1287
+      }
+    }
+  },
+  {
+    "id": "10.1016/j.aca.2024.342373",
+    "venue": "j-472852446c",
+    "year": 2024,
+    "track": null,
+    "title": "Nanozyme-induced deep learning-assisted smartphone integrated colorimetric and fluorometric dual-mode for detection of tetracycline analogs",
+    "authors": [
+      "Yi Zhang",
+      "Mingyang Wang",
+      "Chunfeng Shao",
+      "Tao Liu",
+      "Mengmeng Sun",
+      "Chun Wu",
+      "Gehong Su",
+      "Yanying Wang",
+      "Jianshan Ye",
+      "Haipeng Hu",
+      "Yanbin Li",
+      "Hanbing Rao",
+      "Zhiwei Lu"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0002-4101-2652"
+    ],
+    "abstract": null,
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.aca.2024.342373",
+    "pages": "342373",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.aca.2024.342373",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2024-04",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Analytica Chimica Acta",
+    "issn": "0003-2670",
+    "article_type": "unknown",
+    "screening_status": "needs_abstract",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S0003267024001740",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "2024-nydiii-aca-20261113",
+      "owner": "南耀笛",
+      "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
+      "reviewed_at": "2026-11-13",
+      "skill_commit": "8f447555c919d38c2c59a82151595f36bb6bcfe3",
+      "vocabulary_commit": "8f447555c919d38c2c59a82151595f36bb6bcfe3",
+      "decision": "include",
+      "rationale": "初筛漏筛补录。正文说明YOLO v3处理手机采集的显色及荧光图像，提取颜色信息以定量分析四环素类残留，AI实际参与化学传感信号分析。",
+      "verified_metadata": {
+        "doi": "10.1016/j.aca.2024.342373",
+        "title": "Nanozyme-induced deep learning-assisted smartphone integrated colorimetric and fluorometric dual-mode for detection of tetracycline analogs",
+        "article_type": "Research article",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0003267024001740",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S0003267024001740"
+        ]
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "化学物质检测",
+          "label_en": "Chemical substance detection",
+          "evidence_location": "出版方Introduction的YOLO v3与WeChat图像处理段落、Conclusion",
+          "rationale": "初筛漏筛补录。正文说明YOLO v3处理手机采集的显色及荧光图像，提取颜色信息以定量分析四环素类残留，AI实际参与化学传感信号分析。"
+        },
+        {
+          "axis": "method",
+          "label": "深度学习",
+          "label_en": "Deep learning",
+          "evidence_location": "出版方Introduction的YOLO v3与WeChat图像处理段落、Conclusion",
+          "rationale": "初筛漏筛补录。正文说明YOLO v3处理手机采集的显色及荧光图像，提取颜色信息以定量分析四环素类残留，AI实际参与化学传感信号分析。"
+        }
+      ],
+      "supplementation": {
+        "reason": "verified_initial_screening_omission",
+        "source_file": "metadata/j-472852446c/2024/papers.json",
+        "source_commit": "8f447555c919d38c2c59a82151595f36bb6bcfe3",
+        "official_volume": 1297
+      },
+      "abstract_verification": {
+        "status": "official_evidence_verified_full_abstract_not_synced",
+        "checked_at": "2026-11-13",
+        "note": "出版方摘要及正文可核实；本轮以正文证据完成相关性判定，完整原摘要尚未同步，保留null并列下一步行动。"
       }
     }
   }
