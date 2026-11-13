@@ -2,7 +2,7 @@
 
 更新日期：2026-11-13。范围：GitHub 当前登记在王婉婷名下的 49 个来源、1,149 条初筛候选。
 
-**本次补回 69 条，候选空摘要由 71 条降至 2 条；其中 10 条研究／综述由待定改为纳入。** 其余 2 条分别是已排除的更正通知，以及尚未取得有效摘要的 Chem 条目。
+**本次补回 69 条，候选空摘要由 71 条降至 2 条；其中 10 条研究／综述由待定改为纳入。** 剩余 2 条均已按文献类型排除：1 条更正通知、1 条 Chem 的 Catalysis／Catalyst 观点讨论；当前候选中因缺摘要仍待补证的条目为 0 条。
 
 ## 处理方法
 
@@ -54,13 +54,19 @@
 | 条目 | 本次结论 | 下一步 |
 |---|---|---|
 | [Correction to: From understanding diseases to drug design…](https://doi.org/10.1007/s10462-024-10765-8) | 出版方明确为 Publisher Correction，继续排除；不存在需补齐的研究摘要。 | 保留空值和排除证据，不填占位内容。 |
-| [Catalyst: Curtailing the scalable supply of fentanyl by using chemical AI](https://doi.org/10.1016/j.chempr.2024.03.025) | 出版方公开文字为作者简介，不能当作摘要；公开书目查询未取得可用摘要，继续待定。 | 待取得正式摘要或明确的文献类型证据后判定。 |
+| [Catalyst: Curtailing the scalable supply of fentanyl by using chemical AI](https://doi.org/10.1016/j.chempr.2024.03.025) | 已核对官方指南：属于 Catalysis／Catalyst 观点讨论栏目，由待定改为排除；页面文字为该栏目要求的作者简介。 | 保留空值和官方文种证据，不再追补研究摘要。 |
 
-**监控仍显示 2 条原始空摘要，实际尚需补证的是 Chem 这 1 条。** 不删除记录或用正文填充来人为清零。
+**监控原始空摘要仍为 2 条，但两条均已按文献类型排除；因缺摘要仍待补证的候选为 0 条。** 不删除记录或用正文填充来人为清零。
 
 ## 交付和校验
 
-- 当前个人 JSON 共 23,460 条（含历史其他来源记录）：纳入 2,680、排除 19,519、待定 1,261。本次仅改变 14 条审核附加信息，其中 10 条判定由待定改为纳入；其余记录保持不变。
+- 当前个人 JSON 共 23,460 条（含历史其他来源记录）：纳入 2,680、排除 19,520、待定 1,260。补摘要阶段及本次 Chem 复核累计改变 15 条审核附加信息，其中 10 条由待定改为纳入，Chem 1 条由待定改为排除；其余记录保持不变。
 - 历史汇报的 23,503／2,624 等数值对应旧批次；本轮以拉取的 main 为基线，保留期间其他负责人已合并的变更。
 - [逐条补摘要审计](candidate-abstract-audit.json)、[14 条审核变更对照](candidate-abstract-review-changes.json)、[本轮统计](summary.json)。
 - 同步范围：GitHub 论文 JSON、候选元数据、本人阶段反馈和监控汇总。官网全年目录完整性、其他已审待定问题未在本轮结清。
+
+## Chem 最后一条的处理依据
+
+[论文页面](https://www.sciencedirect.com/science/article/pii/S2451929424001542) 标明文献类型为 Catalysis；[Chem 官方文献类型指南](https://www.cell.com/chem/information-for-authors/article-types#catalysis) 将其定义为专家个人观点及讨论，并明确要求作者简介。结合这两项正式证据，按文种排除，而非因抓不到摘要而排除。未读取论文正文，未将作者简介或模型生成概述冒充原摘要。
+
+本次只变更 1 条论文审核和 Chem 的阶段反馈；原始候选及其他论文保留。详见 [本次变更及证据](chem-document-type-resolution.json)。旧的 71 条补摘要审计及 14 条变更对照保留为阶段快照，以本次后续核实结论为准。
