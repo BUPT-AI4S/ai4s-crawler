@@ -43240,12 +43240,18 @@
       },
       "abstract_verification": {
         "status": "verified_original_abstract",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-14",
         "method": "Europe_PMC_core_PubMed_original_abstract",
         "evidence_files": [
           "/Users/ydiiiiin/Documents/Codex/2026-11-05/https-github-com-bupt-ai4s-ai4s-2/work/metadata_standardization_20261109/abstracts/evidence/261_epmc.json"
         ],
-        "note": "来源原摘要；仅移除网页导航、标记和摘要之后的声明，不另写总结。原始abstract及审核结论不变。"
+        "note": "与历史verified_metadata原摘要逐字核对后同步年度候选；只规范空白和XML，不生成替代摘要。",
+        "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/38194965/",
+        "candidate_abstract_synchronized": true,
+        "response_sha256": {
+          "cell-epmc-batch-1.json": "38774d7236203e8cc334a29f86727e470c9cbdd92fa9b0167cc44a1e4273a13e",
+          "cell-epmc-batch-0.json": "a41b3047b67b557c18a149622a9f40a3caff7dc5cad370d6b8d671ba6dd1256b"
+        }
       }
     }
   },
@@ -43321,9 +43327,9 @@
       "batch_id": "2024-nydiii-research-ai4s-20261105",
       "owner": "南耀笛",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "reviewed_at": "2026-11-05",
-      "decision": "exclude",
-      "rationale": "沿用已完成的文章类型筛选，本次只要原创研究文章。摘要明确称为 Perspective，讨论蛋白设计领域现状和前景。",
+      "reviewed_at": "2026-11-14",
+      "decision": "include",
+      "rationale": "公开作者全文系统讨论物理建模与AI蛋白设计、序列优化、结构生成和扩散模型，并比较实验成功率与可编程功能；属于有实质学术内容的AI研究综述，撤销仅因Perspective形式而排除的旧判定。",
       "verified_metadata": {
         "article_type": "Perspective",
         "official_toc_section": "50th Anniversary",
@@ -43340,27 +43346,104 @@
           "note_zh": "保留出版社原词；basis区分单篇标签与指南明确定义的文献类型分组。不等同于内容研究类型或 AI4S 判断。混合栏目和主题标签单独保存。"
         },
         "evidence_urls": [
-          "https://cell.com/cell/issue?pii=S0092-8674(23)X0004-X"
-        ]
-      },
-      "tags": [],
-      "research_type_review": {
-        "index": 265,
+          "https://cell.com/cell/issue?pii=S0092-8674(23)X0004-X",
+          "https://www.sciencedirect.com/science/article/pii/S0092867423014022",
+          "https://pubmed.ncbi.nlm.nih.gov/38306980/",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC10990048/"
+        ],
         "doi": "10.1016/j.cell.2023.12.028",
-        "decision": "exclude",
-        "category": "perspective",
-        "reason_zh": "摘要明确称为 Perspective，讨论蛋白设计领域现状和前景。",
-        "evidence": "In this Perspective, I will discuss the state of the field of de novo protein design",
-        "confidence": "high",
-        "method": "title_abstract_evidence_review",
-        "evidence_url": "https://doi.org/10.1016/j.cell.2023.12.028",
-        "original_article_type": "unknown"
+        "title": "De novo protein design-From new structures to programmable functions",
+        "authors": [
+          "Tanja Kortemme"
+        ],
+        "abstract": "Methods from artificial intelligence (AI) trained on large datasets of sequences and structures can now \"write\" proteins with new shapes and molecular functions de novo, without starting from proteins found in nature. In this Perspective, I will discuss the state of the field of de novo protein design at the juncture of physics-based modeling approaches and AI. New protein folds and higher-order assemblies can be designed with considerable experimental success rates, and difficult problems requiring tunable control over protein conformations and precise shape complementarity for molecular recognition are coming into reach. Emerging approaches incorporate engineering principles-tunability, controllability, and modularity-into the design process from the beginning. Exciting frontiers lie in deconstructing cellular functions with de novo proteins and, conversely, constructing synthetic cellular signaling from the ground up. As methods improve, many more challenges are unsolved.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0092867423014022",
+        "pdf_url": null,
+        "code_url": null,
+        "project_url": null,
+        "dataset_url": null,
+        "identity_verification": {
+          "checked_at": "2026-11-14",
+          "basis": "exact_doi_normalized_title_and_author_identity",
+          "pmid": "38306980",
+          "response_sha256": {
+            "cell-epmc-batch-1.json": "38774d7236203e8cc334a29f86727e470c9cbdd92fa9b0167cc44a1e4273a13e",
+            "cell-epmc-batch-0.json": "a41b3047b67b557c18a149622a9f40a3caff7dc5cad370d6b8d671ba6dd1256b"
+          }
+        },
+        "fulltext_evidence": {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10990048/",
+          "scope": "公开作者全文：sequence optimization、structure generation、functional design",
+          "note": "作者公开全文或其正文索引，证据范围见scope。"
+        }
       },
-      "review_stage": "article_type",
-      "evidence_location": "前次文章类型核验：In this Perspective, I will discuss the state of the field of de novo protein design",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "公开作者全文：sequence optimization、structure generation、functional design",
+          "rationale": "公开作者全文系统讨论物理建模与AI蛋白设计、序列优化、结构生成和扩散模型，并比较实验成功率与可编程功能；属于有实质学术内容的AI研究综述，撤销仅因Perspective形式而排除的旧判定。"
+        },
+        {
+          "axis": "method",
+          "label": "深度学习",
+          "label_en": "Deep learning",
+          "evidence_location": "公开作者全文：sequence optimization、structure generation、functional design",
+          "rationale": "公开作者全文系统讨论物理建模与AI蛋白设计、序列优化、结构生成和扩散模型，并比较实验成功率与可编程功能；属于有实质学术内容的AI研究综述，撤销仅因Perspective形式而排除的旧判定。"
+        },
+        {
+          "axis": "task",
+          "label": "蛋白质设计",
+          "label_en": "Protein design",
+          "evidence_location": "公开作者全文：sequence optimization、structure generation、functional design",
+          "rationale": "公开作者全文系统讨论物理建模与AI蛋白设计、序列优化、结构生成和扩散模型，并比较实验成功率与可编程功能；属于有实质学术内容的AI研究综述，撤销仅因Perspective形式而排除的旧判定。"
+        },
+        {
+          "axis": "contribution",
+          "label": "综述",
+          "label_en": "Review",
+          "evidence_location": "公开作者全文：sequence optimization、structure generation、functional design",
+          "rationale": "公开作者全文系统讨论物理建模与AI蛋白设计、序列优化、结构生成和扩散模型，并比较实验成功率与可编程功能；属于有实质学术内容的AI研究综述，撤销仅因Perspective形式而排除的旧判定。"
+        }
+      ],
+      "research_type_review": {
+        "decision": "include",
+        "category": "substantive_review",
+        "reason_zh": "公开作者全文系统讨论物理建模与AI蛋白设计、序列优化、结构生成和扩散模型，并比较实验成功率与可编程功能；属于有实质学术内容的AI研究综述，撤销仅因Perspective形式而排除的旧判定。",
+        "evidence_location": "公开作者全文：sequence optimization、structure generation、functional design"
+      },
+      "review_stage": "research_ai4s",
+      "evidence_location": "公开作者全文：sequence optimization、structure generation、functional design",
       "evidence_urls": [
         "https://doi.org/10.1016/j.cell.2023.12.028"
-      ]
+      ],
+      "decision_history": [
+        {
+          "reviewed_at": "2026-11-05",
+          "decision": "exclude",
+          "rationale": "沿用已完成的文章类型筛选，本次只要原创研究文章。摘要明确称为 Perspective，讨论蛋白设计领域现状和前景。",
+          "tags": [],
+          "research_type_review": {
+            "index": 265,
+            "doi": "10.1016/j.cell.2023.12.028",
+            "decision": "exclude",
+            "category": "perspective",
+            "reason_zh": "摘要明确称为 Perspective，讨论蛋白设计领域现状和前景。",
+            "evidence": "In this Perspective, I will discuss the state of the field of de novo protein design",
+            "confidence": "high",
+            "method": "title_abstract_evidence_review",
+            "evidence_url": "https://doi.org/10.1016/j.cell.2023.12.028",
+            "original_article_type": "unknown"
+          }
+        }
+      ],
+      "review_provenance": {
+        "input_main_commit": "4fbb53f91eda0bcc8a498319f9d099b491c5a2ee",
+        "skill_commit": "4fbb53f91eda0bcc8a498319f9d099b491c5a2ee",
+        "vocabulary_commit": "4fbb53f91eda0bcc8a498319f9d099b491c5a2ee",
+        "checked_at": "2026-11-14"
+      }
     }
   },
   {
@@ -44209,12 +44292,18 @@
       },
       "abstract_verification": {
         "status": "verified_original_abstract",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-14",
         "method": "Europe_PMC_core_PubMed_original_abstract",
         "evidence_files": [
           "/Users/ydiiiiin/Documents/Codex/2026-11-05/https-github-com-bupt-ai4s-ai4s-2/work/metadata_standardization_20261109/abstracts/evidence/266_epmc.json"
         ],
-        "note": "来源原摘要；仅移除网页导航、标记和摘要之后的声明，不另写总结。原始abstract及审核结论不变。"
+        "note": "与历史verified_metadata原摘要逐字核对后同步年度候选；只规范空白和XML，不生成替代摘要。",
+        "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/38729110/",
+        "candidate_abstract_synchronized": true,
+        "response_sha256": {
+          "cell-epmc-batch-1.json": "38774d7236203e8cc334a29f86727e470c9cbdd92fa9b0167cc44a1e4273a13e",
+          "cell-epmc-batch-0.json": "a41b3047b67b557c18a149622a9f40a3caff7dc5cad370d6b8d671ba6dd1256b"
+        }
       }
     }
   },
@@ -45919,9 +46008,9 @@
       "batch_id": "2024-nydiii-research-ai4s-20261105",
       "owner": "南耀笛",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "reviewed_at": "2026-11-05",
+      "reviewed_at": "2026-11-14",
       "decision": "exclude",
-      "rationale": "沿用已完成的文章类型筛选，本次只要原创研究文章。补查PubMed摘要：编辑邀请专家分享神经科学与AI交叉领域的观点及未来方向，属于专家观点合集，无原创研究结果。",
+      "rationale": "正式Voices为受邀专家对神经科学与AI前景的观点集合；原摘要说明汇集专家看法，不报告独立原创研究或系统性方法/证据综述，按评论类文献排除。其正式原摘要已同步，保留候选及排除记录。",
       "verified_metadata": {
         "article_type": "Voices",
         "official_toc_section": "50th Anniversary",
@@ -45945,16 +46034,10 @@
       },
       "tags": [],
       "research_type_review": {
-        "index": 277,
-        "doi": "10.1016/j.cell.2024.09.031",
         "decision": "exclude",
-        "category": "perspective",
-        "reason_zh": "补查PubMed摘要：编辑邀请专家分享神经科学与AI交叉领域的观点及未来方向，属于专家观点合集，无原创研究结果。",
-        "evidence": "We invited experts to share their perspectives on this exciting intersection",
-        "confidence": "high",
-        "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/39423800/",
-        "method": "title_abstract_evidence_review",
-        "original_article_type": "unknown"
+        "category": "invited_expert_opinion_collection",
+        "reason_zh": "正式Voices为受邀专家对神经科学与AI前景的观点集合；原摘要说明汇集专家看法，不报告独立原创研究或系统性方法/证据综述，按评论类文献排除。其正式原摘要已同步，保留候选及排除记录。",
+        "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/39423800/"
       },
       "review_stage": "article_type",
       "evidence_location": "前次文章类型核验：We invited experts to share their perspectives on this exciting intersection",
@@ -45963,13 +46046,25 @@
       ],
       "abstract_verification": {
         "status": "verified_original_abstract",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-14",
         "method": "Europe_PMC_core_PubMed_original_abstract",
         "evidence_files": [
           "/Users/ydiiiiin/Documents/Codex/2026-11-05/https-github-com-bupt-ai4s-ai4s-2/work/metadata_standardization_20261109/abstracts/evidence/274_epmc.json"
         ],
-        "note": "来源原摘要；仅移除网页导航、标记和摘要之后的声明，不另写总结。原始abstract及审核结论不变。"
-      }
+        "note": "与历史verified_metadata原摘要逐字核对后同步年度候选；只规范空白和XML，不生成替代摘要。",
+        "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/39423800/",
+        "candidate_abstract_synchronized": true,
+        "response_sha256": {
+          "cell-epmc-batch-1.json": "38774d7236203e8cc334a29f86727e470c9cbdd92fa9b0167cc44a1e4273a13e",
+          "cell-epmc-batch-0.json": "a41b3047b67b557c18a149622a9f40a3caff7dc5cad370d6b8d671ba6dd1256b"
+        }
+      },
+      "decision_history": [
+        {
+          "decision": "exclude",
+          "rationale": "沿用已完成的文章类型筛选，本次只要原创研究文章。补查PubMed摘要：编辑邀请专家分享神经科学与AI交叉领域的观点及未来方向，属于专家观点合集，无原创研究结果。"
+        }
+      ]
     }
   },
   {
@@ -46248,9 +46343,9 @@
       "batch_id": "2024-nydiii-research-ai4s-20261105",
       "owner": "南耀笛",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "reviewed_at": "2026-11-05",
-      "decision": "exclude",
-      "rationale": "沿用已完成的文章类型筛选，本次只要原创研究文章。摘要明确称本文为perspective，讨论编码解码概念和既有案例。",
+      "reviewed_at": "2026-11-14",
+      "decision": "include",
+      "rationale": "作者公开全文比较数据驱动机器学习、神经表示与机制模型，讨论ANN/潜变量建模、神经解码、脑机接口及因果验证；实质综述AI与神经科学研究的关系，撤销仅因Perspective形式而排除的旧判定。",
       "verified_metadata": {
         "article_type": "Perspective",
         "official_toc_section": "50th Anniversary",
@@ -46267,27 +46362,108 @@
           "note_zh": "保留出版社原词；basis区分单篇标签与指南明确定义的文献类型分组。不等同于内容研究类型或 AI4S 判断。混合栏目和主题标签单独保存。"
         },
         "evidence_urls": [
-          "https://cell.com/cell/issue?pii=S0092-8674(23)X0022-1"
-        ]
-      },
-      "tags": [],
-      "research_type_review": {
-        "index": 279,
+          "https://cell.com/cell/issue?pii=S0092-8674(23)X0022-1",
+          "https://www.sciencedirect.com/science/article/pii/S0092867424009802",
+          "https://pubmed.ncbi.nlm.nih.gov/39423801/",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC11637322/"
+        ],
         "doi": "10.1016/j.cell.2024.08.051",
-        "decision": "exclude",
-        "category": "perspective",
-        "reason_zh": "摘要明确称本文为perspective，讨论编码解码概念和既有案例。",
-        "evidence": "In this perspective, we detail important concepts of neural encoding and decoding",
-        "confidence": "high",
-        "method": "title_abstract_evidence_review",
-        "evidence_url": "https://doi.org/10.1016/j.cell.2024.08.051",
-        "original_article_type": "unknown"
+        "title": "Decoding the brain: From neural representations to mechanistic models",
+        "authors": [
+          "Mackenzie Weygandt Mathis",
+          "Adriana Perez Rotondo",
+          "Edward F Chang",
+          "Andreas S Tolias",
+          "Alexander Mathis"
+        ],
+        "abstract": "A central principle in neuroscience is that neurons within the brain act in concert to produce perception, cognition, and adaptive behavior. Neurons are organized into specialized brain areas, dedicated to different functions to varying extents, and their function relies on distributed circuits to continuously encode relevant environmental and body-state features, enabling other areas to decode (interpret) these representations for computing meaningful decisions and executing precise movements. Thus, the distributed brain can be thought of as a series of computations that act to encode and decode information. In this perspective, we detail important concepts of neural encoding and decoding and highlight the mathematical tools used to measure them, including deep learning methods. We provide case studies where decoding concepts enable foundational and translational science in motor, visual, and language processing.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0092867424009802",
+        "pdf_url": null,
+        "code_url": null,
+        "project_url": null,
+        "dataset_url": null,
+        "identity_verification": {
+          "checked_at": "2026-11-14",
+          "basis": "exact_doi_normalized_title_and_author_identity",
+          "pmid": "39423801",
+          "response_sha256": {
+            "cell-epmc-batch-1.json": "38774d7236203e8cc334a29f86727e470c9cbdd92fa9b0167cc44a1e4273a13e",
+            "cell-epmc-batch-0.json": "a41b3047b67b557c18a149622a9f40a3caff7dc5cad370d6b8d671ba6dd1256b"
+          }
+        },
+        "fulltext_evidence": {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11637322/",
+          "scope": "公开作者全文索引：Data-driven machine learning、神经解码及mechanistic models；正式原摘要",
+          "note": "作者公开全文或其正文索引，证据范围见scope。"
+        }
       },
-      "review_stage": "article_type",
-      "evidence_location": "前次文章类型核验：In this perspective, we detail important concepts of neural encoding and decoding",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "公开作者全文索引：Data-driven machine learning、神经解码及mechanistic models；正式原摘要",
+          "rationale": "作者公开全文比较数据驱动机器学习、神经表示与机制模型，讨论ANN/潜变量建模、神经解码、脑机接口及因果验证；实质综述AI与神经科学研究的关系，撤销仅因Perspective形式而排除的旧判定。"
+        },
+        {
+          "axis": "method",
+          "label": "机器学习",
+          "label_en": "Machine learning",
+          "evidence_location": "公开作者全文索引：Data-driven machine learning、神经解码及mechanistic models；正式原摘要",
+          "rationale": "作者公开全文比较数据驱动机器学习、神经表示与机制模型，讨论ANN/潜变量建模、神经解码、脑机接口及因果验证；实质综述AI与神经科学研究的关系，撤销仅因Perspective形式而排除的旧判定。"
+        },
+        {
+          "axis": "method",
+          "label": "深度学习",
+          "label_en": "Deep learning",
+          "evidence_location": "公开作者全文索引：Data-driven machine learning、神经解码及mechanistic models；正式原摘要",
+          "rationale": "作者公开全文比较数据驱动机器学习、神经表示与机制模型，讨论ANN/潜变量建模、神经解码、脑机接口及因果验证；实质综述AI与神经科学研究的关系，撤销仅因Perspective形式而排除的旧判定。"
+        },
+        {
+          "axis": "contribution",
+          "label": "综述",
+          "label_en": "Review",
+          "evidence_location": "公开作者全文索引：Data-driven machine learning、神经解码及mechanistic models；正式原摘要",
+          "rationale": "作者公开全文比较数据驱动机器学习、神经表示与机制模型，讨论ANN/潜变量建模、神经解码、脑机接口及因果验证；实质综述AI与神经科学研究的关系，撤销仅因Perspective形式而排除的旧判定。"
+        }
+      ],
+      "research_type_review": {
+        "decision": "include",
+        "category": "substantive_review",
+        "reason_zh": "作者公开全文比较数据驱动机器学习、神经表示与机制模型，讨论ANN/潜变量建模、神经解码、脑机接口及因果验证；实质综述AI与神经科学研究的关系，撤销仅因Perspective形式而排除的旧判定。",
+        "evidence_location": "公开作者全文索引：Data-driven machine learning、神经解码及mechanistic models；正式原摘要"
+      },
+      "review_stage": "research_ai4s",
+      "evidence_location": "公开作者全文索引：Data-driven machine learning、神经解码及mechanistic models；正式原摘要",
       "evidence_urls": [
         "https://doi.org/10.1016/j.cell.2024.08.051"
-      ]
+      ],
+      "decision_history": [
+        {
+          "reviewed_at": "2026-11-05",
+          "decision": "exclude",
+          "rationale": "沿用已完成的文章类型筛选，本次只要原创研究文章。摘要明确称本文为perspective，讨论编码解码概念和既有案例。",
+          "tags": [],
+          "research_type_review": {
+            "index": 279,
+            "doi": "10.1016/j.cell.2024.08.051",
+            "decision": "exclude",
+            "category": "perspective",
+            "reason_zh": "摘要明确称本文为perspective，讨论编码解码概念和既有案例。",
+            "evidence": "In this perspective, we detail important concepts of neural encoding and decoding",
+            "confidence": "high",
+            "method": "title_abstract_evidence_review",
+            "evidence_url": "https://doi.org/10.1016/j.cell.2024.08.051",
+            "original_article_type": "unknown"
+          }
+        }
+      ],
+      "review_provenance": {
+        "input_main_commit": "4fbb53f91eda0bcc8a498319f9d099b491c5a2ee",
+        "skill_commit": "4fbb53f91eda0bcc8a498319f9d099b491c5a2ee",
+        "vocabulary_commit": "4fbb53f91eda0bcc8a498319f9d099b491c5a2ee",
+        "checked_at": "2026-11-14"
+      }
     }
   },
   {
@@ -240947,6 +241123,663 @@
           "action": "将此前已核实的目录缺项实际补入metadata/nm/2024/papers.json，并同步本人排除记录；固定历史快照713不追改。"
         }
       ]
+    }
+  },
+  {
+    "id": "10.1016/j.cell.2024.03.009",
+    "venue": "j-4607bc7c42",
+    "year": 2024,
+    "track": null,
+    "title": "The future of rapid and automated single-cell data analysis using reference mapping",
+    "authors": [
+      "Mohammad Lotfollahi",
+      "Yuhan Hao",
+      "Fabian J. Theis",
+      "Rahul Satija"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0001-9448-8833"
+    ],
+    "abstract": null,
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.cell.2024.03.009",
+    "pages": "2343-2358",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.cell.2024.03.009",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2024-05",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Cell",
+    "issn": "0092-8674",
+    "article_type": "unknown",
+    "screening_status": "needs_abstract",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S0092867424003015",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "2024-nydiii-cell-followup-20261114",
+      "owner": "南耀笛",
+      "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "作者机构公开稿行108–170：reference mapping、scArches及疾病细胞状态识别",
+          "rationale": "比较Seurat、Symphony与scArches参考映射方法，明确讨论概率神经网络学习非线性变换与技术批次校正，并以COVID-19及肾癌细胞状态识别说明科学用途；为实质方法综述，不把所有参考映射或PCA自动视为AI。"
+        },
+        {
+          "axis": "method",
+          "label": "机器学习",
+          "label_en": "Machine learning",
+          "evidence_location": "作者机构公开稿行108–170：reference mapping、scArches及疾病细胞状态识别",
+          "rationale": "比较Seurat、Symphony与scArches参考映射方法，明确讨论概率神经网络学习非线性变换与技术批次校正，并以COVID-19及肾癌细胞状态识别说明科学用途；为实质方法综述，不把所有参考映射或PCA自动视为AI。"
+        },
+        {
+          "axis": "method",
+          "label": "深度学习",
+          "label_en": "Deep learning",
+          "evidence_location": "作者机构公开稿行108–170：reference mapping、scArches及疾病细胞状态识别",
+          "rationale": "比较Seurat、Symphony与scArches参考映射方法，明确讨论概率神经网络学习非线性变换与技术批次校正，并以COVID-19及肾癌细胞状态识别说明科学用途；为实质方法综述，不把所有参考映射或PCA自动视为AI。"
+        },
+        {
+          "axis": "contribution",
+          "label": "综述",
+          "label_en": "Review",
+          "evidence_location": "作者机构公开稿行108–170：reference mapping、scArches及疾病细胞状态识别",
+          "rationale": "比较Seurat、Symphony与scArches参考映射方法，明确讨论概率神经网络学习非线性变换与技术批次校正，并以COVID-19及肾癌细胞状态识别说明科学用途；为实质方法综述，不把所有参考映射或PCA自动视为AI。"
+        }
+      ],
+      "verified_metadata": {
+        "doi": "10.1016/j.cell.2024.03.009",
+        "title": "The future of rapid and automated single-cell data analysis using reference mapping",
+        "authors": [
+          "Mohammad Lotfollahi",
+          "Yuhan Hao",
+          "Fabian J Theis",
+          "Rahul Satija"
+        ],
+        "abstract": "As the number of single-cell datasets continues to grow rapidly, workflows that map new data to well-curated reference atlases offer enormous promise for the biological community. In this perspective, we discuss key computational challenges and opportunities for single-cell reference-mapping algorithms. We discuss how mapping algorithms will enable the integration of diverse datasets across disease states, molecular modalities, genetic perturbations, and diverse species and will eventually replace manual and laborious unsupervised clustering pipelines.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0092867424003015",
+        "pdf_url": "https://push-zb.helmholtz-munich.de/deliver.php?id=42772",
+        "code_url": null,
+        "project_url": null,
+        "dataset_url": null,
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0092867424003015",
+          "https://pubmed.ncbi.nlm.nih.gov/38729109/",
+          "https://push-zb.helmholtz-munich.de/deliver.php?id=42772"
+        ],
+        "identity_verification": {
+          "checked_at": "2026-11-14",
+          "basis": "exact_doi_normalized_title_and_author_identity",
+          "pmid": "38729109",
+          "response_sha256": {
+            "cell-epmc-batch-1.json": "38774d7236203e8cc334a29f86727e470c9cbdd92fa9b0167cc44a1e4273a13e",
+            "cell-epmc-batch-0.json": "a41b3047b67b557c18a149622a9f40a3caff7dc5cad370d6b8d671ba6dd1256b"
+          }
+        },
+        "fulltext_evidence": {
+          "url": "https://push-zb.helmholtz-munich.de/deliver.php?id=42772",
+          "scope": "作者机构公开稿行108–170：reference mapping、scArches及疾病细胞状态识别",
+          "note": "作者公开全文或其正文索引，证据范围见scope。"
+        },
+        "article_type": "Perspective",
+        "official_toc_section": "Perspective",
+        "other_official_display_labels": [],
+        "evidence_url": "https://cell.com/cell/issue?pii=S0092-8674(23)X0011-7",
+        "evidence_file": "work/raw_completeness_2024_49/browser_followup/cell_main_toc_17.json",
+        "evidence_location": "AX article card, line 90",
+        "identity_match_method": "same_volume_issue_unique_normalized_title",
+        "article_type_basis": "official_type_group",
+        "type_definition_evidence": {
+          "file": "work/venue_type_rules_20261108/root_evidence/cell_article_types_ax.json",
+          "url": "https://www.cell.com/cell/information-for-authors/article-types"
+        }
+      },
+      "reviewed_at": "2026-11-14",
+      "decision": "include",
+      "rationale": "初筛漏筛补录：比较Seurat、Symphony与scArches参考映射方法，明确讨论概率神经网络学习非线性变换与技术批次校正，并以COVID-19及肾癌细胞状态识别说明科学用途；为实质方法综述，不把所有参考映射或PCA自动视为AI。",
+      "review_stage": "research_ai4s",
+      "evidence_location": "作者机构公开稿行108–170：reference mapping、scArches及疾病细胞状态识别",
+      "research_type_review": {
+        "decision": "include",
+        "category": "substantive_review",
+        "reason_zh": "比较Seurat、Symphony与scArches参考映射方法，明确讨论概率神经网络学习非线性变换与技术批次校正，并以COVID-19及肾癌细胞状态识别说明科学用途；为实质方法综述，不把所有参考映射或PCA自动视为AI。",
+        "evidence_location": "作者机构公开稿行108–170：reference mapping、scArches及疾病细胞状态识别"
+      },
+      "review_provenance": {
+        "input_main_commit": "4fbb53f91eda0bcc8a498319f9d099b491c5a2ee",
+        "skill_commit": "4fbb53f91eda0bcc8a498319f9d099b491c5a2ee",
+        "vocabulary_commit": "4fbb53f91eda0bcc8a498319f9d099b491c5a2ee",
+        "checked_at": "2026-11-14"
+      }
+    }
+  },
+  {
+    "id": "10.1016/j.cell.2024.07.035",
+    "venue": "j-4607bc7c42",
+    "year": 2024,
+    "track": null,
+    "title": "Toward a foundation model of causal cell and tissue biology with a Perturbation Cell and Tissue Atlas",
+    "authors": [
+      "Jennifer E. Rood",
+      "Anna Hupalowska",
+      "Aviv Regev"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0002-9489-0731"
+    ],
+    "abstract": null,
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.cell.2024.07.035",
+    "pages": "4520-4545",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.cell.2024.07.035",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2024-08",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Cell",
+    "issn": "0092-8674",
+    "article_type": "unknown",
+    "screening_status": "needs_abstract",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S0092867424008298",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "2024-nydiii-cell-followup-20261114",
+      "owner": "南耀笛",
+      "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "正式原摘要：pooled CRISPR screens、AI/ML预测与因果细胞图谱",
+          "rationale": "正式原摘要综合CRISPR高内容扰动筛选与AI/ML，具体讨论指导实验、预测及生成未测生物信息以建立因果细胞图谱；按实质学术综述纳入，不声称本文已训练并完成验证新的基础模型。"
+        },
+        {
+          "axis": "method",
+          "label": "机器学习",
+          "label_en": "Machine learning",
+          "evidence_location": "正式原摘要：pooled CRISPR screens、AI/ML预测与因果细胞图谱",
+          "rationale": "正式原摘要综合CRISPR高内容扰动筛选与AI/ML，具体讨论指导实验、预测及生成未测生物信息以建立因果细胞图谱；按实质学术综述纳入，不声称本文已训练并完成验证新的基础模型。"
+        },
+        {
+          "axis": "task",
+          "label": "细胞扰动响应预测",
+          "label_en": "Cellular perturbation response prediction",
+          "evidence_location": "正式原摘要：pooled CRISPR screens、AI/ML预测与因果细胞图谱",
+          "rationale": "正式原摘要综合CRISPR高内容扰动筛选与AI/ML，具体讨论指导实验、预测及生成未测生物信息以建立因果细胞图谱；按实质学术综述纳入，不声称本文已训练并完成验证新的基础模型。"
+        },
+        {
+          "axis": "contribution",
+          "label": "综述",
+          "label_en": "Review",
+          "evidence_location": "正式原摘要：pooled CRISPR screens、AI/ML预测与因果细胞图谱",
+          "rationale": "正式原摘要综合CRISPR高内容扰动筛选与AI/ML，具体讨论指导实验、预测及生成未测生物信息以建立因果细胞图谱；按实质学术综述纳入，不声称本文已训练并完成验证新的基础模型。"
+        }
+      ],
+      "verified_metadata": {
+        "doi": "10.1016/j.cell.2024.07.035",
+        "title": "Toward a foundation model of causal cell and tissue biology with a Perturbation Cell and Tissue Atlas",
+        "authors": [
+          "Jennifer E Rood",
+          "Anna Hupalowska",
+          "Aviv Regev"
+        ],
+        "abstract": "Comprehensively charting the biologically causal circuits that govern the phenotypic space of human cells has often been viewed as an insurmountable challenge. However, in the last decade, a suite of interleaved experimental and computational technologies has arisen that is making this fundamental goal increasingly tractable. Pooled CRISPR-based perturbation screens with high-content molecular and/or image-based readouts are now enabling researchers to probe, map, and decipher genetically causal circuits at increasing scale. This scale is now eminently suitable for the deployment of artificial intelligence and machine learning (AI/ML) to both direct further experiments and to predict or generate information that was not-and sometimes cannot-be gathered experimentally. By combining and iterating those through experiments that are designed for inference, we now envision a Perturbation Cell Atlas as a generative causal foundation model to unify human cell biology.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0092867424008298",
+        "pdf_url": null,
+        "code_url": null,
+        "project_url": null,
+        "dataset_url": null,
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0092867424008298",
+          "https://pubmed.ncbi.nlm.nih.gov/39178831/"
+        ],
+        "identity_verification": {
+          "checked_at": "2026-11-14",
+          "basis": "exact_doi_normalized_title_and_author_identity",
+          "pmid": "39178831",
+          "response_sha256": {
+            "cell-epmc-batch-1.json": "38774d7236203e8cc334a29f86727e470c9cbdd92fa9b0167cc44a1e4273a13e",
+            "cell-epmc-batch-0.json": "a41b3047b67b557c18a149622a9f40a3caff7dc5cad370d6b8d671ba6dd1256b"
+          }
+        },
+        "fulltext_evidence": {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0092867424008298",
+          "scope": "正式原摘要：pooled CRISPR screens、AI/ML预测与因果细胞图谱",
+          "note": "仅据清晰正式原摘要判断，未取得出版方全文。"
+        },
+        "article_type": "Review",
+        "official_toc_section": "50th Anniversary",
+        "other_official_display_labels": [],
+        "evidence_url": "https://cell.com/cell/issue?pii=S0092-8674(23)X0018-X",
+        "evidence_file": "work/raw_completeness_2024_49/browser_followup/cell_main_toc_10.json",
+        "evidence_location": "AX article card, line 248",
+        "identity_match_method": "same_volume_issue_unique_normalized_title",
+        "article_type_basis": "official_article_label"
+      },
+      "reviewed_at": "2026-11-14",
+      "decision": "include",
+      "rationale": "初筛漏筛补录：正式原摘要综合CRISPR高内容扰动筛选与AI/ML，具体讨论指导实验、预测及生成未测生物信息以建立因果细胞图谱；按实质学术综述纳入，不声称本文已训练并完成验证新的基础模型。",
+      "review_stage": "research_ai4s",
+      "evidence_location": "正式原摘要：pooled CRISPR screens、AI/ML预测与因果细胞图谱",
+      "research_type_review": {
+        "decision": "include",
+        "category": "substantive_review",
+        "reason_zh": "正式原摘要综合CRISPR高内容扰动筛选与AI/ML，具体讨论指导实验、预测及生成未测生物信息以建立因果细胞图谱；按实质学术综述纳入，不声称本文已训练并完成验证新的基础模型。",
+        "evidence_location": "正式原摘要：pooled CRISPR screens、AI/ML预测与因果细胞图谱"
+      },
+      "review_provenance": {
+        "input_main_commit": "4fbb53f91eda0bcc8a498319f9d099b491c5a2ee",
+        "skill_commit": "4fbb53f91eda0bcc8a498319f9d099b491c5a2ee",
+        "vocabulary_commit": "4fbb53f91eda0bcc8a498319f9d099b491c5a2ee",
+        "checked_at": "2026-11-14"
+      }
+    }
+  },
+  {
+    "id": "10.1016/j.cell.2024.09.022",
+    "venue": "j-4607bc7c42",
+    "year": 2024,
+    "track": null,
+    "title": "Empowering biomedical discovery with AI agents",
+    "authors": [
+      "Shanghua Gao",
+      "Ada Fang",
+      "Yepeng Huang",
+      "Valentina Giunchiglia",
+      "Ayush Noori",
+      "Jonathan Richard Schwarz",
+      "Yasha Ektefaie",
+      "Jovana Kondic",
+      "Marinka Zitnik"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0001-8530-7228"
+    ],
+    "abstract": null,
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.cell.2024.09.022",
+    "pages": "6125-6151",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.cell.2024.09.022",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2024-10",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Cell",
+    "issn": "0092-8674",
+    "article_type": "unknown",
+    "screening_status": "needs_abstract",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S0092867424010705",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "2024-nydiii-cell-followup-20261114",
+      "owner": "南耀笛",
+      "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "正式原摘要；同题九位作者公开预印本：Types of agents、memory/reasoning/tools与biomedical research cases",
+          "rationale": "正式原摘要及同题同作者公开预印本综述生物医学AI智能体的模型、记忆、推理、工具和实验连接，具体分析虚拟细胞、药物/蛋白设计与细胞回路的现有方法和设计取舍，具有实质学术综述内容；不将愿景当作已完成自主实验。"
+        },
+        {
+          "axis": "method",
+          "label": "大语言模型",
+          "label_en": "Large language model",
+          "evidence_location": "正式原摘要；同题九位作者公开预印本：Types of agents、memory/reasoning/tools与biomedical research cases",
+          "rationale": "正式原摘要及同题同作者公开预印本综述生物医学AI智能体的模型、记忆、推理、工具和实验连接，具体分析虚拟细胞、药物/蛋白设计与细胞回路的现有方法和设计取舍，具有实质学术综述内容；不将愿景当作已完成自主实验。"
+        },
+        {
+          "axis": "method",
+          "label": "机器学习",
+          "label_en": "Machine learning",
+          "evidence_location": "正式原摘要；同题九位作者公开预印本：Types of agents、memory/reasoning/tools与biomedical research cases",
+          "rationale": "正式原摘要及同题同作者公开预印本综述生物医学AI智能体的模型、记忆、推理、工具和实验连接，具体分析虚拟细胞、药物/蛋白设计与细胞回路的现有方法和设计取舍，具有实质学术综述内容；不将愿景当作已完成自主实验。"
+        },
+        {
+          "axis": "contribution",
+          "label": "综述",
+          "label_en": "Review",
+          "evidence_location": "正式原摘要；同题九位作者公开预印本：Types of agents、memory/reasoning/tools与biomedical research cases",
+          "rationale": "正式原摘要及同题同作者公开预印本综述生物医学AI智能体的模型、记忆、推理、工具和实验连接，具体分析虚拟细胞、药物/蛋白设计与细胞回路的现有方法和设计取舍，具有实质学术综述内容；不将愿景当作已完成自主实验。"
+        }
+      ],
+      "verified_metadata": {
+        "doi": "10.1016/j.cell.2024.09.022",
+        "title": "Empowering biomedical discovery with AI agents",
+        "authors": [
+          "Shanghua Gao",
+          "Ada Fang",
+          "Yepeng Huang",
+          "Valentina Giunchiglia",
+          "Ayush Noori",
+          "Jonathan Richard Schwarz",
+          "Yasha Ektefaie",
+          "Jovana Kondic",
+          "Marinka Zitnik"
+        ],
+        "abstract": "We envision \"AI scientists\" as systems capable of skeptical learning and reasoning that empower biomedical research through collaborative agents that integrate AI models and biomedical tools with experimental platforms. Rather than taking humans out of the discovery process, biomedical AI agents combine human creativity and expertise with AI's ability to analyze large datasets, navigate hypothesis spaces, and execute repetitive tasks. AI agents are poised to be proficient in various tasks, planning discovery workflows and performing self-assessment to identify and mitigate gaps in their knowledge. These agents use large language models and generative models to feature structured memory for continual learning and use machine learning tools to incorporate scientific knowledge, biological principles, and theories. AI agents can impact areas ranging from virtual cell simulation, programmable control of phenotypes, and the design of cellular circuits to developing new therapies.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0092867424010705",
+        "pdf_url": null,
+        "code_url": null,
+        "project_url": null,
+        "dataset_url": null,
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0092867424010705",
+          "https://pubmed.ncbi.nlm.nih.gov/39486399/",
+          "https://arxiv.org/html/2404.02831v2"
+        ],
+        "identity_verification": {
+          "checked_at": "2026-11-14",
+          "basis": "exact_doi_normalized_title_and_author_identity",
+          "pmid": "39486399",
+          "response_sha256": {
+            "cell-epmc-batch-1.json": "38774d7236203e8cc334a29f86727e470c9cbdd92fa9b0167cc44a1e4273a13e",
+            "cell-epmc-batch-0.json": "a41b3047b67b557c18a149622a9f40a3caff7dc5cad370d6b8d671ba6dd1256b"
+          }
+        },
+        "fulltext_evidence": {
+          "url": "https://arxiv.org/html/2404.02831v2",
+          "scope": "正式原摘要；同题九位作者公开预印本：Types of agents、memory/reasoning/tools与biomedical research cases",
+          "note": "AI agents全文为作者预印本，非冒充最终出版全文。"
+        },
+        "article_type": "Perspective",
+        "official_toc_section": "50th Anniversary",
+        "other_official_display_labels": [],
+        "evidence_url": "https://cell.com/cell/issue?pii=S0092-8674(23)X0023-3",
+        "evidence_file": "work/raw_completeness_2024_49/browser_followup/cell_main_toc_5.json",
+        "evidence_location": "AX article card, line 93",
+        "identity_match_method": "same_volume_issue_unique_normalized_title",
+        "article_type_basis": "official_article_label"
+      },
+      "reviewed_at": "2026-11-14",
+      "decision": "include",
+      "rationale": "初筛漏筛补录：正式原摘要及同题同作者公开预印本综述生物医学AI智能体的模型、记忆、推理、工具和实验连接，具体分析虚拟细胞、药物/蛋白设计与细胞回路的现有方法和设计取舍，具有实质学术综述内容；不将愿景当作已完成自主实验。",
+      "review_stage": "research_ai4s",
+      "evidence_location": "正式原摘要；同题九位作者公开预印本：Types of agents、memory/reasoning/tools与biomedical research cases",
+      "research_type_review": {
+        "decision": "include",
+        "category": "substantive_review",
+        "reason_zh": "正式原摘要及同题同作者公开预印本综述生物医学AI智能体的模型、记忆、推理、工具和实验连接，具体分析虚拟细胞、药物/蛋白设计与细胞回路的现有方法和设计取舍，具有实质学术综述内容；不将愿景当作已完成自主实验。",
+        "evidence_location": "正式原摘要；同题九位作者公开预印本：Types of agents、memory/reasoning/tools与biomedical research cases"
+      },
+      "review_provenance": {
+        "input_main_commit": "4fbb53f91eda0bcc8a498319f9d099b491c5a2ee",
+        "skill_commit": "4fbb53f91eda0bcc8a498319f9d099b491c5a2ee",
+        "vocabulary_commit": "4fbb53f91eda0bcc8a498319f9d099b491c5a2ee",
+        "checked_at": "2026-11-14"
+      }
+    }
+  },
+  {
+    "id": "10.1016/j.cell.2024.11.015",
+    "venue": "j-4607bc7c42",
+    "year": 2024,
+    "track": null,
+    "title": "How to build the virtual cell with artificial intelligence: Priorities and opportunities",
+    "authors": [
+      "Charlotte Bunne",
+      "Yusuf Roohani",
+      "Yanay Rosen",
+      "Ankit Gupta",
+      "Xikun Zhang",
+      "Marcel Roed",
+      "Theo Alexandrov",
+      "Mohammed AlQuraishi",
+      "Patricia Brennan",
+      "Daniel B. Burkhardt",
+      "Andrea Califano",
+      "Jonah Cool",
+      "Abby F. Dernburg",
+      "Kirsty Ewing",
+      "Emily B. Fox",
+      "Matthias Haury",
+      "Amy E. Herr",
+      "Eric Horvitz",
+      "Patrick D. Hsu",
+      "Viren Jain",
+      "Gregory R. Johnson",
+      "Thomas Kalil",
+      "David R. Kelley",
+      "Shana O. Kelley",
+      "Anna Kreshuk",
+      "Tim Mitchison",
+      "Stephani Otte",
+      "Jay Shendure",
+      "Nicholas J. Sofroniew",
+      "Fabian Theis",
+      "Christina V. Theodoris",
+      "Srigokul Upadhyayula",
+      "Marc Valer",
+      "Bo Wang",
+      "Eric Xing",
+      "Serena Yeung-Levy",
+      "Marinka Zitnik",
+      "Theofanis Karaletsos",
+      "Aviv Regev",
+      "Emma Lundberg",
+      "Jure Leskovec",
+      "Stephen R. Quake"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0003-1431-103X",
+      "https://orcid.org/0000-0002-9577-5014",
+      "https://orcid.org/0000-0003-1129-9645",
+      "https://orcid.org/0000-0002-9961-1041",
+      "https://orcid.org/0000-0002-8346-8594",
+      "https://orcid.org/0000-0002-1369-8933",
+      "https://orcid.org/0000-0002-0296-3092",
+      "https://orcid.org/0000-0003-3293-3158",
+      "https://orcid.org/0000-0001-7034-0850",
+      "https://orcid.org/0000-0002-5411-923X",
+      "https://orcid.org/0000-0002-1613-0809"
+    ],
+    "abstract": null,
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.cell.2024.11.015",
+    "pages": "7045-7063",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.cell.2024.11.015",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2024-12",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Cell",
+    "issn": "0092-8674",
+    "article_type": "unknown",
+    "screening_status": "needs_abstract",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S0092867424013321",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "2024-nydiii-cell-followup-20261114",
+      "owner": "南耀笛",
+      "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "作者全文：BUILDING THE AIVC、MODELEVALUATION；正式原摘要",
+          "rationale": "作者公开全文提出多模态多尺度表征、解码与操纵神经网络的虚拟细胞框架，具体综述分子/细胞/组织表示、扰动模拟、跨模态重建、数据需求及实验评测；属于实质方法与证据综述，不声称理想虚拟细胞已经实现。"
+        },
+        {
+          "axis": "method",
+          "label": "深度学习",
+          "label_en": "Deep learning",
+          "evidence_location": "作者全文：BUILDING THE AIVC、MODELEVALUATION；正式原摘要",
+          "rationale": "作者公开全文提出多模态多尺度表征、解码与操纵神经网络的虚拟细胞框架，具体综述分子/细胞/组织表示、扰动模拟、跨模态重建、数据需求及实验评测；属于实质方法与证据综述，不声称理想虚拟细胞已经实现。"
+        },
+        {
+          "axis": "task",
+          "label": "细胞扰动响应预测",
+          "label_en": "Cellular perturbation response prediction",
+          "evidence_location": "作者全文：BUILDING THE AIVC、MODELEVALUATION；正式原摘要",
+          "rationale": "作者公开全文提出多模态多尺度表征、解码与操纵神经网络的虚拟细胞框架，具体综述分子/细胞/组织表示、扰动模拟、跨模态重建、数据需求及实验评测；属于实质方法与证据综述，不声称理想虚拟细胞已经实现。"
+        },
+        {
+          "axis": "contribution",
+          "label": "综述",
+          "label_en": "Review",
+          "evidence_location": "作者全文：BUILDING THE AIVC、MODELEVALUATION；正式原摘要",
+          "rationale": "作者公开全文提出多模态多尺度表征、解码与操纵神经网络的虚拟细胞框架，具体综述分子/细胞/组织表示、扰动模拟、跨模态重建、数据需求及实验评测；属于实质方法与证据综述，不声称理想虚拟细胞已经实现。"
+        }
+      ],
+      "verified_metadata": {
+        "doi": "10.1016/j.cell.2024.11.015",
+        "title": "How to build the virtual cell with artificial intelligence: Priorities and opportunities",
+        "authors": [
+          "Charlotte Bunne",
+          "Yusuf Roohani",
+          "Yanay Rosen",
+          "Ankit Gupta",
+          "Xikun Zhang",
+          "Marcel Roed",
+          "Theo Alexandrov",
+          "Mohammed AlQuraishi",
+          "Patricia Brennan",
+          "Daniel B Burkhardt",
+          "Andrea Califano",
+          "Jonah Cool",
+          "Abby F Dernburg",
+          "Kirsty Ewing",
+          "Emily B Fox",
+          "Matthias Haury",
+          "Amy E Herr",
+          "Eric Horvitz",
+          "Patrick D Hsu",
+          "Viren Jain",
+          "Gregory R Johnson",
+          "Thomas Kalil",
+          "David R Kelley",
+          "Shana O Kelley",
+          "Anna Kreshuk",
+          "Tim Mitchison",
+          "Stephani Otte",
+          "Jay Shendure",
+          "Nicholas J Sofroniew",
+          "Fabian Theis",
+          "Christina V Theodoris",
+          "Srigokul Upadhyayula",
+          "Marc Valer",
+          "Bo Wang",
+          "Eric Xing",
+          "Serena Yeung-Levy",
+          "Marinka Zitnik",
+          "Theofanis Karaletsos",
+          "Aviv Regev",
+          "Emma Lundberg",
+          "Jure Leskovec",
+          "Stephen R Quake"
+        ],
+        "abstract": "Cells are essential to understanding health and disease, yet traditional models fall short of modeling and simulating their function and behavior. Advances in AI and omics offer groundbreaking opportunities to create an AI virtual cell (AIVC), a multi-scale, multi-modal large-neural-network-based model that can represent and simulate the behavior of molecules, cells, and tissues across diverse states. This Perspective provides a vision on their design and how collaborative efforts to build AIVCs will transform biological research by allowing high-fidelity simulations, accelerating discoveries, and guiding experimental studies, offering new opportunities for understanding cellular functions and fostering interdisciplinary collaborations in open science.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0092867424013321",
+        "pdf_url": null,
+        "code_url": null,
+        "project_url": null,
+        "dataset_url": null,
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0092867424013321",
+          "https://pubmed.ncbi.nlm.nih.gov/39672099/",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC12148494/"
+        ],
+        "identity_verification": {
+          "checked_at": "2026-11-14",
+          "basis": "exact_doi_normalized_title_and_author_identity",
+          "pmid": "39672099",
+          "response_sha256": {
+            "cell-epmc-batch-1.json": "38774d7236203e8cc334a29f86727e470c9cbdd92fa9b0167cc44a1e4273a13e",
+            "cell-epmc-batch-0.json": "a41b3047b67b557c18a149622a9f40a3caff7dc5cad370d6b8d671ba6dd1256b"
+          }
+        },
+        "fulltext_evidence": {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12148494/",
+          "scope": "作者全文：BUILDING THE AIVC、MODELEVALUATION；正式原摘要",
+          "note": "作者公开全文或其正文索引，证据范围见scope。"
+        },
+        "article_type": "Perspective",
+        "official_toc_section": "50th Anniversary",
+        "other_official_display_labels": [],
+        "evidence_url": "https://cell.com/cell/issue?pii=S0092-8674(23)X0026-9",
+        "evidence_file": "work/raw_completeness_2024_49/browser_followup/cell_main_toc_2.json",
+        "evidence_location": "AX article card, line 92",
+        "identity_match_method": "same_volume_issue_unique_normalized_title",
+        "article_type_basis": "official_article_label"
+      },
+      "reviewed_at": "2026-11-14",
+      "decision": "include",
+      "rationale": "初筛漏筛补录：作者公开全文提出多模态多尺度表征、解码与操纵神经网络的虚拟细胞框架，具体综述分子/细胞/组织表示、扰动模拟、跨模态重建、数据需求及实验评测；属于实质方法与证据综述，不声称理想虚拟细胞已经实现。",
+      "review_stage": "research_ai4s",
+      "evidence_location": "作者全文：BUILDING THE AIVC、MODELEVALUATION；正式原摘要",
+      "research_type_review": {
+        "decision": "include",
+        "category": "substantive_review",
+        "reason_zh": "作者公开全文提出多模态多尺度表征、解码与操纵神经网络的虚拟细胞框架，具体综述分子/细胞/组织表示、扰动模拟、跨模态重建、数据需求及实验评测；属于实质方法与证据综述，不声称理想虚拟细胞已经实现。",
+        "evidence_location": "作者全文：BUILDING THE AIVC、MODELEVALUATION；正式原摘要"
+      },
+      "review_provenance": {
+        "input_main_commit": "4fbb53f91eda0bcc8a498319f9d099b491c5a2ee",
+        "skill_commit": "4fbb53f91eda0bcc8a498319f9d099b491c5a2ee",
+        "vocabulary_commit": "4fbb53f91eda0bcc8a498319f9d099b491c5a2ee",
+        "checked_at": "2026-11-14"
+      }
     }
   }
 ]
