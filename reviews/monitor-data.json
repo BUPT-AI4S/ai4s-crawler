@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-14T08:22:29.571808+00:00",
-  "commit": "1c8a69f8a18b89752f09a929eff631613c5dba52",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/1c8a69f8a18b89752f09a929eff631613c5dba52/",
+  "generated_at": "2026-11-14T08:23:25.082345+00:00",
+  "commit": "f28255cff9b213f2fc8caad20c6bc49fd9486984",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/f28255cff9b213f2fc8caad20c6bc49fd9486984/",
   "years": [
     {
       "year": 2024,
@@ -18531,11 +18531,12 @@
           "snapshot_candidates": 10,
           "candidates": 10,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "coverage_note": "官网八个分轨合计 460 条，与快照匹配 460 条；另 12 条来自其他届次的工作坊。正会 Full Papers 有 230 篇，各分轨单列。 候选中原始摘要为空 7 篇，逐篇证据见个人 monitor-audit 文件。 2026-11-13 逐篇核对正式题名、DOI或官方PDF后补齐 3 条作者原摘要；当前候选缺摘要 0 条。",
+          "official_total": 472,
+          "official_scope": "与现有采集来源一致的 2024 正式出版年口径：AAMAS 2024 论文集八分轨 460 条，加 2024 年 3 月 29 日出版的 AAMAS 2023 Workshops 修订精选卷 12 篇。会议届次与出版年分列；472 不代表 2024 正会长文数，正会 Full Papers 仍为 230。",
+          "coverage_note": "既有官方八分轨 460 条逐篇匹配保留；本轮从 Springer 正式书目核实其余 12 条为 LNCS 14456（ISBN 978-3-031-56255-6），电子出版日期 2024-03-29、纸本 2024-04-17。12 个章节 DOI 与题名均与快照双向一致。它们来自 2023 会议、发表于 2024，属出版年与会议届次的差异，不能按 2024 正会论文统计；保持独立 Workshop 分类和既有逐篇判定。合计 472 条已全部对账，候选缺摘要为 0。",
           "evidence_urls": [
-            "https://www.ifaamas.org/Proceedings/aamas2024/forms/contents.htm"
+            "https://www.ifaamas.org/Proceedings/aamas2024/forms/contents.htm",
+            "https://link.springer.com/book/10.1007/978-3-031-56255-6"
           ],
           "decisions": {
             "include": 54,
@@ -18543,13 +18544,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网八个分轨合计 460 条，与快照匹配 460 条；另 12 条来自其他届次的工作坊。正会 Full Papers 有 230 篇，各分轨单列。",
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "按官网正式研究分轨导出 DOI 或稳定标识，对照当届快照，核对名称或版本不同的条目。",
-            "核对官网全年目录，记录统计口径及证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
@@ -20698,23 +20695,21 @@
           "owner": "龙兆科",
           "sources": 49,
           "delivered": 47,
-          "official": 41,
+          "official": 42,
           "pending": 12,
-          "open_issues": 14,
+          "open_issues": 13,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-14T00:21:32-08:00",
+            "at": "2026-11-14T00:22:27-08:00",
             "author": "AlearnerDL",
-            "subject": "Complete ACSAC 2024 corpus by adding verified WAITI Paper 3",
+            "subject": "Resolve AAMAS 2024 coverage by verifying workshop publication-year scope",
             "area": "reviews",
             "paths": [
-              "metadata/2024/papers.json",
-              "metadata/2024/snapshot.json",
-              "metadata/acsac/2024/papers.json",
-              "reviews/2024/AlearnerDL/acsac-corpus-correction-2026-11-14.json"
+              "reviews/2024/AlearnerDL/aamas-publication-year-reconciliation-2026-11-14.json",
+              "reviews/2024/feedback/AlearnerDL.json"
             ]
           },
-          "commits_7d": 76
+          "commits_7d": 77
         },
         {
           "owner": "王梦冉",
@@ -35094,18 +35089,16 @@
           "open_issues": 49,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-14T00:21:32-08:00",
+            "at": "2026-11-14T00:22:27-08:00",
             "author": "AlearnerDL",
-            "subject": "Complete ACSAC 2024 corpus by adding verified WAITI Paper 3",
+            "subject": "Resolve AAMAS 2024 coverage by verifying workshop publication-year scope",
             "area": "reviews",
             "paths": [
-              "metadata/2024/papers.json",
-              "metadata/2024/snapshot.json",
-              "metadata/acsac/2024/papers.json",
-              "reviews/2024/AlearnerDL/acsac-corpus-correction-2026-11-14.json"
+              "reviews/2024/AlearnerDL/aamas-publication-year-reconciliation-2026-11-14.json",
+              "reviews/2024/feedback/AlearnerDL.json"
             ]
           },
-          "commits_7d": 76
+          "commits_7d": 77
         },
         {
           "owner": "王梦冉",
@@ -49439,18 +49432,16 @@
           "open_issues": 47,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-14T00:21:32-08:00",
+            "at": "2026-11-14T00:22:27-08:00",
             "author": "AlearnerDL",
-            "subject": "Complete ACSAC 2024 corpus by adding verified WAITI Paper 3",
+            "subject": "Resolve AAMAS 2024 coverage by verifying workshop publication-year scope",
             "area": "reviews",
             "paths": [
-              "metadata/2024/papers.json",
-              "metadata/2024/snapshot.json",
-              "metadata/acsac/2024/papers.json",
-              "reviews/2024/AlearnerDL/acsac-corpus-correction-2026-11-14.json"
+              "reviews/2024/AlearnerDL/aamas-publication-year-reconciliation-2026-11-14.json",
+              "reviews/2024/feedback/AlearnerDL.json"
             ]
           },
-          "commits_7d": 76
+          "commits_7d": 77
         },
         {
           "owner": "王梦冉",
@@ -49809,9 +49800,9 @@
         "2024": {
           "sources": 49,
           "delivered": 47,
-          "official": 41,
+          "official": 42,
           "pending": 12,
-          "open_issues": 14,
+          "open_issues": 13,
           "status": "in_progress"
         },
         "2025": {
@@ -49838,18 +49829,16 @@
         "2026"
       ],
       "last_update": {
-        "at": "2026-11-14T00:21:32-08:00",
+        "at": "2026-11-14T00:22:27-08:00",
         "author": "AlearnerDL",
-        "subject": "Complete ACSAC 2024 corpus by adding verified WAITI Paper 3",
+        "subject": "Resolve AAMAS 2024 coverage by verifying workshop publication-year scope",
         "area": "reviews",
         "paths": [
-          "metadata/2024/papers.json",
-          "metadata/2024/snapshot.json",
-          "metadata/acsac/2024/papers.json",
-          "reviews/2024/AlearnerDL/acsac-corpus-correction-2026-11-14.json"
+          "reviews/2024/AlearnerDL/aamas-publication-year-reconciliation-2026-11-14.json",
+          "reviews/2024/feedback/AlearnerDL.json"
         ]
       },
-      "commits_7d": 76
+      "commits_7d": 77
     },
     {
       "owner": "王梦冉",
@@ -49992,9 +49981,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-14T08:22:15.854324+00:00",
+    "generated_at": "2026-11-14T08:23:14.216716+00:00",
     "history_available": true,
-    "commit": "1c8a69f8a18b89752f09a929eff631613c5dba52",
-    "commits_scanned": 415
+    "commit": "f28255cff9b213f2fc8caad20c6bc49fd9486984",
+    "commits_scanned": 417
   }
 }
