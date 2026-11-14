@@ -68322,7 +68322,8 @@
         ],
         "note": "本轮PubMed对应记录仍无abstractText；浏览器完整正式页为Spotlight/Insights，正文直接从Main text进入Strategy 1–3与Concluding remarks，无独立Abstract。保留null，不把正文或自拟文字写入abstract。",
         "followup_response_sha256": "1f1d3909572c464c2c9393b24eefd0b1e2f7caf2f75b1a18bac54a2d852abdbe",
-        "evidence_url": "https://www.sciencedirect.com/science/article/pii/S1674205224003265"
+        "evidence_url": "https://www.sciencedirect.com/science/article/pii/S1674205224003265",
+        "supplement_required": false
       },
       "followup_history": [
         {
@@ -68330,16 +68331,46 @@
           "rationale_before": "用户只纳入原创研究文章。官方页面和PDF明确标为Spotlight，正文以Xia等2024年工作的结果为主要讨论对象，并综合既有研究提出蛋白工程策略，非本文新报告的原创实验。 所点评的原创研究 DOI 10.1016/j.molp.2024.07.008 已在本批纳入，不将本篇点评重复计为原创研究。",
           "research_type_reason_before": "用户只纳入原创研究文章。官方页面和PDF明确标为Spotlight，正文以Xia等2024年工作的结果为主要讨论对象，并综合既有研究提出蛋白工程策略，非本文新报告的原创实验。",
           "input_main_commit": "0fa025ffb08f22ea7758c2bf159313ef3ced3b58"
+        },
+        {
+          "checked_at": "2026-11-14",
+          "input_main_commit": "017d48f900826e213fc5bda04d9fa074e362d7f8",
+          "monitor_exception_before": {
+            "checked_at": "2026-11-13",
+            "status": "requires_monitor_policy_confirmation",
+            "excluded_nonresearch": true,
+            "official_abstract_not_provided": true,
+            "monitor_behavior_verified": "现有监控只检查metadata年度候选abstract是否非空，未识别此类有正式证据的已排除无摘要文献。",
+            "requested_maintainer": "乔徐阳",
+            "required_decision": "确认是否对已排除非研究＋官方无摘要＋逐条正式证据免报或单列；未获确认不修改监控、爬虫或候选集合以消除提示。"
+          },
+          "action": "按用户明确要求，沿用已上线的官方无摘要免补规则，标注无需补摘要；原排除结论和空摘要均保留。"
         }
       ],
       "monitor_exception": {
-        "checked_at": "2026-11-13",
-        "status": "requires_monitor_policy_confirmation",
+        "checked_at": "2026-11-14",
+        "status": "resolved_not_required",
         "excluded_nonresearch": true,
         "official_abstract_not_provided": true,
-        "monitor_behavior_verified": "现有监控只检查metadata年度候选abstract是否非空，未识别此类有正式证据的已排除无摘要文献。",
+        "monitor_behavior_verified": "已上线监控支持候选与负责人同快照排除审核双侧标注abstract_requirement=not_required，保留原始缺摘要数并从待补提醒中扣除。",
         "requested_maintainer": "乔徐阳",
-        "required_decision": "确认是否对已排除非研究＋官方无摘要＋逐条正式证据免报或单列；未获确认不修改监控、爬虫或候选集合以消除提示。"
+        "required_decision": "本轮直接应用已上线规则，无需继续等待确认；保留正式证据及原始null。",
+        "authorization": "用户明确要求无需等确认，官方本来无摘要的如实标注无需补摘要并关闭此项待关注。"
+      },
+      "abstract_requirement": {
+        "status": "not_required",
+        "reason": "official_source_has_no_independent_abstract",
+        "label_zh": "官方无独立摘要，无需补摘要",
+        "checked_at": "2026-11-14",
+        "checked_by": "南耀笛",
+        "evidence_urls": [
+          "https://www.cell.com/molecular-plant/fulltext/S1674-2052(24)00326-5",
+          "https://www.sciencedirect.com/science/article/pii/S1674205224003265",
+          "https://pubmed.ncbi.nlm.nih.gov/39370650/"
+        ],
+        "basis": "previously_verified_publisher_fulltext_and_PubMed_record",
+        "source_evidence_checked_at": "2026-11-13",
+        "note": "已排除Spotlight；既有正式完整页和PubMed记录已确认无独立摘要，正文直接进入Main text、Strategy 1–3及Concluding remarks。沿用正式证据，保留abstract=null和候选，不用正文、生成摘要或占位文字替代。"
       }
     }
   },
