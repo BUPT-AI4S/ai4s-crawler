@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-14T07:47:11.840947+00:00",
-  "commit": "431ca62a9bb4ba4c4f3472a43d336d5b01c1d2ce",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/431ca62a9bb4ba4c4f3472a43d336d5b01c1d2ce/",
+  "generated_at": "2026-11-14T07:58:29.129912+00:00",
+  "commit": "e7fcf3d3a520cb8cec345c76188bcb87884ba1c4",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/e7fcf3d3a520cb8cec345c76188bcb87884ba1c4/",
   "years": [
     {
       "year": 2024,
@@ -10835,14 +10835,17 @@
           "missing_abstract": 0,
           "official_total": 128,
           "official_scope": "全类型书目；官网2024年全部文章类型，已核7页。文章编号/DOI双向集合一致，无缺项、仓库独有项或重复。",
-          "coverage_note": "2026-11-07已核查固定快照128条：官网目录一致。 官网2024年全部文章类型，已核7页。文章编号/DOI双向集合一致，无缺项、仓库独有项或重复。 已完成该刊原生类型表（9条分层类型/栏目/指南记录），尚未实际运行过滤。 本人已交付1条：纳入0、排除0、待定1、未审0。 当前AI4S候选1条，其中原摘要缺失0条；统计仅针对候选，文件版本见本条candidate_file_commit与candidate_file_sha256。",
+          "coverage_note": "沿用2026-11-07官网2024年7页目录与固定快照128条文章编号/DOI双向比对，集合一致、无缺项或重复，本轮未重新抓取全部目录。2026-11-13复核当前唯一候选FGFR-targeted therapeutics：原摘要完整，类型为实质学术综述，不能按旧“只要原创”口径排除；正式摘要只将AI列为未来方向，参考文献223–224虽为AI病理预测FGFR突变研究，但公开页缺少正文讨论，不能以引用代替实质贡献证据。出版方订阅预览及PDF入口均未取得全文，作者机构存档附件未公开，Europe PMC精确匹配1条但无PMC全文/PDF/作者稿，OpenAlex三个入口均非开放全文；用户确认没有全文或机构访问。唯一候选仍待定：纳入0、排除0、待定1、未审0，缺摘要0。按现行规则逐条读取该刊44篇Review Article的现有正式摘要：43篇未见明确直接AI科学贡献的摘要证据，未自动补录，也不声称43篇全文均无AI；本篇保留待定。反馈与监控自动提醒原来重复描述同一待定缺口，本轮将具体情况保留在本说明及下一步行动，由自动“待定或未审”提示单独呈现，仍有1项真实待关注，不宣称清零。",
           "evidence_urls": [
             "https://www.nature.com/nrclinonc/articles?year=2024",
             "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/nydiii/raw-completeness-2024.json",
             "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/nydiii/article-types/2026-11-08/venue_article_type_rules.json",
             "https://www.nature.com/articles/s41571-024-00869-z",
             "https://www.nature.com/nrclinonc/",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/990d642d8cb137db0db9873f16d4b004079869e5/reviews/source-assignments-2024.json"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/990d642d8cb137db0db9873f16d4b004079869e5/reviews/source-assignments-2024.json",
+            "https://cris.unibo.it/handle/11585/981976",
+            "https://pubmed.ncbi.nlm.nih.gov/38424198/",
+            "https://api.openalex.org/works/https://doi.org/10.1038/s41571-024-00869-z"
           ],
           "decisions": {
             "include": 0,
@@ -10851,12 +10854,10 @@
             "unreviewed": 0
           },
           "issues": [
-            "唯一待定：FGFR-targeted therapeutics: clinical activity, mechanisms of resistance and new directions（10.1038/s41571-024-00869-z）；需全文AI应用段落，现有摘要不足。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "类型表中11月8日暂挂的综述按11月9日现行“有实质学术内容的综述”规则对齐，再逐篇判断AI4S；不整类自动纳入。",
-            "通过机构合法访问或作者公开版本取得AI相关正文，确认综述实质AI4S贡献后更新该条判定。",
+            "取得10.1038/s41571-024-00869-z本篇AI相关正文完整段落及其上下文（特别是参考文献223–224的讨论），或合法全文，再判断是否实质综述AI用于FGFR突变预测/治疗研究；当前用户无全文或机构权限，保留待定。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
@@ -20575,9 +20576,9 @@
           "open_issues": 20,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-13T23:33:43-08:00",
+            "at": "2026-11-13T23:57:12-08:00",
             "author": "ebo",
-            "subject": "Mark verified Nature Medicine short commentary as not requiring abstract",
+            "subject": "Document FGFR review full-text access gap and deduplicate pending alert",
             "area": "reviews",
             "paths": [
               "metadata/2024/ai4s.json",
@@ -20585,7 +20586,7 @@
               "reviews/2024/nydiii.json"
             ]
           },
-          "commits_7d": 26
+          "commits_7d": 27
         },
         {
           "owner": "朱长昊",
@@ -20714,7 +20715,7 @@
               "reviews/2024/AlearnerDL/iwqos-corpus-correction-2026-11-14.json"
             ]
           },
-          "commits_7d": 75
+          "commits_7d": 73
         },
         {
           "owner": "王梦冉",
@@ -34966,9 +34967,9 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-13T23:33:43-08:00",
+            "at": "2026-11-13T23:57:12-08:00",
             "author": "ebo",
-            "subject": "Mark verified Nature Medicine short commentary as not requiring abstract",
+            "subject": "Document FGFR review full-text access gap and deduplicate pending alert",
             "area": "reviews",
             "paths": [
               "metadata/2024/ai4s.json",
@@ -34976,7 +34977,7 @@
               "reviews/2024/nydiii.json"
             ]
           },
-          "commits_7d": 26
+          "commits_7d": 27
         },
         {
           "owner": "朱长昊",
@@ -35105,7 +35106,7 @@
               "reviews/2024/AlearnerDL/iwqos-corpus-correction-2026-11-14.json"
             ]
           },
-          "commits_7d": 75
+          "commits_7d": 73
         },
         {
           "owner": "王梦冉",
@@ -49311,9 +49312,9 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-13T23:33:43-08:00",
+            "at": "2026-11-13T23:57:12-08:00",
             "author": "ebo",
-            "subject": "Mark verified Nature Medicine short commentary as not requiring abstract",
+            "subject": "Document FGFR review full-text access gap and deduplicate pending alert",
             "area": "reviews",
             "paths": [
               "metadata/2024/ai4s.json",
@@ -49321,7 +49322,7 @@
               "reviews/2024/nydiii.json"
             ]
           },
-          "commits_7d": 26
+          "commits_7d": 27
         },
         {
           "owner": "朱长昊",
@@ -49450,7 +49451,7 @@
               "reviews/2024/AlearnerDL/iwqos-corpus-correction-2026-11-14.json"
             ]
           },
-          "commits_7d": 75
+          "commits_7d": 73
         },
         {
           "owner": "王梦冉",
@@ -49554,9 +49555,9 @@
         "2026"
       ],
       "last_update": {
-        "at": "2026-11-13T23:33:43-08:00",
+        "at": "2026-11-13T23:57:12-08:00",
         "author": "ebo",
-        "subject": "Mark verified Nature Medicine short commentary as not requiring abstract",
+        "subject": "Document FGFR review full-text access gap and deduplicate pending alert",
         "area": "reviews",
         "paths": [
           "metadata/2024/ai4s.json",
@@ -49564,7 +49565,7 @@
           "reviews/2024/nydiii.json"
         ]
       },
-      "commits_7d": 26
+      "commits_7d": 27
     },
     {
       "owner": "朱长昊",
@@ -49849,7 +49850,7 @@
           "reviews/2024/AlearnerDL/iwqos-corpus-correction-2026-11-14.json"
         ]
       },
-      "commits_7d": 75
+      "commits_7d": 73
     },
     {
       "owner": "王梦冉",
@@ -49992,9 +49993,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-14T07:46:55.537065+00:00",
+    "generated_at": "2026-11-14T07:58:15.361959+00:00",
     "history_available": true,
-    "commit": "431ca62a9bb4ba4c4f3472a43d336d5b01c1d2ce",
-    "commits_scanned": 403
+    "commit": "e7fcf3d3a520cb8cec345c76188bcb87884ba1c4",
+    "commits_scanned": 405
   }
 }
