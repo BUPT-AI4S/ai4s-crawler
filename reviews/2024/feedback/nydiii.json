@@ -3230,11 +3230,11 @@
     "source_code": "nm",
     "owner": "南耀笛",
     "github_username": "nydiii",
-    "updated_at": "2026-11-09",
+    "updated_at": "2026-11-13",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": 714,
-    "official_scope": "全类型书目；官网全部36页已逐条核对，仓库缺1条Research Highlight。均非原创研究类型。正式页日期、类型和DOI已核实。",
-    "coverage_note": "2026-11-07已核查固定快照713条：确认目录缺项。 官网全部36页已逐条核对，仓库缺1条Research Highlight。均非原创研究类型。正式页日期、类型和DOI已核实。 已完成该刊原生类型表（26条分层类型/栏目/指南记录），尚未实际运行过滤。 本人已交付34条：纳入31、排除3、待定0、未审0。 当前AI4S候选34条，其中原摘要缺失1条；统计仅针对候选，文件版本见本条candidate_file_commit与candidate_file_sha256。 2026-11-09已完成本人纳入论文的中英文标签规范化，标签均在共享词表中，原判定与逐条证据保留。 原始全量书目1条类型unknown/缺失中，已交付1条原生类型更正，仍有0条原生类型未确证；栏目/文献形式另列，固定原始字段未覆盖。 已审原缺摘要记录1条：0条已补正式来源原摘要，1条正式来源不提供独立摘要，0条原摘要访问受限，0条尚未取得。全部原判定保留；原候选缺摘要计数不变，监控的自动提示仍按原始候选字段生成。",
+    "official_scope": "全类型书目，2024年官网文章目录全部36页；沿用2026-11-07逐条核对，固定快照713条中缺1条Research Highlight，现已补入来源原始书目，当前714条。固定历史快照713保持不变；此统计不是仅原创研究或AI4S候选数量。",
+    "coverage_note": "2026-11-13补齐已确认缺项10.1038/d41591-024-00079-1：来源全类型书目713→714，补入本人排除记录，未作为AI4S候选。沿用官网36页714条逐条核验，固定历史快照仍713条，不冒称本轮重爬36页。按现行规则逐篇复核13条Review Article：原有1条纳入保留，补录3条确证AI4S综述，另外9条原摘要未显示直接AI科学贡献、不自动纳入；另按正式正文核实1篇Perspective为实质因果机器学习方法综述并补录。当前候选38条，候选内纳入35、排除3；本人另交付1条缺项报道的排除，合计39条：纳入35、排除4、待定0、未审0。原34条候选保留，原字段和既有判定保留，纳入标签复用共享中英文词表。唯一缺摘要候选为已排除的AlphaFold年度短评10.1038/s41591-024-03392-x，出版方及PubMed均无独立摘要；不以正文、生成摘要或占位文字填充。当前监控仅检查候选abstract非空，因此仍有1条自动提示，已记录需乔徐阳确认免报或单列口径。未改监控、爬虫或工作流。原未知类型1条此前已确证，仍无新增类型缺口。",
     "evidence_urls": [
       "https://www.nature.com/nm/articles?year=2024",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/nydiii/raw-completeness-2024.json",
@@ -3243,26 +3243,213 @@
       "https://www.nature.com/nm/",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/990d642d8cb137db0db9873f16d4b004079869e5/reviews/source-assignments-2024.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/nydiii.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/nydiii/metadata-corrections-20261109.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/nydiii/metadata-corrections-20261109.json",
+      "https://www.nature.com/articles/d41591-024-00079-1",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC11090477/",
+      "https://www.nature.com/articles/s41591-024-02970-3.pdf",
+      "https://pubmed.ncbi.nlm.nih.gov/38965433/",
+      "https://www.nature.com/articles/s41591-024-02902-1",
+      "https://www.nature.com/articles/s41591-024-03392-x",
+      "https://pubmed.ncbi.nlm.nih.gov/39672908/"
     ],
-    "issues": [
-      "固定快照确认缺1条非原创书目；均已在独立缺项复核中排除，未补入原始数据。"
-    ],
+    "issues": [],
     "next_actions": [
-      "如全类型书目须完整保留，将已确认缺项及证据交采集维护者补录；不作为新的AI4S纳入论文。",
-      "类型表中11月8日暂挂的综述按11月9日现行“有实质学术内容的综述”规则对齐，再逐篇判断AI4S；不整类自动纳入。"
+      "请乔徐阳确认监控能否对10.1038/s41591-024-03392-x这种“已排除非研究且官方无独立摘要”免报或单列；保留null及原候选，不伪造摘要，也不自行修改监控代码。"
     ],
-    "work_status": "catalogue_checked",
-    "candidate_count": 34,
+    "work_status": "review_complete_official_no_abstract_monitor_policy_pending",
+    "candidate_count": 38,
     "candidate_missing_abstract": 1,
-    "candidate_file_commit": "ca2cde147b49d7b6edef4030b8c51a1cfe6e6ca9",
-    "candidate_file_sha256": "20cba439b33dec1f370313dc059d4d0975b5cf47c4c8494ff655a1e112564058",
+    "candidate_file_commit": "2ed68aa27f5c0fe769c998510ceb44140b59f9f7",
+    "candidate_file_sha256": "fc85ba9290237ac2678faf02259950fb0c856a8d80d4ca43458e004d6697c491",
     "own_review_counts": {
-      "exclude": 3,
-      "include": 31
+      "include": 35,
+      "exclude": 4,
+      "pending": 0,
+      "unreviewed": 0
     },
-    "own_review_count": 34,
-    "article_type_rule_records": 26
+    "own_review_count": 39,
+    "article_type_rule_records": 26,
+    "catalogue_reconciliation": {
+      "checked_at": "2026-11-13",
+      "input_main_commit": "2ed68aa27f5c0fe769c998510ceb44140b59f9f7",
+      "historical_snapshot_count": 713,
+      "current_source_metadata_count": 714,
+      "official_total": 714,
+      "confirmed_missing_count_before": 1,
+      "supplemented_count": 1,
+      "supplemented_ids": [
+        "10.1038/d41591-024-00079-1"
+      ],
+      "remaining_confirmed_missing_count": 0,
+      "historical_snapshot_preserved": true,
+      "evidence_url": "https://www.nature.com/articles/d41591-024-00079-1",
+      "supplement_is_ai4s_candidate": false,
+      "verification_scope": "沿用2026-11-07全36页逐条核对及缺项正式页证据，本轮落实已确认缺项；未重新抓取全部目录。"
+    },
+    "review_policy_alignment": {
+      "checked_at": "2026-11-13",
+      "policy": "原创研究及有实质学术内容的综述，按内容判断，非整类自动纳入。",
+      "review_count": 13,
+      "existing_include": 1,
+      "verified_ai4s_review_omissions_added": 3,
+      "not_added": 9,
+      "records": [
+        {
+          "id": "10.1038/s41591-023-02784-9",
+          "title": "Validation of biomarkers of aging",
+          "article_type": "Review Article",
+          "evidence_url": "https://www.nature.com/articles/s41591-023-02784-9",
+          "evidence_location": "输入正式原摘要及所列公开正文",
+          "status": "verified_ai4s_omission_added",
+          "reason": "综述组学衰老生物标志物的预测验证；公开全文明确讨论机器学习构建的复合生物标志物、独立样本验证、模型假设、缺失数据处理及跨人群泛化，直接服务衰老风险和干预终点评估；不将本文当作新训练模型。"
+        },
+        {
+          "id": "10.1038/s41591-024-02903-0",
+          "title": "Targeting KRAS in cancer",
+          "article_type": "Review Article",
+          "evidence_url": "https://www.nature.com/articles/s41591-024-02903-0",
+          "evidence_location": "输入正式原摘要",
+          "status": "not_added_no_direct_ai4s_evidence_in_abstract",
+          "reason": "已读输入正式原摘要，主要贡献为领域生物医学、临床或政策证据综述，摘要未显示AI方法直接承担研究任务；不因Review标签自动纳入。此项不是声称全文完全未提AI。"
+        },
+        {
+          "id": "10.1038/s41591-024-02970-3",
+          "title": "Artificial intelligence in surgery",
+          "article_type": "Review Article",
+          "evidence_url": "https://www.nature.com/articles/s41591-024-02970-3",
+          "evidence_location": "输入正式原摘要及所列公开正文",
+          "status": "verified_ai4s_omission_added",
+          "reason": "实质综述深度学习与多模态基础模型在手术前后和术中的应用、验证与限制，直接服务手术决策、患者结局和外科研究，不只是提及AI愿景；不把被综述的实验计作本文原创实验。"
+        },
+        {
+          "id": "10.1038/s41591-024-03036-0",
+          "title": "Women’s health and rights in the twenty-first century",
+          "article_type": "Review Article",
+          "evidence_url": "https://www.nature.com/articles/s41591-024-03036-0",
+          "evidence_location": "输入正式原摘要",
+          "status": "not_added_no_direct_ai4s_evidence_in_abstract",
+          "reason": "已读输入正式原摘要，主要贡献为领域生物医学、临床或政策证据综述，摘要未显示AI方法直接承担研究任务；不因Review标签自动纳入。此项不是声称全文完全未提AI。"
+        },
+        {
+          "id": "10.1038/s41591-024-03081-9",
+          "title": "Building genomic capacity for precision health in Africa",
+          "article_type": "Review Article",
+          "evidence_url": "https://www.nature.com/articles/s41591-024-03081-9",
+          "evidence_location": "输入正式原摘要",
+          "status": "not_added_no_direct_ai4s_evidence_in_abstract",
+          "reason": "已读输入正式原摘要，主要贡献为领域生物医学、临床或政策证据综述，摘要未显示AI方法直接承担研究任务；不因Review标签自动纳入。此项不是声称全文完全未提AI。"
+        },
+        {
+          "id": "10.1038/s41591-024-03074-8",
+          "title": "Harnessing EHR data for health research",
+          "article_type": "Review Article",
+          "evidence_url": "https://www.nature.com/articles/s41591-024-03074-8",
+          "evidence_location": "输入正式原摘要及所列公开正文",
+          "status": "verified_ai4s_omission_added",
+          "reason": "综述如何以EHR研究人类健康与疾病，具体分析机器学习预测建模、假设生成与检验及偏差、缺失数据和验证设计，AI与生物医学研究任务有直接关系，具有实质方法综述贡献。"
+        },
+        {
+          "id": "10.1038/s41591-024-03098-0",
+          "title": "Precision public health in the era of genomics and big data",
+          "article_type": "Review Article",
+          "evidence_url": "https://www.nature.com/articles/s41591-024-03098-0",
+          "evidence_location": "输入正式原摘要",
+          "status": "existing_include_preserved",
+          "reason": "已有明确AI公共卫生方法综述及逐条证据，保留纳入。"
+        },
+        {
+          "id": "10.1038/s41591-024-03165-6",
+          "title": "Western diets and chronic diseases",
+          "article_type": "Review Article",
+          "evidence_url": "https://www.nature.com/articles/s41591-024-03165-6",
+          "evidence_location": "输入正式原摘要",
+          "status": "not_added_no_direct_ai4s_evidence_in_abstract",
+          "reason": "已读输入正式原摘要，主要贡献为领域生物医学、临床或政策证据综述，摘要未显示AI方法直接承担研究任务；不因Review标签自动纳入。此项不是声称全文完全未提AI。"
+        },
+        {
+          "id": "10.1038/s41591-024-03173-6",
+          "title": "Long COVID science, research and policy",
+          "article_type": "Review Article",
+          "evidence_url": "https://www.nature.com/articles/s41591-024-03173-6",
+          "evidence_location": "输入正式原摘要",
+          "status": "not_added_no_direct_ai4s_evidence_in_abstract",
+          "reason": "已读输入正式原摘要，主要贡献为领域生物医学、临床或政策证据综述，摘要未显示AI方法直接承担研究任务；不因Review标签自动纳入。此项不是声称全文完全未提AI。"
+        },
+        {
+          "id": "10.1038/s41591-024-03218-w",
+          "title": "Advancing global antibiotic research, development and access",
+          "article_type": "Review Article",
+          "evidence_url": "https://www.nature.com/articles/s41591-024-03218-w",
+          "evidence_location": "输入正式原摘要",
+          "status": "not_added_no_direct_ai4s_evidence_in_abstract",
+          "reason": "已读输入正式原摘要，主要贡献为领域生物医学、临床或政策证据综述，摘要未显示AI方法直接承担研究任务；不因Review标签自动纳入。此项不是声称全文完全未提AI。"
+        },
+        {
+          "id": "10.1038/s41591-024-03281-3",
+          "title": "Cell therapy for neurological disorders",
+          "article_type": "Review Article",
+          "evidence_url": "https://www.nature.com/articles/s41591-024-03281-3",
+          "evidence_location": "输入正式原摘要",
+          "status": "not_added_no_direct_ai4s_evidence_in_abstract",
+          "reason": "已读输入正式原摘要，主要贡献为领域生物医学、临床或政策证据综述，摘要未显示AI方法直接承担研究任务；不因Review标签自动纳入。此项不是声称全文完全未提AI。"
+        },
+        {
+          "id": "10.1038/s41591-024-03307-w",
+          "title": "Political polarization and health",
+          "article_type": "Review Article",
+          "evidence_url": "https://www.nature.com/articles/s41591-024-03307-w",
+          "evidence_location": "输入正式原摘要",
+          "status": "not_added_no_direct_ai4s_evidence_in_abstract",
+          "reason": "已读输入正式原摘要，主要贡献为领域生物医学、临床或政策证据综述，摘要未显示AI方法直接承担研究任务；不因Review标签自动纳入。此项不是声称全文完全未提AI。"
+        },
+        {
+          "id": "10.1038/s41591-024-03373-0",
+          "title": "Lifestyle interventions for cardiometabolic health",
+          "article_type": "Review Article",
+          "evidence_url": "https://www.nature.com/articles/s41591-024-03373-0",
+          "evidence_location": "输入正式原摘要",
+          "status": "not_added_no_direct_ai4s_evidence_in_abstract",
+          "reason": "已读输入正式原摘要，主要贡献为领域生物医学、临床或政策证据综述，摘要未显示AI方法直接承担研究任务；不因Review标签自动纳入。此项不是声称全文完全未提AI。"
+        }
+      ],
+      "additional_substantive_perspective": {
+        "id": "10.1038/s41591-024-02902-1",
+        "reason": "出版社形式为Perspective；按内容而非栏目名判断，本篇具体综述因果机器学习的假设、组件、工作步骤和可靠性检验，用于预测疗效与毒性、估计个体治疗效应，构成有实质学术内容的方法综述，满足现行规则，不自动扩展到其他Perspective。",
+        "evidence_url": "https://www.nature.com/articles/s41591-024-02902-1"
+      }
+    },
+    "candidate_abstract_reconciliation": {
+      "checked_at": "2026-11-13",
+      "original_candidate_count": 34,
+      "original_missing": 1,
+      "verified_omissions_added": 4,
+      "current_candidate_count": 38,
+      "current_available_original_abstract": 37,
+      "current_missing": 1,
+      "official_not_provided": 1,
+      "not_yet_obtained": 0,
+      "access_restricted": 0,
+      "official_not_provided_ids": [
+        "10.1038/s41591-024-03392-x"
+      ],
+      "remaining_monitor_alert_expected": 1,
+      "no_generated_or_placeholder_abstracts": true,
+      "excluded_record_preserved": true
+    },
+    "monitor_exception": {
+      "checked_at": "2026-11-13",
+      "status": "requires_monitor_policy_confirmation",
+      "requested_maintainer": "乔徐阳",
+      "excluded_nonresearch": true,
+      "official_abstract_not_provided": true,
+      "required_decision": "确认能否将已排除且官方无摘要的记录免报或单列；保留原始候选与null，不改监控代码或用占位文本消除提示。",
+      "paper_id": "10.1038/s41591-024-03392-x",
+      "verified_behavior": "已只读核查最新监控生成器，缺摘要按年度候选abstract非空统计，尚未识别正式无摘要且排除记录。",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41591-024-03392-x",
+        "https://pubmed.ncbi.nlm.nih.gov/39672908/"
+      ]
+    }
   },
   {
     "year": 2024,
