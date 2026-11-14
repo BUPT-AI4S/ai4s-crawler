@@ -842,37 +842,24 @@
       "batch_id": "2024-dinglijun",
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "include",
-      "rationale": "初筛漏筛补录。题名直接说明研究对象和所用方法：“Photocatalytic activation of peroxymonosulfate (PMS) by CNN@NH2-MIL-101(Fe) Z-scheme heterojunction for phthalates degradation under visible light irradiation”。",
+      "decision": "exclude",
+      "rationale": "出版方摘要将 CNN 展开为 carbonitride nanosheets（氮化碳纳米片）。本文研究异质结光催化活化 PMS 和污染物降解，原卷积神经网络标签属于缩写误判。",
       "verified_metadata": {
         "doi": "10.1016/j.cej.2024.148683",
         "url": "https://doi.org/10.1016/j.cej.2024.148683",
         "title": "Photocatalytic activation of peroxymonosulfate (PMS) by CNN@NH2-MIL-101(Fe) Z-scheme heterojunction for phthalates degradation under visible light irradiation",
         "evidence_urls": [
           "https://doi.org/10.1016/j.cej.2024.148683",
-          "https://api.crossref.org/works/10.1016/j.cej.2024.148683"
+          "https://api.crossref.org/works/10.1016/j.cej.2024.148683",
+          "https://www.sciencedirect.com/science/article/pii/S1385894724001682/pdf"
         ],
         "article_type": "Article",
         "field_sources": {
-          "article_type": "https://api.crossref.org/works/10.1016/j.cej.2024.148683"
+          "article_type": "https://api.crossref.org/works/10.1016/j.cej.2024.148683",
+          "review": "https://www.sciencedirect.com/science/article/pii/S1385894724001682/pdf"
         }
       },
-      "tags": [
-        {
-          "axis": "method",
-          "label": "卷积神经网络",
-          "label_en": "Convolutional neural network",
-          "evidence_location": "题名",
-          "rationale": "该处对研究对象或方法的表述为“Photocatalytic activation of peroxymonosulfate (PMS) by CNN@NH2-MIL-101(Fe) Z-scheme heterojunction for phthalates degradation under visible light irradiation”。"
-        },
-        {
-          "axis": "domain",
-          "label": "AI 用于物质科学",
-          "label_en": "AI for materials and chemical sciences",
-          "evidence_location": "题名",
-          "rationale": "该处对研究对象或方法的表述为“Photocatalytic activation of peroxymonosulfate (PMS) by CNN@NH2-MIL-101(Fe) Z-scheme heterojunction for phthalates degradation under visible light irradiation”。"
-        }
-      ]
+      "tags": []
     }
   },
   {
@@ -11511,33 +11498,36 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "初筛漏筛补录。题名直接说明研究对象和所用方法：“Convolutional neural network augmented soft-sensor for autonomous microfluidic production of uniform bubbles”。",
+      "rationale": "DOI 匹配原摘要使用 CNN 识别微流控流态，结合图像特征和闭环控制稳定气泡尺寸，并报告 8 小时运行结果，纳入。",
       "verified_metadata": {
         "doi": "10.1016/j.cej.2024.156494",
         "url": "https://doi.org/10.1016/j.cej.2024.156494",
         "title": "Convolutional neural network augmented soft-sensor for autonomous microfluidic production of uniform bubbles",
         "evidence_urls": [
           "https://doi.org/10.1016/j.cej.2024.156494",
-          "https://api.crossref.org/works/10.1016/j.cej.2024.156494"
+          "https://api.crossref.org/works/10.1016/j.cej.2024.156494",
+          "https://api.openaire.eu/search/publications?format=json&size=10&doi=10.1016/j.cej.2024.156494"
         ],
         "article_type": "Article",
         "field_sources": {
-          "article_type": "https://api.crossref.org/works/10.1016/j.cej.2024.156494"
-        }
+          "article_type": "https://api.crossref.org/works/10.1016/j.cej.2024.156494",
+          "abstract": "https://api.openaire.eu/search/publications?format=json&size=10&doi=10.1016/j.cej.2024.156494"
+        },
+        "abstract": "Microfluidics has emerged as a foundational process for creating highly uniform emulsions and bubbles. To enable integration of microfluidic platforms into industrial processes, achieving precise control over the size uniformity of microfluidic-generated bubbles and emulsions is crucial. Even if the external variables such as flow rates or pressures are kept constant, microfluidic processes can be easily disturbed by unknown factors that would substantially compromise the uniformity of resulting emulsions and bubbles. In this study, we introduce a two-step soft-sensor approach that combines a convolutional neural network (CNN) and an image recognition algorithm for feature extraction to detect both the flow regime and the size and uniformity of resulting bubbles. By using the CNN to detect flow regimes, our controller is able to restore the bubble-producing flow regime in response to disturbances. Beyond self-recovery, our controller actively adjusts to minimize errors, maintain setpoints, mitigate disturbances, and ensure system stability over extended periods. 99.2% of bubbles produced during an 8-hour period remain within 5% of the setpoint with our controller taking action. By leveraging the soft sensor and artificial intelligence-assisted feedback control, our work presents a widely applicable approach for precise and automated control of microfluidics in diverse applications."
       },
       "tags": [
         {
           "axis": "method",
           "label": "卷积神经网络",
           "label_en": "Convolutional neural network",
-          "evidence_location": "题名",
+          "evidence_location": "OpenAIRE DOI 匹配原摘要",
           "rationale": "该处对研究对象或方法的表述为“Convolutional neural network augmented soft-sensor for autonomous microfluidic production of uniform bubbles”。"
         },
         {
           "axis": "domain",
           "label": "AI 用于工程科学",
           "label_en": "AI for engineering sciences",
-          "evidence_location": "题名",
+          "evidence_location": "OpenAIRE DOI 匹配原摘要",
           "rationale": "该处对研究对象或方法的表述为“Convolutional neural network augmented soft-sensor for autonomous microfluidic production of uniform bubbles”。"
         }
       ]
@@ -16400,7 +16390,7 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "初筛漏筛补录。论文研究“Machine learning insights in predicting heavy metals interaction with biochar”。输入摘要，第3句给出方法或任务依据“However, the quantity, quality, and representation of data have a large impact on the accuracy, efficiency, and generalizability of machine learning tasks.”。",
+      "rationale": "已读正式全文。Perspective 条目具体综述生物炭—重金属吸附的特征描述符、ANN/LSSVM 预测、敏感性分析与数据增强，并比较预测和实测结果。按有实质方法内容的学术综述保留。",
       "verified_metadata": {
         "doi": "10.1007/s42773-024-00304-7",
         "url": "https://doi.org/10.1007/s42773-024-00304-7",
@@ -16414,12 +16404,14 @@
         ],
         "field_sources": {
           "keywords": "https://doaj.org/article/d2310a182b2143c6b1b2c500afd20ac0",
-          "article_type": "https://link.springer.com/journal/42773/volumes-and-issues/6-1"
+          "article_type": "https://link.springer.com/journal/42773/volumes-and-issues/6-1",
+          "review": "https://link.springer.com/content/pdf/10.1007/s42773-024-00304-7.pdf"
         },
         "evidence_urls": [
           "https://doi.org/10.1007/s42773-024-00304-7",
           "https://doaj.org/article/d2310a182b2143c6b1b2c500afd20ac0",
-          "https://link.springer.com/journal/42773/volumes-and-issues/6-1"
+          "https://link.springer.com/journal/42773/volumes-and-issues/6-1",
+          "https://link.springer.com/content/pdf/10.1007/s42773-024-00304-7.pdf"
         ],
         "article_type": "Perspective"
       },
@@ -16428,14 +16420,14 @@
           "axis": "domain",
           "label": "AI 用于物质科学",
           "label_en": "AI for materials and chemical sciences",
-          "evidence_location": "题名",
+          "evidence_location": "正文 §2–3 与图 3–5",
           "rationale": "该处对研究对象或方法的表述为“Machine learning insights in predicting heavy metals interaction with biochar”。"
         },
         {
           "axis": "method",
           "label": "机器学习",
           "label_en": "Machine learning",
-          "evidence_location": "题名",
+          "evidence_location": "正文 §2–3 与图 3–5",
           "rationale": "该处对研究对象或方法的表述为“Machine learning insights in predicting heavy metals interaction with biochar”。"
         }
       ]
@@ -25156,12 +25148,15 @@
         "title": "Physics-informed tool wear prediction in turning process: A thermo-mechanical wear-included force model integrated with machine learning",
         "evidence_urls": [
           "https://doi.org/10.1016/j.jmsy.2024.09.008",
-          "https://api.crossref.org/works/10.1016/j.jmsy.2024.09.008"
+          "https://api.crossref.org/works/10.1016/j.jmsy.2024.09.008",
+          "https://api.openaire.eu/search/publications?format=json&size=10&doi=10.1016/j.jmsy.2024.09.008"
         ],
         "article_type": "Article",
         "field_sources": {
-          "article_type": "https://api.crossref.org/works/10.1016/j.jmsy.2024.09.008"
-        }
+          "article_type": "https://api.crossref.org/works/10.1016/j.jmsy.2024.09.008",
+          "abstract_excerpt": "https://api.openaire.eu/search/publications?format=json&size=10&doi=10.1016/j.jmsy.2024.09.008"
+        },
+        "abstract_excerpt": "Tool wear prediction is essential for increasing production efficiency, improving product quality and reducing manufacturing costs. However, most of the existing studies are either pure experimental or machine learning-assisted (ML) research, which requires numerous expensive and time-consuming wear tests to prepare a sufficiently rich dataset. This limitation hinders the application of ML algorithms in real life monitoring systems, restricting their scope to only academic research. To bridge the gap between research and industry, in this study a novel sequential physics-informed machine learning (PIML) model was developed to predict tool wear with regards to cutting forces, machining parameters and tool geometry. The PIML sequentially integrated the analytical wear-included force model with ML algorithms such as least-squares boosting, random forest and support vector machine. In this respect, initially a thermo-mechanical turning model was developed to calculate the cutting forces by considering the effect of flank wear and edge forces. The accuracy of this model was then improved through the PIML model, achieving 97 % accuracy on the entire training dataset and 94 % accuracy on the unseen test dataset. This facilitated the creation of efficient and reliable training data for another complementary reverse ML model to predict wear length based on cutting forces and machining parameters. Also, the relative significance of different input parameters on the model's predictions was quantified using the Shapley value algorithm, which calculated each feature's contribution to flank wear. According to the obtained results, sequential integration of the mechanistic model with the ML algorithm not only enhanced the prediction accuracy of the model remarkably, but also reduced the need for numerous experimental wear tests. In addition to Steel 1050, the proposed PIML model accurately predicted wear length for Ti6Al4V superalloy, confirming its effectiveness and robustness across various workpiece materials and cutting ..."
       },
       "tags": [
         {
@@ -28380,7 +28375,7 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "作者将数值生态学与机器学习算法结合，在两个宏基因组数据集上区分病例与对照，并分析多组学关联。",
+      "rationale": "已读正式全文。Software 条目开发整合数值生态学和机器学习的多组学分析框架，并在克罗恩病饮食干预和肥胖微生物组数据中检验病例对照及生物机制分析。按原创方法与资源研究保留。",
       "verified_metadata": {
         "doi": "10.1186/s40168-024-01834-9",
         "url": "https://doi.org/10.1186/s40168-024-01834-9",
@@ -28388,11 +28383,13 @@
         "pdf_url": "https://link.springer.com/content/pdf/10.1186/s40168-024-01834-9.pdf",
         "evidence_urls": [
           "https://doi.org/10.1186/s40168-024-01834-9",
-          "https://link.springer.com/journal/40168/volumes-and-issues/12-1"
+          "https://link.springer.com/journal/40168/volumes-and-issues/12-1",
+          "https://link.springer.com/content/pdf/10.1186/s40168-024-01834-9.pdf"
         ],
         "article_type": "Software",
         "field_sources": {
-          "article_type": "https://link.springer.com/journal/40168/volumes-and-issues/12-1"
+          "article_type": "https://link.springer.com/journal/40168/volumes-and-issues/12-1",
+          "review": "https://link.springer.com/content/pdf/10.1186/s40168-024-01834-9.pdf"
         }
       },
       "tags": [
@@ -28400,21 +28397,21 @@
           "axis": "domain",
           "label": "AI 用于生命科学",
           "label_en": "AI for life sciences",
-          "evidence_location": "输入摘要 Results 与 Conclusions",
+          "evidence_location": "正式全文 Abstract/Results",
           "rationale": "作者将数值生态学与机器学习算法结合，在两个宏基因组数据集上区分病例与对照，并分析多组学关联。"
         },
         {
           "axis": "method",
           "label": "机器学习",
           "label_en": "Machine learning",
-          "evidence_location": "输入摘要 Results 与 Conclusions",
+          "evidence_location": "正式全文 Abstract/Results",
           "rationale": "作者将数值生态学与机器学习算法结合，在两个宏基因组数据集上区分病例与对照，并分析多组学关联。"
         },
         {
           "axis": "task",
           "label": "微生物组宿主关联分析",
           "label_en": "Microbiome-host association analysis",
-          "evidence_location": "输入摘要 Results 与 Conclusions",
+          "evidence_location": "正式全文 Abstract/Results",
           "rationale": "作者将数值生态学与机器学习算法结合，在两个宏基因组数据集上区分病例与对照，并分析多组学关联。"
         }
       ]
@@ -30134,8 +30131,8 @@
       "batch_id": "2024-dinglijun",
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "include",
-      "rationale": "初筛漏筛补录。论文研究“Exploring research on ecotechnology through artificial intelligence and bibliometric maps”。题名给出直接依据“Exploring research on ecotechnology through artificial intelligence and bibliometric maps”。",
+      "decision": "exclude",
+      "rationale": "原摘要与正式论文栏目显示研究结果为生态技术文献主题和国家分布图谱，AI 承担文献计量聚类。按科研信息分析工具口径排除。",
       "verified_metadata": {
         "doi": "10.1016/j.ese.2023.100386",
         "url": "https://doi.org/10.1016/j.ese.2023.100386",
@@ -30149,7 +30146,8 @@
         ],
         "field_sources": {
           "keywords": "https://doaj.org/article/4f1cb1ad933d4ea48a9c05695144bba7",
-          "article_type": "https://www.sciencedirect.com/journal/environmental-science-and-ecotechnology/vol/21/suppl/C"
+          "article_type": "https://www.sciencedirect.com/journal/environmental-science-and-ecotechnology/vol/21/suppl/C",
+          "review": "https://www.sciencedirect.com/journal/environmental-science-and-ecotechnology/vol/21/suppl/C"
         },
         "evidence_urls": [
           "https://doi.org/10.1016/j.ese.2023.100386",
@@ -30158,15 +30156,7 @@
         ],
         "article_type": "Discussion"
       },
-      "tags": [
-        {
-          "axis": "domain",
-          "label": "AI 用于地球宇宙科学",
-          "label_en": "AI for Earth and space sciences",
-          "evidence_location": "题名",
-          "rationale": "论文研究“Exploring research on ecotechnology through artificial intelligence and bibliometric maps”。题名给出直接依据“Exploring research on ecotechnology through artificial intelligence and bibliometric maps”。"
-        }
-      ]
+      "tags": []
     }
   },
   {
@@ -38396,7 +38386,7 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "初筛漏筛补录。题名直接说明研究对象和所用方法：“Bayesian design of concrete with amortized Gaussian processes and multi-objective optimization”。",
+      "rationale": "原摘要以工业数据训练高斯过程预测混凝土强度，并结合逆优化降低配比成本和碳排放，纳入。",
       "verified_metadata": {
         "doi": "10.1016/j.cemconres.2023.107406",
         "url": "https://doi.org/10.1016/j.cemconres.2023.107406",
@@ -38407,29 +38397,31 @@
         ],
         "article_type": "Research article",
         "field_sources": {
-          "article_type": "https://www.sciencedirect.com/science/article/abs/pii/S0008884623003216"
-        }
+          "article_type": "https://www.sciencedirect.com/science/article/abs/pii/S0008884623003216",
+          "abstract": "https://www.sciencedirect.com/science/article/abs/pii/S0008884623003216"
+        },
+        "abstract": "Here, we present a computational framework, combining machine learning models with inverse optimization, which can accelerate and optimize concrete mix design with respect to climate impact and/or cost. Our approach leverages a novel amortized Gaussian process (GP) model trained on a large industry dataset to predict concrete strength based on mix proportions. The resulting GP model has an R2 value, RMSE, and MAPE of ∼0.88, ∼909 psi (6.3 MPa), and ∼10.8 %, respectively. We integrated the GP model with an inverse optimization scheme to predict optimal mix designs that minimize cost and/or climate impact. The results show that this integrated framework can generate reasonable concrete mixes that offer up to ∼30 % and ∼60 % reductions in cost and climate impact, respectively, compared with industry mixes with similar 28-day strength. This study highlights the potential environmental and economic benefits of data-driven approaches to designing and optimizing concrete mixes."
       },
       "tags": [
         {
           "axis": "domain",
           "label": "AI 用于物质科学",
           "label_en": "AI for materials and chemical sciences",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“Bayesian design of concrete with amortized Gaussian processes and multi-objective optimization”。"
         },
         {
           "axis": "method",
           "label": "多目标优化",
           "label_en": "Multi-objective optimization",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“Bayesian design of concrete with amortized Gaussian processes and multi-objective optimization”。"
         },
         {
           "axis": "method",
           "label": "高斯过程",
           "label_en": "Gaussian process",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“Bayesian design of concrete with amortized Gaussian processes and multi-objective optimization”。"
         }
       ]
@@ -38592,25 +38584,28 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "初筛漏筛补录。题名直接说明研究对象和所用方法：“Insights on the mechanical properties and failure mechanisms of calcium silicate hydrates based on deep-learning potential molecular dynamics”。",
+      "rationale": "原摘要使用人工神经网络势开展水化硅酸钙分子动力学，研究弹性、失效机制和钙比影响，纳入。",
       "verified_metadata": {
         "doi": "10.1016/j.cemconres.2024.107690",
         "url": "https://doi.org/10.1016/j.cemconres.2024.107690",
         "evidence_urls": [
           "https://doi.org/10.1016/j.cemconres.2024.107690",
-          "https://api.crossref.org/works/10.1016/j.cemconres.2024.107690"
+          "https://api.crossref.org/works/10.1016/j.cemconres.2024.107690",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0008884624002710"
         ],
-        "article_type": "Article",
+        "article_type": "Research article",
         "field_sources": {
-          "article_type": "https://api.crossref.org/works/10.1016/j.cemconres.2024.107690"
-        }
+          "article_type": "https://www.sciencedirect.com/science/article/abs/pii/S0008884624002710",
+          "abstract": "https://www.sciencedirect.com/science/article/abs/pii/S0008884624002710"
+        },
+        "abstract": "The molecular-scale mechanical properties of calcium silicate hydrates are crucial to the macro performance of cementitious materials, while achieving coincidence between accuracy and efficiency in computational simulations still remains a challenge. This study utilizes a deep-learning potential, specifically developed for calcium silicate hydrates based on artificial neural network, to achieve molecular dynamics simulations with accuracy comparable to first-principle methods. With this potential, the elastic properties and uniaxial mechanical behaviors are explored, wherein the anisotropy and impact mechanism of calcium ratios are analyzed. The results add to evidence that the deep-learning potential possess a higher accuracy than common force fields. The anisotropy of elastic modulus is mainly attributed to different atomic interactions in various directions, while the anisotropy of strength is additionally affected by the form of failure. This study may advance the accurate molecular-scale simulation and deepen the understanding of the strength source and cohesion mechanism of cement-based materials."
       },
       "tags": [
         {
           "axis": "method",
           "label": "深度学习",
           "label_en": "Deep learning",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“Insights on the mechanical properties and failure mechanisms of calcium silicate hydrates based on deep-learning potential molecular dynamics”。"
         }
       ]
@@ -67308,7 +67303,7 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "题名直接说明研究对象和所用方法：“Machine learning analysis of gene expression reveals TP53 Mutant-like AML with wild type TP53 and poor prognosis”。",
+      "rationale": "已读正式全文。Correspondence 条目使用带岭正则的逻辑回归在 Beat AML 训练并在 TCGA 验证，识别 TP53 野生型但具有突变样转录组和不良预后的白血病群体。按原创生物医学研究保留。",
       "verified_metadata": {
         "doi": "10.1038/s41408-024-01061-3",
         "url": "https://doi.org/10.1038/s41408-024-01061-3",
@@ -67316,11 +67311,13 @@
         "pdf_url": "https://www.nature.com/articles/s41408-024-01061-3.pdf",
         "evidence_urls": [
           "https://doi.org/10.1038/s41408-024-01061-3",
-          "https://www.nature.com/bcj/articles?year=2024"
+          "https://www.nature.com/bcj/articles?year=2024",
+          "https://www.nature.com/articles/s41408-024-01061-3.pdf"
         ],
         "article_type": "Correspondence",
         "field_sources": {
-          "article_type": "https://www.nature.com/bcj/articles?year=2024"
+          "article_type": "https://www.nature.com/bcj/articles?year=2024",
+          "review": "https://www.nature.com/articles/s41408-024-01061-3.pdf"
         }
       },
       "tags": [
@@ -67328,14 +67325,14 @@
           "axis": "domain",
           "label": "AI 用于生命科学",
           "label_en": "AI for life sciences",
-          "evidence_location": "题名",
+          "evidence_location": "正式全文第 1 页及图 1",
           "rationale": "该处对研究对象或方法的表述为“Machine learning analysis of gene expression reveals TP53 Mutant-like AML with wild type TP53 and poor prognosis”。"
         },
         {
           "axis": "method",
           "label": "机器学习",
           "label_en": "Machine learning",
-          "evidence_location": "题名",
+          "evidence_location": "正式全文第 1 页及图 1",
           "rationale": "该处对研究对象或方法的表述为“Machine learning analysis of gene expression reveals TP53 Mutant-like AML with wild type TP53 and poor prognosis”。"
         }
       ]
@@ -67474,33 +67471,36 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "初筛漏筛补录。题名直接说明研究对象和所用方法：“Machine learning-combined rheological and structural characterization of starches for enhanced melt-stretch features in plant-based cheese analogues”。",
+      "rationale": "原摘要使用流变数据训练逻辑分类模型，识别植物奶酪中具有熔融拉伸特性的淀粉，并以制品实验验证，纳入。",
       "verified_metadata": {
         "doi": "10.1016/j.foodhyd.2024.110456",
         "url": "https://doi.org/10.1016/j.foodhyd.2024.110456",
         "title": "Machine learning-combined rheological and structural characterization of starches for enhanced melt-stretch features in plant-based cheese analogues",
         "evidence_urls": [
           "https://doi.org/10.1016/j.foodhyd.2024.110456",
-          "https://api.crossref.org/works/10.1016/j.foodhyd.2024.110456"
+          "https://api.crossref.org/works/10.1016/j.foodhyd.2024.110456",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0268005X24007306"
         ],
-        "article_type": "Article",
+        "article_type": "Research article",
         "field_sources": {
-          "article_type": "https://api.crossref.org/works/10.1016/j.foodhyd.2024.110456"
-        }
+          "article_type": "https://www.sciencedirect.com/science/article/abs/pii/S0268005X24007306",
+          "abstract": "https://www.sciencedirect.com/science/article/abs/pii/S0268005X24007306"
+        },
+        "abstract": "The global demand for plant-based food products, including cheese analogues, is continuously increasing. However, most scientific attention has focused on their nutritional value rather than on functional properties such as melt-stretch. This study integrated the rheological features (pasting and viscoelasticity) of nine different starches with machine learning analysis to identify melt-stretchable starches. These starch samples were further evaluated in the formulation of plant-based cheese analogues. Hydroxypropyl tapioca, waxy potato, and tapioca starches showed the highest melt-stretch length values, compared to the other starch samples. The melt-stretch properties of the starch samples did not show distinct correlations with their individual pasting parameters, while they had lower viscoelasticity as well as high frequency dependence. FTIR analysis demonstrated that the decreased ratio of crystalline to amorphous regions upon conversion to a paste state contributed to the melt-stretch properties of starches. When the pasting and viscoelastic results were subjected to machine learning analysis, the starch samples were well-clustered based on their melt-stretchability. Furthermore, the starch samples with good melt-stretchability (hydroxypropyl tapioca, waxy potato, and tapioca starches) were successfully identified by the logistic binary classification model trained using rheological datasets, specifically, dynamic viscoelasticity. Similar melt-stretch features were moreover observed in the starch-incorporated plant-based cheese analogues, confirmed by a distinct decrease in the storage moduli over temperature and the highest values of melting index."
       },
       "tags": [
         {
           "axis": "method",
           "label": "机器学习",
           "label_en": "Machine learning",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“Machine learning-combined rheological and structural characterization of starches for enhanced melt-stretch features in plant-based cheese analogues”。"
         },
         {
           "axis": "domain",
           "label": "AI 用于生命科学",
           "label_en": "AI for life sciences",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“Machine learning-combined rheological and structural characterization of starches for enhanced melt-stretch features in plant-based cheese analogues”。"
         }
       ]
@@ -67935,7 +67935,7 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "题名直接说明研究对象和所用方法：“BreedingAIDB: A database integrating crop genome-to-phenotype paired data with machine learning tools applicable to breeding”。",
+      "rationale": "已读正式原文。Correspondence 条目构建水稻、大豆、玉米基因型—表型配对数据库，并用 GRU 预测水稻粒长粒宽，报告相关系数 0.76 和 0.82，同时集成 Optuna/lightGBM。按原创农业数据与方法研究保留。",
       "verified_metadata": {
         "doi": "10.1016/j.xplc.2024.100894",
         "url": "https://doi.org/10.1016/j.xplc.2024.100894",
@@ -67943,12 +67943,14 @@
         "abstract": "Machine learning (ML) is one of the key technologies for next-generation breeding, and “big data” is the cornerstone for development of ML algorithms that are applicable to crop breeding practices. Currently, there is a shortage of databases containing phenotype data and corresponding genomic data, i.e., genome-to-phenotype (G2P) paired data, that can be used in the development of ML algorithms for breeding. To fill this gap, we constructed a user-friendly database named the BreedingAIDB (http://ibi.zju.edu.cn/BreedingAIDB) to provide breeders and ML experts with easily accessible G2P paired data for crops, as well as ML tools.",
         "field_sources": {
           "abstract": "https://openalex.org/W4393902078",
-          "article_type": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11287151.1/PMC11287151.1.xml"
+          "article_type": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11287151.1/PMC11287151.1.xml",
+          "review": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11287151/"
         },
         "evidence_urls": [
           "https://doi.org/10.1016/j.xplc.2024.100894",
           "https://openalex.org/W4393902078",
-          "https://pmc-oa-opendata.s3.amazonaws.com/PMC11287151.1/PMC11287151.1.xml"
+          "https://pmc-oa-opendata.s3.amazonaws.com/PMC11287151.1/PMC11287151.1.xml",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC11287151/"
         ],
         "article_type": "Correspondence"
       },
@@ -67957,14 +67959,14 @@
           "axis": "domain",
           "label": "AI 用于生命科学",
           "label_en": "AI for life sciences",
-          "evidence_location": "题名",
+          "evidence_location": "正式全文图 1B/D 及 phenotype prediction 段",
           "rationale": "该处对研究对象或方法的表述为“BreedingAIDB: A database integrating crop genome-to-phenotype paired data with machine learning tools applicable to breeding”。"
         },
         {
           "axis": "method",
           "label": "机器学习",
           "label_en": "Machine learning",
-          "evidence_location": "题名",
+          "evidence_location": "正式全文图 1B/D 及 phenotype prediction 段",
           "rationale": "该处对研究对象或方法的表述为“BreedingAIDB: A database integrating crop genome-to-phenotype paired data with machine learning tools applicable to breeding”。"
         }
       ]
@@ -92465,7 +92467,7 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "题名直接说明研究对象和所用方法：“Investigating the relationship between air temperature and the intensity of urban development using on-site measurement, satellite imagery and machine learning”。",
+      "rationale": "原摘要结合实测气温、遥感城市形态指标与机器学习，量化建筑和植被覆盖对城市气温的影响，纳入。",
       "verified_metadata": {
         "doi": "10.1016/j.scs.2023.104982",
         "url": "https://doi.org/10.1016/j.scs.2023.104982",
@@ -92479,35 +92481,38 @@
         ],
         "field_sources": {
           "keywords": "https://www.sciencedirect.com/science/article/pii/S2210670723005930",
-          "article_type": "https://www.sciencedirect.com/journal/sustainable-cities-and-society/vol/100/suppl/C"
+          "article_type": "https://www.sciencedirect.com/science/article/abs/pii/S2210670723005930",
+          "abstract": "https://www.sciencedirect.com/science/article/abs/pii/S2210670723005930"
         },
         "evidence_urls": [
           "https://doi.org/10.1016/j.scs.2023.104982",
           "https://www.sciencedirect.com/science/article/pii/S2210670723005930",
-          "https://www.sciencedirect.com/journal/sustainable-cities-and-society/vol/100/suppl/C"
+          "https://www.sciencedirect.com/journal/sustainable-cities-and-society/vol/100/suppl/C",
+          "https://www.sciencedirect.com/science/article/abs/pii/S2210670723005930"
         ],
-        "article_type": "Research article"
+        "article_type": "Research article",
+        "abstract": "Given the seriousness of the urban heat problem, the relationship between urbanization and air temperature has become a critical concern worldwide. In this study, common urban planning indicators, including the building coverage ratio (BCR), floor area ratio (FAR), and fractional vegetation cover (FVC), were extracted from satellite images to determine the intensity of urban development. On-site measurements and machine learning (ML) were used to observe and analyze the relationship between the intensity of urban development and air temperature. From the on-site measurement results, the air temperature in downtown Taipei decreased by an average of approximately 0.32 °C with every 10 % increase in the FVC. However, it increased by an average of approximately 0.28 °C and 0.03 °C with every 10 % increase in the BCR and FAR, respectively. The results obtained from the ML models demonstrated the same trend, with minor differences from the on-site measurement results, which were regarded as reasonable and acceptable. In this study, a more convenient method was proposed to extract urban planning indicators, describe the intensity of urban development within an area, and help estimate air temperature in areas without measuring instruments. The relationship determined herein may aid in the decision-making process of the balance of urbanization and vegetation."
       },
       "tags": [
         {
           "axis": "method",
           "label": "机器学习",
           "label_en": "Machine learning",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“Investigating the relationship between air temperature and the intensity of urban development using on-site measurement, satellite imagery and machine learning”。"
         },
         {
           "axis": "task",
           "label": "遥感影像分析",
           "label_en": "Remote sensing image analysis",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“Investigating the relationship between air temperature and the intensity of urban development using on-site measurement, satellite imagery and machine learning”。"
         },
         {
           "axis": "domain",
           "label": "AI 用于地球宇宙科学",
           "label_en": "AI for Earth and space sciences",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“Investigating the relationship between air temperature and the intensity of urban development using on-site measurement, satellite imagery and machine learning”。"
         }
       ]
@@ -92574,7 +92579,7 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "初筛漏筛补录。题名直接说明研究对象和所用方法：“Enhancing urban real-time PM2.5 monitoring in street canyons by machine learning and computer vision technology”。",
+      "rationale": "原摘要使用交通影像视觉特征和 XGBoost 预测兰州街谷 PM2.5 浓度，并分析天气、交通和建筑因素作用，纳入。",
       "verified_metadata": {
         "doi": "10.1016/j.scs.2023.105009",
         "url": "https://doi.org/10.1016/j.scs.2023.105009",
@@ -92589,21 +92594,24 @@
         ],
         "field_sources": {
           "keywords": "https://www.sciencedirect.com/science/article/pii/S2210670723006200",
-          "article_type": "https://www.sciencedirect.com/journal/sustainable-cities-and-society/vol/100/suppl/C"
+          "article_type": "https://www.sciencedirect.com/science/article/abs/pii/S2210670723006200",
+          "abstract": "https://www.sciencedirect.com/science/article/abs/pii/S2210670723006200"
         },
         "evidence_urls": [
           "https://doi.org/10.1016/j.scs.2023.105009",
           "https://www.sciencedirect.com/science/article/pii/S2210670723006200",
-          "https://www.sciencedirect.com/journal/sustainable-cities-and-society/vol/100/suppl/C"
+          "https://www.sciencedirect.com/journal/sustainable-cities-and-society/vol/100/suppl/C",
+          "https://www.sciencedirect.com/science/article/abs/pii/S2210670723006200"
         ],
-        "article_type": "Research article"
+        "article_type": "Research article",
+        "abstract": "During peak hours, both pedestrians and drivers face extended exposure to road air pollution, raising the risk of respiratory diseases. Variations in traffic volume, building attributes, and weather conditions in street canyons lead to differing exposure levels across road sections and intersections. Though deploying numerous sensors provides real-time access to PM2.5 levels in each road section, they cannot interpret the impact of weather, traffic, and buildings on these levels. Therefore, in Lanzhou City, we attempted to use Computer Vision Technology (CVT) to extract real-time traffic volume and street-view features from traffic images for PM2.5 concentration prediction, and to interpret the impact of road environment changes on PM2.5 levels. Results show that by using the Extreme Gradient Boosting (XGB) regression model, the coefficient of determination for PM2.5 prediction reaches R2=0.956. Meteorological conditions, traffic volume, and buildings are key variables in predicting road PM2.5 concentrations. Meteorological conditions control the continuous fluctuation of road PM2.5 levels, while traffic volume can lead to sudden changes in PM2.5 levels. The research indicates that the combination of traffic cameras and CVT can acquire road PM2.5 concentrations, contributing significantly to rapidly understanding road pollution status, identifying highly polluted roads, and conducting exposure assessments of roadways."
       },
       "tags": [
         {
           "axis": "method",
           "label": "机器学习",
           "label_en": "Machine learning",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“Enhancing urban real-time PM2.5 monitoring in street canyons by machine learning and computer vision technology”。"
         }
       ]
@@ -93147,26 +93155,29 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "初筛漏筛补录。题名直接说明研究对象和所用方法：“Insights into the urban municipal solid waste generation during the COVID-19 pandemic from machine learning analysis”。",
+      "rationale": "原摘要使用机器学习预测纽约分区生活垃圾产生量，并分析疫情和居民工作状态对模型表现的影响，纳入。",
       "verified_metadata": {
         "doi": "10.1016/j.scs.2023.105044",
         "url": "https://doi.org/10.1016/j.scs.2023.105044",
         "title": "Insights into the urban municipal solid waste generation during the COVID-19 pandemic from machine learning analysis",
         "evidence_urls": [
           "https://doi.org/10.1016/j.scs.2023.105044",
-          "https://www.sciencedirect.com/journal/sustainable-cities-and-society/vol/100/suppl/C"
+          "https://www.sciencedirect.com/journal/sustainable-cities-and-society/vol/100/suppl/C",
+          "https://www.sciencedirect.com/science/article/abs/pii/S2210670723006522"
         ],
         "article_type": "Research article",
         "field_sources": {
-          "article_type": "https://www.sciencedirect.com/journal/sustainable-cities-and-society/vol/100/suppl/C"
-        }
+          "article_type": "https://www.sciencedirect.com/science/article/abs/pii/S2210670723006522",
+          "abstract": "https://www.sciencedirect.com/science/article/abs/pii/S2210670723006522"
+        },
+        "abstract": "Municipal solid waste (MSW) management has become an important issue for cities around the world. Waste generation prediction plays an important role in MSW management. It can provide strong support for decision-makers to optimize collection and treatment plans, formulate policies, and design long-term strategies for waste reduction. This study develops a district-level predictive approach for MSW generation using machine learning, with a case study for New York City. Commencing in 2020, the year of the pandemic's outbreak with an abnormal fluctuation in MSW generation, the prediction model exhibited a notable accuracy reduction compared to preceding years. In response to this challenge, we have identified and examined four proxy variables pertinent to the socio-economic repercussions of the pandemic and discerned that variables relating to residents' working status can ameliorate the model performance, both before and after the pandemic. We find that the area with the largest abnormality in MSW generation in 2020 is Manhattan and its vicinity. Given the pronounced prevalence of commercial land use in these localities, they warrant heightened scrutiny and strategic focus. It is imperative for policymakers and stakeholders to channel their efforts towards these specific regions and proactively formulate contingency strategies to facilitate expedited and efficacious responses."
       },
       "tags": [
         {
           "axis": "method",
           "label": "机器学习",
           "label_en": "Machine learning",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“Insights into the urban municipal solid waste generation during the COVID-19 pandemic from machine learning analysis”。"
         }
       ]
@@ -93378,25 +93389,28 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "初筛漏筛补录。题名直接说明研究对象和所用方法：“Predicting solar radiation in the urban area: A data-driven analysis for sustainable city planning using artificial neural networking”。",
+      "rationale": "原摘要使用 20 个城市的形态和空间数据训练神经网络预测城市太阳辐射，为太阳能利用与规划提供研究结果，纳入。",
       "verified_metadata": {
         "doi": "10.1016/j.scs.2023.105042",
         "url": "https://doi.org/10.1016/j.scs.2023.105042",
         "evidence_urls": [
           "https://doi.org/10.1016/j.scs.2023.105042",
-          "https://www.sciencedirect.com/journal/sustainable-cities-and-society/vol/100/suppl/C"
+          "https://www.sciencedirect.com/journal/sustainable-cities-and-society/vol/100/suppl/C",
+          "https://www.sciencedirect.com/science/article/abs/pii/S2210670723006534"
         ],
         "article_type": "Research article",
         "field_sources": {
-          "article_type": "https://www.sciencedirect.com/journal/sustainable-cities-and-society/vol/100/suppl/C"
-        }
+          "article_type": "https://www.sciencedirect.com/science/article/abs/pii/S2210670723006534",
+          "abstract": "https://www.sciencedirect.com/science/article/abs/pii/S2210670723006534"
+        },
+        "abstract": "Predicting solar radiation in cities using the Artificial Neural Network model (ANN) is a pioneering step in transforming future-oriented city planning using solar energy. This research harnesses vast datasets to forecast the average annual solar radiation, considering minimal urban information across various urban attributes, including coordinates (X, Y, Z), average height, inhabited and non-occupied areas, and the Azimuth angle. Our method employed parametric design and remote sensing to generate this dataset and then used the ANN model to make predictions and simulations. Urban attributes of 20 cities were examined, including Casablanca, Abu Dhabi, Cape Town, Dublin, Havana, Melbourne, Rome, Singapore, Nairobi, Mumbai, New York, Nagoya, Sao Paulo, Tehran, Madrid, Toronto, Antananarivo, Beijing, Lisbon, and Paris. This data-driven approach trains our ANN model to discern complex and nonlinear relationships between independent and dependent variables and thus enables our model to predict solar radiation in urban cities. Our data training results indicate that the output (the minimum solar radiation each year of the cities) can be predicted using the study input variables with a loss of 0.01, a mean squared error of 0.01, and an R2-squared value of 85%. Such predictions can refine urban designs of buildings, public spaces, and various urban infrastructures to optimize solar energy use, reducing environmental impacts and fossil fuel reliance, thus aiding climate change mitigation and sustainability. Our findings underscore the integral association between solar radiation and sustainable urban evolution, giving urban planners and researchers sustainable strategies for advancing energy efficiency and ecological equilibrium."
       },
       "tags": [
         {
           "axis": "method",
           "label": "神经网络",
           "label_en": "Neural network",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“Predicting solar radiation in the urban area: A data-driven analysis for sustainable city planning using artificial neural networking”。"
         }
       ]
@@ -93559,40 +93573,43 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "初筛漏筛补录。论文研究“Rough knowledge enhanced dueling deep Q-network for household integrated demand response optimization”。题名给出直接依据“Rough knowledge enhanced dueling deep Q-network for household integrated demand response optimization”。",
+      "rationale": "原摘要将粗糙知识与 dueling deep Q-network 结合，在家庭多能源系统中优化需求响应、成本和求解时间，纳入。",
       "verified_metadata": {
         "doi": "10.1016/j.scs.2023.105065",
         "url": "https://doi.org/10.1016/j.scs.2023.105065",
         "title": "Rough knowledge enhanced dueling deep Q-network for household integrated demand response optimization",
         "evidence_urls": [
           "https://doi.org/10.1016/j.scs.2023.105065",
-          "https://api.crossref.org/works/10.1016/j.scs.2023.105065"
+          "https://api.crossref.org/works/10.1016/j.scs.2023.105065",
+          "https://www.sciencedirect.com/science/article/abs/pii/S2210670723006753"
         ],
-        "article_type": "Article",
+        "article_type": "Research article",
         "field_sources": {
-          "article_type": "https://api.crossref.org/works/10.1016/j.scs.2023.105065"
-        }
+          "article_type": "https://www.sciencedirect.com/science/article/abs/pii/S2210670723006753",
+          "abstract": "https://www.sciencedirect.com/science/article/abs/pii/S2210670723006753"
+        },
+        "abstract": "Implementing a household integrated demand response (HIDR) can be an effective solution to save energy and reduce carbon emissions in household multi-energy system (HMES). However, the HMES are subject to uncertainties, and HIDR optimization needs to automatically adapt to the uncertainty and make decisions within 15 min. Therefore, we propose an HIDR optimization method combining rough knowledge and a dueling deep Q-network (DDQN). Firstly, we propose an HIDR optimization framework of rough knowledge and DDQN fusion, in which knowledge is utilized to generate good DDQN samples and serves as action guidance value input to DDQN. Secondly, we formulate the household equipment models and knowledge rules. Subsequently, we design the HIDR optimization algorithm that incorporates rough knowledge into DDQN, focusing on dynamic probability of knowledge sample participation in DDQN learning, knowledge serving as DDQN action adviser, knowledge diversification and dynamic adjustment of DDQN’s random exploration probability. Simulation results show that our method saves energy costs by 5.6% and 0.9% compared to rule-based methods and DDQN, respectively. Additionally, based on an i5-10300H CPU, our method’s convergence time is no more than 13 min even for scheduling interval of 15 min. The average convergence time of our method is 29% of DDQN."
       },
       "tags": [
         {
           "axis": "domain",
           "label": "AI 用于工程科学",
           "label_en": "AI for engineering sciences",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "论文研究“Rough knowledge enhanced dueling deep Q-network for household integrated demand response optimization”。题名给出直接依据“Rough knowledge enhanced dueling deep Q-network for household integrated demand response optimization”。"
         },
         {
           "axis": "method",
           "label": "强化学习",
           "label_en": "Reinforcement learning",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "论文研究“Rough knowledge enhanced dueling deep Q-network for household integrated demand response optimization”。题名给出直接依据“Rough knowledge enhanced dueling deep Q-network for household integrated demand response optimization”。"
         },
         {
           "axis": "task",
           "label": "能源系统优化",
           "label_en": "Energy system optimization",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "论文研究“Rough knowledge enhanced dueling deep Q-network for household integrated demand response optimization”。题名给出直接依据“Rough knowledge enhanced dueling deep Q-network for household integrated demand response optimization”。"
         }
       ]
@@ -93741,33 +93758,36 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "初筛漏筛补录。题名直接说明研究对象和所用方法：“A lightweight spatiotemporal graph dilated convolutional network for urban sensor state prediction”。",
+      "rationale": "原摘要提出时空图扩张卷积网络，在交通、PM2.5 和温度真实数据上评测传感状态预测的精度与计算效率，纳入。",
       "verified_metadata": {
         "doi": "10.1016/j.scs.2023.105105",
         "url": "https://doi.org/10.1016/j.scs.2023.105105",
         "title": "A lightweight spatiotemporal graph dilated convolutional network for urban sensor state prediction",
         "evidence_urls": [
           "https://doi.org/10.1016/j.scs.2023.105105",
-          "https://api.crossref.org/works/10.1016/j.scs.2023.105105"
+          "https://api.crossref.org/works/10.1016/j.scs.2023.105105",
+          "https://www.sciencedirect.com/science/article/abs/pii/S221067072300714X"
         ],
-        "article_type": "Article",
+        "article_type": "Research article",
         "field_sources": {
-          "article_type": "https://api.crossref.org/works/10.1016/j.scs.2023.105105"
-        }
+          "article_type": "https://www.sciencedirect.com/science/article/abs/pii/S221067072300714X",
+          "abstract": "https://www.sciencedirect.com/science/article/abs/pii/S221067072300714X"
+        },
+        "abstract": "Spatiotemporal prediction is one attractive research topic in urban computing, which is of great significance to urban planning and management. At present, there are many attempts to predict the spatiotemporal state of systems using various deep learning models. However, most existing models tend to improve prediction accuracy with larger parameter scale and time consumption, but ignoring ease of use in practice. To overcome this question, we propose a lightweight spatiotemporal graph dilated convolutional network called STGDN with satisfactory prediction accuracy and lower model complexity. More specifically, we propose a novel dilated convolution operator and integrate it into traditional causal convolutional networks and graph convolutional networks to greatly improve the efficiency of prediction. The proposed dilated convolution operator can significantly reduce the depth of the model, thereby reducing the parameter scale and improving the computational efficiency of the model. We conducted on multi experiments on three real-world spatiotemporal datasets (traffic dataset, PM2.5 dataset, and temperature dataset) to prove the effectiveness and advantage of our proposed STGDN. The experimental results show that the proposed STGDN model outperforms or achieves comparable prediction accuracy of the existing nine baselines with higher operational efficiency and fewer model parameters. Codes are available at anonymous private link on https://doi.org/10.6084/m9.figshare.23935683."
       },
       "tags": [
         {
           "axis": "method",
           "label": "卷积神经网络",
           "label_en": "Convolutional neural network",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“A lightweight spatiotemporal graph dilated convolutional network for urban sensor state prediction”。"
         },
         {
           "axis": "domain",
           "label": "AI 用于工程科学",
           "label_en": "AI for engineering sciences",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“A lightweight spatiotemporal graph dilated convolutional network for urban sensor state prediction”。"
         }
       ]
@@ -94033,7 +94053,7 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "题名直接说明研究对象和所用方法：“Navigating urban day-ahead energy management considering climate change toward using IoT enabled machine learning technique: Toward future sustainable urban”。",
+      "rationale": "原摘要将灰狼—乌鸦群智能优化用于家庭设备调度，在 IoT/ThingSpeak 系统中评测用能成本、峰均比和排放，纳入能源工程研究。",
       "verified_metadata": {
         "doi": "10.1016/j.scs.2023.105162",
         "url": "https://doi.org/10.1016/j.scs.2023.105162",
@@ -94048,29 +94068,39 @@
         ],
         "field_sources": {
           "keywords": "https://www.sciencedirect.com/science/article/pii/S2210670723007710",
-          "article_type": "https://api.crossref.org/works/10.1016/j.scs.2023.105162"
+          "article_type": "https://www.sciencedirect.com/science/article/abs/pii/S2210670723007710",
+          "abstract": "https://www.sciencedirect.com/science/article/abs/pii/S2210670723007710"
         },
         "evidence_urls": [
           "https://doi.org/10.1016/j.scs.2023.105162",
           "https://www.sciencedirect.com/science/article/pii/S2210670723007710",
-          "https://api.crossref.org/works/10.1016/j.scs.2023.105162"
+          "https://api.crossref.org/works/10.1016/j.scs.2023.105162",
+          "https://www.sciencedirect.com/science/article/abs/pii/S2210670723007710"
         ],
-        "article_type": "Article"
+        "article_type": "Research article",
+        "abstract": "The rapid evolution of technology and urban population growth has led to a significant increase in energy consumption, particularly in electricity production. However, the ability to meet energy demands, especially during peak periods, is constrained by various factors including environmental concerns, technological limitations, and economic constraints. Effective energy management strategies are crucial to mitigate these challenges and ensure a sustainable energy future. One promising approach is the implementation of demand response programs. In this context, we explore the potential of Home Energy Management Systems (HEMS) leveraging modern Internet of Things (IoT) technology. HEMS systems are at the forefront of research and development in the field of smart grids (SGs), offering capabilities in demand-side management and power availability control. These systems achieve efficient energy usage by optimizing the operation of home appliances (HAs). To further enhance the performance of HEMS, this study introduces a novel metaheuristic known as the Grey Wolf and Crow Search Optimization Algorithm (GWCSOA). This algorithm is employed to determine the optimal scheduling of HAs within the HEMS framework. Additionally, we utilize MATLAB and ThingSpeak modules to implement and test the HEMS design. The proposed HEMS, integrated with GWCSOA, demonstrates remarkable capabilities in reducing daily power costs, minimizing the peak-to-average ratio (PAR), and enhancing consumer satisfaction. The findings of this study indicate that the devised system holds the promise of substantially diminishing both power expenses and microgrid emissions. Through the optimization of Home Energy Management Systems (HEMS) operations, this methodology plays a vital role in realizing a sustainable urban energy ecosystem. This aligns seamlessly with the overarching objectives of combating climate change and securing the enduring sustainability of our cities. The proposed HEMS, integrated with GWCSOA, demonstrates remarkable capabilities in reducing daily power costs by an average of 25.98 %, minimizing the peak-to-average ratio (PAR) by 30 %, and enhancing consumer satisfaction. The outcomes of this research reveal that the developed system has the potential to significantly reduce both power costs and microgrid emissions. By optimizing HEMS operations, this approach contributes to achieving a sustainable urban energy ecosystem, aligning with the goals of addressing climate change and ensuring the future sustainability of our cities."
       },
       "tags": [
         {
           "axis": "task",
           "label": "能源系统优化",
           "label_en": "Energy system optimization",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“Navigating urban day-ahead energy management considering climate change toward using IoT enabled machine learning technique: Toward future sustainable urban”。"
         },
         {
           "axis": "domain",
           "label": "AI 用于工程科学",
           "label_en": "AI for engineering sciences",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“Navigating urban day-ahead energy management considering climate change toward using IoT enabled machine learning technique: Toward future sustainable urban”。"
+        },
+        {
+          "axis": "method",
+          "label": "群智能优化",
+          "label_en": "Swarm intelligence optimization",
+          "evidence_location": "出版方原摘要",
+          "rationale": "灰狼—乌鸦群智能优化算法用于家庭设备调度。"
         }
       ]
     }
@@ -94204,25 +94234,28 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "初筛漏筛补录。题名直接说明研究对象和所用方法：“UAV-based automated 3D modeling framework using deep learning for building energy modeling”。",
+      "rationale": "原摘要通过 UAV/GIS 与 CNN 自动提取建筑几何数据，构建 EnergyPlus 三维建筑能源模型并验证尺寸和能耗误差，纳入。",
       "verified_metadata": {
         "doi": "10.1016/j.scs.2023.105169",
         "url": "https://doi.org/10.1016/j.scs.2023.105169",
         "evidence_urls": [
           "https://doi.org/10.1016/j.scs.2023.105169",
-          "https://api.crossref.org/works/10.1016/j.scs.2023.105169"
+          "https://api.crossref.org/works/10.1016/j.scs.2023.105169",
+          "https://www.sciencedirect.com/science/article/abs/pii/S2210670723007783"
         ],
-        "article_type": "Article",
+        "article_type": "Research article",
         "field_sources": {
-          "article_type": "https://api.crossref.org/works/10.1016/j.scs.2023.105169"
-        }
+          "article_type": "https://www.sciencedirect.com/science/article/abs/pii/S2210670723007783",
+          "abstract": "https://www.sciencedirect.com/science/article/abs/pii/S2210670723007783"
+        },
+        "abstract": "Many approaches to the Urban Building Energy Model (UBEM) have been developed to analyze urban-scale energy demand patterns. The main goal of UBEM is to minimize manual work and improve modeling accuracy when building 3D modeling procedures that deal with vast amounts of data. To do so, it is important to build an automated process and increase the modeling efficiency throughout the process. This study proposes a new framework for automatically generating 3D models for building energy modeling. This framework collects geographic coordinate system (GCS) data by applying algorithms based on a convolutional neural network (CNN), Haversine formula, unmanned aerial vehicle (UAV), and geographic information system (GIS) information. The collected GCS data were used to generate a 3D model using EnergyPlus, resulting in a 3D model capable of a Level of Detail 3. Subsequently, we compared and verified the size and energy performance of the actual building with those of the generated model. The model size errors generated without drawing information are as follows: buildings, 3.69%, windows1 16.75%, and windows2 19.43%. The error range evidenced through the energy performance evaluation indicator showed that the MBE values for the cooling and heating energies were 5.54% and 5.77%, respectively."
       },
       "tags": [
         {
           "axis": "method",
           "label": "深度学习",
           "label_en": "Deep learning",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“UAV-based automated 3D modeling framework using deep learning for building energy modeling”。"
         }
       ]
@@ -95195,40 +95228,43 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "题名直接说明研究对象和所用方法：“A novel building flexibility potential assessment method based on hybrid CNN-GRU-CALDA framework considering consumer psychology”。",
+      "rationale": "原摘要以 CNN-GRU-CALDA 多源迁移学习预测建筑能耗，并结合 HVAC 响应模型评估建筑柔性潜力，纳入。",
       "verified_metadata": {
         "doi": "10.1016/j.scs.2024.105298",
         "url": "https://doi.org/10.1016/j.scs.2024.105298",
         "title": "A novel building flexibility potential assessment method based on hybrid CNN-GRU-CALDA framework considering consumer psychology",
         "evidence_urls": [
           "https://doi.org/10.1016/j.scs.2024.105298",
-          "https://api.crossref.org/works/10.1016/j.scs.2024.105298"
+          "https://api.crossref.org/works/10.1016/j.scs.2024.105298",
+          "https://www.sciencedirect.com/science/article/abs/pii/S2210670724001264"
         ],
-        "article_type": "Article",
+        "article_type": "Research article",
         "field_sources": {
-          "article_type": "https://api.crossref.org/works/10.1016/j.scs.2024.105298"
-        }
+          "article_type": "https://www.sciencedirect.com/science/article/abs/pii/S2210670724001264",
+          "abstract": "https://www.sciencedirect.com/science/article/abs/pii/S2210670724001264"
+        },
+        "abstract": "Buildings are rapidly getting on top of the agendas of various initiatives aimed at enhancing the operational flexibility and resource utilization. Accurately and comprehensively assessing the flexibility potential of buildings is pivotal for unlocking and efficiently harnessing demand-side flexibility, thereby bolstering the overall development of the energy system. In this study, a novel transfer learning strategy based building flexibility potential assessment methodology is proposed. Firstly, the consumption profiles of buildings from heterogeneous industries (e.g., residential, commercial, and industrial) are physically simulated through building energy simulation tool. To overcome the performance degradation occurred in single-source transfer learning, a hybrid convolutional neural network-gated recurrent unit (CNN-GRU) framework integrated contrastive adversarial learning for multi-source time-series domain adaptation (CALDA), termed as CNN-GRU-CALDA is proposed. In this way, the source and target feature representations can be better aligned and thereby improving the prediction performance of target building energy consumption by leveraging multi-source building data (domain). Furthermore, an HVAC load response model based on consumer psychology is introduced in the assessment process to realize the comprehensive consideration of consumers with different preferences. Finally, experiments are conducted to validate the effectiveness and applicability of the proposed methodology. Results demonstrate that the proposed CNN-GRU-CALDA model performs better than other models with respect to extracting domain-invariant features and prediction accuracy. Besides, considering consumer psychology is more reliable and suitable to optimally exploit the building energy flexibility in practice."
       },
       "tags": [
         {
           "axis": "method",
           "label": "卷积神经网络",
           "label_en": "Convolutional neural network",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“A novel building flexibility potential assessment method based on hybrid CNN-GRU-CALDA framework considering consumer psychology”。"
         },
         {
           "axis": "method",
           "label": "门控循环单元",
           "label_en": "Gated recurrent unit",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“A novel building flexibility potential assessment method based on hybrid CNN-GRU-CALDA framework considering consumer psychology”。"
         },
         {
           "axis": "domain",
           "label": "AI 用于工程科学",
           "label_en": "AI for engineering sciences",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“A novel building flexibility potential assessment method based on hybrid CNN-GRU-CALDA framework considering consumer psychology”。"
         }
       ]
@@ -96584,26 +96620,29 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "题名直接说明研究对象和所用方法：“Efficiency improvement in energy consumption: A novel deep learning based model for leading a greener Economic recovery”。",
+      "rationale": "原摘要使用 Dueling DQN 及模糊粒子群参数优化预测城市能源消耗，研究节能管理，纳入。",
       "verified_metadata": {
         "doi": "10.1016/j.scs.2024.105427",
         "url": "https://doi.org/10.1016/j.scs.2024.105427",
         "title": "Efficiency improvement in energy consumption: A novel deep learning based model for leading a greener Economic recovery",
         "evidence_urls": [
           "https://doi.org/10.1016/j.scs.2024.105427",
-          "https://api.crossref.org/works/10.1016/j.scs.2024.105427"
+          "https://api.crossref.org/works/10.1016/j.scs.2024.105427",
+          "https://www.sciencedirect.com/science/article/abs/pii/S2210670724002555"
         ],
-        "article_type": "Article",
+        "article_type": "Research article",
         "field_sources": {
-          "article_type": "https://api.crossref.org/works/10.1016/j.scs.2024.105427"
-        }
+          "article_type": "https://www.sciencedirect.com/science/article/abs/pii/S2210670724002555",
+          "abstract": "https://www.sciencedirect.com/science/article/abs/pii/S2210670724002555"
+        },
+        "abstract": "This research focuses on elevating energy consumption efficiency through an innovative predictive model designed for urban industrial and residential sectors. Leveraging the Deep Q Network (DQN) framework, the study introduces the Dueling DQN architecture, a breakthrough approach that separates state value and advantage function estimations. This segregation significantly enhances learning efficiency, providing a more precise representation of the state's value and, consequently, optimizing energy consumption predictions. In tandem with architectural advancements, the research proposes a unique fuzzy Particle Swarm Optimization (PSO) approach to fine-tune DQN setting parameters during training. This integration of fuzzy logic into PSO ensures adaptability and robustness, addressing challenges associated with diverse environmental and operational conditions. For the goal of efficiency improvement in energy consumption, this study not only introduces a state-of-the-art solution for energy consumption prediction and optimization but also aligns with the broader goal of fostering a greener economic recovery. The model's promising results signify a significant step toward more sustainable and resource-efficient urban development, contributing to a resilient and environmentally conscious economic future. This research lays the foundation for a transformative approach to energy consumption, vital for steering economic recovery toward a greener and more sustainable trajectory. The simulation results advocate the high performance of the proposed deep learning prediction model."
       },
       "tags": [
         {
           "axis": "method",
           "label": "深度学习",
           "label_en": "Deep learning",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“Efficiency improvement in energy consumption: A novel deep learning based model for leading a greener Economic recovery”。"
         }
       ]
@@ -97179,33 +97218,36 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "题名直接说明研究对象和所用方法：“Urban flood susceptibility mapping using remote sensing, social sensing and an ensemble machine learning model”。",
+      "rationale": "原摘要结合遥感、社会感知和 XGBoost/SVC/MLP/深度学习模型，以随机森林集成生成城市洪水易发区图，纳入地球环境研究。",
       "verified_metadata": {
         "doi": "10.1016/j.scs.2024.105508",
         "url": "https://doi.org/10.1016/j.scs.2024.105508",
         "evidence_urls": [
           "https://doi.org/10.1016/j.scs.2024.105508",
-          "https://api.crossref.org/works/10.1016/j.scs.2024.105508"
+          "https://api.crossref.org/works/10.1016/j.scs.2024.105508",
+          "https://www.sciencedirect.com/science/article/abs/pii/S2210670724003342"
         ],
-        "article_type": "Article",
+        "article_type": "Research article",
         "field_sources": {
-          "article_type": "https://api.crossref.org/works/10.1016/j.scs.2024.105508"
-        }
+          "article_type": "https://www.sciencedirect.com/science/article/abs/pii/S2210670724003342",
+          "abstract": "https://www.sciencedirect.com/science/article/abs/pii/S2210670724003342"
+        },
+        "abstract": "Flood susceptibility mapping is crucial for urban disaster management. However, the heterogeneity of urban land use and the complexity of terrain pose challenges to the accuracy and generalizability of flood models. In this paper, we propose a framework named the EMF model for urban flood mapping. Specifically, the social sensing and remote sensing were used for flooding information collection. The XGBoost, Support Vector Classifier (SVC), Multilayer Perceptron (MLP), and Multimodal Deep Learning (MDL), were used as the predictive models, and their results were ensembled using a Random Forest model to produce the final outcome. Results show that the EMF model outperforms the standalone models, with an accuracy of 0.942 on the training set and 0.940 on the testing set. The accuracy of the five models is ranked as EMF > MDL > XGBoost > SVC > MLP. The flood map indicates that flooding has a greater impact on the outskirts and suburbs of the city compared to its central urban areas. Farmland is the most affected land type, making up 54.8 % of the flooded area. Overall, the proposed framework enables rapid and accurate identification of flood-prone areas, providing technical support for managers in formulating effective flood prevention strategies."
       },
       "tags": [
         {
           "axis": "method",
           "label": "机器学习",
           "label_en": "Machine learning",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“Urban flood susceptibility mapping using remote sensing, social sensing and an ensemble machine learning model”。"
         },
         {
           "axis": "domain",
-          "label": "AI 用于社会科学",
-          "label_en": "AI for social sciences",
-          "evidence_location": "题名",
-          "rationale": "该处对研究对象或方法的表述为“Urban flood susceptibility mapping using remote sensing, social sensing and an ensemble machine learning model”。"
+          "label": "AI 用于地球宇宙科学",
+          "label_en": "AI for Earth and space sciences",
+          "evidence_location": "出版方原摘要",
+          "rationale": "原摘要结合遥感、社会感知和 XGBoost/SVC/MLP/深度学习模型，以随机森林集成生成城市洪水易发区图，纳入地球环境研究。"
         }
       ]
     }
@@ -98101,7 +98143,7 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "题名直接说明研究对象和所用方法：“A two-stage CFD-GNN approach for efficient steady-state prediction of urban airflow and airborne contaminant dispersion”。",
+      "rationale": "原摘要将 CFD 初始流场输入图神经网络，预测城市稳态气流、阵风和污染物扩散，并与 LES 高保真结果比较，纳入。",
       "verified_metadata": {
         "doi": "10.1016/j.scs.2024.105607",
         "url": "https://doi.org/10.1016/j.scs.2024.105607",
@@ -98114,21 +98156,24 @@
         ],
         "field_sources": {
           "keywords": "https://www.sciencedirect.com/science/article/pii/S2210670724004323",
-          "article_type": "https://api.crossref.org/works/10.1016/j.scs.2024.105607"
+          "article_type": "https://www.sciencedirect.com/science/article/abs/pii/S2210670724004323",
+          "abstract": "https://www.sciencedirect.com/science/article/abs/pii/S2210670724004323"
         },
         "evidence_urls": [
           "https://doi.org/10.1016/j.scs.2024.105607",
           "https://www.sciencedirect.com/science/article/pii/S2210670724004323",
-          "https://api.crossref.org/works/10.1016/j.scs.2024.105607"
+          "https://api.crossref.org/works/10.1016/j.scs.2024.105607",
+          "https://www.sciencedirect.com/science/article/abs/pii/S2210670724004323"
         ],
-        "article_type": "Article"
+        "article_type": "Research article",
+        "abstract": "Urban design requires accurate prediction of wind, gusts, and contaminant dispersion to create sustainable cities. While computational fluid dynamics (CFD) models like large-eddy simulation (LES) provide accurate predictions, they are computationally expensive. Steady Reynolds-averaged Navier-Stokes (SRANS) is fast but inaccurate due to inherent limitations. This study proposes a two-stage CFD-graph neural network (GNN) framework for efficient steady-state prediction. A CFD solver provides the initial state, and then a GNN directly corrects the CFD outputs towards a high-fidelity target in a single inference step, bypassing SRANS flaws. LES results for parametrically generated urban cases provided training data. The proposed framework is thus distinguished from previous GNN applications, which were unsteady RANS surrogates that are still constrained by RANS inaccuracy. SRANS with the k-ε model provided an informative initial state for GNN (termed KE-GNN). Less detailed initializations increased prediction difficulty. Uneven sampling of building density and heights introduced dataset bias, improving specialization but reducing generalizability. For an actual urban case, KE-GNN employing a coarse mesh achieved considerable agreement with the fine LES result and was thousands of times faster. On the same coarse mesh, KE-GNN was seven times faster than a tightly converged SRANS and 280 times faster than an under-resolved LES."
       },
       "tags": [
         {
           "axis": "method",
           "label": "图神经网络",
           "label_en": "Graph neural network",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“A two-stage CFD-GNN approach for efficient steady-state prediction of urban airflow and airborne contaminant dispersion”。"
         }
       ]
@@ -99657,26 +99702,29 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "题名直接说明研究对象和所用方法：“Analysing urban local cold air dynamics and climate functional zones using interpretable machine learning: A case study of Tianhe district, Guangzhou”。",
+      "rationale": "原摘要以 KLAM_21 模拟冷空气流动，以随机森林和 SHAP 解释城市形态与局地冷空气动力学关系，纳入。",
       "verified_metadata": {
         "doi": "10.1016/j.scs.2024.105731",
         "url": "https://doi.org/10.1016/j.scs.2024.105731",
         "title": "Analysing urban local cold air dynamics and climate functional zones using interpretable machine learning: A case study of Tianhe district, Guangzhou",
         "evidence_urls": [
           "https://doi.org/10.1016/j.scs.2024.105731",
-          "https://api.crossref.org/works/10.1016/j.scs.2024.105731"
+          "https://api.crossref.org/works/10.1016/j.scs.2024.105731",
+          "https://www.sciencedirect.com/science/article/abs/pii/S2210670724005560"
         ],
-        "article_type": "Article",
+        "article_type": "Research article",
         "field_sources": {
-          "article_type": "https://api.crossref.org/works/10.1016/j.scs.2024.105731"
-        }
+          "article_type": "https://www.sciencedirect.com/science/article/abs/pii/S2210670724005560",
+          "abstract": "https://www.sciencedirect.com/science/article/abs/pii/S2210670724005560"
+        },
+        "abstract": "Deterioration of the thermal environment in built-up areas poses a serious threat to human health, comfort, and urban infrastructure, while also increasing energy consumption and carbon emissions. This underscores the need to optimize wind environments as a key mitigation strategy for urban areas. This paper analyzed the effects of human activities and natural factors on local cold air in Tianhe District, Guangzhou, from the perspective of local ventilation systems. The KLAM_21 (Kaltluft Abfluss Modell) was used to simulate local cold air flow and delineate climate functional zones. A random forest model, interpreted with the SHapley Additive exPlanation (SHAP) method, assessed the impact of various factors on local cold air dynamics. The study found that: (1) The northern mountainous area is a crucial cold source; (2) Some open spaces in the built environment fail to function as effective local cold air corridors; (3) High-intensity urban development hinders local cold air transmission; (4) Water bodies are more effective than green spaces in collecting and transmitting local cold air. This study provided technical methods for identifying climate functional zones and understanding local cold air dynamics, as well as theoretical support for the construction of local ventilation systems in urban areas."
       },
       "tags": [
         {
           "axis": "domain",
           "label": "AI 用于地球宇宙科学",
           "label_en": "AI for Earth and space sciences",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“Analysing urban local cold air dynamics and climate functional zones using interpretable machine learning: A case study of Tianhe district, Guangzhou”。"
         }
       ]
@@ -100172,33 +100220,36 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "题名直接说明研究对象和所用方法：“Traffic assignment optimization to improve urban air quality with the unified finite-volume physics-informed neural network”。",
+      "rationale": "原摘要以统一有限体积物理信息神经网络求解污染物浓度并作为可微代理，优化香港九龙交通量、CO 浓度和出行时间，纳入。",
       "verified_metadata": {
         "doi": "10.1016/j.scs.2024.105750",
         "url": "https://doi.org/10.1016/j.scs.2024.105750",
         "title": "Traffic assignment optimization to improve urban air quality with the unified finite-volume physics-informed neural network",
         "evidence_urls": [
           "https://doi.org/10.1016/j.scs.2024.105750",
-          "https://api.crossref.org/works/10.1016/j.scs.2024.105750"
+          "https://api.crossref.org/works/10.1016/j.scs.2024.105750",
+          "https://www.sciencedirect.com/science/article/abs/pii/S2210670724005754"
         ],
-        "article_type": "Article",
+        "article_type": "Research article",
         "field_sources": {
-          "article_type": "https://api.crossref.org/works/10.1016/j.scs.2024.105750"
-        }
+          "article_type": "https://www.sciencedirect.com/science/article/abs/pii/S2210670724005754",
+          "abstract": "https://www.sciencedirect.com/science/article/abs/pii/S2210670724005754"
+        },
+        "abstract": "Emissions by road transportation constitute the major contributor of air pollutants to threat the public health, especially on mega cities with high-rise buildings and growing population. A practicable and economical remedy is assigning the traffic volume judiciously, termed traffic assignment optimization (TAO). Incorporating the computational fluid dynamics (CFD), this method provides precisely optimized traffic volumes under versatile meteorological conditions. However, the high-dimensional degree of freedoms (DoF) involved in CFD hampers its further application toward the large-scale problem where a massive urban area is considered. With the more complicated urban traffic network, the larger decision variable dimension also impedes the time-efficient acquisition of the optimization results. To alleviate this curse-of-dimensionality, the current work proposes an optimization framework with the surrogate model based on the unified finite-volume physics-informed neural networks (UFV-PINN). The UFV-PINN plays the dual role as the partial differential equation (PDE) solver and the surrogate model for pollutant concentration prediction. It reduces the DoF within the PDE solution process and enables the gradient-based optimization. The current work optimizes the average CO concentration and accumulative travel time in Kowloon peninsula of Hong Kong, using the multiple-gradient descent algorithm (MGDA). This optimization framework is tested with various working conditions. Results indicate that the proposed method attain high accuracy solutions, comparable to the heuristic algorithms. This study is the first attempt to incorporate UFV-PINN into the TAO with air quality consideration. Endowed with the differentiability by UFV-PINN, the framework will facilitate the TAO to provide precise suggestions toward large-scale problems."
       },
       "tags": [
         {
           "axis": "method",
           "label": "物理信息神经网络",
           "label_en": "Physics-informed neural network",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“Traffic assignment optimization to improve urban air quality with the unified finite-volume physics-informed neural network”。"
         },
         {
           "axis": "domain",
           "label": "AI 用于工程科学",
           "label_en": "AI for engineering sciences",
-          "evidence_location": "题名",
+          "evidence_location": "出版方原摘要及题名",
           "rationale": "该处对研究对象或方法的表述为“Traffic assignment optimization to improve urban air quality with the unified finite-volume physics-informed neural network”。"
         }
       ]
@@ -101935,27 +101986,30 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "题名直接说明研究对象和所用方法：“Spatio-temporal modeling of asthma-prone areas: Exploring the influence of urban climate factors with explainable artificial intelligence (XAI)”。",
+      "rationale": "原摘要对 872 名哮喘患者及环境因素进行 XGBoost 时空建模，使用 SHAP 解释气象和污染物对疾病易发区域的影响，纳入环境健康研究。",
       "verified_metadata": {
         "doi": "10.1016/j.scs.2024.105889",
         "url": "https://doi.org/10.1016/j.scs.2024.105889",
         "title": "Spatio-temporal modeling of asthma-prone areas: Exploring the influence of urban climate factors with explainable artificial intelligence (XAI)",
         "evidence_urls": [
           "https://doi.org/10.1016/j.scs.2024.105889",
-          "https://api.crossref.org/works/10.1016/j.scs.2024.105889"
+          "https://api.crossref.org/works/10.1016/j.scs.2024.105889",
+          "https://www.sciencedirect.com/science/article/abs/pii/S2210670724007133"
         ],
-        "article_type": "Article",
+        "article_type": "Research article",
         "field_sources": {
-          "article_type": "https://api.crossref.org/works/10.1016/j.scs.2024.105889"
-        }
+          "article_type": "https://www.sciencedirect.com/science/article/abs/pii/S2210670724007133",
+          "abstract": "https://www.sciencedirect.com/science/article/abs/pii/S2210670724007133"
+        },
+        "abstract": "Urbanization's impact on climate is increasingly recognized as a significant public health challenge, particularly for respiratory conditions like asthma. Despite progress in understanding asthma, a critical gap remains regarding the interaction between urban environmental factors and asthma-prone areas. This study addresses this gap by applying innovative spatio-temporal modeling techniques with explainable artificial intelligence (XAI). Using data from 872 asthma patients in Tehran, Iran, and 19 factors affecting asthma exacerbations, including climate and air pollution, spatio-temporal modeling was conducted using XGBoost (eXtreme Gradient Boosting) algorithm optimization by the Bat algorithm (BA). Evaluation of asthma-prone area maps using receiver operating characteristic (ROC) curves revealed accuracies of 97.3 % in spring, 97.5 % in summer, 97.8 % in autumn, and 98.4 % in winter. Interpretability analysis of the XGBoost model utilizing the SHAP (Shapley Additive exPlanations) method highlighted rainfall in spring and autumn and temperature in summer and winter as having the most significant impacts on asthma. Particulate matter (PM2.5) in spring, carbon monoxide (CO) in summer, ozone (O3) in autumn, and PM10 in winter exhibited the most substantial effects among air pollution factors. This research enhances understanding of asthma dynamics in urban environments, informing targeted interventions for urban planning strategies to mitigate adverse health consequences of urbanization."
       },
       "tags": [
         {
           "axis": "domain",
-          "label": "AI 用于工程科学",
-          "label_en": "AI for engineering sciences",
-          "evidence_location": "题名",
-          "rationale": "该处对研究对象或方法的表述为“Spatio-temporal modeling of asthma-prone areas: Exploring the influence of urban climate factors with explainable artificial intelligence (XAI)”。"
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "出版方原摘要",
+          "rationale": "原摘要对 872 名哮喘患者及环境因素进行 XGBoost 时空建模，使用 SHAP 解释气象和污染物对疾病易发区域的影响，纳入环境健康研究。"
         }
       ]
     }
@@ -104335,7 +104389,7 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "论文研究“Machine learning potential assisted exploration of complex defect potential energy surfaces”。输入摘要，第3句给出方法或任务依据“…demonstrate how density functional theory and machine learning interatomic potential can be synergistically combined into a powerful tool that enables exhaustive exploration of…”。",
+      "rationale": "已读正式全文。Brief Communication 联合 DFT 和机器学习原子间势探索 ThO2 点缺陷团簇构型与基态，并分析缺陷多态性和物理来源。按原创材料科学研究保留。",
       "verified_metadata": {
         "doi": "10.1038/s41524-024-01207-8",
         "url": "https://www.nature.com/articles/s41524-024-01207-8",
@@ -104343,11 +104397,13 @@
         "pdf_url": "https://www.nature.com/articles/s41524-024-01207-8.pdf",
         "evidence_urls": [
           "https://www.nature.com/articles/s41524-024-01207-8",
-          "https://www.nature.com/npjcompumats/articles?year=2024"
+          "https://www.nature.com/npjcompumats/articles?year=2024",
+          "https://www.nature.com/articles/s41524-024-01207-8.pdf"
         ],
         "article_type": "Brief Communication",
         "field_sources": {
-          "article_type": "https://www.nature.com/npjcompumats/articles?year=2024"
+          "article_type": "https://www.nature.com/npjcompumats/articles?year=2024",
+          "review": "https://www.nature.com/articles/s41524-024-01207-8.pdf"
         }
       },
       "tags": [
@@ -104355,14 +104411,14 @@
           "axis": "method",
           "label": "机器学习原子势",
           "label_en": "Machine-learned interatomic potential",
-          "evidence_location": "输入摘要，第3句",
+          "evidence_location": "正式全文 Abstract 与 Results",
           "rationale": "该处对研究对象或方法的表述为“…demonstrate how density functional theory and machine learning interatomic potential can be synergistically combined into a powerful tool that enables exhaustive exploration of…”。"
         },
         {
           "axis": "domain",
           "label": "AI 用于物质科学",
           "label_en": "AI for materials and chemical sciences",
-          "evidence_location": "输入摘要，第1句",
+          "evidence_location": "正式全文 Abstract 与 Results",
           "rationale": "该处对研究对象或方法的表述为“Atomic-scale defects generated in materials under both equilibrium and irradiation conditions can significantly impact their physical and mechanical properties.”。"
         }
       ]
@@ -118654,7 +118710,7 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "题名直接说明研究对象和所用方法：“Large language models design sequence-defined macromolecules via evolutionary optimization”。",
+      "rationale": "已读正式全文。Brief Communication 使用预训练 Claude 3.5 进行序列定义高分子形貌的演化逆设计，并与主动学习和演化算法比较。论文明确使用预训练模型直接优化，按原创软物质设计研究保留。",
       "verified_metadata": {
         "doi": "10.1038/s41524-024-01449-6",
         "url": "https://www.nature.com/articles/s41524-024-01449-6",
@@ -118662,11 +118718,13 @@
         "pdf_url": "https://www.nature.com/articles/s41524-024-01449-6.pdf",
         "evidence_urls": [
           "https://www.nature.com/articles/s41524-024-01449-6",
-          "https://www.nature.com/npjcompumats/articles?year=2024"
+          "https://www.nature.com/npjcompumats/articles?year=2024",
+          "https://www.nature.com/articles/s41524-024-01449-6.pdf"
         ],
         "article_type": "Brief Communication",
         "field_sources": {
-          "article_type": "https://www.nature.com/npjcompumats/articles?year=2024"
+          "article_type": "https://www.nature.com/npjcompumats/articles?year=2024",
+          "review": "https://www.nature.com/articles/s41524-024-01449-6.pdf"
         }
       },
       "tags": [
@@ -118674,21 +118732,21 @@
           "axis": "method",
           "label": "演化优化",
           "label_en": "Evolutionary optimization",
-          "evidence_location": "题名",
+          "evidence_location": "正式全文第 1 页及图 1",
           "rationale": "该处对研究对象或方法的表述为“Large language models design sequence-defined macromolecules via evolutionary optimization”。"
         },
         {
           "axis": "domain",
           "label": "AI 用于物质科学",
           "label_en": "AI for materials and chemical sciences",
-          "evidence_location": "输入摘要，第1句",
+          "evidence_location": "正式全文第 1 页及图 1",
           "rationale": "该处对研究对象或方法的表述为“We demonstrate the ability of a large language model to perform evolutionary optimization for materials discovery.”。"
         },
         {
           "axis": "task",
           "label": "材料设计",
           "label_en": "Materials design",
-          "evidence_location": "输入摘要，第1句",
+          "evidence_location": "正式全文第 1 页及图 1",
           "rationale": "该处对研究对象或方法的表述为“We demonstrate the ability of a large language model to perform evolutionary optimization for materials discovery.”。"
         }
       ]
@@ -137678,17 +137736,19 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "include",
-      "rationale": "论文研究“Expanding Horizons: U-Net Enhancements for Semantic Segmentation, Forecasting, and Super-Resolution in Ocean Remote Sensing”。输入摘要，第2句给出方法或任务依据“We propose enhancements like attention mechanisms, knowledge-data integration, and diffusion models to improve small target detection, ocean phenomena forecasting, and image super-resolution, expanding…”。",
+      "rationale": "已核对出版社可检索正文。Perspective 围绕海洋遥感的小目标分割、物理知识融合预测及扩散超分辨率三类任务，分析 U-Net 结构与具体改进方向。按具有具体方法分析的短篇学术综述保留。",
       "verified_metadata": {
         "doi": "10.34133/remotesensing.0196",
         "url": "https://doi.org/10.34133/remotesensing.0196",
         "evidence_urls": [
           "https://doi.org/10.34133/remotesensing.0196",
-          "https://spj.science.org/toc/remotesensing/4"
+          "https://spj.science.org/toc/remotesensing/4",
+          "https://spj.science.org/doi/10.34133/remotesensing.0196"
         ],
         "article_type": "Perspective",
         "field_sources": {
-          "article_type": "https://spj.science.org/toc/remotesensing/4"
+          "article_type": "https://spj.science.org/toc/remotesensing/4",
+          "review": "https://spj.science.org/doi/10.34133/remotesensing.0196"
         }
       },
       "tags": [
@@ -137696,28 +137756,28 @@
           "axis": "task",
           "label": "遥感影像分析",
           "label_en": "Remote sensing image analysis",
-          "evidence_location": "题名",
+          "evidence_location": "出版社正文 Introduction、图 1 与 Conclusion",
           "rationale": "该处对研究对象或方法的表述为“Expanding Horizons: U-Net Enhancements for Semantic Segmentation, Forecasting, and Super-Resolution in Ocean Remote Sensing”。"
         },
         {
           "axis": "task",
           "label": "语义分割",
           "label_en": "Semantic segmentation",
-          "evidence_location": "题名",
+          "evidence_location": "出版社正文 Introduction、图 1 与 Conclusion",
           "rationale": "该处对研究对象或方法的表述为“Expanding Horizons: U-Net Enhancements for Semantic Segmentation, Forecasting, and Super-Resolution in Ocean Remote Sensing”。"
         },
         {
           "axis": "task",
           "label": "图像超分辨率",
           "label_en": "Image super-resolution",
-          "evidence_location": "输入摘要，第2句",
+          "evidence_location": "出版社正文 Introduction、图 1 与 Conclusion",
           "rationale": "该处对研究对象或方法的表述为“…integration, and diffusion models to improve small target detection, ocean phenomena forecasting, and image super-resolution, expanding U-Net’s application and support in oceanographic research.”。"
         },
         {
           "axis": "domain",
           "label": "AI 用于地球宇宙科学",
           "label_en": "AI for Earth and space sciences",
-          "evidence_location": "题名",
+          "evidence_location": "出版社正文 Introduction、图 1 与 Conclusion",
           "rationale": "该处对研究对象或方法的表述为“Expanding Horizons: U-Net Enhancements for Semantic Segmentation, Forecasting, and Super-Resolution in Ocean Remote Sensing”。"
         }
       ]
@@ -181266,8 +181326,8 @@
       "batch_id": "2024-dinglijun",
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "exclude",
-      "rationale": "综述以通用时间序列大语言模型方法为主，科学领域在摘要中作为潜在应用举例。",
+      "decision": "include",
+      "rationale": "正式全文 §3 的量化和对齐方法具体分析 Auto-TTE 的心电信号生成、ETP 的 ECG—临床报告对比学习，以及 ICU 生理测量与临床文本对齐。综述具有医学时间序列研究的实质 AI 方法内容，按学术综述纳入。",
       "verified_metadata": {
         "title": "Large Language Models for Time Series: A Survey",
         "authors": [
@@ -181286,15 +181346,32 @@
         ],
         "field_sources": {
           "keywords": "https://ijcai.org/proceedings/2024/921",
-          "article_type": "https://ijcai.org/proceedings/2024/#paper921"
+          "article_type": "https://ijcai.org/proceedings/2024/#paper921",
+          "review": "https://ijcai.org/proceedings/2024/0921.pdf"
         },
         "evidence_urls": [
           "https://ijcai.org/proceedings/2024/921",
-          "https://ijcai.org/proceedings/2024/#paper921"
+          "https://ijcai.org/proceedings/2024/#paper921",
+          "https://ijcai.org/proceedings/2024/0921.pdf"
         ],
         "article_type": "Survey Track"
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "全文 §3，ECG 与 ICU 方法段",
+          "rationale": "实质综述医学时间序列与临床报告的建模。"
+        },
+        {
+          "axis": "method",
+          "label": "大语言模型",
+          "label_en": "Large language model",
+          "evidence_location": "全文 §3",
+          "rationale": "分析语言模型与时间序列的量化、对齐及多模态接口。"
+        }
+      ]
     }
   },
   {
@@ -182516,7 +182593,7 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "exclude",
-      "rationale": "本文分析多通道囚徒困境中规则策略的收益与演化优势，未用 AI 研究真实人群或经验证的社会过程。",
+      "rationale": "正式全文 §2–5 分析固定的 MCSUC 规则策略、收益性质与演化稳定性，实验为规则策略种群的博弈模拟。按通用博弈策略理论口径维持排除。",
       "verified_metadata": {
         "title": "A Successful Strategy for Multichannel Iterated Prisoner’s Dilemma",
         "authors": [
@@ -182537,11 +182614,13 @@
         ],
         "field_sources": {
           "keywords": "https://ijcai.org/proceedings/2024/31",
-          "article_type": "https://ijcai.org/proceedings/2024/#paper31"
+          "article_type": "https://ijcai.org/proceedings/2024/#paper31",
+          "review": "https://ijcai.org/proceedings/2024/0031.pdf"
         },
         "evidence_urls": [
           "https://ijcai.org/proceedings/2024/31",
-          "https://ijcai.org/proceedings/2024/#paper31"
+          "https://ijcai.org/proceedings/2024/#paper31",
+          "https://ijcai.org/proceedings/2024/0031.pdf"
         ],
         "article_type": "Main Track"
       },
@@ -183271,8 +183350,8 @@
       "batch_id": "2024-dinglijun",
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "exclude",
-      "rationale": "摘要分析极端天气相关推文和隐喻，但没有说明任何 AI 方法如何参与提取或比较，不能凭社会科学主题纳入。",
+      "decision": "include",
+      "rationale": "正式全文 §4–5 使用 MetaPro 专家系统完成隐喻识别、释义及概念映射生成，从 18,521 条灾害推文分析公众认知，并由心理学研究者评估 300 条样本。AI 实质参与灾害风险认知的社会科学研究。",
       "verified_metadata": {
         "title": "Understanding Public Perception Towards Weather Disasters Through the Lens of Metaphor",
         "authors": [
@@ -183291,15 +183370,32 @@
         ],
         "field_sources": {
           "keywords": "https://ijcai.org/proceedings/2024/818",
-          "article_type": "https://ijcai.org/proceedings/2024/#paper818"
+          "article_type": "https://ijcai.org/proceedings/2024/#paper818",
+          "review": "https://ijcai.org/proceedings/2024/0818.pdf"
         },
         "evidence_urls": [
           "https://ijcai.org/proceedings/2024/818",
-          "https://ijcai.org/proceedings/2024/#paper818"
+          "https://ijcai.org/proceedings/2024/#paper818",
+          "https://ijcai.org/proceedings/2024/0818.pdf"
         ],
         "article_type": "AI for Good"
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于社会科学",
+          "label_en": "AI for social sciences",
+          "evidence_location": "全文 §4–7",
+          "rationale": "研究公众对洪水、飓风、龙卷风和野火的认知差异。"
+        },
+        {
+          "axis": "method",
+          "label": "自然语言处理",
+          "label_en": "Natural language processing",
+          "evidence_location": "全文 §5",
+          "rationale": "MetaPro 对推文进行隐喻识别、解释及概念映射抽取。"
+        }
+      ]
     }
   },
   {
@@ -184950,7 +185046,7 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "exclude",
-      "rationale": "该文题名为“Guide to Numerical Experiments on Elections in Computational Social Choice”。未取得文献对具体 AI4S 研究任务有实质贡献的证据。",
+      "rationale": "正式全文 §2–4 汇总选举数值实验规模、统计文化和偏好数据采样方法，主要交付实验方法指南与采样软件。按通用计算社会选择实验工具口径维持排除。",
       "verified_metadata": {
         "title": "Guide to Numerical Experiments on Elections in Computational Social Choice",
         "authors": [
@@ -184973,11 +185069,13 @@
         ],
         "field_sources": {
           "keywords": "https://ijcai.org/proceedings/2024/881",
-          "article_type": "https://ijcai.org/proceedings/2024/#paper881"
+          "article_type": "https://ijcai.org/proceedings/2024/#paper881",
+          "review": "https://ijcai.org/proceedings/2024/0881.pdf"
         },
         "evidence_urls": [
           "https://ijcai.org/proceedings/2024/881",
-          "https://ijcai.org/proceedings/2024/#paper881"
+          "https://ijcai.org/proceedings/2024/#paper881",
+          "https://ijcai.org/proceedings/2024/0881.pdf"
         ],
         "article_type": "Survey Track"
       },
@@ -186945,7 +187043,7 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "exclude",
-      "rationale": "该文题名为“Efficient Cost-Minimization Schemes for Electrical Energy Demand Satisfaction by Prosumers in Microgrids with Battery Storage Capabilities”。未取得文献对具体 AI4S 研究任务有实质贡献的证据。",
+      "rationale": "正式全文 §2–5 建立 PEAC-min 电能成本调度问题并推导确定性最优算法及复杂性结果。研究证据支持运筹调度算法，按缺少实质 AI 方法参与的口径维持排除。",
       "verified_metadata": {
         "title": "Efficient Cost-Minimization Schemes for Electrical Energy Demand Satisfaction by Prosumers in Microgrids with Battery Storage Capabilities",
         "authors": [
@@ -186964,11 +187062,13 @@
         ],
         "field_sources": {
           "keywords": "https://ijcai.org/proceedings/2024/207",
-          "article_type": "https://ijcai.org/proceedings/2024/#paper207"
+          "article_type": "https://ijcai.org/proceedings/2024/#paper207",
+          "review": "https://ijcai.org/proceedings/2024/0207.pdf"
         },
         "evidence_urls": [
           "https://ijcai.org/proceedings/2024/207",
-          "https://ijcai.org/proceedings/2024/#paper207"
+          "https://ijcai.org/proceedings/2024/#paper207",
+          "https://ijcai.org/proceedings/2024/0207.pdf"
         ],
         "article_type": "Main Track"
       },
@@ -192060,8 +192160,8 @@
       "batch_id": "2024-dinglijun",
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "摘要介绍 TAIAO 环境数据平台，并说将展示四个案例，但没有给出案例的科学任务、模型或结果，证据不足，记为待定。",
+      "decision": "include",
+      "rationale": "正式全文 §3.1–3.4 给出 LSTM/Bayesian LSTM 河流水位预报、GraphSAGE 海洋热浪预测及半监督混合密度网络水质反演。图 4 和图 6 报告预测结果，AI 直接参与环境科学任务，待定转为纳入。",
       "verified_metadata": {
         "title": "Time-Evolving Data Science and Artificial Intelligence for Advanced Open Environmental Science (TAIAO) Programme",
         "authors": [
@@ -192086,15 +192186,39 @@
         ],
         "field_sources": {
           "keywords": "https://ijcai.org/proceedings/2024/809",
-          "article_type": "https://ijcai.org/proceedings/2024/#paper809"
+          "article_type": "https://ijcai.org/proceedings/2024/#paper809",
+          "review": "https://ijcai.org/proceedings/2024/0809.pdf"
         },
         "evidence_urls": [
           "https://ijcai.org/proceedings/2024/809",
-          "https://ijcai.org/proceedings/2024/#paper809"
+          "https://ijcai.org/proceedings/2024/#paper809",
+          "https://ijcai.org/proceedings/2024/0809.pdf"
         ],
         "article_type": "AI for Good"
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于地球宇宙科学",
+          "label_en": "AI for Earth and space sciences",
+          "evidence_location": "全文 §3.1–3.4",
+          "rationale": "研究洪水、海洋热浪和湖泊水质。"
+        },
+        {
+          "axis": "task",
+          "label": "洪水模拟预报",
+          "label_en": "Flood simulation and forecasting",
+          "evidence_location": "全文 §3.1，图 4",
+          "rationale": "LSTM 与 Bayesian LSTM 预测河流水位及不确定性。"
+        },
+        {
+          "axis": "method",
+          "label": "图神经网络",
+          "label_en": "Graph neural network",
+          "evidence_location": "全文 §3.3，图 6",
+          "rationale": "使用 GraphSAGE 预测海表温度异常和海洋热浪。"
+        }
+      ]
     }
   },
   {
@@ -201054,7 +201178,7 @@
       "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "decision": "exclude",
-      "rationale": "Corgi 的贡献是加速分子图上的相关子图检索并保持 top-k 准确性。药物发现只作为应用场景，工作本身是搜索效率工具，排除。",
+      "rationale": "正式全文 §3 的 Corgi 通过图压缩、Pearson 相关性及多视图 top-k 枚举实现分子子图检索。§4.6 给出 ADORA2A 活性检索案例，本文方法仍属于确定性数据库检索加速，按通用检索工具口径维持排除。",
       "verified_metadata": {
         "title": "Efficient Correlated Subgraph Searches for AI-powered Drug Discovery",
         "authors": [
@@ -201073,11 +201197,13 @@
         ],
         "field_sources": {
           "keywords": "https://ijcai.org/proceedings/2024/260",
-          "article_type": "https://ijcai.org/proceedings/2024/#paper260"
+          "article_type": "https://ijcai.org/proceedings/2024/#paper260",
+          "review": "https://ijcai.org/proceedings/2024/0260.pdf"
         },
         "evidence_urls": [
           "https://ijcai.org/proceedings/2024/260",
-          "https://ijcai.org/proceedings/2024/#paper260"
+          "https://ijcai.org/proceedings/2024/#paper260",
+          "https://ijcai.org/proceedings/2024/0260.pdf"
         ],
         "article_type": "Main Track"
       },
