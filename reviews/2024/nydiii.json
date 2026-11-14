@@ -67872,8 +67872,18 @@
         "evidence_files": [
           "/Users/ydiiiiin/Documents/Codex/2026-11-05/https-github-com-bupt-ai4s-ai4s-2/work/metadata_standardization_20261109/abstracts/evidence/405_epmc.json"
         ],
-        "note": "来源原摘要；仅移除网页导航、标记和摘要之后的声明，不另写总结。原始abstract及审核结论不变。"
-      }
+        "note": "来源原摘要；仅移除网页导航、标记和摘要之后的声明，不另写总结。原始abstract及审核结论不变。",
+        "synced_to_candidate_metadata_at": "2026-11-13",
+        "followup_response_sha256": "1f1d3909572c464c2c9393b24eefd0b1e2f7caf2f75b1a18bac54a2d852abdbe",
+        "followup_evidence_url": "https://pubmed.ncbi.nlm.nih.gov/39030909/"
+      },
+      "followup_history": [
+        {
+          "checked_at": "2026-11-13",
+          "input_main_commit": "0fa025ffb08f22ea7758c2bf159313ef3ced3b58",
+          "action": "再次按确切DOI核对PubMed原摘要并同步年度候选元数据；原字段、原纳入与标签保留。"
+        }
+      ]
     }
   },
   {
@@ -67949,7 +67959,7 @@
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
       "reviewed_at": "2026-11-05",
       "decision": "exclude",
-      "rationale": "用户只纳入原创研究文章。官方页面和PDF明确标为Spotlight，正文以Xia等2024年工作的结果为主要讨论对象，并综合既有研究提出蛋白工程策略，非本文新报告的原创实验。 所点评的原创研究 DOI 10.1016/j.molp.2024.07.008 已在本批纳入，不将本篇点评重复计为原创研究。",
+      "rationale": "按现行规则保留原创研究与有实质学术内容的综述；本篇正式标为Spotlight，正文为对Xia等原创研究及既有成果的三项策略点评，未报告独立原创实验，也不是独立研究综述，按评论文献类型排除。被点评的原创论文10.1016/j.molp.2024.07.008已纳入，避免重复计作原创成果。",
       "verified_metadata": {
         "doi": "10.1016/j.molp.2024.10.004",
         "title": "AI-based protein engineering: A novel strategy for enhancing broad-spectrum plant resistance",
@@ -67984,7 +67994,7 @@
         "doi": "10.1016/j.molp.2024.10.004",
         "decision": "exclude",
         "category": "commentary",
-        "reason_zh": "用户只纳入原创研究文章。官方页面和PDF明确标为Spotlight，正文以Xia等2024年工作的结果为主要讨论对象，并综合既有研究提出蛋白工程策略，非本文新报告的原创实验。",
+        "reason_zh": "按现行规则保留原创研究与有实质学术内容的综述；本篇正式标为Spotlight，正文为对Xia等原创研究及既有成果的三项策略点评，未报告独立原创实验，也不是独立研究综述，按评论文献类型排除。被点评的原创论文10.1016/j.molp.2024.07.008已纳入，避免重复计作原创成果。",
         "evidence": "PDF第1页（1648页）Spotlight栏目及Strategy 1；第2页Strategy 2/3；第3页结语和参考文献。",
         "confidence": "high",
         "evidence_url": "https://www.cell.com/molecular-plant/fulltext/S1674-2052(24)00326-5",
@@ -68023,11 +68033,30 @@
       "related_original_research_doi": "10.1016/j.molp.2024.07.008",
       "abstract_verification": {
         "status": "not_provided_by_official_source",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-13",
         "evidence_files": [
           "work/metadata_standardization_20261109/abstracts/evidence/pubmed_noabstract_xml.xml"
         ],
-        "note": "PubMed正式文献XML的Article无Abstract字段，DOI核对一致；表示正式文献记录未提供摘要，不以正文/评论内容另编摘要。"
+        "note": "本轮PubMed对应记录仍无abstractText；浏览器完整正式页为Spotlight/Insights，正文直接从Main text进入Strategy 1–3与Concluding remarks，无独立Abstract。保留null，不把正文或自拟文字写入abstract。",
+        "followup_response_sha256": "1f1d3909572c464c2c9393b24eefd0b1e2f7caf2f75b1a18bac54a2d852abdbe",
+        "evidence_url": "https://www.sciencedirect.com/science/article/pii/S1674205224003265"
+      },
+      "followup_history": [
+        {
+          "checked_at": "2026-11-13",
+          "rationale_before": "用户只纳入原创研究文章。官方页面和PDF明确标为Spotlight，正文以Xia等2024年工作的结果为主要讨论对象，并综合既有研究提出蛋白工程策略，非本文新报告的原创实验。 所点评的原创研究 DOI 10.1016/j.molp.2024.07.008 已在本批纳入，不将本篇点评重复计为原创研究。",
+          "research_type_reason_before": "用户只纳入原创研究文章。官方页面和PDF明确标为Spotlight，正文以Xia等2024年工作的结果为主要讨论对象，并综合既有研究提出蛋白工程策略，非本文新报告的原创实验。",
+          "input_main_commit": "0fa025ffb08f22ea7758c2bf159313ef3ced3b58"
+        }
+      ],
+      "monitor_exception": {
+        "checked_at": "2026-11-13",
+        "status": "requires_monitor_policy_confirmation",
+        "excluded_nonresearch": true,
+        "official_abstract_not_provided": true,
+        "monitor_behavior_verified": "现有监控只检查metadata年度候选abstract是否非空，未识别此类有正式证据的已排除无摘要文献。",
+        "requested_maintainer": "乔徐阳",
+        "required_decision": "确认是否对已排除非研究＋官方无摘要＋逐条正式证据免报或单列；未获确认不修改监控、爬虫或候选集合以消除提示。"
       }
     }
   },
@@ -239201,6 +239230,604 @@
         "vocabulary_commit": "adaee1d692c62f91e270f56f519aae3b57d64de4",
         "raw_snapshot_id": "10.1016/j.joule.2024.07.024"
       }
+    }
+  },
+  {
+    "id": "10.1016/j.molp.2024.03.007",
+    "venue": "j-0d5068779d",
+    "year": 2024,
+    "track": null,
+    "title": "Genomic selection in plant breeding: Key factors shaping two decades of progress",
+    "authors": [
+      "Admas Alemu",
+      "Johanna Åstrand",
+      "Osval A. Montesinos-López",
+      "Julio Isidro y Sánchez",
+      "Javier Fernández-Gónzalez",
+      "Wuletaw Tadesse",
+      "Ramesh R. Vetukuri",
+      "Anders S. Carlsson",
+      "Alf Ceplitis",
+      "José Crossa",
+      "Rodomiro Ortiz",
+      "Aakash Chawade"
+    ],
+    "author_ids": [],
+    "abstract": null,
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.molp.2024.03.007",
+    "pages": "552-578",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.molp.2024.03.007",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2024-04",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Molecular Plant",
+    "issn": "1674-2052",
+    "article_type": "unknown",
+    "screening_status": "needs_abstract",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S1674205224000807",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "2024-nydiii-molecular-plant-followup-20261113",
+      "owner": "南耀笛",
+      "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
+      "reviewed_at": "2026-11-13",
+      "decision": "include",
+      "rationale": "初筛漏筛补录：综述明确分析统计机器学习、训练群体优化、遗传多样性和非加性效应对小麦、玉米、马铃薯基因组预测精度的影响，并讨论多组学与深度学习；AI直接服务育种选择，不仅为领域愿景。",
+      "verified_metadata": {
+        "doi": "10.1016/j.molp.2024.03.007",
+        "title": "Genomic selection in plant breeding: Key factors shaping two decades of progress",
+        "authors": [
+          "Admas Alemu",
+          "Johanna Åstrand",
+          "Osval A Montesinos-López",
+          "Julio Isidro Y Sánchez",
+          "Javier Fernández-Gónzalez",
+          "Wuletaw Tadesse",
+          "Ramesh R Vetukuri",
+          "Anders S Carlsson",
+          "Alf Ceplitis",
+          "José Crossa",
+          "Rodomiro Ortiz",
+          "Aakash Chawade"
+        ],
+        "abstract": "Genomic selection, the application of genomic prediction (GP) models to select candidate individuals, has significantly advanced in the past two decades, effectively accelerating genetic gains in plant breeding. This article provides a holistic overview of key factors that have influenced GP in plant breeding during this period. We delved into the pivotal roles of training population size and genetic diversity, and their relationship with the breeding population, in determining GP accuracy. Special emphasis was placed on optimizing training population size. We explored its benefits and the associated diminishing returns beyond an optimum size. This was done while considering the balance between resource allocation and maximizing prediction accuracy through current optimization algorithms. The density and distribution of single-nucleotide polymorphisms, level of linkage disequilibrium, genetic complexity, trait heritability, statistical machine-learning methods, and non-additive effects are the other vital factors. Using wheat, maize, and potato as examples, we summarize the effect of these factors on the accuracy of GP for various traits. The search for high accuracy in GP-theoretically reaching one when using the Pearson's correlation as a metric-is an active research area as yet far from optimal for various traits. We hypothesize that with ultra-high sizes of genotypic and phenotypic datasets, effective training population optimization methods and support from other omics approaches (transcriptomics, metabolomics and proteomics) coupled with deep-learning algorithms could overcome the boundaries of current limitations to achieve the highest possible prediction accuracy, making genomic selection an effective tool in plant breeding.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1674205224000807",
+        "pdf_url": "https://repository.cimmyt.org/server/api/core/bitstreams/78088e4e-4cec-411e-bdb5-c4f4105fa1bb/content",
+        "code_url": null,
+        "project_url": null,
+        "dataset_url": null,
+        "article_type": "Review article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1674205224000807",
+          "https://pubmed.ncbi.nlm.nih.gov/38475993/",
+          "https://repository.cimmyt.org/server/api/core/bitstreams/78088e4e-4cec-411e-bdb5-c4f4105fa1bb/content"
+        ],
+        "identity_verification": {
+          "checked_at": "2026-11-13",
+          "basis": "exact_doi_and_normalized_title_publisher_pii_and_pubmed_author_order",
+          "pmid": "38475993",
+          "pubmed_record_response_sha256": "1f1d3909572c464c2c9393b24eefd0b1e2f7caf2f75b1a18bac54a2d852abdbe"
+        },
+        "article_type_verification": {
+          "status": "verified_native_article_type",
+          "basis": "historical_publisher_article_label_and_author_institution_pdf",
+          "checked_at": "2026-11-13",
+          "evidence_url": "https://repository.cimmyt.org/server/api/core/bitstreams/78088e4e-4cec-411e-bdb5-c4f4105fa1bb/content"
+        }
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "正式Abstract；机器学习方法与训练群体优化的综述内容",
+          "rationale": "综述明确分析统计机器学习、训练群体优化、遗传多样性和非加性效应对小麦、玉米、马铃薯基因组预测精度的影响，并讨论多组学与深度学习；AI直接服务育种选择，不仅为领域愿景。"
+        },
+        {
+          "axis": "task",
+          "label": "作物育种设计",
+          "label_en": "Crop breeding design",
+          "evidence_location": "正式Abstract；机器学习方法与训练群体优化的综述内容",
+          "rationale": "综述明确分析统计机器学习、训练群体优化、遗传多样性和非加性效应对小麦、玉米、马铃薯基因组预测精度的影响，并讨论多组学与深度学习；AI直接服务育种选择，不仅为领域愿景。"
+        },
+        {
+          "axis": "method",
+          "label": "机器学习",
+          "label_en": "Machine learning",
+          "evidence_location": "正式Abstract；机器学习方法与训练群体优化的综述内容",
+          "rationale": "综述明确分析统计机器学习、训练群体优化、遗传多样性和非加性效应对小麦、玉米、马铃薯基因组预测精度的影响，并讨论多组学与深度学习；AI直接服务育种选择，不仅为领域愿景。"
+        },
+        {
+          "axis": "method",
+          "label": "深度学习",
+          "label_en": "Deep learning",
+          "evidence_location": "正式Abstract；机器学习方法与训练群体优化的综述内容",
+          "rationale": "综述明确分析统计机器学习、训练群体优化、遗传多样性和非加性效应对小麦、玉米、马铃薯基因组预测精度的影响，并讨论多组学与深度学习；AI直接服务育种选择，不仅为领域愿景。"
+        },
+        {
+          "axis": "contribution",
+          "label": "综述",
+          "label_en": "Review",
+          "evidence_location": "正式Abstract；机器学习方法与训练群体优化的综述内容",
+          "rationale": "综述明确分析统计机器学习、训练群体优化、遗传多样性和非加性效应对小麦、玉米、马铃薯基因组预测精度的影响，并讨论多组学与深度学习；AI直接服务育种选择，不仅为领域愿景。"
+        }
+      ],
+      "research_type_review": {
+        "category": "substantive_review",
+        "decision": "include",
+        "rationale": "综述明确分析统计机器学习、训练群体优化、遗传多样性和非加性效应对小麦、玉米、马铃薯基因组预测精度的影响，并讨论多组学与深度学习；AI直接服务育种选择，不仅为领域愿景。",
+        "evidence_location": "正式Abstract；机器学习方法与训练群体优化的综述内容"
+      },
+      "abstract_verification": {
+        "status": "verified_original_abstract",
+        "checked_at": "2026-11-13",
+        "method": "Europe_PMC_core_PubMed_original_abstract",
+        "pmid": "38475993",
+        "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/38475993/",
+        "response_sha256": "1f1d3909572c464c2c9393b24eefd0b1e2f7caf2f75b1a18bac54a2d852abdbe",
+        "note": "复制正式书目原摘要，仅移除XML标记及规范空白；不生成替代摘要。"
+      },
+      "review_provenance": {
+        "input_main_commit": "0fa025ffb08f22ea7758c2bf159313ef3ced3b58",
+        "skill_commit": "0fa025ffb08f22ea7758c2bf159313ef3ced3b58",
+        "vocabulary_commit": "0fa025ffb08f22ea7758c2bf159313ef3ced3b58",
+        "raw_snapshot_id": "10.1016/j.molp.2024.03.007"
+      },
+      "evidence_location": "正式Abstract；机器学习方法与训练群体优化的综述内容"
+    }
+  },
+  {
+    "id": "10.1016/j.molp.2024.04.005",
+    "venue": "j-0d5068779d",
+    "year": 2024,
+    "track": null,
+    "title": "Satellite-enabled enviromics to enhance crop improvement",
+    "authors": [
+      "Rafael T. Resende",
+      "Lee Hickey",
+      "Cibele H. Amaral",
+      "Lucas L. Peixoto",
+      "Gustavo E. Marcatti",
+      "Yunbi Xu"
+    ],
+    "author_ids": [],
+    "abstract": null,
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.molp.2024.04.005",
+    "pages": "848-866",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.molp.2024.04.005",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2024-06",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Molecular Plant",
+    "issn": "1674-2052",
+    "article_type": "unknown",
+    "screening_status": "needs_abstract",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S1674205224001187",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "2024-nydiii-molecular-plant-followup-20261113",
+      "owner": "南耀笛",
+      "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
+      "reviewed_at": "2026-11-13",
+      "decision": "include",
+      "rationale": "初筛漏筛补录：出版社形式为Perspective，PubMed归为Review；按正文内容判断：AI-assisted enviromics节具体综述机器学习整合遥感环境数据、基因组与表型以进行基因型推荐和预测，具有实质学术综述内容，按当前规则纳入，不声称本文已训练新的育种模型。",
+      "verified_metadata": {
+        "doi": "10.1016/j.molp.2024.04.005",
+        "title": "Satellite-enabled enviromics to enhance crop improvement",
+        "authors": [
+          "Rafael T Resende",
+          "Lee Hickey",
+          "Cibele H Amaral",
+          "Lucas L Peixoto",
+          "Gustavo E Marcatti",
+          "Yunbi Xu"
+        ],
+        "abstract": "Enviromics refers to the characterization of micro- and macroenvironments based on large-scale environmental datasets. By providing genotypic recommendations with predictive extrapolation at a site-specific level, enviromics could inform plant breeding decisions across varying conditions and anticipate productivity in a changing climate. Enviromics-based integration of statistics, envirotyping (i.e., determining environmental factors), and remote sensing could help unravel the complex interplay of genetics, environment, and management. To support this goal, exhaustive envirotyping to generate precise environmental profiles would significantly improve predictions of genotype performance and genetic gain in crops. Already, informatics management platforms aggregate diverse environmental datasets obtained using optical, thermal, radar, and light detection and ranging (LiDAR)sensors that capture detailed information about vegetation, surface structure, and terrain. This wealth of information, coupled with freely available climate data, fuels innovative enviromics research. While enviromics holds immense potential for breeding, a few obstacles remain, such as the need for (1) integrative methodologies to systematically collect field data to scale and expand observations across the landscape with satellite data; (2) state-of-the-art AI models for data integration, simulation, and prediction; (3) cyberinfrastructure for processing big data across scales and providing seamless interfaces to deliver forecasts to stakeholders; and (4) collaboration and data sharing among farmers, breeders, physiologists, geoinformatics experts, and programmers across research institutions. Overcoming these challenges is essential for leveraging the full potential of big data captured by satellites to transform 21st century agriculture and crop improvement through enviromics.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1674205224001187",
+        "pdf_url": "https://repository.library.noaa.gov/view/noaa/68400/noaa_68400_DS1.pdf",
+        "code_url": null,
+        "project_url": null,
+        "dataset_url": null,
+        "article_type": "Perspective",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1674205224001187",
+          "https://pubmed.ncbi.nlm.nih.gov/38637991/",
+          "https://repository.library.noaa.gov/view/noaa/68400/noaa_68400_DS1.pdf"
+        ],
+        "identity_verification": {
+          "checked_at": "2026-11-13",
+          "basis": "exact_doi_and_normalized_title_publisher_pii_and_pubmed_author_order",
+          "pmid": "38637991",
+          "pubmed_record_response_sha256": "1f1d3909572c464c2c9393b24eefd0b1e2f7caf2f75b1a18bac54a2d852abdbe"
+        },
+        "article_type_verification": {
+          "status": "verified_native_article_type",
+          "basis": "publisher_original_header_search_index",
+          "checked_at": "2026-11-13",
+          "evidence_url": "https://repository.library.noaa.gov/view/noaa/68400/noaa_68400_DS1.pdf"
+        }
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "正式Abstract；AI-assisted enviromics；Enviromics for crop improvement；Concluding remarks",
+          "rationale": "出版社形式为Perspective，PubMed归为Review；按正文内容判断：AI-assisted enviromics节具体综述机器学习整合遥感环境数据、基因组与表型以进行基因型推荐和预测，具有实质学术综述内容，按当前规则纳入，不声称本文已训练新的育种模型。"
+        },
+        {
+          "axis": "task",
+          "label": "作物育种设计",
+          "label_en": "Crop breeding design",
+          "evidence_location": "正式Abstract；AI-assisted enviromics；Enviromics for crop improvement；Concluding remarks",
+          "rationale": "出版社形式为Perspective，PubMed归为Review；按正文内容判断：AI-assisted enviromics节具体综述机器学习整合遥感环境数据、基因组与表型以进行基因型推荐和预测，具有实质学术综述内容，按当前规则纳入，不声称本文已训练新的育种模型。"
+        },
+        {
+          "axis": "method",
+          "label": "机器学习",
+          "label_en": "Machine learning",
+          "evidence_location": "正式Abstract；AI-assisted enviromics；Enviromics for crop improvement；Concluding remarks",
+          "rationale": "出版社形式为Perspective，PubMed归为Review；按正文内容判断：AI-assisted enviromics节具体综述机器学习整合遥感环境数据、基因组与表型以进行基因型推荐和预测，具有实质学术综述内容，按当前规则纳入，不声称本文已训练新的育种模型。"
+        },
+        {
+          "axis": "contribution",
+          "label": "综述",
+          "label_en": "Review",
+          "evidence_location": "正式Abstract；AI-assisted enviromics；Enviromics for crop improvement；Concluding remarks",
+          "rationale": "出版社形式为Perspective，PubMed归为Review；按正文内容判断：AI-assisted enviromics节具体综述机器学习整合遥感环境数据、基因组与表型以进行基因型推荐和预测，具有实质学术综述内容，按当前规则纳入，不声称本文已训练新的育种模型。"
+        }
+      ],
+      "research_type_review": {
+        "category": "substantive_review",
+        "decision": "include",
+        "rationale": "出版社形式为Perspective，PubMed归为Review；按正文内容判断：AI-assisted enviromics节具体综述机器学习整合遥感环境数据、基因组与表型以进行基因型推荐和预测，具有实质学术综述内容，按当前规则纳入，不声称本文已训练新的育种模型。",
+        "evidence_location": "正式Abstract；AI-assisted enviromics；Enviromics for crop improvement；Concluding remarks"
+      },
+      "abstract_verification": {
+        "status": "verified_original_abstract",
+        "checked_at": "2026-11-13",
+        "method": "Europe_PMC_core_PubMed_original_abstract",
+        "pmid": "38637991",
+        "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/38637991/",
+        "response_sha256": "1f1d3909572c464c2c9393b24eefd0b1e2f7caf2f75b1a18bac54a2d852abdbe",
+        "note": "复制正式书目原摘要，仅移除XML标记及规范空白；不生成替代摘要。"
+      },
+      "review_provenance": {
+        "input_main_commit": "0fa025ffb08f22ea7758c2bf159313ef3ced3b58",
+        "skill_commit": "0fa025ffb08f22ea7758c2bf159313ef3ced3b58",
+        "vocabulary_commit": "0fa025ffb08f22ea7758c2bf159313ef3ced3b58",
+        "raw_snapshot_id": "10.1016/j.molp.2024.04.005"
+      },
+      "evidence_location": "正式Abstract；AI-assisted enviromics；Enviromics for crop improvement；Concluding remarks"
+    }
+  },
+  {
+    "id": "10.1016/j.molp.2024.05.006",
+    "venue": "j-0d5068779d",
+    "year": 2024,
+    "track": null,
+    "title": "A k-mer-based pangenome approach for cataloging seed-storage-protein genes in wheat to facilitate genotype-to-phenotype prediction and improvement of end-use quality",
+    "authors": [
+      "Zhaoheng Zhang",
+      "Dan Liu",
+      "Binyong Li",
+      "Wenxi Wang",
+      "Jize Zhang",
+      "Mingming Xin",
+      "Zhaorong Hu",
+      "Jie Liu",
+      "Jinkun Du",
+      "Huiru Peng",
+      "Chenyang Hao",
+      "Xueyong Zhang",
+      "Zhongfu Ni",
+      "Qixin Sun",
+      "Weilong Guo",
+      "Yingyin Yao"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0003-4122-4118"
+    ],
+    "abstract": null,
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.molp.2024.05.006",
+    "pages": "1038-1053",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.molp.2024.05.006",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2024-07",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Molecular Plant",
+    "issn": "1674-2052",
+    "article_type": "unknown",
+    "screening_status": "needs_abstract",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S1674205224001540",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "2024-nydiii-molecular-plant-followup-20261113",
+      "owner": "南耀笛",
+      "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
+      "reviewed_at": "2026-11-13",
+      "decision": "include",
+      "rationale": "初筛漏筛补录：建立PanSK种子储藏蛋白泛基因组和29-mer表征，结合机器学习从基因型预测小麦品质表型，并以23个品质相关SSP基因和黑麦醇溶蛋白去除效应支持育种改良，AI参与明确遗传—品质研究任务。",
+      "verified_metadata": {
+        "doi": "10.1016/j.molp.2024.05.006",
+        "title": "A k-mer-based pangenome approach for cataloging seed-storage-protein genes in wheat to facilitate genotype-to-phenotype prediction and improvement of end-use quality",
+        "authors": [
+          "Zhaoheng Zhang",
+          "Dan Liu",
+          "Binyong Li",
+          "Wenxi Wang",
+          "Jize Zhang",
+          "Mingming Xin",
+          "Zhaorong Hu",
+          "Jie Liu",
+          "Jinkun Du",
+          "Huiru Peng",
+          "Chenyang Hao",
+          "Xueyong Zhang",
+          "Zhongfu Ni",
+          "Qixin Sun",
+          "Weilong Guo",
+          "Yingyin Yao"
+        ],
+        "abstract": "Wheat is a staple food for more than 35% of the world's population, with wheat flour used to make hundreds of baked goods. Superior end-use quality is a major breeding target; however, improving it is especially time-consuming and expensive. Furthermore, genes encoding seed-storage proteins (SSPs) form multi-gene families and are repetitive, with gaps commonplace in several genome assemblies. To overcome these barriers and efficiently identify superior wheat SSP alleles, we developed \"PanSK\" (Pan-SSP k-mer) for genotype-to-phenotype prediction based on an SSP-based pangenome resource. PanSK uses 29-mer sequences that represent each SSP gene at the pangenomic level to reveal untapped diversity across landraces and modern cultivars. Genome-wide association studies with k-mers identified 23 SSP genes associated with end-use quality that represent novel targets for improvement. We evaluated the effect of rye secalin genes on end-use quality and found that removal of ω-secalins from 1BL/1RS wheat translocation lines is associated with enhanced end-use quality. Finally, using machine-learning-based prediction inspired by PanSK, we predicted the quality phenotypes with high accuracy from genotypes alone. This study provides an effective approach for genome design based on SSP genes, enabling the breeding of wheat varieties with superior processing capabilities and improved end-use quality.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1674205224001540",
+        "pdf_url": "https://ics.caas.cn/docs/2024-07/b4de4afdf263455ea051207e6f41c32d.pdf",
+        "code_url": null,
+        "project_url": null,
+        "dataset_url": null,
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1674205224001540",
+          "https://pubmed.ncbi.nlm.nih.gov/38796709/",
+          "https://ics.caas.cn/docs/2024-07/b4de4afdf263455ea051207e6f41c32d.pdf"
+        ],
+        "identity_verification": {
+          "checked_at": "2026-11-13",
+          "basis": "exact_doi_and_normalized_title_publisher_pii_and_pubmed_author_order",
+          "pmid": "38796709",
+          "pubmed_record_response_sha256": "1f1d3909572c464c2c9393b24eefd0b1e2f7caf2f75b1a18bac54a2d852abdbe"
+        },
+        "article_type_verification": {
+          "status": "verified_native_article_type",
+          "basis": "author_institution_publisher_pdf_header",
+          "checked_at": "2026-11-13",
+          "evidence_url": "https://ics.caas.cn/docs/2024-07/b4de4afdf263455ea051207e6f41c32d.pdf"
+        }
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "正式Abstract，machine-learning-based prediction与品质表型验证",
+          "rationale": "建立PanSK种子储藏蛋白泛基因组和29-mer表征，结合机器学习从基因型预测小麦品质表型，并以23个品质相关SSP基因和黑麦醇溶蛋白去除效应支持育种改良，AI参与明确遗传—品质研究任务。"
+        },
+        {
+          "axis": "task",
+          "label": "基因型表型关联验证",
+          "label_en": "Genotype-phenotype association validation",
+          "evidence_location": "正式Abstract，machine-learning-based prediction与品质表型验证",
+          "rationale": "建立PanSK种子储藏蛋白泛基因组和29-mer表征，结合机器学习从基因型预测小麦品质表型，并以23个品质相关SSP基因和黑麦醇溶蛋白去除效应支持育种改良，AI参与明确遗传—品质研究任务。"
+        },
+        {
+          "axis": "method",
+          "label": "机器学习",
+          "label_en": "Machine learning",
+          "evidence_location": "正式Abstract，machine-learning-based prediction与品质表型验证",
+          "rationale": "建立PanSK种子储藏蛋白泛基因组和29-mer表征，结合机器学习从基因型预测小麦品质表型，并以23个品质相关SSP基因和黑麦醇溶蛋白去除效应支持育种改良，AI参与明确遗传—品质研究任务。"
+        }
+      ],
+      "research_type_review": {
+        "category": "original_research",
+        "decision": "include",
+        "rationale": "建立PanSK种子储藏蛋白泛基因组和29-mer表征，结合机器学习从基因型预测小麦品质表型，并以23个品质相关SSP基因和黑麦醇溶蛋白去除效应支持育种改良，AI参与明确遗传—品质研究任务。",
+        "evidence_location": "正式Abstract，machine-learning-based prediction与品质表型验证"
+      },
+      "abstract_verification": {
+        "status": "verified_original_abstract",
+        "checked_at": "2026-11-13",
+        "method": "Europe_PMC_core_PubMed_original_abstract",
+        "pmid": "38796709",
+        "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/38796709/",
+        "response_sha256": "1f1d3909572c464c2c9393b24eefd0b1e2f7caf2f75b1a18bac54a2d852abdbe",
+        "note": "复制正式书目原摘要，仅移除XML标记及规范空白；不生成替代摘要。"
+      },
+      "review_provenance": {
+        "input_main_commit": "0fa025ffb08f22ea7758c2bf159313ef3ced3b58",
+        "skill_commit": "0fa025ffb08f22ea7758c2bf159313ef3ced3b58",
+        "vocabulary_commit": "0fa025ffb08f22ea7758c2bf159313ef3ced3b58",
+        "raw_snapshot_id": "10.1016/j.molp.2024.05.006"
+      },
+      "evidence_location": "正式Abstract，machine-learning-based prediction与品质表型验证"
+    }
+  },
+  {
+    "id": "10.1016/j.molp.2024.09.004",
+    "venue": "j-0d5068779d",
+    "year": 2024,
+    "track": null,
+    "title": "An unmanned ground vehicle phenotyping-based method to generate three-dimensional multispectral point clouds for deciphering spatial heterogeneity in plant traits",
+    "authors": [
+      "Pengyao Xie",
+      "Zhihong Ma",
+      "Ruiming Du",
+      "Xin Yang",
+      "Yu Jiang",
+      "Haiyan Cen"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0002-1014-5399",
+      "https://orcid.org/0000-0002-8588-1665",
+      "https://orcid.org/0009-0008-3917-627X",
+      "https://orcid.org/0009-0009-4486-2407",
+      "https://orcid.org/0000-0003-4495-3033",
+      "https://orcid.org/0000-0003-0266-2123"
+    ],
+    "abstract": null,
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.molp.2024.09.004",
+    "pages": "1624-1638",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.molp.2024.09.004",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2024-10",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Molecular Plant",
+    "issn": "1674-2052",
+    "article_type": "unknown",
+    "screening_status": "needs_abstract",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S1674205224002934",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "2024-nydiii-molecular-plant-followup-20261113",
+      "owner": "南耀笛",
+      "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
+      "reviewed_at": "2026-11-13",
+      "decision": "include",
+      "rationale": "初筛漏筛补录：提出UGV三维—多光谱数据融合方法，将下一最佳视角采集与神经参考场NeREF辐射校准结合，用于紫苏、番茄、油菜的叶绿素和等效水厚度表型估计；原摘要给出校准和预测误差改进，神经模型直接改善植物形态与生理研究。",
+      "verified_metadata": {
+        "doi": "10.1016/j.molp.2024.09.004",
+        "title": "An unmanned ground vehicle phenotyping-based method to generate three-dimensional multispectral point clouds for deciphering spatial heterogeneity in plant traits",
+        "authors": [
+          "Pengyao Xie",
+          "Zhihong Ma",
+          "Ruiming Du",
+          "Xin Yang",
+          "Yu Jiang",
+          "Haiyan Cen"
+        ],
+        "abstract": "Fusing three-dimensional (3D) and multispectral (MS) imaging data holds promise for high-throughput and comprehensive plant phenotyping to decipher genome-to-phenome knowledge. Acquiring high-quality 3D MS point clouds (3DMPCs) of plants remains challenging because of poor 3D data quality and limited radiometric calibration methods for plants with a complex canopy structure. Here, we present a novel 3D spatial-spectral data fusion approach to collect high-quality 3DMPCs of plants by integrating the next-best-view planning for adaptive data acquisition and neural reference field (NeREF) for radiometric calibration. This approach was used to acquire 3DMPCs of perilla, tomato, and rapeseed plants with diverse plant architecture and leaf morphological features evaluated by the accuracy of chlorophyll content and equivalent water thickness (EWT) estimation. The results showed that the completeness of plant point clouds collected by this approach was improved by an average of 23.6% compared with the fixed viewpoints alone. The NeREF-based radiometric calibration with the hemispherical reference outperformed the conventional calibration method by reducing the root mean square error (RMSE) of 58.93% for extracted reflectance spectra. The RMSE for chlorophyll content and EWT predictions decreased by 21.25% and 14.13% using partial least squares regression with the generated 3DMPCs. Collectively, our study provides an effective and efficient way to collect high-quality 3DMPCs of plants under natural light conditions, which improves the accuracy and comprehensiveness of phenotyping plant morphological and physiological traits, and thus will facilitate plant biology and genetic studies as well as crop breeding.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1674205224002934",
+        "pdf_url": null,
+        "code_url": null,
+        "project_url": null,
+        "dataset_url": null,
+        "article_type": null,
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1674205224002934",
+          "https://pubmed.ncbi.nlm.nih.gov/39277788/"
+        ],
+        "identity_verification": {
+          "checked_at": "2026-11-13",
+          "basis": "exact_doi_and_normalized_title_publisher_pii_and_pubmed_author_order",
+          "pmid": "39277788",
+          "pubmed_record_response_sha256": "1f1d3909572c464c2c9393b24eefd0b1e2f7caf2f75b1a18bac54a2d852abdbe"
+        },
+        "official_toc_section": "Resource article",
+        "article_type_verification": {
+          "status": "publisher_section_and_original_method_content_sufficient",
+          "basis": "historical_official_toc_plus_current_original_abstract",
+          "native_label_not_independently_obtained": true,
+          "note": "不将栏目改写成独立取得的单篇标签；正式摘要报告新方法及实验，足以支持原创方法类型资格。"
+        }
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "正式Abstract，NeREF辐射校准、3DMPCs及植物性状估计验证",
+          "rationale": "提出UGV三维—多光谱数据融合方法，将下一最佳视角采集与神经参考场NeREF辐射校准结合，用于紫苏、番茄、油菜的叶绿素和等效水厚度表型估计；原摘要给出校准和预测误差改进，神经模型直接改善植物形态与生理研究。"
+        },
+        {
+          "axis": "task",
+          "label": "植物表型测量",
+          "label_en": "Plant phenotyping",
+          "evidence_location": "正式Abstract，NeREF辐射校准、3DMPCs及植物性状估计验证",
+          "rationale": "提出UGV三维—多光谱数据融合方法，将下一最佳视角采集与神经参考场NeREF辐射校准结合，用于紫苏、番茄、油菜的叶绿素和等效水厚度表型估计；原摘要给出校准和预测误差改进，神经模型直接改善植物形态与生理研究。"
+        },
+        {
+          "axis": "method",
+          "label": "深度学习",
+          "label_en": "Deep learning",
+          "evidence_location": "正式Abstract，NeREF辐射校准、3DMPCs及植物性状估计验证",
+          "rationale": "提出UGV三维—多光谱数据融合方法，将下一最佳视角采集与神经参考场NeREF辐射校准结合，用于紫苏、番茄、油菜的叶绿素和等效水厚度表型估计；原摘要给出校准和预测误差改进，神经模型直接改善植物形态与生理研究。"
+        }
+      ],
+      "research_type_review": {
+        "category": "original_method",
+        "decision": "include",
+        "rationale": "提出UGV三维—多光谱数据融合方法，将下一最佳视角采集与神经参考场NeREF辐射校准结合，用于紫苏、番茄、油菜的叶绿素和等效水厚度表型估计；原摘要给出校准和预测误差改进，神经模型直接改善植物形态与生理研究。",
+        "evidence_location": "正式Abstract，NeREF辐射校准、3DMPCs及植物性状估计验证"
+      },
+      "abstract_verification": {
+        "status": "verified_original_abstract",
+        "checked_at": "2026-11-13",
+        "method": "Europe_PMC_core_PubMed_original_abstract",
+        "pmid": "39277788",
+        "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/39277788/",
+        "response_sha256": "1f1d3909572c464c2c9393b24eefd0b1e2f7caf2f75b1a18bac54a2d852abdbe",
+        "note": "复制正式书目原摘要，仅移除XML标记及规范空白；不生成替代摘要。"
+      },
+      "review_provenance": {
+        "input_main_commit": "0fa025ffb08f22ea7758c2bf159313ef3ced3b58",
+        "skill_commit": "0fa025ffb08f22ea7758c2bf159313ef3ced3b58",
+        "vocabulary_commit": "0fa025ffb08f22ea7758c2bf159313ef3ced3b58",
+        "raw_snapshot_id": "10.1016/j.molp.2024.09.004"
+      },
+      "evidence_location": "正式Abstract，NeREF辐射校准、3DMPCs及植物性状估计验证"
     }
   }
 ]
