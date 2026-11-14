@@ -956,9 +956,9 @@
       "batch_id": "2024-nydiii-research-ai4s-20261105",
       "owner": "南耀笛",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "reviewed_at": "2026-11-06",
+      "reviewed_at": "2026-11-13",
       "decision": "pending",
-      "rationale": "科学任务为FGFR靶向治疗及耐药机制。现有摘要把AI列为未来方向，未说明本文对AI方法在该任务中的实质应用作了何种综述；参考文献虽有AI病理预测研究，但不能仅凭引用列表认定正文贡献。需核查全文AI相关段落，区分具体方法证据综述与愿景提及。",
+      "rationale": "本篇为符合类型范围的学术综述，讨论FGFR靶向治疗和耐药机制。正式摘要只将AI列为未来研究方向；参考文献223–224虽为以病理图像预测FGFR突变的AI研究，但公开页未提供正文如何讨论这些研究，引用本身不足以证明本综述有实质AI4S方法贡献。本轮已确认出版方全文需订阅、作者存档未公开附件、Europe PMC无全文、OpenAlex无开放版本，用户也无全文或机构访问。尚缺本篇AI相关正文完整段落及上下文，故保留pending，不推断纳入或排除。",
       "verified_metadata": {
         "doi": "10.1038/s41571-024-00869-z",
         "title": "FGFR-targeted therapeutics: clinical activity, mechanisms of resistance and new directions",
@@ -969,7 +969,8 @@
         "dataset_url": null,
         "evidence_urls": [
           "https://www.nature.com/articles/s41571-024-00869-z",
-          "https://cris.unibo.it/handle/11585/981976"
+          "https://cris.unibo.it/handle/11585/981976",
+          "https://pubmed.ncbi.nlm.nih.gov/38424198/"
         ],
         "article_type": "Review Article",
         "article_type_verification": {
@@ -983,7 +984,16 @@
           "evidence_location": "2024 article card c-meta__type; directory page 6",
           "identity_match_method": "exact_doi",
           "note_zh": "保留出版社原词；basis区分单篇标签与指南明确定义的文献类型分组。不等同于内容研究类型或 AI4S 判断。混合栏目和主题标签单独保存。"
-        }
+        },
+        "authors": [
+          "Masuko Katoh",
+          "Yohann Loriot",
+          "Giovanni Brandi",
+          "Simona Tavolari",
+          "Zev A. Wainberg",
+          "Masaru Katoh"
+        ],
+        "published": "2024-02-29"
       },
       "tags": [],
       "research_type_review": {
@@ -999,7 +1009,7 @@
         "original_article_type": "Review Article",
         "external_article_type": "Review Article"
       },
-      "review_stage": "review_ai4s_relevance",
+      "review_stage": "review_ai4s_relevance_fulltext_access_pending",
       "evidence_location": "输入摘要；正式页Abstract、Key points及参考文献（正文受访问限制）",
       "evidence_urls": [
         "https://www.nature.com/articles/s41571-024-00869-z",
@@ -1030,14 +1040,12 @@
         }
       ],
       "verification_gaps": [
-        "需取得本文AI相关完整段落，确认是否实质综述AI病理/FGFR预测的研究证据，还是仅提出未来愿景。",
-        "正式页和作者题名DOI可核对，正文/PDF受访问限制；Crossref请求限流。",
-        "独立复查博洛尼亚大学作者机构存档仅公开同一摘要，附件不公开；仍需合法取得正文AI相关章节。"
+        "尚未取得本综述AI相关正文完整段落及上下文，不能区分具体AI研究证据综述与未来愿景提及；现有公开参考文献不能替代正文。"
       ],
       "review_round": "2024-nydiii-reviews-ai4s-20261106",
       "review_scope": "原创研究及有直接AI4S贡献的综述/系统综述/Primer；保留既定来源限制，不含Perspective、新闻、点评等。",
       "source_quality_review": {
-        "checked_at": "2026-11-06",
+        "checked_at": "2026-11-13",
         "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
         "venue_decision": "建议纳入",
         "snapshot_papers": 128,
@@ -1046,9 +1054,107 @@
         "assigned_candidate_missing_abstract": 0,
         "official_year_count": 128,
         "official_directory_url": "https://www.nature.com/nrclinonc/articles?year=2024",
-        "count_comparison": "官网按在线年份2024和全部文章类型显示的总量；与快照数量一致，但未逐条排除漏项与重复相抵",
-        "completeness_verified": false,
-        "processing": "正常复审本批证据充分的综述；候选缺摘要逐篇补证。全量缺摘要可能导致初筛漏检，未对未命中记录做穷尽审核。"
+        "count_comparison": "沿用2026-11-07已核7页官网目录的文章编号/DOI双向集合比对：128条全类型书目一致，无缺项、仓库独有项或重复；本轮未重爬全目录。",
+        "completeness_verified": true,
+        "processing": "当前唯一候选原摘要完整；待定原因是AI相关正文受限，而非摘要缺失。"
+      },
+      "followup_history": [
+        {
+          "checked_at": "2026-11-13",
+          "input_main_commit": "434a011ed2edae0c88f14ae34e8b103ebef9e6e6",
+          "rationale_before": "科学任务为FGFR靶向治疗及耐药机制。现有摘要把AI列为未来方向，未说明本文对AI方法在该任务中的实质应用作了何种综述；参考文献虽有AI病理预测研究，但不能仅凭引用列表认定正文贡献。需核查全文AI相关段落，区分具体方法证据综述与愿景提及。",
+          "verification_gaps_before": [
+            "需取得本文AI相关完整段落，确认是否实质综述AI病理/FGFR预测的研究证据，还是仅提出未来愿景。",
+            "正式页和作者题名DOI可核对，正文/PDF受访问限制；Crossref请求限流。",
+            "独立复查博洛尼亚大学作者机构存档仅公开同一摘要，附件不公开；仍需合法取得正文AI相关章节。"
+          ],
+          "action": "复查正式全文入口、作者机构存档、Europe PMC及OpenAlex，并确认用户无全文或机构权限；没有取得AI正文，保留待定。"
+        }
+      ],
+      "full_text_access": {
+        "checked_at": "2026-11-13",
+        "status": "access_restricted",
+        "full_text_obtained": false,
+        "ai_section_obtained": false,
+        "publisher_evidence": {
+          "url": "https://www.nature.com/articles/s41571-024-00869-z",
+          "result": "subscription_preview_only",
+          "visible_content": [
+            "Abstract",
+            "Key points",
+            "References"
+          ],
+          "browser_check": "当前浏览器的机构访问不覆盖该文章，显示订阅预览；没有取得正文或正式PDF。",
+          "pdf_attempt_result": "正式.pdf入口重定向到文章预览，未取得PDF。"
+        },
+        "author_repository_evidence": {
+          "url": "https://cris.unibo.it/handle/11585/981976",
+          "result": "attachments_not_public",
+          "note": "机构存档明确说明附件未公开；不是开放作者稿。"
+        },
+        "europe_pmc": {
+          "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+          "parameters": {
+            "query": "EXT_ID:38424198 AND SRC:MED",
+            "format": "json",
+            "resultType": "core"
+          },
+          "expected_count": 1,
+          "retrieved_count": 1,
+          "pmcid": null,
+          "inPMC": "N",
+          "hasPDF": "N",
+          "authMan": "N",
+          "isOpenAccess": "N",
+          "full_text_urls": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1038/s41571-024-00869-z"
+            }
+          ],
+          "response_sha256": "df34dc7f57c46eadff3db70f3458698b1ca7b8d658238ef4300e183eae636f37"
+        },
+        "openalex": {
+          "endpoint": "https://api.openalex.org/works/https://doi.org/10.1038/s41571-024-00869-z",
+          "id": "https://openalex.org/W4392284056",
+          "is_oa": false,
+          "best_oa_location": null,
+          "repository_fulltext_available": false,
+          "location_count": 3,
+          "locations": [
+            {
+              "landing_page_url": "https://doi.org/10.1038/s41571-024-00869-z",
+              "pdf_url": null,
+              "is_oa": false
+            },
+            {
+              "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/38424198",
+              "pdf_url": null,
+              "is_oa": false
+            },
+            {
+              "landing_page_url": "https://hdl.handle.net/11585/981976",
+              "pdf_url": null,
+              "is_oa": false
+            }
+          ],
+          "response_sha256": "b01c4fa21e0a2d2ce127552f884b94e84a08f92f90c6c7697b4fa08ad37e27dd"
+        },
+        "user_access_confirmation": {
+          "checked_at": "2026-11-13",
+          "answer": "没有全文或机构访问"
+        },
+        "required_evidence": "该综述本身的AI相关正文完整段落及其上下文，特别是参考文献223–224在正文中的讨论；或可合法阅读的完整作者稿/正式全文。",
+        "scope_limit": "没有全文不是无需审核；不沿用官方无摘要免报状态，不仅凭摘要未来方向或参考文献列表改为纳入/排除。"
+      },
+      "review_provenance": {
+        "input_main_commit": "434a011ed2edae0c88f14ae34e8b103ebef9e6e6",
+        "skill_commit": "434a011ed2edae0c88f14ae34e8b103ebef9e6e6",
+        "vocabulary_commit": "434a011ed2edae0c88f14ae34e8b103ebef9e6e6",
+        "vocabulary_tag_count": 1334
       }
     }
   },
