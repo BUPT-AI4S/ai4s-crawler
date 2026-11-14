@@ -70428,9 +70428,9 @@
       "batch_id": "2024-nydiii-research-ai4s-20261105",
       "owner": "南耀笛",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "reviewed_at": "2026-11-05",
+      "reviewed_at": "2026-11-14",
       "decision": "exclude",
-      "rationale": "沿用已完成的文章类型筛选，本次只要原创研究文章。出版社明确标为 Research Highlight，介绍另文的 GeneCompass 成果，非该模型的原始研究。",
+      "rationale": "按现行原创研究及有实质学术内容综述的规则复核：本篇正式标为Research Highlight，正文介绍并点评Yang等的GeneCompass研究及其性能和局限，是研究亮点评论，非该模型的原创研究，也不作为独立学术综述纳入。所点评原创研究10.1038/s41422-024-01034-y已在本人清单纳入。保留排除，避免重复计作研究成果。",
       "verified_metadata": {
         "article_type": "Research Highlight",
         "article_type_verification": {
@@ -70447,9 +70447,14 @@
         },
         "evidence_urls": [
           "https://www.nature.com/articles/s41422-024-01045-9",
-          "https://pubmed.ncbi.nlm.nih.gov/39482403/"
+          "https://pubmed.ncbi.nlm.nih.gov/39482403/",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC11614854/"
         ],
-        "abstract": null
+        "abstract": null,
+        "doi": "10.1038/s41422-024-01045-9",
+        "title": "A cross-species foundation model for single cells",
+        "url": "https://www.nature.com/articles/s41422-024-01045-9",
+        "pmcid": "PMC11614854"
       },
       "tags": [],
       "research_type_review": {
@@ -70457,26 +70462,75 @@
         "doi": "10.1038/s41422-024-01045-9",
         "decision": "exclude",
         "category": "research_highlight",
-        "reason_zh": "出版社明确标为 Research Highlight，介绍另文的 GeneCompass 成果，非该模型的原始研究。",
-        "evidence": "Research Highlight",
+        "reason_zh": "按现行原创研究及有实质学术内容综述的规则复核：本篇正式标为Research Highlight，正文介绍并点评Yang等的GeneCompass研究及其性能和局限，是研究亮点评论，非该模型的原创研究，也不作为独立学术综述纳入。所点评原创研究10.1038/s41422-024-01034-y已在本人清单纳入。保留排除，避免重复计作研究成果。",
+        "evidence": "出版方Research Highlight原生标签；PMC完整正文针对Yang等的GeneCompass成果展开介绍、比较与点评，参考文献4为已纳入的原创研究。",
         "confidence": "high",
         "evidence_url": "https://www.nature.com/articles/s41422-024-01045-9",
         "external_article_type": "Research Highlight",
-        "method": "title_abstract_evidence_review",
+        "method": "publisher_native_type_and_PMC_fulltext_recheck",
         "original_article_type": "unknown"
       },
       "review_stage": "article_type",
-      "evidence_location": "前次文章类型核验：Research Highlight",
+      "evidence_location": "PubMed No abstract available；Europe PMC确切DOI记录；PMC全文正文及参考文献4",
       "evidence_urls": [
-        "https://www.nature.com/articles/s41422-024-01045-9"
+        "https://www.nature.com/articles/s41422-024-01045-9",
+        "https://pubmed.ncbi.nlm.nih.gov/39482403/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11614854/"
       ],
       "abstract_verification": {
         "status": "not_provided_by_official_source",
-        "checked_at": "2026-11-09",
+        "checked_at": "2026-11-14",
         "evidence_files": [
           "work/metadata_standardization_20261109/abstracts/evidence/web_26.json"
         ],
-        "note": "PubMed正式页面明确显示No abstract available；欧洲PMC同DOI正式记录亦无abstractText，不将Research Highlight正文替代摘要。"
+        "note": "已排除Research Highlight；PubMed显示No abstract available，Europe PMC同DOI记录无abstractText，出版社存入PMC的完整正文无独立Abstract章节；保留null，不把导语、正文或生成文字作为摘要。",
+        "supplement_required": false,
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41422-024-01045-9",
+          "https://pubmed.ncbi.nlm.nih.gov/39482403/",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC11614854/"
+        ],
+        "pmid": "39482403",
+        "pmcid": "PMC11614854",
+        "response_sha256": "5706e4f04b2973ea3301da7e48ab0ac96cf3a3b57c875e21e2f92c5d7c646091"
+      },
+      "followup_history": [
+        {
+          "checked_at": "2026-11-14",
+          "input_main_commit": "dd5c5c80129c71545526b53be1179e48bb20601f",
+          "rationale_before": "沿用已完成的文章类型筛选，本次只要原创研究文章。出版社明确标为 Research Highlight，介绍另文的 GeneCompass 成果，非该模型的原始研究。",
+          "abstract_verification_before": {
+            "status": "not_provided_by_official_source",
+            "checked_at": "2026-11-09",
+            "evidence_files": [
+              "work/metadata_standardization_20261109/abstracts/evidence/web_26.json"
+            ],
+            "note": "PubMed正式页面明确显示No abstract available；欧洲PMC同DOI正式记录亦无abstractText，不将Research Highlight正文替代摘要。"
+          },
+          "action": "按现行规则复核Research Highlight排除依据，并以正式PubMed/Europe PMC及PMC完整正文确认官方无独立摘要，标注无需补摘要。"
+        }
+      ],
+      "abstract_requirement": {
+        "status": "not_required",
+        "reason": "official_source_has_no_independent_abstract",
+        "label_zh": "官方无独立摘要，无需补摘要",
+        "checked_at": "2026-11-14",
+        "checked_by": "南耀笛",
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41422-024-01045-9",
+          "https://pubmed.ncbi.nlm.nih.gov/39482403/",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC11614854/"
+        ],
+        "basis": "PubMed_no_abstract_Europe_PMC_exact_record_and_publisher_deposited_PMC_fulltext",
+        "note": "已排除Research Highlight；PubMed显示No abstract available，Europe PMC同DOI记录无abstractText，出版社存入PMC的完整正文无独立Abstract章节；保留null，不把导语、正文或生成文字作为摘要。"
+      },
+      "related_original_research_doi": "10.1038/s41422-024-01034-y",
+      "monitor_exception": {
+        "checked_at": "2026-11-14",
+        "status": "resolved_not_required",
+        "official_abstract_not_provided": true,
+        "excluded_nonresearch": true,
+        "resolution": "直接应用已上线的官方无摘要免补状态；原始缺摘要1、无需补摘要1、待补0，保留原候选和null。"
       }
     }
   },
