@@ -32583,15 +32583,32 @@
           "checked_at": "2026-11-13",
           "input_main_commit": "2ed68aa27f5c0fe769c998510ceb44140b59f9f7",
           "action": "再次核对正式Year in Review短评及PubMed 39672908；正文无独立Abstract，保留排除和null，不把新闻正文复制为摘要。"
+        },
+        {
+          "checked_at": "2026-11-13",
+          "action": "按用户要求，将官方无独立摘要的记录明确标注为无需补摘要；保留原摘要null与排除记录。"
         }
       ],
       "monitor_exception": {
         "checked_at": "2026-11-13",
-        "status": "requires_monitor_policy_confirmation",
+        "status": "authorized_not_required",
         "requested_maintainer": "乔徐阳",
         "excluded_nonresearch": true,
         "official_abstract_not_provided": true,
-        "required_decision": "确认能否将已排除且官方无摘要的记录免报或单列；保留原始候选与null，不改监控代码或用占位文本消除提示。"
+        "required_decision": "用户已明确授权识别not_required；原始摘要null与排除记录保留。",
+        "authorization": "用户本轮明确授权修改监控并合并"
+      },
+      "abstract_requirement": {
+        "status": "not_required",
+        "reason": "official_source_has_no_independent_abstract",
+        "label_zh": "官方无独立摘要，无需补摘要",
+        "checked_at": "2026-11-13",
+        "checked_by": "南耀笛",
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41591-024-03392-x",
+          "https://pubmed.ncbi.nlm.nih.gov/39672908/"
+        ],
+        "note": "已排除的Year in Review年度短评；保留abstract=null及原候选，不以新闻正文、生成文字或占位文本代替正式摘要。"
       }
     }
   },
