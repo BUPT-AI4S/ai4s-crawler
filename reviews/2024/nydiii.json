@@ -25363,9 +25363,9 @@
       "batch_id": "2024-nydiii-research-ai4s-20261105",
       "owner": "南耀笛",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "reviewed_at": "2026-11-05",
+      "reviewed_at": "2026-11-13",
       "decision": "exclude",
-      "rationale": "沿用已完成的文章类型筛选，本次只要原创研究文章。来源文章类型为 Consensus Statement，不属于本次要求的原创研究文章。",
+      "rationale": "本篇为IDEAL Robotics Colloquium共识建议，提出手术机器人开发、比较研究及长期监测的评价框架，涵盖人因、伦理、经济与训练。按当前原创研究或实质学术综述范围核对，本文贡献为共识性评价建议，并未提供独立AI科学实验或对AI科学方法的实质研究综述；保留排除，不再以“只要原创”旧口径作理由。",
       "verified_metadata": {
         "article_type": "Consensus Statement",
         "article_type_verification": {
@@ -25389,7 +25389,7 @@
         "decision": "exclude",
         "category": "consensus",
         "confidence": "high",
-        "reason_zh": "来源文章类型为 Consensus Statement，不属于本次要求的原创研究文章。",
+        "reason_zh": "本篇为IDEAL Robotics Colloquium共识建议，提出手术机器人开发、比较研究及长期监测的评价框架，涵盖人因、伦理、经济与训练。按当前原创研究或实质学术综述范围核对，本文贡献为共识性评价建议，并未提供独立AI科学实验或对AI科学方法的实质研究综述；保留排除，不再以“只要原创”旧口径作理由。",
         "evidence": "article_type=Consensus Statement",
         "method": "publisher_type_rule",
         "evidence_url": "https://www.nature.com/articles/s41591-023-02732-7",
@@ -25401,6 +25401,25 @@
       "evidence_location": "前次文章类型核验：article_type=Consensus Statement",
       "evidence_urls": [
         "https://www.nature.com/articles/s41591-023-02732-7"
+      ],
+      "followup_history": [
+        {
+          "checked_at": "2026-11-13",
+          "rationale_before": "沿用已完成的文章类型筛选，本次只要原创研究文章。来源文章类型为 Consensus Statement，不属于本次要求的原创研究文章。",
+          "research_type_review_before": {
+            "decision": "exclude",
+            "category": "consensus",
+            "confidence": "high",
+            "reason_zh": "来源文章类型为 Consensus Statement，不属于本次要求的原创研究文章。",
+            "evidence": "article_type=Consensus Statement",
+            "method": "publisher_type_rule",
+            "evidence_url": "https://www.nature.com/articles/s41591-023-02732-7",
+            "index": 175,
+            "doi": "10.1038/s41591-023-02732-7",
+            "original_article_type": "Consensus Statement"
+          },
+          "input_main_commit": "2ed68aa27f5c0fe769c998510ceb44140b59f9f7"
+        }
       ]
     }
   },
@@ -32551,12 +32570,28 @@
         "processing": "正常复审本批证据充分的综述；候选缺摘要逐篇补证。全量缺摘要可能导致初筛漏检，未对未命中记录做穷尽审核。"
       },
       "abstract_verification": {
+        "checked_at": "2026-11-13",
         "status": "not_provided_by_official_source",
-        "checked_at": "2026-11-09",
-        "evidence_files": [
-          "work/metadata_standardization_20261109/abstracts/evidence/pubmed_noabstract_xml.xml"
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41591-024-03392-x",
+          "https://pubmed.ncbi.nlm.nih.gov/39672908/"
         ],
-        "note": "PubMed正式文献XML的Article无Abstract字段，DOI核对一致；表示正式文献记录未提供摘要，不以正文/评论内容另编摘要。"
+        "note": "出版方Year in Review为AlphaFold升级及诺奖新闻短评，无独立Abstract；PubMed对应记录也未提供摘要。相关性和类型足以排除，无需标待定。"
+      },
+      "followup_history": [
+        {
+          "checked_at": "2026-11-13",
+          "input_main_commit": "2ed68aa27f5c0fe769c998510ceb44140b59f9f7",
+          "action": "再次核对正式Year in Review短评及PubMed 39672908；正文无独立Abstract，保留排除和null，不把新闻正文复制为摘要。"
+        }
+      ],
+      "monitor_exception": {
+        "checked_at": "2026-11-13",
+        "status": "requires_monitor_policy_confirmation",
+        "requested_maintainer": "乔徐阳",
+        "excluded_nonresearch": true,
+        "official_abstract_not_provided": true,
+        "required_decision": "确认能否将已排除且官方无摘要的记录免报或单列；保留原始候选与null，不改监控代码或用占位文本消除提示。"
       }
     }
   },
@@ -239828,6 +239863,757 @@
         "raw_snapshot_id": "10.1016/j.molp.2024.09.004"
       },
       "evidence_location": "正式Abstract，NeREF辐射校准、3DMPCs及植物性状估计验证"
+    }
+  },
+  {
+    "id": "10.1038/s41591-023-02784-9",
+    "venue": "nm",
+    "year": 2024,
+    "track": null,
+    "title": "Validation of biomarkers of aging",
+    "authors": [
+      "Mahdi Moqri",
+      "Chiara Herzog",
+      "Jesse R. Poganik",
+      "Kejun Ying",
+      "Jamie N. Justice",
+      "Daniel W. Belsky",
+      "Albert T. Higgins-Chen",
+      "Brian H. Chen",
+      "Alan A. Cohen",
+      "Georg Fuellen",
+      "Sara Hägg",
+      "Riccardo E. Marioni",
+      "Martin Widschwendter",
+      "Kristen Fortney",
+      "Peter O. Fedichev",
+      "Alex Zhavoronkov",
+      "Nir Barzilai",
+      "Jessica Lasky-Su",
+      "Douglas P. Kiel",
+      "Brian K. Kennedy",
+      "Steven Cummings",
+      "P. Eline Slagboom",
+      "Eric Verdin",
+      "Andrea B. Maier",
+      "Vittorio Sebastiano",
+      "Michael P. Snyder",
+      "Vadim N. Gladyshev",
+      "Steve Horvath",
+      "Luigi Ferrucci"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0001-6675-0566",
+      "https://orcid.org/0000-0002-1572-498X",
+      "https://orcid.org/0000-0003-3098-8550",
+      "https://orcid.org/0000-0002-1791-6176",
+      "https://orcid.org/0000-0001-5463-2212",
+      "https://orcid.org/0000-0003-2904-2741",
+      "https://orcid.org/0000-0003-4113-3988",
+      "https://orcid.org/0000-0002-2452-1500",
+      "https://orcid.org/0000-0003-4430-4260",
+      "https://orcid.org/0000-0002-7778-8380",
+      "https://orcid.org/0000-0001-6236-4705",
+      "https://orcid.org/0000-0001-8474-0310",
+      "https://orcid.org/0000-0002-5754-1874",
+      "https://orcid.org/0000-0001-8808-260X",
+      "https://orcid.org/0000-0002-2875-4723",
+      "https://orcid.org/0000-0003-3703-3183",
+      "https://orcid.org/0000-0003-0784-7987",
+      "https://orcid.org/0000-0002-0372-7016",
+      "https://orcid.org/0000-0002-4110-3589",
+      "https://orcid.org/0000-0002-6273-1613"
+    ],
+    "abstract": "The search for biomarkers that quantify biological aging (particularly ‘omic’-based biomarkers) has intensified in recent years. Such biomarkers could predict aging-related outcomes and could serve as surrogate endpoints for the evaluation of interventions promoting healthy aging and longevity. However, no consensus exists on how biomarkers of aging should be validated before their translation to the clinic. Here, we review current efforts to evaluate the predictive validity of omic biomarkers of aging in population studies, discuss challenges in comparability and generalizability and provide recommendations to facilitate future validation of biomarkers of aging. Finally, we discuss how systematic validation can accelerate clinical translation of biomarkers of aging and their use in gerotherapeutic clinical trials.",
+    "keywords": [
+      "Biomarkers",
+      "Translational research"
+    ],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1038/s41591-023-02784-9",
+    "pages": "360-372",
+    "bibtex": null,
+    "url": "https://www.nature.com/articles/s41591-023-02784-9",
+    "pdf_url": "https://www.nature.com/articles/s41591-023-02784-9.pdf",
+    "code_url": null,
+    "project_url": null,
+    "published": "2024-02-14",
+    "source": "crossref.org+nature.com",
+    "venue_type": "journal",
+    "journal_title": "Nature Medicine",
+    "issn": "1546-170X",
+    "article_type": "Review Article",
+    "screening_status": "ready",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "2024-nydiii-nature-medicine-followup-20261113",
+      "owner": "南耀笛",
+      "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
+      "reviewed_at": "2026-11-13",
+      "decision": "include",
+      "rationale": "漏筛补录：综述组学衰老生物标志物的预测验证；公开全文明确讨论机器学习构建的复合生物标志物、独立样本验证、模型假设、缺失数据处理及跨人群泛化，直接服务衰老风险和干预终点评估；不将本文当作新训练模型。",
+      "verified_metadata": {
+        "doi": "10.1038/s41591-023-02784-9",
+        "title": "Validation of biomarkers of aging",
+        "authors": [
+          "Mahdi Moqri",
+          "Chiara Herzog",
+          "Jesse R. Poganik",
+          "Kejun Ying",
+          "Jamie N. Justice",
+          "Daniel W. Belsky",
+          "Albert T. Higgins-Chen",
+          "Brian H. Chen",
+          "Alan A. Cohen",
+          "Georg Fuellen",
+          "Sara Hägg",
+          "Riccardo E. Marioni",
+          "Martin Widschwendter",
+          "Kristen Fortney",
+          "Peter O. Fedichev",
+          "Alex Zhavoronkov",
+          "Nir Barzilai",
+          "Jessica Lasky-Su",
+          "Douglas P. Kiel",
+          "Brian K. Kennedy",
+          "Steven Cummings",
+          "P. Eline Slagboom",
+          "Eric Verdin",
+          "Andrea B. Maier",
+          "Vittorio Sebastiano",
+          "Michael P. Snyder",
+          "Vadim N. Gladyshev",
+          "Steve Horvath",
+          "Luigi Ferrucci"
+        ],
+        "url": "https://www.nature.com/articles/s41591-023-02784-9",
+        "article_type": "Review Article",
+        "published": "2024-02-14",
+        "pdf_url": null,
+        "code_url": null,
+        "project_url": null,
+        "dataset_url": null,
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41591-023-02784-9",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC11090477/"
+        ],
+        "identity_verification": {
+          "checked_at": "2026-11-13",
+          "basis": "exact_doi_title_and_author_order_in_publisher_or_author_archived_record",
+          "native_type_preserved": true
+        }
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入原摘要；作者公开全文Recommendations for biomarker developers及Table 2",
+          "rationale": "综述组学衰老生物标志物的预测验证；公开全文明确讨论机器学习构建的复合生物标志物、独立样本验证、模型假设、缺失数据处理及跨人群泛化，直接服务衰老风险和干预终点评估；不将本文当作新训练模型。"
+        },
+        {
+          "axis": "method",
+          "label": "机器学习",
+          "label_en": "Machine learning",
+          "evidence_location": "输入原摘要；作者公开全文Recommendations for biomarker developers及Table 2",
+          "rationale": "综述组学衰老生物标志物的预测验证；公开全文明确讨论机器学习构建的复合生物标志物、独立样本验证、模型假设、缺失数据处理及跨人群泛化，直接服务衰老风险和干预终点评估；不将本文当作新训练模型。"
+        },
+        {
+          "axis": "contribution",
+          "label": "综述",
+          "label_en": "Review",
+          "evidence_location": "输入原摘要；作者公开全文Recommendations for biomarker developers及Table 2",
+          "rationale": "综述组学衰老生物标志物的预测验证；公开全文明确讨论机器学习构建的复合生物标志物、独立样本验证、模型假设、缺失数据处理及跨人群泛化，直接服务衰老风险和干预终点评估；不将本文当作新训练模型。"
+        }
+      ],
+      "research_type_review": {
+        "decision": "include",
+        "category": "substantive_review",
+        "original_article_type": "Review Article",
+        "rationale": "综述组学衰老生物标志物的预测验证；公开全文明确讨论机器学习构建的复合生物标志物、独立样本验证、模型假设、缺失数据处理及跨人群泛化，直接服务衰老风险和干预终点评估；不将本文当作新训练模型。",
+        "evidence_location": "输入原摘要；作者公开全文Recommendations for biomarker developers及Table 2"
+      },
+      "evidence_location": "输入原摘要；作者公开全文Recommendations for biomarker developers及Table 2",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41591-023-02784-9",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11090477/"
+      ],
+      "review_provenance": {
+        "input_main_commit": "2ed68aa27f5c0fe769c998510ceb44140b59f9f7",
+        "skill_commit": "2ed68aa27f5c0fe769c998510ceb44140b59f9f7",
+        "vocabulary_commit": "2ed68aa27f5c0fe769c998510ceb44140b59f9f7",
+        "raw_snapshot_id": "10.1038/s41591-023-02784-9"
+      },
+      "verification_gaps": [
+        "本轮未独立取得可验证的公开PDF直达链接，verified_metadata.pdf_url留空；保留原始pdf_url。"
+      ],
+      "abstract_verification": {
+        "checked_at": "2026-11-13",
+        "status": "existing_original_abstract_retained",
+        "evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11090477/",
+        "note": "保留已有正式原摘要；未以生成文字或正文片段替代。"
+      }
+    }
+  },
+  {
+    "id": "10.1038/s41591-024-02970-3",
+    "venue": "nm",
+    "year": 2024,
+    "track": null,
+    "title": "Artificial intelligence in surgery",
+    "authors": [
+      "Chris Varghese",
+      "Ewen M. Harrison",
+      "Greg O’Grady",
+      "Eric J. Topol"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0001-7369-8639",
+      "https://orcid.org/0000-0002-5018-3066",
+      "https://orcid.org/0000-0002-1478-4729"
+    ],
+    "abstract": "Artificial intelligence (AI) is rapidly emerging in healthcare, yet applications in surgery remain relatively nascent. Here we review the integration of AI in the field of surgery, centering our discussion on multifaceted improvements in surgical care in the preoperative, intraoperative and postoperative space. The emergence of foundation model architectures, wearable technologies and improving surgical data infrastructures is enabling rapid advances in AI interventions and utility. We discuss how maturing AI methods hold the potential to improve patient outcomes, facilitate surgical education and optimize surgical care. We review the current applications of deep learning approaches and outline a vision for future advances through multimodal foundation models.",
+    "keywords": [
+      "Health care",
+      "Biotechnology"
+    ],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1038/s41591-024-02970-3",
+    "pages": "1257-1268",
+    "bibtex": null,
+    "url": "https://www.nature.com/articles/s41591-024-02970-3",
+    "pdf_url": "https://www.nature.com/articles/s41591-024-02970-3.pdf",
+    "code_url": null,
+    "project_url": null,
+    "published": "2024-05-13",
+    "source": "crossref.org+nature.com",
+    "venue_type": "journal",
+    "journal_title": "Nature Medicine",
+    "issn": "1546-170X",
+    "article_type": "Review Article",
+    "screening_status": "ready",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "2024-nydiii-nature-medicine-followup-20261113",
+      "owner": "南耀笛",
+      "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
+      "reviewed_at": "2026-11-13",
+      "decision": "include",
+      "rationale": "漏筛补录：实质综述深度学习与多模态基础模型在手术前后和术中的应用、验证与限制，直接服务手术决策、患者结局和外科研究，不只是提及AI愿景；不把被综述的实验计作本文原创实验。",
+      "verified_metadata": {
+        "doi": "10.1038/s41591-024-02970-3",
+        "title": "Artificial intelligence in surgery",
+        "authors": [
+          "Chris Varghese",
+          "Ewen M. Harrison",
+          "Greg O’Grady",
+          "Eric J. Topol"
+        ],
+        "url": "https://www.nature.com/articles/s41591-024-02970-3",
+        "article_type": "Review Article",
+        "published": "2024-05-13",
+        "pdf_url": "https://www.nature.com/articles/s41591-024-02970-3.pdf",
+        "code_url": null,
+        "project_url": null,
+        "dataset_url": null,
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41591-024-02970-3",
+          "https://www.nature.com/articles/s41591-024-02970-3.pdf"
+        ],
+        "identity_verification": {
+          "checked_at": "2026-11-13",
+          "basis": "exact_doi_title_and_author_order_in_publisher_or_author_archived_record",
+          "native_type_preserved": true
+        }
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入原摘要；出版方PDF首页Abstract及术前、术中、术后AI应用综述",
+          "rationale": "实质综述深度学习与多模态基础模型在手术前后和术中的应用、验证与限制，直接服务手术决策、患者结局和外科研究，不只是提及AI愿景；不把被综述的实验计作本文原创实验。"
+        },
+        {
+          "axis": "method",
+          "label": "深度学习",
+          "label_en": "Deep learning",
+          "evidence_location": "输入原摘要；出版方PDF首页Abstract及术前、术中、术后AI应用综述",
+          "rationale": "实质综述深度学习与多模态基础模型在手术前后和术中的应用、验证与限制，直接服务手术决策、患者结局和外科研究，不只是提及AI愿景；不把被综述的实验计作本文原创实验。"
+        },
+        {
+          "axis": "contribution",
+          "label": "综述",
+          "label_en": "Review",
+          "evidence_location": "输入原摘要；出版方PDF首页Abstract及术前、术中、术后AI应用综述",
+          "rationale": "实质综述深度学习与多模态基础模型在手术前后和术中的应用、验证与限制，直接服务手术决策、患者结局和外科研究，不只是提及AI愿景；不把被综述的实验计作本文原创实验。"
+        }
+      ],
+      "research_type_review": {
+        "decision": "include",
+        "category": "substantive_review",
+        "original_article_type": "Review Article",
+        "rationale": "实质综述深度学习与多模态基础模型在手术前后和术中的应用、验证与限制，直接服务手术决策、患者结局和外科研究，不只是提及AI愿景；不把被综述的实验计作本文原创实验。",
+        "evidence_location": "输入原摘要；出版方PDF首页Abstract及术前、术中、术后AI应用综述"
+      },
+      "evidence_location": "输入原摘要；出版方PDF首页Abstract及术前、术中、术后AI应用综述",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41591-024-02970-3",
+        "https://www.nature.com/articles/s41591-024-02970-3.pdf"
+      ],
+      "review_provenance": {
+        "input_main_commit": "2ed68aa27f5c0fe769c998510ceb44140b59f9f7",
+        "skill_commit": "2ed68aa27f5c0fe769c998510ceb44140b59f9f7",
+        "vocabulary_commit": "2ed68aa27f5c0fe769c998510ceb44140b59f9f7",
+        "raw_snapshot_id": "10.1038/s41591-024-02970-3"
+      },
+      "verification_gaps": [],
+      "abstract_verification": {
+        "checked_at": "2026-11-13",
+        "status": "existing_original_abstract_retained",
+        "evidence_url": "https://www.nature.com/articles/s41591-024-02970-3.pdf",
+        "note": "保留已有正式原摘要；未以生成文字或正文片段替代。"
+      }
+    }
+  },
+  {
+    "id": "10.1038/s41591-024-03074-8",
+    "venue": "nm",
+    "year": 2024,
+    "track": null,
+    "title": "Harnessing EHR data for health research",
+    "authors": [
+      "Alice S. Tang",
+      "Sarah R. Woldemariam",
+      "Silvia Miramontes",
+      "Beau Norgeot",
+      "Tomiko T. Oskotsky",
+      "Marina Sirota"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0003-4745-0714",
+      "https://orcid.org/0000-0003-2629-701X",
+      "https://orcid.org/0000-0001-7393-5120",
+      "https://orcid.org/0000-0002-7246-6083"
+    ],
+    "abstract": "With the increasing availability of rich, longitudinal, real-world clinical data recorded in electronic health records (EHRs) for millions of patients, there is a growing interest in leveraging these records to improve the understanding of human health and disease and translate these insights into clinical applications. However, there is also a need to consider the limitations of these data due to various biases and to understand the impact of missing information. Recognizing and addressing these limitations can inform the design and interpretation of EHR-based informatics studies that avoid confusing or incorrect conclusions, particularly when applied to population or precision medicine. Here we discuss key considerations in the design, implementation and interpretation of EHR-based informatics studies, drawing from examples in the literature across hypothesis generation, hypothesis testing and machine learning applications. We outline the growing opportunities for EHR-based informatics studies, including association studies and predictive modeling, enabled by evolving AI capabilities—while addressing limitations and potential pitfalls to avoid.",
+    "keywords": [
+      "Computational biology and bioinformatics",
+      "Machine learning"
+    ],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1038/s41591-024-03074-8",
+    "pages": "1847-1855",
+    "bibtex": null,
+    "url": "https://www.nature.com/articles/s41591-024-03074-8",
+    "pdf_url": "https://www.nature.com/articles/s41591-024-03074-8.pdf",
+    "code_url": null,
+    "project_url": null,
+    "published": "2024-07-04",
+    "source": "crossref.org+nature.com",
+    "venue_type": "journal",
+    "journal_title": "Nature Medicine",
+    "issn": "1546-170X",
+    "article_type": "Review Article",
+    "screening_status": "ready",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "2024-nydiii-nature-medicine-followup-20261113",
+      "owner": "南耀笛",
+      "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
+      "reviewed_at": "2026-11-13",
+      "decision": "include",
+      "rationale": "漏筛补录：综述如何以EHR研究人类健康与疾病，具体分析机器学习预测建模、假设生成与检验及偏差、缺失数据和验证设计，AI与生物医学研究任务有直接关系，具有实质方法综述贡献。",
+      "verified_metadata": {
+        "doi": "10.1038/s41591-024-03074-8",
+        "title": "Harnessing EHR data for health research",
+        "authors": [
+          "Alice S. Tang",
+          "Sarah R. Woldemariam",
+          "Silvia Miramontes",
+          "Beau Norgeot",
+          "Tomiko T. Oskotsky",
+          "Marina Sirota"
+        ],
+        "url": "https://www.nature.com/articles/s41591-024-03074-8",
+        "article_type": "Review Article",
+        "published": "2024-07-04",
+        "pdf_url": null,
+        "code_url": null,
+        "project_url": null,
+        "dataset_url": null,
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41591-024-03074-8",
+          "https://pubmed.ncbi.nlm.nih.gov/38965433/"
+        ],
+        "identity_verification": {
+          "checked_at": "2026-11-13",
+          "basis": "exact_doi_title_and_author_order_in_publisher_or_author_archived_record",
+          "native_type_preserved": true
+        }
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入原摘要；正式摘要与机器学习应用及偏差、缺失信息分析",
+          "rationale": "综述如何以EHR研究人类健康与疾病，具体分析机器学习预测建模、假设生成与检验及偏差、缺失数据和验证设计，AI与生物医学研究任务有直接关系，具有实质方法综述贡献。"
+        },
+        {
+          "axis": "method",
+          "label": "机器学习",
+          "label_en": "Machine learning",
+          "evidence_location": "输入原摘要；正式摘要与机器学习应用及偏差、缺失信息分析",
+          "rationale": "综述如何以EHR研究人类健康与疾病，具体分析机器学习预测建模、假设生成与检验及偏差、缺失数据和验证设计，AI与生物医学研究任务有直接关系，具有实质方法综述贡献。"
+        },
+        {
+          "axis": "contribution",
+          "label": "综述",
+          "label_en": "Review",
+          "evidence_location": "输入原摘要；正式摘要与机器学习应用及偏差、缺失信息分析",
+          "rationale": "综述如何以EHR研究人类健康与疾病，具体分析机器学习预测建模、假设生成与检验及偏差、缺失数据和验证设计，AI与生物医学研究任务有直接关系，具有实质方法综述贡献。"
+        }
+      ],
+      "research_type_review": {
+        "decision": "include",
+        "category": "substantive_review",
+        "original_article_type": "Review Article",
+        "rationale": "综述如何以EHR研究人类健康与疾病，具体分析机器学习预测建模、假设生成与检验及偏差、缺失数据和验证设计，AI与生物医学研究任务有直接关系，具有实质方法综述贡献。",
+        "evidence_location": "输入原摘要；正式摘要与机器学习应用及偏差、缺失信息分析"
+      },
+      "evidence_location": "输入原摘要；正式摘要与机器学习应用及偏差、缺失信息分析",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41591-024-03074-8",
+        "https://pubmed.ncbi.nlm.nih.gov/38965433/"
+      ],
+      "review_provenance": {
+        "input_main_commit": "2ed68aa27f5c0fe769c998510ceb44140b59f9f7",
+        "skill_commit": "2ed68aa27f5c0fe769c998510ceb44140b59f9f7",
+        "vocabulary_commit": "2ed68aa27f5c0fe769c998510ceb44140b59f9f7",
+        "raw_snapshot_id": "10.1038/s41591-024-03074-8"
+      },
+      "verification_gaps": [
+        "本轮未独立取得可验证的公开PDF直达链接，verified_metadata.pdf_url留空；保留原始pdf_url。"
+      ],
+      "abstract_verification": {
+        "checked_at": "2026-11-13",
+        "status": "existing_original_abstract_retained",
+        "evidence_url": "https://pubmed.ncbi.nlm.nih.gov/38965433/",
+        "note": "保留已有正式原摘要；未以生成文字或正文片段替代。"
+      }
+    }
+  },
+  {
+    "id": "10.1038/s41591-024-02902-1",
+    "venue": "nm",
+    "year": 2024,
+    "track": null,
+    "title": "Causal machine learning for predicting treatment outcomes",
+    "authors": [
+      "Stefan Feuerriegel",
+      "Dennis Frauen",
+      "Valentyn Melnychuk",
+      "Jonas Schweisthal",
+      "Konstantin Hess",
+      "Alicia Curth",
+      "Stefan Bauer",
+      "Niki Kilbertus",
+      "Isaac S. Kohane",
+      "Mihaela van der Schaar"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0001-7856-8729",
+      "https://orcid.org/0000-0003-3725-3821",
+      "https://orcid.org/0009-0003-8552-6588",
+      "https://orcid.org/0000-0003-1712-060X",
+      "https://orcid.org/0000-0001-8718-4305"
+    ],
+    "abstract": "Causal machine learning (ML) offers flexible, data-driven methods for predicting treatment outcomes including efficacy and toxicity, thereby supporting the assessment and safety of drugs. A key benefit of causal ML is that it allows for estimating individualized treatment effects, so that clinical decision-making can be personalized to individual patient profiles. Causal ML can be used in combination with both clinical trial data and real-world data, such as clinical registries and electronic health records, but caution is needed to avoid biased or incorrect predictions. In this Perspective, we discuss the benefits of causal ML (relative to traditional statistical or ML approaches) and outline the key components and steps. Finally, we provide recommendations for the reliable use of causal ML and effective translation into the clinic.",
+    "keywords": [
+      "Medical research",
+      "Predictive markers",
+      "Therapeutics",
+      "Clinical trial design"
+    ],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1038/s41591-024-02902-1",
+    "pages": "958-968",
+    "bibtex": null,
+    "url": "https://www.nature.com/articles/s41591-024-02902-1",
+    "pdf_url": "https://www.nature.com/articles/s41591-024-02902-1.pdf",
+    "code_url": null,
+    "project_url": null,
+    "published": "2024-04-19",
+    "source": "crossref.org+nature.com",
+    "venue_type": "journal",
+    "journal_title": "Nature Medicine",
+    "issn": "1546-170X",
+    "article_type": "Perspective",
+    "screening_status": "ready",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "2024-nydiii-nature-medicine-followup-20261113",
+      "owner": "南耀笛",
+      "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
+      "reviewed_at": "2026-11-13",
+      "decision": "include",
+      "rationale": "漏筛补录：出版社形式为Perspective；按内容而非栏目名判断，本篇具体综述因果机器学习的假设、组件、工作步骤和可靠性检验，用于预测疗效与毒性、估计个体治疗效应，构成有实质学术内容的方法综述，满足现行规则，不自动扩展到其他Perspective。",
+      "verified_metadata": {
+        "doi": "10.1038/s41591-024-02902-1",
+        "title": "Causal machine learning for predicting treatment outcomes",
+        "authors": [
+          "Stefan Feuerriegel",
+          "Dennis Frauen",
+          "Valentyn Melnychuk",
+          "Jonas Schweisthal",
+          "Konstantin Hess",
+          "Alicia Curth",
+          "Stefan Bauer",
+          "Niki Kilbertus",
+          "Isaac S. Kohane",
+          "Mihaela van der Schaar"
+        ],
+        "url": "https://www.nature.com/articles/s41591-024-02902-1",
+        "article_type": "Perspective",
+        "published": "2024-04-19",
+        "pdf_url": null,
+        "code_url": null,
+        "project_url": null,
+        "dataset_url": null,
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41591-024-02902-1"
+        ],
+        "identity_verification": {
+          "checked_at": "2026-11-13",
+          "basis": "exact_doi_title_and_author_order_in_publisher_or_author_archived_record",
+          "native_type_preserved": true
+        }
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "正式Abstract及正文因果机器学习流程、个体治疗效应、临床试验和真实世界数据章节",
+          "rationale": "出版社形式为Perspective；按内容而非栏目名判断，本篇具体综述因果机器学习的假设、组件、工作步骤和可靠性检验，用于预测疗效与毒性、估计个体治疗效应，构成有实质学术内容的方法综述，满足现行规则，不自动扩展到其他Perspective。"
+        },
+        {
+          "axis": "method",
+          "label": "机器学习",
+          "label_en": "Machine learning",
+          "evidence_location": "正式Abstract及正文因果机器学习流程、个体治疗效应、临床试验和真实世界数据章节",
+          "rationale": "出版社形式为Perspective；按内容而非栏目名判断，本篇具体综述因果机器学习的假设、组件、工作步骤和可靠性检验，用于预测疗效与毒性、估计个体治疗效应，构成有实质学术内容的方法综述，满足现行规则，不自动扩展到其他Perspective。"
+        },
+        {
+          "axis": "method",
+          "label": "因果推断",
+          "label_en": "Causal inference",
+          "evidence_location": "正式Abstract及正文因果机器学习流程、个体治疗效应、临床试验和真实世界数据章节",
+          "rationale": "出版社形式为Perspective；按内容而非栏目名判断，本篇具体综述因果机器学习的假设、组件、工作步骤和可靠性检验，用于预测疗效与毒性、估计个体治疗效应，构成有实质学术内容的方法综述，满足现行规则，不自动扩展到其他Perspective。"
+        },
+        {
+          "axis": "contribution",
+          "label": "综述",
+          "label_en": "Review",
+          "evidence_location": "正式Abstract及正文因果机器学习流程、个体治疗效应、临床试验和真实世界数据章节",
+          "rationale": "出版社形式为Perspective；按内容而非栏目名判断，本篇具体综述因果机器学习的假设、组件、工作步骤和可靠性检验，用于预测疗效与毒性、估计个体治疗效应，构成有实质学术内容的方法综述，满足现行规则，不自动扩展到其他Perspective。"
+        }
+      ],
+      "research_type_review": {
+        "decision": "include",
+        "category": "substantive_review",
+        "original_article_type": "Perspective",
+        "rationale": "出版社形式为Perspective；按内容而非栏目名判断，本篇具体综述因果机器学习的假设、组件、工作步骤和可靠性检验，用于预测疗效与毒性、估计个体治疗效应，构成有实质学术内容的方法综述，满足现行规则，不自动扩展到其他Perspective。",
+        "evidence_location": "正式Abstract及正文因果机器学习流程、个体治疗效应、临床试验和真实世界数据章节"
+      },
+      "evidence_location": "正式Abstract及正文因果机器学习流程、个体治疗效应、临床试验和真实世界数据章节",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41591-024-02902-1"
+      ],
+      "review_provenance": {
+        "input_main_commit": "2ed68aa27f5c0fe769c998510ceb44140b59f9f7",
+        "skill_commit": "2ed68aa27f5c0fe769c998510ceb44140b59f9f7",
+        "vocabulary_commit": "2ed68aa27f5c0fe769c998510ceb44140b59f9f7",
+        "raw_snapshot_id": "10.1038/s41591-024-02902-1"
+      },
+      "verification_gaps": [
+        "本轮未独立取得可验证的公开PDF直达链接，verified_metadata.pdf_url留空；保留原始pdf_url。"
+      ],
+      "abstract_verification": {
+        "checked_at": "2026-11-13",
+        "status": "existing_original_abstract_retained",
+        "evidence_url": "https://www.nature.com/articles/s41591-024-02902-1",
+        "note": "保留已有正式原摘要；未以生成文字或正文片段替代。"
+      }
+    }
+  },
+  {
+    "id": "10.1038/d41591-024-00079-1",
+    "venue": "nm",
+    "year": 2024,
+    "track": null,
+    "title": "Limiting babies’ sugar intake protects them against chronic diseases",
+    "authors": [
+      "Karen O’Leary"
+    ],
+    "author_ids": [],
+    "abstract": null,
+    "keywords": [
+      "Diabetes"
+    ],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1038/d41591-024-00079-1",
+    "pages": null,
+    "bibtex": null,
+    "url": "https://www.nature.com/articles/d41591-024-00079-1",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2024-11-20",
+    "source": "nature.com",
+    "venue_type": "journal",
+    "journal_title": "Nature Medicine",
+    "issn": "1546-170X",
+    "article_type": "Research Highlight",
+    "screening_status": "needs_abstract",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_description": "Post-war rationing in the UK in 1953 facilitated a natural experiment that now reveals that restricting sugar intake in early life reduces the risk of diabetes and hypertension.",
+    "metadata_provenance": {
+      "checked_at": "2026-11-13",
+      "evidence_url": "https://www.nature.com/articles/d41591-024-00079-1",
+      "basis": "publisher_exact_doi_title_author_publication_date_and_Research_Highlight_label",
+      "description_is_not_abstract": true,
+      "input_main_commit": "2ed68aa27f5c0fe769c998510ceb44140b59f9f7"
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "2024-nydiii-confirmed-missing-recheck-20261107",
+      "owner": "南耀笛",
+      "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
+      "reviewed_at": "2026-11-13",
+      "decision": "exclude",
+      "rationale": "正式Research Highlight，为对限糖自然实验结果的报道；非独立原创研究，也非有实质学术内容的研究综述，按文献类型排除。补齐全类型书目，不作为AI4S候选纳入。",
+      "tags": [],
+      "review_stage": "article_type",
+      "content_summary_zh": "报道婴幼儿限糖与成年后糖尿病、高血压风险的自然实验结果。",
+      "ai4s_assessment": {
+        "scientific_or_engineering_task": "报道婴幼儿限糖与成年后糖尿病、高血压风险的自然实验结果。",
+        "ai_role": "文章类型已不符合本批范围；不把所报道或更正的原始研究当作当前条目的 AI 方法。",
+        "substantive_ai_contribution": "未进入 AI4S 纳入判定；本条排除依据为官网文章类型。"
+      },
+      "verified_metadata": {
+        "title": "Limiting babies’ sugar intake protects them against chronic diseases",
+        "doi": "10.1038/d41591-024-00079-1",
+        "url": "https://www.nature.com/articles/d41591-024-00079-1",
+        "evidence_urls": [
+          "https://www.nature.com/articles/d41591-024-00079-1"
+        ]
+      },
+      "link_check_scope": "已核对 DOI 与正式文章页对应关系。因文章类型排除，未继续核验 PDF、代码、项目链接；留空不表示不存在。",
+      "source_gate": {
+        "venue": "nm",
+        "decision": "建议纳入",
+        "owner": "南耀笛"
+      },
+      "evidence": [
+        {
+          "location": "出版社文章页 dc.type、dc.title、dc.identifier、dc.date 与导语",
+          "official_type": "Research Highlight",
+          "evidence_url": "https://www.nature.com/articles/d41591-024-00079-1",
+          "sha256": "6e991185dee491a616eb695781fb9be9e4816e0e1dfe4b030e9502c7397c27ec"
+        }
+      ],
+      "original_audit_record": {
+        "article_id": "d41591-024-00079-1",
+        "title": "Limiting babies’ sugar intake protects them against chronic diseases",
+        "url": "https://www.nature.com/articles/d41591-024-00079-1",
+        "published": "2024-11-20",
+        "article_type": "Research Highlight",
+        "doi": "10.1038/d41591-024-00079-1",
+        "official_article_verified": true,
+        "official_metadata": {
+          "dc.title": "Limiting babies’ sugar intake protects them against chronic diseases",
+          "dc.source": "Nature Medicine 2024",
+          "dc.format": "text/html",
+          "dc.publisher": "Nature Publishing Group",
+          "dc.date": "2024-11-20",
+          "dc.type": "Research Highlight",
+          "dc.language": "En",
+          "dc.copyright": "2024 Springer Nature Limited",
+          "dc.rights": "2024 Springer Nature Limited",
+          "dc.rightsAgent": "journalpermissions@springernature.com",
+          "dc.description": "Post-war rationing in the UK in 1953 facilitated a natural experiment that now reveals that restricting sugar intake in early life reduces the risk of diabetes and hypertension.",
+          "dc.identifier": "doi:10.1038/d41591-024-00079-1",
+          "dc.creator": "O’Leary, Karen ",
+          "dc.subject": "Diabetes"
+        },
+        "crossref_lookup": {
+          "doi": "10.1038/d41591-024-00079-1",
+          "url": "https://api.crossref.org/works/10.1038/d41591-024-00079-1",
+          "error": "HTTP Error 404: Not Found"
+        }
+      },
+      "deduplication": {
+        "doi_absent_from_raw_snapshot": true,
+        "doi_absent_from_existing_908_record_submission": true
+      },
+      "followup_history": [
+        {
+          "checked_at": "2026-11-13",
+          "input_main_commit": "2ed68aa27f5c0fe769c998510ceb44140b59f9f7",
+          "action": "将此前已核实的目录缺项实际补入metadata/nm/2024/papers.json，并同步本人排除记录；固定历史快照713不追改。"
+        }
+      ]
     }
   }
 ]
