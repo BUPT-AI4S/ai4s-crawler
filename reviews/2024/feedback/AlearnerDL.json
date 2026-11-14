@@ -1967,7 +1967,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "出版社 2024 卷期或年度正式目录；保留出版类型，日期和增刊须与快照口径一致。",
-    "coverage_note": "已逐 DOI 核对 2024 年出版社在 Crossref 登记的 3,710 条 journal-article，与快照逐项相符；按卷统计见 doi_register_comparison。出版社独立逐期目录尚未完整核实。",
+    "coverage_note": "已逐 DOI 核对 2024 年出版社在 Crossref 登记的 3,710 条 journal-article，与快照逐项相符；按卷统计见 doi_register_comparison。出版社独立逐期目录尚未完整核实。 2026-11-14 已从出版方全文核实候选中唯一无摘要条目为作者单位更正，无独立摘要；保留 null 和排除判定，标注官方无独立摘要、无需补摘要，实际待补摘要为 0。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/food-chemistry/issues",
       "https://api.crossref.org/journals/0308-8146/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article"
@@ -1994,7 +1994,7 @@
       "exclude": 6
     },
     "submitted_record_count": 48,
-    "rechecked_on": "2026-11-09",
+    "rechecked_on": "2026-11-14",
     "doi_register_comparison": {
       "source": "Crossref，出版方登记",
       "issn": "0308-8146",
@@ -2038,6 +2038,25 @@
         "461": 122
       },
       "evidence_url": "https://api.crossref.org/journals/0308-8146/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article"
+    },
+    "abstract_requirement_resolution": {
+      "records": [
+        {
+          "id": "10.1016/j.foodchem.2023.137606",
+          "status": "not_required",
+          "reason": "official_source_has_no_independent_abstract",
+          "label_zh": "官方无独立摘要，无需补摘要",
+          "checked_at": "2026-11-14",
+          "checked_by": "龙兆科",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/science/article/pii/S0308814623022240"
+          ],
+          "note": "出版社标注 Erratum / Corrigendum；正文仅更正遗漏的作者单位，无独立 Abstract。保留原始空摘要及已排除审核记录。"
+        }
+      ],
+      "raw_missing_abstract_count": 1,
+      "official_not_provided_count": 1,
+      "required_supplement_count": 0
     }
   },
   {
