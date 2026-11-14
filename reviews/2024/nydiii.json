@@ -956,9 +956,9 @@
       "batch_id": "2024-nydiii-research-ai4s-20261105",
       "owner": "南耀笛",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "reviewed_at": "2026-11-13",
-      "decision": "pending",
-      "rationale": "本篇为符合类型范围的学术综述，讨论FGFR靶向治疗和耐药机制。正式摘要只将AI列为未来研究方向；参考文献223–224虽为以病理图像预测FGFR突变的AI研究，但公开页未提供正文如何讨论这些研究，引用本身不足以证明本综述有实质AI4S方法贡献。本轮已确认出版方全文需订阅、作者存档未公开附件、Europe PMC无全文、OpenAlex无开放版本，用户也无全文或机构访问。尚缺本篇AI相关正文完整段落及上下文，故保留pending，不推断纳入或排除。",
+      "reviewed_at": "2026-11-14",
+      "decision": "include",
+      "rationale": "科学任务为FGFR靶向治疗、临床活性及耐药机制研究，文献为正式Review Article。负责人南耀笛于2026-11-14明确表示已亲自读完本文，并确认符合AI4S纳入条件；据负责人全文审核结论，将原pending改为include。Agent未独立取得正文，本轮仅标注由正式摘要和文献类型支持的生命科学领域及综述贡献，不猜测具体AI方法或实验细节。",
       "verified_metadata": {
         "doi": "10.1038/s41571-024-00869-z",
         "title": "FGFR-targeted therapeutics: clinical activity, mechanisms of resistance and new directions",
@@ -995,7 +995,22 @@
         ],
         "published": "2024-02-29"
       },
-      "tags": [],
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "正式原摘要、出版方Review Article类型及负责人2026-11-14通读全文后的纳入确认",
+          "rationale": "研究FGFR靶向肿瘤治疗及耐药机制。"
+        },
+        {
+          "axis": "contribution",
+          "label": "综述",
+          "label_en": "Review",
+          "evidence_location": "正式原摘要、出版方Review Article类型及负责人2026-11-14通读全文后的纳入确认",
+          "rationale": "本文为有实质学术内容的综述，负责人全文审核确认AI4S纳入；不将被综述研究算作本文原创实验。"
+        }
+      ],
       "research_type_review": {
         "decision": "include",
         "category": "review",
@@ -1009,7 +1024,7 @@
         "original_article_type": "Review Article",
         "external_article_type": "Review Article"
       },
-      "review_stage": "review_ai4s_relevance_fulltext_access_pending",
+      "review_stage": "owner_fulltext_confirmed",
       "evidence_location": "输入摘要；正式页Abstract、Key points及参考文献（正文受访问限制）",
       "evidence_urls": [
         "https://www.nature.com/articles/s41571-024-00869-z",
@@ -1040,12 +1055,12 @@
         }
       ],
       "verification_gaps": [
-        "尚未取得本综述AI相关正文完整段落及上下文，不能区分具体AI研究证据综述与未来愿景提及；现有公开参考文献不能替代正文。"
+        "负责人已通读全文并确认纳入；Agent尚未收到AI相关正文段落，暂不细分AI方法或任务标签，此项不再阻塞负责人已确认的纳排结论。"
       ],
       "review_round": "2024-nydiii-reviews-ai4s-20261106",
       "review_scope": "原创研究及有直接AI4S贡献的综述/系统综述/Primer；保留既定来源限制，不含Perspective、新闻、点评等。",
       "source_quality_review": {
-        "checked_at": "2026-11-13",
+        "checked_at": "2026-11-14",
         "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
         "venue_decision": "建议纳入",
         "snapshot_papers": 128,
@@ -1056,7 +1071,7 @@
         "official_directory_url": "https://www.nature.com/nrclinonc/articles?year=2024",
         "count_comparison": "沿用2026-11-07已核7页官网目录的文章编号/DOI双向集合比对：128条全类型书目一致，无缺项、仓库独有项或重复；本轮未重爬全目录。",
         "completeness_verified": true,
-        "processing": "当前唯一候选原摘要完整；待定原因是AI相关正文受限，而非摘要缺失。"
+        "processing": "当前唯一候选原摘要完整；原待定已由负责人全文确认纳入解决，纳入1、排除0、待定0、未审0。"
       },
       "followup_history": [
         {
@@ -1069,11 +1084,100 @@
             "独立复查博洛尼亚大学作者机构存档仅公开同一摘要，附件不公开；仍需合法取得正文AI相关章节。"
           ],
           "action": "复查正式全文入口、作者机构存档、Europe PMC及OpenAlex，并确认用户无全文或机构权限；没有取得AI正文，保留待定。"
+        },
+        {
+          "checked_at": "2026-11-14",
+          "input_main_commit": "cadd87ef26ea884f52be726bd4be68d9bf373bdd",
+          "decision_before": "pending",
+          "rationale_before": "本篇为符合类型范围的学术综述，讨论FGFR靶向治疗和耐药机制。正式摘要只将AI列为未来研究方向；参考文献223–224虽为以病理图像预测FGFR突变的AI研究，但公开页未提供正文如何讨论这些研究，引用本身不足以证明本综述有实质AI4S方法贡献。本轮已确认出版方全文需订阅、作者存档未公开附件、Europe PMC无全文、OpenAlex无开放版本，用户也无全文或机构访问。尚缺本篇AI相关正文完整段落及上下文，故保留pending，不推断纳入或排除。",
+          "full_text_access_before": {
+            "checked_at": "2026-11-13",
+            "status": "access_restricted",
+            "full_text_obtained": false,
+            "ai_section_obtained": false,
+            "publisher_evidence": {
+              "url": "https://www.nature.com/articles/s41571-024-00869-z",
+              "result": "subscription_preview_only",
+              "visible_content": [
+                "Abstract",
+                "Key points",
+                "References"
+              ],
+              "browser_check": "当前浏览器的机构访问不覆盖该文章，显示订阅预览；没有取得正文或正式PDF。",
+              "pdf_attempt_result": "正式.pdf入口重定向到文章预览，未取得PDF。"
+            },
+            "author_repository_evidence": {
+              "url": "https://cris.unibo.it/handle/11585/981976",
+              "result": "attachments_not_public",
+              "note": "机构存档明确说明附件未公开；不是开放作者稿。"
+            },
+            "europe_pmc": {
+              "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+              "parameters": {
+                "query": "EXT_ID:38424198 AND SRC:MED",
+                "format": "json",
+                "resultType": "core"
+              },
+              "expected_count": 1,
+              "retrieved_count": 1,
+              "pmcid": null,
+              "inPMC": "N",
+              "hasPDF": "N",
+              "authMan": "N",
+              "isOpenAccess": "N",
+              "full_text_urls": [
+                {
+                  "availability": "Subscription required",
+                  "availabilityCode": "S",
+                  "documentStyle": "doi",
+                  "site": "DOI",
+                  "url": "https://doi.org/10.1038/s41571-024-00869-z"
+                }
+              ],
+              "response_sha256": "df34dc7f57c46eadff3db70f3458698b1ca7b8d658238ef4300e183eae636f37"
+            },
+            "openalex": {
+              "endpoint": "https://api.openalex.org/works/https://doi.org/10.1038/s41571-024-00869-z",
+              "id": "https://openalex.org/W4392284056",
+              "is_oa": false,
+              "best_oa_location": null,
+              "repository_fulltext_available": false,
+              "location_count": 3,
+              "locations": [
+                {
+                  "landing_page_url": "https://doi.org/10.1038/s41571-024-00869-z",
+                  "pdf_url": null,
+                  "is_oa": false
+                },
+                {
+                  "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/38424198",
+                  "pdf_url": null,
+                  "is_oa": false
+                },
+                {
+                  "landing_page_url": "https://hdl.handle.net/11585/981976",
+                  "pdf_url": null,
+                  "is_oa": false
+                }
+              ],
+              "response_sha256": "b01c4fa21e0a2d2ce127552f884b94e84a08f92f90c6c7697b4fa08ad37e27dd"
+            },
+            "user_access_confirmation": {
+              "checked_at": "2026-11-13",
+              "answer": "没有全文或机构访问"
+            },
+            "required_evidence": "该综述本身的AI相关正文完整段落及其上下文，特别是参考文献223–224在正文中的讨论；或可合法阅读的完整作者稿/正式全文。",
+            "scope_limit": "没有全文不是无需审核；不沿用官方无摘要免报状态，不仅凭摘要未来方向或参考文献列表改为纳入/排除。"
+          },
+          "verification_gaps_before": [
+            "尚未取得本综述AI相关正文完整段落及上下文，不能区分具体AI研究证据综述与未来愿景提及；现有公开参考文献不能替代正文。"
+          ],
+          "action": "负责人亲自通读本文后明确确认可以纳入，解除原全文证据不足导致的待定。"
         }
       ],
       "full_text_access": {
-        "checked_at": "2026-11-13",
-        "status": "access_restricted",
+        "checked_at": "2026-11-14",
+        "status": "owner_fulltext_review_confirmed",
         "full_text_obtained": false,
         "ai_section_obtained": false,
         "publisher_evidence": {
@@ -1144,17 +1248,38 @@
           "response_sha256": "b01c4fa21e0a2d2ce127552f884b94e84a08f92f90c6c7697b4fa08ad37e27dd"
         },
         "user_access_confirmation": {
-          "checked_at": "2026-11-13",
-          "answer": "没有全文或机构访问"
+          "checked_at": "2026-11-14",
+          "answer": "负责人现已亲自阅读全文并确认可纳入；此前无全文或机构权限的记录见followup_history。"
         },
-        "required_evidence": "该综述本身的AI相关正文完整段落及其上下文，特别是参考文献223–224在正文中的讨论；或可合法阅读的完整作者稿/正式全文。",
-        "scope_limit": "没有全文不是无需审核；不沿用官方无摘要免报状态，不仅凭摘要未来方向或参考文献列表改为纳入/排除。"
+        "scope_limit": "保留Agent未独立获取正文的访问事实；纳排由负责人全文确认解决，不再作为待定或需补摘要事项。",
+        "agent_access_status": "access_restricted",
+        "owner_full_text_review_confirmed": true,
+        "owner_confirmation": {
+          "checked_at": "2026-11-14",
+          "confirmed_by": "南耀笛",
+          "source": "user_confirmation_in_current_conversation",
+          "statement": "我自己读完了，我确定他可以纳入，可以清零关注了吗",
+          "full_text_read_by_owner": true,
+          "decision": "include",
+          "agent_independently_read_full_text": false,
+          "note": "负责人在通读本文后明确确认纳入，作为本轮最终纳排依据；未向Agent提供全文段落，故不推断具体AI算法、实验或性能。"
+        }
       },
       "review_provenance": {
-        "input_main_commit": "434a011ed2edae0c88f14ae34e8b103ebef9e6e6",
-        "skill_commit": "434a011ed2edae0c88f14ae34e8b103ebef9e6e6",
-        "vocabulary_commit": "434a011ed2edae0c88f14ae34e8b103ebef9e6e6",
+        "input_main_commit": "cadd87ef26ea884f52be726bd4be68d9bf373bdd",
+        "skill_commit": "cadd87ef26ea884f52be726bd4be68d9bf373bdd",
+        "vocabulary_commit": "cadd87ef26ea884f52be726bd4be68d9bf373bdd",
         "vocabulary_tag_count": 1334
+      },
+      "owner_fulltext_confirmation": {
+        "checked_at": "2026-11-14",
+        "confirmed_by": "南耀笛",
+        "source": "user_confirmation_in_current_conversation",
+        "statement": "我自己读完了，我确定他可以纳入，可以清零关注了吗",
+        "full_text_read_by_owner": true,
+        "decision": "include",
+        "agent_independently_read_full_text": false,
+        "note": "负责人在通读本文后明确确认纳入，作为本轮最终纳排依据；未向Agent提供全文段落，故不推断具体AI算法、实验或性能。"
       }
     }
   },
