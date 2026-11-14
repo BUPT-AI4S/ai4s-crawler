@@ -609,8 +609,10 @@
         "title": "Quantum Circuit Design: A Reinforcement Learning Challenge",
         "pdf_url": "https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p2123.pdf",
         "evidence_urls": [
-          "https://www.ifaamas.org/Proceedings/aamas2024/forms/contents.htm"
-        ]
+          "https://www.ifaamas.org/Proceedings/aamas2024/forms/contents.htm",
+          "https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p2123.pdf"
+        ],
+        "abstract": "To assess the prospects of using reinforcement learning (RL) for selecting and parameterizing quantum gates to build viable circuit architectures, we introduce the quantum circuit designer (QCD). By considering quantum control a decision-making problem, we strive to profit from advanced RL exploration mechanisms to overcome the need for granular specification and hand-crafted architectures. To evaluate current state-of-the-art RL algorithms, we define generic objectives that arise from quantum architecture search and circuit optimization. Those evaluation results reveal challenges inherent to learning optimal quantum control."
       },
       "tags": []
     }
@@ -1517,8 +1519,10 @@
         "title": "Going Beyond Mono-Mission Earth Observation: Using the Multi-Agent Paradigm to Federate Multiple Missions",
         "pdf_url": "https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p2674.pdf",
         "evidence_urls": [
-          "https://www.ifaamas.org/Proceedings/aamas2024/forms/contents.htm"
-        ]
+          "https://www.ifaamas.org/Proceedings/aamas2024/forms/contents.htm",
+          "https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p2674.pdf"
+        ],
+        "abstract": "We envision a multi-agent federation layer to coordinate systems composed of independent Earth observation missions. The goal of this federation is to allow clients requesting acquisitions of large areas to easily access several constellations of satellites and communication sites to compose and download their acquisitions, in a reduced time compared to conventional uncoordinated requests. We identify several scientific tracks and challenges related to agent-based approaches such as coordination, planning and learning, to implement to two key federation functions: (i) multi-mission coverage feasibility and dispatching and (ii) communication site booking."
       },
       "tags": []
     }
@@ -2457,8 +2461,10 @@
         "title": "Taking Agent-Based Social Simulation to the Next Level Using Exascale Computing: Potential Use-Cases, Capacity Requirements and Threats",
         "pdf_url": "https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p2300.pdf",
         "evidence_urls": [
-          "https://www.ifaamas.org/Proceedings/aamas2024/forms/contents.htm"
-        ]
+          "https://www.ifaamas.org/Proceedings/aamas2024/forms/contents.htm",
+          "https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p2300.pdf"
+        ],
+        "abstract": "Exascale computing (10¹⁸ FLOPS) officially arrived in 2022 when Oak Ridge’s Frontier achieved that performance benchmark, and other countries seek their own exascale capabilities. High-end computing is typically used by the natural sciences, but empirical Agent-Based Social Simulation (ABSS) is a social science application. Empirical ABSS has a long history, but was prominent during the Covid crisis. In future crises, policy options could be evaluated within rapid policy design windows using exascale computing. We report on a group model-building exercise, co-constructing a causal loop model, to explore visions of the potential of exascale computing in ABSS, identifying potential use cases, capabilities, capacity requirements and threats."
       },
       "tags": []
     }
@@ -163451,17 +163457,40 @@
       "batch_id": "2024-20261105-103119",
       "owner": "龙兆科",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "摘要说明如何组合地面相机与地形数据定位山火，未交代视觉模型。",
+      "decision": "include",
+      "rationale": "正式全文 §3 的 DMT 方法将自监督单目深度网络 MonoDepth2 与数字高程模型、相机几何融合；§4 还说明训练面向野火的 YOLOv3 检测器。学习模型实质用于远距离野火定位，且以真实地形和模拟野火进行误差评测，符合环境监测与工程研究任务。",
       "verified_metadata": {
         "doi": "10.1145/3666025.3699318",
         "url": "https://doi.org/10.1145/3666025.3699318",
         "evidence_urls": [
           "https://viterbi.usc.edu/events/event_details.php?events_id=106279",
-          "https://doi.org/10.1145/3666025.3699318"
-        ]
+          "https://doi.org/10.1145/3666025.3699318",
+          "https://dl.acm.org/doi/pdf/10.1145/3666025.3699318?download=true"
+        ],
+        "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3666025.3699318?download=true"
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于地球宇宙科学",
+          "label_en": "AI for Earth and space sciences",
+          "evidence_location": "全文 DMT: Deep Monocular Topography Mapping（第6页）、§4.1 和野火定位评测",
+          "rationale": "正式全文 §3 的 DMT 方法将自监督单目深度网络 MonoDepth2 与数字高程模型、相机几何融合；§4 还说明训练面向野火的 YOLOv3 检测器。学习模型实质用于远距离野火定位，且以真实地形和模拟野火进行误差评测，符合环境监测与工程研究任务。"
+        },
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "全文 DMT: Deep Monocular Topography Mapping（第6页）、§4.1 和野火定位评测",
+          "rationale": "正式全文 §3 的 DMT 方法将自监督单目深度网络 MonoDepth2 与数字高程模型、相机几何融合；§4 还说明训练面向野火的 YOLOv3 检测器。学习模型实质用于远距离野火定位，且以真实地形和模拟野火进行误差评测，符合环境监测与工程研究任务。"
+        }
+      ],
+      "fulltext_recheck": {
+        "checked_on": "2026-11-13",
+        "source_url": "https://dl.acm.org/doi/pdf/10.1145/3666025.3699318?download=true",
+        "evidence_location": "全文 DMT: Deep Monocular Topography Mapping（第6页）、§4.1 和野火定位评测",
+        "previous_decision": "pending"
+      }
     }
   },
   {
@@ -215935,7 +215964,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S0031320323006544",
           "https://doi.org/10.1016/j.patcog.2023.109956"
         ],
-        "abstract_source_url": "https://researchportal.hkust.edu.hk/en/publications/restoring-vision-in-hazy-weather-with-hierarchical-contrastive-le/"
+        "abstract_source_url": "https://researchportal.hkust.edu.hk/en/publications/restoring-vision-in-hazy-weather-with-hierarchical-contrastive-le/",
+        "abstract": "Image restoration under hazy weather condition, which is called single image dehazing, has been of significant interest for various computer vision applications. In recent years, deep learning-based methods have achieved success. However, existing image dehazing methods typically neglect the hierarchy of features in the neural network and fail to exploit their relationships fully. To this end, we propose an effective image dehazing method named Hierarchical Contrastive Dehazing (HCD), which is based on feature fusion and contrastive learning strategies. HCD consists of a hierarchical dehazing network (HDN) and a novel hierarchical contrastive loss (HCL). Specifically, the core design in the HDN is a hierarchical interaction module, which utilizes multi-scale activation to revise the feature responses hierarchically. To cooperate with the training of HDN, we propose HCL which performs contrastive learning on hierarchically paired exemplars, facilitating haze removal. Extensive experiments on public datasets, RESIDE, HazeRD, and DENSE-HAZE, demonstrate that HCD quantitatively outperforms the state-of-the-art methods in terms of PSNR, SSIM and achieves better visual quality."
       },
       "tags": []
     }
@@ -216260,9 +216290,11 @@
         "evidence_urls": [
           "https://www.sciencedirect.com/science/article/pii/S0031320324000335",
           "https://linkinghub.elsevier.com/retrieve/pii/S0031320324000335",
-          "https://doi.org/10.1016/j.patcog.2024.110282"
+          "https://doi.org/10.1016/j.patcog.2024.110282",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0031320324000335"
         ],
-        "abstract_source_url": "https://www.sciencedirect.com/science/article/pii/S0031320324000335"
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/pii/S0031320324000335",
+        "abstract": "Brain tumors are threatening the life and health of people in the world. Automatic brain tumor segmentation using multiple MR images is challenging in medical image analysis. It is known that accurate segmentation relies on effective feature learning. Existing methods address the multi-modal MR brain tumor segmentation by explicitly learning a shared feature representation. However, these methods fail to capture the relationship between MR modalities and the feature correlation between different target tumor regions. In this paper, I propose a multi-modal brain tumor segmentation network via disentangled representation learning and region-aware contrastive learning. Specifically, a feature fusion module is first designed to learn the valuable multi-modal feature representation. Subsequently, a novel disentangled representation learning is proposed to decouple the fused feature representation into multiple factors corresponding to the target tumor regions. Furthermore, contrastive learning is presented to help the network extract tumor region-related feature representations. Finally, the segmentation results are obtained using the segmentation decoders. Quantitative and qualitative experiments conducted on the public datasets, BraTS 2018 and BraTS 2019, justify the importance of the proposed strategies, and the proposed approach can achieve better performance than other state-of-the-art approaches. In addition, the proposed strategies can be extended to other deep neural networks."
       },
       "tags": [
         {
@@ -216368,7 +216400,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S0031320324001742",
           "https://doi.org/10.1016/j.patcog.2024.110423"
         ],
-        "abstract_source_url": "https://scispace.com/papers/hybrid-federated-learning-with-brain-region-attention-er749w8dgi"
+        "abstract_source_url": "https://scispace.com/papers/hybrid-federated-learning-with-brain-region-attention-er749w8dgi",
+        "abstract": "Identifying reproducible and interpretable biomarkers for Alzheimer's disease (AD) detection remains a challenge. AD detection using multi-center datasets can expand the sample size to improve robustness but might lead to a data privacy problem. Moreover, due to the high cost of labeling data, a lot of unlabeled data in each center is not fully utilized. To address this, a hybrid FL (HFL) framework is proposed that not only uses unlabeled data to train deep learning networks, but also achieves data privacy protection. We propose a novel Brain-region Attention Network (BANet), which highlights important regions via attention to represent the region of interest (ROIs).Specifically, we use a brain template to extract ROI signals from the preprocessed structure magnetic resonance imaging (sMRI) data. In addition, we add a self-supervised loss to the current loss to guide the attention map generation to learn the representations from unlabeled data. Finally, we evaluate our method on a multi-center database which is constructed using five AD datasets. The experimental results show that the proposed method performs better than state-of-the-art methods, achieving mean accuracy rates of 85.69 %, 63.34 %, and 69.89 % on the AD vs. NC, MCI vs. NC, and AD vs. MCI respectively. The source code is available for reproducibility at: https://github.com/yuliangCarmelo/HFL."
       },
       "tags": [
         {
@@ -216918,7 +216951,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417423016937",
           "https://doi.org/10.1016/j.eswa.2023.121191"
         ],
-        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417423016937"
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417423016937",
+        "abstract": "Early rainfall prediction is very important to ensure the economic balance of any agriculture-dominated country, such as India. Deep learning has recently received considerable attention for predicting rainfall using historical data. However, rainfall depends on multiple factors like ElNino, rising sea levels, warming of the Atlantic Ocean, etc. The changing climate has also significantly increased rainfall variability. The current deep-learning approaches are either based on a limited set of predictors or do not utilize the time-series properties for the recurrence of similar climate conditions every 12 months. Besides, they perform poorly in predicting accurate rainfall estimates for the diverse areas of India due to limited data availability across various regions. Therefore, this paper presents a groundbreaking solution to address the challenge of limited data by introducing RfGan (Rainfall GAN), a novel variant of generative adversarial networks. RfGan aims to fulfill the crucial need for abundant data to ensure the effectiveness of model training. Moreover, a novel rainfall prediction method, RfGanNet, has been introduced that leverages the strengths of the proposed RfGan for data augmentation, long-short-term memory, and convolutional neural networks for rainfall prediction. The performance of RfGanNet has been validated for India and its clustered regions in terms of nine parameters: precision, recall, specificity, Matthews correlation coefficient, accuracy, F1-score, mean absolute error, mean square error and computation time. The experimental results of RfGan are compared against original and synthetic datasets generated from state-of-the-art methods, namely tabular gan (TGAN), Wasserstein gan (WGAN), and conditional tabular gan (CTGAN). The experimental results indicate that the proposed RfNet model, when trained using RfGan-generated data, surpassed all the other considered methods by achieving 97.22 % accuracy. Moreover, RfNet has been compared with other related deep Learning approaches to validate its efficacy. Additionally, an ablation study investigating various LSTM–CNN combinations has been conducted. The findings of the study indicate that oceanic and climate-related predictors have a noteworthy influence on Indian rainfall. Moreover, the study highlights the suitability of combining Bidirectional LSTM, CNN, and multiple predictors for accurate rainfall prediction."
       },
       "tags": [
         {
@@ -217013,7 +217047,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417423017359",
           "https://doi.org/10.1016/j.eswa.2023.121233"
         ],
-        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417423017359"
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417423017359",
+        "abstract": "Most intracellular activities of living organisms are performed by proteins that have unique and complex 3-Dimensional (3D) structures, playing very important roles in their operations. Due to importance and challenges of predicting 3D structures for proteins, laboratory methods with limitations such as time consuming and high cost have been developed. Computational methods use a sequence of amino acids to obtain the 3D structure. They encounter with a nondeterministic problem having polynomial completion time (NP-Complete problem); with a chain of amino acids as input, and a protein, with 3D structure, as output. In this paper, a new population-based algorithm, under Predatory Search Strategy-Particle Swarm Optimization (PSS-PSO) framework, is presented for predicting the 3D structure; using Hydrophobic-Polar (HP) model on Face-Centered Cubic (FCC) lattice. In this approach, name TRL-PSSPSO, two new moves are proposed to direct each solution toward the native structure: Local Move for reaching a dense hydrophobic core and large H-H contacts and Meta Move for reaching optimal structure, by using Transfer learning. Two datasets are considered for evaluating and the results on some set of standard protein benchmarks show outperforming the state-of-the-art approaches. They show that the proposed approach can improve the accuracy of template-free prediction in an acceptable manner."
       },
       "tags": [
         {
@@ -217384,7 +217419,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417423019929",
           "https://doi.org/10.1016/j.eswa.2023.121490"
         ],
-        "abstract_source_url": "https://www.infontd.org/resource/modeling-climate-change-impacts-vector-borne-disease-using-machine-learning-models-case"
+        "abstract_source_url": "https://www.infontd.org/resource/modeling-climate-change-impacts-vector-borne-disease-using-machine-learning-models-case",
+        "abstract": "Visceral leishmaniasis or Kala-azar (KA) is a Vector-Borne Disease (VBD) that remains the second-largest parasitic killer across the globe (mortality rate: 75–95%). More than 60% of KA cases originate in South Asia, wherein India accounts for 2/3rd of the cases, and Bihar, a state in India, alone accounts for more than 50% of the Indian cases. Past studies suspected climate change vulnerabilities as a driving cause of KA outbreaks. The VBDs-based epidemic prediction systems have been developed to mitigate recurrent outbreaks; however, Machine Learning (ML) based approaches still need to be explored for modeling changing climate impacts on KA cases. This study, for the first time, develops a Radial Basis Function (RBF) kernel-based Support Vector Regression (SVR), hereinafter RBF-kernel-based-SVR model for the most-affected endemic districts of Bihar (northern-India), using the data from 2016 and 2021. Forward selection, backward elimination, and stepwise regression procedures were adopted while selecting influential climatic variables, followed by the k-fold cross-validation technique and, then, the RBF-kernel-based-SVR algorithm for classification. Results suggested that temperature, wind speed, rainfall, and population density significantly contributed to the KA outbreaks. This study also developed Multiple Linear Regression (MLR) and Multilayer Perceptron (MLP) models to compare SVR with other classification models. Findings indicated that the proposed RBF-kernel-based-SVR model [Correlation Coefficient (CC) = 0.82, Root-Mean-Square Error (RMSE) = 12.20, and Nash–Sutcliffe Efficiency (NSE) = 0.66] outperformed MLR (0.81, 14.20, 0.48) and MLP (0.81, 12.95, 0.61). Study recommends using the RBF-kernel-based-SVR model as a quick and efficient model capable of detecting KA cases with high predictability even under limited data availability. Such models can assist public health authorities, given monitoring KA spread, learning the climate impacts of outbreaks, and ensuring timelier health services."
       },
       "tags": [
         {
@@ -217577,7 +217613,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417423022996",
           "https://doi.org/10.1016/j.eswa.2023.121797"
         ],
-        "abstract_source_url": "https://www.sciencedirect.com/science/article/pii/S0957417423022996"
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/pii/S0957417423022996",
+        "abstract": "The accurate detection of faults in diesel engines is crucial for extending their operational lifespan, ensuring safety, and yielding significant economic and societal benefits. However, existing detection methodologies encounter difficulties in the presence of substantial environmental noise and lack generalizability across various operating conditions. Traditional fault diagnosis models also predominantly rely on single data detection schemes, such as one-dimensional data input for anomaly analysis, which may not account for the inherent correlations and distribution discrepancies within the same data source presented in different formats. To tackle these challenges, we proposed a novel multi-modal input Transformer-based convolutional neural network (MITDCNN) for misfire detection in diesel engines under significant environmental noise and diverse working conditions. We collected vibration signals from engine cylinder heads at different speeds and extracted both one-dimensional amplitude vector features and two-dimensional image properties. These features were input into the multi-modal feature extraction network and subsequently processed and identified by the cross-channel feature fusion detection network. Our fusion module incorporated a dual-dimension spatial and channel attention mechanism to suppress vibration noise interference effectively, so that the network is able to counteract the impact of environmental noise and varying operating conditions on the final detection outcomes. We validated the efficacy of the proposed approach through a curated dataset and benchmark comparisons with the established algorithms. Our results demonstrate that MITDCNN's accuracy and noise robustness are notably superior to other available methods. Across four datasets generated under distinct working conditions, our approach achieves a minimum accuracy of 99.008%, even with a signal-to-noise ratio of −4dB, greatly surpassing other methods."
       },
       "tags": [
         {
@@ -217843,7 +217880,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417423023795",
           "https://doi.org/10.1016/j.eswa.2023.121877"
         ],
-        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417423023795"
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417423023795",
+        "abstract": "This paper proposes a novel physics-informed machine learning method to build grey-box model (GBM) predicting ship speed for ocean crossing ships. In this method, the expected ship speed in calm water is first modeled by the physics-informed neural networks (PINNs) based on speed-power model tests. Then the eXtreme Gradient Boosting (XGBoost) machine learning algorithm is integrated to estimate ship speed reduction under actual weather conditions. The proposed GBM has been compared against the traditional black-box model (BBM) using performance monitoring data from two ships. The results show that when the amount of data is sufficient for modeling, the GBM can increase the accuracy of speed prediction by about 30%. When data volume is limited, the GBM can also significantly improve the prediction results. Finally, the GBM is validated by checking its implementation for the ETA predictions of cross-Pacific or North Atlantic voyages. The highest cumulative error of sailing time estimated by the GBM is 5 h among all the study cases."
       },
       "tags": [
         {
@@ -217941,9 +217979,11 @@
           "https://arxiv.org/abs/2305.08832",
           "https://www.sciencedirect.com/science/article/pii/S0957417423024260",
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417423024260",
-          "https://doi.org/10.1016/j.eswa.2023.121924"
+          "https://doi.org/10.1016/j.eswa.2023.121924",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0957417423024260"
         ],
-        "abstract_source_url": "https://arxiv.org/abs/2305.08832"
+        "abstract_source_url": "https://arxiv.org/abs/2305.08832",
+        "abstract": "Fluid dynamics problems are characterized by being multidimensional and nonlinear. Therefore, experiments and numerical simulations are complex and time-consuming. Motivated by this, the need arises to find new techniques to obtain data in a simpler way and in less time. In this article, we present a novel methodology based on physical principles to reconstruct databases with three, four and five dimensions, from sparse databases formed by sensor measurements. The methodology consists of combining Single Value Decomposition (SVD), which can extract the main flow dynamics, with neural networks. The neural network used is characterized by a simple architecture based on combining two autoencoders that work in parallel and are joined in the last layer. This new algorithm has been proved with three databases with different dimensions and complexities: in an Atmospheric Boundary Layer (ABL) with a turbulence model and in the flow past a two- and a three-dimensional cylinder. By applying this methodology, it has been achieved to reconstruct databases of different dimensions obtaining errors of the same order as those obtained in simulations. Summarizing, this work proposes a new hybrid physics-based machine learning model with a simple, robust and generalizable architecture, which allows reconstructing databases from very few sensors and with a very low computational cost."
       },
       "tags": [
         {
@@ -218044,7 +218084,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417423023941",
           "https://doi.org/10.1016/j.eswa.2023.121892"
         ],
-        "abstract_source_url": "https://eurekamag.com/research/104/842/104842939.php"
+        "abstract_source_url": "https://eurekamag.com/research/104/842/104842939.php",
+        "abstract": "The capacity estimation is a crucial task in battery health and safety management. The majority existing capacity estimation methods heavily rely on supervised learning with accurately labelled dataset collected at room temperature. However, the unlabeled dataset and the influence of ambient temperature on lithium-ion batteries degradation are rarely considered in the existing works. To address these issues, semi-supervised machine learning based noise-immune capacity estimation approach is proposed by utilizing both labelled and unlabeled datasets. By considering both the deployment and the accuracy, the optimal health indicator is extracted based on detailed analysis of limited labelled dataset. Then, the semi-supervised machine learning is proposed to improve the capacity estimation by using abundant unlabeled dataset. Specifically, low-complexity network with different training algorithms are employed to map the nonlinear relationship between the feature and capacity with the total loss of labelled and unlabeled datasets. By further exploiting the unlabeled dataset, the maximum errors of capacity estimation at three different temperatures are improved by 85%, 13%, and 48% with strong robustness, respectively. The proposed approach shows superior performance to the state-of-the-art supervised methods. The encouraged performance indicates the effectiveness of using large unlabeled battery dataset to improve the capacity estimation in real-world applications."
       },
       "tags": [
         {
@@ -218137,7 +218178,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417423024065",
           "https://doi.org/10.1016/j.eswa.2023.121904"
         ],
-        "abstract_source_url": "https://www.sciencedirect.com/science/article/pii/S0957417423024065"
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/pii/S0957417423024065",
+        "abstract": "The state of health (SOH) of lithium-ion batteries is considered an important health indicator to evaluate different features such as efficiency, robustness, and accuracy. The SOH of the lithium-ion battery is investigated to determine the advent of failures to mitigate the battery risk, avoid uneven fault occurrences and ensure safe battery operation. Nonetheless, the accurate assessment of SOH is difficult due to the occurrence of capacity degradation and performance deviation with temperature and aging impacts. Therefore, this work presents an improved hybrid recurrent neural network (RNN) and jellyfish optimization (JFO) to estimate the SOH of lithium-ion batteries. A total of 124 lithium-ion battery cells classified in three batches, namely ‘2017-05-12’, ‘2017-06-30’, and ‘2018-04-12’ from the MIT Stanford- Toyota Research Institute battery database, are used for the proposed work. The systematic sampling method is utilized for developing a 31-dimensional data format. The 31-dimensional data format is developed considering various critical battery parameters such as capacity, voltage, current, and temperature. The JFO is applied to achieve the best suitable RNN model hyperparameters for accurate estimation outcomes. The validation of the hybrid RNN-JFO method is conducted with other JFO-optimized neural network (NN) models, such as feedforward neural network (FFNN) and backpropagation neural network (BPNN). Compared with FFNN-JFO and BPNN-JFO models, the experiment conducted with the RNN-JFO method delivered accurate outcomes. For the batches ‘2017-05-12’, ‘2017-06-30’, and ‘2018-04-12’, the average root mean square error (RMSE) error achieved with the RNN-JFO model was 0.0529, 0.2674, and 0.1638. The SOH estimation outcomes confirm the effectiveness of the RNN-JFO method for SOH estimation on different lithium-ion batteries."
       },
       "tags": [
         {
@@ -218539,7 +218581,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417423026611",
           "https://doi.org/10.1016/j.eswa.2023.122159"
         ],
-        "abstract_source_url": "https://scispace.com/papers/development-of-hybrid-models-based-on-deep-learning-and-3a7r3i4iq1"
+        "abstract_source_url": "https://scispace.com/papers/development-of-hybrid-models-based-on-deep-learning-and-3a7r3i4iq1",
+        "abstract": "Accurate classification of magnetic resonance imaging (MRI) images of brain tumors is crucial for early diagnosis and effective treatment in clinical studies. In these studies, many models supported by artificial intelligence (AI) have been proposed as assistant systems for experts. In particular, state-of-the-art deep learning (DL) models that have proven themselves in different fields have been effectively used in the classification of brain MRI images. However, the low accuracy of multiple classification of these images still leads researchers to conduct different studies in this field. Especially there is a need to develop models that achieve high accuracy on original images, and it is believed that this need can be met not only by DL models but also by classical machine learning (ML) algorithms. However, it is critical to choose the hyperparameters correctly for the hybrid use of ML algorithms with DL models. This study proposes a powerful new hybrid method to perform multiple classifications of brain tumors with high accuracy. This method also uses a novel convolutional neural network (CNN) model for feature extraction, and ML algorithms are used for feature classification. In addition, nine state-of-the-art CNN models are used for CNN performance comparison. The Bayesian optimization algorithm is used to obtain the optimal hyperparameter values of ML algorithms. The results obtained from the experimental studies show that the proposed hybrid model achieved 97.15% mean classification accuracy and 97% recall, precision, and F1-score values. Other hybrid models, including DarkNet19-SVM, DarkNet53-SVM, DenseNet201-SVM, EfficientNetB0-SVM, InceptionV3-SVM, NasNetMobile-SVM, ResNet50-SVM, ResNet101-SVM, and Xception-SVM, achieved mean classification accuracies of 95.01%, 95.58%, 96.87%, 97.01%, 95.3%, 95.01%, 96.3%, 95.87%, and 96.23%, respectively. Additionally, the proposed hybrid model exhibited remarkable time efficiency, accomplishing the classification process in a mere 67 min. Conversely, the model that exhibited the lowest time efficiency was the InceptionV3, with a processing time of 370 min. In terms of computational complexity, the EfficientNetB0 model is the most efficient. Despite the higher computational complexity of the proposed CNN model compared to some other models, it achieves the second-best classification accuracy. These results show that the proposed method performs better than previous studies on the same dataset. Especially in the classification problem, the optimized ML algorithms were superior to CNN classifiers. Finally, except for one, the proposed CNN model achieved better classification accuracies than the state-of-the-art CNN models."
       },
       "tags": [
         {
@@ -219304,7 +219347,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417423029433",
           "https://doi.org/10.1016/j.eswa.2023.122441"
         ],
-        "abstract_source_url": "https://www.sciencedirect.com/science/article/pii/S0957417423029433"
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/pii/S0957417423029433",
+        "abstract": "Psychological and neurological studies earlier suggested that a personality type can be determined by the whole face as well as by its sides. This article discusses novel research using deep neural networks that address the features of both sides of the face (hemifaces) to assess the human’s Big Five personality traits (PT). For this, we have developed a real-time approach called EmoFormer with cross-hemiface attention. The novelty of the presented approach lies in the confirmation that each hemiface exhibits high predictive capabilities in terms of human’s PT distinction. Our approach is based on a novel mid-level emotional feature extractor for each hemiface and a cross-hemiface attention fusion strategy for hemiface feature aggregation. The consequent fusion of both hemifaces has outperformed the use of the whole face by the relative value of 3.6% in terms of Concordance Correlation Coefficient (0.634 vs. 0.612) on the ChaLearn First Impressions V2 corpus. The proposed approach has also outperformed all the existing state-of-the-art approaches for PT assessment based on the face modality. We have also analyzed the “best hemiface”, the one that predicts PT more accurately in terms of demographic characteristics (gender, ethnicity, and age). We have found that the best hemiface for two of the five PT (Openness to experience and Non-Neuroticism) is different depending on demographic characteristics. For the other three traits, the right hemiface is dominant for Extraversion, while the left one is more indicative of Conscientiousness and Agreeableness. These findings support previous psychological and neurological research. Besides, we provide an open-source framework referred to as OCEAN-AI that can be seamlessly integrated into expert systems with practical applications in various domains including healthcare, education, and human resources."
       },
       "tags": [
         {
@@ -219399,9 +219443,11 @@
         "evidence_urls": [
           "https://www.sciencedirect.com/science/article/pii/S0957417423030002",
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417423030002",
-          "https://doi.org/10.1016/j.eswa.2023.122498"
+          "https://doi.org/10.1016/j.eswa.2023.122498",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0957417423030002"
         ],
-        "abstract_source_url": "https://www.sciencedirect.com/science/article/pii/S0957417423030002"
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/pii/S0957417423030002",
+        "abstract": "Drug discovery is a time-consuming and expensive process. With the development of Artificial Intelligence (AI) techniques, molecular Geometric Deep Learning (GDL) has recently emerged for learning from molecules and accelerating drug discovery. However, there is a gap between researchers in the field of deep learning and biomedicine. This review provides a comprehensive overview of the recent literature on GDL for drug discovery based on molecular three-dimensional (3D) representation learning and symmetry learning, highlighting its applications of molecular property prediction, intermolecular interaction, molecular design, molecular conformation prediction, and molecular 3D pretraining. We discuss the challenges of current molecular 3D representation learning and tasks. Further, we propose future directions to promote drug discovery and deal with these challenges. The latest advances in GDL for drug discovery are summarized in a GitHub repository https://github.com/3146830058/Geometry-Deep-Learning-for-Drug-Discovery."
       },
       "tags": [
         {
@@ -220000,7 +220046,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417423033079",
           "https://doi.org/10.1016/j.eswa.2023.122805"
         ],
-        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417423033079"
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417423033079",
+        "abstract": "Coronavirus disease 2019 (COVID-19) is an acute disease, which can rapidly become severe. Hence, it is of great significance to realize the automatic diagnosis of COVID-19. However, existing models are often inapplicable for fusing patients’ demographic information due to its low dimensionality. To address this, we propose a COVID-19 patient diagnosis method with feature fusion and a model based on Swin Transformer. Specifically, two auxiliary tasks are added for fusing computed tomography (CT) images and patients’ demographic information, which utilizes the patients’ demographic information as the label for the auxiliary tasks. Besides, our approach involves designing a Swin Transformer model with Enhanced Multi-head Self-Attention (EMSA) to capture different features from CT data. Meanwhile, the EMSA module is able to extract and fuse attention information in different representation subspaces, further enhancing the performance of the model. Furthermore, we evaluate our model in COVIDx CT-3 dataset with different tasks to classify Normal Controls (NC), COVID-19 cases and community-acquired pneumonia (CAP) cases and compare the performance of our method with other models, which show the effectiveness of our model. In addition, we have conducted various visualization efforts to demonstrate the interpretability of our model, including principal component analysis, attention heatmaps, etc. Various results indicate that our model is capable of making reasonable diagnosis."
       },
       "tags": [
         {
@@ -220096,7 +220143,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S095741742303381X",
           "https://doi.org/10.1016/j.eswa.2023.122879"
         ],
-        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S095741742303381X"
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S095741742303381X",
+        "abstract": "Accurately classifying harmful algal blooms (HABs) is crucial in red tide warning. However, the current automatic recognition system for real-time HABs image classification has a low accuracy rate of only about 70% and a high computational complexity. To address these issues, we propose a Weighted Feature Fusion of Dual Attention Convolutional Neural Network and Transformer Encoder Module (WFTC) for Ocean HABs Image Classification. First, we design an image enhancement algorithm specifically for HABs images, which significantly improves the quality of real-time dynamic sampling data by enhancing contrast, edges, and texture features. Second, the transformer encoder module is utilized as the first branch of WFTC to generate a feature vector representation with global semantic information. Then, we combine the attention mechanism with the convolutional neural network as the second branch of WFTC, which is used to emphasize the main feature information of HABs. Finally, the extracted features are weighted fusion by combining the characteristics of the transformer encoder module and dual-attention convolutional neural network. The experimental results using real-world data from HABs in the Chinese nearshore waters in 2020 demonstrate that compared with other classification networks, the proposed WFTC method achieves the highest accuracy rate of 87% and competitive results in terms of stability and convergence."
       },
       "tags": [
         {
@@ -220305,9 +220353,11 @@
           "https://eurekamag.com/research/099/887/099887483.php",
           "https://www.sciencedirect.com/science/article/pii/S0957417423034103",
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417423034103",
-          "https://doi.org/10.1016/j.eswa.2023.122908"
+          "https://doi.org/10.1016/j.eswa.2023.122908",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0957417423034103"
         ],
-        "abstract_source_url": "https://eurekamag.com/research/099/887/099887483.php"
+        "abstract_source_url": "https://eurekamag.com/research/099/887/099887483.php",
+        "abstract": "Data-driven models have been successfully applied in hydrological fields such as flood forecasting. However, limitations to the solutions to scientific problems still exist in this field: data collection is time-consuming and expensive, the quality of the collected data cannot be ensured, and noise or outliers may exist in the dataset, resulting in incorrect results. Moreover, data-driven models are trained only from available datasets and do not involve scientific principles or laws during the model-training process. This may lead to the prediction of specific scientific problems that do not conform to physical laws. Therefore, we propose a data-driven and knowledge-guided denoising diffusion (DK-Diffusion) model. First, for the data preprocessing stage, a coupled heterogeneous mapping tensor decomposition complementary algorithm is proposed that integrates the spatial information of a watershed, optimizes the initialization conditions of the model, reduces the potential correlation loss of data caused by tensor decomposition, and better optimizes the initial conditions of the model. We introduced an attention mechanism into the denoising diffusion probabilistic model (DDPM) to better capture medium and long-term correlations during flood processes. Most importantly, under the guidance of flood physics theory, we designed the loss function of the proposed model to ensure that the output prediction results were more consistent with the laws of flood physics. This is an innovative improvement with greater practical engineering value because it optimizes the boundary conditions of the model, giving it better generalization ability and reducing its dependence on data. Through comparative experiments on datasets from the Qijiang and Tunxi basins in China, compared with the popular flood forecasting model AGCLSTM, the root mean square error (RMSE) was reduced by 20.3–27.7%, and the mean absolute percentage error (MAPE) was reduced by 4.2–4.3%. Compared with the conditional score-based diffusion models for probabilistic time series imputation (CSDI), the average RMSE and mean sum of continuous ranked probability score CRPS sum were reduced by 6.3–10.6% and 6.1–6.2%, respectively."
       },
       "tags": [
         {
@@ -220509,9 +220559,11 @@
         "evidence_urls": [
           "https://www.sciencedirect.com/science/article/pii/S0957417423034516",
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417423034516",
-          "https://doi.org/10.1016/j.eswa.2023.122949"
+          "https://doi.org/10.1016/j.eswa.2023.122949",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0957417423034516"
         ],
-        "abstract_source_url": "https://www.sciencedirect.com/science/article/pii/S0957417423034516"
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/pii/S0957417423034516",
+        "abstract": "The application of generative methods in the field of drug design, specifically in the de novo generation of molecules, has gained progress. However, most deep molecular generation models suffer from low value of novelty (a general metric of evaluating generation effect) and weak ability to balance trade-offs among multiple performances. Furthermore, they are unable to effectively generate molecules with user-specified properties and scaffolds, which is required for the actual discovery of drug-like compounds. To solve the problems, a diffusion-based molecule generation model, referred to as DIFFUMOL, is proposed. DIFFUMOL selectively adds Gaussian noise to retain conditional features as guidance information and learns to directly reverse the diffusion process as a Markov chain. The preserved guidance information will be used to guide the generation of molecules with specific property values and scaffolds. By optimizing a variational lower bound to the (conditional) likelihood, DIFFUMOL effectively trains the entire framework in an end-to-end fashion. Unlike one-step molecular generation methods such as auto-encoders and generative adversarial networks, DIFFUMOL employs stepwise noise addition and subsequent denoising to achieve finer control over the generation process. Experiments show that DIFFUMOL achieves pretty good results in fine-grained molecule generation and generates user-specified molecules."
       },
       "tags": [
         {
@@ -220691,7 +220743,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417423035789",
           "https://doi.org/10.1016/j.eswa.2023.123076"
         ],
-        "abstract_source_url": "https://www.sciencedirect.com/science/article/pii/S0957417423035789"
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/pii/S0957417423035789",
+        "abstract": "This paper aims to introduce an artificial intelligence approach to enhance short-term daily streamflow forecasts through the integration of machine learning (ML) techniques with meta-heuristic (MH) algorithms. To maximize performance, a comprehensive analysis involving the autocorrelation and partial autocorrelation functions of the observed streamflow was conducted to derive ten distinct input combinations, from which the most suitable set was selected for investigation. Subsequently, six distinct ML methods, namely, decision trees, support vector regression, long short-term memory, gated recurrent unit, multi-layer perceptron, and radial basis function (as the optimal input combination), were leveraged to predict one-day-ahead streamflow. The most promising outcomes from these six explored methods were synergistically amalgamated to enhance predictive precision. This amalgamation was then optimized by utilizing parameter values hyper-tuned by four different MH algorithms. The algorithms included the shuffled frog leaping algorithm, particle swarm optimization, ant colony optimization (ACO), and gray wolf optimization (GWO). In culmination, a case study centered around the “Wick” river in the UK was conducted to rigorously evaluate the performance of the proposed method, utilizing a range of statistical evaluation indices. The results underscored the efficacy of the proposed combined method in substantially refining streamflow predictions, exhibiting an impressive level of accuracy. Additionally, the outcomes emphasized that ACO and GWO stand out as the optimal algorithms for calibrating the parameters of the amalgamated model. For instance, the R2 values attained by the combined models optimized through the ACO and GWO algorithms were 0.69422 and 0.69444, respectively. These values notably surpass those observed in the initial models, substantiating the superiority of the applied optimization approaches."
       },
       "tags": [
         {
@@ -220780,7 +220833,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417423035923",
           "https://doi.org/10.1016/j.eswa.2023.123090"
         ],
-        "abstract_source_url": "https://www.researchgate.net/publication/376960861_Recommender_System_based_on_Convolutional_Recurrent_Deep_Learning_for_Protein-Drug_Interaction_Prediction"
+        "abstract_source_url": "https://www.researchgate.net/publication/376960861_Recommender_System_based_on_Convolutional_Recurrent_Deep_Learning_for_Protein-Drug_Interaction_Prediction",
+        "abstract": "The tremendous growth the pharmaceutical field witnessed especially concerning drug-development, caused drug-related experiments such as those concerned with estimating their interactions with targets harder to conduct. This issue led researchers to transition from vivo and vitro to selico experimenting methods, which deploy artificial intelligence (AI) techniques such as recommender systems (RS) to solve problems at hand. However, most RSs depend on global features such as indices, which render them incapable of fully understanding the behaviors of individuals. In this paper, we introduce our Convolutional Recurrent Deep Learning model-based RS approach, or ‘RSCRDL’, which tackles the interaction prediction problem from a natural language processing approach’s (NLP) point of view. RSCDRL processes the textual representations of both protein sequences and drugs in order to learn the implicit features of the tokens forming them, rendering it able to process unseen and non-reactive individuals indirectly. We also present a greedier variant of RSCRDL that can exploit additional drugs explicit features for better predictive abilities. Experiments performed on two real-world datasets show significant outperformance achieved by our models over two general-purpose state-of-the-art RSs, while other experiments conducted on orphan protein sequences helped deduce drug candidates that are assumed to be capable of inhibiting their activities."
       },
       "tags": [
         {
@@ -221363,7 +221417,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417424000812",
           "https://doi.org/10.1016/j.eswa.2024.123216"
         ],
-        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417424000812"
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417424000812",
+        "abstract": "Protein-protein interaction (PPI) plays an important role in various biological processes of organisms, and is beneficial for the development of relevant drugs, the diagnosis of diseases, etc. On this account, an increasing number of studies on PPI have been proposed. However, existing works neither construct the model with respect to the characteristics of downstream tasks (e.g. the potential relation between labels) nor fully explore the raw data (e.g. the confidence of interactions between proteins). To address this issue, we propose a novel Label-aware Dual-view Graph Neural Network for Protein-Protein Interaction Classification (LADV-PPI) method. Specifically, we construct a multi-head feature similarity graph by exploiting the rich information within the node features, which will be combined with the topology graph to generate the consensus graph. Based on this, we design a dual-view graph neural network with parameter sharing to learn PPI representations jointly from both topology graph and consensus graph. In addition, we introduce a self-adaptive label relation graph aggregation module to generate effective label representations, which will be incorporated into the dual-channel label-aware multi-layer perceptrons to guide the learning process of PPI representations. Extensive experimental results on three real-world datasets demonstrate that the proposed LADV-PPI achieves superior performance as compared to eight state-of-the-art baseline methods."
       },
       "tags": [
         {
@@ -221450,7 +221505,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417424001325",
           "https://doi.org/10.1016/j.eswa.2024.123267"
         ],
-        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417424001325"
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417424001325",
+        "abstract": "Background of the study With the development of the internet, e-learning is rapidly growing in worldwide, which pave more attention to the students. Further, the learning materials like video lectures, shared assignments as well as lecture slides are performed during the online courses. Moreover, these activities among the students exhibit different behaviors. Hence, the analysis of student behavior becomes complicated in the existing models. Aim This research focuses on developing a deep learning model for analyzing student behaviour in an accurate manner. This paper aims to develop a new student behavior prediction model for E-learning by evaluating brain signals and chatbot interaction. Methods This suggested model collects data from both chatbots and the Brain waves of students. The collected textual data from the chatbot are forwarded to the feature extraction phase by word2vector and bag-of-n grams. Then, the optimal features are selected using an Opposition-based Food Foraging-Pelican Optimizer (O-FFPO). Similarly, the second set of Brain waves of students are forwarded to the phase feature extraction stage by Short-time Fourier transforms (STFT), and then, deep features are extracted using Convolutional Neural Network (CNN). These gathered data can also be forwarded to the optimal feature selection process using the same O-FFPO. Finally, these fused features are fed to Radian Basis-Recurrent Neural Networks (RB-RNN) to get student behaviors, where the constraints are optimized by the same O-FFPO. Results Various performance metrics are compared and validated with the existing approaches. Moreover, the developed model shows 95% and 93% concerning accuracy and F1-score. Conclusion Finally, experimental evaluation was carried out with the estimation of both brain waves and chatbot queries of students."
       },
       "tags": [
         {
@@ -222040,7 +222096,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417424003129",
           "https://doi.org/10.1016/j.eswa.2024.123447"
         ],
-        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417424003129"
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417424003129",
+        "abstract": "LUMIOS, short for Label Using Machine In Organic Samples, is a versatile Python-based software designed to assist professionals and students in organic chemistry with computational exploration of natural products (NPs). Offering user-friendly and NO-CODE application, LUMIOS utilizes three mass spectra categories: catechin, theobromine, and caffeine. Notably, its machine and deep learning models boast accuracy rates exceeding 90%, with a focus on modulating respiratory diseases, particularly through catechin and theobromine. LUMIOS functions by preprocessing molecular information from mass spectra, dereplicating molecules through comparison with a collection of chemical database. The software ensures alignment with the NP class, safeguarding the dereplication process. Annotated structures are then tested in ML and DL models, directing users swiftly to biomacromolecular targets linked to respiratory diseases like asthma and SARS-CoV-2. This enables a streamlined computational screening of the input data."
       },
       "tags": [
         {
@@ -222806,7 +222863,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417424006031",
           "https://doi.org/10.1016/j.eswa.2024.123737"
         ],
-        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417424006031"
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417424006031",
+        "abstract": "Mesoscale Eddy (ME) is a widely recognized and significant oceanic phenomenon characterized by extensive energy exchange. Accurate predictions of the future geospatial distribution of ME are crucial for maritime activities. Deep learning (DL) methods for ME prediction have consistently outperformed classical mathematical models and numerical modeling approaches. However, current DL methods based on two-dimensional gridded data suffer from error accumulation issues due to their indirect prediction approach, which involves first predicting the future environmental field and then identifying the ME patterns within it. Additionally, these models ignore the potential influence of prior knowledge related to ME on prediction outcomes. To address these issues, this paper proposes a direct prediction DL network called ES-ConvGRU, which incorporates historical prior statistics. First, we conduct an analysis of ME data from the Northwest Pacific region, extracting prior statistical knowledge such as interannual variations and seasonal characteristics. Second, mining patterns for the spatiotemporal features of both ME sequence and sea surface environmental field sequence are established. Furthermore, a nonlinear approach for mapping prior statistical knowledge and a multi-step autoregressive prediction model are designed, facilitating the integration of prior knowledge with multidimensional spatiotemporal features for ME prediction. Finally, the performance and effectiveness of ES-ConvGRU are evaluated. It achieves an average pixel accuracy of 93.21%, a mean intersection over union of 81.48%, and a frequency-weighted intersection over union of 87.55% for the 7-day distribution prediction. The results show that ES-ConvGRU exhibits notable advantages compared to the existing indirect and direct prediction methods."
       },
       "tags": [
         {
@@ -224564,7 +224622,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417424011539",
           "https://doi.org/10.1016/j.eswa.2024.124287"
         ],
-        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417424011539"
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417424011539",
+        "abstract": "In this study, a novel, more stable, secure, and reliable image encryption model has been introduced. It combines a Convolutional Neural Network (ConvNet/CNN) model with an intertwining logistic map to generate secret keys. Additionally, initial conditions, control parameters, and secret keys are employed by the intertwining logistic map to produce diverse chaotic sequences. Permutation, DNA encoding, diffusion, and bit reversion operations are applied for scrambling and manipulating image pixels. The proposed encryption model was thoroughly examined using various analysis methods such as cropping attack, histogram analysis, key space evaluation, noise attack, information entropy assessment, differential attack, key sensitivity, and correlation coefficient examination. To expand the keyspace and enhance confusion and diffusion in the proposed encryption algorithm, the model employs different subkeys, private keys, and public keys through the Convolutional Neural Network. Furthermore, numerical and perceptual results were compared with the state-of-the-art outcomes to validate the model. Ultimately, the derived results demonstrate that the proposed intertwining logistic map-based image encryption model utilizing Convolutional Neural Network outperforms existing methods. This is due to its significant improvement in information entropy, enhanced randomness, high resistance against differential and statistical attacks, and overall efficiency."
       },
       "tags": []
     }
@@ -224764,7 +224823,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417424010959",
           "https://doi.org/10.1016/j.eswa.2024.124229"
         ],
-        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417424010959"
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417424010959",
+        "abstract": "The accurate classification of Typhoon Intensity (TI) based on cloud patterns in satellite images is crucial for effective disaster warning and management. However, this task is particularly challenging due to the striking visual similarities among different sub-classes of typhoons, coupled with a long-tailed distribution of class occurrences. Existing deep learning methods often struggle with biased classification stemming from imbalanced datasets and face difficulty discerning subtle differences between categories. This paper proposes a novel solution to these challenges through a hybrid framework that integrates contrastive learning and classifier learning. Contrastive learning is employed to increase the separation of similar sub-classes within the feature space, while classifier learning aims to train a discriminative and unbiased classifier. The proposed approach is evaluated extensively on the publicly available DeepTI dataset, demonstrating enhanced performance for both prominent and less frequent classes. The model achieves the 70.88% accuracy for seven categories typhoon intensity classification. The code implementation is at https://github.com/chen-huanxin/contrastive-hybrid-network."
       },
       "tags": [
         {
@@ -225376,9 +225436,11 @@
           "https://www.sciencedirect.com/science/article/pii/S0957417424013472/pdfft?md5=ebf32ff0d9bbf0dc97bc2b2c5704ba2e&pid=1-s2.0-S0957417424013472-main.pdf",
           "https://www.sciencedirect.com/science/article/pii/S0957417424013472",
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417424013472",
-          "https://doi.org/10.1016/j.eswa.2024.124480"
+          "https://doi.org/10.1016/j.eswa.2024.124480",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0957417424013472"
         ],
-        "abstract_source_url": "https://www.sciencedirect.com/science/article/pii/S0957417424013472/pdfft?md5=ebf32ff0d9bbf0dc97bc2b2c5704ba2e&pid=1-s2.0-S0957417424013472-main.pdf"
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/pii/S0957417424013472/pdfft?md5=ebf32ff0d9bbf0dc97bc2b2c5704ba2e&pid=1-s2.0-S0957417424013472-main.pdf",
+        "abstract": "We present a novel deep learning framework to address several challenges in medical imaging analysis. Especially for functional magnetic resonance imaging (fMRI) data, we develop a statistical sampling algorithm to augment small data for deep learning modeling. Also, the ComBat harmonization is utilized for multi-source batch effect correction. Finally, we implement the prediction uncertainty in deep learning through a dropout approximation of the deep Gaussian process. The proposed approach offers effective statistical tools to solve persistent problems in deep learning modeling for medical imaging data. To assess the performance of the proposed approach and demonstrate its effectiveness for various types of data, we apply it to autism fMRI and Pneumonia imaging datasets."
       },
       "tags": [
         {
@@ -226331,7 +226393,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417424016944",
           "https://doi.org/10.1016/j.eswa.2024.124827"
         ],
-        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417424016944"
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417424016944",
+        "abstract": "The continuous development of optical remote sensing images has provided a valuable data source for object detection samples. Labelling these samples for deep learning research in optical remote sensing is crucial yet time-consuming. Traditional manual labelling methods are known to be costly and inefficient, necessitating an automated solution. This work presents an innovative framework for automatically labelling remote sensing object detection samples. The framework comprises four main steps: dual student models, spatial computing, decision boundary teacher, and image and label generation. The dual student models are trained on public datasets and utilized for object detection and analysis through spatial computing techniques. A decision boundary teacher is employed to construct a sample classification surface to differentiate between positive and negative targets. The training process’s performance is further enhanced by applying a multi-loss joint optimization function. Experimental evaluations were conducted using high-resolution remote sensing images from Google, covering Japan. The results demonstrate a 58.9% increase in automatic labelling instances for the four target classes. Compared to the most advanced wide-area object detection frameworks, our proposed framework achieved an improved F1 metric by 2.88%. Additionally, the joint function outperformed other advanced loss functions, leading to accuracy improvements of 0.64% for airports, 2.45% for golf courses, and 2.35% for stadiums. This framework represents a pioneering automated approach for wide-area optical remote sensing sample labelling, demonstrating its effectiveness and transferability across different target classes."
       },
       "tags": [
         {
@@ -226419,7 +226482,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417424018049",
           "https://doi.org/10.1016/j.eswa.2024.124937"
         ],
-        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417424018049"
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417424018049",
+        "abstract": "In the area of optical fiber mode decomposition (MD), data-driven deep-learning (DL) algorithms have achieved remarkable strides with unlimited theoretically synthetic data, but the differences between theoretical and real-world data in the DL context are rarely investigated. The two differences, namely the information bottleneck and the domain discrepancy, between the simulation and realistic domain remain significant obstacles that limit the practical deployment of DL-based MD approaches in real-world optical systems. The paper aims to mitigate their influence on the accuracy limitation and the accuracy degradation of DL-based MD. First, we present a DL-based co-learning framework for MD for the first time. With the co-learning process, the knowledge of the teacher model learned from rich input information sources (near-field, far-field, and phase-distribution optical images) is transferred to the student model with the only near-field input source, which breaks the information bottleneck by allowing the student model to learn more knowledge in a simulation context. Furthermore, to settle the domain discrepancy between ideal data and practical observation, we propose a visual similarity-based matching to assign real values of modal coefficients to the practical optical images whose ground truth values cannot be easily acquired, which enables the transfer learning from the synthetic data to the real-world data for accuracy enhancement. Simulated and experimental results show that the proposed co-learning framework with visual similarity-based matching has realized high precision and robustness in MD simulated and practical tasks. By bridging the gap between theoretical and practical data, our study offers novel perspectives on DL-based MD practice."
       },
       "tags": [
         {
@@ -226606,7 +226670,8 @@
           "https://linkinghub.elsevier.com/retrieve/pii/S0957417424019468",
           "https://doi.org/10.1016/j.eswa.2024.125079"
         ],
-        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417424019468"
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417424019468",
+        "abstract": "Deep learning advancements have significantly benefited medical applications. One such helpful application is noninvasive fractional flow reserve (FFR) evaluation along the pulmonary artery tree, which aids in planning optimal balloon pulmonary angioplasty. This study proposes a surrogate model that employs an unsupervised physics-informed neural network (UPNN) to predict FFR based on pulmonary CT angiography. To ensure the UPNN strictly follows the unique solution of the governing equations, we implemented a hard boundary conditions enforcement approach. Subsequently, a finite difference convolutional filter was developed to enhance connectivity among neighboring points. This allows the neural networks to propagate boundary conditions into the unseen vessel interior and perceive the geometric structure of the computational domain. We also introduced regularization constraints on the three components contributing to pressure drop within the artery tree. A total of 4500 synthetic pulmonary artery trees were used to train the UPNN with impedance outlet boundary conditions. We found that the limits of agreement of FFR trained by UPNN ranged from −0.05 to 0.04 with computational fluid dynamics (CFD) simulation results. The testing results showed that the correlation coefficient between FFR predicted by UPNN and CFD were 96.1% and 94.7% for synthetic and patient-specific data, respectively. Using invasive FFR as reference, the accuracy of FFR predicted by UPNN and CFD was 81.4% and 84.8%, respectively. These results demonstrate that our UPNN-based surrogate model’s performance in evaluating FFR aligns closely with CFD simulations."
       },
       "tags": [
         {
@@ -252811,17 +252876,46 @@
       "batch_id": "2024-20261105-103119",
       "owner": "龙兆科",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "饮食干预试验摘要报告 MRI 脑龄差等指标，未交代脑龄估计方法，AI 作用待定。",
+      "decision": "include",
+      "rationale": "全文方法明确将 T1 加权 MRI 输入由独立 4,155 名健康受试者样本建立的 U-Net 模型，计算体素水平 BrainAGE；结果以脑龄差变化评估间歇性禁食和健康饮食的脑效应。神经网络直接提供临床试验的脑老化指标，实质参与生命科学研究。",
       "verified_metadata": {
         "doi": "10.1016/j.cmet.2024.05.017",
         "url": "https://doi.org/10.1016/j.cmet.2024.05.017",
         "evidence_urls": [
           "https://doi.org/10.1016/j.cmet.2024.05.017",
-          "https://pubmed.ncbi.nlm.nih.gov/38901423/"
+          "https://pubmed.ncbi.nlm.nih.gov/38901423/",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC11305918/"
         ]
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "全文方法 MRI/BrainAGE 估计段落；结果 BrainAGE 与图 2B",
+          "rationale": "全文方法明确将 T1 加权 MRI 输入由独立 4,155 名健康受试者样本建立的 U-Net 模型，计算体素水平 BrainAGE；结果以脑龄差变化评估间歇性禁食和健康饮食的脑效应。神经网络直接提供临床试验的脑老化指标，实质参与生命科学研究。"
+        },
+        {
+          "axis": "task",
+          "label": "脑龄预测",
+          "label_en": "Brain age prediction",
+          "evidence_location": "全文方法 MRI/BrainAGE 估计段落；结果 BrainAGE 与图 2B",
+          "rationale": "全文方法明确将 T1 加权 MRI 输入由独立 4,155 名健康受试者样本建立的 U-Net 模型，计算体素水平 BrainAGE；结果以脑龄差变化评估间歇性禁食和健康饮食的脑效应。神经网络直接提供临床试验的脑老化指标，实质参与生命科学研究。"
+        },
+        {
+          "axis": "method",
+          "label": "卷积神经网络",
+          "label_en": "Convolutional neural network",
+          "evidence_location": "全文方法 MRI/BrainAGE 估计段落；结果 BrainAGE 与图 2B",
+          "rationale": "全文方法明确将 T1 加权 MRI 输入由独立 4,155 名健康受试者样本建立的 U-Net 模型，计算体素水平 BrainAGE；结果以脑龄差变化评估间歇性禁食和健康饮食的脑效应。神经网络直接提供临床试验的脑老化指标，实质参与生命科学研究。"
+        }
+      ],
+      "fulltext_recheck": {
+        "checked_on": "2026-11-13",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11305918/",
+        "evidence_location": "全文方法 MRI/BrainAGE 估计段落；结果 BrainAGE 与图 2B",
+        "previous_decision": "pending"
+      }
     }
   },
   {
