@@ -431,16 +431,21 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "",
-    "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列2条，转纳入0、转排除0。累计纳入1、排除72、待定41、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+    "coverage_note": "2026-11-15官网核验与补证：已核验第9–12期共48条，DOI均在已有记录中；全年尚未完成，不以局部数量作为官网全年总数。本轮1条由待定转排除（以官网文种或已核实原摘要为证据），新增纳入0条。累计纳入1、排除73、待定40、未审0。 补充审核此前个人JSON未覆盖的既有采集记录20条：纳入0、排除20、待定0；其中无摘要非研究文种仅依据官方类型排除。更新累计纳入1、排除93、待定40。",
     "evidence_urls": [
-      "https://www.thelancet.com/journals/lanhl/home"
+      "https://www.thelancet.com/journals/lanhl/home",
+      "https://www.sciencedirect.com/journal/the-lancet-healthy-longevity/issues",
+      "https://www.sciencedirect.com/journal/the-lancet-healthy-longevity/vol/5/issue/10",
+      "https://www.sciencedirect.com/journal/the-lancet-healthy-longevity/vol/5/issue/12",
+      "https://www.sciencedirect.com/journal/the-lancet-healthy-longevity/vol/5/issue/9",
+      "https://www.sciencedirect.com/journal/the-lancet-healthy-longevity/vol/5/issue/11"
     ],
     "issues": [
-      "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。"
+      "ScienceDirect目录核验仅完成2024年第9–12期；第8期在正常浏览器返回CPE00002，第1–8期待续查。"
     ],
     "next_actions": [
-      "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-      "剩余41条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。"
+      "继续核验2024年第1–8期并按DOI对账；第8期网址 https://www.sciencedirect.com/journal/the-lancet-healthy-longevity/vol/5/issue/8 。已请负责人协助人工核验，尚未改用替代数。",
+      "剩余40条待定，继续补充AI作用或具体算法证据。"
     ],
     "previous_candidate_abstract_feedback_20261113": {
       "coverage_note": "本轮已有摘要／待核描述队列已完成；来源累计114条已审，纳入1、排除72、待定41、未审31。原始全量缺摘要54条，核验补齐26条。官网信息复用既有审计，本轮未新增目录核验。详见个人审计目录coverage.json和official-directory-audit.json。",
@@ -463,9 +468,9 @@
       "missing_after": 0,
       "file": "metadata/2024/ai4s.json",
       "baseline_commit": "0c8ca4fc88654fcaffdc36fa051684cdc6412dc6",
-      "checked_at": "2026-11-13"
+      "checked_at": "2026-11-15"
     },
-    "updated_at": "2026-11-14",
+    "updated_at": "2026-11-15",
     "previous_pending_recheck_feedback_20261114": {
       "coverage_note": "本轮已有摘要／待核描述队列已完成；来源累计114条已审，纳入1、排除72、待定41、未审31。官网信息复用既有审计，本轮未新增目录核验。详见个人审计目录coverage.json和official-directory-audit.json。 2026-11-13按当前分工核验：AI4S候选0条，缺摘要0→0条，本次回填0条。完整清单见 Blueblue1101/2026-11-13/candidate-abstract-audit.json。",
       "official_total": null,
@@ -499,6 +504,44 @@
       "new_include": 0,
       "new_exclude": 0,
       "pending_after": 41
+    },
+    "previous_official_audit_feedback_20261115": {
+      "official_total": null,
+      "official_scope": "",
+      "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列2条，转纳入0、转排除0。累计纳入1、排除72、待定41、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+      "issues": [
+        "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。"
+      ],
+      "next_actions": [
+        "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
+        "剩余41条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。"
+      ]
+    },
+    "official_catalogue_audit": {
+      "batch_id": "2024-wangwanting-official-audit-20261115",
+      "status": "partial",
+      "directory_total_checked": 48,
+      "research_review_total_checked": 27,
+      "evidence_file": "metadata/j-1c0b582639/2024/catalogue-reconciliation-Blueblue1101-20261115.json"
+    },
+    "publisher_followup_20261115": {
+      "batch_id": "2024-wangwanting-official-audit-20261115",
+      "rules_commit": "a40f3d144e849ab00eb946ed3bac862740ddf8a5",
+      "new_include": 0,
+      "new_exclude": 1,
+      "pending_after": 40,
+      "full_text_read": false,
+      "vocabulary_new_entries": 0
+    },
+    "supplemental_screening_20261115": {
+      "existing_collected_records_newly_reviewed": 20,
+      "new_include": 0,
+      "new_exclude": 20,
+      "new_pending": 0,
+      "new_crawled_papers": 0,
+      "candidates_added": 0,
+      "full_text_read": false,
+      "evidence_file": "metadata/j-1c0b582639/2024/supplemental-screening-Blueblue1101-20261115.json"
     }
   },
   {
@@ -652,18 +695,19 @@
     "year": 2024,
     "source_code": "j-23d3f85df7",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-    "official_total": null,
-    "official_scope": "",
-    "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列1条，转纳入0、转排除0。累计纳入6、排除5、待定1、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+    "official_total": 80,
+    "official_scope": "2024正式卷期年，目录全部条目用于与采集快照比较；研究与实质性综述另列，不混入在线待刊。",
+    "coverage_note": "2026-11-15官网核验与补证：官网全年目录80条，与采集DOI集合逐项一致，漏采0条；其中研究/实质性综述80条，其余按文种分列。累计纳入6、排除5、待定1、未审0。 补充审核此前个人JSON未覆盖的既有采集记录68条：纳入10、排除51、待定7；其中无摘要非研究文种仅依据官方类型排除。更新累计纳入16、排除56、待定8。",
     "evidence_urls": [
-      "https://www.sciencedirect.com/journal/etransportation/issues"
+      "https://www.sciencedirect.com/journal/etransportation/issues",
+      "https://www.sciencedirect.com/journal/etransportation/vol/22/suppl/C",
+      "https://www.sciencedirect.com/journal/etransportation/vol/20/suppl/C",
+      "https://www.sciencedirect.com/journal/etransportation/vol/19/suppl/C",
+      "https://www.sciencedirect.com/journal/etransportation/vol/21/suppl/C"
     ],
-    "issues": [
-      "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。"
-    ],
+    "issues": [],
     "next_actions": [
-      "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-      "剩余1条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。"
+      "剩余8条待定，继续补充AI作用或具体算法证据。"
     ],
     "previous_candidate_abstract_feedback_20261113": {
       "coverage_note": "本轮已有摘要／待核描述队列已完成；来源累计12条已审，纳入5、排除5、待定2、未审68。原始全量缺摘要80条，核验补齐11条。官网信息复用既有审计，本轮未新增目录核验。详见个人审计目录coverage.json和official-directory-audit.json。",
@@ -680,15 +724,15 @@
     },
     "candidate_abstracts": {
       "year": 2024,
-      "candidate_count": 4,
+      "candidate_count": 21,
       "missing_before": 4,
       "backfilled": 4,
       "missing_after": 0,
       "file": "metadata/2024/ai4s.json",
       "baseline_commit": "0c8ca4fc88654fcaffdc36fa051684cdc6412dc6",
-      "checked_at": "2026-11-13"
+      "checked_at": "2026-11-15"
     },
-    "updated_at": "2026-11-14",
+    "updated_at": "2026-11-15",
     "previous_pending_recheck_feedback_20261114": {
       "coverage_note": "本轮已有摘要／待核描述队列已完成；来源累计12条已审，纳入5、排除5、待定2、未审68。官网信息复用既有审计，本轮未新增目录核验。详见个人审计目录coverage.json和official-directory-audit.json。 2026-11-13按当前分工核验：AI4S候选4条，缺摘要4→0条，本次回填4条。完整清单见 Blueblue1101/2026-11-13/candidate-abstract-audit.json。 本次补摘要后将1条待定改为纳入；原累计数字保留为历史批次口径。",
       "official_total": null,
@@ -722,6 +766,44 @@
       "new_include": 0,
       "new_exclude": 0,
       "pending_after": 1
+    },
+    "previous_official_audit_feedback_20261115": {
+      "official_total": null,
+      "official_scope": "",
+      "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列1条，转纳入0、转排除0。累计纳入6、排除5、待定1、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+      "issues": [
+        "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。"
+      ],
+      "next_actions": [
+        "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
+        "剩余1条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。"
+      ]
+    },
+    "official_catalogue_audit": {
+      "batch_id": "2024-wangwanting-official-audit-20261115",
+      "status": "complete",
+      "directory_total_checked": 80,
+      "research_review_total_checked": 80,
+      "evidence_file": "metadata/j-23d3f85df7/2024/catalogue-reconciliation-Blueblue1101-20261115.json"
+    },
+    "publisher_followup_20261115": {
+      "batch_id": "2024-wangwanting-official-audit-20261115",
+      "rules_commit": "a40f3d144e849ab00eb946ed3bac862740ddf8a5",
+      "new_include": 0,
+      "new_exclude": 0,
+      "pending_after": 8,
+      "full_text_read": false,
+      "vocabulary_new_entries": 0
+    },
+    "supplemental_screening_20261115": {
+      "existing_collected_records_newly_reviewed": 68,
+      "new_include": 10,
+      "new_exclude": 51,
+      "new_pending": 7,
+      "new_crawled_papers": 0,
+      "candidates_added": 17,
+      "full_text_read": false,
+      "evidence_file": "metadata/j-23d3f85df7/2024/supplemental-screening-Blueblue1101-20261115.json"
     }
   },
   {
@@ -887,11 +969,11 @@
       "https://www.science.org/journal/sciimmunol"
     ],
     "issues": [
-      "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。"
+      "直接请求官网曾返回403；本轮正常浏览器停在安全验证，2024官网全年目录及总数仍待人工核验。"
     ],
     "next_actions": [
-      "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-      "剩余28条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。"
+      "剩余28条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
+      "请负责人打开 https://www.science.org/journal/sciimmunol 完成验证并核对2024全年目录；当前未使用替代数冒充官网数。"
     ],
     "previous_candidate_abstract_feedback_20261113": {
       "coverage_note": "本轮已有摘要／待核描述队列已完成；来源累计162条已审，纳入0、排除134、待定28、未审9。原始全量缺摘要9条，核验补齐0条。官网信息复用既有审计，本轮未新增目录核验。详见个人审计目录coverage.json和official-directory-audit.json。",
@@ -916,7 +998,7 @@
       "baseline_commit": "0c8ca4fc88654fcaffdc36fa051684cdc6412dc6",
       "checked_at": "2026-11-13"
     },
-    "updated_at": "2026-11-14",
+    "updated_at": "2026-11-15",
     "previous_pending_recheck_feedback_20261114": {
       "coverage_note": "本轮已有摘要／待核描述队列已完成；来源累计162条已审，纳入0、排除134、待定28、未审9。官网信息复用既有审计，本轮未新增目录核验。详见个人审计目录coverage.json和official-directory-audit.json。 2026-11-13按当前分工核验：AI4S候选0条，缺摘要0→0条，本次回填0条。完整清单见 Blueblue1101/2026-11-13/candidate-abstract-audit.json。",
       "official_total": null,
@@ -950,24 +1032,31 @@
       "new_include": 0,
       "new_exclude": 0,
       "pending_after": 28
+    },
+    "browser_access_attempt_20261115": {
+      "url": "https://www.science.org/journal/sciimmunol",
+      "result": "IAB normal browser remained on Performing security verification",
+      "manual_status": "Requested owner manual verification; pending response",
+      "checked_at": "2026-11-15"
     }
   },
   {
     "year": 2024,
     "source_code": "j-5be82edc26",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-    "official_total": null,
-    "official_scope": "",
-    "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列3条，转纳入0、转排除0。累计纳入11、排除26、待定3、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+    "official_total": 41,
+    "official_scope": "2024正式卷期年，目录全部条目用于与采集快照比较；研究与实质性综述另列，不混入在线待刊。",
+    "coverage_note": "2026-11-15官网核验与补证：官网全年目录41条，与采集DOI集合逐项一致，漏采0条；其中研究/实质性综述41条，其余按文种分列。累计纳入11、排除26、待定3、未审0。 补充审核此前个人JSON未覆盖的既有采集记录1条：纳入0、排除1、待定0；其中无摘要非研究文种仅依据官方类型排除。更新累计纳入11、排除27、待定3。",
     "evidence_urls": [
-      "https://www.sciencedirect.com/journal/advances-in-applied-energy/issues"
+      "https://www.sciencedirect.com/journal/advances-in-applied-energy/issues",
+      "https://www.sciencedirect.com/journal/advances-in-applied-energy/vol/15/suppl/C",
+      "https://www.sciencedirect.com/journal/advances-in-applied-energy/vol/13/suppl/C",
+      "https://www.sciencedirect.com/journal/advances-in-applied-energy/vol/14/suppl/C",
+      "https://www.sciencedirect.com/journal/advances-in-applied-energy/vol/16/suppl/C"
     ],
-    "issues": [
-      "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。"
-    ],
+    "issues": [],
     "next_actions": [
-      "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-      "剩余3条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。"
+      "剩余3条待定，继续补充AI作用或具体算法证据。"
     ],
     "previous_candidate_abstract_feedback_20261113": {
       "coverage_note": "本轮已有摘要／待核描述队列已完成；来源累计40条已审，纳入11、排除26、待定3、未审1。原始全量缺摘要41条，核验补齐40条。官网信息复用既有审计，本轮未新增目录核验。详见个人审计目录coverage.json和official-directory-audit.json。",
@@ -990,9 +1079,9 @@
       "missing_after": 0,
       "file": "metadata/2024/ai4s.json",
       "baseline_commit": "0c8ca4fc88654fcaffdc36fa051684cdc6412dc6",
-      "checked_at": "2026-11-13"
+      "checked_at": "2026-11-15"
     },
-    "updated_at": "2026-11-14",
+    "updated_at": "2026-11-15",
     "previous_pending_recheck_feedback_20261114": {
       "coverage_note": "本轮已有摘要／待核描述队列已完成；来源累计40条已审，纳入11、排除26、待定3、未审1。官网信息复用既有审计，本轮未新增目录核验。详见个人审计目录coverage.json和official-directory-audit.json。 2026-11-13按当前分工核验：AI4S候选1条，缺摘要1→0条，本次回填1条。完整清单见 Blueblue1101/2026-11-13/candidate-abstract-audit.json。",
       "official_total": null,
@@ -1026,6 +1115,44 @@
       "new_include": 0,
       "new_exclude": 0,
       "pending_after": 3
+    },
+    "previous_official_audit_feedback_20261115": {
+      "official_total": null,
+      "official_scope": "",
+      "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列3条，转纳入0、转排除0。累计纳入11、排除26、待定3、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+      "issues": [
+        "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。"
+      ],
+      "next_actions": [
+        "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
+        "剩余3条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。"
+      ]
+    },
+    "official_catalogue_audit": {
+      "batch_id": "2024-wangwanting-official-audit-20261115",
+      "status": "complete",
+      "directory_total_checked": 41,
+      "research_review_total_checked": 41,
+      "evidence_file": "metadata/j-5be82edc26/2024/catalogue-reconciliation-Blueblue1101-20261115.json"
+    },
+    "publisher_followup_20261115": {
+      "batch_id": "2024-wangwanting-official-audit-20261115",
+      "rules_commit": "a40f3d144e849ab00eb946ed3bac862740ddf8a5",
+      "new_include": 0,
+      "new_exclude": 0,
+      "pending_after": 3,
+      "full_text_read": false,
+      "vocabulary_new_entries": 0
+    },
+    "supplemental_screening_20261115": {
+      "existing_collected_records_newly_reviewed": 1,
+      "new_include": 0,
+      "new_exclude": 1,
+      "new_pending": 0,
+      "new_crawled_papers": 0,
+      "candidates_added": 0,
+      "full_text_read": false,
+      "evidence_file": "metadata/j-5be82edc26/2024/supplemental-screening-Blueblue1101-20261115.json"
     }
   },
   {
@@ -1336,9 +1463,9 @@
     "year": 2024,
     "source_code": "j-7352d41a27",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-    "official_total": null,
-    "official_scope": "",
-    "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列9条，转纳入1、转排除0。累计纳入118、排除199、待定8、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+    "official_total": 414,
+    "official_scope": "按2024在线发表年、官网全部文种统计，与采集快照同口径。已检查2023–2025年36期目录并按在线日期筛选。",
+    "coverage_note": "2026-11-15官网核验与补证：跨2023–2025年36期官网目录完整核验：2024在线发表414条，和采集414个DOI完全一致；349是2024正式卷期数，差异已解释并解决。累计纳入118、排除199、待定8、未审0。",
     "evidence_urls": [
       "https://link.springer.com/article/10.1007/s10462-024-10765-8",
       "https://link.springer.com/journal/10462/volumes-and-issues/57-1",
@@ -1354,12 +1481,9 @@
       "https://link.springer.com/journal/10462/volumes-and-issues/57-8",
       "https://link.springer.com/journal/10462/volumes-and-issues/57-9"
     ],
-    "issues": [
-      "官网2024卷期349条与采集2024在线发表414条口径不同，全年在线发表总数仍待核实。"
-    ],
+    "issues": [],
     "next_actions": [
-      "补齐跨2023/2024/2025卷期的在线日期成员核验，再确认2024在线发表官网总数；不要把349与414的差额当漏采。",
-      "剩余8条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。"
+      "剩余8条待定；继续补充会影响AI4S结论的原摘要或明确方法证据，保留真实疑点。"
     ],
     "previous_candidate_abstract_feedback_20261113": {
       "coverage_note": "本轮已有摘要／待核描述队列已完成；来源累计325条已审，纳入111、排除198、待定16、未审89。原始全量缺摘要112条，核验补齐22条。官网信息复用既有审计，本轮未新增目录核验。详见个人审计目录coverage.json和official-directory-audit.json。",
@@ -1387,7 +1511,7 @@
       "abstract_supplement_required": 0,
       "remaining_needs_evidence": 0
     },
-    "updated_at": "2026-11-14",
+    "updated_at": "2026-11-15",
     "previous_pending_recheck_feedback_20261114": {
       "coverage_note": "本轮已有摘要／待核描述队列已完成；来源累计325条已审，纳入111、排除198、待定16、未审89。官网信息复用既有审计，本轮未新增目录核验。详见个人审计目录coverage.json和official-directory-audit.json。 2026-11-13按当前分工核验：AI4S候选49条，缺摘要2→1条，本次回填1条。完整清单见 Blueblue1101/2026-11-13/candidate-abstract-audit.json。 2026-11-14已按监控结构化规则登记无需摘要：原始空值1条，已排除且无需摘要1条，候选待补摘要0条。",
       "official_total": null,
@@ -1421,6 +1545,35 @@
       "new_include": 1,
       "new_exclude": 0,
       "pending_after": 8
+    },
+    "previous_official_audit_feedback_20261115": {
+      "official_total": null,
+      "official_scope": "",
+      "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列9条，转纳入1、转排除0。累计纳入118、排除199、待定8、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+      "issues": [
+        "官网2024卷期349条与采集2024在线发表414条口径不同，全年在线发表总数仍待核实。"
+      ],
+      "next_actions": [
+        "补齐跨2023/2024/2025卷期的在线日期成员核验，再确认2024在线发表官网总数；不要把349与414的差额当漏采。",
+        "剩余8条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。"
+      ]
+    },
+    "official_catalogue_audit": {
+      "batch_id": "2024-wangwanting-official-audit-20261115",
+      "status": "complete",
+      "official_online_2024": 414,
+      "matched_dois": 414,
+      "unresolved": 0,
+      "evidence_file": "metadata/j-7352d41a27/2024/catalogue-reconciliation-Blueblue1101-20261115.json"
+    },
+    "publisher_followup_20261115": {
+      "batch_id": "2024-wangwanting-official-audit-20261115",
+      "rules_commit": "a40f3d144e849ab00eb946ed3bac862740ddf8a5",
+      "new_include": 0,
+      "new_exclude": 0,
+      "pending_after": 8,
+      "full_text_read": false,
+      "vocabulary_new_entries": 0
     }
   },
   {
@@ -1659,18 +1812,26 @@
     "year": 2024,
     "source_code": "j-96be195ee8",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-    "official_total": null,
-    "official_scope": "",
-    "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列0条，转纳入0、转排除0。累计纳入9、排除104、待定0、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+    "official_total": 126,
+    "official_scope": "2024正式卷期年，目录全部条目用于与采集快照比较；研究与实质性综述另列，不混入在线待刊。",
+    "coverage_note": "2026-11-15官网核验与补证：官网全年目录126条，与采集DOI集合逐项一致，漏采0条；其中研究/实质性综述113条，其余按文种分列。累计纳入9、排除104、待定0、未审0。 补充审核此前个人JSON未覆盖的既有采集记录13条：纳入0、排除13、待定0；其中无摘要非研究文种仅依据官方类型排除。更新累计纳入9、排除117、待定0。",
     "evidence_urls": [
-      "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/issues"
+      "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/issues",
+      "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/10",
+      "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/8",
+      "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/12",
+      "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/6",
+      "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/11",
+      "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/2",
+      "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/4",
+      "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/3",
+      "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/1",
+      "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/9",
+      "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/5",
+      "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/7"
     ],
-    "issues": [
-      "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。"
-    ],
-    "next_actions": [
-      "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "previous_candidate_abstract_feedback_20261113": {
       "coverage_note": "本轮已有摘要／待核描述队列已完成；来源累计113条已审，纳入9、排除104、待定0、未审13。原始全量缺摘要13条，核验补齐0条。官网信息复用既有审计，本轮未新增目录核验。详见个人审计目录coverage.json和official-directory-audit.json。",
       "issues": [
@@ -1690,9 +1851,9 @@
       "missing_after": 0,
       "file": "metadata/2024/ai4s.json",
       "baseline_commit": "0c8ca4fc88654fcaffdc36fa051684cdc6412dc6",
-      "checked_at": "2026-11-13"
+      "checked_at": "2026-11-15"
     },
-    "updated_at": "2026-11-14",
+    "updated_at": "2026-11-15",
     "previous_pending_recheck_feedback_20261114": {
       "coverage_note": "本轮已有摘要／待核描述队列已完成；来源累计113条已审，纳入9、排除104、待定0、未审13。官网信息复用既有审计，本轮未新增目录核验。详见个人审计目录coverage.json和official-directory-audit.json。 2026-11-13按当前分工核验：AI4S候选3条，缺摘要0→0条，本次回填0条。完整清单见 Blueblue1101/2026-11-13/candidate-abstract-audit.json。",
       "official_total": null,
@@ -1724,6 +1885,43 @@
       "new_include": 0,
       "new_exclude": 0,
       "pending_after": 0
+    },
+    "previous_official_audit_feedback_20261115": {
+      "official_total": null,
+      "official_scope": "",
+      "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列0条，转纳入0、转排除0。累计纳入9、排除104、待定0、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+      "issues": [
+        "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。"
+      ],
+      "next_actions": [
+        "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。"
+      ]
+    },
+    "official_catalogue_audit": {
+      "batch_id": "2024-wangwanting-official-audit-20261115",
+      "status": "complete",
+      "directory_total_checked": 126,
+      "research_review_total_checked": 113,
+      "evidence_file": "metadata/j-96be195ee8/2024/catalogue-reconciliation-Blueblue1101-20261115.json"
+    },
+    "publisher_followup_20261115": {
+      "batch_id": "2024-wangwanting-official-audit-20261115",
+      "rules_commit": "a40f3d144e849ab00eb946ed3bac862740ddf8a5",
+      "new_include": 0,
+      "new_exclude": 0,
+      "pending_after": 0,
+      "full_text_read": false,
+      "vocabulary_new_entries": 0
+    },
+    "supplemental_screening_20261115": {
+      "existing_collected_records_newly_reviewed": 13,
+      "new_include": 0,
+      "new_exclude": 13,
+      "new_pending": 0,
+      "new_crawled_papers": 0,
+      "candidates_added": 0,
+      "full_text_read": false,
+      "evidence_file": "metadata/j-96be195ee8/2024/supplemental-screening-Blueblue1101-20261115.json"
     }
   },
   {
@@ -2105,18 +2303,21 @@
     "year": 2024,
     "source_code": "j-c2843d80b8",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-    "official_total": null,
-    "official_scope": "",
-    "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列0条，转纳入0、转排除0。累计纳入0、排除39、待定0、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+    "official_total": 53,
+    "official_scope": "2024正式卷期年，目录全部条目用于与采集快照比较；研究与实质性综述另列，不混入在线待刊。",
+    "coverage_note": "2026-11-15官网核验与补证：官网全年目录53条，与采集DOI集合逐项一致，漏采0条；其中研究/实质性综述39条，其余按文种分列。累计纳入0、排除39、待定0、未审0。 补充审核此前个人JSON未覆盖的既有采集记录14条：纳入0、排除14、待定0；其中无摘要非研究文种仅依据官方类型排除。更新累计纳入0、排除53、待定0。",
     "evidence_urls": [
-      "https://www.sciencedirect.com/journal/seminars-in-cancer-biology/issues"
+      "https://www.sciencedirect.com/journal/seminars-in-cancer-biology/issues",
+      "https://www.sciencedirect.com/journal/seminars-in-cancer-biology/vol/104-105/suppl/C",
+      "https://www.sciencedirect.com/journal/seminars-in-cancer-biology/vol/106-107/suppl/C",
+      "https://www.sciencedirect.com/journal/seminars-in-cancer-biology/vol/102-103/suppl/C",
+      "https://www.sciencedirect.com/journal/seminars-in-cancer-biology/vol/100/suppl/C",
+      "https://www.sciencedirect.com/journal/seminars-in-cancer-biology/vol/101/suppl/C",
+      "https://www.sciencedirect.com/journal/seminars-in-cancer-biology/vol/99/suppl/C",
+      "https://www.sciencedirect.com/journal/seminars-in-cancer-biology/vol/98/suppl/C"
     ],
-    "issues": [
-      "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。"
-    ],
-    "next_actions": [
-      "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "previous_candidate_abstract_feedback_20261113": {
       "coverage_note": "本轮已有摘要／待核描述队列已完成；来源累计39条已审，纳入0、排除39、待定0、未审14。原始全量缺摘要53条，核验补齐39条。官网信息复用既有审计，本轮未新增目录核验。详见个人审计目录coverage.json和official-directory-audit.json。",
       "issues": [
@@ -2136,9 +2337,9 @@
       "missing_after": 0,
       "file": "metadata/2024/ai4s.json",
       "baseline_commit": "0c8ca4fc88654fcaffdc36fa051684cdc6412dc6",
-      "checked_at": "2026-11-13"
+      "checked_at": "2026-11-15"
     },
-    "updated_at": "2026-11-14",
+    "updated_at": "2026-11-15",
     "previous_pending_recheck_feedback_20261114": {
       "coverage_note": "本轮已有摘要／待核描述队列已完成；来源累计39条已审，纳入0、排除39、待定0、未审14。官网信息复用既有审计，本轮未新增目录核验。详见个人审计目录coverage.json和official-directory-audit.json。 2026-11-13按当前分工核验：AI4S候选0条，缺摘要0→0条，本次回填0条。完整清单见 Blueblue1101/2026-11-13/candidate-abstract-audit.json。",
       "official_total": null,
@@ -2170,6 +2371,43 @@
       "new_include": 0,
       "new_exclude": 0,
       "pending_after": 0
+    },
+    "previous_official_audit_feedback_20261115": {
+      "official_total": null,
+      "official_scope": "",
+      "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列0条，转纳入0、转排除0。累计纳入0、排除39、待定0、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+      "issues": [
+        "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。"
+      ],
+      "next_actions": [
+        "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。"
+      ]
+    },
+    "official_catalogue_audit": {
+      "batch_id": "2024-wangwanting-official-audit-20261115",
+      "status": "complete",
+      "directory_total_checked": 53,
+      "research_review_total_checked": 39,
+      "evidence_file": "metadata/j-c2843d80b8/2024/catalogue-reconciliation-Blueblue1101-20261115.json"
+    },
+    "publisher_followup_20261115": {
+      "batch_id": "2024-wangwanting-official-audit-20261115",
+      "rules_commit": "a40f3d144e849ab00eb946ed3bac862740ddf8a5",
+      "new_include": 0,
+      "new_exclude": 0,
+      "pending_after": 0,
+      "full_text_read": false,
+      "vocabulary_new_entries": 0
+    },
+    "supplemental_screening_20261115": {
+      "existing_collected_records_newly_reviewed": 14,
+      "new_include": 0,
+      "new_exclude": 14,
+      "new_pending": 0,
+      "new_crawled_papers": 0,
+      "candidates_added": 0,
+      "full_text_read": false,
+      "evidence_file": "metadata/j-c2843d80b8/2024/supplemental-screening-Blueblue1101-20261115.json"
     }
   },
   {
@@ -3055,13 +3293,13 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": 126,
     "official_scope": "Publisher publication-year filter, all document types retained separately",
-    "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列5条，转纳入0、转排除0。累计纳入7、排除77、待定34、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+    "coverage_note": "2026-11-15官网核验与补证：本轮29条由待定转排除（以官网文种或已核实原摘要为证据），新增纳入0条。29条官方Correspondence按文种排除，不把无摘要当排除依据。累计纳入7、排除106、待定5、未审0。",
     "evidence_urls": [
       "https://www.nature.com/celldisc/articles?year=2024"
     ],
     "issues": [],
     "next_actions": [
-      "剩余34条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。"
+      "剩余5条待定；继续补充会影响AI4S结论的原摘要或明确方法证据，保留真实疑点。"
     ],
     "previous_candidate_abstract_feedback_20261113": {
       "coverage_note": "本轮已有摘要／待核描述队列已完成；来源累计118条已审，纳入7、排除77、待定34、未审8。原始全量缺摘要10条，核验补齐1条。官网信息复用既有审计，本轮未新增目录核验。详见个人审计目录coverage.json和official-directory-audit.json。",
@@ -3084,7 +3322,7 @@
       "baseline_commit": "0c8ca4fc88654fcaffdc36fa051684cdc6412dc6",
       "checked_at": "2026-11-13"
     },
-    "updated_at": "2026-11-14",
+    "updated_at": "2026-11-15",
     "previous_pending_recheck_feedback_20261114": {
       "coverage_note": "本轮已有摘要／待核描述队列已完成；来源累计118条已审，纳入7、排除77、待定34、未审8。官网信息复用既有审计，本轮未新增目录核验。详见个人审计目录coverage.json和official-directory-audit.json。 2026-11-13按当前分工核验：AI4S候选7条，缺摘要0→0条，本次回填0条。完整清单见 Blueblue1101/2026-11-13/candidate-abstract-audit.json。",
       "official_total": 126,
@@ -3114,6 +3352,24 @@
       "new_include": 0,
       "new_exclude": 0,
       "pending_after": 34
+    },
+    "previous_official_audit_feedback_20261115": {
+      "official_total": 126,
+      "official_scope": "Publisher publication-year filter, all document types retained separately",
+      "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列5条，转纳入0、转排除0。累计纳入7、排除77、待定34、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+      "issues": [],
+      "next_actions": [
+        "剩余34条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。"
+      ]
+    },
+    "publisher_followup_20261115": {
+      "batch_id": "2024-wangwanting-official-audit-20261115",
+      "rules_commit": "a40f3d144e849ab00eb946ed3bac862740ddf8a5",
+      "new_include": 0,
+      "new_exclude": 29,
+      "pending_after": 5,
+      "full_text_read": false,
+      "vocabulary_new_entries": 0
     }
   },
   {
@@ -3187,7 +3443,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": 10926,
     "official_scope": "官方统计口径未充分核实；未知总数保留null。",
-    "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列475条，转纳入0、转排除12。累计纳入792、排除9669、待定465、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+    "coverage_note": "2026-11-15官网核验与补证：本轮1条由待定转排除（以官网文种或已核实原摘要为证据），新增纳入0条。核对2条研究论文的Abstract栏目；1条完整物理学摘要可排除，另1条官网摘要仍截断，继续待定。既有官网成员核验待办保留。累计纳入792、排除9670、待定464、未审0。",
     "evidence_urls": [
       "https://www.nature.com/ncomms/articles?year=2024"
     ],
@@ -3196,7 +3452,7 @@
     ],
     "next_actions": [
       "后续按既有官网目录核对成员；本轮未重新核验已知总数来源。",
-      "剩余465条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。"
+      "剩余464条待定；继续补充会影响AI4S结论的原摘要或明确方法证据，保留真实疑点。"
     ],
     "previous_candidate_abstract_feedback_20261113": {
       "coverage_note": "本轮已有摘要／待核描述队列已完成；来源累计10926条已审，纳入778、排除9654、待定494、未审0。原始全量缺摘要538条，核验补齐3条。官网信息复用既有审计，本轮未新增目录核验。详见个人审计目录coverage.json和official-directory-audit.json。",
@@ -3219,7 +3475,7 @@
       "baseline_commit": "0c8ca4fc88654fcaffdc36fa051684cdc6412dc6",
       "checked_at": "2026-11-13"
     },
-    "updated_at": "2026-11-14",
+    "updated_at": "2026-11-15",
     "previous_pending_recheck_feedback_20261114": {
       "coverage_note": "本轮已有摘要／待核描述队列已完成；来源累计10926条已审，纳入778、排除9654、待定494、未审0。官网信息复用既有审计，本轮未新增目录核验。详见个人审计目录coverage.json和official-directory-audit.json。 2026-11-13按当前分工核验：AI4S候选587条，缺摘要0→0条，本次回填0条。完整清单见 Blueblue1101/2026-11-13/candidate-abstract-audit.json。",
       "official_total": 10926,
@@ -3253,6 +3509,27 @@
       "new_include": 0,
       "new_exclude": 12,
       "pending_after": 465
+    },
+    "previous_official_audit_feedback_20261115": {
+      "official_total": 10926,
+      "official_scope": "官方统计口径未充分核实；未知总数保留null。",
+      "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列475条，转纳入0、转排除12。累计纳入792、排除9669、待定465、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+      "issues": [
+        "既有官网成员核验待办未在本轮35个未知总数来源范围内，继续保留。"
+      ],
+      "next_actions": [
+        "后续按既有官网目录核对成员；本轮未重新核验已知总数来源。",
+        "剩余465条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。"
+      ]
+    },
+    "publisher_followup_20261115": {
+      "batch_id": "2024-wangwanting-official-audit-20261115",
+      "rules_commit": "a40f3d144e849ab00eb946ed3bac862740ddf8a5",
+      "new_include": 0,
+      "new_exclude": 1,
+      "pending_after": 464,
+      "full_text_read": false,
+      "vocabulary_new_entries": 0
     }
   },
   {
