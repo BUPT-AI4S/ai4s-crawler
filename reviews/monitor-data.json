@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-15T09:11:44.153255+00:00",
-  "commit": "d5fa34dae60010952e45e79a7aafe91704936fc7",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/d5fa34dae60010952e45e79a7aafe91704936fc7/",
+  "generated_at": "2026-11-15T09:16:06.193696+00:00",
+  "commit": "a40f3d144e849ab00eb946ed3bac862740ddf8a5",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/a40f3d144e849ab00eb946ed3bac862740ddf8a5/",
   "years": [
     {
       "year": 2024,
@@ -21651,18 +21651,17 @@
           "open_issues": 0,
           "status": "complete",
           "last_update": {
-            "at": "2026-11-15T01:09:37-08:00",
+            "at": "2026-11-15T01:14:12-08:00",
             "author": "ebo",
-            "subject": "Review nydiii BIBM 2025 candidates and reconcile official proceedings",
+            "subject": "Resolve two BIBM 2025 pending papers by owner human exclusions",
             "area": "reviews",
             "paths": [
-              "metadata/2025/ai4s.json",
-              "metadata/bibm/2025/ai4s.json",
               "metadata/bibm/2025/catalogue-reconciliation.json",
-              "metadata/bibm/2025/papers.json"
+              "reviews/2025/feedback/nydiii.json",
+              "reviews/2025/nydiii.json"
             ]
           },
-          "commits_7d": 44
+          "commits_7d": 45
         }
       ],
       "snapshot_file": "metadata/2024/snapshot.json",
@@ -21933,7 +21932,7 @@
           "official_total": 1239,
           "official_scope": "2025届BIBM正式电子论文集全部有独立文章链接的书目1239条，含正会、短文、Workshop、Poster及4条讲座摘要；5项无文章链接的组织/扉页/委员会/索引等前置材料单列排除。按会议年，不按IEEE首次上线2026年。研究论文另计1235，不把1244个显示项全部称为研究论文。",
           "reference_check": null,
-          "coverage_note": "2026-11-15浏览器完成IEEE电子论文集13页目录核对：显示1244项，其中1239条有独立文章链接的书目与5项前置材料单列；1239含4条第1至5页讲座摘要，研究论文口径为1235。原1233全部匹配官网，确认6条漏采并已实际补入来源papers.json及候选，当前来源全量1239与官网同口径一致；原固定快照及原字段保留。Crossref同容器完整游标分页1244条辅助核对DOI、题名、作者及页码，显示差异逐项记录。按2025届会议年，不把2026上线日期当会议年。原604候选及补入6条均提交逐篇审核：纳入553、排除55、待定2、未审0；候选原摘要均非空，6条新增逐一取得IEEE完整原摘要，另2条输入摘要公式解析缺段已在verified_metadata修复。规范中英文标签复用1334条词表。11357192行为筛查及11356404 NetCell仍需方法正文确定AI实际作用，IEEE正文受订阅限制，当前无机构权限，公开检索未取得作者全文，保留待定。其余629条非候选未逐篇全文穷尽精筛，不冒称查尽全部AI4S。",
+          "coverage_note": "2026-11-15浏览器完成IEEE电子论文集13页目录核对：显示1244项，其中1239条有独立文章链接的书目与5项前置材料单列；1239含4条第1至5页讲座摘要，研究论文口径为1235。原1233全部匹配官网，确认6条漏采并已实际补入来源papers.json及候选，当前来源全量1239与官网同口径一致；原固定快照及原字段保留。Crossref同容器完整游标分页1244条辅助核对DOI、题名、作者及页码，显示差异逐项记录。按2025届会议年，不把2026上线日期当会议年。原604候选及补入6条均提交逐篇审核：纳入553、排除57、待定0、未审0；候选原摘要均非空，6条新增逐一取得IEEE完整原摘要，另2条输入摘要公式解析缺段已在verified_metadata修复。规范中英文标签复用1334条词表。11357192行为筛查及11356404 NetCell原因方法正文受订阅限制而待定；2026-11-15负责人表示已人工查过并明确要求不纳入，现按负责人决定改为排除，保留先前证据和判定历史。Agent未取得全文，不编造具体方法或技术排除理由。其余629条非候选未逐篇全文穷尽精筛，不冒称查尽全部AI4S。",
           "evidence_urls": [
             "https://ieeexplore.ieee.org/xpl/conhome/11355913/proceeding?sortType=vol-only-seq&isnumber=11355975&rowsPerPage=100&pageNumber=1",
             "https://ieeexplore.ieee.org/xpl/conhome/11355913/proceeding?sortType=vol-only-seq&isnumber=11355975&rowsPerPage=100&pageNumber=2",
@@ -21952,18 +21951,13 @@
           ],
           "decisions": {
             "include": 553,
-            "exclude": 55,
-            "pending": 2,
+            "exclude": 57,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "2条候选需方法正文确定AI实际作用：11357192（ASD数字行为筛查）、11356404（NetCell）。IEEE公开摘要及引言不足，方法正文和图表需订阅，当前无机构权限；未取得可核作者全文。",
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "取得10.1109/BIBM66473.2025.11357192及10.1109/BIBM66473.2025.11356404的作者公开版本、机构可访问正文或负责人方法证据，核实所用学习/推理模型后逐篇定论；不以准确率或network字样自动纳入。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2025/nydiii.json",
@@ -36578,22 +36572,21 @@
           "sources": 51,
           "delivered": 2,
           "official": 2,
-          "pending": 2,
-          "open_issues": 50,
+          "pending": 0,
+          "open_issues": 49,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-15T01:09:37-08:00",
+            "at": "2026-11-15T01:14:12-08:00",
             "author": "ebo",
-            "subject": "Review nydiii BIBM 2025 candidates and reconcile official proceedings",
+            "subject": "Resolve two BIBM 2025 pending papers by owner human exclusions",
             "area": "reviews",
             "paths": [
-              "metadata/2025/ai4s.json",
-              "metadata/bibm/2025/ai4s.json",
               "metadata/bibm/2025/catalogue-reconciliation.json",
-              "metadata/bibm/2025/papers.json"
+              "reviews/2025/feedback/nydiii.json",
+              "reviews/2025/nydiii.json"
             ]
           },
-          "commits_7d": 44
+          "commits_7d": 45
         }
       ],
       "snapshot_file": "metadata/2025/snapshot.json",
@@ -51220,18 +51213,17 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-15T01:09:37-08:00",
+            "at": "2026-11-15T01:14:12-08:00",
             "author": "ebo",
-            "subject": "Review nydiii BIBM 2025 candidates and reconcile official proceedings",
+            "subject": "Resolve two BIBM 2025 pending papers by owner human exclusions",
             "area": "reviews",
             "paths": [
-              "metadata/2025/ai4s.json",
-              "metadata/bibm/2025/ai4s.json",
               "metadata/bibm/2025/catalogue-reconciliation.json",
-              "metadata/bibm/2025/papers.json"
+              "reviews/2025/feedback/nydiii.json",
+              "reviews/2025/nydiii.json"
             ]
           },
-          "commits_7d": 44
+          "commits_7d": 45
         },
         {
           "owner": "朱长昊",
@@ -51867,8 +51859,8 @@
           "sources": 51,
           "delivered": 2,
           "official": 2,
-          "pending": 2,
-          "open_issues": 50,
+          "pending": 0,
+          "open_issues": 49,
           "status": "in_progress"
         },
         "2026": {
@@ -51886,25 +51878,24 @@
         "2026"
       ],
       "last_update": {
-        "at": "2026-11-15T01:09:37-08:00",
+        "at": "2026-11-15T01:14:12-08:00",
         "author": "ebo",
-        "subject": "Review nydiii BIBM 2025 candidates and reconcile official proceedings",
+        "subject": "Resolve two BIBM 2025 pending papers by owner human exclusions",
         "area": "reviews",
         "paths": [
-          "metadata/2025/ai4s.json",
-          "metadata/bibm/2025/ai4s.json",
           "metadata/bibm/2025/catalogue-reconciliation.json",
-          "metadata/bibm/2025/papers.json"
+          "reviews/2025/feedback/nydiii.json",
+          "reviews/2025/nydiii.json"
         ]
       },
-      "commits_7d": 44
+      "commits_7d": 45
     }
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-15T09:11:29.742755+00:00",
+    "generated_at": "2026-11-15T09:15:55.219996+00:00",
     "history_available": true,
-    "commit": "d5fa34dae60010952e45e79a7aafe91704936fc7",
-    "commits_scanned": 471
+    "commit": "a40f3d144e849ab00eb946ed3bac862740ddf8a5",
+    "commits_scanned": 473
   }
 }
