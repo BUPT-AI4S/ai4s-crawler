@@ -1660,28 +1660,48 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "待对齐正式出版年与线上优先日期、研究正文/综述/通知和正式会议分轨；尚未完成核验",
-    "coverage_note": "2026-11-15阶段续审：当前责任台账1664条，四状态{'pending': 1283, 'exclude': 313, 'include': 68}；相对本次主分支基线新增逐篇判定303条。已核实初筛漏筛补录24条，本次交付于个人审核数组，未改共享候选文件；当前主分支候选92条、原始空摘要45条、合并本人核验字段后缺可用摘要45条。候选版本a9c9099884d96d35a6d6ba50e65717b6b4483299；采集快照2026-11-05T10:31:19.144426+08:00。既有官网核验结论、摘要补证与修正元数据保持；历史待定不等于逐篇最终完成，未知官网总数保持null。",
+    "coverage_note": "2026-11-15阶段续审：当前责任台账1664条，四状态{'pending': 1283, 'exclude': 313, 'include': 68}；相对本次主分支基线新增逐篇判定303条。已核实初筛漏筛补录24条，本次交付于个人审核数组，未改共享候选文件；当前主分支候选92条、原始空摘要45条、合并本人核验字段后缺可用摘要45条。候选版本a9c9099884d96d35a6d6ba50e65717b6b4483299；采集快照2026-11-05T10:31:19.144426+08:00。既有官网核验结论、摘要补证与修正元数据保持；历史待定不等于逐篇最终完成，未知官网总数保持null。 2026-11-15官网BibTeX补证：第628–644卷17份原始导出（排除Editorial Board），1497条引文；DOI、题名和2024年份匹配后补全1151条责任台账摘要，其中当前AI4S候选42条。候选缺可用摘要从45降至3；13条已匹配引文的导出abstract为空，不能据此认定官网正文无摘要。第645卷A导出已点击但未收到文件，不计下载成功；B目录返回CPE00002，负责人也确认不能打开，全年未完成。原始字段和相关性判定保持，本轮不计新增精筛。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ecc8d9eac245e4907cb75a37ceb7c8a5d6010adc/metadata/2024/snapshot.json",
-      "https://www.sciencedirect.com/journal/journal-of-hydrology"
+      "https://www.sciencedirect.com/journal/journal-of-hydrology",
+      "https://www.sciencedirect.com/journal/journal-of-hydrology/vol/628/suppl/C",
+      "https://www.sciencedirect.com/journal/journal-of-hydrology/vol/629/suppl/C",
+      "https://www.sciencedirect.com/journal/journal-of-hydrology/vol/630/suppl/C",
+      "https://www.sciencedirect.com/journal/journal-of-hydrology/vol/631/suppl/C",
+      "https://www.sciencedirect.com/journal/journal-of-hydrology/vol/632/suppl/C",
+      "https://www.sciencedirect.com/journal/journal-of-hydrology/vol/633/suppl/C",
+      "https://www.sciencedirect.com/journal/journal-of-hydrology/vol/634/suppl/C",
+      "https://www.sciencedirect.com/journal/journal-of-hydrology/vol/635/suppl/C",
+      "https://www.sciencedirect.com/journal/journal-of-hydrology/vol/636/suppl/C",
+      "https://www.sciencedirect.com/journal/journal-of-hydrology/vol/637/suppl/C",
+      "https://www.sciencedirect.com/journal/journal-of-hydrology/vol/638/suppl/C",
+      "https://www.sciencedirect.com/journal/journal-of-hydrology/vol/639/suppl/C",
+      "https://www.sciencedirect.com/journal/journal-of-hydrology/vol/640/suppl/C",
+      "https://www.sciencedirect.com/journal/journal-of-hydrology/vol/641/suppl/C",
+      "https://www.sciencedirect.com/journal/journal-of-hydrology/vol/642/suppl/C",
+      "https://www.sciencedirect.com/journal/journal-of-hydrology/vol/643/suppl/C",
+      "https://www.sciencedirect.com/journal/journal-of-hydrology/vol/644/suppl/C"
     ],
     "issues": [
       "官网同口径全年卷期/正式论文集对账尚未完成，官网数未知。",
-      "当前已同步年度候选中仍有45条空摘要，需要补原摘要或正式证据；未用占位或生成摘要填充。",
       "当前台账待定1283条，含历史初判及证据不足，不能视为最终复核完成。",
-      "本轮新纳入24条初筛漏筛论文已交个人审核数组，共享候选文件未在本次修改。"
+      "本轮新纳入24条初筛漏筛论文已交个人审核数组，共享候选文件未在本次修改。",
+      "当前AI4S候选仍缺可用摘要3条；本轮原摘要补齐不等同于相关性精筛完成。",
+      "官网第645卷Part B目录返回CPE00002，刷新仍失败，负责人确认也不能打开；第645卷及其余来源尚未完成本轮官网导出。"
     ],
     "next_actions": [
       "核对正式卷期/论文集，注明出版年、文章类型及主会/附属范围，按DOI或官方ID对账并记录证据。",
       "优先补充缺摘要候选的正式原摘要与证据，仍不足以判断时保留pending；不以exclude自动免除摘要补证。",
       "按逐篇rationale补证并处理pending，证据充分后再更新结论。",
-      "按本阶段supplements.json核对已交付漏筛候选与共享候选集的同步，保留原ID并按证据去重。"
+      "按本阶段supplements.json核对已交付漏筛候选与共享候选集的同步，保留原ID并按证据去重。",
+      "官网恢复后从Journal of Hydrology第645卷Part A重新导出（前次未收到文件），再处理Part B；继续本人其他来源，逐DOI题名核对，原始文件和无摘要条目分别留档。",
+      "对已补齐原摘要的pending/unreviewed按Skill重新精筛，不能自动纳入或宣称已审。"
     ],
     "collected_total": 1664,
     "local_record_total": 1664,
     "candidate_total": 92,
     "candidate_missing_abstract_raw": 45,
-    "candidate_missing_usable_abstract_local": 45,
+    "candidate_missing_usable_abstract_local": 3,
     "local_decisions": {
       "pending": 1283,
       "exclude": 313,
@@ -1689,7 +1709,7 @@
     },
     "model_reviewed_this_stage": 303,
     "stage_baseline_commit": "a9c9099884d96d35a6d6ba50e65717b6b4483299",
-    "updated_at": "2026-11-15T21:42:08+08:00",
+    "updated_at": "2026-11-15T22:17:47+08:00",
     "inherited_pending": 1270,
     "include_missing_metadata_evidence": 0,
     "current_metadata_record_total": 1664,
@@ -1700,7 +1720,11 @@
     "candidate_abstracts_synced": 15,
     "snapshot_note": "captured_at保持原采集快照；本轮补录不伪造采集时间，当前metadata数量与旧快照基线差额在本反馈单列。",
     "previous_stage_coverage_note": "2026-11-14手册对照修正：原采集快照2026-11-05T10:31:19.144426+08:00保留；当前全量metadata 1664条，责任台账1664条，审核四状态{'include': 44, 'exclude': 47, 'pending': 1270, 'unreviewed': 303}。当前候选92条，物理空摘要45条，隔离错配0条，缺可用摘要45条。本轮同步已有带证据候选摘要15条，初筛漏筛补录7条，官网漏采纳入候选补录0条，全量书目官网漏采补录0条。32条纳入记录已新核对Crossref DOI、题名和作者，正式证据链接已补齐；公开PDF和代码字段仍按实际核验情况保留未知。官网全年覆盖和待定/未审任务按原反馈继续，未声称全部完成。",
-    "newly_included_supplement_records": 24
+    "newly_included_supplement_records": 24,
+    "previous_bibtex_coverage_note": "2026-11-15阶段续审：当前责任台账1664条，四状态{'pending': 1283, 'exclude': 313, 'include': 68}；相对本次主分支基线新增逐篇判定303条。已核实初筛漏筛补录24条，本次交付于个人审核数组，未改共享候选文件；当前主分支候选92条、原始空摘要45条、合并本人核验字段后缺可用摘要45条。候选版本a9c9099884d96d35a6d6ba50e65717b6b4483299；采集快照2026-11-05T10:31:19.144426+08:00。既有官网核验结论、摘要补证与修正元数据保持；历史待定不等于逐篇最终完成，未知官网总数保持null。",
+    "abstract_export_base_commit": "d92674a8985e86f4617bdb602cf91169615e71bd",
+    "abstracts_backfilled_this_export": 1151,
+    "candidate_abstracts_backfilled_this_export": 42
   },
   {
     "year": 2024,
