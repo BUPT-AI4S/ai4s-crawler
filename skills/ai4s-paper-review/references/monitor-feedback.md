@@ -24,7 +24,7 @@
 
 `year`、`source_code` 和 `snapshot_at` 必填，快照存在时，快照时间必须与该年 `metadata/<年份>/snapshot.json` 的 `captured_at` 完全一致；不一致的反馈会提示重新核对。若快照尚未上传，可暂填 `null` 并保留问题和行动；官网总数待快照补齐并核对口径后才进入汇总。无法确认的 `official_total` 填 `null`，不得填零代替未知。记录官网统计的文献类型、年份口径，给出可核验链接；官网数与采集数只有在口径相同时才能比较。摘要、文献类型和来源取数范围的差异都须在说明中写清。
 
-官网无法核验时，`official_total` 仍填 `null`；在 `coverage_note` 写明官网受限原因、替代来源的口径和对账差异。替代来源同口径逐项对账完成、差异已处理后，在同一反馈对象增加 `reference_check`：
+官网无法核验时，`official_total` 仍填 `null`；在 `coverage_note` 写明官网受限原因、直接请求与 Computer Use 浏览器的尝试情况、负责人是否能人工核验，以及替代来源的口径和对账差异。需要负责人手动处理时，在 `issues` 和 `next_actions` 中记录具体刊会、年份、网址和操作，并在给负责人的回答中主动说明。替代来源同口径逐项对账完成、差异已处理后，在同一反馈对象增加 `reference_check`：
 
 ```json
 {"status":"complete","source":"Crossref","total":733,"scope":"2024 正式出版年、研究及综述论文","query_url":"https://api.crossref.org/example","checked_at":"2026-11-15","unresolved":0}
