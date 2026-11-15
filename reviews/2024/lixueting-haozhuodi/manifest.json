@@ -1,7 +1,7 @@
 {
   "total": 58259,
   "missing_abstracts": 15586,
-  "remaining_gap_after_document_scope": 943,
+  "remaining_gap_after_document_scope": 932,
   "issue_ambiguities": 0,
   "overlap": 984,
   "conflict": 54,
@@ -15,11 +15,11 @@
       "linked_only": 0,
       "added": 765,
       "usable_abs": 19794,
-      "include": 2328,
-      "exclude": 26950,
-      "pending": 11,
+      "include": 2329,
+      "exclude": 26960,
+      "pending": 0,
       "unreviewed": 0,
-      "missed": 1320,
+      "missed": 1321,
       "new_include": 156,
       "candidate_include": 852,
       "candidate_exclude": 523,
@@ -71,7 +71,7 @@
   "metadata_snapshot_commit": "4b5a1a874a4f7a5d2f68647e63e6eb75ea200dbd",
   "scope_workbook": "AI4S会议期刊爬取清单1107.xlsx",
   "scope_workbook_sha256": "578ba2a6ced6f14bc008ae004657aa522dc64cc88eba9d04af084670534266de",
-  "last_verified_repository_commit": "6d56b5329997c74afe28de9de0f776e163f8ee5a",
+  "last_verified_repository_commit": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
   "candidate_counts": {
     "李雪婷": 1375,
     "郝卓迪": 805
@@ -425,7 +425,7 @@
     "new_vocabulary": 0,
     "detail_file": "lixueting-383-abstract-search.jsonl.gz"
   },
-  "remaining_gap_after_document_scope_note": "当前全量台账中pending且abstract_status为unavailable的条数：李雪婷11、郝卓迪932。郝卓迪论文记录本轮未改。非候选摘要覆盖指标。",
+  "remaining_gap_after_document_scope_note": "当前全量台账pending且缺原摘要：李雪婷0、郝卓迪932。李雪婷本轮依负责人指示排除10条材料不足记录，另1条依可核实全文纳入；不表示全部摘要已补齐。",
   "used_full_text_for_AI4S_decisions_note": "本轮 1163 条复核中，对疑难论文按需读取正文或可验证的文献类型；范围及来源逐篇记录于 lixueting-1163-review-20261109.jsonl.gz。此前工作簿及其他轮次证据保留于历史章节。",
   "lixueting_375_workbook_review": {
     "owner": "李雪婷",
@@ -1146,5 +1146,51 @@
     "pending_file": "lixueting-sync-review-20261115-pending.json",
     "prior_remaining_gap_after_document_scope": 1199
   },
-  "current_count_scope_note": "owners中的李雪婷决策计数及lixueting_sync_review_20261115为本轮现状；较早命名轮次与其统计保持历史原值，非本轮新增成果。郝卓迪数据本轮未改。"
+  "current_count_scope_note": "以owners中的李雪婷决策计数和lixueting_alternative11_review_20261115为最新；较早轮次统计保留为历史。郝卓迪数据本轮未改。",
+  "lixueting_alternative11_review_20261115": {
+    "owner": "李雪婷",
+    "year": 2024,
+    "review_date": "2026-11-15",
+    "phase": "alternative_channels_and_owner_exclusion_rule",
+    "baseline_commit": "2d3e3a76a3660dd42f21d53e4f038e6a97f76c9e",
+    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
+    "owner_instruction": "本轮负责人明确要求：换其他渠道查剩余11条；找到原摘要或全文则继续筛，实在找不到的从候选剔除。按该要求允许可核实全文支持纳入，缺原摘要仍如实留空；查无可用材料的作本轮范围排除而非科学相关性否定。",
+    "reviewed": 11,
+    "decisions": {
+      "include": 1,
+      "exclude": 10,
+      "pending": 0
+    },
+    "exclusion_category": "excluded_unavailable_material_by_owner_request",
+    "confirmed_non_ai4s_exclusions_in_this_round": 0,
+    "original_abstracts_newly_found": 0,
+    "author_fulltexts_used_for_inclusion": 1,
+    "newly_downloaded_fulltexts": 0,
+    "new_vocabulary_entries": 0,
+    "tags_assigned_to_restored_include": 4,
+    "personal_count": 4573,
+    "personal_decisions": {
+      "include": 2329,
+      "exclude": 2244,
+      "pending": 0,
+      "unreviewed": 0
+    },
+    "full_ledger_count": 29289,
+    "full_ledger_decisions": {
+      "include": 2329,
+      "exclude": 26960,
+      "pending": 0,
+      "unreviewed": 0
+    },
+    "included_missing_original_abstract": 1,
+    "included_missing_abstract_has_verified_fulltext_and_owner_authorization": true,
+    "original_candidate_rows_removed": 0,
+    "original_candidate_note": "11条均是个人交付及全量台账中的补充审核记录，原关键词候选文件无对应行。10条以exclude移出当前待选范围，审计记录不物理删除。",
+    "current_pending": 0,
+    "candidate_missing_abstract": 6,
+    "candidate_missing_abstract_note": "6条既有JACC会议摘要已排除，仍保留原记录与空摘要，非本轮11条。",
+    "annual_coverage_note": "51个负责来源的全年同口径数量核验并未由本轮完成，仍另列待办。",
+    "detail_file": "lixueting-alternative11-review-20261115.json",
+    "report_file": "lixueting-alternative11-review-20261115.md"
+  }
 }
