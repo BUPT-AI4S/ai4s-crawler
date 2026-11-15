@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-15T12:40:44.537344+00:00",
-  "commit": "62b146dae4a2ade5f899da2d53d0aaf0cd9fb4b4",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/62b146dae4a2ade5f899da2d53d0aaf0cd9fb4b4/",
+  "generated_at": "2026-11-15T12:56:02.213464+00:00",
+  "commit": "e9468039fb8f083ed4782b5950793e9aa5a5b40a",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/e9468039fb8f083ed4782b5950793e9aa5a5b40a/",
   "years": [
     {
       "year": 2024,
@@ -21984,18 +21984,18 @@
           "open_issues": 0,
           "status": "complete",
           "last_update": {
-            "at": "2026-11-15T04:20:19-08:00",
+            "at": "2026-11-15T04:53:18-08:00",
             "author": "ebo",
-            "subject": "Review Cancer Cell 2025 with official catalogue and verified missed studies",
+            "subject": "Reconcile Annals 2025 catalogue and reviews with explicit remaining abstract gaps",
             "area": "reviews",
             "paths": [
               "metadata/2025/ai4s.json",
-              "metadata/j-1e4b0859b5/2025/ai4s.json",
-              "metadata/j-1e4b0859b5/2025/catalogue-reconciliation.json",
-              "reviews/2025/feedback/nydiii.json"
+              "metadata/j-35fc948b7d/2025/abstract-evidence.json",
+              "metadata/j-35fc948b7d/2025/ai4s.json",
+              "metadata/j-35fc948b7d/2025/catalogue-additions.json"
             ]
           },
-          "commits_7d": 51
+          "commits_7d": 52
         },
         {
           "owner": "王婉婷",
@@ -25574,30 +25574,57 @@
           "state": "abstract_incomplete",
           "papers": 5414,
           "snapshot_candidates": 32,
-          "candidates": 32,
-          "missing_abstract": 30,
-          "official_total": null,
-          "official_scope": "",
+          "candidates": 34,
+          "missing_abstract": 23,
+          "official_total": 5414,
+          "official_scope": "2025正式卷36第1—12期及全部4个增刊、全部文献类型；不声称首次在线2025全集。",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
+          "coverage_note": "官网12个常规期及4个增刊共66页、5414个唯一PII已逐条读取。原5414条中5413条按PII和页码直接匹配；另缺1条2025正式卷期更正2024.12.012，并多含1条未分配卷期的撤回来信2025.06.010。更正已按正式页补入catalogue-additions.json；撤回来信官方标Withdrawn Article in Press并保留原始记录，只从正式卷期归一核验集排除。归一书目5414与官网集合一致，未冒称原始集合直接相等，未覆盖固定快照。原32候选及2条确证漏筛均完成类型和科学相关性审核：34条中3纳入、31排除、待定0、未审0。30条原缺摘要中，7条已同步完整正式会议摘要科学正文，2条成功读取的撤回页面无独立科学摘要、标无需补摘要并保持null；当前物理缺摘要23条，其中尚需处理21条。已观察到6条浏览器正文获取失败（首条明确CPE00002），其余15条尚待接续；不把这些真实缺口隐藏为完成。",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/journal/annals-of-oncology/vol/36/issue/12",
+            "https://www.sciencedirect.com/journal/annals-of-oncology/vol/36/issue/11",
+            "https://www.sciencedirect.com/journal/annals-of-oncology/vol/36/issue/10",
+            "https://www.sciencedirect.com/journal/annals-of-oncology/vol/36/issue/9",
+            "https://www.sciencedirect.com/journal/annals-of-oncology/vol/36/issue/8",
+            "https://www.sciencedirect.com/journal/annals-of-oncology/vol/36/issue/7",
+            "https://www.sciencedirect.com/journal/annals-of-oncology/vol/36/issue/6",
+            "https://www.sciencedirect.com/journal/annals-of-oncology/vol/36/issue/5",
+            "https://www.sciencedirect.com/journal/annals-of-oncology/vol/36/issue/4",
+            "https://www.sciencedirect.com/journal/annals-of-oncology/vol/36/issue/3",
+            "https://www.sciencedirect.com/journal/annals-of-oncology/vol/36/issue/2",
+            "https://www.sciencedirect.com/journal/annals-of-oncology/vol/36/issue/1",
+            "https://www.sciencedirect.com/journal/annals-of-oncology/vol/36/suppl/S4",
+            "https://www.sciencedirect.com/journal/annals-of-oncology/vol/36/suppl/S3",
+            "https://www.sciencedirect.com/journal/annals-of-oncology/vol/36/suppl/S2",
+            "https://www.sciencedirect.com/journal/annals-of-oncology/vol/36/suppl/S1",
+            "https://www.sciencedirect.com/science/article/pii/S0923753424049925",
+            "https://www.sciencedirect.com/science/article/pii/S0923753425008166",
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/j-35fc948b7d/2025/catalogue-reconciliation.json"
+          ],
+          "decisions": {
+            "include": 3,
+            "exclude": 31,
+            "pending": 0,
+            "unreviewed": 0
+          },
           "issues": [
             "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
-            "AI4S候选缺少摘要：30 篇。",
-            "尚未找到逐篇审核交付。"
+            "AI4S候选缺少摘要：21 篇。"
           ],
           "actions": [
+            "接续abstract_progress.remaining_required_ids的21条：先处理已记录的6条浏览器访问问题及15条尚未取得原摘要记录。",
+            "已询问负责人能否人工读取受限的会议摘要；确认无法人工处理后，再按现行规则用可靠替代资料补证，原始缺失及撤回记录均保留。",
             "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
-            "提交逐篇审核结果或说明当前进度。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
+            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2025/nydiii.json",
+            "reviews/2025/feedback/nydiii.json"
+          ],
           "snapshot_at": "2026-11-09T10:51:18+08:00",
-          "abstract_not_required": 0,
-          "abstract_supplement_required": 30
+          "abstract_not_required": 2,
+          "abstract_supplement_required": 21
         },
         {
           "code": "j-37b23398b2",
@@ -37063,24 +37090,24 @@
         {
           "owner": "南耀笛",
           "sources": 51,
-          "delivered": 7,
-          "official": 7,
+          "delivered": 8,
+          "official": 8,
           "pending": 0,
           "open_issues": 44,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-15T04:20:19-08:00",
+            "at": "2026-11-15T04:53:18-08:00",
             "author": "ebo",
-            "subject": "Review Cancer Cell 2025 with official catalogue and verified missed studies",
+            "subject": "Reconcile Annals 2025 catalogue and reviews with explicit remaining abstract gaps",
             "area": "reviews",
             "paths": [
               "metadata/2025/ai4s.json",
-              "metadata/j-1e4b0859b5/2025/ai4s.json",
-              "metadata/j-1e4b0859b5/2025/catalogue-reconciliation.json",
-              "reviews/2025/feedback/nydiii.json"
+              "metadata/j-35fc948b7d/2025/abstract-evidence.json",
+              "metadata/j-35fc948b7d/2025/ai4s.json",
+              "metadata/j-35fc948b7d/2025/catalogue-additions.json"
             ]
           },
-          "commits_7d": 51
+          "commits_7d": 52
         }
       ],
       "snapshot_file": "metadata/2025/snapshot.json",
@@ -51707,18 +51734,18 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-15T04:20:19-08:00",
+            "at": "2026-11-15T04:53:18-08:00",
             "author": "ebo",
-            "subject": "Review Cancer Cell 2025 with official catalogue and verified missed studies",
+            "subject": "Reconcile Annals 2025 catalogue and reviews with explicit remaining abstract gaps",
             "area": "reviews",
             "paths": [
               "metadata/2025/ai4s.json",
-              "metadata/j-1e4b0859b5/2025/ai4s.json",
-              "metadata/j-1e4b0859b5/2025/catalogue-reconciliation.json",
-              "reviews/2025/feedback/nydiii.json"
+              "metadata/j-35fc948b7d/2025/abstract-evidence.json",
+              "metadata/j-35fc948b7d/2025/ai4s.json",
+              "metadata/j-35fc948b7d/2025/catalogue-additions.json"
             ]
           },
-          "commits_7d": 51
+          "commits_7d": 52
         },
         {
           "owner": "朱长昊",
@@ -52350,8 +52377,8 @@
         },
         "2025": {
           "sources": 51,
-          "delivered": 7,
-          "official": 7,
+          "delivered": 8,
+          "official": 8,
           "pending": 0,
           "open_issues": 44,
           "status": "in_progress"
@@ -52366,30 +52393,30 @@
         }
       },
       "sources": 153,
-      "delivered": 58,
+      "delivered": 59,
       "not_started": [
         "2026"
       ],
       "last_update": {
-        "at": "2026-11-15T04:20:19-08:00",
+        "at": "2026-11-15T04:53:18-08:00",
         "author": "ebo",
-        "subject": "Review Cancer Cell 2025 with official catalogue and verified missed studies",
+        "subject": "Reconcile Annals 2025 catalogue and reviews with explicit remaining abstract gaps",
         "area": "reviews",
         "paths": [
           "metadata/2025/ai4s.json",
-          "metadata/j-1e4b0859b5/2025/ai4s.json",
-          "metadata/j-1e4b0859b5/2025/catalogue-reconciliation.json",
-          "reviews/2025/feedback/nydiii.json"
+          "metadata/j-35fc948b7d/2025/abstract-evidence.json",
+          "metadata/j-35fc948b7d/2025/ai4s.json",
+          "metadata/j-35fc948b7d/2025/catalogue-additions.json"
         ]
       },
-      "commits_7d": 51
+      "commits_7d": 52
     }
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-15T12:40:23.874561+00:00",
+    "generated_at": "2026-11-15T12:55:46.950154+00:00",
     "history_available": true,
-    "commit": "62b146dae4a2ade5f899da2d53d0aaf0cd9fb4b4",
-    "commits_scanned": 498
+    "commit": "e9468039fb8f083ed4782b5950793e9aa5a5b40a",
+    "commits_scanned": 500
   }
 }
