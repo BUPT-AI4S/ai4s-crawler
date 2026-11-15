@@ -1,16 +1,33 @@
 {
   "checked_at": "2026-11-15",
+  "comparison_method": "使用2024原始元数据中的题名，与正式论文集目录题名进行NFKC规范化、大小写折叠及标点空白忽略后的逐条集合比对；另核对原始DOI或ID去重。",
+  "source_metadata_revision": "547a32bc",
+  "neurips_official_index_sha256": "a7dfe7900f9978f212c0431cca994d5e92b2984ffc0546523cd71e2d453dfd8c",
+  "isbi_print_toc_sha256": "9578163d01cd71aca740e9ac7259c788778b14d53d56794198e9a81cd2edb561",
   "neurips": {
     "official_total": 4493,
     "official_main_track": 4034,
     "official_datasets_and_benchmarks": 459,
     "snapshot_main_records": 4035,
     "supplemented_datasets_records": 459,
-    "unresolved_extra_snapshot_main": 1,
+    "unresolved_extra_snapshot_main": 0,
     "original_keyword_candidate_titles_compared": 684,
     "original_keyword_candidate_titles_missing_from_official_index": 0,
     "official_url": "https://proceedings.neurips.cc/paper_files/paper/2024",
-    "verification_scope": "官网逐条HTML计数；原始关键词候选684个题名与官网目录逐一相符。原主会4035条仍比官网主会4034篇多1条，需读取原始全量元数据定位该条。"
+    "verification_scope": "当前官网目录4493篇逐题名对应台账：主会4034/4034、Datasets and Benchmarks 459/459。原始主会另1条DEX不在当前目录，但印刷版论文集载有该文；台账已因非AI4S排除。目录差额已解释，不删除原始记录。",
+    "original_main_titles_matching_current_index": 4034,
+    "supplemented_datasets_titles_matching_current_index": 459,
+    "index_absent_original_record": {
+      "id": "ftqjwZQz10",
+      "title": "DEX: Data Channel Extension for Efficient CNN Inference on Tiny AI Accelerators",
+      "current_neurips_page_status": "not listed; former official PDF URL returns 404",
+      "printed_proceedings_doi": "10.52202/079017-1394",
+      "printed_proceedings_url": "https://www.proceedings.com/079017-1394.html",
+      "paper_pdf_url": "https://www.proceedings.com/content/079/079017-1394open.pdf",
+      "ai4s_decision": "exclude",
+      "ai4s_reason": "研究重点为通用CNN在微型加速器上的推理效率；摘要未给出具体科学研究任务。"
+    },
+    "reference_check_status": "complete"
   },
   "mlsys": {
     "official_total": 37,
@@ -32,8 +49,19 @@
     "official_proceedings_url": "https://biomedicalimaging.org/2024/isbi-2024-proceedings/",
     "xplore_url": "https://ieeexplore.ieee.org/xpl/conhome/10635099/proceeding",
     "official_all_items_including_frontmatter": 805,
-    "observed_nonpaper_items": ["Cover Page", "Copyright Page", "Table of Contents", "Welcome Message"],
-    "official_paper_total": null,
-    "block": "IEEE Xplore网页显示805个条目，含至少4个前置非论文条目；接口对自动读取返回418，尚未逐项确认第五个非论文条目及800个论文DOI的成员对应关系。"
+    "observed_nonpaper_items": [
+      "Cover Page",
+      "Copyright Page",
+      "Table of Contents",
+      "Welcome Message"
+    ],
+    "official_paper_total": 800,
+    "publisher_print_toc_url": "https://www.proceedings.com/content/075/075910webtoc.pdf",
+    "publisher_print_toc_title_entries": 800,
+    "snapshot_unique_titles": 800,
+    "snapshot_titles_matching_print_toc": 800,
+    "snapshot_unique_dois": 800,
+    "reference_check_status": "complete",
+    "verification_scope": "IEEE版权的2024会议印刷版目录列出800个论文题名，仓库800条元数据题名逐条命中，DOI在仓库内各不重复。IEEE Xplore网页805项包含非论文项目；未对目录外的前置材料逐项分类。"
   }
 }
