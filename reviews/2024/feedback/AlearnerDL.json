@@ -5,14 +5,18 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "出版社 2024 卷期或年度正式目录；保留出版类型，日期和增刊须与快照口径一致。",
-    "coverage_note": "已逐 DOI 核对 2024 年出版社在 Crossref 登记的 5,156 条 journal-article，与快照逐项相符；按卷统计见 doi_register_comparison。出版社独立逐期目录尚未完整核实。 已确认第 166 卷第 5 期增刊内的 13 个候选为会议摘要。 2026-11-15 官网直接请求返回 403，正常浏览器目录访问仍受阻；负责人已明确表示目前无法人工核验并授权可靠替代来源。重新读取 Crossref 出版方登记记录，按 2024 出版日期、journal-article 全类型口径逐 DOI 双向对账：参考 5156 条、快照 5156 条，两侧差集均为 0；完成 reference_check，官网总数仍保持 null。 2026-11-15 核对作者预印本题名、正式出版 DOI 关联及 ABSTRACT 后补齐 10.1053/j.gastro.2024.01.033 作者原摘要；当前候选缺摘要 13 条。",
+    "coverage_note": "已逐 DOI 核对 2024 年出版社在 Crossref 登记的 5,156 条 journal-article，与快照逐项相符；按卷统计见 doi_register_comparison。出版社独立逐期目录尚未完整核实。 已确认第 166 卷第 5 期增刊内的 13 个候选为会议摘要。 2026-11-15 官网直接请求返回 403，正常浏览器目录访问仍受阻；负责人已明确表示目前无法人工核验并授权可靠替代来源。重新读取 Crossref 出版方登记记录，按 2024 出版日期、journal-article 全类型口径逐 DOI 双向对账：参考 5156 条、快照 5156 条，两侧差集均为 0；完成 reference_check，官网总数仍保持 null。 2026-11-15 核对作者预印本题名、正式出版 DOI 关联及 ABSTRACT 后补齐 10.1053/j.gastro.2024.01.033 作者原摘要；当前候选缺摘要 13 条。 2026-11-15 查询 OpenAlex 的 13 条精确 DOI，均无 abstract_inverted_index；唯一额外仓储线索 hdl:2292/69054 返回找不到记录。ScienceDirect 的 00954-5 页面仅有题录及机构访问提示，未将无预览错误解释为无独立摘要。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/gastroenterology/issues",
       "https://www.sciencedirect.com/journal/gastroenterology/vol/166/issue/5/suppl/S",
       "https://api.crossref.org/journals/0016-5085/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article"
     ],
-    "issues": [],
-    "next_actions": [],
+    "issues": [
+      "尚有 13 条已按会议摘要类型排除的候选缺原摘要；出版社预览无正文，机构全文访问受限；OpenAlex 对应 13 条亦未提供摘要。"
+    ],
+    "next_actions": [
+      "取得这 13 条会议摘要的合法公开原文或作者版本后逐条补齐；保留排除记录，不填占位摘要。"
+    ],
     "source_title": "Gastroenterology",
     "snapshot_papers": 5156,
     "candidate_count": 16,
@@ -1887,15 +1891,17 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年当届正式论文集与本来源快照同口径的论文；分轨录用量另列。",
-    "coverage_note": "官方议程的 417 篇研究论文均已与快照匹配，另有 1 场主题报告。快照另外有来自 SOUPS、WOOT 等的条目，及当前官网目录中未列出的 Prefetch for Fun and Profit；该条须核对版本或撤下情况。",
+    "coverage_note": "官方议程的 417 篇研究论文均已与快照匹配，另有 1 场主题报告。快照另外有来自 SOUPS、WOOT 等的条目，及当前官网目录中未列出的 Prefetch for Fun and Profit；该条须核对版本或撤下情况。 2026-11-15 官方 frontpage?page=43 可读到该题名及 2024/USENIX Security 24 归属，详情 biblio-14821 显示 Login Required；保留出版状态疑点，不将索引条目直接当作已确认正式论文。",
     "evidence_urls": [
-      "https://www.usenix.org/conference/usenixsecurity24/technical-sessions"
+      "https://www.usenix.org/conference/usenixsecurity24/technical-sessions",
+      "https://www.usenix.org/frontpage?page=43",
+      "https://www.usenix.org/biblio-14821"
     ],
     "issues": [
-      "官方议程的 417 篇研究论文均已与快照匹配，另有 1 场主题报告。快照另外有来自 SOUPS、WOOT 等的条目，及当前官网目录中未列出的 Prefetch for Fun and Profit；该条须核对版本或撤下情况。"
+      "主会当前议程 417 篇已匹配；Prefetch for Fun and Profit 另见 USENIX 2024 官方书目存档但署名 Anonymous、无页码，详情要求登录，其正式出版/撤下状态仍待核；工作坊范围需一并明确。"
     ],
     "next_actions": [
-      "按官网正式研究分轨导出 DOI 或稳定标识，对照当届快照，核对名称或版本不同的条目。"
+      "核对 Prefetch 官方书目详情或出版更正，并完成主会与 SOUPS、WOOT、CSET 的同口径对账。"
     ],
     "source_title": "USENIX Security Symposium",
     "snapshot_papers": 481,
@@ -1919,7 +1925,7 @@
       "include": 38
     },
     "submitted_record_count": 52,
-    "rechecked_on": "2026-11-09"
+    "rechecked_on": "2026-11-15"
   },
   {
     "year": 2024,
