@@ -1,0 +1,178 @@
+[
+  {
+    "index": 929,
+    "venue": "nprot",
+    "doi": "10.1038/s41596-024-00972-6",
+    "title": "BEHAV3D: a 3D live imaging platform for comprehensive analysis of engineered T cell behavior and tumor response",
+    "abstract": "Modeling immuno-oncology by using patient-derived material and immune cell co-cultures can advance our understanding of immune cell tumor targeting in a patient-specific manner, offering leads to improve cellular immunotherapy. However, fully exploiting these living cultures requires analysis of the dynamic cellular features modeled, for which protocols are currently limited. Here, we describe the application of BEHAV3D, a platform that implements multi-color live 3D imaging and computational tools for: (i) analyzing tumor death dynamics at both single-organoid or cell and population levels, (ii) classifying T cell behavior and (iii) producing data-informed 3D images and videos for visual inspection and further insight into obtained results. Together, this enables a refined assessment of how solid and liquid tumors respond to cellular immunotherapy, critically capturing both inter- and intratumoral heterogeneity in treatment response. In addition, BEHAV3D uncovers T cell behavior involved in tumor targeting, offering insight into their mode of action. Our pipeline thereby has strong implications for comparing, prioritizing and improving immunotherapy products by highlighting the behavioral differences between individual tumor donors, distinct T cell therapy concepts or subpopulations. The protocol describes critical wet lab steps, including co-culture preparations and fast 3D imaging with live cell dyes, a segmentation-based image processing tool to track individual organoids, tumor and immune cells and an analytical pipeline for behavioral profiling. This 1-week protocol, accessible to users with basic cell culture, imaging and programming expertise, can easily be adapted to any type of co-culture to visualize and exploit cell behavior, having far-reaching implications for the immuno-oncology field and beyond.",
+    "article_type": "Protocol",
+    "indexed_types": [],
+    "source_urls": [
+      "https://www.nature.com/articles/s41596-024-00972-6"
+    ],
+    "old_rationale": "肿瘤免疫细胞三维成像与行为分类任务明确，但摘要未说明分割分类是否依赖学习模型。",
+    "decision": "pending",
+    "rationale": "实验方案有方法学价值，不因 Protocol 文种排除；细胞分割、追踪与行为分类是否依赖 AI 尚未说明，保留算法疑点。",
+    "tags": [],
+    "abstract_complete": true,
+    "evidence_quote": "an analytical pipeline for behavioral profiling",
+    "changed_from_pending": false,
+    "publisher_type_evidence": null,
+    "full_text_used": false,
+    "new_abstract_claimed": false
+  },
+  {
+    "index": 932,
+    "venue": "nprot",
+    "doi": "10.1038/s41596-024-01000-3",
+    "title": "An MSstats workflow for detecting differentially abundant proteins in large-scale data-independent acquisition mass spectrometry experiments with FragPipe processing",
+    "abstract": "Technological advances in mass spectrometry and proteomics have made it possible to perform larger-scale and more-complex experiments. The volume and complexity of the resulting data create major challenges for downstream analysis. In particular, next-generation data-independent acquisition (DIA) experiments enable wider proteome coverage than more traditional targeted approaches but require computational workflows that can manage much larger datasets and identify peptide sequences from complex and overlapping spectral features. Data-processing tools such as FragPipe, DIA-NN and Spectronaut have undergone substantial improvements to process spectral features in a reasonable time. Statistical analysis tools are needed to draw meaningful comparisons between experimental samples, but these tools were also originally designed with smaller datasets in mind. This protocol describes an updated version of MSstats that has been adapted to be compatible with large-scale DIA experiments. A very large DIA experiment, processed with FragPipe, is used as an example to demonstrate different MSstats workflows. The choice of workflow depends on the user’s computational resources. For datasets that are too large to fit into a standard computer’s memory, we demonstrate the use of MSstatsBig, a companion R package to MSstats. The protocol also highlights key decisions that have a major effect on both the results and the processing time of the analysis. The MSstats processing can be expected to take 1–3 h depending on the usage of MSstatsBig. The protocol can be run in the point-and-click graphical user interface MSstatsShiny or implemented with minimal coding expertise in R.",
+    "article_type": "Protocol",
+    "indexed_types": [],
+    "source_urls": [
+      "https://www.nature.com/articles/s41596-024-01000-3"
+    ],
+    "old_rationale": "质谱差异蛋白统计流程引用DIA-NN，但核心贡献是否实质依赖AI不明确。",
+    "decision": "pending",
+    "rationale": "质谱分析方案有科研价值，但主体为 MSstats 统计工作流，DIA-NN 只在背景工具中出现，尚不能确认本方案实质使用 AI。",
+    "tags": [],
+    "abstract_complete": true,
+    "evidence_quote": "Statistical analysis tools are needed to draw meaningful comparisons",
+    "changed_from_pending": false,
+    "publisher_type_evidence": null,
+    "full_text_used": false,
+    "new_abstract_claimed": false
+  },
+  {
+    "index": 935,
+    "venue": "nprot",
+    "doi": "10.1038/s41596-024-01065-0",
+    "title": "Seq-Scope: repurposing Illumina sequencing flow cells for high-resolution spatial transcriptomics",
+    "abstract": "Spatial transcriptomics technologies aim to advance gene expression studies by profiling the entire transcriptome with intact spatial information from a single histological slide. However, the application of spatial transcriptomics is limited by low resolution, limited transcript coverage, complex procedures, poor scalability and high costs of initial setup and/or individual experiments. Seq-Scope repurposes the Illumina sequencing platform for high-resolution, high-content spatial transcriptome analysis, overcoming these limitations. It offers submicrometer resolution, high capture efficiency, rapid turnaround time and precise annotation of histopathology at a much lower cost than commercial alternatives. This protocol details the implementation of Seq-Scope with an Illumina NovaSeq 6000 sequencing flow cell, allowing the profiling of multiple tissue sections in an area of 7 mm × 7 mm or larger. We describe the preparation of a fresh-frozen tissue section for both histological imaging and sequencing library preparation and provide a streamlined computational pipeline with comprehensive instructions to integrate histological and transcriptomic data for high-resolution spatial analysis. This includes the use of conventional software tools for single-cell and spatial analysis, as well as our recently developed segmentation-free method for analyzing spatial data at submicrometer resolution. Aside from array production and sequencing, which can be done in batches, tissue processing, library preparation and running the computational pipeline can be completed within 3 days by researchers with experience in molecular biology, histology and basic Unix skills. Given its adaptability across various biological tissues, Seq-Scope establishes itself as an invaluable tool for researchers in molecular biology and histology.",
+    "article_type": "Protocol",
+    "indexed_types": [],
+    "source_urls": [
+      "https://www.nature.com/articles/s41596-024-01065-0"
+    ],
+    "old_rationale": "高分辨率空间转录组的计算分割流程未明确AI方法贡献。",
+    "decision": "pending",
+    "rationale": "高分辨率空间转录组方案包含计算分析但未明确 AI；无分割分析及常规软件本身不足以证明 AI 方法参与。",
+    "tags": [],
+    "abstract_complete": true,
+    "evidence_quote": "segmentation-free method for analyzing spatial data",
+    "changed_from_pending": false,
+    "publisher_type_evidence": null,
+    "full_text_used": false,
+    "new_abstract_claimed": false
+  },
+  {
+    "index": 930,
+    "venue": "nprot",
+    "doi": "10.1038/s41596-024-00991-3",
+    "title": "Scanorama: integrating large and diverse single-cell transcriptomic datasets",
+    "abstract": "Merging diverse single-cell RNA sequencing (scRNA-seq) data from numerous experiments, laboratories and technologies can uncover important biological insights. Nonetheless, integrating scRNA-seq data encounters special challenges when the datasets are composed of diverse cell type compositions. Scanorama offers a robust solution for improving the quality and interpretation of heterogeneous scRNA-seq data by effectively merging information from diverse sources. Scanorama is designed to address the technical variation introduced by differences in sample preparation, sequencing depth and experimental batches that can confound the analysis of multiple scRNA-seq datasets. Here we provide a detailed protocol for using Scanorama within a Scanpy-based single-cell analysis workflow coupled with Google Colaboratory, a cloud-based free Jupyter notebook environment service. The protocol involves Scanorama integration, a process that typically spans 0.5–3 h. Scanorama integration requires a basic understanding of cellular biology, transcriptomic technologies and bioinformatics. Our protocol and new Scanorama–Colaboratory resource should make scRNA-seq integration more widely accessible to researchers.",
+    "article_type": "Protocol",
+    "indexed_types": [],
+    "source_urls": [
+      "https://www.nature.com/articles/s41596-024-00991-3"
+    ],
+    "old_rationale": "单细胞数据整合协议有应用价值，但摘要未说明AI方法及是否有独立原创方法贡献。",
+    "decision": "pending",
+    "rationale": "本轮重读现有摘要，未新增原摘要。Scanorama协议对单细胞整合有直接科研用途，协议文种本身不导致排除，也不要求独立原创实验；当前摘要仍未说明其学习/智能推断机制，保留AI角色疑点。",
+    "tags": [],
+    "abstract_complete": true,
+    "evidence_quote": "Merging diverse single-cell RNA sequencing (scRNA-seq) data from numerous experiments, laboratories and technologies can uncover important biological insights.",
+    "changed_from_pending": false,
+    "publisher_type_evidence": null,
+    "full_text_used": false,
+    "new_abstract_claimed": false
+  },
+  {
+    "index": 933,
+    "venue": "nprot",
+    "doi": "10.1038/s41596-024-01005-y",
+    "title": "All-optical voltage imaging-guided postsynaptic single-cell transcriptome profiling with Voltage-Seq",
+    "abstract": "Neuronal pathways recruit large postsynaptic populations and maintain connections via distinct postsynaptic response types (PRTs). Until recently, PRTs were accessible as a selection criterion for single-cell RNA sequencing only through probing by low-throughput whole-cell electrophysiology. To overcome these limitations and target neurons on the basis of specific PRTs for soma collection and subsequent single-cell RNA sequencing, we developed Voltage-Seq using the genetically encoded voltage indicator Voltron in acute brain slices from mice. We also created an onsite analysis tool, VoltView, to guide soma collection of specific PRTs using a classifier based on a previously acquired database of connectomes from multiple animals. Here we present our procedure for preparing the optical path, the imaging setup and detailing the imaging and analysis steps, as well as a complete procedure for sequencing library preparation. This enables researchers to conduct our high-throughput all-optical synaptic assay and to obtain single-cell transcriptomic data from selected postsynaptic neurons. This also allows researchers to resolve the connectivity ratio of a specific pathway and explore the diversity of PRTs within that connectome. Furthermore, combining high throughput with quick analysis gives unique access to find specific connections within a large postsynaptic connectome. Voltage-Seq also allows the investigation of correlations between connectivity and gene expression changes in a postsynaptic cell-type-specific manner for both excitatory and inhibitory connections. The Voltage-Seq workflow can be completed in ~6 weeks, including 4–5 weeks for viral expression of the Voltron sensor. The technique requires knowledge of basic laboratory techniques, micromanipulator handling skills and experience in molecular biology and bioinformatics.",
+    "article_type": "Protocol",
+    "indexed_types": [],
+    "source_urls": [
+      "https://www.nature.com/articles/s41596-024-01005-y"
+    ],
+    "old_rationale": "连接组数据库分类器指导神经元采样任务明确，但摘要未说明分类器学习算法，暂待方法证据。",
+    "decision": "pending",
+    "rationale": "本轮重读现有摘要，未新增原摘要。连接组数据库分类器指导神经元采样任务明确，但摘要未说明分类器学习算法，暂待方法证据。",
+    "tags": [],
+    "abstract_complete": true,
+    "evidence_quote": "Neuronal pathways recruit large postsynaptic populations and maintain connections via distinct postsynaptic response types (PRTs). Until recently, PRTs",
+    "changed_from_pending": false,
+    "publisher_type_evidence": null,
+    "full_text_used": false,
+    "new_abstract_claimed": false
+  },
+  {
+    "index": 928,
+    "venue": "nprot",
+    "doi": "10.1038/s41596-023-00942-4",
+    "title": "OptADMET: a web-based tool for substructure modifications to improve ADMET properties of lead compounds",
+    "abstract": "Lead optimization is a crucial step in the drug discovery process, which aims to design potential drug candidates from biologically active hits. During lead optimization, active hits undergo modifications to improve their absorption, distribution, metabolism, excretion and toxicity (ADMET) profiles. Medicinal chemists face key questions regarding which compound(s) should be synthesized next and how to balance multiple ADMET properties. Reliable transformation rules from multiple experimental analyses are critical to improve this decision-making process. We developed OptADMET ( https://cadd.nscc-tj.cn/deploy/optadmet/ ), an integrated web-based platform that provides chemical transformation rules for 32 ADMET properties and leverages prior experimental data for lead optimization. The multiproperty transformation rule database contains a total of 41,779 validated transformation rules generated from the analysis of 177,191 reliable experimental datasets. Additionally, 146,450 rules were generated by analyzing 239,194 molecular data predictions. OptADMET provides the ADMET profiles of all optimized molecules from the queried molecule and enables the prediction of desirable substructure transformations and subsequent validation of drug candidates. OptADMET is based on matched molecular pairs analysis derived from synthetic chemistry, thus providing improved practicality over other methods. OptADMET is designed for use by both experimental and computational scientists.",
+    "article_type": "Protocol",
+    "indexed_types": [],
+    "source_urls": [
+      "https://www.nature.com/articles/s41596-023-00942-4"
+    ],
+    "old_rationale": "ADMET平台结合实验与分子预测生成结构转化规则，但摘要未明确预测模型的机器学习机制，暂缓。",
+    "decision": "pending",
+    "rationale": "ADMET平台结合实验与分子预测生成结构转化规则，但摘要未明确预测模型的机器学习机制，暂缓。",
+    "tags": [],
+    "abstract_complete": true,
+    "evidence_quote": "Lead optimization is a crucial step in the drug discovery process, which aims to design potential drug candidates from biologically",
+    "changed_from_pending": false,
+    "publisher_type_evidence": null,
+    "full_text_used": false,
+    "new_abstract_claimed": false
+  },
+  {
+    "index": 931,
+    "venue": "nprot",
+    "doi": "10.1038/s41596-024-00995-z",
+    "title": "Integrating genome-wide CRISPR screens and in silico drug profiling for targeted antidote development",
+    "abstract": "Numerous toxins threaten humans, but specific antidotes are unavailable for most of them. Although CRISPR screening has aided the discovery of the mechanisms of some toxins, developing targeted antidotes remains a significant challenge. Recently, we established a systematic framework to develop antidotes by combining the identification of novel drug targets by using a genome-wide CRISPR screen with a virtual screen of drugs approved by the US Food and Drug Administration. This approach allows for a comprehensive understanding of toxin mechanisms at the whole-genome level and facilitates the identification of promising antidote drugs targeting specific molecules. Here, we present step-by-step instructions for executing genome-scale CRISPR–Cas9 knockout screens of toxins in HAP1 cells. We also provide detailed guidance for conducting an in silico drug screen and an in vivo drug validation. By using this protocol, it takes ~4 weeks to perform the genome-scale screen, 4 weeks for sequencing and data analysis, 4 weeks to validate candidate genes, 1 week for the virtual screen and 2 weeks for in vitro drug validation. This framework has the potential to accelerate the development of antidotes for a wide range of toxins and can rapidly identify promising drug candidates that are already known to be safe and effective. This could lead to the development of new antidotes much more quickly than traditional methods, protecting lives from diverse toxins and advancing human health.",
+    "article_type": "Protocol",
+    "indexed_types": [],
+    "source_urls": [
+      "https://www.nature.com/articles/s41596-024-00995-z"
+    ],
+    "old_rationale": "毒素解药虚拟筛选协议未说明是否使用AI而非传统分子对接。",
+    "decision": "pending",
+    "rationale": "毒素解药虚拟筛选协议未说明是否使用AI而非传统分子对接。",
+    "tags": [],
+    "abstract_complete": true,
+    "evidence_quote": "Numerous toxins threaten humans, but specific antidotes are unavailable for most of them. Although CRISPR screening has aided the discovery",
+    "changed_from_pending": false,
+    "publisher_type_evidence": null,
+    "full_text_used": false,
+    "new_abstract_claimed": false
+  },
+  {
+    "index": 934,
+    "venue": "nprot",
+    "doi": "10.1038/s41596-024-01038-3",
+    "title": "Genome-wide analysis of the biophysical properties of chromatin and nuclear proteins in living cells with Hi-D",
+    "abstract": "To understand the dynamic nature of the genome, the localization and rearrangement of DNA and DNA-binding proteins must be analyzed across the entire nucleus of single living cells. Recently, we developed a computational light microscopy technique, called high-resolution diffusion (Hi-D) mapping, which can accurately detect, classify and map diffusion dynamics and biophysical parameters such as the diffusion constant, the anomalous exponent, drift velocity and model physical diffusion from the data at a high spatial resolution across the genome in living cells. Hi-D combines dense optical flow to detect and track local chromatin and nuclear protein motion genome-wide and Bayesian inference to characterize this local movement at nanoscale resolution. Here we present the Python implementation of Hi-D, with an option for parallelizing the calculations to run on multicore central processing units (CPUs). The functionality of Hi-D is presented to the users via user-friendly documented Python notebooks. Hi-D reduces the analysis time to less than 1 h using a multicore CPU with a single compute node. We also present different applications of Hi-D for live-imaging of DNA, histone H2B and RNA polymerase II sequences acquired with spinning disk confocal and super-resolution structured illumination microscopy.",
+    "article_type": "Protocol",
+    "indexed_types": [],
+    "source_urls": [
+      "https://www.nature.com/articles/s41596-024-01038-3"
+    ],
+    "old_rationale": "光流与贝叶斯推断用于活细胞染色质扩散测量，但摘要未明确学习算法或AI实质作用，待核实。",
+    "decision": "pending",
+    "rationale": "光流与贝叶斯推断用于活细胞染色质扩散测量，但摘要未明确学习算法或AI实质作用，待核实。",
+    "tags": [],
+    "abstract_complete": true,
+    "evidence_quote": "To understand the dynamic nature of the genome, the localization and rearrangement of DNA and DNA-binding proteins must be analyzed",
+    "changed_from_pending": false,
+    "publisher_type_evidence": null,
+    "full_text_used": false,
+    "new_abstract_claimed": false
+  }
+]
