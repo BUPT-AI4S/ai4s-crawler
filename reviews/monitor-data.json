@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-15T15:17:42.773799+00:00",
-  "commit": "41a036ae6cc81bbc51491e8210eeb44ceb01f83d",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/41a036ae6cc81bbc51491e8210eeb44ceb01f83d/",
+  "generated_at": "2026-11-15T15:19:50.829988+00:00",
+  "commit": "1044ae730fe9f43bc337520223e9e1747a70729b",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/1044ae730fe9f43bc337520223e9e1747a70729b/",
   "years": [
     {
       "year": 2024,
@@ -17759,7 +17759,7 @@
           "papers": 6779,
           "snapshot_candidates": 7,
           "candidates": 7,
-          "missing_abstract": 6,
+          "missing_abstract": 2,
           "official_total": null,
           "official_scope": "",
           "reference_check": {
@@ -17771,7 +17771,7 @@
             "checked_at": "2026-11-15",
             "unresolved": 0
           },
-          "coverage_note": "个人交付224条：纳入5、排除219、待定0；全量台账6779条。候选7条、空摘要6条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15改用Crossref游标分页重核：6779条，与全量台账逐DOI一致，差集0。",
+          "coverage_note": "个人交付224条：纳入5、排除219、待定0；全量台账6779条。候选7条、空摘要2条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15改用Crossref游标分页重核：6779条，与全量台账逐DOI一致，差集0。",
           "evidence_urls": [
             "https://api.crossref.org/journals/0735-1097/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI&cursor=%2A",
             "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
@@ -17779,7 +17779,8 @@
             "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
             "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
             "https://api.crossref.org/journals/0735-1097/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI&cursor=%2A",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-cursor-recheck-20261115.json"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-cursor-recheck-20261115.json",
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/jacc-six-abstracts-20261115.md"
           ],
           "decisions": {
             "include": 5,
@@ -17788,11 +17789,11 @@
             "unreviewed": 0
           },
           "issues": [
-            "候选文件仍有6条空摘要，均为已排除的会议摘要记录；已同步文献类型，未删除记录。",
-            "AI4S候选缺少摘要：6 篇。"
+            "候选文件仍有2条空摘要；本轮已按JACC官网回填4条会议摘要原文。6条均为已排除的会议摘要记录，未删除记录。",
+            "AI4S候选缺少摘要：2 篇。"
           ],
           "actions": [
-            "若后续仍需修补这6条已排除会议摘要的元数据，按DOI获取官方摘要；不影响正式纳入论文的摘要完整性。",
+            "剩余2条会议摘要未取得可核验的官方正文；详见 reviews/2024/lixueting-haozhuodi/jacc-six-abstracts-20261115.md。不影响正式纳入论文的摘要完整性。",
             "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。"
           ],
           "files": [
@@ -17801,7 +17802,7 @@
           ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
           "abstract_not_required": 0,
-          "abstract_supplement_required": 6
+          "abstract_supplement_required": 2
         },
         {
           "code": "j-37b23398b2",
@@ -22165,17 +22166,17 @@
           "open_issues": 3,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-15T05:36:59-08:00",
-            "author": "Xueting",
-            "subject": "李雪婷 2024：完成NeurIPS与ISBI全年目录逐篇核验",
+            "at": "2026-11-15T23:18:52+08:00",
+            "author": "BUPT Reasoning Lab",
+            "subject": "补齐李雪婷JACC四条官方会议摘要并记录剩余两条 (#80)",
             "area": "reviews",
             "paths": [
+              "metadata/2024/ai4s.json",
               "reviews/2024/feedback/zch66883-lixueting.json",
-              "reviews/2024/lixueting-haozhuodi/coverage.csv",
-              "reviews/2024/lixueting-haozhuodi/lixueting-2024-conference-coverage-20261115.json"
+              "reviews/2024/lixueting-haozhuodi/jacc-six-abstracts-20261115.md"
             ]
           },
-          "commits_7d": 14
+          "commits_7d": 15
         },
         {
           "owner": "郝卓迪",
@@ -38008,17 +38009,17 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-15T05:36:59-08:00",
-            "author": "Xueting",
-            "subject": "李雪婷 2024：完成NeurIPS与ISBI全年目录逐篇核验",
+            "at": "2026-11-15T23:18:52+08:00",
+            "author": "BUPT Reasoning Lab",
+            "subject": "补齐李雪婷JACC四条官方会议摘要并记录剩余两条 (#80)",
             "area": "reviews",
             "paths": [
+              "metadata/2024/ai4s.json",
               "reviews/2024/feedback/zch66883-lixueting.json",
-              "reviews/2024/lixueting-haozhuodi/coverage.csv",
-              "reviews/2024/lixueting-haozhuodi/lixueting-2024-conference-coverage-20261115.json"
+              "reviews/2024/lixueting-haozhuodi/jacc-six-abstracts-20261115.md"
             ]
           },
-          "commits_7d": 14
+          "commits_7d": 15
         },
         {
           "owner": "郝卓迪",
@@ -52853,17 +52854,17 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-15T05:36:59-08:00",
-            "author": "Xueting",
-            "subject": "李雪婷 2024：完成NeurIPS与ISBI全年目录逐篇核验",
+            "at": "2026-11-15T23:18:52+08:00",
+            "author": "BUPT Reasoning Lab",
+            "subject": "补齐李雪婷JACC四条官方会议摘要并记录剩余两条 (#80)",
             "area": "reviews",
             "paths": [
+              "metadata/2024/ai4s.json",
               "reviews/2024/feedback/zch66883-lixueting.json",
-              "reviews/2024/lixueting-haozhuodi/coverage.csv",
-              "reviews/2024/lixueting-haozhuodi/lixueting-2024-conference-coverage-20261115.json"
+              "reviews/2024/lixueting-haozhuodi/jacc-six-abstracts-20261115.md"
             ]
           },
-          "commits_7d": 14
+          "commits_7d": 15
         },
         {
           "owner": "郝卓迪",
@@ -53097,17 +53098,17 @@
         "2026"
       ],
       "last_update": {
-        "at": "2026-11-15T05:36:59-08:00",
-        "author": "Xueting",
-        "subject": "李雪婷 2024：完成NeurIPS与ISBI全年目录逐篇核验",
+        "at": "2026-11-15T23:18:52+08:00",
+        "author": "BUPT Reasoning Lab",
+        "subject": "补齐李雪婷JACC四条官方会议摘要并记录剩余两条 (#80)",
         "area": "reviews",
         "paths": [
+          "metadata/2024/ai4s.json",
           "reviews/2024/feedback/zch66883-lixueting.json",
-          "reviews/2024/lixueting-haozhuodi/coverage.csv",
-          "reviews/2024/lixueting-haozhuodi/lixueting-2024-conference-coverage-20261115.json"
+          "reviews/2024/lixueting-haozhuodi/jacc-six-abstracts-20261115.md"
         ]
       },
-      "commits_7d": 14
+      "commits_7d": 15
     },
     {
       "owner": "郝卓迪",
@@ -53486,9 +53487,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-15T15:17:28.602987+00:00",
+    "generated_at": "2026-11-15T15:19:31.746165+00:00",
     "history_available": true,
-    "commit": "41a036ae6cc81bbc51491e8210eeb44ceb01f83d",
-    "commits_scanned": 586
+    "commit": "1044ae730fe9f43bc337520223e9e1747a70729b",
+    "commits_scanned": 588
   }
 }
