@@ -32,7 +32,7 @@
 
 以上仅是格式示例。`source`、参考 `total`、统计 `scope`、可复现查询或结果链接 `query_url`、核对日期 `checked_at` 和未解决差异数量 `unresolved` 均须真实填写；只有 `status` 为 `complete`、`unresolved` 为 0 且反馈快照与当前快照一致时，监控才认定替代来源核对完成。尚有差异、证据不足或未完成逐项对账时不得标记完成；在 `issues` 和 `next_actions` 写明未决事项，完成后清除已解决的旧问题和旧行动。其他摘要及精筛问题仍需各自完成。替代参考数不能标为已核实的官网数。
 
-`issues`、`next_actions` 使用字符串数组；行动须具体、可执行。针对摘要缺失，仅说明 AI4S 候选中的缺失情况、补充来源和处理计划；针对精筛，继续在 `reviews/<年份>/<用户名>.json` 中逐篇交付 `include`、`exclude`、`pending` 或 `unreviewed`。在刊会核验表中继续维护负责人和来源结论。原始论文字段及正式核验证据应按团队既有交付规范保留。
+`issues`、`next_actions` 使用字符串数组；行动须具体、可执行。针对摘要缺失，仅说明 AI4S 候选中的缺失情况、补充来源和处理计划；针对精筛，继续在 `reviews/<年份>/<用户名>.json` 中逐篇交付 `include`、`exclude`、`pending` 或 `unreviewed`。原始论文字段及正式核验证据应按团队既有交付规范保留。
 
 ## 数字口径与限制
 
