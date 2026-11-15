@@ -5,7 +5,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 479,480,481,482,483,484,485,486,487,488,489,490,491,492,493,494,495,496,497,498,499,500,501,502）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 129 篇（本轮补入 0 篇），历史审核 130 篇：纳入 123、排除 7、待定 0。本轮原有候选补全出版方原摘要 62 篇，候选缺摘要由 62 降为 0；关键词补全 34 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器已显示年度卷号，但未取得展开后的全年卷期目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 129 篇（本轮补入 0 篇），历史审核 130 篇：纳入 123、排除 7、待定 0。本轮原有候选补全出版方原摘要 62 篇，候选缺摘要由 62 降为 0；关键词补全 34 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器已显示年度卷号，但未取得展开后的全年卷期目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 10671（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 10603；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/chemical-engineering-journal/issues",
       "https://api.crossref.org/journals/1385-8947/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -16,12 +16,11 @@
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
       "纳入论文中仍有 60 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-      "本轮正常浏览器仍未完成全年目录核验，已向负责人请求人工核验，尚待答复。"
+      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-      "取得负责人手动核验结果；若负责人确认当前无法人工完成，再按技能使用可靠替代来源并明确标注参考口径。 对应目录：https://www.sciencedirect.com/journal/chemical-engineering-journal/issues"
+      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。"
     ],
     "abstract_summary": {
       "decision_basis": "personal_review",
@@ -423,9 +422,38 @@
       "official_count_verified": false
     },
     "manual_verification": {
-      "status": "requested_awaiting_reply",
-      "requested_on": "2026-11-15",
-      "requested_items": "手动查看 2024 全年正式卷期目录，提供完整目录或同口径研究及综述正文总数；不能将访问错误视为零。"
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/1385-8947/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 10671,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 10671,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A1385-8947%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 10603,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": -68,
+        "relative_difference": 0.006413,
+        "within_10_percent": true,
+        "doi_checked_when_over_10_percent": false,
+        "doi_absent_local_count": null,
+        "doi_absent_local_target_volumes": null,
+        "absent_doi_out_of_scope_volume_counts": null
+      },
+      "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -581,7 +609,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 7）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 2 篇（本轮补入 0 篇），历史审核 2 篇：纳入 2、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器已显示年度卷号，但未取得展开后的全年卷期目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 2 篇（本轮补入 0 篇），历史审核 2 篇：纳入 2、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器已显示年度卷号，但未取得展开后的全年卷期目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 240（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 240；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/one-earth/issues",
       "https://api.crossref.org/journals/2590-3322/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -592,12 +620,11 @@
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
       "纳入论文中仍有 2 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-      "本轮正常浏览器仍未完成全年目录核验，已向负责人请求人工核验，尚待答复。"
+      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-      "取得负责人手动核验结果；若负责人确认当前无法人工完成，再按技能使用可靠替代来源并明确标注参考口径。 对应目录：https://www.sciencedirect.com/journal/one-earth/issues"
+      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。"
     ],
     "abstract_summary": {
       "decision_basis": "personal_review",
@@ -666,9 +693,38 @@
       "official_count_verified": false
     },
     "manual_verification": {
-      "status": "requested_awaiting_reply",
-      "requested_on": "2026-11-15",
-      "requested_items": "手动查看 2024 全年正式卷期目录，提供完整目录或同口径研究及综述正文总数；不能将访问错误视为零。"
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/2590-3322/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 240,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 240,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A2590-3322%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 240,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": 0,
+        "relative_difference": 0.0,
+        "within_10_percent": true,
+        "doi_checked_when_over_10_percent": false,
+        "doi_absent_local_count": null,
+        "doi_absent_local_target_volumes": null,
+        "absent_doi_out_of_scope_volume_counts": null
+      },
+      "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -677,7 +733,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 172,173,174,175,176,177,178,179,180,181,182,183）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 8 篇（本轮补入 0 篇），历史审核 8 篇：纳入 8、排除 0、待定 0。本轮原有候选补全出版方原摘要 7 篇，候选缺摘要由 7 降为 0；关键词补全 5 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器已显示年度卷号，但未取得展开后的全年卷期目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 8 篇（本轮补入 0 篇），历史审核 8 篇：纳入 8、排除 0、待定 0。本轮原有候选补全出版方原摘要 7 篇，候选缺摘要由 7 降为 0；关键词补全 5 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器已显示年度卷号，但未取得展开后的全年卷期目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 261（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 268；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/international-journal-of-plasticity/issues",
       "https://api.crossref.org/journals/0749-6419/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -688,12 +744,11 @@
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
       "纳入论文中仍有 1 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-      "本轮正常浏览器仍未完成全年目录核验，已向负责人请求人工核验，尚待答复。"
+      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-      "取得负责人手动核验结果；若负责人确认当前无法人工完成，再按技能使用可靠替代来源并明确标注参考口径。 对应目录：https://www.sciencedirect.com/journal/international-journal-of-plasticity/issues"
+      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。"
     ],
     "abstract_summary": {
       "decision_basis": "personal_review",
@@ -791,9 +846,38 @@
       "official_count_verified": false
     },
     "manual_verification": {
-      "status": "requested_awaiting_reply",
-      "requested_on": "2026-11-15",
-      "requested_items": "手动查看 2024 全年正式卷期目录，提供完整目录或同口径研究及综述正文总数；不能将访问错误视为零。"
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/0749-6419/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 261,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 261,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A0749-6419%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 268,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": 7,
+        "relative_difference": 0.026119,
+        "within_10_percent": true,
+        "doi_checked_when_over_10_percent": false,
+        "doi_absent_local_count": null,
+        "doi_absent_local_target_volumes": null,
+        "absent_doi_out_of_scope_volume_counts": null
+      },
+      "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -1183,7 +1267,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 72,73,74,75,76,77）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 104 篇（本轮补入 0 篇），历史审核 104 篇：纳入 103、排除 1、待定 0。本轮原有候选补全出版方原摘要 54 篇，候选缺摘要由 54 降为 0；关键词补全 29 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器已显示年度卷号，但未取得展开后的全年卷期目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 104 篇（本轮补入 0 篇），历史审核 104 篇：纳入 103、排除 1、待定 0。本轮原有候选补全出版方原摘要 54 篇，候选缺摘要由 54 降为 0；关键词补全 29 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器已显示年度卷号，但未取得展开后的全年卷期目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 253（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 244；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/journal-of-manufacturing-systems/issues",
       "https://api.crossref.org/journals/0278-6125/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -1194,12 +1278,11 @@
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
       "纳入论文中仍有 35 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-      "本轮正常浏览器仍未完成全年目录核验，已向负责人请求人工核验，尚待答复。"
+      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-      "取得负责人手动核验结果；若负责人确认当前无法人工完成，再按技能使用可靠替代来源并明确标注参考口径。 对应目录：https://www.sciencedirect.com/journal/journal-of-manufacturing-systems/issues"
+      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。"
     ],
     "abstract_summary": {
       "decision_basis": "personal_review",
@@ -1589,9 +1672,38 @@
       "official_count_verified": false
     },
     "manual_verification": {
-      "status": "requested_awaiting_reply",
-      "requested_on": "2026-11-15",
-      "requested_items": "手动查看 2024 全年正式卷期目录，提供完整目录或同口径研究及综述正文总数；不能将访问错误视为零。"
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/0278-6125/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 253,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 253,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A0278-6125%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 244,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": -9,
+        "relative_difference": 0.036885,
+        "within_10_percent": true,
+        "doi_checked_when_over_10_percent": false,
+        "doi_absent_local_count": null,
+        "doi_absent_local_target_volumes": null,
+        "absent_doi_out_of_scope_volume_counts": null
+      },
+      "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -1671,7 +1783,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 11）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 0 篇（本轮补入 0 篇），历史审核 0 篇：纳入 0、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器已显示年度卷号，但未取得展开后的全年卷期目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 0 篇（本轮补入 0 篇），历史审核 0 篇：纳入 0、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器已显示年度卷号，但未取得展开后的全年卷期目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 178（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 148；两者均不是官网 2024 正式卷期学术正文数。 差异超过 10%，逐 DOI 检查索引中本地缺项，其卷号均不在目标 2024 卷期。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/the-lancet-hiv/issues",
       "https://api.crossref.org/journals/2352-3018/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -1681,11 +1793,10 @@
     ],
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-      "本轮正常浏览器仍未完成全年目录核验，已向负责人请求人工核验，尚待答复。"
+      "替代索引在线年计数差异超过 10%，已核的索引独有 DOI 均在目标卷号之外；正式卷期全年目录仍待核。"
     ],
     "next_actions": [
-      "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-      "取得负责人手动核验结果；若负责人确认当前无法人工完成，再按技能使用可靠替代来源并明确标注参考口径。 对应目录：https://www.sciencedirect.com/journal/the-lancet-hiv/issues"
+      "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。"
     ],
     "abstract_summary": {
       "decision_basis": "personal_review",
@@ -1754,9 +1865,40 @@
       "official_count_verified": false
     },
     "manual_verification": {
-      "status": "requested_awaiting_reply",
-      "requested_on": "2026-11-15",
-      "requested_items": "手动查看 2024 全年正式卷期目录，提供完整目录或同口径研究及综述正文总数；不能将访问错误视为零。"
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/2352-3018/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 178,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 178,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A2352-3018%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 148,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": -30,
+        "relative_difference": 0.202703,
+        "within_10_percent": false,
+        "doi_checked_when_over_10_percent": true,
+        "doi_absent_local_count": 16,
+        "doi_absent_local_target_volumes": 0,
+        "absent_doi_out_of_scope_volume_counts": {
+          "12": 16
+        }
+      },
+      "assessment": "独立索引年度计数差异超过 10%；已逐 DOI 查看索引中本地未收录的 2024 在线年记录，均为目标正式卷期之外，未确认本轮应补的漏采。其余差额含索引收录、类型和跨年口径差异。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -1765,7 +1907,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 145,146,147,148,149,150,151,152,153,154）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 6 篇（本轮补入 0 篇），历史审核 6 篇：纳入 6、排除 0、待定 0。本轮原有候选补全出版方原摘要 1 篇，候选缺摘要由 1 降为 0；关键词补全 1 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器已显示年度卷号，但未取得展开后的全年卷期目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 6 篇（本轮补入 0 篇），历史审核 6 篇：纳入 6、排除 0、待定 0。本轮原有候选补全出版方原摘要 1 篇，候选缺摘要由 1 降为 0；关键词补全 1 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器已显示年度卷号，但未取得展开后的全年卷期目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 426（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 410；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/cement-and-concrete-composites/issues",
       "https://api.crossref.org/journals/0958-9465/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -1776,12 +1918,11 @@
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
       "纳入论文中仍有 4 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-      "本轮正常浏览器仍未完成全年目录核验，已向负责人请求人工核验，尚待答复。"
+      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-      "取得负责人手动核验结果；若负责人确认当前无法人工完成，再按技能使用可靠替代来源并明确标注参考口径。 对应目录：https://www.sciencedirect.com/journal/cement-and-concrete-composites/issues"
+      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。"
     ],
     "abstract_summary": {
       "decision_basis": "personal_review",
@@ -1862,9 +2003,38 @@
       "official_count_verified": false
     },
     "manual_verification": {
-      "status": "requested_awaiting_reply",
-      "requested_on": "2026-11-15",
-      "requested_items": "手动查看 2024 全年正式卷期目录，提供完整目录或同口径研究及综述正文总数；不能将访问错误视为零。"
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/0958-9465/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 426,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 426,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A0958-9465%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 410,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": -16,
+        "relative_difference": 0.039024,
+        "within_10_percent": true,
+        "doi_checked_when_over_10_percent": false,
+        "doi_absent_local_count": null,
+        "doi_absent_local_target_volumes": null,
+        "absent_doi_out_of_scope_volume_counts": null
+      },
+      "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -1873,7 +2043,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 49）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 0 篇（本轮补入 0 篇），历史审核 0 篇：纳入 0、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器已显示年度卷号，但未取得展开后的全年卷期目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 0 篇（本轮补入 0 篇），历史审核 0 篇：纳入 0、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器已显示年度卷号，但未取得展开后的全年卷期目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 145（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 137；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/trends-in-biochemical-sciences/issues",
       "https://api.crossref.org/journals/0968-0004/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -1883,11 +2053,10 @@
     ],
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-      "本轮正常浏览器仍未完成全年目录核验，已向负责人请求人工核验，尚待答复。"
+      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
     ],
     "next_actions": [
-      "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-      "取得负责人手动核验结果；若负责人确认当前无法人工完成，再按技能使用可靠替代来源并明确标注参考口径。 对应目录：https://www.sciencedirect.com/journal/trends-in-biochemical-sciences/issues"
+      "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。"
     ],
     "abstract_summary": {
       "decision_basis": "personal_review",
@@ -1956,9 +2125,38 @@
       "official_count_verified": false
     },
     "manual_verification": {
-      "status": "requested_awaiting_reply",
-      "requested_on": "2026-11-15",
-      "requested_items": "手动查看 2024 全年正式卷期目录，提供完整目录或同口径研究及综述正文总数；不能将访问错误视为零。"
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/0968-0004/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 145,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 145,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A0968-0004%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 137,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": -8,
+        "relative_difference": 0.058394,
+        "within_10_percent": true,
+        "doi_checked_when_over_10_percent": false,
+        "doi_absent_local_count": null,
+        "doi_absent_local_target_volumes": null,
+        "absent_doi_out_of_scope_volume_counts": null
+      },
+      "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -1967,7 +2165,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 17,18,19,20,21,22）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 15 篇（本轮补入 0 篇），历史审核 16 篇：纳入 14、排除 2、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器显示 ScienceDirect 内容访问错误；未取得全年目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 15 篇（本轮补入 0 篇），历史审核 16 篇：纳入 14、排除 2、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器显示 ScienceDirect 内容访问错误；未取得全年目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 161（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 109；两者均不是官网 2024 正式卷期学术正文数。 差异超过 10%，逐 DOI 检查索引中本地缺项，其卷号均不在目标 2024 卷期。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/environmental-science-and-ecotechnology/issues",
       "https://api.crossref.org/journals/2666-4984/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -1977,11 +2175,10 @@
     ],
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-      "本轮正常浏览器仍未完成全年目录核验，已向负责人请求人工核验，尚待答复。"
+      "替代索引在线年计数差异超过 10%，已核的索引独有 DOI 均在目标卷号之外；正式卷期全年目录仍待核。"
     ],
     "next_actions": [
-      "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-      "取得负责人手动核验结果；若负责人确认当前无法人工完成，再按技能使用可靠替代来源并明确标注参考口径。 对应目录：https://www.sciencedirect.com/journal/environmental-science-and-ecotechnology/issues"
+      "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。"
     ],
     "abstract_summary": {
       "decision_basis": "personal_review",
@@ -2052,9 +2249,40 @@
       "official_count_verified": false
     },
     "manual_verification": {
-      "status": "requested_awaiting_reply",
-      "requested_on": "2026-11-15",
-      "requested_items": "手动查看 2024 全年正式卷期目录，提供完整目录或同口径研究及综述正文总数；不能将访问错误视为零。"
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/2666-4984/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 161,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 161,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A2666-4984%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 109,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": -52,
+        "relative_difference": 0.477064,
+        "within_10_percent": false,
+        "doi_checked_when_over_10_percent": true,
+        "doi_absent_local_count": 22,
+        "doi_absent_local_target_volumes": 0,
+        "absent_doi_out_of_scope_volume_counts": {
+          "23": 22
+        }
+      },
+      "assessment": "独立索引年度计数差异超过 10%；已逐 DOI 查看索引中本地未收录的 2024 在线年记录，均为目标正式卷期之外，未确认本轮应补的漏采。其余差额含索引收录、类型和跨年口径差异。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -2063,7 +2291,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 70,71,72,73,74,75,76,77）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 9 篇（本轮补入 0 篇），历史审核 9 篇：纳入 7、排除 2、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器显示 ScienceDirect 内容访问错误；未取得全年目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 9 篇（本轮补入 0 篇），历史审核 9 篇：纳入 7、排除 2、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器显示 ScienceDirect 内容访问错误；未取得全年目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 144（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 138；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/biotechnology-advances/issues",
       "https://api.crossref.org/journals/0734-9750/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -2074,12 +2302,11 @@
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
       "纳入论文中仍有 6 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-      "本轮正常浏览器仍未完成全年目录核验，已向负责人请求人工核验，尚待答复。"
+      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-      "取得负责人手动核验结果；若负责人确认当前无法人工完成，再按技能使用可靠替代来源并明确标注参考口径。 对应目录：https://www.sciencedirect.com/journal/biotechnology-advances/issues"
+      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。"
     ],
     "abstract_summary": {
       "decision_basis": "personal_review",
@@ -2148,9 +2375,38 @@
       "official_count_verified": false
     },
     "manual_verification": {
-      "status": "requested_awaiting_reply",
-      "requested_on": "2026-11-15",
-      "requested_items": "手动查看 2024 全年正式卷期目录，提供完整目录或同口径研究及综述正文总数；不能将访问错误视为零。"
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/0734-9750/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 144,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 144,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A0734-9750%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 138,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": -6,
+        "relative_difference": 0.043478,
+        "within_10_percent": true,
+        "doi_checked_when_over_10_percent": false,
+        "doi_absent_local_count": null,
+        "doi_absent_local_target_volumes": null,
+        "absent_doi_out_of_scope_volume_counts": null
+      },
+      "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -2159,7 +2415,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 28,29,30,31,32,33）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 11 篇（本轮补入 0 篇），历史审核 11 篇：纳入 8、排除 3、待定 0。本轮原有候选补全出版方原摘要 4 篇，候选缺摘要由 4 降为 0；关键词补全 3 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器显示 ScienceDirect 内容访问错误；未取得全年目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 11 篇（本轮补入 0 篇），历史审核 11 篇：纳入 8、排除 3、待定 0。本轮原有候选补全出版方原摘要 4 篇，候选缺摘要由 4 降为 0；关键词补全 3 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器显示 ScienceDirect 内容访问错误；未取得全年目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 40（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 33；两者均不是官网 2024 正式卷期学术正文数。 差异超过 10%，逐 DOI 检查索引中本地缺项，其卷号均不在目标 2024 卷期。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/current-opinion-in-solid-state-and-materials-science/issues",
       "https://api.crossref.org/journals/1359-0286/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -2170,12 +2426,11 @@
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
       "纳入论文中仍有 4 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-      "本轮正常浏览器仍未完成全年目录核验，已向负责人请求人工核验，尚待答复。"
+      "替代索引在线年计数差异超过 10%，已核的索引独有 DOI 均在目标卷号之外；正式卷期全年目录仍待核。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-      "取得负责人手动核验结果；若负责人确认当前无法人工完成，再按技能使用可靠替代来源并明确标注参考口径。 对应目录：https://www.sciencedirect.com/journal/current-opinion-in-solid-state-and-materials-science/issues"
+      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。"
     ],
     "abstract_summary": {
       "decision_basis": "personal_review",
@@ -2268,9 +2523,40 @@
       "official_count_verified": false
     },
     "manual_verification": {
-      "status": "requested_awaiting_reply",
-      "requested_on": "2026-11-15",
-      "requested_items": "手动查看 2024 全年正式卷期目录，提供完整目录或同口径研究及综述正文总数；不能将访问错误视为零。"
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/1359-0286/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 40,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 40,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A1359-0286%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 33,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": -7,
+        "relative_difference": 0.212121,
+        "within_10_percent": false,
+        "doi_checked_when_over_10_percent": true,
+        "doi_absent_local_count": 2,
+        "doi_absent_local_target_volumes": 0,
+        "absent_doi_out_of_scope_volume_counts": {
+          "34": 2
+        }
+      },
+      "assessment": "独立索引年度计数差异超过 10%；已逐 DOI 查看索引中本地未收录的 2024 在线年记录，均为目标正式卷期之外，未确认本轮应补的漏采。其余差额含索引收录、类型和跨年口径差异。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -2279,7 +2565,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 5）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 40 篇（本轮补入 0 篇），历史审核 40 篇：纳入 40、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器显示 ScienceDirect 内容访问错误；未取得全年目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 40 篇（本轮补入 0 篇），历史审核 40 篇：纳入 40、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器显示 ScienceDirect 内容访问错误；未取得全年目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 428（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 429；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/cell-reports-medicine/issues",
       "https://api.crossref.org/journals/2666-3791/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -2290,12 +2576,11 @@
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
       "纳入论文中仍有 36 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-      "本轮正常浏览器仍未完成全年目录核验，已向负责人请求人工核验，尚待答复。"
+      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-      "取得负责人手动核验结果；若负责人确认当前无法人工完成，再按技能使用可靠替代来源并明确标注参考口径。 对应目录：https://www.sciencedirect.com/journal/cell-reports-medicine/issues"
+      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。"
     ],
     "abstract_summary": {
       "decision_basis": "personal_review",
@@ -2364,9 +2649,38 @@
       "official_count_verified": false
     },
     "manual_verification": {
-      "status": "requested_awaiting_reply",
-      "requested_on": "2026-11-15",
-      "requested_items": "手动查看 2024 全年正式卷期目录，提供完整目录或同口径研究及综述正文总数；不能将访问错误视为零。"
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/2666-3791/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 428,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 428,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A2666-3791%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 429,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": 1,
+        "relative_difference": 0.002331,
+        "within_10_percent": true,
+        "doi_checked_when_over_10_percent": false,
+        "doi_absent_local_count": null,
+        "doi_absent_local_target_volumes": null,
+        "absent_doi_out_of_scope_volume_counts": null
+      },
+      "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -2375,7 +2689,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 175,176,177,178,179,180,181,182,183,184,185,186）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 3 篇（本轮补入 0 篇），历史审核 3 篇：纳入 3、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器显示 ScienceDirect 内容访问错误；未取得全年目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 3 篇（本轮补入 0 篇），历史审核 3 篇：纳入 3、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器显示 ScienceDirect 内容访问错误；未取得全年目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 276（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 252；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/cement-and-concrete-research/issues",
       "https://api.crossref.org/journals/0008-8846/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -2385,11 +2699,10 @@
     ],
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-      "本轮正常浏览器仍未完成全年目录核验，已向负责人请求人工核验，尚待答复。"
+      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
     ],
     "next_actions": [
-      "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-      "取得负责人手动核验结果；若负责人确认当前无法人工完成，再按技能使用可靠替代来源并明确标注参考口径。 对应目录：https://www.sciencedirect.com/journal/cement-and-concrete-research/issues"
+      "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。"
     ],
     "abstract_summary": {
       "decision_basis": "personal_review",
@@ -2461,9 +2774,38 @@
       "official_count_verified": false
     },
     "manual_verification": {
-      "status": "requested_awaiting_reply",
-      "requested_on": "2026-11-15",
-      "requested_items": "手动查看 2024 全年正式卷期目录，提供完整目录或同口径研究及综述正文总数；不能将访问错误视为零。"
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/0008-8846/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 276,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 276,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A0008-8846%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 252,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": -24,
+        "relative_difference": 0.095238,
+        "within_10_percent": true,
+        "doi_checked_when_over_10_percent": false,
+        "doi_absent_local_count": null,
+        "doi_absent_local_target_volumes": null,
+        "absent_doi_out_of_scope_volume_counts": null
+      },
+      "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -2472,7 +2814,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 15 篇（本轮补入 0 篇），历史审核 15 篇：纳入 15、排除 0、待定 0。本轮原有候选补全出版方原摘要 7 篇，候选缺摘要由 7 降为 0；关键词补全 7 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器显示 ScienceDirect 内容访问错误；未取得全年目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 15 篇（本轮补入 0 篇），历史审核 15 篇：纳入 15、排除 0、待定 0。本轮原有候选补全出版方原摘要 7 篇，候选缺摘要由 7 降为 0；关键词补全 7 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器显示 ScienceDirect 内容访问错误；未取得全年目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 659（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 738；两者均不是官网 2024 正式卷期学术正文数。 差异超过 10%，逐 DOI 检查索引中本地缺项，其卷号均不在目标 2024 卷期。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/composites-part-b-engineering/issues",
       "https://api.crossref.org/journals/1359-8368/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -2483,12 +2825,11 @@
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
       "纳入论文中仍有 7 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-      "本轮正常浏览器仍未完成全年目录核验，已向负责人请求人工核验，尚待答复。"
+      "替代索引在线年计数差异超过 10%，已核的索引独有 DOI 均在目标卷号之外；正式卷期全年目录仍待核。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-      "取得负责人手动核验结果；若负责人确认当前无法人工完成，再按技能使用可靠替代来源并明确标注参考口径。 对应目录：https://www.sciencedirect.com/journal/composites-part-b-engineering/issues"
+      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。"
     ],
     "abstract_summary": {
       "decision_basis": "personal_review",
@@ -2586,9 +2927,49 @@
       "official_count_verified": false
     },
     "manual_verification": {
-      "status": "requested_awaiting_reply",
-      "requested_on": "2026-11-15",
-      "requested_items": "手动查看 2024 全年正式卷期目录，提供完整目录或同口径研究及综述正文总数；不能将访问错误视为零。"
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/1359-8368/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 659,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 659,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A1359-8368%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 738,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": 79,
+        "relative_difference": 0.107046,
+        "within_10_percent": false,
+        "doi_checked_when_over_10_percent": true,
+        "doi_absent_local_count": 198,
+        "doi_absent_local_target_volumes": 0,
+        "absent_doi_out_of_scope_volume_counts": {
+          "289": 28,
+          "288": 34,
+          "290": 15,
+          "291": 65,
+          "292": 48,
+          "294": 1,
+          "299": 1,
+          "293": 4,
+          "296": 1,
+          "306": 1
+        }
+      },
+      "assessment": "独立索引年度计数差异超过 10%；已逐 DOI 查看索引中本地未收录的 2024 在线年记录，均为目标正式卷期之外，未确认本轮应补的漏采。其余差额含索引收录、类型和跨年口径差异。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -2597,7 +2978,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 91,92,93,94,95,96,97,98）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 243 篇（本轮补入 0 篇），历史审核 244 篇：纳入 243、排除 1、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器显示 ScienceDirect 内容访问错误；未取得全年目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 243 篇（本轮补入 0 篇），历史审核 244 篇：纳入 243、排除 1、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器显示 ScienceDirect 内容访问错误；未取得全年目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 276（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 289；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/medical-image-analysis/issues",
       "https://api.crossref.org/journals/1361-8415/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -2609,12 +2990,11 @@
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
       "纳入论文中仍有 229 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-      "本轮正常浏览器仍未完成全年目录核验，已向负责人请求人工核验，尚待答复。"
+      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-      "取得负责人手动核验结果；若负责人确认当前无法人工完成，再按技能使用可靠替代来源并明确标注参考口径。 对应目录：https://www.sciencedirect.com/journal/medical-image-analysis/issues"
+      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。"
     ],
     "abstract_summary": {
       "decision_basis": "personal_review",
@@ -2685,9 +3065,38 @@
       "official_count_verified": false
     },
     "manual_verification": {
-      "status": "requested_awaiting_reply",
-      "requested_on": "2026-11-15",
-      "requested_items": "手动查看 2024 全年正式卷期目录，提供完整目录或同口径研究及综述正文总数；不能将访问错误视为零。"
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/1361-8415/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 276,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 276,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A1361-8415%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 289,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": 13,
+        "relative_difference": 0.044983,
+        "within_10_percent": true,
+        "doi_checked_when_over_10_percent": false,
+        "doi_absent_local_count": null,
+        "doi_absent_local_target_volumes": null,
+        "absent_doi_out_of_scope_volume_counts": null
+      },
+      "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -2771,7 +3180,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 146,147,148,149,150,151,152,153,154,155,156,157）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 1 篇（本轮补入 0 篇），历史审核 1 篇：纳入 1、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器显示 ScienceDirect 内容访问错误；未取得全年目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 1 篇（本轮补入 0 篇），历史审核 1 篇：纳入 1、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器显示 ScienceDirect 内容访问错误；未取得全年目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 1217（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 1191；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/food-hydrocolloids/issues",
       "https://api.crossref.org/journals/0268-005X/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -2781,11 +3190,10 @@
     ],
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-      "本轮正常浏览器仍未完成全年目录核验，已向负责人请求人工核验，尚待答复。"
+      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
     ],
     "next_actions": [
-      "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-      "取得负责人手动核验结果；若负责人确认当前无法人工完成，再按技能使用可靠替代来源并明确标注参考口径。 对应目录：https://www.sciencedirect.com/journal/food-hydrocolloids/issues"
+      "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。"
     ],
     "abstract_summary": {
       "decision_basis": "personal_review",
@@ -2857,9 +3265,38 @@
       "error_code": "CPE00002"
     },
     "manual_verification": {
-      "status": "requested_awaiting_reply",
-      "requested_on": "2026-11-15",
-      "requested_items": "手动查看 2024 全年正式卷期目录，提供完整目录或同口径研究及综述正文总数；不能将访问错误视为零。"
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/0268-005X/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 1217,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 1217,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A0268-005X%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 1191,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": -26,
+        "relative_difference": 0.02183,
+        "within_10_percent": true,
+        "doi_checked_when_over_10_percent": false,
+        "doi_absent_local_count": null,
+        "doi_absent_local_target_volumes": null,
+        "absent_doi_out_of_scope_volume_counts": null
+      },
+      "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -2868,7 +3305,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 100,95,96,97,98,99）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 0 篇（本轮补入 0 篇），历史审核 0 篇：纳入 0、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 0 篇（本轮补入 0 篇），历史审核 0 篇：纳入 0、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 56（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 46；两者均不是官网 2024 正式卷期学术正文数。 差异超过 10%，逐 DOI 检查索引中本地缺项，其卷号均不在目标 2024 卷期。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/molecular-aspects-of-medicine/issues",
       "https://api.crossref.org/journals/0098-2997/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -2877,7 +3314,8 @@
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
     ],
     "issues": [
-      "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。"
+      "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
+      "替代索引在线年计数差异超过 10%，已核的索引独有 DOI 均在目标卷号之外；正式卷期全年目录仍待核。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。"
@@ -2938,6 +3376,42 @@
       "decision_changes": [],
       "pending_papers": [],
       "integrated_main_commit": "f339716739499c322a76c6508ef132804ec76b9c"
+    },
+    "manual_verification": {
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/0098-2997/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 56,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 56,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A0098-2997%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 46,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": -10,
+        "relative_difference": 0.217391,
+        "within_10_percent": false,
+        "doi_checked_when_over_10_percent": true,
+        "doi_absent_local_count": 2,
+        "doi_absent_local_target_volumes": 0,
+        "absent_doi_out_of_scope_volume_counts": {
+          "101": 2
+        }
+      },
+      "assessment": "独立索引年度计数差异超过 10%；已逐 DOI 查看索引中本地未收录的 2024 在线年记录，均为目标正式卷期之外，未确认本轮应补的漏采。其余差额含索引收录、类型和跨年口径差异。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -3015,7 +3489,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 5）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 5 篇（本轮补入 0 篇），历史审核 5 篇：纳入 4、排除 0、待定 1。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 5 篇（本轮补入 0 篇），历史审核 5 篇：纳入 4、排除 0、待定 1。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 219（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 210；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/plant-communications/issues",
       "https://api.crossref.org/journals/2590-3462/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -3026,7 +3500,8 @@
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
       "纳入论文中仍有 3 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-      "1 篇候选有原摘要但 AI 实际作用或科学任务证据不足，已改为 pending。"
+      "1 篇候选有原摘要但 AI 实际作用或科学任务证据不足，已改为 pending。",
+      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
@@ -3104,6 +3579,40 @@
         }
       ],
       "integrated_main_commit": "f339716739499c322a76c6508ef132804ec76b9c"
+    },
+    "manual_verification": {
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/2590-3462/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 219,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 219,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A2590-3462%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 210,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": -9,
+        "relative_difference": 0.042857,
+        "within_10_percent": true,
+        "doi_checked_when_over_10_percent": false,
+        "doi_absent_local_count": null,
+        "doi_absent_local_target_volumes": null,
+        "absent_doi_out_of_scope_volume_counts": null
+      },
+      "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -3112,7 +3621,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 241,242,243,244,245,246,247,248,249,250,251,252）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 222 篇（本轮补入 0 篇），历史审核 222 篇：纳入 220、排除 0、待定 2。本轮原有候选补全出版方原摘要 9 篇，候选缺摘要由 9 降为 0；关键词补全 4 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 222 篇（本轮补入 0 篇），历史审核 222 篇：纳入 220、排除 0、待定 2。本轮原有候选补全出版方原摘要 9 篇，候选缺摘要由 9 降为 0；关键词补全 4 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 780（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 729；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/reliability-engineering-and-system-safety/issues",
       "https://api.crossref.org/journals/0951-8320/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -3123,7 +3632,8 @@
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
       "纳入论文中仍有 178 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-      "2 篇候选有原摘要但 AI 实际作用或科学任务证据不足，已改为 pending。"
+      "2 篇候选有原摘要但 AI 实际作用或科学任务证据不足，已改为 pending。",
+      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
@@ -4238,6 +4748,40 @@
         }
       ],
       "integrated_main_commit": "f339716739499c322a76c6508ef132804ec76b9c"
+    },
+    "manual_verification": {
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/0951-8320/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 780,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 780,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A0951-8320%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 729,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": -51,
+        "relative_difference": 0.069959,
+        "within_10_percent": true,
+        "doi_checked_when_over_10_percent": false,
+        "doi_absent_local_count": null,
+        "doi_absent_local_target_volumes": null,
+        "absent_doi_out_of_scope_volume_counts": null
+      },
+      "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -4246,7 +4790,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 304,305,306,307,308,309,310,311）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 2 篇（本轮补入 0 篇），历史审核 2 篇：纳入 1、排除 1、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 2 篇（本轮补入 0 篇），历史审核 2 篇：纳入 1、排除 1、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 258（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 492；两者均不是官网 2024 正式卷期学术正文数。 差异超过 10%，逐 DOI 检查索引中本地缺项，其卷号均不在目标 2024 卷期。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/biomaterials/issues",
       "https://api.crossref.org/journals/0142-9612/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -4256,7 +4800,8 @@
     ],
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-      "纳入论文中仍有 1 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。"
+      "纳入论文中仍有 1 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
+      "替代索引在线年计数差异超过 10%，已核的索引独有 DOI 均在目标卷号之外；正式卷期全年目录仍待核。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
@@ -4318,6 +4863,50 @@
       "decision_changes": [],
       "pending_papers": [],
       "integrated_main_commit": "f339716739499c322a76c6508ef132804ec76b9c"
+    },
+    "manual_verification": {
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/0142-9612/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 258,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 258,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A0142-9612%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 492,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": 234,
+        "relative_difference": 0.47561,
+        "within_10_percent": false,
+        "doi_checked_when_over_10_percent": true,
+        "doi_absent_local_count": 298,
+        "doi_absent_local_target_volumes": 0,
+        "absent_doi_out_of_scope_volume_counts": {
+          "312": 33,
+          "314": 85,
+          "317": 34,
+          "313": 41,
+          "315": 58,
+          "316": 43,
+          "318": 2,
+          "323": 1,
+          "321": 1
+        }
+      },
+      "assessment": "独立索引年度计数差异超过 10%；已逐 DOI 查看索引中本地未收录的 2024 在线年记录，均为目标正式卷期之外，未确认本轮应补的漏采。其余差额含索引收录、类型和跨年口径差异。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -4563,7 +5152,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 253,254,255,256,257,258,259,260,261,262,263,264）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 2 篇（本轮补入 0 篇），历史审核 2 篇：纳入 1、排除 1、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 2 篇（本轮补入 0 篇），历史审核 2 篇：纳入 1、排除 1、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 108（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 107；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/pharmacology-and-therapeutics/issues",
       "https://api.crossref.org/journals/0163-7258/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -4573,7 +5162,8 @@
     ],
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-      "纳入论文中仍有 1 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。"
+      "纳入论文中仍有 1 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
+      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
@@ -4635,6 +5225,40 @@
       "decision_changes": [],
       "pending_papers": [],
       "integrated_main_commit": "f339716739499c322a76c6508ef132804ec76b9c"
+    },
+    "manual_verification": {
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/0163-7258/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 108,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 108,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A0163-7258%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 107,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": -1,
+        "relative_difference": 0.009346,
+        "within_10_percent": true,
+        "doi_checked_when_over_10_percent": false,
+        "doi_absent_local_count": null,
+        "doi_absent_local_target_volumes": null,
+        "absent_doi_out_of_scope_volume_counts": null
+      },
+      "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -4643,7 +5267,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 170,171,172,173,174,175,176,177,178,179,180,181）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 16 篇（本轮补入 0 篇），历史审核 17 篇：纳入 16、排除 1、待定 0。本轮原有候选补全出版方原摘要 9 篇，候选缺摘要由 9 降为 0；关键词补全 5 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 16 篇（本轮补入 0 篇），历史审核 17 篇：纳入 16、排除 1、待定 0。本轮原有候选补全出版方原摘要 9 篇，候选缺摘要由 9 降为 0；关键词补全 5 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 552（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 486；两者均不是官网 2024 正式卷期学术正文数。 差异超过 10%，逐 DOI 检查索引中本地缺项，其卷号均不在目标 2024 卷期。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/trac-trends-in-analytical-chemistry/issues",
       "https://api.crossref.org/journals/0165-9936/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -4653,7 +5277,8 @@
     ],
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-      "纳入论文中仍有 5 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。"
+      "纳入论文中仍有 5 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
+      "替代索引在线年计数差异超过 10%，已核的索引独有 DOI 均在目标卷号之外；正式卷期全年目录仍待核。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
@@ -4761,6 +5386,44 @@
       "decision_changes": [],
       "pending_papers": [],
       "integrated_main_commit": "f339716739499c322a76c6508ef132804ec76b9c"
+    },
+    "manual_verification": {
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/0165-9936/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 552,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 552,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A0165-9936%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 486,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": -66,
+        "relative_difference": 0.135802,
+        "within_10_percent": false,
+        "doi_checked_when_over_10_percent": true,
+        "doi_absent_local_count": 54,
+        "doi_absent_local_target_volumes": 0,
+        "absent_doi_out_of_scope_volume_counts": {
+          "183": 34,
+          "184": 10,
+          "182": 10
+        }
+      },
+      "assessment": "独立索引年度计数差异超过 10%；已逐 DOI 查看索引中本地未收录的 2024 在线年记录，均为目标正式卷期之外，未确认本轮应补的漏采。其余差额含索引收录、类型和跨年口径差异。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -4769,7 +5432,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 8）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 0 篇（本轮补入 0 篇），历史审核 0 篇：纳入 0、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 0 篇（本轮补入 0 篇），历史审核 0 篇：纳入 0、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 196（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 154；两者均不是官网 2024 正式卷期学术正文数。 差异超过 10%，逐 DOI 检查索引中本地缺项，其卷号均不在目标 2024 卷期。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/the-lancet-child-and-adolescent-health/issues",
       "https://api.crossref.org/journals/2352-4642/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -4778,7 +5441,8 @@
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
     ],
     "issues": [
-      "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。"
+      "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
+      "替代索引在线年计数差异超过 10%，已核的索引独有 DOI 均在目标卷号之外；正式卷期全年目录仍待核。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。"
@@ -4839,6 +5503,42 @@
       "decision_changes": [],
       "pending_papers": [],
       "integrated_main_commit": "f339716739499c322a76c6508ef132804ec76b9c"
+    },
+    "manual_verification": {
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/2352-4642/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 196,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 196,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A2352-4642%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 154,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": -42,
+        "relative_difference": 0.272727,
+        "within_10_percent": false,
+        "doi_checked_when_over_10_percent": true,
+        "doi_absent_local_count": 17,
+        "doi_absent_local_target_volumes": 0,
+        "absent_doi_out_of_scope_volume_counts": {
+          "9": 17
+        }
+      },
+      "assessment": "独立索引年度计数差异超过 10%；已逐 DOI 查看索引中本地未收录的 2024 在线年记录，均为目标正式卷期之外，未确认本轮应补的漏采。其余差额含索引收录、类型和跨年口径差异。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -4847,7 +5547,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 5）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 3 篇（本轮补入 0 篇），历史审核 3 篇：纳入 3、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 3 篇（本轮补入 0 篇），历史审核 3 篇：纳入 3、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 155（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 195；两者均不是官网 2024 正式卷期学术正文数。 差异超过 10%，逐 DOI 检查索引中本地缺项，其卷号均不在目标 2024 卷期。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/med/issues",
       "https://api.crossref.org/journals/2666-6340/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -4857,7 +5557,8 @@
     ],
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-      "纳入论文中仍有 3 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。"
+      "纳入论文中仍有 3 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
+      "替代索引在线年计数差异超过 10%，已核的索引独有 DOI 均在目标卷号之外；正式卷期全年目录仍待核。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
@@ -4919,6 +5620,42 @@
       "decision_changes": [],
       "pending_papers": [],
       "integrated_main_commit": "f339716739499c322a76c6508ef132804ec76b9c"
+    },
+    "manual_verification": {
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/2666-6340/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 155,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 155,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A2666-6340%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 195,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": 40,
+        "relative_difference": 0.205128,
+        "within_10_percent": false,
+        "doi_checked_when_over_10_percent": true,
+        "doi_absent_local_count": 43,
+        "doi_absent_local_target_volumes": 0,
+        "absent_doi_out_of_scope_volume_counts": {
+          "6": 43
+        }
+      },
+      "assessment": "独立索引年度计数差异超过 10%；已逐 DOI 查看索引中本地未收录的 2024 在线年记录，均为目标正式卷期之外，未确认本轮应补的漏采。其余差额含索引收录、类型和跨年口径差异。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -4927,7 +5664,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 116 篇（本轮补入 0 篇），历史审核 116 篇：纳入 106、排除 8、待定 2。本轮原有候选补全出版方原摘要 45 篇，候选缺摘要由 45 降为 0；关键词补全 38 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 116 篇（本轮补入 0 篇），历史审核 116 篇：纳入 106、排除 8、待定 2。本轮原有候选补全出版方原摘要 45 篇，候选缺摘要由 45 降为 0；关键词补全 38 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 965（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 914；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/sustainable-cities-and-society/issues",
       "https://api.crossref.org/journals/2210-6707/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -4938,7 +5675,8 @@
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
       "纳入论文中仍有 34 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-      "2 篇候选有原摘要但 AI 实际作用或科学任务证据不足，已改为 pending。"
+      "2 篇候选有原摘要但 AI 实际作用或科学任务证据不足，已改为 pending。",
+      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
@@ -5253,6 +5991,40 @@
         }
       ],
       "integrated_main_commit": "f339716739499c322a76c6508ef132804ec76b9c"
+    },
+    "manual_verification": {
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/2210-6707/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 965,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 965,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A2210-6707%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 914,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": -51,
+        "relative_difference": 0.055799,
+        "within_10_percent": true,
+        "doi_checked_when_over_10_percent": false,
+        "doi_absent_local_count": null,
+        "doi_absent_local_target_volumes": null,
+        "absent_doi_out_of_scope_volume_counts": null
+      },
+      "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -5261,7 +6033,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 2 篇（本轮补入 0 篇），历史审核 2 篇：纳入 2、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 2 篇（本轮补入 0 篇），历史审核 2 篇：纳入 2、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 1125（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 1215；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/carbohydrate-polymers/issues",
       "https://api.crossref.org/journals/0144-8617/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -5270,7 +6042,8 @@
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
     ],
     "issues": [
-      "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。"
+      "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
+      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。"
@@ -5331,6 +6104,40 @@
       "decision_changes": [],
       "pending_papers": [],
       "integrated_main_commit": "f339716739499c322a76c6508ef132804ec76b9c"
+    },
+    "manual_verification": {
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/0144-8617/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 1125,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 1125,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A0144-8617%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 1215,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": 90,
+        "relative_difference": 0.074074,
+        "within_10_percent": true,
+        "doi_checked_when_over_10_percent": false,
+        "doi_absent_local_count": null,
+        "doi_absent_local_target_volumes": null,
+        "absent_doi_out_of_scope_volume_counts": null
+      },
+      "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -5415,7 +6222,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 45）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 0 篇（本轮补入 0 篇），历史审核 0 篇：纳入 0、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 0 篇（本轮补入 0 篇），历史审核 0 篇：纳入 0、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 139（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 135；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/trends-in-immunology/issues",
       "https://api.crossref.org/journals/1471-4906/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -5424,7 +6231,8 @@
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
     ],
     "issues": [
-      "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。"
+      "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
+      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。"
@@ -5485,6 +6293,40 @@
       "decision_changes": [],
       "pending_papers": [],
       "integrated_main_commit": "f339716739499c322a76c6508ef132804ec76b9c"
+    },
+    "manual_verification": {
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/1471-4906/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 139,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 139,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A1471-4906%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 135,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": -4,
+        "relative_difference": 0.02963,
+        "within_10_percent": true,
+        "doi_checked_when_over_10_percent": false,
+        "doi_absent_local_count": null,
+        "doi_absent_local_target_volumes": null,
+        "absent_doi_out_of_scope_volume_counts": null
+      },
+      "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -9028,7 +9870,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 150,151,152,153,154,155,156,157,158,159,160,161）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 1 篇（本轮补入 0 篇），历史审核 1 篇：纳入 1、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 1 篇（本轮补入 0 篇），历史审核 1 篇：纳入 1、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 213（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 206；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
     "evidence_urls": [
       "https://www.metabolismjournal.com/issues",
       "https://api.crossref.org/journals/0026-0495/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -9051,7 +9893,8 @@
     ],
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-      "纳入论文中仍有 1 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。"
+      "纳入论文中仍有 1 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
+      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
@@ -9113,6 +9956,40 @@
       "decision_changes": [],
       "pending_papers": [],
       "integrated_main_commit": "f339716739499c322a76c6508ef132804ec76b9c"
+    },
+    "manual_verification": {
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/0026-0495/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 213,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 213,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A0026-0495%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 206,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": -7,
+        "relative_difference": 0.033981,
+        "within_10_percent": true,
+        "doi_checked_when_over_10_percent": false,
+        "doi_absent_local_count": null,
+        "doi_absent_local_target_volumes": null,
+        "absent_doi_out_of_scope_volume_counts": null
+      },
+      "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -9121,7 +9998,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 69,70,71,72,73,74,75,76,77,78）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 0 篇（本轮补入 0 篇），历史审核 0 篇：纳入 0、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 0 篇（本轮补入 0 篇），历史审核 0 篇：纳入 0、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 463（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 430；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/redox-biology/issues",
       "https://api.crossref.org/journals/2213-2317/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -9130,7 +10007,8 @@
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
     ],
     "issues": [
-      "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。"
+      "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
+      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。"
@@ -9191,6 +10069,40 @@
       "decision_changes": [],
       "pending_papers": [],
       "integrated_main_commit": "f339716739499c322a76c6508ef132804ec76b9c"
+    },
+    "manual_verification": {
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/2213-2317/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 463,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 463,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A2213-2317%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 430,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": -33,
+        "relative_difference": 0.076744,
+        "within_10_percent": true,
+        "doi_checked_when_over_10_percent": false,
+        "doi_absent_local_count": null,
+        "doi_absent_local_target_volumes": null,
+        "absent_doi_out_of_scope_volume_counts": null
+      },
+      "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   },
   {
@@ -9420,7 +10332,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年正式卷期（卷 126,127,128,129,130,131,132,133,134,135）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 377 篇（本轮补入 0 篇），历史审核 377 篇：纳入 374、排除 3、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。",
+    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 377 篇（本轮补入 0 篇），历史审核 377 篇：纳入 374、排除 3、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 683（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 670；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/international-journal-of-applied-earth-observation-and-geoinformation/issues",
       "https://api.crossref.org/journals/1569-8432/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -9430,7 +10342,8 @@
     ],
     "issues": [
       "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-      "纳入论文中仍有 374 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。"
+      "纳入论文中仍有 374 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
+      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
     ],
     "next_actions": [
       "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
@@ -9505,6 +10418,40 @@
       ],
       "pending_papers": [],
       "integrated_main_commit": "f339716739499c322a76c6508ef132804ec76b9c"
+    },
+    "manual_verification": {
+      "status": "unavailable_confirmed_by_owner",
+      "confirmed_on": "2026-11-15",
+      "response": "目前无法人工核验，使用可靠替代来源继续对账"
+    },
+    "alternative_index_check_20261115": {
+      "status": "reference_only",
+      "checked_on": "2026-11-15",
+      "base_main_commit": "197983abdd39dfa5287e5c2572a51a2fdfd0ea2e",
+      "target_scope": "2024 正式卷期；学术正文以研究和实质性综述为目标，出版栏目尚未逐篇核尽",
+      "crossref": {
+        "url": "https://api.crossref.org/journals/1569-8432/works?filter=type%3Ajournal-article%2Cfrom-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=0",
+        "count": 683,
+        "scope": "ISSN 对应 journal-article；Crossref publication date 在 2024-01-01 至 2024-12-31",
+        "local_raw_count": 683,
+        "count_difference": 0,
+        "caveat": "本地记录原始来源为 Crossref，数量一致不是独立的官网完整性证明。"
+      },
+      "openalex": {
+        "url": "https://api.openalex.org/works?filter=primary_location.source.issn%3A1569-8432%2Cpublication_year%3A2024%2Ctype%3Aarticle%7Creview&per-page=1",
+        "count": 670,
+        "scope": "primary_location.source.issn 对应；publication_year=2024；type=article 或 review",
+        "raw_count_difference": -13,
+        "relative_difference": 0.019403,
+        "within_10_percent": true,
+        "doi_checked_when_over_10_percent": false,
+        "doi_absent_local_count": null,
+        "doi_absent_local_target_volumes": null,
+        "absent_doi_out_of_scope_volume_counts": null
+      },
+      "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
+      "official_total_verified": false,
+      "reference_check_complete": false
     }
   }
 ]
