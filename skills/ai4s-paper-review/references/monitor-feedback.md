@@ -24,7 +24,13 @@
 
 `year`、`source_code` 和 `snapshot_at` 必填，快照存在时，快照时间必须与该年 `metadata/<年份>/snapshot.json` 的 `captured_at` 完全一致；不一致的反馈会提示重新核对。若快照尚未上传，可暂填 `null` 并保留问题和行动；官网总数待快照补齐并核对口径后才进入汇总。无法确认的 `official_total` 填 `null`，不得填零代替未知。记录官网统计的文献类型、年份口径，给出可核验链接；官网数与采集数只有在口径相同时才能比较。摘要、文献类型和来源取数范围的差异都须在说明中写清。
 
-官网无法核验时，`official_total` 仍填 `null`；在 `coverage_note` 写明替代来源、参考数、查询日期、年份及文献类型口径、快照版本和对账差异，在 `evidence_urls` 留可复现的查询链接或结果依据，在 `issues` 说明官网受限原因及未决差异，在 `next_actions` 写具体核查行动。替代来源结果可用于推进核对，不能标为已核实的官网数。
+官网无法核验时，`official_total` 仍填 `null`；在 `coverage_note` 写明官网受限原因、替代来源的口径和对账差异。替代来源同口径逐项对账完成、差异已处理后，在同一反馈对象增加 `reference_check`：
+
+```json
+{"status":"complete","source":"Crossref","total":733,"scope":"2024 正式出版年、研究及综述论文","query_url":"https://api.crossref.org/example","checked_at":"2026-11-15","unresolved":0}
+```
+
+以上仅是格式示例。`source`、参考 `total`、统计 `scope`、可复现查询或结果链接 `query_url`、核对日期 `checked_at` 和未解决差异数量 `unresolved` 均须真实填写；只有 `status` 为 `complete`、`unresolved` 为 0 且反馈快照与当前快照一致时，监控才认定替代来源核对完成。尚有差异、证据不足或未完成逐项对账时不得标记完成；在 `issues` 和 `next_actions` 写明未决事项，完成后清除已解决的旧问题和旧行动。其他摘要及精筛问题仍需各自完成。替代参考数不能标为已核实的官网数。
 
 `issues`、`next_actions` 使用字符串数组；行动须具体、可执行。针对摘要缺失，仅说明 AI4S 候选中的缺失情况、补充来源和处理计划；针对精筛，继续在 `reviews/<年份>/<用户名>.json` 中逐篇交付 `include`、`exclude`、`pending` 或 `unreviewed`。在刊会核验表中继续维护负责人和来源结论。原始论文字段及正式核验证据应按团队既有交付规范保留。
 
