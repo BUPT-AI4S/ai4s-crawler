@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-15T11:11:22.604594+00:00",
-  "commit": "bf6a5f4933c70d90441714ca8eaf3f8554512e0a",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/bf6a5f4933c70d90441714ca8eaf3f8554512e0a/",
+  "generated_at": "2026-11-15T11:24:12.706501+00:00",
+  "commit": "12f949946103c7b9acc53c8949a76184b15280d6",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/12f949946103c7b9acc53c8949a76184b15280d6/",
   "years": [
     {
       "year": 2024,
@@ -405,28 +405,33 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列2条，转纳入0、转排除0。累计纳入4、排除124、待定37、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 179,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2542-5196&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2542-5196&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-ef70b31a3b/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余24条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入4、排除161、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.thelancet.com/journals/lanplh/home"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2542-5196&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor",
+            "https://www.thelancet.com/journals/lanplh/home",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2542-5196&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor"
           ],
           "decisions": {
             "include": 4,
-            "exclude": 124,
-            "pending": 37,
+            "exclude": 161,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余37条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -623,23 +628,19 @@
           "official_total": 342,
           "official_scope": "Publisher publication-year filter, all document types retained separately",
           "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列9条，转纳入0、转排除0。累计纳入4、排除329、待定9、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余9条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入4、排除338、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
             "https://www.nature.com/natecolevol/articles?year=2024"
           ],
           "decisions": {
             "include": 4,
-            "exclude": 329,
-            "pending": 9,
+            "exclude": 338,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "剩余9条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Blueblue1101.json",
@@ -662,23 +663,19 @@
           "official_total": 257,
           "official_scope": "Publisher publication-year filter, all document types retained separately",
           "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列1条，转纳入0、转排除0。累计纳入9、排除247、待定1、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余1条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入9、排除248、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
             "https://www.nature.com/ngeo/articles?year=2024"
           ],
           "decisions": {
             "include": 9,
-            "exclude": 247,
-            "pending": 1,
+            "exclude": 248,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "剩余1条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Blueblue1101.json",
@@ -886,28 +883,35 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列3条，转纳入0、转排除0。累计纳入1、排除134、待定4、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 171,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0169-5347&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0169-5347&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1872-8383&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-66226e45c5/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余1条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入2、排除137、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.cell.com/trends/ecology-evolution/home"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0169-5347&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://www.cell.com/trends/ecology-evolution/home",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0169-5347&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1872-8383&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
           ],
           "decisions": {
-            "include": 1,
-            "exclude": 134,
-            "pending": 4,
+            "include": 2,
+            "exclude": 137,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余4条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -1279,26 +1283,34 @@
           "snapshot_candidates": 3,
           "candidates": 3,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 126,
+          "official_scope": "2024正式卷期年，目录全部条目用于与采集快照比较；研究与实质性综述另列，不混入在线待刊。",
           "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列0条，转纳入0、转排除0。累计纳入9、排除104、待定0、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "coverage_note": "2026-11-15官网核验与补证：官网全年目录126条，与采集DOI集合逐项一致，漏采0条；其中研究/实质性综述113条，其余按文种分列。累计纳入9、排除104、待定0、未审0。 补充审核此前个人JSON未覆盖的既有采集记录13条：纳入0、排除13、待定0；其中无摘要非研究文种仅依据官方类型排除。更新累计纳入9、排除117、待定0。",
           "evidence_urls": [
-            "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/issues"
+            "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/issues",
+            "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/10",
+            "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/8",
+            "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/12",
+            "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/6",
+            "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/11",
+            "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/2",
+            "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/4",
+            "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/3",
+            "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/1",
+            "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/9",
+            "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/5",
+            "https://www.sciencedirect.com/journal/international-journal-of-mining-science-and-technology/vol/34/issue/7"
           ],
           "decisions": {
             "include": 9,
-            "exclude": 104,
+            "exclude": 117,
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Blueblue1101.json",
@@ -1953,23 +1965,19 @@
           "official_total": 290,
           "official_scope": "Publisher publication-year filter, all document types retained separately",
           "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列13条，转纳入0、转排除1。累计纳入6、排除272、待定12、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余12条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入6、排除284、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
             "https://www.nature.com/nchembio/articles?year=2024"
           ],
           "decisions": {
             "include": 6,
-            "exclude": 272,
-            "pending": 12,
+            "exclude": 284,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "剩余12条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Blueblue1101.json",
@@ -2477,30 +2485,35 @@
           "missing_abstract": 1,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列2条，转纳入0、转排除0。累计纳入2、排除90、待定7、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 309,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2451-9294&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2451-9294&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-73ae0ea805/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余7条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入2、排除97、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2451-9294&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor",
             "https://www.sciencedirect.com/science/article/pii/S2451929424001542",
             "https://www.cell.com/chem/information-for-authors/article-types#catalysis",
-            "https://www.cell.com/chem/home"
+            "https://www.cell.com/chem/home",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2451-9294&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor"
           ],
           "decisions": {
             "include": 2,
-            "exclude": 90,
-            "pending": 7,
+            "exclude": 97,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余7条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -2517,32 +2530,39 @@
           "state": "completed",
           "papers": 364,
           "snapshot_candidates": 11,
-          "candidates": 11,
+          "candidates": 12,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列3条，转纳入0、转排除0。累计纳入13、排除64、待定3、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 364,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2590-2385&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2590-2385&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2590-2393&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-0a94e1dd0b/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余2条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入14、排除66、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.cell.com/matter/home"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2590-2385&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://www.cell.com/matter/home",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2590-2385&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2590-2393&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
           ],
           "decisions": {
-            "include": 13,
-            "exclude": 64,
-            "pending": 3,
+            "include": 14,
+            "exclude": 66,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余3条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -3137,28 +3157,35 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列1条，转纳入0、转排除0。累计纳入3、排除120、待定4、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 1198,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0926-3373&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0926-3373&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0926-3373&rows=1000&cursor=MTcxODQyMTAyMzAwMCwxMC4xMDE2JTJGai5hcGNhdGIuMjAyNC4xMjQzMDg%3D&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-2360cc9d11/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余4条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入3、排除124、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.sciencedirect.com/journal/applied-catalysis-b-environment-and-energy/issues"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0926-3373&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://www.sciencedirect.com/journal/applied-catalysis-b-environment-and-energy/issues",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0926-3373&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0926-3373&rows=1000&cursor=MTcxODQyMTAyMzAwMCwxMC4xMDE2JTJGai5hcGNhdGIuMjAyNC4xMjQzMDg%3D&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
           ],
           "decisions": {
             "include": 3,
-            "exclude": 120,
-            "pending": 4,
+            "exclude": 124,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余4条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -3702,10 +3729,26 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列0条，转纳入0、转排除0。累计纳入1、排除49、待定0、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 790,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1005-0302&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1005-0302&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1941-1162&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-b906b6f81f/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列0条，转纳入0、转排除0。累计纳入1、排除49、待定0、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。 2026-11-15负责人确认无法人工核验后，改用Crossref参考书目：按原采集器年份口径及ISSN逐项核对，参考790条、采集790条，DOI全部一致，未解决差异0。此为参考核验完成，官网数仍为null；不表示所有论文精筛完成。 替代证据跟进：本次转排除0条；当前纳入1、排除49、待定0。未以不完整摘要或排版占位文完成审核。",
           "evidence_urls": [
-            "https://www.sciencedirect.com/journal/journal-of-materials-science-and-technology/issues"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1005-0302&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://www.sciencedirect.com/journal/journal-of-materials-science-and-technology/issues",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1005-0302&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1941-1162&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
           ],
           "decisions": {
             "include": 1,
@@ -3713,14 +3756,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -4884,31 +4921,28 @@
           "state": "completed",
           "papers": 80,
           "snapshot_candidates": 4,
-          "candidates": 4,
+          "candidates": 21,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 80,
+          "official_scope": "2024正式卷期年，目录全部条目用于与采集快照比较；研究与实质性综述另列，不混入在线待刊。",
           "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列1条，转纳入0、转排除0。累计纳入6、排除5、待定1、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余8条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入16、排除64、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.sciencedirect.com/journal/etransportation/issues"
+            "https://www.sciencedirect.com/journal/etransportation/issues",
+            "https://www.sciencedirect.com/journal/etransportation/vol/22/suppl/C",
+            "https://www.sciencedirect.com/journal/etransportation/vol/20/suppl/C",
+            "https://www.sciencedirect.com/journal/etransportation/vol/19/suppl/C",
+            "https://www.sciencedirect.com/journal/etransportation/vol/21/suppl/C"
           ],
           "decisions": {
-            "include": 6,
-            "exclude": 5,
-            "pending": 1,
+            "include": 16,
+            "exclude": 64,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余1条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Blueblue1101.json",
@@ -6932,12 +6966,12 @@
           "state": "completed",
           "papers": 414,
           "snapshot_candidates": 49,
-          "candidates": 49,
+          "candidates": 50,
           "missing_abstract": 1,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 414,
+          "official_scope": "按2024在线发表年、官网全部文种统计，与采集快照同口径。已检查2023–2025年36期目录并按在线日期筛选。",
           "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列9条，转纳入1、转排除0。累计纳入118、排除199、待定8、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余6条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入119、排除206、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
             "https://link.springer.com/article/10.1007/s10462-024-10765-8",
             "https://link.springer.com/journal/10462/volumes-and-issues/57-1",
@@ -6954,21 +6988,14 @@
             "https://link.springer.com/journal/10462/volumes-and-issues/57-9"
           ],
           "decisions": {
-            "include": 118,
-            "exclude": 199,
-            "pending": 8,
+            "include": 119,
+            "exclude": 206,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网2024卷期349条与采集2024在线发表414条口径不同，全年在线发表总数仍待核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "补齐跨2023/2024/2025卷期的在线日期成员核验，再确认2024在线发表官网总数；不要把349与414的差额当漏采。",
-            "剩余8条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Blueblue1101.json",
@@ -7025,35 +7052,42 @@
           "state": "completed",
           "papers": 522,
           "snapshot_candidates": 9,
-          "candidates": 9,
+          "candidates": 10,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列5条，转纳入0、转排除0。累计纳入51、排除81、待定7、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 522,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1566-2535&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1566-2535&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1872-6305&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-f6416922ec/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余6条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入52、排除87、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1566-2535&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
             "https://doi.org/10.1016/j.inffus.2024.102540",
             "https://arxiv.org/html/2408.02075v1",
             "https://arxiv.org/abs/2408.02075",
-            "https://www.sciencedirect.com/journal/information-fusion/issues"
+            "https://www.sciencedirect.com/journal/information-fusion/issues",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1566-2535&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1872-6305&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
           ],
           "decisions": {
-            "include": 51,
-            "exclude": 81,
-            "pending": 7,
+            "include": 52,
+            "exclude": 87,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余7条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -7794,23 +7828,19 @@
           "official_total": 167,
           "official_scope": "Publisher publication-year filter, all document types retained separately",
           "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列11条，转纳入0、转排除0。累计纳入36、排除120、待定11、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余9条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入38、排除129、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
             "https://www.nature.com/natcomputsci/articles?year=2024"
           ],
           "decisions": {
-            "include": 36,
-            "exclude": 120,
-            "pending": 11,
+            "include": 38,
+            "exclude": 129,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "剩余11条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Blueblue1101.json",
@@ -7906,28 +7936,24 @@
           "state": "completed",
           "papers": 80,
           "snapshot_candidates": 7,
-          "candidates": 7,
+          "candidates": 8,
           "missing_abstract": 0,
           "official_total": 80,
           "official_scope": "Publisher publication-year filter, all document types retained separately",
           "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列8条，转纳入0、转排除0。累计纳入5、排除67、待定8、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余7条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入6、排除74、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
             "https://www.nature.com/npjscilearn/articles?year=2024"
           ],
           "decisions": {
-            "include": 5,
-            "exclude": 67,
-            "pending": 8,
+            "include": 6,
+            "exclude": 74,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "剩余8条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Blueblue1101.json",
@@ -8166,29 +8192,26 @@
           "snapshot_candidates": 1,
           "candidates": 1,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 41,
+          "official_scope": "2024正式卷期年，目录全部条目用于与采集快照比较；研究与实质性综述另列，不混入在线待刊。",
           "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列3条，转纳入0、转排除0。累计纳入11、排除26、待定3、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余3条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入11、排除30、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.sciencedirect.com/journal/advances-in-applied-energy/issues"
+            "https://www.sciencedirect.com/journal/advances-in-applied-energy/issues",
+            "https://www.sciencedirect.com/journal/advances-in-applied-energy/vol/15/suppl/C",
+            "https://www.sciencedirect.com/journal/advances-in-applied-energy/vol/13/suppl/C",
+            "https://www.sciencedirect.com/journal/advances-in-applied-energy/vol/14/suppl/C",
+            "https://www.sciencedirect.com/journal/advances-in-applied-energy/vol/16/suppl/C"
           ],
           "decisions": {
             "include": 11,
-            "exclude": 26,
-            "pending": 3,
+            "exclude": 30,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余3条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Blueblue1101.json",
@@ -8370,28 +8393,35 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列2条，转纳入0、转排除0。累计纳入20、排除103、待定3、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 798,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2405-8297&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2405-8297&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2405-8289&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-a11637a2e7/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余3条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入20、排除106、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.sciencedirect.com/journal/energy-storage-materials/issues"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2405-8297&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://www.sciencedirect.com/journal/energy-storage-materials/issues",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2405-8297&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2405-8289&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
           ],
           "decisions": {
             "include": 20,
-            "exclude": 103,
-            "pending": 3,
+            "exclude": 106,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余3条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -8484,28 +8514,33 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列1条，转纳入0、转排除0。累计纳入14、排除53、待定3、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 687,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2095-4956&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2095-4956&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-bfcb6ab02b/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余3条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入14、排除56、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.sciencedirect.com/journal/journal-of-energy-chemistry/issues"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2095-4956&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor",
+            "https://www.sciencedirect.com/journal/journal-of-energy-chemistry/issues",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2095-4956&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor"
           ],
           "decisions": {
             "include": 14,
-            "exclude": 53,
-            "pending": 3,
+            "exclude": 56,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余3条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -8526,28 +8561,35 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列3条，转纳入0、转排除0。累计纳入15、排除137、待定4、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 1248,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2211-2855&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2211-2855&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2211-2855&rows=1000&cursor=MTcyMzcyMzE3OTAwMCwxMC4xMDE2JTJGai5uYW5vZW4uMjAyNC4xMTAxMjQ%3D&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-f72e35bac7/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余4条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入15、排除141、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.sciencedirect.com/journal/nano-energy/issues"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2211-2855&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://www.sciencedirect.com/journal/nano-energy/issues",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2211-2855&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2211-2855&rows=1000&cursor=MTcyMzcyMzE3OTAwMCwxMC4xMDE2JTJGai5uYW5vZW4uMjAyNC4xMTAxMjQ%3D&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
           ],
           "decisions": {
             "include": 15,
-            "exclude": 137,
-            "pending": 4,
+            "exclude": 141,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余4条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -8568,28 +8610,35 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列21条，转纳入0、转排除0。累计纳入36、排除261、待定26、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 864,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1364-0321&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1364-0321&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1879-0690&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-32e580f9bf/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余26条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入36、排除287、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.sciencedirect.com/journal/renewable-and-sustainable-energy-reviews/issues"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1364-0321&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://www.sciencedirect.com/journal/renewable-and-sustainable-energy-reviews/issues",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1364-0321&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1879-0690&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
           ],
           "decisions": {
             "include": 36,
-            "exclude": 261,
-            "pending": 26,
+            "exclude": 287,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余26条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -8939,28 +8988,35 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列8条，转纳入0、转排除0。累计纳入6、排除97、待定24、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 462,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0924-2244&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0924-2244&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1879-3053&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-999aedec01/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余24条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入6、排除121、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.sciencedirect.com/journal/trends-in-food-science-and-technology/issues"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0924-2244&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://www.sciencedirect.com/journal/trends-in-food-science-and-technology/issues",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0924-2244&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1879-3053&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
           ],
           "decisions": {
             "include": 6,
-            "exclude": 97,
-            "pending": 24,
+            "exclude": 121,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余24条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -9553,28 +9609,35 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列20条，转纳入0、转排除0。累计纳入9、排除85、待定20、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 152,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1364-6613&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1364-6613&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1879-307X&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-d562500035/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余16条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入9、排除105、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.cell.com/trends/cognitive-sciences/home"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1364-6613&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://www.cell.com/trends/cognitive-sciences/home",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1364-6613&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1879-307X&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
           ],
           "decisions": {
             "include": 9,
-            "exclude": 85,
-            "pending": 20,
+            "exclude": 105,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余20条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -10009,23 +10072,19 @@
           "official_total": 300,
           "official_scope": "Publisher publication-year filter, all document types retained separately",
           "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列15条，转纳入0、转排除0。累计纳入23、排除262、待定15、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余15条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入23、排除277、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
             "https://www.nature.com/nathumbehav/articles?year=2024"
           ],
           "decisions": {
             "include": 23,
-            "exclude": 262,
-            "pending": 15,
+            "exclude": 277,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "剩余15条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Blueblue1101.json",
@@ -10304,24 +10363,20 @@
           "official_total": 64,
           "official_scope": "2024年出版社全年卷期全部目录条目，含更正等文种；逐DOI与当前采集集合完全一致",
           "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列8条，转纳入0、转排除3。累计纳入7、排除52、待定5、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余5条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入7、排除57、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
             "https://link.springer.com/journal/40561/volumes-and-issues/11-1",
             "https://link.springer.com/journal/40561/volumes-and-issues/11-1?page=2"
           ],
           "decisions": {
             "include": 7,
-            "exclude": 52,
-            "pending": 5,
+            "exclude": 57,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "剩余5条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Blueblue1101.json",
@@ -10911,23 +10966,19 @@
           "official_total": 329,
           "official_scope": "Publisher publication-year filter, all document types retained separately",
           "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列8条，转纳入0、转排除0。累计纳入6、排除315、待定8、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余8条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入6、排除323、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
             "https://www.nature.com/nmicrobiol/articles?year=2024"
           ],
           "decisions": {
             "include": 6,
-            "exclude": 315,
-            "pending": 8,
+            "exclude": 323,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "剩余8条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Blueblue1101.json",
@@ -10950,23 +11001,19 @@
           "official_total": 313,
           "official_scope": "Publisher publication-year filter, all document types retained separately",
           "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列28条，转纳入0、转排除0。累计纳入20、排除264、待定28、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余28条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入20、排除292、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
             "https://www.nature.com/neuro/articles?year=2024"
           ],
           "decisions": {
             "include": 20,
-            "exclude": 264,
-            "pending": 28,
+            "exclude": 292,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "剩余28条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Blueblue1101.json",
@@ -10989,23 +11036,19 @@
           "official_total": 165,
           "official_scope": "Publisher publication-year filter, all document types retained separately",
           "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列8条，转纳入0、转排除0。累计纳入9、排除148、待定8、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余8条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入9、排除156、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
             "https://www.nature.com/nprot/articles?year=2024"
           ],
           "decisions": {
             "include": 9,
-            "exclude": 148,
-            "pending": 8,
+            "exclude": 156,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "剩余8条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Blueblue1101.json",
@@ -12352,23 +12395,19 @@
           "official_total": 126,
           "official_scope": "Publisher publication-year filter, all document types retained separately",
           "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列5条，转纳入0、转排除0。累计纳入7、排除77、待定34、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余5条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入7、排除111、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
             "https://www.nature.com/celldisc/articles?year=2024"
           ],
           "decisions": {
             "include": 7,
-            "exclude": 77,
-            "pending": 34,
+            "exclude": 111,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "剩余34条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Blueblue1101.json",
@@ -12803,28 +12842,33 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列1条，转纳入0、转排除0。累计纳入0、排除134、待定28、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 171,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2470-9468&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2470-9468&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-3d73a601f6/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余28条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入0、排除162、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.science.org/journal/sciimmunol"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2470-9468&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor",
+            "https://www.science.org/journal/sciimmunol",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2470-9468&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor"
           ],
           "decisions": {
             "include": 0,
-            "exclude": 134,
-            "pending": 28,
+            "exclude": 162,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余28条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -12845,28 +12889,35 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列15条，转纳入0、转排除0。累计纳入15、排除250、待定19、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 303,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1946-6234&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1946-6234&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1946-6242&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-691bf1ca1e/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余19条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入15、排除269、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.science.org/journal/stm"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1946-6234&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://www.science.org/journal/stm",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1946-6234&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1946-6242&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
           ],
           "decisions": {
             "include": 15,
-            "exclude": 250,
-            "pending": 19,
+            "exclude": 269,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余19条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -13683,28 +13734,35 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列5条，转纳入0、转排除0。累计纳入8、排除381、待定9、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 418,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1097-2765&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1097-2765&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1097-4164&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-937d0240eb/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余5条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入8、排除390、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.cell.com/molecular-cell/home"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1097-2765&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://www.cell.com/molecular-cell/home",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1097-2765&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1097-4164&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
           ],
           "decisions": {
             "include": 8,
-            "exclude": 381,
-            "pending": 9,
+            "exclude": 390,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余9条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -13725,28 +13783,35 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列18条，转纳入0、转排除0。累计纳入11、排除311、待定19、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 346,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0896-6273&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0896-6273&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1097-4199&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-39f29a2f07/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余18条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入11、排除330、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.cell.com/neuron/home"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0896-6273&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://www.cell.com/neuron/home",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0896-6273&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1097-4199&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
           ],
           "decisions": {
             "include": 11,
-            "exclude": 311,
-            "pending": 19,
+            "exclude": 330,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余19条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -13848,28 +13913,35 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列2条，转纳入0、转排除0。累计纳入2、排除139、待定3、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 179,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0167-7799&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0167-7799&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1879-3096&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-069630e73d/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余2条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入2、排除142、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.cell.com/trends/biotechnology/home"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0167-7799&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://www.cell.com/trends/biotechnology/home",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0167-7799&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1879-3096&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
           ],
           "decisions": {
             "include": 2,
-            "exclude": 139,
-            "pending": 3,
+            "exclude": 142,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余3条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -13976,10 +14048,26 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列0条，转纳入0、转排除0。累计纳入1、排除107、待定0、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 140,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1043-2760&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1043-2760&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1879-3061&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-216eba8f80/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列0条，转纳入0、转排除0。累计纳入1、排除107、待定0、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。 2026-11-15负责人确认无法人工核验后，改用Crossref参考书目：按原采集器年份口径及ISSN逐项核对，参考140条、采集140条，DOI全部一致，未解决差异0。此为参考核验完成，官网数仍为null；不表示所有论文精筛完成。 替代证据跟进：本次转排除0条；当前纳入1、排除107、待定0。未以不完整摘要或排版占位文完成审核。",
           "evidence_urls": [
-            "https://www.cell.com/trends/endocrinology-metabolism/home"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1043-2760&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://www.cell.com/trends/endocrinology-metabolism/home",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1043-2760&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1879-3061&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
           ],
           "decisions": {
             "include": 1,
@@ -13987,14 +14075,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -14097,28 +14179,35 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列5条，转纳入0、转排除0。累计纳入1、排除137、待定5、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 179,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0966-842X&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0966-842X&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1878-4380&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-f457cf101a/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余4条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入1、排除142、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.cell.com/trends/microbiology/home"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0966-842X&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://www.cell.com/trends/microbiology/home",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0966-842X&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1878-4380&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
           ],
           "decisions": {
             "include": 1,
-            "exclude": 137,
-            "pending": 5,
+            "exclude": 142,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余5条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -14139,28 +14228,35 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列2条，转纳入0、转排除0。累计纳入1、排除111、待定2、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 156,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1471-4914&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1471-4914&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1471-499X&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-72172ba21c/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余2条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入1、排除113、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.cell.com/trends/molecular-medicine/home"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1471-4914&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://www.cell.com/trends/molecular-medicine/home",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1471-4914&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1471-499X&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
           ],
           "decisions": {
             "include": 1,
-            "exclude": 111,
-            "pending": 2,
+            "exclude": 113,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余2条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -14181,28 +14277,35 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列2条，转纳入0、转排除0。累计纳入2、排除100、待定2、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 128,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0166-2236&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0166-2236&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1878-108X&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-1a2d106b4b/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余2条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入2、排除102、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.cell.com/trends/neurosciences/home"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0166-2236&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://www.cell.com/trends/neurosciences/home",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0166-2236&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1878-108X&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
           ],
           "decisions": {
             "include": 2,
-            "exclude": 100,
-            "pending": 2,
+            "exclude": 102,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余2条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -14787,28 +14890,33 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列1条，转纳入0、转排除0。累计纳入0、排除70、待定4、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 206,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2352-3026&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2352-3026&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-b65bc153a0/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余3条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入0、排除74、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.thelancet.com/journals/lanhae/home"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2352-3026&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor",
+            "https://www.thelancet.com/journals/lanhae/home",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2352-3026&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor"
           ],
           "decisions": {
             "include": 0,
-            "exclude": 70,
-            "pending": 4,
+            "exclude": 74,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余4条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -14829,28 +14937,38 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列2条，转纳入0、转排除0。累计纳入1、排除72、待定41、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 145,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2666-7568&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2666-7568&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-1c0b582639/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余4条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入1、排除133、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.thelancet.com/journals/lanhl/home"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2666-7568&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor",
+            "https://www.thelancet.com/journals/lanhl/home",
+            "https://www.sciencedirect.com/journal/the-lancet-healthy-longevity/issues",
+            "https://www.sciencedirect.com/journal/the-lancet-healthy-longevity/vol/5/issue/10",
+            "https://www.sciencedirect.com/journal/the-lancet-healthy-longevity/vol/5/issue/12",
+            "https://www.sciencedirect.com/journal/the-lancet-healthy-longevity/vol/5/issue/9",
+            "https://www.sciencedirect.com/journal/the-lancet-healthy-longevity/vol/5/issue/11",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2666-7568&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor"
           ],
           "decisions": {
             "include": 1,
-            "exclude": 72,
-            "pending": 41,
+            "exclude": 133,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余41条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -15113,28 +15231,33 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列5条，转纳入0、转排除0。累计纳入5、排除225、待定59、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 333,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2666-7762&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2666-7762&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-c702b0c2a4/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余4条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入5、排除284、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.thelancet.com/journals/lanepe/home"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2666-7762&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor",
+            "https://www.thelancet.com/journals/lanepe/home",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2666-7762&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL%2Cauthor"
           ],
           "decisions": {
             "include": 5,
-            "exclude": 225,
-            "pending": 59,
+            "exclude": 284,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余59条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -15855,24 +15978,20 @@
           "official_total": 100,
           "official_scope": "2024年出版社全年卷期全部目录条目，含更正等文种；逐DOI与当前采集集合完全一致",
           "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列4条，转纳入0、转排除1。累计纳入2、排除81、待定3、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余3条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入2、排除84、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
             "https://link.springer.com/journal/13024/volumes-and-issues/19-1",
             "https://link.springer.com/journal/13024/volumes-and-issues/19-1?page=2"
           ],
           "decisions": {
             "include": 2,
-            "exclude": 81,
-            "pending": 3,
+            "exclude": 84,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "剩余3条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Blueblue1101.json",
@@ -16444,28 +16563,35 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列3条，转纳入0、转排除0。累计纳入14、排除190、待定60、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 527,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1542-3565&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1542-3565&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1542-7714&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-c554736351/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余59条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入14、排除250、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.sciencedirect.com/journal/clinical-gastroenterology-and-hepatology/issues"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1542-3565&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://www.sciencedirect.com/journal/clinical-gastroenterology-and-hepatology/issues",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1542-3565&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1542-7714&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
           ],
           "decisions": {
             "include": 14,
-            "exclude": 190,
-            "pending": 60,
+            "exclude": 250,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余60条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -16881,28 +17007,35 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列7条，转纳入0、转排除0。累计纳入12、排除184、待定8、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 218,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2090-1232&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2090-1232&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2090-1224&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-fd8b491e89/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余7条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入12、排除192、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://www.sciencedirect.com/journal/journal-of-advanced-research/issues"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2090-1232&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://www.sciencedirect.com/journal/journal-of-advanced-research/issues",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2090-1232&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A2090-1224&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
           ],
           "decisions": {
             "include": 12,
-            "exclude": 184,
-            "pending": 8,
+            "exclude": 192,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余8条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -17451,28 +17584,35 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列1条，转纳入0、转排除0。累计纳入0、排除42、待定1、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 65,
+            "scope": "与既有采集器一致：Crossref journal-article，发表日期检索2024年；按 published-online、published、issued、published-print 优先级取年份为2024；各登记ISSN分别查询后按DOI去重，含评论等非研究记录，并非仅研究/综述篇数。",
+            "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0031-6997&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "query_urls": [
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0031-6997&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+              "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1521-0081&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
+            ],
+            "checked_at": "2026-11-15",
+            "unresolved": 0,
+            "evidence_file": "metadata/j-6f25cc9655/2024/reference-reconciliation-Blueblue1101-20261115.json"
+          },
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余1条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入0、排除43、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
-            "https://pharmrev.aspetjournals.org/content/by/year/2024"
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0031-6997&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://pharmrev.aspetjournals.org/content/by/year/2024",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A0031-6997&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL",
+            "https://api.crossref.org/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article%2Cissn%3A1521-0081&rows=1000&offset=0&select=DOI%2Ctitle%2Ccontainer-title%2CISSN%2Ctype%2Cpublished-online%2Cpublished%2Cissued%2Cpublished-print%2Cabstract%2Cvolume%2Cissue%2Cresource%2CURL"
           ],
           "decisions": {
             "include": 0,
-            "exclude": 42,
-            "pending": 1,
+            "exclude": 43,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
-          ],
-          "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "剩余1条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/Blueblue1101.json",
             "reviews/2024/feedback/Blueblue1101.json"
@@ -17579,26 +17719,29 @@
           "snapshot_candidates": 0,
           "candidates": 0,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 53,
+          "official_scope": "2024正式卷期年，目录全部条目用于与采集快照比较；研究与实质性综述另列，不混入在线待刊。",
           "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列0条，转纳入0、转排除0。累计纳入0、排除39、待定0、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "coverage_note": "2026-11-15官网核验与补证：官网全年目录53条，与采集DOI集合逐项一致，漏采0条；其中研究/实质性综述39条，其余按文种分列。累计纳入0、排除39、待定0、未审0。 补充审核此前个人JSON未覆盖的既有采集记录14条：纳入0、排除14、待定0；其中无摘要非研究文种仅依据官方类型排除。更新累计纳入0、排除53、待定0。",
           "evidence_urls": [
-            "https://www.sciencedirect.com/journal/seminars-in-cancer-biology/issues"
+            "https://www.sciencedirect.com/journal/seminars-in-cancer-biology/issues",
+            "https://www.sciencedirect.com/journal/seminars-in-cancer-biology/vol/104-105/suppl/C",
+            "https://www.sciencedirect.com/journal/seminars-in-cancer-biology/vol/106-107/suppl/C",
+            "https://www.sciencedirect.com/journal/seminars-in-cancer-biology/vol/102-103/suppl/C",
+            "https://www.sciencedirect.com/journal/seminars-in-cancer-biology/vol/100/suppl/C",
+            "https://www.sciencedirect.com/journal/seminars-in-cancer-biology/vol/101/suppl/C",
+            "https://www.sciencedirect.com/journal/seminars-in-cancer-biology/vol/99/suppl/C",
+            "https://www.sciencedirect.com/journal/seminars-in-cancer-biology/vol/98/suppl/C"
           ],
           "decisions": {
             "include": 0,
-            "exclude": 39,
+            "exclude": 53,
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本次出版社官网目录访问返回HTTP 403，同口径总数仍无法核实。",
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "官网可访问后核验2024全年目录、文种及DOI集合；本轮按用户要求暂放访问障碍。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Blueblue1101.json",
@@ -17843,23 +17986,19 @@
           "official_total": 418,
           "official_scope": "Publisher publication-year filter, all document types retained separately",
           "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列1条，转纳入0、转排除0。累计纳入5、排除412、待定1、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余1条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入5、排除413、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
             "https://www.nature.com/nphys/articles?year=2024"
           ],
           "decisions": {
             "include": 5,
-            "exclude": 412,
-            "pending": 1,
+            "exclude": 413,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "剩余1条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Blueblue1101.json",
@@ -18652,23 +18791,19 @@
           "official_total": 579,
           "official_scope": "Main Track and PAIS formal research papers",
           "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列31条，转纳入12、转排除5。累计纳入141、排除520、待定14、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余14条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入141、排除534、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
             "https://www.ecai2024.eu/programme/accepted-papers"
           ],
           "decisions": {
             "include": 141,
-            "exclude": 520,
-            "pending": 14,
+            "exclude": 534,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "剩余14条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Blueblue1101.json",
@@ -18779,23 +18914,19 @@
           "official_total": 2716,
           "official_scope": "CVPR 2024 main proceedings only; no workshops",
           "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列78条，转纳入32、转排除9。累计纳入444、排除2232、待定40、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余40条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入444、排除2272、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。",
           "evidence_urls": [
             "https://openaccess.thecvf.com/CVPR2024?day=all"
           ],
           "decisions": {
             "include": 444,
-            "exclude": 2232,
-            "pending": 40,
+            "exclude": 2272,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "剩余40条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Blueblue1101.json",
@@ -21143,27 +21274,21 @@
           "candidates": 587,
           "missing_abstract": 0,
           "official_total": 10926,
-          "official_scope": "官方统计口径未充分核实；未知总数保留null。",
+          "official_scope": "Nature Communications官网articles目录按发表年份2024筛选，547页共10,926个唯一DOI，含全部文种。已与采集10,926个DOI逐项比较，双向差集均为0；研究/综述是否纳入AI4S由逐篇审核另行判断。",
           "reference_check": null,
-          "coverage_note": "2026-11-14第二轮待定补证：来源本次有摘要队列475条，转纳入0、转排除12。累计纳入792、排除9669、待定465、未审0。缺摘要和官网访问问题暂放；目录总数沿用前轮核验。详见Blueblue1101/2026-11-14-evidence/work-report.md。",
+          "coverage_note": "2026-11-15按负责人指示，将本来源剩余464条待定转为排除（证据不足，管理口径排除；并非新增证据证明其不相关）。逐篇保留原待定理由、既有摘要和元数据。当前纳入792、排除10134、待定0、未审0。此前官网/参考对账结论及摘要补录证据保留。 本轮补完官网2024年全部547页目录，10,926个唯一DOI与采集集合完全一致，未发现漏采或多采，原目录成员核验待办关闭。",
           "evidence_urls": [
             "https://www.nature.com/ncomms/articles?year=2024"
           ],
           "decisions": {
             "include": 792,
-            "exclude": 9669,
-            "pending": 465,
+            "exclude": 10134,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "既有官网成员核验待办未在本轮35个未知总数来源范围内，继续保留。",
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "后续按既有官网目录核对成员；本轮未重新核验已知总数来源。",
-            "剩余465条待定；仅在取得更完整摘要、明确AI方法证据或正式文种后继续，不重复同文摘要冒充补证。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Blueblue1101.json",
@@ -21544,27 +21669,6 @@
           "commits_7d": 5
         },
         {
-          "owner": "王婉婷",
-          "sources": 49,
-          "delivered": 49,
-          "official": 16,
-          "pending": 1076,
-          "open_issues": 49,
-          "status": "in_progress",
-          "last_update": {
-            "at": "2026-11-14T10:34:06-08:00",
-            "author": "starlight",
-            "subject": "王婉婷：记录本轮补证结果的GitHub与监控发布验证",
-            "area": "reviews",
-            "paths": [
-              "reviews/2024/Blueblue1101/2026-11-14-evidence/live-verification.json",
-              "reviews/2024/Blueblue1101/2026-11-14-evidence/sync-status.md",
-              "reviews/2024/Blueblue1101/2026-11-14-evidence/work-report.md"
-            ]
-          },
-          "commits_7d": 23
-        },
-        {
           "owner": "龙兆科",
           "sources": 49,
           "delivered": 47,
@@ -21656,16 +21760,38 @@
           "open_issues": 0,
           "status": "complete",
           "last_update": {
-            "at": "2026-11-15T03:07:45-08:00",
+            "at": "2026-11-15T03:22:11-08:00",
             "author": "ebo",
-            "subject": "Close Molecular Plant 2025 historical abstract-state audit",
+            "subject": "Review SCTS 2025 with official catalogue reconciliation and abstracts",
             "area": "reviews",
             "paths": [
-              "metadata/j-0d5068779d/2025/catalogue-reconciliation.json",
+              "metadata/2025/ai4s.json",
+              "metadata/j-0d7b7f9cca/2025/ai4s.json",
+              "metadata/j-0d7b7f9cca/2025/catalogue-reconciliation.json",
               "reviews/2025/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 48
+          "commits_7d": 49
+        },
+        {
+          "owner": "王婉婷",
+          "sources": 49,
+          "delivered": 49,
+          "official": 49,
+          "pending": 0,
+          "open_issues": 0,
+          "status": "complete",
+          "last_update": {
+            "at": "2026-11-15T03:15:33-08:00",
+            "author": "starlight",
+            "subject": "王婉婷2024：完成Nature Communications全年10926个DOI官网核验",
+            "area": "reviews",
+            "paths": [
+              "metadata/ncomms/2024/official-directory-Blueblue1101-20261115.json",
+              "reviews/2024/feedback/Blueblue1101.json"
+            ]
+          },
+          "commits_7d": 27
         }
       ],
       "snapshot_file": "metadata/2024/snapshot.json",
@@ -23912,30 +24038,90 @@
           "state": "abstract_incomplete",
           "papers": 297,
           "snapshot_candidates": 12,
-          "candidates": 12,
-          "missing_abstract": 2,
-          "official_total": null,
-          "official_scope": "",
+          "candidates": 22,
+          "missing_abstract": 0,
+          "official_total": 297,
+          "official_scope": "官网卷68（2025）及相邻卷69（2026）的完整目录，以正式目录单篇在线日期筛选2025；全部类型。非直接以卷期年替代在线年。",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
-          "issues": [
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
-            "AI4S候选缺少摘要：2 篇。",
-            "尚未找到逐篇审核交付。"
+          "coverage_note": "2026-11-15直接核对Springer官网卷68及69全部24个完整目录，共656条。2025卷68正式书目321条，其中24条于2024在线、297条于2025在线；2026卷69另335条均不属于2025在线年。297条2025在线DOI与原297条书目双向一致，零缺项、多余、重复，297条原生类型均由正式目录核实。原12条候选逐篇审核并补入10条确证漏筛，当前22条：21纳入、1排除、待定0、未审0。原缺摘要2条及新增缺摘要条目均同步正式原摘要；当前候选缺摘要0。ChatGPT心理画像按AI自身评测排除；视觉皮层综述和抗菌肽综述按实质综述政策纳入。未要求非候选摘要全部补齐，原abstract_incomplete快照保留，用显式核验记录标明候选审核已闭环。",
+          "evidence_urls": [
+            "https://link.springer.com/journal/11431/volumes-and-issues/68-1",
+            "https://link.springer.com/journal/11431/volumes-and-issues/68-10",
+            "https://link.springer.com/journal/11431/volumes-and-issues/68-11",
+            "https://link.springer.com/journal/11431/volumes-and-issues/68-12",
+            "https://link.springer.com/journal/11431/volumes-and-issues/68-2",
+            "https://link.springer.com/journal/11431/volumes-and-issues/68-3",
+            "https://link.springer.com/journal/11431/volumes-and-issues/68-4",
+            "https://link.springer.com/journal/11431/volumes-and-issues/68-5",
+            "https://link.springer.com/journal/11431/volumes-and-issues/68-6",
+            "https://link.springer.com/journal/11431/volumes-and-issues/68-7",
+            "https://link.springer.com/journal/11431/volumes-and-issues/68-8",
+            "https://link.springer.com/journal/11431/volumes-and-issues/68-9",
+            "https://link.springer.com/journal/11431/volumes-and-issues/69-1",
+            "https://link.springer.com/journal/11431/volumes-and-issues/69-10",
+            "https://link.springer.com/journal/11431/volumes-and-issues/69-11",
+            "https://link.springer.com/journal/11431/volumes-and-issues/69-12",
+            "https://link.springer.com/journal/11431/volumes-and-issues/69-2",
+            "https://link.springer.com/journal/11431/volumes-and-issues/69-3",
+            "https://link.springer.com/journal/11431/volumes-and-issues/69-4",
+            "https://link.springer.com/journal/11431/volumes-and-issues/69-5",
+            "https://link.springer.com/journal/11431/volumes-and-issues/69-6",
+            "https://link.springer.com/journal/11431/volumes-and-issues/69-7",
+            "https://link.springer.com/journal/11431/volumes-and-issues/69-8",
+            "https://link.springer.com/journal/11431/volumes-and-issues/69-9",
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/j-0d7b7f9cca/2025/catalogue-reconciliation.json"
           ],
+          "decisions": {
+            "include": 21,
+            "exclude": 1,
+            "pending": 0,
+            "unreviewed": 0
+          },
+          "issues": [],
           "actions": [
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
-            "提交逐篇审核结果或说明当前进度。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2025/nydiii.json",
+            "reviews/2025/feedback/nydiii.json"
+          ],
           "snapshot_at": "2026-11-09T10:51:18+08:00",
           "abstract_not_required": 0,
-          "abstract_supplement_required": 2
+          "abstract_supplement_required": 0,
+          "collection_state_resolution": {
+            "status": "resolved_for_candidate_review",
+            "original_state": "abstract_incomplete",
+            "reason": "full_catalogue_abstract_gap_candidates_complete",
+            "checked_by": "南耀笛",
+            "checked_at": "2026-11-15",
+            "evidence_urls": [
+              "https://link.springer.com/journal/11431/volumes-and-issues/68-1",
+              "https://link.springer.com/journal/11431/volumes-and-issues/68-10",
+              "https://link.springer.com/journal/11431/volumes-and-issues/68-11",
+              "https://link.springer.com/journal/11431/volumes-and-issues/68-12",
+              "https://link.springer.com/journal/11431/volumes-and-issues/68-2",
+              "https://link.springer.com/journal/11431/volumes-and-issues/68-3",
+              "https://link.springer.com/journal/11431/volumes-and-issues/68-4",
+              "https://link.springer.com/journal/11431/volumes-and-issues/68-5",
+              "https://link.springer.com/journal/11431/volumes-and-issues/68-6",
+              "https://link.springer.com/journal/11431/volumes-and-issues/68-7",
+              "https://link.springer.com/journal/11431/volumes-and-issues/68-8",
+              "https://link.springer.com/journal/11431/volumes-and-issues/68-9",
+              "https://link.springer.com/journal/11431/volumes-and-issues/69-1",
+              "https://link.springer.com/journal/11431/volumes-and-issues/69-10",
+              "https://link.springer.com/journal/11431/volumes-and-issues/69-11",
+              "https://link.springer.com/journal/11431/volumes-and-issues/69-12",
+              "https://link.springer.com/journal/11431/volumes-and-issues/69-2",
+              "https://link.springer.com/journal/11431/volumes-and-issues/69-3",
+              "https://link.springer.com/journal/11431/volumes-and-issues/69-4",
+              "https://link.springer.com/journal/11431/volumes-and-issues/69-5",
+              "https://link.springer.com/journal/11431/volumes-and-issues/69-6",
+              "https://link.springer.com/journal/11431/volumes-and-issues/69-7",
+              "https://link.springer.com/journal/11431/volumes-and-issues/69-8",
+              "https://link.springer.com/journal/11431/volumes-and-issues/69-9"
+            ],
+            "note": "保留原始全量摘要历史状态；当前22条候选已审结、待补摘要0，不要求补齐其他非候选摘要。"
+          }
         },
         {
           "code": "j-0f6b15d93b",
@@ -36523,17 +36709,16 @@
           "open_issues": 49,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-14T10:34:06-08:00",
+            "at": "2026-11-15T03:15:33-08:00",
             "author": "starlight",
-            "subject": "王婉婷：记录本轮补证结果的GitHub与监控发布验证",
+            "subject": "王婉婷2024：完成Nature Communications全年10926个DOI官网核验",
             "area": "reviews",
             "paths": [
-              "reviews/2024/Blueblue1101/2026-11-14-evidence/live-verification.json",
-              "reviews/2024/Blueblue1101/2026-11-14-evidence/sync-status.md",
-              "reviews/2024/Blueblue1101/2026-11-14-evidence/work-report.md"
+              "metadata/ncomms/2024/official-directory-Blueblue1101-20261115.json",
+              "reviews/2024/feedback/Blueblue1101.json"
             ]
           },
-          "commits_7d": 23
+          "commits_7d": 27
         },
         {
           "owner": "龙兆科",
@@ -36621,22 +36806,24 @@
         {
           "owner": "南耀笛",
           "sources": 51,
-          "delivered": 4,
-          "official": 4,
+          "delivered": 5,
+          "official": 5,
           "pending": 0,
-          "open_issues": 47,
+          "open_issues": 46,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-15T03:07:45-08:00",
+            "at": "2026-11-15T03:22:11-08:00",
             "author": "ebo",
-            "subject": "Close Molecular Plant 2025 historical abstract-state audit",
+            "subject": "Review SCTS 2025 with official catalogue reconciliation and abstracts",
             "area": "reviews",
             "paths": [
-              "metadata/j-0d5068779d/2025/catalogue-reconciliation.json",
+              "metadata/2025/ai4s.json",
+              "metadata/j-0d7b7f9cca/2025/ai4s.json",
+              "metadata/j-0d7b7f9cca/2025/catalogue-reconciliation.json",
               "reviews/2025/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 48
+          "commits_7d": 49
         }
       ],
       "snapshot_file": "metadata/2025/snapshot.json",
@@ -51263,16 +51450,18 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-15T03:07:45-08:00",
+            "at": "2026-11-15T03:22:11-08:00",
             "author": "ebo",
-            "subject": "Close Molecular Plant 2025 historical abstract-state audit",
+            "subject": "Review SCTS 2025 with official catalogue reconciliation and abstracts",
             "area": "reviews",
             "paths": [
-              "metadata/j-0d5068779d/2025/catalogue-reconciliation.json",
+              "metadata/2025/ai4s.json",
+              "metadata/j-0d7b7f9cca/2025/ai4s.json",
+              "metadata/j-0d7b7f9cca/2025/catalogue-reconciliation.json",
               "reviews/2025/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 48
+          "commits_7d": 49
         },
         {
           "owner": "朱长昊",
@@ -51368,17 +51557,16 @@
           "open_issues": 49,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-14T10:34:06-08:00",
+            "at": "2026-11-15T03:15:33-08:00",
             "author": "starlight",
-            "subject": "王婉婷：记录本轮补证结果的GitHub与监控发布验证",
+            "subject": "王婉婷2024：完成Nature Communications全年10926个DOI官网核验",
             "area": "reviews",
             "paths": [
-              "reviews/2024/Blueblue1101/2026-11-14-evidence/live-verification.json",
-              "reviews/2024/Blueblue1101/2026-11-14-evidence/sync-status.md",
-              "reviews/2024/Blueblue1101/2026-11-14-evidence/work-report.md"
+              "metadata/ncomms/2024/official-directory-Blueblue1101-20261115.json",
+              "reviews/2024/feedback/Blueblue1101.json"
             ]
           },
-          "commits_7d": 23
+          "commits_7d": 27
         },
         {
           "owner": "龙兆科",
@@ -51660,53 +51848,6 @@
       "commits_7d": 5
     },
     {
-      "owner": "王婉婷",
-      "years": {
-        "2024": {
-          "sources": 49,
-          "delivered": 49,
-          "official": 16,
-          "pending": 1076,
-          "open_issues": 49,
-          "status": "in_progress"
-        },
-        "2025": {
-          "sources": 49,
-          "delivered": 0,
-          "official": 0,
-          "pending": 0,
-          "open_issues": 49,
-          "status": "not_started"
-        },
-        "2026": {
-          "sources": 49,
-          "delivered": 0,
-          "official": 0,
-          "pending": 0,
-          "open_issues": 49,
-          "status": "not_started"
-        }
-      },
-      "sources": 147,
-      "delivered": 49,
-      "not_started": [
-        "2025",
-        "2026"
-      ],
-      "last_update": {
-        "at": "2026-11-14T10:34:06-08:00",
-        "author": "starlight",
-        "subject": "王婉婷：记录本轮补证结果的GitHub与监控发布验证",
-        "area": "reviews",
-        "paths": [
-          "reviews/2024/Blueblue1101/2026-11-14-evidence/live-verification.json",
-          "reviews/2024/Blueblue1101/2026-11-14-evidence/sync-status.md",
-          "reviews/2024/Blueblue1101/2026-11-14-evidence/work-report.md"
-        ]
-      },
-      "commits_7d": 23
-    },
-    {
       "owner": "龙兆科",
       "years": {
         "2024": {
@@ -51894,6 +52035,52 @@
       "commits_7d": 12
     },
     {
+      "owner": "王婉婷",
+      "years": {
+        "2024": {
+          "sources": 49,
+          "delivered": 49,
+          "official": 49,
+          "pending": 0,
+          "open_issues": 0,
+          "status": "complete"
+        },
+        "2025": {
+          "sources": 49,
+          "delivered": 0,
+          "official": 0,
+          "pending": 0,
+          "open_issues": 49,
+          "status": "not_started"
+        },
+        "2026": {
+          "sources": 49,
+          "delivered": 0,
+          "official": 0,
+          "pending": 0,
+          "open_issues": 49,
+          "status": "not_started"
+        }
+      },
+      "sources": 147,
+      "delivered": 49,
+      "not_started": [
+        "2025",
+        "2026"
+      ],
+      "last_update": {
+        "at": "2026-11-15T03:15:33-08:00",
+        "author": "starlight",
+        "subject": "王婉婷2024：完成Nature Communications全年10926个DOI官网核验",
+        "area": "reviews",
+        "paths": [
+          "metadata/ncomms/2024/official-directory-Blueblue1101-20261115.json",
+          "reviews/2024/feedback/Blueblue1101.json"
+        ]
+      },
+      "commits_7d": 27
+    },
+    {
       "owner": "南耀笛",
       "years": {
         "2024": {
@@ -51906,10 +52093,10 @@
         },
         "2025": {
           "sources": 51,
-          "delivered": 4,
-          "official": 4,
+          "delivered": 5,
+          "official": 5,
           "pending": 0,
-          "open_issues": 47,
+          "open_issues": 46,
           "status": "in_progress"
         },
         "2026": {
@@ -51922,28 +52109,30 @@
         }
       },
       "sources": 153,
-      "delivered": 55,
+      "delivered": 56,
       "not_started": [
         "2026"
       ],
       "last_update": {
-        "at": "2026-11-15T03:07:45-08:00",
+        "at": "2026-11-15T03:22:11-08:00",
         "author": "ebo",
-        "subject": "Close Molecular Plant 2025 historical abstract-state audit",
+        "subject": "Review SCTS 2025 with official catalogue reconciliation and abstracts",
         "area": "reviews",
         "paths": [
-          "metadata/j-0d5068779d/2025/catalogue-reconciliation.json",
+          "metadata/2025/ai4s.json",
+          "metadata/j-0d7b7f9cca/2025/ai4s.json",
+          "metadata/j-0d7b7f9cca/2025/catalogue-reconciliation.json",
           "reviews/2025/feedback/nydiii.json"
         ]
       },
-      "commits_7d": 48
+      "commits_7d": 49
     }
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-15T11:11:08.022531+00:00",
+    "generated_at": "2026-11-15T11:23:54.807895+00:00",
     "history_available": true,
-    "commit": "bf6a5f4933c70d90441714ca8eaf3f8554512e0a",
-    "commits_scanned": 482
+    "commit": "12f949946103c7b9acc53c8949a76184b15280d6",
+    "commits_scanned": 489
   }
 }
