@@ -32,7 +32,7 @@
       "excluded_missing": 1
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 123,
@@ -488,7 +488,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 11,
@@ -561,7 +561,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 1,
@@ -607,25 +607,19 @@
     "year": 2024,
     "source_code": "j-454594cd31",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-    "official_total": null,
-    "official_scope": "2024 年正式卷期（卷 7）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 2 篇（本轮补入 0 篇），历史审核 2 篇：纳入 2、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器已显示年度卷号，但未取得展开后的全年卷期目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 240（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 240；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
+    "official_total": 240,
+    "official_scope": "2024 年正式卷 7 的第 1–12 期官网目录全部条目（含研究论文、综述、社论等各栏目），与本地 papers.json 全部条目同口径；学术论文数另按栏目分类，不将目录总条目冒充研究论文数。",
+    "coverage_note": "2026-11-15 使用 Computer Use 浏览 Cell Press 官网 2024 年卷 7 全部 12 期，逐项采集目录题名并与本地 240 条全量元数据按规范化题名多重集比对：官网 240、本地 240、缺项 0、重复数同样一致；逐月数量和摘要哈希见 official_directory_check_followup_20261115。该总数是目录全条目，包含非学术栏目；本轮无需补采。属于 AI4S 的现有候选已在正式目录核实出版栏目。",
     "evidence_urls": [
+      "https://www.cell.com/one-earth/issues",
       "https://www.sciencedirect.com/journal/one-earth/issues",
       "https://api.crossref.org/journals/2590-3322/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
       "https://doaj.org/api/search/articles/%28issn%3A%222590-3322%22%20OR%20issn%3A%222590-3330%22%29%20AND%20bibjson.year%3A2024?pageSize=100&page=1",
       "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ISSN%3A%222590-3322%22+OR+ISSN%3A%222590-3330%22%29+AND+%28PUB_YEAR%3A2023+OR+PUB_YEAR%3A2024+OR+PUB_YEAR%3A2025%29+AND+IN_PMC%3AY&format=json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
     ],
-    "issues": [
-      "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-      "纳入论文中仍有 2 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
-    ],
-    "next_actions": [
-      "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "abstract_summary": {
       "decision_basis": "personal_review",
       "included_total": 2,
@@ -636,11 +630,11 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 2,
-      "registration_only": 2
+      "registration_only": 0
     },
     "continuation_20261114": {
       "base_main_commit": "0b5ca89e4cbfeb89807bb84cd1db2e762ae6a274",
@@ -686,11 +680,10 @@
     "browser_directory_check_20261115": {
       "checked_on": "2026-11-15",
       "year": 2024,
-      "url": "https://www.sciencedirect.com/journal/one-earth/issues",
-      "status": "incomplete",
-      "result": "正常浏览器已显示年度卷号，但未取得展开后的全年卷期目录。",
-      "year_label": "2024 — Volume 7",
-      "official_count_verified": false
+      "url": "https://www.cell.com/one-earth/issues",
+      "status": "complete",
+      "result": "Cell Press 官网 2024 年卷 7 共 12 期逐项题名核对，目录 240 条与本地 240 条完全匹配。",
+      "official_count_verified": true
     },
     "manual_verification": {
       "status": "unavailable_confirmed_by_owner",
@@ -725,6 +718,48 @@
       "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
       "official_total_verified": false,
       "reference_check_complete": false
+    },
+    "official_directory_check_followup_20261115": {
+      "publisher": "Cell Press",
+      "archive_url": "https://www.cell.com/one-earth/issues",
+      "checked_on": "2026-11-15",
+      "year": 2024,
+      "volume": 7,
+      "issues_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "official_directory_entries_by_issue": [
+        16,
+        20,
+        19,
+        20,
+        20,
+        23,
+        22,
+        18,
+        18,
+        25,
+        21,
+        18
+      ],
+      "official_directory_entries": 240,
+      "local_directory_entries": 240,
+      "matched_entries": 240,
+      "confirmed_missing": 0,
+      "matching_method": "Unicode NFKC/lowercase/alphanumeric normalized title multiset, multiplicity retained",
+      "normalized_title_multiset_sha256": "6f7814718d058bd689da01b3b2946a137f091a3693a1b4e2774c8e264dd617a0",
+      "count_scope": "All official issue-directory entries, including scholarly and non-scholarly sections; compared with all local papers.json records for this venue."
     }
   },
   {
@@ -760,7 +795,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 8,
@@ -907,7 +942,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 7,
@@ -1028,7 +1063,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 5,
@@ -1128,7 +1163,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 6,
@@ -1199,7 +1234,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 8,
@@ -1279,7 +1314,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 1,
@@ -1360,7 +1395,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 103,
@@ -1799,7 +1834,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 13,
@@ -1881,7 +1916,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 0,
@@ -2044,7 +2079,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 6,
@@ -2151,23 +2186,19 @@
     "year": 2024,
     "source_code": "j-d2025a16cb",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-    "official_total": null,
-    "official_scope": "2024 年正式卷期（卷 49）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 0 篇（本轮补入 0 篇），历史审核 0 篇：纳入 0、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器已显示年度卷号，但未取得展开后的全年卷期目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 145（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 137；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
+    "official_total": 145,
+    "official_scope": "2024 年正式卷 49 的第 1–12 期官网目录全部条目（含研究论文、综述、社论等各栏目），与本地 papers.json 全部条目同口径；学术论文数另按栏目分类，不将目录总条目冒充研究论文数。",
+    "coverage_note": "2026-11-15 使用 Computer Use 浏览 Cell Press 官网 2024 年卷 49 全部 12 期，逐项采集目录题名并与本地 145 条全量元数据按规范化题名多重集比对：官网 145、本地 145、缺项 0、重复数同样一致；逐月数量和摘要哈希见 official_directory_check_followup_20261115。该总数是目录全条目，包含非学术栏目；本轮无需补采。属于 AI4S 的现有候选已在正式目录核实出版栏目。",
     "evidence_urls": [
+      "https://www.cell.com/trends/biochemical-sciences/issues",
       "https://www.sciencedirect.com/journal/trends-in-biochemical-sciences/issues",
       "https://api.crossref.org/journals/0968-0004/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
       "https://doaj.org/api/search/articles/%28issn%3A%220968-0004%22%20OR%20issn%3A%221362-4326%22%29%20AND%20bibjson.year%3A2024?pageSize=100&page=1",
       "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ISSN%3A%220968-0004%22+OR+ISSN%3A%221362-4326%22%29+AND+%28PUB_YEAR%3A2023+OR+PUB_YEAR%3A2024+OR+PUB_YEAR%3A2025%29+AND+IN_PMC%3AY&format=json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
     ],
-    "issues": [
-      "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
-    ],
-    "next_actions": [
-      "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "abstract_summary": {
       "decision_basis": "personal_review",
       "included_total": 0,
@@ -2178,7 +2209,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 0,
@@ -2228,11 +2259,10 @@
     "browser_directory_check_20261115": {
       "checked_on": "2026-11-15",
       "year": 2024,
-      "url": "https://www.sciencedirect.com/journal/trends-in-biochemical-sciences/issues",
-      "status": "incomplete",
-      "result": "正常浏览器已显示年度卷号，但未取得展开后的全年卷期目录。",
-      "year_label": "2024 — Volume 49",
-      "official_count_verified": false
+      "url": "https://www.cell.com/trends/biochemical-sciences/issues",
+      "status": "complete",
+      "result": "Cell Press 官网 2024 年卷 49 共 12 期逐项题名核对，目录 145 条与本地 145 条完全匹配。",
+      "official_count_verified": true
     },
     "manual_verification": {
       "status": "unavailable_confirmed_by_owner",
@@ -2267,6 +2297,48 @@
       "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
       "official_total_verified": false,
       "reference_check_complete": false
+    },
+    "official_directory_check_followup_20261115": {
+      "publisher": "Cell Press",
+      "archive_url": "https://www.cell.com/trends/biochemical-sciences/issues",
+      "checked_on": "2026-11-15",
+      "year": 2024,
+      "volume": 49,
+      "issues_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "official_directory_entries_by_issue": [
+        11,
+        13,
+        12,
+        12,
+        12,
+        12,
+        13,
+        13,
+        13,
+        10,
+        12,
+        12
+      ],
+      "official_directory_entries": 145,
+      "local_directory_entries": 145,
+      "matched_entries": 145,
+      "confirmed_missing": 0,
+      "matching_method": "Unicode NFKC/lowercase/alphanumeric normalized title multiset, multiplicity retained",
+      "normalized_title_multiset_sha256": "c75f0a64892da2ae9acd1dc61353580c776b0fe50a876ef98f892c902cf13deb",
+      "count_scope": "All official issue-directory entries, including scholarly and non-scholarly sections; compared with all local papers.json records for this venue."
     }
   },
   {
@@ -2301,7 +2373,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 14,
@@ -2463,7 +2535,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 7,
@@ -2586,7 +2658,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 8,
@@ -2749,25 +2821,19 @@
     "year": 2024,
     "source_code": "j-f1684575f9",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-    "official_total": null,
-    "official_scope": "2024 年正式卷期（卷 5）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 40 篇（本轮补入 0 篇），历史审核 40 篇：纳入 40、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器显示 ScienceDirect 内容访问错误；未取得全年目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 428（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 429；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
+    "official_total": 428,
+    "official_scope": "2024 年正式卷 5 的第 1–12 期官网目录全部条目（含研究论文、综述、社论等各栏目），与本地 papers.json 全部条目同口径；学术论文数另按栏目分类，不将目录总条目冒充研究论文数。",
+    "coverage_note": "2026-11-15 使用 Computer Use 浏览 Cell Press 官网 2024 年卷 5 全部 12 期，逐项采集目录题名并与本地 428 条全量元数据按规范化题名多重集比对：官网 428、本地 428、缺项 0、重复数同样一致；逐月数量和摘要哈希见 official_directory_check_followup_20261115。该总数是目录全条目，包含非学术栏目；本轮无需补采。属于 AI4S 的现有候选已在正式目录核实出版栏目。",
     "evidence_urls": [
+      "https://www.cell.com/cell-reports-medicine/issues",
       "https://www.sciencedirect.com/journal/cell-reports-medicine/issues",
       "https://api.crossref.org/journals/2666-3791/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
       "https://doaj.org/api/search/articles/%28issn%3A%222666-3791%22%29%20AND%20bibjson.year%3A2024?pageSize=50&page=1",
       "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ISSN%3A%222666-3791%22%29+AND+%28PUB_YEAR%3A2023+OR+PUB_YEAR%3A2024+OR+PUB_YEAR%3A2025%29+AND+IN_PMC%3AY&format=json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
     ],
-    "issues": [
-      "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-      "纳入论文中仍有 36 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
-    ],
-    "next_actions": [
-      "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "abstract_summary": {
       "decision_basis": "personal_review",
       "included_total": 40,
@@ -2778,11 +2844,11 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 40,
-      "registration_only": 36
+      "registration_only": 0
     },
     "continuation_20261114": {
       "base_main_commit": "0b5ca89e4cbfeb89807bb84cd1db2e762ae6a274",
@@ -2828,11 +2894,10 @@
     "browser_directory_check_20261115": {
       "checked_on": "2026-11-15",
       "year": 2024,
-      "url": "https://www.sciencedirect.com/journal/cell-reports-medicine/issues",
-      "status": "blocked",
-      "result": "正常浏览器显示 ScienceDirect 内容访问错误；未取得全年目录。",
-      "year_label": null,
-      "official_count_verified": false
+      "url": "https://www.cell.com/cell-reports-medicine/issues",
+      "status": "complete",
+      "result": "Cell Press 官网 2024 年卷 5 共 12 期逐项题名核对，目录 428 条与本地 428 条完全匹配。",
+      "official_count_verified": true
     },
     "manual_verification": {
       "status": "unavailable_confirmed_by_owner",
@@ -2867,6 +2932,48 @@
       "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
       "official_total_verified": false,
       "reference_check_complete": false
+    },
+    "official_directory_check_followup_20261115": {
+      "publisher": "Cell Press",
+      "archive_url": "https://www.cell.com/cell-reports-medicine/issues",
+      "checked_on": "2026-11-15",
+      "year": 2024,
+      "volume": 5,
+      "issues_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "official_directory_entries_by_issue": [
+        29,
+        43,
+        38,
+        26,
+        55,
+        35,
+        31,
+        28,
+        43,
+        37,
+        34,
+        29
+      ],
+      "official_directory_entries": 428,
+      "local_directory_entries": 428,
+      "matched_entries": 428,
+      "confirmed_missing": 0,
+      "matching_method": "Unicode NFKC/lowercase/alphanumeric normalized title multiset, multiplicity retained",
+      "normalized_title_multiset_sha256": "87c1c6e5d330a5095add05c3f4dfb823079ade462a0acf5f0a408b4a367d181c",
+      "count_scope": "All official issue-directory entries, including scholarly and non-scholarly sections; compared with all local papers.json records for this venue."
     }
   },
   {
@@ -2900,7 +3007,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 3,
@@ -3027,7 +3134,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 15,
@@ -3192,7 +3299,7 @@
       "excluded_missing": 1
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 243,
@@ -3312,7 +3419,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 1,
@@ -3398,7 +3505,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 1,
@@ -3524,7 +3631,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 0,
@@ -3679,7 +3786,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 2,
@@ -3725,25 +3832,19 @@
     "year": 2024,
     "source_code": "j-a8a43dcc50",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-    "official_total": null,
-    "official_scope": "2024 年正式卷期（卷 5）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 5 篇（本轮补入 0 篇），历史审核 5 篇：纳入 4、排除 0、待定 1。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 219（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 210；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。 本次续审依据原论文方法与实验，解决待定 1 篇；现纳入 5、排除 0、待定 0。",
+    "official_total": 219,
+    "official_scope": "2024 年正式卷 5 的第 1–12 期官网目录全部条目（含研究论文、综述、社论等各栏目），与本地 papers.json 全部条目同口径；学术论文数另按栏目分类，不将目录总条目冒充研究论文数。",
+    "coverage_note": "2026-11-15 使用 Computer Use 浏览 Cell Press 官网 2024 年卷 5 全部 12 期，逐项采集目录题名并与本地 219 条全量元数据按规范化题名多重集比对：官网 219、本地 219、缺项 0、重复数同样一致；逐月数量和摘要哈希见 official_directory_check_followup_20261115。该总数是目录全条目，包含非学术栏目；本轮无需补采。属于 AI4S 的现有候选已在正式目录核实出版栏目。 其中 BreedingAIDB 官网列为 Correspondence，已按正式全文的数据资源与方法实验内容复核后纳入。",
     "evidence_urls": [
+      "https://www.cell.com/plant-communications/issues",
       "https://www.sciencedirect.com/journal/plant-communications/issues",
       "https://api.crossref.org/journals/2590-3462/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
       "https://doaj.org/api/search/articles/%28issn%3A%222590-3462%22%29%20AND%20bibjson.year%3A2024?pageSize=100&page=1",
       "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ISSN%3A%222590-3462%22%29+AND+%28PUB_YEAR%3A2023+OR+PUB_YEAR%3A2024+OR+PUB_YEAR%3A2025%29+AND+IN_PMC%3AY&format=json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
     ],
-    "issues": [
-      "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-      "纳入论文中仍有 3 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
-    ],
-    "next_actions": [
-      "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "abstract_summary": {
       "decision_basis": "personal_review",
       "included_total": 5,
@@ -3754,11 +3855,11 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 5,
-      "registration_only": 3
+      "registration_only": 0
     },
     "continuation_20261114": {
       "base_main_commit": "0b5ca89e4cbfeb89807bb84cd1db2e762ae6a274",
@@ -3861,6 +3962,56 @@
         "exclude": 0,
         "pending": 0
       }
+    },
+    "official_directory_check_followup_20261115": {
+      "publisher": "Cell Press",
+      "archive_url": "https://www.cell.com/plant-communications/issues",
+      "checked_on": "2026-11-15",
+      "year": 2024,
+      "volume": 5,
+      "issues_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "official_directory_entries_by_issue": [
+        23,
+        22,
+        19,
+        21,
+        21,
+        19,
+        20,
+        15,
+        16,
+        15,
+        14,
+        14
+      ],
+      "official_directory_entries": 219,
+      "local_directory_entries": 219,
+      "matched_entries": 219,
+      "confirmed_missing": 0,
+      "matching_method": "Unicode NFKC/lowercase/alphanumeric normalized title multiset, multiplicity retained",
+      "normalized_title_multiset_sha256": "9b0737919b41cab440d96528439fb3fd301628bc513d4b73c61d040bfecd1242",
+      "count_scope": "All official issue-directory entries, including scholarly and non-scholarly sections; compared with all local papers.json records for this venue."
+    },
+    "browser_directory_check_20261115": {
+      "checked_on": "2026-11-15",
+      "year": 2024,
+      "url": "https://www.cell.com/plant-communications/issues",
+      "status": "complete",
+      "result": "Cell Press 官网 2024 年卷 5 共 12 期逐项题名核对，目录 219 条与本地 219 条完全匹配。",
+      "official_count_verified": true
     }
   },
   {
@@ -3896,7 +4047,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 221,
@@ -5085,7 +5236,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 1,
@@ -5247,7 +5398,7 @@
       "excluded_missing": 1
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 3,
@@ -5328,7 +5479,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 0,
@@ -5400,7 +5551,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 5,
@@ -5506,7 +5657,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 1,
@@ -5621,7 +5772,7 @@
       "excluded_missing": 1
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 16,
@@ -5784,7 +5935,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 0,
@@ -5906,25 +6057,19 @@
     "year": 2024,
     "source_code": "j-97a3b8d4d3",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-    "official_total": null,
-    "official_scope": "2024 年正式卷期（卷 5）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 3 篇（本轮补入 0 篇），历史审核 3 篇：纳入 3、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 155（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 195；两者均不是官网 2024 正式卷期学术正文数。 差异超过 10%，逐 DOI 检查索引中本地缺项，其卷号均不在目标 2024 卷期。",
+    "official_total": 155,
+    "official_scope": "2024 年正式卷 5 的第 1–12 期官网目录全部条目（含研究论文、综述、社论等各栏目），与本地 papers.json 全部条目同口径；学术论文数另按栏目分类，不将目录总条目冒充研究论文数。",
+    "coverage_note": "2026-11-15 使用 Computer Use 浏览 Cell Press 官网 2024 年卷 5 全部 12 期，逐项采集目录题名并与本地 155 条全量元数据按规范化题名多重集比对：官网 155、本地 155、缺项 0、重复数同样一致；逐月数量和摘要哈希见 official_directory_check_followup_20261115。该总数是目录全条目，包含非学术栏目；本轮无需补采。属于 AI4S 的现有候选已在正式目录核实出版栏目。",
     "evidence_urls": [
+      "https://www.cell.com/med/issues",
       "https://www.sciencedirect.com/journal/med/issues",
       "https://api.crossref.org/journals/2666-6340/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
       "https://doaj.org/api/search/articles/%28issn%3A%222666-6340%22%20OR%20issn%3A%222666-6359%22%29%20AND%20bibjson.year%3A2024?pageSize=100&page=1",
       "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ISSN%3A%222666-6340%22+OR+ISSN%3A%222666-6359%22%29+AND+%28PUB_YEAR%3A2023+OR+PUB_YEAR%3A2024+OR+PUB_YEAR%3A2025%29+AND+IN_PMC%3AY&format=json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
     ],
-    "issues": [
-      "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-      "纳入论文中仍有 3 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-      "替代索引在线年计数差异超过 10%，已核的索引独有 DOI 均在目标卷号之外；正式卷期全年目录仍待核。"
-    ],
-    "next_actions": [
-      "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-      "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "abstract_summary": {
       "decision_basis": "personal_review",
       "included_total": 3,
@@ -5935,11 +6080,11 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 3,
-      "registration_only": 3
+      "registration_only": 0
     },
     "continuation_20261114": {
       "base_main_commit": "0b5ca89e4cbfeb89807bb84cd1db2e762ae6a274",
@@ -6017,6 +6162,56 @@
       "assessment": "独立索引年度计数差异超过 10%；已逐 DOI 查看索引中本地未收录的 2024 在线年记录，均为目标正式卷期之外，未确认本轮应补的漏采。其余差额含索引收录、类型和跨年口径差异。",
       "official_total_verified": false,
       "reference_check_complete": false
+    },
+    "official_directory_check_followup_20261115": {
+      "publisher": "Cell Press",
+      "archive_url": "https://www.cell.com/med/issues",
+      "checked_on": "2026-11-15",
+      "year": 2024,
+      "volume": 5,
+      "issues_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "official_directory_entries_by_issue": [
+        9,
+        10,
+        11,
+        12,
+        11,
+        15,
+        14,
+        16,
+        16,
+        15,
+        13,
+        13
+      ],
+      "official_directory_entries": 155,
+      "local_directory_entries": 155,
+      "matched_entries": 155,
+      "confirmed_missing": 0,
+      "matching_method": "Unicode NFKC/lowercase/alphanumeric normalized title multiset, multiplicity retained",
+      "normalized_title_multiset_sha256": "644feb49ddc404a1f0c283c7951b08ccc460edeac39437c1f8d3eba4a052963d",
+      "count_scope": "All official issue-directory entries, including scholarly and non-scholarly sections; compared with all local papers.json records for this venue."
+    },
+    "browser_directory_check_20261115": {
+      "checked_on": "2026-11-15",
+      "year": 2024,
+      "url": "https://www.cell.com/med/issues",
+      "status": "complete",
+      "result": "Cell Press 官网 2024 年卷 5 共 12 期逐项题名核对，目录 155 条与本地 155 条完全匹配。",
+      "official_count_verified": true
     }
   },
   {
@@ -6052,7 +6247,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 108,
@@ -6430,7 +6625,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 2,
@@ -6543,7 +6738,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 160,
@@ -6592,23 +6787,19 @@
     "year": 2024,
     "source_code": "j-7c4dcf6bad",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-    "official_total": null,
-    "official_scope": "2024 年正式卷期（卷 45）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
-    "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 0 篇（本轮补入 0 篇），历史审核 0 篇：纳入 0、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 139（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 135；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
+    "official_total": 139,
+    "official_scope": "2024 年正式卷 45 的第 1–12 期官网目录全部条目（含研究论文、综述、社论等各栏目），与本地 papers.json 全部条目同口径；学术论文数另按栏目分类，不将目录总条目冒充研究论文数。",
+    "coverage_note": "2026-11-15 使用 Computer Use 浏览 Cell Press 官网 2024 年卷 45 全部 12 期，逐项采集目录题名并与本地 139 条全量元数据按规范化题名多重集比对：官网 139、本地 139、缺项 0、重复数同样一致；逐月数量和摘要哈希见 official_directory_check_followup_20261115。该总数是目录全条目，包含非学术栏目；本轮无需补采。属于 AI4S 的现有候选已在正式目录核实出版栏目。",
     "evidence_urls": [
+      "https://www.cell.com/trends/immunology/issues",
       "https://www.sciencedirect.com/journal/trends-in-immunology/issues",
       "https://api.crossref.org/journals/1471-4906/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
       "https://doaj.org/api/search/articles/%28issn%3A%221471-4906%22%20OR%20issn%3A%221471-4981%22%29%20AND%20bibjson.year%3A2024?pageSize=100&page=1",
       "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ISSN%3A%221471-4906%22+OR+ISSN%3A%221471-4981%22%29+AND+%28PUB_YEAR%3A2023+OR+PUB_YEAR%3A2024+OR+PUB_YEAR%3A2025%29+AND+IN_PMC%3AY&format=json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
     ],
-    "issues": [
-      "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-      "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。"
-    ],
-    "next_actions": [
-      "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "abstract_summary": {
       "decision_basis": "personal_review",
       "included_total": 0,
@@ -6619,7 +6810,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 0,
@@ -6699,6 +6890,56 @@
       "assessment": "独立索引计数差异不超过 10%；按用户阈值视作基本完整，但正式卷期官网数量仍未核实。",
       "official_total_verified": false,
       "reference_check_complete": false
+    },
+    "official_directory_check_followup_20261115": {
+      "publisher": "Cell Press",
+      "archive_url": "https://www.cell.com/trends/immunology/issues",
+      "checked_on": "2026-11-15",
+      "year": 2024,
+      "volume": 45,
+      "issues_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "official_directory_entries_by_issue": [
+        9,
+        11,
+        9,
+        12,
+        14,
+        12,
+        9,
+        11,
+        8,
+        19,
+        8,
+        17
+      ],
+      "official_directory_entries": 139,
+      "local_directory_entries": 139,
+      "matched_entries": 139,
+      "confirmed_missing": 0,
+      "matching_method": "Unicode NFKC/lowercase/alphanumeric normalized title multiset, multiplicity retained",
+      "normalized_title_multiset_sha256": "04bb169a6468955ed0a92ed7a98f3175cec734bc963c14b0f3d12499ac0b70ad",
+      "count_scope": "All official issue-directory entries, including scholarly and non-scholarly sections; compared with all local papers.json records for this venue."
+    },
+    "browser_directory_check_20261115": {
+      "checked_on": "2026-11-15",
+      "year": 2024,
+      "url": "https://www.cell.com/trends/immunology/issues",
+      "status": "complete",
+      "result": "Cell Press 官网 2024 年卷 45 共 12 期逐项题名核对，目录 139 条与本地 139 条完全匹配。",
+      "official_count_verified": true
     }
   },
   {
@@ -6728,7 +6969,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 3,
@@ -6797,7 +7038,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 6,
@@ -6914,7 +7155,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 147,
@@ -10226,7 +10467,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 2,
@@ -10314,7 +10555,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 1,
@@ -10427,7 +10668,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 0,
@@ -10536,7 +10777,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [
       {
         "id": "https://dblp.org/rec/conf/ijcai/0001C0S24",
@@ -10686,7 +10927,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 18,
@@ -10763,7 +11004,7 @@
       "excluded_missing": 0
     },
     "missing_abstract_papers": [],
-    "candidate_file_sha256": "c7e85ae6cb6394de8e3f4e88119a22151ebf7f857c9dc15d5970ceb70f35764f",
+    "candidate_file_sha256": "500e7d03fe75980b8eb9ca12d462bb014deb514f7f8795606fa3626f85f8b451",
     "review_conflicts": [],
     "article_type_summary": {
       "included_total": 374,
