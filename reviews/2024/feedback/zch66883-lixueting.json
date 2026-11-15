@@ -6,20 +6,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付257条：纳入238、排除19、待定0；全量台账2893条。候选109条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付257条：纳入238、排除19、待定0；全量台账2893条。候选109条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记2893条、台账2893条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/2589-0042/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 238,
       "exclude": 19,
@@ -46,7 +44,7 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
+    "latest_main_checked": "547a32bc",
     "pending_detail_file": null,
     "previous_feedback": {
       "year": 2024,
@@ -108,6 +106,15 @@
           "exclude": 19
         }
       }
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 2893,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/2589-0042/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -116,20 +123,22 @@
     "owner": "李雪婷",
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-    "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
+    "official_total": 4493,
+    "official_scope": "NeurIPS 2024 正式论文集：主会4034篇，Datasets and Benchmarks 459篇。",
     "coverage_note": "个人交付1579条：纳入625、排除954、待定0；全量台账4494条。候选684条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://proceedings.neurips.cc/paper_files/paper/2024",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-conference-coverage-20261115.json"
     ],
     "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
+      "官网正式论文集4493篇（主会4034、Datasets and Benchmarks 459）；台账原主会4035加补录459共4494，多出的原主会1条尚未定位。原始关键词候选684个题名均在官网目录。"
     ],
     "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
+      "读取Git LFS保存的2024年原始全量元数据，对原主会4035个题名与官网4034篇逐条比对，定位多出1条并保留排除轨迹。"
     ],
     "own_review_counts": {
       "include": 625,
@@ -196,20 +205,20 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付224条：纳入5、排除219、待定0；全量台账6779条。候选7条、空摘要6条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref2024登记已用游标分页逐DOI核对。",
+    "coverage_note": "个人交付224条：纳入5、排除219、待定0；全量台账6779条。候选7条、空摘要6条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15改用Crossref游标分页重核：6779条，与全量台账逐DOI一致，差集0。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/0735-1097/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI&cursor=%2A",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-cursor-recheck-20261115.json"
     ],
     "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。",
       "候选文件仍有6条空摘要，均为已排除的会议摘要记录；已同步文献类型，未删除记录。"
     ],
     "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。",
       "若后续仍需修补这6条已排除会议摘要的元数据，按DOI获取官方摘要；不影响正式纳入论文的摘要完整性。"
     ],
     "own_review_counts": {
@@ -382,6 +391,15 @@
         "batch_evidence_limited_exclusions": 6
       },
       "batch_evidence_limited_exclusions": 0
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 6779,
+      "scope": "2024-01-01至2024-12-31出版日期登记；游标分页逐DOI与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/0735-1097/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI&cursor=%2A",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -391,20 +409,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账126条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref2024原始采集范围逐DOI核验完成。",
+    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账126条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15按Crossref2024登记逐DOI核对原始采集123条，双方差集0；额外3条均已排除，在线/卷期年另列证据。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/2662-138X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossyear-exclusions-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 0,
       "exclude": 0,
@@ -432,7 +448,16 @@
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
     "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
-    "pending_detail_file": null
+    "pending_detail_file": null,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 123,
+      "scope": "该刊2024 primary publication date登记与原始采集同口径，逐DOI一致；额外补录的跨年记录已排除并逐篇记证",
+      "query_url": "https://api.crossref.org/journals/2662-138X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -441,20 +466,19 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账171条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref在线与印刷2024登记已逐DOI核对。",
+    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账171条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15交叉核对在线年及纸质卷期年：去重171条，与台账逐DOI一致，双方差集0。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/1474-1733/works?filter=from-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://api.crossref.org/journals/1474-1733/works?filter=from-online-pub-date%3A2024-01-01%2Cuntil-online-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-online-print-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 0,
       "exclude": 0,
@@ -482,7 +506,16 @@
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
     "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
-    "pending_detail_file": null
+    "pending_detail_file": null,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 171,
+      "scope": "2024在线发表或2024纸质卷期登记DOI的去重并集；与本来源全量台账逐DOI一致",
+      "query_url": "https://api.crossref.org/journals/1474-1733/works?filter=from-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -491,20 +524,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付137条：纳入0、排除137、待定0；全量台账346条。候选0条、空摘要0条。本轮本来源核对36条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付137条：纳入0、排除137、待定0；全量台账346条。候选0条、空摘要0条。本轮本来源核对36条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记346条、台账346条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/1474-4422/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 0,
       "exclude": 137,
@@ -531,7 +562,7 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
+    "latest_main_checked": "547a32bc",
     "pending_detail_file": null,
     "previous_feedback": {
       "year": 2024,
@@ -706,6 +737,15 @@
         "batch_evidence_limited_exclusions": 0
       },
       "batch_evidence_limited_exclusions": 0
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 346,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/1474-4422/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -715,20 +755,19 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付1条：纳入0、排除1、待定0；全量台账167条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref在线与印刷2024登记已逐DOI核对。",
+    "coverage_note": "个人交付1条：纳入0、排除1、待定0；全量台账167条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15交叉核对在线年及纸质卷期年：去重167条，与台账逐DOI一致，双方差集0。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/1759-5029/works?filter=from-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://api.crossref.org/journals/1759-5029/works?filter=from-online-pub-date%3A2024-01-01%2Cuntil-online-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-online-print-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 0,
       "exclude": 1,
@@ -756,7 +795,16 @@
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
     "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
-    "pending_detail_file": null
+    "pending_detail_file": null,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 167,
+      "scope": "2024在线发表或2024纸质卷期登记DOI的去重并集；与本来源全量台账逐DOI一致",
+      "query_url": "https://api.crossref.org/journals/1759-5029/works?filter=from-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -765,20 +813,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付73条：纳入1、排除72、待定0；全量台账268条。候选0条、空摘要0条。本轮本来源核对13条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付73条：纳入1、排除72、待定0；全量台账268条。候选0条、空摘要0条。本轮本来源核对13条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记268条、台账268条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/2468-1253/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 1,
       "exclude": 72,
@@ -805,7 +851,7 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
+    "latest_main_checked": "547a32bc",
     "pending_detail_file": null,
     "previous_feedback": {
       "year": 2024,
@@ -987,6 +1033,15 @@
         "batch_evidence_limited_exclusions": 0
       },
       "batch_evidence_limited_exclusions": 0
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 268,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/2468-1253/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -996,20 +1051,19 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付1条：纳入1、排除0、待定0；全量台账145条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref在线与印刷2024登记已逐DOI核对。",
+    "coverage_note": "个人交付1条：纳入1、排除0、待定0；全量台账145条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15交叉核对在线年及纸质卷期年：去重145条，与台账逐DOI一致，双方差集0。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/1759-4758/works?filter=from-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://api.crossref.org/journals/1759-4758/works?filter=from-online-pub-date%3A2024-01-01%2Cuntil-online-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-online-print-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 1,
       "exclude": 0,
@@ -1037,7 +1091,16 @@
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
     "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
-    "pending_detail_file": null
+    "pending_detail_file": null,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 145,
+      "scope": "2024在线发表或2024纸质卷期登记DOI的去重并集；与本来源全量台账逐DOI一致",
+      "query_url": "https://api.crossref.org/journals/1759-4758/works?filter=from-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -1046,20 +1109,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付50条：纳入1、排除49、待定0；全量台账202条。候选0条、空摘要0条。本轮本来源核对18条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付50条：纳入1、排除49、待定0；全量台账202条。候选0条、空摘要0条。本轮本来源核对18条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记202条、台账202条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/2213-8587/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 1,
       "exclude": 49,
@@ -1086,7 +1147,7 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
+    "latest_main_checked": "547a32bc",
     "pending_detail_file": null,
     "previous_feedback": {
       "year": 2024,
@@ -1266,6 +1327,15 @@
         "batch_evidence_limited_exclusions": 0
       },
       "batch_evidence_limited_exclusions": 0
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 202,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/2213-8587/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -1275,20 +1345,19 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付2条：纳入2、排除0、待定0；全量台账161条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref在线与印刷2024登记已逐DOI核对。",
+    "coverage_note": "个人交付2条：纳入2、排除0、待定0；全量台账161条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15交叉核对在线年及纸质卷期年：去重161条，与台账逐DOI一致，双方差集0。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/1759-4790/works?filter=from-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://api.crossref.org/journals/1759-4790/works?filter=from-online-pub-date%3A2024-01-01%2Cuntil-online-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-online-print-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 2,
       "exclude": 0,
@@ -1343,6 +1412,15 @@
       "own_review_counts": {
         "include": 2
       }
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 161,
+      "scope": "2024在线发表或2024纸质卷期登记DOI的去重并集；与本来源全量台账逐DOI一致",
+      "query_url": "https://api.crossref.org/journals/1759-4790/works?filter=from-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -1352,20 +1430,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账22条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账22条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记22条、台账22条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/2097-1710/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 0,
       "exclude": 0,
@@ -1392,8 +1468,17 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
-    "pending_detail_file": null
+    "latest_main_checked": "547a32bc",
+    "pending_detail_file": null,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 22,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/2097-1710/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -1402,20 +1487,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "本轮替代渠道复核10条：纳入0、按材料不足及负责人指示剔除10、待定0。当前个人交付纳入3、排除121、待定0。剔除不等于确认非AI4S。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "本轮替代渠道复核10条：纳入0、按材料不足及负责人指示剔除10、待定0。当前个人交付纳入3、排除121、待定0。剔除不等于确认非AI4S。 2026-11-15 Crossref逐 DOI 核对：登记439条、台账439条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-alternative11-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-alternative11-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-alternative11-review-20261115-search-log.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/0085-2538/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账仍待完成；本轮仅处理剩余11条，不代表全年无漏采。"
-    ],
-    "next_actions": [
-      "继续按coverage.csv已有参考资料核对2024年同口径全年成员和差额，完成后提交有证据的official_total或reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 3,
       "exclude": 121,
@@ -1442,7 +1525,7 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
+    "latest_main_checked": "547a32bc",
     "pending_detail_file": null,
     "previous_feedback": {
       "year": 2024,
@@ -1721,7 +1804,16 @@
       }
     },
     "update_phase": "alternative_channels_and_owner_exclusion_rule",
-    "excluded_unavailable_material_by_owner_request": 10
+    "excluded_unavailable_material_by_owner_request": 10,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 439,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/0085-2538/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -1730,20 +1822,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付2条：纳入2、排除0、待定0；全量台账133条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付2条：纳入2、排除0、待定0；全量台账133条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记133条、台账133条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/0169-409X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 2,
       "exclude": 0,
@@ -1770,7 +1860,7 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
+    "latest_main_checked": "547a32bc",
     "pending_detail_file": null,
     "previous_feedback": {
       "year": 2024,
@@ -1798,6 +1888,15 @@
       "own_review_counts": {
         "include": 2
       }
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 133,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/0169-409X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -1807,20 +1906,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付1条：纳入1、排除0、待定0；全量台账30条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付1条：纳入1、排除0、待定0；全量台账30条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记30条、台账30条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/2772-9702/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 1,
       "exclude": 0,
@@ -1847,8 +1944,17 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
-    "pending_detail_file": null
+    "latest_main_checked": "547a32bc",
+    "pending_detail_file": null,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 30,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/2772-9702/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -1857,20 +1963,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付34条：纳入0、排除34、待定0；全量台账185条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付34条：纳入0、排除34、待定0；全量台账185条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记185条、台账185条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/2161-8313/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 0,
       "exclude": 34,
@@ -1897,7 +2001,7 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
+    "latest_main_checked": "547a32bc",
     "pending_detail_file": null,
     "previous_feedback": {
       "year": 2024,
@@ -2028,6 +2132,15 @@
         "batch_evidence_limited_exclusions": 1
       },
       "batch_evidence_limited_exclusions": 0
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 185,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/2161-8313/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -2037,20 +2150,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付4条：纳入4、排除0、待定0；全量台账68条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付4条：纳入4、排除0、待定0；全量台账68条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记68条、台账68条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/2772-3976/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 4,
       "exclude": 0,
@@ -2077,8 +2188,17 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
-    "pending_detail_file": null
+    "latest_main_checked": "547a32bc",
+    "pending_detail_file": null,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 68,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/2772-3976/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -2087,20 +2207,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付1条：纳入1、排除0、待定0；全量台账184条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref2024原始采集范围逐DOI核验完成。",
+    "coverage_note": "个人交付1条：纳入1、排除0、待定0；全量台账184条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15按Crossref2024登记逐DOI核对原始采集179条，双方差集0；额外5条均已排除，在线/卷期年另列证据。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/2731-0590/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossyear-exclusions-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 1,
       "exclude": 0,
@@ -2128,7 +2246,16 @@
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
     "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
-    "pending_detail_file": null
+    "pending_detail_file": null,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 179,
+      "scope": "该刊2024 primary publication date登记与原始采集同口径，逐DOI一致；额外补录的跨年记录已排除并逐篇记证",
+      "query_url": "https://api.crossref.org/journals/2731-0590/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -2137,20 +2264,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付73条：纳入8、排除65、待定0；全量台账806条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付73条：纳入8、排除65、待定0；全量台账806条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记806条、台账806条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/0168-3659/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 8,
       "exclude": 65,
@@ -2177,7 +2302,7 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
+    "latest_main_checked": "547a32bc",
     "pending_detail_file": null,
     "previous_feedback": {
       "year": 2024,
@@ -2276,6 +2401,15 @@
         }
       },
       "batch_evidence_limited_exclusions": 0
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 806,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/0168-3659/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -2285,20 +2419,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付3条：纳入3、排除0、待定0；全量台账32条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付3条：纳入3、排除0、待定0；全量台账32条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记32条、台账32条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/2662-1363/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 3,
       "exclude": 0,
@@ -2325,8 +2457,17 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
-    "pending_detail_file": null
+    "latest_main_checked": "547a32bc",
+    "pending_detail_file": null,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 32,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/2662-1363/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -2335,20 +2476,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付4条：纳入2、排除2、待定0；全量台账310条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付4条：纳入2、排除2、待定0；全量台账310条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记310条、台账310条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/0038-0717/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 2,
       "exclude": 2,
@@ -2375,7 +2514,7 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
+    "latest_main_checked": "547a32bc",
     "pending_detail_file": null,
     "previous_feedback": {
       "year": 2024,
@@ -2404,6 +2543,15 @@
         "include": 2,
         "exclude": 2
       }
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 310,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/0038-0717/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -2413,20 +2561,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账23条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账23条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记23条、台账23条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/2214-1588/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 0,
       "exclude": 0,
@@ -2453,8 +2599,17 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
-    "pending_detail_file": null
+    "latest_main_checked": "547a32bc",
+    "pending_detail_file": null,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 23,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/2214-1588/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -2463,20 +2618,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付3条：纳入1、排除2、待定0；全量台账177条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付3条：纳入1、排除2、待定0；全量台账177条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记177条、台账177条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/0166-4972/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 1,
       "exclude": 2,
@@ -2503,7 +2656,7 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
+    "latest_main_checked": "547a32bc",
     "pending_detail_file": null,
     "previous_feedback": {
       "year": 2024,
@@ -2559,6 +2712,15 @@
           "exclude": 1
         }
       }
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 177,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/0166-4972/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -2568,20 +2730,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付4条：纳入4、排除0、待定0；全量台账29条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付4条：纳入4、排除0、待定0；全量台账29条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记29条、台账29条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/2949-7981/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 4,
       "exclude": 0,
@@ -2608,7 +2768,7 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
+    "latest_main_checked": "547a32bc",
     "pending_detail_file": null,
     "previous_feedback": {
       "year": 2024,
@@ -2636,6 +2796,15 @@
       "own_review_counts": {
         "include": 4
       }
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 29,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/2949-7981/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -2645,20 +2814,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付84条：纳入1、排除83、待定0；全量台账346条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付84条：纳入1、排除83、待定0；全量台账346条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记346条、台账346条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/2213-1779/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 1,
       "exclude": 83,
@@ -2685,7 +2852,7 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
+    "latest_main_checked": "547a32bc",
     "pending_detail_file": null,
     "previous_feedback": {
       "year": 2024,
@@ -2785,6 +2952,15 @@
         }
       },
       "batch_evidence_limited_exclusions": 0
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 346,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/2213-1779/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -2794,20 +2970,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付106条：纳入4、排除102、待定0；全量台账1365条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref2024原始采集范围逐DOI核验完成。",
+    "coverage_note": "个人交付106条：纳入4、排除102、待定0；全量台账1365条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15按Crossref2024登记逐DOI核对原始采集1364条，双方差集0；额外1条均已排除，在线/卷期年另列证据。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/0091-6749/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossyear-exclusions-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 4,
       "exclude": 102,
@@ -2936,6 +3110,15 @@
         }
       },
       "batch_evidence_limited_exclusions": 0
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 1364,
+      "scope": "该刊2024 primary publication date登记与原始采集同口径，逐DOI一致；额外补录的跨年记录已排除并逐篇记证",
+      "query_url": "https://api.crossref.org/journals/0091-6749/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -2945,20 +3128,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账9条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账9条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记9条、台账9条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/0167-5729/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 0,
       "exclude": 0,
@@ -2985,8 +3166,17 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
-    "pending_detail_file": null
+    "latest_main_checked": "547a32bc",
+    "pending_detail_file": null,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 9,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/0167-5729/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -2995,20 +3185,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付2条：纳入1、排除1、待定0；全量台账29条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付2条：纳入1、排除1、待定0；全量台账29条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记29条、台账29条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/2949-7205/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 1,
       "exclude": 1,
@@ -3035,8 +3223,17 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
-    "pending_detail_file": null
+    "latest_main_checked": "547a32bc",
+    "pending_detail_file": null,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 29,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/2949-7205/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -3045,20 +3242,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付1条：纳入0、排除1、待定0；全量台账166条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付1条：纳入0、排除1、待定0；全量台账166条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记166条、台账166条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/0304-419X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 0,
       "exclude": 1,
@@ -3085,7 +3280,7 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
+    "latest_main_checked": "547a32bc",
     "pending_detail_file": null,
     "previous_feedback": {
       "year": 2024,
@@ -3113,6 +3308,15 @@
       "own_review_counts": {
         "exclude": 1
       }
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 166,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/0304-419X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -3122,20 +3326,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账64条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账64条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记64条、台账64条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/1674-6384/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 0,
       "exclude": 0,
@@ -3162,8 +3364,17 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
-    "pending_detail_file": null
+    "latest_main_checked": "547a32bc",
+    "pending_detail_file": null,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 64,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/1674-6384/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -3172,20 +3383,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账102条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账102条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记102条、台账102条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/0272-7358/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 0,
       "exclude": 0,
@@ -3212,8 +3421,17 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
-    "pending_detail_file": null
+    "latest_main_checked": "547a32bc",
+    "pending_detail_file": null,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 102,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/0272-7358/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -3222,20 +3440,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付4条：纳入1、排除3、待定0；全量台账194条。候选0条、空摘要0条。本轮本来源核对1条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付4条：纳入1、排除3、待定0；全量台账194条。候选0条、空摘要0条。本轮本来源核对1条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记194条、台账194条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/2451-9456/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 1,
       "exclude": 3,
@@ -3262,7 +3478,7 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
+    "latest_main_checked": "547a32bc",
     "pending_detail_file": null,
     "previous_feedback": {
       "year": 2024,
@@ -3439,6 +3655,15 @@
         "batch_evidence_limited_exclusions": 0
       },
       "batch_evidence_limited_exclusions": 0
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 194,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/2451-9456/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -3448,20 +3673,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付59条：纳入1、排除58、待定0；全量台账180条。候选0条、空摘要0条。本轮本来源核对10条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付59条：纳入1、排除58、待定0；全量台账180条。候选0条、空摘要0条。本轮本来源核对10条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记180条、台账180条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/1471-4922/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 1,
       "exclude": 58,
@@ -3488,7 +3711,7 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
+    "latest_main_checked": "547a32bc",
     "pending_detail_file": null,
     "previous_feedback": {
       "year": 2024,
@@ -3665,6 +3888,15 @@
         "batch_evidence_limited_exclusions": 0
       },
       "batch_evidence_limited_exclusions": 0
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 180,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/1471-4922/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -3674,20 +3906,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账43条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账43条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记43条、台账43条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/2057-3995/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 0,
       "exclude": 0,
@@ -3714,8 +3944,17 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
-    "pending_detail_file": null
+    "latest_main_checked": "547a32bc",
+    "pending_detail_file": null,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 43,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/2057-3995/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -3724,20 +3963,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账106条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账106条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记106条、台账106条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/2397-4648/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 0,
       "exclude": 0,
@@ -3764,8 +4001,17 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
-    "pending_detail_file": null
+    "latest_main_checked": "547a32bc",
+    "pending_detail_file": null,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 106,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/2397-4648/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -3774,20 +4020,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账42条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账42条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记42条、台账42条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/2157-9024/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 0,
       "exclude": 0,
@@ -3814,8 +4058,17 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
-    "pending_detail_file": null
+    "latest_main_checked": "547a32bc",
+    "pending_detail_file": null,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 42,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/2157-9024/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -3824,20 +4077,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付22条：纳入12、排除10、待定0；全量台账461条。候选1条、空摘要0条。本轮本来源核对1条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付22条：纳入12、排除10、待定0；全量台账461条。候选1条、空摘要0条。本轮本来源核对1条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记461条、台账461条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/1359-6462/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 12,
       "exclude": 10,
@@ -3864,7 +4115,7 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
+    "latest_main_checked": "547a32bc",
     "pending_detail_file": null,
     "previous_feedback": {
       "year": 2024,
@@ -4039,6 +4290,15 @@
         "batch_evidence_limited_exclusions": 0
       },
       "batch_evidence_limited_exclusions": 0
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 461,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/1359-6462/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -4048,20 +4308,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付4条：纳入3、排除1、待定0；全量台账135条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付4条：纳入3、排除1、待定0；全量台账135条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记135条、台账135条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/0959-4752/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 3,
       "exclude": 1,
@@ -4088,7 +4346,7 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
+    "latest_main_checked": "547a32bc",
     "pending_detail_file": null,
     "previous_feedback": {
       "year": 2024,
@@ -4117,6 +4375,15 @@
         "exclude": 1,
         "include": 3
       }
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 135,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/0959-4752/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -4126,20 +4393,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账98条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账98条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记98条、台账98条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/2044-4052/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 0,
       "exclude": 0,
@@ -4166,8 +4431,17 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
-    "pending_detail_file": null
+    "latest_main_checked": "547a32bc",
+    "pending_detail_file": null,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 98,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/2044-4052/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -4176,20 +4450,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付1条：纳入1、排除0、待定0；全量台账129条。候选1条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付1条：纳入1、排除0、待定0；全量台账129条。候选1条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记129条、台账129条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/2213-6711/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 1,
       "exclude": 0,
@@ -4216,8 +4488,17 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
-    "pending_detail_file": null
+    "latest_main_checked": "547a32bc",
+    "pending_detail_file": null,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 129,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/2213-6711/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -4226,20 +4507,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付6条：纳入0、排除6、待定0；全量台账320条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref2024原始采集范围逐DOI核验完成。",
+    "coverage_note": "个人交付6条：纳入0、排除6、待定0；全量台账320条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15按Crossref2024登记逐DOI核对原始采集257条，双方差集0；额外63条均已排除，在线/卷期年另列证据。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/0307-0565/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossyear-exclusions-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 0,
       "exclude": 6,
@@ -4396,6 +4675,15 @@
         "batch_evidence_limited_exclusions": 1
       },
       "batch_evidence_limited_exclusions": 0
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 257,
+      "scope": "该刊2024 primary publication date登记与原始采集同口径，逐DOI一致；额外补录的跨年记录已排除并逐篇记证",
+      "query_url": "https://api.crossref.org/journals/0307-0565/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -4405,20 +4693,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账72条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付0条：纳入0、排除0、待定0；全量台账72条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记72条、台账72条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/2056-7944/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 0,
       "exclude": 0,
@@ -4445,8 +4731,17 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
-    "pending_detail_file": null
+    "latest_main_checked": "547a32bc",
+    "pending_detail_file": null,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 72,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/2056-7944/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -4455,20 +4750,19 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付22条：纳入1、排除21、待定0；全量台账384条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref在线与印刷2024登记已逐DOI核对。",
+    "coverage_note": "个人交付22条：纳入1、排除21、待定0；全量台账384条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15交叉核对在线年及纸质卷期年：去重384条，与台账逐DOI一致，双方差集0。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/0268-3369/works?filter=from-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://api.crossref.org/journals/0268-3369/works?filter=from-online-pub-date%3A2024-01-01%2Cuntil-online-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-online-print-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 1,
       "exclude": 21,
@@ -4594,6 +4888,15 @@
         }
       },
       "batch_evidence_limited_exclusions": 0
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 384,
+      "scope": "2024在线发表或2024纸质卷期登记DOI的去重并集；与本来源全量台账逐DOI一致",
+      "query_url": "https://api.crossref.org/journals/0268-3369/works?filter=from-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -4603,20 +4906,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付1条：纳入1、排除0、待定0；全量台账46条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付1条：纳入1、排除0、待定0；全量台账46条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记46条、台账46条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/2055-1010/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 1,
       "exclude": 0,
@@ -4643,8 +4944,17 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
-    "pending_detail_file": null
+    "latest_main_checked": "547a32bc",
+    "pending_detail_file": null,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 46,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/2055-1010/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -4653,20 +4963,19 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付16条：纳入2、排除14、待定0；全量台账346条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref在线与印刷2024登记已逐DOI核对。",
+    "coverage_note": "个人交付16条：纳入2、排除14、待定0；全量台账346条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15交叉核对在线年及纸质卷期年：去重346条，与台账逐DOI一致，双方差集0。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/1018-4813/works?filter=from-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://api.crossref.org/journals/1018-4813/works?filter=from-online-pub-date%3A2024-01-01%2Cuntil-online-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-online-print-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 2,
       "exclude": 14,
@@ -4722,6 +5031,15 @@
         "include": 2,
         "exclude": 14
       }
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 346,
+      "scope": "2024在线发表或2024纸质卷期登记DOI的去重并集；与本来源全量台账逐DOI一致",
+      "query_url": "https://api.crossref.org/journals/1018-4813/works?filter=from-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -4731,20 +5049,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付7条：纳入6、排除1、待定0；全量台账105条。候选0条、空摘要0条。本轮本来源核对1条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付7条：纳入6、排除1、待定0；全量台账105条。候选0条、空摘要0条。本轮本来源核对1条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记105条、台账105条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/1751-1577/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 6,
       "exclude": 1,
@@ -4771,7 +5087,7 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
+    "latest_main_checked": "547a32bc",
     "pending_detail_file": null,
     "previous_feedback": {
       "year": 2024,
@@ -4944,6 +5260,15 @@
         "batch_evidence_limited_exclusions": 0
       },
       "batch_evidence_limited_exclusions": 0
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 105,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/1751-1577/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -4953,20 +5278,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付1条：纳入0、排除1、待定0；全量台账98条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付1条：纳入0、排除1、待定0；全量台账98条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记98条、台账98条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/0049-089X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 0,
       "exclude": 1,
@@ -4993,8 +5316,17 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
-    "pending_detail_file": null
+    "latest_main_checked": "547a32bc",
+    "pending_detail_file": null,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 98,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/0049-089X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -5002,21 +5334,21 @@
     "owner": "李雪婷",
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-    "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
+    "official_total": 37,
+    "official_scope": "MLSys 2024正式论文集第6卷，共37篇。",
     "coverage_note": "个人交付5条：纳入1、排除4、待定0；全量台账99条。候选0条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://proceedings.mlsys.org/paper_files/paper/2024",
+      "https://dblp.org/db/conf/mlsys/mlsys2024.html",
+      "https://dblp.org/db/conf/mlsys/mlsys2025.html",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-conference-coverage-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 1,
       "exclude": 4,
@@ -5072,6 +5404,15 @@
         "include": 1,
         "exclude": 4
       }
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "MLSys正式论文集及DBLP论文集编号",
+      "total": 37,
+      "scope": "2024年正式论文集37篇与DBLP MLSys 2024的37个论文编号逐一一致；台账中37个2024编号完全相同。另61条2025编号及1条Punica重复入口已排除在2024批次。",
+      "query_url": "https://dblp.org/db/conf/mlsys/mlsys2024.html",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -5081,24 +5422,23 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "本轮替代渠道复核1条：纳入1、按材料不足及负责人指示剔除0、待定0。当前个人交付纳入557、排除36、待定0。剔除不等于确认非AI4S。",
+    "official_scope": "官网卷期总数未单独认定；Crossref2024登记已用游标分页逐DOI核对。",
+    "coverage_note": "本轮替代渠道复核1条：纳入1、按材料不足及负责人指示剔除0、待定0。当前个人交付纳入557、排除36、待定0。剔除不等于确认非AI4S。 2026-11-15改用Crossref游标分页重核：4578条，与全量台账逐DOI一致，差集0。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-alternative11-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-alternative11-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-alternative11-review-20261115-search-log.json",
       "https://www.sciencedirect.com/science/article/abs/pii/S0360544224027439",
       "https://ideas.repec.org/a/eee/energy/v308y2024ics0360544224027439.html",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/0360-5442/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI&cursor=%2A",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-cursor-recheck-20261115.json"
     ],
     "issues": [
-      "官网全年同口径总数/替代来源同口径对账仍待完成；本轮仅处理剩余11条，不代表全年无漏采。",
       "1篇正式纳入论文缺独立文字原摘要，但已取得作者大学公开全文并按负责人本轮要求纳入；未生成摘要。",
       "2026-11-15再次查找该纳入论文原摘要：出版方页面未显示文字摘要，RePEc注明无摘要，大学公开全文首页亦未见摘要；全文方法和实验的原有纳入依据保留。"
     ],
-    "next_actions": [
-      "继续按coverage.csv已有参考资料核对2024年同口径全年成员和差额，完成后提交有证据的official_total或reference_check。"
-    ],
+    "next_actions": [],
     "own_review_counts": {
       "include": 557,
       "exclude": 36,
@@ -5237,7 +5577,16 @@
       }
     },
     "update_phase": "alternative_channels_and_owner_exclusion_rule",
-    "fulltext_in_lieu_of_abstract_count": 1
+    "fulltext_in_lieu_of_abstract_count": 1,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 4578,
+      "scope": "2024-01-01至2024-12-31出版日期登记；游标分页逐DOI与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/0360-5442/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI&cursor=%2A",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
@@ -5246,20 +5595,18 @@
     "updated_at": "2026-11-15",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
-    "official_scope": "本轮为已分配2024年论文的摘要同步、指定117+2条补证与进度汇总；不新增全年同口径总量认定。",
-    "coverage_note": "个人交付317条：纳入149、排除168、待定0；全量台账782条。候选115条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
+    "official_scope": "官网卷期总数未单独认定；Crossref同口径出版登记已逐 DOI 核对。",
+    "coverage_note": "个人交付317条：纳入149、排除168、待定0；全量台账782条。候选115条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。 2026-11-15 Crossref逐 DOI 核对：登记782条、台账782条，双方差集均为0；参考核验完成。",
     "evidence_urls": [
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://api.crossref.org/journals/0893-6080/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-doi-reconciliation-20261115.json"
     ],
-    "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
-    ],
-    "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "own_review_counts": {
       "include": 149,
       "exclude": 168,
@@ -5286,7 +5633,7 @@
     "candidate_missing_abstract": 0,
     "candidate_file": "metadata/2024/ai4s.json",
     "candidate_file_sha256": "fd0b7480dd34324946c48168b1f29bb6e4cd2d6d4120098f10ff67d77074252a",
-    "latest_main_checked": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
+    "latest_main_checked": "547a32bc",
     "pending_detail_file": null,
     "previous_feedback": {
       "year": 2024,
@@ -5316,6 +5663,15 @@
         "include": 149,
         "exclude": 168
       }
+    },
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 782,
+      "scope": "该刊ISSN的Crossref登记，2024-01-01至2024-12-31出版日期；逐 DOI 与本来源全量台账一致",
+      "query_url": "https://api.crossref.org/journals/0893-6080/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&offset=0&select=DOI",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
     }
   },
   {
@@ -5332,13 +5688,16 @@
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-isbi13-reconciliation-20261115.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
+      "https://biomedicalimaging.org/2024/isbi-2024-proceedings/",
+      "https://ieeexplore.ieee.org/xpl/conhome/10635099/proceeding",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-conference-coverage-20261115.json"
     ],
     "issues": [
-      "官网全年同口径总数/替代来源同口径对账尚待完成；本轮未将具体论文栏目检查当作全年覆盖检查。"
+      "IEEE Xplore网页显示805个条目，其中至少4项是封面、版权页、目录和欢迎辞；自动读取接口返回418，尚未确定第5个非论文条目，也未将800条DOI与正式论文集逐条对上。"
     ],
     "next_actions": [
-      "沿用coverage.csv已有目录和Crossref参考资料，核对2024年同口径全年成员及差额；完成后补official_total或有证据的reference_check。"
+      "取得IEEE Xplore可导出的2024年ISBI论文目录，逐条比对800个DOI；确认805个页面条目中的非论文项目。"
     ],
     "own_review_counts": {
       "include": 699,
