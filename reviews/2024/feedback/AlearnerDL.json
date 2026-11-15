@@ -312,7 +312,7 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "出版社 2024 卷期或年度正式目录；保留出版类型，日期和增刊须与快照口径一致。",
-    "coverage_note": "已对照出版方向 Crossref 登记的 DOI：733 条，快照 733 条，单向差数分别为 0 和 0。出版社逐期目录仍须核对。 候选中原始摘要为空 33 篇，逐篇证据见个人 monitor-audit 文件。 旧清单 57 条非候选中，补入 3 篇、按作者摘要或文献类型排除 49 条，余 5 条。最近两条的作者摘要分别来自 HAL 和 arXiv。 2026-11-13 将个人交付中已有来源记录且未列入摘要质量疑点的 33 条原摘要同步至年度候选文件；原个人论文对象字段保留。",
+    "coverage_note": "已对照出版方向 Crossref 登记的 DOI：733 条，快照 733 条，单向差数分别为 0 和 0。出版社逐期目录仍须核对。 候选中原始摘要为空 33 篇，逐篇证据见个人 monitor-audit 文件。 旧清单 57 条非候选中，补入 3 篇、按作者摘要或文献类型排除 49 条，余 5 条。最近两条的作者摘要分别来自 HAL 和 arXiv。 2026-11-13 将个人交付中已有来源记录且未列入摘要质量疑点的 33 条原摘要同步至年度候选文件；原个人论文对象字段保留。 2026-11-15 官网直接请求返回 403，正常浏览器目录访问仍受阻；负责人已明确表示目前无法人工核验并授权可靠替代来源。重新读取 Crossref 出版方登记记录，按 2024 出版日期、journal-article 全类型口径逐 DOI 双向对账：参考 733 条、快照 733 条，两侧差集均为 0；完成 reference_check，官网总数仍保持 null。 按最新精筛规则，未进入候选的旧全量摘要疑点仅保留在历史审计，不再作为全量摘要补齐任务；未据此伪造论文判定。当前候选原摘要与已交付判定另行核验。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/journal-of-computational-physics/issues",
       "https://api.crossref.org/journals/0021-9991/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article&rows=1000&select=DOI%2Ctitle%2Cauthor%2Cabstract%2Cpublished%2Cpublished-online%2Cpublished-print%2Ctype%2CURL%2Cvolume%2Cissue%2Clink%2Cresource",
@@ -322,14 +322,8 @@
       "https://hal.science/hal-04743433",
       "https://arxiv.org/abs/2308.03884"
     ],
-    "issues": [
-      "已对照出版方向 Crossref 登记的 DOI：733 条，快照 733 条，单向差数分别为 0 和 0。出版社逐期目录仍须核对。",
-      "非候选旧清单还有 5 条未取得足以判定的作者摘要或出版类型。"
-    ],
-    "next_actions": [
-      "按正式卷期和发表类型导出 DOI，与快照作双向集合差，核实差项后再补录。",
-      "对 noncandidate_recheck.unresolved_ids 列出的条目，待有公开作者摘要或正式出版类型时继续审核。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "source_title": "Journal of Computational Physics",
     "snapshot_papers": 733,
     "candidate_count": 51,
@@ -346,7 +340,7 @@
       "exclude": 3
     },
     "submitted_record_count": 128,
-    "rechecked_on": "2026-11-13",
+    "rechecked_on": "2026-11-15",
     "noncandidate_recheck": {
       "original_non_candidates_unreviewed": 57,
       "newly_included": 3,
@@ -365,7 +359,16 @@
         "10.1016/j.jcp.2024.113297"
       ]
     },
-    "current_candidate_missing_abstracts": 0
+    "current_candidate_missing_abstracts": 0,
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref（出版方登记，参考来源）",
+      "total": 733,
+      "scope": "journal-article records returned by publication-date 2024 filter, all article subtypes retained; compare DOI membership and preserve volume/issue/date fields",
+      "query_url": "https://api.crossref.org/journals/0021-9991/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article&rows=1000&cursor=*",
+      "checked_at": "2026-11-15",
+      "unresolved": 0
+    }
   },
   {
     "year": 2024,
