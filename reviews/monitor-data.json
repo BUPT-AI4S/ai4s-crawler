@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-15T13:00:03.759127+00:00",
-  "commit": "6aaf25a95de5387a23ff12c9cb7e07d12ecc6acc",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/6aaf25a95de5387a23ff12c9cb7e07d12ecc6acc/",
+  "generated_at": "2026-11-15T13:13:20.980406+00:00",
+  "commit": "2b940ec3c64110b9120381617f88d8caf9b2a24d",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/2b940ec3c64110b9120381617f88d8caf9b2a24d/",
   "years": [
     {
       "year": 2024,
@@ -22016,18 +22016,18 @@
           "open_issues": 0,
           "status": "complete",
           "last_update": {
-            "at": "2026-11-15T04:53:18-08:00",
+            "at": "2026-11-15T05:11:11-08:00",
             "author": "ebo",
-            "subject": "Reconcile Annals 2025 catalogue and reviews with explicit remaining abstract gaps",
+            "subject": "Review Envsoft 2025 candidates and reconcile complete official catalogue; retain evidence gaps",
             "area": "reviews",
             "paths": [
               "metadata/2025/ai4s.json",
-              "metadata/j-35fc948b7d/2025/abstract-evidence.json",
-              "metadata/j-35fc948b7d/2025/ai4s.json",
-              "metadata/j-35fc948b7d/2025/catalogue-additions.json"
+              "metadata/j-3d69adb6cc/2025/abstract-evidence.json",
+              "metadata/j-3d69adb6cc/2025/ai4s.json",
+              "metadata/j-3d69adb6cc/2025/catalogue-reconciliation.json"
             ]
           },
-          "commits_7d": 52
+          "commits_7d": 53
         },
         {
           "owner": "王婉婷",
@@ -22047,7 +22047,7 @@
               "reviews/2024/feedback/Blueblue1101.json"
             ]
           },
-          "commits_7d": 23
+          "commits_7d": 22
         }
       ],
       "snapshot_file": "metadata/2024/snapshot.json",
@@ -25826,29 +25826,55 @@
           "papers": 416,
           "snapshot_candidates": 60,
           "candidates": 60,
-          "missing_abstract": 18,
-          "official_total": null,
-          "official_scope": "",
+          "missing_abstract": 5,
+          "official_total": 416,
+          "official_scope": "ScienceDirect官方2025年度分组的正式卷183—194全部文献类型；不等同首次在线2025全集。",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
+          "coverage_note": "2026-11-15以普通浏览器核完官方2025分组卷183—194共12个完整目录，416条唯一PII及文章编号与固定书目逐条一致，零缺项、多余、重复或编号差异。目录分为381研究、16综述、12编委页、6书评、1通信；该处是出版方目录标签，不冒称逐篇原生标签均独立取得。原60条候选均有交付：51纳入、1排除、8待定、未审0；实质地下水机器学习综述纳入，城市洪水利益相关者研究仅提出未来AI框架而排除。18条缺摘要中已从正式页面取得13条完整原摘要并同步候选，仍5条待补。另3条已有摘要但需方法证实AI实际作用：火灾分割、PolarBytes平台及PlotToSat数据工具。浏览器读取最后5条摘要受阻，最后106696明确CPE00002，已请求负责人手动核验；未把访问受限标无摘要豁免，未以题名替代摘要纳入。原采集abstract_incomplete保留，不提前结案。",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/194/suppl/C",
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/193/suppl/C",
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/192/suppl/C",
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/191/suppl/C",
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/190/suppl/C",
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/189/suppl/C",
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/188/suppl/C",
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/187/suppl/C",
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/186/suppl/C",
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/185/suppl/C",
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/184/suppl/C",
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/183/suppl/C",
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/j-3d69adb6cc/2025/catalogue-reconciliation.json"
+          ],
+          "decisions": {
+            "include": 51,
+            "exclude": 1,
+            "pending": 8,
+            "unreviewed": 0
+          },
           "issues": [
+            "5条候选原摘要待补，普通浏览器读取受阻，已请求人工核验。",
+            "3条工具/方法候选需原文确认AI实际作用，保留待定。",
             "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
-            "AI4S候选缺少摘要：18 篇。",
-            "尚未找到逐篇审核交付。"
+            "AI4S候选缺少摘要：5 篇。",
+            "交付中存在待定或未审论文。"
           ],
           "actions": [
+            "按abstract-evidence.json的remaining_required_ids补齐5条原摘要；人工确认无法处理后方用可靠替代来源。",
+            "核实106286、106325、106395的方法/使用案例，分清实际AI科学贡献与通用数据处理工具。",
+            "摘要处置与逐篇审核均完成后再按现有监控规则结案历史abstract_incomplete提示。",
             "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
-            "提交逐篇审核结果或说明当前进度。"
+            "按交付文件逐篇补证并处理待定、未审记录。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2025/nydiii.json",
+            "reviews/2025/feedback/nydiii.json"
+          ],
           "snapshot_at": "2026-11-09T10:51:18+08:00",
           "abstract_not_required": 0,
-          "abstract_supplement_required": 18
+          "abstract_supplement_required": 5
         },
         {
           "code": "j-3d73a601f6",
@@ -37034,7 +37060,7 @@
               "reviews/2024/feedback/Blueblue1101.json"
             ]
           },
-          "commits_7d": 23
+          "commits_7d": 22
         },
         {
           "owner": "龙兆科",
@@ -37122,24 +37148,24 @@
         {
           "owner": "南耀笛",
           "sources": 51,
-          "delivered": 8,
-          "official": 8,
-          "pending": 0,
+          "delivered": 9,
+          "official": 9,
+          "pending": 8,
           "open_issues": 44,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-15T04:53:18-08:00",
+            "at": "2026-11-15T05:11:11-08:00",
             "author": "ebo",
-            "subject": "Reconcile Annals 2025 catalogue and reviews with explicit remaining abstract gaps",
+            "subject": "Review Envsoft 2025 candidates and reconcile complete official catalogue; retain evidence gaps",
             "area": "reviews",
             "paths": [
               "metadata/2025/ai4s.json",
-              "metadata/j-35fc948b7d/2025/abstract-evidence.json",
-              "metadata/j-35fc948b7d/2025/ai4s.json",
-              "metadata/j-35fc948b7d/2025/catalogue-additions.json"
+              "metadata/j-3d69adb6cc/2025/abstract-evidence.json",
+              "metadata/j-3d69adb6cc/2025/ai4s.json",
+              "metadata/j-3d69adb6cc/2025/catalogue-reconciliation.json"
             ]
           },
-          "commits_7d": 52
+          "commits_7d": 53
         }
       ],
       "snapshot_file": "metadata/2025/snapshot.json",
@@ -51766,18 +51792,18 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-15T04:53:18-08:00",
+            "at": "2026-11-15T05:11:11-08:00",
             "author": "ebo",
-            "subject": "Reconcile Annals 2025 catalogue and reviews with explicit remaining abstract gaps",
+            "subject": "Review Envsoft 2025 candidates and reconcile complete official catalogue; retain evidence gaps",
             "area": "reviews",
             "paths": [
               "metadata/2025/ai4s.json",
-              "metadata/j-35fc948b7d/2025/abstract-evidence.json",
-              "metadata/j-35fc948b7d/2025/ai4s.json",
-              "metadata/j-35fc948b7d/2025/catalogue-additions.json"
+              "metadata/j-3d69adb6cc/2025/abstract-evidence.json",
+              "metadata/j-3d69adb6cc/2025/ai4s.json",
+              "metadata/j-3d69adb6cc/2025/catalogue-reconciliation.json"
             ]
           },
-          "commits_7d": 52
+          "commits_7d": 53
         },
         {
           "owner": "朱长昊",
@@ -51882,7 +51908,7 @@
               "reviews/2024/feedback/Blueblue1101.json"
             ]
           },
-          "commits_7d": 23
+          "commits_7d": 22
         },
         {
           "owner": "龙兆科",
@@ -52394,7 +52420,7 @@
           "reviews/2024/feedback/Blueblue1101.json"
         ]
       },
-      "commits_7d": 23
+      "commits_7d": 22
     },
     {
       "owner": "南耀笛",
@@ -52409,9 +52435,9 @@
         },
         "2025": {
           "sources": 51,
-          "delivered": 8,
-          "official": 8,
-          "pending": 0,
+          "delivered": 9,
+          "official": 9,
+          "pending": 8,
           "open_issues": 44,
           "status": "in_progress"
         },
@@ -52425,30 +52451,30 @@
         }
       },
       "sources": 153,
-      "delivered": 59,
+      "delivered": 60,
       "not_started": [
         "2026"
       ],
       "last_update": {
-        "at": "2026-11-15T04:53:18-08:00",
+        "at": "2026-11-15T05:11:11-08:00",
         "author": "ebo",
-        "subject": "Reconcile Annals 2025 catalogue and reviews with explicit remaining abstract gaps",
+        "subject": "Review Envsoft 2025 candidates and reconcile complete official catalogue; retain evidence gaps",
         "area": "reviews",
         "paths": [
           "metadata/2025/ai4s.json",
-          "metadata/j-35fc948b7d/2025/abstract-evidence.json",
-          "metadata/j-35fc948b7d/2025/ai4s.json",
-          "metadata/j-35fc948b7d/2025/catalogue-additions.json"
+          "metadata/j-3d69adb6cc/2025/abstract-evidence.json",
+          "metadata/j-3d69adb6cc/2025/ai4s.json",
+          "metadata/j-3d69adb6cc/2025/catalogue-reconciliation.json"
         ]
       },
-      "commits_7d": 52
+      "commits_7d": 53
     }
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-15T12:59:46.581421+00:00",
+    "generated_at": "2026-11-15T13:13:04.328108+00:00",
     "history_available": true,
-    "commit": "6aaf25a95de5387a23ff12c9cb7e07d12ecc6acc",
-    "commits_scanned": 502
+    "commit": "2b940ec3c64110b9120381617f88d8caf9b2a24d",
+    "commits_scanned": 504
   }
 }
