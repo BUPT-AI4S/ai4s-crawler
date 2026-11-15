@@ -233198,8 +233198,18 @@
         "evidence_urls": [
           "https://www.sciencedirect.com/journal/gastroenterology/vol/166/issue/5/suppl/S",
           "https://linkinghub.elsevier.com/retrieve/pii/S0016508524038617",
-          "https://doi.org/10.1016/s0016-5085(24)03861-7"
-        ]
+          "https://doi.org/10.1016/s0016-5085(24)03861-7",
+          "https://eposters.ddw.org/ddw/2024/ddw-2024/417034/giovanni.santacroce.a.novel.active.learning-based.digital.pathology.protocol.html?f=listing%3D0%2Abrowseby%3D8%2Asortby%3D1%2Asearch%3DTu2004"
+        ],
+        "abstract": "Introduction: Histologic remission (HR) is a critical treatment target in Ulcerative Colitis (UC). Among several scoring systems, the PICaSSO Histologic Remission Index (PHRI) simplifies HR assessment by evaluating the presence of neutrophils in the bowel tissue. Our artificial intelligence (AI) system built upon PHRI showed remarkable accuracy in HR assessment.1 PHRI assess neutrophils in four different regions of interest, so segmentation of these compartments is crucial to predict PHRI automatically. However, creating labelled histopathological datasets to train fully-supervised segmentation models takes time and effort. Hence, this study explores the impact of an active learning (AL) algorithm on enhancing image segmentation to alleviate the burden of detailed pathologists' annotation and to standardise protocol annotation. Methods: Biopsy samples from an international real-life prospective UC study were digitised into whole slide images (WSI). Initial annotations of superficial epithelium, lumen and epithelium of crypts and lamina propria for 33 WSI were employed to train a U-Net segmentation model at baseline. An AL framework (represented in Figure 1) was employed to iteratively select and annotate 15 unannotated images while selecting those with the highest uncertainty. Uncertainty was calculated using Least confidence sampling, Margin Sampling, and Shannon Entropy. The most informative samples, based on the average of the three uncertainty measure, were selected in consecutive batches of 5 images, and pathologists were enlisted in a human-in-the-loop process to refine annotations. Subsequently, the segmentation model was retrained by incorporating the newly refined annotated samples, and its performance was assessed using a fully annotated test set of 19 WSI. Results: Following the baseline model training, the model's segmentation performance assessed by the Dice score and Intersection over Union (IoU) was 0.622 and 0.386, respectively (see Table 1). Applying the AL algorithm with newly annotated images notably improved model performance, especially with 10 images (Dice=0.651, IoU=0.415). However, training the model with an additional 5 newly annotated images, which exhibited lower uncertainty, did not yield further improvement (Dice = 0.651, IoU = 0.415). Thus, the 10 annotated WSI demonstrating more uncertainty resulted crucial for the AL framework. Conclusion: This novel AL-based iterative framework exhibits promise in standardising digital tissue annotation by our PHRI-based AI model. It offers a novel approach for both clinical trial and clinical practice, aiming to alleviate the burden of WSI labelling and reduce the bias of annotation, thereby improving histological assessment in UC. 1Gui X et al. Gut. 2022;71:889-898.",
+        "abstract_provenance": {
+          "kind": "official_conference_abstract",
+          "url": "https://eposters.ddw.org/ddw/2024/ddw-2024/417034/giovanni.santacroce.a.novel.active.learning-based.digital.pathology.protocol.html?f=listing%3D0%2Abrowseby%3D8%2Asortby%3D1%2Asearch%3DTu2004",
+          "conference": "Digestive Disease Week 2024",
+          "presentation_number": "Tu2004",
+          "published_doi": "10.1016/s0016-5085(24)03861-7",
+          "identity_check": "DDW 2024 官方编号 Tu2004、完整题名及作者名单与期刊 DOI 元数据对应；原文内容和数值按官方会议版本保留。 Candidate metadata truncates the final author as Marietta Iacucc; the official conference page gives Marietta Iacucci. All other authors, presentation number and title match."
+        }
       },
       "tags": []
     }
