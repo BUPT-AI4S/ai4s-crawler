@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-15T09:33:42.421146+00:00",
-  "commit": "da4d17a9b7586f300aea7bc41d4af8103122025b",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/da4d17a9b7586f300aea7bc41d4af8103122025b/",
+  "generated_at": "2026-11-15T09:57:27.102836+00:00",
+  "commit": "f504bc4cb30fa5d0d2e56e1fef1b3178f18255f7",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/f504bc4cb30fa5d0d2e56e1fef1b3178f18255f7/",
   "years": [
     {
       "year": 2024,
@@ -21651,18 +21651,18 @@
           "open_issues": 0,
           "status": "complete",
           "last_update": {
-            "at": "2026-11-15T01:31:48-08:00",
+            "at": "2026-11-15T01:55:22-08:00",
             "author": "ebo",
-            "subject": "Review Space Science and Technology 2025 and reconcile formal publication scope",
+            "subject": "Review Molecular Plant 2025 with official catalogue and abstract dispositions",
             "area": "reviews",
             "paths": [
               "metadata/2025/ai4s.json",
-              "metadata/j-01c665c7a1/2025/ai4s.json",
-              "metadata/j-01c665c7a1/2025/catalogue-reconciliation.json",
+              "metadata/j-0d5068779d/2025/ai4s.json",
+              "metadata/j-0d5068779d/2025/catalogue-reconciliation.json",
               "reviews/2025/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 46
+          "commits_7d": 47
         }
       ],
       "snapshot_file": "metadata/2024/snapshot.json",
@@ -23839,30 +23839,48 @@
           "state": "abstract_incomplete",
           "papers": 196,
           "snapshot_candidates": 9,
-          "candidates": 9,
+          "candidates": 10,
           "missing_abstract": 2,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 196,
+          "official_scope": "2025正式卷18第1—12期全部文献类型196条；以官方完整期目录、唯一题名和页码核对，不等同逐篇首次在线2025全集。",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
+          "coverage_note": "2026-11-15浏览器完成ScienceDirect官网2025卷18全部12期目录核验，196条唯一PII与原196条书目按规范题名及页码逐条匹配，零缺项、多余或重复。两条同题原文/更正按171–174及908页区分，另1条N6题名上标差异已核；出版方Crossref发表年196 DOI与原书目一致作辅助。Cell Press归档展开受阻后改用同出版社ScienceDirect，未将受限视为零。原9候选及1条确证漏筛原研究（玉米mGRN+，2025.08.009）共10条交付：6纳入、4排除、待定0、未审0。两条原缺摘要记录均为已排除Spotlight/Insights，正式页无独立摘要，标无需补摘要并保持null。PDLLMs虽属Correspondence，公开正文实为原创五类DNA语言模型及植物预测实验；输入abstract是正文首段而非独立摘要，保留原字段并注明官方无摘要、科学判定据完整正文，未生成摘要。Barley2035与Cotton2035按全文AI仅未来建议而排除；植物肽Perspective按实质AI方法综述纳入。原年度采集快照abstract_incomplete状态仍保留，监控可能继续提示该历史状态；不通过修改监控或原快照来隐藏。",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/journal/molecular-plant/vol/18/issue/12",
+            "https://www.sciencedirect.com/journal/molecular-plant/vol/18/issue/11",
+            "https://www.sciencedirect.com/journal/molecular-plant/vol/18/issue/10",
+            "https://www.sciencedirect.com/journal/molecular-plant/vol/18/issue/9",
+            "https://www.sciencedirect.com/journal/molecular-plant/vol/18/issue/8",
+            "https://www.sciencedirect.com/journal/molecular-plant/vol/18/issue/7",
+            "https://www.sciencedirect.com/journal/molecular-plant/vol/18/issue/6",
+            "https://www.sciencedirect.com/journal/molecular-plant/vol/18/issue/5",
+            "https://www.sciencedirect.com/journal/molecular-plant/vol/18/issue/4",
+            "https://www.sciencedirect.com/journal/molecular-plant/vol/18/issue/3",
+            "https://www.sciencedirect.com/journal/molecular-plant/vol/18/issue/2",
+            "https://www.sciencedirect.com/journal/molecular-plant/vol/18/issue/1",
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/j-0d5068779d/2025/catalogue-reconciliation.json"
+          ],
+          "decisions": {
+            "include": 6,
+            "exclude": 4,
+            "pending": 0,
+            "unreviewed": 0
+          },
           "issues": [
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
-            "AI4S候选缺少摘要：2 篇。",
-            "尚未找到逐篇审核交付。"
+            "采集状态尚未完成：abstract_incomplete"
           ],
           "actions": [
+            "本批候选精筛和摘要处置已完成；原采集快照状态abstract_incomplete仍会被监控提示，需团队确认如何区分历史全量摘要状态与当前候选审核完成，未经确认不改监控或原快照。",
             "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
-            "提交逐篇审核结果或说明当前进度。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2025/nydiii.json",
+            "reviews/2025/feedback/nydiii.json"
+          ],
           "snapshot_at": "2026-11-09T10:51:18+08:00",
-          "abstract_not_required": 0,
-          "abstract_supplement_required": 2
+          "abstract_not_required": 2,
+          "abstract_supplement_required": 0
         },
         {
           "code": "j-0d7b7f9cca",
@@ -36581,24 +36599,24 @@
         {
           "owner": "南耀笛",
           "sources": 51,
-          "delivered": 3,
-          "official": 3,
+          "delivered": 4,
+          "official": 4,
           "pending": 0,
           "open_issues": 48,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-15T01:31:48-08:00",
+            "at": "2026-11-15T01:55:22-08:00",
             "author": "ebo",
-            "subject": "Review Space Science and Technology 2025 and reconcile formal publication scope",
+            "subject": "Review Molecular Plant 2025 with official catalogue and abstract dispositions",
             "area": "reviews",
             "paths": [
               "metadata/2025/ai4s.json",
-              "metadata/j-01c665c7a1/2025/ai4s.json",
-              "metadata/j-01c665c7a1/2025/catalogue-reconciliation.json",
+              "metadata/j-0d5068779d/2025/ai4s.json",
+              "metadata/j-0d5068779d/2025/catalogue-reconciliation.json",
               "reviews/2025/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 46
+          "commits_7d": 47
         }
       ],
       "snapshot_file": "metadata/2025/snapshot.json",
@@ -51225,18 +51243,18 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-15T01:31:48-08:00",
+            "at": "2026-11-15T01:55:22-08:00",
             "author": "ebo",
-            "subject": "Review Space Science and Technology 2025 and reconcile formal publication scope",
+            "subject": "Review Molecular Plant 2025 with official catalogue and abstract dispositions",
             "area": "reviews",
             "paths": [
               "metadata/2025/ai4s.json",
-              "metadata/j-01c665c7a1/2025/ai4s.json",
-              "metadata/j-01c665c7a1/2025/catalogue-reconciliation.json",
+              "metadata/j-0d5068779d/2025/ai4s.json",
+              "metadata/j-0d5068779d/2025/catalogue-reconciliation.json",
               "reviews/2025/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 46
+          "commits_7d": 47
         },
         {
           "owner": "朱长昊",
@@ -51870,8 +51888,8 @@
         },
         "2025": {
           "sources": 51,
-          "delivered": 3,
-          "official": 3,
+          "delivered": 4,
+          "official": 4,
           "pending": 0,
           "open_issues": 48,
           "status": "in_progress"
@@ -51886,30 +51904,30 @@
         }
       },
       "sources": 153,
-      "delivered": 54,
+      "delivered": 55,
       "not_started": [
         "2026"
       ],
       "last_update": {
-        "at": "2026-11-15T01:31:48-08:00",
+        "at": "2026-11-15T01:55:22-08:00",
         "author": "ebo",
-        "subject": "Review Space Science and Technology 2025 and reconcile formal publication scope",
+        "subject": "Review Molecular Plant 2025 with official catalogue and abstract dispositions",
         "area": "reviews",
         "paths": [
           "metadata/2025/ai4s.json",
-          "metadata/j-01c665c7a1/2025/ai4s.json",
-          "metadata/j-01c665c7a1/2025/catalogue-reconciliation.json",
+          "metadata/j-0d5068779d/2025/ai4s.json",
+          "metadata/j-0d5068779d/2025/catalogue-reconciliation.json",
           "reviews/2025/feedback/nydiii.json"
         ]
       },
-      "commits_7d": 46
+      "commits_7d": 47
     }
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-15T09:33:30.554339+00:00",
+    "generated_at": "2026-11-15T09:57:13.985324+00:00",
     "history_available": true,
-    "commit": "da4d17a9b7586f300aea7bc41d4af8103122025b",
-    "commits_scanned": 475
+    "commit": "f504bc4cb30fa5d0d2e56e1fef1b3178f18255f7",
+    "commits_scanned": 477
   }
 }
