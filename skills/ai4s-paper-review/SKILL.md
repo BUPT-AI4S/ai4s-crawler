@@ -10,6 +10,7 @@ description: Review AI4S paper candidates and assigned venues, assign evidence-b
 
 - **只处理本人任务。** 修改本人负责的论文审核结果、阶段反馈和当前任务必需的交付；不要改动监控页面、监控脚本、工作流、其他同学的文件或其他无关内容，除非用户明确要求。
 - **main 被占用时直接提 PR。** 如果 `main` 已被其他工作区或任务占用，仍先读取 `origin/main` 的最新个人行动清单；从最新 `origin/main` 创建独立工作分支，完成本人任务并推送，直接创建指向 `main` 的 PR。不切换、重置或改动占用 `main` 的工作区；保留其他人的工作。
+- **每次精筛前检查技能和词表更新。** 先执行 `git fetch origin main`，对照 `origin/main` 检查 `skills/ai4s-paper-review/` 及其中 `references/tag-vocabulary.json` 是否有更新；有更新先安全同步，并重新阅读最新 `SKILL.md` 和相关规则、词表，再开始精筛。保留本地未提交内容，不覆盖其他人的工作；如无法获取或同步更新，说明原因，暂不开始依赖最新规则的精筛。
 
 1. **每次先读取 main 的个人行动清单，再继续工作。** 开始新任务或接续工作时，先运行 `git fetch origin main`，从 `origin/main` 读取 `reviews/<年份>/actions/<负责人>.md`（例如用 `git show "origin/main:reviews/<年份>/actions/<负责人>.md"`，将占位符替换为实际年份和姓名），记录所用的 main 提交。对照本人负责的来源、未完成问题和下一步行动，结合已有交付与断点继续处理，不重复覆盖已有成果；不要执行其他负责人的任务。拉取最新 [中英文精筛标签词表](references/tag-vocabulary.json)，按分工读取候选文件并锁定快照。若获取失败或个人清单尚不存在，说明实际情况，不伪称已获取最新清单，并继续处理已明确且不依赖该清单的工作。用 (venue, year, id) 识别同一条来源记录；字段冲突交原负责人确认。
 2. **核对爬取总量与官网。** 按来源和年份，对照出版社卷期或会议正式论文集，核对全量采集数和官网在同一口径下的论文数。官网目录或总数因访问受限、无法获得等原因无法核实时，不要停在「无法核实」：使用 Crossref、OpenAlex、DBLP 或 Europe PMC 等适合该来源的数据库继续对账，记录可复现口径和差异；替代数标为参考数，不冒充官网数。替代来源同口径对账完成且差异已处理后，按[统一阶段反馈规范](references/monitor-feedback.md)提交 `reference_check`，可视为总量核对完成。如发现已爬到但未命中关键词的疑似漏筛，可核实后补入候选；不要求对非候选论文开展摘要缺漏统计或逐条补齐。经核实的漏采和漏筛论文均可补入候选。见 [精筛与标签规则](references/review-rules.md#官网总量与漏采核验)。
