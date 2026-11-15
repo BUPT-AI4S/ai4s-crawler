@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-15T13:35:41.338688+00:00",
-  "commit": "9b019f1118f4167600f3cc2d779fe15c55b963be",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/9b019f1118f4167600f3cc2d779fe15c55b963be/",
+  "generated_at": "2026-11-15T13:38:59.148068+00:00",
+  "commit": "f3bb4abc90774fd3c2785090577099293eb6ae5e",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/f3bb4abc90774fd3c2785090577099293eb6ae5e/",
   "years": [
     {
       "year": 2024,
@@ -18245,14 +18245,23 @@
           "snapshot_candidates": 361,
           "candidates": 374,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "reference_check": null,
+          "official_total": 800,
+          "official_scope": "IEEE版权的2024年ISBI会议印刷版目录：800个论文题名；IEEE Xplore另显示含前置材料的805项。",
+          "reference_check": {
+            "status": "complete",
+            "source": "IEEE版权会议论文集的印刷版目录",
+            "total": 800,
+            "scope": "目录800个论文题名与仓库800条原始元数据逐题名一致；仓库800个DOI无重复。目录本身不逐篇列DOI。",
+            "query_url": "https://www.proceedings.com/content/075/075910webtoc.pdf",
+            "checked_at": "2026-11-15",
+            "unresolved": 0
+          },
           "coverage_note": "个人交付758条：纳入699、排除59、待定0；全量台账800条。候选374条、空摘要0条。本轮对13条历史交付与台账分歧逐篇复核摘要，均改为纳入并补入候选。全年采集数量仍需独立对账。",
           "evidence_urls": [
             "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-final327-review-20261111.md",
             "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-final327-review-20261111.json",
             "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-final327-review-20261111-results.csv",
+            "https://www.proceedings.com/content/075/075910webtoc.pdf",
             "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
             "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
             "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
@@ -18260,7 +18269,8 @@
             "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
             "https://biomedicalimaging.org/2024/isbi-2024-proceedings/",
             "https://ieeexplore.ieee.org/xpl/conhome/10635099/proceeding",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-conference-coverage-20261115.json"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-conference-coverage-20261115.json",
+            "https://www.proceedings.com/content/075/075910webtoc.pdf"
           ],
           "decisions": {
             "include": 699,
@@ -18269,14 +18279,11 @@
             "unreviewed": 0
           },
           "issues": [
-            "官网同口径成员核验尚未全部完成；不属于论文筛选待定。",
-            "IEEE Xplore网页显示805个条目，其中至少4项是封面、版权页、目录和欢迎辞；自动读取接口返回418，尚未确定第5个非论文条目，也未将800条DOI与正式论文集逐条对上。",
-            "官网同口径总数尚未确认。"
+            "官网同口径成员核验尚未全部完成；不属于论文筛选待定。"
           ],
           "actions": [
             "后续按全年正式目录另行核对成员与采集范围。",
-            "取得IEEE Xplore可导出的2024年ISBI论文目录，逐条比对800个DOI；确认805个页面条目中的非论文项目。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/Blueblue1101.json",
@@ -19217,16 +19224,27 @@
           "candidates": 684,
           "missing_abstract": 0,
           "official_total": 4493,
-          "official_scope": "NeurIPS 2024 正式论文集：主会4034篇，Datasets and Benchmarks 459篇。",
-          "reference_check": null,
+          "official_scope": "当前NeurIPS官网2024目录：主会4034篇、数据集分轨459篇，共4493篇。另有DEX旧印刷版论文集条目不在当前官网目录，已在AI4S审核中排除。",
+          "reference_check": {
+            "status": "complete",
+            "source": "NeurIPS当前正式论文集目录与印刷版论文集",
+            "total": 4493,
+            "scope": "当前目录4493个题名与台账4493条逐条一致；原始多出1条DEX经旧印刷版确认，当前官网目录未列出，且已按非AI4S排除。",
+            "query_url": "https://proceedings.neurips.cc/paper_files/paper/2024",
+            "checked_at": "2026-11-15",
+            "unresolved": 0
+          },
           "coverage_note": "个人交付1579条：纳入625、排除954、待定0；全量台账4494条。候选684条、空摘要0条。本轮本来源核对0条。没有候选/个人记录的来源不构造占位论文。",
           "evidence_urls": [
+            "https://proceedings.neurips.cc/paper_files/paper/2024",
             "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.md",
             "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/lixueting-sync-review-20261115.json",
             "https://github.com/BUPT-AI4S/ai4s-crawler/blob/lixueting-2024-sync-review-20261115/reviews/2024/lixueting-haozhuodi/coverage.csv",
             "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-coverage-audit-20261115.json",
             "https://proceedings.neurips.cc/paper_files/paper/2024",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-conference-coverage-20261115.json"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2024/lixueting-haozhuodi/lixueting-2024-conference-coverage-20261115.json",
+            "https://www.proceedings.com/079017-1394.html",
+            "https://www.proceedings.com/content/079/079017-1394open.pdf"
           ],
           "decisions": {
             "include": 625,
@@ -19234,11 +19252,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网正式论文集4493篇（主会4034、Datasets and Benchmarks 459）；台账原主会4035加补录459共4494，多出的原主会1条尚未定位。原始关键词候选684个题名均在官网目录。"
-          ],
+          "issues": [],
           "actions": [
-            "读取Git LFS保存的2024年原始全量元数据，对原主会4035个题名与官网4034篇逐条比对，定位多出1条并保留排除轨迹。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
@@ -22123,23 +22138,22 @@
           "owner": "李雪婷",
           "sources": 51,
           "delivered": 39,
-          "official": 50,
+          "official": 51,
           "pending": 0,
-          "open_issues": 4,
+          "open_issues": 3,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-15T05:25:32-08:00",
+            "at": "2026-11-15T05:36:59-08:00",
             "author": "Xueting",
-            "subject": "李雪婷 2024：完成49个刊源参考核验并核对会议差额",
+            "subject": "李雪婷 2024：完成NeurIPS与ISBI全年目录逐篇核验",
             "area": "reviews",
             "paths": [
               "reviews/2024/feedback/zch66883-lixueting.json",
               "reviews/2024/lixueting-haozhuodi/coverage.csv",
-              "reviews/2024/lixueting-haozhuodi/lixueting-2024-conference-coverage-20261115.json",
-              "reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-cursor-recheck-20261115.json"
+              "reviews/2024/lixueting-haozhuodi/lixueting-2024-conference-coverage-20261115.json"
             ]
           },
-          "commits_7d": 13
+          "commits_7d": 14
         },
         {
           "owner": "郝卓迪",
@@ -37382,18 +37396,17 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-15T05:25:32-08:00",
+            "at": "2026-11-15T05:36:59-08:00",
             "author": "Xueting",
-            "subject": "李雪婷 2024：完成49个刊源参考核验并核对会议差额",
+            "subject": "李雪婷 2024：完成NeurIPS与ISBI全年目录逐篇核验",
             "area": "reviews",
             "paths": [
               "reviews/2024/feedback/zch66883-lixueting.json",
               "reviews/2024/lixueting-haozhuodi/coverage.csv",
-              "reviews/2024/lixueting-haozhuodi/lixueting-2024-conference-coverage-20261115.json",
-              "reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-cursor-recheck-20261115.json"
+              "reviews/2024/lixueting-haozhuodi/lixueting-2024-conference-coverage-20261115.json"
             ]
           },
-          "commits_7d": 13
+          "commits_7d": 14
         },
         {
           "owner": "郝卓迪",
@@ -52227,18 +52240,17 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-15T05:25:32-08:00",
+            "at": "2026-11-15T05:36:59-08:00",
             "author": "Xueting",
-            "subject": "李雪婷 2024：完成49个刊源参考核验并核对会议差额",
+            "subject": "李雪婷 2024：完成NeurIPS与ISBI全年目录逐篇核验",
             "area": "reviews",
             "paths": [
               "reviews/2024/feedback/zch66883-lixueting.json",
               "reviews/2024/lixueting-haozhuodi/coverage.csv",
-              "reviews/2024/lixueting-haozhuodi/lixueting-2024-conference-coverage-20261115.json",
-              "reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-cursor-recheck-20261115.json"
+              "reviews/2024/lixueting-haozhuodi/lixueting-2024-conference-coverage-20261115.json"
             ]
           },
-          "commits_7d": 13
+          "commits_7d": 14
         },
         {
           "owner": "郝卓迪",
@@ -52442,9 +52454,9 @@
         "2024": {
           "sources": 51,
           "delivered": 39,
-          "official": 50,
+          "official": 51,
           "pending": 0,
-          "open_issues": 4,
+          "open_issues": 3,
           "status": "in_progress"
         },
         "2025": {
@@ -52471,18 +52483,17 @@
         "2026"
       ],
       "last_update": {
-        "at": "2026-11-15T05:25:32-08:00",
+        "at": "2026-11-15T05:36:59-08:00",
         "author": "Xueting",
-        "subject": "李雪婷 2024：完成49个刊源参考核验并核对会议差额",
+        "subject": "李雪婷 2024：完成NeurIPS与ISBI全年目录逐篇核验",
         "area": "reviews",
         "paths": [
           "reviews/2024/feedback/zch66883-lixueting.json",
           "reviews/2024/lixueting-haozhuodi/coverage.csv",
-          "reviews/2024/lixueting-haozhuodi/lixueting-2024-conference-coverage-20261115.json",
-          "reviews/2024/lixueting-haozhuodi/lixueting-2024-crossref-cursor-recheck-20261115.json"
+          "reviews/2024/lixueting-haozhuodi/lixueting-2024-conference-coverage-20261115.json"
         ]
       },
-      "commits_7d": 13
+      "commits_7d": 14
     },
     {
       "owner": "郝卓迪",
@@ -52860,9 +52871,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-15T13:35:26.665146+00:00",
+    "generated_at": "2026-11-15T13:38:40.092862+00:00",
     "history_available": true,
-    "commit": "9b019f1118f4167600f3cc2d779fe15c55b963be",
-    "commits_scanned": 516
+    "commit": "f3bb4abc90774fd3c2785090577099293eb6ae5e",
+    "commits_scanned": 518
   }
 }
