@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-15T14:00:34.051533+00:00",
-  "commit": "0c85209c3f796bacf4c661a784b2670c989777e9",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/0c85209c3f796bacf4c661a784b2670c989777e9/",
+  "generated_at": "2026-11-15T14:04:10.080880+00:00",
+  "commit": "855b788381ccb56fc45e4550bb65962a9c33f3ee",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/855b788381ccb56fc45e4550bb65962a9c33f3ee/",
   "years": [
     {
       "year": 2024,
@@ -17225,7 +17225,7 @@
             "checked_at": "2026-11-15",
             "unresolved": 0
           },
-          "coverage_note": "已逐 DOI 核对 2024 年出版社在 Crossref 登记的 5,156 条 journal-article，与快照逐项相符；按卷统计见 doi_register_comparison。出版社独立逐期目录尚未完整核实。 已确认第 166 卷第 5 期增刊内的 13 个候选为会议摘要。 2026-11-15 官网直接请求返回 403，正常浏览器目录访问仍受阻；负责人已明确表示目前无法人工核验并授权可靠替代来源。重新读取 Crossref 出版方登记记录，按 2024 出版日期、journal-article 全类型口径逐 DOI 双向对账：参考 5156 条、快照 5156 条，两侧差集均为 0；完成 reference_check，官网总数仍保持 null。 2026-11-15 核对作者预印本题名、正式出版 DOI 关联及 ABSTRACT 后补齐 10.1053/j.gastro.2024.01.033 作者原摘要；当前候选缺摘要 13 条。",
+          "coverage_note": "已逐 DOI 核对 2024 年出版社在 Crossref 登记的 5,156 条 journal-article，与快照逐项相符；按卷统计见 doi_register_comparison。出版社独立逐期目录尚未完整核实。 已确认第 166 卷第 5 期增刊内的 13 个候选为会议摘要。 2026-11-15 官网直接请求返回 403，正常浏览器目录访问仍受阻；负责人已明确表示目前无法人工核验并授权可靠替代来源。重新读取 Crossref 出版方登记记录，按 2024 出版日期、journal-article 全类型口径逐 DOI 双向对账：参考 5156 条、快照 5156 条，两侧差集均为 0；完成 reference_check，官网总数仍保持 null。 2026-11-15 核对作者预印本题名、正式出版 DOI 关联及 ABSTRACT 后补齐 10.1053/j.gastro.2024.01.033 作者原摘要；当前候选缺摘要 13 条。 2026-11-15 查询 OpenAlex 的 13 条精确 DOI，均无 abstract_inverted_index；唯一额外仓储线索 hdl:2292/69054 返回找不到记录。ScienceDirect 的 00954-5 页面仅有题录及机构访问提示，未将无预览错误解释为无独立摘要。",
           "evidence_urls": [
             "https://api.crossref.org/journals/0016-5085/works?filter=from-pub-date:2024-01-01,until-pub-date:2024-12-31,type:journal-article&rows=1000&cursor=*",
             "https://www.sciencedirect.com/journal/gastroenterology/issues",
@@ -17239,9 +17239,11 @@
             "unreviewed": 0
           },
           "issues": [
+            "尚有 13 条已按会议摘要类型排除的候选缺原摘要；出版社预览无正文，机构全文访问受限；OpenAlex 对应 13 条亦未提供摘要。",
             "AI4S候选缺少摘要：13 篇。"
           ],
           "actions": [
+            "取得这 13 条会议摘要的合法公开原文或作者版本后逐条补齐；保留排除记录，不填占位摘要。",
             "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。"
           ],
           "files": [
@@ -20553,9 +20555,11 @@
           "official_total": null,
           "official_scope": "",
           "reference_check": null,
-          "coverage_note": "官方议程的 417 篇研究论文均已与快照匹配，另有 1 场主题报告。快照另外有来自 SOUPS、WOOT 等的条目，及当前官网目录中未列出的 Prefetch for Fun and Profit；该条须核对版本或撤下情况。",
+          "coverage_note": "官方议程的 417 篇研究论文均已与快照匹配，另有 1 场主题报告。快照另外有来自 SOUPS、WOOT 等的条目，及当前官网目录中未列出的 Prefetch for Fun and Profit；该条须核对版本或撤下情况。 2026-11-15 官方 frontpage?page=43 可读到该题名及 2024/USENIX Security 24 归属，详情 biblio-14821 显示 Login Required；保留出版状态疑点，不将索引条目直接当作已确认正式论文。",
           "evidence_urls": [
-            "https://www.usenix.org/conference/usenixsecurity24/technical-sessions"
+            "https://www.usenix.org/conference/usenixsecurity24/technical-sessions",
+            "https://www.usenix.org/frontpage?page=43",
+            "https://www.usenix.org/biblio-14821"
           ],
           "decisions": {
             "include": 38,
@@ -20564,11 +20568,11 @@
             "unreviewed": 0
           },
           "issues": [
-            "官方议程的 417 篇研究论文均已与快照匹配，另有 1 场主题报告。快照另外有来自 SOUPS、WOOT 等的条目，及当前官网目录中未列出的 Prefetch for Fun and Profit；该条须核对版本或撤下情况。",
+            "主会当前议程 417 篇已匹配；Prefetch for Fun and Profit 另见 USENIX 2024 官方书目存档但署名 Anonymous、无页码，详情要求登录，其正式出版/撤下状态仍待核；工作坊范围需一并明确。",
             "官网同口径总数尚未确认。"
           ],
           "actions": [
-            "按官网正式研究分轨导出 DOI 或稳定标识，对照当届快照，核对名称或版本不同的条目。",
+            "核对 Prefetch 官方书目详情或出版更正，并完成主会与 SOUPS、WOOT、CSET 的同口径对账。",
             "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
           ],
           "files": [
@@ -22221,18 +22225,16 @@
           "open_issues": 8,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-15T05:59:19-08:00",
+            "at": "2026-11-15T06:02:58-08:00",
             "author": "AlearnerDL",
-            "subject": "Backfill publisher original abstract: gastro-01033-abstract-15",
+            "subject": "Record remaining 2024 evidence barriers without clearing unresolved tasks",
             "area": "reviews",
             "paths": [
-              "metadata/2024/ai4s.json",
-              "reviews/2024/AlearnerDL.json",
-              "reviews/2024/AlearnerDL/gastro-01033-abstract-15.json",
+              "reviews/2024/AlearnerDL/remaining-evidence-2026-11-15.json",
               "reviews/2024/feedback/AlearnerDL.json"
             ]
           },
-          "commits_7d": 100
+          "commits_7d": 101
         },
         {
           "owner": "王梦冉",
@@ -22306,18 +22308,18 @@
           "open_issues": 0,
           "status": "complete",
           "last_update": {
-            "at": "2026-11-15T05:55:01-08:00",
+            "at": "2026-11-15T06:01:36-08:00",
             "author": "ebo",
-            "subject": "Complete Catalysis Electronics Materials 2025 with 30 evidence-backed decisions",
+            "subject": "Complete Sustainability Cell Research Clinical Oncology 2025 and add emissions study",
             "area": "reviews",
             "paths": [
-              "metadata/natcatal/2025/catalogue-reconciliation.json",
-              "metadata/natelectron/2025/catalogue-reconciliation.json",
-              "metadata/nmat/2025/catalogue-reconciliation.json",
-              "reviews/2025/feedback/nydiii.json"
+              "metadata/2025/ai4s.json",
+              "metadata/natsustain/2025/ai4s.json",
+              "metadata/natsustain/2025/catalogue-reconciliation.json",
+              "metadata/nature-cr/2025/catalogue-reconciliation.json"
             ]
           },
-          "commits_7d": 60
+          "commits_7d": 61
         },
         {
           "owner": "王婉婷",
@@ -33808,28 +33810,68 @@
           "state": "abstract_incomplete",
           "papers": 244,
           "snapshot_candidates": 9,
-          "candidates": 9,
+          "candidates": 10,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 244,
+          "official_scope": "Nature自有官网year=2025、All types全部13页，按实际文章链接的唯一DOI逐项与固定采集对账。",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
-          "issues": [
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
-            "尚未找到逐篇审核交付。"
+          "coverage_note": "2026-11-15完成Nature自有官网2025全部13页，244个唯一DOI与固定采集逐项一致，无缺项、多余或重复。当前10候选（原9）均已审核：9纳入、1排除、待定0、未审0，完整原摘要齐备，待补摘要0。可持续刊通过Research Briefing明确线索补录原工业卤代多环芳烃机器学习排放研究01656-z，简报本身不补入。NCG小鼠品系Gpt不是GPT模型；AI服务器环境评估中AI是对象而非分析工具。肿瘤学实质AI病理、空间模型及囊泡多组学综述纳入，AI仅列未来可能性的免疫治疗/耐药及AML综述不因关键词纳入。当前判断据完整原摘要及正式目录，未冒称取得订阅全文或穷尽所有非候选。原始全量及历史摘要状态保留。",
+          "evidence_urls": [
+            "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=1",
+            "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=2",
+            "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=3",
+            "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=4",
+            "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=5",
+            "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=6",
+            "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=7",
+            "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=8",
+            "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=9",
+            "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=10",
+            "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=11",
+            "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=12",
+            "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=13",
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/natsustain/2025/catalogue-reconciliation.json"
           ],
+          "decisions": {
+            "include": 9,
+            "exclude": 1,
+            "pending": 0,
+            "unreviewed": 0
+          },
+          "issues": [],
           "actions": [
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "提交逐篇审核结果或说明当前进度。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2025/nydiii.json",
+            "reviews/2025/feedback/nydiii.json"
+          ],
           "snapshot_at": "2026-11-09T10:51:18+08:00",
           "abstract_not_required": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 0,
+          "collection_state_resolution": {
+            "status": "resolved_for_candidate_review",
+            "original_state": "abstract_incomplete",
+            "reason": "full_catalogue_abstract_gap_candidates_complete",
+            "checked_by": "南耀笛",
+            "checked_at": "2026-11-15",
+            "evidence_urls": [
+              "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=1",
+              "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=2",
+              "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=3",
+              "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=4",
+              "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=5",
+              "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=6",
+              "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=7",
+              "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=8",
+              "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=9",
+              "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=10",
+              "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=11",
+              "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=12",
+              "https://www.nature.com/natsustain/articles?searchType=journalSearch&sort=PubDate&year=2025&page=13"
+            ],
+            "note": "保留原始全量摘要历史状态；完整目录一致、当前候选审结且待补摘要0。"
+          }
         },
         {
           "code": "natsynth",
@@ -34110,26 +34152,56 @@
           "snapshot_candidates": 3,
           "candidates": 3,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 149,
+          "official_scope": "Nature自有官网year=2025、All types全部8页，按实际文章链接的唯一DOI逐项与固定采集对账。",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
-          "issues": [
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
-            "尚未找到逐篇审核交付。"
+          "coverage_note": "2026-11-15完成Nature自有官网2025全部8页，149个唯一DOI与固定采集逐项一致，无缺项、多余或重复。当前3候选（原3）均已审核：2纳入、1排除、待定0、未审0，完整原摘要齐备，待补摘要0。可持续刊通过Research Briefing明确线索补录原工业卤代多环芳烃机器学习排放研究01656-z，简报本身不补入。NCG小鼠品系Gpt不是GPT模型；AI服务器环境评估中AI是对象而非分析工具。肿瘤学实质AI病理、空间模型及囊泡多组学综述纳入，AI仅列未来可能性的免疫治疗/耐药及AML综述不因关键词纳入。当前判断据完整原摘要及正式目录，未冒称取得订阅全文或穷尽所有非候选。原始全量及历史摘要状态保留。",
+          "evidence_urls": [
+            "https://www.nature.com/cr/articles?searchType=journalSearch&sort=PubDate&year=2025&page=1",
+            "https://www.nature.com/cr/articles?searchType=journalSearch&sort=PubDate&year=2025&page=2",
+            "https://www.nature.com/cr/articles?searchType=journalSearch&sort=PubDate&year=2025&page=3",
+            "https://www.nature.com/cr/articles?searchType=journalSearch&sort=PubDate&year=2025&page=4",
+            "https://www.nature.com/cr/articles?searchType=journalSearch&sort=PubDate&year=2025&page=5",
+            "https://www.nature.com/cr/articles?searchType=journalSearch&sort=PubDate&year=2025&page=6",
+            "https://www.nature.com/cr/articles?searchType=journalSearch&sort=PubDate&year=2025&page=7",
+            "https://www.nature.com/cr/articles?searchType=journalSearch&sort=PubDate&year=2025&page=8",
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/nature-cr/2025/catalogue-reconciliation.json"
           ],
+          "decisions": {
+            "include": 2,
+            "exclude": 1,
+            "pending": 0,
+            "unreviewed": 0
+          },
+          "issues": [],
           "actions": [
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "提交逐篇审核结果或说明当前进度。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2025/nydiii.json",
+            "reviews/2025/feedback/nydiii.json"
+          ],
           "snapshot_at": "2026-11-09T10:51:18+08:00",
           "abstract_not_required": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 0,
+          "collection_state_resolution": {
+            "status": "resolved_for_candidate_review",
+            "original_state": "abstract_incomplete",
+            "reason": "full_catalogue_abstract_gap_candidates_complete",
+            "checked_by": "南耀笛",
+            "checked_at": "2026-11-15",
+            "evidence_urls": [
+              "https://www.nature.com/cr/articles?searchType=journalSearch&sort=PubDate&year=2025&page=1",
+              "https://www.nature.com/cr/articles?searchType=journalSearch&sort=PubDate&year=2025&page=2",
+              "https://www.nature.com/cr/articles?searchType=journalSearch&sort=PubDate&year=2025&page=3",
+              "https://www.nature.com/cr/articles?searchType=journalSearch&sort=PubDate&year=2025&page=4",
+              "https://www.nature.com/cr/articles?searchType=journalSearch&sort=PubDate&year=2025&page=5",
+              "https://www.nature.com/cr/articles?searchType=journalSearch&sort=PubDate&year=2025&page=6",
+              "https://www.nature.com/cr/articles?searchType=journalSearch&sort=PubDate&year=2025&page=7",
+              "https://www.nature.com/cr/articles?searchType=journalSearch&sort=PubDate&year=2025&page=8"
+            ],
+            "note": "保留原始全量摘要历史状态；完整目录一致、当前候选审结且待补摘要0。"
+          }
         },
         {
           "code": "nature-ejhg",
@@ -36093,26 +36165,54 @@
           "snapshot_candidates": 7,
           "candidates": 7,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 131,
+          "official_scope": "Nature自有官网year=2025、All types全部7页，按实际文章链接的唯一DOI逐项与固定采集对账。",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
-          "issues": [
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
-            "尚未找到逐篇审核交付。"
+          "coverage_note": "2026-11-15完成Nature自有官网2025全部7页，131个唯一DOI与固定采集逐项一致，无缺项、多余或重复。当前7候选（原7）均已审核：4纳入、3排除、待定0、未审0，完整原摘要齐备，待补摘要0。可持续刊通过Research Briefing明确线索补录原工业卤代多环芳烃机器学习排放研究01656-z，简报本身不补入。NCG小鼠品系Gpt不是GPT模型；AI服务器环境评估中AI是对象而非分析工具。肿瘤学实质AI病理、空间模型及囊泡多组学综述纳入，AI仅列未来可能性的免疫治疗/耐药及AML综述不因关键词纳入。当前判断据完整原摘要及正式目录，未冒称取得订阅全文或穷尽所有非候选。原始全量及历史摘要状态保留。",
+          "evidence_urls": [
+            "https://www.nature.com/nrclinonc/articles?searchType=journalSearch&sort=PubDate&year=2025&page=1",
+            "https://www.nature.com/nrclinonc/articles?searchType=journalSearch&sort=PubDate&year=2025&page=2",
+            "https://www.nature.com/nrclinonc/articles?searchType=journalSearch&sort=PubDate&year=2025&page=3",
+            "https://www.nature.com/nrclinonc/articles?searchType=journalSearch&sort=PubDate&year=2025&page=4",
+            "https://www.nature.com/nrclinonc/articles?searchType=journalSearch&sort=PubDate&year=2025&page=5",
+            "https://www.nature.com/nrclinonc/articles?searchType=journalSearch&sort=PubDate&year=2025&page=6",
+            "https://www.nature.com/nrclinonc/articles?searchType=journalSearch&sort=PubDate&year=2025&page=7",
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/nrclinonc/2025/catalogue-reconciliation.json"
           ],
+          "decisions": {
+            "include": 4,
+            "exclude": 3,
+            "pending": 0,
+            "unreviewed": 0
+          },
+          "issues": [],
           "actions": [
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "提交逐篇审核结果或说明当前进度。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2025/nydiii.json",
+            "reviews/2025/feedback/nydiii.json"
+          ],
           "snapshot_at": "2026-11-09T10:51:18+08:00",
           "abstract_not_required": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 0,
+          "collection_state_resolution": {
+            "status": "resolved_for_candidate_review",
+            "original_state": "abstract_incomplete",
+            "reason": "full_catalogue_abstract_gap_candidates_complete",
+            "checked_by": "南耀笛",
+            "checked_at": "2026-11-15",
+            "evidence_urls": [
+              "https://www.nature.com/nrclinonc/articles?searchType=journalSearch&sort=PubDate&year=2025&page=1",
+              "https://www.nature.com/nrclinonc/articles?searchType=journalSearch&sort=PubDate&year=2025&page=2",
+              "https://www.nature.com/nrclinonc/articles?searchType=journalSearch&sort=PubDate&year=2025&page=3",
+              "https://www.nature.com/nrclinonc/articles?searchType=journalSearch&sort=PubDate&year=2025&page=4",
+              "https://www.nature.com/nrclinonc/articles?searchType=journalSearch&sort=PubDate&year=2025&page=5",
+              "https://www.nature.com/nrclinonc/articles?searchType=journalSearch&sort=PubDate&year=2025&page=6",
+              "https://www.nature.com/nrclinonc/articles?searchType=journalSearch&sort=PubDate&year=2025&page=7"
+            ],
+            "note": "保留原始全量摘要历史状态；完整目录一致、当前候选审结且待补摘要0。"
+          }
         },
         {
           "code": "nrd",
@@ -37734,18 +37834,16 @@
           "open_issues": 49,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-15T05:59:19-08:00",
+            "at": "2026-11-15T06:02:58-08:00",
             "author": "AlearnerDL",
-            "subject": "Backfill publisher original abstract: gastro-01033-abstract-15",
+            "subject": "Record remaining 2024 evidence barriers without clearing unresolved tasks",
             "area": "reviews",
             "paths": [
-              "metadata/2024/ai4s.json",
-              "reviews/2024/AlearnerDL.json",
-              "reviews/2024/AlearnerDL/gastro-01033-abstract-15.json",
+              "reviews/2024/AlearnerDL/remaining-evidence-2026-11-15.json",
               "reviews/2024/feedback/AlearnerDL.json"
             ]
           },
-          "commits_7d": 100
+          "commits_7d": 101
         },
         {
           "owner": "王梦冉",
@@ -37813,24 +37911,24 @@
         {
           "owner": "南耀笛",
           "sources": 51,
-          "delivered": 25,
-          "official": 26,
+          "delivered": 28,
+          "official": 29,
           "pending": 12,
-          "open_issues": 29,
+          "open_issues": 26,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-15T05:55:01-08:00",
+            "at": "2026-11-15T06:01:36-08:00",
             "author": "ebo",
-            "subject": "Complete Catalysis Electronics Materials 2025 with 30 evidence-backed decisions",
+            "subject": "Complete Sustainability Cell Research Clinical Oncology 2025 and add emissions study",
             "area": "reviews",
             "paths": [
-              "metadata/natcatal/2025/catalogue-reconciliation.json",
-              "metadata/natelectron/2025/catalogue-reconciliation.json",
-              "metadata/nmat/2025/catalogue-reconciliation.json",
-              "reviews/2025/feedback/nydiii.json"
+              "metadata/2025/ai4s.json",
+              "metadata/natsustain/2025/ai4s.json",
+              "metadata/natsustain/2025/catalogue-reconciliation.json",
+              "metadata/nature-cr/2025/catalogue-reconciliation.json"
             ]
           },
-          "commits_7d": 60
+          "commits_7d": 61
         }
       ],
       "snapshot_file": "metadata/2025/snapshot.json",
@@ -52457,18 +52555,18 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-15T05:55:01-08:00",
+            "at": "2026-11-15T06:01:36-08:00",
             "author": "ebo",
-            "subject": "Complete Catalysis Electronics Materials 2025 with 30 evidence-backed decisions",
+            "subject": "Complete Sustainability Cell Research Clinical Oncology 2025 and add emissions study",
             "area": "reviews",
             "paths": [
-              "metadata/natcatal/2025/catalogue-reconciliation.json",
-              "metadata/natelectron/2025/catalogue-reconciliation.json",
-              "metadata/nmat/2025/catalogue-reconciliation.json",
-              "reviews/2025/feedback/nydiii.json"
+              "metadata/2025/ai4s.json",
+              "metadata/natsustain/2025/ai4s.json",
+              "metadata/natsustain/2025/catalogue-reconciliation.json",
+              "metadata/nature-cr/2025/catalogue-reconciliation.json"
             ]
           },
-          "commits_7d": 60
+          "commits_7d": 61
         },
         {
           "owner": "朱长昊",
@@ -52580,18 +52678,16 @@
           "open_issues": 47,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-15T05:59:19-08:00",
+            "at": "2026-11-15T06:02:58-08:00",
             "author": "AlearnerDL",
-            "subject": "Backfill publisher original abstract: gastro-01033-abstract-15",
+            "subject": "Record remaining 2024 evidence barriers without clearing unresolved tasks",
             "area": "reviews",
             "paths": [
-              "metadata/2024/ai4s.json",
-              "reviews/2024/AlearnerDL.json",
-              "reviews/2024/AlearnerDL/gastro-01033-abstract-15.json",
+              "reviews/2024/AlearnerDL/remaining-evidence-2026-11-15.json",
               "reviews/2024/feedback/AlearnerDL.json"
             ]
           },
-          "commits_7d": 100
+          "commits_7d": 101
         },
         {
           "owner": "王梦冉",
@@ -52883,18 +52979,16 @@
         "2026"
       ],
       "last_update": {
-        "at": "2026-11-15T05:59:19-08:00",
+        "at": "2026-11-15T06:02:58-08:00",
         "author": "AlearnerDL",
-        "subject": "Backfill publisher original abstract: gastro-01033-abstract-15",
+        "subject": "Record remaining 2024 evidence barriers without clearing unresolved tasks",
         "area": "reviews",
         "paths": [
-          "metadata/2024/ai4s.json",
-          "reviews/2024/AlearnerDL.json",
-          "reviews/2024/AlearnerDL/gastro-01033-abstract-15.json",
+          "reviews/2024/AlearnerDL/remaining-evidence-2026-11-15.json",
           "reviews/2024/feedback/AlearnerDL.json"
         ]
       },
-      "commits_7d": 100
+      "commits_7d": 101
     },
     {
       "owner": "王梦冉",
@@ -53096,10 +53190,10 @@
         },
         "2025": {
           "sources": 51,
-          "delivered": 25,
-          "official": 26,
+          "delivered": 28,
+          "official": 29,
           "pending": 12,
-          "open_issues": 29,
+          "open_issues": 26,
           "status": "in_progress"
         },
         "2026": {
@@ -53112,30 +53206,30 @@
         }
       },
       "sources": 153,
-      "delivered": 76,
+      "delivered": 79,
       "not_started": [
         "2026"
       ],
       "last_update": {
-        "at": "2026-11-15T05:55:01-08:00",
+        "at": "2026-11-15T06:01:36-08:00",
         "author": "ebo",
-        "subject": "Complete Catalysis Electronics Materials 2025 with 30 evidence-backed decisions",
+        "subject": "Complete Sustainability Cell Research Clinical Oncology 2025 and add emissions study",
         "area": "reviews",
         "paths": [
-          "metadata/natcatal/2025/catalogue-reconciliation.json",
-          "metadata/natelectron/2025/catalogue-reconciliation.json",
-          "metadata/nmat/2025/catalogue-reconciliation.json",
-          "reviews/2025/feedback/nydiii.json"
+          "metadata/2025/ai4s.json",
+          "metadata/natsustain/2025/ai4s.json",
+          "metadata/natsustain/2025/catalogue-reconciliation.json",
+          "metadata/nature-cr/2025/catalogue-reconciliation.json"
         ]
       },
-      "commits_7d": 60
+      "commits_7d": 61
     }
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-15T14:00:16.306227+00:00",
+    "generated_at": "2026-11-15T14:03:51.083433+00:00",
     "history_available": true,
-    "commit": "0c85209c3f796bacf4c661a784b2670c989777e9",
-    "commits_scanned": 551
+    "commit": "855b788381ccb56fc45e4550bb65962a9c33f3ee",
+    "commits_scanned": 554
   }
 }
