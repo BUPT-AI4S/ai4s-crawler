@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-16T13:39:34.129158+00:00",
-  "commit": "991c3cbab8dee126e9e6958f9f0e008bd9c7d133",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/991c3cbab8dee126e9e6958f9f0e008bd9c7d133/",
+  "generated_at": "2026-11-16T14:15:12.388491+00:00",
+  "commit": "8311c1a0bd9646824fcfaaac542e78b806391796",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/8311c1a0bd9646824fcfaaac542e78b806391796/",
   "years": [
     {
       "year": 2024,
@@ -237,10 +237,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有89条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入127、排除30、待定3、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 3979,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/0304-3894/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数3979，原采集3979，缺失0、多余0。 本人累计纳入127、排除30、待定3、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/0304-3894/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/0304-3894/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/0304-3894/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/0304-3894/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 127,
@@ -249,15 +260,11 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有3条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有3条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -607,13 +614,14 @@
           "snapshot_candidates": 2,
           "candidates": 2,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 318,
+          "official_scope": "Nature官网2024在线发表年全部文献类型；另列原创研究/综述类型；不将目录短描述作为原摘要",
           "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有2条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入0、排除4、待定3、未审0；含核实补录，不作为候选完成率。旧核验表记载目录条目318，本轮未完成独立目录重新枚举及口径复核，暂不填为已确认官网总数。",
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。2026-11-16独立枚举官网目录318条，与原全量采集逐ID对齐，缺失0、多余0。 本人累计纳入0、排除4、待定3、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
             "https://www.nature.com/nclimate/articles?year=2024&page=1",
-            "https://api.crossref.org/journals/1758-678X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/1758-678X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://www.nature.com/nclimate/articles?year=2024&page=16"
           ],
           "decisions": {
             "include": 0,
@@ -622,15 +630,12 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有3条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有3条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -2060,13 +2065,14 @@
           "snapshot_candidates": 3,
           "candidates": 3,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 162,
+          "official_scope": "Nature官网2024在线发表年全部文献类型；另列原创研究/综述类型；不将目录短描述作为原摘要",
           "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有3条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入2、排除1、待定0、未审0；含核实补录，不作为候选完成率。旧核验表记载目录条目162，本轮未完成独立目录重新枚举及口径复核，暂不填为已确认官网总数。",
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。2026-11-16独立枚举官网目录162条，与原全量采集逐ID对齐，缺失0、多余0。 本人累计纳入2、排除1、待定0、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
             "https://www.nature.com/natchemeng/articles?year=2024&page=1",
-            "https://api.crossref.org/journals/2948-1198/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/2948-1198/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://www.nature.com/natchemeng/articles?year=2024&page=9"
           ],
           "decisions": {
             "include": 2,
@@ -2074,13 +2080,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/zch66883-haozhuodi.json",
@@ -2101,13 +2103,14 @@
           "snapshot_candidates": 6,
           "candidates": 6,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 291,
+          "official_scope": "Nature官网2024在线发表年全部文献类型；另列原创研究/综述类型；不将目录短描述作为原摘要",
           "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有6条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入6、排除3、待定2、未审0；含核实补录，不作为候选完成率。旧核验表记载目录条目291，本轮未完成独立目录重新枚举及口径复核，暂不填为已确认官网总数。",
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。2026-11-16独立枚举官网目录291条，与原全量采集逐ID对齐，缺失0、多余0。 本人累计纳入6、排除3、待定2、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
             "https://www.nature.com/nchem/articles?year=2024&page=1",
-            "https://api.crossref.org/journals/1755-4330/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/1755-4330/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://www.nature.com/nchem/articles?year=2024&page=15"
           ],
           "decisions": {
             "include": 6,
@@ -2116,15 +2119,12 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有2条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有2条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -2316,13 +2316,14 @@
           "snapshot_candidates": 2,
           "candidates": 2,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 257,
+          "official_scope": "Nature官网2024在线发表年全部文献类型；另列原创研究/综述类型；不将目录短描述作为原摘要",
           "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有2条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入4、排除1、待定1、未审0；含核实补录，不作为候选完成率。旧核验表记载目录条目257，本轮未完成独立目录重新枚举及口径复核，暂不填为已确认官网总数。",
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。2026-11-16独立枚举官网目录257条，与原全量采集逐ID对齐，缺失0、多余0。 本人累计纳入4、排除1、待定1、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
             "https://www.nature.com/natsynth/articles?year=2024&page=1",
-            "https://api.crossref.org/journals/2731-0582/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/2731-0582/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://www.nature.com/natsynth/articles?year=2024&page=13"
           ],
           "decisions": {
             "include": 4,
@@ -2331,15 +2332,12 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有1条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有1条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -2707,12 +2705,14 @@
           "snapshot_candidates": 2,
           "candidates": 2,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 154,
+          "official_scope": "Springer Nature Link期刊内检索，Date published自定义2024—2024，顶层Article全部条目；包括非研究内容，AI4S审核另排除；与现有按发表年采集口径一致。",
           "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有2条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入3、排除2、待定0、未审0；含核实补录，不作为候选完成率。",
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。2026-11-16独立枚举官网目录154条，与原全量采集逐ID对齐，缺失0、多余0。 本人累计纳入3、排除2、待定0、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/2524-7921/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/2524-7921/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://link.springer.com/search?query=*&source=new-es&content-type=Article&date=custom&dateFrom=2024&dateTo=2024&sortBy=relevance&search-within=Journal&facet-journal-id=42765&page=1",
+            "https://link.springer.com/search?query=*&source=new-es&content-type=Article&date=custom&dateFrom=2024&dateTo=2024&sortBy=relevance&search-within=Journal&facet-journal-id=42765&page=8"
           ],
           "decisions": {
             "include": 3,
@@ -2720,13 +2720,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/zch66883-haozhuodi.json",
@@ -3090,10 +3086,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有3条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入1、排除2、待定0、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 198,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/0001-8686/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数198，原采集198，缺失0、多余0。 本人累计纳入1、排除2、待定0、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/0001-8686/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/0001-8686/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/0001-8686/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/0001-8686/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 1,
@@ -3101,14 +3108,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/zch66883-haozhuodi.json",
             "reviews/2024/feedback/Jodie628.json"
@@ -3663,10 +3664,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有1条，原字段缺摘要1条，复用个人交付中有证据链接的发表记录原摘要同步1条，现原字段仍缺0条。个人文件累计纳入2、排除0、待定0、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 572,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/0010-8545/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数572，原采集572，缺失0、多余0。 本人累计纳入2、排除0、待定0、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/0010-8545/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/0010-8545/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/0010-8545/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/0010-8545/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 2,
@@ -3674,14 +3686,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/zch66883-haozhuodi.json",
             "reviews/2024/feedback/Jodie628.json"
@@ -3939,10 +3945,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有4条，原字段缺摘要2条，复用个人交付中有证据链接的发表记录原摘要同步2条，现原字段仍缺0条。个人文件累计纳入4、排除0、待定0、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 83,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/0927-796X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数83，原采集83，缺失0、多余0。 本人累计纳入4、排除0、待定0、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/0927-796X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/0927-796X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/0927-796X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/0927-796X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 4,
@@ -3950,14 +3967,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/zch66883-haozhuodi.json",
             "reviews/2024/feedback/Jodie628.json"
@@ -3979,10 +3990,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有2条，原字段缺摘要1条，复用个人交付中有证据链接的发表记录原摘要同步1条，现原字段仍缺0条。个人文件累计纳入5、排除0、待定3、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 194,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/1369-7021/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数194，原采集194，缺失0、多余0。 本人累计纳入5、排除0、待定3、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/1369-7021/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/1369-7021/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/1369-7021/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/1369-7021/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 5,
@@ -3991,15 +4013,11 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有3条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有3条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -4520,10 +4538,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有2条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入13、排除2、待定2、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 138,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/2470-9476/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。Science/Science Partner官网直接请求403，浏览器停留Performing security verification，当前未能取得完整年度目录。Cancer Communications另查HEP镜像，7—9期链接404，未用不完整镜像作为全年官网数。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数138，原采集138，缺失0、多余0。 本人累计纳入13、排除2、待定2、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/2470-9476/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/2470-9476/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/2470-9476/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/2470-9476/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 13,
@@ -4532,15 +4561,11 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有2条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有2条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -4564,10 +4589,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有5条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入9、排除3、待定0、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 65,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/2692-7632/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。Science/Science Partner官网直接请求403，浏览器停留Performing security verification，当前未能取得完整年度目录。Cancer Communications另查HEP镜像，7—9期链接404，未用不完整镜像作为全年官网数。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数65，原采集65，缺失0、多余0。 本人累计纳入9、排除3、待定0、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/2692-7632/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/2692-7632/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/2692-7632/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/2692-7632/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 9,
@@ -4575,14 +4611,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/zch66883-haozhuodi.json",
             "reviews/2024/feedback/Jodie628.json"
@@ -5222,10 +5252,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有1条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入2、排除1、待定0、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 43,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/0376-0421/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数43，原采集43，缺失0、多余0。 本人累计纳入2、排除1、待定0、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/0376-0421/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/0376-0421/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/0376-0421/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/0376-0421/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 2,
@@ -5233,14 +5274,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/zch66883-haozhuodi.json",
             "reviews/2024/feedback/Jodie628.json"
@@ -8225,33 +8260,26 @@
           "snapshot_candidates": 164,
           "candidates": 164,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 1455,
+          "official_scope": "Nature官网2024在线发表年全部文献类型；另列原创研究/综述类型；不将目录短描述作为原摘要",
           "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有164条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入217、排除17、待定3、未审0；含核实补录，不作为候选完成率。旧核验表记载目录条目1455，本轮未完成独立目录重新枚举及口径复核，暂不填为已确认官网总数。",
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。2026-11-16独立枚举官网目录1455条，与原全量采集逐ID对齐，缺失0、多余0。 本人累计纳入220、排除17、待定0、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
             "https://www.nature.com/sdata/articles?year=2024&page=1",
-            "https://api.crossref.org/journals/2052-4463/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/2052-4463/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://www.nature.com/sdata/articles?year=2024&page=73"
           ],
           "decisions": {
-            "include": 217,
+            "include": 220,
             "exclude": 17,
-            "pending": 3,
+            "pending": 0,
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有3条待定，具体缺口以逐篇rationale为准。",
-            "Scientific Data存在跨文件不同判定；本轮按完整摘要修订本人的记录，仍待定的3篇保留具体证据缺口，不覆盖另一人的审核文件。",
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
+            "旧记录存在跨文件判定差异；本轮仅同步本人已经完成的3篇全文补证，未覆盖他人记录。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "对照本轮abstract-review.json及wangmengran8789.json，以论文ID确认剩余3篇数据论文是否满足AI实质参与/直接研究贡献要求。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/zch66883-haozhuodi.json",
@@ -8997,13 +9025,14 @@
           "snapshot_candidates": 3,
           "candidates": 3,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 186,
+          "official_scope": "Nature官网2024在线发表年全部文献类型；另列原创研究/综述类型；不将目录短描述作为原摘要",
           "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有3条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入2、排除2、待定0、未审0；含核实补录，不作为候选完成率。旧核验表记载目录条目186，本轮未完成独立目录重新枚举及口径复核，暂不填为已确认官网总数。",
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。2026-11-16独立枚举官网目录186条，与原全量采集逐ID对齐，缺失0、多余0。 本人累计纳入2、排除2、待定0、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
             "https://www.nature.com/natfood/articles?year=2024&page=1",
-            "https://api.crossref.org/journals/2662-1355/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/2662-1355/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://www.nature.com/natfood/articles?year=2024&page=10"
           ],
           "decisions": {
             "include": 2,
@@ -9011,13 +9040,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/zch66883-haozhuodi.json",
@@ -9409,10 +9434,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有1条，原字段缺摘要1条，复用个人交付中有证据链接的发表记录原摘要同步1条，现原字段仍缺0条。个人文件累计纳入0、排除1、待定35、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 204,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/1360-1385/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数204，原采集204，缺失0、多余0。 本人累计纳入0、排除1、待定35、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/1360-1385/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/1360-1385/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/1360-1385/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/1360-1385/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 0,
@@ -9421,15 +9457,11 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有35条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有35条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -10040,10 +10072,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有0条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入0、排除0、待定5、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 377,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/2214-109X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数377，原采集377，缺失0、多余0。 本人累计纳入0、排除0、待定5、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/2214-109X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/2214-109X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/2214-109X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/2214-109X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 0,
@@ -10052,15 +10095,11 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有5条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有5条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -10084,10 +10123,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有0条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入0、排除0、待定3、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 169,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/2468-2667/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数169，原采集169，缺失0、多余0。 本人累计纳入0、排除0、待定3、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/2468-2667/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/2468-2667/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/2468-2667/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/2468-2667/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 0,
@@ -10096,15 +10146,11 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有3条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有3条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -10305,10 +10351,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有9条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入26、排除4、待定0、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 144,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/2666-920X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数144，原采集144，缺失0、多余0。 本人累计纳入26、排除4、待定0、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/2666-920X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/2666-920X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/2666-920X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/2666-920X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 26,
@@ -10316,14 +10373,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/zch66883-haozhuodi.json",
             "reviews/2024/feedback/Jodie628.json"
@@ -10475,13 +10526,14 @@
           "snapshot_candidates": 2,
           "candidates": 2,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 126,
+          "official_scope": "Nature官网2024在线发表年全部文献类型；另列原创研究/综述类型；不将目录短描述作为原摘要",
           "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有2条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入0、排除2、待定0、未审0；含核实补录，不作为候选完成率。旧核验表记载目录条目126，本轮未完成独立目录重新枚举及口径复核，暂不填为已确认官网总数。",
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。2026-11-16独立枚举官网目录126条，与原全量采集逐ID对齐，缺失0、多余0。 本人累计纳入0、排除2、待定0、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
             "https://www.nature.com/nrpsychol/articles?year=2024&page=1",
-            "https://api.crossref.org/journals/2731-0574/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/2731-0574/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://www.nature.com/nrpsychol/articles?year=2024&page=7"
           ],
           "decisions": {
             "include": 0,
@@ -10489,13 +10541,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/zch66883-haozhuodi.json",
@@ -10516,13 +10564,14 @@
           "snapshot_candidates": 36,
           "candidates": 36,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 1761,
+          "official_scope": "Nature官网2024在线发表年全部文献类型；另列原创研究/综述类型；不将目录短描述作为原摘要",
           "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有36条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入26、排除27、待定0、未审0；含核实补录，不作为候选完成率。旧核验表记载目录条目1761，本轮未完成独立目录重新枚举及口径复核，暂不填为已确认官网总数。",
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。2026-11-16独立枚举官网目录1761条，与原全量采集逐ID对齐，缺失0、多余0。 本人累计纳入26、排除27、待定0、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
             "https://www.nature.com/palcomms/articles?year=2024&page=1",
-            "https://api.crossref.org/journals/2662-9992/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/2662-9992/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://www.nature.com/palcomms/articles?year=2024&page=89"
           ],
           "decisions": {
             "include": 26,
@@ -10530,13 +10579,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/zch66883-haozhuodi.json",
@@ -10842,13 +10887,14 @@
           "snapshot_candidates": 89,
           "candidates": 89,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 1720,
+          "official_scope": "Nature官网2024在线发表年全部文献类型；另列原创研究/综述类型；不将目录短描述作为原摘要",
           "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有89条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入68、排除39、待定0、未审0；含核实补录，不作为候选完成率。旧核验表记载目录条目1720，本轮未完成独立目录重新枚举及口径复核，暂不填为已确认官网总数。",
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。2026-11-16独立枚举官网目录1720条，与原全量采集逐ID对齐，缺失0、多余0。 本人累计纳入68、排除39、待定0、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
             "https://www.nature.com/commsbio/articles?year=2024&page=1",
-            "https://api.crossref.org/journals/2399-3642/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/2399-3642/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://www.nature.com/commsbio/articles?year=2024&page=86"
           ],
           "decisions": {
             "include": 68,
@@ -10856,13 +10902,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/zch66883-haozhuodi.json",
@@ -10883,13 +10925,14 @@
           "snapshot_candidates": 6,
           "candidates": 6,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 237,
+          "official_scope": "Nature官网2024在线发表年全部文献类型；另列原创研究/综述类型；不将目录短描述作为原摘要",
           "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有6条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入5、排除3、待定0、未审0；含核实补录，不作为候选完成率。旧核验表记载目录条目237，本轮未完成独立目录重新枚举及口径复核，暂不填为已确认官网总数。",
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。2026-11-16独立枚举官网目录237条，与原全量采集逐ID对齐，缺失0、多余0。 本人累计纳入5、排除3、待定0、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
             "https://www.nature.com/nataging/articles?year=2024&page=1",
-            "https://api.crossref.org/journals/2662-8465/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/2662-8465/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://www.nature.com/nataging/articles?year=2024&page=12"
           ],
           "decisions": {
             "include": 5,
@@ -10897,13 +10940,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/zch66883-haozhuodi.json",
@@ -10924,13 +10963,14 @@
           "snapshot_candidates": 15,
           "candidates": 15,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 159,
+          "official_scope": "Nature官网2024在线发表年全部文献类型；另列原创研究/综述类型；不将目录短描述作为原摘要",
           "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有15条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入22、排除0、待定1、未审0；含核实补录，不作为候选完成率。旧核验表记载目录条目159，本轮未完成独立目录重新枚举及口径复核，暂不填为已确认官网总数。",
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。2026-11-16独立枚举官网目录159条，与原全量采集逐ID对齐，缺失0、多余0。 本人累计纳入22、排除0、待定1、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
             "https://www.nature.com/natbiomedeng/articles?year=2024&page=1",
-            "https://api.crossref.org/journals/2157-846X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/2157-846X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://www.nature.com/natbiomedeng/articles?year=2024&page=8"
           ],
           "decisions": {
             "include": 22,
@@ -10939,15 +10979,12 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有1条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有1条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -11012,13 +11049,14 @@
           "snapshot_candidates": 9,
           "candidates": 9,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 194,
+          "official_scope": "Nature官网2024在线发表年全部文献类型；另列原创研究/综述类型；不将目录短描述作为原摘要",
           "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有9条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入8、排除2、待定0、未审0；含核实补录，不作为候选完成率。旧核验表记载目录条目194，本轮未完成独立目录重新枚举及口径复核，暂不填为已确认官网总数。",
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。2026-11-16独立枚举官网目录194条，与原全量采集逐ID对齐，缺失0、多余0。 本人累计纳入8、排除2、待定0、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
             "https://www.nature.com/natcancer/articles?year=2024&page=1",
-            "https://api.crossref.org/journals/2662-1347/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/2662-1347/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://www.nature.com/natcancer/articles?year=2024&page=10"
           ],
           "decisions": {
             "include": 8,
@@ -11026,13 +11064,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/zch66883-haozhuodi.json",
@@ -11101,13 +11135,14 @@
           "snapshot_candidates": 4,
           "candidates": 4,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 266,
+          "official_scope": "Nature官网2024在线发表年全部文献类型；另列原创研究/综述类型；不将目录短描述作为原摘要",
           "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有4条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入3、排除1、待定0、未审0；含核实补录，不作为候选完成率。旧核验表记载目录条目266，本轮未完成独立目录重新枚举及口径复核，暂不填为已确认官网总数。",
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。2026-11-16独立枚举官网目录266条，与原全量采集逐ID对齐，缺失0、多余0。 本人累计纳入3、排除1、待定0、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
             "https://www.nature.com/ncb/articles?year=2024&page=1",
-            "https://api.crossref.org/journals/1465-7392/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/1465-7392/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://www.nature.com/ncb/articles?year=2024&page=14"
           ],
           "decisions": {
             "include": 3,
@@ -11115,13 +11150,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/zch66883-haozhuodi.json",
@@ -11142,13 +11173,14 @@
           "snapshot_candidates": 9,
           "candidates": 9,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 380,
+          "official_scope": "Nature官网2024在线发表年全部文献类型；另列原创研究/综述类型；不将目录短描述作为原摘要",
           "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有9条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入7、排除7、待定1、未审0；含核实补录，不作为候选完成率。旧核验表记载目录条目380，本轮未完成独立目录重新枚举及口径复核，暂不填为已确认官网总数。",
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。2026-11-16独立枚举官网目录380条，与原全量采集逐ID对齐，缺失0、多余0。 本人累计纳入7、排除7、待定1、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
             "https://www.nature.com/ng/articles?year=2024&page=1",
-            "https://api.crossref.org/journals/1061-4036/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/1061-4036/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://www.nature.com/ng/articles?year=2024&page=19"
           ],
           "decisions": {
             "include": 7,
@@ -11157,15 +11189,12 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有1条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有1条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -11187,13 +11216,14 @@
           "snapshot_candidates": 3,
           "candidates": 3,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 333,
+          "official_scope": "Nature官网2024在线发表年全部文献类型；另列原创研究/综述类型；不将目录短描述作为原摘要",
           "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有3条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入1、排除4、待定0、未审0；含核实补录，不作为候选完成率。旧核验表记载目录条目333，本轮未完成独立目录重新枚举及口径复核，暂不填为已确认官网总数。",
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。2026-11-16独立枚举官网目录333条，与原全量采集逐ID对齐，缺失0、多余0。 本人累计纳入1、排除4、待定0、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
             "https://www.nature.com/ni/articles?year=2024&page=1",
-            "https://api.crossref.org/journals/1529-2908/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/1529-2908/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://www.nature.com/ni/articles?year=2024&page=17"
           ],
           "decisions": {
             "include": 1,
@@ -11201,13 +11231,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/zch66883-haozhuodi.json",
@@ -11278,13 +11304,14 @@
           "snapshot_candidates": 1,
           "candidates": 1,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 237,
+          "official_scope": "Nature官网2024在线发表年全部文献类型；另列原创研究/综述类型；不将目录短描述作为原摘要",
           "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有1条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入0、排除2、待定1、未审0；含核实补录，不作为候选完成率。旧核验表记载目录条目237，本轮未完成独立目录重新枚举及口径复核，暂不填为已确认官网总数。",
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。2026-11-16独立枚举官网目录237条，与原全量采集逐ID对齐，缺失0、多余0。 本人累计纳入0、排除2、待定1、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
             "https://www.nature.com/natmetab/articles?year=2024&page=1",
-            "https://api.crossref.org/journals/2522-5812/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/2522-5812/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://www.nature.com/natmetab/articles?year=2024&page=12"
           ],
           "decisions": {
             "include": 0,
@@ -11293,15 +11320,12 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有1条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有1条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -11323,13 +11347,14 @@
           "snapshot_candidates": 67,
           "candidates": 67,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 430,
+          "official_scope": "Nature官网2024在线发表年全部文献类型；另列原创研究/综述类型；不将目录短描述作为原摘要",
           "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有67条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入64、排除16、待定2、未审0；含核实补录，不作为候选完成率。旧核验表记载目录条目430，本轮未完成独立目录重新枚举及口径复核，暂不填为已确认官网总数。",
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。2026-11-16独立枚举官网目录430条，与原全量采集逐ID对齐，缺失0、多余0。 本人累计纳入64、排除16、待定2、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
             "https://www.nature.com/nmeth/articles?year=2024&page=1",
-            "https://api.crossref.org/journals/1548-7091/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/1548-7091/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://www.nature.com/nmeth/articles?year=2024&page=22"
           ],
           "decisions": {
             "include": 64,
@@ -11338,15 +11363,12 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有2条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有2条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -11995,13 +12017,14 @@
           "snapshot_candidates": 4,
           "candidates": 4,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 117,
+          "official_scope": "Nature官网2024在线发表年全部文献类型；另列原创研究/综述类型；不将目录短描述作为原摘要",
           "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有4条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入0、排除4、待定0、未审0；含核实补录，不作为候选完成率。旧核验表记载目录条目117，本轮未完成独立目录重新枚举及口径复核，暂不填为已确认官网总数。",
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。2026-11-16独立枚举官网目录117条，与原全量采集逐ID对齐，缺失0、多余0。 本人累计纳入0、排除4、待定0、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
             "https://www.nature.com/nrn/articles?year=2024&page=1",
-            "https://api.crossref.org/journals/1471-003X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/1471-003X/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://www.nature.com/nrn/articles?year=2024&page=6"
           ],
           "decisions": {
             "include": 0,
@@ -12009,13 +12032,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/zch66883-haozhuodi.json",
@@ -12316,13 +12335,14 @@
           "candidates": 62,
           "missing_abstract": 0,
           "official_total": 385,
-          "official_scope": "Publisher publication-year filter, all document types retained separately",
+          "official_scope": "Nature官网2024在线发表年全部文献类型；另列原创研究/综述类型；不将目录短描述作为原摘要",
           "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有62条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入136、排除11、待定0、未审0；含核实补录，不作为候选完成率。旧核验表记载目录条目385，本轮未完成独立目录重新枚举及口径复核，暂不填为已确认官网总数。",
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。2026-11-16独立枚举官网目录385条，与原全量采集逐ID对齐，缺失0、多余0。 本人累计纳入136、排除11、待定0、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
             "https://www.nature.com/npjdigitalmed/articles?year=2024",
             "https://www.nature.com/npjdigitalmed/articles?year=2024&page=1",
-            "https://api.crossref.org/journals/2398-6352/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/2398-6352/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://www.nature.com/npjdigitalmed/articles?year=2024&page=20"
           ],
           "decisions": {
             "include": 172,
@@ -12333,15 +12353,12 @@
           "issues": [
             "同一论文的交付判定存在冲突，冲突记录不计入统计。",
             "28条已审待定，AI作用、科学贡献或元数据仍需补证。",
-            "本轮未完成官网同口径全年总数核验。",
             "页面显示Blueblue1101逐篇与反馈记录的判定冲突、待定数26/28不一致；不属于本轮个人文件的记录。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
             "由负责人核对重复论文的不同判定。",
             "按个人JSON的逐条待定理由补证，避免将待定直接纳入或排除。",
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "由该来源负责人核对Blueblue1101逐篇文件和feedback中的重复判定及统计；本轮不替另一提交者批量改判。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
@@ -13557,13 +13574,24 @@
           "missing_abstract": 1,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有3条，原字段缺摘要1条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺1条。个人文件累计纳入1、排除18、待定1、未审0；含核实补录，不作为候选完成率。 全文补证续审：Cancer Communications原创研究Letter改为纳入；Science Bulletin遥感Mini-review改为纳入，ENSO维持纳入；三篇正式版本均未提供独立文字摘要，已核实全文并记录位置。当前本来源个人文件纳入2、排除17、待定1。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 116,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。 排除journal-issue整期DOI，仅比较journal-article论文记录；整期DOI列表单列。",
+            "query_url": "https://api.crossref.org/journals/2523-3548/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。Science/Science Partner官网直接请求403，浏览器停留Performing security verification，当前未能取得完整年度目录。Cancer Communications另查HEP镜像，7—9期链接404，未用不完整镜像作为全年官网数。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数116，原采集116，缺失0、多余0。另剔除12条journal-issue整期DOI，详见审计文件。 本人累计纳入2、排除17、待定1、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2523-3548/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
             "https://api.crossref.org/journals/2523-3548/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
             "https://spj.science.org/doi/10.1002/cac2.12612",
             "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11570770/fullTextXML",
-            "https://pubmed.ncbi.nlm.nih.gov/39387321/"
+            "https://pubmed.ncbi.nlm.nih.gov/39387321/",
+            "https://api.crossref.org/journals/2523-3548/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 2,
@@ -13572,18 +13600,14 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有1条其他待定记录；本轮三篇全文补证已完成。",
-            "候选摘要空值中包括已全文审核且正式版本不提供文字摘要的记录；不应以这些空值认定为未审或待补原摘要。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有1条待定、0条未审，缺口见逐篇理由。",
+            "候选原摘要字段仍空1条：0条为已排除的会议摘要，1条正式版本未提供独立文字摘要；该数不等于未审核论文数。",
             "AI4S候选缺少摘要：1 篇。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "三篇全文补证记录无需继续寻找不存在的正式文字摘要；展示时使用abstract_status和全文审核依据，保留摘要空值。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
+            "保留出版方未提供独立摘要的状态及已有全文核验证据；不生成或拼接摘要，不为消除计数删除候选。",
             "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
@@ -14064,10 +14088,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有1条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入0、排除1、待定5、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 162,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/1934-5909/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数162，原采集162，缺失0、多余0。 本人累计纳入0、排除1、待定5、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/1934-5909/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN"
+            "https://api.crossref.org/journals/1934-5909/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/1934-5909/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN",
+            "https://api.crossref.org/journals/1934-5909/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 0,
@@ -14076,15 +14111,11 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有5条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有5条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -14242,10 +14273,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有1条，原字段缺摘要1条，复用个人交付中有证据链接的发表记录原摘要同步1条，现原字段仍缺0条。个人文件累计纳入1、排除0、待定0、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 236,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/1074-7613/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数236，原采集236，缺失0、多余0。 本人累计纳入1、排除0、待定0、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/1074-7613/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/1074-7613/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/1074-7613/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/1074-7613/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 1,
@@ -14253,14 +14295,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/zch66883-haozhuodi.json",
             "reviews/2024/feedback/Jodie628.json"
@@ -14555,10 +14591,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有0条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入0、排除0、待定24、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 136,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/2405-8033/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数136，原采集136，缺失0、多余0。 本人累计纳入0、排除0、待定24、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/2405-8033/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN"
+            "https://api.crossref.org/journals/2405-8033/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/2405-8033/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN",
+            "https://api.crossref.org/journals/2405-8033/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 0,
@@ -14567,15 +14614,11 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有24条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有24条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -14599,10 +14642,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有1条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入1、排除0、待定24、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 129,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/0962-8924/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数129，原采集129，缺失0、多余0。 本人累计纳入1、排除0、待定24、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/0962-8924/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/0962-8924/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/0962-8924/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/0962-8924/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 1,
@@ -14611,15 +14665,11 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有24条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有24条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -14972,10 +15022,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有1条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入2、排除1、待定30、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 138,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/0165-6147/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数138，原采集138，缺失0、多余0。 本人累计纳入2、排除1、待定30、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/0165-6147/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/0165-6147/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/0165-6147/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/0165-6147/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 2,
@@ -14984,15 +15045,11 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有30条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有30条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -15431,10 +15488,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有14条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入25、排除9、待定3、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 147,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/2589-7500/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数147，原采集147，缺失0、多余0。 本人累计纳入25、排除9、待定3、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/2589-7500/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/2589-7500/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/2589-7500/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/2589-7500/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 25,
@@ -15443,15 +15511,11 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有3条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有3条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -15624,10 +15688,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有0条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入0、排除5、待定259、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 566,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/1473-3099/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数566，原采集566，缺失0、多余0。 本人累计纳入0、排除5、待定259、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/1473-3099/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/1473-3099/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/1473-3099/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/1473-3099/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 0,
@@ -15636,15 +15711,11 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有259条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有259条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -15668,10 +15739,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有2条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入2、排除1、待定8、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 226,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/2666-5247/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数226，原采集226，缺失0、多余0。 本人累计纳入2、排除1、待定8、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/2666-5247/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/2666-5247/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/2666-5247/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/2666-5247/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 2,
@@ -15680,15 +15762,11 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有8条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有8条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -15828,10 +15906,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有0条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入0、排除4、待定77、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 249,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/2215-0366/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数249，原采集249，缺失0、多余0。 本人累计纳入0、排除4、待定77、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/2215-0366/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/2215-0366/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/2215-0366/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/2215-0366/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 0,
@@ -15840,15 +15929,11 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有77条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有77条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -16018,10 +16103,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有0条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入1、排除5、待定52、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 180,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/2665-9913/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数180，原采集180，缺失0、多余0。 本人累计纳入1、排除5、待定52、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/2665-9913/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/2665-9913/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/2665-9913/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/2665-9913/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 1,
@@ -16030,15 +16126,11 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有52条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有52条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -16352,12 +16444,14 @@
           "snapshot_candidates": 1,
           "candidates": 1,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 454,
+          "official_scope": "Springer Nature Link期刊内检索，Date published自定义2024—2024，顶层Article全部条目；包括非研究内容，AI4S审核另排除；与现有按发表年采集口径一致。",
           "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有1条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入1、排除3、待定65、未审0；含核实补录，不作为候选完成率。",
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。2026-11-16独立枚举官网目录454条，与原全量采集逐ID对齐，缺失0、多余0。 本人累计纳入1、排除3、待定65、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/0342-4642/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/0342-4642/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://link.springer.com/search?query=*&source=new-es&content-type=Article&date=custom&dateFrom=2024&dateTo=2024&sortBy=relevance&search-within=Journal&facet-journal-id=134&page=1",
+            "https://link.springer.com/search?query=*&source=new-es&content-type=Article&date=custom&dateFrom=2024&dateTo=2024&sortBy=relevance&search-within=Journal&facet-journal-id=134&page=23"
           ],
           "decisions": {
             "include": 1,
@@ -16366,15 +16460,12 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有65条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有65条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -16898,10 +16989,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有9条，原字段缺摘要5条，复用个人交付中有证据链接的发表记录原摘要同步5条，现原字段仍缺0条。个人文件累计纳入2、排除18、待定54、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 3654,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/0003-4967/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数3654，原采集3654，缺失0、多余0。 本人累计纳入2、排除18、待定54、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/0003-4967/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/0003-4967/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/0003-4967/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/0003-4967/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 2,
@@ -16910,15 +17012,11 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有54条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有54条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -17443,10 +17541,21 @@
           "missing_abstract": 5,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有5条，原字段缺摘要5条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺5条。个人文件累计纳入1、排除90、待定52、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 2007,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/0302-2838/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数2007，原采集2007，缺失0、多余0。 本人累计纳入1、排除90、待定52、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/0302-2838/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/0302-2838/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/0302-2838/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/0302-2838/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 1,
@@ -17455,18 +17564,14 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有52条待定，具体缺口以逐篇rationale为准。",
-            "当前AI4S候选原字段仍缺摘要5条，关联审核状态为{'exclude': 5}。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有52条待定、0条未审，缺口见逐篇理由。",
+            "候选原摘要字段仍空5条：5条为已排除的会议摘要，0条正式版本未提供独立文字摘要；该数不等于未审核论文数。",
             "AI4S候选缺少摘要：5 篇。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "按candidate-abstract-sync.json的记录保留已补摘要出处；剩余缺摘要按文献类型和证据状态分别处理，不编写摘要或将中文审核概述冒充原摘要。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
+            "官网访问恢复后可按教程Export citation and abstract to BibTeX归档会议原摘要；保留排除记录，不以其他会议版本代替。",
             "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
@@ -18098,10 +18203,21 @@
           "missing_abstract": 2,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有2条，原字段缺摘要2条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺2条。个人文件累计纳入1、排除155、待定67、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 1855,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/1556-0864/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数1855，原采集1855，缺失0、多余0。 本人累计纳入1、排除155、待定67、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/1556-0864/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/1556-0864/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/1556-0864/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/1556-0864/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 1,
@@ -18110,18 +18226,14 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有67条待定，具体缺口以逐篇rationale为准。",
-            "当前AI4S候选原字段仍缺摘要2条，关联审核状态为{'exclude': 2}。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有67条待定、0条未审，缺口见逐篇理由。",
+            "候选原摘要字段仍空2条：2条为已排除的会议摘要，0条正式版本未提供独立文字摘要；该数不等于未审核论文数。",
             "AI4S候选缺少摘要：2 篇。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "按candidate-abstract-sync.json的记录保留已补摘要出处；剩余缺摘要按文献类型和证据状态分别处理，不编写摘要或将中文审核概述冒充原摘要。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
+            "官网访问恢复后可按教程Export citation and abstract to BibTeX归档会议原摘要；保留排除记录，不以其他会议版本代替。",
             "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
@@ -19642,10 +19754,10 @@
           "snapshot_candidates": 150,
           "candidates": 150,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 2387,
+          "official_scope": "ECCV 2024正会正式研究论文，ECVA ECCV 2024 Papers目录，不含Workshop；按官网论文链接去重，题名规范化对齐后人工核对差异",
           "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有150条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入166、排除87、待定2、未审0；含核实补录，不作为候选完成率。旧核验表记载目录条目2387，本轮未完成独立目录重新枚举及口径复核，暂不填为已确认官网总数。",
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。2026-11-16独立枚举官网目录2387条，与原全量采集逐ID对齐，缺失0、多余0。 本人累计纳入166、排除87、待定2、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
             "https://www.ecva.net/papers.php"
           ],
@@ -19656,15 +19768,12 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有2条待定，具体缺口以逐篇rationale为准。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有2条待定、0条未审，缺口见逐篇理由。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -20294,10 +20403,21 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有1条，原字段缺摘要0条，复用个人交付中有证据链接的发表记录原摘要同步0条，现原字段仍缺0条。个人文件累计纳入0、排除1、待定0、未审0；含核实补录，不作为候选完成率。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 106,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/0370-1573/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数106，原采集106，缺失0、多余0。 本人累计纳入0、排除1、待定0、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
-            "https://api.crossref.org/journals/0370-1573/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A"
+            "https://api.crossref.org/journals/0370-1573/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "https://api.crossref.org/journals/0370-1573/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
+            "https://api.crossref.org/journals/0370-1573/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 0,
@@ -20305,14 +20425,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/zch66883-haozhuodi.json",
             "reviews/2024/feedback/Jodie628.json"
@@ -21863,13 +21977,24 @@
           "missing_abstract": 2,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "基线提交e6c9c1db5a2071dc4d6e80f1274da2b3cca716b5；采集快照2026-11-05T10:31:19.144426+08:00。本轮候选文件原有8条，原字段缺摘要4条，复用个人交付中有证据链接的发表记录原摘要同步2条，现原字段仍缺2条。个人文件累计纳入12、排除110、待定154、未审0；含核实补录，不作为候选完成率。 全文补证续审：Cancer Communications原创研究Letter改为纳入；Science Bulletin遥感Mini-review改为纳入，ENSO维持纳入；三篇正式版本均未提供独立文字摘要，已核实全文并记录位置。当前本来源个人文件纳入13、排除110、待定153。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 529,
+            "scope": "Crossref pub-date 2024-01-01至2024-12-31；按指定ISSN枚举全部登记类型，包含会议摘要、编委等非研究条目；与原全量采集相同口径，AI4S纳入范围另行筛选。不证明出版社官网绝对完整性。",
+            "query_url": "https://api.crossref.org/journals/2095-9273/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0,
+            "audit_file": "metadata/2024/haozhuodi-coverage-audit-20261116.json"
+          },
+          "coverage_note": "基线main提交424993d8700b3474dea230e6343137a331347153；采集快照2026-11-05T10:31:19.144426+08:00。ScienceDirect直接请求试查403；浏览器短暂恢复后出现CPE00002内容错误，当前无法稳定完成逐卷人工枚举。 依备用流程按Crossref pub-date和ISSN重新分页枚举、逐DOI比较。参考论文数529，原采集529，缺失0、多余0。 本人累计纳入13、排除110、待定153、未审0；逐篇数含补录，不作原候选完成率。逐条清单及口径见metadata/2024/haozhuodi-coverage-audit-20261116.json。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2095-9273/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A",
             "https://api.crossref.org/journals/2095-9273/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=250&select=DOI%2Ctitle%2Cabstract%2Cauthor%2Cpublished-print%2Cpublished-online%2Cissue%2Cvolume%2Ctype%2CURL%2Cresource%2CISSN&cursor=%2A",
             "https://dds.sciengine.com/cfs/files/pdfs/2095-9273/36F40D233A7A49088628E3FF810F08F1.pdf",
             "https://www.sciencedirect.com/science/article/pii/S2095927324006510",
-            "https://dds.sciengine.com/cfs/files/pdfs/2095-9273/D71A7E5EB7AE405BB812503B49590749.pdf"
+            "https://dds.sciengine.com/cfs/files/pdfs/2095-9273/D71A7E5EB7AE405BB812503B49590749.pdf",
+            "https://api.crossref.org/journals/2095-9273/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31&rows=1000&select=DOI%2Ctitle%2Ctype%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2CURL&cursor=%2A"
           ],
           "decisions": {
             "include": 13,
@@ -21878,18 +22003,14 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮未完成官网同口径全年总数核验。",
-            "个人交付仍有153条其他待定记录；本轮三篇全文补证已完成。",
-            "候选摘要空值中包括已全文审核且正式版本不提供文字摘要的记录；不应以这些空值认定为未审或待补原摘要。",
-            "官网同口径总数尚未确认。",
+            "本人逐篇交付仍有153条待定、0条未审，缺口见逐篇理由。",
+            "候选原摘要字段仍空2条：0条为已排除的会议摘要，2条正式版本未提供独立文字摘要；该数不等于未审核论文数。",
             "AI4S候选缺少摘要：2 篇。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "复核出版方全年目录或正式会议论文集，记录年份、文章类型、增刊范围及逐ID差额，核实后更新official_total。",
-            "优先复查当前AI4S候选中的待定记录；对缺原摘要者查正式论文页/作者公开原文，对类型或AI角色不清者按新逐篇理由补证。",
-            "三篇全文补证记录无需继续寻找不存在的正式文字摘要；展示时使用abstract_status和全文审核依据，保留摘要空值。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "继续按逐篇rationale补查科学任务、AI实际作用及文献类型，证据不足者保留待定。",
+            "保留出版方未提供独立摘要的状态及已有全文核验证据；不生成或拼接摘要，不为消除计数删除候选。",
             "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
@@ -22511,23 +22632,22 @@
           "owner": "郝卓迪",
           "sources": 50,
           "delivered": 50,
-          "official": 1,
-          "pending": 967,
-          "open_issues": 50,
+          "official": 50,
+          "pending": 964,
+          "open_issues": 31,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-09T21:14:39+08:00",
-            "author": "jodiehao",
-            "subject": "Complete Hao Zhuodi 2024 abstract and full-text follow-up",
+            "at": "2026-11-16T06:00:14-08:00",
+            "author": "Xueting",
+            "subject": "Reconcile Hao Zhuodi 2024 coverage and document abstract gaps",
             "area": "reviews",
             "paths": [
-              "metadata/2024/ai4s.json",
-              "metadata/j-04135a0409/2024/ai4s.json",
-              "metadata/j-18fb82c92b/2024/ai4s.json",
-              "metadata/j-2787efe2f4/2024/ai4s.json"
+              "metadata/2024/haozhuodi-coverage-audit-20261116.json",
+              "reviews/2024/feedback/Jodie628.json",
+              "reviews/2024/zch66883-haozhuodi.json"
             ]
           },
-          "commits_7d": 0
+          "commits_7d": 1
         },
         {
           "owner": "丁利军",
@@ -22547,7 +22667,7 @@
               "reviews/2024/feedback/dinglijun.json"
             ]
           },
-          "commits_7d": 9
+          "commits_7d": 8
         },
         {
           "owner": "龙兆科",
@@ -22566,7 +22686,7 @@
               "reviews/2024/feedback/AlearnerDL.json"
             ]
           },
-          "commits_7d": 127
+          "commits_7d": 106
         },
         {
           "owner": "王梦冉",
@@ -39764,18 +39884,17 @@
           "open_issues": 49,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-09T21:14:39+08:00",
-            "author": "jodiehao",
-            "subject": "Complete Hao Zhuodi 2024 abstract and full-text follow-up",
+            "at": "2026-11-16T06:00:14-08:00",
+            "author": "Xueting",
+            "subject": "Reconcile Hao Zhuodi 2024 coverage and document abstract gaps",
             "area": "reviews",
             "paths": [
-              "metadata/2024/ai4s.json",
-              "metadata/j-04135a0409/2024/ai4s.json",
-              "metadata/j-18fb82c92b/2024/ai4s.json",
-              "metadata/j-2787efe2f4/2024/ai4s.json"
+              "metadata/2024/haozhuodi-coverage-audit-20261116.json",
+              "reviews/2024/feedback/Jodie628.json",
+              "reviews/2024/zch66883-haozhuodi.json"
             ]
           },
-          "commits_7d": 0
+          "commits_7d": 1
         },
         {
           "owner": "丁利军",
@@ -39795,7 +39914,7 @@
               "reviews/2024/feedback/dinglijun.json"
             ]
           },
-          "commits_7d": 9
+          "commits_7d": 8
         },
         {
           "owner": "王婉婷",
@@ -39834,7 +39953,7 @@
               "reviews/2024/feedback/AlearnerDL.json"
             ]
           },
-          "commits_7d": 127
+          "commits_7d": 106
         },
         {
           "owner": "王梦冉",
@@ -55090,18 +55209,17 @@
           "open_issues": 50,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-09T21:14:39+08:00",
-            "author": "jodiehao",
-            "subject": "Complete Hao Zhuodi 2024 abstract and full-text follow-up",
+            "at": "2026-11-16T06:00:14-08:00",
+            "author": "Xueting",
+            "subject": "Reconcile Hao Zhuodi 2024 coverage and document abstract gaps",
             "area": "reviews",
             "paths": [
-              "metadata/2024/ai4s.json",
-              "metadata/j-04135a0409/2024/ai4s.json",
-              "metadata/j-18fb82c92b/2024/ai4s.json",
-              "metadata/j-2787efe2f4/2024/ai4s.json"
+              "metadata/2024/haozhuodi-coverage-audit-20261116.json",
+              "reviews/2024/feedback/Jodie628.json",
+              "reviews/2024/zch66883-haozhuodi.json"
             ]
           },
-          "commits_7d": 0
+          "commits_7d": 1
         },
         {
           "owner": "丁利军",
@@ -55121,7 +55239,7 @@
               "reviews/2024/feedback/dinglijun.json"
             ]
           },
-          "commits_7d": 9
+          "commits_7d": 8
         },
         {
           "owner": "王婉婷",
@@ -55160,7 +55278,7 @@
               "reviews/2024/feedback/AlearnerDL.json"
             ]
           },
-          "commits_7d": 127
+          "commits_7d": 106
         },
         {
           "owner": "王梦冉",
@@ -55285,9 +55403,9 @@
         "2024": {
           "sources": 50,
           "delivered": 50,
-          "official": 1,
-          "pending": 967,
-          "open_issues": 50,
+          "official": 50,
+          "pending": 964,
+          "open_issues": 31,
           "status": "in_progress"
         },
         "2025": {
@@ -55314,18 +55432,17 @@
         "2026"
       ],
       "last_update": {
-        "at": "2026-11-09T21:14:39+08:00",
-        "author": "jodiehao",
-        "subject": "Complete Hao Zhuodi 2024 abstract and full-text follow-up",
+        "at": "2026-11-16T06:00:14-08:00",
+        "author": "Xueting",
+        "subject": "Reconcile Hao Zhuodi 2024 coverage and document abstract gaps",
         "area": "reviews",
         "paths": [
-          "metadata/2024/ai4s.json",
-          "metadata/j-04135a0409/2024/ai4s.json",
-          "metadata/j-18fb82c92b/2024/ai4s.json",
-          "metadata/j-2787efe2f4/2024/ai4s.json"
+          "metadata/2024/haozhuodi-coverage-audit-20261116.json",
+          "reviews/2024/feedback/Jodie628.json",
+          "reviews/2024/zch66883-haozhuodi.json"
         ]
       },
-      "commits_7d": 0
+      "commits_7d": 1
     },
     {
       "owner": "丁利军",
@@ -55371,7 +55488,7 @@
           "reviews/2024/feedback/dinglijun.json"
         ]
       },
-      "commits_7d": 9
+      "commits_7d": 8
     },
     {
       "owner": "龙兆科",
@@ -55416,7 +55533,7 @@
           "reviews/2024/feedback/AlearnerDL.json"
         ]
       },
-      "commits_7d": 127
+      "commits_7d": 106
     },
     {
       "owner": "王梦冉",
@@ -55701,9 +55818,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-16T13:39:13.270204+00:00",
+    "generated_at": "2026-11-16T14:14:57.916163+00:00",
     "history_available": true,
-    "commit": "991c3cbab8dee126e9e6958f9f0e008bd9c7d133",
-    "commits_scanned": 702
+    "commit": "8311c1a0bd9646824fcfaaac542e78b806391796",
+    "commits_scanned": 704
   }
 }
