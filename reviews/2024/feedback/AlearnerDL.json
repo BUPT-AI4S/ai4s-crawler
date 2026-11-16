@@ -1907,23 +1907,21 @@
     "year": 2024,
     "source_code": "usenix-security",
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-    "official_total": null,
-    "official_scope": "2024 年当届正式论文集与本来源快照同口径的论文；分轨录用量另列。",
-    "coverage_note": "官方议程的 417 篇研究论文均已与快照匹配，另有 1 场主题报告。快照另外有来自 SOUPS、WOOT 等的条目，及当前官网目录中未列出的 Prefetch for Fun and Profit；该条须核对版本或撤下情况。 2026-11-15 官方 frontpage?page=43 可读到该题名及 2024/USENIX Security 24 归属，详情 biblio-14821 显示 Login Required；保留出版状态疑点，不将索引条目直接当作已确认正式论文。 2026-11-15 完成 SOUPS 33、WOOT 18、CSET 12 篇与各自官方目录的逐条题名/稳定链接/DOI 匹配；63 条全部对应，排除议程中的 keynote、lightning talk 和 panel。WOOT Operation Mango 为主会论文的 lightning talk，不重复计数。证据见 reviews/2024/AlearnerDL/usenix-workshops-reconciliation-2026-11-15.json。",
+    "official_total": 480,
+    "official_scope": "USENIX Security '24 正式论文集主会研究论文 417 篇（官方论文集目录 sec24-contents.pdf 带页码条目，与技术议程 417 篇一致）+ 快照同时收录的同址 SOUPS 33、WOOT 18、CSET 12 篇正式研究论文；不含 keynote、lightning talk、panel，不含未收入正式论文集的条目。",
+    "coverage_note": "官方议程的 417 篇研究论文均已与快照匹配，另有 1 场主题报告。快照另外有来自 SOUPS、WOOT 等的条目，及当前官网目录中未列出的 Prefetch for Fun and Profit；该条须核对版本或撤下情况。 2026-11-15 官方 frontpage?page=43 可读到该题名及 2024/USENIX Security 24 归属，详情 biblio-14821 显示 Login Required；保留出版状态疑点，不将索引条目直接当作已确认正式论文。 2026-11-15 完成 SOUPS 33、WOOT 18、CSET 12 篇与各自官方目录的逐条题名/稳定链接/DOI 匹配；63 条全部对应，排除议程中的 keynote、lightning talk 和 panel。WOOT Operation Mango 为主会论文的 lightning talk，不重复计数。证据见 reviews/2024/AlearnerDL/usenix-workshops-reconciliation-2026-11-15.json。 2026-11-15 依官方论文集目录 sec24-contents.pdf 完成主会全量逐篇对账：目录带页码论文 417 条，技术议程 417 篇研究论文题名全部在目录中；快照 dblp conf/uss 2024 记录中 417 条与官方条目一一对应（414 条按官方演讲页链接、3 条按规范化题名），缺失、额外、重复均为 0。Prefetch for Fun and Profit（dblp conf/uss/ChoiKS24）不在正式论文集目录和技术议程中，快照所列演讲页 presentation/choi 返回 403 Login Required（未公开节点），官网书目 biblio-14821 作者为 [Anonymous] 且无 PDF/页码/DOI；判定为未正式出版的快照多余条目，不计入官网同口径总数，原记录保留，非 AI4S 候选、无需逐篇判定。同口径官网 480 篇，快照 481 篇 = 480 条匹配 + 1 条未正式出版条目，未解决差异 0。明细见 reviews/2024/AlearnerDL/usenix-security-proceedings-reconciliation-2026-11-15.json。",
     "evidence_urls": [
       "https://www.usenix.org/conference/usenixsecurity24/technical-sessions",
       "https://www.usenix.org/frontpage?page=43",
       "https://www.usenix.org/biblio-14821",
       "https://www.usenix.org/conference/soups2024/technical-sessions",
       "https://www.usenix.org/conference/woot24/technical-sessions",
-      "https://cset24.isi.edu/program.html"
+      "https://cset24.isi.edu/program.html",
+      "https://files.usenix.org/s3fs-public/sec24-contents.pdf",
+      "https://www.usenix.org/conference/usenixsecurity24/presentation/choi"
     ],
-    "issues": [
-      "主会 417 篇及 SOUPS/WOOT/CSET 63 篇均已与官方目录逐项匹配；仅 Prefetch for Fun and Profit 的正式出版/撤下状态仍待核。"
-    ],
-    "next_actions": [
-      "核对 Prefetch for Fun and Profit 的官方书目详情或出版更正；不得将有书目存档直接等同已正式出版。"
-    ],
+    "issues": [],
+    "next_actions": [],
     "source_title": "USENIX Security Symposium",
     "snapshot_papers": 481,
     "candidate_count": 17,
@@ -1939,7 +1937,12 @@
       "unmatched_snapshot_entries": 1,
       "official_workshop_research_papers": 63,
       "snapshot_matched_to_official_workshop_research": 63,
-      "snapshot_matched_to_official_research_all_tracks": 480
+      "snapshot_matched_to_official_research_all_tracks": 480,
+      "official_proceedings_contents_papers": 417,
+      "snapshot_matched_to_official_proceedings": 417,
+      "unmatched_snapshot_entry_disposition": "not_in_official_proceedings",
+      "official_same_scope_total": 480,
+      "unresolved": 0
     },
     "verified_track_counts": {
       "主会研究论文": 417,
@@ -1952,7 +1955,14 @@
       "include": 38
     },
     "submitted_record_count": 52,
-    "rechecked_on": "2026-11-15"
+    "rechecked_on": "2026-11-15",
+    "catalogue_reconciliation": {
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "snapshot_extra_not_formally_published": 1,
+      "evidence_file": "reviews/2024/AlearnerDL/usenix-security-proceedings-reconciliation-2026-11-15.json"
+    }
   },
   {
     "year": 2024,
