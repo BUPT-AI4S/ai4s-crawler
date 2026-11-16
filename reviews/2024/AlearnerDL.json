@@ -85034,20 +85034,87 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-20261105-103119",
-      "owner": "龙兆科",
+      "batch_id": "2024-dinglijun",
+      "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "正式综述介绍LLM时间序列方法并列举多领域，但摘要未说明具体科学任务及其贡献，需要更明确的摘要级范围证据。",
+      "decision": "include",
+      "rationale": "正式全文 §3 的量化和对齐方法具体分析 Auto-TTE 的心电信号生成、ETP 的 ECG—临床报告对比学习，以及 ICU 生理测量与临床文本对齐。综述具有医学时间序列研究的实质 AI 方法内容，按学术综述纳入。",
       "verified_metadata": {
         "title": "Large Language Models for Time Series: A Survey",
-        "url": "https://www.ijcai.org/proceedings/2024/921",
+        "authors": [
+          "Xiyuan Zhang",
+          "Ranak Roy Chowdhury",
+          "Rajesh K. Gupta",
+          "Jingbo Shang"
+        ],
         "doi": "10.24963/ijcai.2024/921",
+        "url": "https://ijcai.org/proceedings/2024/921",
+        "pdf_url": "https://ijcai.org/proceedings/2024/0921.pdf",
+        "keywords": [
+          "Machine Learning: ML: Time series and data streams",
+          "Data Mining: DM: Mining spatial and/or temporal data",
+          "Natural Language Processing: NLP: Language models"
+        ],
+        "field_sources": {
+          "keywords": "https://ijcai.org/proceedings/2024/921",
+          "article_type": "https://ijcai.org/proceedings/2024/#paper921",
+          "review": "https://ijcai.org/proceedings/2024/0921.pdf"
+        },
         "evidence_urls": [
-          "https://www.ijcai.org/proceedings/2024/921"
-        ]
+          "https://ijcai.org/proceedings/2024/921",
+          "https://ijcai.org/proceedings/2024/#paper921",
+          "https://ijcai.org/proceedings/2024/0921.pdf"
+        ],
+        "article_type": "Survey Track"
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "全文 §3，ECG 与 ICU 方法段",
+          "rationale": "实质综述医学时间序列与临床报告的建模。"
+        },
+        {
+          "axis": "method",
+          "label": "大语言模型",
+          "label_en": "Large language model",
+          "evidence_location": "全文 §3",
+          "rationale": "分析语言模型与时间序列的量化、对齐及多模态接口。"
+        }
+      ],
+      "recheck_20261115": {
+        "basis": "existing_original_abstract_and_prior_verified_evidence",
+        "base_main_commit": "bcac7ed0d56d956c628babb5f2367f23f48b3ab5",
+        "vocabulary_commit": "e6396a5240da2a7243c05186751e91ba183d4d15",
+        "integrated_main_commit": "f339716739499c322a76c6508ef132804ec76b9c"
+      },
+      "historical_review_before_owner_reconciliation": {
+        "schema_version": 2,
+        "batch_id": "2024-20261105-103119",
+        "owner": "龙兆科",
+        "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
+        "decision": "pending",
+        "rationale": "正式综述介绍LLM时间序列方法并列举多领域，但摘要未说明具体科学任务及其贡献，需要更明确的摘要级范围证据。",
+        "verified_metadata": {
+          "title": "Large Language Models for Time Series: A Survey",
+          "url": "https://www.ijcai.org/proceedings/2024/921",
+          "doi": "10.24963/ijcai.2024/921",
+          "evidence_urls": [
+            "https://www.ijcai.org/proceedings/2024/921"
+          ]
+        },
+        "tags": []
+      },
+      "owner_reconciliation": {
+        "status": "resolved",
+        "current_source_owner": "丁利军",
+        "source_assignment": "reviews/source-assignments-2024.json",
+        "authoritative_review_file": "reviews/2024/dinglijun.json",
+        "reconciled_at": "2026-11-16",
+        "authority": "用户明确授权：允许同步这 7 条，完整保留原审核历史。",
+        "reason": "按当前分工负责人的正式原文核验结论同步重复条目；本次审核责任属于丁利军，原审核者的判定、理由、标签和其他审核字段完整保存在 historical_review_before_owner_reconciliation。"
+      }
     }
   },
   {
@@ -86088,28 +86155,76 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-20261105-103119",
-      "owner": "龙兆科",
+      "batch_id": "2024-dinglijun",
+      "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "include",
-      "rationale": "用多通道重复囚徒困境代理策略及演化实验研究合作涌现，具有明确社会合作机制模型。",
+      "decision": "exclude",
+      "rationale": "正式全文 §2–5 分析固定的 MCSUC 规则策略、收益性质与演化稳定性，实验为规则策略种群的博弈模拟。按通用博弈策略理论口径维持排除。",
       "verified_metadata": {
         "title": "A Successful Strategy for Multichannel Iterated Prisoner’s Dilemma",
-        "url": "https://www.ijcai.org/proceedings/2024/31",
+        "authors": [
+          "Zhen Wang",
+          "Zhaoheng Cao",
+          "Juan Shi",
+          "Peican Zhu",
+          "Shuyue Hu",
+          "Chen Chu"
+        ],
         "doi": "10.24963/ijcai.2024/31",
+        "url": "https://ijcai.org/proceedings/2024/31",
+        "pdf_url": "https://ijcai.org/proceedings/2024/0031.pdf",
+        "keywords": [
+          "Agent-based and Multi-agent Systems: MAS: Coordination and cooperation",
+          "Game Theory and Economic Paradigms: GTEP: Noncooperative games",
+          "Agent-based and Multi-agent Systems: MAS: Agent-based simulation and emergence"
+        ],
+        "field_sources": {
+          "keywords": "https://ijcai.org/proceedings/2024/31",
+          "article_type": "https://ijcai.org/proceedings/2024/#paper31",
+          "review": "https://ijcai.org/proceedings/2024/0031.pdf"
+        },
         "evidence_urls": [
-          "https://www.ijcai.org/proceedings/2024/31"
+          "https://ijcai.org/proceedings/2024/31",
+          "https://ijcai.org/proceedings/2024/#paper31",
+          "https://ijcai.org/proceedings/2024/0031.pdf"
+        ],
+        "article_type": "Main Track"
+      },
+      "tags": [],
+      "historical_review_before_owner_reconciliation": {
+        "schema_version": 2,
+        "batch_id": "2024-20261105-103119",
+        "owner": "龙兆科",
+        "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
+        "decision": "include",
+        "rationale": "用多通道重复囚徒困境代理策略及演化实验研究合作涌现，具有明确社会合作机制模型。",
+        "verified_metadata": {
+          "title": "A Successful Strategy for Multichannel Iterated Prisoner’s Dilemma",
+          "url": "https://www.ijcai.org/proceedings/2024/31",
+          "doi": "10.24963/ijcai.2024/31",
+          "evidence_urls": [
+            "https://www.ijcai.org/proceedings/2024/31"
+          ]
+        },
+        "tags": [
+          {
+            "axis": "domain",
+            "label": "AI 用于社会科学",
+            "label_en": "AI for social sciences",
+            "evidence_location": "输入摘要",
+            "rationale": "用多通道重复囚徒困境代理策略及演化实验研究合作涌现，具有明确社会合作机制模型。"
+          }
         ]
       },
-      "tags": [
-        {
-          "axis": "domain",
-          "label": "AI 用于社会科学",
-          "label_en": "AI for social sciences",
-          "evidence_location": "输入摘要",
-          "rationale": "用多通道重复囚徒困境代理策略及演化实验研究合作涌现，具有明确社会合作机制模型。"
-        }
-      ]
+      "owner_reconciliation": {
+        "status": "resolved",
+        "current_source_owner": "丁利军",
+        "source_assignment": "reviews/source-assignments-2024.json",
+        "authoritative_review_file": "reviews/2024/dinglijun.json",
+        "reconciled_at": "2026-11-16",
+        "authority": "用户明确授权：允许同步这 7 条，完整保留原审核历史。",
+        "reason": "按当前分工负责人的正式原文核验结论同步重复条目；本次审核责任属于丁利军，原审核者的判定、理由、标签和其他审核字段完整保存在 historical_review_before_owner_reconciliation。"
+      }
     }
   },
   {
@@ -86628,20 +86743,81 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-20261105-103119",
-      "owner": "龙兆科",
+      "batch_id": "2024-dinglijun",
+      "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "天气灾害隐喻与公众认知分析有明确社会科学对象，但摘要未说明AI如何参与推文提取或分析。",
+      "decision": "include",
+      "rationale": "正式全文 §4–5 使用 MetaPro 专家系统完成隐喻识别、释义及概念映射生成，从 18,521 条灾害推文分析公众认知，并由心理学研究者评估 300 条样本。AI 实质参与灾害风险认知的社会科学研究。",
       "verified_metadata": {
         "title": "Understanding Public Perception Towards Weather Disasters Through the Lens of Metaphor",
-        "url": "https://www.ijcai.org/proceedings/2024/818",
+        "authors": [
+          "Rui Mao",
+          "Qika Lin",
+          "Qiawen Liu",
+          "Gianmarco Mengaldo",
+          "Erik Cambria"
+        ],
         "doi": "10.24963/ijcai.2024/818",
+        "url": "https://ijcai.org/proceedings/2024/818",
+        "pdf_url": "https://ijcai.org/proceedings/2024/0818.pdf",
+        "keywords": [
+          "Data Mining: General",
+          "Multidisciplinary Topics and Applications: General"
+        ],
+        "field_sources": {
+          "keywords": "https://ijcai.org/proceedings/2024/818",
+          "article_type": "https://ijcai.org/proceedings/2024/#paper818",
+          "review": "https://ijcai.org/proceedings/2024/0818.pdf"
+        },
         "evidence_urls": [
-          "https://www.ijcai.org/proceedings/2024/818"
-        ]
+          "https://ijcai.org/proceedings/2024/818",
+          "https://ijcai.org/proceedings/2024/#paper818",
+          "https://ijcai.org/proceedings/2024/0818.pdf"
+        ],
+        "article_type": "AI for Good"
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于社会科学",
+          "label_en": "AI for social sciences",
+          "evidence_location": "全文 §4–7",
+          "rationale": "研究公众对洪水、飓风、龙卷风和野火的认知差异。"
+        },
+        {
+          "axis": "method",
+          "label": "自然语言处理",
+          "label_en": "Natural language processing",
+          "evidence_location": "全文 §5",
+          "rationale": "MetaPro 对推文进行隐喻识别、解释及概念映射抽取。"
+        }
+      ],
+      "historical_review_before_owner_reconciliation": {
+        "schema_version": 2,
+        "batch_id": "2024-20261105-103119",
+        "owner": "龙兆科",
+        "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
+        "decision": "pending",
+        "rationale": "天气灾害隐喻与公众认知分析有明确社会科学对象，但摘要未说明AI如何参与推文提取或分析。",
+        "verified_metadata": {
+          "title": "Understanding Public Perception Towards Weather Disasters Through the Lens of Metaphor",
+          "url": "https://www.ijcai.org/proceedings/2024/818",
+          "doi": "10.24963/ijcai.2024/818",
+          "evidence_urls": [
+            "https://www.ijcai.org/proceedings/2024/818"
+          ]
+        },
+        "tags": []
+      },
+      "owner_reconciliation": {
+        "status": "resolved",
+        "current_source_owner": "丁利军",
+        "source_assignment": "reviews/source-assignments-2024.json",
+        "authoritative_review_file": "reviews/2024/dinglijun.json",
+        "reconciled_at": "2026-11-16",
+        "authority": "用户明确授权：允许同步这 7 条，完整保留原审核历史。",
+        "reason": "按当前分工负责人的正式原文核验结论同步重复条目；本次审核责任属于丁利军，原审核者的判定、理由、标签和其他审核字段完整保存在 historical_review_before_owner_reconciliation。"
+      }
     }
   },
   {
@@ -87558,20 +87734,70 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-20261105-103119",
-      "owner": "龙兆科",
+      "batch_id": "2024-dinglijun",
+      "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "综述计算社会选择中的选举数值实验及偏好生成，但摘要未说明AI方法的实质作用。",
+      "decision": "exclude",
+      "rationale": "正式全文 §2–4 汇总选举数值实验规模、统计文化和偏好数据采样方法，主要交付实验方法指南与采样软件。按通用计算社会选择实验工具口径维持排除。",
       "verified_metadata": {
         "title": "Guide to Numerical Experiments on Elections in Computational Social Choice",
-        "url": "https://www.ijcai.org/proceedings/2024/881",
+        "authors": [
+          "Niclas Boehmer",
+          "Piotr Faliszewski",
+          "Łukasz Janeczko",
+          "Andrzej Kaczmarczyk",
+          "Grzegorz Lisowski",
+          "Grzegorz Pierczyński",
+          "Simon Rey",
+          "Dariusz Stolicki",
+          "Stanisław Szufa",
+          "Tomasz Wąs"
+        ],
         "doi": "10.24963/ijcai.2024/881",
+        "url": "https://ijcai.org/proceedings/2024/881",
+        "pdf_url": "https://ijcai.org/proceedings/2024/0881.pdf",
+        "keywords": [
+          "Game Theory and Economic Paradigms: GTEP: Computational social choice"
+        ],
+        "field_sources": {
+          "keywords": "https://ijcai.org/proceedings/2024/881",
+          "article_type": "https://ijcai.org/proceedings/2024/#paper881",
+          "review": "https://ijcai.org/proceedings/2024/0881.pdf"
+        },
         "evidence_urls": [
-          "https://www.ijcai.org/proceedings/2024/881"
-        ]
+          "https://ijcai.org/proceedings/2024/881",
+          "https://ijcai.org/proceedings/2024/#paper881",
+          "https://ijcai.org/proceedings/2024/0881.pdf"
+        ],
+        "article_type": "Survey Track"
       },
-      "tags": []
+      "tags": [],
+      "historical_review_before_owner_reconciliation": {
+        "schema_version": 2,
+        "batch_id": "2024-20261105-103119",
+        "owner": "龙兆科",
+        "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
+        "decision": "pending",
+        "rationale": "综述计算社会选择中的选举数值实验及偏好生成，但摘要未说明AI方法的实质作用。",
+        "verified_metadata": {
+          "title": "Guide to Numerical Experiments on Elections in Computational Social Choice",
+          "url": "https://www.ijcai.org/proceedings/2024/881",
+          "doi": "10.24963/ijcai.2024/881",
+          "evidence_urls": [
+            "https://www.ijcai.org/proceedings/2024/881"
+          ]
+        },
+        "tags": []
+      },
+      "owner_reconciliation": {
+        "status": "resolved",
+        "current_source_owner": "丁利军",
+        "source_assignment": "reviews/source-assignments-2024.json",
+        "authoritative_review_file": "reviews/2024/dinglijun.json",
+        "reconciled_at": "2026-11-16",
+        "authority": "用户明确授权：允许同步这 7 条，完整保留原审核历史。",
+        "reason": "按当前分工负责人的正式原文核验结论同步重复条目；本次审核责任属于丁利军，原审核者的判定、理由、标签和其他审核字段完整保存在 historical_review_before_owner_reconciliation。"
+      }
     }
   },
   {
@@ -88756,20 +88982,66 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-20261105-103119",
-      "owner": "龙兆科",
+      "batch_id": "2024-dinglijun",
+      "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "微电网能量与储能优化是明确工程问题，但摘要仅给复杂度分析和确定性算法，AI角色未明确。",
+      "decision": "exclude",
+      "rationale": "正式全文 §2–5 建立 PEAC-min 电能成本调度问题并推导确定性最优算法及复杂性结果。研究证据支持运筹调度算法，按缺少实质 AI 方法参与的口径维持排除。",
       "verified_metadata": {
         "title": "Efficient Cost-Minimization Schemes for Electrical Energy Demand Satisfaction by Prosumers in Microgrids with Battery Storage Capabilities",
-        "url": "https://www.ijcai.org/proceedings/2024/207",
+        "authors": [
+          "Laura Codazzi",
+          "Gergely Csáji",
+          "Matthias Mnich"
+        ],
         "doi": "10.24963/ijcai.2024/207",
+        "url": "https://ijcai.org/proceedings/2024/207",
+        "pdf_url": "https://ijcai.org/proceedings/2024/0207.pdf",
+        "keywords": [
+          "Planning and Scheduling: PS: Planning under uncertainty",
+          "Planning and Scheduling: PS: Planning algorithms",
+          "Constraint Satisfaction and Optimization: CSO: Constraint optimization problems",
+          "Planning and Scheduling: PS: Theoretical foundations of planning"
+        ],
+        "field_sources": {
+          "keywords": "https://ijcai.org/proceedings/2024/207",
+          "article_type": "https://ijcai.org/proceedings/2024/#paper207",
+          "review": "https://ijcai.org/proceedings/2024/0207.pdf"
+        },
         "evidence_urls": [
-          "https://www.ijcai.org/proceedings/2024/207"
-        ]
+          "https://ijcai.org/proceedings/2024/207",
+          "https://ijcai.org/proceedings/2024/#paper207",
+          "https://ijcai.org/proceedings/2024/0207.pdf"
+        ],
+        "article_type": "Main Track"
       },
-      "tags": []
+      "tags": [],
+      "historical_review_before_owner_reconciliation": {
+        "schema_version": 2,
+        "batch_id": "2024-20261105-103119",
+        "owner": "龙兆科",
+        "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
+        "decision": "pending",
+        "rationale": "微电网能量与储能优化是明确工程问题，但摘要仅给复杂度分析和确定性算法，AI角色未明确。",
+        "verified_metadata": {
+          "title": "Efficient Cost-Minimization Schemes for Electrical Energy Demand Satisfaction by Prosumers in Microgrids with Battery Storage Capabilities",
+          "url": "https://www.ijcai.org/proceedings/2024/207",
+          "doi": "10.24963/ijcai.2024/207",
+          "evidence_urls": [
+            "https://www.ijcai.org/proceedings/2024/207"
+          ]
+        },
+        "tags": []
+      },
+      "owner_reconciliation": {
+        "status": "resolved",
+        "current_source_owner": "丁利军",
+        "source_assignment": "reviews/source-assignments-2024.json",
+        "authoritative_review_file": "reviews/2024/dinglijun.json",
+        "reconciled_at": "2026-11-16",
+        "authority": "用户明确授权：允许同步这 7 条，完整保留原审核历史。",
+        "reason": "按当前分工负责人的正式原文核验结论同步重复条目；本次审核责任属于丁利军，原审核者的判定、理由、标签和其他审核字段完整保存在 historical_review_before_owner_reconciliation。"
+      }
     }
   },
   {
@@ -91359,20 +91631,94 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-20261105-103119",
-      "owner": "龙兆科",
+      "batch_id": "2024-dinglijun",
+      "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "摘要报告环境AI平台及四个案例，但未说明案例任务、模型和结果，无法判断原创研究贡献与项目介绍的界限。",
+      "decision": "include",
+      "rationale": "正式全文 §3.1–3.4 给出 LSTM/Bayesian LSTM 河流水位预报、GraphSAGE 海洋热浪预测及半监督混合密度网络水质反演。图 4 和图 6 报告预测结果，AI 直接参与环境科学任务，待定转为纳入。",
       "verified_metadata": {
         "title": "Time-Evolving Data Science and Artificial Intelligence for Advanced Open Environmental Science (TAIAO) Programme",
-        "url": "https://www.ijcai.org/proceedings/2024/809",
+        "authors": [
+          "Yun Sing Koh",
+          "Albert Bifet",
+          "Karin Bryan",
+          "Guilherme Cassales",
+          "Olivier Graffeuille",
+          "Nick Lim",
+          "Phil Mourot",
+          "Ding Ning",
+          "Bernhard Pfahringer",
+          "Varvara Vetrova",
+          "Heitor Murilo Gomes"
+        ],
         "doi": "10.24963/ijcai.2024/809",
+        "url": "https://ijcai.org/proceedings/2024/809",
+        "pdf_url": "https://ijcai.org/proceedings/2024/0809.pdf",
+        "keywords": [
+          "Machine Learning: General",
+          "Multidisciplinary Topics and Applications: General"
+        ],
+        "field_sources": {
+          "keywords": "https://ijcai.org/proceedings/2024/809",
+          "article_type": "https://ijcai.org/proceedings/2024/#paper809",
+          "review": "https://ijcai.org/proceedings/2024/0809.pdf"
+        },
         "evidence_urls": [
-          "https://www.ijcai.org/proceedings/2024/809"
-        ]
+          "https://ijcai.org/proceedings/2024/809",
+          "https://ijcai.org/proceedings/2024/#paper809",
+          "https://ijcai.org/proceedings/2024/0809.pdf"
+        ],
+        "article_type": "AI for Good"
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于地球宇宙科学",
+          "label_en": "AI for Earth and space sciences",
+          "evidence_location": "全文 §3.1–3.4",
+          "rationale": "研究洪水、海洋热浪和湖泊水质。"
+        },
+        {
+          "axis": "task",
+          "label": "洪水模拟预报",
+          "label_en": "Flood simulation and forecasting",
+          "evidence_location": "全文 §3.1，图 4",
+          "rationale": "LSTM 与 Bayesian LSTM 预测河流水位及不确定性。"
+        },
+        {
+          "axis": "method",
+          "label": "图神经网络",
+          "label_en": "Graph neural network",
+          "evidence_location": "全文 §3.3，图 6",
+          "rationale": "使用 GraphSAGE 预测海表温度异常和海洋热浪。"
+        }
+      ],
+      "historical_review_before_owner_reconciliation": {
+        "schema_version": 2,
+        "batch_id": "2024-20261105-103119",
+        "owner": "龙兆科",
+        "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
+        "decision": "pending",
+        "rationale": "摘要报告环境AI平台及四个案例，但未说明案例任务、模型和结果，无法判断原创研究贡献与项目介绍的界限。",
+        "verified_metadata": {
+          "title": "Time-Evolving Data Science and Artificial Intelligence for Advanced Open Environmental Science (TAIAO) Programme",
+          "url": "https://www.ijcai.org/proceedings/2024/809",
+          "doi": "10.24963/ijcai.2024/809",
+          "evidence_urls": [
+            "https://www.ijcai.org/proceedings/2024/809"
+          ]
+        },
+        "tags": []
+      },
+      "owner_reconciliation": {
+        "status": "resolved",
+        "current_source_owner": "丁利军",
+        "source_assignment": "reviews/source-assignments-2024.json",
+        "authoritative_review_file": "reviews/2024/dinglijun.json",
+        "reconciled_at": "2026-11-16",
+        "authority": "用户明确授权：允许同步这 7 条，完整保留原审核历史。",
+        "reason": "按当前分工负责人的正式原文核验结论同步重复条目；本次审核责任属于丁利军，原审核者的判定、理由、标签和其他审核字段完整保存在 historical_review_before_owner_reconciliation。"
+      }
     }
   },
   {
@@ -96110,20 +96456,66 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2024-20261105-103119",
-      "owner": "龙兆科",
+      "batch_id": "2024-dinglijun",
+      "owner": "丁利军",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "药物分子相似子图搜索有明确领域用途，但摘要主要为数据库搜索加速，AI参与科学任务的关系尚不明确。",
+      "decision": "exclude",
+      "rationale": "正式全文 §3 的 Corgi 通过图压缩、Pearson 相关性及多视图 top-k 枚举实现分子子图检索。§4.6 给出 ADORA2A 活性检索案例，本文方法仍属于确定性数据库检索加速，按通用检索工具口径维持排除。",
       "verified_metadata": {
         "title": "Efficient Correlated Subgraph Searches for AI-powered Drug Discovery",
-        "url": "https://www.ijcai.org/proceedings/2024/260",
+        "authors": [
+          "Hiroaki Shiokawa",
+          "Yuma Naoi",
+          "Shohei Matsugu"
+        ],
         "doi": "10.24963/ijcai.2024/260",
+        "url": "https://ijcai.org/proceedings/2024/260",
+        "pdf_url": "https://ijcai.org/proceedings/2024/0260.pdf",
+        "keywords": [
+          "Data Mining: DM: Applications",
+          "Data Mining: DM: Mining graphs",
+          "Multidisciplinary Topics and Applications: MTA: Other",
+          "Data Mining: DM: Big data and scalability"
+        ],
+        "field_sources": {
+          "keywords": "https://ijcai.org/proceedings/2024/260",
+          "article_type": "https://ijcai.org/proceedings/2024/#paper260",
+          "review": "https://ijcai.org/proceedings/2024/0260.pdf"
+        },
         "evidence_urls": [
-          "https://www.ijcai.org/proceedings/2024/260"
-        ]
+          "https://ijcai.org/proceedings/2024/260",
+          "https://ijcai.org/proceedings/2024/#paper260",
+          "https://ijcai.org/proceedings/2024/0260.pdf"
+        ],
+        "article_type": "Main Track"
       },
-      "tags": []
+      "tags": [],
+      "historical_review_before_owner_reconciliation": {
+        "schema_version": 2,
+        "batch_id": "2024-20261105-103119",
+        "owner": "龙兆科",
+        "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
+        "decision": "pending",
+        "rationale": "药物分子相似子图搜索有明确领域用途，但摘要主要为数据库搜索加速，AI参与科学任务的关系尚不明确。",
+        "verified_metadata": {
+          "title": "Efficient Correlated Subgraph Searches for AI-powered Drug Discovery",
+          "url": "https://www.ijcai.org/proceedings/2024/260",
+          "doi": "10.24963/ijcai.2024/260",
+          "evidence_urls": [
+            "https://www.ijcai.org/proceedings/2024/260"
+          ]
+        },
+        "tags": []
+      },
+      "owner_reconciliation": {
+        "status": "resolved",
+        "current_source_owner": "丁利军",
+        "source_assignment": "reviews/source-assignments-2024.json",
+        "authoritative_review_file": "reviews/2024/dinglijun.json",
+        "reconciled_at": "2026-11-16",
+        "authority": "用户明确授权：允许同步这 7 条，完整保留原审核历史。",
+        "reason": "按当前分工负责人的正式原文核验结论同步重复条目；本次审核责任属于丁利军，原审核者的判定、理由、标签和其他审核字段完整保存在 historical_review_before_owner_reconciliation。"
+      }
     }
   },
   {
