@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-16T18:04:10.508016+00:00",
-  "commit": "814d19c35cd7242b766cd85d629646d84ec9bd32",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/814d19c35cd7242b766cd85d629646d84ec9bd32/",
+  "generated_at": "2026-11-16T18:55:06.398254+00:00",
+  "commit": "0388ea545c5ebd420d36ecf6b01cfb1a018068af",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/0388ea545c5ebd420d36ecf6b01cfb1a018068af/",
   "years": [
     {
       "year": 2024,
@@ -23131,15 +23131,15 @@
           "open_issues": 0,
           "status": "complete",
           "last_update": {
-            "at": "2026-11-16T09:56:56-08:00",
+            "at": "2026-11-16T10:51:41-08:00",
             "author": "ebo",
-            "subject": "review: pin three-source candidate provenance",
+            "subject": "review: pin EAAI candidate provenance to audited data commit",
             "area": "reviews",
             "paths": [
               "reviews/2026/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 81
+          "commits_7d": 83
         },
         {
           "owner": "朱长昊",
@@ -40945,15 +40945,15 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-16T09:56:56-08:00",
+            "at": "2026-11-16T10:51:41-08:00",
             "author": "ebo",
-            "subject": "review: pin three-source candidate provenance",
+            "subject": "review: pin EAAI candidate provenance to audited data commit",
             "area": "reviews",
             "paths": [
               "reviews/2026/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 81
+          "commits_7d": 83
         }
       ],
       "snapshot_file": "metadata/2025/snapshot.json",
@@ -46163,32 +46163,52 @@
           "state": "abstract_incomplete",
           "papers": 3360,
           "snapshot_candidates": 390,
-          "candidates": 390,
-          "missing_abstract": 249,
+          "candidates": 392,
+          "missing_abstract": 4,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref出版方逐篇DOI登记，辅以官网19分册及18个原RIS文件",
+            "total": 3368,
+            "scope": "参考：出版方Crossref ISSN0952-1976、published字段2026、正式卷163—186全类型当前3368唯一DOI；原3360加独立补录8后集合一致。已实际读取官网卷163—171共19分册1300 PII，其后普通浏览器CPE00002/人机验证；不冒称完整官网总数或首次在线年全集。",
+            "query_url": "https://api.crossref.org/journals/0952-1976/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31&rows=1000&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "已完成原390逐篇判断，追加2条已取得完整正式原摘要的目录漏筛：当前392，350纳入、41排除、1待定。原249缺摘要中245完整原摘要已取得，4条均为已排除Corrigendum，正式完整页无独立摘要并保持null、标无需补摘要。官网卷163—171共19分册1300 PII已核；实际下载18RIS1223条，未将最后缺失下载伪称已取得。其余目录普通浏览器CPE00002/人机验证，按用户授权使用出版方Crossref2026卷163—186逐项对账：原3360全覆盖，8条独立补录后参考3368一致，官网全年数未知。8条中2新研究已核摘要并纳入，另3条仅题名线索未凭题名纳入，1更正及2编委会非研究单列。原始3360与快照不变。115590农光光稳定论文公开原摘要/预览仅列PVsyst、太阳几何和SHAP，未明实际AI模型；方法订阅，已请求人工核实，仍待定，不为清零臆断。历史abstract_incomplete的8条目录补录显示规则仍待授权适配。",
+          "evidence_urls": [
+            "https://api.crossref.org/journals/0952-1976/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31&rows=1000&cursor=%2A",
+            "https://api.crossref.org/journals/0952-1976/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31&rows=1000&cursor=%2A",
+            "https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence/issues"
+          ],
+          "decisions": {
+            "include": 350,
+            "exclude": 41,
+            "pending": 1,
+            "unreviewed": 0
+          },
           "issues": [
+            "115590需方法确认SHAP所解释的学习模型；订阅正文未取得，保留1待定。",
+            "原3360加8条有证据目录补录后参考3368逐项一致；历史abstract_incomplete显示结案规则待授权适配。",
             "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
-            "AI4S候选缺少摘要：249 篇。",
-            "尚未找到逐篇审核交付。"
+            "交付中存在待定或未审论文。"
           ],
           "actions": [
+            "取得115590方法证据，或按负责人人工审核决定处置；不擅自排除或纳入。",
+            "按授权后有证据目录补录规则结案历史状态，保留真实3360/参考3368。",
             "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
-            "提交逐篇审核结果或说明当前进度。"
+            "按交付文件逐篇补证并处理待定、未审记录。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2026/nydiii.json",
+            "reviews/2026/feedback/nydiii.json"
+          ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "abstract_not_required": 0,
+          "abstract_not_required": 4,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 249
+          "abstract_supplement_required": 0
         },
         {
           "code": "j-5e43722961",
@@ -56963,21 +56983,21 @@
         {
           "owner": "南耀笛",
           "sources": 51,
-          "delivered": 12,
-          "official": 13,
-          "pending": 0,
+          "delivered": 13,
+          "official": 14,
+          "pending": 1,
           "open_issues": 44,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-16T09:56:56-08:00",
+            "at": "2026-11-16T10:51:41-08:00",
             "author": "ebo",
-            "subject": "review: pin three-source candidate provenance",
+            "subject": "review: pin EAAI candidate provenance to audited data commit",
             "area": "reviews",
             "paths": [
               "reviews/2026/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 81
+          "commits_7d": 83
         }
       ],
       "snapshot_file": "metadata/2026/snapshot.json",
@@ -57431,33 +57451,33 @@
         },
         "2026": {
           "sources": 51,
-          "delivered": 12,
-          "official": 13,
-          "pending": 0,
+          "delivered": 13,
+          "official": 14,
+          "pending": 1,
           "open_issues": 44,
           "status": "in_progress"
         }
       },
       "sources": 153,
-      "delivered": 112,
+      "delivered": 113,
       "not_started": [],
       "last_update": {
-        "at": "2026-11-16T09:56:56-08:00",
+        "at": "2026-11-16T10:51:41-08:00",
         "author": "ebo",
-        "subject": "review: pin three-source candidate provenance",
+        "subject": "review: pin EAAI candidate provenance to audited data commit",
         "area": "reviews",
         "paths": [
           "reviews/2026/feedback/nydiii.json"
         ]
       },
-      "commits_7d": 81
+      "commits_7d": 83
     }
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-16T18:03:47.554178+00:00",
+    "generated_at": "2026-11-16T18:54:44.741112+00:00",
     "history_available": true,
-    "commit": "814d19c35cd7242b766cd85d629646d84ec9bd32",
-    "commits_scanned": 730
+    "commit": "0388ea545c5ebd420d36ecf6b01cfb1a018068af",
+    "commits_scanned": 733
   }
 }
