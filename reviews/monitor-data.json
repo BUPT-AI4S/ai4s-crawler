@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-16T18:55:06.398254+00:00",
-  "commit": "0388ea545c5ebd420d36ecf6b01cfb1a018068af",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/0388ea545c5ebd420d36ecf6b01cfb1a018068af/",
+  "generated_at": "2026-11-16T19:15:01.823639+00:00",
+  "commit": "1bae1f6417abd12526e07ef1c3620b73a6c898df",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/1bae1f6417abd12526e07ef1c3620b73a6c898df/",
   "years": [
     {
       "year": 2024,
@@ -23131,15 +23131,15 @@
           "open_issues": 0,
           "status": "complete",
           "last_update": {
-            "at": "2026-11-16T10:51:41-08:00",
+            "at": "2026-11-16T11:11:47-08:00",
             "author": "ebo",
-            "subject": "review: pin EAAI candidate provenance to audited data commit",
+            "subject": "review: pin three-source candidate provenance to audited commit",
             "area": "reviews",
             "paths": [
               "reviews/2026/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 83
+          "commits_7d": 85
         },
         {
           "owner": "朱长昊",
@@ -40945,15 +40945,15 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-16T10:51:41-08:00",
+            "at": "2026-11-16T11:11:47-08:00",
             "author": "ebo",
-            "subject": "review: pin EAAI candidate provenance to audited data commit",
+            "subject": "review: pin three-source candidate provenance to audited commit",
             "area": "reviews",
             "paths": [
               "reviews/2026/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 83
+          "commits_7d": 85
         }
       ],
       "snapshot_file": "metadata/2025/snapshot.json",
@@ -46284,23 +46284,37 @@
           "state": "completed",
           "papers": 764,
           "snapshot_candidates": 31,
-          "candidates": 31,
+          "candidates": 45,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
-          "issues": [
-            "官网同口径总数尚未确认。",
-            "尚未找到逐篇审核交付。"
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref出版方逐篇登记（截至本批快照）；官网卷24全部13页作分卷校核",
+            "total": 771,
+            "scope": "参考：Crossref出版方ISSN1741-7015、published字段2026、登记created不晚于固定快照2026-11-08T13:38:12Z的771唯一DOI；对应本批可获取登记书目，原764加7独立补录后逐项一致。不是2026首次在线全集或最终卷年总数。",
+            "query_url": "https://api.crossref.org/journals/1741-7015/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31&rows=1000",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "BMC Medicine官网卷24全部13页647唯一DOI已核：包含53条2025在线和594条2026在线，594与当前出版方登记已分卷部分完全相等；另210条当前登记未分卷，故不把647/594冒作全2026在线官网总数。按本批快照时已登记出版方2026范围771 DOI逐项对账，原764全部覆盖、另7条独立目录补录后参考集合一致；当前804较快照晚登记33条另列，不全部叫历史漏采。原31及14条已核漏筛共45：40纳入、5排除、待定0、未审0。全部候选有正式原摘要，原一条截损CI已核正式完整摘要同步元数据并保留个人输入。病例级联05120-3正式为Research纳入；HPV04881-1仅以已有AI敏感度做ODE成本模拟，未实际AI分析而排除。另核公开PDF和方法，区分规则管理系统/AI检索工具与实质AI研究；标签规范且逐条证据保留。不声称穷尽非候选全文或首次在线全集，原764与快照保持。",
+          "evidence_urls": [
+            "https://api.crossref.org/journals/1741-7015/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31&rows=1000",
+            "https://link.springer.com/journal/12916/volumes-and-issues/24-1",
+            "https://api.crossref.org/journals/1741-7015/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31&rows=1000"
           ],
-          "actions": [
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "提交逐篇审核结果或说明当前进度。"
+          "decisions": {
+            "include": 40,
+            "exclude": 5,
+            "pending": 0,
+            "unreviewed": 0
+          },
+          "issues": [],
+          "actions": [],
+          "files": [
+            "reviews/2026/nydiii.json",
+            "reviews/2026/feedback/nydiii.json"
           ],
-          "files": [],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
@@ -46816,23 +46830,32 @@
           "snapshot_candidates": 1,
           "candidates": 1,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 239,
+          "official_scope": "官网当前2026卷14已发布第1—11期222全类型记录，加官网Articles in press中不晚于快照2026-11-08已在线的17条＝239；另7条11月10—12日新上线单列，当前全部246。正式卷年＋当年未分卷已公开本批范围，不声称逐篇首次在线2026全集或全年最终数。",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
+          "coverage_note": "普通浏览器完成官网已发布第1—11期全部222条及Articles in press24条；各期完整PII集合与出版方登记逐一匹配，官网AIP实际日期区分17条快照前和7条11月10—12日后上线。222＋17＝239与原239逐PII/DOI完全匹配，无缺项、多余和重复；当前246不是固定批次漏7。第12期尚未发布，不报0或声称全年最终总数；正式卷期年不等于每篇首次在线年。唯一候选SMARTT正式原创试验，实际用特征AI依据全基因组选耐药结核疗程，随机试验病原负荷和临床终点评价，纳入1、无待定未审和待补摘要。全部目录题名核查，未仅凭AI词将评论/作者回复补为研究。",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/journal/the-lancet-respiratory-medicine/issues",
+            "https://www.sciencedirect.com/journal/the-lancet-respiratory-medicine/articles-in-press",
+            "https://api.crossref.org/journals/2213-2600/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31&rows=1000"
+          ],
+          "decisions": {
+            "include": 1,
+            "exclude": 0,
+            "pending": 0,
+            "unreviewed": 0
+          },
           "issues": [
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
-            "尚未找到逐篇审核交付。"
+            "采集状态尚未完成：abstract_incomplete"
           ],
           "actions": [
             "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "提交逐篇审核结果或说明当前进度。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2026/nydiii.json",
+            "reviews/2026/feedback/nydiii.json"
+          ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
@@ -47579,25 +47602,33 @@
           "state": "abstract_incomplete",
           "papers": 64,
           "snapshot_candidates": 3,
-          "candidates": 3,
+          "candidates": 4,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 61,
+          "official_scope": "官网正式2026卷172—183全部12卷全类型61条：50综述＋11编委会；当前已发布目录口径，卷183标in progress，不声称首次在线2026全集。原64中2条已分2027卷184、1条仍未分卷；比较集64−3＝61逐PII完全一致，原始保留。",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
+          "coverage_note": "普通浏览器逐卷完成正式2026卷172—183共12卷61唯一PII，50Review与11编委会全部保留，按各卷完整PII集合哈希与出版方登记逐项匹配，无缺项、多余或重复。原采集64有3条范围差异：102193/102194现属2027卷184，102204仍未分卷，不称其已属2027，原记录均保留。正式卷归一64−3＝61一致，不把卷期年当首次在线年；第183卷仍in progress，结论只对应当前已发布目录。原3Review与新补1条阻燃AI实质综述共4条全部纳入、无待定未审、原摘要完整。生物塑料第6节及环糊精6.4已直接读公开全文，确认具体RF/SVM/ANN/材料优化方法而非仅未来愿景；阻燃综述普通浏览器触发人机验证后取得出版方公开索引完整原摘要。未为非候选补齐全部摘要或声称全量全文精筛。",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/journal/progress-in-polymer-science/issues",
+            "https://api.crossref.org/journals/0079-6700/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31&rows=1000"
+          ],
+          "decisions": {
+            "include": 4,
+            "exclude": 0,
+            "pending": 0,
+            "unreviewed": 0
+          },
           "issues": [
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
-            "尚未找到逐篇审核交付。"
+            "采集状态尚未完成：abstract_incomplete"
           ],
           "actions": [
             "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "提交逐篇审核结果或说明当前进度。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2026/nydiii.json",
+            "reviews/2026/feedback/nydiii.json"
+          ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
@@ -56983,21 +57014,21 @@
         {
           "owner": "南耀笛",
           "sources": 51,
-          "delivered": 13,
-          "official": 14,
+          "delivered": 16,
+          "official": 17,
           "pending": 1,
-          "open_issues": 44,
+          "open_issues": 43,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-16T10:51:41-08:00",
+            "at": "2026-11-16T11:11:47-08:00",
             "author": "ebo",
-            "subject": "review: pin EAAI candidate provenance to audited data commit",
+            "subject": "review: pin three-source candidate provenance to audited commit",
             "area": "reviews",
             "paths": [
               "reviews/2026/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 83
+          "commits_7d": 85
         }
       ],
       "snapshot_file": "metadata/2026/snapshot.json",
@@ -57451,33 +57482,33 @@
         },
         "2026": {
           "sources": 51,
-          "delivered": 13,
-          "official": 14,
+          "delivered": 16,
+          "official": 17,
           "pending": 1,
-          "open_issues": 44,
+          "open_issues": 43,
           "status": "in_progress"
         }
       },
       "sources": 153,
-      "delivered": 113,
+      "delivered": 116,
       "not_started": [],
       "last_update": {
-        "at": "2026-11-16T10:51:41-08:00",
+        "at": "2026-11-16T11:11:47-08:00",
         "author": "ebo",
-        "subject": "review: pin EAAI candidate provenance to audited data commit",
+        "subject": "review: pin three-source candidate provenance to audited commit",
         "area": "reviews",
         "paths": [
           "reviews/2026/feedback/nydiii.json"
         ]
       },
-      "commits_7d": 83
+      "commits_7d": 85
     }
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-16T18:54:44.741112+00:00",
+    "generated_at": "2026-11-16T19:14:40.256698+00:00",
     "history_available": true,
-    "commit": "0388ea545c5ebd420d36ecf6b01cfb1a018068af",
-    "commits_scanned": 733
+    "commit": "1bae1f6417abd12526e07ef1c3620b73a6c898df",
+    "commits_scanned": 736
   }
 }
