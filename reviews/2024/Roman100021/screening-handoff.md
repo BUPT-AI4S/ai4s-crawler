@@ -175,3 +175,13 @@ CIKM 的 +350 来自口径差异：全量采集 697 条覆盖该届全部分轨�
 - **npj Schizophrenia**：官网列表 124 条、Crossref 124 条、采集 124 条三者一致，逐 DOI 无缺无多，`official_total` 维持 124。
 
 `official_total` 合计 16,491 → 16,488。35 个来源的反馈 `issues` 与 `next_actions` 全部为空，交付判定未改动。
+
+## 候选池刷新后的回归（2026-11-16，第六轮）
+
+行动清单新出现两条提示：Science China Life Sciences「AI4S候选缺少摘要：1 篇」、Diagnostic and Interventional Imaging「2 篇」。
+
+- **根因**：`99112dbd`（朱长昊 2024：回填候选摘要并标记已排除候选）按旧底稿整篇重写 `metadata/2024/ai4s.json`（+761/−1963），把 11-09 已移出候选池的 5 条非研究型记录带回。其中 3 条 `abstract` 为空，重新触发缺摘要提示；另 2 条自带摘要，不触发提示但同样不属于候选范围。
+- **处理**：按 id 精确删除这 5 行（`10.1016/j.diii.2024.07.011` Editorial、`10.1016/j.diii.2024.07.010` Letter、`10.1007/s11427-024-2673-9` Research Highlight、`10.1016/j.envint.2024.108561` Corrigendum、`10.1038/s41698-024-00510-3` Retracted Article），逐行处理保持 CRLF 与紧凑 JSON 格式，其余行逐字节不变（diff 为 0 插入 / 5 删除）。候选总数 18,218 → 18,213。
+- **未改动**：`reviews/2024/Roman100021.json` 的逐篇判定与标签保持不变，5 条均保留 `exclude` 记录并在理由中注明类型；`coverage.json` 的候选数与缺摘要数（1 和 0）与删除后状态一致，无需调整。
+- **结果**：本地按同一监控脚本重算，35 个来源 `issues` 全空、`missing_abstract` 合计 0。
+- **复发风险**：候选文件若再被他人按旧底稿整篇重写，这 5 行仍可能被带回；再现时按上述 5 个 id 逐行过滤重删即可（保持 CRLF 与每行紧凑 JSON，只删命中行）。
