@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-16T05:44:57.634329+00:00",
-  "commit": "21abc3809e79789af08bd9688eabe22d8a483797",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/21abc3809e79789af08bd9688eabe22d8a483797/",
+  "generated_at": "2026-11-16T05:58:23.850938+00:00",
+  "commit": "0a6a844f500d0676311eae30099e800648a6f4ec",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/0a6a844f500d0676311eae30099e800648a6f4ec/",
   "years": [
     {
       "year": 2024,
@@ -22874,15 +22874,18 @@
           "open_issues": 0,
           "status": "complete",
           "last_update": {
-            "at": "2026-11-15T11:47:32-08:00",
+            "at": "2026-11-15T21:51:55-08:00",
             "author": "ebo",
-            "subject": "Pin updated candidate provenance to the published data commit",
+            "subject": "Reconcile ACA 2025 all-type DOI catalogue with Crossref PubMed and Europe PMC",
             "area": "reviews",
             "paths": [
-              "reviews/2025/feedback/nydiii.json"
+              "metadata/j-472852446c/2025/catalogue-reconciliation.json",
+              "metadata/j-472852446c/2025/reference-reconciliation.json",
+              "reviews/2025/feedback/nydiii.json",
+              "reviews/2025/nydiii.json"
             ]
           },
-          "commits_7d": 81
+          "commits_7d": 82
         },
         {
           "owner": "王婉婷",
@@ -27351,9 +27354,18 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "本轮正常浏览器恢复1367卷完整24条并取得1363、1364卷43条，现18卷观察到503唯一PII均与原1143书目匹配，余640条尚未覆盖，不是确认漏采640篇。1333—1362共30卷仍CPE00002；1365、1366低条数目录重试亦CPE，仍需完整性复核。官网全年总数保留未知；人工核验问题待回复，不采用口径不明参考值。32候选已最终处置：30纳入、2排除、待定/未审0、待补摘要0。344723已读公开作者原稿的斑块聚类及多组学ML实质综述章节，改纳入；344659因实际方法原文未取得依用户指令排除，原待定及限制记录保留，不声称已证实无AI。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref（出版社登记）＋PubMed／Europe PMC逐篇交叉核验",
+            "total": 1143,
+            "scope": "2025正式卷1333—1380全类型参考书目1143=研究及综述1038（984＋54，含1篇后来撤稿）＋社论1＋更正8＋封面48＋编委会名单48；研究及综述剔除后来撤稿后1037。",
+            "query_url": "https://api.crossref.org/journals/0003-2670/works?filter=from-print-pub-date%3A2025-01-01%2Cuntil-print-pub-date%3A2025-12-31&rows=1000",
+            "checked_at": "2026-11-15",
+            "unresolved": 0
+          },
+          "coverage_note": "已复现负责人提供的统计并完成三库逐篇DOI对账：Crossref按2025正式印刷出版年取满2页1143唯一DOI，与固定1143书目完全一致；PubMed按期刊＋2025[ppdat]取满1047篇XML，Europe PMC取满2页1047条，逐条正式日期及卷1333—1380均核实。去掉固定书目48条Outside Front Cover和48条Editorial Board后，1047 DOI与PubMed、Europe PMC完全一致，无缺项、多余或重复。其中非综述研究984、综述54，合计1038；另社论1、更正8，合计1047；1038含后来撤稿344247，若剔除为1037。撤稿原文和类型独立保留，不用删除凑数。该结果为可靠替代来源参考核验完成，官网独立全年总数仍未知、局部503条目录证据和原abstract_incomplete快照保留，不声称完成了官网全年普查。当前32候选30纳入、2排除，待定/未审0、待补摘要0；原科学判定及负责人证据受限排除维持。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0003-2670/works?filter=from-print-pub-date%3A2025-01-01%2Cuntil-print-pub-date%3A2025-12-31&rows=1000",
             "https://www.sciencedirect.com/journal/analytica-chimica-acta/vol/1380/suppl/C",
             "https://www.sciencedirect.com/journal/analytica-chimica-acta/vol/1379/suppl/C",
             "https://www.sciencedirect.com/journal/analytica-chimica-acta/vol/1378/suppl/C",
@@ -27370,7 +27382,11 @@
             "https://www.sciencedirect.com/journal/analytica-chimica-acta/vol/1367/suppl/C",
             "https://www.sciencedirect.com/journal/analytica-chimica-acta/vol/1366/suppl/C",
             "https://www.sciencedirect.com/journal/analytica-chimica-acta/vol/1365/suppl/C",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/j-472852446c/2025/catalogue-reconciliation.json"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/j-472852446c/2025/catalogue-reconciliation.json",
+            "https://api.crossref.org/journals/0003-2670/works?filter=from-print-pub-date%3A2025-01-01%2Cuntil-print-pub-date%3A2025-12-31&rows=1000",
+            "https://pubmed.ncbi.nlm.nih.gov/?term=%22Anal+Chim+Acta%22%5BJournal%5D+AND+2025%5Bppdat%5D",
+            "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A0003-2670%20AND%20PUB_YEAR%3A2025&format=json&pageSize=1000&resultType=core",
+            "https://pubmed.ncbi.nlm.nih.gov/40484547/"
           ],
           "decisions": {
             "include": 30,
@@ -27379,14 +27395,10 @@
             "unreviewed": 0
           },
           "issues": [
-            "ACA1333—1362共30卷仍受限，1365、1366低条数目录完整性待核；503是局部条数，官网全年总数未知。",
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。"
+            "采集状态尚未完成：abstract_incomplete"
           ],
           "actions": [
-            "请负责人核验1333—1362及1365—1366的官网完整目录，或确认当前无法人工处理，以便按规则继续可靠替代来源同口径对账。",
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
+            "检查采集状态与失败日志，必要时补采。"
           ],
           "files": [
             "reviews/2025/nydiii.json",
@@ -40068,20 +40080,23 @@
           "owner": "南耀笛",
           "sources": 51,
           "delivered": 49,
-          "official": 49,
+          "official": 50,
           "pending": 0,
           "open_issues": 2,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-15T11:47:32-08:00",
+            "at": "2026-11-15T21:51:55-08:00",
             "author": "ebo",
-            "subject": "Pin updated candidate provenance to the published data commit",
+            "subject": "Reconcile ACA 2025 all-type DOI catalogue with Crossref PubMed and Europe PMC",
             "area": "reviews",
             "paths": [
-              "reviews/2025/feedback/nydiii.json"
+              "metadata/j-472852446c/2025/catalogue-reconciliation.json",
+              "metadata/j-472852446c/2025/reference-reconciliation.json",
+              "reviews/2025/feedback/nydiii.json",
+              "reviews/2025/nydiii.json"
             ]
           },
-          "commits_7d": 81
+          "commits_7d": 82
         }
       ],
       "snapshot_file": "metadata/2025/snapshot.json",
@@ -55189,15 +55204,18 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-15T11:47:32-08:00",
+            "at": "2026-11-15T21:51:55-08:00",
             "author": "ebo",
-            "subject": "Pin updated candidate provenance to the published data commit",
+            "subject": "Reconcile ACA 2025 all-type DOI catalogue with Crossref PubMed and Europe PMC",
             "area": "reviews",
             "paths": [
-              "reviews/2025/feedback/nydiii.json"
+              "metadata/j-472852446c/2025/catalogue-reconciliation.json",
+              "metadata/j-472852446c/2025/reference-reconciliation.json",
+              "reviews/2025/feedback/nydiii.json",
+              "reviews/2025/nydiii.json"
             ]
           },
-          "commits_7d": 81
+          "commits_7d": 82
         },
         {
           "owner": "朱长昊",
@@ -55826,7 +55844,7 @@
         "2025": {
           "sources": 51,
           "delivered": 49,
-          "official": 49,
+          "official": 50,
           "pending": 0,
           "open_issues": 2,
           "status": "in_progress"
@@ -55846,22 +55864,25 @@
         "2026"
       ],
       "last_update": {
-        "at": "2026-11-15T11:47:32-08:00",
+        "at": "2026-11-15T21:51:55-08:00",
         "author": "ebo",
-        "subject": "Pin updated candidate provenance to the published data commit",
+        "subject": "Reconcile ACA 2025 all-type DOI catalogue with Crossref PubMed and Europe PMC",
         "area": "reviews",
         "paths": [
-          "reviews/2025/feedback/nydiii.json"
+          "metadata/j-472852446c/2025/catalogue-reconciliation.json",
+          "metadata/j-472852446c/2025/reference-reconciliation.json",
+          "reviews/2025/feedback/nydiii.json",
+          "reviews/2025/nydiii.json"
         ]
       },
-      "commits_7d": 81
+      "commits_7d": 82
     }
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-16T05:44:42.122668+00:00",
+    "generated_at": "2026-11-16T05:58:01.120097+00:00",
     "history_available": true,
-    "commit": "21abc3809e79789af08bd9688eabe22d8a483797",
-    "commits_scanned": 656
+    "commit": "0a6a844f500d0676311eae30099e800648a6f4ec",
+    "commits_scanned": 658
   }
 }
