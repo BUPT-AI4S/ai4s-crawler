@@ -115,67 +115,58 @@
     ],
     "issues": [
       "与AlearnerDL.json存在55个相同来源/年份/论文ID的判定冲突，均在本次上传前已存在；监控按规则不计入冲突记录。",
-      "当前台账未审740条。",
-      "当前台账待定74条，仍需按逐篇理由补查证据。",
-      "本地本轮逐篇审核新增待定11条，需按local_unreviewed_stage.pending_ids补查方法证据。"
+      "当前台账待定87条，仍需按逐篇理由补查证据。",
+      "本地本轮逐篇审核新增待定1条，需按local_unreviewed_stage.pending_ids补查方法证据。"
     ],
     "next_actions": [
       "按逐篇rationale补证并处理pending，证据充分后再更新结论。",
       "接续未审断点，优先候选与疑似漏筛，继续用户已要求的全量逐篇检查。",
       "与原负责人逐键核对55条已有判定冲突；原清单固定版本：https://github.com/BUPT-AI4S/ai4s-crawler/blob/5ad373dd1d230ee4d015c46b469bafb7ec30f39a/reviews/2024/wangmengran8789-stage-20261114/cross-owner-conflicts.json",
-      "推送前同步远端筛选规则及词表并复核本轮结果；本轮仅核对本地原摘要及已有元数据，未重新访问正式论文页。"
+      "推送前同步远端筛选规则及词表并复核本轮结果；本轮仅核对本地原摘要及已有元数据，未重新访问正式论文页。",
+      "推送前同步远端筛选规则及词表并复核本轮结果；本轮全部纳入论文已核对正式页面、DOI、作者、PDF链接及原摘要。"
     ],
     "collected_total": 2271,
     "local_record_total": 2271,
-    "candidate_total": 276,
-    "candidate_missing_abstract_raw": 0,
+    "candidate_total": 379,
+    "candidate_missing_abstract_raw": 5,
     "candidate_missing_usable_abstract_local": 0,
     "local_decisions": {
-      "include": 196,
-      "exclude": 1261,
-      "pending": 74,
-      "unreviewed": 740
+      "include": 299,
+      "exclude": 1885,
+      "pending": 87,
+      "unreviewed": 0
     },
-    "model_reviewed_this_stage": 284,
+    "model_reviewed_this_stage": 111,
     "official_id_set_reconciled": true,
     "stage_baseline_commit": "a9c9099884d96d35a6d6ba50e65717b6b4483299",
-    "updated_at": "2026-11-16T03:09:08-08:00",
+    "updated_at": "2026-11-16T04:08:45-08:00",
     "inherited_pending": 2,
     "include_missing_metadata_evidence": 0,
     "current_metadata_record_total": 2271,
     "correction_base_commit": "8825b0eaf73764b7ce276e25dcd49a35534c900b",
-    "initial_screening_supplements_synced": 167,
+    "initial_screening_supplements_synced": 270,
     "official_missing_candidates_synced": 0,
     "official_missing_full_records_synced": 0,
     "candidate_abstracts_synced": 0,
     "snapshot_note": "captured_at保持原采集快照；本轮补录不伪造采集时间，当前metadata数量与旧快照基线差额在本反馈单列。",
     "previous_stage_coverage_note": "2026-11-14手册对照修正：原采集快照2026-11-05T10:31:19.144426+08:00保留；当前全量metadata 2271条，责任台账2271条，审核四状态{'include': 29, 'exclude': 99, 'pending': 2, 'unreviewed': 2141}。当前候选109条，物理空摘要0条，隔离错配0条，缺可用摘要0条。本轮同步已有带证据候选摘要0条，初筛漏筛补录0条，官网漏采纳入候选补录0条，全量书目官网漏采补录0条。32条纳入记录已新核对Crossref DOI、题名和作者，正式证据链接已补齐；公开PDF和代码字段仍按实际核验情况保留未知。官网全年覆盖和待定/未审任务按原反馈继续，未声称全部完成。",
-    "newly_included_supplement_records": 44,
+    "newly_included_supplement_records": 12,
     "local_unreviewed_stage": {
-      "batch_id": "2024-wangmengran-local-unreviewed-round8-20261116",
-      "base_commit": "c19be307a885085c37588ddfbc236a479f4c6a00",
-      "rule_sync": "用户授权本地筛选；远端规则及词表未核实",
-      "external_metadata_checked": false,
-      "reviewed_total": 284,
+      "batch_id": "2024-wangmengran-local-unreviewed-round11-20261116",
+      "base_commit": "17db96f0afc1ca17f17c57d182324e1c6537e5a6",
+      "rule_sync": "已同步核对远端规则及词表，main=bee3f95b4768b17dc3b9ed5afae38f7ce9885ef9",
+      "external_metadata_checked": true,
+      "external_metadata_scope": "本轮全部纳入论文已核对；未纳入条目不据此宣称全部元数据已核实",
+      "reviewed_total": 111,
       "decisions": {
-        "exclude": 229,
-        "include": 44,
-        "pending": 11
+        "exclude": 98,
+        "include": 12,
+        "pending": 1
       },
-      "added_candidates": 44,
-      "remaining_unreviewed": 740,
+      "added_candidates": 12,
+      "remaining_unreviewed": 0,
       "pending_ids": [
-        "2024.emnlp-main.678",
-        "2024.emnlp-main.306",
-        "2024.emnlp-main.201",
-        "2024.findings-emnlp.914",
-        "2024.findings-emnlp.159",
-        "2024.findings-emnlp.380",
-        "2024.emnlp-main.554",
-        "2024.findings-emnlp.406",
-        "2024.emnlp-main.1113",
-        "2024.emnlp-main.1139",
-        "2024.emnlp-main.748"
+        "2024.findings-emnlp.395"
       ]
     },
     "local_review_stage_history": [
@@ -334,6 +325,79 @@
           "2024.emnlp-main.382",
           "2024.emnlp-main.53"
         ]
+      },
+      {
+        "batch_id": "2024-wangmengran-local-unreviewed-round8-20261116",
+        "base_commit": "c19be307a885085c37588ddfbc236a479f4c6a00",
+        "rule_sync": "用户授权本地筛选；远端规则及词表未核实",
+        "external_metadata_checked": false,
+        "reviewed_total": 284,
+        "decisions": {
+          "exclude": 229,
+          "include": 44,
+          "pending": 11
+        },
+        "added_candidates": 44,
+        "remaining_unreviewed": 740,
+        "pending_ids": [
+          "2024.emnlp-main.678",
+          "2024.emnlp-main.306",
+          "2024.emnlp-main.201",
+          "2024.findings-emnlp.914",
+          "2024.findings-emnlp.159",
+          "2024.findings-emnlp.380",
+          "2024.emnlp-main.554",
+          "2024.findings-emnlp.406",
+          "2024.emnlp-main.1113",
+          "2024.emnlp-main.1139",
+          "2024.emnlp-main.748"
+        ]
+      },
+      {
+        "batch_id": "2024-wangmengran-local-unreviewed-round9-20261116",
+        "base_commit": "17db96f0afc1ca17f17c57d182324e1c6537e5a6",
+        "rule_sync": "已同步核对远端规则及词表，main=1bfad0c8a470373d61367dce5c21e4bda99327ab",
+        "external_metadata_checked": true,
+        "external_metadata_scope": "本轮全部纳入论文的正式页面、DOI、作者、PDF链接及原摘要",
+        "reviewed_total": 302,
+        "decisions": {
+          "exclude": 251,
+          "include": 44,
+          "pending": 7
+        },
+        "added_candidates": 44,
+        "remaining_unreviewed": 438,
+        "pending_ids": [
+          "2024.emnlp-main.733",
+          "2024.findings-emnlp.861",
+          "2024.findings-emnlp.26",
+          "2024.emnlp-main.519",
+          "2024.findings-emnlp.485",
+          "2024.findings-emnlp.555",
+          "2024.emnlp-main.883"
+        ]
+      },
+      {
+        "batch_id": "2024-wangmengran-local-unreviewed-round10-20261116",
+        "base_commit": "17db96f0afc1ca17f17c57d182324e1c6537e5a6",
+        "rule_sync": "已同步核对远端规则及词表，main=bee3f95b4768b17dc3b9ed5afae38f7ce9885ef9",
+        "external_metadata_checked": true,
+        "external_metadata_scope": "本轮全部纳入论文的正式页面、DOI、作者、PDF链接及原摘要",
+        "reviewed_total": 327,
+        "decisions": {
+          "exclude": 275,
+          "include": 47,
+          "pending": 5
+        },
+        "added_candidates": 47,
+        "remaining_unreviewed": 111,
+        "pending_ids": [
+          "2024.findings-emnlp.952",
+          "2024.emnlp-main.702",
+          "2024.findings-emnlp.805",
+          "2024.emnlp-main.622",
+          "2024.findings-emnlp.912"
+        ]
       }
     ]
   },
@@ -462,13 +526,15 @@
       "https://api.crossref.org/journals/2452-2236/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article&rows=500&cursor=%2A&select=DOI%2Ctitle%2Cauthor%2Ccontainer-title%2CISSN%2Cpublished%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2Ctype%2CURL%2Clink"
     ],
     "issues": [
-      "当前台账未审56条。",
-      "当前台账待定3条，仍需按逐篇理由补查证据。",
-      "本地本轮逐篇审核新增待定3条，需按local_unreviewed_stage.pending_ids补查方法证据。"
+      "当前台账待定32条，仍需按逐篇理由补查证据。",
+      "本地本轮逐篇审核新增待定29条，需按local_unreviewed_stage.pending_ids补查方法证据。",
+      "本轮缺摘要补证遇官网403；正常浏览器部分成功后ScienceDirect CPE00002及Cell安全验证，受阻条目保留pending，未改用未经确认替代摘要。"
     ],
     "next_actions": [
       "接续未审断点，优先候选与疑似漏筛，继续用户已要求的全量逐篇检查。",
-      "推送前同步远端筛选规则及词表并复核本轮结果；本轮仅核对本地原摘要及已有元数据，未重新访问正式论文页。"
+      "推送前同步远端筛选规则及词表并复核本轮结果；本轮仅核对本地原摘要及已有元数据，未重新访问正式论文页。",
+      "推送前同步远端筛选规则及词表并复核本轮结果；本轮全部纳入论文已核对正式页面、DOI、作者、PDF链接及原摘要。",
+      "按reviews/2024/wangmengran8789-local-round11-20261116/pending.json提供正式原摘要/正文或负责人手动官网核验；优先核对机器学习生物燃料及电化学能量转换条目。"
     ],
     "collected_total": 101,
     "local_record_total": 101,
@@ -477,13 +543,13 @@
     "candidate_missing_usable_abstract_local": 0,
     "local_decisions": {
       "include": 1,
-      "exclude": 41,
-      "pending": 3,
-      "unreviewed": 56
+      "exclude": 68,
+      "pending": 32,
+      "unreviewed": 0
     },
-    "model_reviewed_this_stage": 44,
+    "model_reviewed_this_stage": 56,
     "stage_baseline_commit": "a9c9099884d96d35a6d6ba50e65717b6b4483299",
-    "updated_at": "2026-11-16T01:35:32-08:00",
+    "updated_at": "2026-11-16T04:08:45-08:00",
     "inherited_pending": 0,
     "include_missing_metadata_evidence": 0,
     "current_metadata_record_total": 101,
@@ -514,23 +580,70 @@
     },
     "coverage_access_limit_note": "官网直接请求受限或仅返回验证脚本；Computer Use曾成功读取部分ScienceDirect目录，随后Building and Environment第251卷返回CPE00002，Hydrology此前也发生同类限制；负责人2026-11-16确认这批Elsevier刊源无法人工核验并选择替代来源。此为批次访问限制记录，不声称逐刊每个网址均经浏览器重试。",
     "local_unreviewed_stage": {
-      "batch_id": "2024-wangmengran-local-unreviewed-round2-20261116",
-      "base_commit": "cc91409e32a7f67cbbc642fcb249bb875fab7584",
-      "rule_sync": "用户授权本地筛选；远端规则及词表未核实",
-      "external_metadata_checked": false,
-      "reviewed_total": 44,
+      "batch_id": "2024-wangmengran-local-unreviewed-round11-20261116",
+      "base_commit": "17db96f0afc1ca17f17c57d182324e1c6537e5a6",
+      "rule_sync": "已同步核对远端规则及词表，main=bee3f95b4768b17dc3b9ed5afae38f7ce9885ef9",
+      "external_metadata_checked": true,
+      "external_metadata_scope": "本轮全部纳入论文已核对；未纳入条目不据此宣称全部元数据已核实",
+      "reviewed_total": 56,
       "decisions": {
-        "exclude": 41,
-        "pending": 3
+        "exclude": 27,
+        "pending": 29
       },
       "added_candidates": 0,
-      "remaining_unreviewed": 56,
+      "remaining_unreviewed": 0,
       "pending_ids": [
-        "10.1016/j.cogsc.2024.100921",
-        "10.1016/j.cogsc.2024.100937",
-        "10.1016/j.cogsc.2024.100940"
+        "10.1016/j.cogsc.2024.100905",
+        "10.1016/j.cogsc.2024.100906",
+        "10.1016/j.cogsc.2024.100911",
+        "10.1016/j.cogsc.2024.100913",
+        "10.1016/j.cogsc.2024.100914",
+        "10.1016/j.cogsc.2024.100915",
+        "10.1016/j.cogsc.2024.100916",
+        "10.1016/j.cogsc.2024.100917",
+        "10.1016/j.cogsc.2024.100920",
+        "10.1016/j.cogsc.2024.100922",
+        "10.1016/j.cogsc.2024.100924",
+        "10.1016/j.cogsc.2024.100926",
+        "10.1016/j.cogsc.2024.100927",
+        "10.1016/j.cogsc.2024.100928",
+        "10.1016/j.cogsc.2024.100930",
+        "10.1016/j.cogsc.2024.100934",
+        "10.1016/j.cogsc.2024.100936",
+        "10.1016/j.cogsc.2024.100944",
+        "10.1016/j.cogsc.2024.100946",
+        "10.1016/j.cogsc.2024.100948",
+        "10.1016/j.cogsc.2024.100949",
+        "10.1016/j.cogsc.2024.100950",
+        "10.1016/j.cogsc.2024.100971",
+        "10.1016/j.cogsc.2024.100972",
+        "10.1016/j.cogsc.2024.100974",
+        "10.1016/j.cogsc.2024.100975",
+        "10.1016/j.cogsc.2024.100977",
+        "10.1016/j.cogsc.2024.100978",
+        "10.1016/j.cogsc.2024.100981"
       ]
-    }
+    },
+    "local_review_stage_history": [
+      {
+        "batch_id": "2024-wangmengran-local-unreviewed-round2-20261116",
+        "base_commit": "cc91409e32a7f67cbbc642fcb249bb875fab7584",
+        "rule_sync": "用户授权本地筛选；远端规则及词表未核实",
+        "external_metadata_checked": false,
+        "reviewed_total": 44,
+        "decisions": {
+          "exclude": 41,
+          "pending": 3
+        },
+        "added_candidates": 0,
+        "remaining_unreviewed": 56,
+        "pending_ids": [
+          "10.1016/j.cogsc.2024.100921",
+          "10.1016/j.cogsc.2024.100937",
+          "10.1016/j.cogsc.2024.100940"
+        ]
+      }
+    ]
   },
   {
     "year": 2024,
@@ -1340,11 +1453,12 @@
       "https://api.crossref.org/journals/2055-7124/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article&rows=500&cursor=%2A&select=DOI%2Ctitle%2Cauthor%2Ccontainer-title%2CISSN%2Cpublished%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2Ctype%2CURL%2Clink"
     ],
     "issues": [
-      "当前台账未审93条。"
+      "当前台账待定1条，仍需按逐篇理由补查证据。"
     ],
     "next_actions": [
       "接续未审断点，优先候选与疑似漏筛，继续用户已要求的全量逐篇检查。",
-      "推送前同步远端筛选规则及词表并复核本轮结果；本轮仅核对本地原摘要及已有元数据，未重新访问正式论文页。"
+      "推送前同步远端筛选规则及词表并复核本轮结果；本轮仅核对本地原摘要及已有元数据，未重新访问正式论文页。",
+      "推送前同步远端筛选规则及词表并复核本轮结果；本轮全部纳入论文已核对正式页面、DOI、作者、PDF链接及原摘要。"
     ],
     "collected_total": 120,
     "local_record_total": 120,
@@ -1353,13 +1467,13 @@
     "candidate_missing_usable_abstract_local": 0,
     "local_decisions": {
       "include": 1,
-      "exclude": 26,
-      "pending": 0,
-      "unreviewed": 93
+      "exclude": 118,
+      "pending": 1,
+      "unreviewed": 0
     },
-    "model_reviewed_this_stage": 9,
+    "model_reviewed_this_stage": 38,
     "stage_baseline_commit": "a9c9099884d96d35a6d6ba50e65717b6b4483299",
-    "updated_at": "2026-11-16T03:09:08-08:00",
+    "updated_at": "2026-11-16T04:08:45-08:00",
     "inherited_pending": 0,
     "include_missing_metadata_evidence": 0,
     "current_metadata_record_total": 120,
@@ -1390,16 +1504,17 @@
     },
     "coverage_access_limit_note": "官网直接请求403；Computer Use正常浏览器停在Cloudflare安全验证；负责人2026-11-16确认也不能打开并选择替代来源。",
     "local_unreviewed_stage": {
-      "batch_id": "2024-wangmengran-local-unreviewed-round8-20261116",
-      "base_commit": "c19be307a885085c37588ddfbc236a479f4c6a00",
-      "rule_sync": "用户授权本地筛选；远端规则及词表未核实",
-      "external_metadata_checked": false,
-      "reviewed_total": 9,
+      "batch_id": "2024-wangmengran-local-unreviewed-round11-20261116",
+      "base_commit": "17db96f0afc1ca17f17c57d182324e1c6537e5a6",
+      "rule_sync": "已同步核对远端规则及词表，main=bee3f95b4768b17dc3b9ed5afae38f7ce9885ef9",
+      "external_metadata_checked": true,
+      "external_metadata_scope": "本轮全部纳入论文已核对；未纳入条目不据此宣称全部元数据已核实",
+      "reviewed_total": 38,
       "decisions": {
-        "exclude": 9
+        "exclude": 38
       },
       "added_candidates": 0,
-      "remaining_unreviewed": 93,
+      "remaining_unreviewed": 0,
       "pending_ids": []
     },
     "local_review_stage_history": [
@@ -1428,6 +1543,50 @@
         "added_candidates": 0,
         "remaining_unreviewed": 102,
         "pending_ids": []
+      },
+      {
+        "batch_id": "2024-wangmengran-local-unreviewed-round8-20261116",
+        "base_commit": "c19be307a885085c37588ddfbc236a479f4c6a00",
+        "rule_sync": "用户授权本地筛选；远端规则及词表未核实",
+        "external_metadata_checked": false,
+        "reviewed_total": 9,
+        "decisions": {
+          "exclude": 9
+        },
+        "added_candidates": 0,
+        "remaining_unreviewed": 93,
+        "pending_ids": []
+      },
+      {
+        "batch_id": "2024-wangmengran-local-unreviewed-round9-20261116",
+        "base_commit": "17db96f0afc1ca17f17c57d182324e1c6537e5a6",
+        "rule_sync": "已同步核对远端规则及词表，main=1bfad0c8a470373d61367dce5c21e4bda99327ab",
+        "external_metadata_checked": true,
+        "external_metadata_scope": "本轮全部纳入论文的正式页面、DOI、作者、PDF链接及原摘要",
+        "reviewed_total": 8,
+        "decisions": {
+          "exclude": 8
+        },
+        "added_candidates": 0,
+        "remaining_unreviewed": 85,
+        "pending_ids": []
+      },
+      {
+        "batch_id": "2024-wangmengran-local-unreviewed-round10-20261116",
+        "base_commit": "17db96f0afc1ca17f17c57d182324e1c6537e5a6",
+        "rule_sync": "已同步核对远端规则及词表，main=bee3f95b4768b17dc3b9ed5afae38f7ce9885ef9",
+        "external_metadata_checked": true,
+        "external_metadata_scope": "本轮全部纳入论文的正式页面、DOI、作者、PDF链接及原摘要",
+        "reviewed_total": 47,
+        "decisions": {
+          "exclude": 46,
+          "pending": 1
+        },
+        "added_candidates": 0,
+        "remaining_unreviewed": 38,
+        "pending_ids": [
+          "10.34133/bmr.0010"
+        ]
       }
     ]
   },
@@ -2560,11 +2719,15 @@
       "https://api.crossref.org/journals/2589-5974/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article&rows=500&cursor=%2A&select=DOI%2Ctitle%2Cauthor%2Ccontainer-title%2CISSN%2Cpublished%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2Ctype%2CURL%2Clink"
     ],
     "issues": [
-      "当前台账未审98条。"
+      "当前台账待定74条，仍需按逐篇理由补查证据。",
+      "本地本轮逐篇审核新增待定74条，需按local_unreviewed_stage.pending_ids补查方法证据。",
+      "本轮缺摘要补证遇官网403；正常浏览器部分成功后ScienceDirect CPE00002及Cell安全验证，受阻条目保留pending，未改用未经确认替代摘要。"
     ],
     "next_actions": [
       "接续未审断点，优先候选与疑似漏筛，继续用户已要求的全量逐篇检查。",
-      "推送前同步远端筛选规则及词表并复核本轮结果；本轮仅核对本地原摘要及已有元数据，未重新访问正式论文页。"
+      "推送前同步远端筛选规则及词表并复核本轮结果；本轮仅核对本地原摘要及已有元数据，未重新访问正式论文页。",
+      "推送前同步远端筛选规则及词表并复核本轮结果；本轮全部纳入论文已核对正式页面、DOI、作者、PDF链接及原摘要。",
+      "按reviews/2024/wangmengran8789-local-round11-20261116/pending.json提供正式原摘要/正文或负责人手动官网核验；优先核对机器学习生物燃料及电化学能量转换条目。"
     ],
     "collected_total": 109,
     "local_record_total": 109,
@@ -2573,13 +2736,13 @@
     "candidate_missing_usable_abstract_local": 0,
     "local_decisions": {
       "include": 0,
-      "exclude": 11,
-      "pending": 0,
-      "unreviewed": 98
+      "exclude": 35,
+      "pending": 74,
+      "unreviewed": 0
     },
-    "model_reviewed_this_stage": 11,
+    "model_reviewed_this_stage": 98,
     "stage_baseline_commit": "a9c9099884d96d35a6d6ba50e65717b6b4483299",
-    "updated_at": "2026-11-16T01:35:32-08:00",
+    "updated_at": "2026-11-16T04:08:45-08:00",
     "inherited_pending": 0,
     "include_missing_metadata_evidence": 0,
     "current_metadata_record_total": 109,
@@ -2610,18 +2773,110 @@
     },
     "coverage_access_limit_note": "官网直接请求受限或仅返回验证脚本；Computer Use曾成功读取部分ScienceDirect目录，随后Building and Environment第251卷返回CPE00002，Hydrology此前也发生同类限制；负责人2026-11-16确认这批Elsevier刊源无法人工核验并选择替代来源。此为批次访问限制记录，不声称逐刊每个网址均经浏览器重试。",
     "local_unreviewed_stage": {
-      "batch_id": "2024-wangmengran-local-unreviewed-round2-20261116",
-      "base_commit": "cc91409e32a7f67cbbc642fcb249bb875fab7584",
-      "rule_sync": "用户授权本地筛选；远端规则及词表未核实",
-      "external_metadata_checked": false,
-      "reviewed_total": 11,
+      "batch_id": "2024-wangmengran-local-unreviewed-round11-20261116",
+      "base_commit": "17db96f0afc1ca17f17c57d182324e1c6537e5a6",
+      "rule_sync": "已同步核对远端规则及词表，main=bee3f95b4768b17dc3b9ed5afae38f7ce9885ef9",
+      "external_metadata_checked": true,
+      "external_metadata_scope": "本轮全部纳入论文已核对；未纳入条目不据此宣称全部元数据已核实",
+      "reviewed_total": 98,
       "decisions": {
-        "exclude": 11
+        "exclude": 24,
+        "pending": 74
       },
       "added_candidates": 0,
-      "remaining_unreviewed": 98,
-      "pending_ids": []
-    }
+      "remaining_unreviewed": 0,
+      "pending_ids": [
+        "10.1016/j.trechm.2023.10.007",
+        "10.1016/j.trechm.2023.10.008",
+        "10.1016/j.trechm.2023.10.009",
+        "10.1016/j.trechm.2023.11.001",
+        "10.1016/j.trechm.2023.11.002",
+        "10.1016/j.trechm.2023.11.003",
+        "10.1016/j.trechm.2023.12.002",
+        "10.1016/j.trechm.2023.12.003",
+        "10.1016/j.trechm.2023.12.004",
+        "10.1016/j.trechm.2023.12.005",
+        "10.1016/j.trechm.2023.12.006",
+        "10.1016/j.trechm.2024.01.002",
+        "10.1016/j.trechm.2024.01.003",
+        "10.1016/j.trechm.2024.01.004",
+        "10.1016/j.trechm.2024.01.005",
+        "10.1016/j.trechm.2024.02.001",
+        "10.1016/j.trechm.2024.02.002",
+        "10.1016/j.trechm.2024.02.003",
+        "10.1016/j.trechm.2024.03.001",
+        "10.1016/j.trechm.2024.03.002",
+        "10.1016/j.trechm.2024.03.003",
+        "10.1016/j.trechm.2024.03.004",
+        "10.1016/j.trechm.2024.03.005",
+        "10.1016/j.trechm.2024.03.006",
+        "10.1016/j.trechm.2024.03.007",
+        "10.1016/j.trechm.2024.03.008",
+        "10.1016/j.trechm.2024.03.009",
+        "10.1016/j.trechm.2024.04.001",
+        "10.1016/j.trechm.2024.04.003",
+        "10.1016/j.trechm.2024.04.004",
+        "10.1016/j.trechm.2024.04.005",
+        "10.1016/j.trechm.2024.04.006",
+        "10.1016/j.trechm.2024.04.007",
+        "10.1016/j.trechm.2024.04.008",
+        "10.1016/j.trechm.2024.04.009",
+        "10.1016/j.trechm.2024.04.010",
+        "10.1016/j.trechm.2024.05.001",
+        "10.1016/j.trechm.2024.05.002",
+        "10.1016/j.trechm.2024.05.003",
+        "10.1016/j.trechm.2024.05.004",
+        "10.1016/j.trechm.2024.05.006",
+        "10.1016/j.trechm.2024.06.001",
+        "10.1016/j.trechm.2024.06.002",
+        "10.1016/j.trechm.2024.06.003",
+        "10.1016/j.trechm.2024.06.004",
+        "10.1016/j.trechm.2024.06.005",
+        "10.1016/j.trechm.2024.06.006",
+        "10.1016/j.trechm.2024.06.007",
+        "10.1016/j.trechm.2024.06.008",
+        "10.1016/j.trechm.2024.06.009",
+        "10.1016/j.trechm.2024.06.010",
+        "10.1016/j.trechm.2024.06.011",
+        "10.1016/j.trechm.2024.06.012",
+        "10.1016/j.trechm.2024.06.013",
+        "10.1016/j.trechm.2024.07.001",
+        "10.1016/j.trechm.2024.07.002",
+        "10.1016/j.trechm.2024.07.003",
+        "10.1016/j.trechm.2024.08.001",
+        "10.1016/j.trechm.2024.08.002",
+        "10.1016/j.trechm.2024.08.003",
+        "10.1016/j.trechm.2024.08.004",
+        "10.1016/j.trechm.2024.08.006",
+        "10.1016/j.trechm.2024.08.007",
+        "10.1016/j.trechm.2024.08.008",
+        "10.1016/j.trechm.2024.09.003",
+        "10.1016/j.trechm.2024.10.001",
+        "10.1016/j.trechm.2024.10.002",
+        "10.1016/j.trechm.2024.10.003",
+        "10.1016/j.trechm.2024.10.004",
+        "10.1016/j.trechm.2024.10.006",
+        "10.1016/j.trechm.2024.10.007",
+        "10.1016/j.trechm.2024.10.008",
+        "10.1016/j.trechm.2024.10.009",
+        "10.1016/j.trechm.2024.10.010"
+      ]
+    },
+    "local_review_stage_history": [
+      {
+        "batch_id": "2024-wangmengran-local-unreviewed-round2-20261116",
+        "base_commit": "cc91409e32a7f67cbbc642fcb249bb875fab7584",
+        "rule_sync": "用户授权本地筛选；远端规则及词表未核实",
+        "external_metadata_checked": false,
+        "reviewed_total": 11,
+        "decisions": {
+          "exclude": 11
+        },
+        "added_candidates": 0,
+        "remaining_unreviewed": 98,
+        "pending_ids": []
+      }
+    ]
   },
   {
     "year": 2024,
@@ -3121,39 +3376,39 @@
       "https://www.nature.com/npjparkd/articles?year=2024"
     ],
     "issues": [
-      "当前台账未审124条。",
-      "当前台账待定14条，仍需按逐篇理由补查证据。"
+      "当前台账待定18条，仍需按逐篇理由补查证据。"
     ],
     "next_actions": [
       "按逐篇rationale补证并处理pending，证据充分后再更新结论。",
       "接续未审断点，优先候选与疑似漏筛，继续用户已要求的全量逐篇检查。",
-      "推送前同步远端筛选规则及词表并复核本轮结果；本轮仅核对本地原摘要及已有元数据，未重新访问正式论文页。"
+      "推送前同步远端筛选规则及词表并复核本轮结果；本轮仅核对本地原摘要及已有元数据，未重新访问正式论文页。",
+      "推送前同步远端筛选规则及词表并复核本轮结果；本轮全部纳入论文已核对正式页面、DOI、作者、PDF链接及原摘要。"
     ],
     "collected_total": 236,
     "local_record_total": 236,
-    "candidate_total": 14,
+    "candidate_total": 28,
     "candidate_missing_abstract_raw": 0,
     "candidate_missing_usable_abstract_local": 0,
     "local_decisions": {
-      "include": 12,
-      "exclude": 86,
-      "pending": 14,
-      "unreviewed": 124
+      "include": 26,
+      "exclude": 192,
+      "pending": 18,
+      "unreviewed": 0
     },
-    "model_reviewed_this_stage": 7,
+    "model_reviewed_this_stage": 88,
     "stage_baseline_commit": "a9c9099884d96d35a6d6ba50e65717b6b4483299",
-    "updated_at": "2026-11-16T03:09:08-08:00",
+    "updated_at": "2026-11-16T04:08:45-08:00",
     "inherited_pending": 1,
     "include_missing_metadata_evidence": 0,
     "current_metadata_record_total": 236,
     "correction_base_commit": "8825b0eaf73764b7ce276e25dcd49a35534c900b",
-    "initial_screening_supplements_synced": 3,
+    "initial_screening_supplements_synced": 17,
     "official_missing_candidates_synced": 0,
     "official_missing_full_records_synced": 0,
     "candidate_abstracts_synced": 0,
     "snapshot_note": "captured_at保持原采集快照；本轮补录不伪造采集时间，当前metadata数量与旧快照基线差额在本反馈单列。",
     "previous_stage_coverage_note": "2026-11-14手册对照修正：原采集快照2026-11-05T10:31:19.144426+08:00保留；当前全量metadata 236条，责任台账236条，审核四状态{'include': 9, 'exclude': 16, 'pending': 1, 'unreviewed': 210}。当前候选11条，物理空摘要0条，隔离错配0条，缺可用摘要0条。本轮同步已有带证据候选摘要0条，初筛漏筛补录0条，官网漏采纳入候选补录0条，全量书目官网漏采补录0条。32条纳入记录已新核对Crossref DOI、题名和作者，正式证据链接已补齐；公开PDF和代码字段仍按实际核验情况保留未知。官网全年覆盖和待定/未审任务按原反馈继续，未声称全部完成。",
-    "newly_included_supplement_records": 3,
+    "newly_included_supplement_records": 12,
     "previous_annual_coverage_note": "2026-11-15阶段续审：当前责任台账236条，四状态{'unreviewed': 210, 'include': 9, 'exclude': 16, 'pending': 1}；相对本次主分支基线新增逐篇判定0条。已核实初筛漏筛补录0条，本次交付于个人审核数组，未改共享候选文件；当前主分支候选11条、原始空摘要0条、合并本人核验字段后缺可用摘要0条。候选版本a9c9099884d96d35a6d6ba50e65717b6b4483299；采集快照2026-11-05T10:31:19.144426+08:00。既有官网核验结论、摘要补证与修正元数据保持；历史待定不等于逐篇最终完成，未知官网总数保持null。",
     "annual_coverage_checked_at": "2026-11-16T08:23:10+08:00",
     "annual_coverage_base_commit": "a5ccbe7734fe2fbee63bf7f3db15619d71d53e7f",
@@ -3163,16 +3418,18 @@
     "annual_coverage_evidence": "reviews/2024/wangmengran8789-coverage-20261116/per-source/npjparkd.json",
     "historical_formal_supplements_retained": 0,
     "local_unreviewed_stage": {
-      "batch_id": "2024-wangmengran-local-unreviewed-round8-20261116",
-      "base_commit": "c19be307a885085c37588ddfbc236a479f4c6a00",
-      "rule_sync": "用户授权本地筛选；远端规则及词表未核实",
-      "external_metadata_checked": false,
-      "reviewed_total": 7,
+      "batch_id": "2024-wangmengran-local-unreviewed-round11-20261116",
+      "base_commit": "17db96f0afc1ca17f17c57d182324e1c6537e5a6",
+      "rule_sync": "已同步核对远端规则及词表，main=bee3f95b4768b17dc3b9ed5afae38f7ce9885ef9",
+      "external_metadata_checked": true,
+      "external_metadata_scope": "本轮全部纳入论文已核对；未纳入条目不据此宣称全部元数据已核实",
+      "reviewed_total": 88,
       "decisions": {
-        "exclude": 7
+        "exclude": 76,
+        "include": 12
       },
-      "added_candidates": 0,
-      "remaining_unreviewed": 124,
+      "added_candidates": 12,
+      "remaining_unreviewed": 0,
       "pending_ids": []
     },
     "local_review_stage_history": [
@@ -3218,6 +3475,57 @@
           "10.1038/s41531-024-00813-z",
           "10.1038/s41531-024-00636-y",
           "10.1038/s41531-024-00751-w"
+        ]
+      },
+      {
+        "batch_id": "2024-wangmengran-local-unreviewed-round8-20261116",
+        "base_commit": "c19be307a885085c37588ddfbc236a479f4c6a00",
+        "rule_sync": "用户授权本地筛选；远端规则及词表未核实",
+        "external_metadata_checked": false,
+        "reviewed_total": 7,
+        "decisions": {
+          "exclude": 7
+        },
+        "added_candidates": 0,
+        "remaining_unreviewed": 124,
+        "pending_ids": []
+      },
+      {
+        "batch_id": "2024-wangmengran-local-unreviewed-round9-20261116",
+        "base_commit": "17db96f0afc1ca17f17c57d182324e1c6537e5a6",
+        "rule_sync": "已同步核对远端规则及词表，main=1bfad0c8a470373d61367dce5c21e4bda99327ab",
+        "external_metadata_checked": true,
+        "external_metadata_scope": "本轮全部纳入论文的正式页面、DOI、作者、PDF链接及原摘要",
+        "reviewed_total": 10,
+        "decisions": {
+          "pending": 2,
+          "exclude": 7,
+          "include": 1
+        },
+        "added_candidates": 1,
+        "remaining_unreviewed": 114,
+        "pending_ids": [
+          "10.1038/s41531-024-00793-0",
+          "10.1038/s41531-024-00802-2"
+        ]
+      },
+      {
+        "batch_id": "2024-wangmengran-local-unreviewed-round10-20261116",
+        "base_commit": "17db96f0afc1ca17f17c57d182324e1c6537e5a6",
+        "rule_sync": "已同步核对远端规则及词表，main=bee3f95b4768b17dc3b9ed5afae38f7ce9885ef9",
+        "external_metadata_checked": true,
+        "external_metadata_scope": "本轮全部纳入论文的正式页面、DOI、作者、PDF链接及原摘要",
+        "reviewed_total": 26,
+        "decisions": {
+          "exclude": 23,
+          "pending": 2,
+          "include": 1
+        },
+        "added_candidates": 1,
+        "remaining_unreviewed": 88,
+        "pending_ids": [
+          "10.1038/s41531-024-00688-0",
+          "10.1038/s41531-024-00681-7"
         ]
       }
     ]
