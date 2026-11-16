@@ -294,10 +294,13 @@
       "https://api.crossref.org/journals/2452-2236/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article&rows=500&cursor=%2A&select=DOI%2Ctitle%2Cauthor%2Ccontainer-title%2CISSN%2Cpublished%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2Ctype%2CURL%2Clink"
     ],
     "issues": [
-      "当前台账未审100条。"
+      "当前台账未审56条。",
+      "当前台账待定3条，仍需按逐篇理由补查证据。",
+      "本地本轮逐篇审核新增待定3条，需按local_unreviewed_stage.pending_ids补查方法证据。"
     ],
     "next_actions": [
-      "接续未审断点，优先候选与疑似漏筛，继续用户已要求的全量逐篇检查。"
+      "接续未审断点，优先候选与疑似漏筛，继续用户已要求的全量逐篇检查。",
+      "推送前同步远端筛选规则及词表并复核本轮结果；本轮仅核对本地原摘要及已有元数据，未重新访问正式论文页。"
     ],
     "collected_total": 101,
     "local_record_total": 101,
@@ -305,12 +308,14 @@
     "candidate_missing_abstract_raw": 0,
     "candidate_missing_usable_abstract_local": 0,
     "local_decisions": {
-      "unreviewed": 100,
-      "include": 1
+      "include": 1,
+      "exclude": 41,
+      "pending": 3,
+      "unreviewed": 56
     },
-    "model_reviewed_this_stage": 0,
+    "model_reviewed_this_stage": 44,
     "stage_baseline_commit": "a9c9099884d96d35a6d6ba50e65717b6b4483299",
-    "updated_at": "2026-11-16T08:23:10+08:00",
+    "updated_at": "2026-11-16T01:35:32-08:00",
     "inherited_pending": 0,
     "include_missing_metadata_evidence": 0,
     "current_metadata_record_total": 101,
@@ -339,7 +344,25 @@
       "checked_at": "2026-11-16",
       "unresolved": 0
     },
-    "coverage_access_limit_note": "官网直接请求受限或仅返回验证脚本；Computer Use曾成功读取部分ScienceDirect目录，随后Building and Environment第251卷返回CPE00002，Hydrology此前也发生同类限制；负责人2026-11-16确认这批Elsevier刊源无法人工核验并选择替代来源。此为批次访问限制记录，不声称逐刊每个网址均经浏览器重试。"
+    "coverage_access_limit_note": "官网直接请求受限或仅返回验证脚本；Computer Use曾成功读取部分ScienceDirect目录，随后Building and Environment第251卷返回CPE00002，Hydrology此前也发生同类限制；负责人2026-11-16确认这批Elsevier刊源无法人工核验并选择替代来源。此为批次访问限制记录，不声称逐刊每个网址均经浏览器重试。",
+    "local_unreviewed_stage": {
+      "batch_id": "2024-wangmengran-local-unreviewed-round2-20261116",
+      "base_commit": "cc91409e32a7f67cbbc642fcb249bb875fab7584",
+      "rule_sync": "用户授权本地筛选；远端规则及词表未核实",
+      "external_metadata_checked": false,
+      "reviewed_total": 44,
+      "decisions": {
+        "exclude": 41,
+        "pending": 3
+      },
+      "added_candidates": 0,
+      "remaining_unreviewed": 56,
+      "pending_ids": [
+        "10.1016/j.cogsc.2024.100921",
+        "10.1016/j.cogsc.2024.100937",
+        "10.1016/j.cogsc.2024.100940"
+      ]
+    }
   },
   {
     "year": 2024,
@@ -1984,10 +2007,12 @@
       "https://link.springer.com/search?facet-journal-id=10311&source=new-es&query=*&content-type=Article&date=custom&dateFrom=2024&dateTo=2024&sortBy=relevance"
     ],
     "issues": [
-      "当前台账未审117条。"
+      "当前台账待定3条，仍需按逐篇理由补查证据。",
+      "本地本轮逐篇审核新增待定3条，需按local_unreviewed_stage.pending_ids补查方法证据。"
     ],
     "next_actions": [
-      "接续未审断点，优先候选与疑似漏筛，继续用户已要求的全量逐篇检查。"
+      "接续未审断点，优先候选与疑似漏筛，继续用户已要求的全量逐篇检查。",
+      "推送前同步远端筛选规则及词表并复核本轮结果；本轮仅核对本地原摘要及已有元数据，未重新访问正式论文页。"
     ],
     "collected_total": 125,
     "local_record_total": 125,
@@ -1995,12 +2020,14 @@
     "candidate_missing_abstract_raw": 0,
     "candidate_missing_usable_abstract_local": 0,
     "local_decisions": {
-      "unreviewed": 117,
-      "include": 8
+      "include": 8,
+      "exclude": 114,
+      "pending": 3,
+      "unreviewed": 0
     },
-    "model_reviewed_this_stage": 0,
+    "model_reviewed_this_stage": 117,
     "stage_baseline_commit": "a9c9099884d96d35a6d6ba50e65717b6b4483299",
-    "updated_at": "2026-11-16T08:23:10+08:00",
+    "updated_at": "2026-11-16T01:35:32-08:00",
     "inherited_pending": 0,
     "include_missing_metadata_evidence": 0,
     "current_metadata_record_total": 125,
@@ -2019,7 +2046,25 @@
     "annual_coverage_same_scope_total": 125,
     "annual_coverage_unresolved": 0,
     "annual_coverage_evidence": "reviews/2024/wangmengran8789-coverage-20261116/per-source/j-db72c3c601.json",
-    "historical_formal_supplements_retained": 0
+    "historical_formal_supplements_retained": 0,
+    "local_unreviewed_stage": {
+      "batch_id": "2024-wangmengran-local-unreviewed-round2-20261116",
+      "base_commit": "cc91409e32a7f67cbbc642fcb249bb875fab7584",
+      "rule_sync": "用户授权本地筛选；远端规则及词表未核实",
+      "external_metadata_checked": false,
+      "reviewed_total": 117,
+      "decisions": {
+        "exclude": 114,
+        "pending": 3
+      },
+      "added_candidates": 0,
+      "remaining_unreviewed": 0,
+      "pending_ids": [
+        "10.1007/s10311-023-01684-1",
+        "10.1007/s10311-024-01731-5",
+        "10.1007/s10311-024-01784-6"
+      ]
+    }
   },
   {
     "year": 2024,
@@ -2304,10 +2349,11 @@
       "https://api.crossref.org/journals/2589-5974/works?filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2024-12-31%2Ctype%3Ajournal-article&rows=500&cursor=%2A&select=DOI%2Ctitle%2Cauthor%2Ccontainer-title%2CISSN%2Cpublished%2Cpublished-print%2Cpublished-online%2Cissued%2Cvolume%2Cissue%2Cpage%2Ctype%2CURL%2Clink"
     ],
     "issues": [
-      "当前台账未审109条。"
+      "当前台账未审98条。"
     ],
     "next_actions": [
-      "接续未审断点，优先候选与疑似漏筛，继续用户已要求的全量逐篇检查。"
+      "接续未审断点，优先候选与疑似漏筛，继续用户已要求的全量逐篇检查。",
+      "推送前同步远端筛选规则及词表并复核本轮结果；本轮仅核对本地原摘要及已有元数据，未重新访问正式论文页。"
     ],
     "collected_total": 109,
     "local_record_total": 109,
@@ -2315,11 +2361,14 @@
     "candidate_missing_abstract_raw": 0,
     "candidate_missing_usable_abstract_local": 0,
     "local_decisions": {
-      "unreviewed": 109
+      "include": 0,
+      "exclude": 11,
+      "pending": 0,
+      "unreviewed": 98
     },
-    "model_reviewed_this_stage": 0,
+    "model_reviewed_this_stage": 11,
     "stage_baseline_commit": "a9c9099884d96d35a6d6ba50e65717b6b4483299",
-    "updated_at": "2026-11-16T08:23:10+08:00",
+    "updated_at": "2026-11-16T01:35:32-08:00",
     "inherited_pending": 0,
     "include_missing_metadata_evidence": 0,
     "current_metadata_record_total": 109,
@@ -2348,7 +2397,20 @@
       "checked_at": "2026-11-16",
       "unresolved": 0
     },
-    "coverage_access_limit_note": "官网直接请求受限或仅返回验证脚本；Computer Use曾成功读取部分ScienceDirect目录，随后Building and Environment第251卷返回CPE00002，Hydrology此前也发生同类限制；负责人2026-11-16确认这批Elsevier刊源无法人工核验并选择替代来源。此为批次访问限制记录，不声称逐刊每个网址均经浏览器重试。"
+    "coverage_access_limit_note": "官网直接请求受限或仅返回验证脚本；Computer Use曾成功读取部分ScienceDirect目录，随后Building and Environment第251卷返回CPE00002，Hydrology此前也发生同类限制；负责人2026-11-16确认这批Elsevier刊源无法人工核验并选择替代来源。此为批次访问限制记录，不声称逐刊每个网址均经浏览器重试。",
+    "local_unreviewed_stage": {
+      "batch_id": "2024-wangmengran-local-unreviewed-round2-20261116",
+      "base_commit": "cc91409e32a7f67cbbc642fcb249bb875fab7584",
+      "rule_sync": "用户授权本地筛选；远端规则及词表未核实",
+      "external_metadata_checked": false,
+      "reviewed_total": 11,
+      "decisions": {
+        "exclude": 11
+      },
+      "added_candidates": 0,
+      "remaining_unreviewed": 98,
+      "pending_ids": []
+    }
   },
   {
     "year": 2024,
