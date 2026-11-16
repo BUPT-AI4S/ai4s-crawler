@@ -1485411,9 +1485411,15 @@
       "batch_id": "2024-wangmengran-local-unreviewed-20261116",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "证据位置：输入原摘要。输入摘要描述原子多尺度模型和专用原子间势，但未交代势函数是否由机器学习获得；需查方法中势函数来源及AI作用，不能将任意原子势或多尺度模拟自动判为AI。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "证据位置：正式出版方全文。官网Methods：LF-CADD耦合LAMMPS与FEniCS；使用Rajan等人的可调二体能量函数势A/C，通过GIe/GIc调整本征延性。属于物理原子势与连续体模拟，未采用学习型势或其他AI方法。",
+      "verified_metadata": {
+        "url": "https://www.nature.com/articles/s41529-024-00513-2",
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41529-024-00513-2"
+        ],
+        "pdf_url": "https://www.nature.com/articles/s41529-024-00513-2.pdf"
+      },
       "tags": [],
       "local_review_evidence": {
         "base_commit": "1bfad0c8a470373d61367dce5c21e4bda99327ab",
@@ -1485423,6 +1485429,11 @@
         "source_url_from_input": "https://www.nature.com/articles/s41529-024-00513-2",
         "external_page_checked_this_stage": false,
         "rule_sync": "用户授权使用本地规则；本环境GitHub DNS解析失败，未核实远端更新"
+      },
+      "evidence_followup": {
+        "checked_at": "2026-11-16T12:56:39.577480+00:00",
+        "method": "publisher full text through Chrome",
+        "base_commit": "9f8e8a5c0504ccf5bce0e39677d6f4a19360075b"
       }
     }
   },
@@ -1487008,10 +1487019,23 @@
       "batch_id": "2024-wangmengran-local-unreviewed-20261116",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "证据位置：输入原摘要。摘要以贝叶斯推断比较腐蚀EIS等效电路模型并缩减测量频率；科学任务明确，但需查推断与模型选择实现，区分常规参数统计推断和符合词表的AI方法，暂不直接纳入。",
-      "verified_metadata": {},
-      "tags": [],
+      "decision": "include",
+      "rationale": "证据位置：正式出版方全文。官网Results and discussions中三个腐蚀体系分别训练决策树，以电路参数为输入、贝叶斯推断可行性为目标，识别阻抗等效电路可辨识区域及特征重要性；AI直接支持腐蚀机理模型分析，非仅常规贝叶斯参数估计。",
+      "verified_metadata": {
+        "url": "https://www.nature.com/articles/s41529-024-00537-8",
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41529-024-00537-8"
+        ],
+        "pdf_url": "https://www.nature.com/articles/s41529-024-00537-8.pdf"
+      },
+      "tags": [
+        {
+          "axis": "method",
+          "label": "决策树",
+          "label_en": "Decision tree",
+          "evidence": "官网Results and discussions中三个腐蚀体系分别训练决策树，以电路参数为输入、贝叶斯推断可行性为目标，识别阻抗等效电路可辨识区域及特征重要性；AI直接支持腐蚀机理模型分析，非仅常规贝叶斯参数估计。"
+        }
+      ],
       "local_review_evidence": {
         "base_commit": "1bfad0c8a470373d61367dce5c21e4bda99327ab",
         "reviewed_at": "2026-11-16T01:16:56-08:00",
@@ -1487020,6 +1487044,11 @@
         "source_url_from_input": "https://www.nature.com/articles/s41529-024-00537-8",
         "external_page_checked_this_stage": false,
         "rule_sync": "用户授权使用本地规则；本环境GitHub DNS解析失败，未核实远端更新"
+      },
+      "evidence_followup": {
+        "checked_at": "2026-11-16T12:56:39.577480+00:00",
+        "method": "publisher full text through Chrome",
+        "base_commit": "9f8e8a5c0504ccf5bce0e39677d6f4a19360075b"
       }
     }
   },
@@ -1487560,10 +1487589,29 @@
       "batch_id": "2024-wangmengran-local-unreviewed-20261116",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "证据位置：输入原摘要。摘要使用训练的腐蚀速率模型及Sobol敏感性分析研究缓蚀剂用量优化，但未说明模型类别和训练方法；需查方法确认是否为机器学习及其与剂量优化的实际关系。",
-      "verified_metadata": {},
-      "tags": [],
+      "decision": "include",
+      "rationale": "证据位置：正式出版方全文。官网Support vector regression及变量选择、剂量优化章节：以SVR预测实际冷却水系统腐蚀速率，比较XGBoost/GPR，采用NSGA-II优化缓蚀剂剂量并分析Sobol敏感性；AI对腐蚀预测和剂量研究有实质作用。",
+      "verified_metadata": {
+        "url": "https://www.nature.com/articles/s41529-024-00545-8",
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41529-024-00545-8"
+        ],
+        "pdf_url": "https://www.nature.com/articles/s41529-024-00545-8.pdf"
+      },
+      "tags": [
+        {
+          "axis": "method",
+          "label": "支持向量机",
+          "label_en": "Support vector machine",
+          "evidence": "官网Support vector regression及变量选择、剂量优化章节：以SVR预测实际冷却水系统腐蚀速率，比较XGBoost/GPR，采用NSGA-II优化缓蚀剂剂量并分析Sobol敏感性；AI对腐蚀预测和剂量研究有实质作用。"
+        },
+        {
+          "axis": "method",
+          "label": "梯度提升树",
+          "label_en": "Gradient-boosted decision trees",
+          "evidence": "官网Support vector regression及变量选择、剂量优化章节：以SVR预测实际冷却水系统腐蚀速率，比较XGBoost/GPR，采用NSGA-II优化缓蚀剂剂量并分析Sobol敏感性；AI对腐蚀预测和剂量研究有实质作用。"
+        }
+      ],
       "local_review_evidence": {
         "base_commit": "1bfad0c8a470373d61367dce5c21e4bda99327ab",
         "reviewed_at": "2026-11-16T01:16:56-08:00",
@@ -1487572,6 +1487620,11 @@
         "source_url_from_input": "https://www.nature.com/articles/s41529-024-00545-8",
         "external_page_checked_this_stage": false,
         "rule_sync": "用户授权使用本地规则；本环境GitHub DNS解析失败，未核实远端更新"
+      },
+      "evidence_followup": {
+        "checked_at": "2026-11-16T12:56:39.577480+00:00",
+        "method": "publisher full text through Chrome",
+        "base_commit": "9f8e8a5c0504ccf5bce0e39677d6f4a19360075b"
       }
     }
   },
@@ -1674338,10 +1674391,28 @@
       "owner": "王梦冉",
       "batch_id": "2024-wangmengran-local-unreviewed-round2-20261116",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "证据位置：输入原摘要。摘要将chemometrics列为老化微塑料分析主题，但仅具体说明热学、光谱、显微和质谱；需查化学计量学章节是否包含机器学习及其直接分析任务，暂不凭术语纳入。",
-      "tags": [],
-      "verified_metadata": {},
+      "decision": "include",
+      "rationale": "证据位置：正式出版方全文。官网Chemometric analysis for qualification and quantification of aged microplastics章节实质综述随机森林、卷积神经网络结合Raman及μ-FTIR进行微/纳塑料鉴别和量化，并比较识别表现；AI方法直接服务环境污染物分析。",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "随机森林",
+          "label_en": "Random forest",
+          "evidence": "官网Chemometric analysis for qualification and quantification of aged microplastics章节实质综述随机森林、卷积神经网络结合Raman及μ-FTIR进行微/纳塑料鉴别和量化，并比较识别表现；AI方法直接服务环境污染物分析。"
+        },
+        {
+          "axis": "method",
+          "label": "卷积神经网络",
+          "label_en": "Convolutional neural network",
+          "evidence": "官网Chemometric analysis for qualification and quantification of aged microplastics章节实质综述随机森林、卷积神经网络结合Raman及μ-FTIR进行微/纳塑料鉴别和量化，并比较识别表现；AI方法直接服务环境污染物分析。"
+        }
+      ],
+      "verified_metadata": {
+        "url": "https://link.springer.com/article/10.1007/s10311-024-01731-5",
+        "evidence_urls": [
+          "https://link.springer.com/article/10.1007/s10311-024-01731-5"
+        ]
+      },
       "local_review_evidence": {
         "base_commit": "cc91409e32a7f67cbbc642fcb249bb875fab7584",
         "reviewed_at": "2026-11-16T01:35:32-08:00",
@@ -1674350,6 +1674421,11 @@
         "source_url_from_input": "https://doi.org/10.1007/s10311-024-01731-5",
         "external_page_checked_this_stage": false,
         "rule_sync": "用户授权使用本地规则；本环境GitHub DNS解析失败，未核实远端更新"
+      },
+      "evidence_followup": {
+        "checked_at": "2026-11-16T12:56:39.577480+00:00",
+        "method": "publisher full text through Chrome",
+        "base_commit": "9f8e8a5c0504ccf5bce0e39677d6f4a19360075b"
       }
     }
   },
@@ -1687886,10 +1687962,16 @@
       "owner": "王梦冉",
       "batch_id": "2024-wangmengran-local-unreviewed-20261116",
       "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-      "decision": "pending",
-      "rationale": "证据位置：输入原摘要。摘要以系统性ab-initio结构搜索预测MX2单层，再用DFT和多体微扰理论分析性质；需核对结构搜索算法是否使用演化优化或其他AI方法，不能仅凭prediction或search纳入。",
+      "decision": "exclude",
+      "rationale": "证据位置：正式出版方全文。官网正文结构搜索实现：constrained minima hopping method将DFT与短程分子动力学耦合以探索势能面；后续采用DFT和多体微扰理论。核实为物理能量面搜索，无学习模型或演化/群智能算法证据，不因prediction或search自动纳入。",
       "tags": [],
-      "verified_metadata": {},
+      "verified_metadata": {
+        "url": "https://www.nature.com/articles/s41699-023-00439-4",
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41699-023-00439-4"
+        ],
+        "pdf_url": "https://www.nature.com/articles/s41699-023-00439-4.pdf"
+      },
       "local_review_evidence": {
         "base_commit": "1bfad0c8a470373d61367dce5c21e4bda99327ab",
         "reviewed_at": "2026-11-16T01:16:56-08:00",
@@ -1687898,6 +1687980,11 @@
         "source_url_from_input": "https://www.nature.com/articles/s41699-023-00439-4",
         "external_page_checked_this_stage": false,
         "rule_sync": "用户授权使用本地规则；本环境GitHub DNS解析失败，未核实远端更新"
+      },
+      "evidence_followup": {
+        "checked_at": "2026-11-16T12:56:39.577480+00:00",
+        "method": "publisher full text through Chrome",
+        "base_commit": "9f8e8a5c0504ccf5bce0e39677d6f4a19360075b"
       }
     }
   },
