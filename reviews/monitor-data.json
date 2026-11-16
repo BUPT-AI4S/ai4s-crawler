@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-16T16:39:05.198211+00:00",
-  "commit": "5fae88c9cded94610a7a7b746267126cddae7faa",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/5fae88c9cded94610a7a7b746267126cddae7faa/",
+  "generated_at": "2026-11-16T17:19:54.166078+00:00",
+  "commit": "58bca946d739fb633ce1484683139d439aab995c",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/58bca946d739fb633ce1484683139d439aab995c/",
   "years": [
     {
       "year": 2024,
@@ -23131,15 +23131,15 @@
           "open_issues": 0,
           "status": "complete",
           "last_update": {
-            "at": "2026-11-16T08:33:57-08:00",
+            "at": "2026-11-16T09:16:07-08:00",
             "author": "ebo",
-            "subject": "Pin candidate provenance to the immutable reviewed dataset",
+            "subject": "review: pin delivered candidate file provenance",
             "area": "reviews",
             "paths": [
               "reviews/2026/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 77
+          "commits_7d": 79
         },
         {
           "owner": "朱长昊",
@@ -40945,15 +40945,15 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-16T08:33:57-08:00",
+            "at": "2026-11-16T09:16:07-08:00",
             "author": "ebo",
-            "subject": "Pin candidate provenance to the immutable reviewed dataset",
+            "subject": "review: pin delivered candidate file provenance",
             "area": "reviews",
             "paths": [
               "reviews/2026/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 77
+          "commits_7d": 79
         }
       ],
       "snapshot_file": "metadata/2025/snapshot.json",
@@ -44868,32 +44868,51 @@
           "state": "abstract_incomplete",
           "papers": 401,
           "snapshot_candidates": 60,
-          "candidates": 60,
-          "missing_abstract": 20,
-          "official_total": null,
-          "official_scope": "",
+          "candidates": 127,
+          "missing_abstract": 0,
+          "official_total": 400,
+          "official_scope": "ScienceDirect官网2026正式卷195—206共12完整卷期全类型400唯一PII；不等同首次在线2026全集。",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
+          "coverage_note": "普通浏览器核完正式2026卷195—206全部12目录，400唯一PII与官方逐卷RIS集合完全一致。原401条含1条已正式分配2027卷208（107219），保留原始记录并单列范围调整；扣除该条后400与官网双向一致，零未处理缺项、多余或重复。原60条及67条确证漏筛现127条：120纳入、7排除，无待定未审。原20缺摘要均已从出版社正式RIS完整AB同步，原审核输入null保留在个人交付，核验完整摘要在verified_metadata。HydroBlox据正式引言确认本地AI实际构建水文工作流。未将未训练卷积数值解法、普通图算法或通用GPU求解当AI。历史abstract_incomplete及原401均保留，显示结案须支持已核跨年范围归一，当前不提前宣称清零。",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/195/suppl/C",
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/196/suppl/C",
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/197/suppl/C",
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/198/suppl/C",
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/199/suppl/C",
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/200/suppl/C",
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/201/suppl/C",
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/202/suppl/C",
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/203/suppl/C",
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/204/suppl/C",
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/205/suppl/C",
+            "https://www.sciencedirect.com/journal/environmental-modelling-and-software/vol/206/suppl/C",
+            "https://www.sciencedirect.com/science/article/pii/S136481522600366X"
+          ],
+          "decisions": {
+            "include": 120,
+            "exclude": 7,
+            "pending": 0,
+            "unreviewed": 0
+          },
           "issues": [
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
-            "AI4S候选缺少摘要：20 篇。",
-            "尚未找到逐篇审核交付。"
+            "原书目401中1条正式分配2027卷208；归一400已与官网逐条匹配，历史采集状态的监控结案规则待授权适配。",
+            "采集状态尚未完成：abstract_incomplete"
           ],
           "actions": [
+            "在保留原始401、官网400及逐条跨年证据的前提下，按获授权规则结案历史abstract_incomplete提示；无需继续补摘要或审核候选。",
             "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
-            "提交逐篇审核结果或说明当前进度。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2026/nydiii.json",
+            "reviews/2026/feedback/nydiii.json"
+          ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 20
+          "abstract_supplement_required": 0
         },
         {
           "code": "j-3d73a601f6",
@@ -45177,21 +45196,29 @@
           "snapshot_candidates": 7,
           "candidates": 7,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 63,
+          "official_scope": "官网2026卷23期1当前全部2页、全类型63条；截至2026-11-16，非未来最终全年。",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
-          "issues": [
-            "官网同口径总数尚未确认。",
-            "尚未找到逐篇审核交付。"
+          "coverage_note": "官网卷23期1全部2页63唯一DOI与出版方Crossref63逐项一致。原60全覆盖，另3当前条目独立补录，其中00639-0在11月6日已发表，确证快照前缺项；另00636-3、00640-7为11月9/16日发表，非历史漏采。3条均为教学/教育技术研究或综述，不是自然科学AI研究。7候选全部审核：1纳入、6排除，无待定未审，原摘要齐全。EEG条目依据开放Methods确认掩码预训练、CLIP及Stable Diffusion实际神经表征解码，保留受试者内探索研究的验证限制；化学或神经经济学教学场景不因课程名称误作科学发现。原始60和固定快照未覆盖。",
+          "evidence_urls": [
+            "https://link.springer.com/journal/41239/volumes-and-issues/23-1",
+            "https://link.springer.com/journal/41239/volumes-and-issues/23-1?filter-by-volume=23&filterOpenAccess=false&page=2",
+            "https://link.springer.com/article/10.1186/s41239-026-00626-5"
           ],
+          "decisions": {
+            "include": 1,
+            "exclude": 6,
+            "pending": 0,
+            "unreviewed": 0
+          },
+          "issues": [],
           "actions": [
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "提交逐篇审核结果或说明当前进度。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2026/nydiii.json",
+            "reviews/2026/feedback/nydiii.json"
+          ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
@@ -56887,21 +56914,21 @@
         {
           "owner": "南耀笛",
           "sources": 51,
-          "delivered": 7,
-          "official": 8,
+          "delivered": 9,
+          "official": 10,
           "pending": 0,
-          "open_issues": 46,
+          "open_issues": 45,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-16T08:33:57-08:00",
+            "at": "2026-11-16T09:16:07-08:00",
             "author": "ebo",
-            "subject": "Pin candidate provenance to the immutable reviewed dataset",
+            "subject": "review: pin delivered candidate file provenance",
             "area": "reviews",
             "paths": [
               "reviews/2026/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 77
+          "commits_7d": 79
         }
       ],
       "snapshot_file": "metadata/2026/snapshot.json",
@@ -57355,33 +57382,33 @@
         },
         "2026": {
           "sources": 51,
-          "delivered": 7,
-          "official": 8,
+          "delivered": 9,
+          "official": 10,
           "pending": 0,
-          "open_issues": 46,
+          "open_issues": 45,
           "status": "in_progress"
         }
       },
       "sources": 153,
-      "delivered": 107,
+      "delivered": 109,
       "not_started": [],
       "last_update": {
-        "at": "2026-11-16T08:33:57-08:00",
+        "at": "2026-11-16T09:16:07-08:00",
         "author": "ebo",
-        "subject": "Pin candidate provenance to the immutable reviewed dataset",
+        "subject": "review: pin delivered candidate file provenance",
         "area": "reviews",
         "paths": [
           "reviews/2026/feedback/nydiii.json"
         ]
       },
-      "commits_7d": 77
+      "commits_7d": 79
     }
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-16T16:38:46.392067+00:00",
+    "generated_at": "2026-11-16T17:19:22.962641+00:00",
     "history_available": true,
-    "commit": "5fae88c9cded94610a7a7b746267126cddae7faa",
-    "commits_scanned": 724
+    "commit": "58bca946d739fb633ce1484683139d439aab995c",
+    "commits_scanned": 727
   }
 }
