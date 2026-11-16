@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-16T20:07:54.477569+00:00",
-  "commit": "de0ce023df121131e03381867c071355c6135841",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/de0ce023df121131e03381867c071355c6135841/",
+  "generated_at": "2026-11-16T20:33:47.699690+00:00",
+  "commit": "a36b8f5776dec59824386581df0a220bb9f04642",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/a36b8f5776dec59824386581df0a220bb9f04642/",
   "years": [
     {
       "year": 2024,
@@ -23131,15 +23131,15 @@
           "open_issues": 0,
           "status": "complete",
           "last_update": {
-            "at": "2026-11-16T12:04:03-08:00",
+            "at": "2026-11-16T12:29:31-08:00",
             "author": "ebo",
-            "subject": "Pin four-source candidate audit provenance",
+            "subject": "Pin three journal deliveries to verified annual candidate revision",
             "area": "reviews",
             "paths": [
               "reviews/2026/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 89
+          "commits_7d": 91
         },
         {
           "owner": "朱长昊",
@@ -40945,15 +40945,15 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-16T12:04:03-08:00",
+            "at": "2026-11-16T12:29:31-08:00",
             "author": "ebo",
-            "subject": "Pin four-source candidate audit provenance",
+            "subject": "Pin three journal deliveries to verified annual candidate revision",
             "area": "reviews",
             "paths": [
               "reviews/2026/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 89
+          "commits_7d": 91
         }
       ],
       "snapshot_file": "metadata/2025/snapshot.json",
@@ -50557,25 +50557,42 @@
           "state": "abstract_incomplete",
           "papers": 1767,
           "snapshot_candidates": 45,
-          "candidates": 45,
+          "candidates": 53,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref出版方逐篇DOI登记；PubMed/Europe PMC原摘要及正式类型、公开PMC正文辅助",
+            "total": 1813,
+            "scope": "参考：出版方Crossref ISSN0036-8075、published字段2026且created不晚于固定快照2026-11-08T13:38:12Z的1813唯一DOI，全类型含研究、综述、新闻、评论、更正等；原1767加46独立身份补录后逐项一致。不是官网首次在线年或2026最终全年独立全集。",
+            "query_url": "https://api.crossref.org/journals/0036-8075/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31&rows=1000&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "Science官网正常浏览器触发Cloudflare安全验证，按用户授权使用可靠替代。出版方2026全类型登记分页2页1861唯一DOI，快照前1813；原1767全部匹配、46独立身份补录后参考集合一致，48条快照后登记另列，不全部叫历史漏采。参考数不冒充官网在线年总数；PubMed1773的收录范围另列，仅辅助类型、原摘要和方法。原45候选及7条原库确证漏筛、1条新增儿童语言学习研究共53：40纳入、13排除、待定未审0，全部候选有完整可核原摘要。VTC影像研究另查公开PMC具体AlexNet/GAN方法，区分脑内生成模型与实际AI实验；相变芯片论文主要通用推理性能而排除。新闻、社论和介绍他人工作的短评保留排除，实质蛋白/精神健康综述按现行规则纳入。神经分类器AI使用扩散、AI顺从性人类实验及个体儿童学习按社会科学纳入，不因非自然科学排除。58明确线索与46参考缺项中可用原摘要/类型已核，未强补非候选所有摘要或声称全量全文穷尽。",
+          "evidence_urls": [
+            "https://api.crossref.org/journals/0036-8075/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31&rows=1000&cursor=%2A",
+            "https://api.crossref.org/journals/0036-8075/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31&rows=1000&cursor=%2A",
+            "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A0036-8075+AND+PUB_YEAR%3A2026&format=json&resultType=core&pageSize=1000&cursorMark=%2A",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC13215098/"
+          ],
+          "decisions": {
+            "include": 40,
+            "exclude": 13,
+            "pending": 0,
+            "unreviewed": 0
+          },
           "issues": [
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
-            "尚未找到逐篇审核交付。"
+            "采集状态尚未完成：abstract_incomplete"
           ],
           "actions": [
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "提交逐篇审核结果或说明当前进度。"
+            "检查采集状态与失败日志，必要时补采。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2026/nydiii.json",
+            "reviews/2026/feedback/nydiii.json"
+          ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
@@ -50788,32 +50805,47 @@
           "state": "abstract_incomplete",
           "papers": 425,
           "snapshot_candidates": 5,
-          "candidates": 5,
+          "candidates": 9,
           "missing_abstract": 1,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
+          "reference_check": {
+            "status": "complete",
+            "source": "出版方Crossref逐篇登记；PubMed正式记录及ScienceDirect单篇类型校核",
+            "total": 429,
+            "scope": "参考：出版方Crossref ISSN1470-2045、published字段2026且created不晚于固定快照2026-11-08T13:38:12Z的429唯一DOI，全类型。原425加4独立身份补录后逐项一致；当前另5条快照后登记单列，不声称官网首次在线全集或未来最终全年。",
+            "query_url": "https://api.crossref.org/journals/1470-2045/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31&rows=1000&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "出版方2026全类型登记当前434 DOI，快照前429；原425全覆盖，4独立身份补录后参考集合一致，5条快照后登记另列。参考数不冒充独立穷尽官网在线年总数，原快照保留。原5及4条确证漏筛共9：7纳入、2排除，待定未审0。原唯一空摘要00449-3已由普通浏览器正式页面核为Comment，预览无独立摘要、PubMed亦无摘要，保留null标无需补；不把订阅受限科学摘要当无摘要。另原00567-4显著性句与00727-2训练方法段被截损，已从正式完整原摘要补回并同步候选，个人输入原字段保留。新增ARTIMES、APHINITY AI-TIL、CATALINA及PRISM跨国癌症政策研究；后者按AI实质社会/卫生制度研究纳入。原人力Commission仅建议未来AI生产力而排除。未夸大AI-TIL相对人工分数的增量收益，未对非候选强补全部摘要。",
+          "evidence_urls": [
+            "https://api.crossref.org/journals/1470-2045/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31&rows=1000&cursor=%2A",
+            "https://api.crossref.org/journals/1470-2045/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31&rows=1000&cursor=%2A",
+            "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=ISSN%3A1470-2045+AND+PUB_YEAR%3A2026&format=json&resultType=core&pageSize=1000&cursorMark=%2A",
+            "https://www.sciencedirect.com/science/article/pii/S1470204526004493"
+          ],
+          "decisions": {
+            "include": 7,
+            "exclude": 2,
+            "pending": 0,
+            "unreviewed": 0
+          },
           "issues": [
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
-            "AI4S候选缺少摘要：1 篇。",
-            "尚未找到逐篇审核交付。"
+            "采集状态尚未完成：abstract_incomplete"
           ],
           "actions": [
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
-            "提交逐篇审核结果或说明当前进度。"
+            "检查采集状态与失败日志，必要时补采。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2026/nydiii.json",
+            "reviews/2026/feedback/nydiii.json"
+          ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "abstract_not_required": 0,
+          "abstract_not_required": 1,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 1
+          "abstract_supplement_required": 0
         },
         {
           "code": "j-d94e323c3b",
@@ -51157,21 +51189,37 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
+          "reference_check": {
+            "status": "complete",
+            "source": "出版方Crossref逐篇登记；官网卷25六页及候选正式开放全文校核",
+            "total": 295,
+            "scope": "参考：出版方Crossref ISSN1476-4598、published字段2026且created不晚于固定快照2026-11-08T13:38:12Z的295唯一DOI，原294加1已核独立补录逐项一致。官网卷25六页273含19条2025在线及254条2026在线，另45当前登记未分卷，不用卷目录数代替在线年全集。",
+            "query_url": "https://api.crossref.org/journals/1476-4598/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31&rows=1000&cursor=%2A",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "官网卷25全部六页273唯一DOI已核，其中19条2025在线、254条2026在线，后者与当前出版方已分卷254逐项一致；另45当前未分卷，不能把273或254说成全2026在线数。按快照前已登记295逐项对账，原294全覆盖、另1条ADC综述02824-1已核完整原摘要并独立身份补录后参考集合一致；当前299的4条快照后登记单列。原16全部逐篇：13纳入、3排除、待定未审0，原摘要完整无待补。公开完整正文显示PMN、智能水凝胶、EMP、抗体、3D模型和PDAC综述有具体已实施AI方法而纳入；TAN、乳癌免疫综述和LLPS综述中AI主要为未来/泛述、无实质当前AI方法而排除，未按Review整类决定。保留回顾性AI预后证据与临床前瞻效用的区别，原始快照不改，不声称穷尽非候选全文。",
+          "evidence_urls": [
+            "https://api.crossref.org/journals/1476-4598/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31&rows=1000&cursor=%2A",
+            "https://link.springer.com/journal/12943/volumes-and-issues/25-1",
+            "https://api.crossref.org/journals/1476-4598/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31&rows=1000&cursor=%2A"
+          ],
+          "decisions": {
+            "include": 13,
+            "exclude": 3,
+            "pending": 0,
+            "unreviewed": 0
+          },
           "issues": [
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
-            "尚未找到逐篇审核交付。"
+            "采集状态尚未完成：abstract_incomplete"
           ],
           "actions": [
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "提交逐篇审核结果或说明当前进度。"
+            "检查采集状态与失败日志，必要时补采。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2026/nydiii.json",
+            "reviews/2026/feedback/nydiii.json"
+          ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
@@ -57105,21 +57153,21 @@
         {
           "owner": "南耀笛",
           "sources": 51,
-          "delivered": 23,
-          "official": 24,
+          "delivered": 26,
+          "official": 27,
           "pending": 4,
           "open_issues": 40,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-16T12:04:03-08:00",
+            "at": "2026-11-16T12:29:31-08:00",
             "author": "ebo",
-            "subject": "Pin four-source candidate audit provenance",
+            "subject": "Pin three journal deliveries to verified annual candidate revision",
             "area": "reviews",
             "paths": [
               "reviews/2026/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 89
+          "commits_7d": 91
         }
       ],
       "snapshot_file": "metadata/2026/snapshot.json",
@@ -57573,33 +57621,33 @@
         },
         "2026": {
           "sources": 51,
-          "delivered": 23,
-          "official": 24,
+          "delivered": 26,
+          "official": 27,
           "pending": 4,
           "open_issues": 40,
           "status": "in_progress"
         }
       },
       "sources": 153,
-      "delivered": 123,
+      "delivered": 126,
       "not_started": [],
       "last_update": {
-        "at": "2026-11-16T12:04:03-08:00",
+        "at": "2026-11-16T12:29:31-08:00",
         "author": "ebo",
-        "subject": "Pin four-source candidate audit provenance",
+        "subject": "Pin three journal deliveries to verified annual candidate revision",
         "area": "reviews",
         "paths": [
           "reviews/2026/feedback/nydiii.json"
         ]
       },
-      "commits_7d": 89
+      "commits_7d": 91
     }
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-16T20:07:32.117482+00:00",
+    "generated_at": "2026-11-16T20:33:20.098127+00:00",
     "history_available": true,
-    "commit": "de0ce023df121131e03381867c071355c6135841",
-    "commits_scanned": 742
+    "commit": "a36b8f5776dec59824386581df0a220bb9f04642",
+    "commits_scanned": 745
   }
 }
