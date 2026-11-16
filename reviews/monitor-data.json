@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-16T11:56:58.617042+00:00",
-  "commit": "40f9511288613822ee589faa6f143d56417dec2b",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/40f9511288613822ee589faa6f143d56417dec2b/",
+  "generated_at": "2026-11-16T12:19:54.835204+00:00",
+  "commit": "90e90ded6b40a497f1ac98d7292a16f5ff5eb345",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/90e90ded6b40a497f1ac98d7292a16f5ff5eb345/",
   "years": [
     {
       "year": 2024,
@@ -27,16 +27,18 @@
           ],
           "decisions": {
             "include": 8,
-            "exclude": 0,
-            "pending": 0,
-            "unreviewed": 117
+            "exclude": 114,
+            "pending": 3,
+            "unreviewed": 0
           },
           "issues": [
-            "当前台账未审117条。",
+            "当前台账待定3条，仍需按逐篇理由补查证据。",
+            "本地本轮逐篇审核新增待定3条，需按local_unreviewed_stage.pending_ids补查方法证据。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
             "接续未审断点，优先候选与疑似漏筛，继续用户已要求的全量逐篇检查。",
+            "推送前同步远端筛选规则及词表并复核本轮结果；本轮仅核对本地原摘要及已有元数据，未重新访问正式论文页。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
@@ -2396,7 +2398,7 @@
           "state": "completed",
           "papers": 83,
           "snapshot_candidates": 0,
-          "candidates": 0,
+          "candidates": 2,
           "missing_abstract": 0,
           "official_total": 83,
           "official_scope": "官网Articles in 2024，全部文章类型（含研究、综述、更正等）；与原采集年度范围逐DOI对账。",
@@ -2407,17 +2409,19 @@
             "https://www.nature.com/npj2dmaterials/articles?year=2024"
           ],
           "decisions": {
-            "include": 0,
-            "exclude": 2,
-            "pending": 0,
-            "unreviewed": 81
+            "include": 2,
+            "exclude": 80,
+            "pending": 1,
+            "unreviewed": 0
           },
           "issues": [
-            "当前台账未审81条。",
+            "当前台账待定1条，仍需按逐篇理由补查证据。",
+            "本地本轮逐篇审核新增待定1条，需按local_unreviewed_stage.pending_ids补查方法证据。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
             "接续未审断点，优先候选与疑似漏筛，继续用户已要求的全量逐篇检查。",
+            "推送前同步远端筛选规则及词表并复核本轮结果；本轮仅核对本地原摘要及已有元数据，未重新访问正式论文页。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
@@ -2438,7 +2442,7 @@
           "state": "completed",
           "papers": 130,
           "snapshot_candidates": 7,
-          "candidates": 7,
+          "candidates": 10,
           "missing_abstract": 0,
           "official_total": 130,
           "official_scope": "官网Articles in 2024，全部文章类型（含研究、综述、更正等）；与原采集年度范围逐DOI对账。",
@@ -2450,19 +2454,21 @@
             "https://www.nature.com/npjmatdeg/articles?year=2024"
           ],
           "decisions": {
-            "include": 9,
-            "exclude": 76,
-            "pending": 0,
-            "unreviewed": 45
+            "include": 12,
+            "exclude": 115,
+            "pending": 3,
+            "unreviewed": 0
           },
           "issues": [
-            "当前台账未审45条。",
             "本轮新纳入3条初筛漏筛论文已交个人审核数组，共享候选文件未在本次修改。",
+            "当前台账待定3条，仍需按逐篇理由补查证据。",
+            "本地本轮逐篇审核新增待定3条，需按local_unreviewed_stage.pending_ids补查方法证据。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
             "接续未审断点，优先候选与疑似漏筛，继续用户已要求的全量逐篇检查。",
             "按本阶段supplements.json核对已交付漏筛候选与共享候选集的同步，保留原ID并按证据去重。",
+            "推送前同步远端筛选规则及词表并复核本轮结果；本轮仅核对本地原摘要及已有元数据，未重新访问正式论文页。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
@@ -2726,16 +2732,21 @@
           ],
           "decisions": {
             "include": 0,
-            "exclude": 0,
-            "pending": 0,
-            "unreviewed": 109
+            "exclude": 35,
+            "pending": 74,
+            "unreviewed": 0
           },
           "issues": [
-            "当前台账未审109条。",
+            "当前台账待定74条，仍需按逐篇理由补查证据。",
+            "本地本轮逐篇审核新增待定74条，需按local_unreviewed_stage.pending_ids补查方法证据。",
+            "本轮缺摘要补证遇官网403；正常浏览器部分成功后ScienceDirect CPE00002及Cell安全验证，受阻条目保留pending，未改用未经确认替代摘要。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
             "接续未审断点，优先候选与疑似漏筛，继续用户已要求的全量逐篇检查。",
+            "推送前同步远端筛选规则及词表并复核本轮结果；本轮仅核对本地原摘要及已有元数据，未重新访问正式论文页。",
+            "推送前同步远端筛选规则及词表并复核本轮结果；本轮全部纳入论文已核对正式页面、DOI、作者、PDF链接及原摘要。",
+            "按reviews/2024/wangmengran8789-local-round11-20261116/pending.json提供正式原摘要/正文或负责人手动官网核验；优先核对机器学习生物燃料及电化学能量转换条目。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -3778,16 +3789,21 @@
           ],
           "decisions": {
             "include": 1,
-            "exclude": 0,
-            "pending": 0,
-            "unreviewed": 100
+            "exclude": 68,
+            "pending": 32,
+            "unreviewed": 0
           },
           "issues": [
-            "当前台账未审100条。",
+            "当前台账待定32条，仍需按逐篇理由补查证据。",
+            "本地本轮逐篇审核新增待定29条，需按local_unreviewed_stage.pending_ids补查方法证据。",
+            "本轮缺摘要补证遇官网403；正常浏览器部分成功后ScienceDirect CPE00002及Cell安全验证，受阻条目保留pending，未改用未经确认替代摘要。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
             "接续未审断点，优先候选与疑似漏筛，继续用户已要求的全量逐篇检查。",
+            "推送前同步远端筛选规则及词表并复核本轮结果；本轮仅核对本地原摘要及已有元数据，未重新访问正式论文页。",
+            "推送前同步远端筛选规则及词表并复核本轮结果；本轮全部纳入论文已核对正式页面、DOI、作者、PDF链接及原摘要。",
+            "按reviews/2024/wangmengran8789-local-round11-20261116/pending.json提供正式原摘要/正文或负责人手动官网核验；优先核对机器学习生物燃料及电化学能量转换条目。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -12574,7 +12590,7 @@
           "state": "completed",
           "papers": 236,
           "snapshot_candidates": 11,
-          "candidates": 11,
+          "candidates": 28,
           "missing_abstract": 0,
           "official_total": 236,
           "official_scope": "官网Articles in 2024，全部文章类型（含研究、综述、更正等）；与原采集年度范围逐DOI对账。",
@@ -12586,19 +12602,20 @@
             "https://www.nature.com/npjparkd/articles?year=2024"
           ],
           "decisions": {
-            "include": 9,
-            "exclude": 16,
-            "pending": 1,
-            "unreviewed": 210
+            "include": 26,
+            "exclude": 192,
+            "pending": 18,
+            "unreviewed": 0
           },
           "issues": [
-            "当前台账待定1条，含历史初判及证据不足，不能视为最终复核完成。",
-            "当前台账未审210条。",
+            "当前台账待定18条，仍需按逐篇理由补查证据。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
             "按逐篇rationale补证并处理pending，证据充分后再更新结论。",
             "接续未审断点，优先候选与疑似漏筛，继续用户已要求的全量逐篇检查。",
+            "推送前同步远端筛选规则及词表并复核本轮结果；本轮仅核对本地原摘要及已有元数据，未重新访问正式论文页。",
+            "推送前同步远端筛选规则及词表并复核本轮结果；本轮全部纳入论文已核对正式页面、DOI、作者、PDF链接及原摘要。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
@@ -13647,16 +13664,18 @@
           ],
           "decisions": {
             "include": 1,
-            "exclude": 1,
-            "pending": 0,
-            "unreviewed": 118
+            "exclude": 118,
+            "pending": 1,
+            "unreviewed": 0
           },
           "issues": [
-            "当前台账未审118条。",
+            "当前台账待定1条，仍需按逐篇理由补查证据。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
             "接续未审断点，优先候选与疑似漏筛，继续用户已要求的全量逐篇检查。",
+            "推送前同步远端筛选规则及词表并复核本轮结果；本轮仅核对本地原摘要及已有元数据，未重新访问正式论文页。",
+            "推送前同步远端筛选规则及词表并复核本轮结果；本轮全部纳入论文已核对正式页面、DOI、作者、PDF链接及原摘要。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -19685,8 +19704,8 @@
           "state": "completed",
           "papers": 2271,
           "snapshot_candidates": 109,
-          "candidates": 109,
-          "missing_abstract": 0,
+          "candidates": 379,
+          "missing_abstract": 5,
           "official_total": 2271,
           "official_scope": "ACL Anthology 2024 EMNLP主会研究论文及Findings两册的正整数论文ID；排除各册0号总卷/前言记录，不含demo、industry及workshop等其他分册",
           "reference_check": null,
@@ -19697,16 +19716,17 @@
             "https://aclanthology.org/volumes/2024.findings-emnlp/"
           ],
           "decisions": {
-            "include": 26,
-            "exclude": 88,
-            "pending": 0,
-            "unreviewed": 2102
+            "include": 296,
+            "exclude": 1874,
+            "pending": 83,
+            "unreviewed": 0
           },
           "issues": [
             "同一论文的交付判定存在冲突，冲突记录不计入统计。",
             "与AlearnerDL.json存在55个相同来源/年份/论文ID的判定冲突，均在本次上传前已存在；监控按规则不计入冲突记录。",
-            "当前台账待定2条，含历史初判及证据不足，不能视为最终复核完成。",
-            "当前台账未审2141条。",
+            "当前台账待定87条，仍需按逐篇理由补查证据。",
+            "本地本轮逐篇审核新增待定1条，需按local_unreviewed_stage.pending_ids补查方法证据。",
+            "AI4S候选缺少摘要：5 篇。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
@@ -19714,7 +19734,10 @@
             "按逐篇rationale补证并处理pending，证据充分后再更新结论。",
             "接续未审断点，优先候选与疑似漏筛，继续用户已要求的全量逐篇检查。",
             "与原负责人逐键核对55条已有判定冲突；原清单固定版本：https://github.com/BUPT-AI4S/ai4s-crawler/blob/5ad373dd1d230ee4d015c46b469bafb7ec30f39a/reviews/2024/wangmengran8789-stage-20261114/cross-owner-conflicts.json",
+            "推送前同步远端筛选规则及词表并复核本轮结果；本轮仅核对本地原摘要及已有元数据，未重新访问正式论文页。",
+            "推送前同步远端筛选规则及词表并复核本轮结果；本轮全部纳入论文已核对正式页面、DOI、作者、PDF链接及原摘要。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
+            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -19726,7 +19749,7 @@
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
           "abstract_not_required": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 5
         },
         {
           "code": "neurips",
@@ -21175,18 +21198,15 @@
           ],
           "decisions": {
             "include": 1,
-            "exclude": 6,
+            "exclude": 16,
             "pending": 0,
-            "unreviewed": 10
+            "unreviewed": 0
           },
-          "issues": [
-            "当前台账未审10条。",
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
             "接续未审断点，优先候选与疑似漏筛，继续用户已要求的全量逐篇检查。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "推送前同步远端筛选规则及词表并复核本轮结果；本轮仅核对本地原摘要及已有元数据，未重新访问正式论文页。",
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/AlearnerDL.json",
@@ -22777,22 +22797,22 @@
           "sources": 48,
           "delivered": 48,
           "official": 48,
-          "pending": 15036,
-          "open_issues": 47,
+          "pending": 12358,
+          "open_issues": 46,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-16T09:13:50+08:00",
-            "author": "Wang Mengran",
-            "subject": "继续补齐王梦冉正式候选原摘要并同步累计补证进度",
+            "at": "2026-11-16T04:14:51-08:00",
+            "author": "ebo",
+            "subject": "Complete Wang Mengran unreviewed screening rounds 9–11",
             "area": "reviews",
             "paths": [
               "metadata/2024/ai4s.json",
-              "metadata/j-1ba458f82d/2024/ai4s.json",
-              "metadata/j-20e3868bcd/2024/ai4s.json",
-              "metadata/j-6c204bdd6e/2024/ai4s.json"
+              "reviews/2024/feedback/wangmengran8789.json",
+              "reviews/2024/wangmengran8789-local-round11-20261116/evidence.json",
+              "reviews/2024/wangmengran8789-local-round11-20261116/pending.json"
             ]
           },
-          "commits_7d": 10
+          "commits_7d": 19
         },
         {
           "owner": "陈晨",
@@ -22814,7 +22834,7 @@
               "reviews/2024/chenchen052512/continuous-20261114/evidence/water-final235-owner-manual.json"
             ]
           },
-          "commits_7d": 18
+          "commits_7d": 17
         },
         {
           "owner": "南耀笛",
@@ -22856,7 +22876,7 @@
               "reviews/2024/zch66883/jaad-abstract-remaining.csv"
             ]
           },
-          "commits_7d": 16
+          "commits_7d": 14
         },
         {
           "owner": "王婉婷",
@@ -39937,7 +39957,7 @@
               "reviews/2024/zch66883/jaad-abstract-remaining.csv"
             ]
           },
-          "commits_7d": 16
+          "commits_7d": 14
         },
         {
           "owner": "李雪婷",
@@ -40050,18 +40070,18 @@
           "open_issues": 48,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-16T09:13:50+08:00",
-            "author": "Wang Mengran",
-            "subject": "继续补齐王梦冉正式候选原摘要并同步累计补证进度",
+            "at": "2026-11-16T04:14:51-08:00",
+            "author": "ebo",
+            "subject": "Complete Wang Mengran unreviewed screening rounds 9–11",
             "area": "reviews",
             "paths": [
               "metadata/2024/ai4s.json",
-              "metadata/j-1ba458f82d/2024/ai4s.json",
-              "metadata/j-20e3868bcd/2024/ai4s.json",
-              "metadata/j-6c204bdd6e/2024/ai4s.json"
+              "reviews/2024/feedback/wangmengran8789.json",
+              "reviews/2024/wangmengran8789-local-round11-20261116/evidence.json",
+              "reviews/2024/wangmengran8789-local-round11-20261116/pending.json"
             ]
           },
-          "commits_7d": 10
+          "commits_7d": 19
         },
         {
           "owner": "陈晨",
@@ -40083,7 +40103,7 @@
               "reviews/2024/chenchen052512/continuous-20261114/evidence/water-final235-owner-manual.json"
             ]
           },
-          "commits_7d": 18
+          "commits_7d": 17
         },
         {
           "owner": "乔徐阳",
@@ -55264,7 +55284,7 @@
               "reviews/2024/zch66883/jaad-abstract-remaining.csv"
             ]
           },
-          "commits_7d": 16
+          "commits_7d": 14
         },
         {
           "owner": "李雪婷",
@@ -55377,18 +55397,18 @@
           "open_issues": 48,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-16T09:13:50+08:00",
-            "author": "Wang Mengran",
-            "subject": "继续补齐王梦冉正式候选原摘要并同步累计补证进度",
+            "at": "2026-11-16T04:14:51-08:00",
+            "author": "ebo",
+            "subject": "Complete Wang Mengran unreviewed screening rounds 9–11",
             "area": "reviews",
             "paths": [
               "metadata/2024/ai4s.json",
-              "metadata/j-1ba458f82d/2024/ai4s.json",
-              "metadata/j-20e3868bcd/2024/ai4s.json",
-              "metadata/j-6c204bdd6e/2024/ai4s.json"
+              "reviews/2024/feedback/wangmengran8789.json",
+              "reviews/2024/wangmengran8789-local-round11-20261116/evidence.json",
+              "reviews/2024/wangmengran8789-local-round11-20261116/pending.json"
             ]
           },
-          "commits_7d": 10
+          "commits_7d": 19
         },
         {
           "owner": "陈晨",
@@ -55410,7 +55430,7 @@
               "reviews/2024/chenchen052512/continuous-20261114/evidence/water-final235-owner-manual.json"
             ]
           },
-          "commits_7d": 18
+          "commits_7d": 17
         },
         {
           "owner": "乔徐阳",
@@ -55632,8 +55652,8 @@
           "sources": 48,
           "delivered": 48,
           "official": 48,
-          "pending": 15036,
-          "open_issues": 47,
+          "pending": 12358,
+          "open_issues": 46,
           "status": "in_progress"
         },
         "2025": {
@@ -55660,18 +55680,18 @@
         "2026"
       ],
       "last_update": {
-        "at": "2026-11-16T09:13:50+08:00",
-        "author": "Wang Mengran",
-        "subject": "继续补齐王梦冉正式候选原摘要并同步累计补证进度",
+        "at": "2026-11-16T04:14:51-08:00",
+        "author": "ebo",
+        "subject": "Complete Wang Mengran unreviewed screening rounds 9–11",
         "area": "reviews",
         "paths": [
           "metadata/2024/ai4s.json",
-          "metadata/j-1ba458f82d/2024/ai4s.json",
-          "metadata/j-20e3868bcd/2024/ai4s.json",
-          "metadata/j-6c204bdd6e/2024/ai4s.json"
+          "reviews/2024/feedback/wangmengran8789.json",
+          "reviews/2024/wangmengran8789-local-round11-20261116/evidence.json",
+          "reviews/2024/wangmengran8789-local-round11-20261116/pending.json"
         ]
       },
-      "commits_7d": 10
+      "commits_7d": 19
     },
     {
       "owner": "陈晨",
@@ -55719,7 +55739,7 @@
           "reviews/2024/chenchen052512/continuous-20261114/evidence/water-final235-owner-manual.json"
         ]
       },
-      "commits_7d": 18
+      "commits_7d": 17
     },
     {
       "owner": "朱长昊",
@@ -55765,7 +55785,7 @@
           "reviews/2024/zch66883/jaad-abstract-remaining.csv"
         ]
       },
-      "commits_7d": 16
+      "commits_7d": 14
     },
     {
       "owner": "王婉婷",
@@ -55909,9 +55929,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-16T11:56:42.930411+00:00",
+    "generated_at": "2026-11-16T12:19:26.811811+00:00",
     "history_available": true,
-    "commit": "40f9511288613822ee589faa6f143d56417dec2b",
-    "commits_scanned": 682
+    "commit": "90e90ded6b40a497f1ac98d7292a16f5ff5eb345",
+    "commits_scanned": 692
   }
 }
