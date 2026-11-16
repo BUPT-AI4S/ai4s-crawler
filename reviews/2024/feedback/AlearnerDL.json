@@ -1887,17 +1887,20 @@
     "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
     "official_total": null,
     "official_scope": "2024 年当届正式论文集与本来源快照同口径的论文；分轨录用量另列。",
-    "coverage_note": "官方议程的 417 篇研究论文均已与快照匹配，另有 1 场主题报告。快照另外有来自 SOUPS、WOOT 等的条目，及当前官网目录中未列出的 Prefetch for Fun and Profit；该条须核对版本或撤下情况。 2026-11-15 官方 frontpage?page=43 可读到该题名及 2024/USENIX Security 24 归属，详情 biblio-14821 显示 Login Required；保留出版状态疑点，不将索引条目直接当作已确认正式论文。",
+    "coverage_note": "官方议程的 417 篇研究论文均已与快照匹配，另有 1 场主题报告。快照另外有来自 SOUPS、WOOT 等的条目，及当前官网目录中未列出的 Prefetch for Fun and Profit；该条须核对版本或撤下情况。 2026-11-15 官方 frontpage?page=43 可读到该题名及 2024/USENIX Security 24 归属，详情 biblio-14821 显示 Login Required；保留出版状态疑点，不将索引条目直接当作已确认正式论文。 2026-11-15 完成 SOUPS 33、WOOT 18、CSET 12 篇与各自官方目录的逐条题名/稳定链接/DOI 匹配；63 条全部对应，排除议程中的 keynote、lightning talk 和 panel。WOOT Operation Mango 为主会论文的 lightning talk，不重复计数。证据见 reviews/2024/AlearnerDL/usenix-workshops-reconciliation-2026-11-15.json。",
     "evidence_urls": [
       "https://www.usenix.org/conference/usenixsecurity24/technical-sessions",
       "https://www.usenix.org/frontpage?page=43",
-      "https://www.usenix.org/biblio-14821"
+      "https://www.usenix.org/biblio-14821",
+      "https://www.usenix.org/conference/soups2024/technical-sessions",
+      "https://www.usenix.org/conference/woot24/technical-sessions",
+      "https://cset24.isi.edu/program.html"
     ],
     "issues": [
-      "主会当前议程 417 篇已匹配；Prefetch for Fun and Profit 另见 USENIX 2024 官方书目存档但署名 Anonymous、无页码，详情要求登录，其正式出版/撤下状态仍待核；工作坊范围需一并明确。"
+      "主会 417 篇及 SOUPS/WOOT/CSET 63 篇均已与官方目录逐项匹配；仅 Prefetch for Fun and Profit 的正式出版/撤下状态仍待核。"
     ],
     "next_actions": [
-      "核对 Prefetch 官方书目详情或出版更正，并完成主会与 SOUPS、WOOT、CSET 的同口径对账。"
+      "核对 Prefetch for Fun and Profit 的官方书目详情或出版更正；不得将有书目存档直接等同已正式出版。"
     ],
     "source_title": "USENIX Security Symposium",
     "snapshot_papers": 481,
@@ -1911,10 +1914,16 @@
     "normalized_comparison": {
       "official_research_papers": 417,
       "snapshot_matched_to_official_research": 417,
-      "unmatched_snapshot_entries": 64
+      "unmatched_snapshot_entries": 1,
+      "official_workshop_research_papers": 63,
+      "snapshot_matched_to_official_workshop_research": 63,
+      "snapshot_matched_to_official_research_all_tracks": 480
     },
     "verified_track_counts": {
-      "主会研究论文": 417
+      "主会研究论文": 417,
+      "SOUPS": 33,
+      "WOOT": 18,
+      "CSET": 12
     },
     "submitted_record_decisions": {
       "exclude": 14,
