@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-16T14:37:21.056710+00:00",
-  "commit": "c9a76612b3e6dc6eb17b7318149b3366cd9b99a6",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/c9a76612b3e6dc6eb17b7318149b3366cd9b99a6/",
+  "generated_at": "2026-11-16T14:52:48.181688+00:00",
+  "commit": "8821a9c46ed8c698b63e6250d007382e2be5ee3a",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/8821a9c46ed8c698b63e6250d007382e2be5ee3a/",
   "years": [
     {
       "year": 2024,
@@ -542,14 +542,24 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 116 篇（本轮补入 0 篇），历史审核 116 篇：纳入 106、排除 8、待定 2。本轮原有候选补全出版方原摘要 45 篇，候选缺摘要由 45 降为 0；关键词补全 38 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 965（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 914；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。 本次续审依据原论文方法与实验，解决待定 2 篇；现纳入 108、排除 8、待定 0。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref publisher-deposited metadata",
+            "total": 965,
+            "scope": "ISSN 所属期刊，Crossref 出版方登记的 published-print 正式出版年为 2024；journal-article 全登记条目口径（含研究、综述、更正及其他目录条目），与本地全量 papers.json 同口径逐 DOI 对账。",
+            "query_url": "https://api.crossref.org/journals/2210-6707/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "2026-11-16 重新获取 Crossref 正式出版年 2024 的全部 965 条登记记录，逐 DOI 与本地 965 条对账，缺项、额外项及重复项均为 0。采用负责人已授权的可靠替代来源；出版社部分目录经直接请求和浏览器仍受限，官网学术正文总数仍不冒填。 原 34 篇宽泛文献类型已核验：19 篇取得正式目录/论文页类型，15 篇依据原摘要中实质研究或综述内容确认；逐篇证据见个人审核 document_type_check。正式栏目未知但内容足以判定者仍明确保留 publisher_section_verified=false。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2210-6707/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
             "https://www.sciencedirect.com/journal/sustainable-cities-and-society/issues",
             "https://api.crossref.org/journals/2210-6707/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
             "https://doaj.org/api/search/articles/%28issn%3A%222210-6707%22%20OR%20issn%3A%222210-6715%22%29%20AND%20bibjson.year%3A2024?pageSize=100&page=1",
             "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ISSN%3A%222210-6707%22+OR+ISSN%3A%222210-6715%22%29+AND+%28PUB_YEAR%3A2023+OR+PUB_YEAR%3A2024+OR+PUB_YEAR%3A2025%29+AND+IN_PMC%3AY&format=json",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx",
+            "https://api.crossref.org/journals/2210-6707/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL"
           ],
           "decisions": {
             "include": 108,
@@ -557,17 +567,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-            "纳入论文中仍有 34 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-            "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-            "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/dinglijun.json",
             "reviews/2024/feedback/dinglijun.json"
@@ -1105,14 +1106,24 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 1 篇（本轮补入 0 篇），历史审核 1 篇：纳入 1、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器显示 ScienceDirect 内容访问错误；未取得全年目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 1217（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 1191；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref publisher-deposited metadata",
+            "total": 1217,
+            "scope": "ISSN 所属期刊，Crossref 出版方登记的 published-print 正式出版年为 2024；journal-article 全登记条目口径（含研究、综述、更正及其他目录条目），与本地全量 papers.json 同口径逐 DOI 对账。",
+            "query_url": "https://api.crossref.org/journals/0268-005X/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "2026-11-16 重新获取 Crossref 正式出版年 2024 的全部 1217 条登记记录，逐 DOI 与本地 1217 条对账，缺项、额外项及重复项均为 0。采用负责人已授权的可靠替代来源；出版社部分目录经直接请求和浏览器仍受限，官网学术正文总数仍不冒填。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0268-005X/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
             "https://www.sciencedirect.com/journal/food-hydrocolloids/issues",
             "https://api.crossref.org/journals/0268-005X/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
             "https://doaj.org/api/search/articles/%28issn%3A%220268-005X%22%20OR%20issn%3A%221873-7137%22%29%20AND%20bibjson.year%3A2024?pageSize=100&page=1",
             "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ISSN%3A%220268-005X%22+OR+ISSN%3A%221873-7137%22%29+AND+%28PUB_YEAR%3A2023+OR+PUB_YEAR%3A2024+OR+PUB_YEAR%3A2025%29+AND+IN_PMC%3AY&format=json",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx",
+            "https://api.crossref.org/journals/0268-005X/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL"
           ],
           "decisions": {
             "include": 1,
@@ -1120,15 +1131,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-            "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/dinglijun.json",
             "reviews/2024/feedback/dinglijun.json"
@@ -1190,16 +1194,26 @@
           "snapshot_candidates": 218,
           "candidates": 377,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 377 篇（本轮补入 0 篇），历史审核 377 篇：纳入 374、排除 3、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 683（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 670；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
+          "official_total": 683,
+          "official_scope": "2024 正式卷 126–135 全年官方目录全部 683 条（含 658 篇研究/综述/研究短文及 25 条更正、撤稿、社论、编委页），与全量 papers.json 同口径逐题名匹配。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref publisher-deposited metadata",
+            "total": 683,
+            "scope": "ISSN 所属期刊，Crossref 出版方登记的 published-print 正式出版年为 2024；journal-article 全登记条目口径（含研究、综述、更正及其他目录条目），与本地全量 papers.json 同口径逐 DOI 对账。",
+            "query_url": "https://api.crossref.org/journals/1569-8432/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "2026-11-16 重新获取 Crossref 正式出版年 2024 的全部 683 条登记记录，逐 DOI 与本地 683 条对账，缺项、额外项及重复项均为 0。采用负责人已授权的可靠替代来源；出版社部分目录经直接请求和浏览器仍受限，官网学术正文总数仍不冒填。 原 374 篇宽泛文献类型已核验：374 篇取得正式目录/论文页类型，0 篇依据原摘要中实质研究或综述内容确认；逐篇证据见个人审核 document_type_check。正式栏目未知但内容足以判定者仍明确保留 publisher_section_verified=false。 同时经浏览器完整枚举官网卷 126–135 共 683 条，与本地逐题名核对无缺漏；其中研究 646、综述 11、研究短文 1，其他目录项 25。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1569-8432/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
             "https://www.sciencedirect.com/journal/international-journal-of-applied-earth-observation-and-geoinformation/issues",
             "https://api.crossref.org/journals/1569-8432/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
             "https://doaj.org/api/search/articles/%28issn%3A%221569-8432%22%20OR%20issn%3A%221872-826X%22%29%20AND%20bibjson.year%3A2024?pageSize=50&page=1",
             "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ISSN%3A%221569-8432%22+OR+ISSN%3A%221872-826X%22%29+AND+%28PUB_YEAR%3A2023+OR+PUB_YEAR%3A2024+OR+PUB_YEAR%3A2025%29+AND+IN_PMC%3AY&format=json",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx",
+            "https://api.crossref.org/journals/1569-8432/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL"
           ],
           "decisions": {
             "include": 374,
@@ -1207,16 +1221,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-            "纳入论文中仍有 374 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-            "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。",
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-            "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2024/dinglijun.json",
@@ -1944,14 +1951,24 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 222 篇（本轮补入 0 篇），历史审核 222 篇：纳入 220、排除 0、待定 2。本轮原有候选补全出版方原摘要 9 篇，候选缺摘要由 9 降为 0；关键词补全 4 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 780（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 729；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。 本次续审依据原论文方法与实验，解决待定 2 篇；现纳入 221、排除 1、待定 0。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref publisher-deposited metadata",
+            "total": 780,
+            "scope": "ISSN 所属期刊，Crossref 出版方登记的 published-print 正式出版年为 2024；journal-article 全登记条目口径（含研究、综述、更正及其他目录条目），与本地全量 papers.json 同口径逐 DOI 对账。",
+            "query_url": "https://api.crossref.org/journals/0951-8320/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "2026-11-16 重新获取 Crossref 正式出版年 2024 的全部 780 条登记记录，逐 DOI 与本地 780 条对账，缺项、额外项及重复项均为 0。采用负责人已授权的可靠替代来源；出版社部分目录经直接请求和浏览器仍受限，官网学术正文总数仍不冒填。 原 178 篇宽泛文献类型已核验：115 篇取得正式目录/论文页类型，63 篇依据原摘要中实质研究或综述内容确认；逐篇证据见个人审核 document_type_check。正式栏目未知但内容足以判定者仍明确保留 publisher_section_verified=false。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0951-8320/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
             "https://www.sciencedirect.com/journal/reliability-engineering-and-system-safety/issues",
             "https://api.crossref.org/journals/0951-8320/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
             "https://doaj.org/api/search/articles/%28issn%3A%220951-8320%22%20OR%20issn%3A%221879-0836%22%29%20AND%20bibjson.year%3A2024?pageSize=100&page=1",
             "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ISSN%3A%220951-8320%22+OR+ISSN%3A%221879-0836%22%29+AND+%28PUB_YEAR%3A2023+OR+PUB_YEAR%3A2024+OR+PUB_YEAR%3A2025%29+AND+IN_PMC%3AY&format=json",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx",
+            "https://api.crossref.org/journals/0951-8320/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL"
           ],
           "decisions": {
             "include": 221,
@@ -1959,17 +1976,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-            "纳入论文中仍有 178 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-            "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-            "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/dinglijun.json",
             "reviews/2024/feedback/dinglijun.json"
@@ -3367,14 +3375,24 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 9 篇（本轮补入 0 篇），历史审核 9 篇：纳入 7、排除 2、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器显示 ScienceDirect 内容访问错误；未取得全年目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 144（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 138；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref publisher-deposited metadata",
+            "total": 144,
+            "scope": "ISSN 所属期刊，Crossref 出版方登记的 published-print 正式出版年为 2024；journal-article 全登记条目口径（含研究、综述、更正及其他目录条目），与本地全量 papers.json 同口径逐 DOI 对账。",
+            "query_url": "https://api.crossref.org/journals/0734-9750/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "2026-11-16 重新获取 Crossref 正式出版年 2024 的全部 144 条登记记录，逐 DOI 与本地 144 条对账，缺项、额外项及重复项均为 0。采用负责人已授权的可靠替代来源；出版社部分目录经直接请求和浏览器仍受限，官网学术正文总数仍不冒填。 原 6 篇宽泛文献类型已核验：4 篇取得正式目录/论文页类型，2 篇依据原摘要中实质研究或综述内容确认；逐篇证据见个人审核 document_type_check。正式栏目未知但内容足以判定者仍明确保留 publisher_section_verified=false。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0734-9750/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
             "https://www.sciencedirect.com/journal/biotechnology-advances/issues",
             "https://api.crossref.org/journals/0734-9750/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
             "https://doaj.org/api/search/articles/%28issn%3A%220734-9750%22%20OR%20issn%3A%221873-1899%22%29%20AND%20bibjson.year%3A2024?pageSize=100&page=1",
             "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ISSN%3A%220734-9750%22+OR+ISSN%3A%221873-1899%22%29+AND+%28PUB_YEAR%3A2023+OR+PUB_YEAR%3A2024+OR+PUB_YEAR%3A2025%29+AND+IN_PMC%3AY&format=json",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx",
+            "https://api.crossref.org/journals/0734-9750/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL"
           ],
           "decisions": {
             "include": 7,
@@ -3382,17 +3400,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-            "纳入论文中仍有 6 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-            "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-            "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/dinglijun.json",
             "reviews/2024/feedback/dinglijun.json"
@@ -3415,14 +3424,24 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 2 篇（本轮补入 0 篇），历史审核 2 篇：纳入 2、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 1125（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 1215；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref publisher-deposited metadata",
+            "total": 1125,
+            "scope": "ISSN 所属期刊，Crossref 出版方登记的 published-print 正式出版年为 2024；journal-article 全登记条目口径（含研究、综述、更正及其他目录条目），与本地全量 papers.json 同口径逐 DOI 对账。",
+            "query_url": "https://api.crossref.org/journals/0144-8617/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "2026-11-16 重新获取 Crossref 正式出版年 2024 的全部 1125 条登记记录，逐 DOI 与本地 1125 条对账，缺项、额外项及重复项均为 0。采用负责人已授权的可靠替代来源；出版社部分目录经直接请求和浏览器仍受限，官网学术正文总数仍不冒填。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0144-8617/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
             "https://www.sciencedirect.com/journal/carbohydrate-polymers/issues",
             "https://api.crossref.org/journals/0144-8617/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
             "https://doaj.org/api/search/articles/%28issn%3A%220144-8617%22%20OR%20issn%3A%221879-1344%22%29%20AND%20bibjson.year%3A2024?pageSize=100&page=1",
             "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ISSN%3A%220144-8617%22+OR+ISSN%3A%221879-1344%22%29+AND+%28PUB_YEAR%3A2023+OR+PUB_YEAR%3A2024+OR+PUB_YEAR%3A2025%29+AND+IN_PMC%3AY&format=json",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx",
+            "https://api.crossref.org/journals/0144-8617/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL"
           ],
           "decisions": {
             "include": 2,
@@ -3430,15 +3449,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-            "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/dinglijun.json",
             "reviews/2024/feedback/dinglijun.json"
@@ -3506,15 +3518,25 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 129 篇（本轮补入 0 篇），历史审核 130 篇：纳入 123、排除 7、待定 0。本轮原有候选补全出版方原摘要 62 篇，候选缺摘要由 62 降为 0；关键词补全 34 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器已显示年度卷号，但未取得展开后的全年卷期目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 10671（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 10603；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref publisher-deposited metadata",
+            "total": 10671,
+            "scope": "ISSN 所属期刊，Crossref 出版方登记的 published-print 正式出版年为 2024；journal-article 全登记条目口径（含研究、综述、更正及其他目录条目），与本地全量 papers.json 同口径逐 DOI 对账。",
+            "query_url": "https://api.crossref.org/journals/1385-8947/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "2026-11-16 重新获取 Crossref 正式出版年 2024 的全部 10671 条登记记录，逐 DOI 与本地 10671 条对账，缺项、额外项及重复项均为 0。采用负责人已授权的可靠替代来源；出版社部分目录经直接请求和浏览器仍受限，官网学术正文总数仍不冒填。 原 60 篇宽泛文献类型已核验：0 篇取得正式目录/论文页类型，60 篇依据原摘要中实质研究或综述内容确认；逐篇证据见个人审核 document_type_check。正式栏目未知但内容足以判定者仍明确保留 publisher_section_verified=false。",
           "evidence_urls": [
             "https://www.sciencedirect.com/journal/chemical-engineering-journal/issues?year=2024",
+            "https://api.crossref.org/journals/1385-8947/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
             "https://www.sciencedirect.com/journal/chemical-engineering-journal/issues",
             "https://api.crossref.org/journals/1385-8947/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
             "https://doaj.org/api/search/articles/%28issn%3A%221385-8947%22%20OR%20issn%3A%221873-3212%22%29%20AND%20bibjson.year%3A2024?pageSize=100&page=1",
             "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ISSN%3A%221385-8947%22+OR+ISSN%3A%221873-3212%22%29+AND+%28PUB_YEAR%3A2023+OR+PUB_YEAR%3A2024+OR+PUB_YEAR%3A2025%29+AND+IN_PMC%3AY&format=json",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx",
+            "https://api.crossref.org/journals/1385-8947/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL"
           ],
           "decisions": {
             "include": 123,
@@ -3522,17 +3544,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-            "纳入论文中仍有 60 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-            "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-            "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/chenchen052512.json",
             "reviews/2024/dinglijun.json",
@@ -3652,14 +3665,24 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 15 篇（本轮补入 0 篇），历史审核 15 篇：纳入 15、排除 0、待定 0。本轮原有候选补全出版方原摘要 7 篇，候选缺摘要由 7 降为 0；关键词补全 7 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器显示 ScienceDirect 内容访问错误；未取得全年目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 659（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 738；两者均不是官网 2024 正式卷期学术正文数。 差异超过 10%，逐 DOI 检查索引中本地缺项，其卷号均不在目标 2024 卷期。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref publisher-deposited metadata",
+            "total": 659,
+            "scope": "ISSN 所属期刊，Crossref 出版方登记的 published-print 正式出版年为 2024；journal-article 全登记条目口径（含研究、综述、更正及其他目录条目），与本地全量 papers.json 同口径逐 DOI 对账。",
+            "query_url": "https://api.crossref.org/journals/1359-8368/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "2026-11-16 重新获取 Crossref 正式出版年 2024 的全部 659 条登记记录，逐 DOI 与本地 659 条对账，缺项、额外项及重复项均为 0。采用负责人已授权的可靠替代来源；出版社部分目录经直接请求和浏览器仍受限，官网学术正文总数仍不冒填。 原 7 篇宽泛文献类型已核验：1 篇取得正式目录/论文页类型，6 篇依据原摘要中实质研究或综述内容确认；逐篇证据见个人审核 document_type_check。正式栏目未知但内容足以判定者仍明确保留 publisher_section_verified=false。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1359-8368/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
             "https://www.sciencedirect.com/journal/composites-part-b-engineering/issues",
             "https://api.crossref.org/journals/1359-8368/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
             "https://doaj.org/api/search/articles/%28issn%3A%221359-8368%22%20OR%20issn%3A%221879-1069%22%29%20AND%20bibjson.year%3A2024?pageSize=100&page=1",
             "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ISSN%3A%221359-8368%22+OR+ISSN%3A%221879-1069%22%29+AND+%28PUB_YEAR%3A2023+OR+PUB_YEAR%3A2024+OR+PUB_YEAR%3A2025%29+AND+IN_PMC%3AY&format=json",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx",
+            "https://api.crossref.org/journals/1359-8368/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL"
           ],
           "decisions": {
             "include": 15,
@@ -3667,17 +3690,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-            "纳入论文中仍有 7 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-            "替代索引在线年计数差异超过 10%，已核的索引独有 DOI 均在目标卷号之外；正式卷期全年目录仍待核。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-            "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/dinglijun.json",
             "reviews/2024/feedback/dinglijun.json"
@@ -4167,9 +4181,18 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 1 篇（本轮补入 0 篇），历史审核 1 篇：纳入 1、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 213（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 206；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref publisher-deposited metadata",
+            "total": 213,
+            "scope": "ISSN 所属期刊，Crossref 出版方登记的 published-print 正式出版年为 2024；journal-article 全登记条目口径（含研究、综述、更正及其他目录条目），与本地全量 papers.json 同口径逐 DOI 对账。",
+            "query_url": "https://api.crossref.org/journals/0026-0495/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "2026-11-16 重新获取 Crossref 正式出版年 2024 的全部 213 条登记记录，逐 DOI 与本地 213 条对账，缺项、额外项及重复项均为 0。采用负责人已授权的可靠替代来源；出版社部分目录经直接请求和浏览器仍受限，官网学术正文总数仍不冒填。 原 1 篇宽泛文献类型已核验：0 篇取得正式目录/论文页类型，1 篇依据原摘要中实质研究或综述内容确认；逐篇证据见个人审核 document_type_check。正式栏目未知但内容足以判定者仍明确保留 publisher_section_verified=false。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0026-0495/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
             "https://www.metabolismjournal.com/issues",
             "https://api.crossref.org/journals/0026-0495/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
             "https://doaj.org/api/search/articles/%28issn%3A%220026-0495%22%29%20AND%20bibjson.year%3A2024?pageSize=100&page=1",
@@ -4187,7 +4210,8 @@
             "https://www.metabolismjournal.com/issue/S0026-0495%2824%29X0005-0",
             "https://www.metabolismjournal.com/issue/S0026-0495%2824%29X0006-2",
             "https://www.metabolismjournal.com/issue/S0026-0495%2824%29X0008-6",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx",
+            "https://api.crossref.org/journals/0026-0495/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL"
           ],
           "decisions": {
             "include": 1,
@@ -4195,17 +4219,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-            "纳入论文中仍有 1 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-            "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-            "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/dinglijun.json",
             "reviews/2024/feedback/dinglijun.json"
@@ -4405,25 +4420,28 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 0 篇（本轮补入 0 篇），历史审核 0 篇：纳入 0、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 463（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 430；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref publisher-deposited metadata",
+            "total": 463,
+            "scope": "ISSN 所属期刊，Crossref 出版方登记的 published-print 正式出版年为 2024；journal-article 全登记条目口径（含研究、综述、更正及其他目录条目），与本地全量 papers.json 同口径逐 DOI 对账。",
+            "query_url": "https://api.crossref.org/journals/2213-2317/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "2026-11-16 重新获取 Crossref 正式出版年 2024 的全部 463 条登记记录，逐 DOI 与本地 463 条对账，缺项、额外项及重复项均为 0。采用负责人已授权的可靠替代来源；出版社部分目录经直接请求和浏览器仍受限，官网学术正文总数仍不冒填。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2213-2317/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
             "https://www.sciencedirect.com/journal/redox-biology/issues",
             "https://api.crossref.org/journals/2213-2317/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
             "https://doaj.org/api/search/articles/%28issn%3A%222213-2317%22%29%20AND%20bibjson.year%3A2024?pageSize=50&page=1",
             "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ISSN%3A%222213-2317%22%29+AND+%28PUB_YEAR%3A2023+OR+PUB_YEAR%3A2024+OR+PUB_YEAR%3A2025%29+AND+IN_PMC%3AY&format=json",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx",
+            "https://api.crossref.org/journals/2213-2317/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL"
           ],
           "decisions": null,
-          "issues": [
-            "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-            "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/feedback/dinglijun.json"
           ],
@@ -4494,14 +4512,24 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 16 篇（本轮补入 0 篇），历史审核 17 篇：纳入 16、排除 1、待定 0。本轮原有候选补全出版方原摘要 9 篇，候选缺摘要由 9 降为 0；关键词补全 5 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 552（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 486；两者均不是官网 2024 正式卷期学术正文数。 差异超过 10%，逐 DOI 检查索引中本地缺项，其卷号均不在目标 2024 卷期。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref publisher-deposited metadata",
+            "total": 552,
+            "scope": "ISSN 所属期刊，Crossref 出版方登记的 published-print 正式出版年为 2024；journal-article 全登记条目口径（含研究、综述、更正及其他目录条目），与本地全量 papers.json 同口径逐 DOI 对账。",
+            "query_url": "https://api.crossref.org/journals/0165-9936/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "2026-11-16 重新获取 Crossref 正式出版年 2024 的全部 552 条登记记录，逐 DOI 与本地 552 条对账，缺项、额外项及重复项均为 0。采用负责人已授权的可靠替代来源；出版社部分目录经直接请求和浏览器仍受限，官网学术正文总数仍不冒填。 原 5 篇宽泛文献类型已核验：0 篇取得正式目录/论文页类型，5 篇依据原摘要中实质研究或综述内容确认；逐篇证据见个人审核 document_type_check。正式栏目未知但内容足以判定者仍明确保留 publisher_section_verified=false。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0165-9936/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
             "https://www.sciencedirect.com/journal/trac-trends-in-analytical-chemistry/issues",
             "https://api.crossref.org/journals/0165-9936/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
             "https://doaj.org/api/search/articles/%28issn%3A%220165-9936%22%20OR%20issn%3A%221879-3142%22%29%20AND%20bibjson.year%3A2024?pageSize=100&page=1",
             "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ISSN%3A%220165-9936%22+OR+ISSN%3A%221879-3142%22%29+AND+%28PUB_YEAR%3A2023+OR+PUB_YEAR%3A2024+OR+PUB_YEAR%3A2025%29+AND+IN_PMC%3AY&format=json",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx",
+            "https://api.crossref.org/journals/0165-9936/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL"
           ],
           "decisions": {
             "include": 16,
@@ -4509,17 +4537,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-            "纳入论文中仍有 5 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-            "替代索引在线年计数差异超过 10%，已核的索引独有 DOI 均在目标卷号之外；正式卷期全年目录仍待核。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-            "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/dinglijun.json",
             "reviews/2024/feedback/dinglijun.json"
@@ -5268,14 +5287,24 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 8 篇（本轮补入 0 篇），历史审核 8 篇：纳入 8、排除 0、待定 0。本轮原有候选补全出版方原摘要 7 篇，候选缺摘要由 7 降为 0；关键词补全 5 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器已显示年度卷号，但未取得展开后的全年卷期目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 261（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 268；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref publisher-deposited metadata",
+            "total": 261,
+            "scope": "ISSN 所属期刊，Crossref 出版方登记的 published-print 正式出版年为 2024；journal-article 全登记条目口径（含研究、综述、更正及其他目录条目），与本地全量 papers.json 同口径逐 DOI 对账。",
+            "query_url": "https://api.crossref.org/journals/0749-6419/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "2026-11-16 重新获取 Crossref 正式出版年 2024 的全部 261 条登记记录，逐 DOI 与本地 261 条对账，缺项、额外项及重复项均为 0。采用负责人已授权的可靠替代来源；出版社部分目录经直接请求和浏览器仍受限，官网学术正文总数仍不冒填。 原 1 篇宽泛文献类型已核验：0 篇取得正式目录/论文页类型，1 篇依据原摘要中实质研究或综述内容确认；逐篇证据见个人审核 document_type_check。正式栏目未知但内容足以判定者仍明确保留 publisher_section_verified=false。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0749-6419/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
             "https://www.sciencedirect.com/journal/international-journal-of-plasticity/issues",
             "https://api.crossref.org/journals/0749-6419/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
             "https://doaj.org/api/search/articles/%28issn%3A%220749-6419%22%20OR%20issn%3A%221879-2154%22%29%20AND%20bibjson.year%3A2024?pageSize=100&page=1",
             "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ISSN%3A%220749-6419%22+OR+ISSN%3A%221879-2154%22%29+AND+%28PUB_YEAR%3A2023+OR+PUB_YEAR%3A2024+OR+PUB_YEAR%3A2025%29+AND+IN_PMC%3AY&format=json",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx",
+            "https://api.crossref.org/journals/0749-6419/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL"
           ],
           "decisions": {
             "include": 8,
@@ -5283,17 +5312,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-            "纳入论文中仍有 1 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-            "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-            "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/dinglijun.json",
             "reviews/2024/feedback/dinglijun.json"
@@ -5316,14 +5336,24 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 104 篇（本轮补入 0 篇），历史审核 104 篇：纳入 103、排除 1、待定 0。本轮原有候选补全出版方原摘要 54 篇，候选缺摘要由 54 降为 0；关键词补全 29 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器已显示年度卷号，但未取得展开后的全年卷期目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 253（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 244；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref publisher-deposited metadata",
+            "total": 253,
+            "scope": "ISSN 所属期刊，Crossref 出版方登记的 published-print 正式出版年为 2024；journal-article 全登记条目口径（含研究、综述、更正及其他目录条目），与本地全量 papers.json 同口径逐 DOI 对账。",
+            "query_url": "https://api.crossref.org/journals/0278-6125/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "2026-11-16 重新获取 Crossref 正式出版年 2024 的全部 253 条登记记录，逐 DOI 与本地 253 条对账，缺项、额外项及重复项均为 0。采用负责人已授权的可靠替代来源；出版社部分目录经直接请求和浏览器仍受限，官网学术正文总数仍不冒填。 原 35 篇宽泛文献类型已核验：11 篇取得正式目录/论文页类型，24 篇依据原摘要中实质研究或综述内容确认；逐篇证据见个人审核 document_type_check。正式栏目未知但内容足以判定者仍明确保留 publisher_section_verified=false。 另将 DOI 10.1016/j.jmsy.2024.08.023 误填的基金致谢替换为作者大学机构库的完整原摘要，同步分刊、年度及个人审核。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0278-6125/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
             "https://www.sciencedirect.com/journal/journal-of-manufacturing-systems/issues",
             "https://api.crossref.org/journals/0278-6125/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
             "https://doaj.org/api/search/articles/%28issn%3A%220278-6125%22%20OR%20issn%3A%221878-6642%22%29%20AND%20bibjson.year%3A2024?pageSize=100&page=1",
             "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ISSN%3A%220278-6125%22+OR+ISSN%3A%221878-6642%22%29+AND+%28PUB_YEAR%3A2023+OR+PUB_YEAR%3A2024+OR+PUB_YEAR%3A2025%29+AND+IN_PMC%3AY&format=json",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx",
+            "https://api.crossref.org/journals/0278-6125/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL"
           ],
           "decisions": {
             "include": 103,
@@ -5331,17 +5361,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-            "纳入论文中仍有 35 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-            "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-            "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/dinglijun.json",
             "reviews/2024/feedback/dinglijun.json"
@@ -8351,7 +8372,7 @@
           "official_total": 290,
           "official_scope": "2024 年正式卷期（卷 10）；按卷期年统计官网逐项对账中认定的研究、综述等学术正文，目录非学术条目单列。",
           "reference_check": null,
-          "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 161 篇（本轮补入 0 篇），历史审核 161 篇：纳入 160、排除 1、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。",
+          "coverage_note": "原 155 篇宽泛文献类型已核验：155 篇取得正式目录/论文页类型，0 篇依据原摘要中实质研究或综述内容确认；逐篇证据见个人审核 document_type_check。正式栏目未知但内容足以判定者仍明确保留 publisher_section_verified=false。 已遍历官方 2024 归档 15 页、300 条目录，当前 160 篇纳入候选均匹配；既有学术正文数 290 与全部目录项分开。",
           "evidence_urls": [
             "https://www.nature.com/npjcompumats/volumes",
             "https://api.crossref.org/journals/2057-3960/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
@@ -8366,11 +8387,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入论文中仍有 155 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。"
-          ],
+          "issues": [],
           "actions": [
-            "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
@@ -15674,25 +15692,28 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 0 篇（本轮补入 0 篇），历史审核 0 篇：纳入 0、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 196（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 154；两者均不是官网 2024 正式卷期学术正文数。 差异超过 10%，逐 DOI 检查索引中本地缺项，其卷号均不在目标 2024 卷期。 2026-11-15 Computer Use 已核第1–6、8–9期共 130 个目录条目；第7、10–12期因页面未加载或 CPE00002 未完成，全年总数保持未知。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref publisher-deposited metadata",
+            "total": 196,
+            "scope": "ISSN 所属期刊，Crossref 出版方登记的 published-print 正式出版年为 2024；journal-article 全登记条目口径（含研究、综述、更正及其他目录条目），与本地全量 papers.json 同口径逐 DOI 对账。",
+            "query_url": "https://api.crossref.org/journals/2352-4642/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "2026-11-16 重新获取 Crossref 正式出版年 2024 的全部 196 条登记记录，逐 DOI 与本地 196 条对账，缺项、额外项及重复项均为 0。采用负责人已授权的可靠替代来源；出版社部分目录经直接请求和浏览器仍受限，官网学术正文总数仍不冒填。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2352-4642/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
             "https://www.sciencedirect.com/journal/the-lancet-child-and-adolescent-health/issues",
             "https://api.crossref.org/journals/2352-4642/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
             "https://doaj.org/api/search/articles/%28issn%3A%222352-4642%22%29%20AND%20bibjson.year%3A2024?pageSize=100&page=1",
             "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ISSN%3A%222352-4642%22%29+AND+%28PUB_YEAR%3A2023+OR+PUB_YEAR%3A2024+OR+PUB_YEAR%3A2025%29+AND+IN_PMC%3AY&format=json",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx",
+            "https://api.crossref.org/journals/2352-4642/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL"
           ],
           "decisions": null,
-          "issues": [
-            "2024 年卷8已核第1–6、8–9期；第7、10–12期未核实（ScienceDirect CPE00002），全年官网同口径数仍未知。",
-            "替代索引在线年计数差异超过 10%，已核的索引独有 DOI 均在目标卷号之外；正式卷期全年目录仍待核。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "官网恢复访问后核对第7、10–12期目录与文献类型，再与本地 196 条原始登记比较。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/feedback/dinglijun.json"
           ],
@@ -17395,9 +17416,18 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 2 篇（本轮补入 0 篇），历史审核 2 篇：纳入 1、排除 1、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 258（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 492；两者均不是官网 2024 正式卷期学术正文数。 差异超过 10%，逐 DOI 检查索引中本地缺项，其卷号均不在目标 2024 卷期。 2026-11-15 Computer Use 已核第 304–310 卷：目录 188 条，其中 Research 165、Review 20、Erratum 3；第 311 卷内容访问错误，全年学术正文总数仍未知。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref publisher-deposited metadata",
+            "total": 258,
+            "scope": "ISSN 所属期刊，Crossref 出版方登记的 published-print 正式出版年为 2024；journal-article 全登记条目口径（含研究、综述、更正及其他目录条目），与本地全量 papers.json 同口径逐 DOI 对账。",
+            "query_url": "https://api.crossref.org/journals/0142-9612/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "2026-11-16 重新获取 Crossref 正式出版年 2024 的全部 258 条登记记录，逐 DOI 与本地 258 条对账，缺项、额外项及重复项均为 0。采用负责人已授权的可靠替代来源；出版社部分目录经直接请求和浏览器仍受限，官网学术正文总数仍不冒填。 原 1 篇宽泛文献类型已核验：0 篇取得正式目录/论文页类型，1 篇依据原摘要中实质研究或综述内容确认；逐篇证据见个人审核 document_type_check。正式栏目未知但内容足以判定者仍明确保留 publisher_section_verified=false。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0142-9612/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
             "https://www.sciencedirect.com/journal/biomaterials/issues",
             "https://api.crossref.org/journals/0142-9612/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
             "https://doaj.org/api/search/articles/%28issn%3A%220142-9612%22%20OR%20issn%3A%221878-5905%22%29%20AND%20bibjson.year%3A2024?pageSize=100&page=1",
@@ -17409,7 +17439,8 @@
             "https://www.sciencedirect.com/journal/biomaterials/vol/307/suppl/C",
             "https://www.sciencedirect.com/journal/biomaterials/vol/308/suppl/C",
             "https://www.sciencedirect.com/journal/biomaterials/vol/309/suppl/C",
-            "https://www.sciencedirect.com/journal/biomaterials/vol/310/suppl/C"
+            "https://www.sciencedirect.com/journal/biomaterials/vol/310/suppl/C",
+            "https://api.crossref.org/journals/0142-9612/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL"
           ],
           "decisions": {
             "include": 1,
@@ -17417,19 +17448,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-            "纳入论文中仍有 1 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-            "替代索引在线年计数差异超过 10%，已核的索引独有 DOI 均在目标卷号之外；正式卷期全年目录仍待核。",
-            "2024 正式第 311 卷目录尚未取得，不能将前七卷合计当作全年官方总量。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-            "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-            "待 ScienceDirect 内容访问恢复后打开 https://www.sciencedirect.com/journal/biomaterials/vol/311/suppl/C，补核 Research/Review 和其他栏目并与本地 DOI 对比。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/dinglijun.json",
             "reviews/2024/feedback/dinglijun.json"
@@ -17537,14 +17557,24 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 6 篇（本轮补入 0 篇），历史审核 6 篇：纳入 6、排除 0、待定 0。本轮原有候选补全出版方原摘要 1 篇，候选缺摘要由 1 降为 0；关键词补全 1 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器已显示年度卷号，但未取得展开后的全年卷期目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 426（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 410；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref publisher-deposited metadata",
+            "total": 426,
+            "scope": "ISSN 所属期刊，Crossref 出版方登记的 published-print 正式出版年为 2024；journal-article 全登记条目口径（含研究、综述、更正及其他目录条目），与本地全量 papers.json 同口径逐 DOI 对账。",
+            "query_url": "https://api.crossref.org/journals/0958-9465/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "2026-11-16 重新获取 Crossref 正式出版年 2024 的全部 426 条登记记录，逐 DOI 与本地 426 条对账，缺项、额外项及重复项均为 0。采用负责人已授权的可靠替代来源；出版社部分目录经直接请求和浏览器仍受限，官网学术正文总数仍不冒填。 原 4 篇宽泛文献类型已核验：0 篇取得正式目录/论文页类型，4 篇依据原摘要中实质研究或综述内容确认；逐篇证据见个人审核 document_type_check。正式栏目未知但内容足以判定者仍明确保留 publisher_section_verified=false。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0958-9465/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
             "https://www.sciencedirect.com/journal/cement-and-concrete-composites/issues",
             "https://api.crossref.org/journals/0958-9465/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
             "https://doaj.org/api/search/articles/%28issn%3A%220958-9465%22%20OR%20issn%3A%221873-393X%22%29%20AND%20bibjson.year%3A2024?pageSize=100&page=1",
             "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ISSN%3A%220958-9465%22+OR+ISSN%3A%221873-393X%22%29+AND+%28PUB_YEAR%3A2023+OR+PUB_YEAR%3A2024+OR+PUB_YEAR%3A2025%29+AND+IN_PMC%3AY&format=json",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx",
+            "https://api.crossref.org/journals/0958-9465/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL"
           ],
           "decisions": {
             "include": 6,
@@ -17552,17 +17582,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-            "纳入论文中仍有 4 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-            "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-            "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/dinglijun.json",
             "reviews/2024/feedback/dinglijun.json"
@@ -17585,14 +17606,24 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 3 篇（本轮补入 0 篇），历史审核 3 篇：纳入 3、排除 0、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器显示 ScienceDirect 内容访问错误；未取得全年目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 276（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 252；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref publisher-deposited metadata",
+            "total": 276,
+            "scope": "ISSN 所属期刊，Crossref 出版方登记的 published-print 正式出版年为 2024；journal-article 全登记条目口径（含研究、综述、更正及其他目录条目），与本地全量 papers.json 同口径逐 DOI 对账。",
+            "query_url": "https://api.crossref.org/journals/0008-8846/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "2026-11-16 重新获取 Crossref 正式出版年 2024 的全部 276 条登记记录，逐 DOI 与本地 276 条对账，缺项、额外项及重复项均为 0。采用负责人已授权的可靠替代来源；出版社部分目录经直接请求和浏览器仍受限，官网学术正文总数仍不冒填。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0008-8846/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
             "https://www.sciencedirect.com/journal/cement-and-concrete-research/issues",
             "https://api.crossref.org/journals/0008-8846/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
             "https://doaj.org/api/search/articles/%28issn%3A%220008-8846%22%20OR%20issn%3A%221873-3948%22%29%20AND%20bibjson.year%3A2024?pageSize=100&page=1",
             "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ISSN%3A%220008-8846%22+OR+ISSN%3A%221873-3948%22%29+AND+%28PUB_YEAR%3A2023+OR+PUB_YEAR%3A2024+OR+PUB_YEAR%3A2025%29+AND+IN_PMC%3AY&format=json",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx",
+            "https://api.crossref.org/journals/0008-8846/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL"
           ],
           "decisions": {
             "include": 3,
@@ -17600,15 +17631,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-            "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/dinglijun.json",
             "reviews/2024/feedback/dinglijun.json"
@@ -18627,15 +18651,25 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 243 篇（本轮补入 0 篇），历史审核 244 篇：纳入 243、排除 1、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 本轮直接请求受限后已尝试正常浏览器：正常浏览器显示 ScienceDirect 内容访问错误；未取得全年目录。 已请求人工核验，尚待负责人答复，未用未核实替代数字冒充官网数量。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 276（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 289；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref publisher-deposited metadata",
+            "total": 276,
+            "scope": "ISSN 所属期刊，Crossref 出版方登记的 published-print 正式出版年为 2024；journal-article 全登记条目口径（含研究、综述、更正及其他目录条目），与本地全量 papers.json 同口径逐 DOI 对账。",
+            "query_url": "https://api.crossref.org/journals/1361-8415/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "2026-11-16 重新获取 Crossref 正式出版年 2024 的全部 276 条登记记录，逐 DOI 与本地 276 条对账，缺项、额外项及重复项均为 0。采用负责人已授权的可靠替代来源；出版社部分目录经直接请求和浏览器仍受限，官网学术正文总数仍不冒填。 原 229 篇宽泛文献类型已核验：1 篇取得正式目录/论文页类型，228 篇依据原摘要中实质研究或综述内容确认；逐篇证据见个人审核 document_type_check。正式栏目未知但内容足以判定者仍明确保留 publisher_section_verified=false。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1361-8415/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
             "https://www.sciencedirect.com/journal/medical-image-analysis/issues",
             "https://api.crossref.org/journals/1361-8415/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
             "https://doaj.org/api/search/articles/%28issn%3A%221361-8415%22%20OR%20issn%3A%221361-8423%22%29%20AND%20bibjson.year%3A2024?pageSize=100&page=1",
             "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ISSN%3A%221361-8415%22+OR+ISSN%3A%221361-8423%22%29+AND+%28PUB_YEAR%3A2023+OR+PUB_YEAR%3A2024+OR+PUB_YEAR%3A2025%29+AND+IN_PMC%3AY&format=json",
             "https://www.sciencedirect.com/journal/medical-image-analysis/vol/98/suppl/C",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx",
+            "https://api.crossref.org/journals/1361-8415/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL"
           ],
           "decisions": {
             "include": 243,
@@ -18643,17 +18677,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-            "纳入论文中仍有 229 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-            "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-            "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/dinglijun.json",
             "reviews/2024/feedback/dinglijun.json"
@@ -18824,14 +18849,24 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 2 篇（本轮补入 0 篇），历史审核 2 篇：纳入 1、排除 1、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 负责人已确认无法人工核验。本轮替代索引：Crossref 2024 登记数 108（与原 Crossref 来源本地数相同），OpenAlex 2024 article/review 数 107；两者均不是官网 2024 正式卷期学术正文数。 独立索引计数差异在 10% 内，按阈值视为基本完整。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref publisher-deposited metadata",
+            "total": 108,
+            "scope": "ISSN 所属期刊，Crossref 出版方登记的 published-print 正式出版年为 2024；journal-article 全登记条目口径（含研究、综述、更正及其他目录条目），与本地全量 papers.json 同口径逐 DOI 对账。",
+            "query_url": "https://api.crossref.org/journals/0163-7258/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
+            "checked_at": "2026-11-16",
+            "unresolved": 0
+          },
+          "coverage_note": "2026-11-16 重新获取 Crossref 正式出版年 2024 的全部 108 条登记记录，逐 DOI 与本地 108 条对账，缺项、额外项及重复项均为 0。采用负责人已授权的可靠替代来源；出版社部分目录经直接请求和浏览器仍受限，官网学术正文总数仍不冒填。 原 1 篇宽泛文献类型已核验：0 篇取得正式目录/论文页类型，1 篇依据原摘要中实质研究或综述内容确认；逐篇证据见个人审核 document_type_check。正式栏目未知但内容足以判定者仍明确保留 publisher_section_verified=false。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0163-7258/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL",
             "https://www.sciencedirect.com/journal/pharmacology-and-therapeutics/issues",
             "https://api.crossref.org/journals/0163-7258/works?filter=type:journal-article,from-print-pub-date:2024-01-01,until-print-pub-date:2024-12-31&rows=0",
             "https://doaj.org/api/search/articles/%28issn%3A%220163-7258%22%20OR%20issn%3A%221879-016X%22%29%20AND%20bibjson.year%3A2024?pageSize=100&page=1",
             "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28ISSN%3A%220163-7258%22+OR+ISSN%3A%221879-016X%22%29+AND+%28PUB_YEAR%3A2023+OR+PUB_YEAR%3A2024+OR+PUB_YEAR%3A2025%29+AND+IN_PMC%3AY&format=json",
-            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
+            "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx",
+            "https://api.crossref.org/journals/0163-7258/works?filter=type%3Ajournal-article%2Cfrom-print-pub-date%3A2024-01-01%2Cuntil-print-pub-date%3A2024-12-31&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cvolume%2Cissue%2Ctype%2Cpublished-print%2Cpublished-online%2Carticle-number%2Cpage%2CURL"
           ],
           "decisions": {
             "include": 1,
@@ -18839,17 +18874,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "官网全年同口径总量仍未独立核定；2026-11-14 出版方目录访问受限（HTTPError: HTTP Error 403: Forbidden）。",
-            "纳入论文中仍有 1 篇的具体出版栏目未获正式目录确认；已有原摘要及研究任务证据保留。",
-            "替代索引计数差异在 10% 内；官网同口径全年总量仍未知。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "取得出版方可访问的全年卷期目录及全部分页后，按正式卷期年和学术正文范围逐 DOI 对账，补录已核实缺项。",
-            "继续核验登记类型宽泛论文的出版方 Research/Review 栏目。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2024/dinglijun.json",
             "reviews/2024/feedback/dinglijun.json"
@@ -20503,24 +20529,19 @@
           "official_total": 924,
           "official_scope": "IJCAI 2024 正式论文集中的主研究及专题研究分轨 876 篇、Survey Track 48 篇，合计 924 篇；演示、博士生、早期学者、姐妹会议及期刊分轨的 124 条另列。",
           "reference_check": null,
-          "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 254 篇（本轮补入 0 篇），历史审核 254 篇：纳入 196、排除 58、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。",
+          "coverage_note": "2026-11-15 按最新精筛技能续审。当前候选 254 篇（本轮补入 0 篇），历史审核 254 篇：纳入 196、排除 58、待定 0。本轮原有候选补全出版方原摘要 0 篇，候选缺摘要由 0 降为 0；关键词补全 0 篇。原始采集快照保持不变；本轮未新增全量书目。此前官网已核总量及未完成范围延续，ISPRS 本轮单独完成官网目录核对。 2026-11-16 经用户明确授权，7 篇历史重复审核按当前负责人丁利军已核实的原文结论同步（3 篇纳入、4 篇排除），原审核历史完整保留；跨人判定冲突已解决。",
           "evidence_urls": [
             "https://ijcai.org/proceedings/2024/",
             "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ea532ec6d4d400da5c12a61f16f74ea7df59604c/reviews/2024%E5%B9%B449%E4%B8%AA%E5%88%8A%E4%BC%9A_%E6%94%B6%E5%BD%95%E6%96%87%E7%AB%A0%E7%B1%BB%E5%9E%8B%E6%98%8E%E7%BB%86.xlsx"
           ],
           "decisions": {
-            "include": 197,
-            "exclude": 54,
+            "include": 200,
+            "exclude": 58,
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "同一论文的交付判定存在冲突，冲突记录不计入统计。",
-            "存在 7 篇跨人交付判定差异；个人本轮已补充正式全文核验依据。"
-          ],
+          "issues": [],
           "actions": [
-            "由负责人核对重复论文的不同判定。",
-            "由重复交付的原负责人对照 review_conflicts 及正式全文核对判定与归属。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
@@ -23040,21 +23061,23 @@
           "owner": "丁利军",
           "sources": 49,
           "delivered": 43,
-          "official": 30,
+          "official": 49,
           "pending": 0,
-          "open_issues": 21,
+          "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-15T07:36:13-08:00",
+            "at": "2026-11-16T06:47:35-08:00",
             "author": "Xueting",
             "subject": "丁利军数据修改",
             "area": "reviews",
             "paths": [
-              "reviews/2024/dinglijun.json",
-              "reviews/2024/feedback/dinglijun.json"
+              "metadata/2024/ai4s.json",
+              "metadata/2024/papers.json",
+              "metadata/j-49d979c142/2024/ai4s.json",
+              "metadata/j-49d979c142/2024/papers.json"
             ]
           },
-          "commits_7d": 8
+          "commits_7d": 9
         },
         {
           "owner": "龙兆科",
@@ -23065,18 +23088,18 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-16T06:31:05-08:00",
-            "author": "ebo",
-            "subject": "Use Wang Mengran as authoritative EMNLP delivery",
+            "at": "2026-11-16T06:47:35-08:00",
+            "author": "Xueting",
+            "subject": "丁利军数据修改",
             "area": "reviews",
             "paths": [
-              "reviews/2024/AlearnerDL.json",
-              "reviews/2024/feedback/wangmengran8789.json",
-              "reviews/2024/history/emnlp-owner-resolution-20261116/AlearnerDL.json",
-              "reviews/2024/history/emnlp-owner-resolution-20261116/resolution.json"
+              "metadata/2024/ai4s.json",
+              "metadata/2024/papers.json",
+              "metadata/j-49d979c142/2024/ai4s.json",
+              "metadata/j-49d979c142/2024/papers.json"
             ]
           },
-          "commits_7d": 103
+          "commits_7d": 99
         },
         {
           "owner": "陈晨",
@@ -40778,16 +40801,18 @@
           "open_issues": 49,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-15T07:36:13-08:00",
+            "at": "2026-11-16T06:47:35-08:00",
             "author": "Xueting",
             "subject": "丁利军数据修改",
             "area": "reviews",
             "paths": [
-              "reviews/2024/dinglijun.json",
-              "reviews/2024/feedback/dinglijun.json"
+              "metadata/2024/ai4s.json",
+              "metadata/2024/papers.json",
+              "metadata/j-49d979c142/2024/ai4s.json",
+              "metadata/j-49d979c142/2024/papers.json"
             ]
           },
-          "commits_7d": 8
+          "commits_7d": 9
         },
         {
           "owner": "王婉婷",
@@ -40818,18 +40843,18 @@
           "open_issues": 49,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-16T06:31:05-08:00",
-            "author": "ebo",
-            "subject": "Use Wang Mengran as authoritative EMNLP delivery",
+            "at": "2026-11-16T06:47:35-08:00",
+            "author": "Xueting",
+            "subject": "丁利军数据修改",
             "area": "reviews",
             "paths": [
-              "reviews/2024/AlearnerDL.json",
-              "reviews/2024/feedback/wangmengran8789.json",
-              "reviews/2024/history/emnlp-owner-resolution-20261116/AlearnerDL.json",
-              "reviews/2024/history/emnlp-owner-resolution-20261116/resolution.json"
+              "metadata/2024/ai4s.json",
+              "metadata/2024/papers.json",
+              "metadata/j-49d979c142/2024/ai4s.json",
+              "metadata/j-49d979c142/2024/papers.json"
             ]
           },
-          "commits_7d": 103
+          "commits_7d": 99
         },
         {
           "owner": "王梦冉",
@@ -56589,16 +56614,18 @@
           "open_issues": 49,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-15T07:36:13-08:00",
+            "at": "2026-11-16T06:47:35-08:00",
             "author": "Xueting",
             "subject": "丁利军数据修改",
             "area": "reviews",
             "paths": [
-              "reviews/2024/dinglijun.json",
-              "reviews/2024/feedback/dinglijun.json"
+              "metadata/2024/ai4s.json",
+              "metadata/2024/papers.json",
+              "metadata/j-49d979c142/2024/ai4s.json",
+              "metadata/j-49d979c142/2024/papers.json"
             ]
           },
-          "commits_7d": 8
+          "commits_7d": 9
         },
         {
           "owner": "王婉婷",
@@ -56629,18 +56656,18 @@
           "open_issues": 47,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-16T06:31:05-08:00",
-            "author": "ebo",
-            "subject": "Use Wang Mengran as authoritative EMNLP delivery",
+            "at": "2026-11-16T06:47:35-08:00",
+            "author": "Xueting",
+            "subject": "丁利军数据修改",
             "area": "reviews",
             "paths": [
-              "reviews/2024/AlearnerDL.json",
-              "reviews/2024/feedback/wangmengran8789.json",
-              "reviews/2024/history/emnlp-owner-resolution-20261116/AlearnerDL.json",
-              "reviews/2024/history/emnlp-owner-resolution-20261116/resolution.json"
+              "metadata/2024/ai4s.json",
+              "metadata/2024/papers.json",
+              "metadata/j-49d979c142/2024/ai4s.json",
+              "metadata/j-49d979c142/2024/papers.json"
             ]
           },
-          "commits_7d": 103
+          "commits_7d": 99
         },
         {
           "owner": "王梦冉",
@@ -56814,9 +56841,9 @@
         "2024": {
           "sources": 49,
           "delivered": 43,
-          "official": 30,
+          "official": 49,
           "pending": 0,
-          "open_issues": 21,
+          "open_issues": 0,
           "status": "in_progress"
         },
         "2025": {
@@ -56843,16 +56870,18 @@
         "2026"
       ],
       "last_update": {
-        "at": "2026-11-15T07:36:13-08:00",
+        "at": "2026-11-16T06:47:35-08:00",
         "author": "Xueting",
         "subject": "丁利军数据修改",
         "area": "reviews",
         "paths": [
-          "reviews/2024/dinglijun.json",
-          "reviews/2024/feedback/dinglijun.json"
+          "metadata/2024/ai4s.json",
+          "metadata/2024/papers.json",
+          "metadata/j-49d979c142/2024/ai4s.json",
+          "metadata/j-49d979c142/2024/papers.json"
         ]
       },
-      "commits_7d": 8
+      "commits_7d": 9
     },
     {
       "owner": "龙兆科",
@@ -56889,18 +56918,18 @@
         "2026"
       ],
       "last_update": {
-        "at": "2026-11-16T06:31:05-08:00",
-        "author": "ebo",
-        "subject": "Use Wang Mengran as authoritative EMNLP delivery",
+        "at": "2026-11-16T06:47:35-08:00",
+        "author": "Xueting",
+        "subject": "丁利军数据修改",
         "area": "reviews",
         "paths": [
-          "reviews/2024/AlearnerDL.json",
-          "reviews/2024/feedback/wangmengran8789.json",
-          "reviews/2024/history/emnlp-owner-resolution-20261116/AlearnerDL.json",
-          "reviews/2024/history/emnlp-owner-resolution-20261116/resolution.json"
+          "metadata/2024/ai4s.json",
+          "metadata/2024/papers.json",
+          "metadata/j-49d979c142/2024/ai4s.json",
+          "metadata/j-49d979c142/2024/papers.json"
         ]
       },
-      "commits_7d": 103
+      "commits_7d": 99
     },
     {
       "owner": "陈晨",
@@ -57186,9 +57215,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-16T14:37:05.495940+00:00",
+    "generated_at": "2026-11-16T14:52:29.721952+00:00",
     "history_available": true,
-    "commit": "c9a76612b3e6dc6eb17b7318149b3366cd9b99a6",
-    "commits_scanned": 713
+    "commit": "8821a9c46ed8c698b63e6250d007382e2be5ee3a",
+    "commits_scanned": 715
   }
 }
