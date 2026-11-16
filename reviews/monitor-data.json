@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-16T12:19:54.835204+00:00",
-  "commit": "90e90ded6b40a497f1ac98d7292a16f5ff5eb345",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/90e90ded6b40a497f1ac98d7292a16f5ff5eb345/",
+  "generated_at": "2026-11-16T12:54:16.803361+00:00",
+  "commit": "9f8e8a5c0504ccf5bce0e39677d6f4a19360075b",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/9f8e8a5c0504ccf5bce0e39677d6f4a19360075b/",
   "years": [
     {
       "year": 2024,
@@ -282,8 +282,8 @@
           "state": "completed",
           "papers": 1664,
           "snapshot_candidates": 85,
-          "candidates": 92,
-          "missing_abstract": 0,
+          "candidates": 116,
+          "missing_abstract": 7,
           "official_total": null,
           "official_scope": "",
           "reference_check": {
@@ -327,15 +327,15 @@
           },
           "issues": [
             "当前台账待定1283条，含历史初判及证据不足，不能视为最终复核完成。",
-            "本轮新纳入24条初筛漏筛论文已交个人审核数组，共享候选文件未在本次修改。",
             "官网第645卷Part B目录返回CPE00002，刷新仍失败，负责人确认也不能打开；第645卷及其余来源尚未完成本轮官网导出。",
+            "AI4S候选缺少摘要：7 篇。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
             "优先补充缺摘要候选的正式原摘要与证据，仍不足以判断时保留pending；不以exclude自动免除摘要补证。",
             "按逐篇rationale补证并处理pending，证据充分后再更新结论。",
-            "按本阶段supplements.json核对已交付漏筛候选与共享候选集的同步，保留原ID并按证据去重。",
             "对已补齐原摘要的pending/unreviewed按Skill重新精筛，不能自动纳入或宣称已审。",
+            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -345,7 +345,7 @@
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
           "abstract_not_required": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 7
         },
         {
           "code": "j-c7fe39938d",
@@ -2442,7 +2442,7 @@
           "state": "completed",
           "papers": 130,
           "snapshot_candidates": 7,
-          "candidates": 10,
+          "candidates": 13,
           "missing_abstract": 0,
           "official_total": 130,
           "official_scope": "官网Articles in 2024，全部文章类型（含研究、综述、更正等）；与原采集年度范围逐DOI对账。",
@@ -2460,14 +2460,12 @@
             "unreviewed": 0
           },
           "issues": [
-            "本轮新纳入3条初筛漏筛论文已交个人审核数组，共享候选文件未在本次修改。",
             "当前台账待定3条，仍需按逐篇理由补查证据。",
             "本地本轮逐篇审核新增待定3条，需按local_unreviewed_stage.pending_ids补查方法证据。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
             "接续未审断点，优先候选与疑似漏筛，继续用户已要求的全量逐篇检查。",
-            "按本阶段supplements.json核对已交付漏筛候选与共享候选集的同步，保留原ID并按证据去重。",
             "推送前同步远端筛选规则及词表并复核本轮结果；本轮仅核对本地原摘要及已有元数据，未重新访问正式论文页。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "按交付文件逐篇补证并处理待定、未审记录。"
@@ -3963,7 +3961,7 @@
           "state": "completed",
           "papers": 992,
           "snapshot_candidates": 44,
-          "candidates": 59,
+          "candidates": 105,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
@@ -3991,12 +3989,10 @@
           },
           "issues": [
             "当前台账待定36条，含历史初判及证据不足，不能视为最终复核完成。",
-            "本轮新纳入46条初筛漏筛论文已交个人审核数组，共享候选文件未在本次修改。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
             "按逐篇rationale补证并处理pending，证据充分后再更新结论。",
-            "按本阶段supplements.json核对已交付漏筛候选与共享候选集的同步，保留原ID并按证据去重。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -4549,8 +4545,8 @@
           "state": "completed",
           "papers": 1662,
           "snapshot_candidates": 3,
-          "candidates": 5,
-          "missing_abstract": 2,
+          "candidates": 10,
+          "missing_abstract": 3,
           "official_total": null,
           "official_scope": "",
           "reference_check": {
@@ -4578,14 +4574,12 @@
           "issues": [
             "当前已同步年度候选中仍有2条空摘要，需要补原摘要或正式证据；未用占位或生成摘要填充。",
             "当前台账待定1511条，含历史初判及证据不足，不能视为最终复核完成。",
-            "本轮新纳入5条初筛漏筛论文已交个人审核数组，共享候选文件未在本次修改。",
-            "AI4S候选缺少摘要：2 篇。",
+            "AI4S候选缺少摘要：3 篇。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
             "优先补充缺摘要候选的正式原摘要与证据，仍不足以判断时保留pending；不以exclude自动免除摘要补证。",
             "按逐篇rationale补证并处理pending，证据充分后再更新结论。",
-            "按本阶段supplements.json核对已交付漏筛候选与共享候选集的同步，保留原ID并按证据去重。",
             "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
@@ -4596,7 +4590,7 @@
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
           "abstract_not_required": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 2
+          "abstract_supplement_required": 3
         },
         {
           "code": "j-f4a8fc84bb",
@@ -10706,8 +10700,8 @@
           "state": "completed",
           "papers": 259,
           "snapshot_candidates": 5,
-          "candidates": 6,
-          "missing_abstract": 1,
+          "candidates": 11,
+          "missing_abstract": 4,
           "official_total": 259,
           "official_scope": "官网Articles in 2024，全部文章类型（含研究、综述、更正等）；与原采集年度范围逐DOI对账。",
           "reference_check": null,
@@ -10726,14 +10720,12 @@
           "issues": [
             "当前已同步年度候选中仍有1条空摘要，需要补原摘要或正式证据；未用占位或生成摘要填充。",
             "当前台账待定69条，含历史初判及证据不足，不能视为最终复核完成。",
-            "本轮新纳入5条初筛漏筛论文已交个人审核数组，共享候选文件未在本次修改。",
-            "AI4S候选缺少摘要：1 篇。",
+            "AI4S候选缺少摘要：4 篇。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
             "优先补充缺摘要候选的正式原摘要与证据，仍不足以判断时保留pending；不以exclude自动免除摘要补证。",
             "按逐篇rationale补证并处理pending，证据充分后再更新结论。",
-            "按本阶段supplements.json核对已交付漏筛候选与共享候选集的同步，保留原ID并按证据去重。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
@@ -10745,7 +10737,7 @@
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
           "abstract_not_required": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 1
+          "abstract_supplement_required": 4
         },
         {
           "code": "nature-tp",
@@ -10755,8 +10747,8 @@
           "state": "completed",
           "papers": 508,
           "snapshot_candidates": 25,
-          "candidates": 26,
-          "missing_abstract": 0,
+          "candidates": 62,
+          "missing_abstract": 3,
           "official_total": 508,
           "official_scope": "官网Articles in 2024，全部文章类型（含研究、综述、更正等）；与原采集年度范围逐DOI对账。",
           "reference_check": null,
@@ -10774,12 +10766,12 @@
           },
           "issues": [
             "当前台账待定56条，含历史初判及证据不足，不能视为最终复核完成。",
-            "本轮新纳入36条初筛漏筛论文已交个人审核数组，共享候选文件未在本次修改。",
+            "AI4S候选缺少摘要：3 篇。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "按本阶段supplements.json核对已交付漏筛候选与共享候选集的同步，保留原ID并按证据去重。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
+            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -10789,7 +10781,7 @@
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
           "abstract_not_required": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 3
         },
         {
           "code": "j-41efefd652",
@@ -12397,7 +12389,7 @@
           "state": "completed",
           "papers": 107,
           "snapshot_candidates": 7,
-          "candidates": 8,
+          "candidates": 13,
           "missing_abstract": 0,
           "official_total": 107,
           "official_scope": "官网Articles in 2024，全部文章类型（含研究、综述、更正等）；与原采集年度范围逐DOI对账。",
@@ -12416,11 +12408,9 @@
           },
           "issues": [
             "当前台账待定11条，含历史初判及证据不足，不能视为最终复核完成。",
-            "本轮新纳入5条初筛漏筛论文已交个人审核数组，共享候选文件未在本次修改。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "按本阶段supplements.json核对已交付漏筛候选与共享候选集的同步，保留原ID并按证据去重。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
@@ -12957,8 +12947,8 @@
           "state": "completed",
           "papers": 387,
           "snapshot_candidates": 10,
-          "candidates": 15,
-          "missing_abstract": 0,
+          "candidates": 27,
+          "missing_abstract": 6,
           "official_total": 387,
           "official_scope": "官网Articles in 2024，全部文章类型（含研究、综述、更正等）；与原采集年度范围逐DOI对账。",
           "reference_check": null,
@@ -12976,13 +12966,13 @@
           },
           "issues": [
             "当前台账待定60条，含历史初判及证据不足，不能视为最终复核完成。",
-            "本轮新纳入12条初筛漏筛论文已交个人审核数组，共享候选文件未在本次修改。",
+            "AI4S候选缺少摘要：6 篇。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
             "按逐篇rationale补证并处理pending，证据充分后再更新结论。",
-            "按本阶段supplements.json核对已交付漏筛候选与共享候选集的同步，保留原ID并按证据去重。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
+            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -12992,7 +12982,7 @@
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
           "abstract_not_required": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 6
         },
         {
           "code": "nature-cddiscovery",
@@ -21901,8 +21891,8 @@
           "state": "completed",
           "papers": 1344,
           "snapshot_candidates": 8,
-          "candidates": 8,
-          "missing_abstract": 5,
+          "candidates": 23,
+          "missing_abstract": 13,
           "official_total": null,
           "official_scope": "",
           "reference_check": {
@@ -21930,14 +21920,12 @@
           "issues": [
             "当前已同步年度候选中仍有5条空摘要，需要补原摘要或正式证据；未用占位或生成摘要填充。",
             "当前台账待定1200条，含历史初判及证据不足，不能视为最终复核完成。",
-            "本轮新纳入15条初筛漏筛论文已交个人审核数组，共享候选文件未在本次修改。",
-            "AI4S候选缺少摘要：5 篇。",
+            "AI4S候选缺少摘要：13 篇。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
             "优先补充缺摘要候选的正式原摘要与证据，仍不足以判断时保留pending；不以exclude自动免除摘要补证。",
             "按逐篇rationale补证并处理pending，证据充分后再更新结论。",
-            "按本阶段supplements.json核对已交付漏筛候选与共享候选集的同步，保留原ID并按证据去重。",
             "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
@@ -21948,7 +21936,7 @@
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
           "abstract_not_required": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 5
+          "abstract_supplement_required": 13
         },
         {
           "code": "ipmi",
@@ -22729,7 +22717,7 @@
               "reviews/2024/lixueting-haozhuodi/jacc-six-abstracts-20261115.md"
             ]
           },
-          "commits_7d": 17
+          "commits_7d": 15
         },
         {
           "owner": "郝卓迪",
@@ -22751,7 +22739,7 @@
               "metadata/j-2787efe2f4/2024/ai4s.json"
             ]
           },
-          "commits_7d": 2
+          "commits_7d": 1
         },
         {
           "owner": "丁利军",
@@ -22771,7 +22759,7 @@
               "reviews/2024/feedback/dinglijun.json"
             ]
           },
-          "commits_7d": 10
+          "commits_7d": 9
         },
         {
           "owner": "龙兆科",
@@ -22790,7 +22778,7 @@
               "reviews/2024/feedback/AlearnerDL.json"
             ]
           },
-          "commits_7d": 132
+          "commits_7d": 130
         },
         {
           "owner": "王梦冉",
@@ -22801,18 +22789,17 @@
           "open_issues": 46,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-16T04:14:51-08:00",
+            "at": "2026-11-16T04:45:02-08:00",
             "author": "ebo",
-            "subject": "Complete Wang Mengran unreviewed screening rounds 9–11",
+            "subject": "Sync 151 Wang Mengran included papers and resolve delivery warnings",
             "area": "reviews",
             "paths": [
               "metadata/2024/ai4s.json",
               "reviews/2024/feedback/wangmengran8789.json",
-              "reviews/2024/wangmengran8789-local-round11-20261116/evidence.json",
-              "reviews/2024/wangmengran8789-local-round11-20261116/pending.json"
+              "reviews/2024/wangmengran8789-monitor-fix-20261116.json"
             ]
           },
-          "commits_7d": 19
+          "commits_7d": 18
         },
         {
           "owner": "陈晨",
@@ -22834,7 +22821,7 @@
               "reviews/2024/chenchen052512/continuous-20261114/evidence/water-final235-owner-manual.json"
             ]
           },
-          "commits_7d": 17
+          "commits_7d": 14
         },
         {
           "owner": "南耀笛",
@@ -22856,7 +22843,7 @@
               "reviews/2025/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 78
+          "commits_7d": 77
         },
         {
           "owner": "朱长昊",
@@ -22876,7 +22863,7 @@
               "reviews/2024/zch66883/jaad-abstract-remaining.csv"
             ]
           },
-          "commits_7d": 14
+          "commits_7d": 10
         },
         {
           "owner": "王婉婷",
@@ -22896,7 +22883,7 @@
               "reviews/2024/feedback/Blueblue1101.json"
             ]
           },
-          "commits_7d": 16
+          "commits_7d": 15
         },
         {
           "owner": "乔徐阳",
@@ -22916,7 +22903,7 @@
               "reviews/2024/Roman100021/screening-handoff.md"
             ]
           },
-          "commits_7d": 4
+          "commits_7d": 3
         }
       ],
       "snapshot_file": "metadata/2024/snapshot.json",
@@ -39957,7 +39944,7 @@
               "reviews/2024/zch66883/jaad-abstract-remaining.csv"
             ]
           },
-          "commits_7d": 14
+          "commits_7d": 10
         },
         {
           "owner": "李雪婷",
@@ -39978,7 +39965,7 @@
               "reviews/2024/lixueting-haozhuodi/jacc-six-abstracts-20261115.md"
             ]
           },
-          "commits_7d": 17
+          "commits_7d": 15
         },
         {
           "owner": "郝卓迪",
@@ -40000,7 +39987,7 @@
               "metadata/j-2787efe2f4/2024/ai4s.json"
             ]
           },
-          "commits_7d": 2
+          "commits_7d": 1
         },
         {
           "owner": "丁利军",
@@ -40020,7 +40007,7 @@
               "reviews/2024/feedback/dinglijun.json"
             ]
           },
-          "commits_7d": 10
+          "commits_7d": 9
         },
         {
           "owner": "王婉婷",
@@ -40040,7 +40027,7 @@
               "reviews/2024/feedback/Blueblue1101.json"
             ]
           },
-          "commits_7d": 16
+          "commits_7d": 15
         },
         {
           "owner": "龙兆科",
@@ -40059,7 +40046,7 @@
               "reviews/2024/feedback/AlearnerDL.json"
             ]
           },
-          "commits_7d": 132
+          "commits_7d": 130
         },
         {
           "owner": "王梦冉",
@@ -40070,18 +40057,17 @@
           "open_issues": 48,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-16T04:14:51-08:00",
+            "at": "2026-11-16T04:45:02-08:00",
             "author": "ebo",
-            "subject": "Complete Wang Mengran unreviewed screening rounds 9–11",
+            "subject": "Sync 151 Wang Mengran included papers and resolve delivery warnings",
             "area": "reviews",
             "paths": [
               "metadata/2024/ai4s.json",
               "reviews/2024/feedback/wangmengran8789.json",
-              "reviews/2024/wangmengran8789-local-round11-20261116/evidence.json",
-              "reviews/2024/wangmengran8789-local-round11-20261116/pending.json"
+              "reviews/2024/wangmengran8789-monitor-fix-20261116.json"
             ]
           },
-          "commits_7d": 19
+          "commits_7d": 18
         },
         {
           "owner": "陈晨",
@@ -40103,7 +40089,7 @@
               "reviews/2024/chenchen052512/continuous-20261114/evidence/water-final235-owner-manual.json"
             ]
           },
-          "commits_7d": 17
+          "commits_7d": 14
         },
         {
           "owner": "乔徐阳",
@@ -40123,7 +40109,7 @@
               "reviews/2024/Roman100021/screening-handoff.md"
             ]
           },
-          "commits_7d": 4
+          "commits_7d": 3
         },
         {
           "owner": "南耀笛",
@@ -40145,7 +40131,7 @@
               "reviews/2025/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 78
+          "commits_7d": 77
         }
       ],
       "snapshot_file": "metadata/2025/snapshot.json",
@@ -55264,7 +55250,7 @@
               "reviews/2025/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 78
+          "commits_7d": 77
         },
         {
           "owner": "朱长昊",
@@ -55284,7 +55270,7 @@
               "reviews/2024/zch66883/jaad-abstract-remaining.csv"
             ]
           },
-          "commits_7d": 14
+          "commits_7d": 10
         },
         {
           "owner": "李雪婷",
@@ -55305,7 +55291,7 @@
               "reviews/2024/lixueting-haozhuodi/jacc-six-abstracts-20261115.md"
             ]
           },
-          "commits_7d": 17
+          "commits_7d": 15
         },
         {
           "owner": "郝卓迪",
@@ -55327,7 +55313,7 @@
               "metadata/j-2787efe2f4/2024/ai4s.json"
             ]
           },
-          "commits_7d": 2
+          "commits_7d": 1
         },
         {
           "owner": "丁利军",
@@ -55347,7 +55333,7 @@
               "reviews/2024/feedback/dinglijun.json"
             ]
           },
-          "commits_7d": 10
+          "commits_7d": 9
         },
         {
           "owner": "王婉婷",
@@ -55367,7 +55353,7 @@
               "reviews/2024/feedback/Blueblue1101.json"
             ]
           },
-          "commits_7d": 16
+          "commits_7d": 15
         },
         {
           "owner": "龙兆科",
@@ -55386,7 +55372,7 @@
               "reviews/2024/feedback/AlearnerDL.json"
             ]
           },
-          "commits_7d": 132
+          "commits_7d": 130
         },
         {
           "owner": "王梦冉",
@@ -55397,18 +55383,17 @@
           "open_issues": 48,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-16T04:14:51-08:00",
+            "at": "2026-11-16T04:45:02-08:00",
             "author": "ebo",
-            "subject": "Complete Wang Mengran unreviewed screening rounds 9–11",
+            "subject": "Sync 151 Wang Mengran included papers and resolve delivery warnings",
             "area": "reviews",
             "paths": [
               "metadata/2024/ai4s.json",
               "reviews/2024/feedback/wangmengran8789.json",
-              "reviews/2024/wangmengran8789-local-round11-20261116/evidence.json",
-              "reviews/2024/wangmengran8789-local-round11-20261116/pending.json"
+              "reviews/2024/wangmengran8789-monitor-fix-20261116.json"
             ]
           },
-          "commits_7d": 19
+          "commits_7d": 18
         },
         {
           "owner": "陈晨",
@@ -55430,7 +55415,7 @@
               "reviews/2024/chenchen052512/continuous-20261114/evidence/water-final235-owner-manual.json"
             ]
           },
-          "commits_7d": 17
+          "commits_7d": 14
         },
         {
           "owner": "乔徐阳",
@@ -55450,7 +55435,7 @@
               "reviews/2024/Roman100021/screening-handoff.md"
             ]
           },
-          "commits_7d": 4
+          "commits_7d": 3
         }
       ],
       "snapshot_file": "metadata/2026/snapshot.json",
@@ -55504,7 +55489,7 @@
           "reviews/2024/lixueting-haozhuodi/jacc-six-abstracts-20261115.md"
         ]
       },
-      "commits_7d": 17
+      "commits_7d": 15
     },
     {
       "owner": "郝卓迪",
@@ -55552,7 +55537,7 @@
           "metadata/j-2787efe2f4/2024/ai4s.json"
         ]
       },
-      "commits_7d": 2
+      "commits_7d": 1
     },
     {
       "owner": "丁利军",
@@ -55598,7 +55583,7 @@
           "reviews/2024/feedback/dinglijun.json"
         ]
       },
-      "commits_7d": 10
+      "commits_7d": 9
     },
     {
       "owner": "龙兆科",
@@ -55643,7 +55628,7 @@
           "reviews/2024/feedback/AlearnerDL.json"
         ]
       },
-      "commits_7d": 132
+      "commits_7d": 130
     },
     {
       "owner": "王梦冉",
@@ -55680,18 +55665,17 @@
         "2026"
       ],
       "last_update": {
-        "at": "2026-11-16T04:14:51-08:00",
+        "at": "2026-11-16T04:45:02-08:00",
         "author": "ebo",
-        "subject": "Complete Wang Mengran unreviewed screening rounds 9–11",
+        "subject": "Sync 151 Wang Mengran included papers and resolve delivery warnings",
         "area": "reviews",
         "paths": [
           "metadata/2024/ai4s.json",
           "reviews/2024/feedback/wangmengran8789.json",
-          "reviews/2024/wangmengran8789-local-round11-20261116/evidence.json",
-          "reviews/2024/wangmengran8789-local-round11-20261116/pending.json"
+          "reviews/2024/wangmengran8789-monitor-fix-20261116.json"
         ]
       },
-      "commits_7d": 19
+      "commits_7d": 18
     },
     {
       "owner": "陈晨",
@@ -55739,7 +55723,7 @@
           "reviews/2024/chenchen052512/continuous-20261114/evidence/water-final235-owner-manual.json"
         ]
       },
-      "commits_7d": 17
+      "commits_7d": 14
     },
     {
       "owner": "朱长昊",
@@ -55785,7 +55769,7 @@
           "reviews/2024/zch66883/jaad-abstract-remaining.csv"
         ]
       },
-      "commits_7d": 14
+      "commits_7d": 10
     },
     {
       "owner": "王婉婷",
@@ -55831,7 +55815,7 @@
           "reviews/2024/feedback/Blueblue1101.json"
         ]
       },
-      "commits_7d": 16
+      "commits_7d": 15
     },
     {
       "owner": "乔徐阳",
@@ -55877,7 +55861,7 @@
           "reviews/2024/Roman100021/screening-handoff.md"
         ]
       },
-      "commits_7d": 4
+      "commits_7d": 3
     },
     {
       "owner": "南耀笛",
@@ -55924,14 +55908,14 @@
           "reviews/2025/feedback/nydiii.json"
         ]
       },
-      "commits_7d": 78
+      "commits_7d": 77
     }
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-16T12:19:26.811811+00:00",
+    "generated_at": "2026-11-16T12:53:55.853351+00:00",
     "history_available": true,
-    "commit": "90e90ded6b40a497f1ac98d7292a16f5ff5eb345",
-    "commits_scanned": 692
+    "commit": "9f8e8a5c0504ccf5bce0e39677d6f4a19360075b",
+    "commits_scanned": 694
   }
 }
