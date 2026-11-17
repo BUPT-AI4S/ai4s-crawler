@@ -1,0 +1,429 @@
+{
+  "owner": "郝卓迪",
+  "year": 2026,
+  "input_main_commit": "b06974f0902afed254377eefe071d6f8ac643e82",
+  "method": "正常浏览器逐篇取得官方PDF链接；下载正式PDF，阅读与判定相关摘要、方法、实验和结果；原字段不改",
+  "records": [
+    {
+      "source_code": "eccv",
+      "id": "eccv-a0b3f75903397a85",
+      "decision": "include",
+      "finding": "正式PDF §4.1实测TI-NSD及ThermoScenes，并以温度MAE和热目标ROI误差评价物理辐射重建，课程学习与超分教师网络实际用于红外测量恢复。",
+      "evidence_location": "PDF pp.9–10 §4.1温度保真度实验",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/12210.pdf",
+      "pdf_sha256": "138b7b050b1be778b7734c68e6ba9148c573bf37ad0a32be0d79655a69e18967"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-61ed7cb5bc88e89e",
+      "decision": "exclude",
+      "finding": "正式PDF标题和摘要核实为AGE多代理三维场景编辑，研究风格迁移、对象插入和交互回退；会议网页及输入误配为FMS2血管/裂缝摘要。按真实原文的一般数字内容编辑任务排除，保留错配审计。",
+      "evidence_location": "PDF pp.1–3标题、Abstract及Introduction",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/9447.pdf",
+      "pdf_sha256": "84059d8dc3cf39c4be94874533c22e9fb765ebbafdd9d5417eec5e14715f4c5b"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-dac02b07a7ccd9b4",
+      "decision": "include",
+      "finding": "正式PDF §4.1明确在DFC19、SpaceNet4、MVS3D开展地表/植被/水体/建筑三维语义与高度重建，报告地形几何MAE；学习模型实际提取卫星地理结构信息。",
+      "evidence_location": "PDF pp.8–9 §4.1及Table2",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/1162.pdf",
+      "pdf_sha256": "f152c885fc765d6e105f5974b3e553e733e831e9496cf5a7be952eb3f3899366"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-ed6d6cc502ab842b",
+      "decision": "exclude",
+      "finding": "正式原文采用3D楔形结点显式结构先验和投影/近端梯度求解；CT及cryoET任务明确，但所提方法未使用学习模型，神经去噪器仅是对比项，不能因科学成像用途直接认定为AI方法。",
+      "evidence_location": "PDF Abstract、Methods及CT实验Table1",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/14656.pdf",
+      "pdf_sha256": "441df6144b287982c81a5d285a44c8233384c52856f4fd3b4628f86e15f5b73a"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-b8aeb4daae42f4e5",
+      "decision": "exclude",
+      "finding": "正式PDF §5.1与Table1核实实际任务为外观材料选择和kNN类别识别，训练为艺术PBR材质渲染；没有材料结构—性质推断或物性研究，仅视觉表征的材质分类基准不足以纳入。",
+      "evidence_location": "PDF pp.5–6 PBR数据与p.10 §5.1",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/5817.pdf",
+      "pdf_sha256": "d7558f4d966d7ac6c4ed2f3bc6066bfa868da2ee66c1b9be84047d99566a8af6"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-b5974e5cc5bb32fc",
+      "decision": "include",
+      "finding": "正式PDF补齐被截断的作者原摘要；方法以解剖先验、个体生成和梯度匹配蒸馏CT/MRI训练数据，正式实验包含低剂量CT恢复及CT/MRI超分辨，直接贡献医学影像增强。",
+      "evidence_location": "PDF p.1完整Abstract及pp.9–10实验",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/11594.pdf",
+      "pdf_sha256": "e6924514b3de8de04fde6aed38e962e39cdebaf6d893cf9bc958bbc94e2ee42f"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-c9ec8117860ac11e",
+      "decision": "include",
+      "finding": "正式PDF §4.1核实在ReMIND脑影像训练跨模态特征映射，并在BRATS的MRI序列及RESECT的MRI—超声进行匹配评测，直接服务医学多模态配准。",
+      "evidence_location": "PDF pp.9–10 §4.1及Tables1–2",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/14445.pdf",
+      "pdf_sha256": "693fcdf4f5102e222b54cb2954f361e97c2cc6b4eddfc8ba41e70ecd71962423"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-26afadc78613e4d1",
+      "decision": "exclude",
+      "finding": "正式PDF §5.1核实解码器逐场景优化法向、光谱系数和反射率，使用AdamW求解物理逆问题及显式约束；未定义或训练AI网络，不能把PyTorch数值优化等同机器学习。",
+      "evidence_location": "PDF pp.10–11 §5.1及光谱角度解耦模型",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/6973.pdf",
+      "pdf_sha256": "e72bea7270728a085c60f7a8440bc1f5729bb93955b3bcb3467c0e133f8e9143"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-5fe095bf5e3f3017",
+      "decision": "exclude",
+      "finding": "正式实验为基于遥感语义掩膜合成约束的路径规划与MLLM通用感知/推理能力测评，灾害救援和生态调查只作应用动机，未验证具体科学调查或灾害分析任务。",
+      "evidence_location": "PDF §5.1及任务1–3评价",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/5930.pdf",
+      "pdf_sha256": "e5c972406f35c2cc935b9fbac790007cde2cdbfc98d3a4d66b1eb9d84a908fe0"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-04a64fc9e21cf0ca",
+      "decision": "include",
+      "finding": "正式PDF §4.1核实不是仅泛模型剪枝：下游实际包括MADOS海洋垃圾/溢油检测、BigEarthNet地表覆盖及Sen4Map作物制图；在明确地球观测任务验证模型适配方法。",
+      "evidence_location": "PDF p.7 §4.1 Tasks and Datasets",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/5869.pdf",
+      "pdf_sha256": "33583a19ee6cb2258c335a458b26f937be2e8e505aa10167dc0f8664a51ca96f"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-c78e7f38610ec5f8",
+      "decision": "exclude",
+      "finding": "正式PDF §4.1及Fig.1核实以MegaScience、WebInstruct等题目生成受力图/电路图等教学示意，再用原子测验评测通用多模态推理；没有实质科研测量、实验解释或科学发现任务。",
+      "evidence_location": "PDF Fig.1及p.6 §4.1–4.3",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/1572.pdf",
+      "pdf_sha256": "2636ed9bc3d3f2d571357d40028e39e043bb7c890b3fb5f5f1c06485fe649c5b"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-0672c83eb115314a",
+      "decision": "include",
+      "finding": "正式PDF核实SciIR-82k从Nature及Nature Communications研究图构建，分实体结构、科学过程、科学定律，并以拓扑、反应因果和守恒原子检查评测生成结果；属于直接面向科研图科学一致性的训练评测资源。",
+      "evidence_location": "PDF §3.1–3.4、Fig.3及科学约束评价",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/13008.pdf",
+      "pdf_sha256": "0238e6a127243bec332ba32c152cbc626049d696c97cadbd17151cda12727678"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-565a1c501f6186bb",
+      "decision": "include",
+      "finding": "正式PDF §4.1核实在实际跨传感器NAIP—Sentinel2配对数据及地表覆盖变化资料上恢复空间细节，而非仅泛自然图像；双分支扩散方法直接贡献地球观测影像恢复。",
+      "evidence_location": "PDF p.9 §4.1 Datasets及Real-RefRSSRD设置",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/14164.pdf",
+      "pdf_sha256": "a6941cde08da8b6b48e2544d5448b034f859708e22025447f64f166df64bd046"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-22707334d798d1ba",
+      "decision": "exclude",
+      "finding": "正式实验主要为Geo-Sub-Aux、MathVista、FunctionQA等学校几何与函数题及通用多模态能力，自改进为通用题解训练机制，未显示实质数学研究问题。",
+      "evidence_location": "PDF §4实验及Tables6–11",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/527.pdf",
+      "pdf_sha256": "6be2199d92b522f10c22034d8bb002ea718279d2c7953e713d0703b683bcbfd7"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-480f96d09d1cac4b",
+      "decision": "exclude",
+      "finding": "正式PDF §3.1核实来源为TikZ手册及社区绘图代码，主要评测图转代码、颜色/文本/布局编辑和基础几何、电路知识问答；科学写作场景不能替代实质科学研究任务。",
+      "evidence_location": "PDF p.5 Table2及§3.1",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/1212.pdf",
+      "pdf_sha256": "a9b4115e0ca8367991acc6d8e4217c412bd9a12a956905de3efde8c010fb9322"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-c81b5d8c9a6f83b8",
+      "decision": "include",
+      "finding": "正式PDF §4.1及Table2核实在17个遥感基准执行地理场景分类、区域目标计数和遥感问答，并训练过程监督模型纠正空间解释幻觉；提供明确的地球观测解释方法与评价。",
+      "evidence_location": "PDF pp.9–10 §4.1及Table2",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/3434.pdf",
+      "pdf_sha256": "afcda1d014eb74342e0f1f2d26072e8e2721fd426057dce8434abb6749da1ff3"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-02538a3e3ca16965",
+      "decision": "exclude",
+      "finding": "正式PDF §4.1–4.2仅评估触觉文字描述语义分数、关键词F1及保留通用VLM能力；摩擦、顺应性作动机，未实际预测物理参数或验证材料/触觉科学假设，核心为通用模态适配。",
+      "evidence_location": "PDF p.7 §4.1–4.2",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/12143.pdf",
+      "pdf_sha256": "a47a978a6abc393ca367cf04fef17814c57fbc0ac481789a5631ccdde548e0a1"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-644834eec8a495a8",
+      "decision": "exclude",
+      "finding": "正式PDF §4.2–4.3以冻结特征的跨模态动态对齐和拓扑表征为主要终点，未定量预测温度、热传导等物理量或开展特定科学研究；热平衡只解释视觉表征困难。",
+      "evidence_location": "PDF pp.9–10 §4.2–4.3",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/160.pdf",
+      "pdf_sha256": "425c1e4522d62b98cb11dac583e36b962a3d8bbfe692f1a2a8a6a0f5caf283b8"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-b3e8acfd7d8b194b",
+      "decision": "include",
+      "finding": "正式PDF §4.1确认在Agriculture-Vision、Phenobench、REFUGE2及BraTS等植物表型和医学分割数据实际验证，提出扩散分割方法直接贡献植物/医学图像解析。",
+      "evidence_location": "PDF pp.10–12 §4.1及Tables2–3",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/7917.pdf",
+      "pdf_sha256": "18cf2cc2fb46ddae0fa73e2b20937efd112cf0bc7a868455430101b1ee2ef88c"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-f0d3f6daea62bf92",
+      "decision": "exclude",
+      "finding": "正式PDF §5.1核实以RefSegRS和RRSIS-D的文本指代区域定位为终点，改进SAM/VLM语义空间耦合；没有进一步地学过程、生态状态或科学测量任务，按遥感领域的一般视觉定位方法排除。",
+      "evidence_location": "PDF pp.9–10 §5.1–5.2",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/9662.pdf",
+      "pdf_sha256": "5eb87c8920e790b631799ca715116b536c2052bca3b6b85d7796b3a91bc8e55c"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-a529d75cb218ca03",
+      "decision": "include",
+      "finding": "正式PDF §5.1明确纳入BMAD的肝脏CT、脑MRI及眼科OCT/RESC异常检测，并报告该域性能；学习特征分布方法实际服务医学影像异常识别。",
+      "evidence_location": "PDF pp.10–12 §5.1 Benchmark Datasets及医学结果",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/9947.pdf",
+      "pdf_sha256": "42f623c8879fc82cc79d2b4577dafec6f590135f0c94bbe7df882b9c28d657f0"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-1435570730dfeb67",
+      "decision": "exclude",
+      "finding": "正式PDF明确六类目标仅为桥、港口、储油罐、操场、机场、风机的定向框目标检测；主要贡献是一般光学SAR融合检测基准，未开展实质地球科学或工程机理研究。",
+      "evidence_location": "PDF §3数据标注与目标类别",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/146.pdf",
+      "pdf_sha256": "5eb7924c6cb79184d7822d4388291f0438a7a95f09d41682f7c57f3b5e6ff29f"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-dda2fd76adec5e9a",
+      "decision": "include",
+      "finding": "正式PDF §4.1及Table1核实自建核燃料棒缺陷数据，包含磨损、凹痕、划痕和异物，流式主动学习实际研究关键工程部件缺陷检测可靠性。",
+      "evidence_location": "PDF pp.8–9 §4.1及Table1",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/8772.pdf",
+      "pdf_sha256": "e84600bb134b3764afbeb66b5366e2eca5778dc82ac79566bdc3a8e7bd2b675d"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-be750afd8a433805",
+      "decision": "exclude",
+      "finding": "正式PDF补证标题、摘要及§4.1为WAPR通用未见物体6D姿态精化，BOP七数据集仅评价位姿定位/检测；输入摘要截断并混入他文文件名，已记录真实原文证据，无实质科学研究任务。",
+      "evidence_location": "PDF p.1完整Abstract及pp.10–11 §4.1",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/9728.pdf",
+      "pdf_sha256": "7dc87fde3c1a9b6c133b870a7d1b8d327e0bd867ce9b884fdff8f67bf680445f"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-09a3e806e9f9f9bf",
+      "decision": "include",
+      "finding": "正式PDF实验明确使用DeepLesion CT、HAM10000皮肤镜及CheXpert心脏增大X线分类，并规定数据清洗和训练/验证/测试划分；图像表格融合实际用于医学诊断分类。",
+      "evidence_location": "PDF p.8 §3 A Datasets and Evaluation",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/10640.pdf",
+      "pdf_sha256": "ccb61b63573bc63025227a78e030aac908cfc1a059cb178464ecb4366c676383"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-4dbf4a8f7184fa7c",
+      "decision": "exclude",
+      "finding": "正式PDF §4核实为篮球/足球/空手道视频的动作编辑，终点评价生成姿态与专家姿态的距离和FID，未验证人体运动学习、康复效果或生物力学假设；体育康复仅为使用动机。",
+      "evidence_location": "PDF §4数据设置及§4.2 Tables1–2",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/11520.pdf",
+      "pdf_sha256": "34148addae1abb10354beac66717af05f6878be7b354a48c279264607c6536e9"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-f606321ffc685099",
+      "decision": "exclude",
+      "finding": "正式PDF核实RS-Neg来源为通用遥感字幕、VQA、视觉定位和场景分类的否定语言合成，主要研究逻辑词理解；灾害示例未形成独立灾害科学分析，按一般模型能力评测排除。",
+      "evidence_location": "PDF §3 RS-Neg来源及§5评价",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/3482.pdf",
+      "pdf_sha256": "aed4ba281fd2c78a4fcabbb047586bf9b635dbeedfc08ed3796335813d2f4b67"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-0a0e94787046cfcf",
+      "decision": "include",
+      "finding": "正式PDF §4.1–4.2核实高分遥感任务含总体/区域土地利用分类，并报告保留空间拓扑后土地利用分类增益；模型压缩实际支持地球观测空间解释。",
+      "evidence_location": "PDF pp.10–11 §4.1–4.2及Table1",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/468.pdf",
+      "pdf_sha256": "22db39abecf55aaa181b4174755a0660f81ad3fb40245c9b295678923c03ec4b"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-7225652524c7798d",
+      "decision": "include",
+      "finding": "正式PDF Table2明确专家任务含冰川崩解前缘、洪水、树冠高度、云层、作物及土地覆盖制图，22编码器融合实际用于多种环境观测研究，不只是一般模型集成。",
+      "evidence_location": "PDF pp.7–8 §3.5及Table2",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/10699.pdf",
+      "pdf_sha256": "fb8257184c0e7dc713f73c5b5deffda348bf247fb5880cd961a0730cf57bb9c4"
+    },
+    {
+      "source_code": "eccv",
+      "id": "eccv-ea90bd60e278f757",
+      "decision": "include",
+      "finding": "正式PDF Fig.3和数据构建确认遥感自然灾害变化、建筑损伤及水体淹没上下文，结合变化掩膜和损伤多边形进行人工标注；为环境/灾害变化解释提供专门评测资源。",
+      "evidence_location": "PDF pp.6–7 Fig.3及§4.1数据构建",
+      "pdf_url": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/2601.pdf",
+      "pdf_sha256": "795cfbd4058131fedf5db5a99d54ad88646986fc32ce39fb6580b37f116ae77f"
+    },
+    {
+      "source_code": "npjdigitalmed",
+      "id": "10.1038/s41746-026-03195-z",
+      "decision": "include",
+      "finding": "正式开放PDF给出稳定claim/evidence/link/audit记录、工作流配置、分层评价及Table1/figures的可执行判据，并综合现有证据核验研究，构成有实质医学证据综合方法内容的学术分析；未宣称已经部署验证。",
+      "evidence_location": "PDF pp.1–5 Fig.1–2、Table1及评价框架",
+      "pdf_url": "https://www.nature.com/articles/s41746-026-03195-z_reference.pdf",
+      "pdf_sha256": "0c107a5d97cb580fc04691879cd797670d2c817488d003b9d24f18fc70fd23d8"
+    },
+    {
+      "source_code": "npjdigitalmed",
+      "id": "10.1038/s41746-026-03158-4",
+      "decision": "exclude",
+      "finding": "正式PDF p.2明确ASTRA是拟议临床试验中心的组织架构、角色通信与运营自动化设计，验证尚在计划；主要为常规试验协调管理框架，未报告实质科学分析方法或系统学术综述。",
+      "evidence_location": "PDF pp.1–3研究范围、Table1及功能团队",
+      "pdf_url": "https://www.nature.com/articles/s41746-026-03158-4_reference.pdf",
+      "pdf_sha256": "ab830a7fc1e34f88f3b3226d2a60d05d64ef06c189ac73e33c64b9c505767e23"
+    },
+    {
+      "source_code": "npjdigitalmed",
+      "id": "10.1038/s41746-026-03157-5",
+      "decision": "include",
+      "finding": "正式PDF pp.4–6实质综述HE2TEAD、sCellST、HE2RNA等从病理形态推断分子表达的方法、MSI及生物标志物验证，并比较空间多组学技术，按实质方法综述纳入。",
+      "evidence_location": "PDF pp.4–6 Prediction of molecular expression from H&E slides",
+      "pdf_url": "https://www.nature.com/articles/s41746-026-03157-5_reference.pdf",
+      "pdf_sha256": "e3f6aed4b839139eac2878912f5dad870236d9d62f84e1b21134c17d2f4648a9"
+    },
+    {
+      "source_code": "npjdigitalmed",
+      "id": "10.1038/s41746-026-03206-z",
+      "decision": "include",
+      "finding": "正式PDF实质综合ALS语音生物标志物纵向研究、Wav2DDK及PD分类的泄漏与外部验证证据，并提出参与者级标准，属于学术方法综述；基础模型只是研究议程，不标已训练模型。",
+      "evidence_location": "PDF pp.2–5 ALS证据、PD验证及Boxes1–2",
+      "pdf_url": "https://www.nature.com/articles/s41746-026-03206-z_reference.pdf",
+      "pdf_sha256": "253be8854c443ad7706bee05aabe4306cb86fa6360d81ede2db87924a3086f73"
+    },
+    {
+      "source_code": "npjdigitalmed",
+      "id": "10.1038/s41746-026-03266-1",
+      "decision": "include",
+      "finding": "正式PDF Table1实质比较RFdiffusion/ProteinMPNN抗体设计的实验规模、结合、亲和力及结构/功能验证，正文讨论GPCR和跨血脑屏障设计，按技术综述纳入而非仅产业愿景。",
+      "evidence_location": "PDF pp.4–6及Table1",
+      "pdf_url": "https://www.nature.com/articles/s41746-026-03266-1_reference.pdf",
+      "pdf_sha256": "36f8800d425ab6f20e0a7bedcec2e17bbf997758e98e1d505a54d72b8b8a2833"
+    },
+    {
+      "source_code": "npjdigitalmed",
+      "id": "10.1038/s41746-026-03344-4",
+      "decision": "include",
+      "finding": "正式PDF综述AI个性化深伪头像/XR心理治疗、会谈代理及社会机器人研究证据，Table1区分已有应用与拟议试验；是具身AI心理干预机制的实质学术综合，未把未来疗效当实证。",
+      "evidence_location": "PDF pp.2–4 Embodied and multimodal AI及Table1",
+      "pdf_url": "https://www.nature.com/articles/s41746-026-03344-4_reference.pdf",
+      "pdf_sha256": "0eba6947c4df822c904191a89fb4b0131dff60e18fadf7f11e5c76ecff1d3b35"
+    },
+    {
+      "source_code": "npjdigitalmed",
+      "id": "10.1038/s41746-026-03057-8",
+      "decision": "include",
+      "finding": "正式PDF方法及结果明确通过PINN独立学习结构与功能网络传播参数，结合纵向tau PET和LASSO基因分析研究阿尔茨海默病传播，不是仅经典图扩散仿真。",
+      "evidence_location": "PDF Results框架及Methods PINN参数识别",
+      "pdf_url": "https://www.nature.com/articles/s41746-026-03057-8_reference.pdf",
+      "pdf_sha256": "9834fc651c81add1eb48da9259062f12253e08e2a80675f6a5baf1509b5a944f"
+    },
+    {
+      "source_code": "npjdigitalmed",
+      "id": "10.1038/s41746-026-03431-6",
+      "decision": "include",
+      "finding": "正式PDF Methods明确物理逆问题参数随后输入支持向量回归，训练内10折选参及盲测试验证动脉僵硬PWV；AI是实际下游估计器，不把PDE优化本身标为神经网络。",
+      "evidence_location": "PDF pp.9–10 Machine learning model for arterial stiffness estimation",
+      "pdf_url": "https://www.nature.com/articles/s41746-026-03431-6_reference.pdf",
+      "pdf_sha256": "f2adb3a17786a43c574d42fee2493b5cdaf9166ac5a2fb2ecd1ff49b1e268536"
+    },
+    {
+      "source_code": "commsbio",
+      "id": "10.1038/s42003-026-11059-1",
+      "decision": "include",
+      "finding": "正式PDF Fig.2与Methods核实按leave-one-run-out训练前向编码权重及噪声协方差，并用贝叶斯后验解码位置和预测不确定性；实际概率学习用于MEG神经表征研究。",
+      "evidence_location": "PDF p.4 Fig.2及Methods生成式解码",
+      "pdf_url": "https://www.nature.com/articles/s42003-026-11059-1_reference.pdf"
+    },
+    {
+      "source_code": "commsbio",
+      "id": "10.1038/s42003-026-11089-9",
+      "decision": "include",
+      "finding": "正式PDF Methods核实利用CMA-ES演化优化拟合EI-MFM参数，1052人划分训练/验证/测试并进行网络扰动研究；实际演化优化参与数据约束脑网络机制识别，未把生物神经元本身当AI网络。",
+      "evidence_location": "PDF pp.10–11 Optimization of EI-MFM",
+      "pdf_url": "https://www.nature.com/articles/s42003-026-11089-9_reference.pdf"
+    },
+    {
+      "source_code": "commsbio",
+      "id": "10.1038/s42003-026-10642-w",
+      "decision": "include",
+      "finding": "出版方全文实质比较条件GAN、配对/非配对域转换、VAE和扩散模型用于神经状态映射，给出EEG冲突任务的八步操作及可证伪限制；按有具体方法内容的学术Perspective纳入，未把示例流程当已完成实验。",
+      "evidence_location": "正文Generative AI can enable an additional logic of inquiry及八步EEG示例",
+      "checked_at": "2026-11-17",
+      "official_fulltext_url": "https://www.nature.com/articles/s42003-026-10642-w"
+    },
+    {
+      "source_code": "npjdigitalmed",
+      "id": "10.1038/s41746-026-02701-7",
+      "decision": "include",
+      "finding": "出版方全文具体论证高海拔病理导致的分布偏移，综合RETFound等医学模型，Table2定义感知、检索、推理和监督接口，Boxes1–3给出评测与适用边界；按医学AI方法分析纳入，MSI高海拔应用仍是拟议架构。",
+      "evidence_location": "正文Operationalization of MSI agents、Table2及Boxes1–3",
+      "checked_at": "2026-11-17",
+      "official_fulltext_url": "https://www.nature.com/articles/s41746-026-02701-7"
+    },
+    {
+      "source_code": "j-92e8a1607c",
+      "id": "10.1007/s42765-026-00777-0",
+      "decision": "include",
+      "finding": "出版方全文Fig.10实质综述丝素柔性EMG电极与CNN手势识别（20名受试者、96%测试准确率），并讨论丝素忆阻器及感知学习机制；属于材料生物电子界面的实质AI技术综述。",
+      "evidence_location": "出版方全文Fig.10及相关CNN识别、忆阻器章节",
+      "checked_at": "2026-11-17",
+      "official_fulltext_url": "https://doi.org/10.1007/s42765-026-00777-0"
+    },
+    {
+      "source_code": "nature-palcomms",
+      "id": "10.1057/s41599-026-08575-0",
+      "decision": "include",
+      "finding": "正式PDF叙述性方法综述说明检索与纳入范围，具体综合LLM辅助定性编码、文本标注/机制变量和社会模拟的研究证据，并讨论代理变量有效性及验证；属于社会科学研究方法综述，未当作新实证系统。",
+      "evidence_location": "PDF pp.3–10方法范围、Table1及文本标注/机制变量",
+      "pdf_url": "https://www.nature.com/articles/s41599-026-08575-0_reference.pdf",
+      "checked_at": "2026-11-17",
+      "pdf_sha256": "227ecf65c253aab2f372bf686edf9e74c14a008ff94b01a6d7c77767d5d4fd07"
+    },
+    {
+      "source_code": "nature-palcomms",
+      "id": "10.1057/s41599-026-08825-1",
+      "decision": "exclude",
+      "finding": "正式PDF Methods为406名学生自报告问卷及PLS-SEM路径分析，AI聊天机器人为感知使用/沉浸的调查变量；限制部分明确未来才应纳入系统记录的真实使用数据，未实际利用AI执行科学分析或干预。",
+      "evidence_location": "PDF Methods问卷测量及p.17 Limitations",
+      "pdf_url": "https://www.nature.com/articles/s41599-026-08825-1_reference.pdf",
+      "checked_at": "2026-11-17",
+      "pdf_sha256": "c183e63b9e7acfeb07a39ef30d2df786a608ed8f6f88dd0f8f4b27a1e330174a"
+    },
+    {
+      "source_code": "sdata",
+      "id": "10.1038/s41597-026-08508-1",
+      "decision": "exclude",
+      "finding": "正式PDF Methods及Usage Notes为电表清洗、光伏装机匹配标签、完整率及辐照度物理一致性检查；未构建或评测AI模型，也未明确提供AI专门训练/评测协议，仅泛称可用于后续预测优化，按一般科学观测数据集排除。",
+      "evidence_location": "PDF Methods、Technical Validation及Usage Notes",
+      "pdf_url": "https://www.nature.com/articles/s41597-026-08508-1_reference.pdf",
+      "checked_at": "2026-11-17",
+      "pdf_sha256": "0fa8e70a60cc5b0f604405548442b8350c6b66a5fbaf0d9dcf50368c1c0c0b3d"
+    }
+  ],
+  "summary": {
+    "include": 1472,
+    "exclude": 476,
+    "pending": 107
+  },
+  "last_checked_at": "2026-11-17"
+}
