@@ -6,26 +6,25 @@
   "original_candidates": 2202,
   "supplemented_candidates": 19,
   "counts": {
-    "unreviewed": 1246,
-    "pending": 424,
-    "include": 490,
-    "exclude": 61
+    "pending": 430,
+    "include": 572,
+    "exclude": 72,
+    "unreviewed": 1147
   },
-  "abstract_content_reviewed_count": 582,
+  "abstract_content_reviewed_count": 681,
   "abstract_content_review_counts": {
-    "pending": 31,
-    "include": 490,
-    "exclude": 61
+    "pending": 37,
+    "include": 572,
+    "exclude": 72
   },
   "metadata_gate_only_count": 393,
   "current_round": {
-    "new_content_reviews": 51,
-    "original_unreviewed_processed": 37,
-    "metadata_gate_resolved": 2,
-    "supplemented_candidates": 12,
-    "noncandidate_official_records_excluded": 36,
-    "official_original_empty_abstracts_filled": 2,
-    "official_supplement_empty_abstracts_filled": 3
+    "new_content_reviews": 99,
+    "sources_content_reviewed": {
+      "commsphys": 38,
+      "commschem": 61
+    },
+    "official_abstracts_added": 0
   },
   "official_catalogue_reconciled_sources": 0,
   "publisher_abstract_repairs": [
@@ -34,6 +33,13 @@
     "10.1007/s11433-025-2848-2"
   ],
   "known_nonempty_abstract_quality_flags": [
+    {
+      "id": "10.1038/s42004-026-02138-9",
+      "venue": "commschem",
+      "title": "AI-assisted fragment-based drug discovery of SARS-CoV-2 macrodomain binders validated by NMR and X-ray crystallography",
+      "decision": "include",
+      "rationale": "深度学习及对接设计病毒Mac1片段结合剂，合成后以NMR及晶体学验证。"
+    },
     {
       "id": "10.1016/j.cmpb.2025.109141",
       "venue": "j-24982684ad",
@@ -141,6 +147,54 @@
     }
   ],
   "pending": [
+    {
+      "id": "10.1038/s42004-025-01866-8",
+      "venue": "commschem",
+      "title": "Modelling and estimation of chemical reaction yields from high-throughput experiments",
+      "url": "https://www.nature.com/articles/s42004-025-01866-8",
+      "rationale": "提出利用高通量设计结构的化学产率统计模型并批评不当ML应用；需核具体模型是否学习方法或仅常规统计估计，不能因背景AI字样纳入。",
+      "review_stage": "abstract_content_review"
+    },
+    {
+      "id": "10.1038/s42004-026-02067-7",
+      "venue": "commschem",
+      "title": "Conformational flexibility of talin enables force-free sampling of activation-competent states",
+      "url": "https://www.nature.com/articles/s42004-026-02067-7",
+      "rationale": "AlphaFold仅被描述为SAXS/Monte Carlo初始结构模板，需核其对新科学结论的实质作用，不能将常规结构引用等同AI核心贡献。",
+      "review_stage": "abstract_content_review"
+    },
+    {
+      "id": "10.1038/s42004-026-02155-8",
+      "venue": "commschem",
+      "title": "NMR spin relaxation enables the selection of realistic intrinsically disordered protein ensembles from molecular dynamics simulations",
+      "url": "https://www.nature.com/articles/s42004-026-02155-8",
+      "rationale": "NMR约束MD筛选蛋白构象未直接采用AI，虽声称建立用于ML的基准数据，需核公开资源与数据交付是否满足科学数据纳入。",
+      "review_stage": "abstract_content_review"
+    },
+    {
+      "id": "10.1038/s42005-026-02601-y",
+      "venue": "commsphys",
+      "title": "Dismantling complex networks based on higher-order graph neural network",
+      "url": "https://www.nature.com/articles/s42005-026-02601-y",
+      "rationale": "高阶GNN拆解真实及合成网络，但摘要未给出真实网络科学对象；需核实是否解决具体科学工程网络问题，而非仅通用图算法性能。",
+      "review_stage": "abstract_content_review"
+    },
+    {
+      "id": "10.1038/s42005-026-02655-y",
+      "venue": "commsphys",
+      "title": "Estimating quantum relative entropies on quantum computers",
+      "url": "https://www.nature.com/articles/s42005-026-02655-y",
+      "rationale": "量子相对熵电路算法有量子通道容量应用，但摘要未明确可训练模型及学习环节；需核方法确认量子算法与AI贡献。",
+      "review_stage": "abstract_content_review"
+    },
+    {
+      "id": "10.1038/s42005-026-02680-x",
+      "venue": "commsphys",
+      "title": "Fourier Analysis Perspective on Quantum Neural Networks",
+      "url": "https://www.nature.com/articles/s42005-026-02680-x",
+      "rationale": "量子神经网络傅里叶视角综述主要讨论模型表达与可训练性，虽涉及QODE求解，需核科学任务覆盖是否足够而非通用AI模型综述。",
+      "review_stage": "abstract_content_review"
+    },
     {
       "id": "10.1016/j.cogsc.2026.101059",
       "venue": "j-131412d3fe",
