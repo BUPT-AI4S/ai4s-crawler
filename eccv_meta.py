@@ -45,7 +45,11 @@ def parse_accepted_html(html: str, page_url: str) -> list[dict]:
         for link in title_cell.find_all("a", href=True):
             label = norm_space(link.get_text(" ", strip=True)) or ""
             href = urljoin(page_url, link["href"].strip())
-            if "project" in label.lower():
+            if href.rstrip("/").endswith("/public/PrivacyPolicy"):
+                continue
+            if link.has_attr("data-elc-skip") or re.fullmatch(
+                r"project(?:\s+(?:page|website))?\s*[\u2197\u2192]?", label, re.IGNORECASE
+            ):
                 project_url = href
                 continue
             if title_link is None and label and label.lower() not in ("pdf", "doi", "abs"):
