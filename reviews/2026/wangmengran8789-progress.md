@@ -2,9 +2,9 @@
 
 按2026分工处理48个来源。原年度候选2202条，已核实漏筛补录19条，台账合计2221条。快照`2026-11-08T21:38:12.854071+08:00`；最近检查main`56e073c0921723916d4e44b79ea95e4857c945a5`。2026尚未结束，当前快照不代表全年最终覆盖。
 
-累计681条已进行摘要内容判读：纳入572、排除72、内容待核37。上一检查点新增334条内容判读：Journal of Hydrology 94条、Science China Information Sciences 36条、npj Parkinson’s Disease 35条、BMC Biology 33条、Computer Methods and Programs in Biomedicine 136条。各条均有独立依据，未声称读取未访问的正文。
+累计806条已进行摘要内容判读：纳入682、排除86、内容待核38。上一检查点新增334条内容判读：Journal of Hydrology 94条、Science China Information Sciences 36条、npj Parkinson’s Disease 35条、BMC Biology 33条、Computer Methods and Programs in Biomedicine 136条。各条均有独立依据，未声称读取未访问的正文。
 
-另外393条原始空摘要仅完成元数据缺漏登记，标记pending和review_stage=metadata_gate_waiting_for_original_abstract，不计作内容审核完成。台账总状态为纳入572、排除72、待定430、未审1147。待定包含上述393条元数据登记及37条内容待核。原始空摘要404条中已补6条，仍空398条；另有非空摘要截断、正文片段或README混入等质量问题，审计中单列，不能把398理解为全部摘要问题数。
+另外393条原始空摘要仅完成元数据缺漏登记，标记pending和review_stage=metadata_gate_waiting_for_original_abstract，不计作内容审核完成。台账总状态为纳入682、排除86、待定431、未审1022。待定包含上述393条元数据登记及38条内容待核。原始空摘要404条中已补6条，仍空398条；另有非空摘要截断、正文片段或README混入等质量问题，审计中单列，不能把398理解为全部摘要问题数。
 
 所有原始字段和值保留，仅追加ai4s_review；19条补录沿用源papers.json原对象。纳入标签采用规范中英文词表。纳入后仍需核对正式元数据与公开PDF，只有实际查证值写入verified_metadata。未编辑其他负责人台账、2024/2025数据或监控提示逻辑。
 
@@ -12,7 +12,9 @@
 
 最近又完成Communications Physics 38条（27纳入、8排除、3待核）及Communications Chemistry 61条（55纳入、3排除、3待核）。
 
-下一步继续处理1147条未审、补398条仍空摘要与其他质量缺口、解决内容待核、核验纳入元数据及公开PDF，并按同口径逐DOI核对48来源2026官方目录。官网总数均保留null；EMNLP/LCTES候选零不代表官网零。本PR保持进行中，未合并发布大屏，不将缺漏提示强制改绿。
+Materials & Design的125条已逐篇判读：110纳入、14排除、1待核。若干原摘要公式/数值缺失已逐条标记，仍需官网补全。
+
+下一步继续处理1022条未审、补398条仍空摘要与其他质量缺口、解决内容待核、核验纳入元数据及公开PDF，并按同口径逐DOI核对48来源2026官方目录。官网总数均保留null；EMNLP/LCTES候选零不代表官网零。本PR保持进行中，未合并发布大屏，不将缺漏提示强制改绿。
 
 | 来源 | 原候选 | 补录 | 纳入 | 排除 | 待定 | 未审 | 仍为空摘要 |
 |---|---:|---:|---:|---:|---:|---:|---:|
@@ -29,7 +31,7 @@
 | npj Breast Cancer | 19 | 0 | 16 | 3 | 0 | 0 | 0 |
 | Transportation Research Part C Emerging Technologies | 26 | 0 | 22 | 0 | 4 | 0 | 4 |
 | Sensors and Actuators B Chemical | 31 | 0 | 0 | 0 | 23 | 8 | 23 |
-| Materials & Design | 125 | 0 | 0 | 0 | 0 | 125 | 0 |
+| Materials & Design | 125 | 0 | 110 | 14 | 1 | 0 | 0 |
 | Science China Information Sciences | 36 | 0 | 16 | 18 | 2 | 0 | 0 |
 | Energy and Buildings | 72 | 0 | 0 | 0 | 9 | 63 | 9 |
 | Knowledge-Based Systems | 125 | 0 | 0 | 0 | 61 | 64 | 61 |
