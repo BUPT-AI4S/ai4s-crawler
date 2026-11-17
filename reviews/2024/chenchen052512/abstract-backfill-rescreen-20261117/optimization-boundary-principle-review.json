@@ -1,0 +1,605 @@
+{
+  "review_type": "optimization_ai_boundary_principle_review",
+  "locked_main": "ea83575a",
+  "scope": "Only requested 12 root-input abstracts plus locked rules/vocabulary; no re-screen of other records and no modifications to prior recommendations.",
+  "principle_conclusion_cn": "可以纳入。按现行项目规则，明确的PSO、GA/NSGA-II/遗传编程/差分进化、Hunter-Prey等智能搜索，若直接决定具体科学或物理工程研究中的结构、材料、工况、控制或实验参数，并有摘要证据说明目标和两者联系，可构成AI实质参与。无需额外训练预测模型、神经网络或原创AI算法；使用成熟方法亦可。不能反向把任何优化、仿生称谓或词表中所有数学方法自动视为AI4S。",
+  "decision_test_cn": [
+    "先确认原创研究/实质综述及具体科学工程对象、目标或待发现规律；不能只见行业名或示例。",
+    "确认AI机制或足够明确的智能方法身份，如PSO、遗传演化、群体协同搜索、规则知识推断、贝叶斯学习/反演等；HPO在本例指Hunter-Prey，不是抽象超参数调优。",
+    "确认AI实际输入、输出或搜索动作直接参与该科学工程任务，非只在相关工作提及、比较基线或通用基准展示。",
+    "仅存在普通线性/混合整数规划、网格枚举、梯度求解、有限元/CFD、传统MPC、一般MCDM时，不能从optimization/prediction/control词推定AI。若没有额外明确AI机制，按摘要证据不足排除。",
+    "传统数值与AI混合方法应拆开角色：FEM+GA中FEM本身不是AI，但GA设计角色明确即可；MILP+PSO亦同。",
+    "单纯统计模型与知识术语需按实际作用判，不设必须神经网络或训练模型门槛；概率后验反演可以满足词表，单纯拟合/抽样/静态列表或一般定权不因相关术语自动纳入。"
+  ],
+  "rule_support": [
+    {
+      "file": "review-rules.md",
+      "quote": "有明确的科学或工程研究任务，AI 实质参与其中，摘要或原文支持两者的关系。"
+    },
+    {
+      "file": "REVIEW_TASK.md",
+      "quote": "不要将传统数值求解、常规控制或一般优化/MCDM仅因名称而当AI，也不要机械排除所有优化算法。"
+    },
+    {
+      "file": "review-rules.md",
+      "quote": "只提领域愿景或以领域数据演示通用性能，不能单独支撑纳入。"
+    }
+  ],
+  "vocabulary_definitions": [
+    {
+      "axis": "method",
+      "label": "粒子群优化",
+      "label_en": "Particle swarm optimization",
+      "definition": "利用群体粒子的位置与经验更新搜索连续优化解。",
+      "aliases": [
+        "PSO"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "群智能优化",
+      "label_en": "Swarm intelligence optimization",
+      "definition": "利用多个相互作用的候选个体协同搜索优化方案。"
+    },
+    {
+      "axis": "method",
+      "label": "演化优化",
+      "label_en": "Evolutionary optimization",
+      "definition": "通过种群、适应度选择及变异或重组等演化机制搜索科学或工程问题的解、程序、控制器或特征；包括遗传算法、遗传编程与差分进化。不因模拟生物演化现象本身而使用，也不将所有群智能或树搜索方法并入。",
+      "aliases": [
+        "Evolutionary algorithm",
+        "Evolutionary algorithms",
+        "Evolutionary computation",
+        "Genetic algorithm",
+        "演化算法",
+        "进化优化",
+        "进化算法",
+        "遗传优化",
+        "遗传算法"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "遗传编程",
+      "label_en": "Genetic programming",
+      "definition": "通过演化搜索程序或符号表达式。",
+      "aliases": [],
+      "evidence_urls": [
+        "https://api.crossref.org/works/10.1609/aaai.v38i11.29187",
+        "https://ojs.aaai.org/index.php/AAAI/article/view/29187",
+        "https://api.crossref.org/works/10.1609/aaai.v38i18.30050"
+      ]
+    },
+    {
+      "axis": "method",
+      "label": "贝叶斯优化",
+      "label_en": "Bayesian optimization",
+      "definition": "用概率代理和采集函数选择昂贵目标的下一次评估。"
+    },
+    {
+      "axis": "method",
+      "label": "贝叶斯学习",
+      "label_en": "Bayesian learning",
+      "definition": "结合先验与观测建立参数、状态或预测的后验分布。"
+    },
+    {
+      "axis": "method",
+      "label": "贝叶斯反演",
+      "label_en": "Bayesian inversion",
+      "definition": "利用贝叶斯推断从观测反推未知参数或状态。",
+      "aliases": [],
+      "evidence_urls": [
+        "https://api.crossref.org/works/10.1609/aaai.v38i14.29518",
+        "https://ojs.aaai.org/index.php/AAAI/article/view/29518"
+      ]
+    },
+    {
+      "axis": "contribution",
+      "label": "科学知识模型",
+      "label_en": "Scientific knowledge model",
+      "definition": "构建用于表示、推断或预测科学知识和规律的模型。"
+    },
+    {
+      "axis": "method",
+      "label": "知识图谱",
+      "label_en": "Knowledge graph",
+      "definition": "用实体及其关系构成的图结构组织、检索或推断知识。"
+    },
+    {
+      "axis": "method",
+      "label": "知识引导学习",
+      "label_en": "Knowledge-guided learning",
+      "definition": "把领域知识、规则或先验关系引入特征、模型或学习目标。"
+    },
+    {
+      "axis": "method",
+      "label": "模糊推理",
+      "label_en": "Fuzzy inference",
+      "definition": "通过模糊集合、规则与隶属度推理实现具有不确定性的预测或决策；单纯提及模糊性不足以使用本标签。"
+    }
+  ],
+  "tagging_cautions_cn": [
+    "粒子群优化优先用规范Particle swarm optimization标签；不可将所有PSO/鲸鱼/猎物/布谷鸟等群智能机械塞入Evolutionary optimization。后者定义明确不包括所有群智能。",
+    "GA、NSGA-II、遗传编程、差分进化可用演化优化；实际遗传编程搜索程序/表达式时可用更具体遗传编程。",
+    "未有更精确规范名的群体协同搜索可用群智能优化；标签只能在对应机制有证据时选择，不能反过来以词表存在决定纳入。",
+    "贝叶斯学习要求先验与观测形成后验，贝叶斯优化要求概率代理与采集函数；不能把任意Bayes字样都贴相同标签。",
+    "知识模型/知识图谱可通过结构化表征、推断或科学规律预测产生实质贡献，不要求神经网络；仅行业知识目录或通用检索工具不能据此自动纳入。",
+    "本代理此前ecm-a建议中将部分群智能宽泛标为演化优化，语义不够准确；本次只提出纠正原则，不改旧建议，请root采用统一规范标签时修正。"
+  ],
+  "per_record_recommendations": [
+    {
+      "root_input_index": 1,
+      "key": [
+        "j-c788b13dcd",
+        2024,
+        "10.1016/j.ijmecsci.2024.109019"
+      ],
+      "doi": "10.1016/j.ijmecsci.2024.109019",
+      "title": "Wrinkle-free membranes with optimized holes",
+      "recommendation": "include",
+      "scientific_task": "薄膜内部孔形及分布逆向设计，以消除受载起皱。",
+      "ai_role": "PSO直接搜索几何设计变量，理论应力模型评价，后屈曲与实物试验验证。",
+      "rationale_cn": "粒子群是词表明确列出的智能搜索方法，且不是一般数学示例：设计变量、力学目标和实验验证均具体。无需另外训练预测模型即可纳入。",
+      "evidence_quote": "The non-gradient particle swarm optimization (PSO) algorithm is implemented to determine the optimized holes",
+      "evidence_location": "已补官网原摘要",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0020740324000626?via%3Dihub",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_cn": "薄膜内部孔形及分布逆向设计，以消除受载起皱。"
+        },
+        {
+          "axis": "task",
+          "label": "结构拓扑优化",
+          "label_en": "Structural topology optimization",
+          "evidence_cn": "薄膜内部孔形及分布逆向设计，以消除受载起皱。"
+        },
+        {
+          "axis": "method",
+          "label": "粒子群优化",
+          "label_en": "Particle swarm optimization",
+          "evidence_cn": "PSO直接搜索几何设计变量，理论应力模型评价，后屈曲与实物试验验证。"
+        }
+      ],
+      "evidence_insufficient": false,
+      "boundary_for_root": false,
+      "boundary_note": null
+    },
+    {
+      "root_input_index": 5,
+      "key": [
+        "j-c788b13dcd",
+        2024,
+        "10.1016/j.ijmecsci.2024.109075"
+      ],
+      "doi": "10.1016/j.ijmecsci.2024.109075",
+      "title": "A parameter-adaptive spectral graph wavelet transform method for wind turbines vibration signal denoising",
+      "recommendation": "include",
+      "scientific_task": "风机振动信号去噪及故障相关特征恢复。",
+      "ai_role": "Hunter-Prey优化依据CKI指标自适应选择图小波参数和分解层数。",
+      "rationale_cn": "HPO不应误读为泛称超参数优化；原文明确Hunter-Prey群智能搜索，并用于风机真实故障信号的测量处理。AI作用在参数搜索而不必是神经预测。",
+      "evidence_quote": "The SGWT parameters are then optimized by the Hunter-Prey optimization (HPO) algorithm",
+      "evidence_location": "已补官网原摘要",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0020740324001188?via%3Dihub",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_cn": "风机振动信号去噪及故障相关特征恢复。"
+        },
+        {
+          "axis": "task",
+          "label": "机械故障诊断",
+          "label_en": "Mechanical fault diagnosis",
+          "evidence_cn": "风机振动信号去噪及故障相关特征恢复。"
+        },
+        {
+          "axis": "method",
+          "label": "群智能优化",
+          "label_en": "Swarm intelligence optimization",
+          "evidence_cn": "Hunter-Prey优化依据CKI指标自适应选择图小波参数和分解层数。"
+        }
+      ],
+      "evidence_insufficient": false,
+      "boundary_for_root": false,
+      "boundary_note": null
+    },
+    {
+      "root_input_index": 11,
+      "key": [
+        "j-c788b13dcd",
+        2024,
+        "10.1016/j.ijmecsci.2024.109128"
+      ],
+      "doi": "10.1016/j.ijmecsci.2024.109128",
+      "title": "Design optimization of the bamboo-inspired foam-filled tube for high-speed train collision energy absorption",
+      "recommendation": "include",
+      "scientific_task": "高铁碰撞吸能竹仿生泡沫填充管的多目标结构设计。",
+      "ai_role": "响应面代理连接仿真数据与NSGA-II遗传搜索，优化吸能和峰值碰撞力。",
+      "rationale_cn": "GA/NSGA-II为词表演化优化所含机制，直接决定具体吸能构件几何；试验与力学模型验证支持工程贡献。不是必须提出新AI方法才可纳入。",
+      "evidence_quote": "the response surface agent model and the non-dominated sorting genetic algorithm (NSGA-II)",
+      "evidence_location": "已补官网原摘要",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0020740324001711?via%3Dihub",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_cn": "高铁碰撞吸能竹仿生泡沫填充管的多目标结构设计。"
+        },
+        {
+          "axis": "task",
+          "label": "材料设计",
+          "label_en": "Materials design",
+          "evidence_cn": "高铁碰撞吸能竹仿生泡沫填充管的多目标结构设计。"
+        },
+        {
+          "axis": "method",
+          "label": "演化优化",
+          "label_en": "Evolutionary optimization",
+          "evidence_cn": "响应面代理连接仿真数据与NSGA-II遗传搜索，优化吸能和峰值碰撞力。"
+        }
+      ],
+      "evidence_insufficient": false,
+      "boundary_for_root": false,
+      "boundary_note": null
+    },
+    {
+      "root_input_index": 18,
+      "key": [
+        "j-c788b13dcd",
+        2024,
+        "10.1016/j.ijmecsci.2024.109227"
+      ],
+      "doi": "10.1016/j.ijmecsci.2024.109227",
+      "title": "Design and optimization of quasi-zero-stiffness dual harvester-absorber system",
+      "recommendation": "include",
+      "scientific_task": "准零刚度双采能吸振系统的低频宽带振动抑制与发电。",
+      "ai_role": "多目标遗传算法调整采能吸振器参数，并以物理方程评价响应及功率。",
+      "rationale_cn": "力学模型求解部分虽是传统数值方法，但GA实质承担系统设计，不能因模型未训练而抹去明确演化搜索角色。",
+      "evidence_quote": "by using the multi-objectives genetic algorithm",
+      "evidence_location": "已补官网原摘要",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0020740324002698?via%3Dihub",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_cn": "准零刚度双采能吸振系统的低频宽带振动抑制与发电。"
+        },
+        {
+          "axis": "task",
+          "label": "物理系统控制",
+          "label_en": "Physical system control",
+          "evidence_cn": "准零刚度双采能吸振系统的低频宽带振动抑制与发电。"
+        },
+        {
+          "axis": "method",
+          "label": "演化优化",
+          "label_en": "Evolutionary optimization",
+          "evidence_cn": "多目标遗传算法调整采能吸振器参数，并以物理方程评价响应及功率。"
+        }
+      ],
+      "evidence_insufficient": false,
+      "boundary_for_root": false,
+      "boundary_note": null
+    },
+    {
+      "root_input_index": 26,
+      "key": [
+        "j-c788b13dcd",
+        2024,
+        "10.1016/j.ijmecsci.2024.109299"
+      ],
+      "doi": "10.1016/j.ijmecsci.2024.109299",
+      "title": "Optimization and operation of interdigital transducer to improve signal-to-noise ratio",
+      "recommendation": "include",
+      "scientific_task": "Lamb波叉指换能器电极设计，以抑制杂散模态并提升信噪比。",
+      "ai_role": "多目标遗传算法对电极参数搜索，以杂散/目标模态比例为适应度。",
+      "rationale_cn": "摘要明确智能搜索、几何参数及声学目标；有限元机理与实验验证说明直接物理设计贡献。标准GA的实质使用足够，不要求另有学习模型。",
+      "evidence_quote": "Employing a multi-objective genetic algorithm",
+      "evidence_location": "已补官网原摘要",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0020740324003412?via%3Dihub",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_cn": "Lamb波叉指换能器电极设计，以抑制杂散模态并提升信噪比。"
+        },
+        {
+          "axis": "task",
+          "label": "材料设计",
+          "label_en": "Materials design",
+          "evidence_cn": "Lamb波叉指换能器电极设计，以抑制杂散模态并提升信噪比。"
+        },
+        {
+          "axis": "method",
+          "label": "演化优化",
+          "label_en": "Evolutionary optimization",
+          "evidence_cn": "多目标遗传算法对电极参数搜索，以杂散/目标模态比例为适应度。"
+        }
+      ],
+      "evidence_insufficient": false,
+      "boundary_for_root": false,
+      "boundary_note": null
+    },
+    {
+      "root_input_index": 41,
+      "key": [
+        "j-c788b13dcd",
+        2024,
+        "10.1016/j.ijmecsci.2024.109457"
+      ],
+      "doi": "10.1016/j.ijmecsci.2024.109457",
+      "title": "Crashworthiness optimization of variable stiffness B-pillar with thermoplastic composites",
+      "recommendation": "include",
+      "scientific_task": "复合材料汽车B柱分区刚度及铺层方案的轻量耐撞设计。",
+      "ai_role": "多岛遗传算法搜索铺层设计，机理仿真与弯曲试验约束力学性能。",
+      "rationale_cn": "具体铺层设计和耐撞评估与遗传搜索直接关联，符合工程设计纳入；仿真与试验主要贡献不削弱AI已实质参与的事实。",
+      "evidence_quote": "the multi-island genetic algorithm (MIGA) is employed to achieve the optimal layer design scheme",
+      "evidence_location": "已补官网原摘要",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0020740324004995?via%3Dihub",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_cn": "复合材料汽车B柱分区刚度及铺层方案的轻量耐撞设计。"
+        },
+        {
+          "axis": "task",
+          "label": "材料设计",
+          "label_en": "Materials design",
+          "evidence_cn": "复合材料汽车B柱分区刚度及铺层方案的轻量耐撞设计。"
+        },
+        {
+          "axis": "method",
+          "label": "演化优化",
+          "label_en": "Evolutionary optimization",
+          "evidence_cn": "多岛遗传算法搜索铺层设计，机理仿真与弯曲试验约束力学性能。"
+        }
+      ],
+      "evidence_insufficient": false,
+      "boundary_for_root": false,
+      "boundary_note": null
+    },
+    {
+      "root_input_index": 54,
+      "key": [
+        "j-c788b13dcd",
+        2024,
+        "10.1016/j.ijmecsci.2024.109557"
+      ],
+      "doi": "10.1016/j.ijmecsci.2024.109557",
+      "title": "Topology optimization of programable quasi-zero-stiffness metastructures for low-frequency vibration isolation",
+      "recommendation": "include",
+      "scientific_task": "针对自定义非线性力位移曲线逆向设计准零刚度超结构拓扑。",
+      "ai_role": "在遗传算法内加入边界光滑处理，生成满足隔振性能的整体实体结构。",
+      "rationale_cn": "明确演化拓扑搜索及目标力学曲线，并有实验验证，是直接AI工程逆向设计；不因大部分分析是机理计算而排除。",
+      "evidence_quote": "The boundary smoothing procedure is introduced in the genetic algorithm",
+      "evidence_location": "已补官网原摘要",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S002074032400599X?via%3Dihub",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_cn": "针对自定义非线性力位移曲线逆向设计准零刚度超结构拓扑。"
+        },
+        {
+          "axis": "task",
+          "label": "结构拓扑优化",
+          "label_en": "Structural topology optimization",
+          "evidence_cn": "针对自定义非线性力位移曲线逆向设计准零刚度超结构拓扑。"
+        },
+        {
+          "axis": "method",
+          "label": "演化优化",
+          "label_en": "Evolutionary optimization",
+          "evidence_cn": "在遗传算法内加入边界光滑处理，生成满足隔振性能的整体实体结构。"
+        }
+      ],
+      "evidence_insufficient": false,
+      "boundary_for_root": false,
+      "boundary_note": null
+    },
+    {
+      "root_input_index": 56,
+      "key": [
+        "j-c788b13dcd",
+        2024,
+        "10.1016/j.ijmecsci.2024.109563"
+      ],
+      "doi": "10.1016/j.ijmecsci.2024.109563",
+      "title": "Frequency band optimization of cavity-type metamaterials by acoustic split-frequency multiplexing",
+      "recommendation": "include",
+      "scientific_task": "腔式声学超材料单胞宽带吸声的参数设计。",
+      "ai_role": "遗传算法优化单胞参数，有限元与实物声学实验评价150–550Hz吸声性能。",
+      "rationale_cn": "GA虽仅作为设计工具，仍直接决定实现特定物理性能的结构参数；规则没有要求AI必须是论文主要创新或训练模型。",
+      "evidence_quote": "Specific parameters for the unit cell are optimized based on genetic algorithms.",
+      "evidence_location": "已补官网原摘要",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0020740324006040?via%3Dihub",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_cn": "腔式声学超材料单胞宽带吸声的参数设计。"
+        },
+        {
+          "axis": "task",
+          "label": "材料设计",
+          "label_en": "Materials design",
+          "evidence_cn": "腔式声学超材料单胞宽带吸声的参数设计。"
+        },
+        {
+          "axis": "method",
+          "label": "演化优化",
+          "label_en": "Evolutionary optimization",
+          "evidence_cn": "遗传算法优化单胞参数，有限元与实物声学实验评价150–550Hz吸声性能。"
+        }
+      ],
+      "evidence_insufficient": false,
+      "boundary_for_root": false,
+      "boundary_note": null
+    },
+    {
+      "root_input_index": 61,
+      "key": [
+        "j-c788b13dcd",
+        2024,
+        "10.1016/j.ijmecsci.2024.109589"
+      ],
+      "doi": "10.1016/j.ijmecsci.2024.109589",
+      "title": "Cellular gradient algorithm for solving complex mechanical optimization design problems",
+      "recommendation": "exclude",
+      "scientific_task": "通用不连续/不可微优化算法，摘要仅以未具名的机械多目标问题演示。",
+      "ai_role": "将梯度下降与元胞生长灭亡规则结合进行全局动态优化。",
+      "rationale_cn": "排除理由不应是未训练模型，也不能把元胞规则一概当AI。真正缺口在摘要未描述机械对象、物理目标、约束或所得工程知识，难区分直接工程贡献与通用优化算法的领域示例。按目前摘要初步证据不足排除并交root复核。",
+      "evidence_quote": "a multi-objective multi-parameter mechanical optimization design problem as an example.",
+      "evidence_location": "已补官网原摘要",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0020740324006301?via%3Dihub",
+      "tags": [],
+      "evidence_insufficient": true,
+      "boundary_for_root": true,
+      "boundary_note": "通用算法与直接工程任务的证据界线，不是训练模型要求。"
+    },
+    {
+      "root_input_index": 64,
+      "key": [
+        "j-c788b13dcd",
+        2024,
+        "10.1016/j.ijmecsci.2024.109595"
+      ],
+      "doi": "10.1016/j.ijmecsci.2024.109595",
+      "title": "An intelligent design system for tailored metamaterial properties",
+      "recommendation": "include",
+      "scientific_task": "按指定泊松比与弹性模量生成机械超材料结构。",
+      "ai_role": "PSO与移动可变组件拓扑优化结合，以群智能生成目标性质矩阵。",
+      "rationale_cn": "摘要明示swarm intelligence及具体目标弹性性质，工具形式不妨碍其直接材料设计贡献；不能以无需训练模型为由排除。模糊模型仅提及，未展开规则机制，标签可不强加模糊推理。",
+      "evidence_quote": "capitalizing on swarm intelligence for efficient material structure generation.",
+      "evidence_location": "已补官网原摘要",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0020740324006362?via%3Dihub",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_cn": "按指定泊松比与弹性模量生成机械超材料结构。"
+        },
+        {
+          "axis": "task",
+          "label": "材料设计",
+          "label_en": "Materials design",
+          "evidence_cn": "按指定泊松比与弹性模量生成机械超材料结构。"
+        },
+        {
+          "axis": "method",
+          "label": "粒子群优化",
+          "label_en": "Particle swarm optimization",
+          "evidence_cn": "PSO与移动可变组件拓扑优化结合，以群智能生成目标性质矩阵。"
+        }
+      ],
+      "evidence_insufficient": false,
+      "boundary_for_root": false,
+      "boundary_note": null
+    },
+    {
+      "root_input_index": 69,
+      "key": [
+        "j-c788b13dcd",
+        2024,
+        "10.1016/j.ijmecsci.2024.109650"
+      ],
+      "doi": "10.1016/j.ijmecsci.2024.109650",
+      "title": "Aperiodicity induced robust design of metabeams: Numerical and experimental studies",
+      "recommendation": "include",
+      "scientific_task": "制造缺陷下鲁棒非周期声学超材料梁的带隙设计。",
+      "ai_role": "遗传算法联合搜索谐振器质量、刚度、位置，优化带隙宽度与稳健性。",
+      "rationale_cn": "智能搜索变量与材料波动性能及制造鲁棒性有直接对应，物理梁实验验证，符合AI实质参与工程设计。",
+      "evidence_quote": "a global optimization problem, which is solved using the genetic algorithm.",
+      "evidence_location": "已补官网原摘要",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S002074032400691X?via%3Dihub",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_cn": "制造缺陷下鲁棒非周期声学超材料梁的带隙设计。"
+        },
+        {
+          "axis": "task",
+          "label": "材料设计",
+          "label_en": "Materials design",
+          "evidence_cn": "制造缺陷下鲁棒非周期声学超材料梁的带隙设计。"
+        },
+        {
+          "axis": "method",
+          "label": "演化优化",
+          "label_en": "Evolutionary optimization",
+          "evidence_cn": "遗传算法联合搜索谐振器质量、刚度、位置，优化带隙宽度与稳健性。"
+        }
+      ],
+      "evidence_insufficient": false,
+      "boundary_for_root": false,
+      "boundary_note": null
+    },
+    {
+      "root_input_index": 75,
+      "key": [
+        "j-c788b13dcd",
+        2024,
+        "10.1016/j.ijmecsci.2024.109753"
+      ],
+      "doi": "10.1016/j.ijmecsci.2024.109753",
+      "title": "Experiment-in-the-Loop system for fast and effective tuning of active vibration controllers",
+      "recommendation": "include",
+      "scientific_task": "主动振动控制器参数的自动实物试验调谐。",
+      "ai_role": "PSO循环提出控制器配置、执行结构试验并评价性能后更新参数。",
+      "rationale_cn": "不但有明确PSO，且直接闭环决定物理实验及控制方案，模型无关不等于AI缺失；无需神经网络也符合规则。",
+      "evidence_quote": "automates the tuning process through an algorithm based on Particle Swarm Optimization (PSO).",
+      "evidence_location": "已补官网原摘要",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S002074032400794X?via%3Dihub",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_cn": "主动振动控制器参数的自动实物试验调谐。"
+        },
+        {
+          "axis": "task",
+          "label": "物理系统控制",
+          "label_en": "Physical system control",
+          "evidence_cn": "主动振动控制器参数的自动实物试验调谐。"
+        },
+        {
+          "axis": "method",
+          "label": "粒子群优化",
+          "label_en": "Particle swarm optimization",
+          "evidence_cn": "PSO循环提出控制器配置、执行结构试验并评价性能后更新参数。"
+        }
+      ],
+      "evidence_insufficient": false,
+      "boundary_for_root": false,
+      "boundary_note": null
+    }
+  ],
+  "summary": {
+    "read_requested_abstracts": 12,
+    "include": 11,
+    "exclude": 1,
+    "boundary_for_root": 1
+  },
+  "limitations_cn": [
+    "只依据完整官网原摘要及锁定规则；未获取正文或重新联网。",
+    "61号记录的排除是具体工程贡献证据不足，不是证明其无科学应用；root若已有明确机械对象与目标证据，可据规则调整。",
+    "方法身份清晰可纳入不代表优化器名称一律充分；缩写/抽象算法未说明机制时应标边界而非臆断。",
+    "本文件是原则二审建议，不改变原审核状态、先前建议、摘要交付、共享词表或远程数据。"
+  ],
+  "input_sha256": "e2d4f7b789e4d5b3aebd75ec468296fb046f7db805dfca5bff7884c9ef3c6829"
+}
