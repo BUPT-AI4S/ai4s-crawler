@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-17T19:33:53.559504+00:00",
-  "commit": "a3849ca581305551f9f82c142f2a264bb0e13b7f",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/a3849ca581305551f9f82c142f2a264bb0e13b7f/",
+  "generated_at": "2026-11-17T20:03:26.280638+00:00",
+  "commit": "999cc223fe962ccb9a3579119df4471bc0a7d53e",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/999cc223fe962ccb9a3579119df4471bc0a7d53e/",
   "years": [
     {
       "year": 2024,
@@ -26219,18 +26219,18 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-17T11:31:12-08:00",
+            "at": "2026-11-17T12:00:03-08:00",
             "author": "h10",
-            "subject": "review: screen Agriculture Communications 2026 batch25",
+            "subject": "review: screen Cleaner Materials 2026 batch26",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
-              "metadata/j-1990fab752/2026/ai4s.json",
-              "metadata/j-1990fab752/2026/official-scope-audit-lixueting.json",
-              "metadata/j-1990fab752/2026/papers.json"
+              "metadata/j-54bd8c62a1/2026/ai4s.json",
+              "metadata/j-54bd8c62a1/2026/official-scope-audit-lixueting.json",
+              "reviews/2026/feedback/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 56
+          "commits_7d": 57
         },
         {
           "owner": "丁利军",
@@ -46836,18 +46836,18 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-17T11:31:12-08:00",
+            "at": "2026-11-17T12:00:03-08:00",
             "author": "h10",
-            "subject": "review: screen Agriculture Communications 2026 batch25",
+            "subject": "review: screen Cleaner Materials 2026 batch26",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
-              "metadata/j-1990fab752/2026/ai4s.json",
-              "metadata/j-1990fab752/2026/official-scope-audit-lixueting.json",
-              "metadata/j-1990fab752/2026/papers.json"
+              "metadata/j-54bd8c62a1/2026/ai4s.json",
+              "metadata/j-54bd8c62a1/2026/official-scope-audit-lixueting.json",
+              "reviews/2026/feedback/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 56
+          "commits_7d": 57
         },
         {
           "owner": "郝卓迪",
@@ -53463,35 +53463,50 @@
           "papers": 82,
           "papers_missing_abstract": 1,
           "snapshot_candidates": 7,
-          "candidates": 7,
-          "missing_abstract": 1,
+          "candidates": 11,
+          "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
+          "coverage_note": "逐PII对账：原82 raw中81匹配正式目录，100437官网仍In Press且无卷号，100445为当前目录缺采但固定截止范围未核，暂不补采。不能以82=82宣称齐全。初始7候选加4漏筛364/386/390/405共11，10纳入1排除（363仅AI展望）；404原始abstract null在raw和审核顶层保留，源及年度候选补出版社原摘要并记录abstract_backfill，当前候选摘要缺失0、原摘要未核0。12个唯一单篇citation已核，其中11属于当前正式目录，1是未归卷437；6个候选有单篇citation，另5个依据官网正式目录完整原摘要及稳定PII/题名关联原采集DOI，不冒称完整作者名单重新核验。全部82目录文字摘要已展开保存用于召回，非候选只按可用题名/原摘要线索初筛，不伪称全读全文。363官方类型与综述内容差异已披露。405的AlphaFold2结构预测为实际科研用途，不把其常规对接和人工突变选择当AI。438 Table5实际ML反应活性研究支持纳入；381 §9实际回收分选研究支持工程联系，不把愿景或所引指标写成作者新实验。年度raw LFS及源papers原样保留，PDF未验签留空。",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/journal/cleaner-materials/issues",
+            "https://www.sciencedirect.com/journal/cleaner-materials/vol/19/suppl/C",
+            "https://www.sciencedirect.com/journal/cleaner-materials/vol/20/suppl/C",
+            "https://www.sciencedirect.com/journal/cleaner-materials/vol/21/suppl/C",
+            "https://www.sciencedirect.com/journal/cleaner-materials/vol/22/suppl/C"
+          ],
+          "decisions": {
+            "include": 10,
+            "exclude": 1,
+            "pending": 0,
+            "unreviewed": 0
+          },
           "issues": [
-            "官网同口径总数尚未确认。",
-            "AI4S候选缺少摘要：1 篇。",
-            "尚未找到逐篇审核交付。"
+            "第22卷100444、100445的Available online日期未核；在100444返回CPE00002后已停止该页序列并请用户人工补日期，尚待答复。",
+            "目录新增100445在原82 raw中缺失，是否属于固定截止范围待核；暂不推定DOI、不补入raw或AI候选。",
+            "官网同口径总数尚未确认。"
           ],
           "actions": [
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
-            "提交逐篇审核结果或说明当前进度。"
+            "先读本聊天人工日期答复；官网恢复可直接补证，用户确认目前无法人工后再使用可靠替代资料并披露口径。",
+            "若100445确认在固定截止范围，按官网完整题名、作者、DOI/稳定PII补采并去重；其原摘要现无实质AI线索，不自动补入AI候选。",
+            "无需重抓已清四卷、已审11候选或失败页面；无人工答复时继续下一未开始来源。",
+            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2026/zch66883-lixueting.json",
+            "reviews/2026/feedback/zch66883-lixueting.json"
+          ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": null,
-          "final_missing_abstract": null,
+          "final_included": 10,
+          "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
           "abstract_recovered": 0,
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 1
+          "abstract_supplement_required": 0
         },
         {
           "code": "j-5514e73d4c",
@@ -69434,24 +69449,24 @@
         {
           "owner": "李雪婷",
           "sources": 51,
-          "delivered": 22,
+          "delivered": 23,
           "official": 20,
           "pending": 10,
           "open_issues": 41,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-17T11:31:12-08:00",
+            "at": "2026-11-17T12:00:03-08:00",
             "author": "h10",
-            "subject": "review: screen Agriculture Communications 2026 batch25",
+            "subject": "review: screen Cleaner Materials 2026 batch26",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
-              "metadata/j-1990fab752/2026/ai4s.json",
-              "metadata/j-1990fab752/2026/official-scope-audit-lixueting.json",
-              "metadata/j-1990fab752/2026/papers.json"
+              "metadata/j-54bd8c62a1/2026/ai4s.json",
+              "metadata/j-54bd8c62a1/2026/official-scope-audit-lixueting.json",
+              "reviews/2026/feedback/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 56
+          "commits_7d": 57
         },
         {
           "owner": "郝卓迪",
@@ -69779,7 +69794,7 @@
         },
         "2026": {
           "sources": 51,
-          "delivered": 22,
+          "delivered": 23,
           "official": 20,
           "pending": 10,
           "open_issues": 41,
@@ -69787,23 +69802,23 @@
         }
       },
       "sources": 153,
-      "delivered": 61,
+      "delivered": 62,
       "not_started": [
         "2025"
       ],
       "last_update": {
-        "at": "2026-11-17T11:31:12-08:00",
+        "at": "2026-11-17T12:00:03-08:00",
         "author": "h10",
-        "subject": "review: screen Agriculture Communications 2026 batch25",
+        "subject": "review: screen Cleaner Materials 2026 batch26",
         "area": "reviews",
         "paths": [
           "metadata/2026/ai4s.json",
-          "metadata/j-1990fab752/2026/ai4s.json",
-          "metadata/j-1990fab752/2026/official-scope-audit-lixueting.json",
-          "metadata/j-1990fab752/2026/papers.json"
+          "metadata/j-54bd8c62a1/2026/ai4s.json",
+          "metadata/j-54bd8c62a1/2026/official-scope-audit-lixueting.json",
+          "reviews/2026/feedback/zch66883-lixueting.json"
         ]
       },
-      "commits_7d": 56
+      "commits_7d": 57
     },
     {
       "owner": "龙兆科",
@@ -69987,9 +70002,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-17T19:33:23.875412+00:00",
+    "generated_at": "2026-11-17T20:02:58.171510+00:00",
     "history_available": true,
-    "commit": "a3849ca581305551f9f82c142f2a264bb0e13b7f",
-    "commits_scanned": 855
+    "commit": "999cc223fe962ccb9a3579119df4471bc0a7d53e",
+    "commits_scanned": 857
   }
 }
