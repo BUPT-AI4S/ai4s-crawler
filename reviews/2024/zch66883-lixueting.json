@@ -363563,13 +363563,17 @@
           "https://api.crossref.org/works/10.1016/j.energy.2024.132969",
           "https://www.sciencedirect.com/science/article/pii/S0360544224027439",
           "https://www.sciencedirect.com/science/article/abs/pii/S0360544224027439",
-          "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1016%2Fj.energy.2024.132969%22&format=json&resultType=core"
+          "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1016%2Fj.energy.2024.132969%22&format=json&resultType=core",
+          "https://ideas.repec.org/a/eee/energy/v308y2024ics0360544224027439.html"
         ],
         "article_type": "Research article",
-        "pdf_url": "https://dianqi.lut.edu.cn/__local/3/BB/BB/67D0E0EE48326CA3C92F8F6D3A3_F742EBF5_2C49474.pdf"
+        "pdf_url": "https://dianqi.lut.edu.cn/__local/3/BB/BB/67D0E0EE48326CA3C92F8F6D3A3_F742EBF5_2C49474.pdf",
+        "abstract_status": "not_provided_by_publisher",
+        "full_text_evidence_location": "出版方正式版PDF（作者单位公开汇编第65–87页）：首页无摘要框；§1.3主要贡献；§2 APSTFNet空间/时间分支与DAWCHOA；§3超参优化与层电导可解释框架；§4.1–4.3北方分布式光伏电站2019–2020年15分钟气象与功率数据及预处理；§5.2消融（表3、图17）、对比模型（表5、图19）与可解释性分析（图20–22）；§5.3西北另一电站验证（表6、图24）；§6结论",
+        "full_text_summary_zh": "审核概述（非作者原摘要）：论文针对超短期光伏功率预测，提出并行时空融合深度网络APSTFNet（多尺度卷积空间分支 + BiLSTM与自注意力时间分支），用改进黑猩猩优化算法DAWCHOA自动优化学习率、L2系数等超参数，并以层电导分析解释隐藏层神经元与气象输入（GHI、DHI、DNI等辐照度）对预测的贡献。在两座真实分布式光伏电站15分钟数据上，通过消融和与self-LSTM、CBAM-CNN等模型对比验证，RMSE、MAE等指标最优。"
       },
       "decision": "include",
-      "rationale": "2026-11-15替代渠道复核：大学公开全文说明APSTFNet用卷积、BiLSTM和自注意力预测光伏发电功率，DAWCHOA用于超参数优化，并以消融/模型对比及误差指标验证。科学工程任务和AI作用明确，依本轮允许全文证据的要求恢复纳入。未找到独立文字原摘要，abstract仍留空，未用正文或生成文字冒充摘要。",
+      "rationale": "2026-11-15替代渠道复核：大学公开全文说明APSTFNet用卷积、BiLSTM和自注意力预测光伏发电功率，DAWCHOA用于超参数优化，并以消融/模型对比及误差指标验证。科学工程任务和AI作用明确，依本轮允许全文证据的要求恢复纳入。未找到独立文字原摘要，abstract仍留空，未用正文或生成文字冒充摘要。 2026-11-17全文复核：通读出版方正式版全文，确认首页无独立文字摘要；研究任务为电力系统超短期光伏功率预测，深度学习模型直接完成预测并经两座真实电站数据、消融与对比实验验证，可解释分析将预测归因于辐照度等物理气象因子，维持纳入。",
       "tags": [
         {
           "axis": "domain",
@@ -363785,6 +363789,28 @@
         "original_abstract_found": false,
         "fulltext_url": "https://dianqi.lut.edu.cn/__local/3/BB/BB/67D0E0EE48326CA3C92F8F6D3A3_F742EBF5_2C49474.pdf",
         "evidence_location": "PDF第65页首页；第67–68页§1.3/§2及图1；第73页§3；第75页§4.3–5；第81页§5.2.4及表3。"
+      },
+      "abstract_resolution": {
+        "status": "publisher_no_text_abstract_full_text_reviewed",
+        "requires_abstract_backfill": false,
+        "basis": "正式全文及文献类型复核",
+        "original_abstract_preserved": true
+      },
+      "abstract_requirement": {
+        "checked_at": "2026-11-17",
+        "checked_by": "李雪婷",
+        "evidence_urls": [
+          "https://doi.org/10.1016/j.energy.2024.132969",
+          "https://www.sciencedirect.com/science/article/pii/S0360544224027439",
+          "https://ideas.repec.org/a/eee/energy/v308y2024ics0360544224027439.html",
+          "https://api.crossref.org/works/10.1016/j.energy.2024.132969",
+          "https://dianqi.lut.edu.cn/__local/3/BB/BB/67D0E0EE48326CA3C92F8F6D3A3_F742EBF5_2C49474.pdf"
+        ],
+        "status": "not_required",
+        "reason": "official_source_has_no_independent_abstract",
+        "review_basis": "verified_full_text",
+        "full_text_url": "https://dianqi.lut.edu.cn/__local/3/BB/BB/67D0E0EE48326CA3C92F8F6D3A3_F742EBF5_2C49474.pdf",
+        "note": "作者单位公开的出版方正式版（Energy 308 (2024) 132969）首页ARTICLE INFO仅列关键词、无Abstract框；ScienceDirect页面未显示文字摘要，RePEc注明无摘要，Crossref/OpenAlex/Semantic Scholar均无摘要。2026-11-17经负责人同意，由Claude代为通读正式全文完成科学任务、AI作用及文种核验，保留既有纳入结论。原始摘要为空，不使用全文概述冒充原摘要。"
       }
     }
   },
