@@ -6,22 +6,22 @@
   "original_candidates": 2202,
   "supplemented_candidates": 19,
   "counts": {
-    "pending": 431,
-    "include": 682,
-    "exclude": 86,
-    "unreviewed": 1022
+    "pending": 434,
+    "include": 819,
+    "exclude": 93,
+    "unreviewed": 875
   },
-  "abstract_content_reviewed_count": 806,
+  "abstract_content_reviewed_count": 953,
   "abstract_content_review_counts": {
-    "pending": 38,
-    "include": 682,
-    "exclude": 86
+    "pending": 41,
+    "include": 819,
+    "exclude": 93
   },
   "metadata_gate_only_count": 393,
   "current_round": {
-    "new_content_reviews": 125,
+    "new_content_reviews": 119,
     "sources_content_reviewed": {
-      "j-eb06e3a648": 125
+      "j-29c654efbc": 119
     },
     "official_abstracts_added": 0
   },
@@ -124,6 +124,69 @@
       "rationale": "GraphSAGE与DeepONet学习多尺度肺气道流量和压力，替代一维呼吸模拟；结果计算成本段截断待补。"
     },
     {
+      "id": "10.1186/s13321-026-01153-1",
+      "venue": "j-29c654efbc",
+      "title": "Ai derivation and exploration of antibiotic class spaces",
+      "decision": "pending",
+      "rationale": "片段分解重组及对接筛选抗生素空间，但摘要未明确使用何种学习模型；需核eFilter预测方法是否AI而非规则和传统对接。"
+    },
+    {
+      "id": "10.1186/s13321-025-01128-8",
+      "venue": "j-29c654efbc",
+      "title": "Addressing model overcomplexity in drug-drug interaction prediction with molecular fingerprints",
+      "decision": "include",
+      "rationale": "控制分类器比较指纹和预训练分子嵌入的药物交互预测，严格骨架分布外验证并解释机制片段。"
+    },
+    {
+      "id": "10.1186/s13321-026-01195-5",
+      "venue": "j-29c654efbc",
+      "title": "CReM-pharm: de novo 3D pharmacophore-based design with synthetic accessibility awareness",
+      "decision": "exclude",
+      "rationale": "基于CReM片段枚举与三维药效团约束生成分子，深度模型仅为比较基线，摘要未见本方法AI学习贡献。"
+    },
+    {
+      "id": "10.1186/s13321-026-01253-y",
+      "venue": "j-29c654efbc",
+      "title": "MINERVA: a public XAI-powered platform advancing multi-target discovery in Alzheimer’s disease",
+      "decision": "include",
+      "rationale": "平衡随机森林多靶点多阈值预测阿尔茨海默配体活性，结合适用域及片段解释公开研究平台。"
+    },
+    {
+      "id": "10.1186/s13321-026-01255-w",
+      "venue": "j-29c654efbc",
+      "title": "Transformer-based molecular fragment prediction using SMILES and DeepSMILES representations in a fragment-based drug discovery pipeline",
+      "decision": "include",
+      "rationale": "匹配模型比较DeepSMILES与SMILES药物片段恢复，基于对接来源标签和置信选择验证。"
+    },
+    {
+      "id": "10.1186/s13321-026-01270-x",
+      "venue": "j-29c654efbc",
+      "title": "MK-ensemble: fragment-based multi-kernel ensemble for interpretable structure-activity relationship modeling of steroidal saponins",
+      "decision": "include",
+      "rationale": "多核SVR、域适应和堆叠学习小样本天然产物抗氧化构效，嵌套验证及片段归因分析。"
+    },
+    {
+      "id": "10.1186/s13321-026-01292-5",
+      "venue": "j-29c654efbc",
+      "title": "Morgan fingerprints outperform physicochemical descriptors for scaffold-aware machine learning classification of β3-adrenergic receptor agonists",
+      "decision": "include",
+      "rationale": "整理亚型选择性对照并以骨架分组验证β3受体激动剂预测，比较指纹及物理描述；摘要SHAP句残缺待核。"
+    },
+    {
+      "id": "10.1186/s13321-026-01293-4",
+      "venue": "j-29c654efbc",
+      "title": "HSSynergy: scale-aware hierarchical attention for interpretable drug synergy prediction",
+      "decision": "include",
+      "rationale": "多尺度图注意力与细胞主动选择子结构预测抗癌药物协同，检验新药及细胞泛化并解释功能片段。"
+    },
+    {
+      "id": "10.1186/s13321-026-01324-0",
+      "venue": "j-29c654efbc",
+      "title": "GCMDiff: a condition-guided diffusion framework for pharmacophore-fragment drug discovery and target-specific molecular design",
+      "decision": "include",
+      "rationale": "药效团片段及药物性质条件引导图扩散分子生成，以EGFR结合相互作用案例验证。"
+    },
+    {
       "id": "10.1016/j.omtn.2026.103003",
       "venue": "j-4bf1b752f6",
       "title": "CRISPRing through time: How cutting-edge technology is revolutionizing life sciences and medicine",
@@ -150,6 +213,13 @@
       "title": "A physics-informed and personalised federated learning framework for ship fuel consumption prediction",
       "decision": "pending",
       "rationale": "原摘要缺失，需官方补证船舶燃耗预测的方法、数据及物理/联邦学习作用。"
+    },
+    {
+      "id": "10.1016/j.agrformet.2025.111005",
+      "venue": "j-dad8818884",
+      "title": "The impact of nonlinear surface energy partitioning on potential evapotranspiration: A machine learning study based on FLUXNET data",
+      "decision": "include",
+      "rationale": "ML从FLUXNET学习能量分配与环境非线性，改善潜在蒸散估计；原摘要含EQUATION占位需补公式。"
     },
     {
       "id": "10.1016/j.matdes.2026.115584",
@@ -512,6 +582,30 @@
       "title": "RS-Agent: automating remote sensing tasks through intelligent agent",
       "url": "https://doi.org/10.1007/s11432-026-5026-5",
       "rationale": "遥感智能体主要报告分类计数和VQA，需核实是否完成具体地学分析或物理SAR流程，不能只按领域图像基准纳入。",
+      "review_stage": "abstract_content_review"
+    },
+    {
+      "id": "10.1186/s13321-026-01153-1",
+      "venue": "j-29c654efbc",
+      "title": "Ai derivation and exploration of antibiotic class spaces",
+      "url": "https://doi.org/10.1186/s13321-026-01153-1",
+      "rationale": "片段分解重组及对接筛选抗生素空间，但摘要未明确使用何种学习模型；需核eFilter预测方法是否AI而非规则和传统对接。",
+      "review_stage": "abstract_content_review"
+    },
+    {
+      "id": "10.1186/s13321-026-01267-6",
+      "venue": "j-29c654efbc",
+      "title": "OpencanSARchem: chemical registration and standardization pipeline for FAIR integration of bioassay data",
+      "url": "https://doi.org/10.1186/s13321-026-01267-6",
+      "rationale": "化学结构标准化和互变异构体注册工具本身未使用AI；需核其实际开放数据交付或下游学习验证是否满足科学数据资源范围。",
+      "review_stage": "abstract_content_review"
+    },
+    {
+      "id": "10.1186/s13321-026-01283-6",
+      "venue": "j-29c654efbc",
+      "title": "BONAFIDE: a Python framework for the calculation of local features for atoms and bonds in molecules",
+      "url": "https://doi.org/10.1186/s13321-026-01283-6",
+      "rationale": "开源整合590种原子键描述符支持ML，但仅展示特征生成及运行时；需核是否有满足AI4S资源标准的学习验证或专用数据交付。",
       "review_stage": "abstract_content_review"
     },
     {
