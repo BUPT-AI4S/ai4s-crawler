@@ -5,8 +5,8 @@
   "year": 2026,
   "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
   "cutoff_at": "2026-11-16T23:14:20-08:00",
-  "checked_at": "2026-11-17T09:28:18.025627-08:00",
-  "main_commit": "b974412793649cb09c79c69eb6271158d2b39097",
+  "checked_at": "2026-11-17T09:57:32.697077-08:00",
+  "main_commit": "c33a61542671c720c3c3578578a8c8d2b8518c5e",
   "official_total": 25,
   "official_scope": "固定截止前已正式公布卷5第1—4期的final/fully citable文章；第4期虽in progress但六篇已在截止前上线且归期，非Articles in Press。",
   "reconciliation_key": "publisher PII; DOI linked from existing source objects where individual page blocked",
@@ -48,24 +48,24 @@
   "initial_candidate_total": 7,
   "candidate_total": 9,
   "candidate_missing_abstracts": 0,
-  "candidate_primary_abstracts_unverified": 2,
+  "candidate_primary_abstracts_unverified": 1,
   "added_recall_check_candidates": [
     "10.1016/j.enrev.2026.100204",
     "10.1016/j.enrev.2026.100214"
   ],
   "review_counts": {
-    "include": 3,
+    "include": 4,
     "exclude": 0,
-    "pending": 6,
+    "pending": 5,
     "unreviewed": 0
   },
   "remaining_recall_check_dois": [],
   "completion_status": "coverage_verified_review_pending",
-  "coverage_note": "正常浏览器成功核清卷5第1—4期全部25个唯一出版社PII（5+7+7+6），与原25条采集按PII逐项一致，无漏项/额外项；21 Review article和4 Short review。第4期In progress但官方明确所含文章final and fully citable，六篇citation_online_date为2026-09-18至10-28均早于固定截止，初始快照已有12月正式卷期记录，因此与Articles in Press分开，不按12月封面日期误排。12个单篇页取得官方原摘要/元数据，余13页后续返回CPE00002，未把失败响应当论文正文；后者DOI沿用原采集、以官网PII连接而非声称逐个官网DOI已读。初始7候选加2疑似漏筛线索为9，3纳入6待定；16非候选仅按现有题名/摘要线索核查，未假称全文已读。9候选输入摘要非空，其中2篇原摘要尚未官网补验；3纳入均有官网原摘要，PDF未验签留空。",
+  "coverage_note": "沿用batch21已核官网四期25个唯一PII（5+7+7+6），原25采集完全匹配，无补采，21 Review article、4 Mini/Short review。第4期明确final/fully citable、六篇均在固定截止前上线，不按12月封面误排。batch21取得12个单篇官网元数据，另13页当时CPE00002；本轮单独补到100176完整原摘要及citation，累计13篇官网记录核实，其余DOI仍按原采集与官方PII关联。9候选现4纳入5待定，2条新增核查线索已在batch21入候选；输入摘要均非空，官网原摘要未补验数由2降1（100193）。16非候选未伪称全文已读。官网原摘要充分的4纳入不因PDF留空重列科学pending。",
   "issues": [
-    "候选100176与100193的官网原摘要及必要AI方法段落仍未核实；原摘要/全文直接403、正常浏览器CPE00002，已请求人工核验尚未答复。",
+    "100193的官网原摘要及必要AI方法段落仍需核实；原先受403及浏览器CPE00002阻挡，已请求人工核验未答复。100176本轮官网恢复后已取得原摘要并纳入，不再作为问题。",
     "100207、100215、100204、100214须合法正文辨别具体AI模型/科学任务或实质综述，不能仅凭AI字样、平台数字化或未来愿景纳入。",
-    "3纳入有官网原摘要与正式类型/卷期支撑，未取得可验签PDF而留空；不单因PDF未得将其列科学pending。"
+    "4篇纳入的公开PDF尚未验签留空；原摘要已足以支持相关判断，不单因PDF未得列科学pending。"
   ],
   "next_actions": [
     "先读本聊天人工核验答复；能人工则补上述6篇原摘要/相关正文，确认无法人工后再使用合法可靠替代来源。",
@@ -444,11 +444,11 @@
       "issue": "1",
       "issue_url": "https://www.sciencedirect.com/journal/energy-reviews/vol/5/issue/1",
       "document_type": "Review article",
-      "doi_provenance": "existing collection joined to official publisher PII",
-      "online_date": null,
+      "doi_provenance": "publisher citation_doi",
+      "online_date": "2026/03/12",
       "formal_scope_basis": "第1—3期为官网已公布正式期次。",
-      "screening_result": "pending",
-      "rationale": "输入摘要称综述以DFT/ML预测吸附能和活性位点以服务无贵金属氢能催化，但官网单篇页直接403、正常浏览器CPE00002，未补验官网原摘要及实质ML讨论。正式卷5期1和Review类型已由官网目录核实；需合法原摘要/正文，不能仅凭初筛或输入来源作正式纳入。"
+      "screening_result": "include",
+      "rationale": "待定补证后纳入。官网单篇页现恢复可读，完整原摘要明确综述以ML预测吸附能、识别活性位并指导原位表征，直接服务无贵金属氢能催化剂的设计；不是只提AI未来潜力。原先官网原摘要未核实的问题已解决。本文为综述，不声称本综述新执行模型训练，也不把普通DFT、金属材料或工业规模化描述本身当作AI。"
     },
     {
       "doi": "10.1016/j.enrev.2026.100179",
@@ -465,5 +465,6 @@
       "screening_result": "not_candidate_on_available_evidence",
       "rationale": "核对官网期次题名/类型与当前已有摘要线索，暂未发现需候选补核的实质AI用途；未声称逐篇全文已读或伪造正式排除。"
     }
-  ]
+  ],
+  "individual_publisher_records_verified_total": 13
 }

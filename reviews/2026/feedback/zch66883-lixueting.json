@@ -695,15 +695,15 @@
     "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
     "official_total": 25,
     "official_scope": "固定截止前已正式公布卷5第1—4期的final/fully citable文章；第4期虽in progress但六篇已在截止前上线且归期，非Articles in Press。",
-    "coverage_note": "正常浏览器成功核清卷5第1—4期全部25个唯一出版社PII（5+7+7+6），与原25条采集按PII逐项一致，无漏项/额外项；21 Review article和4 Short review。第4期In progress但官方明确所含文章final and fully citable，六篇citation_online_date为2026-09-18至10-28均早于固定截止，初始快照已有12月正式卷期记录，因此与Articles in Press分开，不按12月封面日期误排。12个单篇页取得官方原摘要/元数据，余13页后续返回CPE00002，未把失败响应当论文正文；后者DOI沿用原采集、以官网PII连接而非声称逐个官网DOI已读。初始7候选加2疑似漏筛线索为9，3纳入6待定；16非候选仅按现有题名/摘要线索核查，未假称全文已读。9候选输入摘要非空，其中2篇原摘要尚未官网补验；3纳入均有官网原摘要，PDF未验签留空。",
+    "coverage_note": "沿用batch21已核官网四期25个唯一PII（5+7+7+6），原25采集完全匹配，无补采，21 Review article、4 Mini/Short review。第4期明确final/fully citable、六篇均在固定截止前上线，不按12月封面误排。batch21取得12个单篇官网元数据，另13页当时CPE00002；本轮单独补到100176完整原摘要及citation，累计13篇官网记录核实，其余DOI仍按原采集与官方PII关联。9候选现4纳入5待定，2条新增核查线索已在batch21入候选；输入摘要均非空，官网原摘要未补验数由2降1（100193）。16非候选未伪称全文已读。官网原摘要充分的4纳入不因PDF留空重列科学pending。",
     "collected_total_same_scope": 25,
     "candidate_total": 9,
     "candidate_missing_abstracts": 0,
-    "candidate_primary_abstracts_unverified": 2,
+    "candidate_primary_abstracts_unverified": 1,
     "review_counts": {
-      "include": 3,
+      "include": 4,
       "exclude": 0,
-      "pending": 6,
+      "pending": 5,
       "unreviewed": 0
     },
     "evidence_urls": [
@@ -714,17 +714,49 @@
       "https://www.sciencedirect.com/journal/energy-reviews/vol/5/issue/4"
     ],
     "issues": [
-      "候选100176与100193的官网原摘要及必要AI方法段落仍未核实；原摘要/全文直接403、正常浏览器CPE00002，已请求人工核验尚未答复。",
+      "100193的官网原摘要及必要AI方法段落仍需核实；原先受403及浏览器CPE00002阻挡，已请求人工核验未答复。100176本轮官网恢复后已取得原摘要并纳入，不再作为问题。",
       "100207、100215、100204、100214须合法正文辨别具体AI模型/科学任务或实质综述，不能仅凭AI字样、平台数字化或未来愿景纳入。",
-      "3纳入有官网原摘要与正式类型/卷期支撑，未取得可验签PDF而留空；不单因PDF未得将其列科学pending。"
+      "4篇纳入的公开PDF尚未验签留空；原摘要已足以支持相关判断，不单因PDF未得列科学pending。"
     ],
     "next_actions": [
       "先读本聊天人工核验答复；能人工则补上述6篇原摘要/相关正文，确认无法人工后再使用合法可靠替代来源。",
       "无答复时保留已核四期目录与9篇判断，不反复请求受阻页面；继续其他来源的官方核验。"
     ],
     "completion_status": "coverage_verified_review_pending",
-    "checked_at": "2026-11-17T09:28:18.025627-08:00",
+    "checked_at": "2026-11-17T09:57:32.697077-08:00",
     "cutoff_at": "2026-11-16T23:14:20-08:00",
     "candidate_file_sha256": "e8d19871bdb98abf673a11cdc8899f793fba84f37243bf56e309f9f484c70576"
+  },
+  {
+    "year": 2026,
+    "source_code": "j-31f1ddbac1",
+    "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+    "official_total": 8,
+    "official_scope": "固定首次截止前已正式公布卷81第1期2条、第2期3条及合期3–4共3条，全部8条；6 Review article及2 Editorial board分列。合期虽In progress，官网明示所含文章final and fully citable，三篇online日期2026-08-26、09-02、09-25早于截止。",
+    "coverage_note": "官网三期目录8个唯一PII与原8条采集逐项匹配，无漏项或额外项；6篇综述均取得官网原摘要，2编委会条目按文种单列。初始0候选不视为无AI，恢复2条漏筛并补官网原摘要，2篇均纳入，另4非候选完成现有题名/原摘要与可得预览线索核查，无遗留队列。100697凭HAL公开作者稿§2.1.3及案例确认实质AI内容，51页PDF验签、全页文本提取及相关9—12页视觉核查；100677订阅PDF留空但原摘要/公开预览充分。原始全量8对象保持不变，两条原摘要null在逐篇审核原字段亦保留；仅新增候选metadata补入官方摘要并用abstract_backfill记录原null及原路径，verified_metadata另存已核摘要。候选文件2篇摘要完整，科学判定与必要元数据核验均完成。",
+    "collected_total_same_scope": 8,
+    "candidate_total": 2,
+    "candidate_missing_abstracts": 0,
+    "candidate_primary_abstracts_unverified": 0,
+    "review_counts": {
+      "include": 2,
+      "exclude": 0,
+      "pending": 0,
+      "unreviewed": 0
+    },
+    "evidence_urls": [
+      "https://www.sciencedirect.com/journal/surface-science-reports/issues",
+      "https://www.sciencedirect.com/journal/surface-science-reports/vol/81/issue/1",
+      "https://www.sciencedirect.com/journal/surface-science-reports/vol/81/issue/2",
+      "https://www.sciencedirect.com/journal/surface-science-reports/vol/81/issue/3",
+      "https://hal.science/hal-05841176v1"
+    ],
+    "issues": [],
+    "next_actions": [],
+    "completion_status": "complete",
+    "checked_at": "2026-11-17T09:55:05.958577-08:00",
+    "cutoff_at": "2026-11-16T23:14:20-08:00",
+    "candidate_file_sha256": "963faa28a367981a867caecdc586ce28ca275ca4f4a2fe56bc845e6b133ec3e0",
+    "original_candidate_source_abstracts_recovered": 2
   }
 ]
