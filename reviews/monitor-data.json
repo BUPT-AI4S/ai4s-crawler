@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-17T17:05:46.464458+00:00",
-  "commit": "4eecb6dfe13dc43a948ebbcc0c612daec4540901",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/4eecb6dfe13dc43a948ebbcc0c612daec4540901/",
+  "generated_at": "2026-11-17T17:33:46.518380+00:00",
+  "commit": "724c99972a0c1f6c41caa99981f870438f8f9053",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/724c99972a0c1f6c41caa99981f870438f8f9053/",
   "years": [
     {
       "year": 2024,
@@ -26219,18 +26219,18 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-17T09:02:21-08:00",
+            "at": "2026-11-17T09:30:24-08:00",
             "author": "h10",
-            "subject": "review: complete cardiovascular source and verify green energy partial scope",
+            "subject": "review: reconcile Energy Reviews issues and retain evidence gaps",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
-              "metadata/j-d49438c2b7/2026/ai4s.json",
-              "metadata/j-d49438c2b7/2026/official-scope-audit-lixueting.json",
-              "metadata/natcardiovascres/2026/ai4s.json"
+              "metadata/j-1eb350782d/2026/ai4s.json",
+              "metadata/j-1eb350782d/2026/official-scope-audit-lixueting.json",
+              "reviews/2026/feedback/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 51
+          "commits_7d": 52
         },
         {
           "owner": "丁利军",
@@ -46836,18 +46836,18 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-17T09:02:21-08:00",
+            "at": "2026-11-17T09:30:24-08:00",
             "author": "h10",
-            "subject": "review: complete cardiovascular source and verify green energy partial scope",
+            "subject": "review: reconcile Energy Reviews issues and retain evidence gaps",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
-              "metadata/j-d49438c2b7/2026/ai4s.json",
-              "metadata/j-d49438c2b7/2026/official-scope-audit-lixueting.json",
-              "metadata/natcardiovascres/2026/ai4s.json"
+              "metadata/j-1eb350782d/2026/ai4s.json",
+              "metadata/j-1eb350782d/2026/official-scope-audit-lixueting.json",
+              "reviews/2026/feedback/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 51
+          "commits_7d": 52
         },
         {
           "owner": "郝卓迪",
@@ -50840,26 +50840,44 @@
           "papers": 25,
           "papers_missing_abstract": 0,
           "snapshot_candidates": 7,
-          "candidates": 7,
+          "candidates": 9,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 25,
+          "official_scope": "固定截止前已正式公布卷5第1—4期的final/fully citable文章；第4期虽in progress但六篇已在截止前上线且归期，非Articles in Press。",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
+          "coverage_note": "正常浏览器成功核清卷5第1—4期全部25个唯一出版社PII（5+7+7+6），与原25条采集按PII逐项一致，无漏项/额外项；21 Review article和4 Short review。第4期In progress但官方明确所含文章final and fully citable，六篇citation_online_date为2026-09-18至10-28均早于固定截止，初始快照已有12月正式卷期记录，因此与Articles in Press分开，不按12月封面日期误排。12个单篇页取得官方原摘要/元数据，余13页后续返回CPE00002，未把失败响应当论文正文；后者DOI沿用原采集、以官网PII连接而非声称逐个官网DOI已读。初始7候选加2疑似漏筛线索为9，3纳入6待定；16非候选仅按现有题名/摘要线索核查，未假称全文已读。9候选输入摘要非空，其中2篇原摘要尚未官网补验；3纳入均有官网原摘要，PDF未验签留空。",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/journal/energy-reviews/issues",
+            "https://www.sciencedirect.com/journal/energy-reviews/vol/5/issue/1",
+            "https://www.sciencedirect.com/journal/energy-reviews/vol/5/issue/2",
+            "https://www.sciencedirect.com/journal/energy-reviews/vol/5/issue/3",
+            "https://www.sciencedirect.com/journal/energy-reviews/vol/5/issue/4"
+          ],
+          "decisions": {
+            "include": 3,
+            "exclude": 0,
+            "pending": 6,
+            "unreviewed": 0
+          },
           "issues": [
-            "官网同口径总数尚未确认。",
-            "尚未找到逐篇审核交付。"
+            "候选100176与100193的官网原摘要及必要AI方法段落仍未核实；原摘要/全文直接403、正常浏览器CPE00002，已请求人工核验尚未答复。",
+            "100207、100215、100204、100214须合法正文辨别具体AI模型/科学任务或实质综述，不能仅凭AI字样、平台数字化或未来愿景纳入。",
+            "3纳入有官网原摘要与正式类型/卷期支撑，未取得可验签PDF而留空；不单因PDF未得将其列科学pending。",
+            "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "提交逐篇审核结果或说明当前进度。"
+            "先读本聊天人工核验答复；能人工则补上述6篇原摘要/相关正文，确认无法人工后再使用合法可靠替代来源。",
+            "无答复时保留已核四期目录与9篇判断，不反复请求受阻页面；继续其他来源的官方核验。",
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
+            "按交付文件逐篇补证并处理待定、未审记录。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2026/zch66883-lixueting.json",
+            "reviews/2026/feedback/zch66883-lixueting.json"
+          ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": null,
-          "final_missing_abstract": null,
+          "final_included": 3,
+          "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
           "abstract_recovered": 0,
@@ -69380,24 +69398,24 @@
         {
           "owner": "李雪婷",
           "sources": 51,
-          "delivered": 18,
-          "official": 17,
-          "pending": 10,
+          "delivered": 19,
+          "official": 18,
+          "pending": 16,
           "open_issues": 42,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-17T09:02:21-08:00",
+            "at": "2026-11-17T09:30:24-08:00",
             "author": "h10",
-            "subject": "review: complete cardiovascular source and verify green energy partial scope",
+            "subject": "review: reconcile Energy Reviews issues and retain evidence gaps",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
-              "metadata/j-d49438c2b7/2026/ai4s.json",
-              "metadata/j-d49438c2b7/2026/official-scope-audit-lixueting.json",
-              "metadata/natcardiovascres/2026/ai4s.json"
+              "metadata/j-1eb350782d/2026/ai4s.json",
+              "metadata/j-1eb350782d/2026/official-scope-audit-lixueting.json",
+              "reviews/2026/feedback/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 51
+          "commits_7d": 52
         },
         {
           "owner": "郝卓迪",
@@ -69725,31 +69743,31 @@
         },
         "2026": {
           "sources": 51,
-          "delivered": 18,
-          "official": 17,
-          "pending": 10,
+          "delivered": 19,
+          "official": 18,
+          "pending": 16,
           "open_issues": 42,
           "status": "in_progress"
         }
       },
       "sources": 153,
-      "delivered": 57,
+      "delivered": 58,
       "not_started": [
         "2025"
       ],
       "last_update": {
-        "at": "2026-11-17T09:02:21-08:00",
+        "at": "2026-11-17T09:30:24-08:00",
         "author": "h10",
-        "subject": "review: complete cardiovascular source and verify green energy partial scope",
+        "subject": "review: reconcile Energy Reviews issues and retain evidence gaps",
         "area": "reviews",
         "paths": [
           "metadata/2026/ai4s.json",
-          "metadata/j-d49438c2b7/2026/ai4s.json",
-          "metadata/j-d49438c2b7/2026/official-scope-audit-lixueting.json",
-          "metadata/natcardiovascres/2026/ai4s.json"
+          "metadata/j-1eb350782d/2026/ai4s.json",
+          "metadata/j-1eb350782d/2026/official-scope-audit-lixueting.json",
+          "reviews/2026/feedback/zch66883-lixueting.json"
         ]
       },
-      "commits_7d": 51
+      "commits_7d": 52
     },
     {
       "owner": "龙兆科",
@@ -69933,9 +69951,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-17T17:05:17.121364+00:00",
+    "generated_at": "2026-11-17T17:33:12.853791+00:00",
     "history_available": true,
-    "commit": "4eecb6dfe13dc43a948ebbcc0c612daec4540901",
-    "commits_scanned": 845
+    "commit": "724c99972a0c1f6c41caa99981f870438f8f9053",
+    "commits_scanned": 847
   }
 }
