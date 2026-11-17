@@ -19122,12 +19122,48 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "正则学习和高斯残差构造低维随机时序闭合，在三维湍流验证长期统计与结构。",
+      "tags": [
+        {
+          "axis": "task",
+          "label": "流体动力学模拟",
+          "label_en": "Fluid dynamics simulation",
+          "evidence_location": "官网卷449 Part A导出BibTeX原摘要",
+          "rationale": "正则学习和高斯残差构造低维随机时序闭合，在三维湍流验证长期统计与结构。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "正常浏览器官方卷期Export citation and abstract to BibTeX；逐篇读取原摘要。",
+      "publication_scope": "官网2026卷期年，匹配源文件2026归档；DOI内2025不作为出版年判定，未声称首次在线发表于2026。",
+      "verified_metadata": {
+        "doi": "10.1016/j.cma.2025.118506",
+        "title": "Reduced subgrid scale terms in three-dimensional turbulence",
+        "authors": [
+          "Rik Hoekstra",
+          "Wouter Edeling"
+        ],
+        "abstract": "Large eddy simulation (LES) has become a central technique for simulating turbulent flows in engineering and applied sciences, offering a compromise between accuracy and computational cost by resolving large-scale motions and modeling the effects of smaller, unresolved scales through a subgrid scale (SGS) model. The fidelity and robustness of LES depends critically on the SGS model, particularly in coarse simulations where much of the turbulence spectrum remains unresolved. In this work, we extend the tau-orthogonal (TO) method, a data-driven SGS modeling framework, to three-dimensional turbulent flows. The method reformulates the high-dimensional SGS closure problem as a low-dimensional prediction task focused on spatially-integrated, scale-aware quantities of interest (QoIs). We extend the model to incorporate QoI-state dependence and temporal correlations by combining regularized least-squares regression with a multivariate Gaussian residual model. This yields a simple yet effective stochastic time-series prediction model, with orders-of-magnitude fewer parameters than typical deep learning approaches which try to directly learn the high-dimensional SGS closure. We demonstrate the effectiveness of the new TO model in three-dimensional forced isotropic turbulence, turbulent channel flow and on a Taylor-Green vortex. The model achieves accurate long-term QoI distributions, robust performance across hyperparameter settings, and good reproduction of key flow features such as kinetic energy spectra and coherent structures, despite being trained solely on QoI trajectories. Comparisons against classical SGS models, including Smagorinsky and WALE formulations, highlight the new model’s balance of accuracy and computational efficiency.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782525007789",
+        "volume": "449",
+        "pages": "118506",
+        "publication_year": 2026,
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782525007789",
+          "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/449/part/PA"
+        ]
+      },
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json",
+        "official_export_file": "reviews/2026/audits/wangmengran8789-cmame-449PA-20261117.bib"
+      },
+      "supplement_type": null,
+      "metadata_verification_status": "官网BibTeX已核标题、作者顺序、DOI、卷、文章号与摘要；公开PDF仍待核。"
     }
   },
   {
@@ -19209,12 +19245,50 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "性质VAE与CNN学习多孔微结构水力性质映射，生成目标孔隙率及渗透率超材料。",
+      "tags": [
+        {
+          "axis": "task",
+          "label": "逆向设计",
+          "label_en": "Inverse design",
+          "evidence_location": "官网卷449 Part A导出BibTeX原摘要",
+          "rationale": "性质VAE与CNN学习多孔微结构水力性质映射，生成目标孔隙率及渗透率超材料。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "正常浏览器官方卷期Export citation and abstract to BibTeX；逐篇读取原摘要。",
+      "publication_scope": "官网2026卷期年，匹配源文件2026归档；DOI内2025不作为出版年判定，未声称首次在线发表于2026。",
+      "verified_metadata": {
+        "doi": "10.1016/j.cma.2025.118499",
+        "title": "Deep learning-aided inverse design of porous metamaterials",
+        "authors": [
+          "Phu Thien Nguyen",
+          "Yousef Heider",
+          "Dennis M. Kochmann",
+          "Fadi Aldakheel"
+        ],
+        "abstract": "The ultimate aim of the study is to explore the inverse design of porous metamaterials using a deep learning-based generative framework. Specifically, we develop a property-variational autoencoder (pVAE), a variational autoencoder (VAE) augmented with a regressor, to generate structured metamaterials with tailored hydraulic properties, such as porosity and permeability. While this work uses the lattice Boltzmann method (LBM) to generate intrinsic permeability tensor data for limited porous microstructures, a convolutional neural network (CNN) is trained using a bottom-up approach to predict effective hydraulic properties. This significantly reduces the computational cost compared to direct LBM simulations. The pVAE framework is trained on two datasets: a synthetic dataset of artificial porous microstructures and CT-scan images of volume elements from real open-cell foams. The encoder-decoder architecture of the VAE captures key microstructural features, mapping them into a compact and interpretable latent space for efficient structure-property exploration. The study provides a detailed analysis and interpretation of the latent space, demonstrating its role in structure-property mapping, interpolation, and inverse design. This approach facilitates the generation of new metamaterials with desired properties. The datasets and codes used in this study are openly available at [https://doi.org/10.25835/t799y2ji ] to support further research.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782525007716",
+        "volume": "449",
+        "pages": "118499",
+        "publication_year": 2026,
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782525007716",
+          "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/449/part/PA"
+        ]
+      },
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json",
+        "official_export_file": "reviews/2026/audits/wangmengran8789-cmame-449PA-20261117.bib"
+      },
+      "supplement_type": null,
+      "metadata_verification_status": "官网BibTeX已核标题、作者顺序、DOI、卷、文章号与摘要；公开PDF仍待核。"
     }
   },
   {
@@ -19292,12 +19366,51 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "从PDE物理与离散尺度推导图消息传递步数下界，四类方程实验验证求解准确性。",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "图神经网络",
+          "label_en": "Graph neural network",
+          "evidence_location": "官网卷449 Part A导出BibTeX原摘要",
+          "rationale": "从PDE物理与离散尺度推导图消息传递步数下界，四类方程实验验证求解准确性。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "正常浏览器官方卷期Export citation and abstract to BibTeX；逐篇读取原摘要。",
+      "publication_scope": "官网2026卷期年，匹配源文件2026归档；DOI内2025不作为出版年判定，未声称首次在线发表于2026。",
+      "verified_metadata": {
+        "doi": "10.1016/j.cma.2025.118476",
+        "title": "On the under-reaching phenomenon in message passing neural PDE solvers: Revisiting the CFL condition",
+        "authors": [
+          "Lucas Tesán",
+          "Mikel M. Iparraguirre",
+          "David González",
+          "Pedro Martins",
+          "Elías Cueto"
+        ],
+        "abstract": "This paper proposes sharp lower bounds for the number of message passing iterations required in graph neural networks (GNNs) when solving partial differential equations (PDE). This significantly reduces the need for exhaustive hyperparameter tuning. Bounds are derived for the three fundamental classes of PDEs (hyperbolic, parabolic and elliptic) by relating the physical characteristics of the problem in question to the message-passing requirement of GNNs. In particular, we investigate the relationship between the physical constants of the equations governing the problem, the spatial and temporal discretisation and the message passing mechanisms in GNNs. When the number of message passing iterations is below these proposed limits, information does not propagate efficiently through the network, resulting in poor solutions, even for deep GNN architectures. In contrast, when the suggested lower bound is satisfied, the GNN parameterisation allows the model to accurately capture the underlying phenomenology, resulting in solvers of adequate accuracy. Examples are provided for four different examples of equations that show the sharpness of the proposed lower bounds.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782525007480",
+        "volume": "449",
+        "pages": "118476",
+        "publication_year": 2026,
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782525007480",
+          "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/449/part/PA"
+        ]
+      },
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json",
+        "official_export_file": "reviews/2026/audits/wangmengran8789-cmame-449PA-20261117.bib"
+      },
+      "supplement_type": null,
+      "metadata_verification_status": "官网BibTeX已核标题、作者顺序、DOI、卷、文章号与摘要；公开PDF仍待核。"
     }
   },
   {
@@ -19393,12 +19506,48 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "6000组相场断裂模拟构建困难数据集，对PINN、FNO和U-Net及集成作基准验证。",
+      "tags": [
+        {
+          "axis": "evaluation",
+          "label": "科学评测",
+          "label_en": "Scientific evaluation",
+          "evidence_location": "官网卷449 Part A导出BibTeX原摘要",
+          "rationale": "6000组相场断裂模拟构建困难数据集，对PINN、FNO和U-Net及集成作基准验证。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "正常浏览器官方卷期Export citation and abstract to BibTeX；逐篇读取原摘要。",
+      "publication_scope": "官网2026卷期年，匹配源文件2026归档；DOI内2025不作为出版年判定，未声称首次在线发表于2026。",
+      "verified_metadata": {
+        "doi": "10.1016/j.cma.2025.118526",
+        "title": "Towards robust surrogate models: Benchmarking machine learning approaches to expediting phase field simulations of brittle fracture",
+        "authors": [
+          "Erfan Hamdi",
+          "Emma Lejeune"
+        ],
+        "abstract": "Data-driven approaches have the potential to make modeling complex, nonlinear physical phenomena significantly more computationally tractable. For example, computational modeling of fracture is a core challenge where machine learning techniques have the potential to provide a much needed speedup that would enable progress in areas such as multi-scale modeling and uncertainty quantification. Currently, phase field modeling (PFM) of fracture is one such approach that offers a convenient variational formulation to model crack nucleation, branching and propagation. To date, machine learning techniques have shown promise in approximating PFM simulations. While standard fracture benchmarks represent realistic scenarios frequently observed in practice, they typically do not provide sufficiently challenging tests for data-driven methods. To address this gap, we introduce a challenging dataset based on PFM simulations designed to benchmark and advance ML methods for fracture modeling. This dataset includes three energy decomposition methods, two boundary conditions, and 1000 random initial crack configurations for a total of 6000 simulations. Each sample contains 100 time steps capturing the temporal evolution of the crack field. Alongside this dataset, we also implement and evaluate Physics Informed Neural Networks (PINN), Fourier Neural Operators (FNO), and UNet models as baselines, and explore the impact of ensembling strategies on prediction accuracy. With this combination of our dataset and baseline models drawn from the literature we aim to provide a standardized and challenging benchmark for evaluating machine learning approaches to solid mechanics. Our results highlight both the promise and limitations of popular current models, and demonstrate the utility of this dataset as a testbed for advancing machine learning in fracture mechanics research.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782525007984",
+        "volume": "449",
+        "pages": "118526",
+        "publication_year": 2026,
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782525007984",
+          "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/449/part/PA"
+        ]
+      },
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json",
+        "official_export_file": "reviews/2026/audits/wangmengran8789-cmame-449PA-20261117.bib"
+      },
+      "supplement_type": null,
+      "metadata_verification_status": "官网BibTeX已核标题、作者顺序、DOI、卷、文章号与摘要；公开PDF仍待核。"
     }
   },
   {
@@ -19482,12 +19631,51 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "机器学习代理材料随机性到目标及灵敏度的映射，进行负泊松比超材料稳健拓扑优化。",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "官网卷449 Part B导出BibTeX原摘要",
+          "rationale": "机器学习代理材料随机性到目标及灵敏度的映射，进行负泊松比超材料稳健拓扑优化。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "正常浏览器官方卷期Export citation and abstract to BibTeX；逐篇读取原摘要。",
+      "publication_scope": "官网2026卷期年，匹配源文件2026归档；DOI内2025不作为出版年判定，未声称首次在线发表于2026。",
+      "verified_metadata": {
+        "doi": "10.1016/j.cma.2025.118577",
+        "title": "A machine learning-aided robust topology optimization method for the design of auxetic metamaterials",
+        "authors": [
+          "Qihan Wang",
+          "Chao Li",
+          "Minghui Zhang",
+          "Wei Gao",
+          "Zhen Luo"
+        ],
+        "abstract": "We propose a machine learning-aided robust topology optimization (ML-RTO) framework for computational design of lattice auxetic metamaterials under uncertainty. Unlike conventional deterministic topology optimization, which assumes fixed material properties, ML-RTO incorporates statistical variations to define a robust objective function that accounts for randomness in base material properties. To enhance computational efficiency, ML-RTO integrates machine learning algorithms with finite element analysis-based homogenization process. A limited number of finite element simulations are used to generate training data, enabling surrogate models to approximate the relationship between material uncertainty and both the robust objective and its sensitivity. These surrogate models allow for large-scale, high-resolution homogenization with reduced computational cost. By minimizing the robust objective, ML-RTO yields optimised structures with statistically lower performance variation compared to deterministic topology optimization. The flexible framework supports trade-off parameters to guide structural evolution and accommodates diverse uncertainty parameters, statistical models, and distributions. Additionally, ML-RTO inherently favours manufacturable designs by avoiding thin or fine-scale features that are highly sensitive to uncertainty.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782525008497",
+        "volume": "449",
+        "pages": "118577",
+        "publication_year": 2026,
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782525008497",
+          "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/449/part/PB"
+        ]
+      },
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json",
+        "official_export_file": "reviews/2026/audits/wangmengran8789-cmame-449PB-20261117.bib"
+      },
+      "supplement_type": null,
+      "metadata_verification_status": "官网BibTeX已核标题、作者顺序、DOI、卷、文章号与摘要；公开PDF仍待核。"
     }
   },
   {
@@ -19559,15 +19747,49 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117-round3",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
-      "tags": [],
+      "decision": "include",
+      "rationale": "多类PINN由冲击温度及应变全场反演金属应力与热黏塑参数，验证噪声稳健性。",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "物理信息学习",
+          "label_en": "Physics-informed learning",
+          "evidence_location": "官网卷449 Part B导出BibTeX原摘要",
+          "rationale": "多类PINN由冲击温度及应变全场反演金属应力与热黏塑参数，验证噪声稳健性。"
+        }
+      ],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "正常浏览器官方卷期Export citation and abstract to BibTeX；逐篇读取原摘要。",
+      "publication_scope": "官网2026卷期年，匹配源文件2026归档；DOI内2025不作为出版年判定，未声称首次在线发表于2026。",
+      "verified_metadata": {
+        "doi": "10.1016/j.cma.2025.118568",
+        "title": "Physics-informed identification of stress fields and thermo-viscoplastic model parameters for metals from full-field data under impact loading",
+        "authors": [
+          "Yunfei Liu",
+          "Manxi Chen",
+          "Qinglei Zeng"
+        ],
+        "abstract": "Metals and alloys exhibit highly nonlinear thermo-mechanical behavior under impact loading, strongly influenced by strain rate and adiabatic heating. Accurate calibration of thermo-viscoplastic constitutive parameters traditionally requires extensive stress–strain measurements across a wide range of loading rates and temperatures. Recent advances in full-field measurement techniques enable rich kinematic and temperature data acquisition in dynamically loaded structures, and machine learning techniques have shown promise for stress and parameter identification. However, most existing efforts remain limited to quasi-static loading scenarios. In this study, we propose a family of physics-informed neural network (PINN) frameworks—T-PINN, ε-PINN, and T-ε-PINN—named after the types of dynamic full-field data they employ. These frameworks reconstruct stress fields and identify thermo-viscoplastic parameters in metals by embedding the governing equations of thermo-elasto-viscoplasticity. Specifically, T-PINN combines temperature field data with linear momentum balance, energy conservation, and constitutive relations to infer stress distributions. The ε-PINN incorporates strain field data to simultaneously reconstruct stress fields and identify thermo-viscoplastic constitutive parameters, accounting for strain hardening, strain-rate sensitivity, and thermal softening effects under dynamic loading. The T-ε-PINN integrates both temperature and strain-field measurements for enhanced data efficiency. Through comprehensive numerical examples, we demonstrate the effectiveness of these methods in accurately reconstructing stress fields and predicting material responses under complex dynamic loading conditions, even in the presence of noisy data. These PINN-based approaches provide a data-efficient, physically well-defined alternative to traditional calibration methods for dynamic constitutive modeling of metallic materials.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782525008400",
+        "volume": "449",
+        "pages": "118568",
+        "publication_year": 2026,
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782525008400",
+          "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/449/part/PB"
+        ]
+      },
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json",
+        "official_export_file": "reviews/2026/audits/wangmengran8789-cmame-449PB-20261117.bib"
+      },
+      "supplement_type": null,
+      "metadata_verification_status": "官网BibTeX已核标题、作者顺序、DOI、卷、文章号与摘要；公开PDF仍待核。"
     }
   },
   {
@@ -19648,12 +19870,49 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "贝叶斯DeepONet结合Rényi变分推断量化不确定性，在摆动和输运反应物理系统验证。",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "算子学习",
+          "label_en": "Operator learning",
+          "evidence_location": "官网卷449 Part B导出BibTeX原摘要",
+          "rationale": "贝叶斯DeepONet结合Rényi变分推断量化不确定性，在摆动和输运反应物理系统验证。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "正常浏览器官方卷期Export citation and abstract to BibTeX；逐篇读取原摘要。",
+      "publication_scope": "官网2026卷期年，匹配源文件2026归档；DOI内2025不作为出版年判定，未声称首次在线发表于2026。",
+      "verified_metadata": {
+        "doi": "10.1016/j.cma.2025.118552",
+        "title": "α-VI DeepONet: A prior-robust variational Bayesian approach for enhancing DeepONets with uncertainty quantification",
+        "authors": [
+          "Soban Nasir Lone",
+          "Subhayan De",
+          "Rajdip Nayek"
+        ],
+        "abstract": "We introduce a novel deep operator network (DeepONet) framework that incorporates generalized variational inference (GVI) using Rényi’s α-divergence to learn complex operators while quantifying uncertainty. By incorporating Bayesian neural networks as the building blocks for the branch and trunk networks, our framework endows DeepONet with uncertainty quantification. The use of Rényi’s α-divergence, instead of the Kullback-Leibler divergence (KLD), commonly used in standard variational inference (VI), mitigates issues related to prior misspecification that are prevalent in variational Bayesian DeepONets. This approach offers enhanced flexibility and robustness. We demonstrate that modifying the variational objective function yields superior results in terms of minimising the mean squared error and improving the negative log-likelihood on the test set. Our framework’s efficacy is validated across various mechanical systems, where it outperforms both deterministic and standard KLD-based VI DeepONets in predictive accuracy and uncertainty quantification. The hyperparameter α, which controls the degree of robustness, can be tuned to optimise performance for specific problems. We apply this approach to a range of mechanics problems, including gravity pendulum, advection-diffusion, and diffusion-reaction systems. Our findings underscore the potential of α-VI DeepONet to advance the field of data-driven operator learning and its applications in engineering and scientific domains.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782525008242",
+        "volume": "449",
+        "pages": "118552",
+        "publication_year": 2026,
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782525008242",
+          "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/449/part/PB"
+        ]
+      },
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json",
+        "official_export_file": "reviews/2026/audits/wangmengran8789-cmame-449PB-20261117.bib"
+      },
+      "supplement_type": null,
+      "metadata_verification_status": "官网BibTeX已核标题、作者顺序、DOI、卷、文章号与摘要；公开PDF仍待核。"
     }
   },
   {
@@ -19743,12 +20002,49 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "预训练注意力神经算子结合辐射物理与Green函数，求解稳态辐射传输。",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "算子学习",
+          "label_en": "Operator learning",
+          "evidence_location": "官网卷449 Part B导出BibTeX原摘要",
+          "rationale": "预训练注意力神经算子结合辐射物理与Green函数，求解稳态辐射传输。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "正常浏览器官方卷期Export citation and abstract to BibTeX；逐篇读取原摘要。",
+      "publication_scope": "官网2026卷期年，匹配源文件2026归档；DOI内2025不作为出版年判定，未声称首次在线发表于2026。",
+      "verified_metadata": {
+        "doi": "10.1016/j.cma.2025.118556",
+        "title": "DeepRTE: Pre-trained attention-based neural network for radiative transfer",
+        "authors": [
+          "Yekun Zhu",
+          "Min Tang",
+          "Zheng Ma"
+        ],
+        "abstract": "In this paper, we propose a novel neural network approach, termed DeepRTE, to address the steady-state Radiative Transfer Equation (RTE). The RTE is a differential-integral equation that governs the propagation of radiation through a participating medium, with applications spanning diverse domains such as neutron transport, atmospheric radiative transfer, heat transfer, and optical imaging. Our DeepRTE framework demonstrates superior computational efficiency for solving the steady-state RTE, surpassing traditional methods and existing neural network approaches. This efficiency is achieved by embedding physical information through derivation of the RTE and mathematically-informed network architecture. Concurrently, DeepRTE achieves high accuracy with significantly fewer parameters, largely due to its incorporation of mechanisms such as multi-head attention. Furthermore, DeepRTE is a mesh-free neural operator framework with inherent zero-shot capability. This is achieved by incorporating Green’s function theory and pre-training with delta-function inflow boundary conditions into both its architecture design and training data construction. The efficacy of the proposed approach is substantiated through comprehensive numerical experiments.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S004578252500828X",
+        "volume": "449",
+        "pages": "118556",
+        "publication_year": 2026,
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S004578252500828X",
+          "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/449/part/PB"
+        ]
+      },
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json",
+        "official_export_file": "reviews/2026/audits/wangmengran8789-cmame-449PB-20261117.bib"
+      },
+      "supplement_type": null,
+      "metadata_verification_status": "官网BibTeX已核标题、作者顺序、DOI、卷、文章号与摘要；公开PDF仍待核。"
     }
   },
   {
@@ -19825,15 +20121,52 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117-round3",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
-      "tags": [],
+      "decision": "include",
+      "rationale": "物理约束图网络学习温升及铺层到壳后屈曲变形，进行复合材料稳健承载优化。",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "物理信息学习",
+          "label_en": "Physics-informed learning",
+          "evidence_location": "官网卷449 Part B导出BibTeX原摘要",
+          "rationale": "物理约束图网络学习温升及铺层到壳后屈曲变形，进行复合材料稳健承载优化。"
+        }
+      ],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "正常浏览器官方卷期Export citation and abstract to BibTeX；逐篇读取原摘要。",
+      "publication_scope": "官网2026卷期年，匹配源文件2026归档；DOI内2025不作为出版年判定，未声称首次在线发表于2026。",
+      "verified_metadata": {
+        "doi": "10.1016/j.cma.2025.118593",
+        "title": "Physics-informed graph neural network for the thermoelastic post-buckling optimization of laminated composite shells",
+        "authors": [
+          "Yuechen Hu",
+          "Kuan Fan",
+          "Xinming Li",
+          "Jiachen Luo",
+          "Jian Cui",
+          "Zhengdong Huang"
+        ],
+        "abstract": "The post-buckling behavior of laminated shells is highly sensitive to the operational temperature environment, and its optimization suffers from expensive computational cost. As the surrogate model of time-consuming numerical analysis, the deep neural networks have shown their potential in resolving this kind of problems. In this paper, a physics-informed graph neural network (PIGNN) is proposed for predicting the structural deformation explored in the thermoelastic post-buckling optimization of laminated shells. For the model development, the temperature increment is employed as an additional input besides lamination parameters in the prediction of nonlinear behaviors. The graph convolution network (GCN) is employed to capture the spatial features of deformations at structural nodes after isogeometric discretization. In addition, the residual of the nonlinear equilibrium equations is embedded into the loss function to further enhance predictive accuracy and model generalizability. Based on the developed model, the robust design optimization is performed to elevate the load-carrying capacity and robustness of laminated shells under different temperature increments. The numerical validations on both shallow roof and whole cylindrical shell demonstrate the efficacy of the proposed approach. Compared to the quasi-isotropic laminate, the optimized laminate exhibits an enhanced mechanical property and post-buckling stability. Computational efficiency analysis reveals that the optimization based on a pre-trained PIGNN model requires merely 2.31% and 0.011% of the computational time compared to the optimization using the Riks method respectively for the two numerical tests.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782525008655",
+        "volume": "449",
+        "pages": "118593",
+        "publication_year": 2026,
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782525008655",
+          "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/449/part/PB"
+        ]
+      },
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json",
+        "official_export_file": "reviews/2026/audits/wangmengran8789-cmame-449PB-20261117.bib"
+      },
+      "supplement_type": null,
+      "metadata_verification_status": "官网BibTeX已核标题、作者顺序、DOI、卷、文章号与摘要；公开PDF仍待核。"
     }
   },
   {
@@ -19909,12 +20242,49 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "局部RRQR特征筛选和预条件改善随机神经基函数PDE求解，验证多维多尺度问题。",
+      "tags": [
+        {
+          "axis": "task",
+          "label": "微分方程求解",
+          "label_en": "Differential equation solving",
+          "evidence_location": "官网卷449 Part B导出BibTeX原摘要",
+          "rationale": "局部RRQR特征筛选和预条件改善随机神经基函数PDE求解，验证多维多尺度问题。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "正常浏览器官方卷期Export citation and abstract to BibTeX；逐篇读取原摘要。",
+      "publication_scope": "官网2026卷期年，匹配源文件2026归档；DOI内2025不作为出版年判定，未声称首次在线发表于2026。",
+      "verified_metadata": {
+        "doi": "10.1016/j.cma.2025.118583",
+        "title": "Local feature filtering for scalable and well-conditioned domain-decomposed random feature methods",
+        "authors": [
+          "Jan Willem {van Beek}",
+          "Victorita Dolean",
+          "Ben Moseley"
+        ],
+        "abstract": "Random Feature Methods (RFMs) [1] and their variants such as extreme learning machine finite-basis physics-informed neural networks (ELM-FBPINNs) [2] offer a scalable approach for solving partial differential equations (PDEs) by using localized, overlapping and randomly initialized neural network basis functions to approximate the PDE solution and training them to minimize PDE residuals through solving structured least-squares problems. This combination leverages the approximation power of randomized neural networks, the parallelism of domain decomposition, and the accuracy and efficiency of least-squares solvers. However, the resulting structured least-squares systems are often severely ill-conditioned, due to local redundancy among random basis functions and correlation introduced by subdomain overlaps, which significantly affects the convergence of standard solvers. In this work, we introduce a block rank-revealing QR (RRQR) filtering and preconditioning strategy that operates directly on the structured least-squares problem. First, local RRQR factorizations identify and remove redundant basis functions while preserving numerically informative ones, reducing problem size, and improving conditioning. Second, we use these factorizations to construct a right preconditioner for the global problem which preserves block-sparsity and numerical stability. Third, we derive deterministic bounds of the condition number of the preconditioned system, with probabilistic refinements for small overlaps. We validate our approach on challenging, multi-scale PDE problems in 1D, 2D, and (2+1)D, demonstrating reductions in condition numbers by up to eleven orders of magnitude, LSQR convergence speedups by factors of 10–1000, and higher accuracy than both unpreconditioned and additive Schwarz-preconditioned baselines, all at significantly lower memory and computational cost. These results establish RRQR-based preconditioning as a scalable, accurate, and efficient enhancement for RFM-based PDE solvers.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782525008552",
+        "volume": "449",
+        "pages": "118583",
+        "publication_year": 2026,
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782525008552",
+          "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/449/part/PB"
+        ]
+      },
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json",
+        "official_export_file": "reviews/2026/audits/wangmengran8789-cmame-449PB-20261117.bib"
+      },
+      "supplement_type": null,
+      "metadata_verification_status": "官网BibTeX已核标题、作者顺序、DOI、卷、文章号与摘要；公开PDF仍待核。"
     }
   },
   {
@@ -71723,12 +72093,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "决策树密度比估计将实验背景扣除的负sWeights转事件概率，改善粒子物理训练与分布估计。",
+      "tags": [
+        {
+          "axis": "task",
+          "label": "高能物理数据分析",
+          "label_en": "High-energy physics data analysis",
+          "evidence_location": "输入原摘要",
+          "rationale": "决策树密度比估计将实验背景扣除的负sWeights转事件概率，改善粒子物理训练与分布估计。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -71800,12 +72185,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "三维层次自回归网络采样Ising自旋，估计相变范围内熵、自由能及热力学观测量。",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于数理科学",
+          "label_en": "AI for mathematical and physical sciences",
+          "evidence_location": "输入原摘要",
+          "rationale": "三维层次自回归网络采样Ising自旋，估计相变范围内熵、自由能及热力学观测量。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -71975,12 +72375,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "贝叶斯GPR压缩并重建湍流时空仿真数据，同时估计信息恢复不确定性及计算限制。",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "高斯过程",
+          "label_en": "Gaussian process",
+          "evidence_location": "输入原摘要",
+          "rationale": "贝叶斯GPR压缩并重建湍流时空仿真数据，同时估计信息恢复不确定性及计算限制。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -72062,12 +72477,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "XtalOpt进化多目标算法集成机器学习势及Pareto搜索，进行变成分功能材料晶体结构发现。",
+      "tags": [
+        {
+          "axis": "task",
+          "label": "晶体结构预测",
+          "label_en": "Crystal structure prediction",
+          "evidence_location": "输入原摘要",
+          "rationale": "XtalOpt进化多目标算法集成机器学习势及Pareto搜索，进行变成分功能材料晶体结构发现。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -72148,12 +72578,19 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "exclude",
+      "rationale": "Hamilton-Jacobi数值软件采用分裂和隐式PDE求解，机器学习仅列潜在应用，未展示AI核心贡献。",
+      "tags": [],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "按理由保留需补核事项。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -72228,12 +72665,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "流匹配生成模型模拟ALICE零度量热器响应，以中子质子探测器保真与推理时间验证。",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "流匹配",
+          "label_en": "Flow matching",
+          "evidence_location": "输入原摘要",
+          "rationale": "流匹配生成模型模拟ALICE零度量热器响应，以中子质子探测器保真与推理时间验证。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -72316,12 +72768,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "物理约束自编码器恢复隐动力及模型参数，另以学习式因果方法分析聚变锯齿和边缘局域模。",
+      "tags": [
+        {
+          "axis": "task",
+          "label": "动力系统辨识",
+          "label_en": "Dynamical system identification",
+          "evidence_location": "输入原摘要",
+          "rationale": "物理约束自编码器恢复隐动力及模型参数，另以学习式因果方法分析聚变锯齿和边缘局域模。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -72405,12 +72872,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "多分辨小波神经网络最小化PDE残差，验证输运扩散等时变方程求解精度速度。",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "物理信息学习",
+          "label_en": "Physics-informed learning",
+          "evidence_location": "输入原摘要",
+          "rationale": "多分辨小波神经网络最小化PDE残差，验证输运扩散等时变方程求解精度速度。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -72496,12 +72978,19 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "pending",
+      "rationale": "分子动力学平衡初始化与温度预测用于终止判断，但摘要未说明预测模型是否机器学习；物理启发初始化本身不能证明AI作用，需核方法。",
+      "tags": [],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "按理由保留需补核事项。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -72680,12 +73169,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "局部时空Transformer学习分子动力学大步长更新，保持对称性并验证长时与跨系统尺度泛化。",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "Transformer 架构",
+          "label_en": "Transformer",
+          "evidence_location": "输入原摘要",
+          "rationale": "局部时空Transformer学习分子动力学大步长更新，保持对称性并验证长时与跨系统尺度泛化。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -72851,12 +73355,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "在线ML式优化器拟合准原子相互作用以匹配弹性性质，结合MD实现原子连续混合固体模拟并验证。",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "输入原摘要",
+          "rationale": "在线ML式优化器拟合准原子相互作用以匹配弹性性质，结合MD实现原子连续混合固体模拟并验证。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -72942,12 +73461,19 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "exclude",
+      "rationale": "漂移扩散科研软件扩展实验模拟和可视化，仅表示可接入机器学习框架，未展示AI科研方法或学习任务。",
+      "tags": [],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "按理由保留需补核事项。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -73021,12 +73547,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "主动学习势开发流程复用历史DFT轨迹并改进缺陷采样，验证铋基氧化物离子导体动力学。",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "主动学习",
+          "label_en": "Active learning",
+          "evidence_location": "输入原摘要",
+          "rationale": "主动学习势开发流程复用历史DFT轨迹并改进缺陷采样，验证铋基氧化物离子导体动力学。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -73196,12 +73737,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "GAN从CORSIKA训练数据生成宇宙线空气簇射，重现地面缪子能谱空间分布并加速模拟。",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "生成对抗网络",
+          "label_en": "Generative adversarial network",
+          "evidence_location": "输入原摘要",
+          "rationale": "GAN从CORSIKA训练数据生成宇宙线空气簇射，重现地面缪子能谱空间分布并加速模拟。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -73283,12 +73839,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "物理几何图和定制损失改善CMS触发器粒子横动量回归，评估物理数据精度与资源。",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "图神经网络",
+          "label_en": "Graph neural network",
+          "evidence_location": "输入原摘要",
+          "rationale": "物理几何图和定制损失改善CMS触发器粒子横动量回归，评估物理数据精度与资源。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -73369,12 +73940,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "神经架构搜索改进PINN在低温等离子体非线性方程中的求解，多个真实物理方程验证。",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "物理信息学习",
+          "label_en": "Physics-informed learning",
+          "evidence_location": "输入原摘要",
+          "rationale": "神经架构搜索改进PINN在低温等离子体非线性方程中的求解，多个真实物理方程验证。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -73535,12 +74121,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "液态残差门控改进PINN隐藏映射，在四个PDE基准固定训练条件下评估精度。",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "物理信息学习",
+          "label_en": "Physics-informed learning",
+          "evidence_location": "输入原摘要",
+          "rationale": "液态残差门控改进PINN隐藏映射，在四个PDE基准固定训练条件下评估精度。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -73628,12 +74229,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "MDcraft将机器学习原子势集成可扩展分子动力学科研平台，并以金属冲击及冷曲线等示例验证。",
+      "tags": [
+        {
+          "axis": "task",
+          "label": "原子间势建模",
+          "label_en": "Interatomic potential modeling",
+          "evidence_location": "输入原摘要",
+          "rationale": "MDcraft将机器学习原子势集成可扩展分子动力学科研平台，并以金属冲击及冷曲线等示例验证。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -73710,12 +74326,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "神经网络与高斯积分的高效张量算法求解Fredholm/Volterra积分及分数阶正反问题，提供科研软件。",
+      "tags": [
+        {
+          "axis": "task",
+          "label": "积分方程求解",
+          "label_en": "Integral equation solving",
+          "evidence_location": "输入原摘要",
+          "rationale": "神经网络与高斯积分的高效张量算法求解Fredholm/Volterra积分及分数阶正反问题，提供科研软件。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -73810,12 +74441,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "热输运科研软件原生整合多类机器学习原子势，支持复杂材料振动弹性热性质并给出验证实例。",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "输入原摘要",
+          "rationale": "热输运科研软件原生整合多类机器学习原子势，支持复杂材料振动弹性热性质并给出验证实例。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -73888,12 +74534,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "随机神经特征与凸最小二乘求解非局部积分微分方程，以稳态中子输运验证。",
+      "tags": [
+        {
+          "axis": "task",
+          "label": "积分微分方程求解",
+          "label_en": "Integro-differential equation solving",
+          "evidence_location": "输入原摘要",
+          "rationale": "随机神经特征与凸最小二乘求解非局部积分微分方程，以稳态中子输运验证。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -73966,12 +74627,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "条件FNO结合模型驱动训练及谱损失生成能谱一致湍流，验证插值与分布外推。",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "算子学习",
+          "label_en": "Operator learning",
+          "evidence_location": "输入原摘要",
+          "rationale": "条件FNO结合模型驱动训练及谱损失生成能谱一致湍流，验证插值与分布外推。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -74045,12 +74721,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "在线bandit学习线性求解器预条件配置，在OpenFOAM流体和磁流体PDE验证单次仿真加速。",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于数理科学",
+          "label_en": "AI for mathematical and physical sciences",
+          "evidence_location": "输入原摘要",
+          "rationale": "在线bandit学习线性求解器预条件配置，在OpenFOAM流体和磁流体PDE验证单次仿真加速。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -74129,12 +74820,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "潜空间流匹配学习二维Kolmogorov流随机闭合，比较几何正则及快速单步物理采样。",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "流匹配",
+          "label_en": "Flow matching",
+          "evidence_location": "输入原摘要",
+          "rationale": "潜空间流匹配学习二维Kolmogorov流随机闭合，比较几何正则及快速单步物理采样。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -74214,12 +74920,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "原子DFT谱有限元软件除数值计算外，明确展示精确交换OEP势的机器学习科研应用。",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于数理科学",
+          "label_en": "AI for mathematical and physical sciences",
+          "evidence_location": "输入原摘要",
+          "rationale": "原子DFT谱有限元软件除数值计算外，明确展示精确交换OEP势的机器学习科研应用。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -74297,12 +75018,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "物理材料研究专用PHYSBO优化科研软件提供候选池、多目标及连续变量功能和可扩展实现，属实质工具更新。",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "贝叶斯优化",
+          "label_en": "Bayesian optimization",
+          "evidence_location": "输入原摘要",
+          "rationale": "物理材料研究专用PHYSBO优化科研软件提供候选池、多目标及连续变量功能和可扩展实现，属实质工具更新。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -74382,12 +75118,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "PINN在终端时间局部校正稳定有限元瞬态对流解，以五种输运及Burgers问题验证。",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "物理信息学习",
+          "label_en": "Physics-informed learning",
+          "evidence_location": "输入原摘要",
+          "rationale": "PINN在终端时间局部校正稳定有限元瞬态对流解，以五种输运及Burgers问题验证。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -74467,12 +75218,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "支持神经网络原子势的高并行MD/MC自由能工作流构建多元素相图，AI势作为材料计算组件。",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "输入原摘要",
+          "rationale": "支持神经网络原子势的高并行MD/MC自由能工作流构建多元素相图，AI势作为材料计算组件。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -74623,12 +75389,27 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2026-wangmengran-20261117",
+      "batch_id": "2026-wangmengran-20261117-round4",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "tags": []
+      "decision": "include",
+      "rationale": "深度学习科研框架以120GB Lamb波数据验证多架构波场参数反演、物理约束及可重复训练。",
+      "tags": [
+        {
+          "axis": "task",
+          "label": "反问题",
+          "label_en": "Inverse problem",
+          "evidence_location": "输入原摘要",
+          "rationale": "深度学习科研框架以120GB Lamb波数据验证多架构波场参数反演、物理约束及可重复训练。"
+        }
+      ],
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "输入原摘要；未声称查阅正文或完成全部官网元数据核验。",
+      "metadata_verification_status": "纳入后的正式元数据与公开PDF仍待核。",
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/2026/ai4s.json"
+      }
     }
   },
   {
@@ -192598,6 +193379,1103 @@
         "official_export_file": "reviews/2026/audits/wangmengran8789-cmame-448PA-20261117.bib"
       },
       "supplement_type": "initial_screening_miss"
+    }
+  },
+  {
+    "id": "10.1016/j.cma.2025.118550",
+    "venue": "j-1ba458f82d",
+    "year": 2026,
+    "track": null,
+    "title": "mNARX+: A surrogate model for complex dynamical systems using manifold-NARX and automatic feature selection",
+    "authors": [
+      "Styfen Schär",
+      "Stefano Marelli",
+      "Bruno Sudret"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0001-6715-220X",
+      "https://orcid.org/0000-0002-9268-9014",
+      "https://orcid.org/0000-0002-9501-7395"
+    ],
+    "abstract": "• We introduce mNARX + , a novel data-driven surrogate model for complex dynamical systems. • mNARX + combines manifold-NARX (mNARX) with the feature-based structure of functional-NARX ( F -NARX). • It also automates the construction of mNARX models, strongly reducing its reliance on domain expertise. • A recursive, data-driven algorithm automatically identifies key auxiliary quantities and their modeling sequence. • It provides a systematic and automated path to creating accurate surrogates for challenging dynamical problems. We propose an automatic approach for manifold nonlinear autoregressive with exogenous inputs (mNARX) modeling that leverages the feature-based structure of functional-NARX ( F -NARX) modeling. This novel approach, termed mNARX + , preserves the key strength of the mNARX framework, which is its expressivity allowing it to model complex dynamical systems, while simultaneously addressing a key limitation: the heavy reliance on domain expertise to identify relevant auxiliary quantities and their causal ordering. Our method employs a data-driven, recursive algorithm that automates the construction of the mNARX model sequence. It operates by sequentially selecting temporal features based on their correlation with the model prediction residuals, thereby automatically identifying the most critical auxiliary quantities and the order in which they should be modeled. This procedure significantly reduces the need for prior system knowledge. We demonstrate the effectiveness of the mNARX + algorithm on two case studies: a Bouc-Wen oscillator with strong hysteresis and a complex aero-servo-elastic wind turbine simulator. The results show that the algorithm provides a systematic, data-driven method for creating accurate and stable surrogate models for complex dynamical systems.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.cma.2025.118550",
+    "pages": "118550",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.cma.2025.118550",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-02",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Computer Methods in Applied Mechanics and Engineering",
+    "issn": "0045-7825",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S0045782525008229",
+    "ai4s_review": {
+      "schema_version": 2,
+      "owner": "王梦冉",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "include",
+      "tags": [
+        {
+          "axis": "task",
+          "label": "动力系统建模",
+          "label_en": "Dynamical system modeling",
+          "evidence_location": "官网卷449 Part A导出BibTeX原摘要",
+          "rationale": "mNARX+自动选择时序特征及辅助量，建立滞回振子和气动伺服弹性风机稳定代理。"
+        }
+      ],
+      "batch_id": "2026-wangmengran-20261117-round4",
+      "rationale": "mNARX+自动选择时序特征及辅助量，建立滞回振子和气动伺服弹性风机稳定代理。",
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "正常浏览器官方卷期Export citation and abstract to BibTeX；逐篇读取原摘要。",
+      "publication_scope": "官网2026卷期年，匹配源文件2026归档；DOI内2025不作为出版年判定，未声称首次在线发表于2026。",
+      "verified_metadata": {
+        "doi": "10.1016/j.cma.2025.118550",
+        "title": "mNARX+: A surrogate model for complex dynamical systems using manifold-NARX and automatic feature selection",
+        "authors": [
+          "Styfen Schär",
+          "Stefano Marelli",
+          "Bruno Sudret"
+        ],
+        "abstract": "We propose an automatic approach for manifold nonlinear autoregressive with exogenous inputs (mNARX) modeling that leverages the feature-based structure of functional-NARX (F-NARX) modeling. This novel approach, termed mNARX+, preserves the key strength of the mNARX framework, which is its expressivity allowing it to model complex dynamical systems, while simultaneously addressing a key limitation: the heavy reliance on domain expertise to identify relevant auxiliary quantities and their causal ordering. Our method employs a data-driven, recursive algorithm that automates the construction of the mNARX model sequence. It operates by sequentially selecting temporal features based on their correlation with the model prediction residuals, thereby automatically identifying the most critical auxiliary quantities and the order in which they should be modeled. This procedure significantly reduces the need for prior system knowledge. We demonstrate the effectiveness of the mNARX+ algorithm on two case studies: a Bouc-Wen oscillator with strong hysteresis and a complex aero-servo-elastic wind turbine simulator. The results show that the algorithm provides a systematic, data-driven method for creating accurate and stable surrogate models for complex dynamical systems.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782525008229",
+        "volume": "449",
+        "pages": "118550",
+        "publication_year": 2026,
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782525008229",
+          "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/449/part/PA"
+        ]
+      },
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/j-1ba458f82d/2026/papers.json",
+        "official_export_file": "reviews/2026/audits/wangmengran8789-cmame-449PA-20261117.bib"
+      },
+      "supplement_type": "verified_initial_screening_omission",
+      "metadata_verification_status": "官网BibTeX已核标题、作者顺序、DOI、卷、文章号与摘要；公开PDF仍待核。"
+    }
+  },
+  {
+    "id": "10.1016/j.cma.2025.118517",
+    "venue": "j-1ba458f82d",
+    "year": 2026,
+    "track": null,
+    "title": "Rapid Offline Training for Deep Material Networks via a displacement-based laminate formulation and a novel sampling technique for a compliance-based fatigue model",
+    "authors": [
+      "Pavan Bhat Keelanje Srinivas",
+      "Matthias Kabel",
+      "Matti Schneider"
+    ],
+    "author_ids": [
+      "https://orcid.org/0009-0001-7470-9149",
+      "https://orcid.org/0000-0001-8869-2387",
+      "https://orcid.org/0000-0001-7017-3618"
+    ],
+    "abstract": "Deep Material Networks DMNs are based on hierarchical laminates and serve as surrogate models for the microstructure in multiscale computations. They involve a two-step process: In the initial training phase, the parameters of the laminates are identified via supervised learning on precomputed elastic data with varying stiffness tensors associated to the phases. In the second phase, the laminate parameters are fixed, and the DMN may be used for inelastic predictions, giving rise to the sought surrogate model. Once identified, DMNs lead to a tremendous speed-up compared to full-field simulations and turn out to be rather robust w.r.t. changes of the constitutive behavior of the individual phases comprising the microstructure. The work at hand offers two novelties: For a start, we take a look at the initial training phase which represents the bottleneck when using DMNs for industrial-scale problems. For laminate-based DMNs, we study three different ways to obtain the effective elastic properties of laminates. Although the different formulations lead to identical results in exact arithmetic, their numerical performance differs when used in the DMN training process. We find that the displacement-based laminate formulation leads to a speed-up factor of roughly seven compared to the two-phase Milton formulation. The second contribution concerns an innovative sampling strategy for the stiffness tensors to be used in the offline training for a compliance-based fatigue-damage model. The proposed strategy leads to robust training and accurate online predictions. We demonstrate the utility of our findings via dedicated computational experiments for industrial-scale glass-fiber reinforced composites.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.cma.2025.118517",
+    "pages": "118517",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.cma.2025.118517",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-02",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Computer Methods in Applied Mechanics and Engineering",
+    "issn": "0045-7825",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S0045782525007893",
+    "ai4s_review": {
+      "schema_version": 2,
+      "owner": "王梦冉",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "include",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "官网卷449 Part A导出BibTeX原摘要",
+          "rationale": "监督学习深度材料网络改进离线训练及疲劳采样，在工业玻纤复合材料验证非弹性预测。"
+        }
+      ],
+      "batch_id": "2026-wangmengran-20261117-round4",
+      "rationale": "监督学习深度材料网络改进离线训练及疲劳采样，在工业玻纤复合材料验证非弹性预测。",
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "正常浏览器官方卷期Export citation and abstract to BibTeX；逐篇读取原摘要。",
+      "publication_scope": "官网2026卷期年，匹配源文件2026归档；DOI内2025不作为出版年判定，未声称首次在线发表于2026。",
+      "verified_metadata": {
+        "doi": "10.1016/j.cma.2025.118517",
+        "title": "Rapid Offline Training for Deep Material Networks via a displacement-based laminate formulation and a novel sampling technique for a compliance-based fatigue model",
+        "authors": [
+          "Pavan {Bhat Keelanje Srinivas}",
+          "Matthias Kabel",
+          "Matti Schneider"
+        ],
+        "abstract": "Deep Material Networks DMNs are based on hierarchical laminates and serve as surrogate models for the microstructure in multiscale computations. They involve a two-step process: In the initial training phase, the parameters of the laminates are identified via supervised learning on precomputed elastic data with varying stiffness tensors associated to the phases. In the second phase, the laminate parameters are fixed, and the DMN may be used for inelastic predictions, giving rise to the sought surrogate model. Once identified, DMNs lead to a tremendous speed-up compared to full-field simulations and turn out to be rather robust w.r.t. changes of the constitutive behavior of the individual phases comprising the microstructure. The work at hand offers two novelties: For a start, we take a look at the initial training phase which represents the bottleneck when using DMNs for industrial-scale problems. For laminate-based DMNs, we study three different ways to obtain the effective elastic properties of laminates. Although the different formulations lead to identical results in exact arithmetic, their numerical performance differs when used in the DMN training process. We find that the displacement-based laminate formulation leads to a speed-up factor of roughly seven compared to the two-phase Milton formulation. The second contribution concerns an innovative sampling strategy for the stiffness tensors to be used in the offline training for a compliance-based fatigue-damage model. The proposed strategy leads to robust training and accurate online predictions. We demonstrate the utility of our findings via dedicated computational experiments for industrial-scale glass-fiber reinforced composites.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782525007893",
+        "volume": "449",
+        "pages": "118517",
+        "publication_year": 2026,
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782525007893",
+          "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/449/part/PA"
+        ]
+      },
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/j-1ba458f82d/2026/papers.json",
+        "official_export_file": "reviews/2026/audits/wangmengran8789-cmame-449PA-20261117.bib"
+      },
+      "supplement_type": "verified_initial_screening_omission",
+      "metadata_verification_status": "官网BibTeX已核标题、作者顺序、DOI、卷、文章号与摘要；公开PDF仍待核。"
+    }
+  },
+  {
+    "id": "10.1016/j.cma.2025.118554",
+    "venue": "j-1ba458f82d",
+    "year": 2026,
+    "track": null,
+    "title": "Convolutional neural network-based mapping of material micro-structures to deep material networks for non-linear mechanical response prediction",
+    "authors": [
+      "Ling Wu",
+      "Ludovic Noels"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0001-8166-3065",
+      "https://orcid.org/0000-0002-7224-5539"
+    ],
+    "abstract": null,
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.cma.2025.118554",
+    "pages": "118554",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.cma.2025.118554",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-02",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Computer Methods in Applied Mechanics and Engineering",
+    "issn": "0045-7825",
+    "article_type": "unknown",
+    "screening_status": "needs_abstract",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S0045782525008266",
+    "ai4s_review": {
+      "schema_version": 2,
+      "owner": "王梦冉",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "include",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "卷积神经网络",
+          "label_en": "Convolutional neural network",
+          "evidence_location": "官网卷449 Part A导出BibTeX原摘要",
+          "rationale": "CNN提取微结构并预测深度材料网络参数，跨夹杂几何预测非线性本构响应。"
+        }
+      ],
+      "batch_id": "2026-wangmengran-20261117-round4",
+      "rationale": "CNN提取微结构并预测深度材料网络参数，跨夹杂几何预测非线性本构响应。",
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "正常浏览器官方卷期Export citation and abstract to BibTeX；逐篇读取原摘要。",
+      "publication_scope": "官网2026卷期年，匹配源文件2026归档；DOI内2025不作为出版年判定，未声称首次在线发表于2026。",
+      "verified_metadata": {
+        "doi": "10.1016/j.cma.2025.118554",
+        "title": "Convolutional neural network-based mapping of material micro-structures to deep material networks for non-linear mechanical response prediction",
+        "authors": [
+          "Ling Wu",
+          "Ludovic Noels"
+        ],
+        "abstract": "Data-driven approaches make the development of surrogates of complex heterogeneous material responses possible. After being trained using a previously generated data-set during an offline stage, the surrogates can be used as a material law to conduct structural simulations during the online stage. Nevertheless, in view of accounting for the uncertainty and variability of the heterogeneous materials, the surrogates should be able to account for the micro-structure variability, which remains a challenge. Among the possible surrogate candidates, (Interaction-Based-)Deep-Material Networks ((IB-)DMN) offer the advantage that they can extrapolate the response for new material model parameters of the heterogeneous material phases and for arbitrary loading histories outside of their training range. This advantage results from their thermodynamics consistency and from the fact that the IB-DMN learnable parameters represent solely the micro-structure organization and not the phases material response. However, a trained IB-DMN remains an image of a given micro-structure spatial organization realization in terms of clustering etc. A new micro-structure realization thus requires a new training process, limiting the interest of the IB-DMN for stochastic multi-scale analyses. In order to address this limitation, we define the learnable or topological parameters of the IB-DMN from a combination of convolution encoder and neural network, with the micro-structure image serving as input data. After training a CNN encoder-decoder, the encoder part allows extracting the feature vectors of the heterogeneous material directly from micro-structure images. These feature vectors then serve as input of a trained feed-forward neural network (FNN) that predicts the topological parameters of the IB-DMN, yielding a “Image to IB-DMN” framework. The methodology is first illustrated in the context of Unidirectional (UD) composites, for which Stochastic Volumes Elements (SVEs) serve as images of the micro-structure realizations. In a second step we show that the machine learning tools can be trained by considering simultaneously composite families of different inclusion shapes such as circular, elliptical and squared. Despite training considering only elastic data, the predictions for a complex pressure-sensitive elasto-plastic model remain accurate. These results demonstrate the complementary roles of the two networks: the CNN encoder–decoder efficiently extracts reduced feature vectors from micro-structure images with diverse inclusion geometries, and the FNN accurately maps these features to the topological parameters of the IB-DMN, establishing a robust, end-to-end image-to-model framework capable of generalizing across different micro-structural configurations.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782525008266",
+        "volume": "449",
+        "pages": "118554",
+        "publication_year": 2026,
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782525008266",
+          "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/449/part/PA"
+        ]
+      },
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/j-1ba458f82d/2026/papers.json",
+        "official_export_file": "reviews/2026/audits/wangmengran8789-cmame-449PA-20261117.bib"
+      },
+      "supplement_type": "verified_initial_screening_omission",
+      "metadata_verification_status": "官网BibTeX已核标题、作者顺序、DOI、卷、文章号与摘要；公开PDF仍待核。"
+    }
+  },
+  {
+    "id": "10.1016/j.cma.2025.118490",
+    "venue": "j-1ba458f82d",
+    "year": 2026,
+    "track": null,
+    "title": "Efficient Bayesian inversion of hydraulic parameters for unsaturated soil slopes using a fine-tuned deep operator network",
+    "authors": [
+      "Shui-Hua Jiang",
+      "Hong-Hu Jie",
+      "Peng Lan",
+      "Jinsong Huang"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0003-3558-6139"
+    ],
+    "abstract": null,
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.cma.2025.118490",
+    "pages": "118490",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.cma.2025.118490",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-02",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Computer Methods in Applied Mechanics and Engineering",
+    "issn": "0045-7825",
+    "article_type": "unknown",
+    "screening_status": "needs_abstract",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S0045782525007625",
+    "ai4s_review": {
+      "schema_version": 2,
+      "owner": "王梦冉",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "include",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "算子学习",
+          "label_en": "Operator learning",
+          "evidence_location": "官网卷449 Part A导出BibTeX原摘要",
+          "rationale": "微调DeepONet学习坡体水力随机场响应，嵌入贝叶斯反演并使用实际孔压验证。"
+        }
+      ],
+      "batch_id": "2026-wangmengran-20261117-round4",
+      "rationale": "微调DeepONet学习坡体水力随机场响应，嵌入贝叶斯反演并使用实际孔压验证。",
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "正常浏览器官方卷期Export citation and abstract to BibTeX；逐篇读取原摘要。",
+      "publication_scope": "官网2026卷期年，匹配源文件2026归档；DOI内2025不作为出版年判定，未声称首次在线发表于2026。",
+      "verified_metadata": {
+        "doi": "10.1016/j.cma.2025.118490",
+        "title": "Efficient Bayesian inversion of hydraulic parameters for unsaturated soil slopes using a fine-tuned deep operator network",
+        "authors": [
+          "Shui-Hua Jiang",
+          "Hong-Hu Jie",
+          "Peng Lan",
+          "Jinsong Huang"
+        ],
+        "abstract": "Accurately quantifying the spatial variability of hydraulic parameters is crucial for slope stability analysis. Although Bayesian inversion with monitoring data can provide estimates of hydraulic parameters, it entails computationally intensive and time-consuming numerical simulations. Surrogate models are commonly employed to enhance computational efficiency. However, traditional surrogate models struggle to accurately capture the high-dimensional mapping between the random field of hydraulic parameters and the spatiotemporal responses of soil slopes. Moreover, they are typically trained on fixed statistical distribution, limiting the generalization capability. To overcome these challenges, this study proposes a novel surrogate model for Bayesian inversion that integrates Bayesian Updating with Subset simulation (BUS) and a fine-tuned (FT) deep operator network (DeepONet). Specifically, the DeepONet model is designed to learn the high-dimensional operator relationship between the random field of hydraulic parameters and the spatiotemporal responses of soil slopes, improving computational efficiency. Subsequently, a fine-tuning strategy, leveraging intermediate subset samples of BUS, is employed to iteratively refine the DeepONet model's predictive accuracy during Bayesian inversion, enhancing its generalization capability. The performance of the proposed method is validated using field-measured pore water pressure data from a real slope in Hong Kong, China. Results show the proposed method effectively resolves challenges in high-dimensional operator mapping, and limitations of generalization capability. Moreover, the proposed method can achieve statistically equivalent accuracy to conventional Bayesian inversion approaches for posterior estimation, while simultaneously delivering a 92 % reduction in computational time.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782525007625",
+        "volume": "449",
+        "pages": "118490",
+        "publication_year": 2026,
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782525007625",
+          "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/449/part/PA"
+        ]
+      },
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/j-1ba458f82d/2026/papers.json",
+        "official_export_file": "reviews/2026/audits/wangmengran8789-cmame-449PA-20261117.bib"
+      },
+      "supplement_type": "verified_initial_screening_omission",
+      "metadata_verification_status": "官网BibTeX已核标题、作者顺序、DOI、卷、文章号与摘要；公开PDF仍待核。"
+    }
+  },
+  {
+    "id": "10.1016/j.cma.2025.118515",
+    "venue": "j-1ba458f82d",
+    "year": 2026,
+    "track": null,
+    "title": "A machine learning-based stabilized finite element formulation for the mean stress computation in linear elasticity and coupled poroelasticity",
+    "authors": [
+      "Hermínio T. Honório",
+      "Andrea Franceschini",
+      "Massimiliano Ferronato",
+      "Hadi Hajibeygi"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0002-3590-2990",
+      "https://orcid.org/0000-0003-4395-5125",
+      "https://orcid.org/0000-0002-5077-1394",
+      "https://orcid.org/0000-0002-8517-8283"
+    ],
+    "abstract": "This work addresses numerical instabilities that can appear when computing the mean stress in linear elasticity and coupled poroelasticity problems discretized with low-order finite elements. The linear elasticity and coupled poroelasticity models are solved using both primal and mixed finite element formulations. Stabilization is obtained by enriching the finite element approximation with an approximation of the Laplacian of displacements. This Laplacian is then evaluated with the Physical Influence Scheme (PIS) by leveraging the underlying governing equation. A key step in the proposed stabilization is the calculation of a parameter h , often computed in the literature as a characteristic length of the element. In this work, we calculate h by solving an optimization problem at the element level. To avoid the high computational cost associated with this procedure, a machine learning model is proposed to predict the optimal h . The benefit of combining PIS with an appropriate computation of h is that the resulting stabilization scheme does not rely on any type of heuristic or user-specified tuning parameter, as often required in other stabilization methods. The results show that the proposed stabilization strategy can effectively remove both saddle-point and Gibbs mean stress oscillations in linear elasticity. We also report, for the first time, that mean stress oscillations can also appear when solving coupled poroelasticity problems, and, differently from pore pressure oscillations (which naturally vanish with time), mean stress instabilities are persistent throughout the whole simulation time, unless deliberately removed. The proposed stabilized mixed formulation is able to remove both pore pressure and mean stress oscillations in coupled poroelasticity problems. Finally, the calculation of h is shown to be critical for the quality of the stabilization, with the machine learning-based approach providing the best compromise between numerical diffusion and accuracy.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.cma.2025.118515",
+    "pages": "118515",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.cma.2025.118515",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-02",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Computer Methods in Applied Mechanics and Engineering",
+    "issn": "0045-7825",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S004578252500787X",
+    "ai4s_review": {
+      "schema_version": 2,
+      "owner": "王梦冉",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "include",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "官网卷449 Part A导出BibTeX原摘要",
+          "rationale": "机器学习预测有限元最优稳定参数，消除线弹性和孔弹性应力振荡。"
+        }
+      ],
+      "batch_id": "2026-wangmengran-20261117-round4",
+      "rationale": "机器学习预测有限元最优稳定参数，消除线弹性和孔弹性应力振荡。",
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "正常浏览器官方卷期Export citation and abstract to BibTeX；逐篇读取原摘要。",
+      "publication_scope": "官网2026卷期年，匹配源文件2026归档；DOI内2025不作为出版年判定，未声称首次在线发表于2026。",
+      "verified_metadata": {
+        "doi": "10.1016/j.cma.2025.118515",
+        "title": "A machine learning-based stabilized finite element formulation for the mean stress computation in linear elasticity and coupled poroelasticity",
+        "authors": [
+          "Hermínio T. Honório",
+          "Andrea Franceschini",
+          "Massimiliano Ferronato",
+          "Hadi Hajibeygi"
+        ],
+        "abstract": "This work addresses numerical instabilities that can appear when computing the mean stress in linear elasticity and coupled poroelasticity problems discretized with low-order finite elements. The linear elasticity and coupled poroelasticity models are solved using both primal and mixed finite element formulations. Stabilization is obtained by enriching the finite element approximation with an approximation of the Laplacian of displacements. This Laplacian is then evaluated with the Physical Influence Scheme (PIS) by leveraging the underlying governing equation. A key step in the proposed stabilization is the calculation of a parameter h, often computed in the literature as a characteristic length of the element. In this work, we calculate h by solving an optimization problem at the element level. To avoid the high computational cost associated with this procedure, a machine learning model is proposed to predict the optimal h. The benefit of combining PIS with an appropriate computation of h is that the resulting stabilization scheme does not rely on any type of heuristic or user-specified tuning parameter, as often required in other stabilization methods. The results show that the proposed stabilization strategy can effectively remove both saddle-point and Gibbs mean stress oscillations in linear elasticity. We also report, for the first time, that mean stress oscillations can also appear when solving coupled poroelasticity problems, and, differently from pore pressure oscillations (which naturally vanish with time), mean stress instabilities are persistent throughout the whole simulation time, unless deliberately removed. The proposed stabilized mixed formulation is able to remove both pore pressure and mean stress oscillations in coupled poroelasticity problems. Finally, the calculation of h is shown to be critical for the quality of the stabilization, with the machine learning-based approach providing the best compromise between numerical diffusion and accuracy.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S004578252500787X",
+        "volume": "449",
+        "pages": "118515",
+        "publication_year": 2026,
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S004578252500787X",
+          "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/449/part/PA"
+        ]
+      },
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/j-1ba458f82d/2026/papers.json",
+        "official_export_file": "reviews/2026/audits/wangmengran8789-cmame-449PA-20261117.bib"
+      },
+      "supplement_type": "verified_initial_screening_omission",
+      "metadata_verification_status": "官网BibTeX已核标题、作者顺序、DOI、卷、文章号与摘要；公开PDF仍待核。"
+    }
+  },
+  {
+    "id": "10.1016/j.cma.2025.118528",
+    "venue": "j-1ba458f82d",
+    "year": 2026,
+    "track": null,
+    "title": "Residual correction for POD-Galerkin reduced order models via conditional VAEs: Application to the bias-aware solution of forward and inverse problems",
+    "authors": [
+      "Dawen Wu",
+      "Ludovic Chamoin"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0001-6450-9365",
+      "https://orcid.org/0000-0002-8361-0757"
+    ],
+    "abstract": "POD-Galerkin reduced order models (PGROMs) significantly accelerate the solution of parameterized partial differential equations (PDEs) but can suffer from accuracy limitations across the parameter space. We propose a hybrid framework that augments a PGROM with a data-driven residual corrector based on a conditional variational autoencoder (cVAE). In the offline stage, we (i) construct a standard PGROM from high-fidelity snapshots and (ii) train a cVAE on PGROM residuals defined as the differences between PGROM approximations and the corresponding high-fidelity solutions. The cVAE learns a mapping from time-parameter pairs to residual fields. In the online stage, for a new parameter instance, the PGROM provides a baseline approximation while the cVAE decoder predicts the residual; adding the two yields a corrected, high-accuracy solution. The effectiveness of the proposed hybrid approach is demonstrated on three parameterized PDE problems: a heat dissipation problem with varying thermal conductivity, a pollutant transport problem with varying convection velocity, and a plane-strain elastodynamics problem with a circular inclusion whose stiffness and density are parameterized.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.cma.2025.118528",
+    "pages": "118528",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.cma.2025.118528",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-02",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Computer Methods in Applied Mechanics and Engineering",
+    "issn": "0045-7825",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S004578252500800X",
+    "ai4s_review": {
+      "schema_version": 2,
+      "owner": "王梦冉",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "include",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "变分自编码器",
+          "label_en": "Variational autoencoder",
+          "evidence_location": "官网卷449 Part A导出BibTeX原摘要",
+          "rationale": "条件VAE学习POD-Galerkin残差场，改进热传导、污染输运及弹动力学正反问题。"
+        }
+      ],
+      "batch_id": "2026-wangmengran-20261117-round4",
+      "rationale": "条件VAE学习POD-Galerkin残差场，改进热传导、污染输运及弹动力学正反问题。",
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "正常浏览器官方卷期Export citation and abstract to BibTeX；逐篇读取原摘要。",
+      "publication_scope": "官网2026卷期年，匹配源文件2026归档；DOI内2025不作为出版年判定，未声称首次在线发表于2026。",
+      "verified_metadata": {
+        "doi": "10.1016/j.cma.2025.118528",
+        "title": "Residual correction for POD-Galerkin reduced order models via conditional VAEs: Application to the bias-aware solution of forward and inverse problems",
+        "authors": [
+          "Dawen Wu",
+          "Ludovic Chamoin"
+        ],
+        "abstract": "POD-Galerkin reduced order models (PGROMs) significantly accelerate the solution of parameterized partial differential equations (PDEs) but can suffer from accuracy limitations across the parameter space. We propose a hybrid framework that augments a PGROM with a data-driven residual corrector based on a conditional variational autoencoder (cVAE). In the offline stage, we (i) construct a standard PGROM from high-fidelity snapshots and (ii) train a cVAE on PGROM residuals defined as the differences between PGROM approximations and the corresponding high-fidelity solutions. The cVAE learns a mapping from time-parameter pairs to residual fields. In the online stage, for a new parameter instance, the PGROM provides a baseline approximation while the cVAE decoder predicts the residual; adding the two yields a corrected, high-accuracy solution. The effectiveness of the proposed hybrid approach is demonstrated on three parameterized PDE problems: a heat dissipation problem with varying thermal conductivity, a pollutant transport problem with varying convection velocity, and a plane-strain elastodynamics problem with a circular inclusion whose stiffness and density are parameterized.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S004578252500800X",
+        "volume": "449",
+        "pages": "118528",
+        "publication_year": 2026,
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S004578252500800X",
+          "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/449/part/PA"
+        ]
+      },
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/j-1ba458f82d/2026/papers.json",
+        "official_export_file": "reviews/2026/audits/wangmengran8789-cmame-449PA-20261117.bib"
+      },
+      "supplement_type": "verified_initial_screening_omission",
+      "metadata_verification_status": "官网BibTeX已核标题、作者顺序、DOI、卷、文章号与摘要；公开PDF仍待核。"
+    }
+  },
+  {
+    "id": "10.1016/j.cma.2025.118531",
+    "venue": "j-1ba458f82d",
+    "year": 2026,
+    "track": null,
+    "title": "A novel boundary-based machine learning approach for 2D crack analysis in elastic and piezoelectric materials",
+    "authors": [
+      "Peijun Zhang",
+      "Yan Gu",
+      "Longtao Xie",
+      "Okyay Altay",
+      "Chuanzeng Zhang",
+      "Vladimir Babeshko"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0001-8518-8011",
+      "https://orcid.org/0000-0001-6963-9230",
+      "https://orcid.org/0000-0002-6663-6357"
+    ],
+    "abstract": "In this study, we propose a novel boundary-based machine learning (BBML) approach for analyzing two-dimensional (2D) in-plane crack problems in linear elastic and piezoelectric materials. The proposed approach integrates a machine learning (ML) method based on artificial neural networks (NNs) with the boundary integral equations (BIEs), enabling an efficient and accurate evaluation of the characteristic fracture mechanics parameters. To capture the local asymptotic behavior of the crack-tip field, novel special crack-tip elements based on NNs (CTNNs) are developed to improve the modeling accuracy of the electromechanical fields in close neighboring regions near the crack-tips. These special CTNNs integrate the local asymptotic characteristics of the crack-tip fields into the neural network framework, ensuring an enhanced accuracy in capturing the intricate stress singularities and high deformation gradients near the crack-tips. Compared to the conventional simulation tools in fracture mechanics, the present BBML approach offers several distinct advantages. Firstly, by embedding higher-order terms of the asymptotic crack-tip field into the neural networks, the method achieves a more accurate and reliable representation of the near-tip fields, even by using relatively large crack-tip elements. Secondly, the CTNNs incorporate important information about the varying near-tip singularity orders, and thus improve the versatility and robustness of the method for solving crack problems involving complex and diverse crack-tip geometries. Moreover, compared to the domain-based ML (DBML) approach, the proposed novel BBML method demonstrates an excellent computational efficiency due to the dimensionality reduction achieved by utilizing the analytical BIEs. Numerical examples confirm that the proposed novel BBML approach can serve as a reliable, robust and accurate numerical simulation tool for addressing 2D linear elastic and piezoelectric fracture mechanics problems, offering several substantial advantages over diverse conventional numerical approaches.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.cma.2025.118531",
+    "pages": "118531",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.cma.2025.118531",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-02",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Computer Methods in Applied Mechanics and Engineering",
+    "issn": "0045-7825",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S0045782525008035",
+    "ai4s_review": {
+      "schema_version": 2,
+      "owner": "王梦冉",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "include",
+      "tags": [
+        {
+          "axis": "task",
+          "label": "微分方程求解",
+          "label_en": "Differential equation solving",
+          "evidence_location": "官网卷449 Part A导出BibTeX原摘要",
+          "rationale": "神经网络结合边界积分和裂尖渐近信息，求解弹性及压电材料二维断裂场。"
+        }
+      ],
+      "batch_id": "2026-wangmengran-20261117-round4",
+      "rationale": "神经网络结合边界积分和裂尖渐近信息，求解弹性及压电材料二维断裂场。",
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "正常浏览器官方卷期Export citation and abstract to BibTeX；逐篇读取原摘要。",
+      "publication_scope": "官网2026卷期年，匹配源文件2026归档；DOI内2025不作为出版年判定，未声称首次在线发表于2026。",
+      "verified_metadata": {
+        "doi": "10.1016/j.cma.2025.118531",
+        "title": "A novel boundary-based machine learning approach for 2D crack analysis in elastic and piezoelectric materials",
+        "authors": [
+          "Peijun Zhang",
+          "Yan Gu",
+          "Longtao Xie",
+          "Okyay Altay",
+          "Chuanzeng Zhang",
+          "Vladimir Babeshko"
+        ],
+        "abstract": "In this study, we propose a novel boundary-based machine learning (BBML) approach for analyzing two-dimensional (2D) in-plane crack problems in linear elastic and piezoelectric materials. The proposed approach integrates a machine learning (ML) method based on artificial neural networks (NNs) with the boundary integral equations (BIEs), enabling an efficient and accurate evaluation of the characteristic fracture mechanics parameters. To capture the local asymptotic behavior of the crack-tip field, novel special crack-tip elements based on NNs (CTNNs) are developed to improve the modeling accuracy of the electromechanical fields in close neighboring regions near the crack-tips. These special CTNNs integrate the local asymptotic characteristics of the crack-tip fields into the neural network framework, ensuring an enhanced accuracy in capturing the intricate stress singularities and high deformation gradients near the crack-tips. Compared to the conventional simulation tools in fracture mechanics, the present BBML approach offers several distinct advantages. Firstly, by embedding higher-order terms of the asymptotic crack-tip field into the neural networks, the method achieves a more accurate and reliable representation of the near-tip fields, even by using relatively large crack-tip elements. Secondly, the CTNNs incorporate important information about the varying near-tip singularity orders, and thus improve the versatility and robustness of the method for solving crack problems involving complex and diverse crack-tip geometries. Moreover, compared to the domain-based ML (DBML) approach, the proposed novel BBML method demonstrates an excellent computational efficiency due to the dimensionality reduction achieved by utilizing the analytical BIEs. Numerical examples confirm that the proposed novel BBML approach can serve as a reliable, robust and accurate numerical simulation tool for addressing 2D linear elastic and piezoelectric fracture mechanics problems, offering several substantial advantages over diverse conventional numerical approaches.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782525008035",
+        "volume": "449",
+        "pages": "118531",
+        "publication_year": 2026,
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782525008035",
+          "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/449/part/PA"
+        ]
+      },
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/j-1ba458f82d/2026/papers.json",
+        "official_export_file": "reviews/2026/audits/wangmengran8789-cmame-449PA-20261117.bib"
+      },
+      "supplement_type": "verified_initial_screening_omission",
+      "metadata_verification_status": "官网BibTeX已核标题、作者顺序、DOI、卷、文章号与摘要；公开PDF仍待核。"
+    }
+  },
+  {
+    "id": "10.1016/j.cma.2025.118523",
+    "venue": "j-1ba458f82d",
+    "year": 2026,
+    "track": null,
+    "title": "Polynomial chaos vs kernel machine learning methods for uncertainty quantification: A comparative study and benchmarking with the hybrid PCE-GPR approach",
+    "authors": [
+      "Paolo Manfredi"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0002-0574-8945"
+    ],
+    "abstract": "In the past two decades, the application of surrogate models to expedite uncertainty quantification (UQ) received wide attention in the applied physics and engineering communities. In particular, extensive literature focused on high-dimensional problems and training efficiency with the aim of addressing the so-called “curse of dimensionality” and achieving satisfactory accuracy even with small experimental designs. Besides popular methods based on polynomial chaos expansion (PCE), recent works explored the application of machine learning regression methods to UQ, particularly kernel-based methods such as support vector regression and Gaussian process regression (GPR). Promising performance and superior accuracy were highlighted especially for small dataset sizes. In this context, the present paper provides a twofold contribution. First, it extends the literature survey and benchmarks by comparing PCE and kernel-based machine learning methods. Second, it introduces an open source toolbox that implements “PCE-GPR”, a recently proposed hybrid method that combines the advantages of PCE and GPR methods and is suitable for accurate high-dimensional UQ. The analysis shows that kernel techniques tend to outperform PCE in high-dimensional settings and in small-data scenarios, at the price of increased computational cost. Moreover, for most test cases, PCE-GPR is shown to significantly outperform all of the state-of-the-art methods considered. The comparisons are based on popular benchmarks for surrogate modeling and UQ, simulations in various fields of engineering, as well as stochastic boundary value problems with high-dimensional random fields and up to 145 uncertain parameters.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.cma.2025.118523",
+    "pages": "118523",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.cma.2025.118523",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-02",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Computer Methods in Applied Mechanics and Engineering",
+    "issn": "0045-7825",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S0045782525007959",
+    "ai4s_review": {
+      "schema_version": 2,
+      "owner": "王梦冉",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "include",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "高斯过程",
+          "label_en": "Gaussian process",
+          "evidence_location": "官网卷449 Part A导出BibTeX原摘要",
+          "rationale": "比较核机器学习与多项式混沌并提供PCE-GPR工具，以工程仿真和高维随机边值问题验证不确定性量化。"
+        }
+      ],
+      "batch_id": "2026-wangmengran-20261117-round4",
+      "rationale": "比较核机器学习与多项式混沌并提供PCE-GPR工具，以工程仿真和高维随机边值问题验证不确定性量化。",
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "正常浏览器官方卷期Export citation and abstract to BibTeX；逐篇读取原摘要。",
+      "publication_scope": "官网2026卷期年，匹配源文件2026归档；DOI内2025不作为出版年判定，未声称首次在线发表于2026。",
+      "verified_metadata": {
+        "doi": "10.1016/j.cma.2025.118523",
+        "title": "Polynomial chaos vs kernel machine learning methods for uncertainty quantification: A comparative study and benchmarking with the hybrid PCE-GPR approach",
+        "authors": [
+          "Paolo Manfredi"
+        ],
+        "abstract": "In the past two decades, the application of surrogate models to expedite uncertainty quantification (UQ) received wide attention in the applied physics and engineering communities. In particular, extensive literature focused on high-dimensional problems and training efficiency with the aim of addressing the so-called “curse of dimensionality” and achieving satisfactory accuracy even with small experimental designs. Besides popular methods based on polynomial chaos expansion (PCE), recent works explored the application of machine learning regression methods to UQ, particularly kernel-based methods such as support vector regression and Gaussian process regression (GPR). Promising performance and superior accuracy were highlighted especially for small dataset sizes. In this context, the present paper provides a twofold contribution. First, it extends the literature survey and benchmarks by comparing PCE and kernel-based machine learning methods. Second, it introduces an open source toolbox that implements “PCE-GPR”, a recently proposed hybrid method that combines the advantages of PCE and GPR methods and is suitable for accurate high-dimensional UQ. The analysis shows that kernel techniques tend to outperform PCE in high-dimensional settings and in small-data scenarios, at the price of increased computational cost. Moreover, for most test cases, PCE-GPR is shown to significantly outperform all of the state-of-the-art methods considered. The comparisons are based on popular benchmarks for surrogate modeling and UQ, simulations in various fields of engineering, as well as stochastic boundary value problems with high-dimensional random fields and up to 145 uncertain parameters.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782525007959",
+        "volume": "449",
+        "pages": "118523",
+        "publication_year": 2026,
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782525007959",
+          "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/449/part/PA"
+        ]
+      },
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/j-1ba458f82d/2026/papers.json",
+        "official_export_file": "reviews/2026/audits/wangmengran8789-cmame-449PA-20261117.bib"
+      },
+      "supplement_type": "verified_initial_screening_omission",
+      "metadata_verification_status": "官网BibTeX已核标题、作者顺序、DOI、卷、文章号与摘要；公开PDF仍待核。"
+    }
+  },
+  {
+    "id": "10.1016/j.cma.2025.118521",
+    "venue": "j-1ba458f82d",
+    "year": 2026,
+    "track": null,
+    "title": "RBF-parameterized level-set boundary modeling for accelerating CMA-ES-based topology optimization with box constraint handling",
+    "authors": [
+      "Kyosuke Kuzuo",
+      "Garuda Fujii"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0002-8867-6544"
+    ],
+    "abstract": null,
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.cma.2025.118521",
+    "pages": "118521",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.cma.2025.118521",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-02",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Computer Methods in Applied Mechanics and Engineering",
+    "issn": "0045-7825",
+    "article_type": "unknown",
+    "screening_status": "needs_abstract",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S0045782525007935",
+    "ai4s_review": {
+      "schema_version": 2,
+      "owner": "王梦冉",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "include",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "演化优化",
+          "label_en": "Evolutionary optimization",
+          "evidence_location": "官网卷449 Part B导出BibTeX原摘要",
+          "rationale": "CMA-ES结合RBF水平集减小设计维度，优化结构柔度、热流集中器及光学隐身材料。"
+        }
+      ],
+      "batch_id": "2026-wangmengran-20261117-round4",
+      "rationale": "CMA-ES结合RBF水平集减小设计维度，优化结构柔度、热流集中器及光学隐身材料。",
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "正常浏览器官方卷期Export citation and abstract to BibTeX；逐篇读取原摘要。",
+      "publication_scope": "官网2026卷期年，匹配源文件2026归档；DOI内2025不作为出版年判定，未声称首次在线发表于2026。",
+      "verified_metadata": {
+        "doi": "10.1016/j.cma.2025.118521",
+        "title": "RBF-parameterized level-set boundary modeling for accelerating CMA-ES-based topology optimization with box constraint handling",
+        "authors": [
+          "Kyosuke Kuzuo",
+          "Garuda Fujii"
+        ],
+        "abstract": "Topology optimization offers the highest degree of design freedom in structural optimization. However, it requires spatial discretization of distributed variables to represent the structure, often aligning this discretization of design variables with that used for numerical analysis. This leads to optimization problems with numerous design variables; reducing this number typically compromises the accuracy of the numerical analysis. As the scope of applications of topology optimization broadens, it has become evident that problems involving challenging characteristics—such as multimodality and large disparities in material properties—require considerable trial and error to determine an effective initial design configuration and strategy parameters. Gradient-based methods, which follow single-point search strategies, are well suited to tackling problems with large design spaces but frequently falter when confronted with such complexities. Conversely, multi-point search strategies like evolutionary computation handle challenging characteristics more robustly but suffer from the curse of dimensionality when faced with large design spaces. Consequently, addressing both challenges simultaneously remains a significant hurdle. In this work, we propose a scheme to address these challenges concurrently aiming to eliminate the need for extensive human involvement in topology optimization. The main aim is to achieve high-performance optimal configurations within a reasonable timeframe without the need for trial and error. To this end, we introduce radial basis function-parameterized level-set boundary modeling to enhance exploration in topology optimization. By integrating this approach with the covariance matrix adaptation evolution strategy, we decouple the dependency between the number of design variables and the accuracy of the finite-element analysis. We validate the proposed scheme through three numerical demonstrations: compliance minimization, the design of an undetectable heat flux concentrator and of an optical carpet cloak. Despite variations in governing equations and boundary conditions across these problems, high-performance optimal configurations are consistently achieved within reasonable computation times—again without trial-and-error tuning.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782525007935",
+        "volume": "449",
+        "pages": "118521",
+        "publication_year": 2026,
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782525007935",
+          "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/449/part/PB"
+        ]
+      },
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/j-1ba458f82d/2026/papers.json",
+        "official_export_file": "reviews/2026/audits/wangmengran8789-cmame-449PB-20261117.bib"
+      },
+      "supplement_type": "verified_initial_screening_omission",
+      "metadata_verification_status": "官网BibTeX已核标题、作者顺序、DOI、卷、文章号与摘要；公开PDF仍待核。"
+    }
+  },
+  {
+    "id": "10.1016/j.cma.2025.118527",
+    "venue": "j-1ba458f82d",
+    "year": 2026,
+    "track": null,
+    "title": "MicroLad: 2D-to-3D microstructure reconstruction and generation via latent diffusion and score distillation",
+    "authors": [
+      "Kang-Hyun Lee",
+      "Faez Ahmed"
+    ],
+    "author_ids": [
+      "https://orcid.org/0009-0002-4339-679X",
+      "https://orcid.org/0000-0002-5227-2628"
+    ],
+    "abstract": "A major obstacle to establishing reliable structure-property (SP) linkages in materials engineering is the scarcity of diverse 3D microstructure datasets. Limited dataset availability and insufficient control over the analysis and design space restrict the variety of achievable microstructure morphologies, hindering progress in solving the inverse (property-to-structure) design problem. To address these challenges, we introduce MicroLad, a latent diffusion framework specifically designed for reconstructing 3D microstructures from 2D data. Trained on 2D images and employing multi-plane denoising diffusion sampling in the latent space, the framework reliably generates stable and coherent 3D volumes that remain statistically consistent with the original data. While this reconstruction capability enables dimensionality expansion (2D-to-3D) for generating statistically equivalent 3D samples from 2D data, effective exploration of microstructure design requires methods to guide the generation process toward specific objectives. To achieve this, MicroLad integrates score distillation sampling (SDS), which combines a differentiable score loss with microstructural descriptor-matching and property-alignment terms. This approach updates encoded 2D slices of the 3D volume in the latent space, enabling robust inverse-controlled 2D-to-3D microstructure generation. Consequently, the method facilitates exploration of an expanded 3D microstructure analysis and design space in terms of both microstructural descriptors and material properties.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.cma.2025.118527",
+    "pages": "118527",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.cma.2025.118527",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-02",
+    "source": "crossref.org+openaire.eu",
+    "venue_type": "journal",
+    "journal_title": "Computer Methods in Applied Mechanics and Engineering",
+    "issn": "0045-7825",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S0045782525007996",
+    "ai4s_review": {
+      "schema_version": 2,
+      "owner": "王梦冉",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "include",
+      "tags": [
+        {
+          "axis": "method",
+          "label": "扩散模型",
+          "label_en": "Diffusion model",
+          "evidence_location": "官网卷449 Part B导出BibTeX原摘要",
+          "rationale": "潜扩散和分数蒸馏从二维图像重建并定向生成三维材料微结构。"
+        }
+      ],
+      "batch_id": "2026-wangmengran-20261117-round4",
+      "rationale": "潜扩散和分数蒸馏从二维图像重建并定向生成三维材料微结构。",
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "正常浏览器官方卷期Export citation and abstract to BibTeX；逐篇读取原摘要。",
+      "publication_scope": "官网2026卷期年，匹配源文件2026归档；DOI内2025不作为出版年判定，未声称首次在线发表于2026。",
+      "verified_metadata": {
+        "doi": "10.1016/j.cma.2025.118527",
+        "title": "MicroLad: 2D-to-3D microstructure reconstruction and generation via latent diffusion and score distillation",
+        "authors": [
+          "Kang-Hyun Lee",
+          "Faez Ahmed"
+        ],
+        "abstract": "A major obstacle to establishing reliable structure–property (SP) linkages in materials engineering is the scarcity of diverse 3D microstructure datasets. Limited dataset availability and insufficient control over the analysis and design space restrict the variety of achievable microstructure morphologies, hindering progress in solving the inverse (property-to-structure) design problem. To address these challenges, we introduce MicroLad, a latent diffusion framework specifically designed for reconstructing 3D microstructures from 2D data. Trained on 2D images and employing multi-plane denoising diffusion sampling in the latent space, the framework reliably generates stable and coherent 3D volumes that remain statistically consistent with the original data. While this reconstruction capability enables dimensionality expansion (2D-to-3D) for generating statistically equivalent 3D samples from 2D data, effective exploration of microstructure design requires methods to guide the generation process toward specific objectives. To achieve this, MicroLad integrates score distillation sampling (SDS), which combines a differentiable score loss with microstructural descriptor-matching and property-alignment terms. This approach updates encoded 2D slices of the 3D volume in the latent space, enabling robust inverse-controlled 2D-to-3D microstructure generation. Consequently, the method facilitates exploration of an expanded 3D microstructure analysis and design space in terms of both microstructural descriptors and material properties.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782525007996",
+        "volume": "449",
+        "pages": "118527",
+        "publication_year": 2026,
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782525007996",
+          "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/449/part/PB"
+        ]
+      },
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/j-1ba458f82d/2026/papers.json",
+        "official_export_file": "reviews/2026/audits/wangmengran8789-cmame-449PB-20261117.bib"
+      },
+      "supplement_type": "verified_initial_screening_omission",
+      "metadata_verification_status": "官网BibTeX已核标题、作者顺序、DOI、卷、文章号与摘要；公开PDF仍待核。"
+    }
+  },
+  {
+    "id": "10.1016/j.cma.2025.118571",
+    "venue": "j-1ba458f82d",
+    "year": 2026,
+    "track": null,
+    "title": "A Computational Framework to design 3D stiffness gradient acoustic metamaterials for impedance matching",
+    "authors": [
+      "Rayehe Karimi Mahabadi",
+      "Doksoo Lee",
+      "Alexander C. Ogren",
+      "Chiara Daraio",
+      "Wei Chen",
+      "Cynthia Rudin",
+      "L. Catherine Brinson"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0001-5177-635X",
+      "https://orcid.org/0000-0002-4597-6643",
+      "https://orcid.org/0000-0002-7277-0069",
+      "https://orcid.org/0000-0001-5296-4440",
+      "https://orcid.org/0000-0002-4653-7124",
+      "https://orcid.org/0000-0003-4283-2780",
+      "https://orcid.org/0000-0003-2551-1563"
+    ],
+    "abstract": "<div> <div>The code and data can be found at this GitHub repository: <a href=\"https://github.com/RayeheKM/Acoustic-Metamaterial-Impedance-Matching\" target=\"_blank\" rel=\"noopener\"><span><span>https://github.com/RayeheKM/Acoustic-Metamaterial-Impedance-Matching</span></span></a>.</div> </div> <div> </div>",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.cma.2025.118571",
+    "pages": "118571",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.cma.2025.118571",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-02",
+    "source": "crossref.org+openaire.eu",
+    "venue_type": "journal",
+    "journal_title": "Computer Methods in Applied Mechanics and Engineering",
+    "issn": "0045-7825",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S0045782525008436",
+    "ai4s_review": {
+      "schema_version": 2,
+      "owner": "王梦冉",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "include",
+      "tags": [
+        {
+          "axis": "task",
+          "label": "逆向设计",
+          "label_en": "Inverse design",
+          "evidence_location": "官网卷449 Part B导出BibTeX原摘要",
+          "rationale": "可微机器学习及遗传算法协同设计三维梯度刚度声学超材料，实现水声阻抗匹配。"
+        }
+      ],
+      "batch_id": "2026-wangmengran-20261117-round4",
+      "rationale": "可微机器学习及遗传算法协同设计三维梯度刚度声学超材料，实现水声阻抗匹配。",
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "正常浏览器官方卷期Export citation and abstract to BibTeX；逐篇读取原摘要。",
+      "publication_scope": "官网2026卷期年，匹配源文件2026归档；DOI内2025不作为出版年判定，未声称首次在线发表于2026。",
+      "verified_metadata": {
+        "doi": "10.1016/j.cma.2025.118571",
+        "title": "A Computational Framework to design 3D stiffness gradient acoustic metamaterials for impedance matching",
+        "authors": [
+          "Rayehe {Karimi Mahabadi}",
+          "Doksoo Lee",
+          "Alexander C. Ogren",
+          "Chiara Daraio",
+          "Wei Chen",
+          "Cynthia Rudin",
+          "L. Catherine Brinson"
+        ],
+        "abstract": "Acoustic waves play a crucial role in various applications, including medical imaging, non-destructive testing, and sonar systems. One of the significant challenges in these applications is impedance matching, which is essential for minimizing reflections and maximizing the transfer of acoustic energy between different media. Acoustic metamaterials offer a promising solution to this challenge. In addition to impedance control, gradient stiffness can enhance structural efficiency and enable spatial control of wave propagation, making it a valuable feature in acoustic metamaterial design. In this paper, we present our developed computational method to design 3D stiffness gradient acoustic metamaterials for impedance matching. The key steps in our approach include generating initial designs using a periodic covariance function to provide unit cells that are both periodic on the boundaries and randomly formed inside the unit cell. Furthermore, we integrated manufacturing constraints into the design process, ensuring that the structures are interconnected for fabrication. We propose two computational optimization algorithms: GenUnit, based on a non-dominated sorting genetic algorithm (NSGA-II), and MLMatch, which leverages differentiable machine learning. The two approaches are not separate contributions but complementary components of a unified framework. GenUnit requires no training data and directly interfaces with physics-based simulations, making it highly accurate but slower for large-scale exploration. In contrast, MLMatch is data-hungry during training but, once trained, enables near-instantaneous inference and broad design-space coverage. Together, they form a hybrid strategy: MLMatch rapidly explores the global design space, and GenUnit provides local refinement with high-fidelity accuracy. This balance between training cost, inference time, and precision is the motivation for including both methods in the same study. We applied this dual-algorithm framework to generate two metallic-based metamaterial designs that match the acoustic impedance of water while exhibiting a controlled gradient in stiffness (from stiff to soft). The stiffness gradient is particularly advantageous in applications where one side of the structure must interface with soft or sensitive surfaces, such as human tissue or delicate components. This work paves the way for improved materials in various acoustic applications, particularly in ultrasound devices, by providing better impedance matching and thereby improving the efficiency of acoustic energy transfer.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782525008436",
+        "volume": "449",
+        "pages": "118571",
+        "publication_year": 2026,
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782525008436",
+          "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/449/part/PB"
+        ]
+      },
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/j-1ba458f82d/2026/papers.json",
+        "official_export_file": "reviews/2026/audits/wangmengran8789-cmame-449PB-20261117.bib"
+      },
+      "supplement_type": "verified_initial_screening_omission",
+      "metadata_verification_status": "官网BibTeX已核标题、作者顺序、DOI、卷、文章号与摘要；公开PDF仍待核。"
+    }
+  },
+  {
+    "id": "10.1016/j.cma.2025.118551",
+    "venue": "j-1ba458f82d",
+    "year": 2026,
+    "track": null,
+    "title": "Automated constitutive model discovery by pairing sparse regression algorithms with model selection criteria",
+    "authors": [
+      "Jorge–Humberto Urrea–Quintero",
+      "David Anton",
+      "Laura De Lorenzis",
+      "Henning Wessels"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0002-7690-4298",
+      "https://orcid.org/0000-0002-0888-0220",
+      "https://orcid.org/0000-0003-2748-3287",
+      "https://orcid.org/0000-0002-2542-1130"
+    ],
+    "abstract": "The automated discovery of constitutive models from data has recently emerged as a promising alternative to the traditional model calibration paradigm. In this work, we present a fully automated framework for constitutive model discovery that systematically pairs three sparse regression algorithms (least absolute shrinkage and selection operator (LASSO), least angle regression (LARS), and orthogonal matching pursuit (OMP)) with three model selection criteria: K -fold cross-validation (CV), Akaike information criterion (AIC), and Bayesian information criterion (BIC). This pairing yields nine distinct algorithms for model discovery and enables a systematic exploration of the trade-off between sparsity, predictive performance, and computational cost. While LARS serves as an efficient path-based solver for the ℓ 1 -constrained problem, OMP is introduced as a tractable heuristic for ℓ 0 -regularized selection. The framework is applied to both isotropic and anisotropic hyperelasticity, utilizing both synthetic and experimental datasets. Results reveal that all nine algorithm-criterion combinations perform consistently well in discovering isotropic and anisotropic materials, yielding highly accurate constitutive models. These findings broaden the range of viable discovery algorithms beyond ℓ 1 -based approaches such as LASSO.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.cma.2025.118551",
+    "pages": "118551",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.cma.2025.118551",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-02",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Computer Methods in Applied Mechanics and Engineering",
+    "issn": "0045-7825",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S0045782525008230",
+    "ai4s_review": {
+      "schema_version": 2,
+      "owner": "王梦冉",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "include",
+      "tags": [
+        {
+          "axis": "task",
+          "label": "材料本构发现",
+          "label_en": "Constitutive law discovery",
+          "evidence_location": "官网卷449 Part B导出BibTeX原摘要",
+          "rationale": "稀疏回归结合模型选择从合成及实验数据自动发现各向同性和各向异性超弹性本构。"
+        }
+      ],
+      "batch_id": "2026-wangmengran-20261117-round4",
+      "rationale": "稀疏回归结合模型选择从合成及实验数据自动发现各向同性和各向异性超弹性本构。",
+      "reviewed_at": "2026-11-17",
+      "evidence_basis": "正常浏览器官方卷期Export citation and abstract to BibTeX；逐篇读取原摘要。",
+      "publication_scope": "官网2026卷期年，匹配源文件2026归档；DOI内2025不作为出版年判定，未声称首次在线发表于2026。",
+      "verified_metadata": {
+        "doi": "10.1016/j.cma.2025.118551",
+        "title": "Automated constitutive model discovery by pairing sparse regression algorithms with model selection criteria",
+        "authors": [
+          "Jorge–Humberto Urrea–Quintero",
+          "David Anton",
+          "Laura {De Lorenzis}",
+          "Henning Wessels"
+        ],
+        "abstract": "The automated discovery of constitutive models from data has recently emerged as a promising alternative to the traditional model calibration paradigm. In this work, we present a fully automated framework for constitutive model discovery that systematically pairs three sparse regression algorithms (least absolute shrinkage and selection operator (LASSO), least angle regression (LARS), and orthogonal matching pursuit (OMP)) with three model selection criteria: K-fold cross-validation (CV), Akaike information criterion (AIC), and Bayesian information criterion (BIC). This pairing yields nine distinct algorithms for model discovery and enables a systematic exploration of the trade-off between sparsity, predictive performance, and computational cost. While LARS serves as an efficient path-based solver for the ℓ1-constrained problem, OMP is introduced as a tractable heuristic for ℓ0-regularized selection. The framework is applied to both isotropic and anisotropic hyperelasticity, utilizing both synthetic and experimental datasets. Results reveal that all nine algorithm-criterion combinations perform consistently well in discovering isotropic and anisotropic materials, yielding highly accurate constitutive models. These findings broaden the range of viable discovery algorithms beyond ℓ1-based approaches such as LASSO.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782525008230",
+        "volume": "449",
+        "pages": "118551",
+        "publication_year": 2026,
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782525008230",
+          "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/449/part/PB"
+        ]
+      },
+      "input_provenance": {
+        "input_main_commit": "56e073c0921723916d4e44b79ea95e4857c945a5",
+        "source_file": "metadata/j-1ba458f82d/2026/papers.json",
+        "official_export_file": "reviews/2026/audits/wangmengran8789-cmame-449PB-20261117.bib"
+      },
+      "supplement_type": "verified_initial_screening_omission",
+      "metadata_verification_status": "官网BibTeX已核标题、作者顺序、DOI、卷、文章号与摘要；公开PDF仍待核。"
     }
   }
 ]
