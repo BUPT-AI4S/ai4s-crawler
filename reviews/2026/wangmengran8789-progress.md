@@ -1,64 +1,66 @@
 # 王梦冉2026审核阶段交付（进行中）
 
-本批从最新确认的2026分工开始，48个来源、2202条候选。仅处理王梦冉的2026数据，未修改其他负责人、2024/2025台账或监控脚本。
+按已确认2026分工处理48个来源。原年度候选2202条，本轮从已采全量记录中核实补录7条初筛漏筛，台账合计2209条。快照`2026-11-08T21:38:12.854071+08:00`；审核开始检查main`b06974f0902afed254377eefe071d6f8ac643e82`，技能与标签词表无变化。2026尚未结束，当前结果不代表全年最终覆盖。
 
-快照：`2026-11-08T21:38:12.854071+08:00`。候选输入SHA256：`1412d7d77ee5be72c1fb0e7bb99e154e4e37fb0a52f0becd66d140791dc603d2`。输入main：`cf5d3ee36e059366fa181b3a2bc4a0dd52e18e16`；交付前再次检查main：`18a99b1e9b793f053d9c169f79ee0064cf149d2b`，技能和词表无变化。2026尚未结束，当前数据不代表全年最终覆盖。
+累计逐篇形成197条判定：纳入137、排除36、待定24；其余2012条未审。本轮新增57条判定（50条原候选及7条补录）。所有原始对象字段和值均保留，仅追加ai4s_review；补录沿用2026源papers.json原对象。其他负责人、2024/2025数据和监控逻辑未改动。
 
-已逐篇形成140条判定：95纳入、24排除、21待定；2062条保留未审。纳入判定与正式元数据核验分别记录，目前不能声称所有纳入元数据都已核完。未按标题或关键词批量生成纳入/排除结论。既往2024的“待定转排除”未自动套用于2026的新证据疑点。
+ScienceDirect原验证码页面已恢复访问。依用户流程从Computer Methods in Applied Mechanics and Engineering卷448 Part A全选、取消Editorial Board，使用Export citation and abstract to BibTeX，导出52条原引文摘要。原BibTeX与SHA256、核验范围、补录ID保存在audits/wangmengran8789-cmame-448PA-20261117.*。逐篇审核其中10条原候选及7条经原摘要核实的漏筛记录；本卷不是年度总量，不声称另外35条都已精筛。Part B未显示批量导出控件，转而读取两篇官方论文页摘要。
 
-从官网核对了npj 2D Materials and Applications三篇、Neuropsychopharmacology三篇及British Journal of Cancer两篇。后两篇结果段因小于号解析被截断，已在verified_metadata补回原文；不覆盖原始abstract。其余有摘要的判定依据明确标为输入原摘要，未伪称读取正文。标签全部使用现行规范词表；未新增标签。
+本轮补齐4条原候选的空摘要，原始空摘要404条中仍有400条未补齐。另修复一条非空但误采为致谢的摘要：10.1007/s11433-025-2848-2，真正摘要和作者从Springer Nature Link取得，写入verified_metadata。补录7条中的4条原全量记录空摘要也通过官方导出补齐，不混作原404条的减少量。另有3条非空摘要存在已知截断/正文片段/README混入问题（MTNA 103003、103072和Current Biology 2026.10.004），仍待补正确原摘要；400只统计仍空的原候选，不能代表全部摘要质量问题。所有新增摘要均来自原文，不使用生成摘要。历次另修复两条BJC摘要的小于号截断。
 
-原始缺摘要404条仍未解决，逐条列于`audits/wangmengran8789-2026-abstract-gaps.json`，其中仅一个具体论文网址有本轮浏览器受阻记录，其余标为尚未尝试。正常Chrome访问https://doi.org/10.1016/j.cma.2025.118411 后ScienceDirect显示“Are you a robot?”；需要负责人手动验证，未绕过或自动解验证码，也未把未知摘要生成补齐。尚未开展48来源的完整官方年度目录对账，official_total均保留null；EMNLP/LCTES当前候选零不代表官网论文零。
+Science China Physics, Mechanics & Astronomy的14条候选已逐条判定，Science China Materials的24条候选已逐条判定（其中3条待核正文）；这不等于两刊年度目录和所有纳入元数据均完成。纳入标签使用当前规范中英文词表。输入摘要足以判断者据此记录，未伪称读取正文；只有查证过的元数据写入verified_metadata。
 
-下一步：从unreviewed继续逐篇读摘要；人工验证通过后继续官方摘要导出；逐篇解决21条待定；补核纳入论文元数据和公开PDF；按来源完成2026目录DOI对账。详情见个人反馈和审计清单。阶段PR不等同于任务完成，也不据此把大屏所有提示改绿。
+剩余工作：逐篇处理未审；解决24条待定；补400条仍空的原候选摘要及其他已发现的摘要质量问题；完成纳入论文元数据与公开PDF核验；按同口径对账48来源2026官方年度目录。官网总数均保留null，不将未知记零。EMNLP/LCTES当前候选零不代表官网论文零。本阶段PR保持进行中，未合并发布大屏，也不据此将提示强制变绿。
 
-| 来源 | 候选 | 纳入 | 排除 | 待定 | 未审 | 原始缺摘要 |
-|---|---:|---:|---:|---:|---:|---:|
-| Environmental Chemistry Letters | 1 | 1 | 0 | 0 | 0 | 0 |
-| Conference on Empirical Methods in Natural Language Processing | 0 | 0 | 0 | 0 | 0 | 0 |
-| Trends in Chemistry | 1 | 0 | 0 | 1 | 0 | 1 |
-| Current Opinion in Green and Sustainable Chemistry | 3 | 1 | 0 | 2 | 0 | 0 |
-| Biomaterials Research | 2 | 2 | 0 | 0 | 0 | 0 |
-| npj 2D Materials and Applications | 6 | 3 | 3 | 0 | 0 | 0 |
-| ACM SIGPLAN/SIGBED International Conference on Languages, Compilers andTools for Embedded Systems | 0 | 0 | 0 | 0 | 0 | 0 |
-| Drug Discovery Today | 60 | 0 | 0 | 0 | 60 | 0 |
-| npj Parkinson’s Disease | 35 | 0 | 0 | 0 | 35 | 0 |
-| Building and Environment | 75 | 0 | 0 | 0 | 75 | 23 |
-| npj Breast Cancer | 19 | 16 | 3 | 0 | 0 | 0 |
-| Transportation Research Part C Emerging Technologies | 26 | 22 | 0 | 4 | 0 | 4 |
-| Sensors and Actuators B Chemical | 31 | 0 | 0 | 0 | 31 | 23 |
-| Materials & Design | 125 | 0 | 0 | 0 | 125 | 0 |
-| Science China Information Sciences | 36 | 0 | 0 | 0 | 36 | 0 |
-| Energy and Buildings | 72 | 0 | 0 | 0 | 72 | 9 |
-| Knowledge-Based Systems | 125 | 0 | 0 | 0 | 125 | 61 |
-| Journal of Cheminformatics | 119 | 0 | 0 | 0 | 119 | 0 |
-| Applied Soft Computing | 146 | 0 | 0 | 0 | 146 | 82 |
-| Artificial Intelligence in Medicine | 58 | 0 | 0 | 0 | 58 | 1 |
-| British Journal of Cancer | 7 | 5 | 1 | 1 | 0 | 0 |
-| Cell Reports | 39 | 0 | 0 | 0 | 39 | 0 |
-| Current Biology | 15 | 7 | 5 | 3 | 0 | 0 |
-| Science China Materials | 24 | 0 | 0 | 0 | 24 | 0 |
-| The American Journal of Human Genetics | 4 | 3 | 1 | 0 | 0 | 0 |
-| Computer Methods in Applied Mechanics and Engineering | 121 | 0 | 0 | 0 | 121 | 19 |
-| Engineering Structures | 57 | 0 | 0 | 0 | 57 | 32 |
-| Neuropsychopharmacology | 6 | 3 | 3 | 0 | 0 | 0 |
-| Precision Agriculture | 51 | 0 | 0 | 0 | 51 | 0 |
-| Cell Systems | 36 | 0 | 0 | 0 | 36 | 1 |
-| npj Materials Degradation | 21 | 18 | 1 | 2 | 0 | 0 |
-| Translational Psychiatry | 42 | 0 | 0 | 0 | 42 | 0 |
-| Frontiers of Computer Science | 9 | 2 | 3 | 4 | 0 | 0 |
-| Journal of Hydrology | 178 | 0 | 0 | 0 | 178 | 84 |
-| Science China Physics Mechanics and Astronomy | 14 | 0 | 0 | 0 | 14 | 0 |
-| Cell Reports Physical Science | 56 | 0 | 0 | 0 | 56 | 1 |
-| Communications Chemistry | 61 | 0 | 0 | 0 | 61 | 0 |
-| Agricultural and Forest Meteorology | 30 | 0 | 0 | 0 | 30 | 2 |
-| International Journal of Heat and Mass Transfer | 48 | 0 | 0 | 0 | 48 | 29 |
-| Molecular Therapy — Nucleic Acids | 10 | 5 | 2 | 3 | 0 | 0 |
-| Computer Methods and Programs in Biomedicine | 136 | 0 | 0 | 0 | 136 | 0 |
-| Information Sciences | 38 | 0 | 0 | 0 | 38 | 23 |
-| Communications Physics | 38 | 0 | 0 | 0 | 38 | 0 |
-| BMC Biology | 33 | 0 | 0 | 0 | 33 | 0 |
-| International Journal of Medical Informatics | 82 | 0 | 0 | 0 | 82 | 1 |
-| Structure | 10 | 7 | 2 | 1 | 0 | 0 |
-| Engineering With Computers | 59 | 0 | 0 | 0 | 59 | 0 |
-| Computer Physics Communications | 37 | 0 | 0 | 0 | 37 | 8 |
+| 来源 | 原候选 | 补录 | 纳入 | 排除 | 待定 | 未审 | 仍为空摘要 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Environmental Chemistry Letters | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Conference on Empirical Methods in Natural Language Processing | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Trends in Chemistry | 1 | 0 | 0 | 0 | 1 | 0 | 1 |
+| Current Opinion in Green and Sustainable Chemistry | 3 | 0 | 1 | 0 | 2 | 0 | 0 |
+| Biomaterials Research | 2 | 0 | 2 | 0 | 0 | 0 | 0 |
+| npj 2D Materials and Applications | 6 | 0 | 3 | 3 | 0 | 0 | 0 |
+| ACM SIGPLAN/SIGBED International Conference on Languages, Compilers andTools for Embedded Systems | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Drug Discovery Today | 60 | 0 | 0 | 0 | 0 | 60 | 0 |
+| npj Parkinson’s Disease | 35 | 0 | 0 | 0 | 0 | 35 | 0 |
+| Building and Environment | 75 | 0 | 0 | 0 | 0 | 75 | 23 |
+| npj Breast Cancer | 19 | 0 | 16 | 3 | 0 | 0 | 0 |
+| Transportation Research Part C Emerging Technologies | 26 | 0 | 22 | 0 | 4 | 0 | 4 |
+| Sensors and Actuators B Chemical | 31 | 0 | 0 | 0 | 0 | 31 | 23 |
+| Materials & Design | 125 | 0 | 0 | 0 | 0 | 125 | 0 |
+| Science China Information Sciences | 36 | 0 | 0 | 0 | 0 | 36 | 0 |
+| Energy and Buildings | 72 | 0 | 0 | 0 | 0 | 72 | 9 |
+| Knowledge-Based Systems | 125 | 0 | 0 | 0 | 0 | 125 | 61 |
+| Journal of Cheminformatics | 119 | 0 | 0 | 0 | 0 | 119 | 0 |
+| Applied Soft Computing | 146 | 0 | 0 | 0 | 0 | 146 | 82 |
+| Artificial Intelligence in Medicine | 58 | 0 | 0 | 0 | 0 | 58 | 1 |
+| British Journal of Cancer | 7 | 0 | 5 | 1 | 1 | 0 | 0 |
+| Cell Reports | 39 | 0 | 0 | 0 | 0 | 39 | 0 |
+| Current Biology | 15 | 0 | 7 | 5 | 3 | 0 | 0 |
+| Science China Materials | 24 | 0 | 13 | 8 | 3 | 0 | 0 |
+| The American Journal of Human Genetics | 4 | 0 | 3 | 1 | 0 | 0 | 0 |
+| Computer Methods in Applied Mechanics and Engineering | 121 | 7 | 19 | 0 | 0 | 109 | 15 |
+| Engineering Structures | 57 | 0 | 0 | 0 | 0 | 57 | 32 |
+| Neuropsychopharmacology | 6 | 0 | 3 | 3 | 0 | 0 | 0 |
+| Precision Agriculture | 51 | 0 | 0 | 0 | 0 | 51 | 0 |
+| Cell Systems | 36 | 0 | 0 | 0 | 0 | 36 | 1 |
+| npj Materials Degradation | 21 | 0 | 18 | 1 | 2 | 0 | 0 |
+| Translational Psychiatry | 42 | 0 | 0 | 0 | 0 | 42 | 0 |
+| Frontiers of Computer Science | 9 | 0 | 2 | 3 | 4 | 0 | 0 |
+| Journal of Hydrology | 178 | 0 | 0 | 0 | 0 | 178 | 84 |
+| Science China Physics Mechanics and Astronomy | 14 | 0 | 10 | 4 | 0 | 0 | 0 |
+| Cell Reports Physical Science | 56 | 0 | 0 | 0 | 0 | 56 | 1 |
+| Communications Chemistry | 61 | 0 | 0 | 0 | 0 | 61 | 0 |
+| Agricultural and Forest Meteorology | 30 | 0 | 0 | 0 | 0 | 30 | 2 |
+| International Journal of Heat and Mass Transfer | 48 | 0 | 0 | 0 | 0 | 48 | 29 |
+| Molecular Therapy — Nucleic Acids | 10 | 0 | 5 | 2 | 3 | 0 | 0 |
+| Computer Methods and Programs in Biomedicine | 136 | 0 | 0 | 0 | 0 | 136 | 0 |
+| Information Sciences | 38 | 0 | 0 | 0 | 0 | 38 | 23 |
+| Communications Physics | 38 | 0 | 0 | 0 | 0 | 38 | 0 |
+| BMC Biology | 33 | 0 | 0 | 0 | 0 | 33 | 0 |
+| International Journal of Medical Informatics | 82 | 0 | 0 | 0 | 0 | 82 | 1 |
+| Structure | 10 | 0 | 7 | 2 | 1 | 0 | 0 |
+| Engineering With Computers | 59 | 0 | 0 | 0 | 0 | 59 | 0 |
+| Computer Physics Communications | 37 | 0 | 0 | 0 | 0 | 37 | 8 |
+
+推送前再次检查main `56e073c0`：年度候选变化属于其他负责人；王梦冉原2202条逐字段一致，当前审核输入保持有效。
