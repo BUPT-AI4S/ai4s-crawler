@@ -7,17 +7,17 @@
   "cutoff_at": "2026-11-16T23:14:20-08:00",
   "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
   "main_commit": "5df29602976068cb1bc51ab48a5e09cf54124c85",
-  "official_total": 53,
+  "official_total": 54,
   "formal_type_counts": {
-    "Article": 45,
+    "Article": 46,
     "Review": 5,
-    "Author Correction": 2,
-    "Perspective": 1
+    "Perspective": 1,
+    "Author Correction": 2
   },
-  "research_review_total": 51,
-  "official_scope": "2026正式卷11期1，截止前53条（45 Article、5 Review、1 Perspective、2 Author Correction），研究/实质综述51篇；20条在线未编卷记录不计入。",
+  "research_review_total": 52,
+  "official_scope": "截至2026-11-17T07:14:20Z的2026正式卷11期1共54条（46 Article、5 Review、1 Perspective、2 Author Correction），研究/实质综述52篇；20条原采集在线未编卷记录单列。",
   "directory_method": "年度卷索引显示2026卷11，但卷11页面无正文目录；改用官网2026全类型4页71条及2025全类型4页61条，逐篇核对官方引用、citation_volume/issue/firstpage/online_date；另核对主页新出现但年度过滤缓存未列出的Tracking条目。全程为出版社官方证据，未用替代数据库数冒充官网数。",
-  "directory_cache_difference": "未筛年份目录的年份按钮曾显示72条；2026筛选目录4页71条，少列11月17日Tracking论文。该篇已正式卷11文章53，但晚于固定截止，单列排除，不影响同口径53条。另一11月17日decorin论文未编卷，亦单列。",
+  "directory_cache_difference": "未筛年份目录72条、2026过滤目录4页71条的差异为Tracking论文；该篇官方JSON-LD datePublished为2026-11-17T00:00:00Z，早于固定截止07:14:20Z，正式文章53补入。不能只按洛杉矶日历日期将11月17日条目视为截止后。",
   "formal_article_numbers": [
     1,
     2,
@@ -71,12 +71,13 @@
     50,
     51,
     52,
+    53,
     54
   ],
   "initial_collected_total": 69,
   "initial_collected_same_scope": 49,
-  "current_collected_total": 73,
-  "collected_total_same_scope": 53,
+  "current_collected_total": 74,
+  "collected_total_same_scope": 54,
   "backfilled_papers": [
     "10.1038/s41536-025-00444-9",
     "10.1038/s41536-025-00447-6",
@@ -186,23 +187,8 @@
     }
   ],
   "new_online_unassigned_not_collected": [
-    "10.1038/s41536-026-00520-8"
-  ],
-  "post_cutoff_entries": [
-    {
-      "doi": "10.1038/s41536-026-00524-4",
-      "url": "https://www.nature.com/articles/s41536-026-00524-4",
-      "published": "2026/11/17",
-      "volume": null,
-      "article_number": ""
-    },
-    {
-      "doi": "10.1038/s41536-026-00522-6",
-      "url": "https://www.nature.com/articles/s41536-026-00522-6",
-      "published": "2026/11/17",
-      "volume": "11",
-      "article_number": "53"
-    }
+    "10.1038/s41536-026-00520-8",
+    "10.1038/s41536-026-00524-4"
   ],
   "cross_year_records_checked": 61,
   "cross_year_formal_matches": 4,
@@ -974,6 +960,21 @@
       "rationale": "初筛漏筛补录：公开方法明确以Harmony 4.9的PhenoLOGIC机器学习算法分析免疫荧光图像，定量涂层气管插管干预后的巨噬细胞标志物及修复反应。学习方法支持实验测量；CD86/CD206阳性判定另有荧光阈值，未将全部下游阈值统计称为AI。"
     },
     {
+      "doi": "10.1038/s41536-026-00522-6",
+      "title": "Tracking human HSCs and MPPs in mice reveals distinct clonal dynamics and responses to pre-transplant conditioning",
+      "url": "https://www.nature.com/articles/s41536-026-00522-6",
+      "volume": "11",
+      "issue": "1",
+      "article_number": "53",
+      "published": "2026-11-17",
+      "published_at": "2026-11-17T00:00:00Z",
+      "document_type": "Article",
+      "within_fixed_formal_scope": true,
+      "present_in_initial_collection": false,
+      "screening_result": "not_candidate_on_available_evidence",
+      "rationale": "官网漏采补录。原摘要及正文已检查：以STEM对短时序克隆丰度进行模式聚类和统计比较，现有证据未显示需要补入的实质AI建模；不将所有聚类或条形码克隆追踪一概视作AI。"
+    },
+    {
       "doi": "10.1038/s41536-026-00495-6",
       "title": "Nanoclay gels promote re-epithelialization and improve the quality of skin wound healing in a diabetic mouse model",
       "url": "https://www.nature.com/articles/s41536-026-00495-6",
@@ -987,5 +988,15 @@
       "screening_result": "not_candidate_on_available_evidence",
       "rationale": "已核对官网题名、原摘要及公开正文中的方法线索；现有证据未显示应补入的实质AI作用。"
     }
-  ]
+  ],
+  "newly_collected_official_papers": [
+    "10.1038/s41536-026-00522-6"
+  ],
+  "publication_timestamp_check": {
+    "doi": "10.1038/s41536-026-00522-6",
+    "source": "出版社论文页JSON-LD datePublished",
+    "published_at": "2026-11-17T00:00:00Z",
+    "cutoff_at": "2026-11-17T07:14:20Z",
+    "within_cutoff": true
+  }
 }
