@@ -23454,11 +23454,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "lixueting-2026-batch21",
+      "batch_id": "lixueting-2026-batch24",
       "owner": "李雪婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "输入摘要的AI主要位于高熵材料负极未来展望，不能判断是否有实质机器学习综述。官网单篇原摘要/全文受403及浏览器CPE00002阻挡；正式卷5期2和Review类型已核。需合法原摘要与相应AI段落，避免仅凭未来愿景纳入或按未读全文排除。",
+      "decision": "include",
+      "rationale": "官网原摘要及开放HTML正文§4.1明确评述以XGBoost、随机森林筛选高熵合金组分，SHAP分析元素影响，并以计算—实验策略优化锂负极界面；摘要虽把AI写在展望，正文有具体科学研究案例，故补证纳入。PSO单独不作为AI依据，不声称本综述新训练模型或复现文中电池性能。",
       "verified_metadata": {
         "doi": "10.1016/j.enrev.2026.100193",
         "url": "https://www.sciencedirect.com/science/article/pii/S2772970226000192",
@@ -23472,20 +23472,54 @@
           "https://www.sciencedirect.com/science/article/pii/S2772970226000192",
           "https://www.sciencedirect.com/journal/energy-reviews/vol/5/issue/2"
         ],
-        "scientific_evidence_location": "输入摘要线索；官网正式卷期目录；单篇页访问失败",
-        "pdf_availability_note": "官网宣称Open access，尚未取得可验签公开PDF，不伪填PDF已核实。100217已测试官网pdfft端点返回403，其余不冒称已逐篇请求。原摘要足以判断的纳入不因无PDF单独列科学pending。",
-        "primary_abstract_verified": false,
-        "abstract_verification_note": "输入摘要原样保留，未将受阻的官网摘要伪称已核实。",
-        "pdf_url_candidate": "https://www.sciencedirect.com/science/article/pii/S2772970226000192/pdfft?md5=0ef5468f80e76e85ccb7180a6e3812e2&pid=1-s2.0-S2772970226000192-main.pdf"
+        "scientific_evidence_location": "官网完整原摘要；开放HTML §4.1 High-entropy alloys中ML组分筛选、XGBoost/Random Forest/SHAP段及引文61",
+        "pdf_availability_note": "官方开放HTML正文及原摘要已取得并核读关键章节；PDF尚未下载验签，不将候选地址写成已核PDF。",
+        "primary_abstract_verified": true,
+        "pdf_url_candidate": "https://www.sciencedirect.com/science/article/pii/S2352152X25012241/pdfft?md5=16614cb7f9ce2ba840b6b5a0f8e53f7e&pid=1-s2.0-S2352152X25012241-main.pdf",
+        "authors": [
+          "Shida Yang",
+          "Pengjie Ren",
+          "Wenqing Ruan",
+          "Jiang Ma"
+        ],
+        "abstract": "Lithium-ion batteries constitute the cornerstone of modern energy storage. However, commercial graphite anodes are increasingly limited by their theoretical capacity and energy density. Although high-capacity alternatives such as silicon and transition metal oxides have been explored, their practical implementation remains severely bottlenecked by structural instability. High-entropy materials (HEMs) have emerged as promising candidates capable of transcending these conventional limitations. Governed by the four fundamental core effects, HEMs exhibit unique synergistic attributes, including enhanced lattice resilience and superior electrochemical kinetics, that surpass those of conventional binary or ternary counterparts. This review systematically evaluates recent progress in HEM-based anodes for lithium storage, categorizing high-entropy alloys, oxides, and burgeoning derivatives, including sulfides and phosphides. We further dissect the multifaceted storage mechanisms and the practical hurdles facing the predominant high-entropy oxide anodes. Finally, we offer forward-looking perspectives on the field, emphasizing the integration of artificial intelligence (AI) for accelerated material discovery and the pathways toward industrial-scale application.",
+        "published": "2026-07-02",
+        "publication_date": "2026-06-01",
+        "fulltext_url": "https://www.sciencedirect.com/science/article/pii/S2772970226000192",
+        "fulltext_version": "出版社开放HTML，核读相关科学方法及展望章节"
       },
-      "tags": [],
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "官网完整原摘要；开放HTML §4.1 High-entropy alloys中ML组分筛选、XGBoost/Random Forest/SHAP段及引文61",
+          "rationale": "官网原摘要及开放HTML正文§4.1明确评述以XGBoost、随机森林筛选高熵合金组分，SHAP分析元素影响，并以计算—实验策略优化锂负极界面；摘要虽把AI写在展望，正文有具体科学研究案例，故补证纳入。PSO单独不作为AI依据，不声称本综述新训练模型或复现文中电池性能。"
+        },
+        {
+          "axis": "task",
+          "label": "材料性质预测",
+          "label_en": "Materials property prediction",
+          "evidence_location": "官网完整原摘要；开放HTML §4.1 High-entropy alloys中ML组分筛选、XGBoost/Random Forest/SHAP段及引文61",
+          "rationale": "官网原摘要及开放HTML正文§4.1明确评述以XGBoost、随机森林筛选高熵合金组分，SHAP分析元素影响，并以计算—实验策略优化锂负极界面；摘要虽把AI写在展望，正文有具体科学研究案例，故补证纳入。PSO单独不作为AI依据，不声称本综述新训练模型或复现文中电池性能。"
+        },
+        {
+          "axis": "method",
+          "label": "机器学习",
+          "label_en": "Machine learning",
+          "evidence_location": "官网完整原摘要；开放HTML §4.1 High-entropy alloys中ML组分筛选、XGBoost/Random Forest/SHAP段及引文61",
+          "rationale": "官网原摘要及开放HTML正文§4.1明确评述以XGBoost、随机森林筛选高熵合金组分，SHAP分析元素影响，并以计算—实验策略优化锂负极界面；摘要虽把AI写在展望，正文有具体科学研究案例，故补证纳入。PSO单独不作为AI依据，不声称本综述新训练模型或复现文中电池性能。"
+        }
+      ],
       "publication_scope_check": {
         "status": "verified",
         "cutoff_at": "2026-11-16T23:14:20-08:00",
         "basis": "第1—3期为官网已公布正式期次。"
       },
-      "reviewed_at": "2026-11-17T09:28:18.025627-08:00",
-      "vocabulary_commit": "b974412793649cb09c79c69eb6271158d2b39097"
+      "reviewed_at": "2026-11-17T10:54:34.500291-08:00",
+      "vocabulary_commit": "c9dc29f527137353691cb1abf391198d52fbb933",
+      "previous_decision": "pending",
+      "previous_batch_id": "lixueting-2026-batch21"
     }
   },
   {
@@ -23719,11 +23753,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "lixueting-2026-batch21",
+      "batch_id": "lixueting-2026-batch24",
       "owner": "李雪婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "官网原摘要核实，综述CIM支持城市能源系统规划、优化与公平，并提与数字孪生、AI和IoT结合，但未具体说明学习模型及AI实质综述范围。需正文明确AI在能源预测、调度或科学分析的作用，不能只因数字化平台、一般优化或AI并列提及纳入。正式卷5期4已核，pending来自内容而非12月封面日期。",
+      "decision": "include",
+      "rationale": "开放HTML正文§3.2/§4.2实质评述GeoAI和深度强化学习用于充电基础设施布局与能源/交通供需协调，并有光伏发电预测的明确ML应用，属于可再生能源工程的科学规划/运行方法综述。不是将CIM、数字孪生、IoT或公平治理本身等同AI；不声称本综述新训练Actor-Critic或实现所引案例的性能。",
       "verified_metadata": {
         "doi": "10.1016/j.enrev.2026.100207",
         "url": "https://www.sciencedirect.com/science/article/pii/S2772970226000337",
@@ -23737,8 +23771,8 @@
           "https://www.sciencedirect.com/science/article/pii/S2772970226000337",
           "https://www.sciencedirect.com/journal/energy-reviews/vol/5/issue/4"
         ],
-        "scientific_evidence_location": "官网原摘要；正式卷期目录及出版方文献类型",
-        "pdf_availability_note": "官网宣称Open access，尚未取得可验签公开PDF，不伪填PDF已核实。100217已测试官网pdfft端点返回403，其余不冒称已逐篇请求。原摘要足以判断的纳入不因无PDF单独列科学pending。",
+        "scientific_evidence_location": "官网原摘要；开放HTML §3.2 EVCS locations、§4.2 CIM on EVCS及相关Actor-Critic/GeoAI案例",
+        "pdf_availability_note": "官方开放HTML正文及原摘要已取得并核读关键章节；PDF尚未下载验签，不将候选地址写成已核PDF。",
         "abstract": "The accelerating transition towards low-carbon and resilient urban energy systems requires integrated approaches that simultaneously address renewable energy deployment, energy storage, infrastructure optimization, and the social dimensions of energy accessibility and equity. This review examines the emerging role of the City Information Model (CIM) as a comprehensive digital framework for enabling data-driven planning, analysis, and governance of urban energy systems. CIM integrates multi-source urban data—including geospatial information, building characteristics, infrastructure networks, and real-time energy flows—into a unified platform, supporting holistic decision-making across sectors. The paper synthesizes recent advances in the application of CIM for planning and operation of renewable energy systems. It highlights how CIM facilitates system-level optimization, scenario simulation, and infrastructure coordination, particularly when combined with digital twin technologies, artificial intelligence, and the Internet of Things. Beyond technical integration, the review emphasizes the critical role of CIM in enhancing energy accessibility by identifying underserved areas and enabling targeted infrastructure investments. It further explores how CIM-driven analytics can support equity-oriented policies by incorporating socio-economic indicators, thereby addressing energy poverty and promoting inclusive energy transitions. The review also discusses key challenges, including data interoperability, standardization, governance, and privacy concerns. CIM is positioned as an effective tool for advancing renewable energy integration, infrastructure resilience, and socially inclusive urban energy systems, contributing to the broader goals of sustainability and equitable development.",
         "authors": [
           "Yuekuan Zhou",
@@ -23756,16 +23790,49 @@
         "published": "2026-09-18",
         "publication_date": "2026-12-01",
         "primary_abstract_verified": true,
-        "pdf_url_candidate": "https://www.sciencedirect.com/science/article/pii/S2772970226000337/pdfft?md5=f5117d59951b4109d300ea36289d3432&pid=1-s2.0-S2772970226000337-main.pdf"
+        "pdf_url_candidate": "https://www.sciencedirect.com/science/article/pii/S0960148125015848/pdfft?md5=d98366f9fb73416c13a371b0e1c97e00&pid=1-s2.0-S0960148125015848-main.pdf",
+        "fulltext_url": "https://www.sciencedirect.com/science/article/pii/S2772970226000337",
+        "fulltext_version": "出版社开放HTML，核读相关科学方法及展望章节"
       },
-      "tags": [],
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "官网原摘要；开放HTML §3.2 EVCS locations、§4.2 CIM on EVCS及相关Actor-Critic/GeoAI案例",
+          "rationale": "开放HTML正文§3.2/§4.2实质评述GeoAI和深度强化学习用于充电基础设施布局与能源/交通供需协调，并有光伏发电预测的明确ML应用，属于可再生能源工程的科学规划/运行方法综述。不是将CIM、数字孪生、IoT或公平治理本身等同AI；不声称本综述新训练Actor-Critic或实现所引案例的性能。"
+        },
+        {
+          "axis": "task",
+          "label": "能源基础设施选址",
+          "label_en": "Energy infrastructure siting",
+          "evidence_location": "官网原摘要；开放HTML §3.2 EVCS locations、§4.2 CIM on EVCS及相关Actor-Critic/GeoAI案例",
+          "rationale": "开放HTML正文§3.2/§4.2实质评述GeoAI和深度强化学习用于充电基础设施布局与能源/交通供需协调，并有光伏发电预测的明确ML应用，属于可再生能源工程的科学规划/运行方法综述。不是将CIM、数字孪生、IoT或公平治理本身等同AI；不声称本综述新训练Actor-Critic或实现所引案例的性能。"
+        },
+        {
+          "axis": "task",
+          "label": "光伏功率预测",
+          "label_en": "Photovoltaic power forecasting",
+          "evidence_location": "官网原摘要；开放HTML §3.2 EVCS locations、§4.2 CIM on EVCS及相关Actor-Critic/GeoAI案例",
+          "rationale": "开放HTML正文§3.2/§4.2实质评述GeoAI和深度强化学习用于充电基础设施布局与能源/交通供需协调，并有光伏发电预测的明确ML应用，属于可再生能源工程的科学规划/运行方法综述。不是将CIM、数字孪生、IoT或公平治理本身等同AI；不声称本综述新训练Actor-Critic或实现所引案例的性能。"
+        },
+        {
+          "axis": "method",
+          "label": "深度强化学习",
+          "label_en": "Deep reinforcement learning",
+          "evidence_location": "官网原摘要；开放HTML §3.2 EVCS locations、§4.2 CIM on EVCS及相关Actor-Critic/GeoAI案例",
+          "rationale": "开放HTML正文§3.2/§4.2实质评述GeoAI和深度强化学习用于充电基础设施布局与能源/交通供需协调，并有光伏发电预测的明确ML应用，属于可再生能源工程的科学规划/运行方法综述。不是将CIM、数字孪生、IoT或公平治理本身等同AI；不声称本综述新训练Actor-Critic或实现所引案例的性能。"
+        }
+      ],
       "publication_scope_check": {
         "status": "verified",
         "cutoff_at": "2026-11-16T23:14:20-08:00",
         "basis": "官网第4期明示文章final and fully citable，非Articles in Press；本条官网citation_online_date早于固定截止，初始快照亦已有12月卷期记录。"
       },
-      "reviewed_at": "2026-11-17T09:28:18.025627-08:00",
-      "vocabulary_commit": "b974412793649cb09c79c69eb6271158d2b39097"
+      "reviewed_at": "2026-11-17T10:54:34.500291-08:00",
+      "vocabulary_commit": "c9dc29f527137353691cb1abf391198d52fbb933",
+      "previous_decision": "pending",
+      "previous_batch_id": "lixueting-2026-batch21"
     }
   },
   {
@@ -24142,11 +24209,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "lixueting-2026-batch21",
+      "batch_id": "lixueting-2026-batch24",
       "owner": "李雪婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "官网原摘要核实，综述欧洲—德国—巴伐利亚能源安全指标与生物资源路径，提AI预测、聚类及运营安全能力和治理风险；尚不足区分实质科学/工程AI综述与宏观数字化愿景。需正文的具体AI模型、应用与讨论范围，原有TCR区域评估不自动视为AI。正式第4期文章已final/fully citable，不按封面12月误排。",
+      "decision": "include",
+      "rationale": "开放HTML §2.2具体讨论Kohonen自组织映射对能源安全多指标的无监督聚类，§7.5评述建筑/交通能源需求的集成与深度学习预测及安全分析，证明该综述实质涉及AI能源系统研究方法。AI相关内容不仅是政策愿景、网络治理或检索式命中；不将常规综合指数、TCR热化学转换本身当AI，不声称作者新训练这些模型。",
       "verified_metadata": {
         "doi": "10.1016/j.enrev.2026.100215",
         "url": "https://www.sciencedirect.com/science/article/pii/S2772970226000416",
@@ -24160,25 +24227,51 @@
           "https://www.sciencedirect.com/science/article/pii/S2772970226000416",
           "https://www.sciencedirect.com/journal/energy-reviews/vol/5/issue/4"
         ],
-        "scientific_evidence_location": "官网原摘要；正式卷期目录及出版方文献类型",
-        "pdf_availability_note": "官网宣称Open access，尚未取得可验签公开PDF，不伪填PDF已核实。100217已测试官网pdfft端点返回403，其余不冒称已逐篇请求。原摘要足以判断的纳入不因无PDF单独列科学pending。",
-        "abstract": "This article reviews how energy security is being reconceptualised and practiced in the context of Europe’s low-carbon transition, with a particular focus on Germany and the state of Bavaria, and on the role of circular bio-resources converted by thermo-chemical-conversion technologies. A targeted review of recent peer-reviewed work was undertaken using major bibliographic databases, complemented by a critical appraisal of widely used indicator frameworks and composite indices, and by a spatially explicit assessment of bio-waste and sewage-sludge conversion potential in Bavaria using Thermo-Catalytic Reforming (TCR®) as an illustrative technology. The synthesis shows that the dominant understanding of energy security has shifted from narrow fuel-supply concerns to broader socio-technical concepts that link security to sustainability, risk, equity and digitalisation. However, prevailing indices remain strongly supply- and price-oriented, rely on overlapping indicators and weakly justified weights, and only partially capture environmental, social and technological dimensions. At the European level, diversification of energy mixes, improvements in energy and carbon intensity, and expansion of renewables have improved several aspects of security, yet high import dependence and new vulnerabilities associated with gas trade, critical materials and concentrated low-carbon technology supply chains persist. Germany’s Energiewende has raised the share of renewables and reduced coal use, but the simultaneous nuclear phase-out and former reliance on Russian pipeline gas have created a complex risk profile in which system flexibility, storage, hydrogen and bioenergy become central levers. The Bavarian case underlines that energy security is strongly region-specific: high industrial demand, heterogeneous renewable resources, land-use and biodiversity constraints, water stress and local acceptance shape feasible pathways. Across all scales, the growing use of digital platforms and artificial intelligence offers powerful capabilities for forecasting, clustering and operational security, but also introduces cyber and governance risks. Overall, the review argues for explicitly risk-oriented, multi-scale energy-security metrics and scenarios that embed climate-neutrality, justice and water-energy-food nexus constraints; for systematic integration of circular bio-resource and thermo-chemical pathways into regional and national planning; and for treating digitalisation and ’Artificial Intelligence’ (AI) as core dimensions of energy security rather than neutral enablers.\nGraphical abstract\nDownload: Download high-res image (192KB)\nDownload: Download full-size image",
+        "scientific_evidence_location": "官网原摘要；开放HTML §2.2 Indicators, composite indices and methodological challenges与§7.5 Digitalisation, AI and the governance of uncertainty",
+        "pdf_availability_note": "官方开放HTML正文及原摘要已取得并核读关键章节；PDF尚未下载验签，不将候选地址写成已核PDF。",
+        "abstract": "This article reviews how energy security is being reconceptualised and practiced in the context of Europe’s low-carbon transition, with a particular focus on Germany and the state of Bavaria, and on the role of circular bio-resources converted by thermo-chemical-conversion technologies. A targeted review of recent peer-reviewed work was undertaken using major bibliographic databases, complemented by a critical appraisal of widely used indicator frameworks and composite indices, and by a spatially explicit assessment of bio-waste and sewage-sludge conversion potential in Bavaria using Thermo-Catalytic Reforming (TCR®) as an illustrative technology. The synthesis shows that the dominant understanding of energy security has shifted from narrow fuel-supply concerns to broader socio-technical concepts that link security to sustainability, risk, equity and digitalisation. However, prevailing indices remain strongly supply- and price-oriented, rely on overlapping indicators and weakly justified weights, and only partially capture environmental, social and technological dimensions. At the European level, diversification of energy mixes, improvements in energy and carbon intensity, and expansion of renewables have improved several aspects of security, yet high import dependence and new vulnerabilities associated with gas trade, critical materials and concentrated low-carbon technology supply chains persist. Germany’s Energiewende has raised the share of renewables and reduced coal use, but the simultaneous nuclear phase-out and former reliance on Russian pipeline gas have created a complex risk profile in which system flexibility, storage, hydrogen and bioenergy become central levers. The Bavarian case underlines that energy security is strongly region-specific: high industrial demand, heterogeneous renewable resources, land-use and biodiversity constraints, water stress and local acceptance shape feasible pathways. Across all scales, the growing use of digital platforms and artificial intelligence offers powerful capabilities for forecasting, clustering and operational security, but also introduces cyber and governance risks. Overall, the review argues for explicitly risk-oriented, multi-scale energy-security metrics and scenarios that embed climate-neutrality, justice and water-energy-food nexus constraints; for systematic integration of circular bio-resource and thermo-chemical pathways into regional and national planning; and for treating digitalisation and ’Artificial Intelligence’ (AI) as core dimensions of energy security rather than neutral enablers.",
         "authors": [
           "Shashank Deepak Prabhu"
         ],
         "published": "2026-10-05",
         "publication_date": "2026-12-01",
         "primary_abstract_verified": true,
-        "pdf_url_candidate": "https://www.sciencedirect.com/science/article/pii/S2772970226000416/pdfft?md5=1e0a416f73d13ff0e696665940fedcb5&pid=1-s2.0-S2772970226000416-main.pdf"
+        "pdf_url_candidate": "https://www.sciencedirect.com/science/article/pii/S0301421509000883/pdfft?md5=4f2b75e1639791b5f95a167dad5a726d&pid=1-s2.0-S0301421509000883-main.pdf",
+        "fulltext_url": "https://www.sciencedirect.com/science/article/pii/S2772970226000416",
+        "fulltext_version": "出版社开放HTML，核读相关科学方法及展望章节"
       },
-      "tags": [],
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "官网原摘要；开放HTML §2.2 Indicators, composite indices and methodological challenges与§7.5 Digitalisation, AI and the governance of uncertainty",
+          "rationale": "开放HTML §2.2具体讨论Kohonen自组织映射对能源安全多指标的无监督聚类，§7.5评述建筑/交通能源需求的集成与深度学习预测及安全分析，证明该综述实质涉及AI能源系统研究方法。AI相关内容不仅是政策愿景、网络治理或检索式命中；不将常规综合指数、TCR热化学转换本身当AI，不声称作者新训练这些模型。"
+        },
+        {
+          "axis": "domain",
+          "label": "AI 用于社会科学",
+          "label_en": "AI for social sciences",
+          "evidence_location": "官网原摘要；开放HTML §2.2 Indicators, composite indices and methodological challenges与§7.5 Digitalisation, AI and the governance of uncertainty",
+          "rationale": "开放HTML §2.2具体讨论Kohonen自组织映射对能源安全多指标的无监督聚类，§7.5评述建筑/交通能源需求的集成与深度学习预测及安全分析，证明该综述实质涉及AI能源系统研究方法。AI相关内容不仅是政策愿景、网络治理或检索式命中；不将常规综合指数、TCR热化学转换本身当AI，不声称作者新训练这些模型。"
+        },
+        {
+          "axis": "method",
+          "label": "机器学习",
+          "label_en": "Machine learning",
+          "evidence_location": "官网原摘要；开放HTML §2.2 Indicators, composite indices and methodological challenges与§7.5 Digitalisation, AI and the governance of uncertainty",
+          "rationale": "开放HTML §2.2具体讨论Kohonen自组织映射对能源安全多指标的无监督聚类，§7.5评述建筑/交通能源需求的集成与深度学习预测及安全分析，证明该综述实质涉及AI能源系统研究方法。AI相关内容不仅是政策愿景、网络治理或检索式命中；不将常规综合指数、TCR热化学转换本身当AI，不声称作者新训练这些模型。"
+        }
+      ],
       "publication_scope_check": {
         "status": "verified",
         "cutoff_at": "2026-11-16T23:14:20-08:00",
         "basis": "官网第4期明示文章final and fully citable，非Articles in Press；本条官网citation_online_date早于固定截止，初始快照亦已有12月卷期记录。"
       },
-      "reviewed_at": "2026-11-17T09:28:18.025627-08:00",
-      "vocabulary_commit": "b974412793649cb09c79c69eb6271158d2b39097"
+      "reviewed_at": "2026-11-17T10:54:34.500291-08:00",
+      "vocabulary_commit": "c9dc29f527137353691cb1abf391198d52fbb933",
+      "previous_decision": "pending",
+      "previous_batch_id": "lixueting-2026-batch21"
     }
   },
   {
@@ -24223,11 +24316,11 @@
     "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S2772970226000301",
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "lixueting-2026-batch21",
+      "batch_id": "lixueting-2026-batch24",
       "owner": "李雪婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "初筛疑似漏筛补核线索。官网原摘要在MXene摩擦电纳米发电机应用中提AI辅助平台，可能涉及智能监测/生物医学传感，但未说明实际学习模型和科学任务关系。需正文核查AI辅助应用是否实质学术内容；不以人工界面、传感或AI一词直接纳入。",
+      "decision": "include",
+      "rationale": "开放HTML §8.3不止介绍手写识别/HCI，还具体评述协作机器人和主动学习完成264种MXene气凝胶配方、以SVM/神经网络预测力学/导电/加热性能并逆向设计材料的案例，另有CNN-GRU触觉及韧带损伤传感案例，AI直接参与材料与传感研究。MXene只提供材料/信号性能，不能声称材料本身就是AI；不把目标综述写成其作者新搭建自主实验室或复现所引精度。",
       "verified_metadata": {
         "doi": "10.1016/j.enrev.2026.100204",
         "url": "https://www.sciencedirect.com/science/article/pii/S2772970226000301",
@@ -24241,8 +24334,8 @@
           "https://www.sciencedirect.com/science/article/pii/S2772970226000301",
           "https://www.sciencedirect.com/journal/energy-reviews/vol/5/issue/3"
         ],
-        "scientific_evidence_location": "官网原摘要；正式卷期目录及出版方文献类型",
-        "pdf_availability_note": "官网宣称Open access，尚未取得可验签公开PDF，不伪填PDF已核实。100217已测试官网pdfft端点返回403，其余不冒称已逐篇请求。原摘要足以判断的纳入不因无PDF单独列科学pending。",
+        "scientific_evidence_location": "官网原摘要；开放HTML §8.3 Machine learning and artificial intelligence，Fig.19a及引文195的机器人/主动学习材料配方与性质预测案例",
+        "pdf_availability_note": "官方开放HTML正文及原摘要已取得并核读关键章节；PDF尚未下载验签，不将候选地址写成已核PDF。",
         "abstract": "Triboelectric nanogenerators (TENGs) have emerged as a promising technology for harvesting ubiquitous mechanical energy and enabling self-powered electronic systems. However, achieving high output performance, long-term stability, and environmental robustness remains a critical challenge, largely governed by the intrinsic properties of triboelectric materials. Recently, MXenes, a rapidly expanding family of two-dimensional transition-metal carbides, nitrides, and carbonitrides, have attracted significant attention for TENG applications owing to their exceptional electrical conductivity, tunable surface chemistry, mechanical flexibility, and abundant functional groups. This review presents a comprehensive and critical assessment of MXene-enabled TENGs, covering representative materials including Ti3C2Tx, Ti3CNTx, Nb2CTx, Mo2CTx, and V2CTx. This review systematically analyzes their synthesis routes, structural features, interfacial properties, and multifunctional roles in device architectures. Particular emphasis is placed on the mechanisms by which MXenes enhance triboelectric performance through dielectric modulation, charge trapping, suppression of charge recombination, moisture resistance, and enlarged effective contact area. Their versatility enables deployment as conductive electrodes, triboelectric active layers, nanocomposite reinforcements, and interfacial charge-management components. Furthermore, this review highlights emerging applications in wearable electronics, human–machine interfaces, biomedical sensing, intelligent monitoring systems, and artificial intelligence-assisted platforms. Despite remarkable advances, key challenges related to oxidation susceptibility, scalable manufacturing, cost-effectiveness, and power-density optimization continue to limit practical deployment. Finally, this study identifies critical research opportunities and future directions for MXene engineering, device design, and system integration. By elucidating the fundamental interactions between MXenes and triboelectric systems, this review establishes a roadmap for the development of high-performance, durable, and application-ready next-generation TENG technologies.",
         "authors": [
           "S M Sohel Rana"
@@ -24250,16 +24343,42 @@
         "published": "2026-08-29",
         "publication_date": "2026-09-01",
         "primary_abstract_verified": true,
-        "pdf_url_candidate": "https://www.sciencedirect.com/science/article/pii/S2772970226000301/pdfft?md5=69301b7f9ca2db999d369fd7b5b3f4a1&pid=1-s2.0-S2772970226000301-main.pdf"
+        "pdf_url_candidate": "https://www.sciencedirect.com/science/article/pii/S1385894722044400/pdfft?md5=9fb0f56abab6386e0c52cbfd10816683&pid=1-s2.0-S1385894722044400-main.pdf",
+        "fulltext_url": "https://www.sciencedirect.com/science/article/pii/S2772970226000301",
+        "fulltext_version": "出版社开放HTML，核读相关科学方法及展望章节"
       },
-      "tags": [],
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "官网原摘要；开放HTML §8.3 Machine learning and artificial intelligence，Fig.19a及引文195的机器人/主动学习材料配方与性质预测案例",
+          "rationale": "开放HTML §8.3不止介绍手写识别/HCI，还具体评述协作机器人和主动学习完成264种MXene气凝胶配方、以SVM/神经网络预测力学/导电/加热性能并逆向设计材料的案例，另有CNN-GRU触觉及韧带损伤传感案例，AI直接参与材料与传感研究。MXene只提供材料/信号性能，不能声称材料本身就是AI；不把目标综述写成其作者新搭建自主实验室或复现所引精度。"
+        },
+        {
+          "axis": "task",
+          "label": "材料性质预测",
+          "label_en": "Materials property prediction",
+          "evidence_location": "官网原摘要；开放HTML §8.3 Machine learning and artificial intelligence，Fig.19a及引文195的机器人/主动学习材料配方与性质预测案例",
+          "rationale": "开放HTML §8.3不止介绍手写识别/HCI，还具体评述协作机器人和主动学习完成264种MXene气凝胶配方、以SVM/神经网络预测力学/导电/加热性能并逆向设计材料的案例，另有CNN-GRU触觉及韧带损伤传感案例，AI直接参与材料与传感研究。MXene只提供材料/信号性能，不能声称材料本身就是AI；不把目标综述写成其作者新搭建自主实验室或复现所引精度。"
+        },
+        {
+          "axis": "method",
+          "label": "机器学习",
+          "label_en": "Machine learning",
+          "evidence_location": "官网原摘要；开放HTML §8.3 Machine learning and artificial intelligence，Fig.19a及引文195的机器人/主动学习材料配方与性质预测案例",
+          "rationale": "开放HTML §8.3不止介绍手写识别/HCI，还具体评述协作机器人和主动学习完成264种MXene气凝胶配方、以SVM/神经网络预测力学/导电/加热性能并逆向设计材料的案例，另有CNN-GRU触觉及韧带损伤传感案例，AI直接参与材料与传感研究。MXene只提供材料/信号性能，不能声称材料本身就是AI；不把目标综述写成其作者新搭建自主实验室或复现所引精度。"
+        }
+      ],
       "publication_scope_check": {
         "status": "verified",
         "cutoff_at": "2026-11-16T23:14:20-08:00",
         "basis": "第1—3期为官网已公布正式期次。"
       },
-      "reviewed_at": "2026-11-17T09:28:18.025627-08:00",
-      "vocabulary_commit": "b974412793649cb09c79c69eb6271158d2b39097"
+      "reviewed_at": "2026-11-17T10:54:34.500291-08:00",
+      "vocabulary_commit": "c9dc29f527137353691cb1abf391198d52fbb933",
+      "previous_decision": "pending",
+      "previous_batch_id": "lixueting-2026-batch21"
     }
   },
   {
@@ -24310,11 +24429,11 @@
     "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S2772970226000404",
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "lixueting-2026-batch21",
+      "batch_id": "lixueting-2026-batch24",
       "owner": "李雪婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "初筛疑似漏筛补核线索。官网原摘要将机器学习辅助催化剂发现列于双光催化产氢/捕碳未来机会；需全文确认有无实质既有ML方法综述，不能只凭前景纳入，也不能在未读相关章节时据摘要直接排除。",
+      "decision": "exclude",
+      "rationale": "已核官网原摘要与开放HTML相关章节。AI/机器学习只在§7 Future perspectives及§8 Conclusions中被列为将来结合operando/DFT、加速催化剂发现的机会，未见目标综述实质评述具体AI模型、数据或相关催化研究案例。按现有完整可读证据排除，不把普通DFT、缺陷/界面工程或未来ML愿景当作实质AI4S用途。",
       "verified_metadata": {
         "doi": "10.1016/j.enrev.2026.100214",
         "url": "https://www.sciencedirect.com/science/article/pii/S2772970226000404",
@@ -24328,8 +24447,8 @@
           "https://www.sciencedirect.com/science/article/pii/S2772970226000404",
           "https://www.sciencedirect.com/journal/energy-reviews/vol/5/issue/4"
         ],
-        "scientific_evidence_location": "官网原摘要；正式卷期目录及出版方文献类型",
-        "pdf_availability_note": "官网宣称Open access，尚未取得可验签公开PDF，不伪填PDF已核实。100217已测试官网pdfft端点返回403，其余不冒称已逐篇请求。原摘要足以判断的纳入不因无PDF单独列科学pending。",
+        "scientific_evidence_location": "官网原摘要；开放HTML §7 Future perspectives及§8 Conclusions；核对正文AI/ML出现位置",
+        "pdf_availability_note": "官方开放HTML正文及原摘要已取得并核读关键章节；PDF尚未下载验签，不将候选地址写成已核PDF。",
         "abstract": "The global pursuit of carbon neutrality has accelerated the development of sustainable technologies that simultaneously address clean energy production and greenhouse gas mitigation. Solar-driven hydrogen (H2) production and carbon dioxide (CO2) capture-conversion are widely recognized as complementary approaches; however, most studies and existing reviews have examined these processes independently, resulting in fragmented catalyst design and limited understanding of their synergistic integration. To address this gap, this review critically evaluates the emerging field of integrated photocatalyst systems capable of coupling solar H2 evolution with CO2 capture and photoconversion within a unified catalytic platform. A systematic literature survey of peer-reviewed publications published between 2015 and 2026 was conducted using Scopus, Web of Science, ScienceDirect and SpringerLink to assess recent advances in multifunctional photocatalysts. The review examines semiconductor heterojunctions, graphitic carbon nitride (g-C3N4)-based composites, layered double hydroxides, transition-metal sulfides, MXenes, metal-organic frameworks, perovskite oxynitrides and single-atom catalysts, with emphasis on the roles of band structure engineering, defect modulation, interfacial charge transfer, active-site regulation and surface chemistry in enhancing dual-function catalytic performance. Critical analysis reveals that synergistic band alignment, efficient charge separation and engineered catalytic interfaces are the primary factors governing simultaneous H2 evolution and CO2 conversion, whereas photocorrosion, catalyst durability, product selectivity and reactor-scale integration remain the major barriers to practical implementation. Unlike previous reviews that separately address hydrogen evolution or CO2 reduction, this work establishes a unified framework integrating catalyst design principles, mechanistic insights, quantitative performance comparisons, stability considerations and techno-economic perspectives. Finally, emerging opportunities in defect engineering, operando characterization, machine-learning-assisted catalyst discovery and integrated solar photoreactor design are highlighted to guide the rational development of next-generation photocatalytic systems for sustainable solar fuel production and carbon-neutral energy technologies.",
         "authors": [
           "K. Karthik",
@@ -24342,7 +24461,9 @@
         "published": "2026-09-25",
         "publication_date": "2026-12-01",
         "primary_abstract_verified": true,
-        "pdf_url_candidate": "https://www.sciencedirect.com/science/article/pii/S2772970226000404/pdfft?md5=f2daae401dd599d862937ed6d0ead8cf&pid=1-s2.0-S2772970226000404-main.pdf"
+        "pdf_url_candidate": "https://www.sciencedirect.com/science/article/pii/S0360319924049607/pdfft?md5=c6992dd8c7e030d4c3e66191bed1ff66&pid=1-s2.0-S0360319924049607-main.pdf",
+        "fulltext_url": "https://www.sciencedirect.com/science/article/pii/S2772970226000404",
+        "fulltext_version": "出版社开放HTML，核读相关科学方法及展望章节"
       },
       "tags": [],
       "publication_scope_check": {
@@ -24350,8 +24471,10 @@
         "cutoff_at": "2026-11-16T23:14:20-08:00",
         "basis": "官网第4期明示文章final and fully citable，非Articles in Press；本条官网citation_online_date早于固定截止，初始快照亦已有12月卷期记录。"
       },
-      "reviewed_at": "2026-11-17T09:28:18.025627-08:00",
-      "vocabulary_commit": "b974412793649cb09c79c69eb6271158d2b39097"
+      "reviewed_at": "2026-11-17T10:54:34.500291-08:00",
+      "vocabulary_commit": "c9dc29f527137353691cb1abf391198d52fbb933",
+      "previous_decision": "pending",
+      "previous_batch_id": "lixueting-2026-batch21"
     }
   },
   {
@@ -24960,6 +25083,107 @@
       },
       "reviewed_at": "2026-11-17T10:25:29.907058-08:00",
       "vocabulary_commit": "8bc69b1524f9e33cd838c2f7d8385a67367a856f"
+    }
+  },
+  {
+    "id": "10.1016/j.teac.2026.e00316",
+    "venue": "j-c94b3260f2",
+    "year": 2026,
+    "track": null,
+    "title": "From laboratory to real water environments: Field detection of microplastics using sensors",
+    "authors": [
+      "Yihao Zhang",
+      "Xiuwen Wang",
+      "Wangzhiqian Zhao",
+      "Xu Zhang",
+      "Xianhua Liu"
+    ],
+    "author_ids": [],
+    "abstract": null,
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.teac.2026.e00316",
+    "pages": "e00316",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.teac.2026.e00316",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-09",
+    "source": "crossref.org",
+    "venue_type": "journal",
+    "journal_title": "Trends in Environmental Analytical Chemistry",
+    "issn": "2214-1588",
+    "article_type": "unknown",
+    "screening_status": "needs_abstract",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S2214158826000218",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "lixueting-2026-batch24",
+      "owner": "李雪婷",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "include",
+      "rationale": "初筛漏筛补录。官网完整原摘要、Highlights（assessed AI and microfluidic synergy）、Introduction及独立Artificial Intelligence章节预览明确评述AI辅助水体现场微塑料识别，并具体指出人工难以区分微塑料与藻类/沉积物/矿物颗粒的识别问题；不只是未来一句愿景或关键词。按与现场化学检测直接相关的AI实质综述纳入。未取得订阅全文，不声称已核完整方法、模型训练或文中引用的性能；参考文献仅辅助定位，不单凭引用纳入。",
+      "verified_metadata": {
+        "doi": "10.1016/j.teac.2026.e00316",
+        "title": "From laboratory to real water environments: Field detection of microplastics using sensors",
+        "authors": [
+          "Yihao Zhang",
+          "Xiuwen Wang",
+          "Wangzhiqian Zhao",
+          "Xu Zhang",
+          "Xianhua Liu"
+        ],
+        "abstract": "The widespread presence of microplastics in aquatic environments poses a potential threat to ecosystems and human health. Traditional laboratory testing methods suffer from cumbersome procedures, limited temporal and spatial coverage, and high costs. The dynamic changes in microplastic pollution in aquatic environments are challenging to monitor in real time. Therefore, developing efficient on-site detection technologies has become a research priority that urgently needs to be advanced. This paper provides an overview of sensors for the field detection of microplastics in water. First, commonly used microplastic detection methods in experiments were briefly compared. Then, the detection methods are primarily categorized into three types of sensor technologies: optical sensors, electrochemical sensors, and biosensors. The detection principles, technical characteristics, and field application potential of various sensors are systematically outlined. Their advantages and limitations in terms of detection accuracy, anti-interference capability, and other aspects are analyzed in detail. Finally, we further explore how artificial intelligence and microfluidic technology can enhance field testing capabilities. By identifying the current major challenges, this review provides valuable insights into the future development direction of field detection technologies for microplastics in water.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2214158826000218",
+        "volume": "51",
+        "pages": "e00316",
+        "published": "2026-07-29",
+        "publication_date": "2026-09-01",
+        "article_type": "Review article",
+        "primary_abstract_verified": true,
+        "pdf_url": null,
+        "pdf_availability_note": "订阅全文；官网原摘要及可读预览已足以确认与检测任务相关的AI综述，未下载验签PDF，不将引用论文当目标全文。",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2214158826000218",
+          "https://www.sciencedirect.com/journal/trends-in-environmental-analytical-chemistry/vol/51/suppl/C"
+        ],
+        "scientific_evidence_location": "官网原摘要、Highlights第三点、Introduction末段和Section snippets中的Artificial Intelligence首段",
+        "original_abstract_recovery_note": "原始采集及本审核顶层abstract保留null；仅新增候选metadata补官网原摘要并记录abstract_backfill，verified_metadata存同一已核摘要。"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "官网原摘要、Highlights第三点、Introduction末段和Section snippets中的Artificial Intelligence首段",
+          "rationale": "初筛漏筛补录。官网完整原摘要、Highlights（assessed AI and microfluidic synergy）、Introduction及独立Artificial Intelligence章节预览明确评述AI辅助水体现场微塑料识别，并具体指出人工难以区分微塑料与藻类/沉积物/矿物颗粒的识别问题；不只是未来一句愿景或关键词。按与现场化学检测直接相关的AI实质综述纳入。未取得订阅全文，不声称已核完整方法、模型训练或文中引用的性能；参考文献仅辅助定位，不单凭引用纳入。"
+        },
+        {
+          "axis": "task",
+          "label": "化学物质检测",
+          "label_en": "Chemical substance detection",
+          "evidence_location": "官网原摘要、Highlights第三点、Introduction末段和Section snippets中的Artificial Intelligence首段",
+          "rationale": "初筛漏筛补录。官网完整原摘要、Highlights（assessed AI and microfluidic synergy）、Introduction及独立Artificial Intelligence章节预览明确评述AI辅助水体现场微塑料识别，并具体指出人工难以区分微塑料与藻类/沉积物/矿物颗粒的识别问题；不只是未来一句愿景或关键词。按与现场化学检测直接相关的AI实质综述纳入。未取得订阅全文，不声称已核完整方法、模型训练或文中引用的性能；参考文献仅辅助定位，不单凭引用纳入。"
+        }
+      ],
+      "publication_scope_check": {
+        "status": "verified",
+        "cutoff_at": "2026-11-16T23:14:20-08:00",
+        "basis": "沿用batch23官网卷49—52逐PII对账；本篇卷51、online日期早于固定截止。"
+      },
+      "reviewed_at": "2026-11-17T10:54:34.500291-08:00",
+      "vocabulary_commit": "c9dc29f527137353691cb1abf391198d52fbb933"
     }
   }
 ]
