@@ -1,27 +1,30 @@
 {
   "status": "in_progress",
   "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-  "latest_main_checked": "56e073c0921723916d4e44b79ea95e4857c945a5",
-  "candidate_sha256": "1f795f297a76bb0d9ececdf500a36640797163f7ba744a4a76a30cd8c8a0e0c6",
+  "latest_main_checked": "874ecb99cb5f986fb905b76f0593d8eef8005e8f",
+  "candidate_sha256": "c43a3daaa4f34824465240183be2da54682bbb4dca7a48faf7da0c8406bbc45a",
   "original_candidates": 2202,
   "supplemented_candidates": 19,
   "counts": {
-    "pending": 434,
-    "include": 819,
-    "exclude": 93,
-    "unreviewed": 875
+    "pending": 441,
+    "include": 937,
+    "exclude": 106,
+    "unreviewed": 737
   },
-  "abstract_content_reviewed_count": 953,
+  "abstract_content_reviewed_count": 1091,
   "abstract_content_review_counts": {
-    "pending": 41,
-    "include": 819,
-    "exclude": 93
+    "pending": 48,
+    "include": 937,
+    "exclude": 106
   },
   "metadata_gate_only_count": 393,
   "current_round": {
-    "new_content_reviews": 119,
+    "new_content_reviews": 138,
     "sources_content_reviewed": {
-      "j-29c654efbc": 119
+      "j-20e3868bcd": 63,
+      "j-3fe12bcc6e": 52,
+      "j-fe57259a51": 8,
+      "j-ed923e2572": 15
     },
     "official_abstracts_added": 0
   },
@@ -187,6 +190,13 @@
       "rationale": "药效团片段及药物性质条件引导图扩散分子生成，以EGFR结合相互作用案例验证。"
     },
     {
+      "id": "10.1016/j.buildenv.2026.114541",
+      "venue": "j-3fe12bcc6e",
+      "title": "Predicting emotional impact of adaptive façades through Machine Learning, A VR-based study with PAD assessment",
+      "decision": "include",
+      "rationale": "随机森林从VR遮阳参数预测111人情绪反应并解释设计阈值；原摘要spread范围处截断待补全。"
+    },
+    {
       "id": "10.1016/j.omtn.2026.103003",
       "venue": "j-4bf1b752f6",
       "title": "CRISPRing through time: How cutting-edge technology is revolutionizing life sciences and medicine",
@@ -311,6 +321,20 @@
       "title": "StampFormer: A physics-guided material-geometry-coupled multimodal model for rapid prediction of physical fields in sheet metal stamping",
       "decision": "include",
       "rationale": "材料响应及几何融合Swin-UNet预测冲压物理场，在钢铝构件数据验证；原摘要误差阈值缺失待补。"
+    },
+    {
+      "id": "10.1016/j.ins.2026.123711",
+      "venue": "j-ed923e2572",
+      "title": "Financial news sentiment meets market data: A large language model-based approach to stock price prediction",
+      "decision": "exclude",
+      "rationale": "新闻情感融合股价的常规金融预测，未提出可辨识经济或社会科学研究问题；原摘要多处数值缺失待修复。"
+    },
+    {
+      "id": "10.1016/j.ins.2026.123893",
+      "venue": "j-ed923e2572",
+      "title": "FANTF: Fuzzy attention network based transformers for time series analysis",
+      "decision": "exclude",
+      "rationale": "架构与任务无关的模糊注意力替换模块，在时序基准比较预测分类异常检测，未给具体科学研究任务；原摘要显著性数值缺失。"
     },
     {
       "id": "10.1016/j.jhydrol.2026.134986",
@@ -505,12 +529,36 @@
       "review_stage": "metadata_gate_waiting_for_original_abstract"
     },
     {
+      "id": "10.1016/j.enbuild.2026.117185",
+      "venue": "j-20e3868bcd",
+      "title": "Multi‑energy systems in dense urban building clusters: a systematic review and roadmap toward sustainable built environments",
+      "url": "https://doi.org/10.1016/j.enbuild.2026.117185",
+      "rationale": "综述多能系统技术政策社会框架，仅概述AI驱动分析；需核是否实质比较AI建模控制研究，而非宏观规划愿景。",
+      "review_stage": "abstract_content_review"
+    },
+    {
+      "id": "10.1016/j.enbuild.2026.117285",
+      "venue": "j-20e3868bcd",
+      "title": "Machine learning-enhanced hybrid modeling approach for better identification of a building thermal network model and improved prediction",
+      "url": "https://doi.org/10.1016/j.enbuild.2026.117285",
+      "rationale": "灰箱热网结合未测扰动模型改善预测，但摘要未说明学习算法；需核是否存在AI贡献或仅经典系统辨识。",
+      "review_stage": "abstract_content_review"
+    },
+    {
       "id": "10.1016/j.enbuild.2026.117299",
       "venue": "j-20e3868bcd",
       "title": "Monotonicity-constrained physics-informed deep neural network for chiller energy consumption prediction: Extrapolation performance and constraint Improvement",
       "url": "https://doi.org/10.1016/j.enbuild.2026.117299",
       "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
       "review_stage": "metadata_gate_waiting_for_original_abstract"
+    },
+    {
+      "id": "10.1016/j.enbuild.2026.117338",
+      "venue": "j-20e3868bcd",
+      "title": "Hierarchical semi-Markov models with duration-aware dynamics for activity sequences",
+      "url": "https://doi.org/10.1016/j.enbuild.2026.117338",
+      "rationale": "分层半Markov生成时间利用活动轨迹可服务能源建模，但摘要未区分机器学习与传统频率风险统计估计，需核模型学习贡献。",
+      "review_stage": "abstract_content_review"
     },
     {
       "id": "10.1016/j.enbuild.2026.117402",
@@ -657,6 +705,14 @@
       "review_stage": "metadata_gate_waiting_for_original_abstract"
     },
     {
+      "id": "10.1016/j.buildenv.2025.114136",
+      "venue": "j-3fe12bcc6e",
+      "title": "Ten questions concerning urban wind environments for the safe utilization of urban air mobility",
+      "url": "https://doi.org/10.1016/j.buildenv.2025.114136",
+      "rationale": "十问综述城市空中交通风环境，摘要仅提机器学习预测潜力；需核文献类型及是否有足够实质AI方法分析。",
+      "review_stage": "abstract_content_review"
+    },
+    {
       "id": "10.1016/j.buildenv.2026.114202",
       "venue": "j-3fe12bcc6e",
       "title": "Multi-constraint physics-informed generative adversarial networks (PIGAN) enable small-data learning for urban wind field prediction",
@@ -679,6 +735,14 @@
       "url": "https://doi.org/10.1016/j.buildenv.2026.114518",
       "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
       "review_stage": "metadata_gate_waiting_for_original_abstract"
+    },
+    {
+      "id": "10.1016/j.buildenv.2026.114595",
+      "venue": "j-3fe12bcc6e",
+      "title": "Mean radiant temperature in outdoor urban environments: From radiative physics to data-driven and hybrid modelling frameworks",
+      "url": "https://doi.org/10.1016/j.buildenv.2026.114595",
+      "rationale": "平均辐射温度综述包含数据驱动混合模型但未明确机器学习范式，需核实学术综述中的AI方法覆盖。",
+      "review_stage": "abstract_content_review"
     },
     {
       "id": "10.1016/j.buildenv.2026.114626",
@@ -729,6 +793,14 @@
       "review_stage": "metadata_gate_waiting_for_original_abstract"
     },
     {
+      "id": "10.1016/j.buildenv.2026.115023",
+      "venue": "j-3fe12bcc6e",
+      "title": "Ten questions on digital twins of buildings for transforming building operations",
+      "url": "https://doi.org/10.1016/j.buildenv.2026.115023",
+      "rationale": "十问式数字孪生文章包含AI作用但摘要侧重部署治理架构，需核实文献类型及AI科学方法综述实质。",
+      "review_stage": "abstract_content_review"
+    },
+    {
       "id": "10.1016/j.buildenv.2026.115093",
       "venue": "j-3fe12bcc6e",
       "title": "A physics-informed framework for physically stable reconstruction of indoor wall jet ventilation flow fields via finite-volume weak constraints and physics-guided regularization",
@@ -751,6 +823,14 @@
       "url": "https://doi.org/10.1016/j.buildenv.2026.115128",
       "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
       "review_stage": "metadata_gate_waiting_for_original_abstract"
+    },
+    {
+      "id": "10.1016/j.buildenv.2026.115129",
+      "venue": "j-3fe12bcc6e",
+      "title": "Strategic decarbonisation of Norwegian non-residential buildings: life-cycle, energy and circularity evidence with Danish and German comparators",
+      "url": "https://doi.org/10.1016/j.buildenv.2026.115129",
+      "rationale": "主研究为挪威建筑减碳案例定性证据综合，AI仅作为外部文献决策层讨论，需核实是否有实质AI方法综述而非展望。",
+      "review_stage": "abstract_content_review"
     },
     {
       "id": "10.1016/j.buildenv.2026.115139",
