@@ -74,3 +74,5 @@ Journal of Cheminformatics的119条已逐篇判读：109纳入、7排除、3待�
 | Structure | 10 | 0 | 7 | 2 | 1 | 0 | 0 |
 | Engineering With Computers | 59 | 0 | 57 | 1 | 1 | 0 | 0 |
 | Computer Physics Communications | 37 | 0 | 26 | 2 | 9 | 0 | 8 |
+
+本轮官网摘要补证：CMAME第450卷52条、第451卷51条、第452卷Part B 30条，共133条citation-and-abstract BibTeX，均排除Editorial Board。按DOI及题名精确匹配回填5条原候选摘要，放入verified_metadata并保留原字段；仍空393条。5条仍待独立内容判读，本轮新增内容精筛0条，原有判定和标签不变。最新检查main `a31165d54c9b66cc5bb5f190774ea34b9ad0ffb1`。历史段落中的398为上一检查点数。证据详见audits/wangmengran8789-abstract-backfill-20261117.json。
