@@ -3,10 +3,10 @@
   "source_code": "natcardiovascres",
   "year": 2026,
   "owner": "李雪婷",
-  "checked_at": "2026-11-17T08:35:00.450713-08:00",
+  "checked_at": "2026-11-17T09:00:11.855644-08:00",
   "cutoff_at": "2026-11-16T23:14:20-08:00",
   "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-  "main_commit": "20d20c5963433f4c9b8e81cdb86ea8deb1eec39f",
+  "main_commit": "ce3654e8066fa137fd5848ea054783c91972605c",
   "official_total": 145,
   "official_scope": "首次固定范围的2026卷5第1—11期全部145 DOI；54 Article、8 Review Article共62条，另5 Perspective、1原创研究Letter、1 Consensus Statement、1 Technical Report共8条按内容核查；6 Comment、25 Research Highlight、24 News & Views、13 Research Briefing、4 Author Correction、3 Publisher Correction共75条非研究文种单列。",
   "formal_type_counts": {
@@ -111,8 +111,8 @@
     }
   ],
   "initial_candidate_total": 4,
-  "candidate_total": 26,
-  "in_scope_candidate_total": 26,
+  "candidate_total": 28,
+  "in_scope_candidate_total": 28,
   "candidate_missing_abstracts": 0,
   "verified_missed_candidates": [
     "10.1038/s44161-026-00885-5",
@@ -136,27 +136,21 @@
     "10.1038/s44161-025-00755-6",
     "10.1038/s44161-026-00856-w",
     "10.1038/s44161-026-00866-8",
-    "10.1038/s44161-026-00880-w"
-  ],
-  "review_counts": {
-    "include": 22,
-    "exclude": 3,
-    "pending": 1,
-    "unreviewed": 0
-  },
-  "remaining_recall_check_dois": [
+    "10.1038/s44161-026-00880-w",
     "10.1038/s44161-026-00837-z",
     "10.1038/s44161-026-00870-y"
   ],
-  "completion_status": "coverage_verified_review_pending",
-  "issues": [
-    "多祖源HCM风险评分10.1038/s44161-026-00866-8需合法正文或明确作者方法资料，核实PRS实际构建/调参算法；当前原摘要和已查看的公开Reporting Summary方法相关页不足区分训练型收缩模型与既有固定分数计算。不能仅凭参考贝叶斯方法纳入。",
-    "提交前扩展Methods工具名检索新增2条未审线索：00837-z的TotalSegmentator/nnUNet心肌质量表型、00870-y引用既有cell2location比例；需下一批逐篇核实实际模型作用，不能伪作完成或自动纳入。"
-  ],
-  "next_actions": [
-    "下一批优先核查remaining_recall_check_dois的00837-z和00870-y；HCM PRS有合法正文/明确方法时继续补证，随后处理Green Energy and Resources。"
-  ],
-  "coverage_note": "逐期官网与每篇citation引用核实145 DOI。初始140条中139正式+1未编卷，补6条（3个2025在线原对象的2026副本、3条官网新建）后146条中正式145，差额0。当前26候选22纳入3排除1待定，全部有可核原摘要，另42条非候选完成题名/原摘要及相关Methods召回检查，新增2条Methods线索保留未审队列。纳入包括4初始候选、CardioKG/Geneformer、形态分割、随机森林/蛋白组学习、Dorado修饰预测、scANVI整合及TotalSegmentator上游CT分割；订阅蛋白组研究凭公开补充Fig.5实证XGBoost AFT训练/验证纳入。Letter是原创基因治疗实验，非读者来信，出版社类型保留。3排除分别为界面lasso、语言润色ChatGPT及质谱共识AI未来展望。22纳入中18实际公开PDF验签/哈希；16篇全页可提取、2篇部分页受限而官网HTML方法已核实；4篇订阅PDF留空，其中蛋白组公开补充不是全文PDF。唯一新科学待定为HCM PRS实际算法，不因无全文PDF而把其余证据充分论文列pending。 提交前扩展工具名复核发现2条线索，已明确保留队列，来源尚未完成。",
+  "review_counts": {
+    "include": 25,
+    "exclude": 3,
+    "pending": 0,
+    "unreviewed": 0
+  },
+  "remaining_recall_check_dois": [],
+  "completion_status": "complete",
+  "issues": [],
+  "next_actions": [],
+  "coverage_note": "继batch19卷5第1—11期145 DOI、补6条的对账基础，本轮完成2条剩余Methods线索：CT分割及上游cell2location预测结果复用均纳入；HCM PRS通过官网直链作者代码查实PRS-CSx构建，pending转纳入。当前28候选25纳入3排除0待定，候选原摘要全已核实，75非研究文种与42非候选单列，全部145 DOI分区闭合。2条新增均公开正式PDF验签，cell2location原方法补充第55页确认ADVI学习但目标未重新训练；PRS代码含参考/模拟限制已披露，不据此复现数值。无剩余召回或科学pending，固定范围来源完成。",
   "evidence_urls": [
     "https://www.nature.com/natcardiovascres/volumes",
     "https://www.nature.com/natcardiovascres/volumes/5",
@@ -534,8 +528,8 @@
       "document_type": "Article",
       "within_fixed_formal_scope": true,
       "present_in_initial_collection": true,
-      "screening_result": "recall_check_pending",
-      "rationale": "新增工具名线索，尚待逐篇核查AI方法实际作用；保留下一轮队列，不作科学结论。"
+      "screening_result": "include",
+      "rationale": "初筛漏筛补录。目标Spatial transcriptomics明确复用Kanemaru等既有cell2location预测的淋巴管内皮细胞空间比例，用于比较人心脏年龄组的淋巴管丰度（Results及Extended Data Fig.1d）。原图谱方法确认实际cell2location映射；模型原始补充Methods §1.3以ADVI/ELBO及ADAM学习后验，属于贝叶斯学习参与空间组学证据。此处沿用上游模型输出，不写成本研究新训练网络，人工免疫染色和动物干预不归因AI。"
     },
     {
       "doi": "10.1038/s44161-026-00874-8",
@@ -828,8 +822,8 @@
       "document_type": "Article",
       "within_fixed_formal_scope": true,
       "present_in_initial_collection": true,
-      "screening_result": "pending",
-      "rationale": "疑似漏筛核查补录。多祖源HCM研究实际新建PRS并评估风险，但公开原摘要未说明其采用何种训练/收缩算法；参考文献中的贝叶斯PRS方法不能代替目标方法证据。需从合法正文、公开报告或补充资料确认实际PRS构建与调参，而非仅计算既有固定分数。证据补齐前保留待定。 已下载并逐页查看Reporting Summary，报告仅说明R/Jupyter及观察性统计，未提供PRS构建算法；公开文献参考不足以消除该疑点。"
+      "screening_result": "include",
+      "rationale": "待定补证后纳入。官网Code availability直链作者仓库，README明确本研究构建/评估HCM PRS使用PRS-CSx及C+T；公开生成脚本实际调用PRScsx.py，使用多祖源GWAS、auto/固定收缩参数及meta后验效应输出，再用PLINK计分。PRS-CSx原作者方法说明确认耦合连续收缩先验学习SNP后验权重，故AI/贝叶斯学习参与遗传风险预测，不再仅凭引用推断。代码为静态参考实现且生成示例限制染色体22，下游R含dummy_data模拟，不能当作全研究复现或真实性能验证；不将C+T、常规关联/生存回归本身称AI。"
     },
     {
       "doi": "10.1038/s44161-026-00877-5",
@@ -1038,8 +1032,8 @@
       "document_type": "Article",
       "within_fixed_formal_scope": true,
       "present_in_initial_collection": true,
-      "screening_result": "recall_check_pending",
-      "rationale": "新增工具名线索，尚待逐篇核查AI方法实际作用；保留下一轮队列，不作科学结论。"
+      "screening_result": "include",
+      "rationale": "初筛漏筛补录。目标研究在Myocardial mass estimation实际调用TotalSegmentator的nnUNet深度学习分割CCTA心腔并计算左室心肌质量，用于肌钙蛋白归一化及稳定冠心病评估；100例分割由医生抽查。AI承担影像表型提取，常规阈值/回归及内部验证不全称AI，亦不等于前瞻临床有效性。"
     },
     {
       "doi": "10.1038/s44161-026-00846-y",

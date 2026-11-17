@@ -21971,11 +21971,11 @@
     "booktitle": null,
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "lixueting-2026-batch19",
+      "batch_id": "lixueting-2026-batch20",
       "owner": "李雪婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "疑似漏筛核查补录。多祖源HCM研究实际新建PRS并评估风险，但公开原摘要未说明其采用何种训练/收缩算法；参考文献中的贝叶斯PRS方法不能代替目标方法证据。需从合法正文、公开报告或补充资料确认实际PRS构建与调参，而非仅计算既有固定分数。证据补齐前保留待定。 已下载并查看Reporting Summary的方法相关页，报告仅说明R/Jupyter及观察性统计，未提供PRS构建算法；公开文献参考不足以消除该疑点。",
+      "decision": "include",
+      "rationale": "待定补证后纳入。官网Code availability直链作者仓库，README明确本研究构建/评估HCM PRS使用PRS-CSx及C+T；公开生成脚本实际调用PRScsx.py，使用多祖源GWAS、auto/固定收缩参数及meta后验效应输出，再用PLINK计分。PRS-CSx原作者方法说明确认耦合连续收缩先验学习SNP后验权重，故AI/贝叶斯学习参与遗传风险预测，不再仅凭引用推断。代码为静态参考实现且生成示例限制染色体22，下游R含dummy_data模拟，不能当作全研究复现或真实性能验证；不将C+T、常规关联/生存回归本身称AI。",
       "verified_metadata": {
         "doi": "10.1038/s44161-026-00866-8",
         "title": "A multiancestry polygenic risk score improves stratification in patients with hypertrophic cardiomyopathy",
@@ -22003,20 +22003,51 @@
         "evidence_urls": [
           "https://www.nature.com/articles/s44161-026-00866-8",
           "https://www.nature.com/natcardiovascres/volumes/5/issues/9",
-          "https://static-content.springer.com/esm/art%3A10.1038%2Fs44161-026-00866-8/MediaObjects/44161_2026_866_MOESM1_ESM.pdf"
+          "https://static-content.springer.com/esm/art%3A10.1038%2Fs44161-026-00866-8/MediaObjects/44161_2026_866_MOESM1_ESM.pdf",
+          "https://github.com/Arora-Translational-Lab-UAB/HCM_PRS_LP_P_VUS_PUPv_ANALYSIS",
+          "https://github.com/Arora-Translational-Lab-UAB/HCM_PRS_LP_P_VUS_PUPv_ANALYSIS/blob/ae120b9ad263c5dc1443c19ecbeb7602aa5c1721/README.md",
+          "https://github.com/Arora-Translational-Lab-UAB/HCM_PRS_LP_P_VUS_PUPv_ANALYSIS/blob/ae120b9ad263c5dc1443c19ecbeb7602aa5c1721/Codes/Code_for_PRScsx_C_T_Generation_07242026.sh",
+          "https://github.com/getian107/PRScsx"
         ],
-        "scientific_evidence_location": "原摘要及参考方法线索；待核PRS构建和调参",
+        "scientific_evidence_location": "官网Code availability；作者仓库固定提交README及Codes/Code_for_PRScsx_C_T_Generation_07242026.sh §2–3；PRS-CSx原作者README方法/收缩参数说明",
         "pdf_url": null,
-        "pdf_availability_note": "出版社PDF端点返回订阅HTML，未伪填公开PDF；原摘要及公开Reporting Summary仍不足确定实际PRS构建/调参算法，保留科学待定。"
+        "pdf_availability_note": "出版社全文仍订阅，未伪填公开PDF；原摘要及官网直链作者方法/代码足以辨别实际PRS构建算法。",
+        "code_url": "https://github.com/Arora-Translational-Lab-UAB/HCM_PRS_LP_P_VUS_PUPv_ANALYSIS",
+        "code_evidence_commit": "ae120b9ad263c5dc1443c19ecbeb7602aa5c1721",
+        "code_evidence_limitation": "静态参考实现；生成示例限制chr22，下游R含dummy_data，不据此声称复现文章数值性能。"
       },
-      "tags": [],
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "官网Code availability；作者仓库固定提交README及Codes/Code_for_PRScsx_C_T_Generation_07242026.sh §2–3；PRS-CSx原作者README方法/收缩参数说明",
+          "rationale": "待定补证后纳入。官网Code availability直链作者仓库，README明确本研究构建/评估HCM PRS使用PRS-CSx及C+T；公开生成脚本实际调用PRScsx.py，使用多祖源GWAS、auto/固定收缩参数及meta后验效应输出，再用PLINK计分。PRS-CSx原作者方法说明确认耦合连续收缩先验学习SNP后验权重，故AI/贝叶斯学习参与遗传风险预测，不再仅凭引用推断。代码为静态参考实现且生成示例限制染色体22，下游R含dummy_data模拟，不能当作全研究复现或真实性能验证；不将C+T、常规关联/生存回归本身称AI。"
+        },
+        {
+          "axis": "task",
+          "label": "疾病风险预测",
+          "label_en": "Disease risk prediction",
+          "evidence_location": "官网Code availability；作者仓库固定提交README及Codes/Code_for_PRScsx_C_T_Generation_07242026.sh §2–3；PRS-CSx原作者README方法/收缩参数说明",
+          "rationale": "待定补证后纳入。官网Code availability直链作者仓库，README明确本研究构建/评估HCM PRS使用PRS-CSx及C+T；公开生成脚本实际调用PRScsx.py，使用多祖源GWAS、auto/固定收缩参数及meta后验效应输出，再用PLINK计分。PRS-CSx原作者方法说明确认耦合连续收缩先验学习SNP后验权重，故AI/贝叶斯学习参与遗传风险预测，不再仅凭引用推断。代码为静态参考实现且生成示例限制染色体22，下游R含dummy_data模拟，不能当作全研究复现或真实性能验证；不将C+T、常规关联/生存回归本身称AI。"
+        },
+        {
+          "axis": "method",
+          "label": "贝叶斯学习",
+          "label_en": "Bayesian learning",
+          "evidence_location": "官网Code availability；作者仓库固定提交README及Codes/Code_for_PRScsx_C_T_Generation_07242026.sh §2–3；PRS-CSx原作者README方法/收缩参数说明",
+          "rationale": "待定补证后纳入。官网Code availability直链作者仓库，README明确本研究构建/评估HCM PRS使用PRS-CSx及C+T；公开生成脚本实际调用PRScsx.py，使用多祖源GWAS、auto/固定收缩参数及meta后验效应输出，再用PLINK计分。PRS-CSx原作者方法说明确认耦合连续收缩先验学习SNP后验权重，故AI/贝叶斯学习参与遗传风险预测，不再仅凭引用推断。代码为静态参考实现且生成示例限制染色体22，下游R含dummy_data模拟，不能当作全研究复现或真实性能验证；不将C+T、常规关联/生存回归本身称AI。"
+        }
+      ],
       "publication_scope_check": {
         "status": "verified",
         "cutoff_at": "2026-11-16T23:14:20-08:00",
-        "basis": "卷5第1—11期官网目录与citation正式卷期逐DOI核实；均在固定截止前在线发表。"
+        "basis": "官网正式卷期及原文已核实，属于固定截止前的2026范围。"
       },
-      "reviewed_at": "2026-11-17T08:35:00.450713-08:00",
-      "vocabulary_commit": "20d20c5963433f4c9b8e81cdb86ea8deb1eec39f"
+      "reviewed_at": "2026-11-17T09:00:11.855644-08:00",
+      "vocabulary_commit": "ce3654e8066fa137fd5848ea054783c91972605c",
+      "previous_decision": "pending",
+      "previous_batch_id": "lixueting-2026-batch19"
     }
   },
   {
@@ -22131,6 +22162,1074 @@
       },
       "reviewed_at": "2026-11-17T08:35:00.450713-08:00",
       "vocabulary_commit": "20d20c5963433f4c9b8e81cdb86ea8deb1eec39f"
+    }
+  },
+  {
+    "id": "10.1038/s44161-026-00837-z",
+    "venue": "natcardiovascres",
+    "year": 2026,
+    "track": null,
+    "title": "Utility of high-sensitivity cardiac troponin I normalized to left ventricular mass in detection of stable coronary artery disease",
+    "authors": [
+      "Sina Fathieh",
+      "Michael P. Gray",
+      "Owen Tang",
+      "Katharine A. Bate",
+      "Stephen T. Vernon",
+      "Elijah Genetzakis",
+      "Soloman Saleh",
+      "Gillian Murtagh",
+      "Jean Y. Yang",
+      "Collin Tran",
+      "David R. Sullivan",
+      "Paul Bonnitcha",
+      "David S. Celermajer",
+      "Louise Cullen",
+      "Ravinay Bhindi",
+      "Jamil Mayet",
+      "Stephen J. Nicholls",
+      "Stuart M. Grieve",
+      "Gemma A. Figtree"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0001-8132-4047",
+      "https://orcid.org/0000-0003-1154-3011",
+      "https://orcid.org/0000-0002-5271-2603",
+      "https://orcid.org/0000-0001-6611-8229",
+      "https://orcid.org/0000-0002-5080-6083"
+    ],
+    "abstract": "Coronary artery disease often develops silently before myocardial infarction, and current risk-based prevention pathways miss some individuals with clinically important disease, particularly those without standard modifiable cardiovascular risk factors. High-sensitivity cardiac troponin I is a blood biomarker of low-level myocardial injury, but its relationship to silent coronary atherosclerosis remains incompletely understood. Here we show, in 1,613 adults undergoing coronary computed tomography (CT) imaging, that low-level high-sensitivity cardiac troponin I is associated with clinically actionable coronary disease, defined by coronary calcium score ≥100, and with quantitative CT markers of plaque burden. A threshold of 2.3 ng l −1 enriched for actionable disease, especially in individuals without standard risk factors. Normalizing troponin for myocardial mass, age and renal function improved prediction and provided mechanistic insight into baseline troponin elevation in chronic coronary syndromes. A two-stage strategy using troponin before CT imaging increased diagnostic yield and reduced the number of scans required. Prospective validation is warranted before clinical implementation.",
+    "keywords": [
+      "Diagnostic markers",
+      "Ischaemia"
+    ],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1038/s44161-026-00837-z",
+    "pages": "763-776",
+    "bibtex": null,
+    "url": "https://www.nature.com/articles/s44161-026-00837-z",
+    "pdf_url": "https://www.nature.com/articles/s44161-026-00837-z.pdf",
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-07-30",
+    "source": "crossref.org+nature.com",
+    "venue_type": "journal",
+    "journal_title": "Nature Cardiovascular Research",
+    "issn": "2731-0590",
+    "article_type": "Article",
+    "screening_status": "ready",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "lixueting-2026-batch20",
+      "owner": "李雪婷",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "include",
+      "rationale": "初筛漏筛补录。目标研究在Myocardial mass estimation实际调用TotalSegmentator的nnUNet深度学习分割CCTA心腔并计算左室心肌质量，用于肌钙蛋白归一化及稳定冠心病评估；100例分割由医生抽查。AI承担影像表型提取，常规阈值/回归及内部验证不全称AI，亦不等于前瞻临床有效性。",
+      "verified_metadata": {
+        "doi": "10.1038/s44161-026-00837-z",
+        "title": "Utility of high-sensitivity cardiac troponin I normalized to left ventricular mass in detection of stable coronary artery disease",
+        "authors": [
+          "Fathieh, Sina",
+          "Gray, Michael P.",
+          "Tang, Owen",
+          "Bate, Katharine A.",
+          "Vernon, Stephen T.",
+          "Genetzakis, Elijah",
+          "Saleh, Soloman",
+          "Murtagh, Gillian",
+          "Yang, Jean Y.",
+          "Tran, Collin",
+          "Sullivan, David R.",
+          "Bonnitcha, Paul",
+          "Celermajer, David S.",
+          "Cullen, Louise",
+          "Bhindi, Ravinay",
+          "Mayet, Jamil",
+          "Nicholls, Stephen J.",
+          "Grieve, Stuart M.",
+          "Figtree, Gemma A."
+        ],
+        "abstract": "Coronary artery disease often develops silently before myocardial infarction, and current risk-based prevention pathways miss some individuals with clinically important disease, particularly those without standard modifiable cardiovascular risk factors. High-sensitivity cardiac troponin I is a blood biomarker of low-level myocardial injury, but its relationship to silent coronary atherosclerosis remains incompletely understood. Here we show, in 1,613 adults undergoing coronary computed tomography (CT) imaging, that low-level high-sensitivity cardiac troponin I is associated with clinically actionable coronary disease, defined by coronary calcium score ≥100, and with quantitative CT markers of plaque burden. A threshold of 2.3 ng l−1 enriched for actionable disease, especially in individuals without standard risk factors. Normalizing troponin for myocardial mass, age and renal function improved prediction and provided mechanistic insight into baseline troponin elevation in chronic coronary syndromes. A two-stage strategy using troponin before CT imaging increased diagnostic yield and reduced the number of scans required. Prospective validation is warranted before clinical implementation.",
+        "url": "https://www.nature.com/articles/s44161-026-00837-z",
+        "volume": "5",
+        "issue": "8",
+        "pages": "763–776",
+        "published": "2026-07-30",
+        "article_type": "Article",
+        "evidence_urls": [
+          "https://www.nature.com/articles/s44161-026-00837-z",
+          "https://www.nature.com/natcardiovascres/volumes/5/issues/8",
+          "https://www.nature.com/articles/s44161-026-00837-z.pdf"
+        ],
+        "scientific_evidence_location": "原摘要；Methods Myocardial mass estimation，公开正式PDF第11页（印刷773页）",
+        "pdf_url": "https://www.nature.com/articles/s44161-026-00837-z.pdf",
+        "pdf_sha256": "b84017835c82971543658d035c773ffb15068845dff55c735894eea9df081d49",
+        "fulltext_version": "出版社公开正式版本"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "原摘要；Methods Myocardial mass estimation，公开正式PDF第11页（印刷773页）",
+          "rationale": "初筛漏筛补录。目标研究在Myocardial mass estimation实际调用TotalSegmentator的nnUNet深度学习分割CCTA心腔并计算左室心肌质量，用于肌钙蛋白归一化及稳定冠心病评估；100例分割由医生抽查。AI承担影像表型提取，常规阈值/回归及内部验证不全称AI，亦不等于前瞻临床有效性。"
+        },
+        {
+          "axis": "task",
+          "label": "医学影像分割",
+          "label_en": "Medical image segmentation",
+          "evidence_location": "原摘要；Methods Myocardial mass estimation，公开正式PDF第11页（印刷773页）",
+          "rationale": "初筛漏筛补录。目标研究在Myocardial mass estimation实际调用TotalSegmentator的nnUNet深度学习分割CCTA心腔并计算左室心肌质量，用于肌钙蛋白归一化及稳定冠心病评估；100例分割由医生抽查。AI承担影像表型提取，常规阈值/回归及内部验证不全称AI，亦不等于前瞻临床有效性。"
+        },
+        {
+          "axis": "method",
+          "label": "深度学习",
+          "label_en": "Deep learning",
+          "evidence_location": "原摘要；Methods Myocardial mass estimation，公开正式PDF第11页（印刷773页）",
+          "rationale": "初筛漏筛补录。目标研究在Myocardial mass estimation实际调用TotalSegmentator的nnUNet深度学习分割CCTA心腔并计算左室心肌质量，用于肌钙蛋白归一化及稳定冠心病评估；100例分割由医生抽查。AI承担影像表型提取，常规阈值/回归及内部验证不全称AI，亦不等于前瞻临床有效性。"
+        }
+      ],
+      "publication_scope_check": {
+        "status": "verified",
+        "cutoff_at": "2026-11-16T23:14:20-08:00",
+        "basis": "官网正式卷期及原文已核实，属于固定截止前的2026范围。"
+      },
+      "reviewed_at": "2026-11-17T09:00:11.855644-08:00",
+      "vocabulary_commit": "ce3654e8066fa137fd5848ea054783c91972605c"
+    }
+  },
+  {
+    "id": "10.1038/s44161-026-00870-y",
+    "venue": "natcardiovascres",
+    "year": 2026,
+    "track": null,
+    "title": "Age-associated loss of lymphatic vessels promotes cardiac inflammation",
+    "authors": [
+      "Julian U. G. Wagner",
+      "Hamza Gulshan",
+      "Ibrahim Sultan",
+      "Salli Antila",
+      "Laia-Canes Esteve",
+      "David Rodriguez Morales",
+      "Mariano Ruz Jurado",
+      "David John",
+      "Emmanouil G. Solomonidis",
+      "Katja Schmitz",
+      "Josefine Panthel",
+      "Haris Kujundzic",
+      "Susanne Hille",
+      "Oliver J. Müller",
+      "Christoph Kugler",
+      "Haider Sami",
+      "Manfred Ogris",
+      "Simone-Franziska Glaser",
+      "Wesley T. Abplanalp",
+      "Tara Procida-Kowalski",
+      "Marek Bartkuhn",
+      "Evelyn Ullrich",
+      "Marion Muhly-Reinholz",
+      "Sarmad Ahmad Khan",
+      "Tarik Bozoglu",
+      "Christian Kupatt",
+      "Florian Buettner",
+      "Jochen Pöling",
+      "Thomas Braun",
+      "Kari Alitalo",
+      "Stefanie Dimmeler"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0002-3863-854X",
+      "https://orcid.org/0000-0001-9377-8003",
+      "https://orcid.org/0000-0002-3943-2850",
+      "https://orcid.org/0000-0002-9579-1321",
+      "https://orcid.org/0000-0002-1819-6991",
+      "https://orcid.org/0000-0003-3217-5449",
+      "https://orcid.org/0009-0009-8067-9634",
+      "https://orcid.org/0000-0002-9809-4636",
+      "https://orcid.org/0000-0001-8223-2638",
+      "https://orcid.org/0000-0002-6503-7731",
+      "https://orcid.org/0000-0002-4576-6961",
+      "https://orcid.org/0000-0002-0808-2659",
+      "https://orcid.org/0000-0001-6872-9082",
+      "https://orcid.org/0000-0002-3611-1218",
+      "https://orcid.org/0000-0002-6165-4804",
+      "https://orcid.org/0000-0002-7331-0902",
+      "https://orcid.org/0000-0002-1045-2436"
+    ],
+    "abstract": "Aging is a major risk factor for cardiovascular disease, but the role of the cardiac lymphatic vasculature in this process remains poorly understood. Here we show that aging reduces cardiac lymphatic vessel density in humans and mice and induces structural remodeling characterized by tighter, zipper-like endothelial junctions. These changes are associated with immune cell infiltration, fibrinogen and amyloid accumulation, and myocardial edema. Selective reduction of cardiac lymphatics in young mice, through Flt4 (VEGFR3) depletion or soluble Flt4 overexpression, recapitulates key features of cardiac aging, including inflammation and impaired lymphatic integrity. Mechanistically, aging induces selective upregulation of nuclear interleukin-33 (IL-33) in lymphatic endothelial cells. Unlike extracellular IL-33, nuclear IL-33 promotes lymphatic endothelial cell death and junctional remodeling. We identify VEGFC as an age-sensitive regulator that declines with aging and suppresses IL-33. Cardiac Vegfc overexpression or Il33 silencing restores lymphatic density and tissue homeostasis in aged hearts, identifying a potential therapeutic target for age-related cardiac dysfunction.",
+    "keywords": [
+      "Cardiovascular biology",
+      "Ageing",
+      "Lymphatic vessels"
+    ],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1038/s44161-026-00870-y",
+    "pages": "961-976",
+    "bibtex": null,
+    "url": "https://www.nature.com/articles/s44161-026-00870-y",
+    "pdf_url": "https://www.nature.com/articles/s44161-026-00870-y.pdf",
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-09-15",
+    "source": "crossref.org+nature.com",
+    "venue_type": "journal",
+    "journal_title": "Nature Cardiovascular Research",
+    "issn": "2731-0590",
+    "article_type": "Article",
+    "screening_status": "ready",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "lixueting-2026-batch20",
+      "owner": "李雪婷",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "include",
+      "rationale": "初筛漏筛补录。目标Spatial transcriptomics明确复用Kanemaru等既有cell2location预测的淋巴管内皮细胞空间比例，用于比较人心脏年龄组的淋巴管丰度（Results及Extended Data Fig.1d）。原图谱方法确认实际cell2location映射；模型原始补充Methods §1.3以ADVI/ELBO及ADAM学习后验，属于贝叶斯学习参与空间组学证据。此处沿用上游模型输出，不写成本研究新训练网络，人工免疫染色和动物干预不归因AI。",
+      "verified_metadata": {
+        "doi": "10.1038/s44161-026-00870-y",
+        "title": "Age-associated loss of lymphatic vessels promotes cardiac inflammation",
+        "authors": [
+          "Wagner, Julian U. G.",
+          "Gulshan, Hamza",
+          "Sultan, Ibrahim",
+          "Antila, Salli",
+          "Esteve, Laia-Canes",
+          "Rodriguez Morales, David",
+          "Ruz Jurado, Mariano",
+          "John, David",
+          "Solomonidis, Emmanouil G.",
+          "Schmitz, Katja",
+          "Panthel, Josefine",
+          "Kujundzic, Haris",
+          "Hille, Susanne",
+          "Müller, Oliver J.",
+          "Kugler, Christoph",
+          "Sami, Haider",
+          "Ogris, Manfred",
+          "Glaser, Simone-Franziska",
+          "Abplanalp, Wesley T.",
+          "Procida-Kowalski, Tara",
+          "Bartkuhn, Marek",
+          "Ullrich, Evelyn",
+          "Muhly-Reinholz, Marion",
+          "Khan, Sarmad Ahmad",
+          "Bozoglu, Tarik",
+          "Kupatt, Christian",
+          "Buettner, Florian",
+          "Pöling, Jochen",
+          "Braun, Thomas",
+          "Alitalo, Kari",
+          "Dimmeler, Stefanie"
+        ],
+        "abstract": "Aging is a major risk factor for cardiovascular disease, but the role of the cardiac lymphatic vasculature in this process remains poorly understood. Here we show that aging reduces cardiac lymphatic vessel density in humans and mice and induces structural remodeling characterized by tighter, zipper-like endothelial junctions. These changes are associated with immune cell infiltration, fibrinogen and amyloid accumulation, and myocardial edema. Selective reduction of cardiac lymphatics in young mice, through Flt4 (VEGFR3) depletion or soluble Flt4 overexpression, recapitulates key features of cardiac aging, including inflammation and impaired lymphatic integrity. Mechanistically, aging induces selective upregulation of nuclear interleukin-33 (IL-33) in lymphatic endothelial cells. Unlike extracellular IL-33, nuclear IL-33 promotes lymphatic endothelial cell death and junctional remodeling. We identify VEGFC as an age-sensitive regulator that declines with aging and suppresses IL-33. Cardiac Vegfc overexpression or Il33 silencing restores lymphatic density and tissue homeostasis in aged hearts, identifying a potential therapeutic target for age-related cardiac dysfunction.",
+        "url": "https://www.nature.com/articles/s44161-026-00870-y",
+        "volume": "5",
+        "issue": "10",
+        "pages": "961–976",
+        "published": "2026-09-15",
+        "article_type": "Article",
+        "evidence_urls": [
+          "https://www.nature.com/articles/s44161-026-00870-y",
+          "https://www.nature.com/natcardiovascres/volumes/5/issues/10",
+          "https://www.nature.com/articles/s44161-026-00870-y.pdf",
+          "https://www.nature.com/articles/s41586-023-06311-1",
+          "https://www.nature.com/articles/s41587-021-01139-4",
+          "https://static-content.springer.com/esm/art%3A10.1038%2Fs41587-021-01139-4/MediaObjects/41587_2021_1139_MOESM1_ESM.pdf"
+        ],
+        "scientific_evidence_location": "原摘要；Methods Spatial transcriptomics，公开PDF第13页（973页）；Results Aging leads及Extended Data Fig.1d；Kanemaru Methods Spatial mapping；cell2location原始补充PDF第55页§1.3",
+        "pdf_url": "https://www.nature.com/articles/s44161-026-00870-y.pdf",
+        "pdf_sha256": "e59f98f0907c44e966d88a92bec402760ed37c89e517c208ddaa019a6ee50568",
+        "fulltext_version": "出版社公开正式版本",
+        "ai_provenance_note": "复用原图谱的cell2location预测比例；目标研究未声明重新训练该模型。"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "原摘要；Methods Spatial transcriptomics，公开PDF第13页（973页）；Results Aging leads及Extended Data Fig.1d；Kanemaru Methods Spatial mapping；cell2location原始补充PDF第55页§1.3",
+          "rationale": "初筛漏筛补录。目标Spatial transcriptomics明确复用Kanemaru等既有cell2location预测的淋巴管内皮细胞空间比例，用于比较人心脏年龄组的淋巴管丰度（Results及Extended Data Fig.1d）。原图谱方法确认实际cell2location映射；模型原始补充Methods §1.3以ADVI/ELBO及ADAM学习后验，属于贝叶斯学习参与空间组学证据。此处沿用上游模型输出，不写成本研究新训练网络，人工免疫染色和动物干预不归因AI。"
+        },
+        {
+          "axis": "task",
+          "label": "空间组学分析",
+          "label_en": "Spatial omics analysis",
+          "evidence_location": "原摘要；Methods Spatial transcriptomics，公开PDF第13页（973页）；Results Aging leads及Extended Data Fig.1d；Kanemaru Methods Spatial mapping；cell2location原始补充PDF第55页§1.3",
+          "rationale": "初筛漏筛补录。目标Spatial transcriptomics明确复用Kanemaru等既有cell2location预测的淋巴管内皮细胞空间比例，用于比较人心脏年龄组的淋巴管丰度（Results及Extended Data Fig.1d）。原图谱方法确认实际cell2location映射；模型原始补充Methods §1.3以ADVI/ELBO及ADAM学习后验，属于贝叶斯学习参与空间组学证据。此处沿用上游模型输出，不写成本研究新训练网络，人工免疫染色和动物干预不归因AI。"
+        },
+        {
+          "axis": "method",
+          "label": "贝叶斯学习",
+          "label_en": "Bayesian learning",
+          "evidence_location": "原摘要；Methods Spatial transcriptomics，公开PDF第13页（973页）；Results Aging leads及Extended Data Fig.1d；Kanemaru Methods Spatial mapping；cell2location原始补充PDF第55页§1.3",
+          "rationale": "初筛漏筛补录。目标Spatial transcriptomics明确复用Kanemaru等既有cell2location预测的淋巴管内皮细胞空间比例，用于比较人心脏年龄组的淋巴管丰度（Results及Extended Data Fig.1d）。原图谱方法确认实际cell2location映射；模型原始补充Methods §1.3以ADVI/ELBO及ADAM学习后验，属于贝叶斯学习参与空间组学证据。此处沿用上游模型输出，不写成本研究新训练网络，人工免疫染色和动物干预不归因AI。"
+        }
+      ],
+      "publication_scope_check": {
+        "status": "verified",
+        "cutoff_at": "2026-11-16T23:14:20-08:00",
+        "basis": "官网正式卷期及原文已核实，属于固定截止前的2026范围。"
+      },
+      "reviewed_at": "2026-11-17T09:00:11.855644-08:00",
+      "vocabulary_commit": "ce3654e8066fa137fd5848ea054783c91972605c"
+    }
+  },
+  {
+    "id": "10.1016/j.gerr.2026.100169",
+    "venue": "j-d49438c2b7",
+    "year": 2026,
+    "track": null,
+    "title": "Residential energy consumption dynamics: A SHAP-based interpretation, k-means clustering, and predictive modelling",
+    "authors": [
+      "Oluwatobi Adeleke",
+      "Oluwapelumi Joseph Adebowale",
+      "Idowu Ayoade",
+      "Iretioluwa Olawuyi",
+      "Tien-Chien Jen"
+    ],
+    "author_ids": [
+      "https://orcid.org/0009-0005-5355-4431",
+      "https://orcid.org/0000-0003-1743-4668"
+    ],
+    "abstract": "A proper understanding of climatic consumption dynamics is critical for demand-side management, grid stability, and climate-sensitive residential energy planning. The non-linear interaction between meteorological conditions has necessitated intelligent predictive models. However, existing studies focused on machine learning (ML) models in their black-box nature, with limited interpretability of the impact of climatic-drivers, climatic-demand interactions, and hidden consumption regimes. This research fills this gap through an integrated framework that combines seasonal hypothesis-testing, k-means clustering, Shapley Additive exPlanations (SHAP)-based interpretability, and advanced predictive modeling using XGBoost, Random Forest (RF), long-short term memory (LSTM), Support Vector Machine (SVM), and Autoregressive Integrated moving average (ARIMA). The seasonal hypothesis-testing using ANOVA and Tukey’s HSD revealed statistically significant differences in energy consumption across seasons, with peak-demand during winter and summer extremes. SHAP-based feature ranking identified temperature and humidity as the most influential drivers of electricity-demand. The k-means clustering revealed three distinct groups/clusters, which reflect the climatic-consumption scenarios. The ensemble learning (RF and XGBoost) exhibited the lowest training-error. RF had the best training performance with MSE, RMSE, and MAE values of 1.6484, 1.2839, and 0.8480. The data-driven insights in this study provide useful intelligence that supports critical decision-making through a proper understanding of the residential climatic-consumption dynamics. • ANOVA and Tukey’s HSD revealed a significant difference in consumption across seasons • k-means clustering reveals 3 distinct climatic-consumption patterns and regimes • SHAP revealed temperature as a dominant consumption driver • The random forest gave the best training performance with RMSE = 1.2839 • The framework facilitates climate-sensitive demand-side management and planning.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.gerr.2026.100169",
+    "pages": "100169",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.gerr.2026.100169",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-03",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Green Energy and Resources",
+    "issn": "2949-7205",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S2949720526000032",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "随机森林",
+      "支持向量机",
+      "机器学习",
+      "聚类",
+      "长短期记忆网络",
+      "集成学习"
+    ],
+    "ai4s_tags": [
+      "AI for 地球宇宙科学"
+    ],
+    "ai4s_keywords": [
+      "climate"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 地球宇宙科学": [
+          "climate"
+        ]
+      },
+      "method_evidence": []
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "lixueting-2026-batch20",
+      "owner": "李雪婷",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "include",
+      "rationale": "原摘要及正式研究类型确认，实际以RF/XGBoost/LSTM/SVM进行居民用电预测，配合SHAP与k-means分析气候—消费关系，服务能源规划与需求侧管理。最佳训练误差不等同独立外推或实际部署可靠性；ANOVA、ARIMA和SHAP本身不单独作为AI依据。",
+      "verified_metadata": {
+        "doi": "10.1016/j.gerr.2026.100169",
+        "title": "Residential energy consumption dynamics: A SHAP-based interpretation, k-means clustering, and predictive modelling",
+        "authors": [
+          "Oluwatobi Adeleke",
+          "Oluwapelumi Joseph Adebowale",
+          "Idowu Ayoade",
+          "Iretioluwa Olawuyi",
+          "Tien-Chien Jen"
+        ],
+        "abstract": "A proper understanding of climatic consumption dynamics is critical for demand-side management, grid stability, and climate-sensitive residential energy planning. The non-linear interaction between meteorological conditions has necessitated intelligent predictive models. However, existing studies focused on machine learning (ML) models in their black-box nature, with limited interpretability of the impact of climatic-drivers, climatic-demand interactions, and hidden consumption regimes. This research fills this gap through an integrated framework that combines seasonal hypothesis-testing, k-means clustering, Shapley Additive exPlanations (SHAP)-based interpretability, and advanced predictive modeling using XGBoost, Random Forest (RF), long-short term memory (LSTM), Support Vector Machine (SVM), and Autoregressive Integrated moving average (ARIMA). The seasonal hypothesis-testing using ANOVA and Tukey's HSD revealed statistically significant differences in energy consumption across seasons, with peak-demand during winter and summer extremes. SHAP-based feature ranking identified temperature and humidity as the most influential drivers of electricity-demand. The k-means clustering revealed three distinct groups/clusters, which reflect the climatic-consumption scenarios. The ensemble learning (RF and XGBoost) exhibited the lowest training-error. RF had the best training performance with MSE, RMSE, and MAE values of 1.6484, 1.2839, and 0.8480. The data-driven insights in this study provide useful intelligence that supports critical decision-making through a proper understanding of the residential climatic-consumption dynamics.",
+        "url": "https://journal.hep.com.cn/ger/EN/10.1016/j.gerr.2026.100169",
+        "volume": "4",
+        "issue": "1",
+        "pages": "100169",
+        "published": "2026-03-01",
+        "article_type": "Research Article",
+        "evidence_urls": [
+          "https://journal.hep.com.cn/ger/EN/10.1016/j.gerr.2026.100169",
+          "https://journal.hep.com.cn/ger/EN/2026/4/1",
+          "https://journal.hep.com.cn/ger/EN/PDF/10.1016/j.gerr.2026.100169"
+        ],
+        "scientific_evidence_location": "官网原摘要；正式公开PDF摘要及模型比较",
+        "date_note": "正式卷期日期取HEP citation_publication_date；页面History的2026-07-15可能为镜像上线，未冒充最早在线发表日期。",
+        "pdf_url": "https://journal.hep.com.cn/ger/EN/PDF/10.1016/j.gerr.2026.100169",
+        "pdf_sha256": "36df0d7a77abdc10e06045c51743d31f6a724048d64caaf2dc9fa1d545710f26",
+        "fulltext_version": "出版社公开正式版本"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "官网原摘要；正式公开PDF摘要及模型比较",
+          "rationale": "原摘要及正式研究类型确认，实际以RF/XGBoost/LSTM/SVM进行居民用电预测，配合SHAP与k-means分析气候—消费关系，服务能源规划与需求侧管理。最佳训练误差不等同独立外推或实际部署可靠性；ANOVA、ARIMA和SHAP本身不单独作为AI依据。"
+        },
+        {
+          "axis": "task",
+          "label": "电力负荷预测",
+          "label_en": "Electric load forecasting",
+          "evidence_location": "官网原摘要；正式公开PDF摘要及模型比较",
+          "rationale": "原摘要及正式研究类型确认，实际以RF/XGBoost/LSTM/SVM进行居民用电预测，配合SHAP与k-means分析气候—消费关系，服务能源规划与需求侧管理。最佳训练误差不等同独立外推或实际部署可靠性；ANOVA、ARIMA和SHAP本身不单独作为AI依据。"
+        },
+        {
+          "axis": "method",
+          "label": "随机森林",
+          "label_en": "Random forest",
+          "evidence_location": "官网原摘要；正式公开PDF摘要及模型比较",
+          "rationale": "原摘要及正式研究类型确认，实际以RF/XGBoost/LSTM/SVM进行居民用电预测，配合SHAP与k-means分析气候—消费关系，服务能源规划与需求侧管理。最佳训练误差不等同独立外推或实际部署可靠性；ANOVA、ARIMA和SHAP本身不单独作为AI依据。"
+        },
+        {
+          "axis": "method",
+          "label": "梯度提升",
+          "label_en": "Gradient boosting",
+          "evidence_location": "官网原摘要；正式公开PDF摘要及模型比较",
+          "rationale": "原摘要及正式研究类型确认，实际以RF/XGBoost/LSTM/SVM进行居民用电预测，配合SHAP与k-means分析气候—消费关系，服务能源规划与需求侧管理。最佳训练误差不等同独立外推或实际部署可靠性；ANOVA、ARIMA和SHAP本身不单独作为AI依据。"
+        }
+      ],
+      "publication_scope_check": {
+        "status": "verified",
+        "cutoff_at": "2026-11-16T23:14:20-08:00",
+        "basis": "官网正式卷期及原文已核实，属于固定截止前的2026范围。"
+      },
+      "reviewed_at": "2026-11-17T09:00:11.855644-08:00",
+      "vocabulary_commit": "ce3654e8066fa137fd5848ea054783c91972605c"
+    }
+  },
+  {
+    "id": "10.1016/j.gerr.2026.100188",
+    "venue": "j-d49438c2b7",
+    "year": 2026,
+    "track": null,
+    "title": "Synergistic hybrid systems of 2D-MOFs and TMDs for advanced energy harvesting",
+    "authors": [
+      "Kehinde Temitope Alao",
+      "Abdulhammed K. Hamzat",
+      "Kamaruzzaman Sopian",
+      "Syed Ihtsham Ul Haq Gilani",
+      "Taiwo Onaopemipo Alao",
+      "Zeshan Aslam",
+      "Hussein A. Kazem"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0002-7037-453X",
+      "https://orcid.org/0000-0002-4063-9891",
+      "https://orcid.org/0009-0007-0695-7531",
+      "https://orcid.org/0000-0002-5034-2485"
+    ],
+    "abstract": "The globally trending move towards renewable energy sources requires materials capable of harvesting, storing, and converting energy in a competent fashion and yet scalable, robust, and affordable. Two-dimensional metal-organic frameworks (2D-MOFs) and transition metal dichalcogenides (TMDs) have been promising materials for photovoltaics, thermoelectrics, piezoelectrics, and triboelectrics, respectively, but both material families are plagued by intrinsic drawbacks. MOFs have high area and chemical tailoring but are hampered by low conductivity, and TMDs have robust electronic and catalytic functionality but are plagued by stability and scalability issues. Recent developments indicate hybrid 2D-MOF/TMD systems are capable of offsetting failings by encapsulating complementary properties, facilitating superior charge separation, band alignment engineering, and enhancement in environmental tolerance. This review critically examines the structural, electronic, and functional synergies of 2D-MOF/TMD hybrids with emphasis on synthesis strategies, interface engineering, defect modulation, and emerging applications in diverse energy harvesting platforms. Comparative analyses of existing studies highlight how hybrid architectures deliver higher power densities, longer cycling stability, and superior device integration relative to their parent materials. Critical issues such as scalable synthesis, long-term stability under operating conditions, and reproducible device-level integration are also mentioned as hurdles in commercialization. Experimental design, computational modeling, and machine learning are envisaged in the future to accelerate discovery and optimization of high-performance hybrids. Bridging the gap between applied engineering and basic research, 2D-MOF/TMD hybrids are a paradigm shift in multifunctional materials and a promising avenue towards next-generation sustainable energy technology.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.gerr.2026.100188",
+    "pages": "100188",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.gerr.2026.100188",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-09",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Green Energy and Resources",
+    "issn": "2949-7205",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S2949720526000226",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "实验设计",
+      "机器学习"
+    ],
+    "ai4s_tags": [
+      "AI for 物质科学"
+    ],
+    "ai4s_keywords": [
+      "catalysis",
+      "metal-organic framework"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 物质科学": [
+          "catalysis",
+          "metal-organic framework"
+        ]
+      },
+      "method_evidence": []
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "lixueting-2026-batch20",
+      "owner": "李雪婷",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "include",
+      "rationale": "摘要仅将ML写作未来方向，但公开正文§4.4（PDF第20—21页）实质讨论InterMat的DFT+GNN界面/能带预测，以及KNN/SVM相稳定性筛选，故按AI参与能源材料预测的实质综述纳入。依据正文内容而非标题或未来愿景；不声称该综述新训练模型，也不把普通DFT本身称AI。",
+      "verified_metadata": {
+        "doi": "10.1016/j.gerr.2026.100188",
+        "title": "Synergistic hybrid systems of 2D-MOFs and TMDs for advanced energy harvesting",
+        "authors": [
+          "Kehinde Temitope Alao",
+          "Abdulhammed K. Hamzat",
+          "Kamaruzzaman Sopian",
+          "Syed Ihtsham Ul Haq Gilani",
+          "Taiwo Onaopemipo Alao",
+          "Zeshan Aslam",
+          "Hussein A. Kazem"
+        ],
+        "abstract": "The globally trending move towards renewable energy sources requires materials capable of harvesting, storing, and converting energy in a competent fashion and yet scalable, robust, and affordable. Two-dimensional metal-organic frameworks (2D-MOFs) and transition metal dichalcogenides (TMDs) have been promising materials for photovoltaics, thermoelectrics, piezoelectrics, and triboelectrics, respectively, but both material families are plagued by intrinsic drawbacks. MOFs have high area and chemical tailoring but are hampered by low conductivity, and TMDs have robust electronic and catalytic functionality but are plagued by stability and scalability issues. Recent developments indicate hybrid 2D-MOF/TMD systems are capable of offsetting failings by encapsulating complementary properties, facilitating superior charge separation, band alignment engineering, and enhancement in environmental tolerance. This review critically examines the structural, electronic, and functional synergies of 2D-MOF/TMD hybrids with emphasis on synthesis strategies, interface engineering, defect modulation, and emerging applications in diverse energy harvesting platforms. Comparative analyses of existing studies highlight how hybrid architectures deliver higher power densities, longer cycling stability, and superior device integration relative to their parent materials. Critical issues such as scalable synthesis, long-term stability under operating conditions, and reproducible device-level integration are also mentioned as hurdles in commercialization. Experimental design, computational modeling, and machine learning are envisaged in the future to accelerate discovery and optimization of high-performance hybrids. Bridging the gap between applied engineering and basic research, 2D-MOF/TMD hybrids are a paradigm shift in multifunctional materials and a promising avenue towards next-generation sustainable energy technology.",
+        "url": "https://journal.hep.com.cn/ger/EN/10.1016/j.gerr.2026.100188",
+        "volume": "4",
+        "issue": "3",
+        "pages": "100188",
+        "published": "2026-09-01",
+        "article_type": "Review",
+        "evidence_urls": [
+          "https://journal.hep.com.cn/ger/EN/10.1016/j.gerr.2026.100188",
+          "https://journal.hep.com.cn/ger/EN/2026/4/3",
+          "https://journal.hep.com.cn/ger/EN/PDF/10.1016/j.gerr.2026.100188"
+        ],
+        "scientific_evidence_location": "原摘要；公开PDF第20—21页，§4.4 Computational design and interface engineering",
+        "date_note": "正式卷期日期取HEP citation_publication_date；页面History的2026-07-15可能为镜像上线，未冒充最早在线发表日期。",
+        "pdf_url": "https://journal.hep.com.cn/ger/EN/PDF/10.1016/j.gerr.2026.100188",
+        "pdf_sha256": "e98f713488aa1a7cd795192cac202c156f249358db4c73760448f927c811826d",
+        "fulltext_version": "出版社公开正式版本"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "原摘要；公开PDF第20—21页，§4.4 Computational design and interface engineering",
+          "rationale": "摘要仅将ML写作未来方向，但公开正文§4.4（PDF第20—21页）实质讨论InterMat的DFT+GNN界面/能带预测，以及KNN/SVM相稳定性筛选，故按AI参与能源材料预测的实质综述纳入。依据正文内容而非标题或未来愿景；不声称该综述新训练模型，也不把普通DFT本身称AI。"
+        },
+        {
+          "axis": "task",
+          "label": "材料性质预测",
+          "label_en": "Materials property prediction",
+          "evidence_location": "原摘要；公开PDF第20—21页，§4.4 Computational design and interface engineering",
+          "rationale": "摘要仅将ML写作未来方向，但公开正文§4.4（PDF第20—21页）实质讨论InterMat的DFT+GNN界面/能带预测，以及KNN/SVM相稳定性筛选，故按AI参与能源材料预测的实质综述纳入。依据正文内容而非标题或未来愿景；不声称该综述新训练模型，也不把普通DFT本身称AI。"
+        },
+        {
+          "axis": "method",
+          "label": "机器学习",
+          "label_en": "Machine learning",
+          "evidence_location": "原摘要；公开PDF第20—21页，§4.4 Computational design and interface engineering",
+          "rationale": "摘要仅将ML写作未来方向，但公开正文§4.4（PDF第20—21页）实质讨论InterMat的DFT+GNN界面/能带预测，以及KNN/SVM相稳定性筛选，故按AI参与能源材料预测的实质综述纳入。依据正文内容而非标题或未来愿景；不声称该综述新训练模型，也不把普通DFT本身称AI。"
+        }
+      ],
+      "publication_scope_check": {
+        "status": "verified",
+        "cutoff_at": "2026-11-16T23:14:20-08:00",
+        "basis": "官网正式卷期及原文已核实，属于固定截止前的2026范围。"
+      },
+      "reviewed_at": "2026-11-17T09:00:11.855644-08:00",
+      "vocabulary_commit": "ce3654e8066fa137fd5848ea054783c91972605c"
+    }
+  },
+  {
+    "id": "10.1016/j.gerr.2026.100206",
+    "venue": "j-d49438c2b7",
+    "year": 2026,
+    "track": null,
+    "title": "Battery thermal management of electric vehicles: A review and bibliometric analysis of liquid cooling methods",
+    "authors": [
+      "Abdelrahman Gasmelseed",
+      "Maryam Nooman AlMallahi",
+      "Mahmoud Elgendi"
+    ],
+    "author_ids": [
+      "https://orcid.org/0009-0009-8302-7623",
+      "https://orcid.org/0000-0002-3038-0054"
+    ],
+    "abstract": "Thermal management plays a vital role in the operation of electric vehicle (EV) batteries, directly influencing their efficiency, safety, and market adoption. In real-world EV operation, inadequate thermal regulation can accelerate battery degradation and increase safety risks, highlighting the importance of effective battery thermal management system (BTMS) design. In response, extensive research explored liquid BTMSs for EV applications. Despite this growing body of research, a comprehensive overview that combines a critical review and a bibliometric analysis of EV liquid BTMS research remains scarce. This paper aims to address this gap by presenting a combined critical review and bibliometric investigation of recent trends and developments in EV liquid BTMSs. The review examines key aspects of liquid BTMSs, including system configurations, coolant types, performance enhancement methods, and hybrid configurations. The bibliometric analysis covers research and review publications included in the Scopus database from 2015 to 2025, extracted on the 29 th of October 2025. The technical review was updated separately to include selected 2026 publications. After screening, 472 publications strongly related to liquid BTMSs were identified. The analysis demonstrates continuous growth in the field with an annual growth rate of 40.97% and a low average document age of 3.19 years. China leads the research with 214 publications. Liquid BTMS keyword analysis highlights three main research themes: temperature control and coolant systems, EV applications and battery technologies, and battery modeling and simulation. Key research gaps include coupled electrothermal modeling and artificial intelligence-based predictive control. This review highlights recent advancements and research gaps that can guide future development of liquid BTMS design and optimization to improve EV performance and safety.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.gerr.2026.100206",
+    "pages": "100206",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.gerr.2026.100206",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-08",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Green Energy and Resources",
+    "issn": "2949-7205",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S2949720526000408",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 物质科学"
+    ],
+    "ai4s_keywords": [
+      "battery"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 物质科学": [
+          "battery"
+        ]
+      },
+      "method_evidence": []
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "lixueting-2026-batch20",
+      "owner": "李雪婷",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "pending",
+      "rationale": "原输入摘要提示AI预测控制可能仅为综述研究空白/未来方向，需合法原文核实是否实质综述；当前HEP对应论文页404，ScienceDirect目录403且正常浏览器人机验证；未取得人工核验答复。未在已核三期出现不能视为未发表或范围排除，保留pending。",
+      "verified_metadata": {
+        "doi": "10.1016/j.gerr.2026.100206",
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S2949720526000408",
+        "pdf_url": null,
+        "evidence_urls": [
+          "https://linkinghub.elsevier.com/retrieve/pii/S2949720526000408",
+          "https://www.sciencedirect.com/journal/green-energy-and-resources/issues",
+          "https://journal.hep.com.cn/ger/EN/10.1016/j.gerr.2026.100206"
+        ],
+        "scientific_evidence_location": "输入摘要；官方目录访问尝试；HEP三期目录及对应论文页404",
+        "unresolved_fields": [
+          "formal_issue",
+          "article_type",
+          "primary_abstract",
+          "substantive_AI_review_content"
+        ]
+      },
+      "tags": [],
+      "publication_scope_check": {
+        "status": "pending",
+        "cutoff_at": "2026-11-16T23:14:20-08:00",
+        "basis": "原采集记录未提供可核的正式卷期；ScienceDirect直接403、正常浏览器人机验证、HEP对应页404，不能据此确认正式范围或判定未发表。"
+      },
+      "reviewed_at": "2026-11-17T09:00:11.855644-08:00",
+      "vocabulary_commit": "ce3654e8066fa137fd5848ea054783c91972605c"
+    }
+  },
+  {
+    "id": "10.1016/j.gerr.2026.100217",
+    "venue": "j-d49438c2b7",
+    "year": 2026,
+    "track": null,
+    "title": "Physics-Informed Neural Network Framework for Performance Prediction and Parameter Identification of Microbial Fuel Cells",
+    "authors": [
+      "Miguel Esteban Pardo Gómez",
+      "Amarjeet Bassi",
+      "Deborah Roberts",
+      "Tianlong Liu"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0001-9762-3623",
+      "https://orcid.org/0000-0003-3908-6238"
+    ],
+    "abstract": "Bioelectrochemical systems (BES) such as microbial fuel cells (MFCs) offer a promising route for sustainable wastewater treatment and bioelectricity generation. However, MFC modeling faces a structural dichotomy: mechanistic models provide physical interpretability but suffer from difficult calibration, while data-driven approaches offer predictive flexibility at the cost of mechanistic transparency and limited extrapolation. To reconcile these paradigms, we developed BioElec-PINN, a physics-informed neural network framework that couples sparse experimental data with a differential-algebraic bioelectrochemical model that distinguishes bulk and biofilm substrate compartments through a mass-transfer coefficient. This paper presents the BioElec-PINN architecture and evaluates its performance on fed-batch MFCs treating synthetic winery wastewater across varying organic loads. We trained the network to jointly reconstruct model-conditioned latent states and estimate ten regularized cycle-specific kinetic, transport, and electrochemical parameters. The BioElec-PINN achieved calibration voltage normalized root mean square error NRMSE values of 0.048–0.100. The inferred parameter sets were subsequently transferred without recalibration to a Radau IIA solver (classical solver), whose forward trajectories showed close cycle-level agreement and supported the cross-formulation dynamic consistency of the learned mechanistic parameterization. A matched Direct multilayer perceptron MLP was additionally evaluated using an interleaved held-out protocol in which approximately 40% of the observations were retained for training and the remaining 60% were used exclusively for raw-data evaluation. The Direct MLP achieved lower pointwise interpolation errors, with mean voltage and chemical oxygen demand (COD) NRMSE values of 0.064 and 0.146, compared with 0.121 and 0.206 for the BioElec-PINN, respectively. A conditional residual-bootstrap analysis based on 20 complete BioElec-PINN retrainings was used to quantify parameter uncertainty. Thirty-three of the forty cycle-specific estimates exhibited relative 95% interval widths below 1%, while the bootstrap correlation structure revealed coordinated kinetic, mediator, and electrochemical parameter groups. However, the unconstrained MLP introduced non-monotonic COD trajectories in three cycles and physically inadmissible continuation outside the observed interval, including negative voltage and substantial COD rebound. In contrast, the BioElec-PINN preserved monotonic substrate depletion and coupled voltage–substrate dynamics while reconstructing model-conditioned latent states and estimating regularized cycle-specific effective parameters. The framework therefore provides a physically structured inverse-calibration component for future MFC digital twins, with raw-data performance, physical admissibility, parameter transferability, and conditional uncertainty evaluated explicitly.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.gerr.2026.100217",
+    "pages": "100217",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.gerr.2026.100217",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-10",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Green Energy and Resources",
+    "issn": "2949-7205",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S2949720526000512",
+    "ai4s_hits": [
+      "physics-informed",
+      "\\bpinns?\\b"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "多层感知机",
+      "物理信息神经网络",
+      "神经网络"
+    ],
+    "ai4s_tags": [
+      "AI for 数理科学"
+    ],
+    "ai4s_keywords": [
+      "partial differential equation",
+      "physics-informed learning"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 数理科学": [
+          "partial differential equation",
+          "physics-informed learning"
+        ]
+      },
+      "method_evidence": [
+        "physics-informed learning"
+      ]
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "lixueting-2026-batch20",
+      "owner": "李雪婷",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "pending",
+      "rationale": "原输入摘要明确BioElec-PINN参与微生物燃料电池参数反演，科学AI关系已有线索，但尚须核实正式研究类型、原摘要及卷期；当前HEP对应论文页404，ScienceDirect目录403且正常浏览器人机验证；未取得人工核验答复。未在已核三期出现不能视为未发表或范围排除，保留pending。",
+      "verified_metadata": {
+        "doi": "10.1016/j.gerr.2026.100217",
+        "url": "https://linkinghub.elsevier.com/retrieve/pii/S2949720526000512",
+        "pdf_url": null,
+        "evidence_urls": [
+          "https://linkinghub.elsevier.com/retrieve/pii/S2949720526000512",
+          "https://www.sciencedirect.com/journal/green-energy-and-resources/issues",
+          "https://journal.hep.com.cn/ger/EN/10.1016/j.gerr.2026.100217"
+        ],
+        "scientific_evidence_location": "输入摘要；官方目录访问尝试；HEP三期目录及对应论文页404",
+        "unresolved_fields": [
+          "formal_issue",
+          "article_type",
+          "primary_abstract"
+        ]
+      },
+      "tags": [],
+      "publication_scope_check": {
+        "status": "pending",
+        "cutoff_at": "2026-11-16T23:14:20-08:00",
+        "basis": "原采集记录未提供可核的正式卷期；ScienceDirect直接403、正常浏览器人机验证、HEP对应页404，不能据此确认正式范围或判定未发表。"
+      },
+      "reviewed_at": "2026-11-17T09:00:11.855644-08:00",
+      "vocabulary_commit": "ce3654e8066fa137fd5848ea054783c91972605c"
+    }
+  },
+  {
+    "id": "10.1016/j.gerr.2025.100165",
+    "venue": "j-d49438c2b7",
+    "year": 2026,
+    "track": null,
+    "title": "A comprehensive review of hydrogen integrated hybrid renewable energy systems: Configurations, models, simulation and optimization with artificial intelligence",
+    "authors": [
+      "Chenglong Li",
+      "Tianqi Yang",
+      "Wenchao Cai",
+      "Kodjo Agbossou",
+      "Pierre Bénard",
+      "Richard Chahine",
+      "Yi Zong",
+      "Yaze Li",
+      "Shenglin Su",
+      "Guodong Li",
+      "Xianglin Yan",
+      "Jin Li",
+      "Jinsheng Xiao"
+    ],
+    "author_ids": [
+      "https://orcid.org/0000-0003-1262-3558"
+    ],
+    "abstract": "This work presents a comprehensive review of hydrogen-based hybrid renewable energy systems (HRESs), covering mathematical models, simulation and artificial intelligence (AI)-driven optimization approaches. Emphasizing the potential of hydrogen as an energy carrier to deepen renewable energy integration, especially in solar and wind HRESs, this review systematically details mathematical models for various renewable generation and storage systems, serving as a structured reference for researchers. Given the complexity of HRES modeling, this work provides insights into different modeling software and optimization algorithms, with a particular focus on artificial intelligence methods. The integration of software and artificial intelligence promises to solve complex modeling and optimization challenges with potential applications in different environments. Future directions suggest that the physical model-assisted AI framework, which embeds physical principles within AI models, holds promise for enhancing prediction accuracy and reliability in HRES applications. This framework, especially when combined with stochastic optimization, offers a potential pathway to address challenges in data availability and computational complexity, supporting the effective design and optimization of hydrogen-based HRESs for real-world applications. The overall findings will help improve the design and optimization of hydrogen-based hybrid renewable energy systems for practical implementation.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.gerr.2025.100165",
+    "pages": "100165",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.gerr.2025.100165",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-03",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Green Energy and Resources",
+    "issn": "2949-7205",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S2949720525000529",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "lixueting-2026-batch20",
+      "owner": "李雪婷",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "include",
+      "rationale": "初筛漏筛补录。实质综述氢能混合可再生系统的建模、预测与优化，公开正文§4（PDF第12—14页）具体比较ANN/SVM、混合CNN/LSTM、超参数优化等及其对发电、负荷和氢储能调度的作用；不是只因摘要未来物理辅助AI愿景纳入，不把所有启发式或物理模型均称AI。",
+      "verified_metadata": {
+        "doi": "10.1016/j.gerr.2025.100165",
+        "title": "A comprehensive review of hydrogen integrated hybrid renewable energy systems: Configurations, models, simulation and optimization with artificial intelligence",
+        "authors": [
+          "Chenglong Li",
+          "Tianqi Yang",
+          "Wenchao Cai",
+          "Kodjo Agbossou",
+          "Pierre Bénard",
+          "Richard Chahine",
+          "Yi Zong",
+          "Yaze Li",
+          "Shenglin Su",
+          "Guodong Li",
+          "Xianglin Yan",
+          "Jin Li",
+          "Jinsheng Xiao"
+        ],
+        "abstract": "This work presents a comprehensive review of hydrogen-based hybrid renewable energy systems (HRESs), covering mathematical models, simulation and artificial intelligence (AI)-driven optimization approaches. Emphasizing the potential of hydrogen as an energy carrier to deepen renewable energy integration, especially in solar and wind HRESs, this review systematically details mathematical models for various renewable generation and storage systems, serving as a structured reference for researchers. Given the complexity of HRES modeling, this work provides insights into different modeling software and optimization algorithms, with a particular focus on artificial intelligence methods. The integration of software and artificial intelligence promises to solve complex modeling and optimization challenges with potential applications in different environments. Future directions suggest that the physical model-assisted AI framework, which embeds physical principles within AI models, holds promise for enhancing prediction accuracy and reliability in HRES applications. This framework, especially when combined with stochastic optimization, offers a potential pathway to address challenges in data availability and computational complexity, supporting the effective design and optimization of hydrogen-based HRESs for real-world applications. The overall findings will help improve the design and optimization of hydrogen-based hybrid renewable energy systems for practical implementation.",
+        "url": "https://journal.hep.com.cn/ger/EN/10.1016/j.gerr.2025.100165",
+        "volume": "4",
+        "issue": "1",
+        "pages": "100165",
+        "published": "2026-03-01",
+        "article_type": "Review",
+        "evidence_urls": [
+          "https://journal.hep.com.cn/ger/EN/10.1016/j.gerr.2025.100165",
+          "https://journal.hep.com.cn/ger/EN/2026/4/1",
+          "https://journal.hep.com.cn/ger/EN/PDF/10.1016/j.gerr.2025.100165"
+        ],
+        "scientific_evidence_location": "原摘要；公开PDF §4、§4.1/4.2，第12—14页",
+        "date_note": "正式卷期日期取HEP citation_publication_date；页面History的2026-07-15可能为镜像上线，未冒充最早在线发表日期。",
+        "pdf_url": "https://journal.hep.com.cn/ger/EN/PDF/10.1016/j.gerr.2025.100165",
+        "pdf_sha256": "fe67650161c813885f06ca7680e6d9983ea1424987ba7042254e4a25408ca6dc",
+        "fulltext_version": "出版社公开正式版本"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "原摘要；公开PDF §4、§4.1/4.2，第12—14页",
+          "rationale": "初筛漏筛补录。实质综述氢能混合可再生系统的建模、预测与优化，公开正文§4（PDF第12—14页）具体比较ANN/SVM、混合CNN/LSTM、超参数优化等及其对发电、负荷和氢储能调度的作用；不是只因摘要未来物理辅助AI愿景纳入，不把所有启发式或物理模型均称AI。"
+        },
+        {
+          "axis": "task",
+          "label": "能源系统优化",
+          "label_en": "Energy system optimization",
+          "evidence_location": "原摘要；公开PDF §4、§4.1/4.2，第12—14页",
+          "rationale": "初筛漏筛补录。实质综述氢能混合可再生系统的建模、预测与优化，公开正文§4（PDF第12—14页）具体比较ANN/SVM、混合CNN/LSTM、超参数优化等及其对发电、负荷和氢储能调度的作用；不是只因摘要未来物理辅助AI愿景纳入，不把所有启发式或物理模型均称AI。"
+        },
+        {
+          "axis": "method",
+          "label": "机器学习",
+          "label_en": "Machine learning",
+          "evidence_location": "原摘要；公开PDF §4、§4.1/4.2，第12—14页",
+          "rationale": "初筛漏筛补录。实质综述氢能混合可再生系统的建模、预测与优化，公开正文§4（PDF第12—14页）具体比较ANN/SVM、混合CNN/LSTM、超参数优化等及其对发电、负荷和氢储能调度的作用；不是只因摘要未来物理辅助AI愿景纳入，不把所有启发式或物理模型均称AI。"
+        }
+      ],
+      "publication_scope_check": {
+        "status": "verified",
+        "cutoff_at": "2026-11-16T23:14:20-08:00",
+        "basis": "官网正式卷期及原文已核实，属于固定截止前的2026范围。"
+      },
+      "reviewed_at": "2026-11-17T09:00:11.855644-08:00",
+      "vocabulary_commit": "ce3654e8066fa137fd5848ea054783c91972605c"
+    }
+  },
+  {
+    "id": "10.1016/j.gerr.2026.100203",
+    "venue": "j-d49438c2b7",
+    "year": 2026,
+    "track": null,
+    "title": "Rock mechanics–driven interpretable machine learning framework for preliminary seal integrity screening in geological CO2 storage",
+    "authors": [
+      "Muhammad Hammad Rasool",
+      "A.K.M. Eahsanul Haque",
+      "Numair Ahmed Siddiqui",
+      "Hassan Soleimani",
+      "Maqsood Ahmad",
+      "Nisar Ahmed",
+      "Muhammad Mubashir",
+      "Venkateshwaran Baskaran",
+      "Md Nasirul Islam",
+      "Lawal Opeyemi Olajid"
+    ],
+    "author_ids": [],
+    "abstract": "Caprock integrity assessment is essential for ensuring the long-term security of geological CO 2 storage; however, early-stage evaluation is often challenged by limited and heterogeneous subsurface datasets. This study proposes an interpretable machine learning framework for preliminary caprock integrity screening using limited rock mechanics data from the 31/5–7 Eos well-core of the Northern Lights CO 2 storage project. An unsupervised learning workflow was first employed to reconstruct Safe, Transitional, and Risk integrity regimes through cluster validation and ambiguity-based boundary analysis. Multiple supervised learning algorithms, including Logistic Regression, Decision Tree, Random Forest, Support Vector Machine, and XGBoost, were subsequently developed and evaluated under stratified train/test split, Leave-One-Out Cross Validation (LOOCV), and repeated stratified cross-validation strategies. Random Forest demonstrated the most stable predictive behaviour across validation schemes, achieving balanced accuracies exceeding 0.86. Explainability analyses using Random Forest feature importance and SHAP consistently identified porosity and axial stress as dominant screening controls, suggesting coupled stress–structure interactions govern integrity behaviour within the studied dataset. Based on these observations, a Stress–Porosity Screening Score (SPSS) was developed as a simplified post hoc screening descriptor for rapid integrity evaluation. Statistical analyses demonstrated significant differentiation of SPSS across reconstructed integrity regimes ( p < 0.001). Decision-tree interpretation further enabled extraction of preliminary data-emergent screening pathways and threshold behaviour. Conclusively, the proposed methodology provides an interpretable and data-adaptive screening approach intended to support early-stage caprock assessment and guide subsequent detailed geomechanical investigations.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1016/j.gerr.2026.100203",
+    "pages": "100203",
+    "bibtex": null,
+    "url": "https://doi.org/10.1016/j.gerr.2026.100203",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026-09",
+    "source": "crossref.org+openalex.org",
+    "venue_type": "journal",
+    "journal_title": "Green Energy and Resources",
+    "issn": "2949-7205",
+    "article_type": "unknown",
+    "screening_status": "needs_article_type",
+    "conference_title": null,
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "publisher_url": "https://linkinghub.elsevier.com/retrieve/pii/S2949720526000378",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "lixueting-2026-batch20",
+      "owner": "李雪婷",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "include",
+      "rationale": "初筛漏筛补录。目标实际用盖层岩石力学数据构建完整性聚类分区，并训练RF、SVM、XGBoost等分类器，进行分层留出、LOOCV与重复交叉验证，配合SHAP解释孔隙度/应力和构造SPSS。AI服务CO2地质封存初步盖层筛查；标签来自重建分区，不能把内部分类准确率当真实泄漏/长期封存安全验证。",
+      "verified_metadata": {
+        "doi": "10.1016/j.gerr.2026.100203",
+        "title": "Rock mechanics–driven interpretable machine learning framework for preliminary seal integrity screening in geological CO2 storage",
+        "authors": [
+          "Muhammad Hammad Rasool",
+          "A.K.M. Eahsanul Haque",
+          "Numair Ahmed Siddiqui",
+          "Hassan Soleimani",
+          "Maqsood Ahmad",
+          "Nisar Ahmed",
+          "Muhammad Mubashir",
+          "Venkateshwaran Baskaran",
+          "Md Nasirul Islam",
+          "Lawal Opeyemi Olajid"
+        ],
+        "abstract": "Seal integrity assessment is essential for ensuring the long-term security of geological CO2 storage; however, early-stage evaluation is often challenged by limited and heterogeneous subsurface datasets. This study proposes an interpretable machine learning framework for preliminary seal integrity screening using limited rock mechanics data from the 31/5–7 Eos well-core of the Northern Lights CO2 storage project. An unsupervised learning workflow was first employed to reconstruct Safe, Transitional, and Risk integrity regimes through cluster validation and ambiguity-based boundary analysis. Multiple supervised learning algorithms, including Logistic Regression, Decision Tree, Random Forest, Support Vector Machine, and XGBoost, were subsequently developed and evaluated under stratified train/test split, Leave-One-Out Cross Validation (LOOCV), and repeated stratified cross-validation strategies. Random Forest demonstrated the most stable predictive behaviour across validation schemes, achieving balanced accuracies exceeding 0.86. Explainability analyses using Random Forest feature importance and SHAP consistently identified porosity and failure related effective axial stress as dominant screening controls, suggesting coupled stress–structure interactions govern integrity behaviour within the studied dataset. Based on these observations, a Stress–Porosity Screening Score (SPSS) was developed as a simplified post hoc screening descriptor for rapid integrity evaluation. Statistical analyses demonstrated significant differentiation of SPSS across reconstructed integrity regimes (p < 0.001). Decision-tree interpretation further enabled extraction of preliminary data-emergent screening pathways and threshold behaviour. Conclusively, the proposed methodology provides an interpretable and data-adaptive screening approach intended to support early-stage caprock assessment and guide subsequent detailed geomechanical investigations.",
+        "url": "https://journal.hep.com.cn/ger/EN/10.1016/j.gerr.2026.100203",
+        "volume": "4",
+        "issue": "3",
+        "pages": "100203",
+        "published": "2026-09-01",
+        "article_type": "Research Article",
+        "evidence_urls": [
+          "https://journal.hep.com.cn/ger/EN/10.1016/j.gerr.2026.100203",
+          "https://journal.hep.com.cn/ger/EN/2026/4/3",
+          "https://journal.hep.com.cn/ger/EN/PDF/10.1016/j.gerr.2026.100203"
+        ],
+        "scientific_evidence_location": "官网原摘要；公开PDF方法与验证流程",
+        "date_note": "正式卷期日期取HEP citation_publication_date；页面History的2026-07-15可能为镜像上线，未冒充最早在线发表日期。",
+        "pdf_url": "https://journal.hep.com.cn/ger/EN/PDF/10.1016/j.gerr.2026.100203",
+        "pdf_sha256": "0371c2587302b676a0229dd1264e6742e6b9ca10b6873bd496c54da822314f5e",
+        "fulltext_version": "出版社公开正式版本"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于地球宇宙科学",
+          "label_en": "AI for Earth and space sciences",
+          "evidence_location": "官网原摘要；公开PDF方法与验证流程",
+          "rationale": "初筛漏筛补录。目标实际用盖层岩石力学数据构建完整性聚类分区，并训练RF、SVM、XGBoost等分类器，进行分层留出、LOOCV与重复交叉验证，配合SHAP解释孔隙度/应力和构造SPSS。AI服务CO2地质封存初步盖层筛查；标签来自重建分区，不能把内部分类准确率当真实泄漏/长期封存安全验证。"
+        },
+        {
+          "axis": "method",
+          "label": "随机森林",
+          "label_en": "Random forest",
+          "evidence_location": "官网原摘要；公开PDF方法与验证流程",
+          "rationale": "初筛漏筛补录。目标实际用盖层岩石力学数据构建完整性聚类分区，并训练RF、SVM、XGBoost等分类器，进行分层留出、LOOCV与重复交叉验证，配合SHAP解释孔隙度/应力和构造SPSS。AI服务CO2地质封存初步盖层筛查；标签来自重建分区，不能把内部分类准确率当真实泄漏/长期封存安全验证。"
+        },
+        {
+          "axis": "method",
+          "label": "梯度提升",
+          "label_en": "Gradient boosting",
+          "evidence_location": "官网原摘要；公开PDF方法与验证流程",
+          "rationale": "初筛漏筛补录。目标实际用盖层岩石力学数据构建完整性聚类分区，并训练RF、SVM、XGBoost等分类器，进行分层留出、LOOCV与重复交叉验证，配合SHAP解释孔隙度/应力和构造SPSS。AI服务CO2地质封存初步盖层筛查；标签来自重建分区，不能把内部分类准确率当真实泄漏/长期封存安全验证。"
+        }
+      ],
+      "publication_scope_check": {
+        "status": "verified",
+        "cutoff_at": "2026-11-16T23:14:20-08:00",
+        "basis": "官网正式卷期及原文已核实，属于固定截止前的2026范围。"
+      },
+      "reviewed_at": "2026-11-17T09:00:11.855644-08:00",
+      "vocabulary_commit": "ce3654e8066fa137fd5848ea054783c91972605c"
     }
   }
 ]
