@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-17T14:23:10.744743+00:00",
-  "commit": "231e64e99c1bcd501dd79cc3e76bb50168ec3f7f",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/231e64e99c1bcd501dd79cc3e76bb50168ec3f7f/",
+  "generated_at": "2026-11-17T14:48:39.084872+00:00",
+  "commit": "ec3b2bda79044db3270dd17e528f2e067dc137e4",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ec3b2bda79044db3270dd17e528f2e067dc137e4/",
   "years": [
     {
       "year": 2024,
@@ -26219,18 +26219,18 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-17T05:56:31-08:00",
-            "author": "h10",
-            "subject": "review: verify thirty EJHG AI leads and preserve remaining recall queue",
+            "at": "2026-11-17T06:42:06-08:00",
+            "author": "Xueting",
+            "subject": "review: 补采郝卓迪2026年37刊204条目录缺项并完成新增候选审核",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
-              "metadata/nature-ejhg/2026/ai4s.json",
-              "metadata/nature-ejhg/2026/official-scope-audit-lixueting.json",
-              "reviews/2026/feedback/zch66883-lixueting.json"
+              "metadata/2026/papers.json",
+              "metadata/2026/snapshot.json",
+              "metadata/commsbio/2026/catalogue-reconciliation.json"
             ]
           },
-          "commits_7d": 44
+          "commits_7d": 45
         },
         {
           "owner": "丁利军",
@@ -46839,18 +46839,18 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-17T05:56:31-08:00",
-            "author": "h10",
-            "subject": "review: verify thirty EJHG AI leads and preserve remaining recall queue",
+            "at": "2026-11-17T06:42:06-08:00",
+            "author": "Xueting",
+            "subject": "review: 补采郝卓迪2026年37刊204条目录缺项并完成新增候选审核",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
-              "metadata/nature-ejhg/2026/ai4s.json",
-              "metadata/nature-ejhg/2026/official-scope-audit-lixueting.json",
-              "reviews/2026/feedback/zch66883-lixueting.json"
+              "metadata/2026/papers.json",
+              "metadata/2026/snapshot.json",
+              "metadata/commsbio/2026/catalogue-reconciliation.json"
             ]
           },
-          "commits_7d": 44
+          "commits_7d": 45
         },
         {
           "owner": "郝卓迪",
@@ -47570,16 +47570,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "completed",
-          "papers": 1804,
-          "papers_missing_abstract": 3,
+          "papers": 1820,
+          "papers_missing_abstract": 13,
           "snapshot_candidates": 107,
           "candidates": 107,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入96、排除11、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有16条、快照独有0条、快照后新登记37条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 1820,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/2399-3642/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采16条，原采集1804条已完整保留；修复后同口径1820条逐DOI与参考目录一一对应，快照后首次登记37条单列。候选精筛：纳入96、排除11、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2399-3642/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://www.nature.com/articles/s42003-026-09831-4",
             "https://www.nature.com/articles/s42003-026-10071-9",
             "https://www.nature.com/articles/s42003-026-09516-y",
@@ -47595,14 +47604,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
@@ -50392,16 +50395,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 355,
-          "papers_missing_abstract": 281,
+          "papers": 358,
+          "papers_missing_abstract": 284,
           "snapshot_candidates": 8,
           "candidates": 8,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入6、排除2、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有3条、快照独有0条、快照后新登记13条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 358,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/1369-7021/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采3条，原采集355条已完整保留；修复后同口径358条逐DOI与参考目录一一对应，快照后首次登记13条单列。候选精筛：纳入6、排除2、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1369-7021/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/1369-7021/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
@@ -50410,16 +50422,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
@@ -50433,7 +50437,17 @@
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 0,
+          "collection_state_resolution": {
+            "status": "resolved_for_candidate_review",
+            "original_state": "abstract_incomplete",
+            "reason": "full_reference_catalogue_candidates_complete",
+            "checked_by": "郝卓迪",
+            "checked_at": "2026-11-17",
+            "evidence_urls": [
+              "https://api.crossref.org/journals/1369-7021/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
+            ]
+          }
         },
         {
           "code": "j-1990fab752",
@@ -50517,16 +50531,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 150,
+          "papers": 151,
           "papers_missing_abstract": 22,
           "snapshot_candidates": 5,
           "candidates": 5,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入3、排除1、待定1、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有1条、快照独有0条、快照后新登记4条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 151,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/2405-8033/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采1条，原采集150条已完整保留；修复后同口径151条逐DOI与参考目录一一对应，快照后首次登记4条单列。候选精筛：纳入3、排除1、待定1、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2405-8033/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/2405-8033/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
@@ -50536,18 +50559,14 @@
             "unreviewed": 0
           },
           "issues": [
-            "总量尚未核对",
             "待定1条",
             "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "核对截至日期的官网目录与采集口径",
             "按逐篇记录中明确缺证定位，补原文、原摘要或实质AI方法证据",
             "按逐篇记录中明确缺证定位，补原文、原摘要或实质AI方法证据",
             "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -51229,16 +51248,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 898,
-          "papers_missing_abstract": 503,
+          "papers": 902,
+          "papers_missing_abstract": 507,
           "snapshot_candidates": 31,
           "candidates": 31,
           "missing_abstract": 6,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入20、排除1、待定10、未审0。候选待补原摘要6条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有4条、快照独有0条、快照后新登记10条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 902,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/2095-9273/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采4条，原采集898条已完整保留；修复后同口径902条逐DOI与参考目录一一对应，快照后首次登记10条单列。候选精筛：纳入20、排除1、待定10、未审0；候选待补原摘要6条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2095-9273/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/2095-9273/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
@@ -51248,22 +51276,18 @@
             "unreviewed": 0
           },
           "issues": [
-            "总量尚未核对",
             "候选原摘要缺失6条，尚未结案",
             "待定10条",
             "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
             "AI4S候选缺少摘要：6 篇。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "核对截至日期的官网目录与采集口径",
             "继续取得出版方/作者机构原摘要或核实文种，不用生成摘要补齐",
             "按逐篇记录中明确缺证定位，补原文、原摘要或实质AI方法证据",
             "继续取得出版方/作者机构原摘要或核实文种，不用生成摘要补齐",
             "按逐篇记录中明确缺证定位，补原文、原摘要或实质AI方法证据",
             "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
             "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
@@ -51644,16 +51668,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 101,
-          "papers_missing_abstract": 61,
+          "papers": 102,
+          "papers_missing_abstract": 62,
           "snapshot_candidates": 3,
           "candidates": 3,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入3、排除0、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有1条、快照独有0条、快照后新登记0条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 102,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/0370-1573/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采1条，原采集101条已完整保留；修复后同口径102条逐DOI与参考目录一一对应，快照后首次登记0条单列。候选精筛：纳入3、排除0、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0370-1573/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/0370-1573/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
@@ -51662,16 +51695,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
@@ -51685,7 +51710,17 @@
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 0,
+          "collection_state_resolution": {
+            "status": "resolved_for_candidate_review",
+            "original_state": "abstract_incomplete",
+            "reason": "full_reference_catalogue_candidates_complete",
+            "checked_by": "郝卓迪",
+            "checked_at": "2026-11-17",
+            "evidence_urls": [
+              "https://api.crossref.org/journals/0370-1573/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
+            ]
+          }
         },
         {
           "code": "j-31764e1eab",
@@ -51955,16 +51990,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 2438,
-          "papers_missing_abstract": 2286,
+          "papers": 2459,
+          "papers_missing_abstract": 2305,
           "snapshot_candidates": 20,
           "candidates": 20,
           "missing_abstract": 15,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入4、排除16、待定0、未审0。候选待补原摘要15条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有21条、快照独有0条、快照后新登记3条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 2459,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/1556-0864/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采21条，原采集2438条已完整保留；修复后同口径2459条逐DOI与参考目录一一对应，快照后首次登记3条单列。候选精筛：纳入4、排除16、待定0、未审0；候选待补原摘要15条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1556-0864/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/1556-0864/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
@@ -51974,18 +52018,14 @@
             "unreviewed": 0
           },
           "issues": [
-            "总量尚未核对",
             "候选原摘要缺失15条，尚未结案",
             "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
             "AI4S候选缺少摘要：15 篇。"
           ],
           "actions": [
-            "核对截至日期的官网目录与采集口径",
             "继续取得出版方/作者机构原摘要或核实文种，不用生成摘要补齐",
             "继续取得出版方/作者机构原摘要或核实文种，不用生成摘要补齐",
             "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
             "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。"
           ],
           "files": [
@@ -52289,16 +52329,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 382,
-          "papers_missing_abstract": 272,
+          "papers": 385,
+          "papers_missing_abstract": 274,
           "snapshot_candidates": 4,
           "candidates": 4,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入1、排除3、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有3条、快照独有0条、快照后新登记7条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 385,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/0342-4642/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采3条，原采集382条已完整保留；修复后同口径385条逐DOI与参考目录一一对应，快照后首次登记7条单列。候选精筛：纳入1、排除3、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0342-4642/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/0342-4642/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
@@ -52307,16 +52356,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
@@ -52330,7 +52371,17 @@
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 0,
+          "collection_state_resolution": {
+            "status": "resolved_for_candidate_review",
+            "original_state": "abstract_incomplete",
+            "reason": "full_reference_catalogue_candidates_complete",
+            "checked_by": "郝卓迪",
+            "checked_at": "2026-11-17",
+            "evidence_urls": [
+              "https://api.crossref.org/journals/0342-4642/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
+            ]
+          }
         },
         {
           "code": "j-3e89b0beb9",
@@ -52575,16 +52626,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 2406,
-          "papers_missing_abstract": 2277,
+          "papers": 2408,
+          "papers_missing_abstract": 2278,
           "snapshot_candidates": 25,
           "candidates": 25,
           "missing_abstract": 19,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入5、排除20、待定0、未审0。候选待补原摘要19条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有2条、快照独有0条、快照后新登记3条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 2408,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/0302-2838/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采2条，原采集2406条已完整保留；修复后同口径2408条逐DOI与参考目录一一对应，快照后首次登记3条单列。候选精筛：纳入5、排除20、待定0、未审0；候选待补原摘要19条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0302-2838/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/0302-2838/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
@@ -52594,18 +52654,14 @@
             "unreviewed": 0
           },
           "issues": [
-            "总量尚未核对",
             "候选原摘要缺失19条，尚未结案",
             "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
             "AI4S候选缺少摘要：19 篇。"
           ],
           "actions": [
-            "核对截至日期的官网目录与采集口径",
             "继续取得出版方/作者机构原摘要或核实文种，不用生成摘要补齐",
             "继续取得出版方/作者机构原摘要或核实文种，不用生成摘要补齐",
             "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
             "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。"
           ],
           "files": [
@@ -52915,16 +52971,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "completed",
-          "papers": 309,
-          "papers_missing_abstract": 17,
+          "papers": 311,
+          "papers_missing_abstract": 19,
           "snapshot_candidates": 3,
           "candidates": 3,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入2、排除1、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有2条、快照独有0条、快照后新登记6条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 311,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/2666-5247/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采2条，原采集309条已完整保留；修复后同口径311条逐DOI与参考目录一一对应，快照后首次登记6条单列。候选精筛：纳入2、排除1、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2666-5247/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/2666-5247/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
@@ -52933,14 +52998,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
@@ -53764,16 +53823,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 145,
-          "papers_missing_abstract": 43,
+          "papers": 150,
+          "papers_missing_abstract": 45,
           "snapshot_candidates": 10,
           "candidates": 10,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入8、排除1、待定1、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有5条、快照独有0条、快照后新登记2条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 150,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/0165-6147/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采5条，原采集145条已完整保留；修复后同口径150条逐DOI与参考目录一一对应，快照后首次登记2条单列。候选精筛：纳入8、排除1、待定1、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0165-6147/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/0165-6147/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
@@ -53783,18 +53851,14 @@
             "unreviewed": 0
           },
           "issues": [
-            "总量尚未核对",
             "待定1条",
             "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "核对截至日期的官网目录与采集口径",
             "按逐篇记录中明确缺证定位，补原文、原摘要或实质AI方法证据",
             "按逐篇记录中明确缺证定位，补原文、原摘要或实质AI方法证据",
             "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -55152,16 +55216,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 222,
-          "papers_missing_abstract": 147,
+          "papers": 224,
+          "papers_missing_abstract": 149,
           "snapshot_candidates": 1,
           "candidates": 1,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入0、排除1、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有2条、快照独有0条、快照后新登记5条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 224,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/2215-0366/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采2条，原采集222条已完整保留；修复后同口径224条逐DOI与参考目录一一对应，快照后首次登记5条单列。候选精筛：纳入0、排除1、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2215-0366/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/2215-0366/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
@@ -55170,16 +55243,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
@@ -55193,7 +55258,17 @@
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 0,
+          "collection_state_resolution": {
+            "status": "resolved_for_candidate_review",
+            "original_state": "abstract_incomplete",
+            "reason": "full_reference_catalogue_candidates_complete",
+            "checked_by": "郝卓迪",
+            "checked_at": "2026-11-17",
+            "evidence_urls": [
+              "https://api.crossref.org/journals/2215-0366/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
+            ]
+          }
         },
         {
           "code": "j-7a7c416cc3",
@@ -56466,16 +56541,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "completed",
-          "papers": 142,
-          "papers_missing_abstract": 1,
+          "papers": 143,
+          "papers_missing_abstract": 2,
           "snapshot_candidates": 10,
           "candidates": 10,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入9、排除0、待定1、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有1条、快照独有0条、快照后新登记3条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 143,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/2524-7921/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采1条，原采集142条已完整保留；修复后同口径143条逐DOI与参考目录一一对应，快照后首次登记3条单列。候选精筛：纳入9、排除0、待定1、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2524-7921/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://doi.org/10.1007/s42765-026-00777-0",
             "https://api.crossref.org/journals/2524-7921/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
@@ -56486,16 +56570,12 @@
             "unreviewed": 0
           },
           "issues": [
-            "总量尚未核对",
             "待定1条",
-            "官网同口径总数尚未确认。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "核对截至日期的官网目录与采集口径",
             "按逐篇记录中明确缺证定位，补原文、原摘要或实质AI方法证据",
             "按逐篇记录中明确缺证定位，补原文、原摘要或实质AI方法证据",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -57485,37 +57565,42 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 247,
-          "papers_missing_abstract": 41,
-          "snapshot_candidates": 10,
-          "candidates": 10,
+          "papers": 250,
+          "papers_missing_abstract": 42,
+          "snapshot_candidates": 11,
+          "candidates": 11,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入5、排除3、待定2、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有3条、快照独有0条、快照后新登记7条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 250,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/1360-1385/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采3条，原采集247条已完整保留；修复后同口径250条逐DOI与参考目录一一对应，快照后首次登记7条单列。候选精筛：纳入5、排除3、待定3、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1360-1385/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/1360-1385/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
             "include": 5,
             "exclude": 3,
-            "pending": 2,
+            "pending": 3,
             "unreviewed": 0
           },
           "issues": [
-            "总量尚未核对",
-            "待定2条",
+            "待定3条",
             "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "核对截至日期的官网目录与采集口径",
             "按逐篇记录中明确缺证定位，补原文、原摘要或实质AI方法证据",
             "按逐篇记录中明确缺证定位，补原文、原摘要或实质AI方法证据",
             "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -57974,16 +58059,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 302,
+          "papers": 304,
           "papers_missing_abstract": 35,
           "snapshot_candidates": 4,
           "candidates": 4,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入3、排除1、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有2条、快照独有0条、快照后新登记7条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 304,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/2214-109X/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采2条，原采集302条已完整保留；修复后同口径304条逐DOI与参考目录一一对应，快照后首次登记7条单列。候选精筛：纳入3、排除1、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2214-109X/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/2214-109X/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
@@ -57992,16 +58086,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
@@ -58015,7 +58101,17 @@
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 0,
+          "collection_state_resolution": {
+            "status": "resolved_for_candidate_review",
+            "original_state": "abstract_incomplete",
+            "reason": "full_reference_catalogue_candidates_complete",
+            "checked_by": "郝卓迪",
+            "checked_at": "2026-11-17",
+            "evidence_urls": [
+              "https://api.crossref.org/journals/2214-109X/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
+            ]
+          }
         },
         {
           "code": "j-b2a795c62c",
@@ -59035,39 +59131,44 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "completed",
-          "papers": 136,
+          "papers": 137,
           "papers_missing_abstract": 12,
-          "snapshot_candidates": 32,
-          "candidates": 32,
+          "snapshot_candidates": 33,
+          "candidates": 33,
           "missing_abstract": 1,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入23、排除6、待定3、未审0。候选待补原摘要1条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有1条、快照独有0条、快照后新登记5条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 137,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/2589-7500/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采1条，原采集136条已完整保留；修复后同口径137条逐DOI与参考目录一一对应，快照后首次登记5条单列。候选精筛：纳入24、排除6、待定3、未审0；候选待补原摘要1条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2589-7500/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/2589-7500/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
-            "include": 23,
+            "include": 24,
             "exclude": 6,
             "pending": 3,
             "unreviewed": 0
           },
           "issues": [
-            "总量尚未核对",
             "候选原摘要缺失1条，尚未结案",
             "待定3条",
-            "官网同口径总数尚未确认。",
             "AI4S候选缺少摘要：1 篇。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "核对截至日期的官网目录与采集口径",
             "继续取得出版方/作者机构原摘要或核实文种，不用生成摘要补齐",
             "按逐篇记录中明确缺证定位，补原文、原摘要或实质AI方法证据",
             "继续取得出版方/作者机构原摘要或核实文种，不用生成摘要补齐",
             "按逐篇记录中明确缺证定位，补原文、原摘要或实质AI方法证据",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
             "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
@@ -59076,7 +59177,7 @@
             "reviews/2026/feedback/Jodie628.json"
           ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": 23,
+          "final_included": 24,
           "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
@@ -59252,16 +59353,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 463,
-          "papers_missing_abstract": 286,
+          "papers": 466,
+          "papers_missing_abstract": 287,
           "snapshot_candidates": 3,
           "candidates": 3,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入3、排除0、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有3条、快照独有0条、快照后新登记2条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 466,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/1473-3099/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采3条，原采集463条已完整保留；修复后同口径466条逐DOI与参考目录一一对应，快照后首次登记2条单列。候选精筛：纳入3、排除0、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1473-3099/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/1473-3099/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
@@ -59270,16 +59380,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
@@ -59293,7 +59395,17 @@
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 0,
+          "collection_state_resolution": {
+            "status": "resolved_for_candidate_review",
+            "original_state": "abstract_incomplete",
+            "reason": "full_reference_catalogue_candidates_complete",
+            "checked_by": "郝卓迪",
+            "checked_at": "2026-11-17",
+            "evidence_urls": [
+              "https://api.crossref.org/journals/1473-3099/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
+            ]
+          }
         },
         {
           "code": "j-c94b3260f2",
@@ -59379,37 +59491,42 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 3503,
-          "papers_missing_abstract": 119,
-          "snapshot_candidates": 179,
-          "candidates": 179,
+          "papers": 3541,
+          "papers_missing_abstract": 127,
+          "snapshot_candidates": 182,
+          "candidates": 182,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入166、排除11、待定2、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有38条、快照独有0条、快照后新登记95条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 3541,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/0304-3894/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采38条，原采集3503条已完整保留；修复后同口径3541条逐DOI与参考目录一一对应，快照后首次登记95条单列。候选精筛：纳入169、排除11、待定2、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0304-3894/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/0304-3894/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
-            "include": 166,
+            "include": 169,
             "exclude": 11,
             "pending": 2,
             "unreviewed": 0
           },
           "issues": [
-            "总量尚未核对",
             "待定2条",
             "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "核对截至日期的官网目录与采集口径",
             "按逐篇记录中明确缺证定位，补原文、原摘要或实质AI方法证据",
             "按逐篇记录中明确缺证定位，补原文、原摘要或实质AI方法证据",
             "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -59417,7 +59534,7 @@
             "reviews/2026/feedback/Jodie628.json"
           ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": 166,
+          "final_included": 169,
           "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
@@ -59712,16 +59829,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 134,
-          "papers_missing_abstract": 23,
+          "papers": 139,
+          "papers_missing_abstract": 25,
           "snapshot_candidates": 1,
           "candidates": 1,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入0、排除1、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有5条、快照独有0条、快照后新登记3条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 139,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/0962-8924/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采5条，原采集134条已完整保留；修复后同口径139条逐DOI与参考目录一一对应，快照后首次登记3条单列。候选精筛：纳入0、排除1、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0962-8924/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/0962-8924/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
@@ -59730,16 +59856,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
@@ -59753,7 +59871,17 @@
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 0,
+          "collection_state_resolution": {
+            "status": "resolved_for_candidate_review",
+            "original_state": "abstract_incomplete",
+            "reason": "full_reference_catalogue_candidates_complete",
+            "checked_by": "郝卓迪",
+            "checked_at": "2026-11-17",
+            "evidence_urls": [
+              "https://api.crossref.org/journals/0962-8924/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
+            ]
+          }
         },
         {
           "code": "j-d2d0663714",
@@ -60013,16 +60141,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 78,
-          "papers_missing_abstract": 10,
+          "papers": 79,
+          "papers_missing_abstract": 11,
           "snapshot_candidates": 7,
           "candidates": 7,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入7、排除0、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有1条、快照独有0条、快照后新登记1条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 79,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/2692-7632/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采1条，原采集78条已完整保留；修复后同口径79条逐DOI与参考目录一一对应，快照后首次登记1条单列。候选精筛：纳入7、排除0、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2692-7632/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/2692-7632/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
@@ -60031,16 +60168,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
@@ -60054,7 +60183,17 @@
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 0,
+          "collection_state_resolution": {
+            "status": "resolved_for_candidate_review",
+            "original_state": "abstract_incomplete",
+            "reason": "full_reference_catalogue_candidates_complete",
+            "checked_by": "郝卓迪",
+            "checked_at": "2026-11-17",
+            "evidence_urls": [
+              "https://api.crossref.org/journals/2692-7632/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
+            ]
+          }
         },
         {
           "code": "j-d6f749bf6c",
@@ -60740,16 +60879,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 354,
-          "papers_missing_abstract": 106,
+          "papers": 356,
+          "papers_missing_abstract": 107,
           "snapshot_candidates": 3,
           "candidates": 3,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入3、排除0、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有2条、快照独有0条、快照后新登记5条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 356,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/0003-4967/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采2条，原采集354条已完整保留；修复后同口径356条逐DOI与参考目录一一对应，快照后首次登记5条单列。候选精筛：纳入3、排除0、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/0003-4967/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/0003-4967/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
@@ -60758,16 +60906,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
@@ -60781,7 +60921,17 @@
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 0,
+          "collection_state_resolution": {
+            "status": "resolved_for_candidate_review",
+            "original_state": "abstract_incomplete",
+            "reason": "full_reference_catalogue_candidates_complete",
+            "checked_by": "郝卓迪",
+            "checked_at": "2026-11-17",
+            "evidence_urls": [
+              "https://api.crossref.org/journals/0003-4967/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
+            ]
+          }
         },
         {
           "code": "j-e39bc45340",
@@ -62134,16 +62284,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "completed",
-          "papers": 165,
+          "papers": 174,
           "papers_missing_abstract": 10,
           "snapshot_candidates": 4,
           "candidates": 4,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入2、排除2、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有9条、快照独有0条、快照后新登记1条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 174,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/1934-5909/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采9条，原采集165条已完整保留；修复后同口径174条逐DOI与参考目录一一对应，快照后首次登记1条单列。候选精筛：纳入2、排除2、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1934-5909/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/1934-5909/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
@@ -62152,14 +62311,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
@@ -62591,16 +62744,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 213,
-          "papers_missing_abstract": 34,
+          "papers": 216,
+          "papers_missing_abstract": 36,
           "snapshot_candidates": 6,
           "candidates": 6,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入6、排除0、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有3条、快照独有0条、快照后新登记15条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 216,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/2662-8465/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采3条，原采集213条已完整保留；修复后同口径216条逐DOI与参考目录一一对应，快照后首次登记15条单列。候选精筛：纳入6、排除0、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2662-8465/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://www.nature.com/articles/s43587-026-01200-4",
             "https://api.crossref.org/journals/2662-8465/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
@@ -62610,16 +62772,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
@@ -62633,7 +62787,18 @@
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 0,
+          "collection_state_resolution": {
+            "status": "resolved_for_candidate_review",
+            "original_state": "abstract_incomplete",
+            "reason": "full_reference_catalogue_candidates_complete",
+            "checked_by": "郝卓迪",
+            "checked_at": "2026-11-17",
+            "evidence_urls": [
+              "https://www.nature.com/articles/s43587-026-01200-4",
+              "https://api.crossref.org/journals/2662-8465/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
+            ]
+          }
         },
         {
           "code": "natastron",
@@ -62740,16 +62905,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "completed",
-          "papers": 176,
-          "papers_missing_abstract": 14,
+          "papers": 178,
+          "papers_missing_abstract": 15,
           "snapshot_candidates": 9,
           "candidates": 9,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入7、排除2、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有2条、快照独有0条、快照后新登记3条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 178,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/2662-1347/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采2条，原采集176条已完整保留；修复后同口径178条逐DOI与参考目录一一对应，快照后首次登记3条单列。候选精筛：纳入7、排除2、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2662-1347/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/2662-1347/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
@@ -62758,14 +62932,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
@@ -63092,16 +63260,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 173,
+          "papers": 174,
           "papers_missing_abstract": 18,
           "snapshot_candidates": 5,
           "candidates": 5,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入4、排除1、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有1条、快照独有0条、快照后新登记0条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 174,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/2662-1355/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采1条，原采集173条已完整保留；修复后同口径174条逐DOI与参考目录一一对应，快照后首次登记0条单列。候选精筛：纳入4、排除1、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2662-1355/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/2662-1355/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
@@ -63110,16 +63287,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
@@ -63133,7 +63302,17 @@
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 0,
+          "collection_state_resolution": {
+            "status": "resolved_for_candidate_review",
+            "original_state": "abstract_incomplete",
+            "reason": "full_reference_catalogue_candidates_complete",
+            "checked_by": "郝卓迪",
+            "checked_at": "2026-11-17",
+            "evidence_urls": [
+              "https://api.crossref.org/journals/2662-1355/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
+            ]
+          }
         },
         {
           "code": "nathumbehav",
@@ -63219,16 +63398,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "completed",
-          "papers": 233,
-          "papers_missing_abstract": 19,
+          "papers": 237,
+          "papers_missing_abstract": 21,
           "snapshot_candidates": 1,
           "candidates": 1,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入1、排除0、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有4条、快照独有0条、快照后新登记7条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 237,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/2522-5812/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采4条，原采集233条已完整保留；修复后同口径237条逐DOI与参考目录一一对应，快照后首次登记7条单列。候选精筛：纳入1、排除0、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2522-5812/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/2522-5812/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
@@ -63237,14 +63425,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
@@ -63530,16 +63712,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 256,
-          "papers_missing_abstract": 41,
+          "papers": 258,
+          "papers_missing_abstract": 43,
           "snapshot_candidates": 11,
           "candidates": 11,
           "missing_abstract": 1,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入9、排除2、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种1条，原记录保留。参考目录已逐DOI比较：快照前参考独有2条、快照独有0条、快照后新登记7条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 258,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/2731-0582/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采2条，原采集256条已完整保留；修复后同口径258条逐DOI与参考目录一一对应，快照后首次登记7条单列。候选精筛：纳入9、排除2、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2731-0582/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://www.nature.com/articles/s44160-026-01114-4",
             "https://api.crossref.org/journals/2731-0582/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
@@ -63549,16 +63740,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
@@ -63572,7 +63755,18 @@
           "abstract_not_required": 1,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 0,
+          "collection_state_resolution": {
+            "status": "resolved_for_candidate_review",
+            "original_state": "abstract_incomplete",
+            "reason": "full_reference_catalogue_candidates_complete",
+            "checked_by": "郝卓迪",
+            "checked_at": "2026-11-17",
+            "evidence_urls": [
+              "https://www.nature.com/articles/s44160-026-01114-4",
+              "https://api.crossref.org/journals/2731-0582/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
+            ]
+          }
         },
         {
           "code": "nature",
@@ -64498,16 +64692,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "completed",
-          "papers": 3006,
-          "papers_missing_abstract": 6,
+          "papers": 3028,
+          "papers_missing_abstract": 21,
           "snapshot_candidates": 150,
           "candidates": 150,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入82、排除68、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有22条、快照独有0条、快照后新登记35条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 3028,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/2662-9992/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采22条，原采集3006条已完整保留；修复后同口径3028条逐DOI与参考目录一一对应，快照后首次登记35条单列。候选精筛：纳入82、排除68、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2662-9992/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://doi.org/10.1057/s41599-025-06441-z",
             "https://doi.org/10.1057/s41599-026-06594-5",
             "https://doi.org/10.1057/s41599-026-06542-3",
@@ -64525,14 +64728,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
@@ -64724,16 +64921,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 271,
-          "papers_missing_abstract": 55,
+          "papers": 275,
+          "papers_missing_abstract": 57,
           "snapshot_candidates": 5,
           "candidates": 5,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入5、排除0、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有4条、快照独有0条、快照后新登记13条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 275,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/1476-4679/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采4条，原采集271条已完整保留；修复后同口径275条逐DOI与参考目录一一对应，快照后首次登记13条单列。候选精筛：纳入5、排除0、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1476-4679/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/1476-4679/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
@@ -64742,16 +64948,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
@@ -64765,7 +64963,17 @@
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 0,
+          "collection_state_resolution": {
+            "status": "resolved_for_candidate_review",
+            "original_state": "abstract_incomplete",
+            "reason": "full_reference_catalogue_candidates_complete",
+            "checked_by": "郝卓迪",
+            "checked_at": "2026-11-17",
+            "evidence_urls": [
+              "https://api.crossref.org/journals/1476-4679/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
+            ]
+          }
         },
         {
           "code": "nchem",
@@ -64773,16 +64981,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "completed",
-          "papers": 265,
+          "papers": 267,
           "papers_missing_abstract": 11,
           "snapshot_candidates": 1,
           "candidates": 1,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入0、排除1、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有2条、快照独有0条、快照后新登记7条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 267,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/1755-4349/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采2条，原采集265条已完整保留；修复后同口径267条逐DOI与参考目录一一对应，快照后首次登记7条单列。候选精筛：纳入0、排除1、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1755-4349/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/1755-4349/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
@@ -64791,14 +65008,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
@@ -64859,16 +65070,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 260,
-          "papers_missing_abstract": 30,
+          "papers": 262,
+          "papers_missing_abstract": 31,
           "snapshot_candidates": 3,
           "candidates": 3,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入2、排除1、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有2条、快照独有0条、快照后新登记8条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 262,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/1758-6798/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采2条，原采集260条已完整保留；修复后同口径262条逐DOI与参考目录一一对应，快照后首次登记8条单列。候选精筛：纳入2、排除1、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1758-6798/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://www.nature.com/articles/s41558-025-02521-9",
             "https://api.crossref.org/journals/1758-6798/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
@@ -64878,16 +65098,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
@@ -64901,7 +65113,18 @@
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 0,
+          "collection_state_resolution": {
+            "status": "resolved_for_candidate_review",
+            "original_state": "abstract_incomplete",
+            "reason": "full_reference_catalogue_candidates_complete",
+            "checked_by": "郝卓迪",
+            "checked_at": "2026-11-17",
+            "evidence_urls": [
+              "https://www.nature.com/articles/s41558-025-02521-9",
+              "https://api.crossref.org/journals/1758-6798/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
+            ]
+          }
         },
         {
           "code": "ncomms",
@@ -65125,48 +65348,59 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 354,
-          "papers_missing_abstract": 56,
-          "snapshot_candidates": 19,
-          "candidates": 19,
-          "missing_abstract": 0,
+          "papers": 363,
+          "papers_missing_abstract": 61,
+          "snapshot_candidates": 21,
+          "candidates": 21,
+          "missing_abstract": 1,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入18、排除1、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有9条、快照独有0条、快照后新登记6条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 363,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/1546-1718/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采9条，原采集354条已完整保留；修复后同口径363条逐DOI与参考目录一一对应，快照后首次登记6条单列。候选精筛：纳入19、排除2、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1546-1718/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/1546-1718/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
-            "include": 18,
-            "exclude": 1,
+            "include": 19,
+            "exclude": 2,
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
           ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": 18,
+          "final_included": 19,
           "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
           "abstract_recovered": 0,
-          "abstract_not_required": 0,
+          "abstract_not_required": 1,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 0,
+          "collection_state_resolution": {
+            "status": "resolved_for_candidate_review",
+            "original_state": "abstract_incomplete",
+            "reason": "full_reference_catalogue_candidates_complete",
+            "checked_by": "郝卓迪",
+            "checked_at": "2026-11-17",
+            "evidence_urls": [
+              "https://api.crossref.org/journals/1546-1718/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
+            ]
+          }
         },
         {
           "code": "ngeo",
@@ -65211,16 +65445,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 331,
-          "papers_missing_abstract": 75,
+          "papers": 332,
+          "papers_missing_abstract": 76,
           "snapshot_candidates": 1,
           "candidates": 1,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入0、排除0、待定1、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有1条、快照独有0条、快照后新登记7条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 332,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/1529-2916/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采1条，原采集331条已完整保留；修复后同口径332条逐DOI与参考目录一一对应，快照后首次登记7条单列。候选精筛：纳入0、排除0、待定1、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1529-2916/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/1529-2916/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
@@ -65230,18 +65473,14 @@
             "unreviewed": 0
           },
           "issues": [
-            "总量尚未核对",
             "待定1条",
             "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "核对截至日期的官网目录与采集口径",
             "按逐篇记录中明确缺证定位，补原文、原摘要或实质AI方法证据",
             "按逐篇记录中明确缺证定位，补原文、原摘要或实质AI方法证据",
             "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -65384,42 +65623,43 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 297,
-          "papers_missing_abstract": 48,
-          "snapshot_candidates": 49,
-          "candidates": 49,
+          "papers": 305,
+          "papers_missing_abstract": 52,
+          "snapshot_candidates": 50,
+          "candidates": 50,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入49、排除0、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有8条、快照独有0条、快照后新登记9条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 305,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/1548-7105/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采8条，原采集297条已完整保留；修复后同口径305条逐DOI与参考目录一一对应，快照后首次登记9条单列。候选精筛：纳入50、排除0、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1548-7105/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://www.nature.com/articles/s41592-026-03085-y",
             "https://www.nature.com/articles/s41592-026-03202-x",
             "https://api.crossref.org/journals/1548-7105/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
-            "include": 49,
+            "include": 50,
             "exclude": 0,
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
           ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": 49,
+          "final_included": 50,
           "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
@@ -65427,7 +65667,19 @@
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 0,
+          "collection_state_resolution": {
+            "status": "resolved_for_candidate_review",
+            "original_state": "abstract_incomplete",
+            "reason": "full_reference_catalogue_candidates_complete",
+            "checked_by": "郝卓迪",
+            "checked_at": "2026-11-17",
+            "evidence_urls": [
+              "https://www.nature.com/articles/s41592-026-03085-y",
+              "https://www.nature.com/articles/s41592-026-03202-x",
+              "https://api.crossref.org/journals/1548-7105/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
+            ]
+          }
         },
         {
           "code": "nmicrobiol",
@@ -65919,16 +66171,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "completed",
-          "papers": 1139,
-          "papers_missing_abstract": 19,
-          "snapshot_candidates": 332,
-          "candidates": 332,
+          "papers": 1147,
+          "papers_missing_abstract": 22,
+          "snapshot_candidates": 334,
+          "candidates": 334,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入298、排除34、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有8条、快照独有0条、快照后新登记15条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 1147,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/2398-6352/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采8条，原采集1139条已完整保留；修复后同口径1147条逐DOI与参考目录一一对应，快照后首次登记15条单列。候选精筛：纳入300、排除34、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2398-6352/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://www.nature.com/articles/s41746-025-02061-8",
             "https://www.nature.com/articles/s41746-026-02600-x",
             "https://www.nature.com/articles/s41746-026-02633-2",
@@ -65954,25 +66215,19 @@
             "https://api.crossref.org/journals/2398-6352/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
-            "include": 298,
+            "include": 300,
             "exclude": 34,
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
           ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": 298,
+          "final_included": 300,
           "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
@@ -67361,16 +67616,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "completed",
-          "papers": 81,
+          "papers": 82,
           "papers_missing_abstract": 6,
           "snapshot_candidates": 3,
           "candidates": 3,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入2、排除0、待定1、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有1条、快照独有0条、快照后新登记5条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 82,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/1471-0048/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采1条，原采集81条已完整保留；修复后同口径82条逐DOI与参考目录一一对应，快照后首次登记5条单列。候选精筛：纳入2、排除0、待定1、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/1471-0048/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://api.crossref.org/journals/1471-0048/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
           ],
           "decisions": {
@@ -67380,16 +67644,12 @@
             "unreviewed": 0
           },
           "issues": [
-            "总量尚未核对",
             "待定1条",
-            "官网同口径总数尚未确认。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "核对截至日期的官网目录与采集口径",
             "按逐篇记录中明确缺证定位，补原文、原摘要或实质AI方法证据",
             "按逐篇记录中明确缺证定位，补原文、原摘要或实质AI方法证据",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -67474,16 +67734,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "abstract_incomplete",
-          "papers": 113,
-          "papers_missing_abstract": 53,
+          "papers": 114,
+          "papers_missing_abstract": 54,
           "snapshot_candidates": 7,
           "candidates": 7,
           "missing_abstract": 4,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入1、排除6、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种4条，原记录保留。参考目录已逐DOI比较：快照前参考独有1条、快照独有0条、快照后新登记5条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 114,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/2731-0574/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采1条，原采集113条已完整保留；修复后同口径114条逐DOI与参考目录一一对应，快照后首次登记5条单列。候选精筛：纳入1、排除6、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2731-0574/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://www.nature.com/articles/s44159-026-00620-8",
             "https://www.nature.com/articles/s44159-026-00623-5",
             "https://www.nature.com/articles/s44159-026-00627-1",
@@ -67496,16 +67765,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
@@ -67519,7 +67780,21 @@
           "abstract_not_required": 4,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 0,
+          "collection_state_resolution": {
+            "status": "resolved_for_candidate_review",
+            "original_state": "abstract_incomplete",
+            "reason": "full_reference_catalogue_candidates_complete",
+            "checked_by": "郝卓迪",
+            "checked_at": "2026-11-17",
+            "evidence_urls": [
+              "https://www.nature.com/articles/s44159-026-00620-8",
+              "https://www.nature.com/articles/s44159-026-00623-5",
+              "https://www.nature.com/articles/s44159-026-00627-1",
+              "https://www.nature.com/articles/s44159-026-00638-y",
+              "https://api.crossref.org/journals/2731-0574/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
+            ]
+          }
         },
         {
           "code": "nrrheum",
@@ -68129,16 +68404,25 @@
           "owner": "郝卓迪",
           "venue_decision": "清单保留",
           "state": "completed",
-          "papers": 2054,
-          "papers_missing_abstract": 14,
+          "papers": 2063,
+          "papers_missing_abstract": 17,
           "snapshot_candidates": 418,
           "candidates": 418,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "已完成本批候选首轮审阅；纳入386、排除32、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。参考目录已逐DOI比较：快照前参考独有9条、快照独有0条、快照后新登记75条；接口总数与唯一DOI数一致性True，未决差异继续保留。",
+          "reference_check": {
+            "status": "complete",
+            "source": "Crossref",
+            "total": 2063,
+            "scope": "2026正式出版年，Crossref type:journal-article；与采集快照对齐，排除2026-11-08T13:38:12.854071Z之后首次登记的新增记录；保留该来源采集所含文种",
+            "query_url": "https://api.crossref.org/journals/2052-4463/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+            "checked_at": "2026-11-17",
+            "unresolved": 0
+          },
+          "coverage_note": "本轮实际补采9条，原采集2054条已完整保留；修复后同口径2063条逐DOI与参考目录一一对应，快照后首次登记75条单列。候选精筛：纳入386、排除32、待定0、未审0；候选待补原摘要0条。参考数不冒充官网总数。",
           "evidence_urls": [
+            "https://api.crossref.org/journals/2052-4463/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
             "https://www.nature.com/articles/s41597-026-06716-3",
             "https://www.nature.com/articles/s41597-026-06884-2",
             "https://www.nature.com/articles/s41597-026-07173-8",
@@ -68151,14 +68435,8 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "总量尚未核对",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对截至日期的官网目录与采集口径",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/Jodie628.json",
             "reviews/2026/feedback/Jodie628.json"
@@ -69045,26 +69323,26 @@
           "open_issues": 43,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-17T05:56:31-08:00",
-            "author": "h10",
-            "subject": "review: verify thirty EJHG AI leads and preserve remaining recall queue",
+            "at": "2026-11-17T06:42:06-08:00",
+            "author": "Xueting",
+            "subject": "review: 补采郝卓迪2026年37刊204条目录缺项并完成新增候选审核",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
-              "metadata/nature-ejhg/2026/ai4s.json",
-              "metadata/nature-ejhg/2026/official-scope-audit-lixueting.json",
-              "reviews/2026/feedback/zch66883-lixueting.json"
+              "metadata/2026/papers.json",
+              "metadata/2026/snapshot.json",
+              "metadata/commsbio/2026/catalogue-reconciliation.json"
             ]
           },
-          "commits_7d": 44
+          "commits_7d": 45
         },
         {
           "owner": "郝卓迪",
           "sources": 50,
           "delivered": 47,
-          "official": 13,
-          "pending": 30,
-          "open_issues": 43,
+          "official": 50,
+          "pending": 31,
+          "open_issues": 17,
           "status": "in_progress",
           "last_update": {
             "at": "2026-11-16T07:12:20-08:00",
@@ -69426,18 +69704,18 @@
         "2025"
       ],
       "last_update": {
-        "at": "2026-11-17T05:56:31-08:00",
-        "author": "h10",
-        "subject": "review: verify thirty EJHG AI leads and preserve remaining recall queue",
+        "at": "2026-11-17T06:42:06-08:00",
+        "author": "Xueting",
+        "subject": "review: 补采郝卓迪2026年37刊204条目录缺项并完成新增候选审核",
         "area": "reviews",
         "paths": [
           "metadata/2026/ai4s.json",
-          "metadata/nature-ejhg/2026/ai4s.json",
-          "metadata/nature-ejhg/2026/official-scope-audit-lixueting.json",
-          "reviews/2026/feedback/zch66883-lixueting.json"
+          "metadata/2026/papers.json",
+          "metadata/2026/snapshot.json",
+          "metadata/commsbio/2026/catalogue-reconciliation.json"
         ]
       },
-      "commits_7d": 44
+      "commits_7d": 45
     },
     {
       "owner": "郝卓迪",
@@ -69461,9 +69739,9 @@
         "2026": {
           "sources": 50,
           "delivered": 47,
-          "official": 13,
-          "pending": 30,
-          "open_issues": 43,
+          "official": 50,
+          "pending": 31,
+          "open_issues": 17,
           "status": "in_progress"
         }
       },
@@ -69577,9 +69855,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-17T14:22:46.112569+00:00",
+    "generated_at": "2026-11-17T14:48:11.197203+00:00",
     "history_available": true,
-    "commit": "231e64e99c1bcd501dd79cc3e76bb50168ec3f7f",
-    "commits_scanned": 826
+    "commit": "ec3b2bda79044db3270dd17e528f2e067dc137e4",
+    "commits_scanned": 828
   }
 }
