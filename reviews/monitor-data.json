@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-17T18:06:02.613025+00:00",
-  "commit": "aaccdc46b9afcb9a9dcf569dcf5a4efab3a4d61b",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/aaccdc46b9afcb9a9dcf569dcf5a4efab3a4d61b/",
+  "generated_at": "2026-11-17T18:30:59.697129+00:00",
+  "commit": "80c2ac9fd99c9bcde81675703474810b167f95d0",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/80c2ac9fd99c9bcde81675703474810b167f95d0/",
   "years": [
     {
       "year": 2024,
@@ -26219,18 +26219,18 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-17T10:02:52-08:00",
+            "at": "2026-11-17T10:27:33-08:00",
             "author": "h10",
-            "subject": "review: complete Surface Science Reports and resolve Energy Reviews evidence",
+            "subject": "review: reconcile TEAC volumes and recover missing paper and AI candidate",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
-              "metadata/j-1eb350782d/2026/official-scope-audit-lixueting.json",
-              "metadata/j-31f1ddbac1/2026/ai4s.json",
-              "metadata/j-31f1ddbac1/2026/official-scope-audit-lixueting.json"
+              "metadata/j-c94b3260f2/2026/ai4s.json",
+              "metadata/j-c94b3260f2/2026/official-scope-audit-lixueting.json",
+              "metadata/j-c94b3260f2/2026/papers.json"
             ]
           },
-          "commits_7d": 53
+          "commits_7d": 54
         },
         {
           "owner": "丁利军",
@@ -46836,18 +46836,18 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-17T10:02:52-08:00",
+            "at": "2026-11-17T10:27:33-08:00",
             "author": "h10",
-            "subject": "review: complete Surface Science Reports and resolve Energy Reviews evidence",
+            "subject": "review: reconcile TEAC volumes and recover missing paper and AI candidate",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
-              "metadata/j-1eb350782d/2026/official-scope-audit-lixueting.json",
-              "metadata/j-31f1ddbac1/2026/ai4s.json",
-              "metadata/j-31f1ddbac1/2026/official-scope-audit-lixueting.json"
+              "metadata/j-c94b3260f2/2026/ai4s.json",
+              "metadata/j-c94b3260f2/2026/official-scope-audit-lixueting.json",
+              "metadata/j-c94b3260f2/2026/papers.json"
             ]
           },
-          "commits_7d": 53
+          "commits_7d": 54
         },
         {
           "owner": "郝卓迪",
@@ -59441,28 +59441,41 @@
           "papers": 33,
           "papers_missing_abstract": 26,
           "snapshot_candidates": 2,
-          "candidates": 2,
+          "candidates": 3,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 34,
+          "official_scope": "截至固定首次截止已公布2026卷49、50、51和52共34条正式Review article（12+8+7+7）；卷52封面12月且In progress，但明示所含文章final and fully citable，逐篇上线2026-09-09至11-05均早于截止。非Articles in Press。",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
+          "coverage_note": "官网四卷34个唯一PII与原33条逐项对账，补采1条e00323（官网2026-11-05上线、卷52），现来源全量34条无缺漏/额外项。全部34条官网原摘要已核现有AI线索，未要求对非候选补摘要统计。初始2候选加1漏筛e00297，当前3候选摘要均非空，2纳入1排除。另4条AI/ML展望或应用线索留召回核查队列，不能以候选耗尽标来源完成；官网10个单篇citation记录已核（卷52七篇及三篇正式审核），其余DOI由原采集按官网PII关联，不冒充已逐篇查citation。年度原始汇总为既有LFS指针，保持原快照不重建，补采保存在本人来源papers及逐项审计；年度候选追加1条并保留全部既有对象。",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/journal/trends-in-environmental-analytical-chemistry/issues",
+            "https://www.sciencedirect.com/journal/trends-in-environmental-analytical-chemistry/vol/49/suppl/C",
+            "https://www.sciencedirect.com/journal/trends-in-environmental-analytical-chemistry/vol/50/suppl/C",
+            "https://www.sciencedirect.com/journal/trends-in-environmental-analytical-chemistry/vol/51/suppl/C",
+            "https://www.sciencedirect.com/journal/trends-in-environmental-analytical-chemistry/vol/52/suppl/C"
+          ],
+          "decisions": {
+            "include": 2,
+            "exclude": 1,
+            "pending": 0,
+            "unreviewed": 0
+          },
           "issues": [
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
-            "尚未找到逐篇审核交付。"
+            "e00312、e00313、e00316、e00317共4条召回线索仍需合法正文区分实质AI应用/方法综述与未来愿景，尚未计入正式审核候选或完成集。",
+            "采集状态尚未完成：abstract_incomplete"
           ],
           "actions": [
+            "优先续核4条召回线索，官网可正常访问时直接获取公开预览/作者合法全文；若需人工按skill顺序处理，不能未核标完成。",
             "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "提交逐篇审核结果或说明当前进度。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2026/zch66883-lixueting.json",
+            "reviews/2026/feedback/zch66883-lixueting.json"
+          ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": null,
-          "final_missing_abstract": null,
+          "final_included": 2,
+          "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
           "abstract_recovered": 0,
@@ -69411,24 +69424,24 @@
         {
           "owner": "李雪婷",
           "sources": 51,
-          "delivered": 20,
-          "official": 19,
+          "delivered": 21,
+          "official": 20,
           "pending": 15,
           "open_issues": 42,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-17T10:02:52-08:00",
+            "at": "2026-11-17T10:27:33-08:00",
             "author": "h10",
-            "subject": "review: complete Surface Science Reports and resolve Energy Reviews evidence",
+            "subject": "review: reconcile TEAC volumes and recover missing paper and AI candidate",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
-              "metadata/j-1eb350782d/2026/official-scope-audit-lixueting.json",
-              "metadata/j-31f1ddbac1/2026/ai4s.json",
-              "metadata/j-31f1ddbac1/2026/official-scope-audit-lixueting.json"
+              "metadata/j-c94b3260f2/2026/ai4s.json",
+              "metadata/j-c94b3260f2/2026/official-scope-audit-lixueting.json",
+              "metadata/j-c94b3260f2/2026/papers.json"
             ]
           },
-          "commits_7d": 53
+          "commits_7d": 54
         },
         {
           "owner": "郝卓迪",
@@ -69756,31 +69769,31 @@
         },
         "2026": {
           "sources": 51,
-          "delivered": 20,
-          "official": 19,
+          "delivered": 21,
+          "official": 20,
           "pending": 15,
           "open_issues": 42,
           "status": "in_progress"
         }
       },
       "sources": 153,
-      "delivered": 59,
+      "delivered": 60,
       "not_started": [
         "2025"
       ],
       "last_update": {
-        "at": "2026-11-17T10:02:52-08:00",
+        "at": "2026-11-17T10:27:33-08:00",
         "author": "h10",
-        "subject": "review: complete Surface Science Reports and resolve Energy Reviews evidence",
+        "subject": "review: reconcile TEAC volumes and recover missing paper and AI candidate",
         "area": "reviews",
         "paths": [
           "metadata/2026/ai4s.json",
-          "metadata/j-1eb350782d/2026/official-scope-audit-lixueting.json",
-          "metadata/j-31f1ddbac1/2026/ai4s.json",
-          "metadata/j-31f1ddbac1/2026/official-scope-audit-lixueting.json"
+          "metadata/j-c94b3260f2/2026/ai4s.json",
+          "metadata/j-c94b3260f2/2026/official-scope-audit-lixueting.json",
+          "metadata/j-c94b3260f2/2026/papers.json"
         ]
       },
-      "commits_7d": 53
+      "commits_7d": 54
     },
     {
       "owner": "龙兆科",
@@ -69964,9 +69977,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-17T18:05:32.823711+00:00",
+    "generated_at": "2026-11-17T18:30:30.350319+00:00",
     "history_available": true,
-    "commit": "aaccdc46b9afcb9a9dcf569dcf5a4efab3a4d61b",
-    "commits_scanned": 849
+    "commit": "80c2ac9fd99c9bcde81675703474810b167f95d0",
+    "commits_scanned": 851
   }
 }
