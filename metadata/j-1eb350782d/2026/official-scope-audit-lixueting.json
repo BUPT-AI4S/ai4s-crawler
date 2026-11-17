@@ -5,8 +5,8 @@
   "year": 2026,
   "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
   "cutoff_at": "2026-11-16T23:14:20-08:00",
-  "checked_at": "2026-11-17T09:57:32.697077-08:00",
-  "main_commit": "c33a61542671c720c3c3578578a8c8d2b8518c5e",
+  "checked_at": "2026-11-17T10:54:34.500291-08:00",
+  "main_commit": "c9dc29f527137353691cb1abf391198d52fbb933",
   "official_total": 25,
   "official_scope": "固定截止前已正式公布卷5第1—4期的final/fully citable文章；第4期虽in progress但六篇已在截止前上线且归期，非Articles in Press。",
   "reconciliation_key": "publisher PII; DOI linked from existing source objects where individual page blocked",
@@ -48,29 +48,22 @@
   "initial_candidate_total": 7,
   "candidate_total": 9,
   "candidate_missing_abstracts": 0,
-  "candidate_primary_abstracts_unverified": 1,
+  "candidate_primary_abstracts_unverified": 0,
   "added_recall_check_candidates": [
     "10.1016/j.enrev.2026.100204",
     "10.1016/j.enrev.2026.100214"
   ],
   "review_counts": {
-    "include": 4,
-    "exclude": 0,
-    "pending": 5,
+    "include": 8,
+    "exclude": 1,
+    "pending": 0,
     "unreviewed": 0
   },
   "remaining_recall_check_dois": [],
-  "completion_status": "coverage_verified_review_pending",
-  "coverage_note": "沿用batch21已核官网四期25个唯一PII（5+7+7+6），原25采集完全匹配，无补采，21 Review article、4 Mini/Short review。第4期明确final/fully citable、六篇均在固定截止前上线，不按12月封面误排。batch21取得12个单篇官网元数据，另13页当时CPE00002；本轮单独补到100176完整原摘要及citation，累计13篇官网记录核实，其余DOI仍按原采集与官方PII关联。9候选现4纳入5待定，2条新增核查线索已在batch21入候选；输入摘要均非空，官网原摘要未补验数由2降1（100193）。16非候选未伪称全文已读。官网原摘要充分的4纳入不因PDF留空重列科学pending。",
-  "issues": [
-    "100193的官网原摘要及必要AI方法段落仍需核实；原先受403及浏览器CPE00002阻挡，已请求人工核验未答复。100176本轮官网恢复后已取得原摘要并纳入，不再作为问题。",
-    "100207、100215、100204、100214须合法正文辨别具体AI模型/科学任务或实质综述，不能仅凭AI字样、平台数字化或未来愿景纳入。",
-    "4篇纳入的公开PDF尚未验签留空；原摘要已足以支持相关判断，不单因PDF未得列科学pending。"
-  ],
-  "next_actions": [
-    "先读本聊天人工核验答复；能人工则补上述6篇原摘要/相关正文，确认无法人工后再使用合法可靠替代来源。",
-    "无答复时保留已核四期目录与9篇判断，不反复请求受阻页面；继续其他来源的官方核验。"
-  ],
+  "completion_status": "complete",
+  "coverage_note": "沿用batch21已核官网四期25个唯一PII（5+7+7+6）及21 Review article/4 Mini-Short review分列，原25采集完全匹配，无补采。第4期虽In progress但final/fully citable、上线早于固定截止，非Articles in Press。batch24正常浏览器等待开放正文异步加载后取得5篇待定的官方原摘要和关键正文：100193/100207/100215/100204实质AI方法与案例纳入，100214仅未来ML愿景排除。连同既有4纳入，9候选现8纳入1排除，无科学pending或召回队列，候选摘要均非空且官网原摘要未核数清零。累计14个唯一单篇官网citation记录已核，其余11个DOI仍保留原采集按官网PII关联，不冒充全部25单篇元数据已读。16非候选沿用现有证据核查，不伪称全文全读。公开PDF未下载验签留空，HTML/原摘要足以支持判定，不单因PDF为空制造科学pending。",
+  "issues": [],
+  "next_actions": [],
   "evidence_urls": [
     "https://www.sciencedirect.com/journal/energy-reviews/issues",
     "https://www.sciencedirect.com/journal/energy-reviews/vol/5/issue/1",
@@ -102,8 +95,8 @@
       "doi_provenance": "publisher citation_doi",
       "online_date": "2026/09/18",
       "formal_scope_basis": "官网第4期明示文章final and fully citable，非Articles in Press；本条官网citation_online_date早于固定截止，初始快照亦已有12月卷期记录。",
-      "screening_result": "pending",
-      "rationale": "官网原摘要核实，综述CIM支持城市能源系统规划、优化与公平，并提与数字孪生、AI和IoT结合，但未具体说明学习模型及AI实质综述范围。需正文明确AI在能源预测、调度或科学分析的作用，不能只因数字化平台、一般优化或AI并列提及纳入。正式卷5期4已核，pending来自内容而非12月封面日期。"
+      "screening_result": "include",
+      "rationale": "开放HTML正文§3.2/§4.2实质评述GeoAI和深度强化学习用于充电基础设施布局与能源/交通供需协调，并有光伏发电预测的明确ML应用，属于可再生能源工程的科学规划/运行方法综述。不是将CIM、数字孪生、IoT或公平治理本身等同AI；不声称本综述新训练Actor-Critic或实现所引案例的性能。"
     },
     {
       "doi": "10.1016/j.enrev.2026.100214",
@@ -117,8 +110,8 @@
       "doi_provenance": "publisher citation_doi",
       "online_date": "2026/09/25",
       "formal_scope_basis": "官网第4期明示文章final and fully citable，非Articles in Press；本条官网citation_online_date早于固定截止，初始快照亦已有12月卷期记录。",
-      "screening_result": "pending",
-      "rationale": "初筛疑似漏筛补核线索。官网原摘要将机器学习辅助催化剂发现列于双光催化产氢/捕碳未来机会；需全文确认有无实质既有ML方法综述，不能只凭前景纳入，也不能在未读相关章节时据摘要直接排除。"
+      "screening_result": "exclude",
+      "rationale": "已核官网原摘要与开放HTML相关章节。AI/机器学习只在§7 Future perspectives及§8 Conclusions中被列为将来结合operando/DFT、加速催化剂发现的机会，未见目标综述实质评述具体AI模型、数据或相关催化研究案例。按现有完整可读证据排除，不把普通DFT、缺陷/界面工程或未来ML愿景当作实质AI4S用途。"
     },
     {
       "doi": "10.1016/j.enrev.2026.100217",
@@ -147,8 +140,8 @@
       "doi_provenance": "publisher citation_doi",
       "online_date": "2026/10/05",
       "formal_scope_basis": "官网第4期明示文章final and fully citable，非Articles in Press；本条官网citation_online_date早于固定截止，初始快照亦已有12月卷期记录。",
-      "screening_result": "pending",
-      "rationale": "官网原摘要核实，综述欧洲—德国—巴伐利亚能源安全指标与生物资源路径，提AI预测、聚类及运营安全能力和治理风险；尚不足区分实质科学/工程AI综述与宏观数字化愿景。需正文的具体AI模型、应用与讨论范围，原有TCR区域评估不自动视为AI。正式第4期文章已final/fully citable，不按封面12月误排。"
+      "screening_result": "include",
+      "rationale": "开放HTML §2.2具体讨论Kohonen自组织映射对能源安全多指标的无监督聚类，§7.5评述建筑/交通能源需求的集成与深度学习预测及安全分析，证明该综述实质涉及AI能源系统研究方法。AI相关内容不仅是政策愿景、网络治理或检索式命中；不将常规综合指数、TCR热化学转换本身当AI，不声称作者新训练这些模型。"
     },
     {
       "doi": "10.1016/j.enrev.2026.100216",
@@ -252,8 +245,8 @@
       "doi_provenance": "publisher citation_doi",
       "online_date": "2026/08/29",
       "formal_scope_basis": "第1—3期为官网已公布正式期次。",
-      "screening_result": "pending",
-      "rationale": "初筛疑似漏筛补核线索。官网原摘要在MXene摩擦电纳米发电机应用中提AI辅助平台，可能涉及智能监测/生物医学传感，但未说明实际学习模型和科学任务关系。需正文核查AI辅助应用是否实质学术内容；不以人工界面、传感或AI一词直接纳入。"
+      "screening_result": "include",
+      "rationale": "开放HTML §8.3不止介绍手写识别/HCI，还具体评述协作机器人和主动学习完成264种MXene气凝胶配方、以SVM/神经网络预测力学/导电/加热性能并逆向设计材料的案例，另有CNN-GRU触觉及韧带损伤传感案例，AI直接参与材料与传感研究。MXene只提供材料/信号性能，不能声称材料本身就是AI；不把目标综述写成其作者新搭建自主实验室或复现所引精度。"
     },
     {
       "doi": "10.1016/j.enrev.2026.100205",
@@ -384,11 +377,11 @@
       "issue": "2",
       "issue_url": "https://www.sciencedirect.com/journal/energy-reviews/vol/5/issue/2",
       "document_type": "Review article",
-      "doi_provenance": "existing collection joined to official publisher PII",
-      "online_date": null,
+      "doi_provenance": "publisher citation_doi",
+      "online_date": "2026/07/02",
       "formal_scope_basis": "第1—3期为官网已公布正式期次。",
-      "screening_result": "pending",
-      "rationale": "输入摘要的AI主要位于高熵材料负极未来展望，不能判断是否有实质机器学习综述。官网单篇原摘要/全文受403及浏览器CPE00002阻挡；正式卷5期2和Review类型已核。需合法原摘要与相应AI段落，避免仅凭未来愿景纳入或按未读全文排除。"
+      "screening_result": "include",
+      "rationale": "官网原摘要及开放HTML正文§4.1明确评述以XGBoost、随机森林筛选高熵合金组分，SHAP分析元素影响，并以计算—实验策略优化锂负极界面；摘要虽把AI写在展望，正文有具体科学研究案例，故补证纳入。PSO单独不作为AI依据，不声称本综述新训练模型或复现文中电池性能。"
     },
     {
       "doi": "10.1016/j.enrev.2026.100177",
@@ -466,5 +459,5 @@
       "rationale": "核对官网期次题名/类型与当前已有摘要线索，暂未发现需候选补核的实质AI用途；未声称逐篇全文已读或伪造正式排除。"
     }
   ],
-  "individual_publisher_records_verified_total": 13
+  "individual_publisher_records_verified_total": 14
 }
