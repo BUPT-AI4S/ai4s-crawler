@@ -94,3 +94,9 @@ Journal of Cheminformatics的119条已逐篇判读：109纳入、7排除、3待�
 本轮官网摘要补证：CMAME第450卷52条、第451卷51条、第452卷Part B 30条，共133条citation-and-abstract BibTeX，均排除Editorial Board。按DOI及题名精确匹配回填5条原候选摘要，放入verified_metadata并保留原字段；仍空393条。5条仍待独立内容判读，本轮新增内容精筛0条，原有判定和标签不变。最新检查main `a31165d54c9b66cc5bb5f190774ea34b9ad0ffb1`。历史段落中的398为上一检查点数。证据详见audits/wangmengran8789-abstract-backfill-20261117.json。
 
 2026-11-17总量核对：48来源已执行本轮来源审计；ECL 40、Engineering With Computers 212与LCTES 19已按官网逐项一致，EMNLP主会官方正文2704、缺采2702已列清单；其余44刊Crossref参考对账差异尚需官网消歧。官网已知4来源、待确认44来源，不等于48来源均已完成查全。报告及完整差异见audits/wangmengran8789-catalogue-20261117/report.md，未修改论文对象及内容审核数量。
+
+## 2026-11-17 缺摘要专项补取（最新断点）
+
+以 main `5ed1b31923ec534eb877cdb0f91895e53ed65847` 的401条缺摘要候选为输入。正常Chrome官网完成17份排除Editorial Board的citation-and-abstract BibTeX导出，按DOI和完整题名匹配补47条；Springer正式页补1条；官网服务CPE00002受阻后，OpenAlex原摘要索引补3条，Europe PMC原摘要补1条。共补52条，有效缺摘要401→349；原始字段、快照、2233条个人记录、1555纳入/177排除/489待定/12未审及全部标签均保留。本轮新增内容精筛0；取得摘要的记录仍须独立内容判读。
+
+全部401条已执行Crossref、OpenAlex、Europe PMC查询并归档（Crossref其中1批20条返回429，保留失败证据）；其余349条未获可核实原摘要，未使用搜索片段或生成文字填充。ScienceDirect第199、198卷和Journal of Hydrology官网均出现CPE00002，重试未恢复；SCIS MafAFP落地页为Letter且未显示Abstract。总量核对已完成状态保持；EMNLP另有2702条源缺采仍未处理。详见 audits/wangmengran8789-abstracts-20261117/report.md 及逐条补证/剩余清单。历史段落数字仅代表当时检查点。

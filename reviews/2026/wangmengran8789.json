@@ -26150,11 +26150,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Neural operators have recently emerged as powerful tools for solving partial differential equations (PDEs). However, whether functioning in frequency domain or spatial domain, current solutions inherently face limitations: The former suffers the risk of losing critical spectral information, while the latter often incurs high computational complexity. To address the challenges, we propose the Information-Coupled Neural Operator (ICNO), a novel architecture that successfully integrates the merits across multiple domains, yet with the demerits relieved. Technically, ICNO presents a cross-frequency Fourier attention mechanism to couple diverse frequency components and leverages interleaved frequency- and spatial-domain attention layers to effectively balance local and global representations, capturing complex dependencies in PDE solutions with enhanced efficiency. On that basis, we further employ wavelet transforms to separate then reconstruct the entire frequency components, thereby minimizing confusion and preventing any information loss. Experimental results demonstrate that ICNO achieves state-of-the-art performance on five PDE benchmark datasets and further builds a digital twin capable of predicting the long-term variations of complex Earth temperature and surface pressure fields.",
+        "doi": "10.1016/j.cma.2026.118851",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782526001258",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782526001258"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/computer-methods-in-applied-mechanics-and-engineering-453-suppl-C.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/computer-methods-in-applied-mechanics-and-engineering-453-suppl-C.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -28097,11 +28115,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Finite element (FE) analysis guides the design and verification of nearly all manufactured objects. It is at the core of computational engineering, enabling simulation of complex physical systems, from fluids and solids to multiphysics systems. However, implementing FE codes and analyzing simulation results demands expertise across numerical analysis, continuum mechanics, and programming. Conventional Large Language Models (LLMs) can generate FE code, but they hallucinate, lack awareness of variational structures, and cannot close the loop from problem statement to a verified solution. Here, we propose ALL-FEM, an autonomous simulation system that integrates agentic AI with domain-specific, fine-tuned LLMs for FEniCS code generation across solid, fluid, and multiphysics applications. We construct a corpus of 1000＋ verified FEniCS scripts by combining 500＋ curated expert codes with a retrieval-augmented, multi-LLM pipeline that generates and filters codes for diverse PDEs, geometries, and boundary conditions. We used the corpus to fine-tune LLMs with 3B to 120B parameters. Our agentic framework orchestrates specialized agents, powered by fine-tuned LLMs, to formulate problems as PDEs, generate and debug code and visualize the results. We evaluated the system on 39 benchmarks that include problems of linear/nonlinear elasticity, plasticity, Newtonian/non-Newtonian flow, thermofluids, fluid–structure interaction, phase separation, and transport on moving domains. Embedded in a multi-agent workflow with runtime feedback, the best fine-tuned model (GPT OSS 120B) achieves code-level success of 71.79%, outperforming a non-agentic deployment of GPT 5 Thinking. By showing that relatively small, fine-tuned LLMs, orchestrated through agentic frameworks, can automate FE workflows, ALL-FEM offers a blueprint for autonomous simulation systems in computational science and engineering.",
+        "doi": "10.1016/j.cma.2026.118985",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782526002586",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782526002586"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/computer-methods-in-applied-mechanics-and-engineering-457-suppl-C.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/computer-methods-in-applied-mechanics-and-engineering-457-suppl-C.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -29058,11 +29094,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Multi-physics simulations involving coupled partial differential equations present significant computational challenges in engineering applications. While graph neural networks have emerged as promising surrogate models for accelerating such simulations, existing approaches treat all physical interactions uniformly without distinguishing causal relationships between different physics domains. This limitation reduces interpretability and hampers generalization to unseen parameter regimes. We propose CausalPhysicsNet, a novel framework that simultaneously learns to predict multi-physics system evolution and to discover an effective, time-discretized causal dependency structure between coupled physics domains. The framework integrates three key components: a heterogeneous temporal graph neural network that respects physics-specific characteristics and supports overlapping physics domains sharing the same spatial region, a differentiable causal discovery module based on continuous optimization with acyclicity constraints, and a physics-informed contrastive learning mechanism that leverages discovered causal relationships. The heterogeneous architecture employs type-specific node encoders and relation-specific message passing with L=4 learnable temporal-delay layers, enabling the model to capture domain-specific representations and causal coupling mechanisms even when multiple physics are co-located on the same mesh. Extensive experiments on four benchmark problems including fluid–structure interaction and conjugate heat transfer demonstrate that CausalPhysicsNet achieves 23.4%±1.8% lower prediction error compared to state-of-the-art graph neural network surrogates while correctly identifying the discrete-time directional dependencies at the (small) physics-domain level with F1 scores exceeding 0.92. An empirical comparison on the Thermo-FSI benchmark against cyclic and acyclic-in-time alternatives confirms that the DAG formulation is statistically indistinguishable from the more general acyclic-in-time formulation, with paired t-test p-values of 0.42 (in-distribution) and 0.63 (out-of-distribution), while being ∼20% computationally lighter. The learned effective causal graphs provide interpretable insights into multi-physics coupling mechanisms and enable robust generalization under distribution shift, with performance degradation reduced by 67%±3.2% compared to baselines when extrapolating to unseen physical parameters. The framework scales to meshes with over 24,000 nodes and achieves speedups of up to 617× over numerical solvers.",
+        "doi": "10.1016/j.cma.2026.119098",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782526003713",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782526003713"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/computer-methods-in-applied-mechanics-and-engineering-460-suppl-C.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/computer-methods-in-applied-mechanics-and-engineering-460-suppl-C.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -29331,11 +29385,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "We propose an evolutionary Multi-objective Optimization for Replica-Exchange-based Physics-informed operator-learning Networks (Morephy-Net) to solve parametric partial differential equations (PDEs) in noisy data regimes, for both forward prediction and inverse identification. Existing physics-informed neural networks and operator-learning models (e.g., DeepONets and Fourier neural operators) often face three coupled challenges: (i) balancing data/operator and physics residual losses, (ii) maintaining robustness under noisy or sparse observations, and (iii) providing reliable uncertainty quantification. Morephy-Net addresses these issues by integrating: (i) evolutionary multi-objective optimization that treats data/operator and physics residual terms as separate objectives and searches the Pareto front, thereby avoiding ad hoc loss weighting; (ii) replica-exchange stochastic gradient Langevin dynamics to enhance global exploration and stabilize training in non-convex landscapes; and (iii) Bayesian uncertainty quantification obtained from stochastic sampling. We validate Morephy-Net on representative forward and inverse problems, including the one-dimensional Burgers equation and the time-fractional mixed diffusion–wave equation. The results demonstrate consistent improvements in accuracy, noise robustness, and calibrated uncertainty estimates over standard operator-learning baselines.",
+        "doi": "10.1016/j.cma.2026.119123",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782526003968",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782526003968"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/computer-methods-in-applied-mechanics-and-engineering-460-suppl-C.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/computer-methods-in-applied-mechanics-and-engineering-460-suppl-C.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -29704,11 +29776,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "In this paper, we propose a unified null-space projected Physics-Informed Extreme Learning machine (NP-PIELM) framework that establishes a single non-iterative computational approach for the static bending analysis of plates governed by both Kirchhoff–Love and Reissner–Mindlin plate theory. The proposed formulation enforces: (a) the governing equations in strong form at collocation points and (b) boundary conditions exactly through algebraic null-space projection in coefficient space, guaranteeing strict constraint satisfaction without penalty parameters, Lagrange multipliers or hyperparameter tuning. The framework is intrinsically locking free in case of Reissner–Mindlin formulation. The accuracy and robustness of the NP-PIELM framework is demonstrated through numerical examples. The influence of plate aspect ratio, plate thickness, boundary conditions and geometric skewness is numerically studied. The results confirm that NP-PIELM provides a computationally efficient, geometrically flexible and a unifying framework for analyzing moderately thick to thin plates.",
+        "doi": "10.1016/j.cma.2026.119172",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782526004457",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782526004457"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/computer-methods-in-applied-mechanics-and-engineering-461-part-PA.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/computer-methods-in-applied-mechanics-and-engineering-461-part-PA.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -30000,11 +30090,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Early detection and tracking of damage for structural health monitoring (SHM) in challenging environments is critical for ensuring safety by preventing catastrophic failure and extending service life. This is particularly relevant as many techniques rely on sparse surface-mounted sensors, providing limited information on subsurface cracks that evolve to cause structural failure. Efficient in-situ reconstruction of temporally evolving deformation and damage fields in the bulk from sparse surface measurements can alleviate significant challenges faced by the SHM community. Coupling a machine learning-enabled multiscale multiphysics model, viz. the Parametrically Upscaled Coupled Constitutive Damage Model (PUCCDM) with Fourier neural operator (FNO) learning, this paper develops a Virtual Damage Sensing Digital Twin (VDS-DT) platform for piezoelectric composites. This platform interfaces with actual surface sensor measurements for efficient prediction of full-field temporally evolving deformation, electrical, and damage fields in the entire structure. A key feature of the framework is the incorporation of Representative Aggregated Microstructural Parameters (RAMPs), representing the characteristics of the underlying microstructure. These descriptors act as essential priors that regularize the inverse mapping and render the learned operator identifiable under sparse sensing. The mapping is learned using the FNO, trained on data generated by PUCCDM-based FE simulations, whose constitutive coefficients are explicitly represented as functions of the RAMPs. Furthermore, a genetic algorithm (GA) is employed to optimize sensor number and placement. Systematic studies demonstrate that the proposed VDS-DT platform achieves high-fidelity prediction of spatiotemporal damage evolution for both in-distribution and out-of-distribution testing cases, while revealing the complementary roles of sensor density and microstructure-informed priors (RAMPs). These results establish a unified paradigm for physics-informed, operator-based digital twins, providing a scalable pathway for real-time SHM with sparse sensing.",
+        "doi": "10.1016/j.cma.2026.119169",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782526004421",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782526004421"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/computer-methods-in-applied-mechanics-and-engineering-461-part-PA.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/computer-methods-in-applied-mechanics-and-engineering-461-part-PA.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -31890,11 +31998,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Finite element analysis remains standard for structural verification, but repeated full-field simulations are costly for geometry exploration and monitoring. This work introduces GeoPINONet, a geometry-conditioned physics-informed neural operator for three-dimensional linear elasticity under sparse finite-element (FEM) supervision. It combines a PointNet geometry encoder, multiscale Fourier features, a mixed displacement–stress decoder, and Active Critical Selective Validation (ActiveCSV), which reallocates supervised anchors toward mechanically critical and persistently difficult nodes. Training uses 64 Latin hypercube geometries per family on 3D lug and plate-with-hole benchmarks with moving stress concentrations. On dense FEM meshes for 16 unseen geometries, including interpolative and controlled near-boundary cases, GeoPINONet achieves mean Ru2=0.996–0.999 and p95σvM,ip<8% across both families and load modes. For a characterized target and fixed 50,000-point grid, prepared-operator deployment executes both learned output projections and reconstructs physical fields in 2.60 ms on average (2.89 ms at the 95th percentile). Including device-to-host transfer and visualization-field replacement requires 3.70 ms on average (4.14 ms at the 95th percentile). Relative to the reported 44s two-load finite-element solver boundary, the ratio is approximately 1.1×104; offline FEM generation, training, one-time invariant-feature preparation, and rendering are reported separately. Ablations show that stress reconstruction depends on spectral enrichment, adaptive supervision, and constitutive consistency: removing Fourier features reduces RσvM,ip2 from 0.90 to 0.16, while removing Hooke consistency increases the lateral-bending tensor Frobenius error from 9.8% to 133.4%.",
+        "doi": "10.1016/j.cma.2026.119318",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0045782526005918",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0045782526005918"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/computer-methods-in-applied-mechanics-and-engineering-462-suppl-C.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/computer-methods-in-applied-mechanics-and-engineering-462-suppl-C.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -32073,11 +32199,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "We present a systematic method for exactly enforcing Dirichlet, Neumann, and Robin type conditions on general quadrilateral domains with arbitrary curved boundaries. Our method is built upon exact mappings between general quadrilateral domains and the standard domain, and employs a combination of TFC (theory of functional connections) constrained expressions and transfinite interpolations. When Neumann or Robin boundaries are present, especially when two Neumann (or Robin) boundaries meet at a vertex, it is critical to enforce exactly the induced compatibility constraints at the intersection, in order to enforce exactly the imposed conditions on the joining boundaries. We analyze in detail and present constructions for handling the imposed boundary conditions and the induced compatibility constraints for two types of situations: (i) when Neumann (or Robin) boundary only intersects with Dirichlet boundaries, and (ii) when two Neumann (or Robin) boundaries intersect with each other. We describe a four-step procedure to systematically formulate the general form of functions that exactly satisfy the imposed Dirichlet, Neumann, or Robin conditions on general quadrilateral domains. The method developed herein has been implemented together with the extreme learning machine (ELM) technique we have developed recently for scientific machine learning. Ample numerical experiments are presented with several linear/nonlinear stationary/dynamic problems on a variety of two-dimensional domains with complex boundary geometries. Simulation results demonstrate that the proposed method has enforced the Dirichlet, Neumann, and Robin conditions on curved domain boundaries exactly, with the numerical boundary-condition errors at the machine accuracy.",
+        "doi": "10.1016/j.cma.2026.119302",
+        "url": "https://www.sciencedirect.com/science/article/pii/S004578252600575X",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S004578252600575X"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/computer-methods-in-applied-mechanics-and-engineering-462-suppl-C.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/computer-methods-in-applied-mechanics-and-engineering-462-suppl-C.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -100940,11 +101084,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Accurate estimation of the state of health (SOH) for lithium-ion batteries is a critical technical challenge in the operation and maintenance of battery management systems. To address the limitations of existing data-driven methods, such as feature redundancy, noise sensitivity, and insufficient generalization, this paper proposes a novel SOH estimation approach that integrates multi-stage feature engineering with deep learning. The framework introduces a systematic paradigm for dynamic feature evaluation and noise-resilient feature reconstruction. Multi-source health features are extracted from experimental battery data, incorporating direct measurements, evolutionary trends, and statistical characteristics. A synergistic feature selection process combining maximal information coefficient analysis, null importance ranking, and Shapley additive explanations verification is employed to construct an optimal feature set. To mitigate high-frequency noise interference, an improved complete ensemble empirical mode decomposition with adaptive noise, combined with dual statistical test, is then applied to identify and reconstruct significant modes for feature enhancement. On this basis, a hybrid deep learning model combining a variational sparse autoencoder (VSAE) and an extended long short-term memory network is developed for SOH estimation. Hyperparameter optimization is adaptively performed using the Optuna library, and uncertainty is quantified by leveraging the reparameterization trick of the VSAE. Validation on public battery datasets demonstrates good performance compared to existing methods, with average root mean square error, mean absolute error, mean absolute percentage error all below 1%. Notably, zero-shot cross-dataset evaluations across batteries with heterogeneous chemistry and operating conditions confirm the robust generalization capability.",
+        "doi": "10.1016/j.asoc.2026.115433",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626008811",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626008811"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PA.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PA.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -101108,11 +101270,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Accelerating the discovery and manufacturing of advanced materials remains a critical yet formidable challenge due to vast design spaces, costly experiments, and limited data. Traditional machine learning models are ill-equipped for this setting since they cannot decide which experiment to run next, preventing them from efficiently allocating scarce experimental resources. Active learning, when framed through the lens of Bayesian optimization, addresses this limitation by pairing a surrogate model with an acquisition rule that adaptively selects informative experiments under a fixed experimental budget. Classical acquisition functions have shown promise, but they struggle to balance exploration and exploitation in low-data, high-uncertainty regimes and are sensitive to hand-tuned hyperparameters. Within this context, the concept of surprise in active learning, which measures the divergence between expected and observed outcomes, offers strong potential for refining predictive models and prioritizing informative samples. However, existing surprise metrics often overlook model confidence, leading to inefficient exploration in uncertain areas. We address this by introducing the Confidence-Adjusted Surprise (CAS) metric, which incorporates predictive confidence to measure both the magnitude and reliability of observed surprises. CAS selectively emphasizes surprises in regions where the model is confident, while discounting those in highly uncertain areas. We embed CAS into a Bayesian active learning framework, CA-SMART (Confidence-Adjusted Surprise Measure for Active Resourceful Trials), which sequentially selects informative experiments under a limited budget by combining posterior-based surprise detection, local verification of surprising observations, and global Sobol–maximin exploration. We evaluate CA-SMART on synthetic benchmark functions, a real-world case study on fatigue strength prediction, and an additional end-milling surface roughness dataset. Across these tasks, CA-SMART consistently outperforms conventional Bayesian optimization rules, prior surprise-based methods, and standard machine learning baselines in terms of predictive accuracy, convergence speed, and sample efficiency. Noise and sensitivity analyses further show that CA-SMART maintains competitive performance across a range of training-label noise settings, kernel choices, and design budgets. CA-SMART provides a foundation for making experimental design more efficient in data-scarce settings, advancing the broader vision of autonomous and data-driven discovery in the era of Industry 5.0.",
+        "doi": "10.1016/j.asoc.2026.115463",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626009117",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626009117"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PA.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PA.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -101265,11 +101445,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Traditional reconstruction-based methods for anomaly detection struggle to achieve competitive performance compared to recent diffusion-based methods, and they suffer from parameter redundancy that leads to unnecessary computational costs. In this paper, we propose a novel framework called Diffusion-based framework with Transformer blocks for industrial Anomaly Detection(DTAD), which integrates a Vision Transformer with a diffusion model. Our framework consists of a pixel-level autoencoder, a Feature-Guided Modulation module connected to a transformer-based UNet-like diffusion network, and a domain-adapted feature extractor. First, the Feature-Guided Modulation module is designed to preserve specific details, including semantic information. Then, we introduce a Multi-scale Feature Fusion block with a Dense Feature Fusion module to integrate features from different layers and improve reconstruction quality. Finally, we propose a source-free domain adaptation method to fine-tune a pre-trained Convolutional Neural Network (CNN) without accessing source domain data, enhancing the accuracy of anomaly localization. Experiments are conducted on public datasets MVTec-AD and ViSA. Despite using fewer parameters, the proposed method achieves excellent performance on both benchmark datasets: it attains AUROC scores of 95.8% (pixel-level) and 99.8% (image-level) on MVTec-AD, and 99.0% (pixel-level) and 97.3% (image-level) on ViSA respectively. The experimental results demonstrate significantly superior performance compared to recent state-of-the-art methods. DTAD proposes a Source-Free Domain Adaptation (SFDA) strategy designed to bridge the domain gap between ImageNet pre-trained models and industrial texture data, eliminating the need for raw source domain data. Striking an optimal balance between detection accuracy, model complexity, and inference speed, this approach exhibits strong adaptability in label-free learning scenarios, highlighting its significant practical value for industrial anomaly detection. The related code will be made publicly available at: https://github.com/kiliaw669/DTAD.",
+        "doi": "10.1016/j.asoc.2026.115477",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626009257",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626009257"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PA.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PA.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -101342,11 +101540,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Differential Equations (DEs) are a versatile mathematical tool for tackling a myriad of real-world challenges. The resolution of such differential problems aids in the advancement of our human environment, prompting the exploration of various techniques and methods for solving these equations. This paper presents a new method employing deep learning principles to tackle differential equations, with a specific focus on real-world issues commonly modelled by Singularly Perturbed Differential Equations (SPDEs), such as those found in fluid mechanics and biosciences. Our approach involves solving these specific problems using neural networks, and employing feed-forward frameworks for their resolution. This paper not only focuses on solving the differential equations but also delves into the optimization process. In particular, we utilized the gradient descent algorithm as our optimizer, exploring five variants of this algorithm. Consequently, we investigate the considered SPDEs using a standard Physics-Informed Neural Network framework combined with five different gradient-based optimization algorithms and evaluated through five performance metrics. The numerical results demonstrate that certain optimization strategies exhibit superior accuracy, convergence behavior, and robustness in approximating the solutions of SPDEs. These findings suggest that the proposed comparative methodology provides useful guidance for selecting optimization algorithms and can be extended to a broad class of differential equations.",
+        "doi": "10.1016/j.asoc.2026.115496",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626009440",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626009440"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PA.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PA.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -101433,11 +101649,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "The prediction of drug action mechanisms is a core challenge in precision drug design. Existing research mainly focuses on binary classification tasks predicting the existence of drug-target interactions and regression tasks predicting affinity, while significant gaps remain in computational methods for revealing drug action mechanisms. Traditional methods rely on target 3D structures or manually designed feature encoding, while current computational methods overlook the synergistic modeling of molecular properties and network topology. To address this, SGCA-DTI is proposed in this article, which integrates attribute features and signed network topology features for activation/inhibition effect prediction. At the attribute feature level, it integrates drug dual-fingerprint encoding with structure-aware protein embeddings from ProtT5, leveraging its self-attention mechanism to capture evolutionary and physicochemical patterns. At the network modeling level, a bipartite network containing activation/inhibition signs is constructed, and signed bipartite graph contrastive learning is used to model the relationships and capture network topology features. Experimental results on benchmark datasets show that SGCA-DTI performs excellently, achieving an AUC of 0.9584 and an AUPR of 0.9279. Case studies on Midazolam for anxiolysis and Agomelatine and Maprotiline for antidepressant therapy show that SGCA-DTI accurately predicts drug-target activation/inhibition effects, demonstrating its capability in practical applications.",
+        "doi": "10.1016/j.asoc.2026.115516",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626009646",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626009646"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PA.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PA.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -101510,11 +101744,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "The extensive adoption of Self-supervised learning (SSL) has led to an increased security threat from backdoor attacks. While existing research has mainly focused on backdoor attacks in image classification, there has been limited exploration of their implications for object detection. Object detection plays a critical role in security-sensitive applications, such as autonomous driving, where backdoor attacks seriously threaten human life and property. In this work, we propose the first backdoor attack designed for object detection tasks in SSL scenarios, called Object Transform Attack (SSL-OTA). SSL-OTA employs a trigger capable of altering predictions of the target object to the desired category, encompassing two attacks: Naive Attack (NA) and Dual-Source Blending Attack (DSBA). NA conducts data poisoning during downstream fine-tuning of the object detector, while DSBA innovatively poisons both the pre-trained encoder (via a shadow dataset) and a minimal subset of the downstream data. Notably, using Faster R-CNN on the PASCAL VOC2007 dataset, our NA achieved an Attack Success Rate (ASR) of 72.56%, while our DSBA reached an ASR of 86.55%. Both results were achieved at an extremely low poisoning rate of 0.5%, and the resulting performance impact on the benign mean Average Precision (mAP) was less than 1%. The results underscore the importance of considering backdoor threats in SSL-based object detection and contribute a novel perspective to the field.",
+        "doi": "10.1016/j.asoc.2026.115524",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626009725",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626009725"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PA.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PA.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -101577,11 +101829,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "The increasing global population calls for sustainable agricultural solutions, including automated plant disease identification. Presently, Convolutional Neural Networks (CNNs) require complex architectures and large labeled datasets, relying on transfer learning and data augmentation, particularly in uncontrolled field conditions. Moreover, models trained in controlled environments often surpass those trained in uncontrolled settings due to background variability. To address these challenges, a lightweight CNN architecture supported by the Convolutional Autoencoder (CAE) is proposed capable of operating in both controlled and uncontrolled environments. The CAE model, composed of the encoder and the decoder, optimizes feature extraction with fewer data samples and convolutional layers. The encoder serves as a feature extractor, while an external classification branch uses a fully connected layer with softmax activation to predict class labels. To enhance the reconstruction and feature extraction, a partially skip-connected architecture is added between the encoder and the decoder of the CAE. During training, a combined loss function is integrated to optimize both reconstruction and classification losses, simultaneously. During inference, only the encoder and classification branch are retained, reducing complexity. The system is evaluated across intra-domain, cross-domain, and mixed-domain settings using datasets from various environments. A high accuracy is achieved in controlled conditions (97.05% on PlantVillage, 98% on Citrus, 97.6% on PLD) and demonstrates adaptability in uncontrolled environments (95.14% on Bean, 29.14% on PlantDoc, 81.98% on FieldPlant) without dataset-specific tuning or transfer learning. The full architecture used during training contains approximately 0.72M parameters, while inference requires only 0.30M parameters, making it suitable for deployment on resource-constrained devices.",
+        "doi": "10.1016/j.asoc.2026.115515",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626009634",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626009634"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PA.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PA.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -101650,11 +101920,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Multivariate time series anomaly detection (MTSAD) aims to identify anomalous patterns to prevent system failures in real-world applications. However, this task faces two major challenges: first, existing methods often fail to model inter-channel correlations effectively, leading to cross-channel contamination—a phenomenon in which rigid channel interaction mechanisms propagate noise and anomalous signals, thereby degrading overall modeling performance. Second, most methods struggle to capture multi-scale temporal patterns, which hinders the detection of complex anomalies. To address these issues, we propose DDFormer, a Transformer-based model that performs detection across both channel and temporal dimensions. In the channel dimension, DDFormer adaptively fuses time- and frequency-domain information to quantify inter-channel correlations and selectively establishes channel interactions through a masked attention mechanism. This approach effectively leverages inter-channel information while mitigating cross-channel contamination. In the temporal dimension, DDFormer employs a multi-scale patching module and a Global-Local attention mechanism. This enables the model to capture dependencies from the perspectives of both temporal granularity and temporal span, achieving a comprehensive multi-scale representation. Extensive experiments on five publicly available real-world datasets demonstrate that DDFormer achieves an average improvement of 7.12% in F1-score compared to current state-of-the-art (SOTA) models. Furthermore, comprehensive robustness evaluations, including missing variable scenarios and noise injection experiments, verify the model’s exceptional stability under complex real-world conditions. The source code is publicly available at https://github.com/Jerry-a-rookie/DDFormer.",
+        "doi": "10.1016/j.asoc.2026.115527",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626009750",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626009750"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PA.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PA.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -101731,11 +102019,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Under the development of 5G-A/6G and intelligent transportation, jointly designing integrated sensing and communication (ISAC) and mobile edge computing (MEC) is important for efficient vehicular edge computing (VEC). Most existing works treat ISAC design and task offloading separately, which makes it difficult to balance sensing reliability and computation latency in dynamic vehicular scenarios. This paper considers a full-duplex ISAC–VEC system with uplink–downlink coupling and formulates a delay minimization problem under a sensing SNR constraint. The receive beamformers are derived using generalized Rayleigh quotient structures, and the remaining resource and offloading decisions are optimized via an RQ-assisted deep deterministic policy gradient (RQ-DDPG) algorithm to improve learning stability in our setting. Simulation results show that the proposed approach achieves lower task latency while maintaining the required sensing performance compared with the considered benchmark schemes.",
+        "doi": "10.1016/j.asoc.2026.115476",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626009245",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626009245"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PA.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PA.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -101901,11 +102207,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Effective management of solid waste is crucial for sustainable urban environmental governance. Computer vision has been extensively deployed throughout all stages of solid waste treatment. However, outdoor visual sensing systems are inevitably affected by various adverse weather conditions. Thus, developing all-weather restoration algorithms is essential for providing stable and high-quality data for downstream visual tasks. Nevertheless, existing restoration approaches often yield overly smooth material cues or hallucinate textures across different conditions, thereby weakening downstream recognition quality. To address these limitations, this paper proposes a novel Dual-Residual Diffusion-based all-weather image restoration algorithm (DuRDiff) for enhanced and reliable outdoor solid waste visual applications. First, a Physics-informed Decomposition Module (PDM) is designed to extract degradation priors by decomposing multiple weather effects into unified representations that couple high-frequency artifacts with low-frequency atmospheric components. Second, guided by these priors, a Physics-informed Degradation Diffusion (PDD) is proposed to direct the restoration process via parallel prediction of physical degradation residuals and stochastic noise residuals. Third, an Adaptive Timestep Aligner (ATA) is introduced to learn aligned conditioning timesteps for accelerated sampling, thereby reducing discretization error and preserving restoration fidelity under significantly reduced inference steps. Experiments on TacoRain, SWADsnow, and KITTI-fog show that DuRDiff achieves 22.360/0.7109, 25.600/0.7505, and 31.042/0.9692 in PSNR/SSIM, respectively. Additional experiments on Rainstreak and Raindrop further verify its robustness under different rain morphologies. Beyond restoration quality, DuRDiff also improves downstream perception performance, increasing mAP@0.5:0.95 from 29.84% to 43.74% on SWADsnow and from 36.70% to 63.55% on Rainstreak.",
+        "doi": "10.1016/j.asoc.2026.115643",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626010914",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626010914"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PB.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PB.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -101973,11 +102297,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Anomaly detection in traffic of networks is an essential aspect of the modern communication systems that enhances security, performance, and reliability of the systems. Alternatively, classical detection methods suffer from an issue related to scaling and adapting to the changing environment, especially with large-scale traffic and increasingly shifting attack patterns. This paper proposes a revolutionary dynamic hierarchical spiking neural networks framework that can efficiently support scalable anomaly detection on evolving network traffic streams in real-time. The DHSNN incorporates the temporal sensitivity and hierarchical processing of spiking neural networks with novel algorithms and mathematical formulations to detect a wide range of advanced threats, such as Advanced Persistent Threats (APTs), botnet-based DDoS attacks, zero-day exploits, and cloud-based attacks. The proposed framework demonstrated an improved accuracy of 28% in anomaly detection using the CICIDS 2021 dataset. The dataset has the more latest kinds of attack scenarios like IoT botnet, DNS amplification, ransomware, sophisticated malware, etc. using extensive experimentation with it. Also, the false positive rate was decreased by 32% and the computational complexity decreased by 40%, showing the fact that the framework can scale to handle large traffic. DHSNN framework showed tremendous flexibility in detecting zero-day exploits and hybrid attacks comprising a mix of vectors. The findings illustrated with the Numerical analysis reveal that the proposed DHSNN model is capable of an enhanced detection performance with robust scalability and adaptation to real-life dynamic network environments. This paper is a remarkable achievement in the area of anomaly detection as it provides a solution to the advanced cybersecurity threat which is growing rapidly in danger especially in teh IoT networks, cloud networks and new 5 g network traffic. Network traffic anomaly detection is an integral part of modern communication systems which improves the systems’ security, performance, and reliability. In contrast, classical detection methods present challenges related to scale and how changes are accommodated, especially when they have traffic in large quantities and the patterns of attack change often. A novel framework based on Dynamic Hierarchical Spiking Neural Networks is thus proposed, which overcomes the aforementioned shortcomings and enables scalable real-time anomaly detection for evolving network traffic streams. The DHSNN system actively incorporates algorithms and mathematics. The system combines the temporal and hierarchical features of SNNs. Moreover, the system can effectively detect Advanced Persistent Threats, botnet-based DDoS, zero-day exploits, and cloud-based attacks. The proposed framework showed a 28% improvement in anomaly detection accuracy over state-of-the-art models such as Random Forest and Deep Neural Networks (DNNs) through extensive experimentation using the CICIDS 2021 dataset with modern attack scenarios such as IoT botnets, DNS amplification, ransomware, and advanced malware. Moreover, the rate for false positives was decreased by 32% and computational complexity by 40% showing the scalability of the framework for large traffic volumes. The DHSNN framework was noteworthy for its ability to detect zero-day exploits and hybrid attacks. The experimental findings suggest that the proposed DHSNN model performs better in detection and exhibits significant scalability and adaptability in real-world scenarios. The researchers claim that their work is a major step forward in node anomaly detection that could help address the growing challenges of sophisticated cybersecurity threats, especially in IoT networks, cloud spaces and emerging 5 G network traffic.",
+        "doi": "10.1016/j.asoc.2026.115712",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626011609",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626011609"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PB.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PB.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -102165,11 +102507,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Single-cell RNA sequencing provides researchers with powerful tools to investigate cellular heterogeneity and disease mechanisms at single-cell resolution. In downstream analysis, unsupervised clustering is a critical step for identifying cell populations with similar expression profiles. However, clustering scRNA-seq data remains challenging due to noise, high dimensionality, and widespread dropout events. Although deep learning methods have advanced the field, they often fail to fully exploit multi-scale information across network layers and encounter difficulties in handling high-dimensional sparsity, which may limit clustering performance and biological interpretability. To address these issues, we propose a deep clustering framework, named scCCCT, which integrates representation learning with clustering optimization. The Hierarchical Cell Transformer serves as an attention-based layer-wise feature aggregation module, using standard self-attention to integrate GAE embeddings from different encoder depths, followed by learnable adaptive weighting. In addition, we propose a topology-constrained contrastive objective to preserve neighborhood dependencies and semantic consistency, and incorporate a distribution-guided clustering loss that leverages dynamic prototypes to align sample distributions, thereby improving representation consistency and enhancing cluster compactness and separability. Experiments on ten real scRNA-seq datasets indicate that scCCCT generally achieves more favorable results than thirteen existing baseline methods across multiple clustering metrics. Notably, on the QX_Limb_Muscle dataset, it yields a 5.61% improvement in Adjusted Rand Index compared to the scSCCNIA model. In summary, scCCCT serves as a practical tool for single-cell clustering, contributing to improved performance in downstream biological analyses such as GO enrichment and gene expression interpretation.",
+        "doi": "10.1016/j.asoc.2026.115680",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626011282",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626011282"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PC.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PC.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -102339,11 +102699,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Multivariate time series (MTS) anomaly detection (MTSAD) plays a vital role in Industrial Internet of Things (IIoT) systems, where edge devices must detect anomalies in streaming sensor data promptly and accurately under constrained computational resources. Recent transformer-based approaches have achieved SOTA performance in MTSAD by effectively capturing sequential dependencies. However, they still suffer from (1) insufficient modeling of MTS characteristics due to limited consideration of periodic patterns, frequency distributions and cross-dimensional correlations; and (2) high computational overhead due to multi-layered or multi-model architectures, resulting in a poor trade-off between accuracy and efficiency. To address these challenges, we propose TSCAD, a novel single-layer transformer architecture that jointly models temporal, spectral and cross-dimensional characteristics in a lightweight structure. Specifically, the Feature Alignment module enhances positional encoding with periodic and frequency-domain cues, while the Anomaly Detection module introduces a dual-stage collective attention mechanism to capture both intra-variable and inter-variable dependencies. This lightweight design enables TSCAD to capture rich MTS structures while maintaining high efficiency, eliminating the need for deep stacks or multiple sub-models. In addition, TSCAD adopts a modular, plug-and-play architecture, making it compatible with other transformer-based frameworks. Extensive evaluations on seven public datasets show that TSCAD outperforms SOTA methods in best F1-score and AVG R-PR by up to 16.29% and 6.38%, respectively, and accelerates training and inference by up to 9.4× and 9×.",
+        "doi": "10.1016/j.asoc.2026.115692",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626011403",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626011403"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PC.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PC.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -102536,11 +102914,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Reliable coastal risk forecasts remain difficult in data-poor areas, where data-driven models often lack the capacity to model rare events. In our work, we propose a novel Physics-Informed Transfer Learning (PITL) framework, coupled with Fuzzy TOPSIS, for reliable risk prediction and decision support. In particular, by directly incorporating wave dispersion and wind stress equations into the loss function, the PITL framework enables reliable knowledge transfer from NOAA buoys to commercial ports, where such information is scarce. Stringent validation analyses confirm that our PITL framework can achieve an RMSE of 0.048, providing 24% and 15% relative improvements over LSTMs and Random Forest models, respectively. Moreover, our PITL solution is strongly significant compared to LSTMs and Random Forest models through Wilcoxon tests at P<10−93. In practical terms, uncertainty estimation and Monte Carlo Dropout analyses have provided confident estimates above 93% for critical events. Subsequently, using Fuzzy TOPSIS decision support modules, our solution effectively provides critical orders based on probabilistic outputs. Across our sensitivity analyses, our decision support system demonstrates robustness to weight uncertainty, with a Spearman ρ value of 0.995. Finally, our solution can help minimize potential losses to around 25 million, significantly assisting in providing a physics-consistent decision-support system for coastal zone management.",
+        "doi": "10.1016/j.asoc.2026.115720",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626011683",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626011683"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PC.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-201-part-PC.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -102608,11 +103004,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Accurate segmentation of medical images requires a careful balance between leveraging local features and addressing long-range dependencies. Transformers, through their self-attention mechanisms, effectively model global contexts and long-range dependencies, overcoming the spatial limitations of convolutional neural networks. However, a major drawback of Transformers is their quadratic computational complexity relative to the number of visual tokens, which creates significant challenges when processing high-fidelity medical image segmentation. In this study, we propose Super Token Attention UNet, a novel framework designed to address these issues. Our method introduces a super token space, where similar visual tokens are grouped, and each group is represented by a single super token that aggregates its information. This strategy allows efficient global context computation without sacrificing accuracy. However, the token aggregation process within the U-shaped encoder–decoder architecture may introduce semantic inconsistency between hierarchical features. To address this, we leverage semantic consistency regularization and internal feature distillation techniques to mitigate semantic loss and reduce feature redundancy, thereby ensuring stable and accurate feature representations across network layers. Experimental results across four medical imaging datasets demonstrate that our method achieves state-of-the-art segmentation performance while maintaining low model complexity, offering an efficient solution for high-fidelity medical image analysis.",
+        "doi": "10.1016/j.asoc.2026.115752",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626012007",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626012007"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-202-part-PA.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-202-part-PA.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -102690,11 +103104,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Vegetable viral diseases pose a serious threat to sustainable agriculture. Viral resistance proteins play a critical role in plant antiviral defense and coordinated immune responses, and accurate prediction of their structures is essential for disease control and sustainable crop production. In this study, we focus on two representative targets: tomato spotted wilt virus resistance protein and potato inhibitor I. Data augmentation is applied to construct training samples, and the SimCLR framework is introduced for self-supervised pre-training, enhancing feature representation and generalization under complex data conditions. By integrating the spatial feature extraction capability of CNN, the sequential modeling strength of Bi-LSTM, and the computational efficiency of Mamba, we propose CMB-SSPNet, a deep learning model for precise prediction of resistance protein structures. To rigorously evaluate its performance, we compare CMB-SSPNet against traditional models (CNN, Bi-LSTM, CNN + Bi-LSTM) and advanced methods (Transformer, SimCLR-pretrained). Experimental results show that CMB-SSPNet achieves >90% accuracy on both datasets, outperforming all competitors in key metrics (ACC, F1-score, MCC) while reducing the minimum MAE to 8.11%. Sensitivity analysis further confirms its robustness. Moreover, validation on the PREDICTED: cucumber peeling dataset demonstrates strong cross-species generalization, with stable and reliable performance across different plant families. Collectively, CMB-SSPNet provides an effective computational tool for vegetable resistance breeding and holds promise for reducing crop production losses.",
+        "doi": "10.1016/j.asoc.2026.115745",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626011932",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626011932"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-202-part-PA.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-202-part-PA.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -102762,11 +103194,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Medical image segmentation is fundamental to biomedical analysis, supporting diagnosis, lesion localization, organ mapping, and treatment planning, yet challenges persist, such as boundary ambiguity, lesion shape/size variability, and imprecise target localization.The development of U-shaped architectures for segmentation is constrained by a key trade-off that CNNs are limited in their ability to capture long-range interactions, whereas Transformers achieve this at the expense of high computational complexity and a loss of fine-grained spatial information. To overcome these limitations, this paper introduces a novel multi-scale feature enhancement method with axial Transformer for medical image segmentation, termed MFAFormer, which effectively integrates the local detail with global contextual information. MFAFormer consists of three novel modules, i.e., the multi-level feature supplement module (MLFS), the cross-scale feature enhancement module (CFE), and the dual-directional decoder via axial Transformer (D2AFormer), which enhance the feature representation for better segmentation performance. Firstly, the MLFS module selectively supplements and fuses multi-scale features of encoders by an aggregated attention-gated mechanism. Secondly, the CFE module further integrates the multi-attention mechanism to enhance the feature transmission. Finally, the D2AFormer module adopts a cyclical complementary structure, which jointly employs dual-directional convolutions and axial Transformers to improve the comprehensive feature representation ability for local details and long-range contextual information. Comprehensive experiments on public datasets are conducted to evaluate the proposed MFAFormer. The experimental results reveal substantial improvements over state-of-the-art methods, validating its potential for accurate medical image segmentation.",
+        "doi": "10.1016/j.asoc.2026.115792",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626012408",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626012408"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-202-part-PA.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-202-part-PA.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -102846,11 +103296,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Physics-informed neural networks (PINNs) have significantly advanced the development of numerical methods for solving partial differential equations (PDEs) in the physical and engineering fields. Nonetheless, they often suffer from training difficulties and even failures whose underlying mechanisms remain poorly understood. In this paper, we introduce the network condition number to explore the intrinsic performance mechanism of PINNs in PDE solution learning. Specifically, we reveal that PINNs achieve stable and accurate training when the network condition number closely matches that of the true solution, whereas the performance degrades otherwise. In particular, we rigorously prove that the L2 relative error of predicted solution is bounded by the sum of condition number discrepancy between the neural network and the true solution and two unrelated constant terms. Then, motivated by these findings, we propose a condition number enhanced PINN (cnPINN) based on singular value decomposition of network weight matrices, which adaptively adjusts the network condition number to approximate that of the true solution without requiring any prior knowledge during training. Numerical experiments verify that the proposed cnPINN consistently outperforms vanilla PINN and several state-of-the-art PINN variants, and effectively resolves several challenging PDE problems where existing methods fail to converge.",
+        "doi": "10.1016/j.asoc.2026.115794",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626012421",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626012421"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-202-part-PA.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-202-part-PA.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -102919,11 +103387,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Building an intelligent diagnosis model based on clinical data improves the efficiency of medical decision-making and reduces healthcare costs. However, the uneven distribution of disease prevalence (imbalanced dataset) and multiple clinical features (high-dimensional features) significantly impact the model’s prediction performance, leading to occurrences of misdiagnosis and underdiagnosis. This paper proposes an Adaptive Cost-sensitive Neural Network with Metric Pre-training (AdaCSNN-MPT) to address the above issues. Firstly, metric pre-training is proposed to learn effective low-dimensional representations and provide better parameter initialization. Secondly, an adaptive cost-sensitive neural network is proposed to improve the overall classification performance by identifying hard-to-classify invaded samples. Experiments on six real-world disease diagnosis tasks demonstrate that AdaCSNN-MPT outperforms the baseline models.",
+        "doi": "10.1016/j.asoc.2026.115809",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626012573",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626012573"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-202-part-PB.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-202-part-PB.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -103189,11 +103675,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Abstract-\nIn modern years, the growing population has faced transportation and sustainability challenges, and mobility plays an important role in that it links people, distributes distinct cultures, and highly promotes development. The traffic estimation is significant for developing data-driven smart transportation models. Thus, this paperwork aims to introduce a novel framework for traffic and transportation planning. Initially, the required video sources are acquired from benchmark datasets and fed into the Multi-scale Trans-YOLOv5 (MTYOLOv5) model for estimating the vehicles and pedestrians counts. Then, the novel intelligent model named Weighted Dilated Recurrent Neural Network with Attention mechanism (WDRNN-AM) is deployed for traffic planning. Here, the weight optimization is performed using the Fitness Revised Single Candidate Optimizer (FRSCO) algorithm. This system effectively predicts traffic patterns for efficient transportation. Experimental evaluation is performed using evaluation metrics, and the system delivers impressive results in traffic planning and management compared to traditional approaches.",
+        "doi": "10.1016/j.asoc.2026.115755",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626012032",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626012032"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-202-part-PC.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-202-part-PC.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -103275,11 +103779,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Accurate prediction of the hysteretic response of reinforced concrete (RC) columns under seismic loading is essential for performance-based design and assessment. However, existing data-driven surrogates typically provide only point estimates of the response without any measure of predictive uncertainty. Therefore, this paper proposes a tokenized bidirectional transformer that reformulates hysteresis prediction as a sequence-to-sequence token classification task in which the continuous shear force at each timestep is discretized into a probability distribution over a fixed vocabulary of shear bins, which allows the model to produce per-timestep uncertainty estimates. In addition, four physics-informed loss components, namely stiffness consistency, curvature smoothness, energy dissipation, and continuous-value accuracy, are optimized jointly with the cross-entropy classification objective. A per-specimen normalization strategy is adopted to convert the response of each specimen to the full token vocabulary. Each transformer layer is further conditioned on column-specific metadata through Feature-wise Linear Modulation (FiLM). The model’s evaluation on the test set showed a median normalized root mean square error (NRMSE) of 0.063 and a median Pearson correlation of 0.978, with a median cumulative energy dissipation capacity error of 10.5%. Five-fold cross-validation at the specimen level yields a mean median NRMSE of 0.064±0.005, which confirms the stability and generalizability of the reported performance across independent data partitions. A quantitative calibration analysis further confirms that, after a lightweight temperature recalibration, the predicted credible intervals are statistically reliable, with an expected calibration error of 0.9%. Finally, attention map analysis reveals that the first transformer layer captures local temporal dependencies within neighboring timesteps, whereas the second layer attends to timesteps with similar drift amplitudes across different cycles.",
+        "doi": "10.1016/j.asoc.2026.115955",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626014031",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626014031"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-202-part-PC.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-202-part-PC.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -103358,11 +103880,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Existing methods for remote sensing image transmission and storage often lack adequate data security, leaving them vulnerable to potential attacks. To mitigate this issue, this paper introduces a secure image compression-encryption algorithm tailored to remote sensing image protection. First, a novel memristive Hopfield neural network (mHNN) model incorporating voltage-controlled universal memristors is developed as a pseudorandom number generator for the encryption algorithm. Numerical analysis confirms that this mHNN model exhibits rich and stable dynamical behavior, including high-entropy chaotic dynamics and low-entropy regular behaviors. Second, a simple yet efficient construction method for the δ-type fractal sorting matrix is introduced to effectively accomplish pixel scrambling. Specifically, driven by key-dependent chaotic sequences, the original remote sensing images undergo compressive sampling, δ-type fractal sorting scrambling, and bidirectional diffusion to generate cipher images devoid of visual semantic information. Simulation and performance analyses demonstrate that the proposed algorithm offers high security and reconstruction quality, thereby achieving a favorable balance between compression and robustness. Notably, it also exhibits strong generalization across multiple datasets, with cipher images attaining information entropy above 7.999 and correlation coefficients approaching zero.",
+        "doi": "10.1016/j.asoc.2026.115947",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626013955",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626013955"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-202-part-PC.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-202-part-PC.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -103431,11 +103971,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Despite substantial potential of industrial large models (ILMs), there are still some challenges in deploying ILMs in specific industry scenarios: (1) Current ILMs generally adopt a learning mode with large-scale parameters, which tends to cause over-fitting on limited data in real-world engineering and fails to generalize to various working conditions; (2) Current ILMs usually employ static deployment based on fine-tuning techniques, which makes it difficult to establish a dynamic downstream task with sequentially-collected monitoring data. To address these challenges, this paper selects the early fault detection (EFD) of rotating machinery as an example, and designs an ILM-driven incremental anomaly detection framework that includes a pre-training model and a downstream task. In the pre-training stage, a new wavelet scattering contrastive Transformer (WaveCT) is proposed by introducing wavelet scattering transform to expand a physically-meaningful time-frequency feature set from limited data. By exploring the contextual dependency among normal state data, WaveCT effectively extracts the representation of common one-class detection rules under complex working conditions such as being interfered with by irregular noise. In the downstream task, an online EFD network is designed based on fine-tuning the sequential data, while an incremental fault alarm indicator is built based on the support vector data description (SVDD) generalization error upper bound. Then the statistical distribution shift caused by weak state changes is perceived to achieve early fault warning. Experiments on the vibration signals from our bearing cage testbed and the actual finishing mill bearing of a steel enterprise in China validate the effectiveness of the proposed framework.",
+        "doi": "10.1016/j.asoc.2026.115975",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626014237",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626014237"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PA.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PA.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -103510,11 +104068,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Threat assessment with space-based observation information is strongly affected by uncertainty arising from target observation, state estimation, and impact point prediction. Existing methods generally rely on deterministic indicator values or empirically prescribed interval forms, making it difficult to express the influence of target state uncertainty propagation on threat assessment results. To address this issue, a physics-informed interval-valued intuitionistic fuzzy set (PI-IVIFS) method is proposed for target threat assessment with space-based observation information. Within a dual-satellite cooperative observation framework, objective uncertainty information is obtained from the tracking process, including state covariance, impact point error, and observation interruption duration. To incorporate this uncertainty information into threat assessment in a consistent way, comprehensive uncertainty rates are defined for different indicators. Based on the quantified indicator values and the corresponding comprehensive uncertainty rates, interval-valued intuitionistic fuzzy numbers (IVIFNs) are constructed to characterize both indicator threat levels and evaluation credibility. The quantified indicator values determine the interval centers, and the corresponding comprehensive uncertainty rates determine the widths of the membership and non-membership intervals. The interval boundaries are therefore determined by physically derived uncertainty. Furthermore, combined weighting and the interval technique for order preference by similarity to ideal solution (TOPSIS) are employed to obtain the final threat ranking. Simulation results show that the proposed method achieves better ranking consistency during tracking updates and provides clearer interpretation of weakly separated target pairs. Improved robustness under covariance-informed disturbances and online assessment feasibility are also demonstrated at the considered space-based observation scale.",
+        "doi": "10.1016/j.asoc.2026.115988",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626014365",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626014365"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PA.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PA.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -103852,11 +104428,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "To address multiscale puncture mechanics in heterogeneous, hyperviscoelastic biological tissues, we construct a spatiotemporal (ST) decoupled graph network architecture-M2_STGPH based on physics-informed paradigm and variational principles. By imposing explicit constraints on Rademacher complexity of function spaces using Neural Tangent Kernel, we develop a nonlinear partial differential equation system that governs time-varying solutions of high-dimensional equations and robust coupling between flexible needles and mechanical responses of soft tissues. Firstly, in the reconstruction and prediction of physical constraint field of continuum mechanics, a local meshless model is constructed by combining the material constitutive law. Dual-region division balances virtual work, while tight-support radial kernel functions construct local shape functions. Subsequently, a probabilistic node aggregation algorithm is proposed to construct a dynamic topological structure consisting of a full family of parent–child clusters(FAS), thus updating information transmission pathways. Since parent nodes contain the physical information of adjacent child nodes, adjacent sampling is decoupled from shape function computation. The topological structure calculates the kernel weight of each child node relative to its parent node and uses the chain rule and quotient rule to perform analytical differentiation on the normalized formula after interpolation. Finally, we investigate error correction problem for the needle-tissue coupled inverse kinematics model with known initial configurations by introducing a momentum term and an adaptive learning rate mechanism to balance its first-order convergence properties. Physical constraints based on needle bending morphology and material constitutive behavior are embedded within configuration space. This approach enables Jacobian-free, high-precision (10−3mm) tissue puncture prediction with robust initialization.",
+        "doi": "10.1016/j.asoc.2026.116032",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626014808",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626014808"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PB.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PB.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -103931,11 +104525,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Tea leaf diseases present a significant challenge to global tea production, underscoring the need for efficient and real-time diagnostic solutions. This study introduces CM2-Net, a novel ultra-lightweight Convolutional Neural Network (CNN) designed explicitly for diagnosing tea leaf diseases on edge AI devices. The network integrates innovative features such as Coordinate Attention (CA), the Meta-ACON-C activation function, and the RandAugment (RA) data augmentation strategy. These enhancements enable CM2-Net to achieve an accuracy of 94.76% while reducing the number of parameters by 86.22% compared to MobileNetV3-Large on the Tea Sickness Dataset (TSD). When deployed on Jetson Orin NX using TensorRT with 16-bit quantization, the model demonstrated real-time processing capabilities, achieving 43.40 Frames Per Second (FPS), a 97.36% improvement over the baseline. This approach facilitates fast, privacy-preserving disease diagnosis, reducing reliance on cloud computing and enhancing accessibility in resource-constrained settings. The release of open-source code further encourages research into edge AI applications https://github.com/JasonYangCode/CM2-Net.",
+        "doi": "10.1016/j.asoc.2026.116074",
+        "url": "https://www.sciencedirect.com/science/article/pii/S156849462601522X",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S156849462601522X"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PC.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PC.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -104012,11 +104624,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "With the widespread application of deep neural networks (DNNs) and the increasing deployment of large language models (LLMs) and vision-language models (VLMs) in security-sensitive domains, adversarial robustness has become a critical concern. Adversarial examples are inputs specifically crafted by adding imperceptible perturbations to a legitimate example, which can easily mislead a model into producing incorrect predictions. Existing detection methods often rely on extracting features from all layers, leading to high computational costs and limited scalability. To address this, we propose NeuronSig, a lightweight adversarial example detection framework based on single-layer neuron activation patterns. We introduce the concept of a neuron signature, which combines the activation magnitudes and their binary activation properties to capture the distinguishing patterns of adversarial inputs. This enables efficient and generalizable detection without modifying the target model. NeuronSig is evaluated across five datasets and nine adversarial attack types, consistently achieving an AUC of around 0.95 and maintaining robustness against adaptive attacks. We further discuss the potential applicability of NeuronSig to Transformer-based architectures, including LLMs and VLMs, through preliminary exploratory observations. While the current study focuses on CNN-based models, these observations suggest that neuron activation signatures may provide a useful direction for future adversarial detection research in modern foundation models.",
+        "doi": "10.1016/j.asoc.2026.116054",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626015024",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626015024"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PA.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PA.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -104088,11 +104718,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Federated Learning (FL) has demonstrated considerable promise for wind power forecasting through data-driven approaches, yet it faces critical challenges including data scarcity, spatiotemporal heterogeneity, and privacy vulnerabilities inherent in centralized training. Conventional FL methods often neglect variability in client contributions, resulting in compromised forecasting accuracy. To overcome these limitations, this paper introduces a novel multi-weight aggregation federated learning framework that innovatively employs Particle Swarm Optimization (PSO) to dynamically determine aggregation weights. At the client level, a hybrid CNN-BiLSTM-ATT model is deployed as the core local architecture to effectively capture complex spatiotemporal dependencies for each individual wind turbine. The core of our approach, the federated multi-weight aggregation (FedMWA) mechanism, leverages PSO to optimize aggregation weights based on multi-factor contributions from heterogeneous clients, enabling more effective integration of distributed knowledge while preserving data privacy. This PSO-driven aggregation strategy represents a significant departure from traditional static weighting schemes, substantially enhancing the global model’s representational capability. Experimental results demonstrate significant performance gains, with average reductions of 4.45% in NMAE and 3.66% in NRMSE compared to baseline methods. The framework maintains robust performance across diverse power outputs and fluctuation scenarios while ensuring data privacy through localized learning.",
+        "doi": "10.1016/j.asoc.2026.116076",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626015243",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626015243"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PA.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PA.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -104174,11 +104822,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Accurate State of Health (SOH) prediction is essential for the reliable operation of lithium-ion batteries. Although physics-guided learning methods have demonstrated improved generalization capability, existing approaches remain limited in modeling temporal dependencies, capturing long-term degradation dynamics, and performing robust multi-step forecasting without explicitly defined physical state variables. To address these limitations, we propose TNPGL (Temporal Neural Networks and Physics-Guided Learning), a temporal–physical synergy framework that integrates temporal representation learning with degradation-aware physical regularization. Unlike conventional physics-informed approaches that rely on predefined governing equations or explicitly observable physical variables, TNPGL does not assume that hidden states correspond to directly measurable physical quantities. Instead, latent degradation representations are extracted from battery health indicators and transformed into feature-space degradation dynamics through a chain-rule-based state-space mapping, enabling temporal latent features to participate in physics-guided regularization without requiring explicit electrochemical states. To improve physical consistency, two hierarchical constraints, Lf and LfX, are introduced. Lf regularizes state-level degradation evolution by aligning feature-space SOH derivatives with learned degradation dynamics, while LfX stabilizes the residual field through residual-gradient regularization, forming a progressive state-to-structure constraint mechanism. Experimental results show that TNPGL demonstrates superior overall performance compared with State-Of-The-Art (SOTA) methods, achieving high multi-step prediction accuracy on the NASA (MAE: 1.485%, RMSE: 2.099%) and CALCE (MAE: 1.479%, RMSE: 2.229%) datasets. Additional experiments on the Oxford dataset further support its cross-dataset generalization capability. An auxiliary post hoc uncertainty analysis based on MC Dropout further evaluates predictive confidence, with confidence levels exceeding 90% on NASA, CALCE, and Oxford.",
+        "doi": "10.1016/j.asoc.2026.116063",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626015115",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626015115"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PB.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PB.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -104352,11 +105018,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "To address the limited detection accuracy of existing methods in UAV-based aerial ground-object detection, this paper proposes the Frequency and Boundary-Aware Detection Transformer (FBAD-DETR), a small-object detection model based on frequency-domain modeling and boundary-aware feature representation. Built upon the RT-DETR framework, FBAD-DETR introduces three main improvements: (1) a Frequency-Dynamic Enhancement Backbone (FDEB) is constructed by integrating frequency-domain modeling with a channel sparsity mechanism to enhance fine-grained small-object feature extraction; (2) a Boundary-Semantic Recalibrated Feature Pyramid Network (BSRFPN) is designed to selectively reconstruct and fuse shallow boundary cues and deep semantic features, improving small-object perception; and (3) an Inner Matching-Point Distance Intersection over Union loss function (Inner-MPDIoU) is proposed by combining inner-region matching awareness with spatial corner constraints to improve multi-scale localization accuracy. Experimental results show that FBAD-DETR achieves 51.2% mAP@0.5 and 32.2% mAP@0.5:0.95 on the VisDrone2019-DET dataset, outperforming the RT-DETR-r18 baseline by 3.9% and 3.0%, respectively. APs and APm are also improved by 3.0% and 2.5%, while the number of parameters and model size are reduced by 36.7% and 36.1%, respectively. On the CODrone dataset, FBAD-DETR improves mAP@0.5 and APs by 4.1% and 1.5% over the baseline. Comprehensive experiments, including onboard deployment validation, indicate that FBAD-DETR achieves high detection accuracy and robustness in UAV aerial ground-object detection scenarios. The onboard deployment reaches 18.4 FPS, showing basic real-time capability.",
+        "doi": "10.1016/j.asoc.2026.115996",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626014444",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626014444"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PB.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PB.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -104535,11 +105219,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Robust monocular 3D object detection under adverse weather conditions remains a significant challenge due to monocular depth ambiguity and weather-induced visual degradation. In this paper, we propose PhD-DETR (Physics-guided Depth-aware Transformer), a physics-guided reliability-constrained framework for robust monocular 3D object detection. Instead of using physical priors as fixed replacements for learned visual features, PhD-DETR formulates environment and frequency priors as adaptive soft reliability cues within a depth-aware Transformer detector. Specifically, PhD-DETR introduces a Prior-knowledge Gated Fusion Module to adaptively integrate image features and aligned physical priors, a Physics-guided Adaptive Attention Mechanism to modulate deformable attention logits with query-specific prior responses, and a Physics-guided Attention Regularization loss to encourage object-related attention distributions to be consistent with physically meaningful cues. Experiments on KITTI, KITTI-C and V2X-Radar-V demonstrate that PhD-DETR improves robustness under both controlled synthetic corruptions and real-world adverse sensing conditions. Extensive ablation studies further show that the proposed physical priors provide complementary reliability cues rather than merely acting as generic spatial masks or redundant feature enhancements.",
+        "doi": "10.1016/j.asoc.2026.116147",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626015954",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626015954"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PB.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PB.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -104618,11 +105320,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Three dimensional (3D) reconstruction of spatial transcriptomics (ST) data makes it possible to analyze the spatial heterogeneity of tissues and organs and other downstream tasks such as intercellular communication in the three-dimensional space. Most recent methods treat slice alignment as discrete pairwise operations that ignore historical knowledge, reducing 3D reconstruction to isolated local operations with limited quality. This paper proposes a novel method based on dual incremental deep reinforcement learning for 3D reconstruction of ST datasets. Specifically, we formulate the 3D reconstruction task of ST datasets as a sequential decision-making problem and further solve it using a deep Q-network integrated with incremental learning, where the reward and action from the current step are explicitly encoded as part of the state for the next step, in contrast to the implicit memory of experience replay in standard DQN, thereby achieving internal incremental training. Unlike traditional methods, although we still align all target slices sequentially to a common reference slice, we perform incremental training based on the model from the previous slice-pair alignment, fully utilizing the network weights learned from previous slice-pair alignment, thereby achieving external incremental training. Various experiments are conducted on some public benchmark datasets to compare the proposed method with current popular algorithms such as PASTE and STAligner and the results clearly proves the effectiveness of the proposed method for 3D reconstruction of ST datasets.",
+        "doi": "10.1016/j.asoc.2026.116148",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626015966",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626015966"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PB.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PB.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -104802,11 +105522,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Accurate object detection in remote sensing images (RSIs) is crucial for a wide range of engineering applications, from environmental monitoring to disaster response, where high precision is necessary for reliable decision-making. Recent research in RSI object detection has increasingly leveraged Vision Transformer (ViT)-based backbones and feature fusion techniques to enhance global context extraction. However, these methods often struggle with the inherent challenges of RSIs, such as variable imaging conditions and high morphological diversity, leading to inconsistent performance compared to pure convolutional models while incurring high computational overhead. To overcome these limitations, we propose a Feature Enhancement and Structural Simplification Network (FESS-Net) that integrates hybrid data-, model-, and loss-level innovations into the Faster R-CNN architecture. At the data level, FESS-Net introduces two RSI-specific feature enhancement pipelines integrated with custom algorithms: Remote Sensing Optical Enhancement to simulate diverse imaging conditions and Remote Sensing Shape Enhancement to enrich object shape variability. At the model level, it introduces a Lightweight Hybrid ViT-based Backbone and a Lightweight Context-Aware Fusion Module for streamlined feature extraction and fusion, as well as a Center-Aware Loss to enhance spatial alignment during training. Extensive evaluations on three benchmarks—DIOR20, MAR20, and ShipRS50—yield outstanding mAP50 scores of 80.5%, 96.2%, and 76.1%, respectively, significantly outperforming foundational baselines (Faster R-CNN, YOLOv11, and RT-DETR) and 17 advanced variant detectors published in top-tier journals between 2024 and 2026. Furthermore, evaluations on the practical, real-world GLH-Bridge dataset demonstrate superior cross-scene generalizability compared to YOLOv11 and RT-DETR baselines. Although FESS-Net exhibits a higher latency of 20.4 ms (49 FPS) compared to YOLOv11-m, it still comfortably exceeds the standard real-time processing threshold of 30 FPS. Additionally, cross-architecture evaluations using YOLOv11 and RT-DETR substantiate the robust plug-and-play generality of our proposed feature enhancement modules. These results confirm that FESS-Net establishes an optimal trade-off between detection accuracy and efficiency for practical remote sensing applications.",
+        "doi": "10.1016/j.asoc.2026.116126",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626015747",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626015747"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PB.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PB.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -104893,11 +105631,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "As a core component of electric vehicles, the temperature state of lithium-ion batteries directly affects the driving range, safety, and economy of the vehicle. To accurately predict the temperature of lithium-ion batteries, a new model that combines the physics-informed neural network (PINN), gated recurrent unit (GRU), and transformer is proposed. First, a multi-factor dataset is constructed and preprocessed. The K-Means algorithm is then employed for seasonal division to enhance the adaptability of the model. Next, the lumped capacitance thermal model is embedded into the PINN. The characteristics of short-term temperature fluctuations are captured by the GRU, while the global dependencies of long sequences are handled by the transformer. This forms a multi-branch network architecture. Finally, key hyperparameters are optimized via the controlled variable method, and comparative experiments are conducted with traditional and hybrid models. The results indicate that the optimized PINN-GRU + Transformer model exhibits significant advantages in prediction accuracy and generalization ability, with its mean absolute error (MAE) reduced to 0.1045 ∘C. Moreover, it maintains stable predictive performance across different seasons, providing reliable theoretical and technical support for battery thermal management.",
+        "doi": "10.1016/j.asoc.2026.116125",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626015735",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626015735"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PB.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PB.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -105058,11 +105814,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Accurate inverse design of thermoelectric Seebeck coefficient in-situ test structures for micro-electro-mechanical systems (MEMS) is essential to meet specific performance requirements. Traditional approaches rely on expert knowledge and extensive finite-element simulations, which are time-consuming and yield single solutions. While deep learning (DL) methods address forward design efficiently, they neglect the practical need for multiple geometrically distinct valid designs simultaneously a challenge known as the one-to-many inverse mapping problem. To address this, we propose a physics-guided Conditional Variational Autoencoder and Generative Adversarial Network (CVAE-GAN) coupled with a Multi-Solution Generator (G-MS) for high-efficiency inverse design. G-MS employs a two-stage gradient-based latent space optimization that simultaneously enforces performance fidelity, physical feasibility, solution realism, and geometric diversity. Validated on a 5,000-sample MEMS in-situ Seebeck test structure dataset generated via finite-element analysis (COMSOL), our approach achieves a 100% success rate across six target Seebeck coefficients (225.0–227.5 µV/K), with mean error of 0.045 µV/K within the ±1.5 µV/K tolerance. Compared to four baselines (random search, tandem networks, and standard CVAE), G-MS achieves 10 × higher solution diversity with statistical significance (p < 0.001) across five random seeds. FEM validation of three designs confirms sub-0.23% surrogate accuracy, bridging the gap between data-driven inverse design and physical MEMS fabrication. Monte Carlo Dropout confirms mean predictive uncertainty of 0.46µV/K within tolerance providing a reliability metric for each design. This study provides a reliable, fabrication-aware tool for MEMS inverse design, accelerating thermoelectric sensor development and in-situ test structure design.",
+        "doi": "10.1016/j.asoc.2026.116145",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626015930",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626015930"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PB.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PB.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -105730,11 +106504,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Symbolic regression (SR) yields explicit predictive expressions, yet algebraic transparency alone does not make a model interpretable for engineering use. This structured review synthesises quantitative approaches to assessing interpretability across evolutionary, sparse, neural-symbolic, and physics-informed SR within soft computing. We organise the assessment landscape into five complementary dimensions: structural and cognitive accessibility; variable attribution and interaction; physical and knowledge consistency; numerical and structural robustness; and human utility and auditability. We further distinguish these interpretability diagnostics from the decision layer, which comprises predictive performance, hard feasibility constraints, Pareto comparison, and preference uncertainty. Building on this distinction, we propose a physics-aware model-selection framework that defines the operating domain, filters candidates against justified non-negotiable constraints, reports disaggregated diagnostics, identifies the feasible Pareto set, and examines ranking sensitivity before expert review. A fully scripted synthetic aerodynamic example compares enumerative symbolic expressions with radial-basis, sparse, rule-based, and theory-constrained baselines using independent training, validation, and test sets. The physics-aware enumerative expression achieves the lowest test error and passes the declared boundary and monotonicity checks. Nevertheless, it is not a preference-invariant winner: varying defensible weights, normalisation scales, and feasibility thresholds changes the leading model. These findings show that predictive accuracy can inform deployment decisions but is neither evidence of interpretability nor a substitute for physical and human-centred assessment. The proposed workflow provides a reproducible and auditable basis for selecting symbolic models without equating brevity, explicitness, or accuracy with engineering trustworthiness.",
+        "doi": "10.1016/j.asoc.2026.116283",
+        "url": "https://www.sciencedirect.com/science/article/pii/S156849462601731X",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S156849462601731X"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PD.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PD.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -105814,11 +106606,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "To enhance the efficiency and reliability of seismically isolated bearings design, this study proposes a design method based on an enhanced physics-informed neural network (EPINN), aiming to expedite the design of seismic isolators. According to the mechanical model for shape memory alloy variable friction pendulum bearing (SMA-VFP), a systematic mechanical performance design method is developed. Subsequently, a hyperparameter optimization method for the neural network in seismically isolated design is presented grounded in Bayesian theory. A comprehensive dataset encompassing a wide range of characteristics of SMA-VFP bearings is generated using the proposed mechanical performance design method, serving as a case study to evaluate the effectiveness and reliability of the proposed model. The case study results demonstrate that the EPINN model outperforms both traditional physics-informed neural network models and standard artificial neural networks. Specifically, it achieves a maximum reduction of 35.1% in pure data loss, 78.9% in physics-informed loss, and 91.5% in physical constraint loss, with the reliability of the bearing design reaches up to 96.6%. By incorporating a design-oriented physics-constrained loss term, EPINN effectively reconciles physical principles with design objectives even when data-driven loss computation is unavailable, offering a distinct advantage over conventional ANN and PINN approaches that lack such constraints.",
+        "doi": "10.1016/j.asoc.2026.116274",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626017229",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626017229"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PD.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PD.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -106071,11 +106881,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Industrial anomaly detection is essential for intelligent quality control, yet existing methods often rely on domain-specific normality modeling and show limited generalization ability for unseen defect patterns and diverse manufacturing environments. Although recent Vision-Language Models (VLMs) have enabled zero-shot industrial inspection by transferring semantic knowledge from large-scale image-text pre-training, they often struggle to balance image-level semantic discrimination with pixel-level defect sensitivity, leading to suboptimal anomaly detection and localization under complex industrial conditions. To address this issue, we propose a global-local decoupling and alignment framework for zero-shot industrial anomaly detection. Particularly, the proposed method employs a dual-branch architecture with deep textual prompts and lightweight residual adapters to enhance domain adaptation while preserving the transferable priors of CLIP. Furthermore, a two-stage training strategy is presented to decouple global semantic anchoring from local defect-sensitive alignment, which can improve image-level detection and pixel-level localization in a coordinated manner. Extensive experiments on representative industrial benchmarks, including MVTec AD, VisA, BTAD, MPDD, and MVTec LOCO AD, demonstrate that the proposed framework achieves the best average image-level AUROC and pixel-level AUROC among representative zero-shot CLIP-based methods, while maintaining strong image-level discrimination and pixel-level localization performance across diverse industrial scenarios. These results indicate that decoupling global semantic learning from local anomaly alignment is a promising direction for zero-shot industrial anomaly detection.",
+        "doi": "10.1016/j.asoc.2026.116368",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626018168",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626018168"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PD.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PD.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -106261,11 +107089,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得可核实的原摘要，见verified_metadata及补摘要审计；尚待逐篇内容判读，本轮不新增纳入、排除或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "本轮仅补原摘要与身份匹配；尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Accurately predicting chloride diffusion is essential for assessing the durability of reinforced concrete structures. However, experimental detection methods are often subjected to operational complexity, limited spatial resolution, and potential measurement uncertainty. Such acquired raw data are often scarce and unreliable. Although PINNs are suitable for incorporating physical constraints into data-limited modelling, their direct application to real engineering data remains challenging. As shown in Fig 8(b), classical PINN trained with such “dirty” data, is prone to overfitting, which dramatically undermines the reliability of extrapolative predictions. To address the challenges associated with noisy/incomplete/sparse experimental datasets and also to overcome the overfitting limitation, this study proposed an optimized PINN framework with an R2-L2 coupled training strategy. The results showed that even under highly sparse conditions (6 time intervals with 15 spatial points each), incomplete datasets (excluding unreliable near-surface measurements within 0–4 mm), and experimental noise up to 10%, the optimized R2-L2 PINN can still achieve accurate prediction of concentration and time-varying diffusion coefficients. Its effectiveness and stability were repeatedly verified through ablation experiments, repeated random-seed tests, and external dataset validation. Furthermore, AI-assisted code development was investigated to facilitate cross-disciplinary application, proving the strength of DeepSeek in code generation and dataset-format handling. In conclusion, this study advanced the practical applicability of PINN-based modeling and realized the balance of predictive accuracy and model robustness under imperfect data conditions.",
+        "doi": "10.1016/j.asoc.2026.116354",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1568494626018028",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1568494626018028"
+        ],
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PD.bib",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/applied-soft-computing-203-part-PD.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -212338,7 +213184,25 @@
         "registered_at": "2026-11-14T02:55:21Z",
         "data_scope": "2026已登记当前全集的快照后增量补采，非原始快照记录"
       },
-      "metadata_verification_status": "Crossref出版方登记元数据补采；正式文献类型及官网/PDF仍待核验。"
+      "metadata_verification_status": "Crossref出版方登记元数据补采；正式文献类型及官网/PDF仍待核验。",
+      "verified_metadata": {
+        "abstract": "Collective behaviors, such as those observed in bird flocks and fish schools, exhibit highly coordinated, self-organized motion. Predicting their trajectories is crucial for understanding collective intelligence and guiding unmanned systems. Existing methods face limitations, as traditional mechanism models rely on oversimplified assumptions and generalize poorly, while purely data-driven models lack interpretability and struggle to adapt to unseen behaviors. Here, we propose a physics-informed decomposition linear neural network (PI-DLinear). By treating the physical parameters in the classic Cucker-Smale model as learnable variables, our framework implements a dynamic physics-constraining module that adapts to underlying interaction mechanisms across diverse collective behaviors. Evaluated on multiple real-world biological datasets (including jackdaw and fish), PI-DLinear significantly improves prediction accuracy within each collective behavior and consistently enhances zero-shot cross-behavior transfer relative to the architecture-matched DLinear baseline, while also demonstrating robustness in small-sample and noisy conditions. By integrating interpretable physical equations with neural networks, our work establishes a paradigm for trajectory prediction that combines interpretability with data-driven flexibility, with promising applications in biological behavior analysis and multi-agent cooperative control.",
+        "doi": "10.1007/s11432-026-5236-2",
+        "url": "https://link.springer.com/article/10.1007/s11432-026-5236-2",
+        "evidence_urls": [
+          "https://link.springer.com/article/10.1007/s11432-026-5236-2"
+        ],
+        "abstract_source": "publisher_article_abstract",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/s11432-026-5236-2.html.gz",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/s11432-026-5236-2.html.gz",
+        "match": "exact citation_doi and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -212417,7 +213281,27 @@
         "registered_at": "2026-11-12T08:35:43Z",
         "data_scope": "2026已登记当前全集的快照后增量补采，非原始快照记录"
       },
-      "metadata_verification_status": "Crossref出版方登记元数据补采；正式文献类型及官网/PDF仍待核验。"
+      "metadata_verification_status": "Crossref出版方登记元数据补采；正式文献类型及官网/PDF仍待核验。",
+      "verified_metadata": {
+        "abstract": "In recent years, the increasing adoption of distributed sensing systems and Internet of Things (IoT) technologies has enabled denser monitoring infrastructures in industrial and safety-critical environments. In this context, sensor placement in hydrogen transport networks represents a combinatorial optimization problem that affects the information available for anomaly monitoring while being subject to deployment constraints. To address this problem, we propose a formulation based on Quadratic Unconstrained Binary Optimization (QUBO), in which the energy function is constructed from changes in the reconstruction loss of a neural autoencoder. These changes are measured when individual pressure sensors or sensor pairs are added to a fixed set of mass-flow sensors. Individual and pairwise terms encode measured sensor effects in the quadratic objective. The number of selected sensors is controlled through an energy penalty that discourages configurations whose cardinality deviates from a predefined target, rather than through a hard constraint. The resulting QUBO is mapped to the Quantum Approximate Optimization Algorithm (QAOA) using a variational quantum circuit with alternating cost and mixer layers. Its parameters are optimized through evolutionary search followed by local refinement via a memetic strategy. The experimental analysis compares this approach with classical and exact methods on the same QUBO and examines how faithfully the pairwise objective represents larger sensor configurations and downstream anomaly-detection outcomes. At a target of five pressure sensors, QAOA returned cardinality-feasible configurations in 7/25, 16/25, and 14/25 runs for Gestdown, Gestcenter, and Gestup, respectively, compared with 25/25 runs for each classical baseline in all three topologies.",
+        "doi": "10.1016/j.asoc.2026.116828",
+        "url": "https://doi.org/10.1016/j.asoc.2026.116828",
+        "evidence_urls": [
+          "https://openalex.org/W7225854853",
+          "https://api.openalex.org/works?filter=doi%3Ahttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136498%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136501%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136526%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136505%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136631%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136647%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136655%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136689%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136717%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.trechm.2025.10.011%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.138998%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.139154%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.139188%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.139255%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.139304%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.139358%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.139390%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.139411%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.139471%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.139631%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.139913%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.139953%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140010%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140032%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.139947%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140312%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140326%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140409%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140486%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140519%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140668%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140704%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140737%7Chttps%3A%2F%2Fdoi.org%2F10.1007%2Fs11432-026-5229-7%7Chttps%3A%2F%2Fdoi.org%2F10.1007%2Fs11432-026-5236-2%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.asoc.2026.116828%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.asoc.2026.116829%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.cub.2026.10.007%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.matdes.2026.117487%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.matdes.2026.117538&per-page=100&select=id%2Cdoi%2Ctitle%2Cabstract_inverted_index%2Cprimary_location",
+          "https://doi.org/10.1016/j.asoc.2026.116828"
+        ],
+        "abstract_source": "OpenAlex abstract_inverted_index (publisher unavailable)",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/openalex-10.json",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/openalex-10.json",
+        "match": "exact DOI and normalized complete title; complete contiguous inverted-index reconstruction",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -212667,7 +213551,26 @@
         "registered_at": "2026-11-16T15:54:11Z",
         "data_scope": "2026已登记当前全集的快照后增量补采，非原始快照记录"
       },
-      "metadata_verification_status": "Crossref出版方登记元数据补采；正式文献类型及官网/PDF仍待核验。"
+      "metadata_verification_status": "Crossref出版方登记元数据补采；正式文献类型及官网/PDF仍待核验。",
+      "verified_metadata": {
+        "abstract": "How does the brain give rise to human capabilities like language processing or logical reasoning? This question has captured the minds of many cognitive scientists and neuroscientists, and indeed has a history dating back at least as far as the philosophers of ancient Greece. Until recently, humans were the only systems that we knew of that showed these capacities across broad domains. But after recent developments in the field of artificial intelligence, language models have begun to show some surprising parallels to complex cognitive capacities and the neural representations that underpin them - despite the architectures and learning paradigms of these models differing dramatically from biological systems. In this primer, I will provide a brief overview of language models, their construction and training, and the phenomena of natural intelligence that they might help us to understand. First, let us begin with a bit of history.",
+        "doi": "10.1016/j.cub.2026.10.007",
+        "url": "https://doi.org/10.1016/j.cub.2026.10.007",
+        "evidence_urls": [
+          "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1016%2Fj.snb.2026.139913%22+OR+DOI%3A%2210.1016%2Fj.snb.2026.139953%22+OR+DOI%3A%2210.1016%2Fj.snb.2026.140010%22+OR+DOI%3A%2210.1016%2Fj.snb.2026.140032%22+OR+DOI%3A%2210.1016%2Fj.snb.2026.139947%22+OR+DOI%3A%2210.1016%2Fj.snb.2026.140312%22+OR+DOI%3A%2210.1016%2Fj.snb.2026.140326%22+OR+DOI%3A%2210.1016%2Fj.snb.2026.140409%22+OR+DOI%3A%2210.1016%2Fj.snb.2026.140486%22+OR+DOI%3A%2210.1016%2Fj.snb.2026.140519%22+OR+DOI%3A%2210.1016%2Fj.snb.2026.140668%22+OR+DOI%3A%2210.1016%2Fj.snb.2026.140704%22+OR+DOI%3A%2210.1016%2Fj.snb.2026.140737%22+OR+DOI%3A%2210.1007%2Fs11432-026-5229-7%22+OR+DOI%3A%2210.1007%2Fs11432-026-5236-2%22+OR+DOI%3A%2210.1016%2Fj.asoc.2026.116828%22+OR+DOI%3A%2210.1016%2Fj.asoc.2026.116829%22+OR+DOI%3A%2210.1016%2Fj.cub.2026.10.007%22+OR+DOI%3A%2210.1016%2Fj.matdes.2026.117487%22+OR+DOI%3A%2210.1016%2Fj.matdes.2026.117538%22&resultType=core&format=json&pageSize=1000",
+          "https://doi.org/10.1016/j.cub.2026.10.007"
+        ],
+        "abstract_source": "Europe PMC indexed abstract",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/europepmc-20.json",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/europepmc-20.json",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -212761,7 +213664,27 @@
         "registered_at": "2026-11-14T16:40:13Z",
         "data_scope": "2026已登记当前全集的快照后增量补采，非原始快照记录"
       },
-      "metadata_verification_status": "Crossref出版方登记元数据补采；正式文献类型及官网/PDF仍待核验。"
+      "metadata_verification_status": "Crossref出版方登记元数据补采；正式文献类型及官网/PDF仍待核验。",
+      "verified_metadata": {
+        "abstract": "Chemotherapy scheduling must balance tumour control against immune toxicity when patient parameters are uncertain. We study a five-compartment model of cancer stem cells, differentiated tumour cells, effector immune cells, a tumour-derived angiogenic factor and a cytotoxic drug. We prove well-posedness and that the tumour-free state is locally stable for every constant infusion rate; numerically the system is bistable, so cure requires crossing a separatrix, a property lost when blood-vessel support is partly host derived. Global sensitivity analysis shows that drug elimination and stem-cell parameters govern treatment outcome. We train a physics-informed neural network as a one-step propagator with a structure-preserving increment bound (held-out ) and use it as the environment of a deep reinforcement learning agent. At nominal parameters the learned closed-loop policy (median objective over five seeds) is comparable to an optimised open-loop schedule ( ) and better than a tuned Pontryagin schedule ( ). With error in all parameters it eradicates the model tumour in of cases, against and , by adapting the total dose to the parameters that govern outcome, at the cost of more toxicity events ( against at most ). These are model-based findings that require experimental validation.",
+        "doi": "10.1016/j.matdes.2026.117487",
+        "url": "https://doi.org/10.1016/j.matdes.2026.117487",
+        "evidence_urls": [
+          "https://openalex.org/W7230603590",
+          "https://api.openalex.org/works?filter=doi%3Ahttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136498%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136501%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136526%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136505%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136631%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136647%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136655%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136689%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136717%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.trechm.2025.10.011%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.138998%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.139154%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.139188%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.139255%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.139304%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.139358%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.139390%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.139411%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.139471%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.139631%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.139913%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.139953%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140010%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140032%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.139947%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140312%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140326%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140409%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140486%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140519%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140668%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140704%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140737%7Chttps%3A%2F%2Fdoi.org%2F10.1007%2Fs11432-026-5229-7%7Chttps%3A%2F%2Fdoi.org%2F10.1007%2Fs11432-026-5236-2%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.asoc.2026.116828%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.asoc.2026.116829%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.cub.2026.10.007%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.matdes.2026.117487%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.matdes.2026.117538&per-page=100&select=id%2Cdoi%2Ctitle%2Cabstract_inverted_index%2Cprimary_location",
+          "https://doi.org/10.1016/j.matdes.2026.117487"
+        ],
+        "abstract_source": "OpenAlex abstract_inverted_index (publisher unavailable)",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/openalex-10.json",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/openalex-10.json",
+        "match": "exact DOI and normalized complete title; complete contiguous inverted-index reconstruction",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -212847,7 +213770,27 @@
         "registered_at": "2026-11-15T00:01:24Z",
         "data_scope": "2026已登记当前全集的快照后增量补采，非原始快照记录"
       },
-      "metadata_verification_status": "Crossref出版方登记元数据补采；正式文献类型及官网/PDF仍待核验。"
+      "metadata_verification_status": "Crossref出版方登记元数据补采；正式文献类型及官网/PDF仍待核验。",
+      "verified_metadata": {
+        "abstract": "Accurate recognition of weld states is essential for ensuring structural integrity in cold metal transfer (CMT) welding. However, it remains challenging to develop models that are both robust to industrial disturbances and physically interpretable. In addition, the inherent opacity of current data-driven methods often limits their reliability in complex manufacturing environments. This study proposes ASPIS-Net, a robust physics-informed network for interpretable CMT weld-state monitoring. The proposed network adopts a dual-branch architecture with an adaptive gated fusion mechanism, which dynamically suppresses environmental noise while preserving critical acoustic and electrical features. To improve model transparency, a symbolic regression framework is further introduced to convert the learned representations into explicit physical equations, thereby aligning deep-learning predictions with the underlying welding thermodynamics. The proposed method was validated using an automated CMT welding platform, from which 5,000 synchronised acoustic and electrical signal samples were collected under four typical penetration states. The results show that ASPIS-Net achieves a classification accuracy of 99.36% and retains a Macro-F1 score of 75.59% under the 0 dB composite-noise condition. This work provides a transparent, physics-guided approach for monitoring multi-physics manufacturing processes, establishing a rational basis for assessing structural reliability in critical welded joints.",
+        "doi": "10.1016/j.matdes.2026.117538",
+        "url": "https://doi.org/10.1016/j.matdes.2026.117538",
+        "evidence_urls": [
+          "https://openalex.org/W7230039742",
+          "https://api.openalex.org/works?filter=doi%3Ahttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136498%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136501%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136526%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136505%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136631%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136647%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136655%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136689%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.jhydrol.2026.136717%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.trechm.2025.10.011%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.138998%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.139154%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.139188%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.139255%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.139304%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.139358%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.139390%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2025.139411%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.139471%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.139631%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.139913%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.139953%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140010%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140032%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.139947%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140312%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140326%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140409%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140486%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140519%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140668%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140704%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.snb.2026.140737%7Chttps%3A%2F%2Fdoi.org%2F10.1007%2Fs11432-026-5229-7%7Chttps%3A%2F%2Fdoi.org%2F10.1007%2Fs11432-026-5236-2%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.asoc.2026.116828%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.asoc.2026.116829%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.cub.2026.10.007%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.matdes.2026.117487%7Chttps%3A%2F%2Fdoi.org%2F10.1016%2Fj.matdes.2026.117538&per-page=100&select=id%2Cdoi%2Ctitle%2Cabstract_inverted_index%2Cprimary_location",
+          "https://doi.org/10.1016/j.matdes.2026.117538"
+        ],
+        "abstract_source": "OpenAlex abstract_inverted_index (publisher unavailable)",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/openalex-10.json",
+        "abstract_retrieved_at": "2026-11-17"
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/abstract-recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-20261117/openalex-10.json",
+        "match": "exact DOI and normalized complete title; complete contiguous inverted-index reconstruction",
+        "content_review_performed": false
+      }
     }
   },
   {
