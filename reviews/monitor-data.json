@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-17T18:30:59.697129+00:00",
-  "commit": "80c2ac9fd99c9bcde81675703474810b167f95d0",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/80c2ac9fd99c9bcde81675703474810b167f95d0/",
+  "generated_at": "2026-11-17T18:59:22.091406+00:00",
+  "commit": "b4dfa6c62dad6d5f2f8ef6a4e77b102d4089a510",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/b4dfa6c62dad6d5f2f8ef6a4e77b102d4089a510/",
   "years": [
     {
       "year": 2024,
@@ -26219,18 +26219,18 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-17T10:27:33-08:00",
+            "at": "2026-11-17T10:56:36-08:00",
             "author": "h10",
-            "subject": "review: reconcile TEAC volumes and recover missing paper and AI candidate",
+            "subject": "review: resolve Energy Reviews evidence gaps and recover TEAC AI review",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
+              "metadata/j-1eb350782d/2026/official-scope-audit-lixueting.json",
               "metadata/j-c94b3260f2/2026/ai4s.json",
-              "metadata/j-c94b3260f2/2026/official-scope-audit-lixueting.json",
-              "metadata/j-c94b3260f2/2026/papers.json"
+              "metadata/j-c94b3260f2/2026/official-scope-audit-lixueting.json"
             ]
           },
-          "commits_7d": 54
+          "commits_7d": 55
         },
         {
           "owner": "丁利军",
@@ -46836,18 +46836,18 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-17T10:27:33-08:00",
+            "at": "2026-11-17T10:56:36-08:00",
             "author": "h10",
-            "subject": "review: reconcile TEAC volumes and recover missing paper and AI candidate",
+            "subject": "review: resolve Energy Reviews evidence gaps and recover TEAC AI review",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
+              "metadata/j-1eb350782d/2026/official-scope-audit-lixueting.json",
               "metadata/j-c94b3260f2/2026/ai4s.json",
-              "metadata/j-c94b3260f2/2026/official-scope-audit-lixueting.json",
-              "metadata/j-c94b3260f2/2026/papers.json"
+              "metadata/j-c94b3260f2/2026/official-scope-audit-lixueting.json"
             ]
           },
-          "commits_7d": 54
+          "commits_7d": 55
         },
         {
           "owner": "郝卓迪",
@@ -50845,7 +50845,7 @@
           "official_total": 25,
           "official_scope": "固定截止前已正式公布卷5第1—4期的final/fully citable文章；第4期虽in progress但六篇已在截止前上线且归期，非Articles in Press。",
           "reference_check": null,
-          "coverage_note": "沿用batch21已核官网四期25个唯一PII（5+7+7+6），原25采集完全匹配，无补采，21 Review article、4 Mini/Short review。第4期明确final/fully citable、六篇均在固定截止前上线，不按12月封面误排。batch21取得12个单篇官网元数据，另13页当时CPE00002；本轮单独补到100176完整原摘要及citation，累计13篇官网记录核实，其余DOI仍按原采集与官方PII关联。9候选现4纳入5待定，2条新增核查线索已在batch21入候选；输入摘要均非空，官网原摘要未补验数由2降1（100193）。16非候选未伪称全文已读。官网原摘要充分的4纳入不因PDF留空重列科学pending。",
+          "coverage_note": "沿用batch21已核官网四期25个唯一PII（5+7+7+6）及21 Review article/4 Mini-Short review分列，原25采集完全匹配，无补采。第4期虽In progress但final/fully citable、上线早于固定截止，非Articles in Press。batch24正常浏览器等待开放正文异步加载后取得5篇待定的官方原摘要和关键正文：100193/100207/100215/100204实质AI方法与案例纳入，100214仅未来ML愿景排除。连同既有4纳入，9候选现8纳入1排除，无科学pending或召回队列，候选摘要均非空且官网原摘要未核数清零。累计14个唯一单篇官网citation记录已核，其余11个DOI仍保留原采集按官网PII关联，不冒充全部25单篇元数据已读。16非候选沿用现有证据核查，不伪称全文全读。公开PDF未下载验签留空，HTML/原摘要足以支持判定，不单因PDF为空制造科学pending。",
           "evidence_urls": [
             "https://www.sciencedirect.com/journal/energy-reviews/issues",
             "https://www.sciencedirect.com/journal/energy-reviews/vol/5/issue/1",
@@ -50854,29 +50854,21 @@
             "https://www.sciencedirect.com/journal/energy-reviews/vol/5/issue/4"
           ],
           "decisions": {
-            "include": 4,
-            "exclude": 0,
-            "pending": 5,
+            "include": 8,
+            "exclude": 1,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "100193的官网原摘要及必要AI方法段落仍需核实；原先受403及浏览器CPE00002阻挡，已请求人工核验未答复。100176本轮官网恢复后已取得原摘要并纳入，不再作为问题。",
-            "100207、100215、100204、100214须合法正文辨别具体AI模型/科学任务或实质综述，不能仅凭AI字样、平台数字化或未来愿景纳入。",
-            "4篇纳入的公开PDF尚未验签留空；原摘要已足以支持相关判断，不单因PDF未得列科学pending。",
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "先读本聊天人工核验答复；能人工则补上述6篇原摘要/相关正文，确认无法人工后再使用合法可靠替代来源。",
-            "无答复时保留已核四期目录与9篇判断，不反复请求受阻页面；继续其他来源的官方核验。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2026/zch66883-lixueting.json",
             "reviews/2026/feedback/zch66883-lixueting.json"
           ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": 4,
+          "final_included": 8,
           "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
@@ -59441,12 +59433,12 @@
           "papers": 33,
           "papers_missing_abstract": 26,
           "snapshot_candidates": 2,
-          "candidates": 3,
+          "candidates": 4,
           "missing_abstract": 0,
           "official_total": 34,
           "official_scope": "截至固定首次截止已公布2026卷49、50、51和52共34条正式Review article（12+8+7+7）；卷52封面12月且In progress，但明示所含文章final and fully citable，逐篇上线2026-09-09至11-05均早于截止。非Articles in Press。",
           "reference_check": null,
-          "coverage_note": "官网四卷34个唯一PII与原33条逐项对账，补采1条e00323（官网2026-11-05上线、卷52），现来源全量34条无缺漏/额外项。全部34条官网原摘要已核现有AI线索，未要求对非候选补摘要统计。初始2候选加1漏筛e00297，当前3候选摘要均非空，2纳入1排除。另4条AI/ML展望或应用线索留召回核查队列，不能以候选耗尽标来源完成；官网10个单篇citation记录已核（卷52七篇及三篇正式审核），其余DOI由原采集按官网PII关联，不冒充已逐篇查citation。年度原始汇总为既有LFS指针，保持原快照不重建，补采保存在本人来源papers及逐项审计；年度候选追加1条并保留全部既有对象。",
+          "coverage_note": "官网四卷34个唯一PII与原33条逐项对账，补采1条e00323（官网2026-11-05上线、卷52），现来源全量34条无缺漏/额外项。全部34条官网原摘要已核现有AI线索，未要求对非候选补摘要统计。初始2候选加1漏筛e00297，当前3候选摘要均非空，2纳入1排除。另4条AI/ML展望或应用线索留召回核查队列，不能以候选耗尽标来源完成；官网10个单篇citation记录已核（卷52七篇及三篇正式审核），其余DOI由原采集按官网PII关联，不冒充已逐篇查citation。年度原始汇总为既有LFS指针，保持原快照不重建，补采保存在本人来源papers及逐项审计；年度候选追加1条并保留全部既有对象。 batch24补核e00312/e00313/e00316的官网原摘要及公开预览；e00316的AI检测作用已确认，恢复1漏筛并补原摘要，候选现4篇（3纳入1排除），原始采集34条及审核原字段不动，新增候选metadata用abstract_backfill留原null。剩余3条召回须订阅正文/人工补核，尚非正式候选；不标来源完成。",
           "evidence_urls": [
             "https://www.sciencedirect.com/journal/trends-in-environmental-analytical-chemistry/issues",
             "https://www.sciencedirect.com/journal/trends-in-environmental-analytical-chemistry/vol/49/suppl/C",
@@ -59455,17 +59447,18 @@
             "https://www.sciencedirect.com/journal/trends-in-environmental-analytical-chemistry/vol/52/suppl/C"
           ],
           "decisions": {
-            "include": 2,
+            "include": 3,
             "exclude": 1,
             "pending": 0,
             "unreviewed": 0
           },
           "issues": [
-            "e00312、e00313、e00316、e00317共4条召回线索仍需合法正文区分实质AI应用/方法综述与未来愿景，尚未计入正式审核候选或完成集。",
+            "e00312、e00313、e00317共3条召回线索仍需合法正文辨别具体AI方法/案例与仅未来愿景。官网正常浏览器仅提供原摘要、Introduction和Section snippets，正文为订阅访问；已请求负责人人工核验，尚未答复，不清空队列。",
             "采集状态尚未完成：abstract_incomplete"
           ],
           "actions": [
-            "优先续核4条召回线索，官网可正常访问时直接获取公开预览/作者合法全文；若需人工按skill顺序处理，不能未核标完成。",
+            "等待这3篇AI相关正文或人工结论；用户确认无法人工时再按skill使用可靠替代资料；有官网/作者合法公开正文恢复可直接核。",
+            "待上述证据期间继续Agriculture Communications（j-1990fab752，38 raw、7初始候选），不重做TEAC已核四卷34 PII目录。",
             "检查采集状态与失败日志，必要时补采。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
@@ -59474,7 +59467,7 @@
             "reviews/2026/feedback/zch66883-lixueting.json"
           ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": 2,
+          "final_included": 3,
           "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
@@ -69426,22 +69419,22 @@
           "sources": 51,
           "delivered": 21,
           "official": 20,
-          "pending": 15,
-          "open_issues": 42,
+          "pending": 10,
+          "open_issues": 41,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-17T10:27:33-08:00",
+            "at": "2026-11-17T10:56:36-08:00",
             "author": "h10",
-            "subject": "review: reconcile TEAC volumes and recover missing paper and AI candidate",
+            "subject": "review: resolve Energy Reviews evidence gaps and recover TEAC AI review",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
+              "metadata/j-1eb350782d/2026/official-scope-audit-lixueting.json",
               "metadata/j-c94b3260f2/2026/ai4s.json",
-              "metadata/j-c94b3260f2/2026/official-scope-audit-lixueting.json",
-              "metadata/j-c94b3260f2/2026/papers.json"
+              "metadata/j-c94b3260f2/2026/official-scope-audit-lixueting.json"
             ]
           },
-          "commits_7d": 54
+          "commits_7d": 55
         },
         {
           "owner": "郝卓迪",
@@ -69771,8 +69764,8 @@
           "sources": 51,
           "delivered": 21,
           "official": 20,
-          "pending": 15,
-          "open_issues": 42,
+          "pending": 10,
+          "open_issues": 41,
           "status": "in_progress"
         }
       },
@@ -69782,18 +69775,18 @@
         "2025"
       ],
       "last_update": {
-        "at": "2026-11-17T10:27:33-08:00",
+        "at": "2026-11-17T10:56:36-08:00",
         "author": "h10",
-        "subject": "review: reconcile TEAC volumes and recover missing paper and AI candidate",
+        "subject": "review: resolve Energy Reviews evidence gaps and recover TEAC AI review",
         "area": "reviews",
         "paths": [
           "metadata/2026/ai4s.json",
+          "metadata/j-1eb350782d/2026/official-scope-audit-lixueting.json",
           "metadata/j-c94b3260f2/2026/ai4s.json",
-          "metadata/j-c94b3260f2/2026/official-scope-audit-lixueting.json",
-          "metadata/j-c94b3260f2/2026/papers.json"
+          "metadata/j-c94b3260f2/2026/official-scope-audit-lixueting.json"
         ]
       },
-      "commits_7d": 54
+      "commits_7d": 55
     },
     {
       "owner": "龙兆科",
@@ -69977,9 +69970,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-17T18:30:30.350319+00:00",
+    "generated_at": "2026-11-17T18:58:41.918998+00:00",
     "history_available": true,
-    "commit": "80c2ac9fd99c9bcde81675703474810b167f95d0",
-    "commits_scanned": 851
+    "commit": "b4dfa6c62dad6d5f2f8ef6a4e77b102d4089a510",
+    "commits_scanned": 853
   }
 }
