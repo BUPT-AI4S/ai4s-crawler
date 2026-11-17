@@ -1,0 +1,254 @@
+[
+  {
+    "id": "TS8HoIWAPQ",
+    "index": 64,
+    "title": "Feature-aligned N-BEATS with Sinkhorn divergence",
+    "original_input_abstract": "We propose Feature-aligned N-BEATS as a domain-generalized time series forecasting model. It is a nontrivial extension of N-BEATS with doubly residual stacking principle (Oreshkin et al. [45]) into a representation learning framework. In particular, it revolves around marginal feature probability measures induced by the intricate composition of residual and feature extracting operators of N-BEATS in each stack and aligns them stack-wise via an approximate of an optimal transport distance referred to as the Sinkhorn divergence. The training loss consists of an empirical risk minimization from multiple source domains, i.e., forecasting loss, and an alignment loss calculated with the Sinkhorn divergence, which allows the model to learn invariant features stack-wise across multiple source data sequences while retaining N-BEATS’s interpretable design and forecasting power. Comprehensive experimental evaluations with ablation studies are provided and the corresponding results demonstrate the proposed model’s forecasting and generalization capabilities.",
+    "abstract_sha256": "c59905f0318dbfa2099d7139576e5a40513aa18873bad72697a4493eaaf2ec78",
+    "decision": "exclude",
+    "rationale": "通用领域泛化时序表征与预测模型，摘要仅报告模型基准性能，没有明确科学或工程对象。"
+  },
+  {
+    "id": "ltZ9ianMth",
+    "index": 146,
+    "title": "RobustTSF: Towards Theory and Design of Robust Time Series Forecasting with Anomalies",
+    "original_input_abstract": "Time series forecasting is an important and forefront task whose techniques have been applied to electricity forecasting, trajectory prediction, labor planning, etc. However, most of time series forecasting techniques assume that the training data is clean without anomalies. This assumption is unrealistic since the collected time series data can be contaminated in practice. The forecasting model will be inferior if it is directly trained by time series with anomalies. Thus it is essential to develop methods to automatically learn a robust forecasting model from the contaminated data. In this paper, we first statistically define three types of anomalies, then theoretically and experimentally analyze the loss robustness and sample robustness when these anomalies exist. Based on our analyses, we propose a simple and efficient algorithm to learn a robust forecasting model. Extensive experiments show that our method is highly robust and outperforms all existing approaches. The code is available at https://github.com/haochenglouis/RobustTSF.",
+    "abstract_sha256": "c2a5e2e43e9fb300268b7bb0dfce9cee2f412179999011494775b886f9129ff8",
+    "decision": "exclude",
+    "rationale": "通用异常鲁棒时序理论与算法，电力等仅列为应用背景，摘要未形成具体工程研究任务。"
+  },
+  {
+    "id": "K2c04ulKXn",
+    "index": 278,
+    "title": "Towards Enhancing Time Series Contrastive Learning: A Dynamic Bad Pair Mining Approach",
+    "original_input_abstract": "*Not all positive pairs are beneficial to time series contrastive learning*. In this paper, we study two types of bad positive pairs that can impair the quality of time series representation learned through contrastive learning: the noisy positive pair and the faulty positive pair. We observe that, with the presence of noisy positive pairs, the model tends to simply learn the pattern of noise (Noisy Alignment). Meanwhile, when faulty positive pairs arise, the model wastes considerable amount of effort aligning non-representative patterns (Faulty Alignment). To address this problem, we propose a Dynamic Bad Pair Mining (DBPM) algorithm, which reliably identifies and suppresses bad positive pairs in time series contrastive learning. Specifically, DBPM utilizes a memory module to dynamically track the training behavior of each positive pair along training process. This allows us to identify potential bad positive pairs at each epoch based on their historical training behaviors. The identified bad pairs are subsequently down-weighted through a transformation module, thereby mitigating their negative impact on the representation learning process. DBPM is a simple algorithm designed as a lightweight **plug-in** without learnable parameters to enhance the performance of existing state-of-the-art methods. Through extensive experiments conducted on four large-scale, real-world time series datasets, we demonstrate DBPM's efficacy in mitigating the adverse effects of bad positive pairs.",
+    "abstract_sha256": "63feaabcc0fb402b085f15a428fd974731807d8b2f808c44a28a6dc7eba96ec1",
+    "decision": "exclude",
+    "rationale": "通用时序对比学习坏样本对挖掘，摘要仅基准验证，无明确领域科学任务。"
+  },
+  {
+    "id": "lJkOCMP2aW",
+    "index": 283,
+    "title": "Pathformer: Multi-scale Transformers with Adaptive Pathways for Time Series Forecasting",
+    "original_input_abstract": "Transformers for time series forecasting mainly model time series from limited or fixed scales, making it challenging to capture different characteristics spanning various scales. We propose Pathformer, a multi-scale Transformer with adaptive pathways. It integrates both temporal resolution and temporal distance for multi-scale modeling. Multi-scale division divides the time series into different temporal resolutions using patches of various sizes. Based on the division of each scale, dual attention is performed over these patches to capture global correlations and local details as temporal dependencies. We further enrich the multi-scale Transformer with adaptive pathways, which adaptively adjust the multi-scale modeling process based on the varying temporal dynamics of the input, improving the accuracy and generalization of Pathformer. Extensive experiments on eleven real-world datasets demonstrate that Pathformer not only achieves state-of-the-art performance by surpassing all current models but also exhibits stronger generalization abilities under various transfer scenarios. The code is made available at https://github.com/decisionintelligence/pathformer.",
+    "abstract_sha256": "cfbe75cb7178a149872d3343d86833ae97e4b1468da7f9cd33140af9c716fa5a",
+    "decision": "exclude",
+    "rationale": "Pathformer通用多尺度时序架构及迁移基准，未说明具体科学任务。"
+  },
+  {
+    "id": "c56TWtYp0W",
+    "index": 289,
+    "title": "GAFormer: Enhancing Timeseries Transformers Through Group-Aware Embeddings",
+    "original_input_abstract": "Analyzing multivariate time series is important in many domains. However, it has been difficult to learn robust and generalizable representations within multivariate datasets due to complex inter-channel relationships and dynamic shifts. In this paper, we introduce a novel approach for learning spatiotemporal structure and using it to improve the application of transformers to timeseries datasets. Our framework learns a set of group tokens, and builds an instance-specific group embedding (GE) layer that assigns input tokens to a small number of group tokens to incorporate structure into learning. We then introduce a novel architecture, Group-Aware transFormer (GAFormer), which incorporates both spatial and temporal group embeddings to achieve state-of-the-art performance on a number of time-series classification and regression tasks. In evaluations on a number of diverse timeseries datasets, we show that GE on its own can provide a nice enhancement to a number of backbones, and that by coupling spatial and temporal group embeddings, the GAFormer can outperform the existing baselines. Finally, we show how our approach discerns latent structures in data even without information about the spatial ordering of channels, and yields a more interpretable decomposition of spatial and temporal structure underlying complex multivariate datasets.",
+    "abstract_sha256": "dfde55b5ab3266bb74f138df658af12dd208e1e79bd3b25aa1c517c0711b3e5b",
+    "decision": "exclude",
+    "rationale": "通用多变量时序分组表征与Transformer分类回归，摘要未形成领域科学或工程任务。"
+  },
+  {
+    "id": "YH5w12OUuU",
+    "index": 511,
+    "title": "TEMPO: Prompt-based Generative Pre-trained Transformer for Time Series Forecasting",
+    "original_input_abstract": "The past decade has witnessed significant advances in time series modeling with deep learning. While achieving state-of-the-art results, the best-performing architectures vary highly across applications and domains. Meanwhile, for natural language processing, the Generative Pre-trained Transformer (GPT) has demonstrated impressive performance via training one general-purpose model across various textual datasets. It is intriguing to explore whether GPT-type architectures can be effective for time series, capturing the intrinsic dynamic attributes and leading to significant accuracy improvements. In this paper, we propose a novel framework, TEMPO, that can effectively learn time series representations. We focus on utilizing two essential inductive biases of the time series task for pre-trained models: (i) decomposition of the complex interaction between trend, seasonal and residual components; and (ii) introducing the design of prompts to facilitate distribution adaptation in different types of time series. TEMPO expands the capability for dynamically modeling real-world temporal phenomena from data within diverse domains. Our experiments demonstrate the superior performance of TEMPO over state-of-the-art methods on zero shot setting for a number of time series benchmark datasets. This performance gain is observed not only in scenarios involving previously unseen datasets but also in scenarios with multi-modal inputs. This compelling finding highlights TEMPO's potential to constitute a foundational model-building framework.",
+    "abstract_sha256": "8515baf18f47baf61b73d88897876b7c3373f0289c5c3d2a034c7265f467dc0e",
+    "decision": "exclude",
+    "rationale": "通用提示预训练时序框架TEMPO，以基准与零样本泛化为贡献，未呈现具体科学对象。"
+  },
+  {
+    "id": "nBCuRzjqK7",
+    "index": 528,
+    "title": "Self-Supervised Contrastive Learning for Long-term Forecasting",
+    "original_input_abstract": "Long-term forecasting presents unique challenges due to the time and memory complexity of handling long sequences. Existing methods, which rely on sliding windows to process long sequences, struggle to effectively capture long-term variations that are partially caught within the short window (i.e., outer-window variations). In this paper, we introduce a novel approach that overcomes this limitation by employing contrastive learning and enhanced decomposition architecture, specifically designed to focus on long-term variations. To this end, our contrastive loss incorporates global autocorrelation held in the whole time series, which facilitates the construction of positive and negative pairs in a self-supervised manner. When combined with our decomposition networks, our constrative learning significantly improves long-term forecasting performance. Extensive experiments demonstrate that our approach outperforms 14 baseline models on well-established nine long-term benchmarks, especially in challenging scenarios that require a significantly long output for forecasting. This paper not only presents a novel direction for long-term forecasting but also offers a more reliable method for effectively integrating long-term variations into time-series representation learning.",
+    "abstract_sha256": "d33ff606c96d0286a08ccdc856171c8943521d4ae8370560b113c37d840faf79",
+    "decision": "exclude",
+    "rationale": "通用长期时序对比表征学习与基准提升，未呈现领域科学研究。"
+  },
+  {
+    "id": "xtOydkE1Ku",
+    "index": 630,
+    "title": "TACTiS-2: Better, Faster, Simpler Attentional Copulas for Multivariate Time Series",
+    "original_input_abstract": "We introduce a new model for multivariate probabilistic time series prediction, designed to flexibly address a range of tasks including forecasting, interpolation, and their combinations. Building on copula theory, we propose a simplified objective for the recently-introduced transformer-based attentional copulas (TACTiS), wherein the number of distributional parameters now scales linearly with the number of variables instead of factorially. The new objective requires the introduction of a training curriculum, which goes hand-in-hand with necessary changes to the original architecture. We show that the resulting model has significantly better training dynamics and achieves state-of-the-art performance across diverse real-world forecasting tasks, while maintaining the flexibility of prior work, such as seamless handling of unaligned and unevenly-sampled time series. Code is made available at https://github.com/ServiceNow/TACTiS.",
+    "abstract_sha256": "417f5ac6667afed1072e99666564ebf5335394c14ea6c8eaee7defcc175be469",
+    "decision": "exclude",
+    "rationale": "通用多变量时序Copula建模，强调架构训练及预测插值性能，无具体科学对象。"
+  },
+  {
+    "id": "Unb5CVPtae",
+    "index": 657,
+    "title": "Time-LLM: Time Series Forecasting by Reprogramming Large Language Models",
+    "original_input_abstract": "Time series forecasting holds significant importance in many real-world dynamic systems and has been extensively studied. Unlike natural language process (NLP) and computer vision (CV), where a single large model can tackle multiple tasks, models for time series forecasting are often specialized, necessitating distinct designs for different tasks and applications. While pre-trained foundation models have made impressive strides in NLP and CV, their development in time series domains has been constrained by data sparsity. Recent studies have revealed that large language models (LLMs) possess robust pattern recognition and reasoning abilities over complex sequences of tokens. However, the challenge remains in effectively aligning the modalities of time series data and natural language to leverage these capabilities. In this work, we present Time-LLM, a reprogramming framework to repurpose LLMs for general time series forecasting with the backbone language models kept intact. We begin by reprogramming the input time series with text prototypes before feeding it into the frozen LLM to align the two modalities. To augment the LLM's ability to reason with time series data, we propose Prompt-as-Prefix (PaP), which enriches the input context and directs the transformation of reprogrammed input patches. The transformed time series patches from the LLM are finally projected to obtain the forecasts. Our comprehensive evaluations demonstrate that \\method is a powerful time series learner that outperforms state-of-the-art, specialized forecasting models. Moreover, Time-LLM excels in both few-shot and zero-shot learning scenarios. The code is made available at https://github.com/KimMeen/Time-LLM.",
+    "abstract_sha256": "230aa7ae0443b27eceebfff181cd5054efe9b8d57759cb531f1b32307f301108",
+    "decision": "exclude",
+    "rationale": "将LLM重编程为通用时序预测器，摘要仅展示通用基准性能，未说明具体科学任务。"
+  },
+  {
+    "id": "aIok3ZD9to",
+    "index": 682,
+    "title": "LLMCarbon: Modeling the End-to-End Carbon Footprint of Large Language Models",
+    "original_input_abstract": "The carbon footprint associated with large language models (LLMs) is a significant concern, encompassing emissions from their training, inference, experimentation, and storage processes, including operational and embodied carbon emissions. An essential aspect is accurately estimating the carbon impact of emerging LLMs even before their training, which heavily relies on GPU usage. Existing studies have reported the carbon footprint of LLM training, but only one tool, mlco2, can predict the carbon footprint of new neural networks prior to physical training. However, mlco2 has several serious limitations. It cannot extend its estimation to dense or mixture-of-experts (MoE) LLMs, disregards critical architectural parameters, focuses solely on GPUs, and cannot model embodied carbon footprints. Addressing these gaps, we introduce \\textit{\\carb}, an end-to-end carbon footprint projection model designed for both dense and MoE LLMs. Compared to mlco2, \\carb~significantly enhances the accuracy of carbon footprint estimations for various LLMs. The source code is released at \\url{https://github.com/SotaroKaneda/MLCarbon}.",
+    "abstract_sha256": "176c578021df1648f3983cefb70cf09c1d010c6fba1053fdd66da0218cb77c6c",
+    "decision": "exclude",
+    "rationale": "用解析投影工具估计LLM碳足迹，但原摘要未说明AI实质参与碳排放建模；AI是核算对象，按本轮摘要口径排除。"
+  },
+  {
+    "id": "bWcnvZ3qMb",
+    "index": 724,
+    "title": "FITS: Modeling Time Series with $10k$ Parameters",
+    "original_input_abstract": "In this paper, we introduce FITS, a lightweight yet powerful model for time series analysis. Unlike existing models that directly process raw time-domain data, FITS operates on the principle that time series can be manipulated through interpolation in the complex frequency domain, achieving performance comparable to state-of-the-art models for time series forecasting and anomaly detection tasks. Notably, FITS accomplishes this with a svelte profile of just about $10k$ parameters, making it ideally suited for edge devices and paving the way for a wide range of applications. The code is available for review at: \\url{https://anonymous.4open.science/r/FITS}.",
+    "abstract_sha256": "0dc6ef216e3163cdfe42aa362a8c1ba3bc6166cb2c3dc7ef46b90d3185f6a426",
+    "decision": "exclude",
+    "rationale": "通用轻量时序频域插值模型与基准性能，无明确科学工程任务。"
+  },
+  {
+    "id": "yuy6cGt3KL",
+    "index": 732,
+    "title": "Empirical Analysis of Model Selection for Heterogeneous Causal Effect Estimation",
+    "original_input_abstract": "We study the problem of model selection in causal inference, specifically for conditional average treatment effect (CATE) estimation. Unlike machine learning, there is no perfect analogue of cross-validation for model selection as we do not observe the counterfactual potential outcomes. Towards this, a variety of surrogate metrics have been proposed for CATE model selection that use only observed data. However, we do not have a good understanding regarding their effectiveness due to limited comparisons in prior studies. We conduct an extensive empirical analysis to benchmark the surrogate model selection metrics introduced in the literature, as well as the novel ones introduced in this work. We ensure a fair comparison by tuning the hyperparameters associated with these metrics via AutoML, and provide more detailed trends by incorporating realistic datasets via generative modeling. Our analysis suggests novel model selection strategies based on careful hyperparameter selection of CATE estimators and causal ensembling.",
+    "abstract_sha256": "d15fcfd5e383ce58aef75fdffa04ea37e98e6c58e175f39c0046abe79e1093aa",
+    "decision": "exclude",
+    "rationale": "通用CATE模型选择评测与AutoML策略，原摘要未明确临床、自然科学或工程研究问题。"
+  },
+  {
+    "id": "30N3bNAiw3",
+    "index": 737,
+    "title": "Separating common from salient patterns with Contrastive Representation Learning",
+    "original_input_abstract": "Contrastive Analysis is a sub-field of Representation Learning that aims at separating 1) salient factors of variation - that only exist in the target dataset (i.e., diseased subjects) in contrast with 2) common factors of variation between target and background (i.e., healthy subjects) datasets. Despite their relevance, current models based on Variational Auto-Encoders have shown poor performance in learning semantically-expressive representations. On the other hand, Contrastive Representation Learning has shown tremendous performance leaps in various applications (classification, clustering, etc.). In this work, we propose to leverage the ability of Contrastive Learning to learn semantically expressive representations when performing Contrastive Analysis. Namely, we reformulate Contrastive Analysis under the lens of the InfoMax Principle and identify two Mutual Information terms to maximize and one to minimize. We decompose the two first terms into an Alignment and a Uniformity term, as commonly done in Contrastive Learning. Then, we motivate a novel Mutual Information minimization strategy to prevent information leakage between common and salient distributions. We validate our method on datasets designed to assess the pattern separation capability in Contrastive Analysis, including MNIST superimposed on CIFAR10, CelebA accessories, dSprites item superimposed on a digit grid, and three medical datasets.",
+    "abstract_sha256": "071b7e5f14cfa982398d5f1fba02b4104d032c9c20d4daa4cedaac1b644f6df3",
+    "decision": "exclude",
+    "rationale": "通用显著/共有因素对比表征学习，以合成、图像与三个医学数据集作性能演示，未明确医学科学问题及贡献。"
+  },
+  {
+    "id": "WS7GuBDFa2",
+    "index": 757,
+    "title": "Learning to Embed Time Series Patches Independently",
+    "original_input_abstract": "Masked time series modeling has recently gained much attention as a self-supervised representation learning strategy for time series. Inspired by masked image modeling in computer vision, recent works first patchify and partially mask out time series, and then train Transformers to capture the dependencies between patches by predicting masked patches from unmasked patches. However, we argue that capturing such patch dependencies might not be an optimal strategy for time series representation learning; rather, learning to embed patches independently results in better time series representations. Specifically, we propose to use 1) the simple patch reconstruction task, which autoencode each patch without looking at other patches, and 2) the simple patch-wise MLP that embeds each patch independently. In addition, we introduce complementary contrastive learning to hierarchically capture adjacent time series information efficiently. Our proposed method improves time series forecasting and classification performance compared to state-of-the-art Transformer-based models, while it is more efficient in terms of the number of parameters and training time. Code is available at this repository: https://github.com/seunghan96/pits.",
+    "abstract_sha256": "56a2980c04e2d23a116ef8333fd2a44366f33d396b3964e6904725663a6d8fcb",
+    "decision": "exclude",
+    "rationale": "通用时序独立片段编码与对比学习，未呈现具体科学或工程任务。"
+  },
+  {
+    "id": "vpJMJerXHU",
+    "index": 864,
+    "title": "ModernTCN: A Modern Pure Convolution Structure for General Time Series Analysis",
+    "original_input_abstract": "Recently, Transformer-based and MLP-based models have emerged rapidly and won dominance in time series analysis. In contrast, convolution is losing steam in time series tasks nowadays for inferior performance. This paper studies the open question of how to better use convolution in time series analysis and makes efforts to bring convolution back to the arena of time series analysis. To this end, we modernize the traditional TCN and conduct time series related modifications to make it more suitable for time series tasks. As the outcome, we propose ModernTCN and successfully solve this open question through a seldom-explored way in time series community. As a pure convolution structure, ModernTCN still achieves the consistent state-of-the-art performance on five mainstream time series analysis tasks while maintaining the efficiency advantage of convolution-based models, therefore providing a better balance of efficiency and performance than state-of-the-art Transformer-based and MLP-based models. Our study further reveals that, compared with previous convolution-based models, our ModernTCN has much larger effective receptive fields (ERFs), therefore can better unleash the potential of convolution in time series analysis. Code is available at this repository: https://github.com/luodhhh/ModernTCN.",
+    "abstract_sha256": "97934913c1da51d961957ef3f626bc322f650278fc3e85bd7dff06708abbea46",
+    "decision": "exclude",
+    "rationale": "通用卷积时序架构及五类基准性能，未明确领域科学研究对象。"
+  },
+  {
+    "id": "ojIJZDNIBj",
+    "index": 867,
+    "title": "Copula Conformal prediction for multi-step time series prediction",
+    "original_input_abstract": "Accurate uncertainty measurement is a key step in building robust and reliable machine learning systems. Conformal prediction is a distribution-free uncertainty quantification framework popular for its ease of implementation, finite-sample coverage guarantees, and generality for underlying prediction algorithms. However, existing conformal prediction approaches for time series are limited to single-step prediction without considering the temporal dependency. In this paper, we propose the Copula Conformal Prediction algorithm for multivariate, multi-step Time Series forecasting, CopulaCPTS. We prove that CopulaCPTS has finite-sample validity guarantee. On four synthetic and real-world multivariate time series datasets, we show that CopulaCPTS produces more calibrated and efficient confidence intervals for multi-step prediction tasks than existing techniques. Our code is open-sourced at https://github.com/Rose-STL-Lab/CopulaCPTS.",
+    "abstract_sha256": "59df7cacac136bd35336eaf973be1e9f144f68c8a824729d81edfeafdba47a40",
+    "decision": "exclude",
+    "rationale": "通用Copula保形预测理论与置信区间基准，未明确具体科学任务。"
+  },
+  {
+    "id": "O8ouVV8PjF",
+    "index": 966,
+    "title": "CNN Kernels Can Be the Best Shapelets",
+    "original_input_abstract": "Shapelets and CNN are two typical approaches to model time series. Shapelets aim at finding a set of sub-sequences that extract feature-based interpretable shapes, but may suffer from accuracy and efficiency issues. CNN performs well by encoding sequences with a series of hidden representations, but lacks interpretability. In this paper, we demonstrate that shapelets are essentially equivalent to a specific type of CNN kernel with a squared norm and pooling. Based on this finding, we propose ShapeConv, an interpretable CNN layer with its kernel serving as shapelets to conduct time-series modeling tasks in both supervised and unsupervised settings. By incorporating shaping regularization, we enforce the similarity for maximum interpretability. We also find human knowledge can be easily injected to ShapeConv by adjusting its initialization and model performance is boosted with it. Experiments show that ShapeConv can achieve state-of-the-art performance on time-series benchmarks without sacrificing interpretability and controllability.",
+    "abstract_sha256": "05cef1a7060784e9669fc83c9f6b3edd3d3ba8817ffcd713b4b13ed488cc23b3",
+    "decision": "exclude",
+    "rationale": "ShapeConv通用可解释时序分类层与基准验证，原摘要无具体科学任务。"
+  },
+  {
+    "id": "fUtxNAKpdV",
+    "index": 1023,
+    "title": "Nougat: Neural Optical Understanding for Academic Documents",
+    "original_input_abstract": "Scientific knowledge is predominantly stored in books and scientific journals, often in the form of PDFs. However, the PDF format leads to a loss of semantic information, particularly for mathematical expressions. We propose Nougat (Neural Optical Understanding for Academic Documents), a Visual Transformer model that performs an Optical Character Recognition (OCR) task for processing scientific documents into a markup language, and demonstrate the effectiveness of our model on a new dataset of scientific documents. The proposed approach offers a promising solution to enhance the accessibility of scientific knowledge in the digital age, by bridging the gap between human- readable documents and machine-readable text. We release the models and code to accelerate future work on scientific text recognition.",
+    "abstract_sha256": "4729afe60c6e91b47d24777b4080403af7907be5d7c8c5d9be85d01cee918765",
+    "decision": "exclude",
+    "rationale": "Nougat将学术PDF转换为标记文本，核心为通用文档OCR工具；原摘要未呈现明确的科学建模、实验分析或领域研究任务，按摘要口径排除。"
+  },
+  {
+    "id": "Tuh4nZVb0g",
+    "index": 1027,
+    "title": "TEST: Text Prototype Aligned Embedding to Activate LLM's Ability for Time Series",
+    "original_input_abstract": "This work summarizes two ways to accomplish Time-Series (TS) tasks in today's Large Language Model (LLM) context: LLM-for-TS (model-centric) designs and trains a fundamental large model, or fine-tunes a pre-trained LLM for TS data; TS-for-LLM (data-centric) converts TS into a model-friendly representation to enable the pre-trained LLM to handle TS data. Given the lack of data, limited resources, semantic context requirements, and so on, this work focuses on TS-for-LLM, where we aim to activate LLM's ability for TS data by designing a TS embedding method suitable for LLM. The proposed method is named TEST. It first tokenizes TS, builds an encoder to embed TS via instance-wise, feature-wise, and text-prototype-aligned contrast, where the TS embedding space is aligned to LLM’s embedding layer space, then creates soft prompts to make LLM more open to that embeddings, and finally implements TS tasks using the frozen LLM. We also demonstrate the feasibility of TS-for-LLM through theory and experiments. Experiments are carried out on TS classification, forecasting, and representation tasks using eight frozen LLMs with various structures and sizes. The results show that the pre-trained LLM with TEST strategy can achieve better or comparable performance than today's SOTA TS models, and offers benefits for few-shot and generalization. By treating LLM as the pattern machine, TEST can endow LLM's ability to process TS data without compromising language ability. We hope that this study will serve as a foundation for future work to support TS+LLM progress.",
+    "abstract_sha256": "f2dbfe9b1ec371dbeea170f3731a6f5612d2006380f2b964261517aa976d7883",
+    "decision": "exclude",
+    "rationale": "通用LLM时序嵌入、提示与表征任务，摘要仅模型能力评测，无明确科学对象。"
+  },
+  {
+    "id": "jsWCmrsHHs",
+    "index": 1231,
+    "title": "Deep Reinforcement Learning Guided Improvement Heuristic for Job Shop Scheduling",
+    "original_input_abstract": "Recent studies in using deep reinforcement learning (DRL) to solve Job-shop scheduling problems (JSSP) focus on construction heuristics. However, their performance is still far from optimality, mainly because the underlying graph representation scheme is unsuitable for modelling partial solutions at each construction step. This paper proposes a novel DRL-guided improvement heuristic for solving JSSP, where graph representation is employed to encode complete solutions. We design a Graph-Neural-Network-based representation scheme, consisting of two modules to effectively capture the information of dynamic topology and different types of nodes in graphs encountered during the improvement process. To speed up solution evaluation during improvement, we present a novel message-passing mechanism that can evaluate multiple solutions simultaneously. We prove that the computational complexity of our method scales linearly with problem size. Experiments on classic benchmarks show that the improvement policy learned by our method outperforms state-of-the-art DRL-based methods by a large margin.",
+    "abstract_sha256": "a854c6d102986f3b8d111e9415c0458c3ba62bceef1e2d81b7cb65b99c57a255",
+    "decision": "include",
+    "rationale": "图神经网络编码车间完整作业解，深度强化学习选择改进操作以优化制造车间排程。"
+  },
+  {
+    "id": "pAsQSWlDUf",
+    "index": 1262,
+    "title": "Soft Contrastive Learning for Time Series",
+    "original_input_abstract": "Contrastive learning has shown to be effective to learn representations from time series in a self-supervised way. However, contrasting similar time series instances or values from adjacent timestamps within a time series leads to ignore their inherent correlations, which results in deteriorating the quality of learned representations. To address this issue, we propose \\textit{SoftCLT}, a simple yet effective soft contrastive learning strategy for time series. This is achieved by introducing instance-wise and temporal contrastive loss with soft assignments ranging from zero to one. Specifically, we define soft assignments for 1) instance-wise contrastive loss by distance between time series on the data space, warping and 2) temporal contrastive loss by the difference of timestamps. SoftCLT is a plug-and-play method for time series contrastive learning that improves the quality of learned representations without bells and whistles. In experiments, we demonstrate that SoftCLT consistently improves the performance in various downstream tasks including classification, semi-supervised learning, transfer learning, and anomaly detection, showing state-of-the-art performance. Code is available at this repository: https://github.com/seunghan96/softclt.",
+    "abstract_sha256": "1a8c925ef08335c07d6327036ebe259f79683c0903115f1ce2e2ad75f25bb161",
+    "decision": "exclude",
+    "rationale": "通用时序软对比学习与下游基准，未说明实质领域科学任务。"
+  },
+  {
+    "id": "dp27P5HBBt",
+    "index": 1292,
+    "title": "Periodicity Decoupling Framework for Long-term Series Forecasting",
+    "original_input_abstract": "Convolutional neural network (CNN)-based and Transformer-based methods have recently made significant strides in time series forecasting, which excel at modeling local temporal variations or capturing long-term dependencies. However, real-world time series usually contain intricate temporal patterns, thus making it challenging for existing methods that mainly focus on temporal variations modeling from the 1D time series directly. Based on the intrinsic periodicity of time series, we propose a novel Periodicity Decoupling Framework (PDF) to capture 2D temporal variations of decoupled series for long-term series forecasting. Our PDF mainly consists of three components: multi-periodic decoupling block (MDB), dual variations modeling block (DVMB), and variations aggregation block (VAB). Unlike the previous methods that model 1D temporal variations, our PDF mainly models 2D temporal variations, decoupled from 1D time series by MDB. After that, DVMB attempts to further capture short-term and long-term variations, followed by VAB to make final predictions. Extensive experimental results across seven real-world long-term time series datasets demonstrate the superiority of our method over other state-of-the-art methods, in terms of both forecasting performance and computational efficiency. Code is available at https://github.com/Hank0626/PDF.",
+    "abstract_sha256": "3a6236c86c2ec50487ead4f94836f45c2b0777af155e6e8ef2f88118726239e7",
+    "decision": "exclude",
+    "rationale": "通用周期解耦时序框架，摘要以七数据集性能为依据，未说明具体科学任务。"
+  },
+  {
+    "id": "mmjnr0G8ZY",
+    "index": 1319,
+    "title": "Multi-Resolution Diffusion Models for Time Series Forecasting",
+    "original_input_abstract": "The diffusion model has been successfully used in many computer vision applications, such as text-guided image generation and image-to-image translation. Recently, there have been attempts on extending the diffusion model for time series data. However, these extensions are fairly straightforward and do not utilize the unique properties of time series data. As different patterns are usually exhibited at multiple scales of a time series, we in this paper leverage this multi-resolution temporal structure and propose the multi-resolution diffusion model (mr-Diff). By using the seasonal-trend decomposition, we sequentially extract fine-to-coarse trends from the time series for forward diffusion. The denoising process then proceeds in an easy-to-hard non-autoregressive manner. The coarsest trend is generated first. Finer details are progressively added, using the predicted coarser trends as condition variables. Experimental results on nine real-world time series datasets demonstrate that mr-Diff outperforms state-of-the-art time series diffusion models. It is also better than or comparable across a wide variety of advanced time series prediction models.",
+    "abstract_sha256": "6bd339f979f75d3692589877babb6a8a88837ecd2d81562b05ea80e18432913c",
+    "decision": "exclude",
+    "rationale": "通用多分辨扩散时序模型，仅展示九个时序基准，无具体科学工程研究对象。"
+  },
+  {
+    "id": "cmcD05NPKa",
+    "index": 1362,
+    "title": "Learning the greatest common divisor: explaining transformer predictions",
+    "original_input_abstract": "The predictions of small transformers, trained to calculate the greatest common divisor (GCD) of two positive integers, can be fully characterized by looking at model inputs and outputs. As training proceeds, the model learns a list $\\mathcal D$ of integers, products of divisors of the base used to represent integers and small primes, and predicts the largest element of $\\mathcal D$ that divides both inputs. Training distributions impact performance. Models trained from uniform operands only learn a handful of GCD (up to $38$ GCD $\\leq100$). Log-uniform operands boost performance to $73$ GCD $\\leq 100$, and a log-uniform distribution of outcomes (i.e. GCD) to $91$. However, training from uniform (balanced) GCD breaks explainability.",
+    "abstract_sha256": "2ce41575586996caeb0177367161105d607f1ee7644aae0eaecfcccfb2cfe5cc",
+    "decision": "exclude",
+    "rationale": "最大公约数任务用于解释Transformer学习机制，研究对象为模型能力，并非以AI推进数学研究。"
+  },
+  {
+    "id": "aOnUe8ah7j",
+    "index": 1365,
+    "title": "Symbol as Points: Panoptic Symbol Spotting via Point-based Representation",
+    "original_input_abstract": "This work studies the problem of panoptic symbol spotting, which is to spot and parse both countable object instances (windows, doors, tables, etc.) and uncountable stuff (wall, railing, etc.) from computer-aided design (CAD) drawings. Existing methods typically involve either rasterizing the vector graphics into images and using image-based methods for symbol spotting, or directly building graphs and using graph neural networks for symbol recognition. In this paper, we take a different approach, which treats graphic primitives as a set of 2D points that are locally connected and use point cloud segmentation methods to tackle it. Specifically, we utilize a point transformer to extract the primitive features and append a mask2former-like spotting head to predict the final output. To better use the local connection information of primitives and enhance their discriminability, we further propose the attention with connection module (ACM) and contrastive connection learning scheme (CCL). Finally, we propose a KNN interpolation mechanism for the mask attention module of the spotting head to better handle primitive mask downsampling, which is primitive-level in contrast to pixel-level for the image. Our approach, named SymPoint, is simple yet effective, outperforming recent state-of-the-art method GAT-CADNet by an absolute increase of 9.6% PQ and 10.4% RQ on the FloorPlanCAD dataset. The source code and models will be available at \\url{https://github.com/nicehuster/SymPoint}.",
+    "abstract_sha256": "a2a06b2cbaf25fbaf80f8247d0b4eb062a3d4c87cd6ac645836a597e7a8054d2",
+    "decision": "include",
+    "rationale": "Point Transformer与连接对比学习识别CAD工程图纸中的门窗墙体等图元，直接解决建筑图纸解析任务。"
+  },
+  {
+    "id": "H396R79GiQ",
+    "index": 1388,
+    "title": "A unique M-pattern for micro-expression spotting in long videos",
+    "original_input_abstract": "Micro-expression spotting (MES) is challenging since the small magnitude of micro-expression (ME) makes them susceptible to global movements like head rotation. However, the unique movement pattern and inherent characteristics of ME allow them to be distinguished from other movements. Existing MES methods based on fixed reference frame degrade optical flow accuracy and are overly dependent on facial alignment. In this paper, we propose a skip-$k$-frame block-wise main directional mean optical flow (MDMO) feature for MES based on unfixed reference frame. By employing skip-$k$-frame strategy, we substantiate the existence of a distinct and exclusive movement pattern in ME, called M-pattern due to its feature curve resembling the letter `M'. Based on M-pattern and characteristics of ME, we then provide a novel spotting rules to precisely locate ME intervals. Block-wise MDMO feature is capable of removing global movements without compromising complete ME movements in the early feature extraction stage. Besides, A novel pixelmatch-based facial alignment algorithm with dynamic update of reference frame is proposed to better align facial images and reduce jitter between frames. Experimental results on CAS(ME)$^2$, SAMM-LV and CASME II validate the proposed methods are superior to the state-of-the-art methods.",
+    "abstract_sha256": "9f6a1d9a1ac8f8339004f640796505e09ebf6c49224129e0cc92745f19991612",
+    "decision": "exclude",
+    "rationale": "微表情定位采用光流特征与人工规则，原摘要未确认AI学习模型及科学研究任务，按本轮摘要口径排除。"
+  },
+  {
+    "id": "ADSxCpCu9s",
+    "index": 1423,
+    "title": "LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents",
+    "original_input_abstract": "Large language models (LLMs) have recently received considerable attention as alternative solutions for task planning. However, comparing the performance of language-oriented task planners becomes difficult, and there exists a dearth of detailed exploration regarding the effects of various factors such as pre-trained model selection and prompt construction. To address this, we propose a benchmark system for automatically quantifying performance of task planning for home-service embodied agents. Task planners are tested on two pairs of datasets and simulators: 1) ALFRED and AI2-THOR, 2) an extension of Watch-And-Help and VirtualHome. Using the proposed benchmark system, we perform extensive experiments with LLMs and prompts, and explore several enhancements of the baseline planner. We expect that the proposed benchmark tool would accelerate the development of language-oriented task planners.",
+    "abstract_sha256": "1c38ae155aba4e38e61974e1ab27affc40ea95e5c5a7f3bd4bec6b8a96e18324",
+    "decision": "include",
+    "rationale": "为家庭服务机器人构建可执行仿真任务规划评测，在ALFRED/AI2-THOR及Watch-And-Help/VirtualHome中评估LLM的家庭操作规划；属于机器人工程任务评测，不宣称有实体硬件实验。"
+  },
+  {
+    "id": "v3K5TVP8kZ",
+    "index": 1505,
+    "title": "AutomaTikZ: Text-Guided Synthesis of Scientific Vector Graphics with TikZ",
+    "original_input_abstract": "Generating bitmap graphics from text has gained considerable attention, yet for scientific figures, vector graphics are often preferred. Given that vector graphics are typically encoded using low-level graphics primitives, generating them directly is difficult. To address this, we propose the use of TikZ, a well-known abstract graphics language that can be compiled to vector graphics, as an intermediate representation of scientific figures. TikZ offers human-oriented, high-level commands, thereby facilitating conditional language modeling with any large language model. To this end, we introduce DaTikZ the first large-scale TikZ dataset, consisting of 120k TikZ drawings aligned with captions. We fine-tune LLaMA on DaTikZ, as well as our new model CLiMA, which augments LLaMA with multimodal CLIP embeddings. In both human and automatic evaluation, CLiMA and LLaMA outperform commercial GPT-4 and Claude 2 in terms of similarity to human-created figures, with CLiMA additionally improving text-image alignment. Our detailed analysis shows that all models generalize well and are not susceptible to memorization. GPT-4 and Claude 2, however, tend to generate more simplistic figures compared to both humans and our models. We make our framework, AutomaTikZ, along with model weights and datasets, publicly available.",
+    "abstract_sha256": "971036aae6d25bc8499a27a5f1fb200678bdf0cb3987614bd49b024f2681d826",
+    "decision": "exclude",
+    "rationale": "TikZ语言模型生成科学插图与图形数据集，核心为通用绘图及图文对齐工具，摘要未形成具体科学研究任务。"
+  }
+]

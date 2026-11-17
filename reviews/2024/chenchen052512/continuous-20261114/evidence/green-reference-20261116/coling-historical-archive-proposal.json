@@ -1,0 +1,40 @@
+{
+  "status": "not_executed_superseded_by_validated_review_scope",
+  "scope": "只归档AlearnerDL顶层中COLING2024的293条历史原对象，其他2738条原对象原顺序保留",
+  "why": "当前正式分工COLING归陈晨，陈晨1607全量交付已包含全部293历史键；顶层历史并行适用引起168冲突。归档保留历史，不改变任何判定。",
+  "assignment_evidence": {
+    "file": "reviews/source-assignments-2024.json",
+    "sha256": "5b8da5e26628fe92efdd065d335c2dbed5cc71be1a50eb840c02a1b499fd1e65",
+    "entry": {
+      "code": "coling",
+      "title": "International Conference on Computational Linguistics",
+      "owner": "陈晨",
+      "kind": "会议"
+    },
+    "same_as_origin_main": true
+  },
+  "source_file": "reviews/2024/AlearnerDL.json",
+  "source_sha256": "a6de64b8bb8b39564dfdae065396be93a78c408796f8d0d419101cd055905825",
+  "source_records": 3031,
+  "archive_records": 293,
+  "remaining_records": 2738,
+  "archive_suggested_path": "reviews/2024/AlearnerDL/archive/coling-transferred-to-chenchen-20261116.json",
+  "archive_original_decision_counts": {
+    "include": 248,
+    "exclude": 35,
+    "pending": 10
+  },
+  "all_archived_keys_have_current_owner_delivery": true,
+  "conflicting_decision_keys": 168,
+  "preservation_requirements": [
+    "新顶层数组须严格等于原数组过滤掉coling2024后的对象列表。",
+    "归档数组须严格等于原数组过滤出coling2024的对象列表。",
+    "两者按原顺序合并可重建原数组，记录每个原下标或保存原始文件hash与完整源备份。",
+    "归档293完整对象，包括旧owner及旧判定，不能改判定或删字段。",
+    "不得顺带处理其他owner来源；保持其他2738条深度相等。"
+  ],
+  "monitor_effect": "build_review_monitor.py只遍历reviews/2024/*.json，因此archive历史不会重复参与当前统计；按当前陈晨交付显示1607，冲突解除。",
+  "permission_note": "归档会修改历史其他负责人文件的当前适用范围，由父代理依据最新用户任务和正式分工执行并记录交接，当前代理未实施。",
+  "superseded_reason": "官方线上最新版构建器current_review_scopes已能校验当前负责人权威review_file，历史文件保持原位作为historical_review_files，不需修改或归档其他负责人交付。",
+  "replacement_evidence": "coling-review-scope.json"
+}
