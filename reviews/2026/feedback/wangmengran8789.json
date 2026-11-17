@@ -27,7 +27,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 1,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -73,7 +73,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 0,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -99,11 +99,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录125，补采快照前漏项3，现源全量128；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记4条单列。归一后2026参考128条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入0、排除0、待定1、未审0；候选仍空摘要1条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录125，本轮累计补采7（快照前漏项3、快照后登记4），现源全量132。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后132条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入0、排除0、待定1、未审0；候选仍空摘要1条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/journals/2589-5974/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-f7041871ab-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-f7041871ab-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-f7041871ab-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-f7041871ab-current.json"
     ],
     "issues": [
       "1条待定，详见台账理由与待定审计。",
@@ -112,7 +113,6 @@
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "按缺摘要清单继续从官方论文页或citation-and-abstract BibTeX补证。",
-      "本刊4条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -123,7 +123,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 1,
       "supplemented_candidate_count": 0,
       "raw_missing": 1,
@@ -132,26 +132,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 128,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 132,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/journals/2589-5974/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-f7041871ab-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-f7041871ab-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 125,
-      "current_raw_count": 128,
-      "normalized_reference_count": 128,
-      "normalized_source_count": 128,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 125,
+      "current_raw_count": 132,
+      "normalized_reference_count": 132,
+      "normalized_source_count": 132,
       "recovered_pre_snapshot_count": 3,
-      "post_snapshot_registration_count": 4,
+      "collected_post_snapshot_count": 4,
+      "raw_records_added": 7,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-f7041871ab-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-f7041871ab-current.json"
     }
   },
   {
@@ -163,11 +164,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录49，补采快照前漏项0，现源全量49；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记3条单列。归一后2026参考49条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入1、排除0、待定2、未审0；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录49，本轮累计补采3（快照前漏项0、快照后登记3），现源全量52。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后52条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入1、排除0、待定2、未审0；候选仍空摘要0条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/journals/2452-2236/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-131412d3fe-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-131412d3fe-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-131412d3fe-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-131412d3fe-current.json"
     ],
     "issues": [
       "2条待定，详见台账理由与待定审计。",
@@ -176,7 +178,6 @@
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊3条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -187,7 +188,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 3,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -196,26 +197,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 49,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 52,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/journals/2452-2236/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-131412d3fe-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-131412d3fe-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 49,
-      "current_raw_count": 49,
-      "normalized_reference_count": 49,
-      "normalized_source_count": 49,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 49,
+      "current_raw_count": 52,
+      "normalized_reference_count": 52,
+      "normalized_source_count": 52,
       "recovered_pre_snapshot_count": 0,
-      "post_snapshot_registration_count": 3,
+      "collected_post_snapshot_count": 3,
+      "raw_records_added": 3,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-131412d3fe-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-131412d3fe-current.json"
     }
   },
   {
@@ -227,18 +229,18 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录143，补采快照前漏项0，现源全量143；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记2条单列。归一后2026参考143条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入2、排除0、待定0、未审0；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录143，本轮累计补采2（快照前漏项0、快照后登记2），现源全量145。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后145条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入2、排除0、待定0、未审0；候选仍空摘要0条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A1226-4601%2Cissn%3A2055-7124&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-7a8d9ea925-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-7a8d9ea925-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-7a8d9ea925-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-7a8d9ea925-current.json"
     ],
     "issues": [
       "尚未完成全部纳入论文的正式元数据与公开PDF核验。"
     ],
     "next_actions": [
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊2条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -249,7 +251,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 2,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -258,26 +260,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 143,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 145,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A1226-4601%2Cissn%3A2055-7124&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-7a8d9ea925-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-7a8d9ea925-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 143,
-      "current_raw_count": 143,
-      "normalized_reference_count": 143,
-      "normalized_source_count": 143,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 143,
+      "current_raw_count": 145,
+      "normalized_reference_count": 145,
+      "normalized_source_count": 145,
       "recovered_pre_snapshot_count": 0,
-      "post_snapshot_registration_count": 2,
+      "collected_post_snapshot_count": 2,
+      "raw_records_added": 2,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-7a8d9ea925-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-7a8d9ea925-current.json"
     }
   },
   {
@@ -289,21 +292,21 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录99，补采快照前漏项2，现源全量101；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记2条单列。归一后2026参考101条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入3、排除3、待定0、未审0；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录99，本轮累计补采4（快照前漏项2、快照后登记2），现源全量103。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后103条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入3、排除3、待定0、未审0；候选仍空摘要0条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://www.nature.com/articles/s41699-026-00667-4",
       "https://www.nature.com/articles/s41699-026-00726-w",
       "https://www.nature.com/articles/s41699-026-00735-9",
       "https://api.crossref.org/journals/2397-7132/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/npj2dmaterials-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/npj2dmaterials-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/npj2dmaterials-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/npj2dmaterials-current.json"
     ],
     "issues": [
       "尚未完成全部纳入论文的正式元数据与公开PDF核验。"
     ],
     "next_actions": [
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊2条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -314,7 +317,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 6,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -323,26 +326,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 101,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 103,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/journals/2397-7132/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/npj2dmaterials-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/npj2dmaterials-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 99,
-      "current_raw_count": 101,
-      "normalized_reference_count": 101,
-      "normalized_source_count": 101,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 99,
+      "current_raw_count": 103,
+      "normalized_reference_count": 103,
+      "normalized_source_count": 103,
       "recovered_pre_snapshot_count": 2,
-      "post_snapshot_registration_count": 2,
+      "collected_post_snapshot_count": 2,
+      "raw_records_added": 4,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/npj2dmaterials-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/npj2dmaterials-current.json"
     }
   },
   {
@@ -369,7 +373,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 0,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -395,11 +399,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录293，补采快照前漏项3，现源全量296；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记3条单列。归一后2026参考296条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入37、排除9、待定14、未审0；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录293，本轮累计补采6（快照前漏项3、快照后登记3），现源全量299。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后299条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入37、排除9、待定14、未审0；候选仍空摘要0条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A1359-6446%2Cissn%3A1878-5832&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-d491873aa5-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-d491873aa5-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-d491873aa5-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-d491873aa5-current.json"
     ],
     "issues": [
       "14条待定，详见台账理由与待定审计。",
@@ -408,7 +413,6 @@
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊3条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -419,7 +423,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 60,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -428,26 +432,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 296,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 299,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A1359-6446%2Cissn%3A1878-5832&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-d491873aa5-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-d491873aa5-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 293,
-      "current_raw_count": 296,
-      "normalized_reference_count": 296,
-      "normalized_source_count": 296,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 293,
+      "current_raw_count": 299,
+      "normalized_reference_count": 299,
+      "normalized_source_count": 299,
       "recovered_pre_snapshot_count": 3,
-      "post_snapshot_registration_count": 3,
+      "collected_post_snapshot_count": 3,
+      "raw_records_added": 6,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-d491873aa5-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-d491873aa5-current.json"
     }
   },
   {
@@ -459,11 +464,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录364，补采快照前漏项5，现源全量369；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记7条单列。归一后2026参考369条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入33、排除1、待定1、未审0；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录364，本轮累计补采12（快照前漏项5、快照后登记7），现源全量376。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后376条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入33、排除1、待定1、未审0；候选仍空摘要0条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/journals/2373-8057/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/npjparkd-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/npjparkd-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/npjparkd-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/npjparkd-current.json"
     ],
     "issues": [
       "1条待定，详见台账理由与待定审计。",
@@ -472,7 +478,6 @@
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊7条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -483,7 +488,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 35,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -492,26 +497,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 369,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 376,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/journals/2373-8057/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/npjparkd-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/npjparkd-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 364,
-      "current_raw_count": 369,
-      "normalized_reference_count": 369,
-      "normalized_source_count": 369,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 364,
+      "current_raw_count": 376,
+      "normalized_reference_count": 376,
+      "normalized_source_count": 376,
       "recovered_pre_snapshot_count": 5,
-      "post_snapshot_registration_count": 7,
+      "collected_post_snapshot_count": 7,
+      "raw_records_added": 12,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/npjparkd-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/npjparkd-current.json"
     }
   },
   {
@@ -523,24 +529,24 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录1437，补采快照前漏项1，现源全量1438；保留但从2026比较中扣除2027出版登记35条，参考目录快照后首次登记18条单列。归一后2026参考1403条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入44、排除4、待定27、未审0；候选仍空摘要23条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录1437，本轮累计补采19（快照前漏项1、快照后登记18），现源全量1456。保留2027出版登记历史记录35条并从2026比较集合扣除，归一后1421条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入44、排除4、待定27、未审0；候选仍空摘要23条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0360-1323%2Cissn%3A1873-684X&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-3fe12bcc6e-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-3fe12bcc6e-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-3fe12bcc6e-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-3fe12bcc6e-current.json"
     ],
     "issues": [
       "27条待定，详见台账理由与待定审计。",
       "尚未完成全部纳入论文的正式元数据与公开PDF核验。",
-      "当前仍有23条候选为空摘要，尚需补原摘要。",
-      "1条历史候选的当前出版登记年度为2027，已在verified_metadata标注；原键及语义结论保留，后续核验年度归属。"
+      "1条历史候选的当前出版登记年度为2027，已在verified_metadata标注；原键及语义结论保留，后续核验年度归属。",
+      "当前仍有23条候选为空摘要，尚需补原摘要。"
     ],
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "按缺摘要清单继续从官方论文页或citation-and-abstract BibTeX补证。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
       "复核标有year_scope_check的候选正式版本年度，后续按负责人确认的年度交付口径归档。",
-      "本刊18条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -551,7 +557,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 75,
       "supplemented_candidate_count": 0,
       "raw_missing": 23,
@@ -560,26 +566,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 1403,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 1421,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0360-1323%2Cissn%3A1873-684X&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-3fe12bcc6e-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-3fe12bcc6e-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 1437,
-      "current_raw_count": 1438,
-      "normalized_reference_count": 1403,
-      "normalized_source_count": 1403,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 1437,
+      "current_raw_count": 1456,
+      "normalized_reference_count": 1421,
+      "normalized_source_count": 1421,
       "recovered_pre_snapshot_count": 1,
-      "post_snapshot_registration_count": 18,
+      "collected_post_snapshot_count": 18,
+      "raw_records_added": 19,
       "retained_2027_record_count": 35,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-3fe12bcc6e-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-3fe12bcc6e-current.json"
     }
   },
   {
@@ -591,18 +598,18 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录190，补采快照前漏项1，现源全量191；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记4条单列。归一后2026参考191条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入16、排除3、待定0、未审0；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录190，本轮累计补采5（快照前漏项1、快照后登记4），现源全量195。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后195条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入16、排除3、待定0、未审0；候选仍空摘要0条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/journals/2374-4677/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/npjbcancer-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/npjbcancer-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/npjbcancer-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/npjbcancer-current.json"
     ],
     "issues": [
       "尚未完成全部纳入论文的正式元数据与公开PDF核验。"
     ],
     "next_actions": [
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊4条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -613,7 +620,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 19,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -622,26 +629,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 191,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 195,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/journals/2374-4677/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/npjbcancer-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/npjbcancer-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 190,
-      "current_raw_count": 191,
-      "normalized_reference_count": 191,
-      "normalized_source_count": 191,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 190,
+      "current_raw_count": 195,
+      "normalized_reference_count": 195,
+      "normalized_source_count": 195,
       "recovered_pre_snapshot_count": 1,
-      "post_snapshot_registration_count": 4,
+      "collected_post_snapshot_count": 4,
+      "raw_records_added": 5,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/npjbcancer-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/npjbcancer-current.json"
     }
   },
   {
@@ -653,11 +661,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录470，补采快照前漏项0，现源全量470；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记1条单列。归一后2026参考470条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入22、排除0、待定4、未审0；候选仍空摘要4条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录470，本轮累计补采1（快照前漏项0、快照后登记1），现源全量471。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后471条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入22、排除0、待定4、未审0；候选仍空摘要4条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0968-090X%2Cissn%3A1879-2359&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-8340ff7e98-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-8340ff7e98-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-8340ff7e98-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-8340ff7e98-current.json"
     ],
     "issues": [
       "4条待定，详见台账理由与待定审计。",
@@ -668,7 +677,6 @@
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "按缺摘要清单继续从官方论文页或citation-and-abstract BibTeX补证。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊1条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -679,7 +687,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 26,
       "supplemented_candidate_count": 0,
       "raw_missing": 4,
@@ -688,26 +696,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 470,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 471,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0968-090X%2Cissn%3A1879-2359&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-8340ff7e98-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-8340ff7e98-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 470,
-      "current_raw_count": 470,
-      "normalized_reference_count": 470,
-      "normalized_source_count": 470,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 470,
+      "current_raw_count": 471,
+      "normalized_reference_count": 471,
+      "normalized_source_count": 471,
       "recovered_pre_snapshot_count": 0,
-      "post_snapshot_registration_count": 1,
+      "collected_post_snapshot_count": 1,
+      "raw_records_added": 1,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-8340ff7e98-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-8340ff7e98-current.json"
     }
   },
   {
@@ -719,11 +728,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录2076，补采快照前漏项1，现源全量2077；保留但从2026比较中扣除2027出版登记15条，参考目录快照后首次登记25条单列。归一后2026参考2062条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入8、排除0、待定23、未审0；候选仍空摘要23条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录2076，本轮累计补采26（快照前漏项1、快照后登记25），现源全量2102。保留2027出版登记历史记录15条并从2026比较集合扣除，归一后2087条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入8、排除0、待定23、未审0；候选仍空摘要23条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/journals/0925-4005/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-fe57259a51-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-fe57259a51-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-fe57259a51-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-fe57259a51-current.json"
     ],
     "issues": [
       "23条待定，详见台账理由与待定审计。",
@@ -734,7 +744,6 @@
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "按缺摘要清单继续从官方论文页或citation-and-abstract BibTeX补证。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊25条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -745,7 +754,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 31,
       "supplemented_candidate_count": 0,
       "raw_missing": 23,
@@ -754,26 +763,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 2062,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 2087,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/journals/0925-4005/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-fe57259a51-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-fe57259a51-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 2076,
-      "current_raw_count": 2077,
-      "normalized_reference_count": 2062,
-      "normalized_source_count": 2062,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 2076,
+      "current_raw_count": 2102,
+      "normalized_reference_count": 2087,
+      "normalized_source_count": 2087,
       "recovered_pre_snapshot_count": 1,
-      "post_snapshot_registration_count": 25,
+      "collected_post_snapshot_count": 25,
+      "raw_records_added": 26,
       "retained_2027_record_count": 15,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-fe57259a51-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-fe57259a51-current.json"
     }
   },
   {
@@ -785,59 +795,62 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录2159，补采快照前漏项32，现源全量2191；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记71条单列。归一后2026参考2191条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入110、排除14、待定1、未审0；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录2159，本轮累计补采103（快照前漏项32、快照后登记71），现源全量2262。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后2262条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入110、排除14、待定1、未审2；候选仍空摘要2条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0264-1275%2Cissn%3A1873-4197&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-eb06e3a648-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-eb06e3a648-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-eb06e3a648-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-eb06e3a648-current.json"
     ],
     "issues": [
       "1条待定，详见台账理由与待定审计。",
-      "尚未完成全部纳入论文的正式元数据与公开PDF核验。"
+      "尚未完成全部纳入论文的正式元数据与公开PDF核验。",
+      "当前仍有2条候选为空摘要，尚需补原摘要。",
+      "总量补采新增2条初筛候选尚未内容审核。"
     ],
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊71条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
       "include": 110,
       "exclude": 14,
       "pending": 1,
-      "unreviewed": 0
+      "unreviewed": 2
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
-      "original_candidate_count": 125,
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
+      "original_candidate_count": 127,
       "supplemented_candidate_count": 0,
-      "raw_missing": 0,
-      "effective_missing": 0
+      "raw_missing": 2,
+      "effective_missing": 2
     },
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 2191,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 2262,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0264-1275%2Cissn%3A1873-4197&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-eb06e3a648-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-eb06e3a648-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 2159,
-      "current_raw_count": 2191,
-      "normalized_reference_count": 2191,
-      "normalized_source_count": 2191,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 2159,
+      "current_raw_count": 2262,
+      "normalized_reference_count": 2262,
+      "normalized_source_count": 2262,
       "recovered_pre_snapshot_count": 32,
-      "post_snapshot_registration_count": 71,
+      "collected_post_snapshot_count": 71,
+      "raw_records_added": 103,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-eb06e3a648-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-eb06e3a648-current.json"
     }
   },
   {
@@ -849,62 +862,63 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录448，补采快照前漏项4，现源全量452；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记6条单列。归一后2026参考452条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入16、排除18、待定2、未审1；候选仍空摘要1条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录448，本轮累计补采10（快照前漏项4、快照后登记6），现源全量458。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后458条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入16、排除18、待定2、未审2；候选仍空摘要2条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A1674-733X%2Cissn%3A1869-1919&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-21982a54fe-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-21982a54fe-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-21982a54fe-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-21982a54fe-current.json"
     ],
     "issues": [
       "2条待定，详见台账理由与待定审计。",
       "尚未完成全部纳入论文的正式元数据与公开PDF核验。",
-      "当前仍有1条候选为空摘要，尚需补原摘要。",
-      "总量补采新增1条初筛候选尚未内容审核。"
+      "当前仍有2条候选为空摘要，尚需补原摘要。",
+      "总量补采新增2条初筛候选尚未内容审核。"
     ],
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
       "逐篇读本轮新增候选原摘要，缺摘要保留待补，不凭标题作纳入。",
-      "本刊6条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
       "include": 16,
       "exclude": 18,
       "pending": 2,
-      "unreviewed": 1
+      "unreviewed": 2
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
-      "original_candidate_count": 37,
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
+      "original_candidate_count": 38,
       "supplemented_candidate_count": 0,
-      "raw_missing": 1,
-      "effective_missing": 1
+      "raw_missing": 2,
+      "effective_missing": 2
     },
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 452,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 458,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A1674-733X%2Cissn%3A1869-1919&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-21982a54fe-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-21982a54fe-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 448,
-      "current_raw_count": 452,
-      "normalized_reference_count": 452,
-      "normalized_source_count": 452,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 448,
+      "current_raw_count": 458,
+      "normalized_reference_count": 458,
+      "normalized_source_count": 458,
       "recovered_pre_snapshot_count": 4,
-      "post_snapshot_registration_count": 6,
+      "collected_post_snapshot_count": 6,
+      "raw_records_added": 10,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-21982a54fe-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-21982a54fe-current.json"
     }
   },
   {
@@ -916,24 +930,24 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录1630，补采快照前漏项2，现源全量1632；保留但从2026比较中扣除2027出版登记15条，参考目录快照后首次登记20条单列。归一后2026参考1617条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入58、排除2、待定12、未审0；候选仍空摘要9条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录1630，本轮累计补采22（快照前漏项2、快照后登记20），现源全量1652。保留2027出版登记历史记录15条并从2026比较集合扣除，归一后1637条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入58、排除2、待定12、未审0；候选仍空摘要9条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0378-7788%2Cissn%3A1872-6178&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-20e3868bcd-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-20e3868bcd-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-20e3868bcd-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-20e3868bcd-current.json"
     ],
     "issues": [
       "12条待定，详见台账理由与待定审计。",
       "尚未完成全部纳入论文的正式元数据与公开PDF核验。",
-      "当前仍有9条候选为空摘要，尚需补原摘要。",
-      "1条历史候选的当前出版登记年度为2027，已在verified_metadata标注；原键及语义结论保留，后续核验年度归属。"
+      "1条历史候选的当前出版登记年度为2027，已在verified_metadata标注；原键及语义结论保留，后续核验年度归属。",
+      "当前仍有9条候选为空摘要，尚需补原摘要。"
     ],
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "按缺摘要清单继续从官方论文页或citation-and-abstract BibTeX补证。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
       "复核标有year_scope_check的候选正式版本年度，后续按负责人确认的年度交付口径归档。",
-      "本刊20条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -944,7 +958,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 72,
       "supplemented_candidate_count": 0,
       "raw_missing": 9,
@@ -953,26 +967,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 1617,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 1637,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0378-7788%2Cissn%3A1872-6178&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-20e3868bcd-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-20e3868bcd-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 1630,
-      "current_raw_count": 1632,
-      "normalized_reference_count": 1617,
-      "normalized_source_count": 1617,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 1630,
+      "current_raw_count": 1652,
+      "normalized_reference_count": 1637,
+      "normalized_source_count": 1637,
       "recovered_pre_snapshot_count": 2,
-      "post_snapshot_registration_count": 20,
+      "collected_post_snapshot_count": 20,
+      "raw_records_added": 22,
       "retained_2027_record_count": 15,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-20e3868bcd-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-20e3868bcd-current.json"
     }
   },
   {
@@ -984,24 +999,24 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录2265，补采快照前漏项0，现源全量2265；保留但从2026比较中扣除2027出版登记26条，参考目录快照后首次登记13条单列。归一后2026参考2239条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入44、排除18、待定63、未审0；候选仍空摘要61条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录2265，本轮累计补采13（快照前漏项0、快照后登记13），现源全量2278。保留2027出版登记历史记录26条并从2026比较集合扣除，归一后2252条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入44、排除18、待定63、未审0；候选仍空摘要61条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0950-7051%2Cissn%3A1872-7409&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-6c204bdd6e-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-6c204bdd6e-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-6c204bdd6e-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-6c204bdd6e-current.json"
     ],
     "issues": [
       "63条待定，详见台账理由与待定审计。",
       "尚未完成全部纳入论文的正式元数据与公开PDF核验。",
-      "当前仍有61条候选为空摘要，尚需补原摘要。",
-      "2条历史候选的当前出版登记年度为2027，已在verified_metadata标注；原键及语义结论保留，后续核验年度归属。"
+      "2条历史候选的当前出版登记年度为2027，已在verified_metadata标注；原键及语义结论保留，后续核验年度归属。",
+      "当前仍有61条候选为空摘要，尚需补原摘要。"
     ],
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "按缺摘要清单继续从官方论文页或citation-and-abstract BibTeX补证。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
       "复核标有year_scope_check的候选正式版本年度，后续按负责人确认的年度交付口径归档。",
-      "本刊13条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -1012,7 +1027,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 125,
       "supplemented_candidate_count": 0,
       "raw_missing": 61,
@@ -1021,26 +1036,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 2239,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 2252,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0950-7051%2Cissn%3A1872-7409&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-6c204bdd6e-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-6c204bdd6e-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 2265,
-      "current_raw_count": 2265,
-      "normalized_reference_count": 2239,
-      "normalized_source_count": 2239,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 2265,
+      "current_raw_count": 2278,
+      "normalized_reference_count": 2252,
+      "normalized_source_count": 2252,
       "recovered_pre_snapshot_count": 0,
-      "post_snapshot_registration_count": 13,
+      "collected_post_snapshot_count": 13,
+      "raw_records_added": 13,
       "retained_2027_record_count": 26,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-6c204bdd6e-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-6c204bdd6e-current.json"
     }
   },
   {
@@ -1052,11 +1068,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录181，补采快照前漏项2，现源全量183；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记5条单列。归一后2026参考183条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入109、排除7、待定3、未审0；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录181，本轮累计补采7（快照前漏项2、快照后登记5），现源全量188。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后188条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入109、排除7、待定3、未审0；候选仍空摘要0条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/journals/1758-2946/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-29c654efbc-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-29c654efbc-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-29c654efbc-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-29c654efbc-current.json"
     ],
     "issues": [
       "3条待定，详见台账理由与待定审计。",
@@ -1065,7 +1082,6 @@
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊5条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -1076,7 +1092,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 119,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -1085,26 +1101,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 183,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 188,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/journals/1758-2946/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-29c654efbc-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-29c654efbc-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 181,
-      "current_raw_count": 183,
-      "normalized_reference_count": 183,
-      "normalized_source_count": 183,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 181,
+      "current_raw_count": 188,
+      "normalized_reference_count": 188,
+      "normalized_source_count": 188,
       "recovered_pre_snapshot_count": 2,
-      "post_snapshot_registration_count": 5,
+      "collected_post_snapshot_count": 5,
+      "raw_records_added": 7,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-29c654efbc-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-29c654efbc-current.json"
     }
   },
   {
@@ -1116,63 +1133,65 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录2080，补采快照前漏项1，现源全量2081；保留但从2026比较中扣除2027出版登记33条，参考目录快照后首次登记21条单列。归一后2026参考2048条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入52、排除11、待定83、未审0；候选仍空摘要82条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录2080，本轮累计补采22（快照前漏项1、快照后登记21），现源全量2102。保留2027出版登记历史记录33条并从2026比较集合扣除，归一后2069条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入52、排除11、待定83、未审2；候选仍空摘要84条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A1568-4946%2Cissn%3A1872-9681&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-70da0b6ba3-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-70da0b6ba3-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-70da0b6ba3-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-70da0b6ba3-current.json"
     ],
     "issues": [
       "83条待定，详见台账理由与待定审计。",
       "尚未完成全部纳入论文的正式元数据与公开PDF核验。",
-      "当前仍有82条候选为空摘要，尚需补原摘要。",
-      "3条历史候选的当前出版登记年度为2027，已在verified_metadata标注；原键及语义结论保留，后续核验年度归属。"
+      "3条历史候选的当前出版登记年度为2027，已在verified_metadata标注；原键及语义结论保留，后续核验年度归属。",
+      "当前仍有84条候选为空摘要，尚需补原摘要。",
+      "总量补采新增2条初筛候选尚未内容审核。"
     ],
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "按缺摘要清单继续从官方论文页或citation-and-abstract BibTeX补证。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
       "复核标有year_scope_check的候选正式版本年度，后续按负责人确认的年度交付口径归档。",
-      "本刊21条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
       "include": 52,
       "exclude": 11,
       "pending": 83,
-      "unreviewed": 0
+      "unreviewed": 2
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
-      "original_candidate_count": 146,
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
+      "original_candidate_count": 148,
       "supplemented_candidate_count": 0,
-      "raw_missing": 82,
-      "effective_missing": 82
+      "raw_missing": 84,
+      "effective_missing": 84
     },
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 2048,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 2069,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A1568-4946%2Cissn%3A1872-9681&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-70da0b6ba3-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-70da0b6ba3-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 2080,
-      "current_raw_count": 2081,
-      "normalized_reference_count": 2048,
-      "normalized_source_count": 2048,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 2080,
+      "current_raw_count": 2102,
+      "normalized_reference_count": 2069,
+      "normalized_source_count": 2069,
       "recovered_pre_snapshot_count": 1,
-      "post_snapshot_registration_count": 21,
+      "collected_post_snapshot_count": 21,
+      "raw_records_added": 22,
       "retained_2027_record_count": 33,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-70da0b6ba3-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-70da0b6ba3-current.json"
     }
   },
   {
@@ -1184,11 +1203,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录183，补采快照前漏项0，现源全量183；保留但从2026比较中扣除2027出版登记2条，参考目录快照后首次登记3条单列。归一后2026参考181条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入55、排除1、待定2、未审0；候选仍空摘要1条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录183，本轮累计补采3（快照前漏项0、快照后登记3），现源全量186。保留2027出版登记历史记录2条并从2026比较集合扣除，归一后184条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入55、排除1、待定2、未审0；候选仍空摘要1条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0933-3657%2Cissn%3A1873-2860&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-90e902bc57-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-90e902bc57-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-90e902bc57-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-90e902bc57-current.json"
     ],
     "issues": [
       "2条待定，详见台账理由与待定审计。",
@@ -1199,7 +1219,6 @@
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "按缺摘要清单继续从官方论文页或citation-and-abstract BibTeX补证。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊3条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -1210,7 +1229,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 58,
       "supplemented_candidate_count": 0,
       "raw_missing": 1,
@@ -1219,26 +1238,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 181,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 184,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0933-3657%2Cissn%3A1873-2860&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-90e902bc57-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-90e902bc57-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 183,
-      "current_raw_count": 183,
-      "normalized_reference_count": 181,
-      "normalized_source_count": 181,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 183,
+      "current_raw_count": 186,
+      "normalized_reference_count": 184,
+      "normalized_source_count": 184,
       "recovered_pre_snapshot_count": 0,
-      "post_snapshot_registration_count": 3,
+      "collected_post_snapshot_count": 3,
+      "raw_records_added": 3,
       "retained_2027_record_count": 2,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-90e902bc57-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-90e902bc57-current.json"
     }
   },
   {
@@ -1250,13 +1270,14 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录341，补采快照前漏项3，现源全量344；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记3条单列。归一后2026参考344条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入5、排除1、待定1、未审0；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录341，本轮累计补采6（快照前漏项3、快照后登记3），现源全量347。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后347条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入5、排除1、待定1、未审0；候选仍空摘要0条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://www.nature.com/articles/s41416-025-03308-7",
       "https://www.nature.com/articles/s41416-026-03590-z",
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0007-0920%2Cissn%3A1532-1827&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/nature-bjc-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/nature-bjc-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/nature-bjc-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/nature-bjc-current.json"
     ],
     "issues": [
       "1条待定，详见台账理由与待定审计。",
@@ -1265,7 +1286,6 @@
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊3条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -1276,7 +1296,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 7,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -1285,26 +1305,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 344,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 347,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0007-0920%2Cissn%3A1532-1827&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/nature-bjc-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/nature-bjc-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 341,
-      "current_raw_count": 344,
-      "normalized_reference_count": 344,
-      "normalized_source_count": 344,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 341,
+      "current_raw_count": 347,
+      "normalized_reference_count": 347,
+      "normalized_source_count": 347,
       "recovered_pre_snapshot_count": 3,
-      "post_snapshot_registration_count": 3,
+      "collected_post_snapshot_count": 3,
+      "raw_records_added": 6,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/nature-bjc-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/nature-bjc-current.json"
     }
   },
   {
@@ -1316,11 +1337,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录1481，补采快照前漏项17，现源全量1498；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记46条单列。归一后2026参考1498条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入33、排除2、待定4、未审0；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录1481，本轮累计补采63（快照前漏项17、快照后登记46），现源全量1544。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后1544条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入33、排除2、待定4、未审0；候选仍空摘要0条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A2639-1856%2Cissn%3A2211-1247&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-0a4425f44b-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-0a4425f44b-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-0a4425f44b-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-0a4425f44b-current.json"
     ],
     "issues": [
       "4条待定，详见台账理由与待定审计。",
@@ -1329,7 +1351,6 @@
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊46条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -1340,7 +1361,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 39,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -1349,26 +1370,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 1498,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 1544,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A2639-1856%2Cissn%3A2211-1247&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-0a4425f44b-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-0a4425f44b-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 1481,
-      "current_raw_count": 1498,
-      "normalized_reference_count": 1498,
-      "normalized_source_count": 1498,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 1481,
+      "current_raw_count": 1544,
+      "normalized_reference_count": 1544,
+      "normalized_source_count": 1544,
       "recovered_pre_snapshot_count": 17,
-      "post_snapshot_registration_count": 46,
+      "collected_post_snapshot_count": 46,
+      "raw_records_added": 63,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-0a4425f44b-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-0a4425f44b-current.json"
     }
   },
   {
@@ -1380,59 +1402,62 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录844，补采快照前漏项3，现源全量847；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记31条单列。归一后2026参考847条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入7、排除5、待定3、未审0；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录844，本轮累计补采34（快照前漏项3、快照后登记31），现源全量878。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后878条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入7、排除5、待定3、未审1；候选仍空摘要1条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0960-9822%2Cissn%3A1879-0445&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-7cc3932475-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-7cc3932475-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-7cc3932475-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-7cc3932475-current.json"
     ],
     "issues": [
       "3条待定，详见台账理由与待定审计。",
-      "尚未完成全部纳入论文的正式元数据与公开PDF核验。"
+      "尚未完成全部纳入论文的正式元数据与公开PDF核验。",
+      "当前仍有1条候选为空摘要，尚需补原摘要。",
+      "总量补采新增1条初筛候选尚未内容审核。"
     ],
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊31条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
       "include": 7,
       "exclude": 5,
       "pending": 3,
-      "unreviewed": 0
+      "unreviewed": 1
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
-      "original_candidate_count": 15,
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
+      "original_candidate_count": 16,
       "supplemented_candidate_count": 0,
-      "raw_missing": 0,
-      "effective_missing": 0
+      "raw_missing": 1,
+      "effective_missing": 1
     },
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 847,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 878,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0960-9822%2Cissn%3A1879-0445&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-7cc3932475-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-7cc3932475-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 844,
-      "current_raw_count": 847,
-      "normalized_reference_count": 847,
-      "normalized_source_count": 847,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 844,
+      "current_raw_count": 878,
+      "normalized_reference_count": 878,
+      "normalized_source_count": 878,
       "recovered_pre_snapshot_count": 3,
-      "post_snapshot_registration_count": 31,
+      "collected_post_snapshot_count": 31,
+      "raw_records_added": 34,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-7cc3932475-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-7cc3932475-current.json"
     }
   },
   {
@@ -1444,11 +1469,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录726，补采快照前漏项7，现源全量733；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记5条单列。归一后2026参考733条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入13、排除8、待定3、未审0；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录726，本轮累计补采12（快照前漏项7、快照后登记5），现源全量738。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后738条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入13、排除8、待定3、未审0；候选仍空摘要0条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A2095-8226%2Cissn%3A2199-4501&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-b52070b429-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-b52070b429-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-b52070b429-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-b52070b429-current.json"
     ],
     "issues": [
       "3条待定，详见台账理由与待定审计。",
@@ -1457,7 +1483,6 @@
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊5条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -1468,7 +1493,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 24,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -1477,26 +1502,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 733,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 738,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A2095-8226%2Cissn%3A2199-4501&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-b52070b429-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-b52070b429-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 726,
-      "current_raw_count": 733,
-      "normalized_reference_count": 733,
-      "normalized_source_count": 733,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 726,
+      "current_raw_count": 738,
+      "normalized_reference_count": 738,
+      "normalized_source_count": 738,
       "recovered_pre_snapshot_count": 7,
-      "post_snapshot_registration_count": 5,
+      "collected_post_snapshot_count": 5,
+      "raw_records_added": 12,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-b52070b429-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-b52070b429-current.json"
     }
   },
   {
@@ -1508,11 +1534,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录187，补采快照前漏项2，现源全量189；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记0条单列。归一后2026参考189条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入3、排除1、待定0、未审0；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录187，本轮累计补采2（快照前漏项2、快照后登记0），现源全量189。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后189条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入3、排除1、待定0、未审0；候选仍空摘要0条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0002-9297%2Cissn%3A1537-6605&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-2ec03844e7-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-2ec03844e7-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-2ec03844e7-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-2ec03844e7-current.json"
     ],
     "issues": [
       "尚未完成全部纳入论文的正式元数据与公开PDF核验。"
@@ -1529,7 +1556,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 4,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -1539,25 +1566,26 @@
       "status": "complete",
       "source": "Crossref出版方登记元数据",
       "total": 189,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0002-9297%2Cissn%3A1537-6605&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-2ec03844e7-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-2ec03844e7-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 187,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 187,
       "current_raw_count": 189,
       "normalized_reference_count": 189,
       "normalized_source_count": 189,
       "recovered_pre_snapshot_count": 2,
-      "post_snapshot_registration_count": 0,
+      "collected_post_snapshot_count": 0,
+      "raw_records_added": 2,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-2ec03844e7-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-2ec03844e7-current.json"
     }
   },
   {
@@ -1569,7 +1597,7 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录808，补采快照前漏项0，现源全量808；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记0条单列。归一后2026参考808条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入125、排除1、待定14、未审0；候选仍空摘要8条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录808，本轮累计补采0（快照前漏项0、快照后登记0），现源全量808。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后808条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入125、排除1、待定14、未审0；候选仍空摘要8条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/448/part/PA",
       "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/448/part/PB",
@@ -1621,7 +1649,8 @@
       "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/452/part/PB",
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0045-7825%2Cissn%3A1879-2138&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-1ba458f82d-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-1ba458f82d-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-1ba458f82d-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-1ba458f82d-current.json"
     ],
     "issues": [
       "14条待定，详见台账理由与待定审计。",
@@ -1642,7 +1671,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 121,
       "supplemented_candidate_count": 19,
       "raw_missing": 19,
@@ -1652,25 +1681,26 @@
       "status": "complete",
       "source": "Crossref出版方登记元数据",
       "total": 808,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0045-7825%2Cissn%3A1879-2138&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-1ba458f82d-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-1ba458f82d-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 808,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 808,
       "current_raw_count": 808,
       "normalized_reference_count": 808,
       "normalized_source_count": 808,
       "recovered_pre_snapshot_count": 0,
-      "post_snapshot_registration_count": 0,
+      "collected_post_snapshot_count": 0,
+      "raw_records_added": 0,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-1ba458f82d-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-1ba458f82d-current.json"
     }
   },
   {
@@ -1682,11 +1712,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录2020，补采快照前漏项0，现源全量2020；保留但从2026比较中扣除2027出版登记1条，参考目录快照后首次登记1条单列。归一后2026参考2019条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入23、排除2、待定32、未审0；候选仍空摘要32条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录2020，本轮累计补采1（快照前漏项0、快照后登记1），现源全量2021。保留2027出版登记历史记录1条并从2026比较集合扣除，归一后2020条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入23、排除2、待定32、未审0；候选仍空摘要32条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0141-0296%2Cissn%3A1873-7323&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-c3975648f8-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-c3975648f8-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-c3975648f8-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-c3975648f8-current.json"
     ],
     "issues": [
       "32条待定，详见台账理由与待定审计。",
@@ -1697,7 +1728,6 @@
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "按缺摘要清单继续从官方论文页或citation-and-abstract BibTeX补证。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊1条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -1708,7 +1738,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 57,
       "supplemented_candidate_count": 0,
       "raw_missing": 32,
@@ -1717,26 +1747,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 2019,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 2020,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0141-0296%2Cissn%3A1873-7323&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-c3975648f8-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-c3975648f8-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 2020,
-      "current_raw_count": 2020,
-      "normalized_reference_count": 2019,
-      "normalized_source_count": 2019,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 2020,
+      "current_raw_count": 2021,
+      "normalized_reference_count": 2020,
+      "normalized_source_count": 2020,
       "recovered_pre_snapshot_count": 0,
-      "post_snapshot_registration_count": 1,
+      "collected_post_snapshot_count": 1,
+      "raw_records_added": 1,
       "retained_2027_record_count": 1,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-c3975648f8-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-c3975648f8-current.json"
     }
   },
   {
@@ -1748,21 +1779,21 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录275，补采快照前漏项0，现源全量275；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记2条单列。归一后2026参考275条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入3、排除3、待定0、未审0；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录275，本轮累计补采2（快照前漏项0、快照后登记2），现源全量277。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后277条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入3、排除3、待定0、未审0；候选仍空摘要0条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://www.nature.com/articles/s41386-026-02358-6",
       "https://www.nature.com/articles/s41386-026-02402-5",
       "https://www.nature.com/articles/s41386-026-02436-9",
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0893-133X%2Cissn%3A1740-634X&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/nature-npp-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/nature-npp-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/nature-npp-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/nature-npp-current.json"
     ],
     "issues": [
       "尚未完成全部纳入论文的正式元数据与公开PDF核验。"
     ],
     "next_actions": [
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊2条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -1773,7 +1804,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 6,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -1782,26 +1813,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 275,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 277,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0893-133X%2Cissn%3A1740-634X&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/nature-npp-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/nature-npp-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 275,
-      "current_raw_count": 275,
-      "normalized_reference_count": 275,
-      "normalized_source_count": 275,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 275,
+      "current_raw_count": 277,
+      "normalized_reference_count": 277,
+      "normalized_source_count": 277,
       "recovered_pre_snapshot_count": 0,
-      "post_snapshot_registration_count": 2,
+      "collected_post_snapshot_count": 2,
+      "raw_records_added": 2,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/nature-npp-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/nature-npp-current.json"
     }
   },
   {
@@ -1813,11 +1845,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录161，补采快照前漏项2，现源全量163；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记3条单列。归一后2026参考163条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入45、排除4、待定2、未审0；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录161，本轮累计补采5（快照前漏项2、快照后登记3），现源全量166。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后166条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入45、排除4、待定2、未审0；候选仍空摘要0条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A1385-2256%2Cissn%3A1573-1618&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-0675aa8262-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-0675aa8262-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-0675aa8262-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-0675aa8262-current.json"
     ],
     "issues": [
       "2条待定，详见台账理由与待定审计。",
@@ -1826,7 +1859,6 @@
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊3条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -1837,7 +1869,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 51,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -1846,26 +1878,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 163,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 166,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A1385-2256%2Cissn%3A1573-1618&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-0675aa8262-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-0675aa8262-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 161,
-      "current_raw_count": 163,
-      "normalized_reference_count": 163,
-      "normalized_source_count": 163,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 161,
+      "current_raw_count": 166,
+      "normalized_reference_count": 166,
+      "normalized_source_count": 166,
       "recovered_pre_snapshot_count": 2,
-      "post_snapshot_registration_count": 3,
+      "collected_post_snapshot_count": 3,
+      "raw_records_added": 5,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-0675aa8262-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-0675aa8262-current.json"
     }
   },
   {
@@ -1877,11 +1910,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录139，补采快照前漏项0，现源全量139；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记3条单列。归一后2026参考139条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入29、排除1、待定6、未审0；候选仍空摘要1条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录139，本轮累计补采3（快照前漏项0、快照后登记3），现源全量142。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后142条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入29、排除1、待定6、未审0；候选仍空摘要1条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A2405-4712%2Cissn%3A2405-4720&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-495a105a04-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-495a105a04-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-495a105a04-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-495a105a04-current.json"
     ],
     "issues": [
       "6条待定，详见台账理由与待定审计。",
@@ -1892,7 +1926,6 @@
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "按缺摘要清单继续从官方论文页或citation-and-abstract BibTeX补证。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊3条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -1903,7 +1936,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 36,
       "supplemented_candidate_count": 0,
       "raw_missing": 1,
@@ -1912,26 +1945,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 139,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 142,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A2405-4712%2Cissn%3A2405-4720&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-495a105a04-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-495a105a04-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 139,
-      "current_raw_count": 139,
-      "normalized_reference_count": 139,
-      "normalized_source_count": 139,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 139,
+      "current_raw_count": 142,
+      "normalized_reference_count": 142,
+      "normalized_source_count": 142,
       "recovered_pre_snapshot_count": 0,
-      "post_snapshot_registration_count": 3,
+      "collected_post_snapshot_count": 3,
+      "raw_records_added": 3,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-495a105a04-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-495a105a04-current.json"
     }
   },
   {
@@ -1943,11 +1977,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录180，补采快照前漏项0，现源全量180；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记9条单列。归一后2026参考180条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入18、排除1、待定2、未审0；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录180，本轮累计补采9（快照前漏项0、快照后登记9），现源全量189。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后189条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入18、排除1、待定2、未审0；候选仍空摘要0条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/journals/2397-2106/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/npjmatdeg-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/npjmatdeg-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/npjmatdeg-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/npjmatdeg-current.json"
     ],
     "issues": [
       "2条待定，详见台账理由与待定审计。",
@@ -1956,7 +1991,6 @@
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊9条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -1967,7 +2001,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 21,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -1976,26 +2010,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 180,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 189,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/journals/2397-2106/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/npjmatdeg-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/npjmatdeg-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 180,
-      "current_raw_count": 180,
-      "normalized_reference_count": 180,
-      "normalized_source_count": 180,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 180,
+      "current_raw_count": 189,
+      "normalized_reference_count": 189,
+      "normalized_source_count": 189,
       "recovered_pre_snapshot_count": 0,
-      "post_snapshot_registration_count": 9,
+      "collected_post_snapshot_count": 9,
+      "raw_records_added": 9,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/npjmatdeg-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/npjmatdeg-current.json"
     }
   },
   {
@@ -2007,11 +2042,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录743，补采快照前漏项5，现源全量748；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记6条单列。归一后2026参考748条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入30、排除6、待定6、未审0；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录743，本轮累计补采11（快照前漏项5、快照后登记6），现源全量754。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后754条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入30、排除6、待定6、未审0；候选仍空摘要0条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/journals/2158-3188/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/nature-tp-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/nature-tp-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/nature-tp-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/nature-tp-current.json"
     ],
     "issues": [
       "6条待定，详见台账理由与待定审计。",
@@ -2020,7 +2056,6 @@
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊6条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -2031,7 +2066,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 42,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -2040,26 +2075,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 748,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 754,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/journals/2158-3188/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/nature-tp-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/nature-tp-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 743,
-      "current_raw_count": 748,
-      "normalized_reference_count": 748,
-      "normalized_source_count": 748,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 743,
+      "current_raw_count": 754,
+      "normalized_reference_count": 754,
+      "normalized_source_count": 754,
       "recovered_pre_snapshot_count": 5,
-      "post_snapshot_registration_count": 6,
+      "collected_post_snapshot_count": 6,
+      "raw_records_added": 11,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/nature-tp-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/nature-tp-current.json"
     }
   },
   {
@@ -2071,11 +2107,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录132，补采快照前漏项5，现源全量137；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记0条单列。归一后2026参考137条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入2、排除3、待定4、未审1；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录132，本轮累计补采5（快照前漏项5、快照后登记0），现源全量137。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后137条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入2、排除3、待定4、未审1；候选仍空摘要0条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A2095-2228%2Cissn%3A2095-2236&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-7c6e5692e3-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-7c6e5692e3-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-7c6e5692e3-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-7c6e5692e3-current.json"
     ],
     "issues": [
       "4条待定，详见台账理由与待定审计。",
@@ -2096,7 +2133,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 10,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -2106,25 +2143,26 @@
       "status": "complete",
       "source": "Crossref出版方登记元数据",
       "total": 137,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A2095-2228%2Cissn%3A2095-2236&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-7c6e5692e3-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-7c6e5692e3-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 132,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 132,
       "current_raw_count": 137,
       "normalized_reference_count": 137,
       "normalized_source_count": 137,
       "recovered_pre_snapshot_count": 5,
-      "post_snapshot_registration_count": 0,
+      "collected_post_snapshot_count": 0,
+      "raw_records_added": 5,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-7c6e5692e3-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-7c6e5692e3-current.json"
     }
   },
   {
@@ -2136,11 +2174,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录2174，补采快照前漏项6，现源全量2180；保留但从2026比较中扣除2027出版登记10条，参考目录快照后首次登记26条单列。归一后2026参考2170条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入91、排除1、待定86、未审0；候选仍空摘要84条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录2174，本轮累计补采32（快照前漏项6、快照后登记26），现源全量2206。保留2027出版登记历史记录10条并从2026比较集合扣除，归一后2196条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入91、排除1、待定86、未审0；候选仍空摘要84条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0022-1694%2Cissn%3A1879-2707&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-f18c5c6d80-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-f18c5c6d80-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-f18c5c6d80-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-f18c5c6d80-current.json"
     ],
     "issues": [
       "86条待定，详见台账理由与待定审计。",
@@ -2151,7 +2190,6 @@
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "按缺摘要清单继续从官方论文页或citation-and-abstract BibTeX补证。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊26条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -2162,7 +2200,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 178,
       "supplemented_candidate_count": 0,
       "raw_missing": 84,
@@ -2171,26 +2209,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 2170,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 2196,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0022-1694%2Cissn%3A1879-2707&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-f18c5c6d80-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-f18c5c6d80-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 2174,
-      "current_raw_count": 2180,
-      "normalized_reference_count": 2170,
-      "normalized_source_count": 2170,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 2174,
+      "current_raw_count": 2206,
+      "normalized_reference_count": 2196,
+      "normalized_source_count": 2196,
       "recovered_pre_snapshot_count": 6,
-      "post_snapshot_registration_count": 26,
+      "collected_post_snapshot_count": 26,
+      "raw_records_added": 32,
       "retained_2027_record_count": 10,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-f18c5c6d80-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-f18c5c6d80-current.json"
     }
   },
   {
@@ -2202,19 +2241,19 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录299，补采快照前漏项2，现源全量301；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记6条单列。归一后2026参考301条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入10、排除4、待定0、未审0；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录299，本轮累计补采8（快照前漏项2、快照后登记6），现源全量307。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后307条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入10、排除4、待定0、未审0；候选仍空摘要0条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://link.springer.com/article/10.1007/s11433-025-2848-2",
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A1674-7348%2Cissn%3A1869-1927&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-7b7ab0eaeb-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-7b7ab0eaeb-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-7b7ab0eaeb-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-7b7ab0eaeb-current.json"
     ],
     "issues": [
       "尚未完成全部纳入论文的正式元数据与公开PDF核验。"
     ],
     "next_actions": [
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊6条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -2225,7 +2264,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 14,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -2234,26 +2273,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 301,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 307,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A1674-7348%2Cissn%3A1869-1927&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-7b7ab0eaeb-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-7b7ab0eaeb-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 299,
-      "current_raw_count": 301,
-      "normalized_reference_count": 301,
-      "normalized_source_count": 301,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 299,
+      "current_raw_count": 307,
+      "normalized_reference_count": 307,
+      "normalized_source_count": 307,
       "recovered_pre_snapshot_count": 2,
-      "post_snapshot_registration_count": 6,
+      "collected_post_snapshot_count": 6,
+      "raw_records_added": 8,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-7b7ab0eaeb-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-7b7ab0eaeb-current.json"
     }
   },
   {
@@ -2265,11 +2305,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录462，补采快照前漏项2，现源全量464；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记10条单列。归一后2026参考464条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入45、排除5、待定6、未审0；候选仍空摘要1条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录462，本轮累计补采12（快照前漏项2、快照后登记10），现源全量474。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后474条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入45、排除5、待定6、未审0；候选仍空摘要1条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/journals/2666-3864/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-b55e43c0c4-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-b55e43c0c4-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-b55e43c0c4-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-b55e43c0c4-current.json"
     ],
     "issues": [
       "6条待定，详见台账理由与待定审计。",
@@ -2280,7 +2321,6 @@
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "按缺摘要清单继续从官方论文页或citation-and-abstract BibTeX补证。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊10条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -2291,7 +2331,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 56,
       "supplemented_candidate_count": 0,
       "raw_missing": 1,
@@ -2300,26 +2340,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 464,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 474,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/journals/2666-3864/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-b55e43c0c4-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-b55e43c0c4-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 462,
-      "current_raw_count": 464,
-      "normalized_reference_count": 464,
-      "normalized_source_count": 464,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 462,
+      "current_raw_count": 474,
+      "normalized_reference_count": 474,
+      "normalized_source_count": 474,
       "recovered_pre_snapshot_count": 2,
-      "post_snapshot_registration_count": 10,
+      "collected_post_snapshot_count": 10,
+      "raw_records_added": 12,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-b55e43c0c4-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-b55e43c0c4-current.json"
     }
   },
   {
@@ -2331,32 +2372,33 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录407，补采快照前漏项5，现源全量412；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记3条单列。归一后2026参考412条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入55、排除3、待定3、未审0；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录407，本轮累计补采8（快照前漏项5、快照后登记3），现源全量415。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后415条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入55、排除3、待定3、未审1；候选仍空摘要0条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/journals/2399-3669/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/commschem-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/commschem-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/commschem-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/commschem-current.json"
     ],
     "issues": [
       "3条待定，详见台账理由与待定审计。",
-      "尚未完成全部纳入论文的正式元数据与公开PDF核验。"
+      "尚未完成全部纳入论文的正式元数据与公开PDF核验。",
+      "总量补采新增1条初筛候选尚未内容审核。"
     ],
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊3条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
       "include": 55,
       "exclude": 3,
       "pending": 3,
-      "unreviewed": 0
+      "unreviewed": 1
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
-      "original_candidate_count": 61,
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
+      "original_candidate_count": 62,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
       "effective_missing": 0
@@ -2364,26 +2406,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 412,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 415,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/journals/2399-3669/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/commschem-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/commschem-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 407,
-      "current_raw_count": 412,
-      "normalized_reference_count": 412,
-      "normalized_source_count": 412,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 407,
+      "current_raw_count": 415,
+      "normalized_reference_count": 415,
+      "normalized_source_count": 415,
       "recovered_pre_snapshot_count": 5,
-      "post_snapshot_registration_count": 3,
+      "collected_post_snapshot_count": 3,
+      "raw_records_added": 8,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/commschem-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/commschem-current.json"
     }
   },
   {
@@ -2395,11 +2438,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录563，补采快照前漏项0，现源全量563；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记0条单列。归一后2026参考563条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入28、排除0、待定2、未审0；候选仍空摘要2条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录563，本轮累计补采0（快照前漏项0、快照后登记0），现源全量563。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后563条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入28、排除0、待定2、未审0；候选仍空摘要2条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0168-1923%2Cissn%3A1873-2240&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-dad8818884-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-dad8818884-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-dad8818884-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-dad8818884-current.json"
     ],
     "issues": [
       "2条待定，详见台账理由与待定审计。",
@@ -2420,7 +2464,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 30,
       "supplemented_candidate_count": 0,
       "raw_missing": 2,
@@ -2430,25 +2474,26 @@
       "status": "complete",
       "source": "Crossref出版方登记元数据",
       "total": 563,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0168-1923%2Cissn%3A1873-2240&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-dad8818884-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-dad8818884-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 563,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 563,
       "current_raw_count": 563,
       "normalized_reference_count": 563,
       "normalized_source_count": 563,
       "recovered_pre_snapshot_count": 0,
-      "post_snapshot_registration_count": 0,
+      "collected_post_snapshot_count": 0,
+      "raw_records_added": 0,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-dad8818884-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-dad8818884-current.json"
     }
   },
   {
@@ -2460,11 +2505,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录1742，补采快照前漏项0，现源全量1742；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记0条单列。归一后2026参考1742条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入16、排除2、待定30、未审0；候选仍空摘要29条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录1742，本轮累计补采0（快照前漏项0、快照后登记0），现源全量1742。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后1742条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入16、排除2、待定30、未审0；候选仍空摘要29条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0017-9310%2Cissn%3A1879-2189&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-ba9e12f1c9-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-ba9e12f1c9-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-ba9e12f1c9-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-ba9e12f1c9-current.json"
     ],
     "issues": [
       "30条待定，详见台账理由与待定审计。",
@@ -2485,7 +2531,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 48,
       "supplemented_candidate_count": 0,
       "raw_missing": 29,
@@ -2495,25 +2541,26 @@
       "status": "complete",
       "source": "Crossref出版方登记元数据",
       "total": 1742,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0017-9310%2Cissn%3A1879-2189&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-ba9e12f1c9-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-ba9e12f1c9-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 1742,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 1742,
       "current_raw_count": 1742,
       "normalized_reference_count": 1742,
       "normalized_source_count": 1742,
       "recovered_pre_snapshot_count": 0,
-      "post_snapshot_registration_count": 0,
+      "collected_post_snapshot_count": 0,
+      "raw_records_added": 0,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-ba9e12f1c9-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-ba9e12f1c9-current.json"
     }
   },
   {
@@ -2525,11 +2572,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录359，补采快照前漏项4，现源全量363；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记14条单列。归一后2026参考363条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入5、排除2、待定3、未审0；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录359，本轮累计补采18（快照前漏项4、快照后登记14），现源全量377。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后377条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入5、排除2、待定3、未审0；候选仍空摘要0条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/journals/2162-2531/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-4bf1b752f6-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-4bf1b752f6-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-4bf1b752f6-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-4bf1b752f6-current.json"
     ],
     "issues": [
       "3条待定，详见台账理由与待定审计。",
@@ -2538,7 +2586,6 @@
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊14条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -2549,7 +2596,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 10,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -2558,26 +2605,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 363,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 377,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/journals/2162-2531/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-4bf1b752f6-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-4bf1b752f6-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 359,
-      "current_raw_count": 363,
-      "normalized_reference_count": 363,
-      "normalized_source_count": 363,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 359,
+      "current_raw_count": 377,
+      "normalized_reference_count": 377,
+      "normalized_source_count": 377,
       "recovered_pre_snapshot_count": 4,
-      "post_snapshot_registration_count": 14,
+      "collected_post_snapshot_count": 14,
+      "raw_records_added": 18,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-4bf1b752f6-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-4bf1b752f6-current.json"
     }
   },
   {
@@ -2589,18 +2637,18 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录448，补采快照前漏项0，现源全量448；保留但从2026比较中扣除2027出版登记5条，参考目录快照后首次登记8条单列。归一后2026参考443条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入134、排除2、待定0、未审0；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录448，本轮累计补采8（快照前漏项0、快照后登记8），现源全量456。保留2027出版登记历史记录5条并从2026比较集合扣除，归一后451条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入134、排除2、待定0、未审0；候选仍空摘要0条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0169-2607%2Cissn%3A1872-7565&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-24982684ad-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-24982684ad-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-24982684ad-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-24982684ad-current.json"
     ],
     "issues": [
       "尚未完成全部纳入论文的正式元数据与公开PDF核验。"
     ],
     "next_actions": [
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊8条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -2611,7 +2659,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 136,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -2620,26 +2668,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 443,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 451,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0169-2607%2Cissn%3A1872-7565&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-24982684ad-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-24982684ad-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 448,
-      "current_raw_count": 448,
-      "normalized_reference_count": 443,
-      "normalized_source_count": 443,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 448,
+      "current_raw_count": 456,
+      "normalized_reference_count": 451,
+      "normalized_source_count": 451,
       "recovered_pre_snapshot_count": 0,
-      "post_snapshot_registration_count": 8,
+      "collected_post_snapshot_count": 8,
+      "raw_records_added": 8,
       "retained_2027_record_count": 5,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-24982684ad-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-24982684ad-current.json"
     }
   },
   {
@@ -2651,61 +2700,64 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录1110，补采快照前漏项0，现源全量1110；保留但从2026比较中扣除2027出版登记24条，参考目录快照后首次登记23条单列。归一后2026参考1086条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入8、排除7、待定23、未审0；候选仍空摘要23条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17当前参考全集复核：历史快照源记录1110，实际补采2026记录22，现源全量1132；原有24条2027出版登记历史记录保留并从2026源集合扣除。年度参考检索列表1109条，其中1条最新DOI登记为2027，已单独归档并从2026参考集合扣除。两边归一后均1108条，逐DOI全等、未决差异0。未按首次登记时间截断。官网数未知仍null，不冒充官网总数或年底最终查全。个人台账和候选摘要待办见对应统计。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0020-0255%2Cissn%3A1872-6291&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-ed923e2572-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-ed923e2572-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-ed923e2572-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-ed923e2572-current.json"
     ],
     "issues": [
       "23条待定，详见台账理由与待定审计。",
       "尚未完成全部纳入论文的正式元数据与公开PDF核验。",
-      "当前仍有23条候选为空摘要，尚需补原摘要。"
+      "当前仍有24条候选为空摘要，尚需补原摘要。",
+      "总量补采新增1条初筛候选尚未内容审核。"
     ],
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "按缺摘要清单继续从官方论文页或citation-and-abstract BibTeX补证。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊23条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
       "include": 8,
       "exclude": 7,
       "pending": 23,
-      "unreviewed": 0
+      "unreviewed": 1
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
-      "original_candidate_count": 38,
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
+      "original_candidate_count": 39,
       "supplemented_candidate_count": 0,
-      "raw_missing": 23,
-      "effective_missing": 23
+      "raw_missing": 24,
+      "effective_missing": 24
     },
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 1086,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 1108,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。 本刊年度索引中1条已查证为2027的条目单列，详见审计。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0020-0255%2Cissn%3A1872-6291&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-ed923e2572-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-ed923e2572-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 1110,
-      "current_raw_count": 1110,
-      "normalized_reference_count": 1086,
-      "normalized_source_count": 1086,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 1110,
+      "current_raw_count": 1132,
+      "normalized_reference_count": 1108,
+      "normalized_source_count": 1108,
       "recovered_pre_snapshot_count": 0,
-      "post_snapshot_registration_count": 23,
+      "collected_post_snapshot_count": 22,
+      "raw_records_added": 22,
       "retained_2027_record_count": 24,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-ed923e2572-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-ed923e2572-current.json",
+      "reference_index_2027_exclusion_count": 1
     }
   },
   {
@@ -2717,11 +2769,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录480，补采快照前漏项1，现源全量481；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记9条单列。归一后2026参考481条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入27、排除8、待定3、未审0；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录480，本轮累计补采10（快照前漏项1、快照后登记9），现源全量490。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后490条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入27、排除8、待定3、未审0；候选仍空摘要0条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/journals/2399-3650/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/commsphys-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/commsphys-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/commsphys-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/commsphys-current.json"
     ],
     "issues": [
       "3条待定，详见台账理由与待定审计。",
@@ -2730,7 +2783,6 @@
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊9条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -2741,7 +2793,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 38,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -2750,26 +2802,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 481,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 490,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/journals/2399-3650/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/commsphys-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/commsphys-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 480,
-      "current_raw_count": 481,
-      "normalized_reference_count": 481,
-      "normalized_source_count": 481,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 480,
+      "current_raw_count": 490,
+      "normalized_reference_count": 490,
+      "normalized_source_count": 490,
       "recovered_pre_snapshot_count": 1,
-      "post_snapshot_registration_count": 9,
+      "collected_post_snapshot_count": 9,
+      "raw_records_added": 10,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/commsphys-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/commsphys-current.json"
     }
   },
   {
@@ -2781,34 +2834,34 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录276，补采快照前漏项4，现源全量280；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记9条单列。归一后2026参考280条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入31、排除1、待定1、未审1；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录276，本轮累计补采13（快照前漏项4、快照后登记9），现源全量289。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后289条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入31、排除1、待定1、未审2；候选仍空摘要0条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/journals/1741-7007/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-736c22a224-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-736c22a224-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-736c22a224-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-736c22a224-current.json"
     ],
     "issues": [
       "1条待定，详见台账理由与待定审计。",
       "尚未完成全部纳入论文的正式元数据与公开PDF核验。",
-      "总量补采新增1条初筛候选尚未内容审核。"
+      "总量补采新增2条初筛候选尚未内容审核。"
     ],
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
       "逐篇读本轮新增候选原摘要，缺摘要保留待补，不凭标题作纳入。",
-      "本刊9条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
       "include": 31,
       "exclude": 1,
       "pending": 1,
-      "unreviewed": 1
+      "unreviewed": 2
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
-      "original_candidate_count": 34,
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
+      "original_candidate_count": 35,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
       "effective_missing": 0
@@ -2816,26 +2869,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 280,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 289,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/journals/1741-7007/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-736c22a224-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-736c22a224-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 276,
-      "current_raw_count": 280,
-      "normalized_reference_count": 280,
-      "normalized_source_count": 280,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 276,
+      "current_raw_count": 289,
+      "normalized_reference_count": 289,
+      "normalized_source_count": 289,
       "recovered_pre_snapshot_count": 4,
-      "post_snapshot_registration_count": 9,
+      "collected_post_snapshot_count": 9,
+      "raw_records_added": 13,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-736c22a224-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-736c22a224-current.json"
     }
   },
   {
@@ -2847,11 +2901,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录534，补采快照前漏项2，现源全量536；保留但从2026比较中扣除2027出版登记6条，参考目录快照后首次登记5条单列。归一后2026参考530条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入68、排除8、待定6、未审0；候选仍空摘要1条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录534，本轮累计补采7（快照前漏项2、快照后登记5），现源全量541。保留2027出版登记历史记录6条并从2026比较集合扣除，归一后535条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入68、排除8、待定6、未审0；候选仍空摘要1条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A1386-5056%2Cissn%3A1872-8243&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-7dead2abe6-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-7dead2abe6-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-7dead2abe6-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-7dead2abe6-current.json"
     ],
     "issues": [
       "6条待定，详见台账理由与待定审计。",
@@ -2862,7 +2917,6 @@
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "按缺摘要清单继续从官方论文页或citation-and-abstract BibTeX补证。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊5条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -2873,7 +2927,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 82,
       "supplemented_candidate_count": 0,
       "raw_missing": 1,
@@ -2882,26 +2936,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 530,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 535,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A1386-5056%2Cissn%3A1872-8243&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-7dead2abe6-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-7dead2abe6-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 534,
-      "current_raw_count": 536,
-      "normalized_reference_count": 530,
-      "normalized_source_count": 530,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 534,
+      "current_raw_count": 541,
+      "normalized_reference_count": 535,
+      "normalized_source_count": 535,
       "recovered_pre_snapshot_count": 2,
-      "post_snapshot_registration_count": 5,
+      "collected_post_snapshot_count": 5,
+      "raw_records_added": 7,
       "retained_2027_record_count": 6,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-7dead2abe6-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-7dead2abe6-current.json"
     }
   },
   {
@@ -2913,11 +2968,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录168，补采快照前漏项6，现源全量174；保留但从2026比较中扣除2027出版登记0条，参考目录快照后首次登记2条单列。归一后2026参考174条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入7、排除2、待定1、未审0；候选仍空摘要0条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录168，本轮累计补采8（快照前漏项6、快照后登记2），现源全量176。保留2027出版登记历史记录0条并从2026比较集合扣除，归一后176条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入7、排除2、待定1、未审0；候选仍空摘要0条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0969-2126%2Cissn%3A1878-4186&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-9482c5d5bf-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-9482c5d5bf-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-9482c5d5bf-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-9482c5d5bf-current.json"
     ],
     "issues": [
       "1条待定，详见台账理由与待定审计。",
@@ -2926,7 +2982,6 @@
     "next_actions": [
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊2条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -2937,7 +2992,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 10,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -2946,26 +3001,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 174,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 176,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0969-2126%2Cissn%3A1878-4186&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-9482c5d5bf-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-9482c5d5bf-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 168,
-      "current_raw_count": 174,
-      "normalized_reference_count": 174,
-      "normalized_source_count": 174,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 168,
+      "current_raw_count": 176,
+      "normalized_reference_count": 176,
+      "normalized_source_count": 176,
       "recovered_pre_snapshot_count": 6,
-      "post_snapshot_registration_count": 2,
+      "collected_post_snapshot_count": 2,
+      "raw_records_added": 8,
       "retained_2027_record_count": 0,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-9482c5d5bf-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-9482c5d5bf-current.json"
     }
   },
   {
@@ -2998,7 +3054,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 59,
       "supplemented_candidate_count": 0,
       "raw_missing": 0,
@@ -3025,11 +3081,12 @@
     "updated_at": "2026-11-17",
     "official_total": null,
     "official_scope": "2026正式卷期/原归档口径待全年目录核对，不将单卷数量当作年度总量。",
-    "coverage_note": "2026-11-17已完成可靠参考来源同口径对账：历史源记录459，补采快照前漏项2，现源全量461；保留但从2026比较中扣除2027出版登记5条，参考目录快照后首次登记10条单列。归一后2026参考456条与源集合逐DOI全等，未决差异0。官网总数仍未知，不将参考数冒充官网数。个人台账纳入26、排除2、待定9、未审0；候选仍空摘要8条。此处核验边界是2026-11-08历史快照，非2026年底全年最终覆盖。",
+    "coverage_note": "2026-11-17已完成当前已登记2026参考全集逐DOI对账，未按首次登记时间截断：历史快照源记录459，本轮累计补采12（快照前漏项2、快照后登记10），现源全量471。保留2027出版登记历史记录5条并从2026比较集合扣除，归一后466条与完整参考目录全等，未决差异0。官网总数仍未知，参考数不冒充官网数，未来新增和年底最终目录需继续更新。个人台账纳入26、排除2、待定9、未审0；候选仍空摘要8条。历史采集快照和原始字段未覆盖。",
     "evidence_urls": [
       "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0010-4655%2Cissn%3A1879-2944&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-20261117/j-5641775722-audit.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-5641775722-resolved.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-5641775722-resolved.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-5641775722-current.json"
     ],
     "issues": [
       "9条待定，详见台账理由与待定审计。",
@@ -3040,7 +3097,6 @@
       "核实待定中的文献类型、AI作用、正式DOI或完整摘要，不用标题直接判定。",
       "按缺摘要清单继续从官方论文页或citation-and-abstract BibTeX补证。",
       "逐篇核对作者顺序、正式版本、发表身份和公开PDF；仅将已查证值写入verified_metadata。",
-      "本刊10条快照后首次登记论文已列清单，下一次增量采集和新快照中处理，不混入本次历史快照对账。",
       "2026结束后按新快照继续核对全年最终目录；本次不承诺未来尚未发布内容。"
     ],
     "review_progress": {
@@ -3051,7 +3107,7 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2026/ai4s.json",
-      "candidate_sha256": "fb10be435994a8effb057c0f37aad30d41582e4662d2bedde1ca3f4f3b83e47d",
+      "candidate_sha256": "432132311a64c32cad29de21e4204adebc961a193f7c1dfb8f3c60b43b48efa5",
       "original_candidate_count": 37,
       "supplemented_candidate_count": 0,
       "raw_missing": 8,
@@ -3060,26 +3116,27 @@
     "reference_check": {
       "status": "complete",
       "source": "Crossref出版方登记元数据",
-      "total": 456,
-      "scope": "原采集器2026年Crossref pub-date/type:journal-article与配置ISSN；以历史快照前首次登记为集合边界，按本轮Crossref出版登记年归一。不是2026年底全年查全或官网最终总数。 首次登记截止2026-11-08T13:38:12.854071+00:00。",
+      "total": 466,
+      "scope": "当前截至2026-11-17已登记的2026年Crossref pub-date/type:journal-article与配置ISSN全量参考集合；不以首次登记时间截断。原采集快照和原始字段保留，2027出版登记历史记录仅从2026比较集合排除。",
       "query_url": "https://api.crossref.org/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article%2Cissn%3A0010-4655%2Cissn%3A1879-2944&rows=1000&cursor=%2A&select=DOI%2Ctitle%2Cpublished%2Cpublished-online%2Cpublished-print%2Cissued%2Ctype%2Cvolume%2Cissue%2CISSN%2CURL",
       "checked_at": "2026-11-17",
       "unresolved": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-5641775722-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-5641775722-current.json"
     },
     "catalogue_reconciliation": {
-      "status": "complete_with_documented_normalization",
-      "snapshot_raw_count": 459,
-      "current_raw_count": 461,
-      "normalized_reference_count": 456,
-      "normalized_source_count": 456,
+      "status": "complete_current_reference_with_documented_year_normalization",
+      "historical_snapshot_raw_count": 459,
+      "current_raw_count": 471,
+      "normalized_reference_count": 466,
+      "normalized_source_count": 466,
       "recovered_pre_snapshot_count": 2,
-      "post_snapshot_registration_count": 10,
+      "collected_post_snapshot_count": 10,
+      "raw_records_added": 12,
       "retained_2027_record_count": 5,
       "same_scope_missing": 0,
       "same_scope_extra": 0,
       "same_scope_duplicate": 0,
-      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-resolution-20261117/j-5641775722-resolved.json"
+      "audit_file": "reviews/2026/audits/wangmengran8789-catalogue-current-20261117/j-5641775722-current.json"
     }
   }
 ]
