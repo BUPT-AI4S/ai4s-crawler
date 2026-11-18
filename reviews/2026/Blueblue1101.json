@@ -15697,9 +15697,21 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "遥感语言引导分割提及环境监测动机，但需核实实验类别及真实科学任务。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "正式PDF第3节LaSeRS数据集以飞机、船、运动设施等通用遥感目标的问答与掩码为主，评测语言指令分割准确率；地震避险只是示例提示，未验证灾害评估或地学任务，现有贡献为通用视觉分割基准。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/papers/Xin_SegEarth-R2_Towards_Comprehensive_Language-guided_Segmentation_for_Remote_Sensing_Images_CVPR_2026_paper.pdf"
+        ],
+        "fulltext_evidence": {
+          "index": 192,
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Xin_SegEarth-R2_Towards_Comprehensive_Language-guided_Segmentation_for_Remote_Sensing_Images_CVPR_2026_paper.pdf",
+          "section": "Figure 1; Sections 3–4, LaSeRS benchmark",
+          "finding": "LaSeRS由SAM/LLM半自动生成目标掩码与问答，包含飞机、船舶及运动设施等对象；地震避险提问是示意，未见真实灾害/地表测量验证。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -24758,10 +24770,37 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "遥感分割未交代地物类别及科学目标，需核查实验任务。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "正式CVPR补充材料在Potsdam、Vaihingen、UAVid、LoveDA地表类别上逐类评估，低植被连续性与道路拓扑显著改进；生成结构先验用于实际遥感地表覆盖制图。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Qiu_HySeg_Learning_Generative_CVPR_2026_supplemental.pdf"
+        ],
+        "fulltext_evidence": {
+          "index": 307,
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Qiu_HySeg_Learning_Generative_CVPR_2026_supplemental.pdf",
+          "section": "official supplementary opening summary and per-class experiments",
+          "finding": "在Potsdam/Vaihingen/UAVid及LoveDA实测地表分割，显示低植被、道路类别及拓扑连续性的效果，属于地表覆盖制图的实质贡献。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于地球宇宙科学",
+          "label_en": "AI for Earth and space sciences",
+          "evidence_location": "正式论文正文或官网链接的作者全文：official supplementary opening summary and per-class experiments",
+          "rationale": "正式CVPR补充材料在Potsdam、Vaihingen、UAVid、LoveDA地表类别上逐类评估，低植被连续性与道路拓扑显著改进；生成结构先验用于实际遥感地表覆盖制图。"
+        },
+        {
+          "axis": "task",
+          "label": "地表覆盖制图",
+          "label_en": "Land-cover mapping",
+          "evidence_location": "正式论文正文或官网链接的作者全文：official supplementary opening summary and per-class experiments",
+          "rationale": "正式CVPR补充材料在Potsdam、Vaihingen、UAVid、LoveDA地表类别上逐类评估，低植被连续性与道路拓扑显著改进；生成结构先验用于实际遥感地表覆盖制图。"
+        }
+      ]
     }
   },
   {
@@ -27897,9 +27936,21 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "地理空间视觉语言模型评测字幕、定位与检测，需确认具体地学研究或工程任务。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "正式CVPR补充材料的任务为DIOR-RSVG和VRSBench通用遥感目标定位、图像描述及多目标检测，主要优化语言生成顺序和目标重复遗漏；未找到实际地学测量或环境工程任务验证。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Liu_GeoDiT_A_Diffusion-based_CVPR_2026_supplemental.pdf"
+        ],
+        "fulltext_evidence": {
+          "index": 345,
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Liu_GeoDiT_A_Diffusion-based_CVPR_2026_supplemental.pdf",
+          "section": "Sections 1–3; DIOR-RSVG/VRSBench comparisons",
+          "finding": "评估遥感图像描述、目标定位与多目标检测的文本生成性能，未以地学或环境任务真实量测验证。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
