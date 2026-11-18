@@ -31243,11 +31243,11 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "lixueting-2026-batch38",
+      "batch_id": "lixueting-2026-batch39",
       "owner": "李雪婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "正式原创队列研究与原Summary/开放正文及已验PDF附录均已核。主要分析使用预先固定的生物标志物阈值、线性/混合/逻辑回归及SCAM单调平滑；Methods提到既往GMM导出的阈值，附录p2另使用既有MUBADA加权ROI。仍需追溯其模型构建/本研究应用，区分真正使用学习所得预测或表征模型与仅沿用固定阈值/ROI统计量，避免把pseudotime或Wallenberg AI基金名称直接当AI。当前不武断纳入或排除，下一批核主要参考文献19及MUBADA/GMM方法来源。",
+      "decision": "include",
+      "rationale": "原待定已补证。正式研究Outcomes明确实际计算Aβ/ tau病理伪时间，Figure 1据此比较%p-tau217与eMTBR-tau243沿病理负荷的变化，并引用参考文献19的方法。本轮核读该原始方法论文：PCA后谱嵌入学习低维结构，SCORPIUS无监督聚类/优化平滑路径生成受试者0—1伪时间。按正文的方法引用追溯，支持学习型疾病轨迹表征实际参与生物标志物病理阶段研究，故纳入；不是仅因pseudotime、GMM阈值、回归或基金名判AI。2024方法论文输入与2026正文输入描述不同，不把其1504样本、4PC、软件参数或蛋白组分析照搬为本研究实施细节；未运行作者代码。伪时间表示横断面病理排序，不等于真实随访时间或预测发病时刻。",
       "verified_metadata": {
         "doi": "10.1016/S1474-4422(26)00029-3",
         "title": "Integration of plasma eMTBR-tau243 and p-tau217 in the diagnosis and stratification of Alzheimer's disease: a prospective cohort study",
@@ -31283,21 +31283,55 @@
         "evidence_urls": [
           "https://www.sciencedirect.com/science/article/pii/S1474442226000293",
           "https://www.sciencedirect.com/journal/the-lancet-neurology/vol/25/issue/4",
-          "https://ars.els-cdn.com/content/image/1-s2.0-S1474442226000293-mmc1.pdf"
+          "https://ars.els-cdn.com/content/image/1-s2.0-S1474442226000293-mmc1.pdf",
+          "https://www.nature.com/articles/s41593-024-01737-w",
+          "https://www.nature.com/articles/s41591-025-03617-7"
         ],
-        "scientific_evidence_location": "官网原Summary、开放HTML Methods/Results",
+        "scientific_evidence_location": "2026正式论文Outcomes/Statistical analysis/Figure 1及补充材料p2；该文参考19（Nature Neuroscience 2024）Methods: Inferred trajectory using pseudotime",
         "pdf_availability_note": "主要论文PDF未下载验签，留null；已核资料的具体范围见审核理由。",
         "supplementary_material_url": "https://ars.els-cdn.com/content/image/1-s2.0-S1474442226000293-mmc1.pdf",
-        "supplementary_verification_note": "公开PDF已下载验签、15页；附录印刷p2（PDF第3页）已逐页文字/渲染核读。封面说明2026-06-17已更正；不冒称取得主要论文PDF。"
+        "supplementary_verification_note": "公开PDF已下载验签、15页；附录印刷p2（PDF第3页）已逐页文字/渲染核读。封面说明2026-06-17已更正；不冒称取得主要论文PDF。",
+        "method_provenance_note": "方法归属由2026正文实际计算伪时间及明确参考19的引用链、2024原始方法正文共同支持，是基于来源的推断，未核2026作者运行代码。原方法PCA/谱嵌入/SCORPIUS参数仅说明算法来源，不声称2026采用相同输入、样本数或全部设置。GMM预定阳性阈值及MUBADA既有ROI不是单独纳入依据。"
       },
-      "tags": [],
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "2026正式论文Outcomes/Statistical analysis/Figure 1及补充材料p2；该文参考19（Nature Neuroscience 2024）Methods: Inferred trajectory using pseudotime",
+          "rationale": "研究实际用病理伪时间表征比较阿尔茨海默病标志物轨迹；所引原方法由谱嵌入与SCORPIUS无监督轨迹学习构成。按引用链确认角色，不推定同样实现参数或真实时间预测。"
+        },
+        {
+          "axis": "method",
+          "label": "无监督学习",
+          "label_en": "Unsupervised learning",
+          "evidence_location": "2026正式论文Outcomes/Statistical analysis/Figure 1及补充材料p2；该文参考19（Nature Neuroscience 2024）Methods: Inferred trajectory using pseudotime",
+          "rationale": "研究实际用病理伪时间表征比较阿尔茨海默病标志物轨迹；所引原方法由谱嵌入与SCORPIUS无监督轨迹学习构成。按引用链确认角色，不推定同样实现参数或真实时间预测。"
+        },
+        {
+          "axis": "task",
+          "label": "神经退行性疾病轨迹识别",
+          "label_en": "Neurodegenerative disease trajectory identification",
+          "evidence_location": "2026正式论文Outcomes/Statistical analysis/Figure 1及补充材料p2；该文参考19（Nature Neuroscience 2024）Methods: Inferred trajectory using pseudotime",
+          "rationale": "研究实际用病理伪时间表征比较阿尔茨海默病标志物轨迹；所引原方法由谱嵌入与SCORPIUS无监督轨迹学习构成。按引用链确认角色，不推定同样实现参数或真实时间预测。"
+        }
+      ],
       "publication_scope_check": {
         "status": "verified",
         "cutoff_at": "2026-11-17T07:14:20Z",
         "volume": 25,
         "issue": 4,
         "basis": "正式2026卷25目录与单篇citation一致，online日期在固定截止前；11期漏筛研究Version of Record为2026-10-14。"
-      }
+      },
+      "decision_history": [
+        {
+          "batch_id": "lixueting-2026-batch38",
+          "decision": "pending",
+          "rationale": "正式原创队列研究与原Summary/开放正文及已验PDF附录均已核。主要分析使用预先固定的生物标志物阈值、线性/混合/逻辑回归及SCAM单调平滑；Methods提到既往GMM导出的阈值，附录p2另使用既有MUBADA加权ROI。仍需追溯其模型构建/本研究应用，区分真正使用学习所得预测或表征模型与仅沿用固定阈值/ROI统计量，避免把pseudotime或Wallenberg AI基金名称直接当AI。当前不武断纳入或排除，下一批核主要参考文献19及MUBADA/GMM方法来源。",
+          "superseded_at": "2026-11-17T20:28:04.281503-08:00",
+          "reason": "primary methods cited as reference19 checked; actual learned pseudotime role confirmed from cross-source evidence"
+        }
+      ]
     }
   },
   {
