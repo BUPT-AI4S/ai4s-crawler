@@ -13914,9 +13914,9 @@
     "source_code": "j-9f4e581a9f",
     "title": "Stem Cell Reports",
     "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-    "checked_at": "2026-11-18T05:27:44.182588-08:00",
-    "batch_id": "lixueting-2026-batch56",
-    "rules_main_commit": "0340c382fbc2d9a582fe71f48b686820c8a58d7b",
+    "checked_at": "2026-11-18T05:35:23.978213-08:00",
+    "batch_id": "lixueting-2026-stem-manual-102784",
+    "rules_main_commit": "4f8bc0904ef033194a1f52a285552371f8875dcf",
     "cutoff_utc": "2026-11-17T07:14:20Z",
     "official_total": null,
     "collected_total_same_scope": null,
@@ -14073,7 +14073,8 @@
       "https://www.sciencedirect.com/science/article/pii/S221367112600189X",
       "https://www.sciencedirect.com/science/article/pii/S2213671126002286",
       "https://www.sciencedirect.com/science/article/pii/S2213671126002882",
-      "https://www.sciencedirect.com/science/article/pii/S2213671126002961"
+      "https://www.sciencedirect.com/science/article/pii/S2213671126002961",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC12903078/"
     ],
     "official_issue_index": {
       "volume": "21",
@@ -14095,25 +14096,33 @@
       "issue_counts_verified": true
     },
     "issues": [
-      "3篇文类仍待核：102784官网CPE已请人工；102858/103047尚未访问，留下一轮，未知总量不得置0或推定完成。",
+      "2篇文类尚未访问：102858（Diversity-in-a-dish）与103047（core设施）；留下一轮核正文，最终同口径总数仍未知。102784已据获授权的PMC全文排除并解除人工待办。",
       "10条优先非候选方法/漏筛召回尚未核，未升正式候选，不计全球科学pending；后续先读具体方法再决定。"
     ],
     "next_actions": [
       "复用11期211逐PII目录及唯一103143非研究差额，不重复抓目录或重新审核6已纳入候选。",
-      "先处理尚未尝试的102858/103047正文文类；102784等本轮人工答复，未答不重试CPE或擅用替代资料。",
+      "处理尚未尝试的102858/103047正文文类；102784已据获授权PMC全文解决，不再重试出版社CPE页或请求人工。",
       "依remaining_recall_checks核10条方法/漏筛线索，优先SAMS（PII S2213671126000834）、跨模态整合（S2213671125003297）和GRN/调控因子推断（S221367112600175X/1426/2997）；具体DOI/URL均见逐条记录。",
-      "继续保留原20组人工及本轮1组；全部文类与召回解决前本来源保持部分完成。"
+      "保留其他20组未答人工核验；本篇无法人工回复仅授权核本篇替代资料，其他未答项不获推定许可。全部文类和方法召回解决前本来源保持部分完成。"
     ],
-    "coverage_note": "11期目录211与原raw210逐PII对账：210全部匹配，无额外；唯一缺采103143为不适用Voices已核，不补。当前188确认小计、20非适用、3文类待核，211=188+20+3；最终official_total仍null。6候选仍6纳入未改，另10方法召回待核。",
+    "coverage_note": "11期目录211与原raw210逐PII对账结果不变，唯一缺采Voices非适用不补。当前211=188研究/实质综述小计+21非适用+2文类待核：102784经用户确认无法人工后以PMC全文核为指南介绍/规范Perspective并排除。最终official_total仍null，6科学候选仍6纳入、10方法召回未变。",
     "access_evidence": {
       "normal_browser": "11期目录及11篇开放正文已读；102784页返回CPE00002后停止序列并请求人工。没有重复旧失败页。",
-      "alternative_target_sources_used": false,
-      "manual_requests_added": 1
+      "alternative_target_sources_used": true,
+      "manual_requests_added": 1,
+      "manual_resolution_102784": {
+        "user_reply": "目前无法人工核验",
+        "primary_failure": "prior normal browser CPE00002",
+        "alternative": "PMC12903078 publisher-provided full HTML",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12903078/",
+        "access_note": "web正文后续分段请求遇浏览器检查，正常浏览器可完整读取，未解验证码或绕过安全。",
+        "scope": "one article document-type judgment only; not annual reference-count reconciliation"
+      }
     },
-    "limits": "只对11篇相关短文核读开放正文；5篇Preview文类据出版社栏目及现有原摘要的单项研究评论性质，未冒称阅读这5篇全文。7个Mini review按内容计学术综述/实施分析，regenesis概念评论排除。其余Research/Short communication/Review按官网类型与现有题名/摘要；3有疑点Perspective不强判。只浏览全目录题名及有线索的现有摘要，不声称全部非候选原摘要/全文补齐或全部方法召回完成；非候选缺摘要不作候选指标。未下载PDF，不运行论文代码。",
+    "limits": "只对11篇相关短文核读开放正文；5篇Preview文类据出版社栏目及现有原摘要的单项研究评论性质，未冒称阅读这5篇全文。7个Mini review按内容计学术综述/实施分析，regenesis概念评论排除。其余Research/Short communication/Review按官网类型与现有题名/摘要；3有疑点Perspective不强判。只浏览全目录题名及有线索的现有摘要，不声称全部非候选原摘要/全文补齐或全部方法召回完成；非候选缺摘要不作候选指标。未下载PDF，不运行论文代码。 本篇人工回复后追加：102784已由PMC全文解决，旧3文类待核数改为2；PMC全文用于本篇文类，不作为官网全年总量或已完成reference_check。",
     "confirmed_research_review_subtotal": 188,
-    "excluded_document_scope_total": 20,
-    "pending_document_scope_total": 3,
+    "excluded_document_scope_total": 21,
+    "pending_document_scope_total": 2,
     "observed_directory_matches_current_collection": false,
     "entries": [
       {
@@ -14549,9 +14558,32 @@
         "raw_match": true,
         "volume": "21",
         "year": 2026,
-        "document_scope_status": "pending_document_type",
-        "document_scope_basis": "正常浏览器CPE00002；原摘要主要介绍ISSCR Best Practices资源，尚不能区分实质技术/研究综述与指南资源介绍，已请人工核正文。",
-        "verification_source": "input original abstract and official directory; browser blocked"
+        "document_scope_status": "excluded_genre_or_nonresearch_subject",
+        "document_scope_basis": "经负责人明确回复“目前无法人工核验”后，读取合法公开PMC全文（PMC12903078）。正文主要介绍ISSCR Best Practices资源，按七环节组织选株、建库、原辅材料、监管、DS/DP、临床前及临床试验的风险/流程/规范建议；Box1是指南制定过程，Table1为缩写表。虽有具体技术说明和引述，但主体不是本文原创实验/分析或对既有研究结果的实质综合，按指南资源介绍/专家规范性Perspective排除。判断根据全文主体内容，非仅凭Perspective标题、篇幅或参考数。未发现应升AI4S候选的科学AI作用，亦不把自动设备或作者单位Prioris.ai当AI方法。",
+        "verification_source": "PMC publisher-provided open full text, used after owner confirmed manual verification unavailable",
+        "document_scope_verification": {
+          "batch_id": "lixueting-2026-stem-manual-102784",
+          "checked_at": "2026-11-18T05:35:23.978213-08:00",
+          "rules_main_commit": "4f8bc0904ef033194a1f52a285552371f8875dcf",
+          "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12903078/",
+          "pmcid": "PMC12903078",
+          "doi_matched": true,
+          "title_matched": true,
+          "main_headings": [
+            "Introduction",
+            "Generation and selection of PSC lines",
+            "Allogeneic PSC banking",
+            "Raw/ancillary materials and consumables, equipment, and delivery devices",
+            "Regulatory considerations",
+            "Drug substance/drug product",
+            "Preclinical/nonclinical development",
+            "Clinical trials",
+            "Conclusion"
+          ],
+          "user_reply": "目前无法人工核验",
+          "alternative_source_authorization_scope": "仅本篇；不代表其他未答人工项获得替代资料许可",
+          "limitations": "核读PMC HTML，不冒称出版社故障恢复；未下载PDF或展开指南完整PDF，不判断全部指南文本。"
+        }
       },
       {
         "article_number": "Article 102777",
@@ -18318,19 +18350,10 @@
       "11": 12
     },
     "document_scope_pending_dois": [
-      "10.1016/j.stemcr.2025.102784",
       "10.1016/j.stemcr.2026.102858",
       "10.1016/j.stemcr.2026.103047"
     ],
     "pending_document_scope_checks": [
-      {
-        "pii": "S2213671125003881",
-        "doi": "10.1016/j.stemcr.2025.102784",
-        "title": "Charting the translational pathway: ISSCR best practices for the development of PSC-derived therapies",
-        "url": "https://www.sciencedirect.com/science/article/pii/S2213671125003881",
-        "status": "awaiting_manual_verification",
-        "basis": "正常浏览器CPE00002；原摘要主要介绍ISSCR Best Practices资源，尚不能区分实质技术/研究综述与指南资源介绍，已请人工核正文。"
-      },
       {
         "pii": "S221367112600069X",
         "doi": "10.1016/j.stemcr.2026.102858",
@@ -18539,6 +18562,18 @@
       "priority_method_checks_remaining": 10,
       "method": "对题名/现有摘要中的prediction、integration、network、screening等只作召回线索；结合实际对象区分生物网络、物理仿真、规则分析与AI，不将泛词自动纳入。",
       "coverage_complete": false
-    }
+    },
+    "manual_document_scope_resolutions": [
+      {
+        "doi": "10.1016/j.stemcr.2025.102784",
+        "checked_at": "2026-11-18T05:35:23.978213-08:00",
+        "user_reply": "目前无法人工核验",
+        "result": "excluded_genre_or_nonresearch_subject",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12903078/",
+        "basis": "经负责人明确回复“目前无法人工核验”后，读取合法公开PMC全文（PMC12903078）。正文主要介绍ISSCR Best Practices资源，按七环节组织选株、建库、原辅材料、监管、DS/DP、临床前及临床试验的风险/流程/规范建议；Box1是指南制定过程，Table1为缩写表。虽有具体技术说明和引述，但主体不是本文原创实验/分析或对既有研究结果的实质综合，按指南资源介绍/专家规范性Perspective排除。判断根据全文主体内容，非仅凭Perspective标题、篇幅或参考数。未发现应升AI4S候选的科学AI作用，亦不把自动设备或作者单位Prioris.ai当AI方法。",
+        "original_raw_retained": true,
+        "scientific_candidate_added": false
+      }
+    ]
   }
 ]
