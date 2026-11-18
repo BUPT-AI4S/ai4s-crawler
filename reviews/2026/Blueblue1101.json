@@ -140064,9 +140064,21 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "物理储备池硬件以多模态和医学图像生成演示能力，需核实医学任务是否具有实质研究验证。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "研究主体为WS2纳米管光电突触与储备池计算硬件；结直肠组织和血细胞图像仅用于生成能力演示，未开展诊断、医学科学任务或AI辅助物理发现。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41467-025-68229-8"
+        ],
+        "fulltext_evidence": {
+          "index": 1474,
+          "url": "https://www.nature.com/articles/s41467-025-68229-8",
+          "section": "Results Fig. 5g–j; Supplementary Figs. 22–25",
+          "finding": "物理储备池硬件用于医学图像生成演示，无临床分类或病理机制任务。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -156537,9 +156549,21 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "自动实验室探索有机激光发射体，但摘要未明确本研究AI选样或反馈环节，需核实工作流。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "当前研究252种候选经DFT计算指导选取51种，再由自动合成与光学表征平台实验；正文称此前工作采用AI驱动搜索，而本次单轮实验由量子化学计算引导，未核实AI选样或反馈闭环。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41467-026-69233-2"
+        ],
+        "fulltext_evidence": {
+          "index": 1566,
+          "url": "https://www.nature.com/articles/s41467-026-69233-2",
+          "section": "Abstract; Introduction; high-throughput workflow",
+          "finding": "本轮单次自动实验由DFT引导筛出51/252个分子，AI搜索为前作，未见本轮机器学习选样与迭代反馈。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -169608,9 +169632,21 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "以历史催化技术为LLM推理试验，需核实技术方案是否有科学有效性评估，还是仅通用类比能力分析。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "以1942年流化催化裂化历史方案作反事实问答测验，操控人类类比提示与模型激活，研究LLM跨领域推理机制；未提出或实证新的催化材料/化工科学方案。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41467-026-70873-7"
+        ],
+        "fulltext_evidence": {
+          "index": 1680,
+          "url": "https://www.nature.com/articles/s41467-026-70873-7",
+          "section": "Abstract; component 2 analogical prompting",
+          "finding": "250次历史反事实问答与激活引导评估LLM的类比推理，目标为模型机制而非新的化工科学发现。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -200288,10 +200324,37 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "局部脉冲学习规则研究生物可行学习，但仅明确通用视觉基准，需核实神经科学实证贡献。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "提出基于脉冲的局部突触对齐学习规则，直接模拟物理神经网络中权重传递与生物可行误差信号，使用脉冲贝叶斯推断和神经网络验证学习机制。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41467-026-74460-8"
+        ],
+        "fulltext_evidence": {
+          "index": 1947,
+          "url": "https://www.nature.com/articles/s41467-026-74460-8",
+          "section": "Abstract; Introduction; spiking Bayesian inference experiments",
+          "finding": "局部脉冲学习缓解生物/物理神经网络权重传递矛盾，模拟神经学习机制与生物可行性。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "正式论文正文或官网链接的作者全文：Abstract; Introduction; spiking Bayesian inference experiments",
+          "rationale": "提出基于脉冲的局部突触对齐学习规则，直接模拟物理神经网络中权重传递与生物可行误差信号，使用脉冲贝叶斯推断和神经网络验证学习机制。"
+        },
+        {
+          "axis": "task",
+          "label": "神经学习机制建模",
+          "label_en": "Neural learning mechanism modeling",
+          "evidence_location": "正式论文正文或官网链接的作者全文：Abstract; Introduction; spiking Bayesian inference experiments",
+          "rationale": "提出基于脉冲的局部突触对齐学习规则，直接模拟物理神经网络中权重传递与生物可行误差信号，使用脉冲贝叶斯推断和神经网络验证学习机制。"
+        }
+      ]
     }
   },
   {
@@ -206198,9 +206261,21 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "微波神经硬件展示卫星图像压缩潜力，需核实学习及实际遥感任务验证。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "研究主体为集成微波神经元的宽带编码及概率比特硬件；卫星图像低比特率传输为潜在演示用途，未验证遥感科学信息恢复或AI驱动的物理研究任务。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41467-026-75783-2"
+        ],
+        "fulltext_evidence": {
+          "index": 1999,
+          "url": "https://www.nature.com/articles/s41467-026-75783-2",
+          "section": "Abstract; satellite imagery bandwidth discussion",
+          "finding": "微波神经元硬件概率编码，卫星图像仅为带宽应用展示/设想，未见地学信息恢复验证。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
