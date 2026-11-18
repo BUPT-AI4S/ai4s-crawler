@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-18T06:25:57.289145+00:00",
-  "commit": "993fd21ae15e676c0c6febc4605264b846c7ae5b",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/993fd21ae15e676c0c6febc4605264b846c7ae5b/",
+  "generated_at": "2026-11-18T06:39:16.420441+00:00",
+  "commit": "bffb6c9fd72b5e54edb639424ead787b61783eb1",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/bffb6c9fd72b5e54edb639424ead787b61783eb1/",
   "years": [
     {
       "year": 2024,
@@ -26258,18 +26258,18 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-17T22:18:15-08:00",
+            "at": "2026-11-17T22:36:42-08:00",
             "author": "zch66883",
-            "subject": "review: complete Long Zhaoke OSDI 2026 audit and hardware research recall",
+            "subject": "review: reconcile Long Zhaoke MODELS 2026 and recover three AI4S papers",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
               "metadata/2026/snapshot.json",
-              "metadata/osdi/2026/ai4s.json",
+              "metadata/models/2026/ai4s.json",
               "reviews/2026/AlearnerDL.json"
             ]
           },
-          "commits_7d": 77
+          "commits_7d": 78
         },
         {
           "owner": "南耀笛",
@@ -46916,18 +46916,18 @@
           "open_issues": 49,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-17T22:18:15-08:00",
+            "at": "2026-11-17T22:36:42-08:00",
             "author": "zch66883",
-            "subject": "review: complete Long Zhaoke OSDI 2026 audit and hardware research recall",
+            "subject": "review: reconcile Long Zhaoke MODELS 2026 and recover three AI4S papers",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
               "metadata/2026/snapshot.json",
-              "metadata/osdi/2026/ai4s.json",
+              "metadata/models/2026/ai4s.json",
               "reviews/2026/AlearnerDL.json"
             ]
           },
-          "commits_7d": 77
+          "commits_7d": 78
         },
         {
           "owner": "王梦冉",
@@ -63979,34 +63979,54 @@
           "state": "abstract_incomplete",
           "papers": 54,
           "papers_missing_abstract": 12,
-          "snapshot_candidates": 0,
-          "candidates": 0,
+          "snapshot_candidates": 3,
+          "candidates": 3,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 54,
+          "official_scope": "MODELS 2026主论文集54篇正式研究论文：Research Papers 30篇和NIER 24篇；不含Companion/Workshop、Journal First重复报告、主题演讲、前置页及4条AI生成的Session Summary Podcast。",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
-          "issues": [
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。"
+          "coverage_note": "ACM公开正式目录54个研究论文DOI与raw完全一致；官方会议目录30篇Research Papers加24篇NIER交叉核对，Anvil题名变体已核实，4条AI播客伴随内容排除。重点精筛16篇（3纳入、13排除），补回船舶安全场景遗传搜索、建筑Mamba代理建模和ModiGen物理仿真生成3篇，均有可核实原摘要。历史全量缺摘要12条未声称补齐，当前候选无缺摘要或待审。",
+          "evidence_urls": [
+            "https://dl.acm.org/doi/proceedings/10.1145/3822455",
+            "https://conf.researchr.org/track/models-2026/models-2026-research-papers",
+            "https://conf.researchr.org/track/models-2026/models-2026-nier"
           ],
+          "decisions": {
+            "include": 3,
+            "exclude": 13,
+            "pending": 0,
+            "unreviewed": 0
+          },
+          "issues": [],
           "actions": [
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2026/AlearnerDL.json",
+            "reviews/2026/feedback/AlearnerDL.json"
+          ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": null,
-          "final_missing_abstract": null,
+          "final_included": 3,
+          "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
           "abstract_recovered": 0,
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 0,
+          "collection_state_resolution": {
+            "status": "resolved_for_candidate_review",
+            "original_state": "abstract_incomplete",
+            "reason": "full_catalogue_abstract_gap_candidates_complete",
+            "checked_by": "龙兆科",
+            "checked_at": "2026-11-17",
+            "evidence_urls": [
+              "https://dl.acm.org/doi/proceedings/10.1145/3822455",
+              "https://conf.researchr.org/track/models-2026/models-2026-research-papers",
+              "https://conf.researchr.org/track/models-2026/models-2026-nier"
+            ]
+          }
         },
         {
           "code": "naacl",
@@ -70872,24 +70892,24 @@
         {
           "owner": "龙兆科",
           "sources": 49,
-          "delivered": 7,
-          "official": 7,
+          "delivered": 8,
+          "official": 8,
           "pending": 0,
-          "open_issues": 40,
+          "open_issues": 39,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-17T22:18:15-08:00",
+            "at": "2026-11-17T22:36:42-08:00",
             "author": "zch66883",
-            "subject": "review: complete Long Zhaoke OSDI 2026 audit and hardware research recall",
+            "subject": "review: reconcile Long Zhaoke MODELS 2026 and recover three AI4S papers",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
               "metadata/2026/snapshot.json",
-              "metadata/osdi/2026/ai4s.json",
+              "metadata/models/2026/ai4s.json",
               "reviews/2026/AlearnerDL.json"
             ]
           },
-          "commits_7d": 77
+          "commits_7d": 78
         },
         {
           "owner": "王梦冉",
@@ -71193,31 +71213,31 @@
         },
         "2026": {
           "sources": 49,
-          "delivered": 7,
-          "official": 7,
+          "delivered": 8,
+          "official": 8,
           "pending": 0,
-          "open_issues": 40,
+          "open_issues": 39,
           "status": "in_progress"
         }
       },
       "sources": 147,
-      "delivered": 54,
+      "delivered": 55,
       "not_started": [
         "2025"
       ],
       "last_update": {
-        "at": "2026-11-17T22:18:15-08:00",
+        "at": "2026-11-17T22:36:42-08:00",
         "author": "zch66883",
-        "subject": "review: complete Long Zhaoke OSDI 2026 audit and hardware research recall",
+        "subject": "review: reconcile Long Zhaoke MODELS 2026 and recover three AI4S papers",
         "area": "reviews",
         "paths": [
           "metadata/2026/ai4s.json",
           "metadata/2026/snapshot.json",
-          "metadata/osdi/2026/ai4s.json",
+          "metadata/models/2026/ai4s.json",
           "reviews/2026/AlearnerDL.json"
         ]
       },
-      "commits_7d": 77
+      "commits_7d": 78
     },
     {
       "owner": "郝卓迪",
@@ -71401,9 +71421,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-18T06:25:26.909920+00:00",
+    "generated_at": "2026-11-18T06:38:52.280110+00:00",
     "history_available": true,
-    "commit": "993fd21ae15e676c0c6febc4605264b846c7ae5b",
-    "commits_scanned": 918
+    "commit": "bffb6c9fd72b5e54edb639424ead787b61783eb1",
+    "commits_scanned": 920
   }
 }
