@@ -26312,10 +26312,49 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "利用Stable Diffusion与CellPose提取特征分割三维冷冻电镜断层亚细胞结构，并与专家标注对比。",
+      "verified_metadata": {
+        "title": "Unsupervised Multi-Scale Segmentation of 3D Subcellular World with Stable Diffusion Foundation Model",
+        "abstract": "We introduce an unsupervised approach for segmenting multiscale subcellular objects in 3D volumetric cryo-electron tomography (cryo-ET) images. To this end, we address key challenges such as lack of annotated data, large data volumes, high heterogeneity of subcellular shapes and sizes, and high inter-domain variability of cellular cryo-ET images across different experiments and contexts. Our method requires users to only select a small number of slabs from a few representative tomograms in the dataset. The core of our method is extracting features for the corresponding slabs, leveraging a Stable Diffusion foundation model pretrained on mostly natural images. The feature extraction is followed by a novel heuristic-based feature aggregation strategy, and adaptive thresholding to segment the aggregated features. The resulting masks are refined with pretrained CellPose to split composite regions, and then utilized as pseudo-ground truth for training supervised deep learning models. We validated our unsupervised foundation-model based pipeline on publicly available cryo-ET benchmark datasets, demonstrating performance that closely approximates expert human annotations. This fully automated, data-driven framework enables the mining of multi-scale subcellular patterns, paving the way for accelerated biological discoveries from large-scale cellular cryo-ET datasets.",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Uddin_Unsupervised_Multi-Scale_Segmentation_of_3D_Subcellular_World_with_Stable_Diffusion_CVPR_2026_paper.html",
+        "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Uddin_Unsupervised_Multi-Scale_Segmentation_of_3D_Subcellular_World_with_Stable_Diffusion_CVPR_2026_paper.pdf",
+        "checked_at": "2026-11-18",
+        "authors": [
+          "Mostofa Rafid Uddin",
+          "HM Shadman Tabib",
+          "Thanh-Huy Nguyen",
+          "Kashish Gandhi",
+          "Min Xu"
+        ],
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Uddin_Unsupervised_Multi-Scale_Segmentation_of_3D_Subcellular_World_with_Stable_Diffusion_CVPR_2026_paper.html"
+        ],
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "CVF正式论文页原摘要；已在线核验题名、作者、摘要及公开PDF链接",
+          "rationale": "利用Stable Diffusion与CellPose提取特征分割三维冷冻电镜断层亚细胞结构，并与专家标注对比。"
+        },
+        {
+          "axis": "method",
+          "label": "扩散模型",
+          "label_en": "Diffusion model",
+          "evidence_location": "CVF正式论文页原摘要；已在线核验题名、作者、摘要及公开PDF链接",
+          "rationale": "利用Stable Diffusion与CellPose提取特征分割三维冷冻电镜断层亚细胞结构，并与专家标注对比。"
+        },
+        {
+          "axis": "task",
+          "label": "细胞图像分割",
+          "label_en": "Cell image segmentation",
+          "evidence_location": "CVF正式论文页原摘要；已在线核验题名、作者、摘要及公开PDF链接",
+          "rationale": "利用Stable Diffusion与CellPose提取特征分割三维冷冻电镜断层亚细胞结构，并与专家标注对比。"
+        }
+      ]
     }
   },
   {
@@ -26380,10 +26419,49 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "扩散桥从LiDAR合成完整四维雷达张量，验证下游自主感知检测的数据增强收益。",
+      "verified_metadata": {
+        "title": "LiDAR-to-4DRadar Diffusion Bridge via Cross-Modal Alignment and Translation in Latent Space",
+        "abstract": "Millimeter-wave radar's all-weather capability makes it increasingly vital for autonomous perception. However, the high cost of radar data collection drives the need for data generation to augment radar datasets. Existing works mainly target partial radar representations, e.g., 2D or 3D slices, leading to information loss and limited downstream performance. To overcome these issues, we introduce the novel task of LiDAR-to-4DRadar translation, which generates complete 4D radar tensors, with three spatial and one Doppler axes, guided by LiDAR data that preserve spatial and semantic consistency. We propose a novel diffusion bridge model in an aligned LiDAR-4DRadar latent space, namely L2RLDB, to tackle this task. Specifically, first, a key-voxel-aware VAE compresses high-dimensional, noisy radar tensors into a compact latent space, while enabling precise numerical reconstruction and key-voxel identification. Second, to bridge the cross-modal gap between sparse 3D LiDAR and dense 4D radar, we develop a patch-wise contrastive learning module to align LiDAR latents with radar semantically and spatially. Finally, we formulate the translation as a diffusion bridge process between LiDAR and radar latents, enabling the synthesis of full radar tensors from Doppler-lacking LiDAR inputs. Experiments verify that L2RLDB achieves high-fidelity 4D radar generation and significantly improves downstream detection through data augmentation.",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Shen_LiDAR-to-4DRadar_Diffusion_Bridge_via_Cross-Modal_Alignment_and_Translation_in_Latent_CVPR_2026_paper.html",
+        "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Shen_LiDAR-to-4DRadar_Diffusion_Bridge_via_Cross-Modal_Alignment_and_Translation_in_Latent_CVPR_2026_paper.pdf",
+        "checked_at": "2026-11-18",
+        "authors": [
+          "Dazhong Shen",
+          "Jingjing Gu",
+          "Qiang Zhou",
+          "Meng Zhao",
+          "Ying Sun"
+        ],
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Shen_LiDAR-to-4DRadar_Diffusion_Bridge_via_Cross-Modal_Alignment_and_Translation_in_Latent_CVPR_2026_paper.html"
+        ],
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "CVF正式论文页原摘要；已在线核验题名、作者、摘要及公开PDF链接",
+          "rationale": "扩散桥从LiDAR合成完整四维雷达张量，验证下游自主感知检测的数据增强收益。"
+        },
+        {
+          "axis": "method",
+          "label": "扩散模型",
+          "label_en": "Diffusion model",
+          "evidence_location": "CVF正式论文页原摘要；已在线核验题名、作者、摘要及公开PDF链接",
+          "rationale": "扩散桥从LiDAR合成完整四维雷达张量，验证下游自主感知检测的数据增强收益。"
+        },
+        {
+          "axis": "task",
+          "label": "工程传感数据重建",
+          "label_en": "Engineering sensor data reconstruction",
+          "evidence_location": "CVF正式论文页原摘要；已在线核验题名、作者、摘要及公开PDF链接",
+          "rationale": "扩散桥从LiDAR合成完整四维雷达张量，验证下游自主感知检测的数据增强收益。"
+        }
+      ]
     }
   },
   {
@@ -26438,8 +26516,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "exclude",
+      "rationale": "通用跨域目标检测改进，无明确科学或专用工程任务。",
       "verified_metadata": {},
       "tags": []
     }
@@ -26496,8 +26574,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "exclude",
+      "rationale": "为艺术家提供三维网格材质分组和赋值，未研究真实材料性质。",
       "verified_metadata": {},
       "tags": []
     }
@@ -26556,8 +26634,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "exclude",
+      "rationale": "统一通用视觉理解、生成和重建的量化编码器，无科学任务验证。",
       "verified_metadata": {},
       "tags": []
     }
@@ -26619,8 +26697,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "exclude",
+      "rationale": "加速通用多模态离散扩散模型，无具体科学研究对象。",
       "verified_metadata": {},
       "tags": []
     }
@@ -26692,10 +26770,58 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "融合MR物理和生成先验，从标记脑MRI联合恢复解剖图像、动态影像与组织运动。",
+      "verified_metadata": {
+        "title": "Solving a Nonlinear Blind Inverse Problem for Tagged MRI with Physics and Deep Generative Priors",
+        "abstract": "Tagged MRI enables tracking internal tissue motion non-invasively. It encodes motion by modulating anatomy with periodic tags, which deforms along with tissue. However, the entanglement between anatomy, tags and motion poses significant challenges on post processing. Existence of tags and imaging blur hinders downstream tasks such as segmenting anatomy. Tag fading, due to T1-relaxation, disrupts brightness constancy assumption for motion tracking. For decades, these challenges are handled in isolation and sub-optimally. In contrast, we introduce a blind and nonlinear inverse framework for tagged MRI that, for the first time, unifies these tasks: anatomical image recovery, high-resolution cine image synthesis, and motion estimation. At its core, the synergy of MR physics and generative priors enables us to blindly estimate the unknown forward imaging models, high-resolution underlying anatomy, while simultaneously tracking 3D diffeomorphic Lagrangian motion over time. Experiments on tagged brain MRI demonstrate that our approach yields high-resolution anatomy images, cine images, and more accurate motion than specialized methods.",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Bian_Solving_a_Nonlinear_Blind_Inverse_Problem_for_Tagged_MRI_with_CVPR_2026_paper.html",
+        "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Bian_Solving_a_Nonlinear_Blind_Inverse_Problem_for_Tagged_MRI_with_CVPR_2026_paper.pdf",
+        "checked_at": "2026-11-18",
+        "authors": [
+          "Zhangxing Bian",
+          "Shuwen Wei",
+          "Samuel W. Remedios",
+          "Junyu Chen",
+          "Aaron Carass",
+          "Blake Dewey",
+          "Jerry L Prince"
+        ],
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Bian_Solving_a_Nonlinear_Blind_Inverse_Problem_for_Tagged_MRI_with_CVPR_2026_paper.html"
+        ],
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "CVF正式论文页原摘要；已在线核验题名、作者、摘要及公开PDF链接",
+          "rationale": "融合MR物理和生成先验，从标记脑MRI联合恢复解剖图像、动态影像与组织运动。"
+        },
+        {
+          "axis": "method",
+          "label": "物理信息学习",
+          "label_en": "Physics-informed learning",
+          "evidence_location": "CVF正式论文页原摘要；已在线核验题名、作者、摘要及公开PDF链接",
+          "rationale": "融合MR物理和生成先验，从标记脑MRI联合恢复解剖图像、动态影像与组织运动。"
+        },
+        {
+          "axis": "task",
+          "label": "反问题",
+          "label_en": "Inverse problem",
+          "evidence_location": "CVF正式论文页原摘要；已在线核验题名、作者、摘要及公开PDF链接",
+          "rationale": "融合MR物理和生成先验，从标记脑MRI联合恢复解剖图像、动态影像与组织运动。"
+        },
+        {
+          "axis": "task",
+          "label": "医学影像重建",
+          "label_en": "Medical image reconstruction",
+          "evidence_location": "CVF正式论文页原摘要；已在线核验题名、作者、摘要及公开PDF链接",
+          "rationale": "融合MR物理和生成先验，从标记脑MRI联合恢复解剖图像、动态影像与组织运动。"
+        }
+      ]
     }
   },
   {
@@ -26758,8 +26884,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "pending",
+      "rationale": "分层图像分类含遥感基准，但具体地学分类对象未说明，需核查实验。",
       "verified_metadata": {},
       "tags": []
     }
@@ -26842,10 +26968,53 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "流匹配多时间尺度模拟气候强迫响应，建立跨气候模型模拟集并验证未来情景泛化。",
+      "verified_metadata": {
+        "title": "Spatiotemporal Pyramid Flow Matching for Climate Emulation",
+        "abstract": "Generative models have the potential to transform the way we emulate Earth's changing climate. Previous generative approaches rely on weather-scale autoregression for climate emulation, but this is inherently slow for long climate horizons and has yet to demonstrate stable rollouts under nonstationary forcings. Here, we introduce Spatiotemporal Pyramid Flows (SPF), a new class of flow matching approaches that model data hierarchically across spatial and temporal scales. Inspired by cascaded video models, SPF partitions the generative trajectory into a spatiotemporal pyramid, progressively increasing spatial resolution to reduce computation and coupling each stage with an associated timescale to enable direct sampling at any temporal level in the pyramid. This design, together with conditioning each stage on prescribed physical forcings (e.g., greenhouse gases or aerosols), enables efficient, parallel climate emulation at multiple timescales. On ClimateBench, SPF outperforms strong flow matching baselines and pre-trained models at yearly and monthly timescales while offering fast sampling, especially at coarser temporal levels. To scale SPF, we curate ClimateSuite, the largest collection of Earth system simulations to date, comprising over 33,000 simulation-years across ten climate models and the first dataset to include simulations of climate interventions. We find that the scaled SPF model demonstrates good generalization to held-out scenarios across climate models. Together, SPF and ClimateSuite provide a foundation for accurate, efficient, probabilistic climate emulation across temporal scales and realistic future scenarios. Data and code is publicly available at https://github.com/stanfordmlgroup/spf .",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Irvin_Spatiotemporal_Pyramid_Flow_Matching_for_Climate_Emulation_CVPR_2026_paper.html",
+        "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Irvin_Spatiotemporal_Pyramid_Flow_Matching_for_Climate_Emulation_CVPR_2026_paper.pdf",
+        "checked_at": "2026-11-18",
+        "authors": [
+          "Jeremy A. Irvin",
+          "Jiaqi Han",
+          "Zikui Wang",
+          "Abdulaziz Alharbi",
+          "Yufei Zhao",
+          "Nomin-Erdene Bayarsaikhan",
+          "Daniele Visioni",
+          "Andrew Y. Ng",
+          "Duncan Watson-Parris"
+        ],
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Irvin_Spatiotemporal_Pyramid_Flow_Matching_for_Climate_Emulation_CVPR_2026_paper.html"
+        ],
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于地球宇宙科学",
+          "label_en": "AI for Earth and space sciences",
+          "evidence_location": "CVF正式论文页原摘要；已在线核验题名、作者、摘要及公开PDF链接",
+          "rationale": "流匹配多时间尺度模拟气候强迫响应，建立跨气候模型模拟集并验证未来情景泛化。"
+        },
+        {
+          "axis": "method",
+          "label": "流匹配",
+          "label_en": "Flow matching",
+          "evidence_location": "CVF正式论文页原摘要；已在线核验题名、作者、摘要及公开PDF链接",
+          "rationale": "流匹配多时间尺度模拟气候强迫响应，建立跨气候模型模拟集并验证未来情景泛化。"
+        },
+        {
+          "axis": "contribution",
+          "label": "科学数据",
+          "label_en": "Scientific data",
+          "evidence_location": "CVF正式论文页原摘要；已在线核验题名、作者、摘要及公开PDF链接",
+          "rationale": "流匹配多时间尺度模拟气候强迫响应，建立跨气候模型模拟集并验证未来情景泛化。"
+        }
+      ]
     }
   },
   {
@@ -26907,10 +27076,49 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "模型利用病理和训练期多模态信息预测癌症生存风险，在八种癌症中验证。",
+      "verified_metadata": {
+        "title": "Factorized Context Aggregation for Robust Cancer Risk Estimation via Soft Re-Ranked Retrieval and Hierarchical Anchors",
+        "abstract": "Accurate cancer risk assessment is critical for personalized treatment planning. While multimodal models that integrate histopathology with complementary data modalities (e.g., genomics, or clinical reports) exhibit superior prognostic capability, they typically assume full data availability, an unrealistic expectation in real-world clinical settings. In contrast, histopathology slides are routinely collected, universally accessible, and information-rich, making them a practical anchor for robust survival prediction. In this study, we propose a novel framework that leverages histopathology as a basis for outcome prediction, while using other data modalities when training the models. Extensive experiments across eight cancer types and scenarios, including various data modalities, demonstrate that our model outperforms all baselines, with up to 8% gains over methods that solely use histopathology at training time, and a 1.4% gap compared to models that utilize all data modalities. Our model also stratifies patients into meaningful risk groups in 67% of risk stratification scenarios (vs. 50% for best SOTA), generalizes well under varying modality missingness, and matches the best SOTA even with 40% higher rate of missing data during training. It also preserves semantic alignment in zero-shot settings. These results highlight the practical utility and robustness of our approach for real-world cancer risk prediction in resource-limited or modality-incomplete settings. Code is available at: https://github.com/pazadimo/fca-robust-risk-estimation",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Moghadam_Factorized_Context_Aggregation_for_Robust_Cancer_Risk_Estimation_via_Soft_CVPR_2026_paper.html",
+        "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Moghadam_Factorized_Context_Aggregation_for_Robust_Cancer_Risk_Estimation_via_Soft_CVPR_2026_paper.pdf",
+        "checked_at": "2026-11-18",
+        "authors": [
+          "Puria Azadi Moghadam",
+          "Ali Khajegili Mirabadi",
+          "Behnam Maneshgar",
+          "Hossein Farahani",
+          "Ali Bashashati"
+        ],
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Moghadam_Factorized_Context_Aggregation_for_Robust_Cancer_Risk_Estimation_via_Soft_CVPR_2026_paper.html"
+        ],
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "CVF正式论文页原摘要；已在线核验题名、作者、摘要及公开PDF链接",
+          "rationale": "模型利用病理和训练期多模态信息预测癌症生存风险，在八种癌症中验证。"
+        },
+        {
+          "axis": "task",
+          "label": "生存结局预测",
+          "label_en": "Survival outcome prediction",
+          "evidence_location": "CVF正式论文页原摘要；已在线核验题名、作者、摘要及公开PDF链接",
+          "rationale": "模型利用病理和训练期多模态信息预测癌症生存风险，在八种癌症中验证。"
+        },
+        {
+          "axis": "method",
+          "label": "多模态学习",
+          "label_en": "Multimodal learning",
+          "evidence_location": "CVF正式论文页原摘要；已在线核验题名、作者、摘要及公开PDF链接",
+          "rationale": "模型利用病理和训练期多模态信息预测癌症生存风险，在八种癌症中验证。"
+        }
+      ]
     }
   },
   {
@@ -26977,8 +27185,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "exclude",
+      "rationale": "人体动态重打光与三维渲染服务视觉呈现，物理渲染特征不构成独立科学任务。",
       "verified_metadata": {},
       "tags": []
     }
@@ -27035,8 +27243,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "exclude",
+      "rationale": "通用神经网络特征反演攻击与隐私量化，无科学应用。",
       "verified_metadata": {},
       "tags": []
     }
@@ -27098,10 +27306,47 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "跨机构联邦学习融合异质医学影像，在分类、分割、超分辨和医学问答等任务验证。",
+      "verified_metadata": {
+        "title": "OmniFM: Toward Modality-Robust and Task-Agnostic Federated Learning for Heterogeneous Medical Imaging",
+        "abstract": "Federated learning (FL) has become a promising paradigm for collaborative medical image analysis, yet existing frameworks remain tightly coupled to task-specific backbones and are fragile under heterogeneous imaging modalities. Such constraints hinder real-world deployment, where institutions vary widely in modality distributions and must support diverse downstream tasks. To address this limitation, we propose OmniFM,a modality- and task-agnostic FL framework that unifies training across classification,segmentation, super-resolution, visual question answering,and multimodal fusion without re-engineering the optimization pipeline. OmniFM builds on a key frequency-domain insight: low-frequency spectral components exhibit strong cross-modality consistency and encode modality-invariant anatomical structures. Accordingly, OmniFM integrates(i) Global Spectral Knowledge Retrieval to inject global frequency priors, (ii) Embedding-wise Cross-Attention Fusion to align representations, and (iii) Prefix-Suffix Spectral Prompting to jointly condition global and personalized cues, together regularized by a Spectral-Proximal Alignment objective that stabilizes aggregation. Experiments on real-world datasets show that OmniFM consistently surpasses state-of-the-art FL baselines across intra- and cross-modality heterogeneity, achieving superior results under both fine-tuning and training-from-scratch setups.",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Liu_OmniFM_Toward_Modality-Robust_and_Task-Agnostic_Federated_Learning_for_Heterogeneous_Medical_CVPR_2026_paper.html",
+        "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Liu_OmniFM_Toward_Modality-Robust_and_Task-Agnostic_Federated_Learning_for_Heterogeneous_Medical_CVPR_2026_paper.pdf",
+        "checked_at": "2026-11-18",
+        "authors": [
+          "Meilin Liu",
+          "Jiaying Wang",
+          "Jing Shan"
+        ],
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Liu_OmniFM_Toward_Modality-Robust_and_Task-Agnostic_Federated_Learning_for_Heterogeneous_Medical_CVPR_2026_paper.html"
+        ],
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "CVF正式论文页原摘要；已在线核验题名、作者、摘要及公开PDF链接",
+          "rationale": "跨机构联邦学习融合异质医学影像，在分类、分割、超分辨和医学问答等任务验证。"
+        },
+        {
+          "axis": "method",
+          "label": "联邦学习",
+          "label_en": "Federated learning",
+          "evidence_location": "CVF正式论文页原摘要；已在线核验题名、作者、摘要及公开PDF链接",
+          "rationale": "跨机构联邦学习融合异质医学影像，在分类、分割、超分辨和医学问答等任务验证。"
+        },
+        {
+          "axis": "method",
+          "label": "多模态学习",
+          "label_en": "Multimodal learning",
+          "evidence_location": "CVF正式论文页原摘要；已在线核验题名、作者、摘要及公开PDF链接",
+          "rationale": "跨机构联邦学习融合异质医学影像，在分类、分割、超分辨和医学问答等任务验证。"
+        }
+      ]
     }
   },
   {
@@ -27161,8 +27406,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "pending",
+      "rationale": "不完整遥感多视图聚类未列出四个数据集及科学类别，需补充地学任务依据。",
       "verified_metadata": {},
       "tags": []
     }
@@ -27220,8 +27465,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "exclude",
+      "rationale": "视觉语言模型社会偏差缓解，未开展独立社会科学分析。",
       "verified_metadata": {},
       "tags": []
     }
@@ -27286,10 +27531,47 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "文本和目标物性引导扩散网络逆向生成三维超材料微结构，并检验物理可行性。",
+      "verified_metadata": {
+        "title": "Property-Informed Diffusion-Based Text-to-Microstructure Generation",
+        "abstract": "Designing 3D metamaterial microstructures that meet the intended functions remains a major challenge, as it typically requires domain expertise, iterative simulations, and extensive manual tuning. Existing work on inverse design that automatically generates microstructures based on desired target properties often suffers from limited design diversity and faces challenges in ensuring the physical feasibility of the generated structures. To address this issue, a property-informed diffusion-based network is proposed that enables the generation of 3D microstructures directly from textual descriptions. Unlike traditional property conditioning methods, our approach leverages rich guidance in terms of semantics and physical properties in the text input to support diverse structure synthesis. To enforce consistency between the generated structures and the target textual prompts, a dual alignment strategy is adopted, including contrastive text-structure alignment and test-time reward-guided alignment. Experimental results show that the model is capable of generating semantically meaningful and physically plausible structures across a wide range of material categories. The proposed framework has good potential for interactive microstructure design and opens up new directions for combining language-based interfaces with inverse material discovery. Code is available at: https://github.com/hongsong-wang/PropDiff-TMG.",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Dai_Property-Informed_Diffusion-Based_Text-to-Microstructure_Generation_CVPR_2026_paper.html",
+        "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Dai_Property-Informed_Diffusion-Based_Text-to-Microstructure_Generation_CVPR_2026_paper.pdf",
+        "checked_at": "2026-11-18",
+        "authors": [
+          "Bingxuan Dai",
+          "Hongsong Wang",
+          "Jie Gui"
+        ],
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Dai_Property-Informed_Diffusion-Based_Text-to-Microstructure_Generation_CVPR_2026_paper.html"
+        ],
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "CVF正式论文页原摘要；已在线核验题名、作者、摘要及公开PDF链接",
+          "rationale": "文本和目标物性引导扩散网络逆向生成三维超材料微结构，并检验物理可行性。"
+        },
+        {
+          "axis": "method",
+          "label": "扩散模型",
+          "label_en": "Diffusion model",
+          "evidence_location": "CVF正式论文页原摘要；已在线核验题名、作者、摘要及公开PDF链接",
+          "rationale": "文本和目标物性引导扩散网络逆向生成三维超材料微结构，并检验物理可行性。"
+        },
+        {
+          "axis": "task",
+          "label": "逆向设计",
+          "label_en": "Inverse design",
+          "evidence_location": "CVF正式论文页原摘要；已在线核验题名、作者、摘要及公开PDF链接",
+          "rationale": "文本和目标物性引导扩散网络逆向生成三维超材料微结构，并检验物理可行性。"
+        }
+      ]
     }
   },
   {
@@ -27342,8 +27624,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "pending",
+      "rationale": "地理空间视觉语言模型评测字幕、定位与检测，需确认具体地学研究或工程任务。",
       "verified_metadata": {},
       "tags": []
     }
