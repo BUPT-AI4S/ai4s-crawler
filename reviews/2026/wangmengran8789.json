@@ -69228,7 +69228,16 @@
       "tags": [],
       "reviewed_at": "2026-11-17",
       "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "review_stage": "metadata_gate_waiting_for_original_abstract",
+      "verified_metadata": {
+        "publication_type": "erratum",
+        "corrects_doi": "10.1016/j.buildenv.2025.113588",
+        "identity_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/j.buildenv.2025.113938-crossref.json",
+        "identity_note": "出版方Crossref update-to标识为Erratum；不可借用被更正论文的原摘要。",
+        "evidence_urls": [
+          "https://api.crossref.org/works/10.1016/j.buildenv.2025.113938"
+        ]
+      }
     }
   },
   {
@@ -87009,11 +87018,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Stroke is a type of cerebrovascular disorder that significantly affects a person’s health and well-being. Quantitative analysis of brain magnetic resonance imaging (MRI) images is crucial for evaluating and determining appropriate treatments for stroke. A blockage in the brain’s blood supply is a primary cause of stroke. To overcome these challenges, automated brain stroke detection in MRI using self-modulating convolutional neural networks for enhanced ischemic and hemorrhagic stroke classification (BSD-IHSC-SMCNN) is proposed. At first, the input image is gathered from the Brain Stroke MRI Images Dataset. Then, the input images are pre-processed utilizing a Bilinear Double-Order Filter (BDOF) is employed to enhance image quality and remove noise. Then, the pre-processed data are fed into a structured doubly stochastic graph based clustering (SDSGC), which is used to split the image into meaningful regions. Then, the segmented data are fed into feature extraction using the Spatial-Spectral Recurrent Transformer (SSRT). It is used to extract relevant features such as Stroke Area, Energy, Contrast, Homogeneity and Skewness. Finally, the Self-Modulating Convolutional Neural Network SMCNN is employed to detect and classify brain stroke into normal, ischemic, and hemorrhagic categories. To further develop classification performance, the Wombat Optimization Algorithm WOA is applied to optimize the network parameters and enhance overall accuracy. The BSD-IHSC-SMCNN model achieves the best performance in brain stroke detection, with 98% accuracy for Normal, 93% for Ischemic, and 96% for Hemorrhagic Stroke and 1.170 seconds computation time, with existing methods, such as the expression of SARS-CoV-2 spike protein in cerebral fluid, deep learning-driven multi-class classification of brain strokes using computed tomography: a step towards improved diagnostic precision (MCBS-CT-CNN), and a new deep learning (DL)-driven GUI design and implementation for automatic detection of brain strokes with CT images (BS-CT-ANN). The arteries: Hemorrhagic stroke implications HS-GAN post-mRNA vaccination.",
+        "doi": "10.1016/j.knosys.2026.115665",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126004053",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966112826.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126004053"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966112826.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -87258,11 +87285,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Few-shot segmentation (FSS) has emerged as a promising approach for medical image analysis, especially in scenarios where annotated data is limited. However, the performance of existing prototypical networks is typically hindered by two critical challenges: 1) intra-class variation arising from feature distribution discrepancies between support and query sets. 2) Extreme inter-class imbalance, often exacerbated by complex background structures. To tackle these challenges, we propose an innovative dual-stream prototype optimization framework, the Dual-stream Feature Extractor and Detail-enhancing prototype Transformer (DFDT). Firstly, we introduce a Dual-stream Visual Feature Fusion (DVFF) module that simultaneously merges local and global features, generating detailed, semantically rich interactions. This module enables the initial prototype to capture global semantics while preserving fine-grained details, effectively reducing intra-class variation. Subsequently, the iterative Prototype Detail Enhancement Transformer (PDET) is designed, employing iterative cycles of bias correction and detail refinement. This component systematically filters confounding background noise from the prototype while reinforcing core information pertinent to the target foreground, significantly improving robustness against variations in complex backgrounds. Extensive experiments on three public medical imaging datasets demonstrate that the proposed DFDT model achieves significant performance gains over current state-of-the-art methods. Code will be made public at https://github.com/CQNU-ZhangLab/DFDT.",
+        "doi": "10.1016/j.knosys.2026.115709",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126004491",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966112826.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126004491"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966112826.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -87801,11 +87846,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "The secondary edge chamfering process at the edge of semiconductor wafers is a critical step in the manufacturing of large-diameter wafers. However, edge images at this process stage are often challenged by complex striped backgrounds, multi-scale defect distribution, and the loss of micro-defect features. To address these issues, this study proposes an integrated solution combining high-resolution optical imaging and deep learning algorithms. A specialized imaging system combining an annular light source with dual-CCD camera coordination was developed to effectively address reflection interference and the problem of feature loss in arc-surface imaging. Using this system, defect images after the secondary edge chamfering process were acquired to construct the SWED dataset, which includes three defect categories: Chip, Crack, and Dirty. Building upon the YOLOv8 baseline, a novel SiED-YOLO model was developed. This model incorporates a Dual-Axis Attention module to suppress interference from directional striped backgrounds, a dynamic convolution feature pyramid with the introduction of the DyC-C2f module to enhance multi-scale defect representation capability, and an Inner-IoU loss function to optimize micro-defect localization accuracy. Experimental results demonstrate that the SiED-YOLO model achieves 95.6% mAP@0.5, representing a 3.7 percentage point improvement over YOLOv8n, with an inference speed of 1.62 ms/pcs. The number of parameters and computational complexity are reduced by 23.5% and 20.9%, respectively. The proposed solution has been deployed and verified on the production line of 12-inch semiconductor wafers, significantly reducing both false negatives and false positives compared to conventional methods, providing a robust technical solution for real-time, high-precision defect detection in semiconductor manufacturing.",
+        "doi": "10.1016/j.knosys.2026.115896",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126006222",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966103111.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126006222"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966103111.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -87880,11 +87943,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Epidemic forecasting is essential for providing proactive early warnings and optimizing the allocation of public health resources. However, accurate modeling of real-world epidemic dynamics remains challenging due to pronounced spatio-temporal heterogeneity, which often manifests as multi-peak patterns and resurgent outbreaks. To address these challenges, we propose STTGNN, a novel Spatio-Temporal Transformer Graph Neural Network that integrates multi-scale temporal convolutions, a two-stage spatio-temporal Transformer, and a region-aware graph learner enhanced with degree-aware gating. A lightweight Graph Convolutional Network is employed to propagate signals over dynamically inferred graphs, and linear decoding heads generate region-level forecasts. Extensive experiments conducted on the Japan-Prefectures and US-Regions datasets demonstrate that STTGNN consistently outperforms statistical models, sequential deep learning methods, and state-of-the-art spatio-temporal GNN baselines across evaluation metrics, including RMSE, PCC, and Peak Error. The proposed approach significantly improves the fidelity of peak predictions while maintaining stable performance during low-incidence phases, thereby offering a more reliable tool for epidemic preparedness and long-term public health planning.",
+        "doi": "10.1016/j.knosys.2026.115911",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126006374",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966103111.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126006374"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966103111.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -88041,11 +88122,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Remote sensing (RS) instance segmentation plays a pivotal role in numerous geospatial applications. Motivated by the success of the Segment Anything Model (SAM) in natural image segmentation, recent studies have attempted to adapt SAM to RS tasks by employing object detectors to generate box prompts for RS targets and subsequently feeding these prompts into SAM to produce object masks. However, due to the non-axis-aligned distribution of objects in RS imagery, box prompts often encompass excessive contextual regions that are irrelevant to the target objects. These contextual cues, though not causally related to the object masks, can still affect the segmentation results, leading to biased predictions. To address this issue, we reinterpret SAM-based RS instance segmentation from a causal perspective and propose Causal-SAM, a novel framework designed to disentangle truly causal features from task-irrelevant confounders. Specifically, we first construct a structural causal model to formalize the relationships among objects, contexts, and object masks. Guided by this causal formulation, Causal-SAM introduces a local object transformation module that systematically perturbs non-causal attributes and surrounding contexts to emulate backdoor adjustment, thereby mitigating confounding effects. Furthermore, an attention invariance constraint is imposed on SAM’s mask decoder to ensure that attention focuses on causal, context-invariant features. Extensive experiments conducted on the WHU, NWPU, and SSDD datasets validate that Causal-SAM substantially enhances the effectiveness of SAM-based frameworks for RS instance segmentation.",
+        "doi": "10.1016/j.knosys.2026.115915",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126006416",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966095975.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126006416"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966095975.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -88123,11 +88222,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Object detection (OD) faces the costly hurdle of large-scale dataset annotation. Active learning (AL) is a promising solution that selects the most beneficial samples for annotation. Applying AL to OD is challenging, as it requires addressing uncertainties in both classifying and localizing objects while combining object-level information into a single image-level decision. Current methods, like uncertainty sampling, often rely on output-level uncertainty or heuristic signal combinations. However, relying on static model outputs limits their ability to capture underlying feature-space instabilities. To address these limitations, we propose Feature Difficulty-based AL (FDAL), a novel framework that shifts the focus from output-level heuristics to active latent-space manipulation. By systematically interpolating unlabeled features toward class anchors, FDAL identifies prediction inconsistencies to reveal hidden traits unknown to the model. This anchor-guided interpolation unifies classification and localization uncertainties, capturing latent instabilities that traditional paradigms miss. Experiments on four OD benchmarks demonstrate that FDAL achieves state-of-the-art (SOTA) results, consistently improving detection accuracy while substantially reducing annotation costs. FDAL outperforms SOTA methods by 0.8% in detection accuracy on Pattern analysis, statistical modelling, and computational learning (PASCAL) Visual Object Classes (PASCAL VOC), 1.99% on Karlsruhe Institute of Technology and Toyota Technological Institute (KITTI), 1.68% on Cityscapes, and 0.27% on Microsoft Common Objects in Context (MS COCO). FDAL is highly efficient in sample selection, taking 0.06 s per image on PASCAL VOC and up to 0.63 s per image on Cityscapes, enabling scalability to large unlabeled pools. FDAL offers a practical, efficient, and effective solution for advancing AL in OD.",
+        "doi": "10.1016/j.knosys.2026.115946",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126006726",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966103111.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126006726"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966103111.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -88770,11 +88887,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Accurate and explainable brain tumor segmentation remains challenging due to heterogeneous tumor appearance, weak boundaries, infiltrative growth patterns, and cross-dataset domain shifts. To address these issues, we propose an attention–guided explainable segmentation framework built upon a multi-branch convolutional neural network (CNN)–Transformer–Mamba encoder, a dual-branch attention decoder, and gated multi-scale fusion to jointly model local texture, long-range context, and spatial boundary cues. Comprehensive evaluation on three public datasets, Kaggle Brain MRI, Figshare, and BraTS2020, demonstrates consistent performance improvements over state-of-the-art baselines, achieving mean Dice scores of 91.47%, 90.02%, and 89.14% and intersection over union (IoU) values of 84.61%, 82.70%, and 81.66%, respectively, while reducing boundary errors to 95th percentile hausdorff distance (HD95) values as low as 7.89 and average symmetric surface distance (ASSD) down to 1.46. Strong class-wise gains are observed across all tumor sub-regions, with Dice scores exceeding 90% for multiple categories. Cross-dataset transfer experiments further confirm the robustness of the proposed model, reaching a Dice of up to 88.76% without domain adaptation. In addition, the framework provides reliable interpretability, yielding high global explanation alignment scores of attention–ground truth alignment score (AGAS) 88.71%, explanation coverage ratio (ECR) 90.54%, attention sparsity index (ASI) 78.61%, and stable attribution maps, explanation stability coefficient (ESC) up to 0.86. Computational efficiency is preserved, enabling near real-time inference with millisecond-level latency and moderate training overhead. The proposed method offers a unified solution that combines accuracy, generalization, efficiency, and trustworthy explainability for clinically applicable brain tumor MRI segmentation.",
+        "doi": "10.1016/j.knosys.2026.116000",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126007264",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966095975.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126007264"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966095975.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -88962,11 +89097,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Seismic data reconstruction is essential for accurate subsurface imaging and reliable hydrocarbon exploration. However, two major challenges remain in practical applications. First, weak seismic signals are often masked by strong noise, which limits fine structural interpretation and reservoir prediction in seismic exploration. Second, in low signal-to-noise ratio (SNR) conditions, it is difficult to obtain high-quality labels from real data, forcing models to rely on synthetic data for training. However, discrepancies in waveform and noise distributions between synthetic and real data introduce a domain shift that can undermine the reliability of the reconstructed data. To tackle these challenges, we propose a Latent Transformer Diffusion Domain-adaptive (LTDD) network for synthetic to real adaptation, which adopts diffusion-based iterative denoising to suppress strong noise and recover weak signals, and performs domain adaptation via latent-space structural alignment. Specifically, to mitigate the loss of weak signals and alleviate over-smoothing, we design a Diffusion Transformer Attention (DTA) module and integrate it with prior-guided adaptive frequency-domain decomposition, which jointly encodes low-frequency geological structures and high-frequency details into the latent space, effectively preserving weak signal features. Furthermore, to address cross-domain distribution shifts between synthetic and real data, we propose a Sparse Cross-domain Structural Alignment (SCSA) strategy, which instead sparsely aligns key structural relationships in the latent space. When evaluated on synthetic and real well data, our method outperforms state-of-the-art methods. Ablation studies validate the effectiveness of each component in LTDD. When processed on real field data, LTDD successfully restores more effective weak signals and generates a resolution-enhanced seismic data.",
+        "doi": "10.1016/j.knosys.2026.116081",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126008075",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966089746.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126008075"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966089746.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -89035,11 +89188,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Accurate prediction of drug–drug interactions (DDI) is essential for preventing adverse events. Most existing studies encode drugs separately and then model their relationships, often overlooking the joint chemical context and the hierarchical relationships between atom-level and motif-level structures. To address this issue, we present MS-DDI, a framework for DDI prediction based on multi-scale molecular representation learning. We propose a Joint Molecular Representation (JMR) module that integrates two drugs into a unified computational framework while preserving the inherent topological structure of each molecule, thereby facilitating the learning of multi-scale features. To enable deeper interaction across hierarchical features, we further propose a Hierarchical Feature Interaction (HFI) module. HFI leverages reciprocal cross-attention between motif-level and atom-level features, allowing bidirectional feature querying. In addition, a maco-attention mechanism is introduced for synergistic feature fusion and precise localization of interaction hotspots. MS-DDI achieves accuracies of 97.24% on DrugBank and 87.89% on Twosides. Under the challenging cold-start setting, MS-DDI demonstrates stronger generalization and robustness for unseen drugs, achieving a 6-percentage-point improvement in accuracy over the DeepDDI baseline. Ablation studies validate the contribution of each component, and attention visualizations indicate that the model focuses on chemically salient atoms and functional groups, further enhancing interpretability. Overall, MS-DDI provides a robust and interpretable approach to DDI prediction by unifying multi-scale feature representation with hierarchical feature interaction.",
+        "doi": "10.1016/j.knosys.2026.116094",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126008208",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966089746.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126008208"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966089746.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -89212,11 +89383,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Brain tumors are considered among the most life-threatening and painful diseases, resulting in a significantly reduced lifespan. Accurate diagnosis of brain tumors is required to develop treatment plans that can prolong the lives of sufferers. The need for a reliable deep learning method is essential to accurately diagnose brain cancers. Therefore, an Enhanced Brain Tumour Detection from MRI Images using Interpretable Generalized Additive Neural Network optimized with Parrot Optimization (BTD-MRI-IGANN-PO) is proposed in this paper. Initially, the image is collected from MRI dataset. The images are pre-processed using Bayesian Boundary Trend Filtering (BBTF) which used to enhance the image quality and resize the image. Then, the pre-processing images are given into the extraction stage using Separable Synchro Extracting Transform (SSET). It extracts the relevant features such asintensity, texture, shape, and frequency-domain features.Then, extracted features are given into theInterpretable Generalized Additive Neural Network (IGANN) for detect the brain Tumour which classifies as Glioma Tumour, Pituitary Tumour, Meningioma Tumour, No Tumour. The Parrot Optimization (PO) algorithm is employed tooptimize the weight parameters of IGANN. The BTD-MRI-IGANN-PO is executed, itsefficacy is evaluated under some performance metrics, like accuracy, computational time, precision, specificity, and F-measure, recall, ROC and confusion matrix is analyzed. Performance of the BTD-MRI-IGANN-POapproach attains 24.39 %, 35.71 %, and 25.55 % higher accuracy; 20.73 %, 13.79 %, and 16.47 %higher precision; 14.24 %, 24.18 %, and 14.34 % better recallwhen compared with existing techniques:MRI-basedBrain Tumour detection using Convolutional Neural Network (MRI-BTD-CNN), Brain Tumour MRI utilizing Convolutional Neural Network (BT-MRI-CNN), Early diagnosis with Brain Tumour segmentation utilizing Deep Neural Network (ED-BT- DNN) respectively.",
+        "doi": "10.1016/j.knosys.2026.116131",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126008579",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966039920.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126008579"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966039920.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -89378,11 +89567,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "In video object detection (VOD), exploiting temporal cues is essential for alleviating common visual degradations (e.g., motion blur and occlusion). Existing approaches range from short-range feature enhancement to long-range dependency aggregation, while some attempt to combine both. Although substantial progress has been achieved, most designs still decouple temporal aggregation from multi-scale feature construction. In particular, many methods adopt a unified temporal aggregation range across all feature levels, which is level-agnostic and overlooks the distinct temporal requirements of low-level features for fine-grained localization and high-level features for abstract semantics. This limitation restricts a model’s ability to adaptively utilize temporal information according to the feature hierarchy. To address this issue, we propose the Stratified Temporal Transformer (StratiFormer). StratiFormer integrates the fusion of long- and short-range temporal cues directly into the cross-scale feature construction process, enabling feature-level-adaptive temporal aggregation. Moreover, it employs a stratified selection mechanism to identify and process a sparse yet informative set of temporal features at each feature level, allowing the model to allocate computation to the most relevant candidates. On the ImageNet VID benchmark, StratiFormer achieves up to 88.2% mAP50, delivering a favorable balance between accuracy and efficiency.",
+        "doi": "10.1016/j.knosys.2026.116117",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126008439",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966039920.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126008439"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966039920.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -89460,11 +89667,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "In the field of brain-computer interfaces (BCI), zero-shot visual decoding from electroencephalography (EEG) and magnetoencephalography (MEG) signals poses a significant challenge that requires accurately retrieving matching images when confronted with previously unseen visual categories. However, existing deep learning models suffer from confounding factors introduced through inter-subject and inter-trial variability when aligning brain-visual representations, causing models to learn fragile spurious correlations and severely limiting generalization in zero-shot scenarios. To address this challenge, we propose a novel Causality-Inspired Brain-Visual Contrastive Learning (CI-BVCL) framework. Inspired by structural causal models, this framework employs a systematic counterfactual perturbation strategy that guides models to disentangle causal factors from confounding factors through contrastive learning, without requiring explicit supervision of confounding factors. We conducted extensive 200-class zero-shot retrieval experiments on the large-scale public datasets THINGS-EEG and THINGS-MEG. Results demonstrate that CI-BVCL achieves 42.5% and 23.0% Top-1 accuracies on THINGS-EEG and THINGS-MEG, respectively, in the intra-subject setting, outperforming the strongest baselines by 5.3 and 8.7 percentage points, respectively. The framework’s effectiveness and generalizability are rigorously validated across 6 representative brain encoder architectures and 2 widely used visual encoder backbones. This work establishes a robust causally-inspired learning paradigm for addressing generalization challenges in BCI applications.",
+        "doi": "10.1016/j.knosys.2026.116182",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126009081",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966039920.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126009081"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966039920.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -89829,11 +90054,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Parkinson’s disease (PD) is a progressive neurological disease leading to progressive motor function decline, affecting writing, speech, mobility, and muscle control. Current research has not explored the simultaneous use of online handwriting tasks and electroencephalography (EEG) signals for PD diagnosis, particularly from critical regions such as the ventral tegmental area (VTA) and substantia nigra (SN), which are vital for dopamine production. This study presents a multi-modal PD diagnosis method that integrates EEG data recorded from the VTA and SN during online handwriting tasks with corresponding handwriting data. Convolutional neural networks (CNN) are employed to extract features from a combined feature matrix, which are refined using a multi-headed attention layer and classified with a bidirectional long short-term memory (BLSTM) network. Performance is benchmarked against bagged random forest (BRF), support vector machine (SVM), and long short-term memory (LSTM) classifiers. The introduced PD diagnosis methodology is examined utilizing the self-created dataset EEG signal based online handwriting (ESOH). The results indicate that this system surpasses current state-of-the-art methodologies that rely exclusively on EEG signals.",
+        "doi": "10.1016/j.knosys.2026.116245",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126009718",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966032759.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126009718"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966032759.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -90123,11 +90366,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Model-heterogeneous federated learning enables multiple medical institutions deploying models with different architectures to collaboratively train while preserving data privacy. Because of annotation uncertainty in medical institutions, the collected datasets inevitably contain noisy labels, whose overfitting and propagation can adversely affect the accuracy performance. Existing methods primarily focus on correcting noisy labels for supervised training and reducing the contribution of low-quality clients in shared knowledge. However, they lack effective modeling and communication of the generalized class-invariant features that are shared between mislabeled samples and their true classes, leading to suboptimal classification accuracy. To address these challenges, we propose MH-DNT, a noise-robust model-heterogeneous federated learning method for medical classification. It adopts dual noise-tolerance strategies in both the local training and knowledge communication to effectively capture generalized class-invariant features and enhance robustness to noisy labels. First, to effectively learn intrinsic class-invariant features within each client, we propose a consistency-guided noise-robust loss, which utilizes robust predictions to enforce consistent learning across multi-view augmented samples, thereby enabling the modeling of common class patterns. Second, to facilitate the communication of reliable shared class-invariant knowledge among clients, we design quality consensus-enhanced knowledge distillation, which leverages both individual and consensus knowledge from high-quality clients to guide collaborative learning, thereby enabling effective cross-client knowledge transfer while reducing the influence of collaborative bias. We conduct extensive experiments on four medical image datasets under intrinsic and synthetic label noise, demonstrating that MH-DNT outperforms seven state-of-the-art baselines, achieving up to 4.67% improvement in the accuracy and 3.97% improvement in the F1 score.",
+        "doi": "10.1016/j.knosys.2026.116371",
+        "url": "https://www.sciencedirect.com/science/article/pii/S095070512601097X",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966023081.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S095070512601097X"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966023081.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -90474,11 +90735,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Video Anomaly Detection (VAD) aims to identify abnormal events in videos that significantly deviate from normal behaviors. Weakly Supervised Video Anomaly Detection (WSVAD) has attracted considerable attention because it achieves strong performance without requiring frame-level annotations. However, existing WSVAD methods still face notable limitations in terms of privacy protection and cross-institutional data sharing. In particular, data barriers between different organizations can negatively affect model performance. To address this issue, we propose a novel framework named Privacy-Preserving Video Anomaly Detection (PPVAD) via federated learning. This framework leverages a vision-language model and enables collaborative training across multiple clients through a federated learning mechanism, effectively protecting data privacy while facilitating knowledge sharing. The proposed PPVAD demonstrates strong detection performance across diverse data distributions while maintaining high robustness. Experimental results show that PPVAD achieves competitive detection accuracy and generalization capability in WSVAD settings without compromising data privacy. This work provides a new perspective for privacy-preserving WSVAD and offers a practical framework for collaborative anomaly detection in distributed surveillance systems.",
+        "doi": "10.1016/j.knosys.2026.116454",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126011809",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966015466.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126011809"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966015466.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -90549,11 +90828,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Diffusion models have recently shown remarkable effectiveness in unsupervised anomaly detection, owing to their strong generative capacity and intrinsic ability to model normal data distributions. To address arbitrary and previously unseen anomaly types without relying on anomaly priors, we adopt a reconstruction-based paradigm as our core framework. The proposed FG-DiTAD (Feature Guided Diffusion Transformer for Anomaly Detection) is a diffusion-based framework built upon a linearly stacked Transformer backbone. This design mitigates the inductive biases introduced by U-Net-style architectures, which rely on limited-depth attention and local convolutions. The input image is first encoded into a latent space, perturbed with noise, and then progressively denoised by a Transformer-based reconstruction network. To enhance structural fidelity and semantic consistency, we introduce a homogeneous Feature Guide Network (FGN) that extracts multi-level guidance features from unperturbed input images. These features are injected into the backbone through the proposed Hierarchical Cross-Modulated Guidance (HCMG) modules, enabling geometry-aware and semantically consistent fusion during the denoising process. In addition, FG-DiTAD reduces inference cost compared with existing diffusion-based reconstruction methods. The denoised latent is then decoded into the image space, and the discrepancy between the original and reconstructed images is measured in a pre-trained perceptual feature space for anomaly detection and localization. Extensive experiments on the MVTec-AD and VisA datasets demonstrate that FG-DiTAD achieves state-of-the-art performance among reconstruction-based methods, reaching image-level/pixel-level AUROC of 96.2%/96.3% on MVTec-AD and 88.9%/96.0% on VisA.",
+        "doi": "10.1016/j.knosys.2026.116462",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126011883",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966015466.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126011883"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966015466.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -90618,11 +90915,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Recent advances in generative medical image segmentation have enabled probabilistic modeling of ambiguous anatomical and pathological structures. However, existing methods remain structurally unreliable in low-contrast and crowded scenes, often producing foreground leakage, adhesion-induced merging, and unstable contours. We propose SEAL-Flow, a structurally reliable generative framework that represents masks as signed distance fields (SDFs) and learns conditional transport dynamics through conditional flow matching (CFM). SEAL-Flow addresses these failure modes with three problem-driven components: probabilistic layout conditioning to suppress texture-induced leakage, a topology-aware narrow-gap constraint to reduce false bridges between adjacent instances, and multi-frequency contour regularization based on elliptic Fourier descriptors (EFDs) to stabilize the zero-level set and improve boundary smoothness. Together, these designs improve layout reliability, instance separability, and contour consistency while retaining the probabilistic modeling capacity of flow-based segmentation. Experiments on MoNuSeg and CVC-EndoSceneStill show that SEAL-Flow outperforms representative discriminative and generative baselines. Compared with the strongest competing method on each dataset, SEAL-Flow improves Dice and mIoUbench by up to 4.2 and 2.9 percentage points, respectively, and reduces HD95 by up to 66.2%. Qualitative and ablation analyses further demonstrate that SEAL-Flow alleviates leakage, adhesion, and boundary instability, yielding more structurally consistent segmentation results. The code is publicly available at https://github.com/Vaugh3/SEAL-Flow-Continuous-Time-Flow-Matching-for-Topologically-Consistent-Medical-Image-Segmentation.",
+        "doi": "10.1016/j.knosys.2026.116446",
+        "url": "https://www.sciencedirect.com/science/article/pii/S095070512601172X",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966015466.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S095070512601172X"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966015466.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -90696,11 +91011,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Brain tumor classification from magnetic resonance imaging (MRI) is a critical clinical task. Accurate discrimination among tumor types directly informs treatment planning and prognosis. While deep learning shows promise, existing convolutional neural networks often encode knowledge implicitly, limiting clinical interpretability. This paper introduces HGN-GT, a knowledge-driven hierarchical graph neural network that models relational knowledge through adaptive graph structures. The framework couples an EfficientNetV2 backbone with a Feature Pyramid Network for multi-scale feature extraction. A dynamic edge learning module then constructs adaptive graphs from feature similarity, spatial proximity, and learned attention weights. Multi-scale graph convolutions based on GATv2, GCN, and GraphSAGE encode hierarchical knowledge, and a Graph Transformer propagates global context across nodes. A hierarchical fusion strategy with auxiliary classifiers aggregates information across scales and provides intermediate supervision during training. To evaluate HGN-GT, we utilized three public T1-weighted MRI datasets totaling 15,087 images across binary (5,000 images), 3-class (3,064 images; glioma, meningioma, pituitary), and 4-class (7,023 images) scenarios. The model achieves 99.80% binary accuracy, 99.67% 3-class accuracy, and 99.72% 4-class accuracy, with 1.000 ROC-AUC scores. On the standardized MedMNIST+ BreastMNIST benchmark at 224 resolution and its official splits, the model reaches 91.03 percent accuracy and 0.966 AUC, above the published baselines on this subset. Interpretability analysis through attention visualization and Grad-CAM shows that the model focuses on clinically relevant spatial regions, providing qualitative evidence about its internal feature representation. The framework achieves practical computational efficiency (442ms inference, 139MB model), establishing HGN-GT as a knowledge-driven model for automated brain tumor diagnosis.",
+        "doi": "10.1016/j.knosys.2026.116542",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126012682",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966008232.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126012682"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966008232.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -90876,11 +91209,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Large Language Models (LLMs) have demonstrated strong capabilities in arithmetic computation and short-form reasoning, effectively handling basic math operations, simple logical inference, and causal relationships in language, exhibiting notable generalization and adaptability. However, most existing methods rely on fixed-level reasoning steps, heavily depend on heuristic or introspective supervision, and lack tight integration between planning and learning, often resulting in suboptimal performance. To address these limitations, we propose PathSymphony, a plug-and-play framework that enhances LLMs’ reasoning via symbolic planning, multi-level search, and trajectory-based self-evaluation. PathSymphony comprises three core components: (1) math-level Monte Carlo Tree Search (MCTS) for symbolic trajectory exploration; (2) an adaptive branching strategy with solution-state merging to reduce redundant reasoning; and (3) a triple-critic system leveraging semantic, structural, and outcome feedback to assess stepwise reasoning quality. To evaluate our approach, we introduce Math-Level MCTS OlympBench (MMO), the first bilingual, multimodal dataset with 1266 Olympiad-style proofs, including diagrams, symbolic reasoning trajectories, and expert solutions. Experiments show consistent improvements across all models, with up to 24.06 % average gain for O3-mini and 13.3 % increase even for the weakest Gemini Pro.",
+        "doi": "10.1016/j.knosys.2026.116598",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126013249",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966000367.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126013249"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966000367.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -90957,11 +91308,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Physics-Informed Neural Networks (PINNs) are innovative, mesh-free approaches for solving Partial Differential Equations (PDEs). However, PINNs frequently suffer from loss imbalance – where gradient magnitudes of the PDE residual and the boundary/initial losses differ by orders of magnitude – and from unstable internal gradient propagation, both of which slow convergence or trap training in suboptimal solutions. Existing gradient-statistics-based weighting methods rebalance loss magnitudes but typically operate at the level of aggregate loss weights, addressing neither internal gradient propagation nor the heterogeneous difficulty among individual initial and boundary conditions. To address these gaps, we propose Dual-Gradient Co-optimization Physics-Informed Neural Network (DGCO-PINN), a framework with dual dynamic adjustment. DGCO-PINN optimizes internal parameter gradient flow via Hierarchical Gradient Enhancement (HGE) and external loss gradient flow via a two-stage gradient-statistics weighting strategy. This co-optimization quantifies per-condition difficulty, balances PDE-vs-condition gradient magnitudes, and allocates condition-side weights between IC and BC. Extensive experiments demonstrate DGCO-PINN’s significant superiority in both convergence speed and prediction accuracy over existing gradient-statistics-based methods.",
+        "doi": "10.1016/j.knosys.2026.116586",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126013122",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966000367.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126013122"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966000367.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -91121,11 +91490,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Owing to the strong capacity for modeling complex structural dependencies among nodes, Graph Neural Networks (GNNs) have achieved notable success in Graph Anomaly Detection (GAD). Built upon message passing mechanisms, GNNs enhance node representations by aggregating information from similar neighbors. However, anomalous nodes often exhibit significant deviations from their local neighborhoods. On such anomalous graphs with high heterophily, message passing tends to mix node-specific information with conflicting neighborhood signals, resulting in indistinguishable node representations. To address this challenge, we propose ASD-GAD, an Attribute–Structure Decoupled self-supervised learning framework for GAD. Instead of jointly modeling node attributes and graph structure on the original graph, we decouple the graph into two complementary partial views: an attribute view and a structure view, suppressing the interference of anomalous edges and attributes on node representations, respectively. Building upon these two partial views, we further introduce an attribute–structure interleaved graph reconstruction strategy. By reconstructing each target modality from its complementary view, the model effectively filters out anomalous inputs in the original modality, resulting in cleaner reconstructed views and more discriminative anomaly scores. To alleviate the information loss introduced by graph decoupling, we further incorporate a complete–partial multi-view contrastive learning module. By explicitly aligning node representations from the two partial views with those from the original complete graph, the partial views can implicitly exploit the missing structural or attribute information. Extensive experiments on nine datasets demonstrate that ASD-GAD outperforms state-of-the-art methods by large margins. Our code is available at https://github.com/Yun-Fu/ASD-GAD.git.",
+        "doi": "10.1016/j.knosys.2026.116677",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126014036",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966000367.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126014036"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794966000367.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -91210,11 +91597,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Automatic Modulation Classification (AMC) is a challenging time-series pattern recognition task, often hindered by complex environmental distortions and massive intra-class variance. While Transformer architectures excel in sequential representation learning, their heavy reliance on large-scale labeled datasets severely limits their applicability in data-scarce, real-world scenarios. To address this fundamental bottleneck, we propose AMC-GPT, a novel Generative Pre-trained Transformer framework designed for robust, few-shot signal classification. We develop Co-Channel Interference Emulation (CCIE) as a physics-informed self-supervised pretext task. Unlike heuristic noise injection, CCIE models realistic signal superposition, compelling the network to disentangle robust, modulation-discriminative representations directly from unlabeled temporal mixtures. Through generative pre-training, AMC-GPT drastically mitigates annotation dependency. Extensive experiments demonstrate it matches fully supervised state-of-the-art models using merely n=100 labeled samples (per class and SNR)—an over 90% reduction. This establishes a robust, data-efficient paradigm for pattern recognition in complex environments.",
+        "doi": "10.1016/j.knosys.2026.116740",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126014668",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965950723.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126014668"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965950723.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -91542,11 +91947,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Maintaining the optimal performance of electrical networks requires careful planning and safeguarding during maintenance operations. This paper proposes a semantic segmentation framework SSHT-PLSI-MSTCNN for detecting high-voltage transmission towers and power lines from satellite images, aimed at enhancing the monitoring and control of electrical power distribution systems. The study utilizes real-time satellite images collected from the Chennai region, which serve as the primary dataset for analysis. These images are initially preprocessed using the Fast Guided Median Filter (FGMF) to effectively remove noise while preserving important structural details and edge information. After preprocessing, the images are fed into improve dataset relevance, enabling more accurate learning and interpretation of geographic features. The processed and annotated images are then input into the Multi-anchor Space-aware Temporal Convolutional Neural Network (MSTCNN), which performs pixel-level semantic segmentation to accurately identify and classify high-voltage transmission towers and power lines. To further enhance model efficiency and accuracy, the Young’s Double-slit Experiment Optimizer (YDEO) is employed to optimize the weight parameters of the MSTCNN, improving convergence speed and classification performance. The proposed SSHT-PLSI-MSTCNN framework is evaluated using several performance metrics, including accuracy, precision, recall, specificity, ROC, Intersection over Union (IoU), and computational time. Experimental results demonstrate that the model achieves superior performance with 99.12% accuracy for power line detection and 99.14% accuracy for transmission tower detection, along with a ROC value of 0.99. When compared with existing approaches the proposed framework shows significant improvements in both detection accuracy and robustness, making it highly effective for real-world electrical infrastructure monitoring applications.",
+        "doi": "10.1016/j.knosys.2026.116884",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126016102",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965941295.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126016102"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965941295.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -91895,11 +92318,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Deep learning is widely used for molecular optimization, but most models act as black boxes, making it hard to understand why molecular structures are changed or to reuse prior knowledge. Large language models (LLMs) provide an opportunity to incorporate chemical knowledge and reasoning into this process, but they often struggle to generate valid molecular structures and clear decisions. To address this, we propose ELLM-MOM, a framework that uses LLMs to guide optimization through explicit rules and step-by-step structural editing. The method extracts reusable knowledge, maps target properties to intermediate physicochemical descriptors, ranks candidate editing rules according to their estimated property contributions, and improves results through iterative feedback without retraining. Across 28 molecular optimization tasks, ELLM-MOM achieves competitive satisfactory hit ratios against diverse baselines while maintaining high validity, novelty, diversity, and interpretable editing decisions. This work demonstrates the potential of LLMs as knowledge integration and reasoning components in molecular optimization, paving the way for more transparent and controllable molecular optimization.",
+        "doi": "10.1016/j.knosys.2026.116850",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126015765",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965950723.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126015765"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965950723.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -92180,11 +92621,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Knowledge tracing tasks with label imbalance face two challenges: cognitive uncertainty and data sparsity. To tackle them, we propose Uncertainty-aware Dual Contrastive Learning for Knowledge Tracing (UDCL4KT). Essentially, the framework unifies uncertainty awareness and contrastive learning. This design focuses on the reliability of knowledge state estimation. In practice, we model student knowledge states as a Gaussian distribution, where the mean characterizes mastery levels and the covariance reflects cognitive uncertainty. To capture state evolution over time, we design an attention component based on KL-divergence. This component evaluates probabilistic shifts between consecutive states. To better refine representations of student knowledge states from interaction sequences, we leverage prior knowledge to model pairwise difficulty correlations between concepts. A dual-path encoder is additionally introduced to learn both global dependencies and local patterns in interaction sequences. This architecture employs a dual contrastive loss to enhance feature discriminability and mitigate feature redundancy. To alleviate label imbalance, we incorporate a class-balanced cross-entropy loss into the overall objective function. Comprehensive experiments on five public datasets show that UDCL4KT achieves significantly higher prediction accuracy compared with nine state-of-the-art knowledge tracing models. Further analysis examines the relationship between uncertainty scores and student behaviors. Ablation results also confirm the complementary effects of the uncertainty-aware mechanism and the dual contrastive learning components.",
+        "doi": "10.1016/j.knosys.2026.116902",
+        "url": "https://www.sciencedirect.com/science/article/pii/S095070512601628X",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965941295.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S095070512601628X"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965941295.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -92262,11 +92721,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Vision-Language Models (VLMs) have revolutionized medical imaging by integrating visual and textual modalities, enabling advanced tasks such as anomaly detection, diagnostic classification, and multimodal analysis. These models facilitate critical applications, including radiology report generation (RG), visual question answering (VQA), and image-text retrieval, thereby enhancing diagnostic precision and clinical workflows. Leveraging architectures like CLIP, BiomedCLIP, and Med-GPT, VLMs achieve fine-grained alignment between radiology images and textual descriptions, significantly improving interpretability and decision support in medical diagnostics. Despite their potential, adapting VLMs for healthcare presents challenges, including the scarcity of large-scale annotated datasets, the complexity of medical terminology, and the stringent requirements for patient privacy and data security. This survey comprehensively reviews state-of-the-art VLMs in radiology, analyzing their architectures, training methodologies, datasets, and real-world applications. Models such as BioViL and XrayGPT exemplify how multimodal learning enhances pathology detection and automated report generation. Additionally, emerging techniques like contrastive learning, self-supervised approaches, and federated learning (FL) offer promising solutions to address data limitations, privacy concerns, and model robustness. However, several barriers remain, including issues of model generalizability, dataset biases, and the high computational demands of training and deployment in clinical environments. This study highlights the transformative impact of VLMs in medical diagnostics and identifies key research gaps that must be addressed to ensure their practical implementation. This work outlines a roadmap for future advancements and underscores the need for scalable, privacy-preserving, and clinically effective AI-driven solutions to enhance radiological analysis and healthcare decision-making.",
+        "doi": "10.1016/j.knosys.2026.116901",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126016278",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965941295.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126016278"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965941295.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -92339,11 +92816,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Accurate epidemic forecasting is critical for timely public health responses and optimal control measures. Deep learning methods which utilize recurrent neural networks (RNNs) capable of sequence modeling are explored recently. Later on, Graph Neural Networks (GNNs) are adopted to further capture both local and global dependencies of regions by representing regions and their pairwise relations as a graph. However, in real-world scenarios the complex transmission patterns are often high-order. For instance, there exists infection dependencies of surrounding areas as epidemics propagates in all directions. Also, the infection counts of two regions with more common neighboring regions are more similar. To address these limitations, we propose a motif-based Hypergraph Neural Networks framework integrating hypergraphs and network motifs to model high-order dependencies. On the one hand, network motifs are utilized to eliminate insignificant relations to identify critical message-passing pathways. On the other hand, hyperedges are designed to capture the underlying high-order dependencies of groups of similar region nodes exploring both local geographical adjacency and global correlations of non-adjacent regions. Experimental results demonstrate that our proposed model improves forecasting accuracy on several public datasets compared with state-of-the-art methods, showing the effectiveness of the model.",
+        "doi": "10.1016/j.knosys.2026.116764",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126014905",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965941295.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126014905"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965941295.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -92413,11 +92908,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Traffic flow forecasting is a critical task in IoT-enabled smart cities and serves as a key component of Intelligent Transportation Systems (ITS). In complex traffic environments, where urban traffic flow data are influenced by significant spatiotemporal heterogeneity and abrupt disturbances, conventional models often struggle to balance prediction accuracy and stability in multi-step forecasting. To address these challenges, this paper proposes the Spatial–Temporal Integrated Correction Diffusion model (SiTC-Diff), a conditional diffusion model for traffic forecasting that integrates spatiotemporal representation learning with Contextual Path Correction (CPC). The proposed model incorporates a historical-context-conditioned innovation into the generalized DDIM reverse transition to reduce multi-step error growth across forecasting horizons. To improve the representation of spatiotemporal patterns, this work develops a denoising network named WRAUNet, which incorporates Windowed Temporal–Spatial Self-Attention (WinTSSA) and Dual-Branch Residual Attention (DBRA). These components jointly enhance the modeling of both local spatial structures and global temporal dynamics. Additionally, a multi-frame historical window is encoded and fused with the current noisy state through cross-attention at each reverse step, providing shared context for WRAUNet noise estimation and CPC innovation generation. Experiments on TaxiBJ, TaxiCQ, Traffic4Cast-BER, and Traffic4Cast-IST demonstrate consistently strong forecasting performance across datasets with different spatial resolutions, as well as smaller error growth across forecasting horizons.",
+        "doi": "10.1016/j.knosys.2026.116914",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126016400",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965941295.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126016400"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965941295.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -92559,11 +93072,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Hyperspectral semantic segmentation provides material-aware visual perception for autonomous-driving scene parsing, but close-range driving scenes contain strong illumination changes, shadows, occlusions, and viewing-condition variations that make the observed spectra deviate from intrinsic material properties. Meanwhile, repeated downsampling and deep semantic aggregation may weaken the ordered material cues carried by contiguous spectral bands. To address these issues, we propose IGHS-Net, an intrinsic-guided hyperspectral segmentation framework that incorporates spectral-shape descriptors and image-formation priors into dense hyperspectral perception. IGHS-Net uses raw spectral-shape descriptors to calibrate shallow encoder features, learns task-driven reflectance-related and illumination-related representations from deep features, and fuses material-discriminative evidence with local illumination context for dense prediction. The resulting model explicitly embeds spectral derivative information and intrinsic material-illumination structure into the segmentation network. Experiments on HSIDrive, HyKo2-VIS, and HCV2 show that IGHS-Net outperforms reproduced mainstream semantic segmentation baselines under a unified protocol, achieving mIoU scores of 0.8327, 0.6990, and 0.4237, respectively. Ablation studies support the complementary contributions of spectral-shape calibration, intrinsic representation learning, and illumination-conditioned fusion. The code is available at https://github.com/yyyy1129/IGHS-Net.",
+        "doi": "10.1016/j.knosys.2026.116928",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126016540",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965941295.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126016540"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965941295.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -92641,11 +93172,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Knowledge Tracing (KT) seeks to model students’ evolving knowledge state from historical learning interactions. However, deep learning-based methods show limited generalizability, LLM-based methods exhibit high computational cost, and graph-enhanced methods depend on externally predefined graphs. To address these issues, we propose PG-LLM-KT, an adaptable graph-guided KT framework supporting frozen lightweight LLMs. Firstly, PG-LLM-KT constructs a data-driven prerequisite knowledge graph from student interaction sequences to capture temporal and conditional concept dependencies. Then, it incorporates the graph into a structured instruction template to guide LLM reasoning in accordance with dataset-specific knowledge structures. To address overconfidence common in lightweight LLMs, an adaptive confidence head is introduced to adjust prediction confidence. Extensive experiments across diverse KT datasets, including a self-built dataset HNU_SYS2023, show that PG-LLM-KT achieves competitive performance, while maintaining high computational efficiency and strong cross-dataset generalization, offering an interpretable and scalable KT solution for real-world educational applications.",
+        "doi": "10.1016/j.knosys.2026.116926",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126016527",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965941295.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126016527"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965941295.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -92969,11 +93518,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "In multi-modal 3D object detection, perception asymmetry between camera and LiDAR is observed. Consequently, effective instance cues from the weaker modality are suppressed during BEV fusion. Therefore, modality conflict between classification and regression tasks is induced. Accordingly, an Asymmetric Perception Decoupling and Recovery Transformer is proposed. The novelty lies in jointly recovering fusion-suppressed instance cues and decoupling the modality preferences of classification and regression within a unified framework. Firstly, BEV features are aligned by semantically guided bidirectional optical flow field. Then, local details and global context are jointly modeled by window attention. A reliable basis for subsequent instance recovery is provided. Secondly, a lost instance recovery algorithm is proposed. High-confidence responses suppressed during fusion are mined and recovered. Contextual information of instance is aggregated through deformable attention. Then, the suppressed information is written back into the fused features via cross-attention. Finally, a dual-path task-adaptive decoder is designed. Dedicated feature pathways are constructed separately for classification and regression. Task collaboration is preserved and optimization conflicts are alleviated. Experiments are conducted on the nuScenes and KITTI datasets. On nuScenes test set, 75.4% NDS and 73.2% mAP are achieved. Moreover, robustness in complex traffic scenarios and deployment feasibility are validated on a real-vehicle platform. Code will be available at https://anonymous.4open.science/r/APDRFormer-1048/.",
+        "doi": "10.1016/j.knosys.2026.116987",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126017132",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965934463.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126017132"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965934463.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -93127,11 +93694,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Continual reinforcement learning aims to train a unified policy across a sequence of tasks while preserving previously acquired knowledge and adapting to new tasks. However, structure-based CRL methods often suffer from limited plasticity due to the cumulative freezing of parameters, leading to restricted model capacity and suboptimal knowledge transfer. In this paper, we propose WAVE, a task-description-conditioned structure-based CRL framework that combines semantic subnetwork allocation with occupancy-aware weight modulation to address these limitations. First, we introduce a subnetwork allocation mechanism based on SOM, which leverages its ability to preserve both global topology and local neighborhood structure to transform task embeddings into semantically structured and sparse masks. This enables subnetwork specialization while promoting cross-task knowledge sharing. Second, we design a fine-grained parameter weight transfer strategy modulated by a modulation factor β, guided by the representation occupancy rate and the concept of dormant neurons. This mechanism softens the rigid freezing paradigm by adaptively scaling the influence of historical parameters during inference. Experiments on the Continual World benchmark family show that WAVE achieves an average success rate of 92% on CW10-v1 and maintains competitive performance in the auxiliary CW20-v1 setting. WAVE also improves allocation efficiency over structure-based baselines, completing subnetwork assignment in a fraction of their cost. This combination of high task success rate and low deployment overhead supports WAVE’s stability and longer-horizon reliability within the Continual World benchmark family, while maintaining competitive forward transfer under a no-replay structure-based setting. (code is available at: https://github.com/ggtz/WAVE).",
+        "doi": "10.1016/j.knosys.2026.117000",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126017260",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965934463.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126017260"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965934463.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -93201,11 +93786,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "High-entropy alloys (HEAs) exhibit exceptional mechanical strength, thermal stability, and corrosion resistance; however, their vast compositional design space and the limited availability of structured composition–property data make systematic design and screening challenging. To address this challenge, this study proposes a reflection-enhanced, LLM-assisted literature-to-design framework for first-pass HEA screening and surrogate-guided inverse design. The workflow combines a dual-LLM extraction–reflection module for literature mining and data validation with composition-based surrogate modeling, genetic algorithm-driven candidate generation, and experimental validation in an integrated decision-support pipeline. The dual-LLM module first extracts structured composition–property data from unstructured scientific publications, achieving a precision of 0.943 on a benchmark derived from 25 articles and 397 entries. Using the curated dataset, an XGBoost surrogate model was trained to predict Young’s modulus from elemental composition, yielding a 10-fold cross-validated R2 of 0.640, an RMSE of 15.977 GPa, and an MAE of 10.985 GPa. The trained surrogate model was then coupled with a genetic algorithm as a constraint-aware candidate-generation procedure to identify candidate HEA compositions within target Young’s modulus ranges. Experimental validation on eight fabricated alloys showed good agreement for samples in well-represented regions of the training space, whereas larger deviations were observed in orientation- and microstructure-sensitive cases, highlighting the applicability boundary of the present composition-only surrogate model. These results provide a practical and transferable workflow for first-pass HEA screening and inverse design while clarifying where additional microstructural descriptors are needed for more reliable property prediction.",
+        "doi": "10.1016/j.knosys.2026.117012",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126017387",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965934463.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126017387"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965934463.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -93476,11 +94079,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Multivariate Time Series Anomaly Detection (MTSAD) is a core technology for fault early warning and operational monitoring in industrial and service systems. In practice, the normal behavior of such systems exhibits a multi-modal distribution that varies with operating conditions. Existing methods, however, typically assume a single normal pattern and overlook the multi-causal structures within normal data, which can lead to the erroneous separation of different normal modes and high false positive rates under multi-condition scenarios. To address this issue, we propose a Causality-Aware Multi-Centroid Contrastive Learning framework (CaCoL). The framework first captures stable causal dependencies among variables to construct a representation space that preserves causal structure consistency across operating conditions. On this basis, we introduce a dynamic multi-centroid clustering mechanism, enabling normal samples to adaptively form multiple centroids in the latent space as operating conditions evolve, thereby modeling the multi-modal characteristics of normal behavior. We further design a causality-consistency-based contrastive learning constraint to guide representations in achieving both alignment and discrimination while maintaining stable causal dependencies. During inference, we propose a causal multi-centroid anomaly scoring mechanism to quantify each sample’s anomaly degree. Experiments on five publicly available MTSAD benchmark datasets demonstrate that CaCoL more accurately detects anomalies across conditions, reduces false positives, and improves cross-condition stability, achieving superior overall detection performance compared to state-of-the-art methods.",
+        "doi": "10.1016/j.knosys.2026.117167",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126018939",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965921277.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126018939"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965921277.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -93650,11 +94271,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "Seismic fault detection is crucial for geological exploration and resource development. While deep learning-based fault identification methods have demonstrated notable progress, the lack of high-quality, large-scale, publicly available, and diverse three-dimensional (3D) seismic datasets hinders the application and advancement of foundation models in this field. To address this challenge, this paper introduces an interactive fault segmentation model, termed Fault-SAM. This model pioneers the application of the two-dimensional (2D) pre-trained foundation model, the Segment Anything Model (SAM), to 3D seismic fault interpretation. Specifically, a parameter-efficient 3D Adaptive Image Encoder that preserves the SAM’s pre-trained weights and fine-tunes only a small fraction of parameters to capture the 3D spatial characteristics of seismic data is introduced. The Interactive Offset-Adaptive Prompt Encoder enhances the model’s ability to handle sparse, noisy, or spatially offset prompts. Moreover, the Multi-layer Feature Aggregation Mask Decoder optimizes detailed fault feature extraction, leading to precise microstructural representation. Fault-SAM leverages the general knowledge accumulated by SAM from extensive image datasets, achieving cross-modal domain adaptation from 2D natural images to 3D seismic data using limited fault-annotated samples. Experimental results on Thebe, the largest publicly accessible field seismic dataset, synthetic seismic datasets, and the FORCE dataset (completely held out during training), demonstrate that Fault-SAM outperforms existing mainstream image segmentation models and state-of-the-art SAM-based adaptive approaches in terms of fault identification accuracy, completeness, generalization capability, and adaptability to complex geological formations. This approach offers an innovative and effective transfer-learning paradigm for deploying foundation artificial intelligence models in geophysics, geology, remote sensing, and related disciplines.",
+        "doi": "10.1016/j.knosys.2026.117185",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126019118",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965921277.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126019118"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965921277.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -93925,11 +94564,29 @@
       "owner": "王梦冉",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
       "decision": "pending",
-      "rationale": "原始候选摘要为空，尚未逐篇完成官网补证；保留待补原摘要，不根据题名推断研究类型或作纳入结论。",
+      "rationale": "已按DOI和完整题名匹配取得官网citation-and-abstract BibTeX原摘要，见verified_metadata及补摘要审计；尚待独立内容判读，本轮不新增内容精筛结论或标签。",
       "tags": [],
       "reviewed_at": "2026-11-17",
-      "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "evidence_basis": "仅补原摘要及身份核对，尚未完成摘要内容精筛。",
+      "review_stage": "original_abstract_recovered_waiting_for_content_review",
+      "verified_metadata": {
+        "abstract": "In Internet of Things (IoT) environments, anomaly detection is important to ensure reliability, security, and high operational efficiency as these networks produce huge, heterogeneous, and persistent data streams. Nevertheless, the current methods faced difficulty while handling heterogeneous and multimodal data, sensitivity to missing or noisy data, poor scalability in large networks, and failure to model intricate relationships. To address these concerns, the Multimodal Cross Attention enabled Distributed Transformer-based Light Gradient Boosting Network (MCA-DiTGBNet) is proposed in this research. The proposed architecture leverages the distributed vision transformer to extract the inherent spatial dependencies from the complex data, and the MCA mechanisms effectively combine diverse data and highlight relevant features, thereby improving the predictive performance. Additionally, the LightGBM-based classification serves as a powerful and efficient model for distinguishing between diverse types of anomalies through improved decisions. Together, these components contribute to a robust and intelligent system capable of accurately detecting and classifying anomalies in dynamic and large-scale IoT environments. For experimentation, 90% of the data is utilized for training and 10% for testing. The proposed MCA-DiTGBNet showcased an exceptional performance against other methods by achieving a 97.71% accuracy rate, 98.69% specificity, and 97.22% sensitivity for the 90% training rate while tested on the UNSW-NB-15 dataset, demonstrating its effectiveness in anomaly detection.",
+        "doi": "10.1016/j.knosys.2026.117258",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0950705126019842",
+        "abstract_source": "publisher_citation_and_abstract_bibtex",
+        "abstract_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965899344.bib",
+        "abstract_retrieved_at": "2026-11-18",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0950705126019842"
+        ]
+      },
+      "abstract_backfill": {
+        "status": "original_abstract_recovered",
+        "audit_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/recovery.json",
+        "evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/ScienceDirect_citations_1794965899344.bib",
+        "match": "exact DOI and normalized complete title",
+        "content_review_performed": false
+      }
     }
   },
   {
@@ -136513,7 +137170,18 @@
       "tags": [],
       "reviewed_at": "2026-11-17",
       "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "review_stage": "metadata_gate_waiting_for_original_abstract",
+      "verified_metadata": {
+        "publication_type": "erratum",
+        "corrects_doi": "10.1016/j.xcrp.2026.103270",
+        "metadata_identity_note": "Crossref出版方update-to关系将本DOI标记为对103270的Erratum；虽然两者题名相同，未把原论文摘要填入更正记录。",
+        "metadata_relation_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/j.xcrp.2026.103377-crossref.json",
+        "evidence_urls": [
+          "https://api.crossref.org/works/10.1016/j.xcrp.2026.103377"
+        ],
+        "identity_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/j.xcrp.2026.103377-crossref.json",
+        "identity_note": "出版方Crossref update-to标识为Erratum；不可借用被更正论文的原摘要。"
+      }
     }
   },
   {
@@ -143438,7 +144106,16 @@
       "tags": [],
       "reviewed_at": "2026-11-17",
       "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "review_stage": "metadata_gate_waiting_for_original_abstract",
+      "verified_metadata": {
+        "publication_type": "erratum",
+        "corrects_doi": "10.1016/j.ijheatmasstransfer.2026.129386",
+        "identity_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/j.ijheatmasstransfer.2026.129457-crossref.json",
+        "identity_note": "出版方Crossref update-to标识为Erratum；不可借用被更正论文的原摘要。",
+        "evidence_urls": [
+          "https://api.crossref.org/works/10.1016/j.ijheatmasstransfer.2026.129457"
+        ]
+      }
     }
   },
   {
@@ -191612,7 +192289,16 @@
       "tags": [],
       "reviewed_at": "2026-11-17",
       "evidence_basis": "仅元数据完整性检查；不计作摘要内容精筛完成。",
-      "review_stage": "metadata_gate_waiting_for_original_abstract"
+      "review_stage": "metadata_gate_waiting_for_original_abstract",
+      "verified_metadata": {
+        "publication_type": "erratum",
+        "corrects_doi": "10.1016/j.jhydrol.2026.135849",
+        "identity_evidence_file": "reviews/2026/audits/wangmengran8789-abstracts-public-20261118/j.jhydrol.2026.136190-crossref.json",
+        "identity_note": "出版方Crossref update-to标识为Erratum；不可借用被更正论文的原摘要。",
+        "evidence_urls": [
+          "https://api.crossref.org/works/10.1016/j.jhydrol.2026.136190"
+        ]
+      }
     }
   },
   {
