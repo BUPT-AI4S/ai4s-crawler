@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-18T05:03:07.238875+00:00",
-  "commit": "cfe08c743d41c11056d6fd0dc21b364b0a8e59f2",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/cfe08c743d41c11056d6fd0dc21b364b0a8e59f2/",
+  "generated_at": "2026-11-18T05:25:47.426462+00:00",
+  "commit": "6cce2ba04800c833c4c79ee3633caf84f43b2ebe",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/6cce2ba04800c833c4c79ee3633caf84f43b2ebe/",
   "years": [
     {
       "year": 2024,
@@ -26260,15 +26260,18 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-17T07:00:15-08:00",
-            "author": "AlearnerDL",
-            "subject": "metadata: audit KR 2026 catalogue and review evidence",
-            "area": "metadata",
+            "at": "2026-11-17T21:19:32-08:00",
+            "author": "zch66883",
+            "subject": "metadata: backfill ICAPS 2026 and verify NAACL calendar",
+            "area": "reviews",
             "paths": [
-              "metadata/kr/2026/AlearnerDL-verification-20261117.json"
+              "metadata/2026/ai4s.json",
+              "metadata/2026/papers.json",
+              "metadata/2026/snapshot.json",
+              "metadata/icaps/2026/ai4s.json"
             ]
           },
-          "commits_7d": 70
+          "commits_7d": 72
         },
         {
           "owner": "南耀笛",
@@ -46917,15 +46920,18 @@
           "open_issues": 49,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-17T07:00:15-08:00",
-            "author": "AlearnerDL",
-            "subject": "metadata: audit KR 2026 catalogue and review evidence",
-            "area": "metadata",
+            "at": "2026-11-17T21:19:32-08:00",
+            "author": "zch66883",
+            "subject": "metadata: backfill ICAPS 2026 and verify NAACL calendar",
+            "area": "reviews",
             "paths": [
-              "metadata/kr/2026/AlearnerDL-verification-20261117.json"
+              "metadata/2026/ai4s.json",
+              "metadata/2026/papers.json",
+              "metadata/2026/snapshot.json",
+              "metadata/icaps/2026/ai4s.json"
             ]
           },
-          "commits_7d": 70
+          "commits_7d": 72
         },
         {
           "owner": "王梦冉",
@@ -48344,27 +48350,36 @@
           "owner": "龙兆科",
           "venue_decision": "清单保留",
           "state": "completed",
-          "papers": 0,
-          "papers_missing_abstract": 0,
-          "snapshot_candidates": 0,
-          "candidates": 0,
+          "papers": 91,
+          "papers_missing_abstract": 1,
+          "snapshot_candidates": 24,
+          "candidates": 24,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 91,
+          "official_scope": "ICAPS 2026 Vol.36 No.1 官方目录全91条，包括90篇研究正文和1条Frontmatter；前置页不纳入AI4S。",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
-          "issues": [
-            "官网同口径总数尚未确认。"
+          "coverage_note": "原0条已补齐官方目录全91条；90篇研究正文有原摘要，1条前置页按类型排除。代码初筛7条，加人工核实漏筛后共24条候选，全部完成精筛且原摘要齐备；共审阅40条（含非候选核查）。其他51篇只完成题名与初筛线索排查，不声称全文精筛。",
+          "evidence_urls": [
+            "https://ojs.aaai.org/index.php/ICAPS/issue/view/736",
+            "https://icaps26.icaps-conference.org/news/"
           ],
+          "decisions": {
+            "include": 23,
+            "exclude": 17,
+            "pending": 0,
+            "unreviewed": 0
+          },
+          "issues": [],
           "actions": [
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2026/AlearnerDL.json",
+            "reviews/2026/feedback/AlearnerDL.json"
+          ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": null,
-          "final_missing_abstract": null,
+          "final_included": 23,
+          "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
           "abstract_recovered": 0,
@@ -63655,44 +63670,35 @@
           "papers": 119,
           "papers_missing_abstract": 8,
           "snapshot_candidates": 5,
-          "candidates": 5,
+          "candidates": 13,
           "missing_abstract": 0,
           "official_total": 119,
-          "official_scope": "KR 2026正式主论文集111篇与CEUR-WS Vol.4218博士论坛8篇论文，同原采集书目口径；不含博士论坛2项前置页。固定截止2026-11-17T07:14:20Z。",
+          "official_scope": "KR 2026 正式主论文集111篇及CEUR-WS Vol.4218博士论坛8篇，与原119条采集书目同口径；排除目录前置页。核验日期2026-11-17（America/Los_Angeles）。",
           "reference_check": null,
-          "coverage_note": "复用并复核119条逐项目录对账，差额0。全目录含前置页121项与研究/综述适用范围分开记录。本批24条：8纳入、16排除、0待定，含原候选5条和额外核查19条；其中6条为已有离线草稿复核，18条为新判定。原5条候选均有原摘要；新补Dennison论文已读公开PDF原摘要及研究正文，保留原abstract:null并记录全文定位。不因该阶段提交宣称全来源完成。",
+          "coverage_note": "官方目录119条按DOI/官方PDF和规范化题名逐项对账，无漏项、额外项或重复。111篇为正式主论文集研究论文；8篇博士论坛单列为研究计划/进展论文，逐篇核对其原摘要及进展内容，不将博士计划等同已完成研究。已核查全119条：10纳入、109排除、0待定/未审；本轮新增2条漏筛纳入，补齐Dennison原摘要，并将总计8条已核实纳入补录同步到年度及来源候选。原5条候选保留，当前候选13条。",
           "evidence_urls": [
             "https://proceedings.kr.org/2026/",
             "https://ceur-ws.org/Vol-4218/"
           ],
           "decisions": {
-            "include": 8,
-            "exclude": 16,
+            "include": 10,
+            "exclude": 109,
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "全目录漏筛核查尚未完成：本批24条形成正式判断，其余95条保留后续核查清单；优先核读10.24963/kr.2026/56、/52、/61。",
-            "博士论坛8篇已与正式目录对账，但研究正文类型总量仍需逐篇核定；本批仅对Dennison论文核实了实质原创内容。",
-            "新增Dennison论文原摘要已在官方PDF第1页核实，原始abstract:null保持不变；verified_metadata尚未存入完整摘要文本，保留文本回填事项，不使用“出版社无摘要”豁免。",
-            "个人审核已纳入但尚未同步候选总集：6 篇，其中缺少原摘要：1 篇。"
-          ],
+          "issues": [],
           "actions": [
-            "完成metadata/kr/2026/AlearnerDL-verification-20261117.json中95条remaining_recall_check_ids的漏筛核查；非候选无需补齐摘要。",
-            "逐篇核定剩余博士论坛论文类型，补足研究范围统计；确认无未决事项后再结案本来源。",
-            "将Dennison论文的可核实原摘要文本补入verified_metadata.abstract，保留原输入对象不变。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
-            "核对已纳入论文身份和范围，补充缺失的原摘要后同步候选总集。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2026/AlearnerDL.json",
             "reviews/2026/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": 8,
-          "final_missing_abstract": 1,
-          "unsynced_included": 6,
-          "unsynced_missing_abstract": 1,
+          "final_included": 10,
+          "final_missing_abstract": 0,
+          "unsynced_included": 0,
+          "unsynced_missing_abstract": 0,
           "abstract_recovered": 0,
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
@@ -63962,27 +63968,30 @@
           "title": "North American Chapter of the Associationfor Computational Linguistics",
           "owner": "龙兆科",
           "venue_decision": "清单保留",
-          "state": "pending",
+          "state": "not_held",
           "papers": 0,
           "papers_missing_abstract": 0,
           "snapshot_candidates": 0,
           "candidates": 0,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 0,
+          "official_scope": "无独立 NAACL 2026 届次；不将ACL 2026或NAACL 2025/2027计入。",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
+          "coverage_note": "官方历届 NAACL 会议目录及 ACL Anthology 的 NAACL 届次均从2025跳至后续届次，NAACL 官网公布下一届为2027；ACL 2026系列会议日程列EACL、ACL、EMNLP、AACL-IJCNLP，无独立NAACL 2026。综合官方完整日程和历届目录推断该年度无独立届次，而不是因抓取失败将未知填零。不把ACL 2026混入NAACL。",
+          "evidence_urls": [
+            "https://naacl.org/conferences/index.html",
+            "https://aclanthology.org/venues/naacl/",
+            "https://naacl.org/index.html",
+            "https://2026.aclweb.org/assets/Sponsorship%20brochure%20for%20ACL%202026%20Conferences%20-%202026-04-23.pdf"
+          ],
           "decisions": null,
-          "issues": [
-            "采集状态尚未完成：pending",
-            "官网同口径总数尚未确认。"
-          ],
+          "issues": [],
           "actions": [
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2026/feedback/AlearnerDL.json"
+          ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
           "final_included": null,
           "final_missing_abstract": null,
@@ -70781,21 +70790,24 @@
         {
           "owner": "龙兆科",
           "sources": 49,
-          "delivered": 1,
-          "official": 1,
+          "delivered": 2,
+          "official": 3,
           "pending": 0,
-          "open_issues": 47,
+          "open_issues": 44,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-17T07:00:15-08:00",
-            "author": "AlearnerDL",
-            "subject": "metadata: audit KR 2026 catalogue and review evidence",
-            "area": "metadata",
+            "at": "2026-11-17T21:19:32-08:00",
+            "author": "zch66883",
+            "subject": "metadata: backfill ICAPS 2026 and verify NAACL calendar",
+            "area": "reviews",
             "paths": [
-              "metadata/kr/2026/AlearnerDL-verification-20261117.json"
+              "metadata/2026/ai4s.json",
+              "metadata/2026/papers.json",
+              "metadata/2026/snapshot.json",
+              "metadata/icaps/2026/ai4s.json"
             ]
           },
-          "commits_7d": 70
+          "commits_7d": 72
         },
         {
           "owner": "王梦冉",
@@ -71101,28 +71113,31 @@
         },
         "2026": {
           "sources": 49,
-          "delivered": 1,
-          "official": 1,
+          "delivered": 2,
+          "official": 3,
           "pending": 0,
-          "open_issues": 47,
+          "open_issues": 44,
           "status": "in_progress"
         }
       },
       "sources": 147,
-      "delivered": 48,
+      "delivered": 49,
       "not_started": [
         "2025"
       ],
       "last_update": {
-        "at": "2026-11-17T07:00:15-08:00",
-        "author": "AlearnerDL",
-        "subject": "metadata: audit KR 2026 catalogue and review evidence",
-        "area": "metadata",
+        "at": "2026-11-17T21:19:32-08:00",
+        "author": "zch66883",
+        "subject": "metadata: backfill ICAPS 2026 and verify NAACL calendar",
+        "area": "reviews",
         "paths": [
-          "metadata/kr/2026/AlearnerDL-verification-20261117.json"
+          "metadata/2026/ai4s.json",
+          "metadata/2026/papers.json",
+          "metadata/2026/snapshot.json",
+          "metadata/icaps/2026/ai4s.json"
         ]
       },
-      "commits_7d": 70
+      "commits_7d": 72
     },
     {
       "owner": "郝卓迪",
@@ -71306,9 +71321,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-18T05:02:25.075880+00:00",
+    "generated_at": "2026-11-18T05:25:03.622103+00:00",
     "history_available": true,
-    "commit": "cfe08c743d41c11056d6fd0dc21b364b0a8e59f2",
-    "commits_scanned": 899
+    "commit": "6cce2ba04800c833c4c79ee3633caf84f43b2ebe",
+    "commits_scanned": 902
   }
 }
