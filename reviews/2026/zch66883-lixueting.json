@@ -32211,5 +32211,193 @@
         "basis": "官方正式MLSys2026论文集卷8及单篇citation publication date 2026-05-18，早于固定截止；135条原采集文件在首次执行main中已存在且字节一致。"
       }
     }
+  },
+  {
+    "id": "https://proceedings.mlsys.org/paper_files/paper/2026/hash/703f727ec10190b2fddcf8e24f52df48-Abstract-Conference.html",
+    "venue": "mlsys",
+    "year": 2026,
+    "track": null,
+    "title": "REPARO: LOSS-RESILIENT GENERATIVE CODEC FOR VIDEO CONFERENCING",
+    "authors": [
+      "Li, Tianhong",
+      "Sivaraman, Vibhaalakshmi",
+      "Karimi, Pantea",
+      "Fan, Lijie",
+      "Alizadeh, Mohammad",
+      "Katabi, Dina"
+    ],
+    "author_ids": [],
+    "abstract": "Packet loss during video conferencing often results in poor quality and video freezing. Retransmitting lost packets is often impractical due to the need for real-time playback, and using Forward Error Correction (FEC) for packet recovery is challenging due to the unpredictable and bursty nature of Internet losses. Excessive redundancy leads to inefficiency and wasted bandwidth, while insufficient redundancy results in undecodable frames, causing video freezes and quality degradation in subsequent frames. We introduce Reparo — a loss-resilient video conferencing framework based on generative deep learning models to address these issues. Our approach generates missing information when a frame or part of a frame is lost. This generation is conditioned on the data received thus far, considering the model's understanding of how people and objects appear and interact within the visual realm. Experimental results, using publicly available video conferencing datasets, show that Reparo outperforms state-of-the-art FEC-based video conferencing solutions in terms of both video quality (measured through PSNR, SSIM, and LPIPS) and the occurrence of video freezes.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": null,
+    "pages": null,
+    "bibtex": null,
+    "url": "https://proceedings.mlsys.org/paper_files/paper/2026/hash/703f727ec10190b2fddcf8e24f52df48-Abstract-Conference.html",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": null,
+    "source": "proceedings.mlsys.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "Conference on Machine Learning and Systems",
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "lixueting-2026-batch47",
+      "owner": "李雪婷",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "include",
+      "rationale": "初筛漏筛补录，纳入：REPARO针对网络丢包下的视频编码/恢复这一具体通信工程问题，用VQGAN量化编码与时空Vision Transformer恢复丢失token，研究固定码率与丢包鲁棒性。官网原摘要、正式PDF§3.2/Fig2/Fig4、§4.1—4.2支持AI直接承担编码和恢复，比较WebRTC FEC及VP9+Tambur的画质与未渲染帧。测试使用网络仿真/回放及两块V100；未声称已在Apple硬件端到端验证或普遍适配手机。",
+      "verified_metadata": {
+        "title": "REPARO: LOSS-RESILIENT GENERATIVE CODEC FOR VIDEO CONFERENCING",
+        "authors": [
+          "Li, Tianhong",
+          "Sivaraman, Vibhaalakshmi",
+          "Karimi, Pantea",
+          "Fan, Lijie",
+          "Alizadeh, Mohammad",
+          "Katabi, Dina"
+        ],
+        "abstract": "Packet loss during video conferencing often results in poor quality and video freezing. Retransmitting lost packets is often impractical due to the need for real-time playback, and using Forward Error Correction (FEC) for packet recovery is challenging due to the unpredictable and bursty nature of Internet losses. Excessive redundancy leads to inefficiency and wasted bandwidth, while insufficient redundancy results in undecodable frames, causing video freezes and quality degradation in subsequent frames. We introduce Reparo — a loss-resilient video conferencing framework based on generative deep learning models to address these issues. Our approach generates missing information when a frame or part of a frame is lost. This generation is conditioned on the data received thus far, considering the model's understanding of how people and objects appear and interact within the visual realm. Experimental results, using publicly available video conferencing datasets, show that Reparo outperforms state-of-the-art FEC-based video conferencing solutions in terms of both video quality (measured through PSNR, SSIM, and LPIPS) and the occurrence of video freezes.",
+        "doi": null,
+        "url": "https://proceedings.mlsys.org/paper_files/paper/2026/hash/703f727ec10190b2fddcf8e24f52df48-Abstract-Conference.html",
+        "pdf_url": "https://proceedings.mlsys.org/paper_files/paper/2026/file/703f727ec10190b2fddcf8e24f52df48-Paper-Conference.pdf",
+        "booktitle": "Proceedings of Machine Learning and Systems",
+        "volume": "8",
+        "published": "2026-05-18",
+        "pages": "1701–1718",
+        "article_type": "Conference Paper",
+        "evidence_urls": [
+          "https://proceedings.mlsys.org/paper_files/paper/2026/hash/703f727ec10190b2fddcf8e24f52df48-Abstract-Conference.html",
+          "https://proceedings.mlsys.org/paper_files/paper/2026",
+          "https://proceedings.mlsys.org/paper_files/paper/2026/file/703f727ec10190b2fddcf8e24f52df48-Paper-Conference.pdf"
+        ]
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于信息科学",
+          "label_en": "AI for information science",
+          "evidence_location": "官网原摘要；正式PDF§3.2/§4",
+          "rationale": "研究通信编码和丢包恢复。"
+        },
+        {
+          "axis": "method",
+          "label": "Transformer 架构",
+          "label_en": "Transformer",
+          "evidence_location": "正式PDF§3.2.4/Fig4",
+          "rationale": "以时空Vision Transformer依据已收到的当前帧及历史帧token恢复丢失token。"
+        }
+      ],
+      "reviewed_at": "2026-11-18T00:53:44.880387-08:00",
+      "vocabulary_commit": "e770c6f02d38855505554313da0dadc74a6f3afe",
+      "publication_scope_check": {
+        "status": "verified",
+        "cutoff_at": "2026-11-16T23:14:20-08:00",
+        "basis": "官方正式MLSys2026论文集卷8及单篇citation publication date 2026-05-18，早于固定截止；135条原采集文件在首次执行main中已存在且字节一致。"
+      }
+    }
+  },
+  {
+    "id": "https://proceedings.mlsys.org/paper_files/paper/2026/hash/87eaaa8605a1a472d9a9756e7500517b-Abstract-Conference.html",
+    "venue": "mlsys",
+    "year": 2026,
+    "track": null,
+    "title": "CSLE: A Reinforcement Learning Platform for Autonomous Security Management",
+    "authors": [
+      "Hammar, Kim"
+    ],
+    "author_ids": [],
+    "abstract": "Reinforcement learning is a promising approach to autonomous and adaptive security management in networked systems. However, current reinforcement learning solutions for security management are mostly limited to simulation environments and it is unclear how they generalize to operational systems. In this paper, we address this limitation by presenting CSLE: a reinforcement learning platform for autonomous security management that enables experimentation under realistic conditions. Conceptually, CSLE encompasses two systems. First, it includes an emulation system that replicates key components of the target system in a virtualized environment. We use this system to gather measurements and logs, based on which we identify a system model, such as a Markov decision process. Second, it includes a simulation system where security strategies are efficiently learned through simulations of the system model. The learned strategies are then evaluated and refined in the emulation system to close the gap between theoretical and operational performance. We demonstrate CSLE through four use cases: flow control, replication control, segmentation control, and recovery control. Through these use cases, we show that CSLE enables near-optimal security management in an environment that approximates an operational system.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": null,
+    "pages": null,
+    "bibtex": null,
+    "url": "https://proceedings.mlsys.org/paper_files/paper/2026/hash/87eaaa8605a1a472d9a9756e7500517b-Abstract-Conference.html",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": null,
+    "source": "proceedings.mlsys.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "Conference on Machine Learning and Systems",
+    "ccf_rank": null,
+    "ccf_field": null,
+    "ccf_catalog_version": null,
+    "ccf_paper_status": null,
+    "dblp_key": null,
+    "dblp_toc": null,
+    "booktitle": null,
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "lixueting-2026-batch47",
+      "owner": "李雪婷",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "include",
+      "rationale": "初筛漏筛补录，纳入：CSLE的贡献直接涉及网络化工程系统的安全控制。官网原摘要与正式PDF§4、§6—8/Table4/Fig10—11支持：从容器化数字孪生采集观测建立MDP/POMDP/博弈模型，用强化学习获得流量、网络分段、恢复及复制控制策略，再在数字孪生中评估服务可用性/攻击代价相关奖励及exploitability，并与固定阈值、Snort等策略比较。并非仅发布通用软件工具；验证边界为模拟器和数字孪生，§8.3明确没有生产环境验证。",
+      "verified_metadata": {
+        "title": "CSLE: A Reinforcement Learning Platform for Autonomous Security Management",
+        "authors": [
+          "Hammar, Kim"
+        ],
+        "abstract": "Reinforcement learning is a promising approach to autonomous and adaptive security management in networked systems. However, current reinforcement learning solutions for security management are mostly limited to simulation environments and it is unclear how they generalize to operational systems. In this paper, we address this limitation by presenting CSLE: a reinforcement learning platform for autonomous security management that enables experimentation under realistic conditions. Conceptually, CSLE encompasses two systems. First, it includes an emulation system that replicates key components of the target system in a virtualized environment. We use this system to gather measurements and logs, based on which we identify a system model, such as a Markov decision process. Second, it includes a simulation system where security strategies are efficiently learned through simulations of the system model. The learned strategies are then evaluated and refined in the emulation system to close the gap between theoretical and operational performance. We demonstrate CSLE through four use cases: flow control, replication control, segmentation control, and recovery control. Through these use cases, we show that CSLE enables near-optimal security management in an environment that approximates an operational system.",
+        "doi": null,
+        "url": "https://proceedings.mlsys.org/paper_files/paper/2026/hash/87eaaa8605a1a472d9a9756e7500517b-Abstract-Conference.html",
+        "pdf_url": "https://proceedings.mlsys.org/paper_files/paper/2026/file/87eaaa8605a1a472d9a9756e7500517b-Paper-Conference.pdf",
+        "booktitle": "Proceedings of Machine Learning and Systems",
+        "volume": "8",
+        "published": "2026-05-18",
+        "pages": "716–730",
+        "article_type": "Conference Paper",
+        "evidence_urls": [
+          "https://proceedings.mlsys.org/paper_files/paper/2026/hash/87eaaa8605a1a472d9a9756e7500517b-Abstract-Conference.html",
+          "https://proceedings.mlsys.org/paper_files/paper/2026",
+          "https://proceedings.mlsys.org/paper_files/paper/2026/file/87eaaa8605a1a472d9a9756e7500517b-Paper-Conference.pdf"
+        ]
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "官网原摘要；正式PDF§6—8",
+          "rationale": "学习网络系统安全与服务可用性的具体控制策略，并在数字孪生评估。"
+        },
+        {
+          "axis": "method",
+          "label": "强化学习",
+          "label_en": "Reinforcement learning",
+          "evidence_location": "官网原摘要；正式PDF§4、Table4/§8",
+          "rationale": "由奖励信号学习MDP/POMDP和安全博弈策略，实际评估PPO等强化学习策略。"
+        }
+      ],
+      "reviewed_at": "2026-11-18T00:53:44.880387-08:00",
+      "vocabulary_commit": "e770c6f02d38855505554313da0dadc74a6f3afe",
+      "publication_scope_check": {
+        "status": "verified",
+        "cutoff_at": "2026-11-16T23:14:20-08:00",
+        "basis": "官方正式MLSys2026论文集卷8及单篇citation publication date 2026-05-18，早于固定截止；135条原采集文件在首次执行main中已存在且字节一致。"
+      }
+    }
   }
 ]
