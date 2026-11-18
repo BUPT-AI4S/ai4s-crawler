@@ -4,10 +4,10 @@
   "captured_at": "2026-11-08T21:38:12.854071+08:00",
   "vocabulary_commit": "54590d4",
   "states": {
-    "completed": 251,
-    "abstract_incomplete": 286,
-    "pending": 2,
-    "not_held": 2
+    "completed": 252,
+    "abstract_incomplete": 285,
+    "pending": 1,
+    "not_held": 3
   },
   "sources": [
     {
@@ -311,9 +311,9 @@
       "source": "icaps",
       "state": "completed",
       "missing_files": [],
-      "papers": 0,
-      "with_abstract": 0,
-      "ai4s": 0,
+      "papers": 91,
+      "with_abstract": 90,
+      "ai4s": 24,
       "duplicate_ids": 0
     },
     {
@@ -3560,15 +3560,13 @@
     },
     {
       "source": "naacl",
-      "state": "pending",
-      "missing_files": [
-        "papers.json",
-        "ai4s.json"
-      ],
+      "state": "not_held",
+      "missing_files": [],
       "papers": 0,
       "with_abstract": 0,
       "ai4s": 0,
-      "duplicate_ids": 0
+      "duplicate_ids": 0,
+      "state_evidence": "reviews/2026/AlearnerDL/audit-20261117/naacl-calendar-verification.json"
     },
     {
       "source": "nataging",
@@ -4938,18 +4936,18 @@
     }
   ],
   "totals": {
-    "papers": 368134,
-    "with_abstract": 241011,
-    "ai4s": 29352
+    "papers": 368225,
+    "with_abstract": 241101,
+    "ai4s": 29376
   },
   "annual_files": {
     "papers.json": {
-      "sha256": "e93894136064b349ae5972d185811178e00f0beb56b490c104054ce213a9521e",
-      "bytes": 856886412
+      "sha256": "5cb5a28f420bef5b159c0df0499f03917dea6e7f79bc3cfc82b7127bb77b9377",
+      "bytes": 857104274
     },
     "ai4s.json": {
-      "sha256": "5b17ffdd209cb7e48f0b8b3527bc2d0f0eab8c095c80669044c3384fb44616ab",
-      "bytes": 100750874
+      "sha256": "b0dbfd9e16e211827af609d9882435cd9605b3a31e92c9eeddc854581bdacd03",
+      "bytes": 104230272
     }
   },
   "catalogue_backfill": {
@@ -4962,5 +4960,19 @@
     "sources": 37,
     "scope": "回填快照时点前已由出版方登记但未进入采集文件的2026记录；不改变其他来源的快照行，不改变锁定采集时点",
     "audit_file": "reviews/2026/audits/Jodie628-raw-backfill-20261117.json"
+  },
+  "longzhaoke_20261117_corrections": {
+    "owner": "龙兆科",
+    "checked_at": "2026-11-18T05:15:43.692490+00:00",
+    "base_snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+    "base_papers_sha256": "e93894136064b349ae5972d185811178e00f0beb56b490c104054ce213a9521e",
+    "raw_added": 91,
+    "source": "icaps",
+    "candidate_added": 24,
+    "scope": "补录快照前已正式出版的 ICAPS 2026 论文集；将无独立2026届次的 NAACL 改为 not_held；保留其他来源行及原快照时间。",
+    "audit_files": [
+      "reviews/2026/AlearnerDL/audit-20261117/icaps-verification.json",
+      "reviews/2026/AlearnerDL/audit-20261117/naacl-calendar-verification.json"
+    ]
   }
 }
