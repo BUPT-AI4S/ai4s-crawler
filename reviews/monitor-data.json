@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-18T09:40:49.085858+00:00",
-  "commit": "bfd322b8ca8a6d522bfd3da12d0cb129772fbccf",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/bfd322b8ca8a6d522bfd3da12d0cb129772fbccf/",
+  "generated_at": "2026-11-18T10:02:00.694775+00:00",
+  "commit": "3b445a3c2a0329b280f37cae811199ab3aab174a",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/3b445a3c2a0329b280f37cae811199ab3aab174a/",
   "years": [
     {
       "year": 2024,
@@ -26219,9 +26219,9 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-18T01:34:50-08:00",
+            "at": "2026-11-18T01:58:55-08:00",
             "author": "h10",
-            "subject": "review: screen Chinese Herbal Medicines candidates and audit four formal issues",
+            "subject": "review: reconcile CHM in-press records and research letters; recover SVR candidate",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
@@ -26230,7 +26230,7 @@
               "reviews/2026/feedback/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 80
+          "commits_7d": 81
         },
         {
           "owner": "丁利军",
@@ -46836,9 +46836,9 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-18T01:34:50-08:00",
+            "at": "2026-11-18T01:58:55-08:00",
             "author": "h10",
-            "subject": "review: screen Chinese Herbal Medicines candidates and audit four formal issues",
+            "subject": "review: reconcile CHM in-press records and research letters; recover SVR candidate",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
@@ -46847,7 +46847,7 @@
               "reviews/2026/feedback/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 80
+          "commits_7d": 81
         },
         {
           "owner": "郝卓迪",
@@ -58677,12 +58677,12 @@
           "papers": 151,
           "papers_missing_abstract": 15,
           "snapshot_candidates": 12,
-          "candidates": 13,
-          "missing_abstract": 0,
+          "candidates": 14,
+          "missing_abstract": 1,
           "official_total": null,
           "official_scope": "",
           "reference_check": null,
-          "coverage_note": "四期逐PII目录18/23/24/26，共91，与原151采集匹配91、目录缺采0、额外60尚需正式归属核验。76为已确认适用范围小计，另10文类待核，官网同口径总数未知。13科学候选9纳入2排除2待定；补1条原采集ANN-GA漏筛，原字段保留。",
+          "coverage_note": "四期91 PII均匹配原151。60额外已逐PII核实全部在官网InPress，排除固定正式范围；另8条未采集InPress不属正式范围缺采。九条文类已核：8原创研究短文计入，Elemental TCM按正文为概念/范式观点排除。91=84确认研究/实质综述小计+6非适用+1既有CPE文类待人工，official_total仍null。14科学候选9纳入2排除3待定，新增PDE4D实质SVR漏筛因原摘要缺失保留pending。",
           "evidence_urls": [
             "https://www.sciencedirect.com/journal/chinese-herbal-medicines/issues",
             "https://www.sciencedirect.com/journal/chinese-herbal-medicines/vol/18/issue/1",
@@ -58693,25 +58693,25 @@
           "decisions": {
             "include": 9,
             "exclude": 2,
-            "pending": 2,
+            "pending": 3,
             "unreviewed": 0
           },
           "issues": [
-            "91目录=76确认研究/实质综述小计+5非适用+10文类待核，official_total和collected_total_same_scope仍未知；8篇Correspondence/Research Letter不能整栏当读者来信排除。",
-            "原151采集有60条未匹配四期目录，正式归属尚未核清，不能因published字段为2026而纳入，也不冒称全在InPress。",
-            "2篇科学pending：黄连AD高内涵成像的实际学习算法/分析模块未说明；抗病毒综述所称AI筛选的具体模型及引用链待证。",
-            "3条非正式召回待核：PDAC网络框架、Liuwei Kangguan计算优化，以及Herbgenomics的AI实质内容/引用准确性；不计科学pending。",
-            "Cardiometabolic reprogramming drives...（2026.05.004）正常浏览器CPE00002后停止，已请求仅此篇文类人工核验。其余9条未尝试文类留下一批，不把它们误列已受阻。",
+            "91目录=84确认研究/实质综述小计+6非适用+1既有文类待人工，official_total/collected_total_same_scope仍null；2026.05.004旧CPE请求未答，不重试。",
+            "3篇科学pending：黄连AD成像实际学习模型、抗病毒AI筛选引用支撑，以及新增PDE4D的可核实独立原摘要。候选原摘要缺1，不用正文首段替代。",
+            "3条非正式召回仍待核：PDAC主正文仍Loading未读到、Liuwei Kangguan本轮CPE待人工、Herbgenomics的AI内容及引文准确性；不计科学pending。",
             "官网同口径总数尚未确认。",
+            "AI4S候选缺少摘要：1 篇。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "先访问已观察到的官网Articles in press列表，将60额外PII逐项对账；不扩2026固定截止或重抓已核四期91目录。",
-            "处理9条未尝试文类：8条Research Letter/Correspondence及Elemental TCM；按正文是否原创研究/实质综述区分。2026.05.004已问未答，不重试/重复追问。",
-            "核3条未决召回实际方法/贡献；Herbgenomics虽在Future prospects含实际AI研究说法，不能整段按愿景排除，但其AlphaFold引文是否支持生物合成基因发现待核，未先补候选。",
-            "补两篇科学pending的具体模型/方法证据；AI高内涵不是设备品牌本身的纳入理由，常规网络药理/对接不自动算AI。",
-            "原采集和原字段保持；仅补ANN-GA漏筛候选。未验签/下载的PDF留null，已核12篇公开HTML原摘要可复用，不重判已明确9纳入2排除。",
+            "60额外全在InPress及四期91目录、九条文类已核，不重抓/重做。仅2026.05.004文类仍待旧人工答复。",
+            "优先补PDE4D原摘要（本篇原创Research Letter，不擅套用只询问实质综述的摘要例外），无原摘要继续pending。",
+            "PDAC仅正文异步加载未完成，可在正常UI完整加载后核实际方法；Herbgenomics复用上轮全文并核AI引用链，不把Future prospects全当愿景。",
+            "Liuwei Kangguan（2026.08.019）新CPE已请人工核具体学习模型/方法位置，未答复不重试/重复追问，不授权替代来源；旧17组人工请求保持。",
+            "继续2篇旧科学pending的补证或其他未开始2026来源，已明确的9纳入2排除不重判，2026固定截止不扩展。",
             "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
+            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
           ],
           "files": [
@@ -58727,7 +58727,7 @@
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 1
         },
         {
           "code": "j-a8a43dcc50",
@@ -71004,13 +71004,13 @@
           "sources": 51,
           "delivered": 30,
           "official": 24,
-          "pending": 15,
+          "pending": 16,
           "open_issues": 38,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-18T01:34:50-08:00",
+            "at": "2026-11-18T01:58:55-08:00",
             "author": "h10",
-            "subject": "review: screen Chinese Herbal Medicines candidates and audit four formal issues",
+            "subject": "review: reconcile CHM in-press records and research letters; recover SVR candidate",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
@@ -71019,7 +71019,7 @@
               "reviews/2026/feedback/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 80
+          "commits_7d": 81
         },
         {
           "owner": "郝卓迪",
@@ -71323,7 +71323,7 @@
           "sources": 51,
           "delivered": 30,
           "official": 24,
-          "pending": 15,
+          "pending": 16,
           "open_issues": 38,
           "status": "in_progress"
         }
@@ -71334,9 +71334,9 @@
         "2025"
       ],
       "last_update": {
-        "at": "2026-11-18T01:34:50-08:00",
+        "at": "2026-11-18T01:58:55-08:00",
         "author": "h10",
-        "subject": "review: screen Chinese Herbal Medicines candidates and audit four formal issues",
+        "subject": "review: reconcile CHM in-press records and research letters; recover SVR candidate",
         "area": "reviews",
         "paths": [
           "metadata/2026/ai4s.json",
@@ -71345,7 +71345,7 @@
           "reviews/2026/feedback/zch66883-lixueting.json"
         ]
       },
-      "commits_7d": 80
+      "commits_7d": 81
     },
     {
       "owner": "龙兆科",
@@ -71576,9 +71576,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-18T09:40:07.280135+00:00",
+    "generated_at": "2026-11-18T10:01:29.634109+00:00",
     "history_available": true,
-    "commit": "bfd322b8ca8a6d522bfd3da12d0cb129772fbccf",
-    "commits_scanned": 949
+    "commit": "3b445a3c2a0329b280f37cae811199ab3aab174a",
+    "commits_scanned": 951
   }
 }
