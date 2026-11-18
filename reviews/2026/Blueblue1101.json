@@ -6002,9 +6002,21 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "NegBio-VAE以神经脉冲过度离散为动机，但摘要只报告图像重建生成及一般表征；需核对是否有真实神经放电建模实验。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVPR正式PDF第5节四个实验集为MNIST、Fashion-MNIST、CIFAR和CelebA，未分析真实神经放电；负二项脉冲只是通用图像VAE的生物启发。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_Negative_Binomial_Variational_Autoencoders_for_Overdispersed_Latent_Modeling_CVPR_2026_paper.pdf"
+        ],
+        "fulltext_evidence": {
+          "index": 76,
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_Negative_Binomial_Variational_Autoencoders_for_Overdispersed_Latent_Modeling_CVPR_2026_paper.pdf",
+          "section": "5.1–5.5; Tables 1–3",
+          "finding": "四个评测集为MNIST、Fashion-MNIST、CIFAR、CelebA，未使用真实神经脉冲数据；生物动机未转化为神经科学实证。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -6936,9 +6948,21 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "PhysSkin学习物理约束蒙皮场用于实时动画；需核查是否定量验证真实材料变形或动力学求解，还是仅追求图形动画效果。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVPR正式PDF第4节仅在RigNet/ShapeNet几何模型比较蒙皮场数值指标与动画效果，未验证真实材料物性或工程动力学任务。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/papers/Lei_PhysSkin_Real-Time_and_Generalizable_Physics-Based_Animation_via_Self-Supervised_Neural_Skinning_CVPR_2026_paper.pdf"
+        ],
+        "fulltext_evidence": {
+          "index": 86,
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Lei_PhysSkin_Real-Time_and_Generalizable_Physics-Based_Animation_via_Self-Supervised_Neural_Skinning_CVPR_2026_paper.pdf",
+          "section": "4.1–4.3; Table 1",
+          "finding": "在RigNet/ShapeNet的3D形状上评测蒙皮场独立性、数值稳定性和动画效果，未评测实际材料参数或科学力学量。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -7470,10 +7494,51 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "TMFS用物理倾斜模糊模型恢复湍流图像，但摘要只明确优化式估计，尚不能确认AI学习模块；需查正文网络结构与训练方式。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVPR正文图1及第2–4节明确4层MLP隐式神经表示、自监督拟合和物理湍流前向模型，在真实湍流图像上验证大气光学成像反问题。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/papers/Xie_Physically-Grounded_Turbulence_Mitigation_with_Frame-Shared_Degradation_Parameters_CVPR_2026_paper.pdf"
+        ],
+        "fulltext_evidence": {
+          "index": 93,
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Xie_Physically-Grounded_Turbulence_Mitigation_with_Frame-Shared_Degradation_Parameters_CVPR_2026_paper.pdf",
+          "section": "1–4; Figure 1; Section 4",
+          "finding": "4层MLP隐式神经表示对退化帧自监督拟合，并用物理湍流倾斜与模糊前向模型约束，合成与真实湍流图像验证大气光学成像反问题。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于数理科学",
+          "label_en": "AI for mathematical and physical sciences",
+          "evidence_location": "正式论文正文或官网链接的作者全文：1–4; Figure 1; Section 4",
+          "rationale": "CVPR正文图1及第2–4节明确4层MLP隐式神经表示、自监督拟合和物理湍流前向模型，在真实湍流图像上验证大气光学成像反问题。"
+        },
+        {
+          "axis": "task",
+          "label": "反问题",
+          "label_en": "Inverse problem",
+          "evidence_location": "正式论文正文或官网链接的作者全文：1–4; Figure 1; Section 4",
+          "rationale": "CVPR正文图1及第2–4节明确4层MLP隐式神经表示、自监督拟合和物理湍流前向模型，在真实湍流图像上验证大气光学成像反问题。"
+        },
+        {
+          "axis": "method",
+          "label": "物理信息学习",
+          "label_en": "Physics-informed learning",
+          "evidence_location": "正式论文正文或官网链接的作者全文：1–4; Figure 1; Section 4",
+          "rationale": "CVPR正文图1及第2–4节明确4层MLP隐式神经表示、自监督拟合和物理湍流前向模型，在真实湍流图像上验证大气光学成像反问题。"
+        },
+        {
+          "axis": "method",
+          "label": "隐式神经表示",
+          "label_en": "Implicit neural representation",
+          "evidence_location": "正式论文正文或官网链接的作者全文：1–4; Figure 1; Section 4",
+          "rationale": "CVPR正文图1及第2–4节明确4层MLP隐式神经表示、自监督拟合和物理湍流前向模型，在真实湍流图像上验证大气光学成像反问题。"
+        }
+      ]
     }
   },
   {
@@ -10944,10 +11009,57 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "题名为OlmoEarth但摘要反复称Helios，且代码地址为REDACTED；需核对正式页面确认版本与原摘要后再纳入地球观测基础模型研究。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式PDF摘要已更正为OlmoEarth，预训练多模态地球观测模型，并在生态系统制图、红树林保护和粮食安全等真实任务评测；原候选Helios摘要错配。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/papers/Herzog_OlmoEarth_Stable_Latent_Image_Modeling_for_Multimodal_Earth_Observation_CVPR_2026_paper.pdf"
+        ],
+        "fulltext_evidence": {
+          "index": 137,
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Herzog_OlmoEarth_Stable_Latent_Image_Modeling_for_Multimodal_Earth_Observation_CVPR_2026_paper.pdf",
+          "section": "p.1 abstract; 2.1 data; 3 evaluation",
+          "finding": "正式PDF明确OlmoEarth及代码仓库，预训练使用Sentinel-1/2、Landsat-8与地表地图，真实任务含红树林保护、生态系统制图和粮食安全；原候选摘要为错配旧名。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        },
+        "title": "OlmoEarth: Stable Latent Image Modeling for Multimodal Earth Observation",
+        "abstract": "Earth observation data presents a unique challenge: it is spatial like images, sequential like video or text, and highly multimodal. We present OlmoEarth: a spatio-temporal, multimodal foundation model that employs a novel self-supervised learning formulation, masking strategy, and loss, which are all designed for Earth observation. OlmoEarth achieves state-of-the-art performance compared to 12 other foundation models across a variety of research benchmarks and real-world tasks from external partners. When evaluating task-agnostic embeddings OlmoEarth achieves the best performance on 15 out of 24 tasks, and with task-specific full fine-tuning it is the best on 19 of 29 tasks. We deploy OlmoEarth as the backbone of an end-to-end platform for data collection, labeling, training, and inference of Earth observation models. The OlmoEarth Platform puts frontier foundation models and powerful data management tools into the hands of non-profits and NGOs working to solve the world’s biggest problems. OlmoEarth source code, training data, and pretrained weights are available at https://github.com/allenai/olmoearth_pretrain.",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Herzog_OlmoEarth_Stable_Latent_Image_Modeling_for_Multimodal_Earth_Observation_CVPR_2026_paper.pdf",
+        "article_type": "CVPR 2026 paper",
+        "checked_at": "2026-11-18",
+        "correction_note": "输入摘要与正式论文不符，以出版方原摘要纠正；保留原字段供追溯。"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于地球宇宙科学",
+          "label_en": "AI for Earth and space sciences",
+          "evidence_location": "CVF正式开放获取论文PDF第1页摘要；原候选摘要错误地称为Helios，代码地址为REDACTED",
+          "rationale": "CVF正式PDF摘要已更正为OlmoEarth，预训练多模态地球观测模型，并在生态系统制图、红树林保护和粮食安全等真实任务评测；原候选Helios摘要错配。"
+        },
+        {
+          "axis": "training_stage",
+          "label": "预训练",
+          "label_en": "Pretraining",
+          "evidence_location": "CVF正式开放获取论文PDF第1页摘要；原候选摘要错误地称为Helios，代码地址为REDACTED",
+          "rationale": "CVF正式PDF摘要已更正为OlmoEarth，预训练多模态地球观测模型，并在生态系统制图、红树林保护和粮食安全等真实任务评测；原候选Helios摘要错配。"
+        },
+        {
+          "axis": "contribution",
+          "label": "科学基础模型",
+          "label_en": "Scientific foundation model",
+          "evidence_location": "CVF正式开放获取论文PDF第1页摘要；原候选摘要错误地称为Helios，代码地址为REDACTED",
+          "rationale": "CVF正式PDF摘要已更正为OlmoEarth，预训练多模态地球观测模型，并在生态系统制图、红树林保护和粮食安全等真实任务评测；原候选Helios摘要错配。"
+        },
+        {
+          "axis": "task",
+          "label": "遥感影像分析",
+          "label_en": "Remote sensing image analysis",
+          "evidence_location": "CVF正式开放获取论文PDF第1页摘要；原候选摘要错误地称为Helios，代码地址为REDACTED",
+          "rationale": "CVF正式PDF摘要已更正为OlmoEarth，预训练多模态地球观测模型，并在生态系统制图、红树林保护和粮食安全等真实任务评测；原候选Helios摘要错配。"
+        }
+      ]
     }
   },
   {
