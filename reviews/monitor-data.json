@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-18T10:25:43.929361+00:00",
-  "commit": "4e8565ed545c12d51f405ce355da2b441def68c6",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/4e8565ed545c12d51f405ce355da2b441def68c6/",
+  "generated_at": "2026-11-18T10:30:31.529971+00:00",
+  "commit": "d5698abcbfd28b593160a6edfa70fd1001a657c0",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/d5698abcbfd28b593160a6edfa70fd1001a657c0/",
   "years": [
     {
       "year": 2024,
@@ -26219,9 +26219,9 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-18T01:58:55-08:00",
+            "at": "2026-11-18T02:27:12-08:00",
             "author": "h10",
-            "subject": "review: reconcile CHM in-press records and research letters; recover SVR candidate",
+            "subject": "review: verify PDAC graph clustering and Herbgenomics AI evidence; recover two candidates",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
@@ -26230,7 +26230,7 @@
               "reviews/2026/feedback/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 81
+          "commits_7d": 82
         },
         {
           "owner": "丁利军",
@@ -46833,9 +46833,9 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-18T01:58:55-08:00",
+            "at": "2026-11-18T02:27:12-08:00",
             "author": "h10",
-            "subject": "review: reconcile CHM in-press records and research letters; recover SVR candidate",
+            "subject": "review: verify PDAC graph clustering and Herbgenomics AI evidence; recover two candidates",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
@@ -46844,7 +46844,7 @@
               "reviews/2026/feedback/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 81
+          "commits_7d": 82
         },
         {
           "owner": "郝卓迪",
@@ -58771,12 +58771,12 @@
           "papers": 151,
           "papers_missing_abstract": 15,
           "snapshot_candidates": 12,
-          "candidates": 14,
+          "candidates": 16,
           "missing_abstract": 1,
           "official_total": null,
           "official_scope": "",
           "reference_check": null,
-          "coverage_note": "四期91 PII均匹配原151。60额外已逐PII核实全部在官网InPress，排除固定正式范围；另8条未采集InPress不属正式范围缺采。九条文类已核：8原创研究短文计入，Elemental TCM按正文为概念/范式观点排除。91=84确认研究/实质综述小计+6非适用+1既有CPE文类待人工，official_total仍null。14科学候选9纳入2排除3待定，新增PDE4D实质SVR漏筛因原摘要缺失保留pending。",
+          "coverage_note": "四期91目录全匹配原151，额外60均为官网InPress。文类84确认小计+6非适用+1旧人工待核，官网同口径总数仍未知。初始12与核实漏筛4共16科学候选，11纳入2排除3待定；PDAC完整方法支持Walktrap图聚类，Herbgenomics实质AI论述与其所引DeepBGC出版社检索内容相符。原摘要缺1及旧方法待定保持，未标来源完成。",
           "evidence_urls": [
             "https://www.sciencedirect.com/journal/chinese-herbal-medicines/issues",
             "https://www.sciencedirect.com/journal/chinese-herbal-medicines/vol/18/issue/1",
@@ -58785,25 +58785,24 @@
             "https://www.sciencedirect.com/journal/chinese-herbal-medicines/vol/18/issue/4"
           ],
           "decisions": {
-            "include": 9,
+            "include": 11,
             "exclude": 2,
             "pending": 3,
             "unreviewed": 0
           },
           "issues": [
             "91目录=84确认研究/实质综述小计+6非适用+1既有文类待人工，official_total/collected_total_same_scope仍null；2026.05.004旧CPE请求未答，不重试。",
-            "3篇科学pending：黄连AD成像实际学习模型、抗病毒AI筛选引用支撑，以及新增PDE4D的可核实独立原摘要。候选原摘要缺1，不用正文首段替代。",
-            "3条非正式召回仍待核：PDAC主正文仍Loading未读到、Liuwei Kangguan本轮CPE待人工、Herbgenomics的AI内容及引文准确性；不计科学pending。",
+            "3篇科学pending保持：黄连AD成像实际学习模型、抗病毒AI筛选引用支撑，以及PDE4D的可核实独立原摘要。候选原摘要缺1，不用正文首段替代。",
+            "仅Liuwei Kangguan（2026.08.019）1条非正式召回仍因既有CPE待人工；PDAC/Herbgenomics已核实补候选纳入，不再列召回。",
             "官网同口径总数尚未确认。",
             "AI4S候选缺少摘要：1 篇。",
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "60额外全在InPress及四期91目录、九条文类已核，不重抓/重做。仅2026.05.004文类仍待旧人工答复。",
-            "优先补PDE4D原摘要（本篇原创Research Letter，不擅套用只询问实质综述的摘要例外），无原摘要继续pending。",
-            "PDAC仅正文异步加载未完成，可在正常UI完整加载后核实际方法；Herbgenomics复用上轮全文并核AI引用链，不把Future prospects全当愿景。",
-            "Liuwei Kangguan（2026.08.019）新CPE已请人工核具体学习模型/方法位置，未答复不重试/重复追问，不授权替代来源；旧17组人工请求保持。",
-            "继续2篇旧科学pending的补证或其他未开始2026来源，已明确的9纳入2排除不重判，2026固定截止不扩展。",
+            "复用已核四期91目录及60 InPress对账、九条文类；仅2026.05.004文类等待旧人工答复。",
+            "已核PDAC/Herbgenomics两条不再重做；GCN不是GNN，Herbgenomics引文限制留在审核理由，不移用细菌模型结果作植物验证。",
+            "补PDE4D独立原摘要或保留pending，原空摘要不改；继续黄连成像与抗病毒综述的方法补证，有新增合法公开材料再核。",
+            "Liuwei Kangguan旧人工方法请求未答，不重试/重复追问或擅用替代资料；若本刊可独立工作已尽，下一批优先推进未开始的Soil Biology and Biochemistry 2026（3初始候选）等本人来源。",
             "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
             "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
             "按交付文件逐篇补证并处理待定、未审记录。"
@@ -58813,7 +58812,7 @@
             "reviews/2026/feedback/zch66883-lixueting.json"
           ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": 9,
+          "final_included": 11,
           "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
@@ -71159,9 +71158,9 @@
           "open_issues": 38,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-18T01:58:55-08:00",
+            "at": "2026-11-18T02:27:12-08:00",
             "author": "h10",
-            "subject": "review: reconcile CHM in-press records and research letters; recover SVR candidate",
+            "subject": "review: verify PDAC graph clustering and Herbgenomics AI evidence; recover two candidates",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
@@ -71170,7 +71169,7 @@
               "reviews/2026/feedback/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 81
+          "commits_7d": 82
         },
         {
           "owner": "郝卓迪",
@@ -71483,9 +71482,9 @@
         "2025"
       ],
       "last_update": {
-        "at": "2026-11-18T01:58:55-08:00",
+        "at": "2026-11-18T02:27:12-08:00",
         "author": "h10",
-        "subject": "review: reconcile CHM in-press records and research letters; recover SVR candidate",
+        "subject": "review: verify PDAC graph clustering and Herbgenomics AI evidence; recover two candidates",
         "area": "reviews",
         "paths": [
           "metadata/2026/ai4s.json",
@@ -71494,7 +71493,7 @@
           "reviews/2026/feedback/zch66883-lixueting.json"
         ]
       },
-      "commits_7d": 81
+      "commits_7d": 82
     },
     {
       "owner": "龙兆科",
@@ -71724,9 +71723,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-18T10:25:10.556102+00:00",
+    "generated_at": "2026-11-18T10:29:57.208655+00:00",
     "history_available": true,
-    "commit": "4e8565ed545c12d51f405ce355da2b441def68c6",
-    "commits_scanned": 956
+    "commit": "d5698abcbfd28b593160a6edfa70fd1001a657c0",
+    "commits_scanned": 958
   }
 }
