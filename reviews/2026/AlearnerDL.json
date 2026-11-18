@@ -24832,5 +24832,1930 @@
       },
       "tags": []
     }
+  },
+  {
+    "id": "10.1145/3808321",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "GradInf: Gradient Estimation as Probabilistic Inference.",
+    "authors": [
+      "Gaurav Arya",
+      "Mathieu Huot",
+      "Moritz Schauer",
+      "Alexander K. Lew",
+      "Feras A. Saad"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/76/678",
+      "https://dblp.org/pid/234/8942",
+      "https://dblp.org/pid/138/6464",
+      "https://dblp.org/pid/242/4530",
+      "https://dblp.org/pid/185/1122"
+    ],
+    "abstract": "Gradient estimation —the task of computing the gradient of the expected value of a probabilistic program—has diverse applications in scientific computing, but is notoriously difficult because of issues such as highdimensional integration, discrete random choices, and complex stochastic dependencies. This article introduces gradient inference, a new approach to developing sound and efficient gradient estimators for probabilistic programs. Gradient inference rests on a formal reduction from a gradient estimation problem to a closely related probabilistic inference problem, whose solution can be differentiated to obtain a gradient estimator. This inference problem is obtained by applying two powerful statistical operations— coupling and factorization —to the input probabilistic program. Our reduction lets us leverage the rich toolkit of probabilistic inference algorithms to design novel gradient estimators that extend and improve upon existing methods. We introduce GradInf, a probabilistic programming system that facilitates the sound and automated implementation of gradient inference. GradInf is centered around programmable source-to-source transformations for coupling and factorizing higher-order probabilistic programs, whose soundness is proven in terms of a denotational semantics. Key to our development is the use of information-flow typing to allow random choices in a probabilistic program to be factored out and partially evaluated , which improves our ability to deploy sophisticated probabilistic inference algorithms. The resulting system offers practitioners a principled framework for designing gradient estimators. We apply GradInf to several challenging case studies, showing that it can express prominent gradient estimators from the literature and enables the construction of new state-of-the-art estimators that outperform the best existing baselines.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808321",
+    "pages": "1864-1890",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808321",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/AryaHSLS26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "include",
+      "rationale": "GradInf把梯度估计转化为概率推断；正式全文7.2.3节以新的顺序蒙特卡洛梯度估计配合SGD，从合成mRNA/蛋白观测学习基因转录反应网络的四个速率参数，直接用于系统生物学动力学反演。验证为已知机制模型上的合成观测，不是生物实验复现。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808321",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808321"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "abstract": "Gradient estimation—the task of computing the gradient of the expected value of a probabilistic program—has diverse applications in scientific computing, but is notoriously difficult because of issues such as highdimensional integration, discrete random choices, and complex stochastic dependencies. This article introduces gradient inference, a new approach to developing sound and efficient gradient estimators for probabilistic programs. Gradient inference rests on a formal reduction from a gradient estimation problem to a closely related probabilistic inference problem, whose solution can be differentiated to obtain a gradient estimator. This inference problem is obtained by applying two powerful statistical operations—coupling and factorization—to the input probabilistic program. Our reduction lets us leverage the rich toolkit of probabilistic inference algorithms to design novel gradient estimators that extend and improve upon existing methods.\nWe introduce GradInf, a probabilistic programming system that facilitates the sound and automated implementation of gradient inference. GradInf is centered around programmable source-to-source transformations for coupling and factorizing higher-order probabilistic programs, whose soundness is proven in terms of a denotational semantics. Key to our development is the use of information-flow typing to allow random choices in a probabilistic program to be factored out and partially evaluated, which improves our ability to deploy sophisticated probabilistic inference algorithms. The resulting system offers practitioners a principled framework for designing gradient estimators. We apply GradInf to several challenging case studies, showing that it can express prominent gradient estimators from the literature and enables the construction of new state-of-the-art estimators that outperform the best existing baselines.",
+        "abstract_evidence_location": "ACM正式论文页Abstract区",
+        "review_evidence_location": "ACM正式论文页原摘要；7.2.3节Parameter Inference of Gene Transcription Model及图6"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "ACM正式论文页原摘要；7.2.3节Parameter Inference of Gene Transcription Model及图6",
+          "rationale": "GradInf把梯度估计转化为概率推断；正式全文7.2.3节以新的顺序蒙特卡洛梯度估计配合SGD，从合成mRNA/蛋白观测学习基因转录反应网络的四个速率参数，直接用于系统生物学动力学反演。验证为已知机制模型上的合成观测，不是生物实验复现。"
+        },
+        {
+          "axis": "task",
+          "label": "动力系统辨识",
+          "label_en": "Dynamical system identification",
+          "evidence_location": "ACM正式论文页原摘要；7.2.3节Parameter Inference of Gene Transcription Model及图6",
+          "rationale": "GradInf把梯度估计转化为概率推断；正式全文7.2.3节以新的顺序蒙特卡洛梯度估计配合SGD，从合成mRNA/蛋白观测学习基因转录反应网络的四个速率参数，直接用于系统生物学动力学反演。验证为已知机制模型上的合成观测，不是生物实验复现。"
+        },
+        {
+          "axis": "task",
+          "label": "反问题",
+          "label_en": "Inverse problem",
+          "evidence_location": "ACM正式论文页原摘要；7.2.3节Parameter Inference of Gene Transcription Model及图6",
+          "rationale": "GradInf把梯度估计转化为概率推断；正式全文7.2.3节以新的顺序蒙特卡洛梯度估计配合SGD，从合成mRNA/蛋白观测学习基因转录反应网络的四个速率参数，直接用于系统生物学动力学反演。验证为已知机制模型上的合成观测，不是生物实验复现。"
+        },
+        {
+          "axis": "method",
+          "label": "可微分模拟",
+          "label_en": "Differentiable simulation",
+          "evidence_location": "ACM正式论文页原摘要；7.2.3节Parameter Inference of Gene Transcription Model及图6",
+          "rationale": "GradInf把梯度估计转化为概率推断；正式全文7.2.3节以新的顺序蒙特卡洛梯度估计配合SGD，从合成mRNA/蛋白观测学习基因转录反应网络的四个速率参数，直接用于系统生物学动力学反演。验证为已知机制模型上的合成观测，不是生物实验复现。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "10.1145/3808314",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Hybrid Path-Sums for Hybrid Quantum Programs.",
+    "authors": [
+      "Christophe Chareton",
+      "Jad Issa",
+      "Mathieu Nguyen",
+      "Nicolas Blanco",
+      "Sébastien Bardin"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/04/10479",
+      "https://dblp.org/pid/436/0429",
+      "https://dblp.org/pid/351/6112",
+      "https://dblp.org/pid/201/0008",
+      "https://dblp.org/pid/b/SebastienBardin"
+    ],
+    "abstract": "As quantum computing becomes an emerging reality, designing efficient quantum programming capabilities is becoming more and more important. Particularly, the debugging and validation of quantum programs is of paramount importance, as these programs are by definition hard to test. Static analysis and formal verification methods for quantum programs started to emerge a few years now, yet they often miss hybrid quantum/classical reasoning facilities with, e.g., generic quantum control, classical control and classical computation instructions. In this paper, we lay out the foundations of a framework for the automated formal verification of (full) hybrid quantum programs featuring both classical and quantum control, measurement and hybrid data structures. In particular, we propose: (1) a novel symbolic representation for describing and manipulating sets of hybrid quantum/classical states called Hybrid Path-Sums (HPS); (2) a set of rewriting rules providing a rich mechanism for simplifying and reasoning on these symbolic hybrid states, and (3) a core assertion language to specify equivalence of hybrid quantum programs, the satisfaction of properties on (parts of) hybrid states, and the extraction of probabilistic statements about the program behavior. We prove the correctness of the novel symbolic representation, of its rewriting system and of the specification system. Finally, we propose a full implementation of this framework as a dedicated symbolic execution engine for hybrid programs. We present an evaluation of a set of representative hybrid case-studies from the literature, showcasing the advantage of our approach and its efficiency compared to state-of-the-art solutions.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808314",
+    "pages": "1687-1713",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808314",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/CharetonINBB26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_hits": [
+      "quantum computing"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_vocabulary_hits": [
+      "形式验证"
+    ],
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "quantum computing"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "quantum computing"
+        ]
+      },
+      "method_evidence": []
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "建立混合量子程序的符号执行与形式验证规则，贡献为量子程序正确性基础设施；摘要未体现AI方法用于独立科学任务。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808314",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808314"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要"
+      },
+      "tags": []
+    }
+  },
+  {
+    "id": "10.1145/3808300",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Exploiting Sophisticated Static Analysis for Verilog.",
+    "authors": [
+      "Qinlin Chen",
+      "Nairen Zhang",
+      "Jinpeng Wang",
+      "Jiacai Cui",
+      "Tian Tan 0001",
+      "Xiaoxing Ma",
+      "Chang Xu 0001",
+      "Jian Lu 0001",
+      "Yue Li 0006"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/328/3882",
+      "https://dblp.org/pid/86/8188",
+      "https://dblp.org/pid/74/113",
+      "https://dblp.org/pid/425/5290",
+      "https://dblp.org/pid/127/9100-1",
+      "https://dblp.org/pid/67/3058",
+      "https://dblp.org/pid/97/2966-1",
+      "https://dblp.org/pid/38/5132",
+      "https://dblp.org/pid/61/500-6"
+    ],
+    "abstract": "Static analysis has profoundly improved software quality over the past decades, evolving from compiler-integrated optimizations and simple linting to sophisticated analyses for bug detection, security, and program understanding. In contrast, static analysis for hardware remains underexploited, resembling the early state of software analysis. Most existing hardware static analyses are confined to compiler optimizations and linting, lacking the sophistication needed to uncover complex design flaws. Furthermore, we observe that many hardware bugs reported in recent literature could have been identified by sophisticated static analyses that account for hardware-specific semantics and data flow; however, such bug detection analyses are absent today. To exploit the untapped potential of sophisticated hardware analysis, we present a series of bug detection analyses for Verilog, the predominant hardware description language (HDL). Moreover, these analyses are built upon our fundamental analyses that capture essential hardware-specific characteristics–such as bit-vector arithmetic, register synchronization, and digital component concurrency–and enable the examination of hardware data and control flows. Together, these analyses form a well-organized analysis suite with a modular design, in which diverse fundamental analyses combine to support bug detection, hardware understanding, and other potential clients. To implement these analyses, we further offer dedicated infrastructure, including a Verilog front end, an intermediate representation (IR) for analysis, and an analysis manager. To validate the utility of our analyses, we applied them to real-world hardware projects. Unlike software, real-world hardware projects tend to contain fewer but harder-to-detect bugs, as they typically undergo extensive simulation and rigorous verification to prevent the prohibitive costs of hardware defects. Despite this, our preliminary experimental results are highly promising: applying these proposed analyses to popular real-world Verilog projects (averaging 1.5K+ GitHub stars) uncovered nine previously unknown bugs, all confirmed by developers: moreover, we successfully identified a total of 18 bugs beyond the capabilities of existing static analyses for Verilog bug detection (i.e., linters). These results underscore the transformative potential of sophisticated static analysis in hardware design. Our analysis suite and infrastructure are also highly reusable: on average, each bug-detection client built on our analysis suite requires about 270 LoC, compared to 5,700 LoC when developed from scratch. By open-sourcing the entire system, involving substantial engineering effort (100K+ LoC), we aim to encourage further innovation and applications of sophisticated static analysis for hardware, hopefully fostering a similarly vibrant ecosystem that software analysis enjoys.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808300",
+    "pages": "1327-1355",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808300",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/ChenZWCTMXLL26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "以硬件语义和数据流静态分析发现Verilog缺陷，属于传统形式分析工具，未体现AI方法实际参与。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808300",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808300"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要"
+      },
+      "tags": []
+    }
+  },
+  {
+    "id": "10.1145/3808313",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "SparseZETA: Intelligent Auto-tuner for Designing High-Performance SpMV Programs.",
+    "authors": [
+      "Zhen Du",
+      "Ying Liu 0055",
+      "Xionghui Chen",
+      "Yanbo Zhao",
+      "Xiaobing Feng 0002",
+      "Huimin Cui",
+      "Jiajia Li 0001"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/205/7475",
+      "https://dblp.org/pid/91/112-55",
+      "https://dblp.org/pid/390/5214",
+      "https://dblp.org/pid/50/10765",
+      "https://dblp.org/pid/f/XiaobingFeng2",
+      "https://dblp.org/pid/97/2112",
+      "https://dblp.org/pid/89/9032-1"
+    ],
+    "abstract": "Sparse matrix-vector multiplication (SpMV) is a crucial operation in scientific computing, graph analytics, and machine/deep learning. Its performance is highly sensitive to matrix sparsity patterns, necessitating tailored program designs. This paper introduces SparseZETA, an intelligent auto-tuner that generates high-performance, machine-designed SpMV programs by directly mimicking and composing human-expert actions. To efficiently navigate the vast design space, SparseZETA reformulates auto-tuning as a behavior-cloning problem: rather than costly exploration, it directly synthesizes programs by sequentially predicting actions in a one-pass decision-making process, guided by the real-time state of the evolving, partially constructed program designs. A novel self-training mechanism further accelerates the collection of training data for the prediction models. On NVIDIA A100 (and RTX 2080 Ti) GPUs, SparseZETA achieves average speedups of 1.27×–15.66× (1.44×–19.07×) over existing auto-tuners, human-designed programs, and a sparse compiler. SparseZETA substantially reduces the human effort required to design SpMV programs, including sparse format creation and kernel implementation, cutting the design time from days or even months to an average of 82.52 ms per matrix via lightweight inference on only one CPU.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808313",
+    "pages": "1660-1686",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808313",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/DuLCZFCL26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "行为克隆预测稀疏矩阵向量乘法程序的设计动作，主要提高通用计算内核的执行与调优效率；科学计算只是应用背景，未展示独立科学研究任务。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808313",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808313"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要"
+      },
+      "tags": []
+    }
+  },
+  {
+    "id": "10.1145/3808329",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "The Search for Constrained Random Generators.",
+    "authors": [
+      "Harrison Goldstein",
+      "Hila Peleg",
+      "Cassia Torczon",
+      "Daniel Sainati",
+      "Leonidas Lampropoulos",
+      "Benjamin C. Pierce"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/206/6294",
+      "https://dblp.org/pid/130/9934",
+      "https://dblp.org/pid/361/2549",
+      "https://dblp.org/pid/313/5484",
+      "https://dblp.org/pid/120/7696",
+      "https://dblp.org/pid/p/BenjaminCPierce"
+    ],
+    "abstract": "Among the biggest challenges in property-based testing (PBT) is the constrained random generation problem : given a predicate on program values, randomly sample from the set of all values, and only values, satisfying that predicate. Efficient solutions to this problem are critical, since the executable specifications used by PBT often have preconditions that input values must satisfy in order to be valid test cases, and satisfying values are often sparsely distributed. We propose a novel approach to this problem using deductive program synthesis. We present a set of synthesis rules, based on a denotational semantics of generators, that give rise to an automatic procedure for synthesizing correct generators. Our system handles recursive predicates by rewriting them as catamorphisms and then matching with appropriate anamorphisms; this is theoretically simpler than other approaches to synthesis for recursive functions, yet still extremely expressive. Our implementation, Palamedes , is an extensible library for the Lean theorem prover. The synthesis algorithm itself is built out of standard proof-search tactics, reducing implementation burden and allowing the algorithm to benefit from further advances in Lean proof automation",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808329",
+    "pages": "2060-2084",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808329",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/GoldsteinPTSLP26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "为属性测试合成满足前置条件的随机程序输入，主要贡献是通用软件测试及Lean证明搜索工具，未体现独立科学研究任务。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808329",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808329"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要"
+      },
+      "tags": []
+    }
+  },
+  {
+    "id": "10.1145/3808346",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Evolving Abstract Transformers for Gradient-Guided, Adaptable Abstract Interpretation.",
+    "authors": [
+      "Shaurya Gomber",
+      "Debangshu Banerjee 0001",
+      "Gagandeep Singh 0001"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/375/1137",
+      "https://dblp.org/pid/268/6756-1",
+      "https://dblp.org/pid/64/3747-1"
+    ],
+    "abstract": "Current numerical abstract interpretation relies on fixed, hand-crafted, instruction-specific transformers tailored to each domain, giving rise to three significant limitations. First, extensibility is limited because transformers cannot be reused across domains and new transformers need to be designed for each new domain or operator. Second, precise compositional reasoning over instruction sequences is difficult as transformers are defined only at the instruction level. Third, all downstream tasks are forced to use the same fixed transformer, irrespective of their precision, efficiency, or task-specific requirements. To address these limitations, we propose the Evolving Abstract Transformer , a general transformer that replaces the fixed single-output design of traditional transformers with an adaptable search over a parametric space of sound outputs. This is achieved through two underlying algorithms we develop. First, the Universal Parametric Output Space Encoder (UPOSE) constructs a compact parametric space of sound outputs for any polyhedral numerical domain and any operator in the Quadratic-Bounded Guarded Operators (QGO) class which includes both individual instructions and structured sequences. Next, the Adaptive Gradient Guidance (AGG) algorithm leverages the differentiable structure of the space generated by UPOSE and uses gradient-based updates to efficiently search it according to downstream analysis objectives and available runtime, continually evolving the output as more time is provided. We implement these ideas in the AbsEvolve framework and evaluate their effectiveness across three numerical abstract domains: Zones, Octagons, and Polyhedra. Our results demonstrate that the evolving transformer works across domains and handles diverse instructions and sequences, allowing efficient adaptability in the precision-efficiency tradeoff by adjusting the number of gradient steps in the search, while also reaching the most precise invariants up to 3.2 × faster than existing baselines.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808346",
+    "pages": "2474-2498",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808346",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/GomberBS26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "以梯度搜索改善数值抽象解释的精度与运行时间，核心是通用程序静态分析工具，未体现具体科学研究任务。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808346",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808346"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要"
+      },
+      "tags": []
+    }
+  },
+  {
+    "id": "10.1145/3808338",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Neuro-symbolic Hierarchical Learning for Long-Horizon Robotic Tasks.",
+    "authors": [
+      "Yu Huang",
+      "Ziji Wu",
+      "Zhengyi Ma",
+      "Kexin Ma 0008",
+      "Ji Wang 0001"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/39/6301",
+      "https://dblp.org/pid/86/6389",
+      "https://dblp.org/pid/94/2633",
+      "https://dblp.org/pid/40/4446-8",
+      "https://dblp.org/pid/64/856-1"
+    ],
+    "abstract": "Recent advances in foundation models have motivated hybrid programming that integrates natural language descriptions, formal specifications, and executable code. A critical challenge in such systems lies in achieving semantic alignment across heterogeneous representations at different abstraction levels. This challenge is particularly pressing in programmatic reinforcement learning (PRL) for robotics, where long-horizon, sparse-reward tasks demand tight coordination between symbolic reasoning and continuous control. Existing approaches either rely on manually engineered symbolic representations or on LLM-generated plans that might be untrustworthy or infeasible to execute, leaving such fundamental gaps unaddressed. We present a closedloop, counterexample-guided synthesis framework that unifies LLM-based planning, formal verification, and differentiable behavior tree (BT) synthesis for neuro-symbolic policy learning. The framework first converts natural language task descriptions into PDDL, then generates valid high-level plans via a Guess-Check-Critique loop that interleaves LLM generation with SMT-based verification. We automatically compile symbolic abstractions in verified plans into parameterized termination conditions, and co-optimize them with low-level policies to enforce semantic consistency. The learned sub-policies are composed into an integrated BT and fine-tuned to ensure task-level executability. Furthermore, we perform closed-loop iterations of abstractions and compilations using feedback from verification and learning, while incrementally building a reusable skill library for efficient knowledge transfer. Experiments on challenging long-horizon robotic tasks show that our method exceeds state-of-the-art methods while providing interpretability and generalization.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808338",
+    "pages": "2277-2302",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808338",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/HuangWMMW26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "include",
+      "rationale": "将LLM规划、SMT反例验证、可微行为树和强化学习控制联合用于机器人长时程任务，AI直接参与分层规划与连续控制。证据为正式原摘要及第5节机器人仿真实验，不宣称真实机器人部署。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808338",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808338"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "abstract": "Recent advances in foundation models have motivated hybrid programming that integrates natural language descriptions, formal specifications, and executable code. A critical challenge in such systems lies in achieving semantic alignment across heterogeneous representations at different abstraction levels. This challenge is particularly pressing in programmatic reinforcement learning (PRL) for robotics, where long-horizon, sparse-reward tasks demand tight coordination between symbolic reasoning and continuous control. Existing approaches either rely on manually engineered symbolic representations or on LLM-generated plans that might be untrustworthy or infeasible to execute, leaving such fundamental gaps unaddressed. We present a closedloop, counterexample-guided synthesis framework that unifies LLM-based planning, formal verification, and differentiable behavior tree (BT) synthesis for neuro-symbolic policy learning. The framework first converts natural language task descriptions into PDDL, then generates valid high-level plans via a Guess-Check-Critique loop that interleaves LLM generation with SMT-based verification. We automatically compile symbolic abstractions in verified plans into parameterized termination conditions, and co-optimize them with low-level policies to enforce semantic consistency. The learned sub-policies are composed into an integrated BT and fine-tuned to ensure task-level executability. Furthermore, we perform closed-loop iterations of abstractions and compilations using feedback from verification and learning, while incrementally building a reusable skill library for efficient knowledge transfer. Experiments on challenging long-horizon robotic tasks show that our method exceeds state-of-the-art methods while providing interpretability and generalization.",
+        "abstract_evidence_location": "ACM正式论文页Abstract区",
+        "review_evidence_location": "ACM正式论文页原摘要；第5节Experiments（仿真验证）"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "ACM正式论文页原摘要；第5节Experiments（仿真验证）",
+          "rationale": "将LLM规划、SMT反例验证、可微行为树和强化学习控制联合用于机器人长时程任务，AI直接参与分层规划与连续控制。证据为正式原摘要及第5节机器人仿真实验，不宣称真实机器人部署。"
+        },
+        {
+          "axis": "method",
+          "label": "强化学习",
+          "label_en": "Reinforcement learning",
+          "evidence_location": "ACM正式论文页原摘要；第5节Experiments（仿真验证）",
+          "rationale": "将LLM规划、SMT反例验证、可微行为树和强化学习控制联合用于机器人长时程任务，AI直接参与分层规划与连续控制。证据为正式原摘要及第5节机器人仿真实验，不宣称真实机器人部署。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "10.1145/3808317",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "CRIS: The Power of Imagination in Hybrid Verification.",
+    "authors": [
+      "Yonghee Kim",
+      "Taeyoung Yoon",
+      "Sanghyun Yi",
+      "Jaehyung Lee",
+      "Soonwon Moon",
+      "Yeji Han",
+      "Seonho Lee",
+      "Taeyoung Rhee",
+      "Yujin Im",
+      "Donghyun Nam",
+      "Jieung Kim",
+      "Chung-Kil Hur"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/154/3291",
+      "https://dblp.org/pid/379/9555",
+      "https://dblp.org/pid/239/8538",
+      "https://dblp.org/pid/81/3474",
+      "https://dblp.org/pid/354/1417",
+      "https://dblp.org/pid/128/7443",
+      "https://dblp.org/pid/225/0239",
+      "https://dblp.org/pid/444/3855",
+      "https://dblp.org/pid/444/3721",
+      "https://dblp.org/pid/406/1100",
+      "https://dblp.org/pid/64/10475",
+      "https://dblp.org/pid/75/3287"
+    ],
+    "abstract": "The CCR framework unifies refinement and separation logic to provide ownership-based modular reasoning and transitive incremental reasoning in open settings that involve unverified code. However, when reasoning about function invocations, the reasoning principles available to clients remain confined to pre- and postconditions, which struggle to capture effectful behaviors such as I/O actions or interactions with arbitrary unverified code. This limitation becomes particularly acute in hybrid verification , where a mixture of different verification techniques is applied and some code is never formally verified but instead tested or model-checked. To overcome this limitation, we introduce imaginary specifications —a novel notion that freely mixes executable code with ownership assertions—and reasoning principles for their use. Through key technical developments, we present CRIS (Contextual Refinement with Imaginary Specifications), a framework that generalizes CCR with support for imaginary specifications. We demonstrate CRIS’s expressiveness and reasoning power through examples involving hybrid verification with unverified code exhibiting arbitrary side effects such as I/O or divergence, with complete mechanization in Rocq.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808317",
+    "pages": "1764-1787",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808317",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/KimYYLMHLRINKH26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "提出混合验证中的imaginary specifications及Rocq机制化证明，imagination不是生成模型方法；贡献为通用软件正确性推理。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808317",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808317"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要"
+      },
+      "tags": []
+    }
+  },
+  {
+    "id": "10.1145/3808299",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Improving Equality Saturation for EDA via Semantic E-Graphs.",
+    "authors": [
+      "Sijie Kong",
+      "Jingtao Xia",
+      "Daniel Ruelas-Petrisko",
+      "Zachary D. Sisco",
+      "Jonathan Balkind",
+      "Gus Henry Smith"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/259/0105",
+      "https://dblp.org/pid/136/5165",
+      "https://dblp.org/pid/184/8263",
+      "https://dblp.org/pid/354/1475",
+      "https://dblp.org/pid/157/2812",
+      "https://dblp.org/pid/194/8207"
+    ],
+    "abstract": "Equality saturation (eqsat) is a program optimization technique that uses syntax-based term rewriting to simultaneously explore many possible optimizations of a program, storing equivalent programs efficiently in a data structure called an e-graph. By exploring optimizations simultaneously, eqsat mitigates the phase ordering problem , where the order of optimizations significantly affects quality of results. Eqsat is especially promising for Electronics Design Automation (EDA), whose tools suffer from phase ordering. Previous eqsat-for-EDA efforts have focused on single tool stages; while they demonstrate significant benefits within a stage, they do not address phase ordering between stages. When we investigated the reason for their limited scope, we found that previous works struggle to implement an efficient hardware representation useful in both high-level (e.g. arithmetic optimization) and low-level (e.g. logic synthesis) tasks. The root issue is that such a representation must maintain equivalences between the high- and low-level portions of the language. While these equalities are conceptually simple—e.g., two high-level bitvectors are equal if they contain the same low-level bits—maintaining them using syntax-based rewrites alone proves inefficient in modern eqsat engines. In response, this paper makes two contributions. First, we introduce semantic e-graphs , an enhancement to e-graphs that improves performance of a narrow but highly useful class of semantics-based equalities. Second, we present Nextmap , a new eqsat-based hardware optimization engine whose representation uses semantic e-graphs to efficiently bridge high- and low-level hardware expressions. As a result, Nextmap simultaneously runs more EDA stages than previous eqsat-based works, more effectively mitigating phase ordering and reaching previously inaccessible optimizations. Compared with open-source and commercial tools, Nextmap provides competitive quality of results on a range of designs.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808299",
+    "pages": "1303-1326",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808299",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/KongXRSBS26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "circuit placement"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "circuit placement"
+        ]
+      },
+      "method_evidence": []
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "通过语义e-graph和等式重写改善电子设计自动化各阶段的优化衔接；现有摘要给出的贡献是编译表示与传统形式优化，未体现AI方法实际参与，EDA领域词本身不足以纳入。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808299",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808299"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要"
+      },
+      "tags": []
+    }
+  },
+  {
+    "id": "10.1145/3808257",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "A Hierarchy of Supermartingales for ω-Regular Verification.",
+    "authors": [
+      "Satoshi Kura 0001",
+      "Hiroshi Unno 0001"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/230/4314",
+      "https://dblp.org/pid/24/6058"
+    ],
+    "abstract": "We propose new supermartingale-based certificates for verifying almost sure satisfaction of ω -regular properties: (1) generalised Streett supermartingales (GSSMs) and their lexicographic extension (LexGSSMs), (2) distribution-valued Streett supermartingales (DVSSMs), and (3) progress-measure supermartingales (PMSMs) and their lexicographic extension (LexPMSMs). GSSMs, LexGSSMs, and DVSSMs are derived from least-fixed point characterisations of positive recurrence and null recurrence of Markov chains with respect to given Streett conditions; and PMSMs and LexPMSMs are probabilistic extensions of parity progress measures. We study the hierarchy among these certificates and existing certificates, namely Streett supermartingales, by comparing the classes of problems that can be verified by each type of certificates. Notably, we show that our certificates are strictly more powerful than Streett supermartingales. We also prove completeness of GSSMs for positive recurrence and of DVSSMs for null recurrence: DVSSMs are, in theory, the most powerful certificates in the sense that for any Markov chain that almost surely satisfies a given ω -regular property, there exists a DVSSM certifying it. We provide a sound and relatively complete algorithm for synthesising LexPMSMs, the second most powerful certificates in the hierarchy. We have implemented a prototype tool based on this algorithm, and our experiments show that our tool can successfully synthesise certificates for various examples including those that cannot be certified by existing supermartingales.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808257",
+    "pages": "253-276",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808257",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/KuraU26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "建立用于概率程序ω正则性质验证的超鞅证书层次和合成算法，属于程序验证理论与工具，未体现AI实质参与独立科学研究任务。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808257",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808257"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要"
+      },
+      "tags": []
+    }
+  },
+  {
+    "id": "10.1145/3808348",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Supermartingales for Unique Fixed Points: A Unified Approach to Lower Bound Verification.",
+    "authors": [
+      "Satoshi Kura 0001",
+      "Hiroshi Unno 0001",
+      "Takeshi Tsukada"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/230/4314",
+      "https://dblp.org/pid/24/6058",
+      "https://dblp.org/pid/97/7182"
+    ],
+    "abstract": "Many quantitative properties of probabilistic programs can be characterized as least fixed points, but verifying their lower bounds remains a challenging problem. We present a new approach to lower-bound verification that exploits and extends the connection between the uniqueness of fixed points and program termination. The core technical tool is a generalization of ranking supermartingales, which serves as witnesses of the uniqueness of fixed points. Our method provides a simple and unified reasoning principle applicable to a wide range of quantitative properties, including termination probability, the weakest preexpectation, expected runtime, higher moments of runtime, and conditional weakest preexpectation. We provide a template-based algorithm for automated verification of lower bounds and demonstrate the effectiveness of the proposed method via experiments.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808348",
+    "pages": "2525-2548",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808348",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/KuraUT26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "以超鞅和模板算法验证概率程序的运行时间及终止概率等下界，属于通用程序分析方法，未体现独立AI4S任务。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808348",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808348"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要"
+      },
+      "tags": []
+    }
+  },
+  {
+    "id": "10.1145/3808332",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Expecto: Extracting Formal Specifications from Natural Language Description for Trustworthy Oracles.",
+    "authors": [
+      "Dongjae Lee",
+      "Kihong Heo"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/97/5095",
+      "https://dblp.org/pid/17/11515"
+    ],
+    "abstract": "Specification-Driven Development (SDD) has emerged as a promising paradigm in software development. This trend is fueled by recent advances in leveraging large language models (LLMs) to generate code from user intents expressed in natural language. However, the reliance on natural language specifications introduces ambiguity and challenges in ensuring correctness. To address these problems, we present Expecto, a system that automatically extracts trustworthy formal specifications from natural language intents. Expecto employs a neuro-symbolic approach, combining the strengths of LLMs and program synthesis techniques. Our key idea is to adopt a top-down, modular specification synthesis algorithm that breaks down the complex task of specification extraction into manageable units. The specifications are written in a domain-specific language (DSL) designed to succinctly express formal specifications of functional requirements. This modular synthesis with a concise DSL reduces the reasoning complexity for LLMs and enhances the accuracy of the extracted specifications. Our results demonstrate that Expecto significantly improves the accuracy and reliability of extracted specifications compared to a monolithic, purely LLM-based approach. Furthermore, when applied to real-world buggy programs in Defects4J, Expecto successfully generates formal specifications that detect more bugs than the baselines.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808332",
+    "pages": "2134-2156",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808332",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/LeeH26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "LLM与程序合成从自然语言提取软件规格，以Defects4J缺陷检测评测，属于通用软件工程工具。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808332",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808332"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要"
+      },
+      "tags": []
+    }
+  },
+  {
+    "id": "10.1145/3808285",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "NEURA: A Unified and Retargetable Compilation Framework for Coarse-Grained Reconfigurable Architectures.",
+    "authors": [
+      "Shangkun Li",
+      "Jinming Ge",
+      "Diyuan Tao",
+      "Zeyu Li 0005",
+      "Jiawei Liang",
+      "Linfeng Du",
+      "Jiang Xu 0001",
+      "Wei Zhang 0012",
+      "Cheng Tan 0002"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/319/7718",
+      "https://dblp.org/pid/97/5941",
+      "https://dblp.org/pid/434/9421",
+      "https://dblp.org/pid/25/287-5",
+      "https://dblp.org/pid/178/6415",
+      "https://dblp.org/pid/143/2011",
+      "https://dblp.org/pid/20/4396-1",
+      "https://dblp.org/pid/10/4661-12",
+      "https://dblp.org/pid/70/1533-2"
+    ],
+    "abstract": "Coarse-Grained Reconfigurable Architectures (CGRAs) are a promising and versatile accelerator platform, offering a balance between the performance and efficiency of specialized accelerators and software programmability. However, their full potential is severely hindered by control flow in accelerated kernels, as control flow (e.g., loops, branches) is fundamentally incompatible with the parallel, data-driven CGRA fabric. Prior strategies to resolve this mismatch in CGRA kernel acceleration are either inefficient, sacrificing performance for generality, or lack generality due to the difficulty of adapting them across different execution models. Thus, a general and unified solution for efficient CGRA kernel acceleration remains elusive. This paper introduces NEURA, a unified and retargetable compilation framework that systematically resolves the control-dataflow mismatch in CGRAs. NEURA’s core innovation is a novel, pure dataflow intermediate representation (IR) built on a predicated type system. In this IR, control contexts are embedded as a predicate within each data, making control an intrinsic property of data. This mechanism enables NEURA to systematically flatten complex control flow into a single unified dataflow graph. This unified representation decouples kernel representation from hardware, empowering NEURA to retarget diverse CGRAs with different execution models and microarchitectural features. When targeted to a high-performance spatio-temporal CGRA, NEURA delivers a 2.20 × speedup on kernel benchmarks and up to 2.71 × geometric mean speedup on real-world applications over state-of-the-art (SOTA) high-performance baselines. It also provides a competitive solution against the SOTA low-power CGRA when retargeted to a spatial-only CGRA. NEURA is open-source and available at https://github.com/coredac/neura .",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808285",
+    "pages": "953-979",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808285",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/LiGTLLDXZT26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "NEURA以类型系统和数据流IR编译到可重构架构；名称和加速器场景不构成神经学习证据，主要贡献为编译基础设施。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808285",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808285"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要"
+      },
+      "tags": []
+    }
+  },
+  {
+    "id": "10.1145/3820287",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Corrigendum: Falcon: A Scalable Analytical Cache Model.",
+    "authors": [
+      "Arjun Pitchanathan",
+      "Kunwar Grover",
+      "Tobias Grosser"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/280/4965",
+      "https://dblp.org/pid/352/1287",
+      "https://dblp.org/pid/91/9231"
+    ],
+    "abstract": "This is a corrigendum for the article \"Falcon: A Scalable Analytical Cache Model\" published in Proc. ACM Program. Lang. 8, PLDI, Article 222 (Jun 2024). We make corrections to the experimental evaluation and provide updated data.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3820287",
+    "pages": "2647-2658",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3820287",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/PitchanathanGG26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "正式目录Corrections分区的勘误，纠正2024年Falcon论文的实验评测；按文献类型排除，不作为2026原创研究纳入。",
+      "verified_metadata": {
+        "article_type": "Correction",
+        "url": "https://dl.acm.org/doi/10.1145/3820287",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3820287",
+          "https://dl.acm.org/toc/pacmpl/2026/10/PLDI"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要；ACM卷期目录Corrections分区"
+      },
+      "tags": []
+    }
+  },
+  {
+    "id": "10.1145/3808272",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "CoTenN: Constrained Optimization with Tensor Networks.",
+    "authors": [
+      "Ritvik Sharma",
+      "Cheng Peng 0012",
+      "Siddharth Dangwal",
+      "Sara Achour"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/283/0097",
+      "https://dblp.org/pid/82/3044-12",
+      "https://dblp.org/pid/257/8354",
+      "https://dblp.org/pid/152/5845"
+    ],
+    "abstract": "Simulation of physics problems is one of the most important use cases of quantum computing. For this class of problems, the goal is typically to find the minimum energy state, or the ground state, of a physical system’s Hamiltonian. These problems frequently have constraints, such as symmetry conditions, which must also be satisfied. To solve such problems, researchers in computational physics use quantum-inspired algorithms that execute on classical computers. In particular, tensor network-based eigensolvers such as DMRG have become popular. However, to use these eigensolvers, the constrained optimization problem must first be encoded as a tensor network that implements a low-rank decomposition of the system’s Hamiltonian and state vector. These tensor network encodings are highly flexible, allowing for variables with ≥2 quantum states and supporting efficient constraint encodings that directly constrain the state vector. A critical challenge to developing tensor networkbased encodings is that, currently, the encoding process is manual; significant effort is required to identify an efficient encoding for a new physics problem. In this work, we introduce a quantum constrained optimization problem (QCOP), a general abstraction for describing minimization problems over quantum variables that are subject to hard constraints. We present Masq , the first constraint programming language for QCOPs implementable with tensor networks, and CoTenN , a compiler that automatically maps QCOPs specified with Masq programs to tensor networks. To demonstrate the utility of Masq and CoTenN , we formulate two physics problems in Masq and then use CoTenN to find their ground states. We find the CoTenN -generated tensor networks generally outperform SOTA problem formulations, providing between 2.05 × − 53.32 × total speedups across runs for QCOPs and yielding up to 2.49 ⋅ 10 7 × lower truncation errors for otherwise unconstrained problems.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808272",
+    "pages": "629-655",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808272",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/SharmaPDA26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_hits": [
+      "quantum computing"
+    ],
+    "ai4s_reason": "keyword",
+    "ai4s_tags": [
+      "AI for 数理科学",
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "dynamical systems",
+      "quantum physics",
+      "quantum computing"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 数理科学": [
+          "dynamical systems",
+          "quantum physics"
+        ],
+        "AI for 信息科学": [
+          "quantum computing"
+        ]
+      },
+      "method_evidence": []
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "用约束语言、张量网络编码与DMRG求解物理基态；张量网络在此是量子启发的数值表示和本征求解工具，摘要未体现机器学习或其他AI方法参与，不将量子计算自动视为AI4S。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808272",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808272"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要"
+      },
+      "tags": []
+    }
+  },
+  {
+    "id": "10.1145/3808294",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Fungible Memories for Automated Technology Mapping and Retargeting.",
+    "authors": [
+      "Zachary D. Sisco",
+      "Sijie Kong",
+      "Daniel Ruelas-Petrisko",
+      "Jingtao Xia",
+      "Julian Springer",
+      "Varun Rao",
+      "Spencer Wang",
+      "Gus Henry Smith",
+      "Ben Hardekopf",
+      "Jonathan Balkind"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/354/1475",
+      "https://dblp.org/pid/259/0105",
+      "https://dblp.org/pid/184/8263",
+      "https://dblp.org/pid/136/5165",
+      "https://dblp.org/pid/382/8569",
+      "https://dblp.org/pid/199/3037",
+      "https://dblp.org/pid/444/3792",
+      "https://dblp.org/pid/194/8207",
+      "https://dblp.org/pid/89/4824",
+      "https://dblp.org/pid/157/2812"
+    ],
+    "abstract": "During chip development, engineers must target different technologies, such as simulation and various ASIC and FPGA technologies. Conventionally, they split parts of the code (e.g., memories) into separate technology-specialized blocks implementing the same high-level behavior. This leads to brittle code, with multiple but subtly different blocks describing the same semantic behavior, harming verification, agility, and extensibility. We propose fungible memories , an HDL-level “write once, map anywhere” memory abstraction with rich enough semantics to automatically target all relevant technologies using a single generic interface. We incorporate fungible memories into a compiler called Memo . For designs without a specific technology mapping, we also present a memory decompiler which lifts memories from an existing gate-level design to Memo , enabling automated technology retargeting, which is a holy grail for digital designers. We present a structure-aware equality saturation technique which scales to netlists with millions of cells and identifies memories that the state of the art cannot. We demonstrate that Memo effectively targets backends across different technology platforms (simulation, ASIC, and FPGA) over a suite of representative designs, including a RISC-V multicore SoC.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808294",
+    "pages": "1178-1201",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808294",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/SiscoKRXSRWSHB26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "以通用存储器抽象、反编译和等式饱和完成芯片技术映射，贡献为硬件编译工具；摘要未体现AI方法实质参与。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808294",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808294"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要"
+      },
+      "tags": []
+    }
+  },
+  {
+    "id": "10.1145/3818664",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Editorial Message.",
+    "authors": [
+      "Manu Sridharan"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/83/2559"
+    ],
+    "abstract": "The Proceedings of the ACM series presents the highest-quality research conducted in diverse areas of computer science, as represented by the ACM Special Interest Groups (SIGs). The Proceedings of the ACM on Programming Languages (PACMPL) focuses on research on all aspects of programming languages, from design to implementation and from mathematical formalisms to empirical studies. The journal operates in close collaboration with the ACM Special Interest Group on Programming Languages (SIGPLAN) and is committed to making high-quality peer-reviewed scientific research in programming languages free of restrictions on both access and use.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3818664",
+    "pages": "1-4",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3818664",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/Sridharan26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "正式目录Editorial分区的编者说明，介绍本期106篇研究论文及评审组织，不属于原创研究或有实质学术内容的综述。",
+      "verified_metadata": {
+        "article_type": "Editorial",
+        "url": "https://dl.acm.org/doi/10.1145/3818664",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3818664",
+          "https://dl.acm.org/toc/pacmpl/2026/10/PLDI"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要；ACM卷期目录Editorial分区"
+      },
+      "tags": []
+    }
+  },
+  {
+    "id": "10.1145/3808345",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Compiling to Recurrent Neurons.",
+    "authors": [
+      "Joey Velez-Ginorio",
+      "Nada Amin",
+      "Konrad P. Kording",
+      "Steve Zdancewic"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/183/9948",
+      "https://dblp.org/pid/88/11209",
+      "https://dblp.org/pid/93/2724",
+      "https://dblp.org/pid/99/3437"
+    ],
+    "abstract": "Discrete structures are currently second-class in differentiable programming. Since functions over discrete structures lack overt derivatives, differentiable programs do not differentiate through them and limit where they can be used. For example, when programming a neural network, conditionals and iteration cannot be used everywhere; they can break the derivatives necessary for gradient-based learning to work. This limits the class of differentiable algorithms we can directly express, imposing restraints on how we build neural networks and differentiable programs more generally. However, these restraints are not fundamental. Recent work shows conditionals can be first-class, by compiling them into differentiable form as linear neurons. Similarly, this work shows iteration can be first-class—by compiling to linear recurrent neurons. We present a minimal typed, higher-order and linear programming language with iteration called Cajal ( ⊸ , 𝟚 , ℕ ) . We prove its programs compile correctly to recurrent neurons, allowing discrete algorithms to be expressed in a differentiable form compatible with gradient-based learning. With our implementation, we conduct two experiments where we link these recurrent neurons against a neural network solving an iterative image transformation task. This determines part of its function prior to learning. As a result, the network learns faster and with greater data-efficiency relative to a neural network programmed without first-class iteration. A key lesson is that recurrent neurons enable a rich interplay between learning and the discrete structures of ordinary programming.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808345",
+    "pages": "2452-2473",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808345",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/Velez-GinorioAK26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "神经网络"
+    ],
+    "ai4s_tags": [
+      "AI for 生命科学"
+    ],
+    "ai4s_keywords": [
+      "neuroscience"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 生命科学": [
+          "neuroscience"
+        ]
+      },
+      "method_evidence": []
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "将离散迭代编译为循环神经元以改善可微编程与通用图像变换学习，研究神经网络表达和训练效率；neurons指人工神经元，未体现神经科学或其他领域研究任务。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808345",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808345"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要"
+      },
+      "tags": []
+    }
+  },
+  {
+    "id": "10.1145/3808254",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Equality Saturation for Quantum Circuit Optimization.",
+    "authors": [
+      "Ganxiang Yang",
+      "Paige Raun",
+      "Runzhou Tao 0001",
+      "Ronghui Gu"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/379/5070",
+      "https://dblp.org/pid/444/3204",
+      "https://dblp.org/pid/228/8097-1",
+      "https://dblp.org/pid/155/8148"
+    ],
+    "abstract": "Optimizing a quantum circuit is hard because it requires exploring a vast space of functionally equivalent circuits, produced by applying local circuit rewrites such as gate cancellation and commutation. Each additional rewrite can exponentially expand the space of equivalent circuits, so existing optimizers can only explore a tiny fraction of this space and often produce suboptimal results. We present Quasar , a new quantum circuit optimizer that can generate a step-limited optimal circuit: given a bound on rewrite iterations, it returns the lowest-cost circuit reachable within that bound. To achieve this, Quasar constructs two complementary e-graphs for the quantum circuit’s graph and sequence representations. Quasar then infers an atomic rewrite set for application on both e-graphs, which improves optimization performance by orders of magnitude. Finally, Quasar employs a series of new optimization techniques to ensure both soundness and scalability of equality saturation on quantum circuits. Across standard benchmarks, Quasar achieves geometric-mean reductions of 20.2% in 2-qubit gate count, 33.5% in total gate count, and 24.2% in circuit depth, and a 21.4% fidelity improvement over unoptimized circuits, outperforming or matching state-of-the-art rewrite-based optimizers on 75%, 92%, 62%, and 80% of circuits, respectively.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808254",
+    "pages": "174-199",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808254",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/YangRTG26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "quantum circuit"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "quantum circuit"
+        ]
+      },
+      "method_evidence": []
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "通过互补e-graph和等式重写优化量子电路门数、深度和保真度，摘要体现传统形式重写优化而非AI参与量子科学任务。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808254",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808254"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要"
+      },
+      "tags": []
+    }
+  },
+  {
+    "id": "10.1145/3808273",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Verification of Recursively Defined Quantum Circuits.",
+    "authors": [
+      "Mingsheng Ying",
+      "Zhicheng Zhang 0010"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/13/6525",
+      "https://dblp.org/pid/92/6707-10"
+    ],
+    "abstract": "Recursive techniques have recently been introduced into quantum programming so that a variety of large quantum circuits and algorithms can be elegantly and compactly programmed. In this paper, we present a proof system for formal verification of the correctness of recursively defined quantum circuits. The soundness and (relative) completeness of the proof system are established. To demonstrate its effectiveness, we present a series of application examples, including formal verification of multi-qubit controlled gates, a quantum circuit for generating multi-qubit GHZ (Greenberger-Horne-Zeilinger) states, and more sophisticated quantum algorithms with recursive structures such as the quantum Fourier transform, quantum state preparation, and quantum random access memories (QRAMs).",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808273",
+    "pages": "656-680",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808273",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/YingZ26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_vocabulary_hits": [
+      "形式验证"
+    ],
+    "ai4s_tags": [
+      "AI for 数理科学",
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "quantum physics",
+      "quantum circuit"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 数理科学": [
+          "quantum physics"
+        ],
+        "AI for 信息科学": [
+          "quantum circuit"
+        ]
+      },
+      "method_evidence": []
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "为递归量子电路建立正确性证明系统，给出GHZ、QFT和QRAM等验证例子；未体现AI方法实质参与。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808273",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808273"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要"
+      },
+      "tags": []
+    }
+  },
+  {
+    "id": "10.1145/3808255",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Cobble: Compiling Block Encodings for Quantum Computational Linear Algebra.",
+    "authors": [
+      "Charles Yuan"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/303/1102"
+    ],
+    "abstract": "Quantum algorithms for computational linear algebra promise up to exponential speedups for applications such as simulation and regression, making them prime candidates for hardware realization. But these algorithms execute in a model that cannot efficiently store matrices in memory like a classical algorithm does, instead requiring developers to implement complex expressions for matrix arithmetic in terms of correct and efficient quantum circuits. Among the challenges for the developer is navigating a cost model in which conventional optimizations for linear algebra, such as subexpression reuse, can be inapplicable or unprofitable. In this work, we present Cobble, a language for programming with quantum computational linear algebra. Cobble enables developers to express and manipulate the quantum representations of matrices, known as block encodings, using high-level notation that automatically compiles to correct quantum circuits. Cobble features analyses that compute the time and space usage of programs, as well as optimizations that reduce overhead and generate efficient circuits using state-of-the-art techniques such as the quantum singular value transformation. We evaluate Cobble on benchmark kernels for simulation, regression, search, and other applications, showing 2.6×−25.4× speedups on these benchmarks compared to the unoptimized baseline.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808255",
+    "pages": "200-225",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808255",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/Yuan26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "quantum circuit"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "quantum circuit"
+        ]
+      },
+      "method_evidence": []
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "将量子线性代数高层表示编译为正确高效的电路，仿真与回归是基准用途；贡献是量子编译基础设施，未体现AI参与独立科学研究任务。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808255",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808255"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要"
+      },
+      "tags": []
+    }
+  },
+  {
+    "id": "10.1145/3808284",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "SAQR-QC: A Logic for Scalable but Approximate Quantitative Reasoning about Quantum Circuits.",
+    "authors": [
+      "Nengkun Yu",
+      "Jens Palsberg",
+      "Thomas Reps"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/93/9828",
+      "https://dblp.org/pid/p/JPalsberg",
+      "https://dblp.org/pid/r/TWReps"
+    ],
+    "abstract": "Reasoning about quantum programs remains a fundamental challenge, regardless of the programming model or computational paradigm. Existing verification techniques are insufficient—even for quantum circuits, a deliberately restricted model that lacks classical control, but still underpins many current quantum algorithms. Many existing formal methods require exponential time and space to represent and manipulate (representations of) assertions and judgments, making them impractical for quantum circuits with many qubits. This paper presents SAQR-QC, a logic for S calable but A pproximate Q uantitative R easoning about Q uantum C ircuits. SAQR-QC has three characteristics: (i) some deliberate loss of precision is built into it; (ii) it has a mechanism to help the accumulated loss of precision during a sequence of reasoning steps remain small; and (iii) every reasoning step is local—involving just a small number of qubits—making reasoning scalable. We demonstrate the effectiveness of SAQR-QC via two case studies: the verification of GHZ circuits involving non-Clifford gates, and the analysis of quantum phase estimation—a core subroutine in Shor’s factoring algorithm.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808284",
+    "pages": "928-952",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808284",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/YuPR26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_hits": [],
+    "ai4s_reason": "taxonomy_rule",
+    "ai4s_tags": [
+      "AI for 信息科学"
+    ],
+    "ai4s_keywords": [
+      "quantum circuit"
+    ],
+    "ai4s_tagging": {
+      "taxonomy_version": "1.2",
+      "basis": "metadata_rules",
+      "status": "needs_review",
+      "evidence": {
+        "AI for 信息科学": [
+          "quantum circuit"
+        ]
+      },
+      "method_evidence": []
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "提出可扩展量子电路定量逻辑，用于GHZ和量子相位估计验证，未体现AI方法实际参与。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808284",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808284"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要"
+      },
+      "tags": []
+    }
+  },
+  {
+    "id": "10.1145/3808316",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Incremental Computation for Efficient Programmable Inference in Probabilistic Programs.",
+    "authors": [
+      "Fabian Zaiser",
+      "Jack Czenszak",
+      "Martin C. Rinard",
+      "Vikash K. Mansinghka",
+      "Alexander K. Lew"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/249/5578",
+      "https://dblp.org/pid/412/6144",
+      "https://dblp.org/pid/r/MartinCRinard",
+      "https://dblp.org/pid/23/1731",
+      "https://dblp.org/pid/242/4530"
+    ],
+    "abstract": "Inference in probabilistic programs generally requires evaluating many possible program executions to find those of high posterior density. To scale inference to large datasets, it is crucial that expensive intermediate results are shared across these many evaluations, rather than recomputed from scratch. This paper presents a new approach to realizing this sharing, based on incremental computation , a technique for efficiently recomputing (deterministic) program outputs when program inputs change. First, we show how expressive probabilistic programs can be compiled to deterministic ones that compute their density functions. Then, building on the incremental λ -calculus, we develop a general technique for compositionally incrementalizing expressive functional programs, and apply it to these densities. The resulting incremental densities can be used to accelerate a broad range of Monte Carlo inference algorithms, including for nonparametric models not well supported by existing systems. Furthermore, our decomposition of incremental density computation into separate density and incrementalization steps allows for modular reasoning about correctness—a key pain point in existing systems, where ad-hoc incrementalization features are a known source of soundness bugs. We develop denotational logical relations arguments for the correctness of each step independently, and implement the approach in a Julia prototype, finding that it leads to asymptotic runtime improvements in the size of the dataset on a range of models and inference algorithms.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808316",
+    "pages": "1739-1763",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808316",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/ZaiserCRML26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "以增量计算复用中间结果来加速通用概率程序推断，主要贡献是推断系统效率与形式正确性，摘要未展示独立科学问题中的AI研究贡献。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808316",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808316"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要"
+      },
+      "tags": []
+    }
+  },
+  {
+    "id": "10.1145/3808342",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Scalable Floating-Point Satisfiability via Staged Optimization.",
+    "authors": [
+      "Yuanzhuo Zhang",
+      "Zhoulai Fu",
+      "Binoy Ravindran"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/382/5197",
+      "https://dblp.org/pid/139/5447",
+      "https://dblp.org/pid/61/2985"
+    ],
+    "abstract": "This work introduces StageSAT , a new approach to solving floating-point satisfiability that bridges SMT solving with numerical optimization. StageSAT reframes a floating-point formula as a series of optimization problems in three stages, each with increasing precision. It begins with a fast, projection-aided descent objective to efficiently guide the search toward a feasible region, then proceeds to bit-level accuracy with units-in-the-last-place ( ULP ) 2 optimization and a final n -ULP lattice refinement to ensure correctness. By construction, the final two stages use a representing function that evaluates to zero if and only if a candidate satisfies all constraints. Thus, whenever optimization drives the bit-precise objective to zero, the resulting assignment is a valid solution, providing a built-in guarantee of soundness (no spurious SAT results). To further improve the search, StageSAT introduces a partial monotone descent property on linear constraints via an orthogonal projection technique, which prevents the optimizer from stalling on flat or misleading objective landscapes. Critically, this solver requires no heavy bit-level reasoning or specialized abstractions of floating-point arithmetic; it treats complex arithmetic as a black box, using runtime evaluations to navigate the input space. We implement StageSAT and evaluate it on extensive benchmarks, including the SMT-COMP’25 floating-point suites and difficult cases from prior work. In our experiments, StageSAT proved both more scalable and more accurate than state-of-the-art optimization-based alternatives. It solved strictly more formulas than any competing solver under the same time budget – in fact, StageSAT found most of the satisfiable instances in our benchmarks and never produced a spurious model for an unsatisfiable formula. This amounts to 99.4 % recall on satisfiable cases with 0 % false SAT in our benchmarks, exceeding the reliability of prior optimization-based solvers we tested. StageSAT also delivered significant speedups (often 5 − 10 × faster) over traditional bit-precise SMT solvers and earlier numeric solvers. These results demonstrate that our staged optimization strategy can significantly improve both the performance and correctness of floating-point satisfiability solving.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808342",
+    "pages": "2379-2401",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808342",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/ZhangFR26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "将浮点可满足性转为分阶段数值优化并在SMT基准上评测，主要为通用约束求解工具，未体现独立科学任务。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808342",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808342"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要"
+      },
+      "tags": []
+    }
+  },
+  {
+    "id": "10.1145/3808274",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Causality and Semantic Separation.",
+    "authors": [
+      "Anna Zhang",
+      "Qinglan Luo",
+      "London Bielicke",
+      "Eunice Jun",
+      "Adam Chlipala"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/176/2832",
+      "https://dblp.org/pid/292/2418",
+      "https://dblp.org/pid/402/9897",
+      "https://dblp.org/pid/168/3483",
+      "https://dblp.org/pid/52/796"
+    ],
+    "abstract": "The design of scientific experiments deserves its own variation of formal verification to catch cases where scientists made important mistakes, such as forgetting to take confounding variables into account. One of the most fundamental underpinnings of science is causality , or what it means for interventions in the world to cause other outcomes, as formalized by computer scientists like Judea Pearl. However, these ideas had not previously been made rigorous to the standards of the programming-languages community, where one expects a (syntactic) program analysis to be proved sound with respect to a natural semantics. In the domain of causality, as the relevant “program analysis,” we focus on d- separation , a classic condition on graphs that can be used to decide when the design of an experiment controls for sufficiently many confounding variables, even though the reason that this condition works is often unintuitive. Our central result (mechanized in Rocq) is that d -separation exactly coincides with a novel semantic definition inspired by noninterference from the theory of security. This characterization provides a structural semantic foundation for d -separation and helps explain why the graph-theoretic condition is correct, independently of probabilistic assumptions. For each given automated test on the quality of an experiment design, our theorem justifies an associated method for falsifying the world-modeling hypothesis behind the experiment.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808274",
+    "pages": "681-704",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808274",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/ZhangLBJC26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "在Rocq中形式化证明因果图d分离与语义非干扰等价，为实验设计检查提供理论依据；现有证据为语义基础和形式证明，未体现AI参与具体实验设计或科学数据因果分析。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808274",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808274"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要"
+      },
+      "tags": []
+    }
+  },
+  {
+    "id": "10.1145/3808333",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Synthesizing Backward Error Bounds, Backward.",
+    "authors": [
+      "Laura Zielinski",
+      "Justin Hsu"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/14/1549",
+      "https://dblp.org/pid/35/10964"
+    ],
+    "abstract": "Backward stability is a desirable property for a well-designed numerical algorithm: given an input, a backward stable floating-point program produces the exact output for a nearby input. While automated tools for bounding the forward error of a numerical program are well-established, few existing tools target backward error analysis. We present a formal framework that enables sound, automated backward error analysis for a broad class of numerical programs. First, we propose a novel generalization of the definition of backward stability that is both compositional and flexible, satisfied by a wide range of floating-point operations. Second, based on this generalization, we develop the category Shel where morphisms model stable numerical programs, and show that structures in Shel support a rich variety of backward error analyses. Third, we implement a tool, eggshel , that automatically searches within a syntactic subcategory of Shel to prove backward stability for a given program. Our algorithm handles many programs with variable reuse, a known challenge in backward error analysis. We prove soundness of our algorithm and use our tool to synthesize backward error bounds for a suite of programs that were previously beyond the reach of automated analysis.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808333",
+    "pages": "2157-2180",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808333",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/ZielinskiH26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "AlearnerDL-2026-pldi-20261117",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+      "decision": "exclude",
+      "rationale": "通过范畴语义和证明搜索合成通用数值程序的后向误差界，主要贡献为程序语言理论与程序分析工具，未展示独立科学计算任务中的AI贡献。",
+      "verified_metadata": {
+        "article_type": "Research Article",
+        "url": "https://dl.acm.org/doi/10.1145/3808333",
+        "evidence_urls": [
+          "https://dl.acm.org/doi/10.1145/3808333"
+        ],
+        "verified_at": "2026-11-18T06:57:08.722399+00:00",
+        "review_evidence_location": "输入摘要"
+      },
+      "tags": []
+    }
   }
 ]
