@@ -1,0 +1,838 @@
+{
+  "j-9378816e2c|10.1186/s12951-026-04938-6": {
+    "decision": "include",
+    "rationale": "正式原始研究（research-article）。正文Methods/Molecular docking studies明确以CNN的Rescore模式筛选PLEC配体结合构象；Results还用随机森林与LASSO优选PLEC，并据CNN精修模型构造NOTA单体与二聚放射示踪剂，完成细胞、PET和动物验证。AI直接服务肿瘤成像探针设计及靶点发现，已补清摘要缺失的AI步骤。",
+    "domain": "life",
+    "labels": [
+      "AI 用于生命科学",
+      "分子对接",
+      "卷积神经网络",
+      "随机森林",
+      "生物标志物发现"
+    ],
+    "evidence_location": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13531995/#Sec15；Results / Molecular docking studies",
+    "evidence_quote": "CNN scoring played a pivotal role in screening candidate conformations for binding sites close to the intrinsic state: the preferred docking conformation stably embedded within the charge-complementary groove of PLEC (Fig. 3A), resolving hydrogen bonds and electrostatic interactions with key amino acid residues such as Glutamic acid 355, Glutamine 347, and Glutamic acid 340 (Fig. 3C and D).",
+    "verified_metadata": {
+      "doi": "10.1186/s12951-026-04938-6",
+      "title": "AI-guided design of plectin-1-targeted 68Ga-radiotracers reveals EP300-mediated membrane relocalization of plectin-1 in pancreatic ductal adenocarcinoma",
+      "article_type": "research-article",
+      "url": "https://link.springer.com/article/10.1186/s12951-026-04938-6",
+      "pmcid": "PMC13531995",
+      "evidence_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13531995/fullTextXML",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13531995/",
+        "https://link.springer.com/article/10.1186/s12951-026-04938-6"
+      ],
+      "fulltext_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13531995/fullTextXML",
+      "checked_at": "2026-11-18",
+      "identity_verified": true,
+      "abstract": "Background: Plectin-1 (PLEC) is a membrane-associated biomarker implicated in the progression of pancreatic ductal adenocarcinoma (PDAC) and is an attractive target for molecular imaging. However, peptide-based radiotracers targeting PLEC remain limited, and the mechanisms linking plectin-1 relocalization to aggressive biology have yet to be fully elucidated. Methods: In the present study, we performed stepwise in silico screening to identify membrane-associated metastatic drivers in PDAC. Then, we performed convolutional neural network-assisted docking to guide the design of 68Ga-labeled NOTA-conjugated plectin-1-targeted monomeric (FZPN) and dimeric (FZPN-dimer) radiotracers. Radiochemical characterization, surface plasmon resonance, cellular uptake, blocking, pharmacokinetic, microPET/CT, biodistribution, and preliminary toxicity studies were then undertaken in PANC-1 models. Mechanistic studies assessed the subcellular localization of PLEC, its interaction with EP300, acetylation, and the functional role of lysine 1310 (K1310). Results: PLEC emerged as the top membrane-enriched, metastasis-linked, and prognostically adverse candidate for PDAC. Analysis demonstrated that the [68Ga]Ga-NOTA-FZPN-dimer exhibited high affinity for PLEC, favorable hydrophilicity and stability, and significantly higher cellular uptake and tumor accumulation than the monomeric tracer, with receptor-specific blockade in vitro and in vivo. In PANC-1 xenografts, tumor uptake of the dimer reached 3.8 ± 0.5%ID/g at 30 min after injection and remained higher than that of the monomer at all imaging time points. Mechanistically, PDAC tissues exhibited membrane-enriched PLEC; EP300 interacted with PLEC, acetylation was increased in PDAC cells, and the deacetylation-mimetic PLEC-K1310R mutant redirected plectin-1 away from the plasma membrane and reduced cell migration. Conclusions: Collectively, our findings show that [68Ga]Ga-NOTA-FZPN-dimer represents a promising PLEC-targeted PET radiotracer for molecular imaging in PDAC. EP300-mediated acetylation at K1310 appears to drive the membrane relocalization of PLEC and promote the migration of tumor cells, providing biological support for PLEC-targeted imaging and a rationale for further translational development. Graphical abstract:  Supplementary Information: The online version contains supplementary material available at https://doi.org/10.1186/s12951-026-04938-6.",
+      "keywords": [
+        "Pancreatic ductal adenocarcinoma",
+        "Plectin-1",
+        "PET/CT",
+        "Gallium-68",
+        "Radiotracer",
+        "EP300"
+      ]
+    },
+    "fulltext_evidence": {
+      "article_type": "research-article",
+      "section": "Results / Molecular docking studies",
+      "paragraph_index": 24,
+      "paragraph_text": "Given the current lack of reported structural analyses of PLEC interactions with peptides or probes, we next performed molecular simulations of the PTP and PLEC domains using an integrated three-dimensional (3D) CNN scoring function (Fig. 3E). CNN scoring played a pivotal role in screening candidate conformations for binding sites close to the intrinsic state: the preferred docking conformation stably embedded within the charge-complementary groove of PLEC (Fig. 3A), resolving hydrogen bonds and electrostatic interactions with key amino acid residues such as Glutamic acid 355, Glutamine 347, and Glutamic acid 340 (Fig. 3C and D). This provided a reliable structural template for subsequent probe optimization.",
+      "xml_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13531995/fullTextXML",
+      "doi_and_title_verified": true,
+      "supporting_paragraphs": [
+        {
+          "paragraph_index": 10,
+          "section": "Methods / Molecular docking studies",
+          "section_ids": [
+            "Sec2",
+            "Sec6"
+          ],
+          "text": "During receptor preparation, water molecules were removed, and hydrogen atoms were added. The ligand structures PTP and NOTA-FZPN were converted into SDF format. The docking grid center was set at x = 36.5, y = 18.0, z = 11.0 Å in the coordinate system of the 2ODU crystal structure. Molecular docking was performed individually with CNN to simulate the interaction between the PLEC protein and the ligands. Rescore was selected as the CNN Scoring Mode. The docking results were analyzed by PyMOL (version 2.4.0, Schrödinger LLC, USA), focusing on the three-dimensional binding modes and binding kinetics between PLEC and each ligand."
+        },
+        {
+          "paragraph_index": 22,
+          "section": "Results / Membrane-associated drivers linked to metastasis and outcome in PDAC",
+          "section_ids": [
+            "Sec13",
+            "Sec14"
+          ],
+          "text": "Using this filtering framework, six candidate genes were identified: PLEC, AXL, MET, MSLN, CEACAM6 and MUC1 (Fig. 2A). Random forest and LASSO regression were then applied to the expression profiles of these six pre-selected candidates as complementary prioritization approaches within this restricted feature space. In the LASSO model, feature selection was performed according to the optimal penalty parameter, and PLEC was retained among the selected variables (Fig. 2B). Random forest analysis further ranked PLEC as the most important candidate based on Mean Decrease Accuracy and Mean Decrease Gini metrics (Fig. 2C). The overlap between the LASSO- and random forest-selected candidates identified PLEC as the common prioritized marker (Fig. 2D). ROC (receiver operating characteristic) analysis showed that PLEC expression exhibited favorable discriminatory performance for PDAC, with an AUC (area under the curve) of 0.83 (Fig. 2E). We next evaluated the prognostic relevance of PLEC in two independent cohorts. In the Cancer Genome Atlas pancreatic adenocarcinoma (TCGA-PAAD) cohort, patients with high levels of PLEC expression showed a trend toward poorer overall survival compared with those with low levels of PLEC expression (HR = 1.50, Cox p = 0.050; log-rank p = 0.050; n = 89 per group) (Fig. 2F). This association was further supported in the GSE32676 cohort, in which high PLEC expression was associated with worse overall survival (HR = 1.57, Cox p = 0.048; log-rank p = 0.045; n = 31 in the high-expression group and n = 32 in the low-expression group) (Fig. 2F). Collectively, these results suggest that PLEC expression may have potential diagnostic and prognostic relevance in PDAC, and robustly nominate PLEC as a membrane-enriched, metastasis-linked, and prognostically adverse gene in PDAC."
+        },
+        {
+          "paragraph_index": 24,
+          "section": "Results / Molecular docking studies",
+          "section_ids": [
+            "Sec13",
+            "Sec15"
+          ],
+          "text": "Given the current lack of reported structural analyses of PLEC interactions with peptides or probes, we next performed molecular simulations of the PTP and PLEC domains using an integrated three-dimensional (3D) CNN scoring function (Fig. 3E). CNN scoring played a pivotal role in screening candidate conformations for binding sites close to the intrinsic state: the preferred docking conformation stably embedded within the charge-complementary groove of PLEC (Fig. 3A), resolving hydrogen bonds and electrostatic interactions with key amino acid residues such as Glutamic acid 355, Glutamine 347, and Glutamic acid 340 (Fig. 3C and D). This provided a reliable structural template for subsequent probe optimization."
+        },
+        {
+          "paragraph_index": 26,
+          "section": "Results / Molecular docking studies",
+          "section_ids": [
+            "Sec13",
+            "Sec15"
+          ],
+          "text": "Building upon this, we constructed NOTA-FZPN (Fig. 3F) by introducing the NOTA chelator via a connecting arm to the PTP-exposed end while preserving the PTP-recognized pharmacophore. CNN docking results revealed that this monomer probe maintained a binding orientation and interaction network (Glutamine 347 and Glutamic acid 340) that was highly consistent with PTP within the PLEC binding pocket, whereas NOTA and the linker arm caused minimal interference at the protein-peptide interface (Fig. 3B). Building upon this CNN-refined binding model, we further designed dimeric PLEC probe skeletons (Fig. 3G). These achieved bivalent binding by spatially ordering 2–4 PTP units around a common radiolabeled metal chelation core, laying the structural foundation for subsequent in vivo and in vitro evaluations of 68Ga-labeled plectin-1-targeted radiotracers."
+        }
+      ]
+    },
+    "access_note": "Springer正式页直接访问返回Client Challenge（HTTP200），未将其当作正文；使用DOI/题名匹配、XML内精确DOI核验的Europe PMC开放全文。"
+  },
+  "j-291c5f64e2|10.1186/s40580-026-00545-1": {
+    "decision": "include",
+    "rationale": "XML正式类型为review-article，不能仅因摘要中perspective一词按评论排除。正文Computational design toolbox设专门的Machine learning multi-parameter optimization workflow，评述肽库分类筛选、生成序列、结构预测与物理模拟耦合，表1比较ML/生成AI的输出、数据要求及协调化学泛化限制，构成面向肽金属免疫治疗的实质AI设计综述。",
+    "domain": "life",
+    "labels": [
+      "AI 用于生命科学",
+      "多肽设计",
+      "分子对接",
+      "逆向设计"
+    ],
+    "evidence_location": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13076748/#Sec26；Computational design toolbox / Machine learning multi-parameter optimization workflow",
+    "evidence_quote": "Classifier-based models can screen large peptide libraries for desirable traits based on immunogenicity, structural stability, metal-binding potential, and biological activity [215], and generative models can design entirely new sequences tailored for specific coordination motifs or immune targets [216, 217].",
+    "verified_metadata": {
+      "doi": "10.1186/s40580-026-00545-1",
+      "title": "Simulation-guided design of peptide–metal coordination interfaces for next-generation metallo-immunotherapy",
+      "article_type": "review-article",
+      "url": "https://link.springer.com/article/10.1186/s40580-026-00545-1",
+      "pmcid": "PMC13076748",
+      "evidence_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13076748/fullTextXML",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13076748/",
+        "https://link.springer.com/article/10.1186/s40580-026-00545-1"
+      ],
+      "fulltext_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13076748/fullTextXML",
+      "checked_at": "2026-11-18",
+      "identity_verified": true,
+      "abstract": "Metal ions are crucial regulators of immune signaling, metabolism, and redox homeostasis, but their therapeutic deployment in cancer immunotherapy is limited by systemic toxicity and inadequate spatiotemporal control. Peptide–metal coordination interfaces offer a programmable solution by combining sequence-encoded recognition with tunable coordination chemistry, enabling controlled metal speciation, bioavailability, and stimulus-responsive functions in complex biological environments. This review summarizes how biologically relevant ions, including Mn2+, Zn2+, Cu2+, and Fe2+/Fe3+, modulate innate and adaptive immunity through direct reprogramming of macrophages, dendritic cells, T cells, and natural killer cells, as well as through indirect remodeling of the tumor microenvironment via immunogenic cell death, redox perturbation, hypoxia alleviation, and disruption of immunosuppressive pathways. We discuss essential peptide–metal coordination principles, including natural binding motifs, synthetic coordination primitives, and stimulus-responsive switching mechanisms that enable dynamic regulation of metal–ligand interactions. To accelerate rational discovery, we outline a simulation-guided computational toolbox integrating docking-based prescreening, molecular dynamics, and metadynamics for stability assessment, quantum mechanical/molecular mechanics approaches for electronic-level accuracy, and machine learning workflows for multi-parameter optimization across high-dimensional design spaces. Finally, we survey the application landscape of peptide–metal platforms, from self-assembled ion-reservoir architectures to hybrid systems incorporating lipidic, polymeric, inorganic, or biomimetic carriers for improved pharmacokinetics and combinatorial functionality. Collectively, this perspective connects coordination chemistry with immunoengineering and highlights simulation-guided strategies for designing adaptive metallo-immunotherapeutic nanoplatforms with spatiotemporal precision and translational potential. Graphical abstract: ",
+      "keywords": [
+        "Peptide–metal coordination",
+        "Metallo-immunotherapy",
+        "Simulation-guided design",
+        "Machine learning",
+        "Tumor microenvironment"
+      ]
+    },
+    "fulltext_evidence": {
+      "article_type": "review-article",
+      "section": "Computational design toolbox / Machine learning multi-parameter optimization workflow",
+      "paragraph_index": 47,
+      "paragraph_text": "ML and generative models are increasingly incorporated into integrated, multiscale design workflows to improve the efficiency and precision of peptide–metal interface development for nanomedical immunotherapy [213, 214]. Classifier-based models can screen large peptide libraries for desirable traits based on immunogenicity, structural stability, metal-binding potential, and biological activity [215], and generative models can design entirely new sequences tailored for specific coordination motifs or immune targets [216, 217]. When combined with structure prediction, docking, MD, and QM calculations, these tools form the backbone of a simulation-guided pipeline that streamlines progression from conceptual peptide design to in vitro and in vivo validation [172, 218]. Prominent design platforms include AlphaFold2 [216], PEP-FOLD3 [212], trRosetta [217], and RaptorX [218]. Crucially, ML does not supplant physics-based modeling in peptide–metal interface design. The performance of ML models remains constrained by the availability and quality of training data and is subject to biases toward well-characterized metal–peptide systems, as well as limited generalizability across diverse coordination chemistries, particularly those involving transition metals with variable oxidation states and coordination geometries. Instead, ML underscores the continued necessity of physics-based validation. By leveraging descriptors derived from simulations and navigating high-dimensional design spaces that are inaccessible to experimental screening alone, the integrated framework achieves synergistic performance, as illustrated in Fig. 4 and summarized in Table 1.Fig. 4Multiscale computational workflow for simulation-guided design of peptide–metal coordination interfaces. The workflow integrates successive computational layers, beginning with docking-based prescreening to assess binding feasibility, followed by molecular dynamics and metadynamics to evaluate coordination stability, conformational dynamics, and assembly behavior. Quantum mechanical and hybrid QM/MM calculations provide electronic-structure accuracy and coordination-energetics information, which inform ML-based optimization of sequence–function relationships and design principles. Iterative feedback from each level enables predictive refinement of peptide libraries, supporting rational development of programmable peptide–metal interfaces for nanomedical and immunotherapeutic applicationsTable 1Roles and characteristics of computational methods in simulation-guided peptide–metal interface designComputational levelRepresentative methodsPrimary roleKey strengthsMain limitationsTypical outputsRefPrescreeningMolecular docking (AutoDock, HADDOCK, Rosetta FlexPepDock, Hex 6.1)Identification of feasible binding modes and coordination posesHigh-throughput, rapid evaluation of large peptide librariesLimited treatment of dynamics and metal coordination accuracyBinding poses, docking scores[181–185]Dynamic evaluationMolecular dynamics, metadynamics (GROMACS, AMBER, NAMD, PT-WTE)Assessment of coordination stability, flexibility, and assembly behaviorTime-resolved conformational sampling in explicit environmentsForce-field dependence; limited electronic accuracyRMSD, free-energy profiles, stability metrics[187, 189–192]Electronic structure analysisDFT, QM/MM (Gaussian, ORCA, CP2K)Accurate description of metal–ligand bonding and energeticsHigh precision in coordination geometry and electronic propertiesHigh computational cost; limited system sizeBinding energies, optimized geometries[188, 198, 200–202]Optimization & predictionMachine learning, generative AIMulti-parameter optimization and design rule extractionPredictive modeling across large design spacesRequires high-quality training dataRanked sequences, optimized candidates[172, 218]",
+      "xml_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13076748/fullTextXML",
+      "doi_and_title_verified": true,
+      "supporting_paragraphs": [
+        {
+          "paragraph_index": 5,
+          "section": "Introduction",
+          "section_ids": [
+            "Sec1"
+          ],
+          "text": "Continuous advances in computational science have driven the evolution of algorithm-based intelligent design approaches, including artificial intelligence–assisted drug discovery (AIDD), which complement conventional computer-aided drug design (CADD) methodologies [61, 62]. Classical CADD approaches, structure-based and ligand- based, leverage molecular docking and molecular dynamics (MD) simulations to interrogate intermolecular interactions and binding energetics [63–66]. These physics-based methods are implemented in widely used platforms like Schrödinger Glide and AutoDock Vina [67–71]. Recently, data-driven approaches based on machine learning (ML) and deep learning have expanded molecular design by enabling rapid prediction of protein–ligand interactions, de novo molecule generation, target identification, and assessment of absorption, distribution, metabolism, excretion, and toxicity (ADMET) properties [72, 73]. AI-enabled tools support virtual screening, target recognition, and acceleration of MD simulations [74–80]. Emerging platforms such as EquiBind, DiffDock, TANKBind, Uni-Mol, AlphaFold2, PEP-FOLD3, and OmegaFold facilitate accurate prediction of three-dimensional structures and binding modes [81–87]. Efforts are also underway to train and reverse-engineer metal–organic framework (MOF)/coordination networks using various representations (such as strings, graphs, and even quantum-NLP-based encodings) [88]. Integration of the mechanistic rigor of CADD with the predictive and generative power of AIDD establishes a robust foundation for simulation-guided development of peptide–metal interfaces tailored for immunotherapeutic applications. Such integrative strategies are increasingly being extended to inorganic and coordination systems. Recent advancements in smart metal-based nanomaterials further highlight the potential of AI-based coordination chemistry in the design for theranostics and tissue regenerative platforms. These developments enables the design of a broader range of metal-based nanoplatforms with tunable reactivity and biological functionality in peptide-metal immunotherapy [89]."
+        },
+        {
+          "paragraph_index": 47,
+          "section": "Computational design toolbox / Machine learning multi-parameter optimization workflow",
+          "section_ids": [
+            "Sec22",
+            "Sec26"
+          ],
+          "text": "ML and generative models are increasingly incorporated into integrated, multiscale design workflows to improve the efficiency and precision of peptide–metal interface development for nanomedical immunotherapy [213, 214]. Classifier-based models can screen large peptide libraries for desirable traits based on immunogenicity, structural stability, metal-binding potential, and biological activity [215], and generative models can design entirely new sequences tailored for specific coordination motifs or immune targets [216, 217]. When combined with structure prediction, docking, MD, and QM calculations, these tools form the backbone of a simulation-guided pipeline that streamlines progression from conceptual peptide design to in vitro and in vivo validation [172, 218]. Prominent design platforms include AlphaFold2 [216], PEP-FOLD3 [212], trRosetta [217], and RaptorX [218]. Crucially, ML does not supplant physics-based modeling in peptide–metal interface design. The performance of ML models remains constrained by the availability and quality of training data and is subject to biases toward well-characterized metal–peptide systems, as well as limited generalizability across diverse coordination chemistries, particularly those involving transition metals with variable oxidation states and coordination geometries. Instead, ML underscores the continued necessity of physics-based validation. By leveraging descriptors derived from simulations and navigating high-dimensional design spaces that are inaccessible to experimental screening alone, the integrated framework achieves synergistic performance, as illustrated in Fig. 4 and summarized in Table 1.Fig. 4Multiscale computational workflow for simulation-guided design of peptide–metal coordination interfaces. The workflow integrates successive computational layers, beginning with docking-based prescreening to assess binding feasibility, followed by molecular dynamics and metadynamics to evaluate coordination stability, conformational dynamics, and assembly behavior. Quantum mechanical and hybrid QM/MM calculations provide electronic-structure accuracy and coordination-energetics information, which inform ML-based optimization of sequence–function relationships and design principles. Iterative feedback from each level enables predictive refinement of peptide libraries, supporting rational development of programmable peptide–metal interfaces for nanomedical and immunotherapeutic applicationsTable 1Roles and characteristics of computational methods in simulation-guided peptide–metal interface designComputational levelRepresentative methodsPrimary roleKey strengthsMain limitationsTypical outputsRefPrescreeningMolecular docking (AutoDock, HADDOCK, Rosetta FlexPepDock, Hex 6.1)Identification of feasible binding modes and coordination posesHigh-throughput, rapid evaluation of large peptide librariesLimited treatment of dynamics and metal coordination accuracyBinding poses, docking scores[181–185]Dynamic evaluationMolecular dynamics, metadynamics (GROMACS, AMBER, NAMD, PT-WTE)Assessment of coordination stability, flexibility, and assembly behaviorTime-resolved conformational sampling in explicit environmentsForce-field dependence; limited electronic accuracyRMSD, free-energy profiles, stability metrics[187, 189–192]Electronic structure analysisDFT, QM/MM (Gaussian, ORCA, CP2K)Accurate description of metal–ligand bonding and energeticsHigh precision in coordination geometry and electronic propertiesHigh computational cost; limited system sizeBinding energies, optimized geometries[188, 198, 200–202]Optimization & predictionMachine learning, generative AIMulti-parameter optimization and design rule extractionPredictive modeling across large design spacesRequires high-quality training dataRanked sequences, optimized candidates[172, 218]"
+        },
+        {
+          "paragraph_index": 48,
+          "section": "Computational design toolbox / Machine learning multi-parameter optimization workflow",
+          "section_ids": [
+            "Sec22",
+            "Sec26"
+          ],
+          "text": "Table 1Roles and characteristics of computational methods in simulation-guided peptide–metal interface designComputational levelRepresentative methodsPrimary roleKey strengthsMain limitationsTypical outputsRefPrescreeningMolecular docking (AutoDock, HADDOCK, Rosetta FlexPepDock, Hex 6.1)Identification of feasible binding modes and coordination posesHigh-throughput, rapid evaluation of large peptide librariesLimited treatment of dynamics and metal coordination accuracyBinding poses, docking scores[181–185]Dynamic evaluationMolecular dynamics, metadynamics (GROMACS, AMBER, NAMD, PT-WTE)Assessment of coordination stability, flexibility, and assembly behaviorTime-resolved conformational sampling in explicit environmentsForce-field dependence; limited electronic accuracyRMSD, free-energy profiles, stability metrics[187, 189–192]Electronic structure analysisDFT, QM/MM (Gaussian, ORCA, CP2K)Accurate description of metal–ligand bonding and energeticsHigh precision in coordination geometry and electronic propertiesHigh computational cost; limited system sizeBinding energies, optimized geometries[188, 198, 200–202]Optimization & predictionMachine learning, generative AIMulti-parameter optimization and design rule extractionPredictive modeling across large design spacesRequires high-quality training dataRanked sequences, optimized candidates[172, 218]"
+        }
+      ]
+    },
+    "access_note": "Springer正式页直接访问返回Client Challenge（HTTP200），未将其当作正文；使用DOI/题名匹配、XML内精确DOI核验的Europe PMC开放全文。"
+  },
+  "j-652a538c84|10.1186/s43556-025-00395-z": {
+    "decision": "include",
+    "rationale": "正式综述。Progress in IBD Precision Medicine小节实际评述Shah等临床结局模型、微生物数据疗效预测、外显子组可解释深度网络与AI内镜/病理分析，给出任务、已发表研究及外部验证和数据偏差局限；AI不只出现在未来方向，满足实质生医AI综述口径。",
+    "domain": "life",
+    "labels": [
+      "AI 用于生命科学",
+      "疾病风险预测",
+      "药物反应预测"
+    ],
+    "evidence_location": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12775382/#Sec21；Progress in IBD Precision Medicine",
+    "evidence_quote": "Machine-learning-based prediction models that integrate clinical characteristics, laboratory parameters, and multi-omic data have demonstrated superior performance in forecasting clinical outcomes such as disease relapse, therapeutic response, and hospitalization risk.",
+    "verified_metadata": {
+      "doi": "10.1186/s43556-025-00395-z",
+      "title": "Inflammatory bowel diseases: pathological mechanisms and therapeutic perspectives",
+      "article_type": "review-article",
+      "url": "https://link.springer.com/article/10.1186/s43556-025-00395-z",
+      "pmcid": "PMC12775382",
+      "evidence_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12775382/fullTextXML",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12775382/",
+        "https://link.springer.com/article/10.1186/s43556-025-00395-z"
+      ],
+      "fulltext_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12775382/fullTextXML",
+      "checked_at": "2026-11-18",
+      "identity_verified": true,
+      "abstract": "Inflammatory bowel disease (IBD) is a heterogeneous group of disorders characterized primarily by chronic relapsing intestinal inflammation, encompassing Crohn’s disease (CD) and ulcerative colitis (UC), affecting individuals across age groups with variable clinical manifestations. With the advancement of global industrialization, its incidence continues to rise, particularly in newly industrialized regions, which not only severely impairs patients' quality of life but also emerges as a major public health concern threatening digestive system health, accompanied by a substantial healthcare burden, thus necessitating the development of more effective and safer individualized treatment strategies. This review summarizes the pathogenesis of IBD, including intestinal mucosal immune dysregulation, intestinal barrier damage, gut microbiota dysbiosis, reactive oxygen species (ROS) homeostasis imbalance, and the complex crosstalk between genetic and environmental factors; however, clinical treatment still faces numerous challenges: 30%-40% of patients exhibit primary or secondary non-response to existing therapeutic regimens such as biologics and small-molecule drugs, and prolonged administration tends to induce significant side effects. Further integrated herein are emerging strategies such as ROS modulators, novel immune-targeted modulation, intestinal barrier repair agents, microbiota-directed interventions, multi-omics-based precision medicine, and artificial intelligence (AI)-assisted therapy, which represent key directions to address the limitations of traditional treatments. This article begins with an overview of basic pathological mechanisms and offers a comprehensive overview of relevant therapeutic approaches and future development directions, aiming to facilitate the transition of the field from traditional generalized therapies to personalized precision medicine and to bridge the long-standing gap between basic research and clinical practice.",
+      "keywords": [
+        "IBD",
+        "CD",
+        "UC",
+        "Pathophysiology",
+        "Therapy"
+      ]
+    },
+    "fulltext_evidence": {
+      "article_type": "review-article",
+      "section": "Progress in IBD Precision Medicine",
+      "paragraph_index": 90,
+      "paragraph_text": "AI, with its potent capacity for data processing and feature extraction, has become an indispensable tool in precision medicine. Machine-learning-based prediction models that integrate clinical characteristics, laboratory parameters, and multi-omic data have demonstrated superior performance in forecasting clinical outcomes such as disease relapse, therapeutic response, and hospitalization risk. For example, the prognostic model developed by Shah et al. has effectively predicted hospitalization, glucocorticoid use, and biologic response [566]. An integrated model incorporating gut microbial genetic variation has enabled accurate prediction of both disease onset and therapeutic response [567]. A machine-learning model integrating pediatric gut microbiota data has been shown to forecast future remission status [568]. Deep-learning approaches have also played a pivotal role in disease-subtype classification and diagnostic assistance. Interpretable deep-learning networks have extracted complex molecular patterns from whole-exome sequencing data, achieving precise IBD-subtype stratification [569]. AI-assisted endoscopic image analysis and histopathological slide evaluation have markedly enhanced the objectivity of activity assessment and the accuracy of relapse-risk prediction [570, 571]. Despite these advances, clinical deployment of AI models remains constrained by uneven data quality, algorithmic bias, and a paucity of large-scale external validation. The European Crohn’s and Colitis Organisation (ECCO) expert panel has issued practical recommendations that underscore the need for methodological rigor during model development and clinical implementation [572].",
+      "xml_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12775382/fullTextXML",
+      "doi_and_title_verified": true,
+      "supporting_paragraphs": [
+        {
+          "paragraph_index": 90,
+          "section": "Progress in IBD Precision Medicine",
+          "section_ids": [
+            "Sec21"
+          ],
+          "text": "AI, with its potent capacity for data processing and feature extraction, has become an indispensable tool in precision medicine. Machine-learning-based prediction models that integrate clinical characteristics, laboratory parameters, and multi-omic data have demonstrated superior performance in forecasting clinical outcomes such as disease relapse, therapeutic response, and hospitalization risk. For example, the prognostic model developed by Shah et al. has effectively predicted hospitalization, glucocorticoid use, and biologic response [566]. An integrated model incorporating gut microbial genetic variation has enabled accurate prediction of both disease onset and therapeutic response [567]. A machine-learning model integrating pediatric gut microbiota data has been shown to forecast future remission status [568]. Deep-learning approaches have also played a pivotal role in disease-subtype classification and diagnostic assistance. Interpretable deep-learning networks have extracted complex molecular patterns from whole-exome sequencing data, achieving precise IBD-subtype stratification [569]. AI-assisted endoscopic image analysis and histopathological slide evaluation have markedly enhanced the objectivity of activity assessment and the accuracy of relapse-risk prediction [570, 571]. Despite these advances, clinical deployment of AI models remains constrained by uneven data quality, algorithmic bias, and a paucity of large-scale external validation. The European Crohn’s and Colitis Organisation (ECCO) expert panel has issued practical recommendations that underscore the need for methodological rigor during model development and clinical implementation [572]."
+        },
+        {
+          "paragraph_index": 91,
+          "section": "Progress in IBD Precision Medicine",
+          "section_ids": [
+            "Sec21"
+          ],
+          "text": "In real-world clinical settings, the synergistic application of core technologies is progressively resolving pivotal challenges in IBD diagnosis and management. To address therapeutic non-response, combined biomarker prediction, multi-omic network reconstruction, and AI-driven dynamic monitoring have been employed to enable early identification of primary non-responders and patients with secondary loss of response. These integrative insights guide the adoption of optimized regimens, including combination therapy with biologics and immunosuppressants [573], switching to JAK inhibitors(tofacitinib, upadacitinib) [554, 574], or microbiota-directed interventions such as probiotics and fecal microbiota transplantation [575]. In the early-diagnosis arena, a tiered workflow integrating fecal calprotectin screening, intestinal ultrasonography, and AI-assisted endoscopic analysis has effectively reduced diagnostic delay and improved the detection rate of early mucosal lesions [576, 577]. Within personalized therapy, molecular stratification of patients based on multi-omic signatures has enabled precise drug–patient matching and minimized empiric prescribing. When coupled with multidisciplinary collaborative models that incorporate nutritional intervention and psychological support, these approaches further improve therapeutic outcomes (Fig. 5).Fig. 5Evolution from traditional IBD therapy to precision medicine: multi-omics (genomics, metabolomics) and AI-driven predictive models are integrated to identify novel biomarkers beyond CRP and FCP. SynCom and nanomaterial-based delivery systems are being developed to overcome primary and secondary failure, enhance drug specificity, and accelerate next-generation therapeutic strategies including cell therapy. Note: CRP: C-reactive protein; FCP: Fecal calprotectin; Omics: Omics technologies (including genomics, metabolomics); AI: Artificial intelligence; SynCom: Synthetic microbial community. (Figure was created by figdraw.com)"
+        }
+      ]
+    },
+    "access_note": "Springer正式页直接访问返回Client Challenge（HTTP200），未将其当作正文；使用DOI/题名匹配、XML内精确DOI核验的Europe PMC开放全文。"
+  },
+  "j-652a538c84|10.1186/s43556-026-00425-4": {
+    "decision": "include",
+    "rationale": "正式综述的AI-driven drug discovery: predicting resistance and optimizing combinations小节具体评述机器学习识别耐药相关免疫事件、黑色素瘤预后签名及激酶抑制剂组合优化，并讨论偏倚、小样本过拟合和黑箱解释局限；具备实质AI与肿瘤耐药科学问题的对应内容，不是仅列举新技术。",
+    "domain": "life",
+    "labels": [
+      "AI 用于生命科学",
+      "药物反应预测",
+      "生存结局预测"
+    ],
+    "evidence_location": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12976322/#Sec24；Emerging technologies shaping resistance management and future directions / AI-driven drug discovery: predicting resistance and optimizing combinations",
+    "evidence_quote": "Machine learning-based prognostic signatures independently and robustly predict melanoma patient outcome, and algorithm-guided analyses further illustrate the benefit of combining kinase inhibitors with mTOR inhibitors, DNA-damaging agents or HDAC inhibitors [390].",
+    "verified_metadata": {
+      "doi": "10.1186/s43556-026-00425-4",
+      "title": "BRAF inhibitor resistance in melanoma: from resistance mechanisms to therapeutic innovations",
+      "article_type": "review-article",
+      "url": "https://link.springer.com/article/10.1186/s43556-026-00425-4",
+      "pmcid": "PMC12976322",
+      "evidence_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12976322/fullTextXML",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12976322/",
+        "https://link.springer.com/article/10.1186/s43556-026-00425-4"
+      ],
+      "fulltext_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12976322/fullTextXML",
+      "checked_at": "2026-11-18",
+      "identity_verified": true,
+      "abstract": "BRAF inhibitors (BRAFi) have transformed the treatment of BRAF mutant melanoma, but inherent and acquired resistance remains a major barrier to curative outcomes. Resistance arises from interconnected mechanisms: genetic alterations reactivating the MAPK pathway or bypass cascades (e.g., PI3K/AKT/RTK), epigenetic modulation, metabolic reprogramming, and the tumor microenvironment (TME) remodeling. Despite extensive research into these mechanisms, a cohesive framework linking each resistance module to targeted therapeutic strategies is lacking. This review systematically categorizes resistance into intrinsic and acquired subtypes: intrinsic resistance is driven by constitutive molecular traits of BRAF mutant melanoma (e.g., persistent MAPK activation, baseline PI3K/AKT hyperactivity), while acquired resistance emerges via therapeutic pressure-induced genetic mutations, epigenetic shifts, metabolic reprogramming, or TME modifications. For each identified resistance mechanism, we provide a detailed examination of corresponding therapeutic advancements. These encompass the development of next-generation BRAFi, strategically designed combination therapies, epigenetic modulators, immunotherapeutic approaches, and RNA-based therapeutic agents. Furthermore, we underscore the pivotal role of state-of-the-art technologies, such as liquid biopsies, single-cell multi-omics analyses, and artificial intelligence, in facilitating precise resistance monitoring and personalized therapy selection. By integrating these insights, we present a structured, translationally focused framework to guide basic research and clinical decision-making, ultimately advancing precision salvage therapy and trials aimed at preventing or overcoming BRAFi resistance.",
+      "keywords": [
+        "Melanoma",
+        "BRAF inhibitor",
+        "Drug resistance",
+        "Targeted therapy",
+        "Precision medicine"
+      ]
+    },
+    "fulltext_evidence": {
+      "article_type": "review-article",
+      "section": "Emerging technologies shaping resistance management and future directions / AI-driven drug discovery: predicting resistance and optimizing combinations",
+      "paragraph_index": 54,
+      "paragraph_text": "Artificial intelligence (AI) is reshaping anti-cancer drug development by forecasting resistance before it emerges and ranking effective drug pairs within minutes [58, 386, 387]. Machine learning models that mine large-scale omics and literature data rapidly identify next-generation inhibitors and optimal combination strategies for BRAF mutant tumors, offering a powerful platform for precision oncology [388]. For instance, machine learning models can detect specific downregulation events linked to CD8 + T-cell infiltration during tumor drug resistance, offering actionable insights for immune checkpoint inhibitor development [389]. Machine learning-based prognostic signatures independently and robustly predict melanoma patient outcome, and algorithm-guided analyses further illustrate the benefit of combining kinase inhibitors with mTOR inhibitors, DNA-damaging agents or HDAC inhibitors [390]. Although artificial intelligence facilitates daily life, models trained on biased or small datasets frequently yield overfitted predictions that fail across diverse patient cohorts. Their black-box architecture hampers biological interpretation and regulatory validation, thereby restricting clinical translation [391, 392]. AI-driven identification of optimal drug combinations and resistance predictors has accelerated the development of adaptive clinical trial designs, which prioritize real-world data to rapidly translate preclinical insights into patient-centric treatments. Accumulating real-world clinical evidence is therefore essential before AI-based disease and therapeutic predictions can be reliably implemented.",
+      "xml_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12976322/fullTextXML",
+      "doi_and_title_verified": true,
+      "supporting_paragraphs": [
+        {
+          "paragraph_index": 54,
+          "section": "Emerging technologies shaping resistance management and future directions / AI-driven drug discovery: predicting resistance and optimizing combinations",
+          "section_ids": [
+            "Sec21",
+            "Sec24"
+          ],
+          "text": "Artificial intelligence (AI) is reshaping anti-cancer drug development by forecasting resistance before it emerges and ranking effective drug pairs within minutes [58, 386, 387]. Machine learning models that mine large-scale omics and literature data rapidly identify next-generation inhibitors and optimal combination strategies for BRAF mutant tumors, offering a powerful platform for precision oncology [388]. For instance, machine learning models can detect specific downregulation events linked to CD8 + T-cell infiltration during tumor drug resistance, offering actionable insights for immune checkpoint inhibitor development [389]. Machine learning-based prognostic signatures independently and robustly predict melanoma patient outcome, and algorithm-guided analyses further illustrate the benefit of combining kinase inhibitors with mTOR inhibitors, DNA-damaging agents or HDAC inhibitors [390]. Although artificial intelligence facilitates daily life, models trained on biased or small datasets frequently yield overfitted predictions that fail across diverse patient cohorts. Their black-box architecture hampers biological interpretation and regulatory validation, thereby restricting clinical translation [391, 392]. AI-driven identification of optimal drug combinations and resistance predictors has accelerated the development of adaptive clinical trial designs, which prioritize real-world data to rapidly translate preclinical insights into patient-centric treatments. Accumulating real-world clinical evidence is therefore essential before AI-based disease and therapeutic predictions can be reliably implemented."
+        }
+      ]
+    },
+    "access_note": "Springer正式页直接访问返回Client Challenge（HTTP200），未将其当作正文；使用DOI/题名匹配、XML内精确DOI核验的Europe PMC开放全文。"
+  },
+  "j-652a538c84|10.1186/s43556-026-00447-y": {
+    "decision": "include",
+    "rationale": "正式综述。虽然AI专节置于Conclusion and perspectives下，内容并非纯概念：实际评述GNN/多组学定位CAR-T耗竭机制、蛋白组靶点筛选，以及多模态深度学习预测严重CRS（C-index约0.70）和nextNEOpi新抗原排序，并列出相关研究；依据这些已开展研究的技术评述纳入，不将未来闭环系统视为已实现。",
+    "domain": "life",
+    "labels": [
+      "AI 用于生命科学",
+      "图神经网络",
+      "多模态学习",
+      "药物不良反应预测"
+    ],
+    "evidence_location": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13096480/#Sec37；Conclusion and perspectives / Role of artificial intelligence in therapy design and optimization",
+    "evidence_quote": "In prognostic monitoring, early studies demonstrate that multimodal deep learning models (C-index ≈ 0.70) combining histopathological images, ctDNA dynamics, and cytokine profiles can predict the risk of grade ≥ 3 CRS several weeks in advance.",
+    "verified_metadata": {
+      "doi": "10.1186/s43556-026-00447-y",
+      "title": "In vivo CAR-cell therapy: current challenges and emerging therapeutic advances",
+      "article_type": "review-article",
+      "url": "https://link.springer.com/article/10.1186/s43556-026-00447-y",
+      "pmcid": "PMC13096480",
+      "evidence_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13096480/fullTextXML",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13096480/",
+        "https://link.springer.com/article/10.1186/s43556-026-00447-y"
+      ],
+      "fulltext_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13096480/fullTextXML",
+      "checked_at": "2026-11-18",
+      "identity_verified": true,
+      "abstract": "In vivo chimeric antigen receptor (CAR) cell therapy is undergoing a transformative shift from conventional ex vivo manufacturing toward in situ cellular editing, aiming to generate functional CAR-engineered immune cells directly within patients through targeted vector delivery, thereby significantly enhancing therapeutic accessibility and applicability. While rapid advances have been made in both viral (lentiviral and adeno-associated viral vectors) and non-viral (lipid nanoparticle) delivery platforms, along with the expansion of effector cell lineages including CAR-T, CAR-NK, and CAR-M, critical translational bottlenecks remain. These include insufficient delivery precision, limited cellular persistence, immunosuppressive tumor microenvironment (TME) resistance, and challenges in safety controllability. This review systematically examines the working mechanisms and limitations of current delivery platforms for in vivo gene transfer. It provides a comprehensive comparison of how CAR-T, CAR-NK, and CAR-M platforms employ distinct yet complementary strategies to address tumor heterogeneity, solid tumor physical and immune barriers, and the specificity constraints of in situ editing. Furthermore, we highlight emerging frontiers such as artificial intelligence-guided personalized therapy design, smart delivery systems (logic-gated CARs, circular RNA vectors), and the development of multicellular synergistic “synthetic immune systems.” By integrating multidisciplinary perspectives, this review not only offers a comprehensive roadmap bridging fundamental mechanisms to clinical translation but also lays a theoretical and technical foundation for advancing the next generation of safe, precise, and efficacious in vivo CAR therapies.",
+      "keywords": [
+        "In vivo CAR therapy",
+        "Synthetic biology",
+        "Gene editing",
+        "Delivery system",
+        "Artificial intelligence"
+      ]
+    },
+    "fulltext_evidence": {
+      "article_type": "review-article",
+      "section": "Conclusion and perspectives / Role of artificial intelligence in therapy design and optimization",
+      "paragraph_index": 91,
+      "paragraph_text": "In prognostic monitoring, early studies demonstrate that multimodal deep learning models (C-index ≈ 0.70) combining histopathological images, ctDNA dynamics, and cytokine profiles can predict the risk of grade ≥ 3 CRS several weeks in advance. This predictive capacity may support dose adjustment of rapalog-regulated ON-switch CAR therapies [285].",
+      "xml_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13096480/fullTextXML",
+      "doi_and_title_verified": true,
+      "supporting_paragraphs": [
+        {
+          "paragraph_index": 90,
+          "section": "Conclusion and perspectives / Role of artificial intelligence in therapy design and optimization",
+          "section_ids": [
+            "Sec35",
+            "Sec37"
+          ],
+          "text": "At the target discovery stage, integrating multi-omics data with graph neural networks has provided early indications that TIM-3/GAL-9 signaling and cDC1 deficiency may be associated with CAR-T exhaustion. NOT-gated CAR designs informed by these insights have shown increased killing activity in vitro [281]. Similarly, candidate neoantigens such as CDH17 and FAP have been identified through large-scale plasma proteome models involving over 50,000 samples, offering validated leads for expanding the target library of solid-tumor CARs [282–284]."
+        },
+        {
+          "paragraph_index": 91,
+          "section": "Conclusion and perspectives / Role of artificial intelligence in therapy design and optimization",
+          "section_ids": [
+            "Sec35",
+            "Sec37"
+          ],
+          "text": "In prognostic monitoring, early studies demonstrate that multimodal deep learning models (C-index ≈ 0.70) combining histopathological images, ctDNA dynamics, and cytokine profiles can predict the risk of grade ≥ 3 CRS several weeks in advance. This predictive capacity may support dose adjustment of rapalog-regulated ON-switch CAR therapies [285]."
+        },
+        {
+          "paragraph_index": 92,
+          "section": "Conclusion and perspectives / Role of artificial intelligence in therapy design and optimization",
+          "section_ids": [
+            "Sec35",
+            "Sec37"
+          ],
+          "text": "Furthermore, automated pipelines such as “nextNEOpi” use machine learning to continuously rank classical and unconventional neoantigens. When linked with the prognostic scoring systems described above, such tools could enable an iterative framework of “target updating, early risk warning, and dose correction” [286]. Although these approaches still require validation in prospective studies, they outline a testable technological pathway toward scalable, intelligence-driven in vivo CAR therapy."
+        }
+      ]
+    },
+    "access_note": "Springer正式页直接访问返回Client Challenge（HTTP200），未将其当作正文；使用DOI/题名匹配、XML内精确DOI核验的Europe PMC开放全文。"
+  },
+  "j-652a538c84|10.1186/s43556-026-00502-8": {
+    "decision": "include",
+    "rationale": "正式综述。正文Emerging technologies and precision therapy for MDR不只讨论展望，具体评述CancerGPT及PERCEPTION，说明后者以迁移学习融合患者单细胞肿瘤谱与药物筛选库，预测初始疗效和耐药克隆以指导组合策略；AI直接关联肿瘤耐药与治疗反应研究，故纳入实质综述。",
+    "domain": "life",
+    "labels": [
+      "AI 用于生命科学",
+      "药物反应预测",
+      "迁移学习"
+    ],
+    "evidence_location": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13309601/#Sec26；Reversal strategies for tumor MDR / Emerging technologies and precision therapy for MDR",
+    "evidence_quote": "More directly relevant to clinical translation are intelligent computational pipelines such as PERCEPTION, which utilize transfer learning to integrate a patient's unique single-cell tumor profile with extensive drug screening databases.",
+    "verified_metadata": {
+      "doi": "10.1186/s43556-026-00502-8",
+      "title": "Multidrug resistance in cancer: current understandings and future perspective",
+      "article_type": "review-article",
+      "url": "https://link.springer.com/article/10.1186/s43556-026-00502-8",
+      "pmcid": "PMC13309601",
+      "evidence_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13309601/fullTextXML",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13309601/",
+        "https://link.springer.com/article/10.1186/s43556-026-00502-8"
+      ],
+      "fulltext_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13309601/fullTextXML",
+      "checked_at": "2026-11-18",
+      "identity_verified": true,
+      "abstract": "Multidrug resistance (MDR) remains the core clinical barrier limiting the achievement of durable and effective treatment for various tumors. With the deepening of understanding, MDR has been redefined from the traditional, static “drug efflux” model to a systemically adaptive survival strategy driven by highly heterogeneous tumor populations under therapeutic pressure, characterized by dynamic evolution. This complex phenotype arises from the deep intertwining and synergistic action of multi-layered survival networks. Herein, this review systematically delineates the evolution and multidimensional remodeling of the underlying mechanisms of MDR. We comprehensively outline the cell-intrinsic, autonomous resistance mechanisms of tumor cells, including intracellular drug redistribution and evasion of non-apoptotic cell death pathways. Concurrently, we summarize the tumor microenvironment (TME)-mediated, non-autonomous resistance mechanisms, such as physical barriers formed by stromal cells, intercellular communication networks, and the establishment of a profoundly immunosuppressive microenvironment. Building on this foundation, the review critically assesses the current drug resistance dilemmas faced by various therapeutic modalities and refractory cancer types. It focuses on discussing novel, precision reversal strategies targeting MDR, including nanotechnology-based delivery systems, single-cell and spatial omics analysis, and artificial intelligence (AI) large model-driven predictive and interventional systems. Furthermore, this review explores the underlying reasons for the repeated clinical failures of traditional single-target interventions. It outlines a direction for future translational research: a paradigm shift from “singular target killing” to “multidimensional ecological remodeling,” advancing towards a closed-loop, personalized precision therapy framework based on dynamic monitoring and multi-target synergistic intervention. Keywords: Multidrug resistance, Drug Resistance, Tumor microenvironment, Nanomedicine, Clinical translation, Cellular plasticity"
+    },
+    "fulltext_evidence": {
+      "article_type": "review-article",
+      "section": "Reversal strategies for tumor MDR / Emerging technologies and precision therapy for MDR",
+      "paragraph_index": 67,
+      "paragraph_text": "The paradigm for precision therapeutic strategies against tumor MDR is undergoing a profound revolution, driven by the convergence of emerging technologies such as single-cell multi-omics, artificial intelligence (AI), and high-throughput functional screening. Within this revolution, AI and machine learning play a central, integrative role by synthesizing multi-source data to generate predictive and actionable insights. Dedicated computational foundation models, exemplified by tools like CancerGPT which are trained on vast single-cell transcriptomic datasets, provide powerful frameworks for deciphering the complex mechanisms underlying drug resistance [214]. More directly relevant to clinical translation are intelligent computational pipelines such as PERCEPTION, which utilize transfer learning to integrate a patient's unique single-cell tumor profile with extensive drug screening databases. This capability enables the prediction of not only initial therapeutic efficacy but also the potential emergence of resistant clones prior totreatment, offering critical insights for the design of pre-emptive, personalized combination strategies [215]. This predictive power is further augmented through integration with complementary multimodal data—including genomic alterations and histopathological images—which refines patient risk stratification and identifies putative resistance pathways, thereby completing a robust strategic cycle of Prediction​ [216].",
+      "xml_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13309601/fullTextXML",
+      "doi_and_title_verified": true,
+      "supporting_paragraphs": [
+        {
+          "paragraph_index": 67,
+          "section": "Reversal strategies for tumor MDR / Emerging technologies and precision therapy for MDR",
+          "section_ids": [
+            "Sec23",
+            "Sec26"
+          ],
+          "text": "The paradigm for precision therapeutic strategies against tumor MDR is undergoing a profound revolution, driven by the convergence of emerging technologies such as single-cell multi-omics, artificial intelligence (AI), and high-throughput functional screening. Within this revolution, AI and machine learning play a central, integrative role by synthesizing multi-source data to generate predictive and actionable insights. Dedicated computational foundation models, exemplified by tools like CancerGPT which are trained on vast single-cell transcriptomic datasets, provide powerful frameworks for deciphering the complex mechanisms underlying drug resistance [214]. More directly relevant to clinical translation are intelligent computational pipelines such as PERCEPTION, which utilize transfer learning to integrate a patient's unique single-cell tumor profile with extensive drug screening databases. This capability enables the prediction of not only initial therapeutic efficacy but also the potential emergence of resistant clones prior totreatment, offering critical insights for the design of pre-emptive, personalized combination strategies [215]. This predictive power is further augmented through integration with complementary multimodal data—including genomic alterations and histopathological images—which refines patient risk stratification and identifies putative resistance pathways, thereby completing a robust strategic cycle of Prediction​ [216]."
+        }
+      ]
+    },
+    "access_note": "Springer正式页直接访问返回Client Challenge（HTTP200），未将其当作正文；使用DOI/题名匹配、XML内精确DOI核验的Europe PMC开放全文。"
+  },
+  "j-652a538c84|10.1186/s43556-026-00485-6": {
+    "decision": "include",
+    "rationale": "正式综述。在Artificial intelligence and computational modeling in viral oncology专节具体评述CNN/nnU-Net用于HPV相关癌诊断与侵袭识别、PLAN-B梯度提升预测HBV相关肝癌及SMART随机生存森林预测HCV治愈后肝癌，并讨论生物标志物多模态建模局限；有明确已开展的科学AI应用，非仅愿景。",
+    "domain": "life",
+    "labels": [
+      "AI 用于生命科学",
+      "疾病风险预测",
+      "医学影像分割"
+    ],
+    "evidence_location": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13346418/#Sec54；Emerging technologies and research progress / Artificial intelligence and computational modeling in viral oncology",
+    "evidence_quote": "A GBM-based model (PLAN-B) can predict hepatocellular carcinoma risk in chronic HBV carriers [431].",
+    "verified_metadata": {
+      "doi": "10.1186/s43556-026-00485-6",
+      "title": "Virus infections and cancers: from mechanisms to therapeutics",
+      "article_type": "review-article",
+      "url": "https://link.springer.com/article/10.1186/s43556-026-00485-6",
+      "pmcid": "PMC13346418",
+      "evidence_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13346418/fullTextXML",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13346418/",
+        "https://link.springer.com/article/10.1186/s43556-026-00485-6"
+      ],
+      "fulltext_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13346418/fullTextXML",
+      "checked_at": "2026-11-18",
+      "identity_verified": true,
+      "abstract": "Viral infections are a major contributor to global cancer incidence and mortality. However, integrative reviews that connect viral classification, carcinogenic mechanisms, tumor microenvironment remodeling, and translational strategies remain limited. This review summarizes the classification and epidemiological characteristics of major oncogenic viruses, including human papillomavirus (HPV), Epstein-Barr virus (EBV), hepatitis B virus (HBV), hepatitis C virus (HCV), Merkel cell polyomavirus (MCPyV), human T-lymphotropic virus type 1 (HTLV-1), Kaposi’s sarcoma-associated herpesvirus (KSHV), and human immunodeficiency virus (HIV), as well as emerging viruses such as severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). We then discuss the molecular basis of virus-associated carcinogenesis, including viral oncogenes, viral DNA integration, epigenetic remodeling, aberrant host signaling, and metabolic dysregulation. We further examine how chronic inflammation and fibrosis create oncogenic niches within the tumor microenvironment (TME), how viruses promote tumor progression through immune evasion and immune exhaustion, and how infected cells interact with stromal and immune components of the TME. At the preventive and therapeutic levels, we discuss antiviral therapies, vaccines, biomarker-based precision diagnostics, and prognostic strategies, with particular attention to the synergistic potential of emerging therapeutic approaches such as immune checkpoint inhibitors (ICIs), CAR-T therapy, and oncolytic viruses (OVs). Finally, we highlight how multi-omics approaches, single-cell transcriptomics, spatial transcriptomics, organoid models, and artificial intelligence can advance mechanistic studies and translational innovation in virus-associated cancers. Overall, this review provides an integrated framework for understanding, preventing, and treating virus-associated tumorigenesis.",
+      "keywords": [
+        "Carcinogenic viruses",
+        "Tumor microenvironment",
+        "Epigenetics",
+        "Biomarkers",
+        "Precision therapy"
+      ]
+    },
+    "fulltext_evidence": {
+      "article_type": "review-article",
+      "section": "Emerging technologies and research progress / Artificial intelligence and computational modeling in viral oncology",
+      "paragraph_index": 150,
+      "paragraph_text": "For instance, in the context of diagnostic classification, the Roche team employed a CNN model to differentiate between normal and tumor organoids derived from head and neck squamous cell carcinoma [418]. By integrating computed tomography (CT) data, the nnU-Net model enabled automated classification of extranodal invasion in patients with HPV-positive cN + oropharyngeal carcinoma, yielding superior accuracy relative to manual assessment [425]. The YOLOv5 and ST3DCN models have respectively enhanced the efficiency of ultrasound detection for liver lesions and classification of CT nodules [426, 427]. These technological advances provide crucial support for early screening and management of hepatocellular carcinoma. Furthermore, in therapeutic applications, AI-driven drug target screening platforms identified significant upregulation (p < 0.01) of both transcriptional and translational levels of the CACNA2D1 gene in nasopharyngeal carcinoma tissues, suggesting its potential as a therapeutic target [428]. Cryo-electron microscopy (cryoEM) and cryo-electron tomography (cryoET) technologies, combined with AI, successfully resolved the three-dimensional structures of EBV and KSHV particles. This identified unique features of the viral envelope glycoproteins and outer nucleocapsid layers, laying the foundation for studying their mechanisms of human infection [429]. In the field of prognostic prediction, Farzaneh's team employed advanced machine learning models such as support vector machines (SVM) and neural networks (NN) to enhance the accuracy of predicting the severity of HPV-induced cervical intraepithelial neoplasia (CIN) [430]. A GBM-based model (PLAN-B) can predict hepatocellular carcinoma risk in chronic HBV carriers [431]. Additionally, the Nanbo team developed the SMART model using the RSF algorithm to assess hepatocellular carcinoma risk after HCV cure [432]. Collectively, these technologies provide crucial support for early screening, treatment decisions, and personalized medicine.",
+      "xml_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13346418/fullTextXML",
+      "doi_and_title_verified": true,
+      "supporting_paragraphs": [
+        {
+          "paragraph_index": 123,
+          "section": "Therapeutic and preventive strategies / Biomarker discovery, diagnostic, prognostic and predictive implications / Predictive significance of biomarkers",
+          "section_ids": [
+            "Sec36",
+            "Sec40",
+            "Sec44"
+          ],
+          "text": "Established predictive models have identified viral nucleic acids (e.g., HPV DNA, EBV DNA), host oncogenes (e.g., PIK3CA, TP53), immune checkpoint molecules (e.g., PD-L1), and epigenetic features (e.g., DNA methylation) may represent core predictive targets [303–306]. Models constructed using algorithms such as extreme gradient boosting, random forests, and recurrent neural networks not only enable early prediction of lesion progression risk but also enhance predictive efficacy through strategies like ensemble learning [307–309]. However, substantial modeling hurdles remain for certain virus-associated malignancies, particularly those linked to KSHV. Limited follow-up cohort data, high clinical subtype heterogeneity, and lack of standardized biomarker detection platforms hinder the development of high-quality multimodal models. Advancing research in this domain will depend on the adaptation of modeling insights and methodological frameworks derived from other virus-associated tumor types [310–312]."
+        },
+        {
+          "paragraph_index": 149,
+          "section": "Emerging technologies and research progress / Artificial intelligence and computational modeling in viral oncology",
+          "section_ids": [
+            "Sec50",
+            "Sec54"
+          ],
+          "text": "Faced with the challenge of interpreting massive multi-omics, imaging, and clinical data, AI and computational modeling techniques (such as convolutional neural networks (CNN), random survival forests (RSF), and gradient boosting machines (GBM)) have achieved automation and precision in biomarker screening, diagnostic classification, and prognostic assessment by integrating multidimensional data [423, 424]."
+        },
+        {
+          "paragraph_index": 150,
+          "section": "Emerging technologies and research progress / Artificial intelligence and computational modeling in viral oncology",
+          "section_ids": [
+            "Sec50",
+            "Sec54"
+          ],
+          "text": "For instance, in the context of diagnostic classification, the Roche team employed a CNN model to differentiate between normal and tumor organoids derived from head and neck squamous cell carcinoma [418]. By integrating computed tomography (CT) data, the nnU-Net model enabled automated classification of extranodal invasion in patients with HPV-positive cN + oropharyngeal carcinoma, yielding superior accuracy relative to manual assessment [425]. The YOLOv5 and ST3DCN models have respectively enhanced the efficiency of ultrasound detection for liver lesions and classification of CT nodules [426, 427]. These technological advances provide crucial support for early screening and management of hepatocellular carcinoma. Furthermore, in therapeutic applications, AI-driven drug target screening platforms identified significant upregulation (p < 0.01) of both transcriptional and translational levels of the CACNA2D1 gene in nasopharyngeal carcinoma tissues, suggesting its potential as a therapeutic target [428]. Cryo-electron microscopy (cryoEM) and cryo-electron tomography (cryoET) technologies, combined with AI, successfully resolved the three-dimensional structures of EBV and KSHV particles. This identified unique features of the viral envelope glycoproteins and outer nucleocapsid layers, laying the foundation for studying their mechanisms of human infection [429]. In the field of prognostic prediction, Farzaneh's team employed advanced machine learning models such as support vector machines (SVM) and neural networks (NN) to enhance the accuracy of predicting the severity of HPV-induced cervical intraepithelial neoplasia (CIN) [430]. A GBM-based model (PLAN-B) can predict hepatocellular carcinoma risk in chronic HBV carriers [431]. Additionally, the Nanbo team developed the SMART model using the RSF algorithm to assess hepatocellular carcinoma risk after HCV cure [432]. Collectively, these technologies provide crucial support for early screening, treatment decisions, and personalized medicine."
+        }
+      ]
+    },
+    "access_note": "Springer正式页直接访问返回Client Challenge（HTTP200），未将其当作正文；使用DOI/题名匹配、XML内精确DOI核验的Europe PMC开放全文。"
+  },
+  "j-652a538c84|10.1186/s43556-026-00545-x": {
+    "decision": "include",
+    "rationale": "正式综述。正文有AI-driven de novo protein design、AI-driven automated design of artificial gene circuits及载体筛选三类技术章节；表3逐项比较RFdiffusion、ProteinMPNN、BindCraft、基因回路贝叶斯优化和PBPK-ML的原理、科学任务及结果。AI为具体蛋白/回路/递送设计提供实质技术内容，满足AI4S综述纳入标准。",
+    "domain": "life",
+    "labels": [
+      "AI 用于生命科学",
+      "蛋白质设计",
+      "扩散模型",
+      "贝叶斯优化"
+    ],
+    "evidence_location": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13490359/#Sec35；Engineering platforms for therapeutic delivery and control / Artificial intelligence-driven design and optimization of synthetic biology / AI-driven de novo protein design",
+    "evidence_quote": "RFdiffusion generates atomically precise protein three-dimensional structures, meeting antigen-receptor binding requirements [177].",
+    "verified_metadata": {
+      "doi": "10.1186/s43556-026-00545-x",
+      "title": "Applications of synthetic biology in biomedicine",
+      "article_type": "review-article",
+      "url": "https://link.springer.com/article/10.1186/s43556-026-00545-x",
+      "pmcid": "PMC13490359",
+      "evidence_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13490359/fullTextXML",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13490359/",
+        "https://link.springer.com/article/10.1186/s43556-026-00545-x"
+      ],
+      "fulltext_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13490359/fullTextXML",
+      "checked_at": "2026-11-18",
+      "identity_verified": true,
+      "abstract": "Based on the principles of engineering reconstruction and programmable design, synthetic biology is driving a paradigm shift in biomedical diagnosis and therapy from conventional models toward intelligent and precision medicine. By constructing artificial genetic circuits, functional cells, and biomaterial systems both in vitro and in vivo, synthetic biology markedly enhances diagnostic sensitivity, therapeutic targeting, and clinical benefit. In recent years, with the maturation of key technologies such as DNA synthesis and assembly, computational modeling, gene editing, RNA regulation, and protein engineering, synthetic biology has spawned numerous applications with potential for clinical translation in fields such as early screening for pathogens and tumors, programmable cellular immunotherapies, intelligent life-based therapies, and the manufacture of medical biomaterials. Nevertheless, current synthetic biology systems still face critical bottlenecks such as insufficient targeting and editing precision in vivo, poor functional stability of gene circuits, pronounced immunogenicity risks, high manufacturing costs, and lagging ethical and regulatory frameworks. This review systematically summarizes progress in foundational tools and key supporting technologies of synthetic biology, highlights innovative strategies and clinical value in biosensors, cell therapy, living therapeutics, and smart biomaterials, and provides an in‑depth comparison of different chassis cells, delivery vectors, and regulatory circuits in terms of disease suitability, safety, and translational efficiency. The artificial intelligence (AI)-enabled component design, closed-loop intelligent regulation, off‑the‑shelf universal cells, and multimodal theranostic platforms are also discussed. This review offers a systematic framework from technical principles to clinical translation and provides theoretical support and technical guidance for developing next-generation synthetic biology-based diagnostic and therapeutic strategies.",
+      "keywords": [
+        "Synthetic biology",
+        "Biomedicine",
+        "Gene circuit",
+        "Cell therapy",
+        "Clinical translation"
+      ]
+    },
+    "fulltext_evidence": {
+      "article_type": "review-article",
+      "section": "Engineering platforms for therapeutic delivery and control / Artificial intelligence-driven design and optimization of synthetic biology / AI-driven de novo protein design",
+      "paragraph_index": 69,
+      "paragraph_text": "The core functional vehicles of synthetic immunotherapy are proteins, whose spatial conformation and function directly determine therapeutic safety and efficacy. The application of artificial intelligence to structural biology has transformed protein design from a conceptual challenge into a practical approach for creating new-to-nature proteins, freeing it from natural templates [176]. Currently, mainstream AI design tools have formed a complete ecosystem. RFdiffusion generates atomically precise protein three-dimensional structures, meeting antigen-receptor binding requirements [177]. AlphaFold2 accurately predicts protein structures, identifies active sites, and guides modification and optimization [178]. ProteinMPNN designs highly stable and active amino acid sequences based on structure [179]. DiffPepBuilder, based on diffusion models, enables precise construction of target-specific de novo peptide conjugates [180]. These three methods together form a complete technical system for protein design [181].",
+      "xml_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13490359/fullTextXML",
+      "doi_and_title_verified": true,
+      "supporting_paragraphs": [
+        {
+          "paragraph_index": 69,
+          "section": "Engineering platforms for therapeutic delivery and control / Artificial intelligence-driven design and optimization of synthetic biology / AI-driven de novo protein design",
+          "section_ids": [
+            "Sec25",
+            "Sec34",
+            "Sec35"
+          ],
+          "text": "The core functional vehicles of synthetic immunotherapy are proteins, whose spatial conformation and function directly determine therapeutic safety and efficacy. The application of artificial intelligence to structural biology has transformed protein design from a conceptual challenge into a practical approach for creating new-to-nature proteins, freeing it from natural templates [176]. Currently, mainstream AI design tools have formed a complete ecosystem. RFdiffusion generates atomically precise protein three-dimensional structures, meeting antigen-receptor binding requirements [177]. AlphaFold2 accurately predicts protein structures, identifies active sites, and guides modification and optimization [178]. ProteinMPNN designs highly stable and active amino acid sequences based on structure [179]. DiffPepBuilder, based on diffusion models, enables precise construction of target-specific de novo peptide conjugates [180]. These three methods together form a complete technical system for protein design [181]."
+        },
+        {
+          "paragraph_index": 70,
+          "section": "Engineering platforms for therapeutic delivery and control / Artificial intelligence-driven design and optimization of synthetic biology / AI-driven de novo protein design",
+          "section_ids": [
+            "Sec25",
+            "Sec34",
+            "Sec35"
+          ],
+          "text": "AI design tools can assist in the design of high-affinity immune receptors. AI de novo designs CAR/TCR antigen-binding domains, combined with AlphaFold2 optimization, significantly improving binding affinity and specificity, thereby reducing off-target toxicity. Based on the BindCraft framework, one-stop de novo efficient design of functional protein binders can be achieved [182]. Based on deep learning, de novo precise design of cytokine or enzyme mimics, such as IL-2 and IL-15, shows higher activity by optimizing sequence structure, prolonging half-life, enhancing activity, and reducing immunogenicity [144]. An AI-optimized IL-15 variant showed significantly prolonged half-life and enhanced bioactivity. AI-designed Cas9 variants increase specificity, reduce off-target risk, and improve editing efficiency [183]."
+        },
+        {
+          "paragraph_index": 71,
+          "section": "Engineering platforms for therapeutic delivery and control / Artificial intelligence-driven design and optimization of synthetic biology / AI-driven automated design of artificial gene circuits",
+          "section_ids": [
+            "Sec25",
+            "Sec34",
+            "Sec36"
+          ],
+          "text": "Gene circuits are the core of synthetic immunotherapy with high design complexity. AI-driven design achieves full-process of design-screen ADDIN EN.CITE vision and reliability. Current mainstream AI design platforms have been industrially applied. Cello 2.0 automatically designs and virtually verifies gene circuits according to functional requirements, screens optimal designs, and avoids module conflicts [184]. SynBioSuite integrates omics data for more personalized circuit design tailored to individuals. GECCO learns the shape of a performance landscape and iteratively navigate the design space toward an optimal circuit. This strategy allows the joint optimization of both circuit architecture and parameters, and enables parametric sweeps to assess circuit robustness to perturbations [185] (Table 3). Table 3AI-driven design of biomedical synthetic systemsPlatformCore PrincipleApplicationKey InnovationKey ResultRefsRFdiffusionDiffusion Model; RoseTTAFold backboneProtein backbone generation; Binder designFine-tuning structure prediction network for denoisingAtomic-accuracy binders; Diverse symmetric oligomers [177]AlphaFold2Evoformer; Structure ModuleProtein structure predictionEnd-to-end learning; Iterative refinement via recyclingAtomic-accuracy prediction at CASP14; pLDDT confidence metric [178]BindCraftBackpropagation through AF2; HallucinationOne-shot binder design; Functional site targetingTarget flexibility; Integration of MPNNsol optimizationNanomolar affinity binders; 10–100% experimental success rate [182]BayesOpt for CircuitsBayesian OptimizationMultiscale genetic circuit optimizationJoint optimization of integer architecture and continuous parametersRapid convergence; Outperforms genetic algorithm [185]ProteinMPNNMessage-Passing Neural NetworkProtein sequence design; Structure rescueOrder-agnostic autoregressive decoding; Multi-chain couplingHigh solubility & thermostability; Outperforms Rosetta [186]Helical Peptide BindersRFdiffusion (Partial Diffusion); HallucinationPicomolar-affinity peptide binder designBinder design to flexible targets; Partial diffusion for optimizationPicomolar binders; Binder-based biosensor & LC–MS/MS enrichment [187]PBPK-ML Nano-FrameworkPBPK Modeling; Machine LearningIn vitro & in vivo nanotoxicity predictionIntegrating PBPK-derived exposure metrics into ML frameworkHigh PR-AUC & recall; Identified concentration as key toxicity predictor [188]"
+        },
+        {
+          "paragraph_index": 72,
+          "section": "Engineering platforms for therapeutic delivery and control / Artificial intelligence-driven design and optimization of synthetic biology / AI-driven automated design of artificial gene circuits",
+          "section_ids": [
+            "Sec25",
+            "Sec34",
+            "Sec36"
+          ],
+          "text": "Table 3AI-driven design of biomedical synthetic systemsPlatformCore PrincipleApplicationKey InnovationKey ResultRefsRFdiffusionDiffusion Model; RoseTTAFold backboneProtein backbone generation; Binder designFine-tuning structure prediction network for denoisingAtomic-accuracy binders; Diverse symmetric oligomers [177]AlphaFold2Evoformer; Structure ModuleProtein structure predictionEnd-to-end learning; Iterative refinement via recyclingAtomic-accuracy prediction at CASP14; pLDDT confidence metric [178]BindCraftBackpropagation through AF2; HallucinationOne-shot binder design; Functional site targetingTarget flexibility; Integration of MPNNsol optimizationNanomolar affinity binders; 10–100% experimental success rate [182]BayesOpt for CircuitsBayesian OptimizationMultiscale genetic circuit optimizationJoint optimization of integer architecture and continuous parametersRapid convergence; Outperforms genetic algorithm [185]ProteinMPNNMessage-Passing Neural NetworkProtein sequence design; Structure rescueOrder-agnostic autoregressive decoding; Multi-chain couplingHigh solubility & thermostability; Outperforms Rosetta [186]Helical Peptide BindersRFdiffusion (Partial Diffusion); HallucinationPicomolar-affinity peptide binder designBinder design to flexible targets; Partial diffusion for optimizationPicomolar binders; Binder-based biosensor & LC–MS/MS enrichment [187]PBPK-ML Nano-FrameworkPBPK Modeling; Machine LearningIn vitro & in vivo nanotoxicity predictionIntegrating PBPK-derived exposure metrics into ML frameworkHigh PR-AUC & recall; Identified concentration as key toxicity predictor [188]"
+        },
+        {
+          "paragraph_index": 74,
+          "section": "Engineering platforms for therapeutic delivery and control / Artificial intelligence-driven design and optimization of synthetic biology / AI-driven intelligent screening and optimization of delivery vectors",
+          "section_ids": [
+            "Sec25",
+            "Sec34",
+            "Sec37"
+          ],
+          "text": "Delivery vectors directly determine the efficiency and safety of functional component delivery. Traditional methods for optimizing the selection of delivery materials and component ratios rely on manual trial and error and experimental validation with long cycles and low efficiency. AI-driven selection and optimization technologies, based on big data and molecular simulation, enable rapid, accurate optimization screening and individualized adaptation of vectors, sharply increasing research and development (R&D) efficiency [190, 191]."
+        },
+        {
+          "paragraph_index": 75,
+          "section": "Engineering platforms for therapeutic delivery and control / Artificial intelligence-driven design and optimization of synthetic biology / AI-driven intelligent screening and optimization of delivery vectors",
+          "section_ids": [
+            "Sec25",
+            "Sec34",
+            "Sec37"
+          ],
+          "text": "With the aid of AI tools, the advantages, functions, and defects of existing carriers can be systematically organized—a task too enormous for manual screening to accomplish. By mining the structure-performance relationships of different carriers and combining them with molecular simulation-driven optimization, it becomes possible to simulate vector behavior in vivo, identify defects, and optimize composition and surface modifications to improve targeting and stability [188]. Current targeted delivery biocarriers mainly include biomaterial scaffolds, nanocarriers, and viral vectors. AI optimizes biomaterial scaffolds in terms of composition, pore size, and surface modifications to improve encapsulation protection and targeting of immune cells [192]. Meanwhile, AI screens targeted modification molecules on different nanocarriers to enhance tumor penetration and stability [193]. For the selection of viral serotypes, AI optimizes immunogenicity and off-target sites to improve gene delivery accuracy [194]."
+        }
+      ]
+    },
+    "access_note": "Springer正式页直接访问返回Client Challenge（HTTP200），未将其当作正文；使用DOI/题名匹配、XML内精确DOI核验的Europe PMC开放全文。"
+  },
+  "j-652a538c84|10.1186/s43556-026-00586-2": {
+    "decision": "include",
+    "rationale": "正式综述。AI小节虽然位于Conclusion and future perspectives中，但首段实际评述260张标注神经肿瘤切片的PNI检测研究，以及1065例患者的自动CT神经侵犯模型，报告神经/肿瘤识别特异度和肿瘤/血管分割Dice并说明样本局限；据这些已完成的具体诊断研究纳入，不把后文AI多组学机制路线图当作已证实成果。",
+    "domain": "life",
+    "labels": [
+      "AI 用于生命科学",
+      "病理图像分析",
+      "医学影像分割"
+    ],
+    "evidence_location": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13582746/#Sec18；Conclusion and future perspectives / Artificial intelligence and multi-omics integration: advancing PNI diagnosis and mechanistic discovery",
+    "evidence_quote": "Another study involving 1,065 patients developed a fully automated CT-based AI model for extrapancreatic nerve invasion detection and risk stratification [220].",
+    "verified_metadata": {
+      "doi": "10.1186/s43556-026-00586-2",
+      "title": "Decoding neuro-tumor interactions in pancreatic cancer: mechanisms, immunosuppressive networks and therapeutic opportunities",
+      "article_type": "review-article",
+      "url": "https://link.springer.com/article/10.1186/s43556-026-00586-2",
+      "pmcid": "PMC13582746",
+      "evidence_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13582746/fullTextXML",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13582746/",
+        "https://link.springer.com/article/10.1186/s43556-026-00586-2"
+      ],
+      "fulltext_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13582746/fullTextXML",
+      "checked_at": "2026-11-18",
+      "identity_verified": true,
+      "abstract": "Pancreatic cancer is one of the most lethal digestive system malignancies worldwide, characterized by insidious onset, limited early detection approaches and extremely poor long-term prognosis. It comprises multiple histological subtypes, among which pancreatic ductal adenocarcinoma (PDAC) represents the most prevalent exocrine neoplasm and accounts for the vast majority of all pancreatic cancer cases. Perineural invasion (PNI) stands as one of the defining biological hallmarks of PDAC. Detected in 80%–100% of PDAC patients, PNI serves as an independent adverse prognostic factor that drives local recurrence, distant metastasis, and resistance to both chemotherapy and immunotherapy. Historically regarded as a passive route for tumor dissemination, PNI is now recognized as a complex, multicellular process involving bidirectional crosstalk between cancer cells, nerve fibers, stromal cells, and immune components within the tumor microenvironment. This review dissects the molecular mechanisms underlying neuro-tumor interactions and proposes a unified four-stage mechanistic model of PNI, encompassing mutual chemotaxis between tumors and nerves, adhesion and invasion at the tumor-nerve interface, extracellular matrix remodeling, and neural plasticity alterations. Notably, we define the perineural invasion microenvironment as a neuro-immune privileged sanctuary, and delineate its multicellular composition and pathological consequences based on current research advances. Furthermore, we summarize potential therapeutic strategies targeting the neuro-immune-tumor axis and ongoing clinical trials, discuss key translational challenges, and highlight the transformative applications of multi-omics technologies and artificial intelligence in PNI diagnosis, mechanistic discovery, and therapeutic optimization. This work provides a comprehensive theoretical framework for understanding PNI mechanisms and guides future translational research and precision therapy development for pancreatic cancer.",
+      "keywords": [
+        "Pancreatic ductal adenocarcinoma",
+        "Perineural invasion",
+        "Neuro-immune axis",
+        "Therapeutic strategy"
+      ]
+    },
+    "fulltext_evidence": {
+      "article_type": "review-article",
+      "section": "Conclusion and future perspectives / Artificial intelligence and multi-omics integration: advancing PNI diagnosis and mechanistic discovery",
+      "paragraph_index": 68,
+      "paragraph_text": "Currently, AI and deep learning applications in PDAC PNI research primarily focus on diagnostic assistance [217]. Pathological evaluation of PNI requires meticulous examination, as even minute neural infiltration can shift PNI status from negative to positive [8, 218]. AI-assisted diagnostic tools show promise in improving accuracy and efficiency. In one study, a histopathological computational analysis algorithm was trained on 260 manually annotated nerve-tumor images to develop a PDAC PNI detection model, achieving specificities of 78% for nerve detection and 85% for tumor identification [219]. Although limited by small training cohorts and room for specificity improvement, this represents a pioneering effort. Another study involving 1,065 patients developed a fully automated CT-based AI model for extrapancreatic nerve invasion detection and risk stratification [220]. The model demonstrated robust performance in validation cohorts, with mean Dice similarity coefficients of 0.86 for tumor segmentation and 0.81 for vascular mapping. These AI-driven innovations are poised to enhance clinical detection and characterization of PNI in PDAC.",
+      "xml_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13582746/fullTextXML",
+      "doi_and_title_verified": true,
+      "supporting_paragraphs": [
+        {
+          "paragraph_index": 68,
+          "section": "Conclusion and future perspectives / Artificial intelligence and multi-omics integration: advancing PNI diagnosis and mechanistic discovery",
+          "section_ids": [
+            "Sec16",
+            "Sec18"
+          ],
+          "text": "Currently, AI and deep learning applications in PDAC PNI research primarily focus on diagnostic assistance [217]. Pathological evaluation of PNI requires meticulous examination, as even minute neural infiltration can shift PNI status from negative to positive [8, 218]. AI-assisted diagnostic tools show promise in improving accuracy and efficiency. In one study, a histopathological computational analysis algorithm was trained on 260 manually annotated nerve-tumor images to develop a PDAC PNI detection model, achieving specificities of 78% for nerve detection and 85% for tumor identification [219]. Although limited by small training cohorts and room for specificity improvement, this represents a pioneering effort. Another study involving 1,065 patients developed a fully automated CT-based AI model for extrapancreatic nerve invasion detection and risk stratification [220]. The model demonstrated robust performance in validation cohorts, with mean Dice similarity coefficients of 0.86 for tumor segmentation and 0.81 for vascular mapping. These AI-driven innovations are poised to enhance clinical detection and characterization of PNI in PDAC."
+        },
+        {
+          "paragraph_index": 73,
+          "section": "Conclusion and future perspectives / Artificial intelligence and multi-omics integration: advancing PNI diagnosis and mechanistic discovery / Critical challenges / Scarcity of standardized multimodal PNI datasets",
+          "section_ids": [
+            "Sec16",
+            "Sec18",
+            "Sec20",
+            "FPar4"
+          ],
+          "text": "Scarcity of standardized multimodal PNI datasets represents the foremost bottleneck limiting the clinical translation of AI-multi-omics approaches. There is a critical lack of large, multi-center datasets that integrate matched histopathological, radiological, and multi-omics data from well-annotated PNI-positive PDAC specimens. Most existing datasets are small, single-center, and lack standardized acquisition protocols, limiting the generalizability of trained AI models."
+        },
+        {
+          "paragraph_index": 74,
+          "section": "Conclusion and future perspectives / Artificial intelligence and multi-omics integration: advancing PNI diagnosis and mechanistic discovery / Critical challenges / Biological interpretability gap of black-box models",
+          "section_ids": [
+            "Sec16",
+            "Sec18",
+            "Sec20",
+            "FPar5"
+          ],
+          "text": "Biological interpretability gap constitutes a second fundamental challenge. Current AI models often function as \"black boxes,\" generating predictions that cannot be easily linked to underlying biological mechanisms. This is particularly problematic in PNI research, where understanding the causal relationships between molecular alterations and phenotypic outcomes is essential for therapeutic development."
+        }
+      ]
+    },
+    "access_note": "Springer正式页直接访问返回Client Challenge（HTTP200），未将其当作正文；使用DOI/题名匹配、XML内精确DOI核验的Europe PMC开放全文。"
+  },
+  "j-652a538c84|10.1186/s43556-026-00600-7": {
+    "decision": "include",
+    "rationale": "正式综述。正文不仅提出未来AI优化，已具体评述RNA降解深度学习预测、LinearDesign序列设计及其免疫原性结果、AGILE深度学习加组合化学设计可离子化脂质，以及LightGBM/GNN/Transformer预测LNP性质并经实验筛选高性能分子；具有明确科学对象、AI技术和验证证据的实质综述。",
+    "domain": "life",
+    "labels": [
+      "AI 用于生命科学",
+      "RNA设计",
+      "核酸递送脂质设计"
+    ],
+    "evidence_location": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13620059/#Sec34；Future prospects and emerging innovations / AI-enabled and high-throughput approaches for antigen discovery and vector optimization / Combinatorial chemistry meets AI",
+    "evidence_quote": "The AGILE (AI-Guided Ionizable Lipid Engineering) platform further integrates deep learning with combinatorial chemistry to rapidly predict properties and tailor designs to specific cell types.",
+    "verified_metadata": {
+      "doi": "10.1186/s43556-026-00600-7",
+      "title": "mRNA lipid nanoparticle vaccines: current status, challenges and future prospects",
+      "article_type": "review-article",
+      "url": "https://link.springer.com/article/10.1186/s43556-026-00600-7",
+      "pmcid": "PMC13620059",
+      "evidence_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13620059/fullTextXML",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13620059/",
+        "https://link.springer.com/article/10.1186/s43556-026-00600-7"
+      ],
+      "fulltext_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13620059/fullTextXML",
+      "checked_at": "2026-11-18",
+      "identity_verified": true,
+      "abstract": "mRNA vaccines have become a clinically validated vaccine platform, as demonstrated by the success of COVID-19 vaccines such as Comirnaty and Spikevax, owing to their rapid design, manufacturing scalability, and capacity to induce in situ antigen expression. A key factor underlying this success is the lipid nanoparticle (LNP) delivery system, which protects mRNA from degradation and promotes efficient cellular uptake and cytoplasmic delivery, thereby enabling the full potential of mRNA technology. The continued advancement of mRNA-LNP vaccines requires integrated optimization of mRNA design, LNP composition, and delivery strategies to achieve improved stability, efficient intracellular delivery, and balanced immune responses. Despite remarkable progress, challenges related to formulation stability, long-term storage stability, safety and reactogenicity concerns, and durability of immune protection continue to hinder the broader application of mRNA-LNP vaccine platforms. This review provides an integrated overview of recent advances in mRNA-LNP vaccines, covering mRNA molecular engineering, LNP composition and delivery mechanisms, immune responses, clinical progress, and current developmental challenges. Furthermore, emerging strategies, including thermostable formulations, next-generation LNPs with improved targeting capability, emerging RNA platforms, and artificial intelligence-assisted optimization of RNA sequences and lipid materials, are discussed. By summarizing current achievements and future opportunities, this review highlights key principles guiding the rational design of safer, more stable, and more precise mRNA-LNP vaccine platforms and provides insights into accelerating their clinical translation. Keywords: MRNA vaccines, Lipid nanoparticles, Stability, AI-assisted design, Thermostable formulations, Infectious diseases, Cancer immunotherapy"
+    },
+    "fulltext_evidence": {
+      "article_type": "review-article",
+      "section": "Future prospects and emerging innovations / AI-enabled and high-throughput approaches for antigen discovery and vector optimization / Combinatorial chemistry meets AI",
+      "paragraph_index": 94,
+      "paragraph_text": "High-throughput combinatorial platforms established in 2023 enabled the synthesis and screening of biodegradable ionizable-lipid libraries (e.g., 3-component reactions) for inhalable mRNA and CRISPR–Cas9 delivery [246]. In 2024, an improved 4-component reaction toolkit identified lipid surpassing DLin-MC3-DMA in transfection across multiple tissues and immune cell types [247]. The AGILE (AI-Guided Ionizable Lipid Engineering) platform further integrates deep learning with combinatorial chemistry to rapidly predict properties and tailor designs to specific cell types. Complementary efforts employing LightGBM and other models have screened tens of millions of candidates to discover high-performance lipids. Using AI tools like graph neural networks and Transformer-based predictors, researchers now accurately estimate key LNP parameters (e.g., pKa, transfection efficiency) and, more critically, design novel ionizable lipids. These lipids surpass DLin-MC3-DMA in function and show translatable pulmonary delivery across species [200].",
+      "xml_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13620059/fullTextXML",
+      "doi_and_title_verified": true,
+      "supporting_paragraphs": [
+        {
+          "paragraph_index": 86,
+          "section": "Future prospects and emerging innovations / Optimization of mRNA sequence engineering and delivery platforms",
+          "section_ids": [
+            "Sec26",
+            "Sec27"
+          ],
+          "text": "Artificial intelligence is opening new avenues for rational and automated mRNA design. Wayment-Steele et al. crowdsourced AI models to predict RNA degradation rates, highlighting deep learning’s potential for stabilizing RNA [238]. Leppek et al. developed the In-line-seq platform to map sequence–structure rules that minimize hydrolytic cleavage, thereby improving mRNA stability and translational efficiency. Zhang et al. introduced the AI design algorithm LinearDesign, which markedly enhanced immunogenicity of mRNA vaccines against COVID-19 and varicella-zoster virus (VZV), with up to 128-fold higher neutralizing titers in mice [239]. Further studies demonstrated that optimizing mRNA structural features can regulate functional half-life and protein expression, providing additional principles for the rational engineering of next-generation mRNA vaccines [240]."
+        },
+        {
+          "paragraph_index": 93,
+          "section": "Future prospects and emerging innovations / AI-enabled and high-throughput approaches for antigen discovery and vector optimization / AI-enabled antigen and vector design",
+          "section_ids": [
+            "Sec26",
+            "Sec32",
+            "Sec33"
+          ],
+          "text": "AI has become a central driver of antigen identification and structural optimization. Structure-prediction tools exemplified by AlphaFold improve our understanding of antigen 3D conformations and immune recognition, supporting epitope selection and immunogenicity prediction [244]. In practice, Moderna and BioNTech have deployed machine-learning models end-to-end—mining viral sequence space to prioritize immunogenic regions, shorten design cycles, and broaden coverage. Platforms such as Vaxign-ML and deep-learning epitope predictors are expanding target discovery for influenza, HIV, and other viruses [245]."
+        },
+        {
+          "paragraph_index": 94,
+          "section": "Future prospects and emerging innovations / AI-enabled and high-throughput approaches for antigen discovery and vector optimization / Combinatorial chemistry meets AI",
+          "section_ids": [
+            "Sec26",
+            "Sec32",
+            "Sec34"
+          ],
+          "text": "High-throughput combinatorial platforms established in 2023 enabled the synthesis and screening of biodegradable ionizable-lipid libraries (e.g., 3-component reactions) for inhalable mRNA and CRISPR–Cas9 delivery [246]. In 2024, an improved 4-component reaction toolkit identified lipid surpassing DLin-MC3-DMA in transfection across multiple tissues and immune cell types [247]. The AGILE (AI-Guided Ionizable Lipid Engineering) platform further integrates deep learning with combinatorial chemistry to rapidly predict properties and tailor designs to specific cell types. Complementary efforts employing LightGBM and other models have screened tens of millions of candidates to discover high-performance lipids. Using AI tools like graph neural networks and Transformer-based predictors, researchers now accurately estimate key LNP parameters (e.g., pKa, transfection efficiency) and, more critically, design novel ionizable lipids. These lipids surpass DLin-MC3-DMA in function and show translatable pulmonary delivery across species [200]."
+        },
+        {
+          "paragraph_index": 96,
+          "section": "Future prospects and emerging innovations / AI-enabled and high-throughput approaches for antigen discovery and vector optimization / Multimodal modeling and experimental surrogates",
+          "section_ids": [
+            "Sec26",
+            "Sec32",
+            "Sec35"
+          ],
+          "text": "Computer-aided design (CAD) integrated with AI is reshaping LNP formulation paradigms in vast, intertwined chemical spaces by linking molecular features to performance for rapid triage and rational optimization. ANN- and DOE-based frameworks have yielded efficient mRNA-LNP vaccines, and machine-learning models have predicted in vivo delivery efficiency for siRNA–LNPs. AGILE-like platforms identify experimentally validated, high-performance molecules from thousands of candidates, enabling customized targeting strategies. Going forward, open, high-quality datasets and multimodal training frameworks will be pivotal to fully realize AI’s potential across antigen discovery, lipid generation, and organ-level targeting."
+        }
+      ]
+    },
+    "access_note": "Springer正式页直接访问返回Client Challenge（HTTP200），未将其当作正文；使用DOI/题名匹配、XML内精确DOI核验的Europe PMC开放全文。"
+  },
+  "j-652a538c84|10.1186/s43556-026-00610-5": {
+    "decision": "include",
+    "rationale": "正式综述。Application potential of artificial intelligence in digital pathology diagnosis of tuberculosis及Clinical implementation of AI in diagnosis and treatment两节详细讨论U-Net分割、Faster-RCNN抗酸杆菌检测、MobileNetV3/ViT胸片诊断、基因组CNN耐药预测及实际临床部署，并报告训练数据、染色偏差和跨中心解释局限。AI为已开展研究的实质技术评述，不是只在结尾建议；致谢中未使用AI工具指稿件制作，不影响其综述AI研究的内容属性。",
+    "domain": "life",
+    "labels": [
+      "AI 用于生命科学",
+      "感染诊断",
+      "抗生素耐药预测",
+      "卷积神经网络"
+    ],
+    "evidence_location": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13653915/#Sec30；Innovative interventions and delivery technologies / Precision medicine strategies / Clinical implementation of AI in diagnosis and treatment",
+    "evidence_quote": "Deep learning convolutional neural networks (CNNs) have been used to predict TB drug resistance and susceptibility based on genomic data [283].",
+    "verified_metadata": {
+      "doi": "10.1186/s43556-026-00610-5",
+      "title": "Recent advances in antituberculosis drugs and therapeutics: from mechanistic breakthroughs to clinical translation",
+      "article_type": "review-article",
+      "url": "https://link.springer.com/article/10.1186/s43556-026-00610-5",
+      "pmcid": "PMC13653915",
+      "evidence_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13653915/fullTextXML",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13653915/",
+        "https://link.springer.com/article/10.1186/s43556-026-00610-5"
+      ],
+      "fulltext_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13653915/fullTextXML",
+      "checked_at": "2026-11-18",
+      "identity_verified": true,
+      "abstract": "Tuberculosis (TB), caused by Mycobacterium tuberculosis, reclaimed its status as the deadliest single-pathogen infectious disease globally in 2023, accounting for 10.8 million new cases and 1.25 million deaths in 2023. The escalating crisis of drug-resistant TB, suboptimal BCG vaccine efficacy in adults, and persistent treatment gaps for vulnerable populations collectively drive an urgent shift toward mechanism-driven, precision-oriented therapeutic strategies.This review presents a critically integrated appraisal of anti-TB research advances spanning 2020 to 2025, drawing on structural biology, multi-omics, and real-world clinical evidence. It distinguishes itself from conventional descriptive literature compilations through systematic cross-population efficacy comparisons, in-depth dissection of translational bottlenecks, and explicit maturity stratification of emerging biotherapies. We synthesize progress across six interconnected domains: mechanistic insights into drug targets and spatiotemporal resistance evolution, novel short-course therapeutic regimens, precision medicine strategies, host-directed therapies, targeted delivery systems for extrapulmonary TB, and next-generation vaccine development. Three transformative breakthroughs are particularly highlighted: structural biology-guided rational drug design, spatial immune profiling of tuberculous granulomas, and AI-assisted diagnostic pipelines.We conclude by delineating priority research directions aligned with the WHO End TB Strategy, providing a translational roadmap to advance global TB elimination efforts. This rigorous, multi-dimensional synthesis offers an authoritative reference for advancing basic and translational anti-TB research and informing global public health strategy. Keywords: Mycobacterium tuberculosis, Drug-resistant tuberculosis, Anti-TB drugs, Vaccine development, Global TB control"
+    },
+    "fulltext_evidence": {
+      "article_type": "review-article",
+      "section": "Innovative interventions and delivery technologies / Precision medicine strategies / Clinical implementation of AI in diagnosis and treatment",
+      "paragraph_index": 106,
+      "paragraph_text": "Deep learning convolutional neural networks (CNNs) have been used to predict TB drug resistance and susceptibility based on genomic data [283]. A TB/non-TB detection and drug resistance classification diagnostic decision support system (TB-DRC-DSS) has been developed, which can detect TB, classify drug-resistant strains, and provide treatment recommendations [284]. Data-driven methods, especially machine learning models, have been used to automatically recommend personalized treatment regimens for refractory TB [285]. AI technology has also shown potential in predicting the treatment duration, adverse reactions, treatment outcomes, and drug resistance of antituberculosis treatment (ATT) [286].",
+      "xml_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13653915/fullTextXML",
+      "doi_and_title_verified": true,
+      "supporting_paragraphs": [
+        {
+          "paragraph_index": 99,
+          "section": "Innovative interventions and delivery technologies / Precision medicine strategies / Personalized regimens for special populations / Application potential of artificial intelligence in digital pathology diagnosis of tuberculosis",
+          "section_ids": [
+            "Sec24",
+            "Sec25",
+            "Sec28",
+            "FPar4"
+          ],
+          "text": "The application of artificial intelligence in digital pathology diagnosis of tuberculosis is undergoing a critical transitional phase from theoretical exploration to clinical practicality. Its core potential lies in the integration of whole-slide imaging technology with deep learning algorithms to address global challenges inherent in conventional microscopic examination—including high subjectivity, time-consuming procedures, and scarcity of expert resources [254, 255]. Tuberculosis, one of the world's leading infectious causes of death, relies on direct or indirect detection of Mycobacterium tuberculosis for definitive diagnosis. Digital pathology, by converting physical optical signals into quantifiable digital data, provides a high-fidelity analytical foundation for AI algorithms [256, 257]. Recent studies have demonstrated that hybrid approaches combining attention-mechanism residual U-Net segmentation with ensemble classification can significantly improve the accuracy of automated diagnosis, exhibiting superior performance particularly when processing complex histomorphological features [258]. This technology extends beyond pulmonary tuberculosis to complex cases involving multi-organ involvement such as lymph nodes and bone, further enhancing diagnostic robustness through multimodal data fusion [259, 260]."
+        },
+        {
+          "paragraph_index": 100,
+          "section": "Innovative interventions and delivery technologies / Precision medicine strategies / Personalized regimens for special populations / Application potential of artificial intelligence in digital pathology diagnosis of tuberculosis",
+          "section_ids": [
+            "Sec24",
+            "Sec25",
+            "Sec28",
+            "FPar4"
+          ],
+          "text": "At the microscopic level, AI-driven analysis of Ziehl–Neelsen (ZN) stained images has emerged as a breakthrough point for improving the sensitivity of smear microscopy. Conventional ZN-stained smear screening relies on experienced microbiologists to manually identify minute acid-fast bacilli, a process highly prone to missed or misdiagnosed cases due to visual fatigue [261, 262]. By constructing large-scale training datasets comprising millions of positive and negative sample patches, AI models can automatically identify and localize mycobacteria in tissue sections with detection efficiency far exceeding human levels 1. For example, an AI development study for ZN-stained tissue sections, trained on over 260,000 positive patches and 700 million negative patches, significantly improved detection rates in samples with low bacterial load [254]. Furthermore, multivariant digital ZN staining analysis based on object detection algorithms such as Faster RCNN effectively addresses inconsistencies in color intensity caused by uneven staining thickness, making automated screening feasible in resource-limited settings [263]. Such automated systems not only reduce human error rates but also provide objective evidence for subsequent treatment decisions through standardized output results [264]."
+        },
+        {
+          "paragraph_index": 101,
+          "section": "Innovative interventions and delivery technologies / Precision medicine strategies / Personalized regimens for special populations / Application potential of artificial intelligence in digital pathology diagnosis of tuberculosis",
+          "section_ids": [
+            "Sec24",
+            "Sec25",
+            "Sec28",
+            "FPar4"
+          ],
+          "text": "The integration of digital pathology and AI has also profoundly transformed predictive paradigms for tuberculosis drug resistance. Conventional drug susceptibility testing is time-consuming, whereas deep learning-based approaches can predict drug sensitivity in advance by analyzing subtle morphological differences in chest CT or pathological images [265]. Studies have shown that using transfer learning approaches, AI models can extract implicit features associated with drug resistance from routine imaging data, thereby enabling rapid subtyping of multidrug-resistant tuberculosis [266, 267]. This capability is critical for developing personalized treatment regimens; particularly against the backdrop of increasing drug-resistant strains, AI-assisted diagnosis can shorten the diagnostic time window and reduce the physiological, social, and economic burdens of ineffective treatment [268, 269]. Concurrently, multimodal AI models integrating genomic data with clinical parameters have further improved predictive precision, laying the foundation for precision medicine applications in tuberculosis prevention and control [270, 271]."
+        },
+        {
+          "paragraph_index": 102,
+          "section": "Innovative interventions and delivery technologies / Precision medicine strategies / Personalized regimens for special populations / Application potential of artificial intelligence in digital pathology diagnosis of tuberculosis",
+          "section_ids": [
+            "Sec24",
+            "Sec25",
+            "Sec28",
+            "FPar4"
+          ],
+          "text": "Nevertheless, the comprehensive deployment of AI in digital pathology diagnosis faces numerous challenges, among which data standardization and model interpretability represent two core bottlenecks. Staining batch effects across different laboratories may cause shifts in image feature distributions, severely compromising model generalizability [272]. Although various stain normalization methods have been proposed, the achievement of cross-center data consistency in real clinical environments requires further validation [272]. Furthermore, the lack of transparency in \"black box\" models often undermines clinicians' trust in AI decisions, making the introduction of explainable artificial intelligence (XAI) technologies particularly urgent [273, 274]. By visualizing algorithm-attention regions and providing clear decision rationale, XAI not only enhances clinician-patient trust but also facilitates the discovery of potential biological markers, thereby advancing pathological knowledge [273]."
+        },
+        {
+          "paragraph_index": 103,
+          "section": "Innovative interventions and delivery technologies / Precision medicine strategies / Clinical implementation of AI in diagnosis and treatment",
+          "section_ids": [
+            "Sec24",
+            "Sec25",
+            "Sec30"
+          ],
+          "text": "In the image acquisition and reconstruction stage of the MRI diagnostic pathway, AI can be used for noise reduction and artifact removal to improve image clarity [275]. A cascaded model based on incremental learning (ILCM) has been proposed to detect and locate TB lesions from chest X-ray images, and achieve precise localization of lesions through the Faster-RCNN (F-RCNN) algorithm [276]. For TB, AI can analyze subtle patterns in X-ray images to identify pneumonia or other lung abnormalities caused by Mycobacterium tuberculosis, improving the reliability of diagnosis [270, 277]. A robust TB diagnosis method combining Vision Transformer and principal component analysis (PCA) has achieved high-accuracy diagnosis through chest X-ray images [278]. XAI (Explainable AI) can help doctors understand the basis for specific diagnoses made by AI models, thereby enhancing doctors' trust in AI systems and promoting their clinical implementation [274, 279]."
+        },
+        {
+          "paragraph_index": 106,
+          "section": "Innovative interventions and delivery technologies / Precision medicine strategies / Clinical implementation of AI in diagnosis and treatment",
+          "section_ids": [
+            "Sec24",
+            "Sec25",
+            "Sec30"
+          ],
+          "text": "Deep learning convolutional neural networks (CNNs) have been used to predict TB drug resistance and susceptibility based on genomic data [283]. A TB/non-TB detection and drug resistance classification diagnostic decision support system (TB-DRC-DSS) has been developed, which can detect TB, classify drug-resistant strains, and provide treatment recommendations [284]. Data-driven methods, especially machine learning models, have been used to automatically recommend personalized treatment regimens for refractory TB [285]. AI technology has also shown potential in predicting the treatment duration, adverse reactions, treatment outcomes, and drug resistance of antituberculosis treatment (ATT) [286]."
+        }
+      ]
+    },
+    "access_note": "Springer正式页直接访问返回Client Challenge（HTTP200），未将其当作正文；使用DOI/题名匹配、XML内精确DOI核验的Europe PMC开放全文。"
+  }
+}
