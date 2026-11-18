@@ -98171,10 +98171,34 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "深度学习融合电池领域知识恢复退役电池容量标签，在96块真实电池上验证，支持健康退化数据集构建。",
+      "verified_metadata": {
+        "abstract": "Accurate diagnosis of the health degradation of retired batteries is crucial for ensuring their safe and reliable reuse. While machine learning offers promising solutions, training models to overcome the high heterogeneity of retired batteries requires massive degradation data, leading to high testing costs and substantial energy waste. Here, we reveal the potential to recover large-scale and high-quality second-life battery datasets from field data to assist in diagnosing the health of retired batteries. By seamlessly fusing deep learning and domain knowledge, we enabled the accurate recovery of capacity labels for operating data without regular fully charging or discharging calibrations. To validate the proposed method, we develop a large-scale degradation test on 96 realistic retired batteries, performing over 50,000 charge/discharge cycles to simulate different stationary energy storage scenarios with 24 charge-discharge intervals. With only 3 capacity measurements available over the second-life, the proposed method accurately recovers the capacity labels with a root mean square error below 30 mAh. Furthermore, the health diagnostic model trained on regenerated dataset is comparable to the model trained on real data, with an almost negligible error of less than 5 mAh. More importantly, we expect to save at least 98% of test time, electricity and energy consumption to generate datasets cost-effectively. This study highlights the potential of field data to bridge the critical data gap in diagnosing the health degradation of retired batteries.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2405829726000802?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2405829726000802?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "深度学习融合电池领域知识恢复退役电池容量标签，在96块真实电池上验证，支持健康退化数据集构建。"
+        },
+        {
+          "axis": "contribution",
+          "label": "科学数据",
+          "label_en": "Scientific data",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "深度学习融合电池领域知识恢复退役电池容量标签，在96块真实电池上验证，支持健康退化数据集构建。"
+        }
+      ]
     }
   },
   {
@@ -98249,10 +98273,34 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "分子指纹神经网络预测电解液库仑效率，并据解释结果设计经电化学实验验证的电解液。",
+      "verified_metadata": {
+        "abstract": "Rational electrolyte design is essential for enhancing the Coulombic efficiency (CE) and interfacial stability of lithium metal batteries. However, current molecular representations limited in their description of molecular connectivity and lacking substructure frequency information constrain the development of accurate and interpretable AI models. This paper introduces an interpretable AI framework to predict CE using an enhanced extended-connectivity fingerprint representation that integrates molecular type, substructure frequency, and concentration weighting. A dataset of 168 CE values from Li–Cu half–cells was used to train a deep neural network, which outperformed conventional methods in predictive accuracy. SHapley Additive exPlanations analysis identified fluorine-containing and cyclic ether motifs as key structural features for high CE. Accordingly, a fluorine-rich, cyclic-ether-based electrolyte (1 M lithium bis(fluorosulfonyl)imide in methyltetrahydrofuran and 1,1,2,2-tetrafluoroethyl 2,2,3,3-tetrafluoropropyl ether (1:3 v/v)) achieved a CE of 99.72% in Li–Cu cells and excellent cycling stability in lithium–lithium iron phosphate full cells. This framework can facilitate AI-based molecular design for electrochemical energy storage and conversion.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2405829726001054?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2405829726001054?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "分子指纹神经网络预测电解液库仑效率，并据解释结果设计经电化学实验验证的电解液。"
+        },
+        {
+          "axis": "task",
+          "label": "逆向设计",
+          "label_en": "Inverse design",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "分子指纹神经网络预测电解液库仑效率，并据解释结果设计经电化学实验验证的电解液。"
+        }
+      ]
     }
   },
   {
@@ -98330,10 +98378,41 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "领域适配大语言模型估计动力电池健康状态，结合充电时序和不确定性校正，在实车及拆解容量测试验证。",
+      "verified_metadata": {
+        "abstract": "Accurate state of health (SOH) estimation for electric vehicle traction batteries is critical for safety and reliability, yet real-world operation exhibits nonlinear aging and pronounced distribution shifts across vehicles. Large language models (LLMs) offer transferable priors that can improve sample efficiency. However, they are pretrained on discrete text, creating a representation gap for continuous, physically constrained battery signals, and their generative inference may yield physically inconsistent numerical outputs. This work proposes a battery domain knowledge-enhanced health awareness LLM framework (HA-LLM). HA-LLM aligns resampled charging current sequences with the LLM embedding space via heterogeneous modal semantic alignment, enabling physically consistent representations. It also injects battery degradation priors via information-bottleneck-inspired prefix adaptation, enabling domain adaptation while retaining the pretrained backbone’s general reasoning ability. To mitigate hallucination risk, an uncertainty-aware module estimates predictive uncertainty via Monte Carlo sampling and triggers selective substitution with a physics-consistent estimator. The framework is validated using one-year field vehicle data from 100 production vehicles on a vehicle-cloud platform and an independent battery teardown and bench capacity calibration on an unseen vehicle model. HA-LLM consistently outperforms strong baselines and remains robust in few-shot and zero-shot evaluations that stress cross-vehicle generalization.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2405829726001169?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2405829726001169?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "领域适配大语言模型估计动力电池健康状态，结合充电时序和不确定性校正，在实车及拆解容量测试验证。"
+        },
+        {
+          "axis": "method",
+          "label": "多模态学习",
+          "label_en": "Multimodal learning",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "领域适配大语言模型估计动力电池健康状态，结合充电时序和不确定性校正，在实车及拆解容量测试验证。"
+        },
+        {
+          "axis": "method",
+          "label": "不确定性量化",
+          "label_en": "Uncertainty quantification",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "领域适配大语言模型估计动力电池健康状态，结合充电时序和不确定性校正，在实车及拆解容量测试验证。"
+        }
+      ]
     }
   },
   {
@@ -98419,10 +98498,34 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "机器学习原子势与无监督结构分析揭示硬碳中的钠扩散模式及结构输运关系。",
+      "verified_metadata": {
+        "abstract": "Sodium-ion batteries are a cost-effective, sustainable alternative to lithium-ion systems for large-scale energy storage. However, optimizing sodium storage in carbon-based anodes with microstructural complexity and atomic disorder remains a major challenge. The intrinsic inhomogeneity of these materials produces diverse local environments, making it difficult for conventional methods to predict and control ion dynamics. Hard carbon (HC) anodes, composed of ranges of ordered-to-disordered graphitic and amorphous nanodomains, offer tunable ion storage and rate capacity, yet rationale design remains a challenge due to poorly understood correlation between local atomic feature and ion transport mechanism. To address this challenge, we introduce a data-driven framework that integrates validated machine-learned interatomic potentials, large-scale molecular dynamics simulations, and machine learning to elucidate sodium transport mechanisms as a function of carbon and sodium loading densities. By computing per-ion structural descriptors and applying unsupervised learning, we identify distinct diffusion modes governed by microscopic features. Supervised analysis and correlation mapping then establish quantitative links between these transport regimes and processing variables such as bulk carbon density and sodium content. This physics-informed approach establishes quantitative structure–transport relationships and offers actionable design principles for engineering high-performance HC anodes.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2405829726001005?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2405829726001005?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "机器学习原子势与无监督结构分析揭示硬碳中的钠扩散模式及结构输运关系。"
+        },
+        {
+          "axis": "method",
+          "label": "神经网络势能",
+          "label_en": "Neural network potential",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "机器学习原子势与无监督结构分析揭示硬碳中的钠扩散模式及结构输运关系。"
+        }
+      ]
     }
   },
   {
@@ -98502,10 +98605,25 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "双分支神经网络代理离散元模型，并反演电极辊压颗粒破裂参数，分析微结构与传输性能。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "双分支神经网络代理离散元模型，并反演电极辊压颗粒破裂参数，分析微结构与传输性能。"
+        },
+        {
+          "axis": "task",
+          "label": "反问题",
+          "label_en": "Inverse problem",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "双分支神经网络代理离散元模型，并反演电极辊压颗粒破裂参数，分析微结构与传输性能。"
+        }
+      ]
     }
   },
   {
@@ -98592,10 +98710,41 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "物理信息专家网络解耦电池退化过程并估计健康状态，验证跨电极和工况迁移能力。",
+      "verified_metadata": {
+        "abstract": "Accurate estimation of the State of Health (SOH) for lithium-ion batteries is crucial for extending service life and mitigating safety risks. However, the prevailing data-driven approaches for SOH estimation regard the internal degradation mechanisms as a black box, resulting in significant challenges such as high data requirements for complex physical models, limited model transferability, and poor electrochemical interpretability. To address these challenges with precision and comprehensiveness, we propose a hybrid experts-decoupled and physics-informed neural network (HyED-PINN), which decouples the degradation behavior and different physical fields. The HyED-PINN leverages expert models for different physical fields to extract electrochemical quantities, and employs physics-informed loss functions to train and recouple the related quantities for accurate SOH estimation. Notably, the sufficient transferability of HyED-PINN is validated by the combination of diverse datasets (electrode types, charge/discharge protocols, and operating conditions). The proposed model achieves high prediction accuracy, with the lowest RMSE reaching 0.54% on the CALCE dataset and remaining below 1.6% across all evaluated datasets. Compared with conventional neural networks, the HyED-PINN exhibits superior performance in small-sample scenarios, enhanced transfer learning capability, and importantly improved electrochemical interpretability. Overall, this study highlights the promise of physics-informed machine learning for accurate SOH estimation and extends its applicability to real-time risk detection of physical fields during battery operation.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2405829726001352?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2405829726001352?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "物理信息专家网络解耦电池退化过程并估计健康状态，验证跨电极和工况迁移能力。"
+        },
+        {
+          "axis": "method",
+          "label": "物理信息学习",
+          "label_en": "Physics-informed learning",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "物理信息专家网络解耦电池退化过程并估计健康状态，验证跨电极和工况迁移能力。"
+        },
+        {
+          "axis": "method",
+          "label": "迁移学习",
+          "label_en": "Transfer learning",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "物理信息专家网络解耦电池退化过程并估计健康状态，验证跨电极和工况迁移能力。"
+        }
+      ]
     }
   },
   {
@@ -98680,10 +98829,32 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "贝叶斯物理集成神经网络从电压数据反演化学势和自由能景观，并以原位衍射验证电极相变热力学。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "贝叶斯物理集成神经网络从电压数据反演化学势和自由能景观，并以原位衍射验证电极相变热力学。"
+        },
+        {
+          "axis": "domain",
+          "label": "AI 用于数理科学",
+          "label_en": "AI for mathematical and physical sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "贝叶斯物理集成神经网络从电压数据反演化学势和自由能景观，并以原位衍射验证电极相变热力学。"
+        },
+        {
+          "axis": "task",
+          "label": "反问题",
+          "label_en": "Inverse problem",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "贝叶斯物理集成神经网络从电压数据反演化学势和自由能景观，并以原位衍射验证电极相变热力学。"
+        }
+      ]
     }
   },
   {
@@ -98757,10 +98928,18 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "机器学习协议分类与健康状态回归利用短时电压测量诊断退役电池，并验证跨电芯规格推广。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "机器学习协议分类与健康状态回归利用短时电压测量诊断退役电池，并验证跨电芯规格推广。"
+        }
+      ]
     }
   },
   {
@@ -98841,8 +99020,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "exclude",
+      "rationale": "综述原位表征揭示正极结构变化，机器学习仅为未来数据分析方向，未构成实质方法内容。",
       "verified_metadata": {},
       "tags": []
     }
@@ -98927,10 +99106,41 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "对比图学习结合弛豫时间谱聚类电池电化学特性，用于退役电芯分组并验证组装电池一致性。",
+      "verified_metadata": {
+        "abstract": "The large-scale retirement of lithium-ion batteries necessitates reliable strategies for second-life utilization, particularly in the face of pronounced cell-to-cell variation. We propose a two-stage framework that converts heterogeneity derived from distribution of relaxation times (DRT) analysis into application-oriented module configurations. In the first stage, an unsupervised clustering approach integrates DRT analysis with contrastive graph learning. Normalized DRT spectra are used to construct a similarity graph based on Jensen–Shannon divergence. This process identifies cells that share similar kinetic characteristics. In the second stage, a greedy sliding window strategy is employed to match residual capacities. By ensuring that grouped cells exhibit both similar capacities and consistent electrochemical characteristics, this strategy reduces incompatibilities that cannot be captured by scalar capacity metrics alone. The framework was validated using 187 commercial NCA cylindrical cells, achieving a modularity of 0.6711 and a residual capacity prediction error of 0.88% (MAPE). The consistency of the assembled battery packs was verified through dynamic cycling behavior and relaxation process analyses. Further evaluation on 35 NCM pouch cells at both 0% and 20% SOC demonstrates stable clustering results across chemistries and SOC, confirming the robustness of the framework and its feasibility for integration into industrial recycling workflows. This study provides a scalable pathway for intelligent sorting and reliable second-life deployment of retired batteries.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2405829726002229?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2405829726002229?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "对比图学习结合弛豫时间谱聚类电池电化学特性，用于退役电芯分组并验证组装电池一致性。"
+        },
+        {
+          "axis": "method",
+          "label": "图神经网络",
+          "label_en": "Graph neural network",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "对比图学习结合弛豫时间谱聚类电池电化学特性，用于退役电芯分组并验证组装电池一致性。"
+        },
+        {
+          "axis": "method",
+          "label": "对比学习",
+          "label_en": "Contrastive learning",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "对比图学习结合弛豫时间谱聚类电池电化学特性，用于退役电芯分组并验证组装电池一致性。"
+        }
+      ]
     }
   },
   {
@@ -99009,10 +99219,41 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "模拟训练神经网络并迁移到实验数据，从温度响应反演电池反应动力学及边界参数。",
+      "verified_metadata": {
+        "abstract": "Reaction kinetic parameters quantitatively characterize the electrochemical and thermal behaviours of batteries, serving as critical inputs for thermal runaway (TR) modelling. However, their identification relies on calorimetric data, such as Accelerating Rate Calorimetry and Differential Scanning Calorimetry, which are costly, time-consuming, expertise-dependent, and limited in transferability across different battery chemistries and states. In this work, we present a generalizable framework for directly extracting reaction kinetic parameters from abuse tests, eliminating the need for calorimetric data. The framework combines simulation-driven deep learning with transfer learning. Initially, datasets are generated through dimensionality-reduced sampling and high-throughput TR simulations. A multi-stage neural network is trained on these datasets to map battery temperature evolution to the corresponding kinetic and boundary parameters. Transfer learning adapts the pre-trained model to the limited experimental datasets, addressing the cross-domain inconsistencies. The proposed method achieves accurate identification in both reaction kinetics and boundary conditions, with mean absolute percentage error less than 6.2% for key indicators in simulated battery temperature curves. The framework demonstrates strong generalizability across major commercial cell formats and chemistries. This study streamlines the workflow of kinetic parameter identification and reduces testing and analysis time, thus accelerating battery safety characterization and TR modelling.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2405829726002205?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2405829726002205?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "模拟训练神经网络并迁移到实验数据，从温度响应反演电池反应动力学及边界参数。"
+        },
+        {
+          "axis": "method",
+          "label": "迁移学习",
+          "label_en": "Transfer learning",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "模拟训练神经网络并迁移到实验数据，从温度响应反演电池反应动力学及边界参数。"
+        },
+        {
+          "axis": "task",
+          "label": "反问题",
+          "label_en": "Inverse problem",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "模拟训练神经网络并迁移到实验数据，从温度响应反演电池反应动力学及边界参数。"
+        }
+      ]
     }
   },
   {
@@ -99102,10 +99343,27 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "综述AI增强电镜去噪与缺陷识别，用于分析无负极电池层状正极界面和结构性能关系。",
+      "verified_metadata": {
+        "abstract": "The pursuit of high-energy-density anode-free batteries (AFBs) has shifted the research focus toward the fundamental understanding of structural stability and interfacial chemistry. Layered cathode materials are central to this transition, yet their practical application in AFBs is hindered by complex failure mechanisms such as lattice strain and parasitic side reactions. This review systematically traces the evolution of advanced transmission electron microscopy (TEM) and its pivotal role in elucidating the structure-property relationships of these electrode materials. By integrating artificial intelligence (AI) and machine learning (ML) for high-throughput data processing, we highlight how modern characterization overcomes traditional limitations in image denoising and automated defect recognition. The discussion encompasses both lithium and sodium-ion systems, focusing on in situ and cryogenic TEM techniques that reveal real-time ion migration, phase transformations, and the evolution of fragile solid-electrolyte interphases. Furthermore, we emphasize the interdisciplinary synergy between electron microscopy and AI as a necessity for the “mechanism-driven” design of next-generation and high-stability batteries. This review provides critical insights into addressing the bottlenecks of layered cathode configurations. Furthermore, this review discusses the emerging role of AI in integrating fragmented research data into structured knowledge graphs. By organizing highly heterogeneous experimental findings into relational networks, AI can uncover latent structure-performance correlations, offering a data-driven roadmap for mechanism-guided material design and advanced characterization.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2405829726002448?via%3Dihub",
+        "article_type": "Review article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2405829726002448?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述AI增强电镜去噪与缺陷识别，用于分析无负极电池层状正极界面和结构性能关系。"
+        }
+      ]
     }
   },
   {
@@ -99186,10 +99444,34 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "综述机器学习电解液筛选、性能预测、生成式分子设计与实验闭环优化。",
+      "verified_metadata": {
+        "abstract": "The development of high-performance electrolytes for advanced lithium batteries is pivotal for the energy transition but remains hindered by the inefficiencies of traditional trial-and-error approaches. The intricate balance among energy density, safety, and cycle life constitutes a complex multi-objective optimization problem that challenges conventional methods. Recently, machine learning (ML) has emerged as a transformative tool, shifting the electrolyte research paradigm from experience-driven to data-model-driven design. This review systematically outlines the progression of ML in electrolyte research, commencing with its role in high-throughput screening and performance prediction. We highlight the recent advent of generative models for de novo molecular design and the establishment of closed-loop \"dry-wet\" experimental systems, which achieve weekly iterative optimization. These advancements are poised to accelerate the discovery of electrolytes tailored for next-generation batteries. Finally, we critically discuss the persisting challenges, such as data standardization, multi-scale modeling, and human-machine collaboration, and propose feasible solutions to pave the way for an intelligent and autonomous future in electrolyte innovation.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2405829726002679?via%3Dihub",
+        "article_type": "Review article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2405829726002679?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述机器学习电解液筛选、性能预测、生成式分子设计与实验闭环优化。"
+        },
+        {
+          "axis": "task",
+          "label": "逆向设计",
+          "label_en": "Inverse design",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述机器学习电解液筛选、性能预测、生成式分子设计与实验闭环优化。"
+        }
+      ]
     }
   },
   {
@@ -99272,9 +99554,18 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
+      "decision": "pending",
+      "rationale": "已补原摘要，AI掺杂筛选与烧结优化表述偏前景；需核实全文是否系统讨论实质AI研究。",
+      "verified_metadata": {
+        "abstract": "NASICON-type Li1+xAlxTi2-x(PO4)3 (LATP) is a promising solid electrolyte for lithium metal batteries because of its high ionic conductivity, stability in air, and relatively low processing cost. However, its practical use is limited by the reduction of Ti4+ at the lithium interface, which leads to the formation of a mixed-conducting interphase and promotes dendrite growth. In addition, high grain-boundary resistance significantly reduces the overall ionic conductivity. This review outlines key strategies to address these challenges, including doping to improve ionic conductivity and stability, interfacial engineering (protective interlayers, alloy buffers, and artificial SEI layers), and polymer–LATP composites to enhance interfacial contact and mechanical properties. Based on recent research, LATP performs more reliably in hybrid or composite systems than as a standalone electrolyte, where interfacial instability is difficult to control. Furthermore, this study highlights the emerging role of Artificial Intelligence (AI) and Machine Learning (ML) in accelerating dopant selection, optimizing sintering processes, and enhancing structural stability. The practical realization of LATP-based solid-state batteries will depend on the synergistic integration of interfacial engineering, composite electrolyte design, and AI-driven materials optimization, where AI enables faster, cost-effective development of advanced materials.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2405829726002710?via%3Dihub",
+        "article_type": "Review article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2405829726002710?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
       "tags": []
     }
   },
@@ -99358,10 +99649,41 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "图、文本和元素三模态模型筛选钾硫电池催化剂，候选材料经实验与机理表征验证。",
+      "verified_metadata": {
+        "abstract": "Overcoming the polysulfide shuttle effect is the critical challenge for developing high-performance potassium-sulfur (K-S) batteries. While designing catalyst materials is a promising route, the vast compositional space makes traditional screening impractical. Machine learning (ML) offers an approach to accelerate this process but suffers from the challenge of creating comprehensive feature representations and a lack of interpretability. To address these two challenges, we propose a tri-modal machine learning framework that interactively integrates graph, text, and elemental information. This framework employs a sophisticated fusion strategy based on multi-head cross-attention, which creates a rich, context-aware, and synergistic embedding that serves as a powerful feature representation. Moreover, it uses a component-level approach to interpretability by validating the quality of the textual features through attention score analysis. Using this framework, a high-throughput screening of over 75,000 configurations identified Ni-doped and Zn/Ti-co-doped CuS as promising candidates. Their superior electrochemical performance was confirmed by experiments. Further mechanistic insights from in situ and ex situ characterizations corroborate accelerated sulfur conversion kinetics. Additionally, the framework’s versatility was validated on diverse external datasets, spanning chemically and structurally distinct material systems and their associated bulk and surface properties. This work establishes a validated tri-modal ML framework that can provide a rapid, reliable, and interpretable pathway to accelerate the discovery of diverse, high-performance energy materials.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2405829726003375?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2405829726003375?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "图、文本和元素三模态模型筛选钾硫电池催化剂，候选材料经实验与机理表征验证。"
+        },
+        {
+          "axis": "method",
+          "label": "多模态学习",
+          "label_en": "Multimodal learning",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "图、文本和元素三模态模型筛选钾硫电池催化剂，候选材料经实验与机理表征验证。"
+        },
+        {
+          "axis": "task",
+          "label": "催化剂发现",
+          "label_en": "Catalyst discovery",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "图、文本和元素三模态模型筛选钾硫电池催化剂，候选材料经实验与机理表征验证。"
+        }
+      ]
     }
   },
   {
@@ -99437,10 +99759,34 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "综述AI在电池跨尺度模型参数反演、代理模拟与物理量传递中的作用，面向电池状态及安全性建模。",
+      "verified_metadata": {
+        "abstract": "Lithium-ion batteries (LIBs) are central to electric transportation and renewable-energy storage, yet their performance, aging, and safety are governed by coupled processes spanning atomic reactions, electrode microstructures, cell behavior, and module-level operation. Although mechanistic modeling and artificial intelligence (AI) have advanced rapidly, most studies remain confined to a single scale, task, or algorithm; consequently, the systematic transfer, compression, updating, and deployment of cross-scale physical quantities remain insufficiently understood. Here we present the AI-enabled Cross-scale Parameter Chain (ACPC), a carrier-centered framework for organizing cross-scale modeling and parameter transfer in LIBs under practical operating conditions. ACPC tracks how intrinsic quantities generated by density functional theory, molecular dynamics, machine-learning interatomic potentials, porous-electrode theory and pseudo-two-dimensional models, phase-field and electrochemical–mechanical models, equivalent-circuit models, and high-fidelity multiphysics simulations are transformed, compressed, validated, and updated across atom/molecule-to-electrode, electrode-to-cell, and cell-to-module/system interfaces. By evaluating AI according to interface-specific functions—including prior generation, parameter inversion, microstructure reconstruction, surrogate acceleration, uncertainty handling, online recalibration, diagnosis, and control optimization—rather than algorithmic categories alone, ACPC identifies where AI preserves or compromises physical traceability. The analysis shows that deployable battery intelligence requires transferable, identifiable, and updatable parameter carriers, rather than preservation of all lower-scale details, to support state estimation, health prognosis, fast-charging control, safety management, and digital-twin operation. This framework provides a roadmap for integrating multiscale physics, data-driven learning, and battery management to enable reliable and interpretable next-generation battery systems.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2405829726003557?via%3Dihub",
+        "article_type": "Review article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2405829726003557?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述AI在电池跨尺度模型参数反演、代理模拟与物理量传递中的作用，面向电池状态及安全性建模。"
+        },
+        {
+          "axis": "task",
+          "label": "反问题",
+          "label_en": "Inverse problem",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述AI在电池跨尺度模型参数反演、代理模拟与物理量传递中的作用，面向电池状态及安全性建模。"
+        }
+      ]
     }
   },
   {
@@ -99519,10 +99865,34 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "系统综述机器学习电解液发现、SEI及枝晶机制分析和电池寿命预测。",
+      "verified_metadata": {
+        "abstract": "Lithium metal batteries (LMBs) are widely regarded as promising next-generation energy storage solutions because of their high theoretical energy density. Nonetheless, their practical application is hindered by complex interfacial phenomena, including unstable solid electrolyte interphases (SEI), dendritic lithium growth, and ongoing electrolyte consumption, which cause rapid performance decline and safety concerns. Traditional experimental and computational methods often struggle to capture the multiscale and dynamic nature of these processes. Recent progress in machine learning (ML) offers new opportunities to speed up LMB development through data-driven materials discovery, mechanistic insights, and performance prediction. This review summarizes recent advances in applying ML to LMBs from three key perspectives: materials design, interfacial processes, and lifetime prediction. It highlights how ML models facilitate electrolyte discovery, elucidate the mechanisms of SEI formation and dendrite growth, and predict battery degradation through early-cycle signals and morphological features. Finally, this review explores emerging opportunities for combining ML with high-throughput experimentation and autonomous laboratories to facilitate the closed-loop discovery of advanced battery technologies, as well as discusses the key challenges and future directions of ML-driven LMB research. This review is expected to provide not only a critical assessment of the state of the art but also a practical roadmap for integrating predictive analytics into next-generation battery research.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2405829726003843?via%3Dihub",
+        "article_type": "Review article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2405829726003843?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "系统综述机器学习电解液发现、SEI及枝晶机制分析和电池寿命预测。"
+        },
+        {
+          "axis": "task",
+          "label": "逆向设计",
+          "label_en": "Inverse design",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "系统综述机器学习电解液发现、SEI及枝晶机制分析和电池寿命预测。"
+        }
+      ]
     }
   },
   {
@@ -99595,8 +99965,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "exclude",
+      "rationale": "综述电池散热夹层的解析及数值模型，AI预测只出现在未来展望。",
       "verified_metadata": {},
       "tags": []
     }
@@ -99673,10 +100043,34 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "综述机器学习锂硫电池材料筛选、吸附与能垒分析及性能预测，覆盖明确化学和材料任务。",
+      "verified_metadata": {
+        "abstract": "The development of high-energy-density lithium-sulfur batteries is crucial for sustainable progress, given their significant potential in long-duration energy storage, electric transportation, and low-carbon energy systems. Despite significant progress, practical Li-S battery operation is still limited by the lithium polysulfides shuttle effect, complex interfacial reactions, and poorly understood cross-scale degradation mechanisms. These challenges remain difficult to analyze using conventional experimental and theoretical approaches. Recently, machine learning, as a data-driven approach, has been widely adopted in lithium-sulfur battery research, demonstrating unique advantages in material design, reaction mechanism interpretation, and operational state prediction. This paper comprehensively reviews representative advancements in machine learning applications within this field. At the material level, data-driven models enable efficient screening and performance optimization of cathode catalysts, electrolyte systems, functional separators, and protective materials for lithium metal anodes. Regarding mechanisms, integrating machine learning with density functional theory expedites the prediction and analysis of lithium polysulfides adsorption behavior, reaction energy barriers, and key structural descriptors. Furthermore, in synergy with advanced physicochemical characterization techniques, this integration elucidates lithium polysulfides conversion and interfacial evolution. For operational aspects, machine learning algorithms are employed to predict critical parameters such as voltage response, capacity fade, and state of health under complex operating conditions. Finally, this review discusses current challenges and future directions for machine learning in lithium-sulfur battery research. Such an interdisciplinary machine learning approach will accelerate the advancement of lithium-sulfur batteries towards higher specific energy, longer lifespan, and engineering applications.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2405829726004472?via%3Dihub",
+        "article_type": "Review article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2405829726004472?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述机器学习锂硫电池材料筛选、吸附与能垒分析及性能预测，覆盖明确化学和材料任务。"
+        },
+        {
+          "axis": "task",
+          "label": "逆向设计",
+          "label_en": "Inverse design",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述机器学习锂硫电池材料筛选、吸附与能垒分析及性能预测，覆盖明确化学和材料任务。"
+        }
+      ]
     }
   },
   {
@@ -99749,10 +100143,41 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "物理信息神经网络从短时弛豫信号重建阻抗谱并分解电化学动力学过程。",
+      "verified_metadata": {
+        "abstract": "Electrochemical impedance spectroscopy (EIS) enables the characterization of multiple battery kinetic processes and serves as a crucial tool for state estimation and mechanistic analysis. However, conventional EIS relies on frequency-sweep measurements, which are time-consuming and constrain its applicability to online monitoring and embedded systems. This work proposes a physics-informed neural network incorporating a mechanism-guided peak-fixed distribution of relaxation times (DRT) for impedance spectrum prediction. The mechanism-guided peak-fixed DRT-represents EIS using a small set of parameters, including amplitudes and relaxation time centers explicitly associated with dominant electrochemical kinetic processes. These parameters are embedded into an encoder-decoder architecture, enabling impedance spectrum reconstruction and kinetic process decoupling directly from relaxation signals with as few as 15 relaxation data points. A physics-informed loss function is further introduced to enforce physical consistency between the predicted impedance spectra and the DRT representations during training. Consequently, EIS estimation and electrochemical process decomposition are achieved in a mutually reinforcing manner. The proposed PINN delivers impedance prediction accuracy that is significantly superior to baseline models, while the extracted kinetic process parameters remain physically interpretable and can be directly used for activation energy validation and aging mechanism analysis. Overall, the proposed framework establishes a physically consistent approach for simultaneous EIS prediction and electrochemical kinetics analysis from time-domain relaxation signals.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S240582972600471X?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S240582972600471X?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "物理信息神经网络从短时弛豫信号重建阻抗谱并分解电化学动力学过程。"
+        },
+        {
+          "axis": "method",
+          "label": "物理信息学习",
+          "label_en": "Physics-informed learning",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "物理信息神经网络从短时弛豫信号重建阻抗谱并分解电化学动力学过程。"
+        },
+        {
+          "axis": "task",
+          "label": "反问题",
+          "label_en": "Inverse problem",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "物理信息神经网络从短时弛豫信号重建阻抗谱并分解电化学动力学过程。"
+        }
+      ]
     }
   },
   {
@@ -99829,10 +100254,34 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "元学习特征选择和跨分布训练预测未知工况的电池寿命，在多化学体系与温度协议数据上验证。",
+      "verified_metadata": {
+        "abstract": "Fast and reliable performance evaluation is essential for the development and deployment of next-generation battery technologies. However, comprehensive battery life testing across diverse operating conditions remains time-consuming and resource-intensive. Furthermore, efficient lifetime prediction is hindered by the absence of an effective modeling strategy that improves generalization across unseen operating conditions. Here, we introduce a systematic meta-learning framework for battery lifetime prediction that combines two key elements: a meta-designer for feature engineering, which identifies generalizable features by learning meta-level knowledge on how feature importance varies across operating conditions, and a meta-training strategy, which enhances generalization to unseen domains by simulating distribution shifts during training. Our framework is validated using three comprehensive datasets comprising 271 commercial lithium-ion cells with diverse operating conditions and electrode chemistries. Our approach achieves test errors of 8.9% and 6.7% for cycle life prediction under unseen distributions of cycling protocols and ambient temperatures, respectively. We further verify the robustness of the framework under diverse directions of distribution shift, and explore its extension to cross-chemistry transfer. Our meta-learning approach represents a breakthrough in the extrapolation capability of battery lifetime prediction under unseen operating conditions, and has the potential to significantly accelerate the development and deployment of next-generation batteries. This work highlights the promise of incorporating meta-learning into data-driven modeling to improve generalization ability in predicting the behavior of complex dynamical systems.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2405829726004289?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2405829726004289?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "元学习特征选择和跨分布训练预测未知工况的电池寿命，在多化学体系与温度协议数据上验证。"
+        },
+        {
+          "axis": "method",
+          "label": "元学习",
+          "label_en": "Meta-learning",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "元学习特征选择和跨分布训练预测未知工况的电池寿命，在多化学体系与温度协议数据上验证。"
+        }
+      ]
     }
   },
   {
@@ -99919,10 +100368,25 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "机器学习代理离散元挤出模拟并进行多目标逆向工艺设计，优化干法电极孔隙、曲折度和导电连通性。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "机器学习代理离散元挤出模拟并进行多目标逆向工艺设计，优化干法电极孔隙、曲折度和导电连通性。"
+        },
+        {
+          "axis": "task",
+          "label": "逆向设计",
+          "label_en": "Inverse design",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "机器学习代理离散元挤出模拟并进行多目标逆向工艺设计，优化干法电极孔隙、曲折度和导电连通性。"
+        }
+      ]
     }
   },
   {
@@ -99993,10 +100457,48 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "综述图网络、机器学习势及主动学习用于固态电解质筛选和离子输运机制分析。",
+      "verified_metadata": {
+        "abstract": "Solid-state electrolytes (SSEs) are central to the development of safe, high-energy-density all-solid-state batteries, yet their discovery remains constrained by the complex coupling of composition, crystal structure, defects, ion-transport pathways, interfaces and processing conditions. Artificial intelligence (AI) offers new opportunities to accelerate this process by integrating experimental data, materials databases, first-principles calculations and molecular-dynamics simulations. This review summarises recent progress in AI-assisted SSE research, with emphasis on data infrastructure, high-throughput screening, graph neural networks, machine-learning interatomic potentials, active learning, AI agents and closed-loop materials discovery. Particular attention is given to property prediction and mechanistic analysis, including ionic conductivity, migration barriers, diffusion pathways, interfacial stability, mechanical properties and multi-objective performance optimisation. The roles of AI in different electrolyte families, including oxides, sulfides, halides, polymers/composites, high-entropy systems and non-lithium conductors, are further discussed. Current challenges, such as limited and heterogeneous datasets, insufficient interpretability, weak cross-family transferability, inadequate representation of disorder and interfaces, and the gap between prediction and experimental validation, are critically examined. Finally, future directions are proposed based on standardised databases, physics-informed models, explainable AI, multi-objective active learning and autonomous AI–experiment workflows, aiming to advance SSE discovery from empirical screening toward mechanism-guided design.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2405829726006434?via%3Dihub",
+        "article_type": "Review article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2405829726006434?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述图网络、机器学习势及主动学习用于固态电解质筛选和离子输运机制分析。"
+        },
+        {
+          "axis": "method",
+          "label": "图神经网络",
+          "label_en": "Graph neural network",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述图网络、机器学习势及主动学习用于固态电解质筛选和离子输运机制分析。"
+        },
+        {
+          "axis": "method",
+          "label": "神经网络势能",
+          "label_en": "Neural network potential",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述图网络、机器学习势及主动学习用于固态电解质筛选和离子输运机制分析。"
+        },
+        {
+          "axis": "method",
+          "label": "主动学习",
+          "label_en": "Active learning",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述图网络、机器学习势及主动学习用于固态电解质筛选和离子输运机制分析。"
+        }
+      ]
     }
   },
   {
@@ -100079,10 +100581,34 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "物理信息深度算子数字孪生追踪电极和电解液扩散及退化状态，揭示寿命拐点与析锂反馈阈值。",
+      "verified_metadata": {
+        "abstract": "Lithium-ion batteries can degrade abruptly after extended stable operation through a failure transition known as the knee point, yet the internal electrochemical states governing this transition are invisible to standard monitoring. Here we develop a physics-informed digital twin based on deep operator networks that captures lithium-ion diffusion dynamics across electrode particles and electrolyte with stable recursive simulation over full charge–discharge cycles. Deploying this digital twin across 16 cells under diverse conditions and temperatures (10°C, 25°C, 40°C), we track degradation mode evolution — distinguishing loss of lithium inventory from loss of active material on each electrode — with root-mean-square errors below 3% from routine 0.3C charging data alone, without requiring specialized diagnostic tests. Real-time monitoring of anode overpotentials reveals a quantitative threshold in the relationship between anode active material loss and lithium plating onset that separates cells developing knee points from those that do not. This threshold, which quantifies the critical coupling strength of the plating-degradation feedback loop, is detectable at early life stages when conventional capacity measurements show no difference between cells, and provides a quantitative criterion for both predicting and potentially preventing knee-point onset.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S240582972600721X?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S240582972600721X?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "物理信息深度算子数字孪生追踪电极和电解液扩散及退化状态，揭示寿命拐点与析锂反馈阈值。"
+        },
+        {
+          "axis": "method",
+          "label": "算子学习",
+          "label_en": "Operator learning",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "物理信息深度算子数字孪生追踪电极和电解液扩散及退化状态，揭示寿命拐点与析锂反馈阈值。"
+        }
+      ]
     }
   },
   {
@@ -100161,10 +100687,34 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "开发深度神经网络原子势模拟碳化锆辐照碰撞级联，解释缺陷簇和位错环形成机制。",
+      "verified_metadata": {
+        "abstract": "Molecular dynamics simulation of irradiation damage is critical for understanding microstructural evolution and defect formation in zirconium carbide (ZrC). However, the absence of a suitable interatomic potential remains a challenge. Here, we develop a precise deep-neural-network based machine learning interatomic potential tailored for investigating irradiation damage in ZrC. Our model accurately reproduces the energetics and kinetics of native point defects, thermodynamics properties, surface energies, and generalized stacking fault energies. We further explore collision cascades spanning a range of primary knock-on atom energies (from 1 keV to 40 keV), types (C and Zr), and directions (〈100〉, 〈010〉, and 〈111〉) at 300 K. The results reveal carbon interstitial atoms and vacancies as the dominant point defects, consistent with first-principles calculations, with the notable formation of carbon-rich clusters within collision cascades. These carbon-rich defect clusters, resembling “black-dot” structures in experimental observations, emerge directly in collision cascades and remain thermodynamically stable at low temperatures due to the low mobility of Zr interstitial atoms. In contrast to the absence of dislocation loops in the collision cascade simulations, our results suggest a thermally-driven mechanism for the formation and transformation of 1/3 〈111〉 and 1/2 〈110〉 dislocation loops. This work enriches our understanding of the irradiation damage mechanism in ZrC and other carbide ceramics.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S100503022500489X?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S100503022500489X?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "开发深度神经网络原子势模拟碳化锆辐照碰撞级联，解释缺陷簇和位错环形成机制。"
+        },
+        {
+          "axis": "method",
+          "label": "神经网络势能",
+          "label_en": "Neural network potential",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "开发深度神经网络原子势模拟碳化锆辐照碰撞级联，解释缺陷簇和位错环形成机制。"
+        }
+      ]
     }
   },
   {
@@ -100254,10 +100804,25 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "神经网络势分子动力学研究难熔中熵合金短程有序、位错及机械性能关系。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "神经网络势分子动力学研究难熔中熵合金短程有序、位错及机械性能关系。"
+        },
+        {
+          "axis": "method",
+          "label": "神经网络势能",
+          "label_en": "Neural network potential",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "神经网络势分子动力学研究难熔中熵合金短程有序、位错及机械性能关系。"
+        }
+      ]
     }
   },
   {
@@ -100336,10 +100901,27 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "XGBoost结合海洋环境监测数据预测钢腐蚀速率并分析湿度和温度作用。",
+      "verified_metadata": {
+        "abstract": "Marine engineering equipment and facilities face significant atmospheric corrosion challenges. Limitations in corrosion data collection and analysis techniques have hindered a comprehensive understanding of the corrosion behavior of marine steel structures under complex atmospheric environmental conditions. In this study, corrosion big data technology was integrated with machine learning methods to investigate the influence of coupled environmental factors, such as relative humidity (RH), temperature, and various pollutants, on the atmospheric corrosion behavior of EH36 steel. The curve of cumulative electric quantity detected by the corrosion big data sensor indicated that the corrosion rate of EH36 steel over a 6-month (m) exposure period initially accelerated, then decelerated, and finally stabilized. This trend is consistent with the weight loss data, confirming the reliability of corrosion big data monitoring technology. Correlation analysis identified RH and temperature as the key factors influencing corrosion. Higher RH facilitated the formation of an electrolyte film on the EH36 steel surface, accelerating corrosion. In contrast, increased temperature reduced RH, resulting in a negative correlation between temperature and corrosion rate. These findings suggest that RH is the most dominant factor affecting the EH36 steel corrosion in marine atmospheric environments. Furthermore, an extreme gradient boosting (XGB) algorithm capable of handling nonlinear relationships and interactions among atmospheric environmental parameters was constructed. The XGB model demonstrated strong predictive performance in estimating the corrosion rate of marine steel structures, contributing to the safe and reliable operation of marine engineering equipment and facilities.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S1005030225009223?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S1005030225009223?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "XGBoost结合海洋环境监测数据预测钢腐蚀速率并分析湿度和温度作用。"
+        }
+      ]
     }
   },
   {
@@ -100416,10 +100998,41 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "将扩散物理约束和自注意力融入网络，预测焊点微结构演化及热老化剪切强度。",
+      "verified_metadata": {
+        "abstract": "Reliable prediction of solder joint microstructure evolution and mechanical degradation under thermal aging is essential for ensuring long-term reliability of electronic assemblies. However, existing approaches often require large datasets or fail to capture complex microstructure-property interactions, limiting their predictive accuracy. Here, we introduce a self-attention physics-informed neural network (SA-PINN), which embeds an Arrhenius-based diffusion model into the loss function, integrates a transformer self-attention mechanism to capture complex interactions between microstructure and performance, and employs a Squeeze-and-Excitation block for dynamic channel recalibration. Trained on 240 samples spanning widely used package types aged at 94, 120, and 150 °C, SA-PINN simultaneously predicts intermetallic compound (IMC) growth, Pb-phase coarsening, and shear strength, achieving R2 values of 0.992, 0.958, and 0.932, respectively, while reducing mean absolute error (MAE) by up to 50 % compared with strong data-driven regressors. Ablation studies confirm that both attention and channel re-weighting contribute synergistically to performance gains, and Shapley analyses quantify the main effects of microstructural and geometric descriptors on each target, consistent with experiments; meanwhile, the model-learned activation energies for IMC growth are broadly consistent with values fitted from Arrhenius plots, supporting physical consistency. This data-efficient yet physics-consistent framework offers high interpretability and can be readily extended to fatigue-life forecasting and multi-field coupling problems, thereby providing a versatile tool for rapid and reliable assessment as well as design guidance in electronic packaging.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S1005030225010886?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S1005030225010886?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "将扩散物理约束和自注意力融入网络，预测焊点微结构演化及热老化剪切强度。"
+        },
+        {
+          "axis": "method",
+          "label": "物理信息学习",
+          "label_en": "Physics-informed learning",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "将扩散物理约束和自注意力融入网络，预测焊点微结构演化及热老化剪切强度。"
+        },
+        {
+          "axis": "method",
+          "label": "Transformer 架构",
+          "label_en": "Transformer",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "将扩散物理约束和自注意力融入网络，预测焊点微结构演化及热老化剪切强度。"
+        }
+      ]
     }
   },
   {
@@ -100503,10 +101116,25 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "机器学习势加速分子动力学解析KPF6压力诱导相变和全温域压热效应的原子机制。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "机器学习势加速分子动力学解析KPF6压力诱导相变和全温域压热效应的原子机制。"
+        },
+        {
+          "axis": "method",
+          "label": "神经网络势能",
+          "label_en": "Neural network potential",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "机器学习势加速分子动力学解析KPF6压力诱导相变和全温域压热效应的原子机制。"
+        }
+      ]
     }
   },
   {
@@ -100582,10 +101210,41 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "主动学习原子间能量模型筛选合金元素，实验验证强度、腐蚀及氧化抗性的协同提升。",
+      "verified_metadata": {
+        "abstract": "Interatomic energies (IAEs) are important intrinsic quantities for understanding, designing and regulating materials’ properties, typically calculated using density functional theory (DFT). However, exhaustive DFT calculations of IAEs between an object element (Eobj) and all property-toward potential alloying elements in the periodic table are time-consuming and expensive. Therefore, this work proposes an IAEs-based digital modelling strategy combining DFT calculations and active machine learning, which enables rapid selection of alloying elements for target properties of interest. The strategy was applied to a cast C70600 alloy used for marine engineering equipment manufacturing to screen its property-toward alloying elements (E) throughout the periodic table. With a small number of DFT calculations, three high-accuracy IAE models involving binding energy between Ni-E atoms, NaCl adsorption energy of E-dissolved Cu2O, and formation energy of ExOy were established. Based on these models, the low-cost and environment-friendly elements Si, Al, and Sn were efficiently identified to be capable of simultaneously enhancing mechanical strength, corrosion resistance, and high-temperature oxidation resistance. Experimental validations exhibited that adding 3.4 at.% Si, Al, or Sn individually to C70600 cast alloy led to 114 %–276 % increases in yield strength, 6 %–25 % reductions in corrosion rate after 7 days in 3.5 % NaCl solution, and 10 %–16 % decreases in oxidation weight gain after 10 h at 800 °C in air. The proposed strategy could reduce the DFT calculations for the 118 periodic table elements by >85 %, and offers a new route for developing alloys with multiple target properties.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S1005030225012423?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S1005030225012423?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "主动学习原子间能量模型筛选合金元素，实验验证强度、腐蚀及氧化抗性的协同提升。"
+        },
+        {
+          "axis": "method",
+          "label": "主动学习",
+          "label_en": "Active learning",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "主动学习原子间能量模型筛选合金元素，实验验证强度、腐蚀及氧化抗性的协同提升。"
+        },
+        {
+          "axis": "task",
+          "label": "逆向设计",
+          "label_en": "Inverse design",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "主动学习原子间能量模型筛选合金元素，实验验证强度、腐蚀及氧化抗性的协同提升。"
+        }
+      ]
     }
   },
   {
@@ -100672,10 +101331,25 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "神经网络势原子模拟与三维电镜共同验证氧化锌有序位错环阵列及其塑性形成机制。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "神经网络势原子模拟与三维电镜共同验证氧化锌有序位错环阵列及其塑性形成机制。"
+        },
+        {
+          "axis": "method",
+          "label": "神经网络势能",
+          "label_en": "Neural network potential",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "神经网络势原子模拟与三维电镜共同验证氧化锌有序位错环阵列及其塑性形成机制。"
+        }
+      ]
     }
   },
   {
@@ -100747,10 +101421,41 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "系统综述深度学习金属微结构表征、多模态性质预测和材料逆向设计。",
+      "verified_metadata": {
+        "abstract": "The data-driven paradigm is revolutionizing metallic materials research. This review synthesizes how Deep Learning (DL) transforms the innovation chain, guided by the Process-Structure-Property-Performance framework. We analyze DL’s role in three interconnected stages: (1) Microstructure analysis, where DL automates high-throughput quantification and evolves toward generative 2D-to-3D microstructure reconstruction to enable digital twins for simulation; (2) Property prediction, where models advance from single-modal correlations to physics-infused, multimodal frameworks that fuse heterogeneous data (images, spectra, text) with mechanistic simulations for predicting mechanical, fatigue, and corrosion behaviors; and (3) Inverse design, which matures from multi-objective-driven optimal composition search to microstructure generation in the high-dimensional process-structure-property space, generating physically consistent blueprints. Persistent bottlenecks—such as the “black-box” nature, small-sample generalization, and integration gaps—are critically examined. We conclude with a roadmap toward physics-informed architectures and integrated autonomous platforms for intelligent, closed-loop materials discovery. This work provides a focused perspective on structural metallic materials, tracing a clear path from automated characterization to reliable design.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S1005030226001040?via%3Dihub",
+        "article_type": "Review article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S1005030226001040?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "系统综述深度学习金属微结构表征、多模态性质预测和材料逆向设计。"
+        },
+        {
+          "axis": "method",
+          "label": "多模态学习",
+          "label_en": "Multimodal learning",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "系统综述深度学习金属微结构表征、多模态性质预测和材料逆向设计。"
+        },
+        {
+          "axis": "task",
+          "label": "逆向设计",
+          "label_en": "Inverse design",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "系统综述深度学习金属微结构表征、多模态性质预测和材料逆向设计。"
+        }
+      ]
     }
   },
   {
@@ -100836,10 +101541,25 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "生成式AI设计阻燃剂并预测环氧树脂综合性能，通过合成和电池热防护实验验证。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "生成式AI设计阻燃剂并预测环氧树脂综合性能，通过合成和电池热防护实验验证。"
+        },
+        {
+          "axis": "task",
+          "label": "逆向设计",
+          "label_en": "Inverse design",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "生成式AI设计阻燃剂并预测环氧树脂综合性能，通过合成和电池热防护实验验证。"
+        }
+      ]
     }
   },
   {
@@ -100915,10 +101635,34 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "XGBoost结合DFT描述符筛选钙钛矿钝化分子，实验验证缺陷钝化及光伏效率提升。",
+      "verified_metadata": {
+        "abstract": "Efficient surface passivation is critical for achieving high-performance perovskite solar cells (PSCs), yet the discovery of optimal passivators remains a time-consuming, trial-and-error process. Here, we report a synergistic machine learning (ML) and density functional theory (DFT) approach that enables predictive and rapid identification of effective passivation materials. By training an XGBoost model (91.3 % accuracy) with DFT-derived molecular descriptors and activity calculations, we identify 2-(4-aminophenyl)-3H-benzimidazol-5-amine (APBIA) as a promising passivator. Experimental validation demonstrates that APBIA effectively removes surface impurities and passivates defects within perovskite films, leading to a significant increase in power conversion efficiency (PCE) from 22.48 % to 25.55 % (certified as 25.02 %). This ML-DFT framework provides a generalizable pathway for accelerating the development of advanced functional materials for photovoltaic applications.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495625006941?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495625006941?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "XGBoost结合DFT描述符筛选钙钛矿钝化分子，实验验证缺陷钝化及光伏效率提升。"
+        },
+        {
+          "axis": "task",
+          "label": "逆向设计",
+          "label_en": "Inverse design",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "XGBoost结合DFT描述符筛选钙钛矿钝化分子，实验验证缺陷钝化及光伏效率提升。"
+        }
+      ]
     }
   },
   {
@@ -100995,10 +101739,34 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "综述机器学习原子势在固态电池大规模长时模拟、离子输运和界面演化中的应用。",
+      "verified_metadata": {
+        "abstract": "All-solid-state batteries (ASSBs) represent a next-generation energy storage technology, offering enhanced safety, higher energy density, and improved cycling stability compared to conventional liquid-electrolyte-based lithium-ion batteries. Understanding and optimizing the complex chemistries and interfaces that underpin ASSB performance present significant challenges from both experimental and modeling perspectives. In particular, atomistic simulations face difficulties in capturing the complex structure, disorder, and dynamic evolution of materials and interfaces under practically relevant conditions. While established methods such as density functional theory and classical force fields have provided valuable insights, some questions remain difficult to address, particularly those involving large system sizes or long timescales. Recently, machine learning interatomic potentials (MLIPs) have emerged as a transformative tool, enabling atomistic simulations at length and time scales that were previously challenging to access with conventional approaches. By delivering near first-principles accuracy with much greater efficiency, MLIPs open new avenues for large-scale, long-timescale, and high-throughput simulations of solid-state battery materials. In this review, we present a comparative overview of density functional theory, classical force fields, and MLIPs, highlighting their respective strengths and limitations in ASSB research. We then discuss how MLIPs enable simulations that reach longer timescales, larger system sizes, and support high-throughput calculations, providing unique insights into ion transport and interfacial evolution in ASSBs. Finally, we conclude with a summary and outlook on current challenges and future opportunities for expanding MLIP capabilities and accelerating their impact in solid-state battery research.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495625007181?via%3Dihub",
+        "article_type": "Review article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495625007181?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述机器学习原子势在固态电池大规模长时模拟、离子输运和界面演化中的应用。"
+        },
+        {
+          "axis": "method",
+          "label": "神经网络势能",
+          "label_en": "Neural network potential",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述机器学习原子势在固态电池大规模长时模拟、离子输运和界面演化中的应用。"
+        }
+      ]
     }
   },
   {
@@ -101087,10 +101855,34 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "物理简化模型和子空间识别提取退化特征，Transformer学习电池老化并验证跨电芯及化学体系估计。",
+      "verified_metadata": {
+        "abstract": "The growing use of lithium-ion batteries in electric transportation and grid-scale storage systems has intensified the need for accurate and highly generalizable state-of-health (SOH) estimation. Conventional approaches often suffer from reduced accuracy under dynamically uncertain state-of-charge (SOC) operating ranges and heterogeneous aging stresses. This study presents a unified SOH estimation framework that integrates physics-informed modeling, subspace identification, and Transformer-based learning. A reduced-order model is derived from simplified electrochemical dynamics, providing an interpretable and computationally efficient representation of battery behavior. Subspace identification across a wide SOC and SOH range yields degradation-sensitive features, which the Transformer uses to capture long-range aging dynamics via multi-head self-attention. Experiments on LiFePO4 cells under joint-cell training show consistently accurate SOH estimation, with a maximum error of 1.39 %, demonstrating the framework’s effectiveness in decoupling SOC and SOH effects. In cross-cell validation, where training and validation are performed on different cells, the model maintains a maximum error of 2.06 %, confirming strong generalization to unseen aging trajectories. Comparative experiments on LiFePO4 and public LiCoO2 datasets confirm the framework’s cross-chemistry applicability. By extracting low-dimensional, physically interpretable features via subspace identification, the framework significantly reduces training cost while maintaining high SOH estimation accuracy, outperforming conventional data-driven models lacking physical guidance.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S209549562500720X?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S209549562500720X?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "物理简化模型和子空间识别提取退化特征，Transformer学习电池老化并验证跨电芯及化学体系估计。"
+        },
+        {
+          "axis": "method",
+          "label": "Transformer 架构",
+          "label_en": "Transformer",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "物理简化模型和子空间识别提取退化特征，Transformer学习电池老化并验证跨电芯及化学体系估计。"
+        }
+      ]
     }
   },
   {
@@ -101171,10 +101963,32 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "机器学习力场生成非晶铜镍结构，结合DFT揭示CO2电还原选择性与局部配位关系。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "机器学习力场生成非晶铜镍结构，结合DFT揭示CO2电还原选择性与局部配位关系。"
+        },
+        {
+          "axis": "method",
+          "label": "神经网络势能",
+          "label_en": "Neural network potential",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "机器学习力场生成非晶铜镍结构，结合DFT揭示CO2电还原选择性与局部配位关系。"
+        },
+        {
+          "axis": "task",
+          "label": "催化剂发现",
+          "label_en": "Catalyst discovery",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "机器学习力场生成非晶铜镍结构，结合DFT揭示CO2电还原选择性与局部配位关系。"
+        }
+      ]
     }
   },
   {
@@ -101260,10 +102074,48 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "物理约束Transformer和双向LSTM利用局部充电数据估计电池健康状态，验证跨化学体系和温度推广。",
+      "verified_metadata": {
+        "abstract": "Accurate state of health (SOH) estimation is essential for the safe and reliable operation of lithium-ion batteries. However, existing methods face significant challenges, primarily because they rely on complete charge–discharge cycles and fixed-form physical constraints, which limit adaptability to different chemistries and real-world conditions. To address these issues, this study proposes an approach that extracts features from segmented state of charge (SOC) intervals and integrates them into an enhanced physics-informed neural network (PINN). Specifically, voltage data within the 25 %–75 % SOC range during charging are used to derive statistical, time–frequency, and mechanism-based features that capture degradation trends. A hybrid PINN-Lasso-Transformer-BiLSTM architecture is developed, where Lasso regression enables sparse feature selection, and a nonlinear empirical degradation model is embedded as a learnable physical term within a dynamically scaled composite loss. This design adaptively balances data-driven accuracy with physical consistency, thereby enhancing estimation precision, robustness, and generalization. The results show that the proposed method outperforms conventional neural networks across four battery chemistries, achieving root mean square error and mean absolute error below 1 %. Notably, features from partial charging segments exhibit higher robustness than those from full cycles. Furthermore, the model maintains strong performance under high temperatures and demonstrates excellent generalization capacity in transfer learning across chemistries, temperatures, and C-rates. This work establishes a scalable and interpretable solution for accurate SOH estimation under diverse practical operating conditions.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495625007570?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495625007570?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "物理约束Transformer和双向LSTM利用局部充电数据估计电池健康状态，验证跨化学体系和温度推广。"
+        },
+        {
+          "axis": "method",
+          "label": "物理信息学习",
+          "label_en": "Physics-informed learning",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "物理约束Transformer和双向LSTM利用局部充电数据估计电池健康状态，验证跨化学体系和温度推广。"
+        },
+        {
+          "axis": "method",
+          "label": "Transformer 架构",
+          "label_en": "Transformer",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "物理约束Transformer和双向LSTM利用局部充电数据估计电池健康状态，验证跨化学体系和温度推广。"
+        },
+        {
+          "axis": "method",
+          "label": "循环神经网络",
+          "label_en": "Recurrent neural network",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "物理约束Transformer和双向LSTM利用局部充电数据估计电池健康状态，验证跨化学体系和温度推广。"
+        }
+      ]
     }
   },
   {
@@ -101345,10 +102197,27 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "可解释机器学习结合跨尺度数据库定量分解锂电池日历老化机制及材料、荷电状态和温度作用。",
+      "verified_metadata": {
+        "abstract": "Lithium-ion batteries (LIBs) are widely deployed, from grid-scale storage to electric vehicles. LIBs remain stationary most of their service life, where calendar aging degrades capacity. Understanding the mechanisms of LIB calendar aging is crucial for extending battery lifespan. However, LIB calendar aging is influenced by multiple factors, including battery material, its state, and storage environment. Calendar aging experiments are also time-consuming, costly, and lack standardized testing conditions. This study employs a data-driven approach to establish a cross-scale database linking materials, side-reaction mechanisms, and calendar aging of LIBs. MELODI (Mechanism-informed, Explainable, Learning-based Optimization for Degradation Identification) is proposed to identify calendar aging mechanisms and quantify the effects of multi-scale factors. Results reveal that cathode material loss drives up to 91.42 % of calendar aging degradation in high-nickel (Ni) batteries, while solid electrolyte interphase growth dominates in lithium iron phosphate (LFP) and low-Ni batteries, contributing up to 82.43 % of degradation in LFP batteries and 99.10 % of decay in low-Ni batteries, respectively. This study systematically quantifies calendar aging in commercial LIBs under varying materials, states of charge, and temperatures. These findings offer quantitative guidance for experimental design or battery use, and implications for emerging applications like aerial robotics, vehicle-to-grid, and embodied intelligence systems.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495625007600?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495625007600?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "可解释机器学习结合跨尺度数据库定量分解锂电池日历老化机制及材料、荷电状态和温度作用。"
+        }
+      ]
     }
   },
   {
@@ -101424,10 +102293,34 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "机器学习预测钴催化剂CO转化率与液态燃料选择性，通过解释分析提炼催化剂及反应条件设计规律。",
+      "verified_metadata": {
+        "abstract": "The production of liquid fuels from syngas can help alleviate energy supply challenges, support carbon neutrality, and address climate change. However, this process involves considerable complexity due to the interplay of multiple influencing factors, including feedstock characteristics, catalyst properties, and reaction conditions. To facilitate process optimization, we developed a machine learning model to predict CO conversion and C5+ selectivity based on key input descriptors. A dataset of 236 entries was compiled from existing literature, enabling data mining to identify the importance of reaction temperature, reduction degree, and cobalt loading. Analysis revealed that higher C5+ selectivity is achieved at lower temperatures (<240 °C) and moderate cobalt loading (∼20 %). Additionally, it was found that excessively small cobalt particles (<6 nm) negatively impact C5+ selectivity due to increased methane formation and decreased active sites stability at the nanoscale. The proposed framework is entirely data-driven and interpretable, incorporating Permutation Importance (PI), Shapley Additive Explanations (SHAP), and Partial Dependence Plot (PDP), a game theory-based interpretation approach to isolate and analyze the effects of individual and paired descriptors, thereby offering valuable theoretical insights for guiding experimental research.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495625007594?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495625007594?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "机器学习预测钴催化剂CO转化率与液态燃料选择性，通过解释分析提炼催化剂及反应条件设计规律。"
+        },
+        {
+          "axis": "task",
+          "label": "催化剂发现",
+          "label_en": "Catalyst discovery",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "机器学习预测钴催化剂CO转化率与液态燃料选择性，通过解释分析提炼催化剂及反应条件设计规律。"
+        }
+      ]
     }
   },
   {
@@ -101509,10 +102402,41 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "融合阻抗特征和电压电流时序的神经网络预测电池健康状态与剩余寿命。",
+      "verified_metadata": {
+        "abstract": "This study proposes a multimodal deep learning framework for joint prediction of the state of health (SOH) and remaining useful life (RUL) of lithium-ion batteries. Twelve representative impedance features—covering charge-transfer resistance, solid electrolyte interface (SEI) layer impedance, and ion diffusion—are extracted from electrochemical impedance spectroscopy (EIS) and combined with short voltage/current segments to form a compact, interpretable feature set. A residual multi-layer perceptron (ResMLP) is employed for SOH regression, and a temporal convolutional network with attention (TCN-Attention) is used for RUL estimation. Lifetime experiments on two battery types with different chemistries and form factors, evaluated through three rounds of paired cross-validation, validate the approach. Results show that the proposed features significantly reduce dimensionality and computational cost while substantially lowering SOH error, achieving an average normalized root mean square error of 2.3 %. The RUL prediction reaches an average error of 14.8 %. Overall, the framework balances interpretability, robustness, and feasibility, providing a practical solution for battery management systems (BMS) monitoring and life prediction.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495625007879?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495625007879?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "融合阻抗特征和电压电流时序的神经网络预测电池健康状态与剩余寿命。"
+        },
+        {
+          "axis": "method",
+          "label": "多模态学习",
+          "label_en": "Multimodal learning",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "融合阻抗特征和电压电流时序的神经网络预测电池健康状态与剩余寿命。"
+        },
+        {
+          "axis": "method",
+          "label": "卷积神经网络",
+          "label_en": "Convolutional neural network",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "融合阻抗特征和电压电流时序的神经网络预测电池健康状态与剩余寿命。"
+        }
+      ]
     }
   },
   {
@@ -101613,10 +102537,18 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "综述AI电池诊断、健康及寿命估计方法，比较模型结构和真实运行数据处理流程。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "综述AI电池诊断、健康及寿命估计方法，比较模型结构和真实运行数据处理流程。"
+        }
+      ]
     }
   },
   {
@@ -101690,10 +102622,34 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "系统综述AI增强电化学模型及动态参数辨识方法，面向电池机理建模和管理系统。",
+      "verified_metadata": {
+        "abstract": "With the rapid development of electric vehicles and grid-scale renewable integration, the demand for lithium-ion batteries (LIBs) has significantly increased with high expectations on enhanced energy density, cycle stability, and failure resilience. Electrochemical models (EMs), serving as pivotal mechanism-driven analytical frameworks in battery research and applications, demonstrate unprecedented quantitative fidelity in characterizing intricate multi-physics dynamics for the next-generation battery management systems (BMS). The breakthrough innovations in artificial intelligence (AI) driven methods have revolutionized the dynamic modeling of LIBs. However, the deployment of AI-augmented EMs in BMS faces significant identifiability challenges due to strong parameter coupling. In addition, research on model simplification, parameter determination, and dynamic parameter identification remains largely fragmented. There is a lack of a comprehensive review to pave the way for the cross-domain innovations in BMS. To fill this gap, this paper presents a systematic review of the EMs for LIBs and examines the advancements in parameter determination techniques from both experimental measurement and numerical simulation perspectives. Besides, a comprehensive assessment of the progress in parameter identification from the standpoint of dynamic recognition is presented, encompassing both model-based approaches and intelligent methods. Additionally, from the BMS standpoint, the strengths and limitations of existing approaches are evaluated. Finally, a coordinated framework for multi-stage identification needs to be established in the future. The potential of digital twins (DT), deep reinforcement learning (DRL), and large language models (LLMs) in enhancing EMs also warrants further exploration. The purpose of this work is to provide insights and guidance for the future development of EMs in LIB applications.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495625008629?via%3Dihub",
+        "article_type": "Review article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495625008629?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "系统综述AI增强电化学模型及动态参数辨识方法，面向电池机理建模和管理系统。"
+        },
+        {
+          "axis": "task",
+          "label": "反问题",
+          "label_en": "Inverse problem",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "系统综述AI增强电化学模型及动态参数辨识方法，面向电池机理建模和管理系统。"
+        }
+      ]
     }
   },
   {
@@ -101765,10 +102721,34 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "可解释机器学习预测硬碳负极电化学性能并识别微结构特征与循环稳定性的协同阈值。",
+      "verified_metadata": {
+        "abstract": "To address the challenges of weak cycling stability and low capacity in hard carbon (HC), elucidating the structure-performance relationship between their microstructure and potassium-ion battery (PIB) performance is crucial. To this end, this study developed an interpretable machine learning workflow that identified optimal machine learning models for six key electrochemical performance metrics, including cycling performance, through multi-model comparison. All performance prediction models demonstrated excellent generalization capability, with the AdaBoost model achieving the highest test set coefficient of determination (R2) of 0.819 for the cyclic factor, while all models maintain root mean square error (RMSE) below 8 %. By integrating advanced interpretable ML methods such as Shapley additive explanations (SHAP) and accumulated local effects (ALE), the study systematically identified critical thresholds and synergistic interaction ranges where key structural features exert positive effects. Taking the cyclic factor as an example, the results reveal that optimal synergistic enhancement of cycling performance is achieved when degree of graphitization ranges between 100 % and 200 %, S content exceeds 7 at%, and the number of graphene layers exceeds 3. The data-driven paradigm of “structural features-performance output-synergistic thresholds” established in this work provides a reliable theoretical foundation and experimentally verifiable optimization pathway for the targeted design of high-performance HC anodes.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495625009544?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495625009544?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "可解释机器学习预测硬碳负极电化学性能并识别微结构特征与循环稳定性的协同阈值。"
+        },
+        {
+          "axis": "task",
+          "label": "材料性质预测",
+          "label_en": "Materials property prediction",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "可解释机器学习预测硬碳负极电化学性能并识别微结构特征与循环稳定性的协同阈值。"
+        }
+      ]
     }
   },
   {
@@ -101859,8 +102839,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "pending",
+      "rationale": "摘要以认知系统和未来路线论述为主，需核实正文是否实质综述已开展的大模型电池预测研究及正式文献类型。",
       "verified_metadata": {},
       "tags": []
     }
@@ -101941,10 +102921,34 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "综述机器学习单原子催化剂数据工程、结构性能建模及多类电催化反应的材料筛选。",
+      "verified_metadata": {
+        "abstract": "Single-atom catalysts (SACs) stand at the forefront of catalysis research, attributable to their distinctive electronic structure, maximized atomic utilization, and exceptional catalytic performance, making them highly promising for renewable energy and sustainable energy conversion applications. However, their complex design parameters—including metal active sites, coordination environments, and substrate interactions—pose significant challenges for traditional experimental and computational approaches. These limitations hinder the systematic understanding of structure–property relationships in SACs. Machine learning (ML) offers a powerful alternative, enabling rapid screening and rational design by uncovering hidden patterns in high-dimensional catalyst data. This review summarizes recent advances in applying ML to the design and discovery of SACs. First, we analyze and summarize the recent trends and representative works in ML applications for SACs research. Next, a systematic workflow is proposed to guide researchers through ML-assisted SACs discovery, from data engineering to model application. We then showcase ML’s impact on critical catalytic reactions—CO2RR, HER, NRR, and ORR/OER—demonstrating its ability to uncover high-performance catalysts. Finally, we discuss challenges and future directions for integrating ML with SAC research, aiming to inspire innovative solutions and interdisciplinary collaboration. By bridging ML and catalysis, this review provides researchers with a practical roadmap to expedite the advancement of SACs.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495625009763?via%3Dihub",
+        "article_type": "Review article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495625009763?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述机器学习单原子催化剂数据工程、结构性能建模及多类电催化反应的材料筛选。"
+        },
+        {
+          "axis": "task",
+          "label": "催化剂发现",
+          "label_en": "Catalyst discovery",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述机器学习单原子催化剂数据工程、结构性能建模及多类电催化反应的材料筛选。"
+        }
+      ]
     }
   },
   {
@@ -102015,10 +103019,34 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "综述机器学习钠离子电池正负极组分、晶体与微结构设计，面向储钠性能和稳定性。",
+      "verified_metadata": {
+        "abstract": "This review summarizes the cutting-edge applications of artificial intelligence (AI) technology in the development and performance optimization of key materials for sodium-ion batteries (SIBs), with a primary focus on its breakthrough advancements in the innovation of cathode and anode materials. It highlights the pivotal role of AI in accelerating the discovery and optimization process of high-performance SIB materials. In the research and development of cathode materials, AI technology, through machine learning and deep learning algorithms, assists in the design of layered oxides and poly-anion compounds, optimizes the ratio of transition metals and crystal structure, and enhances the kinetics of Na+ intercalation/deintercalation and structural stability. In terms of anode materials, AI technology leverages data-driven high-throughput screening strategies and microstructural modulation models to drive breakthroughs in key performance metrics such as sodium storage capacity and rate capability for hard carbon, alloy-based, and conversion-type anode materials. AI technology successfully establishes a new development paradigm of “data-driven, mechanism-embedded”, achieving full-chain coverage from atomic-scale material design to system-level performance optimization, significantly reducing development cycle and costs. Based on a summary of the current application status of AI technology in the development of SIBs materials, this review further analyzes the challenges that this field is facing, and at the same time looks forward to the development opportunities of the in-depth integration of AI and experimental research and development, providing innovative methodological support and direction guidance for promoting the industrialization process of high-performance SIBs.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495626000227?via%3Dihub",
+        "article_type": "Review article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495626000227?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述机器学习钠离子电池正负极组分、晶体与微结构设计，面向储钠性能和稳定性。"
+        },
+        {
+          "axis": "task",
+          "label": "逆向设计",
+          "label_en": "Inverse design",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述机器学习钠离子电池正负极组分、晶体与微结构设计，面向储钠性能和稳定性。"
+        }
+      ]
     }
   },
   {
@@ -102101,8 +103129,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "exclude",
+      "rationale": "研究钙钛矿钨单原子助催化剂的实验结构与光催化性能，AI仅出现在版权声明，未参与研究。",
       "verified_metadata": {},
       "tags": []
     }
@@ -102182,10 +103210,34 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "TabPFN数据增广及回归模型预测硬碳负极容量与初始库仑效率，实验验证所选合成条件。",
+      "verified_metadata": {
+        "abstract": "Biomass-derived hard carbon has become the most promising anode material for sodium-ion batteries (SIBs) due to its high capacity and excellent cycling stability. However, the effects of synthesis parameters and structural features on hard carbon’s (HC) electrochemical performance are still unclear, requiring time-consuming and resource-intensive experimental investigations. Machine learning (ML) offers a promising solution by training on large datasets to predict hard carbon performance more efficiently, saving time and resources. In this study, four ML models were used to predict the capacity and initial Coulombic efficiency (ICE) of HC. Data augmentation based on the TabPFN technique was employed to improve model robustness under limited data conditions, and the relationships between features and electrochemical performance were examined. Notably, the XGBoost model achieved an R2 of 0.854 and an RMSE of 23.290 mA h g−1 for capacity prediction, and an R2 of 0.868 and an RMSE of 3.813% for ICE prediction. Shapley Additive Explanations (SHAP) and Partial Dependence Plot (PDP) analyses identified carbonization temperature (Temperature_2) as the most important factor influencing both capacity and ICE. Furthermore, we used bamboo as the precursor to synthesize four hard carbons based on the predictive approach. The electrochemical performance of these samples closely matched our predictions. By leveraging machine-learning approach, this study provides an efficient framework for accelerating the screening process of biomass-derived hard carbon candidates.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S209549562600077X?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S209549562600077X?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "TabPFN数据增广及回归模型预测硬碳负极容量与初始库仑效率，实验验证所选合成条件。"
+        },
+        {
+          "axis": "task",
+          "label": "材料性质预测",
+          "label_en": "Materials property prediction",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "TabPFN数据增广及回归模型预测硬碳负极容量与初始库仑效率，实验验证所选合成条件。"
+        }
+      ]
     }
   },
   {
@@ -102266,10 +103318,25 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "可解释机器学习筛选掺杂氧化铌催化剂局域环境，并经合成验证析氧活性与稳定性。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "可解释机器学习筛选掺杂氧化铌催化剂局域环境，并经合成验证析氧活性与稳定性。"
+        },
+        {
+          "axis": "task",
+          "label": "催化剂发现",
+          "label_en": "Catalyst discovery",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "可解释机器学习筛选掺杂氧化铌催化剂局域环境，并经合成验证析氧活性与稳定性。"
+        }
+      ]
     }
   },
   {
@@ -102350,10 +103417,34 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "iTransformer实时估计全钒液流电池荷电状态，在实际10千瓦系统验证。",
+      "verified_metadata": {
+        "abstract": "Vanadium flow batteries (VFBs) are well suitable for grid-scale energy storage owing to their long lifespan, high efficiency and safety. State of charge (SOC) monitoring is essential for battery health assessment and system management. However, accurate SOC determination during operation remains challenging due to vanadium ion crossover and side reactions that disrupt the valence and concentration balance between positive and negative electrolytes. Herein, an inverted transformer model, namely iTransformer, is employed to predict the SOC in VFB systems during charge–discharge cycles. The iTransformer-SOC model can achieve high accuracy and robustness. Even with training limited to the first three cycles, the model predicts SOC for the next 21 cycles with mean absolute percentage error (MAPE) less than 0.03. It can adapt to power variations and electrolyte rebalancing scenarios. Most importantly, an iTransformer-based SOC monitoring system was validated and confirmed by a 10 kW VFB system, demonstrating superior performance in predicting SOC of complete charge–discharge cycles (MAPE < 0.05, less than 1/3 of the traditional open-circuit voltage (OCV) method’s error). This data-driven approach provides a robust framework for real-time SOC monitoring in VFB systems, serving as a complementary alternative to physics-based model without requiring prior knowledge of system dynamics.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495626001968?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495626001968?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "iTransformer实时估计全钒液流电池荷电状态，在实际10千瓦系统验证。"
+        },
+        {
+          "axis": "method",
+          "label": "Transformer 架构",
+          "label_en": "Transformer",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "iTransformer实时估计全钒液流电池荷电状态，在实际10千瓦系统验证。"
+        }
+      ]
     }
   },
   {
@@ -102426,10 +103517,41 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "构建光伏制造全流程实验数据库，以CatBoost及解释分析预测CIGS性能并识别工艺范围。",
+      "verified_metadata": {
+        "abstract": "Copper indium gallium selenide (CIGS) thin-film solar cells have attracted substantial attention due to their high efficiency and scalable fabrication processes. However, achieving optimized and reproducible performance remains challenging because of the complex process flows and interdependent, multidimensional parameters inherent to these heterojunction devices. Elucidating the process-structure-performance relationship between manufacturing parameters and device output is therefore essential. In this study, we demonstrate an effective approach for optimizing CIGS performance using interpretable machine learning (ML) and construct a whole-process database comprising 756 experimental samples. Through multi-model comparison, the Categorical Boosting (CatBoost) algorithm is identified as the optimal model across four performance metrics, yielding a coefficient of determination (R2) of 0.755 for power conversion efficiency (PCE) with a root mean square error (RMSE) of 2.3%. By integrating Shapley additive explanations (SHAP) with parallel-coordinates visualization, this study systematically quantifies the dominant contributions of the anti-reflection coating (ARC) and fabrication methodologies, while revealing critical compositional trade-offs. Moreover, a Golden Process Corridor for high-efficiency devices is established, indicating that improved performance is associated with ARC deposition, the three-stage co-evaporation method, an absorber thickness of 2.0–3.0 μm, [Cu]/([Ga]+[In]) ratio of 0.89–0.95, and [Ga]/([Ga]+[In]) ratio of 0.29–0.42. ML demonstrates strong predictive capability for device performance, offering a transferable roadmap to accelerate process optimization for single-junction and tandem CIGS devices while reducing research and development costs.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495626002056?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495626002056?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "构建光伏制造全流程实验数据库，以CatBoost及解释分析预测CIGS性能并识别工艺范围。"
+        },
+        {
+          "axis": "contribution",
+          "label": "科学数据",
+          "label_en": "Scientific data",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "构建光伏制造全流程实验数据库，以CatBoost及解释分析预测CIGS性能并识别工艺范围。"
+        },
+        {
+          "axis": "task",
+          "label": "材料性质预测",
+          "label_en": "Materials property prediction",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "构建光伏制造全流程实验数据库，以CatBoost及解释分析预测CIGS性能并识别工艺范围。"
+        }
+      ]
     }
   },
   {
@@ -102513,10 +103635,41 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "物理约束神经网络从稀疏脉冲响应估计退役电池退化，验证跨检测协议和电池类型迁移。",
+      "verified_metadata": {
+        "abstract": "The reuse and recycling of lithium batteries are crucial for environmental sustainability. However, service data for retired batteries has restricted access, making rapid on-site detection of their degradation levels essential for effective recycling or reuse decisions. Herein, we propose a physics-informed learning framework to rapidly and accurately estimate lithium battery degradation from sparse pulse response data under random retirement conditions. Specifically, considering the changes in internal resistance and polarization characteristics as lithium batteries degrade, we design features based on the zero state and zero input voltage responses obtained from a one-minute pulse detection. The polarization voltage differential equations during the pulse response are incorporated as physical constraints to develop a physics-guided neural network (PGNN) model for rapid degradation estimation of lithium batteries. A feature mapping framework for transfer learning is then established using a priori physics-informed differences among lithium batteries. Without additional training, the same PGNN model can achieve accurate transfer estimation across different pulse detection protocols. We employ 58 commercial lithium batteries from 3 different types to generate 5316 pulse response samples for cross-validation, and the coefficient of determination (R2) is greater than 0.96. In the transfer estimation of degradation across different pulse detection protocols, the R2 exceeded 0.954. Furthermore, even under transfer estimation across different battery types, the R2 remained above 0.806. This work significantly advances both direct and transfer degradation estimation accuracy for randomly retired lithium batteries under sparse pulse response data conditions, highlighting the potential of the physics-informed learning framework for rapid degradation detection in lithium battery recycling.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495626002287?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495626002287?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "物理约束神经网络从稀疏脉冲响应估计退役电池退化，验证跨检测协议和电池类型迁移。"
+        },
+        {
+          "axis": "method",
+          "label": "物理信息学习",
+          "label_en": "Physics-informed learning",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "物理约束神经网络从稀疏脉冲响应估计退役电池退化，验证跨检测协议和电池类型迁移。"
+        },
+        {
+          "axis": "method",
+          "label": "迁移学习",
+          "label_en": "Transfer learning",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "物理约束神经网络从稀疏脉冲响应估计退役电池退化，验证跨检测协议和电池类型迁移。"
+        }
+      ]
     }
   },
   {
@@ -102593,10 +103746,34 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "机器学习结合实验优化硅太阳能电池双钝化层工艺，分析界面扩散与器件性能。",
+      "verified_metadata": {
+        "abstract": "The a-Si:H(i)/MoOX passivated contact structure demonstrates significant advantages in compound crystalline silicon (c-Si) heterojunction solar cells. However, the interdiffusion of interfacial hydrogen (H) and oxygen (O) atoms induces passivation degradation and device instability, which severely limits its practical application. To address this challenge, this study introduces an innovative approach by incorporating a SiOX interlayer between a-Si:H(i) and MoOX, proposing an a-Si:H(i)/SiOX dual-passivation structure. Moving beyond traditional optimization paradigms, this work integrates machine learning-assisted analysis with experimental verification to uncover the underlying mechanisms by which critical process parameters affect solar cell performance, leading to the precise identification of optimal fabrication parameters for the SiOX layer. This structure effectively mitigates interfacial element interdiffusion, resulting in a significant increase in the work function (WF) of MoOX from 4.91 to 5.05 eV, an enhancement of minority carrier lifetime (τeff) from 2.4 to 3.9 ms, and achieving a pseudo fill factor (pFF) of 86.16%. The optimized solar cell demonstrates record-breaking performance, with a fill factor (FF) of 84.68%, an open-circuit voltage (VOC) of 743.4 mV, and a final power conversion efficiency (PCE) of 24.45%. This work achieves a record efficiency for compound c-Si heterojunction solar cells while simultaneously optimizing both chemical and field-effect passivation and substantially improving device stability in ambient air.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495626002330?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495626002330?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "机器学习结合实验优化硅太阳能电池双钝化层工艺，分析界面扩散与器件性能。"
+        },
+        {
+          "axis": "task",
+          "label": "逆向设计",
+          "label_en": "Inverse design",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "机器学习结合实验优化硅太阳能电池双钝化层工艺，分析界面扩散与器件性能。"
+        }
+      ]
     }
   },
   {
@@ -102672,10 +103849,34 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "机器学习从电化学信号推断正极晶体学参数，以原位中子衍射为训练和验证依据。",
+      "verified_metadata": {
+        "abstract": "Operando neutron diffraction (ND) serves as a powerful tool for probing crystallographic sites of light elements such as lithium and oxygen in the structural lattice during charge and discharge cycles. However, its limited temporal resolution currently restricts real-time monitoring under high-rate conditions. To address this challenge, a flexible machine learning framework, termed the electrochemical to crystallographic parameter inference framework (ECPIF), is proposed. Using a LiNi0.8Co0.15Al0.05O2 (NCA)||graphite full cell as a model system, operando ND data are collected at rates of 0.2, 0.5, and 1 C. With electrochemical data employed as input features and crystallographic parameters as target outputs, the model trained on the 0.2 and 0.5 C datasets demonstrates excellent predictive performance on the 1 C validation set and successfully extrapolates to 2 C electrochemical data. This study introduces a general framework for directly and rapidly mapping electrochemical signals to crystallographic parameters, thereby enabling the rational design of high-performance battery materials.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495626003323?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495626003323?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "机器学习从电化学信号推断正极晶体学参数，以原位中子衍射为训练和验证依据。"
+        },
+        {
+          "axis": "task",
+          "label": "反问题",
+          "label_en": "Inverse problem",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "机器学习从电化学信号推断正极晶体学参数，以原位中子衍射为训练和验证依据。"
+        }
+      ]
     }
   },
   {
@@ -102750,10 +103951,27 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "系统综述电池剩余寿命机器学习方法、数据集和验证协议，并梳理跨研究可比性问题。",
+      "verified_metadata": {
+        "abstract": "Accurate prediction of the remaining useful life (RUL) of lithium-ion batteries is pivotal for the safe and economical operation of electric vehicles and stationary energy storage systems. However, the rapid expansion of machine-learning and hybrid prognostic models has fragmented evaluation practices and weakened the reliability of cross-study comparisons. This work provides a structured review of data-driven RUL prediction through a unified taxonomy linking each model family to its learning target, inductive assumptions, data requirements, and common failure modes. Methodologically, this review conducts a systematic literature mapping and fine-grained bibliographic tagging of 996 publications, with emphasis on the 2017–2025 period, and quantitatively analyzes research trends, dataset usage, validation protocols, and reporting conventions to clarify where performance claims are comparable. This work further summarizes the outstanding challenges at the data, methodological, and application levels, including dataset limitations and inconsistent end-of-life definitions, generalization and benchmarking fragmentation with insufficient uncertainty calibration, and deployment, safety, and standardization constraints.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495626003426?via%3Dihub",
+        "article_type": "Review article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495626003426?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "系统综述电池剩余寿命机器学习方法、数据集和验证协议，并梳理跨研究可比性问题。"
+        }
+      ]
     }
   },
   {
@@ -102838,8 +104056,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "pending",
+      "rationale": "生物质化学链综述提及机器学习氧载体设计和循环优化，需全文确认是实质应用评述而非未来方向。",
       "verified_metadata": {},
       "tags": []
     }
@@ -102934,8 +104152,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "pending",
+      "rationale": "摘要标为Perspective，讨论混合神经力场和自主电解液发现；需核实正式类型及是否达到实质技术综述标准。",
       "verified_metadata": {},
       "tags": []
     }
@@ -103012,10 +104230,41 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "综述电池寿命预测从方程模型到表征学习和跨域迁移的方法演变，涉及不确定性估计及电化学约束。",
+      "verified_metadata": {
+        "abstract": "Accurate prediction of the remaining useful life (RUL) of lithium-ion batteries is fundamental to safety assurance, lifecycle management, and rational resource utilization. Over the past four decades, battery lifetime prediction has undergone a structural methodological evolution. This review reveals a transition from equation-centric degradation modeling toward representation-driven and transferable learning frameworks. Early studies relied on handcrafted electrochemical descriptors and statistical pattern recognition for qualitative screening. The subsequent shift to quantitative prediction established three foundational equation-based paradigms: empirical cycle-capacity extrapolation, discharge-event damage accumulation under dynamic duty cycles, and electrochemical-parameter-based simulations grounded in transport processes and side-reaction kinetics. Although physically interpretable, these approaches were largely static and constrained by parameter identifiability and stress-dependent variability. Later developments integrated Bayesian filtering and data-driven learning to reformulate degradation prediction as an adaptive state-estimation problem with uncertainty quantification. More recent advances emphasize representation learning, where high-dimensional electrochemical signals are transformed into transferable degradation features, and cross-domain transfer mechanisms mitigate data scarcity and distribution shifts across heterogeneous cells and operating conditions. We argue that the central challenge has shifted from deriving explicit degradation equations to constructing robust degradation representations that remain consistent with electrochemical principles while generalizing across conditions. Future progress will depend on field-grounded fleet-scale representation learning, physics-informed frameworks that reconcile mechanistic fidelity with data efficiency, adaptive and privacy-preserving transfer under distribution shift, and trustworthy deployment enabled by calibrated uncertainty, active learning, and mechanism-consistent explainability.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495626003736?via%3Dihub",
+        "article_type": "Review article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495626003736?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述电池寿命预测从方程模型到表征学习和跨域迁移的方法演变，涉及不确定性估计及电化学约束。"
+        },
+        {
+          "axis": "method",
+          "label": "迁移学习",
+          "label_en": "Transfer learning",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述电池寿命预测从方程模型到表征学习和跨域迁移的方法演变，涉及不确定性估计及电化学约束。"
+        },
+        {
+          "axis": "method",
+          "label": "不确定性量化",
+          "label_en": "Uncertainty quantification",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述电池寿命预测从方程模型到表征学习和跨域迁移的方法演变，涉及不确定性估计及电化学约束。"
+        }
+      ]
     }
   },
   {
@@ -103098,10 +104347,41 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "系统综述机器学习与原子势分子动力学预测相变材料热性能和微观传热机制。",
+      "verified_metadata": {
+        "abstract": "The performance of phase change materials (PCMs) in thermal energy storage and thermal management systems is directly determined by their thermal properties. Targeted development of high-performance PCMs is underpinned by accurate elucidation of heat transport and phase change regulatory mechanisms, as well as efficient high-precision thermal property acquisition. Quantitative prediction of PCMs thermal properties, microscopic mechanism elucidation, multi-component screening cost reduction, and extreme-condition property characterization can be achieved via molecular dynamics (MD) simulations and machine learning (ML). However, classical MD is limited by empirical potential accuracy and system adaptability, with insufficient prediction precision in complex multi-component PCMs, failing to balance first-principles-level accuracy and large-scale long-time simulation, thus restricting its application in high-performance PCM design. To address this bottleneck, machine learning potentials (MLPs) built from density functional theory (DFT)-accuracy datasets enable high-precision MD simulations combining first-principles-level accuracy and large-scale capability, resolving otherwise inaccessible microscopic mechanisms and enabling efficient calculation for multi-component systems intractable to classical MD. This integrated MD-ML route has attracted extensive research attention recently. Herein, state-of-the-art advances in MD, ML, and their deeply integrated methods for PCM thermal property research are systematically reviewed, with focus on balancing computational accuracy and efficiency via synergistic optimization. First, MD-based thermal property prediction is summarized, and atomic-scale regulatory mechanisms of interfacial thermal resistance, confinement effects, and microstructure on heat transport and phase change in composite PCMs are elucidated. Next, ML applications in this field are reviewed, and advantages, limitations, and applicable scenarios of different ML models across PCM systems are compared from core dimensions of prediction accuracy, generalization ability, and computational cost. Subsequently, MLP simulations are comprehensively discussed, with their core advantage highlighted: combining first-principles-level accuracy and large-scale long-time simulation capability to resolve otherwise inaccessible microscopic mechanisms, along with key challenges in transferability and multi-element system adaptability. Finally, after benchmarking of mainstream prediction methods, core technical challenges, improvement strategies, and future directions for MD- and ML-based thermal property prediction are identified. For future work, priority should be given to developing general MLPs for complex PCM systems and extreme conditions, building physically interpretable ML models and standardized thermal datasets, closing the ML-MD simulation-experiment validation loop, and realizing high-throughput screening and inverse design of target PCMs.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495626004341?via%3Dihub",
+        "article_type": "Review article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495626004341?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "系统综述机器学习与原子势分子动力学预测相变材料热性能和微观传热机制。"
+        },
+        {
+          "axis": "method",
+          "label": "神经网络势能",
+          "label_en": "Neural network potential",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "系统综述机器学习与原子势分子动力学预测相变材料热性能和微观传热机制。"
+        },
+        {
+          "axis": "task",
+          "label": "材料性质预测",
+          "label_en": "Materials property prediction",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "系统综述机器学习与原子势分子动力学预测相变材料热性能和微观传热机制。"
+        }
+      ]
     }
   },
   {
@@ -103179,10 +104459,41 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "XGBoost和符号回归预测MXene吸氢自由能，推导可解释构效表达式与催化活性边界。",
+      "verified_metadata": {
+        "abstract": "The hydrogen evolution reaction (HER) is the core half-reaction of water electrolysis for hydrogen production, with hydrogen adsorption free energy (ΔGH) as its key activity evaluation index. MXene, a new type of two-dimensional layered transition metal carbides, nitrides or carbonitrides, has great HER electrocatalytic potential due to adjustable electronic structure and geometric configuration. To solve the bottleneck that traditional “black box” models cannot provide interpretable guidance, this study constructed a dataset of 1125 MXene configurations, used XGBoost model to predict ΔGH (training set R2 = 0.953, MAE = 0.210 eV; test set R2 = 0.827, MAE = 0.390 eV). Combined with correlation and SHAP analysis, core features regulating ΔGH were identified. A physically interpretable ΔGH formula is derived via symbolic regression. Finally, high-activity MXenes’ key structural boundary (GT-17 = 0, IET ≥ 10) is clarified, and O/S-functionalized MXenes are more likely to achieve optimal ΔGH close to 0 eV, providing guidance for rational design.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495626004572?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495626004572?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "XGBoost和符号回归预测MXene吸氢自由能，推导可解释构效表达式与催化活性边界。"
+        },
+        {
+          "axis": "method",
+          "label": "符号回归",
+          "label_en": "Symbolic regression",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "XGBoost和符号回归预测MXene吸氢自由能，推导可解释构效表达式与催化活性边界。"
+        },
+        {
+          "axis": "task",
+          "label": "催化剂发现",
+          "label_en": "Catalyst discovery",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "XGBoost和符号回归预测MXene吸氢自由能，推导可解释构效表达式与催化活性边界。"
+        }
+      ]
     }
   },
   {
@@ -103267,10 +104578,34 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "时序Transformer结合老化曲线形状约束预测电池容量衰退，验证跨化学体系和长预测跨度。",
+      "verified_metadata": {
+        "abstract": "Accurate prediction of battery capacity aging trajectories is critical for reliable battery management, yet remains challenging due to complex electrochemical degradation mechanisms. While emerging time-series large language models (LLMs) have shown promise, they often lack adherence to physical laws, resulting in inconsistent long-term forecasts. To bridge this gap, we propose a physics-informed time-series LLM (PiT-LLM). Specifically, PiT-LLM incorporates the Transformer backbone (T-backbone), a patch-based Transformer architecture with implicit physical dynamics designed to tokenize long historical sequences and extract global degradation patterns. This data-driven stream is coupled with the Pi-Learner, a sine-activated multi-layer perceptron physics branch that imposes three soft trajectory-shape priors on the predicted aging curve—monotonic non-increase, bounded curvature, and derivative consistency. Rather than embedding mechanism-specific governing equations, the Pi-Learner regularizes the prediction toward smooth, physically plausible state of health (SOH) trajectories that remain consistent with macroscopic battery aging behavior. Extensive experiments on heterogeneous in-domain and external zero-shot datasets spanning NMC, LCO, LFP, and NCA chemistries show that PiT-LLM provides a strong accuracy-stability trade-off across both in-domain and cross-chemistry settings. Across the in-domain benchmarks, PiT-LLM ranks first on 6 of 9 MAE cells and 5 of 9 RMSE cells, while on the SNL zero-shot test, it remains within the top three on all six MAE/RMSE-horizon axes. These results demonstrate that trajectory-level physical priors strengthen time-series LLMs for long-horizon, cross-chemistry battery health prognosis.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495626004699?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495626004699?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "时序Transformer结合老化曲线形状约束预测电池容量衰退，验证跨化学体系和长预测跨度。"
+        },
+        {
+          "axis": "method",
+          "label": "Transformer 架构",
+          "label_en": "Transformer",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "时序Transformer结合老化曲线形状约束预测电池容量衰退，验证跨化学体系和长预测跨度。"
+        }
+      ]
     }
   },
   {
@@ -103343,10 +104678,41 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "一维卷积网络分析远红外光谱定量SEI中的氟化锂，并以真实界面样本验证。",
+      "verified_metadata": {
+        "abstract": "Quantifying LiF in the solid electrolyte interphase (SEI) is critical for developing novel interface engineering and understanding battery degradation. However, conventional techniques (XPS, FTIR) face severe limitations in quantifying LiF due to shallow detection depth or low sensitivity. Far‑infrared (FIR) spectroscopy offers a potential advantage via the characteristic lattice absorption of LiF, yet its application is hindered by broad, strongly overlapping peaks and the lack of reliable concentration labels in real SEI samples. To overcome these challenges, inspired by the phenomenon that metastable SEI components can be transformed into stable products in a high-humidity atmosphere, this work constructs a simplified simulated SEI mixture and systematically collects its FIR spectra. A novel one‑dimensional convolutional neural network, AMDG‑1D CNN, is developed for LiF quantification, integrating adaptive preprocessing, multi‑scale feature extraction, dual attention refinement, and global multi‑statistics pooling. The model achieves a test R2 of 0.904 and RMSE of 3.706 wt%, outperforming conventional methods. It also shows strong robustness under various interferences. When applied to real SEI samples, predicted LiF concentrations show small deviations from ion chromatography measurements, validating the transferability from simulated to practical systems. This FIR‑deep learning framework provides a reference strategy for LiF quantification in complex electrochemical interfaces.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495626004742?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495626004742?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "一维卷积网络分析远红外光谱定量SEI中的氟化锂，并以真实界面样本验证。"
+        },
+        {
+          "axis": "method",
+          "label": "卷积神经网络",
+          "label_en": "Convolutional neural network",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "一维卷积网络分析远红外光谱定量SEI中的氟化锂，并以真实界面样本验证。"
+        },
+        {
+          "axis": "task",
+          "label": "光谱分析",
+          "label_en": "Spectral analysis",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "一维卷积网络分析远红外光谱定量SEI中的氟化锂，并以真实界面样本验证。"
+        }
+      ]
     }
   },
   {
@@ -103424,10 +104790,27 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "物理加权特征与XGBoost预测快充电池健康状态，通过解释分析比较老化因素及充放电协议。",
+      "verified_metadata": {
+        "abstract": "Fast-charging accelerates lithium-ion battery aging through complex, coupled physicochemical mechanisms that remain obscured in conventional data-driven state-of-health (SOH) models. To address this interpretability gap, we develop a prior-informed and interpretable workflow that combines the constant voltage (CV) stage current-feature extraction, physics-weighted principal component analysis (PW-PCA), XGBoost regression, and model-attribution analysis. Eighteen CV-stage current features were extracted from twelve LiNixCoyMnzO2 (NCM)//graphite 18650 cells cycled under six charge-discharge protocols at 45 °C. PW-PCA transformed the screened current features into three candidate latent descriptors, among which PC1 and PC3 were selected by PC-level ablation as the final predictive inputs. The resulting XGBoost model achieved accurate held-out SOH prediction with a root mean square error (RMSE) of 0.0278 and an R2 of 0.864. SHapley additive explanations (SHAP) and XGBoost intrinsic importance consistently identified PC1 as the dominant descriptor, while PC3 provided complementary predictive information. Attribution analysis across aging stages and protocols further revealed protocol-dependent descriptor patterns under the tested accelerated-aging conditions. Among the six tested protocols, C3D2, denoting 3 C charging and 2 C discharging, showed the best observed trade-off among cycle life, capacity retention, and degradation rate. This work demonstrates a transparent workflow for connecting CV-stage current descriptors with interpretable SOH prediction and attribution-informed protocol screening within a controlled accelerated-aging dataset.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S209549562600495X?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S209549562600495X?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "物理加权特征与XGBoost预测快充电池健康状态，通过解释分析比较老化因素及充放电协议。"
+        }
+      ]
     }
   },
   {
@@ -103507,10 +104890,41 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "集成学习筛选甲烷电化学偶联钙钛矿阳极，合成和DFT验证催化性能及活性氧机制。",
+      "verified_metadata": {
+        "abstract": "The electrochemical oxidative coupling of methane in solid oxide electrolysis cells offers a promising route for ethylene production, yet rational anode design remains a critical challenge. Herein, we report a machine learning-accelerated discovery of efficient perovskite anodes for electrochemical oxidative coupling of methane. An ensemble model integrating four base learners identified the electronegativity and ionic radius of the B-site cation as critical descriptors, enabling the rational design of anodes that simultaneously fulfill the requirements of high oxygen evolution activity and effective CH4 activation. From 1019 candidates, several compositions were synthesized, among which SrCo0.9Ta0.1O3−δ exhibited exceptional performance, achieving a methane conversion rate to C2+ products of 600 μL min−1 cm−2 with 62% selectivity at 850 °C. This constitutes a substantial improvement over the commercial benchmark La0.6Sr0.4Co0.2Fe0.8O3−δ, which exhibited only 39% selectivity and a conversion rate of 330 μL min−1 cm−2 under identical conditions. Density functional theory calculations revealed that the predicted perovskite stabilizes reactive oxygen species (O22–) during the oxygen evolution reaction, thereby facilitating methane activation. This work presents a robust machine learning guided framework for rational design of multifunctional perovskite anodes that enable efficient methane conversion.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495626005632?via%3Dihub",
+        "article_type": "Research article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495626005632?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "集成学习筛选甲烷电化学偶联钙钛矿阳极，合成和DFT验证催化性能及活性氧机制。"
+        },
+        {
+          "axis": "task",
+          "label": "催化剂发现",
+          "label_en": "Catalyst discovery",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "集成学习筛选甲烷电化学偶联钙钛矿阳极，合成和DFT验证催化性能及活性氧机制。"
+        },
+        {
+          "axis": "task",
+          "label": "逆向设计",
+          "label_en": "Inverse design",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "集成学习筛选甲烷电化学偶联钙钛矿阳极，合成和DFT验证催化性能及活性氧机制。"
+        }
+      ]
     }
   },
   {
@@ -103590,10 +105004,48 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "综述材料文献知识抽取从传统方法到多模态大模型的进展，覆盖图表文本理解、检索增强和知识结构化。",
+      "verified_metadata": {
+        "abstract": "The escalating volume of literature demands automated knowledge extraction for autonomous robotic experimentation. This review traces the evolution from traditional rule-based and machine-learning pipelines to transformer-based large language models and multimodal architectures, encompassing domain-specific encoders and visual foundation models. We identify three persistent challenges: semantic complexity, multimodal heterogeneity, and rapid terminology evolution. We demonstrate that multimodal large language models, through context-aware reasoning, few-shot adaptation, and native cross-modal alignment, can systematically address these challenges, enabling holistic document-level understanding. Strategies including prompt engineering, retrieval-augmented generation, and parameter-efficient fine-tuning further enhance extraction reliability. ChemRobot systems can build structured actionable knowledge bases from unstructured texts, tables, and figures, closing the loop from literature to autonomous experimentation. We conclude with a roadmap for developing intelligent Literature Readers, emphasizing multimodal benchmarks, efficient architectures, uncertainty quantification, and human-machine collaboration.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495626005681?via%3Dihub",
+        "article_type": "Review article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495626005681?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述材料文献知识抽取从传统方法到多模态大模型的进展，覆盖图表文本理解、检索增强和知识结构化。"
+        },
+        {
+          "axis": "task",
+          "label": "科学信息抽取",
+          "label_en": "Scientific information extraction",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述材料文献知识抽取从传统方法到多模态大模型的进展，覆盖图表文本理解、检索增强和知识结构化。"
+        },
+        {
+          "axis": "method",
+          "label": "多模态学习",
+          "label_en": "Multimodal learning",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述材料文献知识抽取从传统方法到多模态大模型的进展，覆盖图表文本理解、检索增强和知识结构化。"
+        },
+        {
+          "axis": "method",
+          "label": "检索增强生成",
+          "label_en": "Retrieval-augmented generation",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "综述材料文献知识抽取从传统方法到多模态大模型的进展，覆盖图表文本理解、检索增强和知识结构化。"
+        }
+      ]
     }
   },
   {
@@ -103685,10 +105137,25 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "综述AI充电电池材料筛选、性能预测及构效关系挖掘，覆盖正负极和液固态电解质。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "综述AI充电电池材料筛选、性能预测及构效关系挖掘，覆盖正负极和液固态电解质。"
+        },
+        {
+          "axis": "task",
+          "label": "材料性质预测",
+          "label_en": "Materials property prediction",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "综述AI充电电池材料筛选、性能预测及构效关系挖掘，覆盖正负极和液固态电解质。"
+        }
+      ]
     }
   },
   {
@@ -103768,10 +105235,27 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "系统综述机器学习退役电池容量估计、快速分组和二次寿命诊断，讨论真实退役数据和迁移挑战。",
+      "verified_metadata": {
+        "abstract": "Machine learning offers promising health management solutions for addressing the wave of battery retirement, facilitating their reuse to extend their second life. It is capable of efficiently accomplishing the three tasks of remaining capacity estimation, fast sorting, and second-life health diagnosis for a variety of retired batteries under different retirement conditions by utilizing fast measurement data or daily operation data as input. Here, we identify the challenges of performance differences of retired batteries compared to new batteries, introduce a general framework based on machine learning for the three health management tasks, analyze typical retired battery datasets, and summarize the health management challenges that may be encountered by machine learning. Subsequently, the application of machine learning to the three health management tasks is discussed in detail, as well as the solutions to address the three types of tasks in the face of challenges such as data scarcity and insufficient generalization capabilities. Finally, we provide an in-depth discussion of the key challenges in health management of retired batteries and present a forward-looking framework for future health management systems, with a particular focus on intelligent robotic solutions equipped with advanced artificial intelligence (AI) agents. This work provides a roadmap for safer and more economically viable battery reuse.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495626006510?via%3Dihub",
+        "article_type": "Review article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495626006510?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": 2026
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "Publisher Abstract and issue header",
+          "rationale": "系统综述机器学习退役电池容量估计、快速分组和二次寿命诊断，讨论真实退役数据和迁移挑战。"
+        }
+      ]
     }
   },
   {
@@ -103859,9 +105343,18 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
-      "verified_metadata": {},
+      "decision": "pending",
+      "rationale": "原摘要支持AI钙钛矿器件实质综述，但出版社仅有2026年11月2日在线预发表、尚无正式卷期；年度归属待核实。",
+      "verified_metadata": {
+        "abstract": "Artificial intelligence (AI) is reshaping research on perovskite solar cells (PSCs) and perovskite light-emitting diodes (PeLEDs) by uncovering complex nonlinear relationships and navigating high-dimensional materials and device design spaces. Existing reviews, however, have predominantly focused on predictive machine learning (ML), with comparatively limited attention to large language models (LLMs), methodological robustness, and practical strategies for building generalizable AI workflows. Here, we review AI-driven advances from predictive ML to LLM-enabled knowledge extraction and reasoning, encompassing device performance optimization, fabrication optimization, mechanistic understanding, and automated experimentation. We critically examine three persistent challenges: model generalization under scarce and heterogeneous data, the distinction between statistical associations and causal physical mechanisms, and the integration of physical knowledge into data-driven models. We further assess the complementary roles of ML and LLMs: ML remains central to quantitative prediction and optimization, whereas LLMs support literature mining, knowledge synthesis, hypothesis generation, and experimental planning but require knowledge grounding and verification to mitigate hallucinations and physically implausible outputs. Finally, we outline a roadmap based on standardized metadata and community-wide benchmarks, uncertainty-aware and out-of-distribution evaluation, in situ diagnostics, physics-informed learning, and closed-loop experimentation. This framework aims to guide the development of trustworthy and transferable AI for perovskite optoelectronics.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495626008661?via%3Dihub",
+        "article_type": "Review article",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495626008661?via%3Dihub"
+        ],
+        "checked_at": "2026-11-18",
+        "year": null
+      },
       "tags": []
     }
   },
@@ -103952,8 +105445,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "pending",
+      "rationale": "空间多组学综述摘要未明确AI整合算法，仅在伦理讨论提及AI；需全文核实计算方法的实质作用。",
       "verified_metadata": {},
       "tags": []
     }
@@ -104045,10 +105538,32 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "综述空间组学与深度学习、空间图模型整合，面向肿瘤微环境、标志物和疾病机制分析。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "综述空间组学与深度学习、空间图模型整合，面向肿瘤微环境、标志物和疾病机制分析。"
+        },
+        {
+          "axis": "method",
+          "label": "图神经网络",
+          "label_en": "Graph neural network",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "综述空间组学与深度学习、空间图模型整合，面向肿瘤微环境、标志物和疾病机制分析。"
+        },
+        {
+          "axis": "method",
+          "label": "多模态学习",
+          "label_en": "Multimodal learning",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "综述空间组学与深度学习、空间图模型整合，面向肿瘤微环境、标志物和疾病机制分析。"
+        }
+      ]
     }
   },
   {
@@ -104123,8 +105638,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "pending",
+      "rationale": "摘要仅为内镜人机诊断一致性的引言，需补完整原文并确认文献类型和是否存在原创研究结果。",
       "verified_metadata": {},
       "tags": []
     }
@@ -104198,10 +105713,25 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "通过多设备重复扫描验证AI数字病理肝纤维化分期的重复性和再现性，支持病理定量测量。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "通过多设备重复扫描验证AI数字病理肝纤维化分期的重复性和再现性，支持病理定量测量。"
+        },
+        {
+          "axis": "task",
+          "label": "组织病理分类",
+          "label_en": "Histopathology classification",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "通过多设备重复扫描验证AI数字病理肝纤维化分期的重复性和再现性，支持病理定量测量。"
+        }
+      ]
     }
   },
   {
@@ -104270,10 +105800,25 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "训练内镜溃疡分割模型量化克罗恩病黏膜损伤，并与临床评分比较。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "训练内镜溃疡分割模型量化克罗恩病黏膜损伤，并与临床评分比较。"
+        },
+        {
+          "axis": "task",
+          "label": "医学影像分割",
+          "label_en": "Medical image segmentation",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "训练内镜溃疡分割模型量化克罗恩病黏膜损伤，并与临床评分比较。"
+        }
+      ]
     }
   },
   {
@@ -104354,10 +105899,25 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "多中心多设备验证深度学习胶囊内镜溃疡和糜烂检测，提高疾病病灶识别效率。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "多中心多设备验证深度学习胶囊内镜溃疡和糜烂检测，提高疾病病灶识别效率。"
+        },
+        {
+          "axis": "task",
+          "label": "医学病灶检测",
+          "label_en": "Medical lesion detection",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "多中心多设备验证深度学习胶囊内镜溃疡和糜烂检测，提高疾病病灶识别效率。"
+        }
+      ]
     }
   },
   {
@@ -104438,10 +105998,39 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "多任务深度学习系统分割小肠、检测病灶并诊断克罗恩病，在多中心胶囊内镜数据验证。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "多任务深度学习系统分割小肠、检测病灶并诊断克罗恩病，在多中心胶囊内镜数据验证。"
+        },
+        {
+          "axis": "task",
+          "label": "医学影像分割",
+          "label_en": "Medical image segmentation",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "多任务深度学习系统分割小肠、检测病灶并诊断克罗恩病，在多中心胶囊内镜数据验证。"
+        },
+        {
+          "axis": "task",
+          "label": "医学病灶检测",
+          "label_en": "Medical lesion detection",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "多任务深度学习系统分割小肠、检测病灶并诊断克罗恩病，在多中心胶囊内镜数据验证。"
+        },
+        {
+          "axis": "method",
+          "label": "Transformer 架构",
+          "label_en": "Transformer",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "多任务深度学习系统分割小肠、检测病灶并诊断克罗恩病，在多中心胶囊内镜数据验证。"
+        }
+      ]
     }
   },
   {
@@ -104542,10 +106131,25 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "随机森林基于临床与病理资料预测食管病变消融后复发风险，并完成外部验证。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "随机森林基于临床与病理资料预测食管病变消融后复发风险，并完成外部验证。"
+        },
+        {
+          "axis": "method",
+          "label": "随机森林",
+          "label_en": "Random forest",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "随机森林基于临床与病理资料预测食管病变消融后复发风险，并完成外部验证。"
+        }
+      ]
     }
   },
   {
@@ -104623,10 +106227,25 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "大语言模型从病理报告抽取医学变量，结合指南规则确定结肠镜随访间隔，并开展内外部临床验证。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "大语言模型从病理报告抽取医学变量，结合指南规则确定结肠镜随访间隔，并开展内外部临床验证。"
+        },
+        {
+          "axis": "task",
+          "label": "科学信息抽取",
+          "label_en": "Scientific information extraction",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "大语言模型从病理报告抽取医学变量，结合指南规则确定结肠镜随访间隔，并开展内外部临床验证。"
+        }
+      ]
     }
   },
   {
@@ -104710,10 +106329,32 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "注意力多实例学习分析十二指肠病理切片，识别乳糜泻及相关组织学类别。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "注意力多实例学习分析十二指肠病理切片，识别乳糜泻及相关组织学类别。"
+        },
+        {
+          "axis": "task",
+          "label": "组织病理分类",
+          "label_en": "Histopathology classification",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "注意力多实例学习分析十二指肠病理切片，识别乳糜泻及相关组织学类别。"
+        },
+        {
+          "axis": "task",
+          "label": "医学影像分类",
+          "label_en": "Medical image classification",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "注意力多实例学习分析十二指肠病理切片，识别乳糜泻及相关组织学类别。"
+        }
+      ]
     }
   },
   {
@@ -104789,8 +106430,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "exclude",
+      "rationale": "显微镜下结肠炎标志物综述仅将AI多模态方法作为未来可能补充，未构成实质研究方法。",
       "verified_metadata": {},
       "tags": []
     }
@@ -104861,8 +106502,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "exclude",
+      "rationale": "题名明确为针对乳糜泻AI病理诊断论文的Comment，按评论文献类型排除。",
       "verified_metadata": {},
       "tags": []
     }
@@ -104945,10 +106586,32 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "在气候政策排放与健康影响模型基础上，用机器学习分析空气污染死亡负担的社会经济差异。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "在气候政策排放与健康影响模型基础上，用机器学习分析空气污染死亡负担的社会经济差异。"
+        },
+        {
+          "axis": "domain",
+          "label": "AI 用于地球宇宙科学",
+          "label_en": "AI for Earth and space sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "在气候政策排放与健康影响模型基础上，用机器学习分析空气污染死亡负担的社会经济差异。"
+        },
+        {
+          "axis": "domain",
+          "label": "AI 用于社会科学",
+          "label_en": "AI for social sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "在气候政策排放与健康影响模型基础上，用机器学习分析空气污染死亡负担的社会经济差异。"
+        }
+      ]
     }
   },
   {
@@ -105058,10 +106721,18 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "全基因组测序结合AI变异优先级和表型机器学习，研究脑瘫遗传诊断及临床应用。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "全基因组测序结合AI变异优先级和表型机器学习，研究脑瘫遗传诊断及临床应用。"
+        }
+      ]
     }
   },
   {
@@ -105133,8 +106804,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "exclude",
+      "rationale": "提出儿童语言习得的理论框架，AI仅是相关应用领域，未作为独立科学问题的研究方法。",
       "verified_metadata": {},
       "tags": []
     }
@@ -105203,8 +106874,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "pending",
+      "rationale": "灵长类神经行为综述提及行为量化新技术，但摘要未明确AI在分析中的实质作用，需查方法内容。",
       "verified_metadata": {},
       "tags": []
     }
@@ -105274,8 +106945,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "exclude",
+      "rationale": "文章讨论AI替代人类被试的可推广性风险，属于对研究实践的评论性论证，未提供原创研究或实质方法综述。",
       "verified_metadata": {},
       "tags": []
     }
@@ -105346,8 +107017,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "pending",
+      "rationale": "讨论视觉神经网络与生物感知一致性的变化，需核实正式文献类型及是否为实质综述而非观点评论。",
       "verified_metadata": {},
       "tags": []
     }
@@ -105420,8 +107091,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "pending",
+      "rationale": "提出意动理论驱动脑机接口路线，需核实是否实际综述AI神经解码方法，以及正式文献类型。",
       "verified_metadata": {},
       "tags": []
     }
@@ -105492,8 +107163,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "exclude",
+      "rationale": "研究对象为大模型对人类表达与思想的同质化影响，AI未作为科学分析工具。",
       "verified_metadata": {},
       "tags": []
     }
@@ -105576,10 +107247,25 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "综述强化学习与贝叶斯计算模型解释知觉多稳态及精神疾病差异，连接行为与神经机制。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "综述强化学习与贝叶斯计算模型解释知觉多稳态及精神疾病差异，连接行为与神经机制。"
+        },
+        {
+          "axis": "method",
+          "label": "强化学习",
+          "label_en": "Reinforcement learning",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "综述强化学习与贝叶斯计算模型解释知觉多稳态及精神疾病差异，连接行为与神经机制。"
+        }
+      ]
     }
   },
   {
@@ -105650,8 +107336,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "exclude",
+      "rationale": "论述脑连接组多目标权衡及仿脑AI设计理念，未体现AI用于独立科学研究的实质方法。",
       "verified_metadata": {},
       "tags": []
     }
@@ -105726,8 +107412,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "exclude",
+      "rationale": "构建机器理解的哲学概念框架，评价对象是AI系统本身，不属于AI辅助科学研究。",
       "verified_metadata": {},
       "tags": []
     }
@@ -105799,8 +107485,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "exclude",
+      "rationale": "综述错误信息的认知和社会影响，生成式AI作为传播因素而非科学研究工具。",
       "verified_metadata": {},
       "tags": []
     }
@@ -105877,10 +107563,25 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "综述深度神经网络与脑表征的比较研究，使用模型检验认知信息加工和连接机制假设。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "综述深度神经网络与脑表征的比较研究，使用模型检验认知信息加工和连接机制假设。"
+        },
+        {
+          "axis": "domain",
+          "label": "AI 用于社会科学",
+          "label_en": "AI for social sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "综述深度神经网络与脑表征的比较研究，使用模型检验认知信息加工和连接机制假设。"
+        }
+      ]
     }
   },
   {
@@ -105946,8 +107647,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "pending",
+      "rationale": "语言模型辅助认知科学的机会与风险讨论，需确认是否实质回顾已开展研究而非观点展望。",
       "verified_metadata": {},
       "tags": []
     }
@@ -106017,8 +107718,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "pending",
+      "rationale": "通过动物与神经网络发育比较讨论先天后天理论争议，需核实类型及是否报告原创实验或实质研究综述。",
       "verified_metadata": {},
       "tags": []
     }
@@ -106096,8 +107797,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "exclude",
+      "rationale": "提出AI全球治理框架，AI是治理研究对象，未作为科学问题的实质分析方法。",
       "verified_metadata": {},
       "tags": []
     }
@@ -106198,10 +107899,32 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "随机森林分析气候灾害相关住院变化及卫生系统韧性因素，基于全国县域数据提出适应策略。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "随机森林分析气候灾害相关住院变化及卫生系统韧性因素，基于全国县域数据提出适应策略。"
+        },
+        {
+          "axis": "domain",
+          "label": "AI 用于社会科学",
+          "label_en": "AI for social sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "随机森林分析气候灾害相关住院变化及卫生系统韧性因素，基于全国县域数据提出适应策略。"
+        },
+        {
+          "axis": "method",
+          "label": "随机森林",
+          "label_en": "Random forest",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "随机森林分析气候灾害相关住院变化及卫生系统韧性因素，基于全国县域数据提出适应策略。"
+        }
+      ]
     }
   },
   {
@@ -106269,10 +107992,18 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "include",
+      "rationale": "系统综述AI智能教学与机器人教学的认知支持、适应式教学及学习效果研究。",
       "verified_metadata": {},
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于社会科学",
+          "label_en": "AI for social sciences",
+          "evidence_location": "输入快照原摘要；尚未逐篇在线核对正式元数据",
+          "rationale": "系统综述AI智能教学与机器人教学的认知支持、适应式教学及学习效果研究。"
+        }
+      ]
     }
   },
   {
@@ -106341,8 +108072,8 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "unreviewed",
-      "rationale": null,
+      "decision": "exclude",
+      "rationale": "教师AI素养问卷研究，AI是调查对象，所述分析未采用AI支持独立科学任务。",
       "verified_metadata": {},
       "tags": []
     }
