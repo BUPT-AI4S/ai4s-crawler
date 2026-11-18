@@ -162749,9 +162749,21 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "比较量子机器学习的数据投毒与遗忘，需核实量子数据任务是否涉及实质物理研究而非通用算法评测。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "正文虽在XXZ自旋链基态相分类上测试量子神经网络，但研究问题与结论是一般数据投毒/机器遗忘鲁棒性，量子相数据用作分类基准，未对物理相结构给出实质新科学贡献。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41467-026-70420-4"
+        ],
+        "fulltext_evidence": {
+          "index": 1621,
+          "url": "https://www.nature.com/articles/s41467-026-70420-4",
+          "section": "Introduction; Results, binary classification tasks",
+          "finding": "研究比较经典MLP和QNN对投毒与遗忘的鲁棒性，量子任务为1D XXZ基态相二分类，与MNIST同作算法测试，未提出新的物理相研究。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -166009,10 +166021,37 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "生物启发网络主要验证通用任务，需核实其对真实神经学习机制是否有实质检验。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "研究提出模拟突触可塑性的顶向下稳定学习规则，比较不同神经网络，并从模型推导五项可由动物学习和树突棘成像等实验检验的神经科学预测，直接研究学习机制。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41467-026-70920-3"
+        ],
+        "fulltext_evidence": {
+          "index": 1649,
+          "url": "https://www.nature.com/articles/s41467-026-70920-3",
+          "section": "Abstract; Discussion, Model predictions (1)–(5)",
+          "finding": "iTDS模型提出突触可塑性的顶向下反馈稳定规则，推导关于神经学习轨迹及反馈通路的五个实验可检验预测，不只是将生物数据用于通用性能测试。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "正式论文正文或官网链接的作者全文：Abstract; Discussion, Model predictions (1)–(5)",
+          "rationale": "研究提出模拟突触可塑性的顶向下稳定学习规则，比较不同神经网络，并从模型推导五项可由动物学习和树突棘成像等实验检验的神经科学预测，直接研究学习机制。"
+        },
+        {
+          "axis": "task",
+          "label": "神经学习机制建模",
+          "label_en": "Neural learning mechanism modeling",
+          "evidence_location": "正式论文正文或官网链接的作者全文：Abstract; Discussion, Model predictions (1)–(5)",
+          "rationale": "研究提出模拟突触可塑性的顶向下稳定学习规则，比较不同神经网络，并从模型推导五项可由动物学习和树突棘成像等实验检验的神经科学预测，直接研究学习机制。"
+        }
+      ]
     }
   },
   {
@@ -177764,9 +177803,21 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "鼻咽癌动态风险模型摘要未说明学习算法，需核实是传统统计模型还是AI预测方法。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "正文方法为两组线性混合效应模型与Cox比例风险模型组成的贝叶斯联合统计模型，原始血清筛查用逻辑回归公式；研究以统计风险分层为主，未见实质AI学习方法。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41467-026-72676-2"
+        ],
+        "fulltext_evidence": {
+          "index": 1751,
+          "url": "https://www.nature.com/articles/s41467-026-72676-2",
+          "section": "Methods, Construction of the basic joint model; Cox proportional hazards model",
+          "finding": "HD模型由两项线性混合效应模型与Cox风险模型组成贝叶斯共享参数联合模型，血清初筛使用逻辑回归；无独立AI模型的实质科学贡献。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -230333,9 +230384,21 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "流行病模型公平性研究借鉴AI概念，需核实是否实际采用机器学习而非纯数学评估。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "正式论文把AI/机器学习公平性概念借用到流行病动力学模型，用数学框架评估伦敦等城市疫情模拟的公平性；AI未实质参与疾病建模或预测，故不满足AI4S的AI角色。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41467-026-78981-0"
+        ],
+        "fulltext_evidence": {
+          "index": 2210,
+          "url": "https://www.nature.com/articles/s41467-026-78981-0",
+          "section": "Abstract and model framework",
+          "finding": "从ML/AI公平性借用概念，评估COVID-19及Zika动力学模拟公平性；本研究未利用AI模型进行科学预测或机制研究。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
