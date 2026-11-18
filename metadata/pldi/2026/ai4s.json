@@ -537,5 +537,119 @@
       },
       "method_evidence": []
     }
+  },
+  {
+    "id": "10.1145/3808321",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "GradInf: Gradient Estimation as Probabilistic Inference.",
+    "authors": [
+      "Gaurav Arya",
+      "Mathieu Huot",
+      "Moritz Schauer",
+      "Alexander K. Lew",
+      "Feras A. Saad"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/76/678",
+      "https://dblp.org/pid/234/8942",
+      "https://dblp.org/pid/138/6464",
+      "https://dblp.org/pid/242/4530",
+      "https://dblp.org/pid/185/1122"
+    ],
+    "abstract": "Gradient estimation—the task of computing the gradient of the expected value of a probabilistic program—has diverse applications in scientific computing, but is notoriously difficult because of issues such as highdimensional integration, discrete random choices, and complex stochastic dependencies. This article introduces gradient inference, a new approach to developing sound and efficient gradient estimators for probabilistic programs. Gradient inference rests on a formal reduction from a gradient estimation problem to a closely related probabilistic inference problem, whose solution can be differentiated to obtain a gradient estimator. This inference problem is obtained by applying two powerful statistical operations—coupling and factorization—to the input probabilistic program. Our reduction lets us leverage the rich toolkit of probabilistic inference algorithms to design novel gradient estimators that extend and improve upon existing methods.\nWe introduce GradInf, a probabilistic programming system that facilitates the sound and automated implementation of gradient inference. GradInf is centered around programmable source-to-source transformations for coupling and factorizing higher-order probabilistic programs, whose soundness is proven in terms of a denotational semantics. Key to our development is the use of information-flow typing to allow random choices in a probabilistic program to be factored out and partially evaluated, which improves our ability to deploy sophisticated probabilistic inference algorithms. The resulting system offers practitioners a principled framework for designing gradient estimators. We apply GradInf to several challenging case studies, showing that it can express prominent gradient estimators from the literature and enables the construction of new state-of-the-art estimators that outperform the best existing baselines.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808321",
+    "pages": "1864-1890",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808321",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "reviewed_include",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "verified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/AryaHSLS26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_reason": "manual_verified_recall",
+    "abstract_source_url": "https://dl.acm.org/doi/10.1145/3808321",
+    "ai4s_recall_evidence": {
+      "review_file": "reviews/2026/AlearnerDL.json",
+      "evidence_urls": [
+        "https://dl.acm.org/doi/10.1145/3808321"
+      ],
+      "checked_at": "2026-11-18T06:57:08.722399+00:00"
+    }
+  },
+  {
+    "id": "10.1145/3808338",
+    "venue": "pldi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Neuro-symbolic Hierarchical Learning for Long-Horizon Robotic Tasks.",
+    "authors": [
+      "Yu Huang",
+      "Ziji Wu",
+      "Zhengyi Ma",
+      "Kexin Ma 0008",
+      "Ji Wang 0001"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/39/6301",
+      "https://dblp.org/pid/86/6389",
+      "https://dblp.org/pid/94/2633",
+      "https://dblp.org/pid/40/4446-8",
+      "https://dblp.org/pid/64/856-1"
+    ],
+    "abstract": "Recent advances in foundation models have motivated hybrid programming that integrates natural language descriptions, formal specifications, and executable code. A critical challenge in such systems lies in achieving semantic alignment across heterogeneous representations at different abstraction levels. This challenge is particularly pressing in programmatic reinforcement learning (PRL) for robotics, where long-horizon, sparse-reward tasks demand tight coordination between symbolic reasoning and continuous control. Existing approaches either rely on manually engineered symbolic representations or on LLM-generated plans that might be untrustworthy or infeasible to execute, leaving such fundamental gaps unaddressed. We present a closedloop, counterexample-guided synthesis framework that unifies LLM-based planning, formal verification, and differentiable behavior tree (BT) synthesis for neuro-symbolic policy learning. The framework first converts natural language task descriptions into PDDL, then generates valid high-level plans via a Guess-Check-Critique loop that interleaves LLM generation with SMT-based verification. We automatically compile symbolic abstractions in verified plans into parameterized termination conditions, and co-optimize them with low-level policies to enforce semantic consistency. The learned sub-policies are composed into an integrated BT and fine-tuned to ensure task-level executability. Furthermore, we perform closed-loop iterations of abstractions and compilations using feedback from verification and learning, while incrementally building a reusable skill library for efficient knowledge transfer. Experiments on challenging long-horizon robotic tasks show that our method exceeds state-of-the-art methods while providing interpretability and generalization.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": "10.1145/3808338",
+    "pages": "2277-2302",
+    "bibtex": null,
+    "url": "https://doi.org/10.1145/3808338",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+openalex.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "reviewed_include",
+    "conference_title": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "verified",
+    "dblp_key": "https://dblp.org/rec/journals/pacmpl/HuangWMMW26",
+    "dblp_toc": "https://dblp.org/db/journals/pacmpl/pacmpl10",
+    "booktitle": "Proc. ACM Program. Lang.",
+    "ai4s_reason": "manual_verified_recall",
+    "abstract_source_url": "https://dl.acm.org/doi/10.1145/3808338",
+    "ai4s_recall_evidence": {
+      "review_file": "reviews/2026/AlearnerDL.json",
+      "evidence_urls": [
+        "https://dl.acm.org/doi/10.1145/3808338"
+      ],
+      "checked_at": "2026-11-18T06:57:08.722399+00:00"
+    }
   }
 ]
