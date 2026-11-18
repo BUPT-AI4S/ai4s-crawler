@@ -11225,10 +11225,37 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "QuCNet同时涉及量子硬件推理和遥感分类；需查EuroSAT及烟雾任务是否提供明确地表或环境任务证据，避免仅凭量子或遥感关键词纳入。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "作者项目明确混合量子—经典可训练网络用于EuroSAT等卫星地表分类，并在USTC SmokeRS与IIITDMJ烟雾检测集评测；AI直接参与地表与环境遥感分类。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://github.com/cvpr-quantum/QuCNet-CVPR26/blob/main/README.md"
+        ],
+        "fulltext_evidence": {
+          "index": 139,
+          "url": "https://github.com/cvpr-quantum/QuCNet-CVPR26/blob/main/README.md",
+          "section": "作者项目Overview、Datasets与Code Availability；CVF正式论文题录",
+          "finding": "作者列出AID、AIDER、UCM、EuroSAT和两项烟雾检测数据；混合量子—经典CNN+可训练量子线路用于卫星地表与环境遥感分类，代码仓库仍标示源码待上传。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于地球宇宙科学",
+          "label_en": "AI for Earth and space sciences",
+          "evidence_location": "正式论文正文或官网链接的作者全文：作者项目Overview、Datasets与Code Availability；CVF正式论文题录",
+          "rationale": "作者项目明确混合量子—经典可训练网络用于EuroSAT等卫星地表分类，并在USTC SmokeRS与IIITDMJ烟雾检测集评测；AI直接参与地表与环境遥感分类。"
+        },
+        {
+          "axis": "method",
+          "label": "量子机器学习",
+          "label_en": "Quantum machine learning",
+          "evidence_location": "正式论文正文或官网链接的作者全文：作者项目Overview、Datasets与Code Availability；CVF正式论文题录",
+          "rationale": "作者项目明确混合量子—经典可训练网络用于EuroSAT等卫星地表分类，并在USTC SmokeRS与IIITDMJ烟雾检测集评测；AI直接参与地表与环境遥感分类。"
+        }
+      ]
     }
   },
   {
@@ -14256,10 +14283,44 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "光学SAR融合用于遥感开放词汇分割，但摘要未交代具体地球科学类别和验证数据。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "正式CVPR PDF第1页及实验节显示光学—SAR融合模型在云层遮挡下划分耕地、草地、树木、水体等地表覆盖类别，采用真实OpenEarthMap-SAR并测试未见类别。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/papers/Wei_MM-OVSeg_Multimodal_Optical-SAR_Fusion_for_Open-Vocabulary_Segmentation_in_Remote_Sensing_CVPR_2026_paper.pdf"
+        ],
+        "fulltext_evidence": {
+          "index": 176,
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Wei_MM-OVSeg_Multimodal_Optical-SAR_Fusion_for_Open-Vocabulary_Segmentation_in_Remote_Sensing_CVPR_2026_paper.pdf",
+          "section": "p.1 Figure 1; Section 4 datasets/land-cover categories",
+          "finding": "云遮挡光学图与SAR联合开放类别地表分割；OpenEarthMap-SAR标注裸地、草场、开发地、树、耕地，测试还含道路、水和建筑。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于地球宇宙科学",
+          "label_en": "AI for Earth and space sciences",
+          "evidence_location": "正式论文正文或官网链接的作者全文：p.1 Figure 1; Section 4 datasets/land-cover categories",
+          "rationale": "正式CVPR PDF第1页及实验节显示光学—SAR融合模型在云层遮挡下划分耕地、草地、树木、水体等地表覆盖类别，采用真实OpenEarthMap-SAR并测试未见类别。"
+        },
+        {
+          "axis": "task",
+          "label": "地表覆盖制图",
+          "label_en": "Land-cover mapping",
+          "evidence_location": "正式论文正文或官网链接的作者全文：p.1 Figure 1; Section 4 datasets/land-cover categories",
+          "rationale": "正式CVPR PDF第1页及实验节显示光学—SAR融合模型在云层遮挡下划分耕地、草地、树木、水体等地表覆盖类别，采用真实OpenEarthMap-SAR并测试未见类别。"
+        },
+        {
+          "axis": "method",
+          "label": "视觉语言模型",
+          "label_en": "Vision-language model",
+          "evidence_location": "正式论文正文或官网链接的作者全文：p.1 Figure 1; Section 4 datasets/land-cover categories",
+          "rationale": "正式CVPR PDF第1页及实验节显示光学—SAR融合模型在云层遮挡下划分耕地、草地、树木、水体等地表覆盖类别，采用真实OpenEarthMap-SAR并测试未见类别。"
+        }
+      ]
     }
   },
   {
@@ -24188,10 +24249,51 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "遥感图像超分辨率仅报告视觉质量，需核实科学信息恢复或地学应用依据。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "正式CVPR PDF第4.3节及表5不仅评测遥感超分辨视觉质量，还在LoveDA地表覆盖语义分割中检验下游改进（mIoU 44.06），证实地学观测用途。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_Remote_Sensing_Image_Super-Resolution_for_Imbalanced_Textures_A_Texture-Aware_Diffusion_CVPR_2026_paper.pdf"
+        ],
+        "fulltext_evidence": {
+          "index": 300,
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhang_Remote_Sensing_Image_Super-Resolution_for_Imbalanced_Textures_A_Texture-Aware_Diffusion_CVPR_2026_paper.pdf",
+          "section": "Section 4.3; Table 5",
+          "finding": "扩散超分辨结果在LoveDA地表覆盖语义分割用DeepLabV3+评估，mIoU 44.06，非仅视觉质量验证。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于地球宇宙科学",
+          "label_en": "AI for Earth and space sciences",
+          "evidence_location": "正式论文正文或官网链接的作者全文：Section 4.3; Table 5",
+          "rationale": "正式CVPR PDF第4.3节及表5不仅评测遥感超分辨视觉质量，还在LoveDA地表覆盖语义分割中检验下游改进（mIoU 44.06），证实地学观测用途。"
+        },
+        {
+          "axis": "task",
+          "label": "遥感影像重建",
+          "label_en": "Remote sensing image reconstruction",
+          "evidence_location": "正式论文正文或官网链接的作者全文：Section 4.3; Table 5",
+          "rationale": "正式CVPR PDF第4.3节及表5不仅评测遥感超分辨视觉质量，还在LoveDA地表覆盖语义分割中检验下游改进（mIoU 44.06），证实地学观测用途。"
+        },
+        {
+          "axis": "task",
+          "label": "地表覆盖制图",
+          "label_en": "Land-cover mapping",
+          "evidence_location": "正式论文正文或官网链接的作者全文：Section 4.3; Table 5",
+          "rationale": "正式CVPR PDF第4.3节及表5不仅评测遥感超分辨视觉质量，还在LoveDA地表覆盖语义分割中检验下游改进（mIoU 44.06），证实地学观测用途。"
+        },
+        {
+          "axis": "method",
+          "label": "扩散模型",
+          "label_en": "Diffusion model",
+          "evidence_location": "正式论文正文或官网链接的作者全文：Section 4.3; Table 5",
+          "rationale": "正式CVPR PDF第4.3节及表5不仅评测遥感超分辨视觉质量，还在LoveDA地表覆盖语义分割中检验下游改进（mIoU 44.06），证实地学观测用途。"
+        }
+      ]
     }
   },
   {
