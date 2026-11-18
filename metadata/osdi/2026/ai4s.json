@@ -219,5 +219,125 @@
       },
       "method_evidence": []
     }
+  },
+  {
+    "id": "https://dblp.org/rec/conf/osdi/AkewarLMB26",
+    "venue": "osdi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "SMARTTalk: Teaching SMART Logs to Talk to LLMs.",
+    "authors": [
+      "Mayur Akewar",
+      "Dongsheng Luo",
+      "Sandeep Madireddy",
+      "Janki Bhimani"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/408/2020",
+      "https://dblp.org/pid/179/2444",
+      "https://dblp.org/pid/205/7527",
+      "https://dblp.org/pid/171/1567"
+    ],
+    "abstract": "SMART attributes are the main telemetry for monitoring Solid State Drives (SSDs) and predicting failures in large fleets, but existing methods rely on heavy feature engineering and large supervised pipelines that must be retrained as hardware or workloads change and that compress rich temporal behavior into opaque numeric scores. Large Language Models (LLMs) offer structured reasoning and explanations, yet perform poorly on raw SMART logs because the histories are long and multivariate, their temporal inductive bias is weak, and they hallucinate on numeric inputs. We present SMARTTalk , a new systems architecture that introduces a representation layer for device telemetry. SMARTTalk converts each n day SMART window into a sequence of symbolic trend tokens that an LLM can reliably reason over. The system separates numerical trend extraction from language based reasoning through three stages. (1) It slices n-day SMART windows into short temporal patches and encodes them with lightweight Convolutional Neural Network (CNN), then it clusters the resulting embeddings to form compact libraries of attribute-level and cross-attribute temporal patterns; (2) It converts each pattern into concise, human-readable text tokens that are stable across drives and over time; and (3) It feeds these pattern summaries to an LLM with chain-of-thought prompting, augmented with an online pattern memory that detects and incorporates previously unseen behaviors without retraining. By reasoning in natural language, SMARTTalk gives transparent explanations and interactive workflows. Evaluations on production datacenter SSD traces, across both open-source and proprietary LLMs, show that SMARTTalk delivers roughly 50× higher F 0.5 than Raw-LLM, about 4× higher than the Heuristic-LLM, and approximately 25% more accurate health classification than existing SMART-based methods, while achieving time-to-failure estimates with bucketed MAE near 10 days. SMARTTalk’s natural-language outputs are rated highly by LLM-as-judge, with explanation and recommendation scores around 4.5 out of 5 and perturbation robustness above 80%, making the system operator friendly and ready for the deployment.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": null,
+    "pages": "2423-2441",
+    "bibtex": null,
+    "url": "https://www.usenix.org/conference/osdi26/presentation/akewar",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+publisher",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "reviewed_include",
+    "conference_title": "USENIX Symposium on Operating Systems Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "verified",
+    "dblp_key": "https://dblp.org/rec/conf/osdi/AkewarLMB26",
+    "dblp_toc": "https://dblp.org/db/conf/osdi/osdi2026",
+    "booktitle": "OSDI",
+    "ai4s_reason": "manual_verified_recall",
+    "abstract_source_url": "https://www.usenix.org/conference/osdi26/presentation/akewar",
+    "ai4s_recall_evidence": {
+      "review_file": "reviews/2026/AlearnerDL.json",
+      "evidence_urls": [
+        "https://www.usenix.org/conference/osdi26/presentation/akewar",
+        "https://www.usenix.org/conference/osdi26/technical-sessions"
+      ],
+      "checked_at": "2026-11-18T06:17:36.226416+00:00"
+    }
+  },
+  {
+    "id": "https://dblp.org/rec/conf/osdi/LiPSTSYJD26",
+    "venue": "osdi",
+    "year": 2026,
+    "track": "unverified",
+    "title": "Hardware Lifecycle-Aware Power Planning in Commercial Hyperscale Datacenters (Operational Systems).",
+    "authors": [
+      "Ruihao Li 0002",
+      "Leonardo Piga",
+      "Wei Su",
+      "Carlos Torres",
+      "Jovan Stojkovic",
+      "Neeraja J. Yadwadkar",
+      "Lizy K. John",
+      "Abhishek Dhanotia"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/177/1562-2",
+      "https://dblp.org/pid/123/0042",
+      "https://dblp.org/pid/50/4091",
+      "https://dblp.org/pid/36/3788",
+      "https://dblp.org/pid/252/3245",
+      "https://dblp.org/pid/36/8142",
+      "https://dblp.org/pid/j/LizyKurianJohn",
+      "https://dblp.org/pid/58/10369"
+    ],
+    "abstract": "Modern commercial datacenters operate with heterogeneous hardware, deploying new servers to meet the growing compute demands while retaining older servers due to budgetary and environmental constraints. Datacenter planners can use daily performance and power profiling data to continually refine power budgets for legacy hardware. By contrast, power planning for new hardware must begin as early as the pre-silicon stage of server development when such data is not yet available. This paper presents our practical experience in power planning for Meta’s datacenters over the past decade, emphasizing heterogeneous hardware, and shares strategies for future power planning and management. To plan power more efficiently, we begin with a comprehensive power characterization study for hyperscale workloads in Meta’s datacenters, using live production traffic data spanning millions of servers across multiple hardware generations. Building on characterization insights, we present a hardware lifecycle-aware rack power budgeting methodology accounting for both the hardware and workload heterogeneity. This methodology has been deployed at scale in Meta’s datacenters for over a decade, enabling an average power oversubscription of approximately 20% across the fleet. Though effective, the current power planning approach requires production-level power telemetry, which is typically unavailable during the early stages of hardware development. To address this challenge, we develop PowerSight, a machine learning-based model to predict system power without relying on power sensor data. We demonstrate practical use cases of PowerSight for improving power planning in future system deployments. To the best of our knowledge, this is the first comprehensive study to formally introduce the concept of hardware lifecycles in commercial datacenters, along with tailored power budgeting strategies for each phase.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": null,
+    "pages": "1167-1184",
+    "bibtex": null,
+    "url": "https://www.usenix.org/conference/osdi26/presentation/li-ruihao",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2026",
+    "source": "sparql.dblp.org+publisher",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "reviewed_include",
+    "conference_title": "USENIX Symposium on Operating Systems Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "软件工程/系统软件/程序设计语言",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "verified",
+    "dblp_key": "https://dblp.org/rec/conf/osdi/LiPSTSYJD26",
+    "dblp_toc": "https://dblp.org/db/conf/osdi/osdi2026",
+    "booktitle": "OSDI",
+    "ai4s_reason": "manual_verified_recall",
+    "abstract_source_url": "https://www.usenix.org/conference/osdi26/presentation/li-ruihao",
+    "ai4s_recall_evidence": {
+      "review_file": "reviews/2026/AlearnerDL.json",
+      "evidence_urls": [
+        "https://www.usenix.org/conference/osdi26/presentation/li-ruihao",
+        "https://www.usenix.org/conference/osdi26/technical-sessions"
+      ],
+      "checked_at": "2026-11-18T06:17:36.226416+00:00"
+    }
   }
 ]
