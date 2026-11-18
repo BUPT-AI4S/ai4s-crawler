@@ -3123,26 +3123,26 @@
     "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
     "official_total": null,
     "observed_directory_total": 91,
-    "confirmed_same_scope_subtotal": 76,
+    "confirmed_same_scope_subtotal": 84,
     "collected_total_same_scope": null,
     "initial_collected_total": 151,
     "current_collected_total": 151,
     "official_scope": "固定截止前已正式编入2026卷18第1—4期的原创研究正文及实质综述；不把社论/新闻/单点评论或未编卷记录混算。",
-    "coverage_note": "四期逐PII目录18/23/24/26，共91，与原151采集匹配91、目录缺采0、额外60尚需正式归属核验。76为已确认适用范围小计，另10文类待核，官网同口径总数未知。13科学候选9纳入2排除2待定；补1条原采集ANN-GA漏筛，原字段保留。",
+    "coverage_note": "四期91 PII均匹配原151。60额外已逐PII核实全部在官网InPress，排除固定正式范围；另8条未采集InPress不属正式范围缺采。九条文类已核：8原创研究短文计入，Elemental TCM按正文为概念/范式观点排除。91=84确认研究/实质综述小计+6非适用+1既有CPE文类待人工，official_total仍null。14科学候选9纳入2排除3待定，新增PDE4D实质SVR漏筛因原摘要缺失保留pending。",
     "directory_coverage_verified": true,
     "coverage_verified": false,
     "scope_verified": false,
-    "candidate_total": 13,
+    "candidate_total": 14,
     "initial_candidate_total": 12,
-    "in_scope_candidate_total": 12,
-    "candidate_missing_abstracts": 0,
+    "in_scope_candidate_total": 13,
+    "candidate_missing_abstracts": 1,
     "candidate_primary_abstracts_verified": 12,
     "excluded_editorial_original_abstract_not_required": true,
-    "candidate_file_sha256": "0ef991acac099bac356319dddefa376614e310da7765a098b9aed6b9afdba587",
+    "candidate_file_sha256": "ccf95127a946a78e19263386b303fa07559d3dcc16f77ae227205697acc1f6d7",
     "review_counts": {
       "include": 9,
       "exclude": 2,
-      "pending": 2
+      "pending": 3
     },
     "evidence_urls": [
       "https://www.sciencedirect.com/journal/chinese-herbal-medicines/issues",
@@ -3152,30 +3152,28 @@
       "https://www.sciencedirect.com/journal/chinese-herbal-medicines/vol/18/issue/4"
     ],
     "issues": [
-      "91目录=76确认研究/实质综述小计+5非适用+10文类待核，official_total和collected_total_same_scope仍未知；8篇Correspondence/Research Letter不能整栏当读者来信排除。",
-      "原151采集有60条未匹配四期目录，正式归属尚未核清，不能因published字段为2026而纳入，也不冒称全在InPress。",
-      "2篇科学pending：黄连AD高内涵成像的实际学习算法/分析模块未说明；抗病毒综述所称AI筛选的具体模型及引用链待证。",
-      "3条非正式召回待核：PDAC网络框架、Liuwei Kangguan计算优化，以及Herbgenomics的AI实质内容/引用准确性；不计科学pending。",
-      "Cardiometabolic reprogramming drives...（2026.05.004）正常浏览器CPE00002后停止，已请求仅此篇文类人工核验。其余9条未尝试文类留下一批，不把它们误列已受阻。"
+      "91目录=84确认研究/实质综述小计+6非适用+1既有文类待人工，official_total/collected_total_same_scope仍null；2026.05.004旧CPE请求未答，不重试。",
+      "3篇科学pending：黄连AD成像实际学习模型、抗病毒AI筛选引用支撑，以及新增PDE4D的可核实独立原摘要。候选原摘要缺1，不用正文首段替代。",
+      "3条非正式召回仍待核：PDAC主正文仍Loading未读到、Liuwei Kangguan本轮CPE待人工、Herbgenomics的AI内容及引文准确性；不计科学pending。"
     ],
     "next_actions": [
-      "先访问已观察到的官网Articles in press列表，将60额外PII逐项对账；不扩2026固定截止或重抓已核四期91目录。",
-      "处理9条未尝试文类：8条Research Letter/Correspondence及Elemental TCM；按正文是否原创研究/实质综述区分。2026.05.004已问未答，不重试/重复追问。",
-      "核3条未决召回实际方法/贡献；Herbgenomics虽在Future prospects含实际AI研究说法，不能整段按愿景排除，但其AlphaFold引文是否支持生物合成基因发现待核，未先补候选。",
-      "补两篇科学pending的具体模型/方法证据；AI高内涵不是设备品牌本身的纳入理由，常规网络药理/对接不自动算AI。",
-      "原采集和原字段保持；仅补ANN-GA漏筛候选。未验签/下载的PDF留null，已核12篇公开HTML原摘要可复用，不重判已明确9纳入2排除。"
+      "60额外全在InPress及四期91目录、九条文类已核，不重抓/重做。仅2026.05.004文类仍待旧人工答复。",
+      "优先补PDE4D原摘要（本篇原创Research Letter，不擅套用只询问实质综述的摘要例外），无原摘要继续pending。",
+      "PDAC仅正文异步加载未完成，可在正常UI完整加载后核实际方法；Herbgenomics复用上轮全文并核AI引用链，不把Future prospects全当愿景。",
+      "Liuwei Kangguan（2026.08.019）新CPE已请人工核具体学习模型/方法位置，未答复不重试/重复追问，不授权替代来源；旧17组人工请求保持。",
+      "继续2篇旧科学pending的补证或其他未开始2026来源，已明确的9纳入2排除不重判，2026固定截止不扩展。"
     ],
     "completion_status": "coverage_scope_and_review_pending",
-    "checked_at": "2026-11-18T01:32:42.448085-08:00",
+    "checked_at": "2026-11-18T01:57:15.274161-08:00",
     "cutoff_at": "2026-11-17T07:14:20Z",
-    "rules_main_commit": "6e8d141c4acf791859068a3c8e42377c1c2a6da3",
+    "rules_main_commit": "1ed2218e8e04f85c0bf4c472ed68fd777ff8bc9a",
     "document_scope_partition": {
-      "excluded_genre_or_nonresearch_subject": 5,
-      "confirmed_research_or_substantive_review": 76,
-      "pending_document_scope": 10
+      "excluded_genre_or_nonresearch_subject": 6,
+      "confirmed_research_or_substantive_review": 84,
+      "pending_document_scope": 1
     },
-    "document_scope_pending_count": 10,
-    "document_scope_unattempted_count": 9,
+    "document_scope_pending_count": 1,
+    "document_scope_unattempted_count": 0,
     "entries": [
       {
         "pii": "S1674638425001303",
@@ -3651,7 +3649,14 @@
         "volume": "18",
         "issue": "2",
         "issue_url": "https://www.sciencedirect.com/journal/chinese-herbal-medicines/vol/18/issue/2",
-        "document_scope_status": "pending_document_scope"
+        "document_scope_status": "confirmed_research_or_substantive_review",
+        "document_scope_verification": {
+          "batch_id": "lixueting-2026-batch49",
+          "checked_at": "2026-11-18T01:57:15.274161-08:00",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000146",
+          "basis": "开放正文报告本篇RH/Fe纳米组装的制备、肿瘤氧化损伤及免疫实验结果和Fig1，属于原创实验研究短文，不因To the Editor或Correspondence排除。"
+        },
+        "recall_screening_note": "本轮正文未见充分的具体AI方法依据，未补科学候选；不声称未取得的补充材料中绝无AI。"
       },
       {
         "pii": "S1674638426000031",
@@ -3663,7 +3668,14 @@
         "volume": "18",
         "issue": "2",
         "issue_url": "https://www.sciencedirect.com/journal/chinese-herbal-medicines/vol/18/issue/2",
-        "document_scope_status": "pending_document_scope"
+        "document_scope_status": "confirmed_research_or_substantive_review",
+        "document_scope_verification": {
+          "batch_id": "lixueting-2026-batch49",
+          "checked_at": "2026-11-18T01:57:15.274161-08:00",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000031",
+          "basis": "开放正文报告Pn3-32-i5将Rh1转为R2的酶活、结构分析及关键残基，具有本篇新结果，属原创研究短文；先前Loading已等正文补齐。"
+        },
+        "recall_screening_note": "本轮正文未见充分的具体AI方法依据，未补科学候选；不声称未取得的补充材料中绝无AI。"
       },
       {
         "pii": "S1674638426000158",
@@ -3675,7 +3687,14 @@
         "volume": "18",
         "issue": "2",
         "issue_url": "https://www.sciencedirect.com/journal/chinese-herbal-medicines/vol/18/issue/2",
-        "document_scope_status": "pending_document_scope"
+        "document_scope_status": "confirmed_research_or_substantive_review",
+        "document_scope_verification": {
+          "batch_id": "lixueting-2026-batch49",
+          "checked_at": "2026-11-18T01:57:15.274161-08:00",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000158",
+          "basis": "开放正文报告本篇Thalictrum baicalense新生物碱分离、结构阐释及抗炎活性实验，属于原创研究短文，不把开头To the Editor当读者评论。"
+        },
+        "recall_screening_note": "本轮正文未见充分的具体AI方法依据，未补科学候选；不声称未取得的补充材料中绝无AI。"
       },
       {
         "pii": "S1674638426000547",
@@ -3827,7 +3846,14 @@
         "volume": "18",
         "issue": "3",
         "issue_url": "https://www.sciencedirect.com/journal/chinese-herbal-medicines/vol/18/issue/3",
-        "document_scope_status": "pending_document_scope"
+        "document_scope_status": "confirmed_research_or_substantive_review",
+        "document_scope_verification": {
+          "batch_id": "lixueting-2026-batch49",
+          "checked_at": "2026-11-18T01:57:15.274161-08:00",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000584",
+          "basis": "开放正文报告丹参酮IIA/NR4A1/GATA4机制，含CETSA、细胞/分子及心肌损伤模型新结果，属原创研究短文；先前Loading已补齐。"
+        },
+        "recall_screening_note": "本轮正文未见充分的具体AI方法依据，未补科学候选；不声称未取得的补充材料中绝无AI。"
       },
       {
         "pii": "S1674638426000559",
@@ -3966,7 +3992,14 @@
         "volume": "18",
         "issue": "3",
         "issue_url": "https://www.sciencedirect.com/journal/chinese-herbal-medicines/vol/18/issue/3",
-        "document_scope_status": "pending_document_scope"
+        "document_scope_status": "confirmed_research_or_substantive_review",
+        "document_scope_verification": {
+          "batch_id": "lixueting-2026-batch49",
+          "checked_at": "2026-11-18T01:57:15.274161-08:00",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000626",
+          "basis": "开放正文报告Xuezhikang在MCAO大鼠等卒中模型、热蛋白组及机制实验的新结果，属原创研究短文。"
+        },
+        "recall_screening_note": "本轮正文未见充分的具体AI方法依据，未补科学候选；不声称未取得的补充材料中绝无AI。"
       },
       {
         "pii": "S1674638426000535",
@@ -3978,7 +4011,14 @@
         "volume": "18",
         "issue": "3",
         "issue_url": "https://www.sciencedirect.com/journal/chinese-herbal-medicines/vol/18/issue/3",
-        "document_scope_status": "pending_document_scope"
+        "document_scope_status": "confirmed_research_or_substantive_review",
+        "document_scope_verification": {
+          "batch_id": "lixueting-2026-batch49",
+          "checked_at": "2026-11-18T01:57:15.274161-08:00",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000535",
+          "basis": "开放正文两个结果小节报告GRb1对ACE肝损伤、DNA修复及核膜恢复的本篇病理/转录组/蛋白证据，属原创研究短文。"
+        },
+        "recall_screening_note": "本轮正文未见充分的具体AI方法依据，未补科学候选；不声称未取得的补充材料中绝无AI。"
       },
       {
         "pii": "S1674638426001206",
@@ -4136,7 +4176,14 @@
         "volume": "18",
         "issue": "4",
         "issue_url": "https://www.sciencedirect.com/journal/chinese-herbal-medicines/vol/18/issue/4",
-        "document_scope_status": "pending_document_scope"
+        "document_scope_status": "confirmed_research_or_substantive_review",
+        "document_scope_verification": {
+          "batch_id": "lixueting-2026-batch49",
+          "checked_at": "2026-11-18T01:57:15.274161-08:00",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001310",
+          "basis": "开放正文报告六神丸成分-活性建模、PDE4D靶点发现及敲除小鼠等验证，属原创研究短文；SVR方法及原摘要门槛另在科学审核记录。"
+        },
+        "science_review_decision": "pending"
       },
       {
         "pii": "S1674638426001085",
@@ -4148,7 +4195,14 @@
         "volume": "18",
         "issue": "4",
         "issue_url": "https://www.sciencedirect.com/journal/chinese-herbal-medicines/vol/18/issue/4",
-        "document_scope_status": "pending_document_scope"
+        "document_scope_status": "excluded_genre_or_nonresearch_subject",
+        "document_scope_verification": {
+          "batch_id": "lixueting-2026-batch49",
+          "checked_at": "2026-11-18T01:57:15.274161-08:00",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001085",
+          "basis": "按内容排除为范式/观点短文：§1—4以提出Elemental TCM新学科、元素稳态理论和未来研究路线为核心，少量Fe/Zn或铷例子用于支持该概念，未形成原创结果或实质研究综合。AI仅在未来技术整合段提出应当使用；此判断依据全文内容，不是整栏排除Perspectives。"
+        },
+        "screening_result": "not_candidate_on_available_evidence"
       },
       {
         "pii": "S1674638426001255",
@@ -4292,7 +4346,14 @@
         "volume": "18",
         "issue": "4",
         "issue_url": "https://www.sciencedirect.com/journal/chinese-herbal-medicines/vol/18/issue/4",
-        "document_scope_status": "pending_document_scope"
+        "document_scope_status": "confirmed_research_or_substantive_review",
+        "document_scope_verification": {
+          "batch_id": "lixueting-2026-batch49",
+          "checked_at": "2026-11-18T01:57:15.274161-08:00",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001292",
+          "basis": "开放正文报告本篇新香豆素avicennins A—D的分离/结构证据和avicennol的NAFLD模型研究，属原创研究短文。ChatGPT仅用于英文润色的声明不作为科学AI。"
+        },
+        "recall_screening_note": "本轮正文未见充分的具体AI方法依据，未补科学候选；不声称未取得的补充材料中绝无AI。"
       },
       {
         "pii": "S1674638426001279",
@@ -4311,306 +4372,487 @@
       "key": "publisher PII",
       "matched_directory": 91,
       "missing_directory": [],
-      "extra_collected_unresolved": [
-        {
-          "pii": "S1674638426000201",
-          "doi": "10.1016/j.chmed.2026.02.018",
-          "title": "Natural products and traditional Chinese medicine for myocardial infarction: A review of therapeutic mechanisms and applications"
-        },
+      "extra_collected_unresolved": [],
+      "extra_collected_excluded_inpress": [
         {
           "pii": "S1674638426000195",
           "doi": "10.1016/j.chmed.2026.02.017",
-          "title": "Asiaticoside-nitric oxide hydrogel enhances diabetic wound healing through p53/p21-mediated cell cycle regulation in vivo and in vitro"
+          "title": "Asiaticoside-nitric oxide hydrogel enhances diabetic wound healing through p53/p21-mediated cell cycle regulation in vivo and in vitro",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000195",
+          "official_card": "Research articleOpen access\nAsiaticoside-nitric oxide hydrogel enhances diabetic wound healing through p53/p21-mediated cell cycle regulation in vivo and in vitro\nYuhe Dai, Lele Liu, Xiuying Guo, Penghui Ye, ... Xuqiang Nie\nIn Press, Corrected Proof, Available online 1 March 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
+        },
+        {
+          "pii": "S1674638426000201",
+          "doi": "10.1016/j.chmed.2026.02.018",
+          "title": "Natural products and traditional Chinese medicine for myocardial infarction: A review of therapeutic mechanisms and applications",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000201",
+          "official_card": "Review articleOpen access\nNatural products and traditional Chinese medicine for myocardial infarction: A review of therapeutic mechanisms and applications\nMeng Gao, Wenjiao Jiang, Qing Cai, Jinyong Peng\nIn Press, Corrected Proof, Available online 1 March 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426000377",
           "doi": "10.1016/j.chmed.2026.03.002",
-          "title": "Lycorine from Lycoris radiata induces M phase arrest in breast cancer by targeting miR-203a-3p-mediated MAPK signaling pathway"
-        },
-        {
-          "pii": "S1674638426000407",
-          "doi": "10.1016/j.chmed.2026.03.005",
-          "title": "Biological mechanisms of lavender essential oil in anxiolytic, antidepressant, and hypnotic functions"
+          "title": "Lycorine from Lycoris radiata induces M phase arrest in breast cancer by targeting miR-203a-3p-mediated MAPK signaling pathway",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000377",
+          "official_card": "Research articleOpen access\nLycorine from Lycoris radiata induces M phase arrest in breast cancer by targeting miR-203a-3p-mediated MAPK signaling pathway\nShengjin Zhou, Gang Chen, Bing Wang, Qinbing Xue, ... Ning Kang\nIn Press, Corrected Proof, Available online 9 March 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426000390",
           "doi": "10.1016/j.chmed.2026.03.004",
-          "title": "Ginsenoside Rg1 restores neural stem cell homeostasis in simulated microgravity via MAPK/AKT-vimentin axis"
+          "title": "Ginsenoside Rg1 restores neural stem cell homeostasis in simulated microgravity via MAPK/AKT-vimentin axis",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000390",
+          "official_card": "Research articleOpen access\nGinsenoside Rg1 restores neural stem cell homeostasis in simulated microgravity via MAPK/AKT-vimentin axis\nQiting Zhang, Shilan Li, Ning Wang, Fulai Li, ... Xinmin Liu\nIn Press, Corrected Proof, Available online 23 March 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
+        },
+        {
+          "pii": "S1674638426000407",
+          "doi": "10.1016/j.chmed.2026.03.005",
+          "title": "Biological mechanisms of lavender essential oil in anxiolytic, antidepressant, and hypnotic functions",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000407",
+          "official_card": "Review articleOpen access\nBiological mechanisms of lavender essential oil in anxiolytic, antidepressant, and hypnotic functions\nYanli Ren, Guizhong Yan, Jinxian Gao, Weiwei Chu, ... Yufeng Shao\nIn Press, Corrected Proof, Available online 21 March 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426000420",
           "doi": "10.1016/j.chmed.2026.04.001",
-          "title": "Tetrahydrocurcumin suppresses tumor growth in colorectal cancer through modulating linolenic acid metabolism"
+          "title": "Tetrahydrocurcumin suppresses tumor growth in colorectal cancer through modulating linolenic acid metabolism",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000420",
+          "official_card": "Research articleOpen access\nTetrahydrocurcumin suppresses tumor growth in colorectal cancer through modulating linolenic acid metabolism\nShiqi Feng, Mengting Zhou, Mengxi Li, Yiying Wu, ... Rui Li\nIn Press, Corrected Proof, Available online 6 April 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S167463842600047X",
           "doi": "10.1016/j.chmed.2026.04.002",
-          "title": "Dihydromyricetin mitigates T2DM progression by modulating bile acid metabolism through SHP/PPARγ pathway"
+          "title": "Dihydromyricetin mitigates T2DM progression by modulating bile acid metabolism through SHP/PPARγ pathway",
+          "url": "https://www.sciencedirect.com/science/article/pii/S167463842600047X",
+          "official_card": "Research articleOpen access\nDihydromyricetin mitigates T2DM progression by modulating bile acid metabolism through SHP/PPARγ pathway\nQiuyue Lv, Yuwen Guan, Xue Bai, Xinyu Wang, Baoping Jiang\nIn Press, Corrected Proof, Available online 14 April 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426000481",
           "doi": "10.1016/j.chmed.2026.04.003",
-          "title": "Bile metabolites identification and excretion study in normal and acute ALI rats after intragastric administration of Penthorum chinense extract by UHPLC/MS"
-        },
-        {
-          "pii": "S1674638426000511",
-          "doi": "10.1016/j.chmed.2026.04.006",
-          "title": "Integrative metabolomics and gut microbiota analyses reveal therapeutic effect of Yinzhihuang Oral Liquid on cyclophosphamide-induced liver injury"
+          "title": "Bile metabolites identification and excretion study in normal and acute ALI rats after intragastric administration of Penthorum chinense extract by UHPLC/MS",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000481",
+          "official_card": "Research articleOpen access\nBile metabolites identification and excretion study in normal and acute ALI rats after intragastric administration of Penthorum chinense extract by UHPLC/MS\nMiao Hou, Jifeng Gu, Haitao Tian, Xinyi Zhu, ... Zhipeng Deng\nIn Press, Corrected Proof, Available online 20 April 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S167463842600050X",
           "doi": "10.1016/j.chmed.2026.04.005",
-          "title": "Total flavonoids from Dracocephalum moldavica alleviate doxorubicin cardiotoxicity by regulating NLRP3/ASC/Caspase-1 axis"
+          "title": "Total flavonoids from Dracocephalum moldavica alleviate doxorubicin cardiotoxicity by regulating NLRP3/ASC/Caspase-1 axis",
+          "url": "https://www.sciencedirect.com/science/article/pii/S167463842600050X",
+          "official_card": "Research articleOpen access\nTotal flavonoids from Dracocephalum moldavica alleviate doxorubicin cardiotoxicity by regulating NLRP3/ASC/Caspase-1 axis\nKaikai Ran, Yue Wang, Jianguo Xing, Yun Zhang, Ruifang Zheng\nIn Press, Corrected Proof, Available online 26 April 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
+        },
+        {
+          "pii": "S1674638426000511",
+          "doi": "10.1016/j.chmed.2026.04.006",
+          "title": "Integrative metabolomics and gut microbiota analyses reveal therapeutic effect of Yinzhihuang Oral Liquid on cyclophosphamide-induced liver injury",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000511",
+          "official_card": "Research articleOpen access\nIntegrative metabolomics and gut microbiota analyses reveal therapeutic effect of Yinzhihuang Oral Liquid on cyclophosphamide-induced liver injury\nYuanlei Zhang, Fei Yang, Qiaoling Zhao, Ting Liu, ... Yunping Tang\nIn Press, Corrected Proof, Available online 26 April 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S167463842600078X",
           "doi": "10.1016/j.chmed.2026.05.016",
-          "title": "A berberine/rhein co-loaded liposome amplifies antitumor efficacy of doxorubicin via metabolic reprogramming"
-        },
-        {
-          "pii": "S1674638426000870",
-          "doi": "10.1016/j.chmed.2026.06.002",
-          "title": "Unraveling mechanisms of Erchen decoction in treatment of atherosclerosis: A comprehensive study integrating network pharmacology, molecular docking, molecular dynamics simulation, and experimental validation"
+          "title": "A berberine/rhein co-loaded liposome amplifies antitumor efficacy of doxorubicin via metabolic reprogramming",
+          "url": "https://www.sciencedirect.com/science/article/pii/S167463842600078X",
+          "official_card": "Research articleOpen access\nA berberine/rhein co-loaded liposome amplifies antitumor efficacy of doxorubicin via metabolic reprogramming\nXin Zhang, Ninghui Ma, Yue Zhao, Ye Ding, ... Yang Xiong\nIn Press, Corrected Proof, Available online 30 May 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426000869",
           "doi": "10.1016/j.chmed.2026.06.001",
-          "title": "Changyanning Granule alleviates DSS-induced ulcerative colitis in mice by regulating gut microbiota, MAPK pathway and intestinal epithelial barrier"
+          "title": "Changyanning Granule alleviates DSS-induced ulcerative colitis in mice by regulating gut microbiota, MAPK pathway and intestinal epithelial barrier",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000869",
+          "official_card": "Research articleOpen access\nChangyanning Granule alleviates DSS-induced ulcerative colitis in mice by regulating gut microbiota, MAPK pathway and intestinal epithelial barrier\nZiqi Sun, Mingyuan Yuan, Xiaoli Wang, Minjie Li, ... Xiaoshu Zhang\nIn Press, Corrected Proof, Available online 10 June 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
+        },
+        {
+          "pii": "S1674638426000870",
+          "doi": "10.1016/j.chmed.2026.06.002",
+          "title": "Unraveling mechanisms of Erchen decoction in treatment of atherosclerosis: A comprehensive study integrating network pharmacology, molecular docking, molecular dynamics simulation, and experimental validation",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000870",
+          "official_card": "Research articleOpen access\nUnraveling mechanisms of Erchen decoction in treatment of atherosclerosis: A comprehensive study integrating network pharmacology, molecular docking, molecular dynamics simulation, and experimental validation\nHui Zheng, Lisong Sheng, Hang Li, Lei Zhang, ... Rong Sun\nIn Press, Corrected Proof, Available online 10 June 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426000894",
           "doi": "10.1016/j.chmed.2026.06.004",
-          "title": "Advanced progress on pharmacokinetics of Astragali Radix and pharmacological activities of its in vivo constituents"
+          "title": "Advanced progress on pharmacokinetics of Astragali Radix and pharmacological activities of its in vivo constituents",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000894",
+          "official_card": "Review articleOpen access\nAdvanced progress on pharmacokinetics of Astragali Radix and pharmacological activities of its in vivo constituents\nJiantong Ma, Run Zhang, Yixin Zhang, Xiaomei Ma, ... Liqin Ding\nIn Press, Corrected Proof, Available online 11 June 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426000900",
           "doi": "10.1016/j.chmed.2026.06.005",
-          "title": "Recent advances in hepatoprotective polysaccharides from medicinal fungi: A decade-long review"
+          "title": "Recent advances in hepatoprotective polysaccharides from medicinal fungi: A decade-long review",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000900",
+          "official_card": "Review articleOpen access\nRecent advances in hepatoprotective polysaccharides from medicinal fungi: A decade-long review\nWei Gao, Siqi Gao, Peng Xiao, Weihao Chen, ... Yu He\nIn Press, Corrected Proof, Available online 18 June 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426000912",
           "doi": "10.1016/j.chmed.2026.06.006",
-          "title": "Physcion alleviates alcoholic hepatic inflammation and pyroptosis through SIRT1-AMPK signaling axis"
-        },
-        {
-          "pii": "S1674638426000936",
-          "doi": "10.1016/j.chmed.2026.06.008",
-          "title": "Parthenolide initiates endoplasmic reticulum stress mediated apoptosis and autophagy in hepatoma cells via promoting eIF2α phosphorylation"
+          "title": "Physcion alleviates alcoholic hepatic inflammation and pyroptosis through SIRT1-AMPK signaling axis",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000912",
+          "official_card": "Research articleOpen access\nPhyscion alleviates alcoholic hepatic inflammation and pyroptosis through SIRT1-AMPK signaling axis\nTing Bai, Haolin Guo, Lu Dong, Fei Wang, ... Yong Yang\nIn Press, Corrected Proof, Available online 19 June 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426000924",
           "doi": "10.1016/j.chmed.2026.06.007",
-          "title": "Preparation, pharmacokinetics and in vivo gastrointestinal distribution of Euphorbiae Semen microemulsion and Euphorbiae Semen Pulveratum microemulsion"
+          "title": "Preparation, pharmacokinetics and in vivo gastrointestinal distribution of Euphorbiae Semen microemulsion and Euphorbiae Semen Pulveratum microemulsion",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000924",
+          "official_card": "Research articleOpen access\nPreparation, pharmacokinetics and in vivo gastrointestinal distribution of Euphorbiae Semen microemulsion and Euphorbiae Semen Pulveratum microemulsion\nHuinan Wang, Mingrui Jiang, Xinning Zhang, Haiting Zhu, ... Yingzi Wang\nIn Press, Corrected Proof, Available online 24 June 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
+        },
+        {
+          "pii": "S1674638426000936",
+          "doi": "10.1016/j.chmed.2026.06.008",
+          "title": "Parthenolide initiates endoplasmic reticulum stress mediated apoptosis and autophagy in hepatoma cells via promoting eIF2α phosphorylation",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000936",
+          "official_card": "Research articleOpen access\nParthenolide initiates endoplasmic reticulum stress mediated apoptosis and autophagy in hepatoma cells via promoting eIF2α phosphorylation\nNan Zhang, Qian Zhao, Jinxin Qi, Mao Lin, ... Gu He\nIn Press, Corrected Proof, Available online 24 June 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426000948",
           "doi": "10.1016/j.chmed.2026.06.009",
-          "title": "Optimization of ultrasound-assisted extraction of Ginkgo biloba leaf polysaccharides improved with deep eutectic solvent"
+          "title": "Optimization of ultrasound-assisted extraction of Ginkgo biloba leaf polysaccharides improved with deep eutectic solvent",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000948",
+          "official_card": "Research articleOpen access\nOptimization of ultrasound-assisted extraction of Ginkgo biloba leaf polysaccharides improved with deep eutectic solvent\nJie Zhou, Xufang Guan, Junjie Zhao, Wenbin Zhong, ... Longshan Zhao\nIn Press, Corrected Proof, Available online 27 June 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426000961",
           "doi": "10.1016/j.chmed.2026.06.011",
-          "title": "Zexie Decoction alleviates diet induced nonalcoholic fatty liver disease via regulating AMPK mediated lipid metabolism"
+          "title": "Zexie Decoction alleviates diet induced nonalcoholic fatty liver disease via regulating AMPK mediated lipid metabolism",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000961",
+          "official_card": "Research articleOpen access\nZexie Decoction alleviates diet induced nonalcoholic fatty liver disease via regulating AMPK mediated lipid metabolism\nJiejie Wu, Silu Li, Ziqian Huang, Lidan He, ... Fang Huang\nIn Press, Corrected Proof, Available online 28 June 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426000973",
           "doi": "10.1016/j.chmed.2026.06.012",
-          "title": "Progress on mechanisms of action and clinical applications of reducing homocysteine levels by chemical components of traditional Chinese medicine in panvascular disease"
+          "title": "Progress on mechanisms of action and clinical applications of reducing homocysteine levels by chemical components of traditional Chinese medicine in panvascular disease",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000973",
+          "official_card": "Review articleOpen access\nProgress on mechanisms of action and clinical applications of reducing homocysteine levels by chemical components of traditional Chinese medicine in panvascular disease\nChun Luo, Qi Yang, Juan Wen, Jiageng Guo, ... Jiagang Deng\nIn Press, Corrected Proof, Available online 29 June 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426000985",
           "doi": "10.1016/j.chmed.2026.06.013",
-          "title": "Herb-microbiome interaction breeding: A new pathway to ideal medicinal plant phenotypes"
+          "title": "Herb-microbiome interaction breeding: A new pathway to ideal medicinal plant phenotypes",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000985",
+          "official_card": "Review articleOpen access\nHerb-microbiome interaction breeding: A new pathway to ideal medicinal plant phenotypes\nTong Peng, Lei Zhang\nIn Press, Corrected Proof, Available online 29 June 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426000997",
           "doi": "10.1016/j.chmed.2026.06.014",
-          "title": "Supramolecular gels based on natural small molecules: Building the bridge between natural products and future creative medicine"
+          "title": "Supramolecular gels based on natural small molecules: Building the bridge between natural products and future creative medicine",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000997",
+          "official_card": "Review articleOpen access\nSupramolecular gels based on natural small molecules: Building the bridge between natural products and future creative medicine\nTingting Ye, Mingzhen Liu, Jialin Zhang, Yihang Li, ... Guoxu Ma\nIn Press, Corrected Proof, Available online 30 June 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426001000",
           "doi": "10.1016/j.chmed.2026.06.015",
-          "title": "Focusing on liver-gut-spleen axis: Antimalarial mechanism study of sodium artesunate combined with patchouli alcohol"
-        },
-        {
-          "pii": "S1674638426001036",
-          "doi": "10.1016/j.chmed.2026.07.002",
-          "title": "Zexie Decoction improves hyperlipidemic acute pancreatitis by ameliorating mitochondrial dysfunction"
+          "title": "Focusing on liver-gut-spleen axis: Antimalarial mechanism study of sodium artesunate combined with patchouli alcohol",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001000",
+          "official_card": "Research articleOpen access\nFocusing on liver-gut-spleen axis: Antimalarial mechanism study of sodium artesunate combined with patchouli alcohol\nXiao Zhang, Xiaolei Du, Boyang Wang, Bianli Wang, ... Huimin Zhang\nIn Press, Corrected Proof, Available online 30 June 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426001024",
           "doi": "10.1016/j.chmed.2026.07.001",
-          "title": "Anticoagulant effect of sodium astragaloside in hepatic fibrosis animal models: Therapeutic potential in chronic liver disease"
+          "title": "Anticoagulant effect of sodium astragaloside in hepatic fibrosis animal models: Therapeutic potential in chronic liver disease",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001024",
+          "official_card": "Research articleOpen access\nAnticoagulant effect of sodium astragaloside in hepatic fibrosis animal models: Therapeutic potential in chronic liver disease\nTao Bi, Xiaofeng Huang, Yichen Zhao, Huarui Shen, ... Zengjin Liu\nIn Press, Corrected Proof, Available online 8 July 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
-          "pii": "S1674638426001061",
-          "doi": "10.1016/j.chmed.2026.07.005",
-          "title": "Sini San ameliorates cholestatic liver injury by intrahepatically activating PPARα"
+          "pii": "S1674638426001036",
+          "doi": "10.1016/j.chmed.2026.07.002",
+          "title": "Zexie Decoction improves hyperlipidemic acute pancreatitis by ameliorating mitochondrial dysfunction",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001036",
+          "official_card": "Research articleOpen access\nZexie Decoction improves hyperlipidemic acute pancreatitis by ameliorating mitochondrial dysfunction\nTiantian Tang, Yaping Wang, Qingqing Tang, Rongzhan Zhang, ... Jia Zhou\nIn Press, Corrected Proof, Available online 8 July 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426001048",
           "doi": "10.1016/j.chmed.2026.07.003",
-          "title": "Tianhuang Formula ameliorates glucolipid metabolic disorders by regulating RAGE/POMC-mediated neuronal apoptosis and autophagy via its active component berberine"
+          "title": "Tianhuang Formula ameliorates glucolipid metabolic disorders by regulating RAGE/POMC-mediated neuronal apoptosis and autophagy via its active component berberine",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001048",
+          "official_card": "Research articleOpen access\nTianhuang Formula ameliorates glucolipid metabolic disorders by regulating RAGE/POMC-mediated neuronal apoptosis and autophagy via its active component berberine\nMinwen Peng, Shi Yu, Ziyue Huang, Ruhai Jian, Jinyan Cai\nIn Press, Corrected Proof, Available online 9 July 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S167463842600105X",
           "doi": "10.1016/j.chmed.2026.07.004",
-          "title": "Gut microbiota combined with metabolomics: Tanshinone IIA alleviates doxorubicin/trastuzumab-induced cardiotoxicity"
+          "title": "Gut microbiota combined with metabolomics: Tanshinone IIA alleviates doxorubicin/trastuzumab-induced cardiotoxicity",
+          "url": "https://www.sciencedirect.com/science/article/pii/S167463842600105X",
+          "official_card": "Research articleOpen access\nGut microbiota combined with metabolomics: Tanshinone IIA alleviates doxorubicin/trastuzumab-induced cardiotoxicity\nChunyu Li, Mengmeng Lin, Nuoxian Yu, Meijun Yue, ... Guohui Li\nIn Press, Corrected Proof, Available online 9 July 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
+        },
+        {
+          "pii": "S1674638426001061",
+          "doi": "10.1016/j.chmed.2026.07.005",
+          "title": "Sini San ameliorates cholestatic liver injury by intrahepatically activating PPARα",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001061",
+          "official_card": "Research articleOpen access\nSini San ameliorates cholestatic liver injury by intrahepatically activating PPARα\nFanghong Li, Xiaojiaoyang Li, Yajie Cai, Yufei Li, ... Runping Liu\nIn Press, Corrected Proof, Available online 9 July 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426001188",
           "doi": "10.1016/j.chmed.2026.08.001",
-          "title": "Inflammatory storms of gastric cancer progression and anti-inflammatory intervention"
+          "title": "Inflammatory storms of gastric cancer progression and anti-inflammatory intervention",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001188",
+          "official_card": "Review articleOpen access\nInflammatory storms of gastric cancer progression and anti-inflammatory intervention\nLiping Wang, Baoxin Zheng, Liqun Jia, Aihua Liang\nIn Press, Corrected Proof, Available online 16 August 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S167463842600119X",
           "doi": "10.1016/j.chmed.2026.08.002",
-          "title": "Discovery and characterization of baicalin as potent PGAM1 ligand with anti-myocardial fibrosis effects"
+          "title": "Discovery and characterization of baicalin as potent PGAM1 ligand with anti-myocardial fibrosis effects",
+          "url": "https://www.sciencedirect.com/science/article/pii/S167463842600119X",
+          "official_card": "Research articleOpen access\nDiscovery and characterization of baicalin as potent PGAM1 ligand with anti-myocardial fibrosis effects\nXunxun Wu, Ranqing Zang, Yiting Qiu, Changxin Zhang, ... Yong Diao\nIn Press, Corrected Proof, Available online 17 August 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426001218",
           "doi": "10.1016/j.chmed.2026.08.004",
-          "title": "Bottlenecks and optimization strategies of traditional Chinese medicine network pharmacology"
+          "title": "Bottlenecks and optimization strategies of traditional Chinese medicine network pharmacology",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001218",
+          "official_card": "DiscussionOpen access\nBottlenecks and optimization strategies of traditional Chinese medicine network pharmacology\nYujin Zhang, Shitong Wang, Peng Zeng\nIn Press, Corrected Proof, Available online 18 August 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426001231",
           "doi": "10.1016/j.chmed.2026.08.006",
-          "title": "Therapeutic potential of traditional Chinese medicines in progression of diabetic nephropathy: Roles of NLRP3 inflammasome"
-        },
-        {
-          "pii": "S1674638426001267",
-          "doi": "10.1016/j.chmed.2026.08.009",
-          "title": "Investigating protective effects of Naoxintong Capsule on myocardial ischemia reperfusion injury by integration effect and dose–response metabolomics"
+          "title": "Therapeutic potential of traditional Chinese medicines in progression of diabetic nephropathy: Roles of NLRP3 inflammasome",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001231",
+          "official_card": "Review articleOpen access\nTherapeutic potential of traditional Chinese medicines in progression of diabetic nephropathy: Roles of NLRP3 inflammasome\nFangqing Yuan, Xinxin Cao, Fei Xue, Fan Yao, ... Xiaobo Sun\nIn Press, Corrected Proof, Available online 22 August 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426001243",
           "doi": "10.1016/j.chmed.2026.08.007",
-          "title": "A licorice-derived compound 2,3β-dihydroxy-11-oxo-olean-12-en-30-oic acid to treat obesity and type 2 diabetes in mice"
+          "title": "A licorice-derived compound 2,3β-dihydroxy-11-oxo-olean-12-en-30-oic acid to treat obesity and type 2 diabetes in mice",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001243",
+          "official_card": "Research articleOpen access\nA licorice-derived compound 2,3β-dihydroxy-11-oxo-olean-12-en-30-oic acid to treat obesity and type 2 diabetes in mice\nLe Shi, Bo Zhou, Ming Hong, Shaozhong Wei, ... Xuebo Hu\nIn Press, Corrected Proof, Available online 23 August 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
+        },
+        {
+          "pii": "S1674638426001267",
+          "doi": "10.1016/j.chmed.2026.08.009",
+          "title": "Investigating protective effects of Naoxintong Capsule on myocardial ischemia reperfusion injury by integration effect and dose–response metabolomics",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001267",
+          "official_card": "Research articleOpen access\nInvestigating protective effects of Naoxintong Capsule on myocardial ischemia reperfusion injury by integration effect and dose–response metabolomics\nShuo Zhang, Qizhe Ma, Ying Zhao, Fangliang Li, ... Yuping Tang\nIn Press, Corrected Proof, Available online 23 August 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426001280",
           "doi": "10.1016/j.chmed.2026.08.011",
-          "title": "Active ingredients and blood-entering sRNAs of Astragalus membranaceus attenuate inflammation through potential regulation of AKT-NF-κB signaling and sRNA-related targets"
+          "title": "Active ingredients and blood-entering sRNAs of Astragalus membranaceus attenuate inflammation through potential regulation of AKT-NF-κB signaling and sRNA-related targets",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001280",
+          "official_card": "Research articleOpen access\nActive ingredients and blood-entering sRNAs of Astragalus membranaceus attenuate inflammation through potential regulation of AKT-NF-κB signaling and sRNA-related targets\nMengxin He, Jin Shi, Lu Yin, Pengfei Zhang, ... Jun Kang\nIn Press, Corrected Proof, Available online 24 August 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426001322",
           "doi": "10.1016/j.chmed.2026.08.015",
-          "title": "Nebulized delivery of a Scutellaria baicalensis and Verbena officinalis extract-based formulation enhances pulmonary exposure for COPD therapy"
+          "title": "Nebulized delivery of a Scutellaria baicalensis and Verbena officinalis extract-based formulation enhances pulmonary exposure for COPD therapy",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001322",
+          "official_card": "Research articleOpen access\nNebulized delivery of a Scutellaria baicalensis and Verbena officinalis extract-based formulation enhances pulmonary exposure for COPD therapy\nBei Jia, Mengru Yang, Haonan Xie, Jiawei Li, ... Zhidong Liu\nIn Press, Corrected Proof, Available online 26 August 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426001334",
           "doi": "10.1016/j.chmed.2026.08.016",
-          "title": "Genome-wide analysis of UDP-glycosyltransferase gene family and identification of members involved in saikosaponin biosynthesis in Bupleurum chinense"
+          "title": "Genome-wide analysis of UDP-glycosyltransferase gene family and identification of members involved in saikosaponin biosynthesis in Bupleurum chinense",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001334",
+          "official_card": "Research articleOpen access\nGenome-wide analysis of UDP-glycosyltransferase gene family and identification of members involved in saikosaponin biosynthesis in Bupleurum chinense\nJun Zhao, Meng Zhang, Chuanxin Mo, Kaimi Dong, ... Jianhe Wei\nIn Press, Corrected Proof, Available online 26 August 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426001401",
           "doi": "10.1016/j.chmed.2026.09.001",
-          "title": "Mechanisms of traditional Chinese medicine in treatment of polycystic ovary syndrome: A review"
+          "title": "Mechanisms of traditional Chinese medicine in treatment of polycystic ovary syndrome: A review",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001401",
+          "official_card": "Review articleOpen access\nMechanisms of traditional Chinese medicine in treatment of polycystic ovary syndrome: A review\nShiyan Tu, Luming Wu, Tong Cheng, Jijun Tao, ... Yiqing Wang\nIn Press, Corrected Proof, Available online 2 September 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426001413",
           "doi": "10.1016/j.chmed.2026.09.002",
-          "title": "Ginsenosides and their biomaterials in arthritis treatment: Challenges and strategies for advancing therapeutic potential of Chinese herbal medicines"
+          "title": "Ginsenosides and their biomaterials in arthritis treatment: Challenges and strategies for advancing therapeutic potential of Chinese herbal medicines",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001413",
+          "official_card": "Review articleOpen access\nGinsenosides and their biomaterials in arthritis treatment: Challenges and strategies for advancing therapeutic potential of Chinese herbal medicines\nJiawang Zhou, Yini Gao, Hongmei Hong, Lili Tang, ... Zhijun Xie\nIn Press, Corrected Proof, Available online 3 September 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426001644",
           "doi": "10.1016/j.chmed.2026.09.003",
-          "title": "Potential of Rehmanniae Radix for treatment of diabetes mellitus"
+          "title": "Potential of Rehmanniae Radix for treatment of diabetes mellitus",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001644",
+          "official_card": "Review articleOpen access\nPotential of Rehmanniae Radix for treatment of diabetes mellitus\nTang Daijiao, Lei Sisan, Zhong Haijing, Yu Ruiqi, ... Chong Cheong-Meng\nIn Press, Corrected Proof, Available online 14 September 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426001656",
           "doi": "10.1016/j.chmed.2026.10.001",
-          "title": "Integrated network pharmacology and metabolomics to reveal therapeutic mechanism of Qingxin Formula against doxorubicin-induced cardiotoxicity through Nrf2/HO-1/NQO1 axis to suppress ferroptosis"
+          "title": "Integrated network pharmacology and metabolomics to reveal therapeutic mechanism of Qingxin Formula against doxorubicin-induced cardiotoxicity through Nrf2/HO-1/NQO1 axis to suppress ferroptosis",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001656",
+          "official_card": "CorrespondenceOpen access\nIntegrated network pharmacology and metabolomics to reveal therapeutic mechanism of Qingxin Formula against doxorubicin-induced cardiotoxicity through Nrf2/HO-1/NQO1 axis to suppress ferroptosis\nLuyao Ma, Qian Yang, Xiaomei Liu, Shengjie Kong, ... Yuhong Huang\nIn Press, Corrected Proof, Available online 13 October 2026\nView PDF",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426001668",
           "doi": "10.1016/j.chmed.2026.10.002",
-          "title": "Cardiovascular-kidney-metabolic risk in polycystic ovary syndrome: a risk-oriented perspective from integrated Chinese-Western medicine"
-        },
-        {
-          "pii": "S1674638426001681",
-          "doi": "10.1016/j.chmed.2026.10.004",
-          "title": "Curcumin in non-small cell lung cancer: Orchestrating tumor suppression through epigenetics"
-        },
-        {
-          "pii": "S1674638426001747",
-          "doi": "10.1016/j.chmed.2026.10.005",
-          "title": "Efficacy and safety of Zaoren Ningxin Dripping Pills for treatment of insomnia (heart-liver blood deficiency syndrome): A multicenter, randomized, double-blind, placebo-controlled phase III clinical trial"
-        },
-        {
-          "pii": "S1674638426001759",
-          "doi": "10.1016/j.chmed.2026.10.006",
-          "title": "Multi-omics dissection of species-specific divergence and root-endophytic fungal-metabolite associations in two endangered Pleione medicinal plants"
-        },
-        {
-          "pii": "S1674638426001772",
-          "doi": "10.1016/j.chmed.2026.10.008",
-          "title": "From blanket protection to targeted strategies: Insights into conservation of rare and endangered medicinal plants"
+          "title": "Cardiovascular-kidney-metabolic risk in polycystic ovary syndrome: a risk-oriented perspective from integrated Chinese-Western medicine",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001668",
+          "official_card": "Review articleOpen access\nCardiovascular-kidney-metabolic risk in polycystic ovary syndrome: a risk-oriented perspective from integrated Chinese-Western medicine\nXi Cheng, Yiwen Li, Mengmeng Zhu, Yajie Cai, ... Yue Liu\nIn Press, Corrected Proof, Available online 13 October 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S167463842600167X",
           "doi": "10.1016/j.chmed.2026.10.003",
-          "title": "Bioactive components and mechanisms of sea buckthorn in the prevention and treatment of hepatic diseases"
+          "title": "Bioactive components and mechanisms of sea buckthorn in the prevention and treatment of hepatic diseases",
+          "url": "https://www.sciencedirect.com/science/article/pii/S167463842600167X",
+          "official_card": "Review articleOpen access\nBioactive components and mechanisms of sea buckthorn in the prevention and treatment of hepatic diseases\nMarziya Mamattursun, Zengyang Liu, Dilireba Aimaier, Wanquan Bai, ... Puyang Gong\nIn Press, Corrected Proof, Available online 22 October 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
-          "pii": "S1674638426001784",
-          "doi": "10.1016/j.chmed.2026.10.009",
-          "title": "Characteristic coumarins with anti-neuroinflammatory potential from Wikstroemia lungtzeensis"
+          "pii": "S1674638426001681",
+          "doi": "10.1016/j.chmed.2026.10.004",
+          "title": "Curcumin in non-small cell lung cancer: Orchestrating tumor suppression through epigenetics",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001681",
+          "official_card": "Review articleOpen access\nCurcumin in non-small cell lung cancer: Orchestrating tumor suppression through epigenetics\nDuoduo Zhang, Ye Jin, Jianming Xing, Da Liu\nIn Press, Corrected Proof, Available online 17 October 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
-          "pii": "S1674638426001796",
-          "doi": "10.1016/j.chmed.2026.10.010",
-          "title": "Phytohormone regulation of specialized metabolism in woody medicinal plants: Mechanisms and prospects"
+          "pii": "S1674638426001747",
+          "doi": "10.1016/j.chmed.2026.10.005",
+          "title": "Efficacy and safety of Zaoren Ningxin Dripping Pills for treatment of insomnia (heart-liver blood deficiency syndrome): A multicenter, randomized, double-blind, placebo-controlled phase III clinical trial",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001747",
+          "official_card": "Research articleOpen access\nEfficacy and safety of Zaoren Ningxin Dripping Pills for treatment of insomnia (heart-liver blood deficiency syndrome): A multicenter, randomized, double-blind, placebo-controlled phase III clinical trial\nYan Li, Xiaoyan Xie, Yiqi Pu, Zhi Zhan, ... Boli Zhang\nIn Press, Corrected Proof, Available online 19 October 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
-          "pii": "S1674638426001814",
-          "doi": "10.1016/j.chmed.2026.10.012",
-          "title": "Jichuanjian ameliorates slow transit constipation through modulation of epithelial–mesenchymal transition associated with Wnt signaling"
+          "pii": "S1674638426001759",
+          "doi": "10.1016/j.chmed.2026.10.006",
+          "title": "Multi-omics dissection of species-specific divergence and root-endophytic fungal-metabolite associations in two endangered Pleione medicinal plants",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001759",
+          "official_card": "CorrespondenceOpen access\nMulti-omics dissection of species-specific divergence and root-endophytic fungal-metabolite associations in two endangered Pleione medicinal plants\nJunming Zheng, Haisheng Yang, Ayat Taheri, Jingjing Li, ... Dongfeng Yang\nIn Press, Corrected Proof, Available online 20 October 2026\nView PDF",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426001760",
           "doi": "10.1016/j.chmed.2026.10.007",
-          "title": "Identification of a key glycosyltransferase and de novo biosynthesis of rare oleanane-type pseudoginsenoside RT1 in Saccharomyces cerevisiae"
+          "title": "Identification of a key glycosyltransferase and de novo biosynthesis of rare oleanane-type pseudoginsenoside RT1 in Saccharomyces cerevisiae",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001760",
+          "official_card": "Research articleOpen access\nIdentification of a key glycosyltransferase and de novo biosynthesis of rare oleanane-type pseudoginsenoside RT1 in Saccharomyces cerevisiae\nChaokang Huang, Zhihan Guo, Pengfei Li, Tengfei Niu, ... Rufeng Wang\nIn Press, Corrected Proof, Available online 26 October 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
+        },
+        {
+          "pii": "S1674638426001772",
+          "doi": "10.1016/j.chmed.2026.10.008",
+          "title": "From blanket protection to targeted strategies: Insights into conservation of rare and endangered medicinal plants",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001772",
+          "official_card": "DiscussionOpen access\nFrom blanket protection to targeted strategies: Insights into conservation of rare and endangered medicinal plants\nWenle Wang, Chimedtseren Chimedragchaa, Ruyu Yao, Zeyuan Zhao, ... Minhui Li\nIn Press, Corrected Proof, Available online 21 October 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
+        },
+        {
+          "pii": "S1674638426001784",
+          "doi": "10.1016/j.chmed.2026.10.009",
+          "title": "Characteristic coumarins with anti-neuroinflammatory potential from Wikstroemia lungtzeensis",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001784",
+          "official_card": "Research articleOpen access\nCharacteristic coumarins with anti-neuroinflammatory potential from Wikstroemia lungtzeensis\nYanping Zhang, Di Zhou, Ling Li, Lingnan Zhao, ... Ning Li\nIn Press, Corrected Proof, Available online 23 October 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
+        },
+        {
+          "pii": "S1674638426001796",
+          "doi": "10.1016/j.chmed.2026.10.010",
+          "title": "Phytohormone regulation of specialized metabolism in woody medicinal plants: Mechanisms and prospects",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001796",
+          "official_card": "Review articleOpen access\nPhytohormone regulation of specialized metabolism in woody medicinal plants: Mechanisms and prospects\nRuxue Bai, Xinxin Zhao, Xinyue Hou, Jiawen Li, ... Hui Meng\nIn Press, Corrected Proof, Available online 23 October 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426001802",
           "doi": "10.1016/j.chmed.2026.10.011",
-          "title": "Biocultural refugia as landscape anchors for sustainable utilization of rare and endangered Chinese medicinal materials: A perspective"
+          "title": "Biocultural refugia as landscape anchors for sustainable utilization of rare and endangered Chinese medicinal materials: A perspective",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001802",
+          "official_card": "Open access\nBiocultural refugia as landscape anchors for sustainable utilization of rare and endangered Chinese medicinal materials: A perspective\nDa-Cheng Hao, Ahmed Alshawafi\nIn Press, Corrected Proof, Available online 27 October 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
+        },
+        {
+          "pii": "S1674638426001814",
+          "doi": "10.1016/j.chmed.2026.10.012",
+          "title": "Jichuanjian ameliorates slow transit constipation through modulation of epithelial–mesenchymal transition associated with Wnt signaling",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001814",
+          "official_card": "Research articleOpen access\nJichuanjian ameliorates slow transit constipation through modulation of epithelial–mesenchymal transition associated with Wnt signaling\nLuge Wei, Xueqian Guo, Jiale Ren, Yifang Luo, ... Yanjun Zhang\nIn Press, Corrected Proof, Available online 24 October 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426001826",
           "doi": "10.1016/j.chmed.2026.10.013",
-          "title": "Identification of chemical components and metabolic prototype components in Mahuang Decoction and pharmacokinetic study of main components in normal group and ALI model rats"
-        },
-        {
-          "pii": "S167463842600184X",
-          "doi": "10.1016/j.chmed.2026.10.015",
-          "title": "A systematic multi-omics-based investigation into distinct tissues of Cinnamomum cassia"
-        },
-        {
-          "pii": "S1674638426001851",
-          "doi": "10.1016/j.chmed.2026.10.017",
-          "title": "Characterization of a dihydrocaffeic acid-coenzyme A ligase and three dihydrocaffeoyl acyltransferases catalyzing formation of kukoamine A in Lycium barbarum"
-        },
-        {
-          "pii": "S1674638426001863",
-          "doi": "10.1016/j.chmed.2026.10.016",
-          "title": "Structural characteristics and anti-neuroinflammatory activity of a pectin-like polysaccharide from Ferula sinkiangensis"
+          "title": "Identification of chemical components and metabolic prototype components in Mahuang Decoction and pharmacokinetic study of main components in normal group and ALI model rats",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001826",
+          "official_card": "Research articleOpen access\nIdentification of chemical components and metabolic prototype components in Mahuang Decoction and pharmacokinetic study of main components in normal group and ALI model rats\nXinrui Wang, Kai Li, Wenxuan Dong, Min Li, ... Dailin Liu\nIn Press, Corrected Proof, Available online 28 October 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426001838",
           "doi": "10.1016/j.chmed.2026.10.014",
-          "title": "Nano-potassium silicate reshapes the phyllosphere microbiome and maintains yield of Fritillaria cirrhosa"
+          "title": "Nano-potassium silicate reshapes the phyllosphere microbiome and maintains yield of Fritillaria cirrhosa",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001838",
+          "official_card": "Research articleOpen access\nNano-potassium silicate reshapes the phyllosphere microbiome and maintains yield of Fritillaria cirrhosa\nYalong Shi, Haobo Zhang, Yi Lu, Yuhan Wu, ... Xiwen Li\nIn Press, Corrected Proof, Available online 2 November 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
+        },
+        {
+          "pii": "S167463842600184X",
+          "doi": "10.1016/j.chmed.2026.10.015",
+          "title": "A systematic multi-omics-based investigation into distinct tissues of Cinnamomum cassia",
+          "url": "https://www.sciencedirect.com/science/article/pii/S167463842600184X",
+          "official_card": "Research articleOpen access\nA systematic multi-omics-based investigation into distinct tissues of Cinnamomum cassia\nWei Wei, Xiao Yang, Peitao Xie, Zhenhe Chen, ... Jiagang Deng\nIn Press, Corrected Proof, Available online 30 October 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
+        },
+        {
+          "pii": "S1674638426001851",
+          "doi": "10.1016/j.chmed.2026.10.017",
+          "title": "Characterization of a dihydrocaffeic acid-coenzyme A ligase and three dihydrocaffeoyl acyltransferases catalyzing formation of kukoamine A in Lycium barbarum",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001851",
+          "official_card": "Research articleOpen access\nCharacterization of a dihydrocaffeic acid-coenzyme A ligase and three dihydrocaffeoyl acyltransferases catalyzing formation of kukoamine A in Lycium barbarum\nJiahe Zhang, Keyun Liu, Jinyao Tang, Linlin Wang, ... Xue Qiao\nIn Press, Corrected Proof, Available online 31 October 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
+        },
+        {
+          "pii": "S1674638426001863",
+          "doi": "10.1016/j.chmed.2026.10.016",
+          "title": "Structural characteristics and anti-neuroinflammatory activity of a pectin-like polysaccharide from Ferula sinkiangensis",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001863",
+          "official_card": "Research articleOpen access\nStructural characteristics and anti-neuroinflammatory activity of a pectin-like polysaccharide from Ferula sinkiangensis\nSiru Li, Xiaoyan Zhong, Lianru Cui, Yukun Peng, ... Chunyan Yan\nIn Press, Corrected Proof, Available online 31 October 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426001887",
           "doi": "10.1016/j.chmed.2026.11.002",
-          "title": "Optimized phosphorus management enhances steroidal alkaloid biosynthesis in Fritillaria cirrhosa via rhizosphere microbiome modulation"
+          "title": "Optimized phosphorus management enhances steroidal alkaloid biosynthesis in Fritillaria cirrhosa via rhizosphere microbiome modulation",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001887",
+          "official_card": "Research articleOpen access\nOptimized phosphorus management enhances steroidal alkaloid biosynthesis in Fritillaria cirrhosa via rhizosphere microbiome modulation\nYalong Shi, Yuhan Wu, Yi Lu, Haobo Zhang, ... Xiwen Li\nIn Press, Corrected Proof, Available online 2 November 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         },
         {
           "pii": "S1674638426001899",
           "doi": "10.1016/j.chmed.2026.11.003",
-          "title": "Future of rare and endangered medicinal material substitutions: key strategies, challenges, and prospects"
+          "title": "Future of rare and endangered medicinal material substitutions: key strategies, challenges, and prospects",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001899",
+          "official_card": "Review articleOpen access\nFuture of rare and endangered medicinal material substitutions: key strategies, challenges, and prospects\nWenjing Yang, Wenfeng Luo, Ye He, Qian Wang, ... Chunjie Wu\nIn Press, Corrected Proof, Available online 4 November 2026\nView PDF\nArticle preview",
+          "scope_result": "excluded_unassigned_to_formal_volume_issue"
         }
       ]
     },
@@ -4622,7 +4864,9 @@
         "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000419",
         "title": "Prediction of therapeutic targets and drug candidates for pancreatic ductal adenocarcinoma by network-based computational framework",
         "status": "pending",
-        "reason": "具体学习方法、AI贡献或现有研究综合仍待核，不仅凭网络/计算字样或未来方向纳入。"
+        "reason": "具体学习方法、AI贡献或现有研究综合仍待核，不仅凭网络/计算字样或未来方向纳入。",
+        "last_attempt_batch": "lixueting-2026-batch49",
+        "last_attempt_result": "official abstract/references loaded but main body remained Loading; no final method judgement; not a CPE page"
       },
       {
         "doi": "10.1016/j.chmed.2026.08.019",
@@ -4630,7 +4874,10 @@
         "url": "https://www.sciencedirect.com/science/article/pii/S167463842600136X",
         "title": "Liuwei Kangguan Formula: Mechanism-driven and computation-assisted optimization from Xuanfei Baidu Formula for combating SARS-CoV-2 infection",
         "status": "pending",
-        "reason": "具体学习方法、AI贡献或现有研究综合仍待核，不仅凭网络/计算字样或未来方向纳入。"
+        "reason": "具体学习方法、AI贡献或现有研究综合仍待核，不仅凭网络/计算字样或未来方向纳入。",
+        "last_attempt_batch": "lixueting-2026-batch49",
+        "last_attempt_result": "normal browser CPE00002; stopped page sequence and requested manual method verification; no alternative sources used",
+        "manual_status": "awaiting_reply"
       },
       {
         "doi": "10.1016/j.chmed.2025.11.008",
@@ -4649,6 +4896,14 @@
         "title": "Hybrid modeling of ultrasound-assisted extraction of phytochemicals from Himalayan Ganoderma lucidum using artificial neural network-genetic algorithm",
         "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001358",
         "reason": "全目录标题召回，原摘要及公开正文§2.7.1/§5.2证实ANN-GA用于真实提取工艺，原raw对象补入。"
+      },
+      {
+        "id": "10.1016/j.chmed.2026.08.014",
+        "doi": "10.1016/j.chmed.2026.08.014",
+        "pii": "S1674638426001310",
+        "title": "Identification of PDE4D as a common molecular target of five bufadienolides from Liushen Pill in experimental acute pharyngitis",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001310",
+        "reason": "原raw已采集，正文明确实际SVR成分-活性建模；补科学候选，但原摘要未核得而pending。"
       }
     ],
     "reviewed_ids": [
@@ -4664,7 +4919,8 @@
       "10.1016/j.chmed.2026.08.013",
       "10.1016/j.chmed.2026.08.021",
       "10.1016/j.chmed.2026.08.020",
-      "10.1016/j.chmed.2026.08.018"
+      "10.1016/j.chmed.2026.08.018",
+      "10.1016/j.chmed.2026.08.014"
     ],
     "manual_verification_requests": [
       {
@@ -4674,6 +4930,15 @@
         "status": "awaiting_reply",
         "error": "CPE00002",
         "requested_in_current_chat": true
+      },
+      {
+        "doi": "10.1016/j.chmed.2026.08.019",
+        "pii": "S167463842600136X",
+        "url": "https://www.sciencedirect.com/science/article/pii/S167463842600136X",
+        "status": "awaiting_reply",
+        "error": "CPE00002",
+        "requested_in_current_chat": true,
+        "request_kind": "recall_method"
       }
     ],
     "article_checks": [
@@ -5370,6 +5635,306 @@
         "pdf_verified": false
       }
     ],
-    "limits": "未声称91篇摘要/全文全读；10文类、60额外正式归属、3召回及2科学pending未解决，不能标来源完成。CPE页面未取得正文，无伪造小标题；未使用替代来源替代该页。参考文献辅助核查仅用于已取得正文的科学疑点，不代替缺失正文。"
+    "limits": "未声称91篇全摘要/全文核读；1文类、3科学pending和3召回仍未决。PDAC正文未加载不推定无AI，PDE4D原摘要空值不以正文代替；CPE仅保存错误类型/URL/时间，公开成果不复制客户端IP。",
+    "inpress_reconciliation_batch49": {
+      "url": "https://www.sciencedirect.com/journal/chinese-herbal-medicines/articles-in-press",
+      "observed_at": "2026-11-18T09:51:34.203Z",
+      "official_list_total": 68,
+      "all_marked_inpress": true,
+      "matched_original_extra_count": 60,
+      "original_extra_unmatched": [],
+      "not_in_original_collection_count": 8,
+      "not_in_original_collection_pii": [
+        "S1674638425001169",
+        "S1674638425001194",
+        "S1674638426001875",
+        "S1674638426001905",
+        "S1674638426001917",
+        "S1674638426001929",
+        "S1674638426001930",
+        "S1674638426001942"
+      ],
+      "basis": "官网明确Articles in press未分配卷期，60额外逐PII全在列表；另8条也未编卷，不作为固定正式范围漏采。"
+    },
+    "article_checks_batch49": [
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000146",
+        "observed_at": "2026-11-18T09:51:54.138Z",
+        "body_headings": [
+          "Chinese Herbal Medicines",
+          "Published by",
+          "Outline",
+          "Figures (1)",
+          "Extras (1)",
+          "CRediT authorship contribution statement",
+          "Declaration of competing interest",
+          "Acknowledgments",
+          "Appendix A. Supplementary data",
+          "References",
+          "Recommended articles",
+          "Cookie Preference Center",
+          " Manage Consent Preferences",
+          "Strictly Necessary Cookies",
+          "Functional Cookies",
+          "Performance Cookies",
+          "Contextual Advertising Cookies",
+          "Cookie List"
+        ],
+        "main_body_loaded": true
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000031",
+        "observed_at": "2026-11-18T09:53:01.025Z",
+        "body_headings": [
+          "Chinese Herbal Medicines",
+          "Published by",
+          "Outline",
+          "Figures (2)",
+          "Extras (1)",
+          "CRediT authorship contribution statement",
+          "Declaration of competing interest",
+          "Acknowledgments",
+          "Appendix A. Supplementary material",
+          "References",
+          "Recommended articles",
+          "Metrics",
+          "Captures",
+          "Cookie Preference Center",
+          " Manage Consent Preferences",
+          "Strictly Necessary Cookies",
+          "Functional Cookies",
+          "Performance Cookies",
+          "Contextual Advertising Cookies",
+          "Cookie List"
+        ],
+        "main_body_loaded": true
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000158",
+        "observed_at": "2026-11-18T09:51:56.177Z",
+        "body_headings": [
+          "Chinese Herbal Medicines",
+          "Published by",
+          "Outline",
+          "Figures (2)",
+          "Extras (1)",
+          "Conclusion",
+          "CRediT authorship contribution statement",
+          "Declaration of competing interest",
+          "Acknowledgments",
+          "Appendix A. Supplementary data",
+          "References",
+          "Recommended articles",
+          "Based on reading popularity",
+          "Cited by (1)",
+          "Metrics",
+          "Citations",
+          "Captures",
+          "Cookie Preference Center",
+          " Manage Consent Preferences",
+          "Strictly Necessary Cookies",
+          "Functional Cookies",
+          "Performance Cookies",
+          "Contextual Advertising Cookies",
+          "Cookie List"
+        ],
+        "main_body_loaded": true
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000584",
+        "observed_at": "2026-11-18T09:53:02.113Z",
+        "body_headings": [
+          "Chinese Herbal Medicines",
+          "Published by",
+          "Outline",
+          "Figures (1)",
+          "Extras (1)",
+          "CRediT authorship contribution statement",
+          "Declaration of competing interest",
+          "Acknowledgment",
+          "Appendix A. Supplementary data",
+          "References",
+          "Substances (1)",
+          "Recommended articles",
+          "Cited by (1)",
+          "Metrics",
+          "Citations",
+          "Cookie Preference Center",
+          " Manage Consent Preferences",
+          "Strictly Necessary Cookies",
+          "Functional Cookies",
+          "Performance Cookies",
+          "Contextual Advertising Cookies",
+          "Cookie List"
+        ],
+        "main_body_loaded": true
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000626",
+        "observed_at": "2026-11-18T09:51:57.980Z",
+        "body_headings": [
+          "Chinese Herbal Medicines",
+          "Published by",
+          "Outline",
+          "Figures (2)",
+          "Extras (1)",
+          "CRediT authorship contribution statement",
+          "Declaration of competing interest",
+          "Acknowledgments",
+          "Appendix A. Supplementary data",
+          "References",
+          "Recommended articles",
+          "Metrics",
+          "Captures",
+          "Cookie Preference Center",
+          " Manage Consent Preferences",
+          "Strictly Necessary Cookies",
+          "Functional Cookies",
+          "Performance Cookies",
+          "Contextual Advertising Cookies",
+          "Cookie List"
+        ],
+        "main_body_loaded": true
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000535",
+        "observed_at": "2026-11-18T09:51:59.059Z",
+        "body_headings": [
+          "Chinese Herbal Medicines",
+          "Published by",
+          "Outline",
+          "Figures (1)",
+          "Extras (1)",
+          "1. GRb1 alleviates liver injury and attenuates pathological liver changes",
+          "2. GRb1 promotes morphological restoration of hepatocyte membrane and nucleus",
+          "CRediT authorship contribution statement",
+          "Declaration of competing interest",
+          "Acknowledgments",
+          "Appendix A. Supplementary data",
+          "References",
+          "Recommended articles",
+          "Cookie Preference Center",
+          " Manage Consent Preferences",
+          "Strictly Necessary Cookies",
+          "Functional Cookies",
+          "Performance Cookies",
+          "Contextual Advertising Cookies",
+          "Cookie List"
+        ],
+        "main_body_loaded": true
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001310",
+        "observed_at": "2026-11-18T09:52:00.049Z",
+        "body_headings": [
+          "Chinese Herbal Medicines",
+          "Published by",
+          "Outline",
+          "Figures (1)",
+          "Ethics declaration",
+          "Animal subject",
+          "CRediT authorship contribution statement",
+          "Declaration of competing interest",
+          "Acknowledgments",
+          "References",
+          "Recommended articles",
+          "Metrics",
+          "Captures",
+          "Cookie Preference Center",
+          " Manage Consent Preferences",
+          "Strictly Necessary Cookies",
+          "Functional Cookies",
+          "Performance Cookies",
+          "Contextual Advertising Cookies",
+          "Cookie List"
+        ],
+        "main_body_loaded": true
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001085",
+        "observed_at": "2026-11-18T09:52:01.157Z",
+        "body_headings": [
+          "Chinese Herbal Medicines",
+          "Published by",
+          "Outline",
+          "Figures (1)",
+          "Abstract",
+          "Keywords",
+          "1. Concept and scientific significance of ETCM theory",
+          "2. Research strategies and framework of ETCM",
+          "3. Research paradigms and mechanisms of action of ETCM",
+          "4. Research prospects and future perspectives",
+          "CRediT authorship contribution statement",
+          "Declaration of competing interest",
+          "Acknowledgements",
+          "References",
+          "Recommended articles",
+          "Metrics",
+          "Captures",
+          "Cookie Preference Center",
+          " Manage Consent Preferences",
+          "Strictly Necessary Cookies",
+          "Functional Cookies",
+          "Performance Cookies",
+          "Contextual Advertising Cookies",
+          "Cookie List"
+        ],
+        "main_body_loaded": true
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S1674638426001292",
+        "observed_at": "2026-11-18T09:52:02.385Z",
+        "body_headings": [
+          "Chinese Herbal Medicines",
+          "Published by",
+          "Outline",
+          "Figures (1)",
+          "CRediT authorship contribution statement",
+          "Ethics declaration",
+          "Declaration of generative AI in scientific writing",
+          "Declaration of competing interest",
+          "Acknowledgments",
+          "References",
+          "Recommended articles",
+          "Cookie Preference Center",
+          " Manage Consent Preferences",
+          "Strictly Necessary Cookies",
+          "Functional Cookies",
+          "Performance Cookies",
+          "Contextual Advertising Cookies",
+          "Cookie List"
+        ],
+        "main_body_loaded": true
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S1674638426000419",
+        "observed_at": "2026-11-18T09:53:03.355Z",
+        "body_headings": [
+          "Chinese Herbal Medicines",
+          "Published by",
+          "Outline",
+          "Figures (6)",
+          "Extras (1)",
+          "Abstract",
+          "Objective",
+          "Methods",
+          "Results",
+          "Conclusion",
+          "Keywords",
+          "References",
+          "Recommended articles",
+          "Metrics",
+          "Captures",
+          "Cookie Preference Center",
+          " Manage Consent Preferences",
+          "Strictly Necessary Cookies",
+          "Functional Cookies",
+          "Performance Cookies",
+          "Contextual Advertising Cookies",
+          "Cookie List"
+        ],
+        "main_body_loaded": false
+      }
+    ]
   }
 ]
