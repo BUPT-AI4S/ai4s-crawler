@@ -108,3 +108,7 @@ Journal of Cheminformatics的119条已逐篇判读：109纳入、7排除、3待�
 ## UTC 2026-11-18 官网原摘要续补（最新断点）
 
 输入main `971a5bcd0ccde72cf4d4e06d0f441927265e9ccc`。用户完成官网验证后取得16份排除Editorial Board的原始BibTeX，按DOI及完整题名补56条（Journal of Hydrology 56），缺摘要306→250。原字段、2233条记录、判定、标签及内容精筛统计保留；本轮新增内容精筛0。水文学第669卷Part A再现CPE00002，Semantic Scholar批量349条请求429，均保存失败证据，未假填摘要。48来源反馈、缺口清单及断点同步，报告 audits/wangmengran8789-abstracts-hydrology-20261118/report.md。
+
+## UTC 2026-11-18 官网原摘要续补（最新断点）
+
+输入main `62b7fb7f0da0dcf72a62bc4f90a4cad2a02bf1c4`。正常Chrome取得17份排除Editorial Board的原始BibTeX，按DOI及完整题名补36条（Knowledge-Based Systems 36），缺摘要250→214。原字段、2233条记录、判定、标签及内容精筛统计保留；本轮新增内容精筛0。水文学第681卷Part A再现CPE00002，Semantic Scholar批量250条请求429，均保存失败证据，未假填摘要。48来源反馈、缺口清单及断点同步，报告 audits/wangmengran8789-abstracts-public-20261118/report.md。
