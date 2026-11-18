@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-18T10:38:07.921905+00:00",
-  "commit": "96025abd67e754d702a06f496b28fce87325aa3c",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/96025abd67e754d702a06f496b28fce87325aa3c/",
+  "generated_at": "2026-11-18T11:02:11.545920+00:00",
+  "commit": "fe967ee6c08d0b33226ee5f849209741cc136ad0",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/fe967ee6c08d0b33226ee5f849209741cc136ad0/",
   "years": [
     {
       "year": 2024,
@@ -26219,18 +26219,18 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-18T02:27:12-08:00",
+            "at": "2026-11-18T02:59:58-08:00",
             "author": "h10",
-            "subject": "review: verify PDAC graph clustering and Herbgenomics AI evidence; recover two candidates",
+            "subject": "review: screen six Soil Biology papers and audit 2026 issue coverage",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
-              "metadata/j-a847fdc23a/2026/ai4s.json",
-              "metadata/j-a847fdc23a/2026/official-scope-audit-lixueting.json",
+              "metadata/j-ad9089e1ea/2026/ai4s.json",
+              "metadata/j-ad9089e1ea/2026/official-scope-audit-lixueting.json",
               "reviews/2026/feedback/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 82
+          "commits_7d": 83
         },
         {
           "owner": "丁利军",
@@ -46834,18 +46834,18 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-18T02:27:12-08:00",
+            "at": "2026-11-18T02:59:58-08:00",
             "author": "h10",
-            "subject": "review: verify PDAC graph clustering and Herbgenomics AI evidence; recover two candidates",
+            "subject": "review: screen six Soil Biology papers and audit 2026 issue coverage",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
-              "metadata/j-a847fdc23a/2026/ai4s.json",
-              "metadata/j-a847fdc23a/2026/official-scope-audit-lixueting.json",
+              "metadata/j-ad9089e1ea/2026/ai4s.json",
+              "metadata/j-ad9089e1ea/2026/official-scope-audit-lixueting.json",
               "reviews/2026/feedback/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 82
+          "commits_7d": 83
         },
         {
           "owner": "郝卓迪",
@@ -59002,31 +59002,58 @@
           "papers": 255,
           "papers_missing_abstract": 124,
           "snapshot_candidates": 3,
-          "candidates": 3,
-          "missing_abstract": 0,
+          "candidates": 6,
+          "missing_abstract": 1,
           "official_total": null,
           "official_scope": "",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
+          "coverage_note": "官网12卷252唯一PII全部匹配原255；三额外实为2027卷225。当前219确认研究/实质综述、5非适用、28文类待核，未知总量不填零。3初始+3漏筛均有官网原摘要并纳入；原字段保持，110313原abstract null以verified_metadata补官方原摘要。年度覆盖仍未标完成。",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/journal/soil-biology-and-biochemistry/issues",
+            "https://www.sciencedirect.com/journal/soil-biology-and-biochemistry/vol/212/suppl/C",
+            "https://www.sciencedirect.com/journal/soil-biology-and-biochemistry/vol/213/suppl/C",
+            "https://www.sciencedirect.com/journal/soil-biology-and-biochemistry/vol/214/suppl/C",
+            "https://www.sciencedirect.com/journal/soil-biology-and-biochemistry/vol/215/suppl/C",
+            "https://www.sciencedirect.com/journal/soil-biology-and-biochemistry/vol/216/suppl/C",
+            "https://www.sciencedirect.com/journal/soil-biology-and-biochemistry/vol/217/suppl/C",
+            "https://www.sciencedirect.com/journal/soil-biology-and-biochemistry/vol/218/suppl/C",
+            "https://www.sciencedirect.com/journal/soil-biology-and-biochemistry/vol/219/suppl/C",
+            "https://www.sciencedirect.com/journal/soil-biology-and-biochemistry/vol/220/suppl/C",
+            "https://www.sciencedirect.com/journal/soil-biology-and-biochemistry/vol/221/suppl/C",
+            "https://www.sciencedirect.com/journal/soil-biology-and-biochemistry/vol/222/suppl/C",
+            "https://www.sciencedirect.com/journal/soil-biology-and-biochemistry/vol/223/suppl/C"
+          ],
+          "decisions": {
+            "include": 6,
+            "exclude": 0,
+            "pending": 0,
+            "unreviewed": 0
+          },
           "issues": [
+            "28条文类尚待核（17 Short communication、8 Mini review、2 Personal report、1 Correspondence）；219为研究/实质综述小计，official_total及同口径采集数未知。",
+            "6条非正式方法召回尚未尝试，需区分学习模型与普通统计/机理模型；不计正式科学pending。",
+            "252目录均匹配采集；3额外已核2027卷225，勿因2026上线纳入2026；本轮未声称252篇全摘要或全文补齐。",
             "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
-            "尚未找到逐篇审核交付。"
+            "官网同口径总数尚未确认。"
           ],
           "actions": [
+            "复用soil-directories-batch51及逐PII对账，不重复抓12卷252目录或重判本批6篇。",
+            "继续28条未尝试文类，优先可公开原摘要/正文；第215卷两篇Mini review已核实质，不重做。",
+            "逐篇核6条方法召回：110070、110117、110207、110265、110295、110308；确认AI及原摘要后再补候选。",
+            "第223卷封面December但初始快照已记录，官网为正式关闭卷；补核时保持既定截止，不扩2027卷或未来归期。",
             "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "提交逐篇审核结果或说明当前进度。"
+            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2026/zch66883-lixueting.json",
+            "reviews/2026/feedback/zch66883-lixueting.json"
+          ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": null,
-          "final_missing_abstract": null,
+          "final_included": 6,
+          "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
-          "abstract_recovered": 0,
+          "abstract_recovered": 1,
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
@@ -71192,24 +71219,24 @@
         {
           "owner": "李雪婷",
           "sources": 51,
-          "delivered": 30,
+          "delivered": 31,
           "official": 24,
           "pending": 16,
           "open_issues": 38,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-18T02:27:12-08:00",
+            "at": "2026-11-18T02:59:58-08:00",
             "author": "h10",
-            "subject": "review: verify PDAC graph clustering and Herbgenomics AI evidence; recover two candidates",
+            "subject": "review: screen six Soil Biology papers and audit 2026 issue coverage",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
-              "metadata/j-a847fdc23a/2026/ai4s.json",
-              "metadata/j-a847fdc23a/2026/official-scope-audit-lixueting.json",
+              "metadata/j-ad9089e1ea/2026/ai4s.json",
+              "metadata/j-ad9089e1ea/2026/official-scope-audit-lixueting.json",
               "reviews/2026/feedback/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 82
+          "commits_7d": 83
         },
         {
           "owner": "郝卓迪",
@@ -71510,7 +71537,7 @@
         },
         "2026": {
           "sources": 51,
-          "delivered": 30,
+          "delivered": 31,
           "official": 24,
           "pending": 16,
           "open_issues": 38,
@@ -71518,23 +71545,23 @@
         }
       },
       "sources": 153,
-      "delivered": 69,
+      "delivered": 70,
       "not_started": [
         "2025"
       ],
       "last_update": {
-        "at": "2026-11-18T02:27:12-08:00",
+        "at": "2026-11-18T02:59:58-08:00",
         "author": "h10",
-        "subject": "review: verify PDAC graph clustering and Herbgenomics AI evidence; recover two candidates",
+        "subject": "review: screen six Soil Biology papers and audit 2026 issue coverage",
         "area": "reviews",
         "paths": [
           "metadata/2026/ai4s.json",
-          "metadata/j-a847fdc23a/2026/ai4s.json",
-          "metadata/j-a847fdc23a/2026/official-scope-audit-lixueting.json",
+          "metadata/j-ad9089e1ea/2026/ai4s.json",
+          "metadata/j-ad9089e1ea/2026/official-scope-audit-lixueting.json",
           "reviews/2026/feedback/zch66883-lixueting.json"
         ]
       },
-      "commits_7d": 82
+      "commits_7d": 83
     },
     {
       "owner": "龙兆科",
@@ -71765,9 +71792,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-18T10:37:23.908505+00:00",
+    "generated_at": "2026-11-18T11:01:40.693023+00:00",
     "history_available": true,
-    "commit": "96025abd67e754d702a06f496b28fce87325aa3c",
-    "commits_scanned": 960
+    "commit": "fe967ee6c08d0b33226ee5f849209741cc136ad0",
+    "commits_scanned": 962
   }
 }
