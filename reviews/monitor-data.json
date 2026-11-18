@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-18T14:35:47.022271+00:00",
-  "commit": "aab6ca1fd6d7479db50a7209fd6d515cd789ca9c",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/aab6ca1fd6d7479db50a7209fd6d515cd789ca9c/",
+  "generated_at": "2026-11-18T15:03:07.550281+00:00",
+  "commit": "a1c7a9263c249c6ecf34d64a138c05c5a24a207b",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/a1c7a9263c249c6ecf34d64a138c05c5a24a207b/",
   "years": [
     {
       "year": 2024,
@@ -26219,9 +26219,9 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-18T06:32:31-08:00",
+            "at": "2026-11-18T07:00:35-08:00",
             "author": "h10",
-            "subject": "review: screen Kidney International candidates and reconcile 2026 issues",
+            "subject": "review: recover six Kidney International studies and preserve verification gaps",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
@@ -26230,7 +26230,7 @@
               "reviews/2026/feedback/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 91
+          "commits_7d": 92
         },
         {
           "owner": "丁利军",
@@ -46833,9 +46833,9 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-18T06:32:31-08:00",
+            "at": "2026-11-18T07:00:35-08:00",
             "author": "h10",
-            "subject": "review: screen Kidney International candidates and reconcile 2026 issues",
+            "subject": "review: recover six Kidney International studies and preserve verification gaps",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
@@ -46844,7 +46844,7 @@
               "reviews/2026/feedback/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 91
+          "commits_7d": 92
         },
         {
           "owner": "郝卓迪",
@@ -50525,12 +50525,12 @@
           "papers": 533,
           "papers_missing_abstract": 247,
           "snapshot_candidates": 4,
-          "candidates": 5,
+          "candidates": 11,
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
           "reference_check": null,
-          "coverage_note": "正常浏览器取得12份正式目录460唯一PII，全部匹配原533采集；其余73条逐PII均匹配官方84条Articles in Press，非正式范围，不冒充漏采。目录对账完成不等于研究文类/漏筛核验完成；108确认+76非适用+276待核=460。4初始候选审核完成，另补1漏筛，共5候选：2纳入、3排除。",
+          "coverage_note": "复用12正式目录460唯一PII全部匹配原533；73额外均为官方InPress不重试。本轮12优先方法线索：6漏筛纳入、2正文核为不升AI候选、4订阅全文人工待答。另据配对原创研究正式commentary链接核5评论，2实质Mini review文类；阶段110确认+81非适用+269待核=460。37召回和3作者元数据仍未清，范围/覆盖及同口径总数未标完成。",
           "evidence_urls": [
             "https://www.sciencedirect.com/journal/kidney-international/issues",
             "https://www.sciencedirect.com/journal/kidney-international/vol/109/issue/1/suppl/S",
@@ -50551,24 +50551,37 @@
             "https://www.sciencedirect.com/science/article/abs/pii/S0085253825009482",
             "https://www.sciencedirect.com/science/article/pii/S0085253826003261",
             "https://www.sciencedirect.com/science/article/pii/S0085253826003017",
-            "https://www.sciencedirect.com/science/article/pii/S0085253826004771"
+            "https://www.sciencedirect.com/science/article/pii/S0085253826004771",
+            "https://www.sciencedirect.com/science/article/pii/S0085253825007720",
+            "https://www.sciencedirect.com/science/article/pii/S0085253826006125",
+            "https://www.sciencedirect.com/science/article/pii/S0085253826001432",
+            "https://www.sciencedirect.com/science/article/abs/pii/S0085253825010154",
+            "https://www.sciencedirect.com/science/article/abs/pii/S0085253825007501",
+            "https://www.sciencedirect.com/science/article/abs/pii/S0085253825006787",
+            "https://www.sciencedirect.com/science/article/abs/pii/S008525382500849X",
+            "https://www.sciencedirect.com/science/article/pii/S0085253826001341",
+            "https://www.sciencedirect.com/science/article/pii/S0085253826003960",
+            "https://www.sciencedirect.com/science/article/pii/S0085253826006022",
+            "https://www.sciencedirect.com/science/article/pii/S0085253826000050",
+            "https://www.sciencedirect.com/science/article/pii/S0085253825006775"
           ],
           "decisions": {
-            "include": 2,
+            "include": 8,
             "exclude": 3,
             "pending": 0,
             "unreviewed": 0
           },
           "issues": [
-            "276条文类仍待内容核验，不能将460目录总数或108已确认研究综述小计当最终同口径官网数。",
-            "49条宽召回线索待文类/方法核验，含12条优先；所有460题名与已有输入线索已扫，不表示逐篇全文已读。",
+            "269条文类仍待内容核验，110确认/81非适用为阶段小计，正式同口径总数仍null。",
+            "37条召回未决：33未尝试、4全文订阅已请求人工；其中4条priority均等人工，不重复失败页。",
+            "3篇新纳入完整作者元数据待核：2篇CPE已请求人工、1篇展开名单尚未尝试；科学结论已据原摘要/正文确认，不重复科学审核。",
             "采集状态尚未完成：abstract_incomplete",
             "官网同口径总数尚未确认。"
           ],
           "actions": [
-            "继续Kidney International 2026：优先12条remaining_recall_checks方法线索，按实际学习用途及科学问题判断，不把预测/单细胞直接当AI。",
-            "分批核276条pending_document_scope；保留同口径总数null、scope/coverage false至未决清零；73原采集额外条目已证InPress不重试。",
-            "其他20组旧人工待答保持；Stem Cell Reports严格完成不重开；先2026后2025。",
+            "继续Kidney International：先处理remaining_recall_checks中33条未尝试线索及269条文类；4条旧订阅人工待答不重试。",
+            "完整署名：Non-HLA 2026.06.031下一批可正常浏览器展开；2025.08.035与2026.01.026 CPE人工待答，待答后按技能处理，科学判定不重做。",
+            "22组人工待答（旧20+本批2组6篇）保持；先2026后2025，范围/覆盖未清零前不标来源完成。",
             "检查采集状态与失败日志，必要时补采。",
             "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
           ],
@@ -50577,7 +50590,7 @@
             "reviews/2026/feedback/zch66883-lixueting.json"
           ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": 2,
+          "final_included": 8,
           "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
@@ -71728,9 +71741,9 @@
           "open_issues": 37,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-18T06:32:31-08:00",
+            "at": "2026-11-18T07:00:35-08:00",
             "author": "h10",
-            "subject": "review: screen Kidney International candidates and reconcile 2026 issues",
+            "subject": "review: recover six Kidney International studies and preserve verification gaps",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
@@ -71739,7 +71752,7 @@
               "reviews/2026/feedback/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 91
+          "commits_7d": 92
         },
         {
           "owner": "郝卓迪",
@@ -72026,9 +72039,9 @@
         "2025"
       ],
       "last_update": {
-        "at": "2026-11-18T06:32:31-08:00",
+        "at": "2026-11-18T07:00:35-08:00",
         "author": "h10",
-        "subject": "review: screen Kidney International candidates and reconcile 2026 issues",
+        "subject": "review: recover six Kidney International studies and preserve verification gaps",
         "area": "reviews",
         "paths": [
           "metadata/2026/ai4s.json",
@@ -72037,7 +72050,7 @@
           "reviews/2026/feedback/zch66883-lixueting.json"
         ]
       },
-      "commits_7d": 91
+      "commits_7d": 92
     },
     {
       "owner": "龙兆科",
@@ -72312,9 +72325,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-18T14:35:15.128055+00:00",
+    "generated_at": "2026-11-18T15:02:29.428689+00:00",
     "history_available": true,
-    "commit": "aab6ca1fd6d7479db50a7209fd6d515cd789ca9c",
-    "commits_scanned": 1037
+    "commit": "a1c7a9263c249c6ecf34d64a138c05c5a24a207b",
+    "commits_scanned": 1039
   }
 }
