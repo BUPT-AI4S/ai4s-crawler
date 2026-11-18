@@ -100,3 +100,7 @@ Journal of Cheminformatics的119条已逐篇判读：109纳入、7排除、3待�
 以 main `5ed1b31923ec534eb877cdb0f91895e53ed65847` 的401条缺摘要候选为输入。正常Chrome官网完成17份排除Editorial Board的citation-and-abstract BibTeX导出，按DOI和完整题名匹配补47条；Springer正式页补1条；官网服务CPE00002受阻后，OpenAlex原摘要索引补3条，Europe PMC原摘要补1条。共补52条，有效缺摘要401→349；原始字段、快照、2233条个人记录、1555纳入/177排除/489待定/12未审及全部标签均保留。本轮新增内容精筛0；取得摘要的记录仍须独立内容判读。
 
 全部401条已执行Crossref、OpenAlex、Europe PMC查询并归档（Crossref其中1批20条返回429，保留失败证据）；其余349条未获可核实原摘要，未使用搜索片段或生成文字填充。ScienceDirect第199、198卷和Journal of Hydrology官网均出现CPE00002，重试未恢复；SCIS MafAFP落地页为Letter且未显示Abstract。总量核对已完成状态保持；EMNLP另有2702条源缺采仍未处理。详见 audits/wangmengran8789-abstracts-20261117/report.md 及逐条补证/剩余清单。历史段落数字仅代表当时检查点。
+
+## UTC 2026-11-18 官网原摘要续补（最新断点）
+
+输入main `60a95f05327fd0e7e5efcb44b53c604592990b72`。用户完成官网验证后取得17份排除Editorial Board的原始BibTeX，按DOI及完整题名补43条（ASOC 41、Journal of Hydrology 2），缺摘要349→306。原字段、2233条记录、判定、标签及内容精筛统计保留；本轮新增内容精筛0。水文学第681卷Part A再现CPE00002，Semantic Scholar批量349条请求429，均保存失败证据，未假填摘要。48来源反馈、缺口清单及断点同步，报告 audits/wangmengran8789-abstracts-continue-20261118/report.md。
