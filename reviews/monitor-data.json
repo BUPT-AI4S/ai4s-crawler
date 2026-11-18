@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-18T14:12:46.516081+00:00",
-  "commit": "99e9a43b0f3ec5e8649feecaee3cbe26472d3471",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/99e9a43b0f3ec5e8649feecaee3cbe26472d3471/",
+  "generated_at": "2026-11-18T14:25:08.722032+00:00",
+  "commit": "209768841881fc82eedeacfb76532897be39c1f9",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/209768841881fc82eedeacfb76532897be39c1f9/",
   "years": [
     {
       "year": 2024,
@@ -26404,18 +26404,18 @@
           "open_issues": 0,
           "status": "complete",
           "last_update": {
-            "at": "2026-11-18T21:03:27+08:00",
+            "at": "2026-11-18T22:22:44+08:00",
             "author": "Roman",
-            "subject": "2026 精筛：35 个来源完成逐篇交付，补 124 条候选摘要并补录 121 条漏筛论文",
+            "subject": "2026 补全量书目摘要并复核候选：补 530 篇摘要，新增 242 条候选",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
-              "metadata/commsenv/2026/ai4s.json",
-              "metadata/j-010bbc0bbc/2026/ai4s.json",
-              "metadata/j-3b179d0686/2026/ai4s.json"
+              "metadata/j-3b179d0686/2026/ai4s.json",
+              "metadata/j-3b179d0686/2026/papers.json",
+              "metadata/j-4a8bd2ddf7/2026/ai4s.json"
             ]
           },
-          "commits_7d": 3
+          "commits_7d": 4
         }
       ],
       "snapshot_file": "metadata/2024/snapshot.json",
@@ -46980,18 +46980,18 @@
           "open_issues": 35,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-18T21:03:27+08:00",
+            "at": "2026-11-18T22:22:44+08:00",
             "author": "Roman",
-            "subject": "2026 精筛：35 个来源完成逐篇交付，补 124 条候选摘要并补录 121 条漏筛论文",
+            "subject": "2026 补全量书目摘要并复核候选：补 530 篇摘要，新增 242 条候选",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
-              "metadata/commsenv/2026/ai4s.json",
-              "metadata/j-010bbc0bbc/2026/ai4s.json",
-              "metadata/j-3b179d0686/2026/ai4s.json"
+              "metadata/j-3b179d0686/2026/ai4s.json",
+              "metadata/j-3b179d0686/2026/papers.json",
+              "metadata/j-4a8bd2ddf7/2026/ai4s.json"
             ]
           },
-          "commits_7d": 3
+          "commits_7d": 4
         },
         {
           "owner": "南耀笛",
@@ -52470,28 +52470,30 @@
           "papers": 1402,
           "papers_missing_abstract": 1168,
           "snapshot_candidates": 87,
-          "candidates": 105,
-          "missing_abstract": 0,
+          "candidates": 143,
+          "missing_abstract": 38,
           "official_total": 1330,
           "official_scope": "Crossref 出版登记：ISSN + 出版日 2026-01-01 至 2026-11-08 + type=journal-article（参考数，与采集器卷期年口径不完全一致）",
           "reference_check": null,
-          "coverage_note": "参考核对：Crossref 参考数 1330 条低于采集 1402 条（差 -72），采集含卷期年口径的在线优先条目，未见缺采。逐篇交付 105 条：纳入 99、排除 6、待定 0、未审 0；当前候选 105 条，候选缺摘要 0 条。",
+          "coverage_note": "参考核对：Crossref 参考数 1330 条低于采集 1402 条（差 -72），采集含卷期年口径的在线优先条目，未见缺采。逐篇交付 143 条：纳入 137、排除 6、待定 0、未审 0；当前候选 143 条，候选缺摘要 38 条。",
           "evidence_urls": [
             "https://api.crossref.org/journals//works?filter=from-pub-date:2026-01-01,until-pub-date:2026-11-08,type:journal-article",
             "https://api.crossref.org/journals//works?filter=from-pub-date:2026-01-01,until-pub-date:2026-11-08,type:journal-article"
           ],
           "decisions": {
-            "include": 99,
+            "include": 137,
             "exclude": 6,
             "pending": 0,
             "unreviewed": 0
           },
           "issues": [
-            "采集状态尚未完成：abstract_incomplete"
+            "采集状态尚未完成：abstract_incomplete",
+            "AI4S候选缺少摘要：38 篇。"
           ],
           "actions": [
             "检查采集状态与失败日志，必要时补采。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
+            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。"
           ],
           "files": [
             "reviews/2026/Roman100021.json",
@@ -52499,15 +52501,15 @@
             "reviews/2026/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": 99,
-          "final_missing_abstract": 0,
+          "final_included": 137,
+          "final_missing_abstract": 38,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
           "abstract_recovered": 0,
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 38
         },
         {
           "code": "j-3c29fd056f",
@@ -53621,28 +53623,30 @@
           "papers": 2497,
           "papers_missing_abstract": 1992,
           "snapshot_candidates": 55,
-          "candidates": 70,
-          "missing_abstract": 0,
+          "candidates": 140,
+          "missing_abstract": 70,
           "official_total": 2280,
           "official_scope": "Crossref 出版登记：ISSN + 出版日 2026-01-01 至 2026-11-08 + type=journal-article（参考数，与采集器卷期年口径不完全一致）",
           "reference_check": null,
-          "coverage_note": "参考核对：Crossref 参考数 2280 条低于采集 2497 条（差 -217），采集含卷期年口径的在线优先条目，未见缺采。逐篇交付 70 条：纳入 60、排除 10、待定 0、未审 0；当前候选 70 条，候选缺摘要 0 条。",
+          "coverage_note": "参考核对：Crossref 参考数 2280 条低于采集 2497 条（差 -217），采集含卷期年口径的在线优先条目，未见缺采。逐篇交付 140 条：纳入 130、排除 10、待定 0、未审 0；当前候选 140 条，候选缺摘要 70 条。",
           "evidence_urls": [
             "https://api.crossref.org/journals//works?filter=from-pub-date:2026-01-01,until-pub-date:2026-11-08,type:journal-article",
             "https://api.crossref.org/journals//works?filter=from-pub-date:2026-01-01,until-pub-date:2026-11-08,type:journal-article"
           ],
           "decisions": {
-            "include": 60,
+            "include": 130,
             "exclude": 10,
             "pending": 0,
             "unreviewed": 0
           },
           "issues": [
-            "采集状态尚未完成：abstract_incomplete"
+            "采集状态尚未完成：abstract_incomplete",
+            "AI4S候选缺少摘要：70 篇。"
           ],
           "actions": [
             "检查采集状态与失败日志，必要时补采。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
+            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。"
           ],
           "files": [
             "reviews/2026/Roman100021.json",
@@ -53650,15 +53654,15 @@
             "reviews/2026/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": 60,
-          "final_missing_abstract": 0,
+          "final_included": 130,
+          "final_missing_abstract": 70,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
           "abstract_recovered": 0,
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 70
         },
         {
           "code": "j-4b102d66fb",
@@ -55014,28 +55018,30 @@
           "papers": 698,
           "papers_missing_abstract": 527,
           "snapshot_candidates": 11,
-          "candidates": 17,
-          "missing_abstract": 0,
+          "candidates": 26,
+          "missing_abstract": 9,
           "official_total": 549,
           "official_scope": "Crossref 出版登记：ISSN + 出版日 2026-01-01 至 2026-11-08 + type=journal-article（参考数，与采集器卷期年口径不完全一致）",
           "reference_check": null,
-          "coverage_note": "参考核对：Crossref 参考数 549 条低于采集 698 条（差 -149），采集含卷期年口径的在线优先条目，未见缺采。逐篇交付 17 条：纳入 13、排除 4、待定 0、未审 0；当前候选 17 条，候选缺摘要 0 条。",
+          "coverage_note": "参考核对：Crossref 参考数 549 条低于采集 698 条（差 -149），采集含卷期年口径的在线优先条目，未见缺采。逐篇交付 26 条：纳入 22、排除 4、待定 0、未审 0；当前候选 26 条，候选缺摘要 9 条。",
           "evidence_urls": [
             "https://api.crossref.org/journals//works?filter=from-pub-date:2026-01-01,until-pub-date:2026-11-08,type:journal-article",
             "https://api.crossref.org/journals//works?filter=from-pub-date:2026-01-01,until-pub-date:2026-11-08,type:journal-article"
           ],
           "decisions": {
-            "include": 13,
+            "include": 22,
             "exclude": 4,
             "pending": 0,
             "unreviewed": 0
           },
           "issues": [
-            "采集状态尚未完成：abstract_incomplete"
+            "采集状态尚未完成：abstract_incomplete",
+            "AI4S候选缺少摘要：9 篇。"
           ],
           "actions": [
             "检查采集状态与失败日志，必要时补采。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
+            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。"
           ],
           "files": [
             "reviews/2026/Roman100021.json",
@@ -55043,15 +55049,15 @@
             "reviews/2026/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": 13,
-          "final_missing_abstract": 0,
+          "final_included": 22,
+          "final_missing_abstract": 9,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
           "abstract_recovered": 0,
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 9
         },
         {
           "code": "j-6a2242b280",
@@ -55190,28 +55196,30 @@
           "papers": 1277,
           "papers_missing_abstract": 971,
           "snapshot_candidates": 117,
-          "candidates": 148,
-          "missing_abstract": 0,
+          "candidates": 229,
+          "missing_abstract": 81,
           "official_total": 1170,
           "official_scope": "Crossref 出版登记：ISSN + 出版日 2026-01-01 至 2026-11-08 + type=journal-article（参考数，与采集器卷期年口径不完全一致）",
           "reference_check": null,
-          "coverage_note": "参考核对：Crossref 参考数 1170 条低于采集 1277 条（差 -107），采集含卷期年口径的在线优先条目，未见缺采。逐篇交付 148 条：纳入 143、排除 5、待定 0、未审 0；当前候选 148 条，候选缺摘要 0 条。",
+          "coverage_note": "参考核对：Crossref 参考数 1170 条低于采集 1277 条（差 -107），采集含卷期年口径的在线优先条目，未见缺采。逐篇交付 229 条：纳入 224、排除 5、待定 0、未审 0；当前候选 229 条，候选缺摘要 81 条。",
           "evidence_urls": [
             "https://api.crossref.org/journals//works?filter=from-pub-date:2026-01-01,until-pub-date:2026-11-08,type:journal-article",
             "https://api.crossref.org/journals//works?filter=from-pub-date:2026-01-01,until-pub-date:2026-11-08,type:journal-article"
           ],
           "decisions": {
-            "include": 143,
+            "include": 224,
             "exclude": 5,
             "pending": 0,
             "unreviewed": 0
           },
           "issues": [
-            "采集状态尚未完成：abstract_incomplete"
+            "采集状态尚未完成：abstract_incomplete",
+            "AI4S候选缺少摘要：81 篇。"
           ],
           "actions": [
             "检查采集状态与失败日志，必要时补采。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
+            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。"
           ],
           "files": [
             "reviews/2026/Roman100021.json",
@@ -55219,15 +55227,15 @@
             "reviews/2026/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": 143,
-          "final_missing_abstract": 0,
+          "final_included": 224,
+          "final_missing_abstract": 81,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
           "abstract_recovered": 0,
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 81
         },
         {
           "code": "j-6c204bdd6e",
@@ -56005,28 +56013,30 @@
           "papers": 477,
           "papers_missing_abstract": 305,
           "snapshot_candidates": 18,
-          "candidates": 20,
-          "missing_abstract": 0,
+          "candidates": 29,
+          "missing_abstract": 9,
           "official_total": 433,
           "official_scope": "Crossref 出版登记：ISSN + 出版日 2026-01-01 至 2026-11-08 + type=journal-article（参考数，与采集器卷期年口径不完全一致）",
           "reference_check": null,
-          "coverage_note": "参考核对：Crossref 参考数 433 条低于采集 477 条（差 -44），采集含卷期年口径的在线优先条目，未见缺采。逐篇交付 20 条：纳入 12、排除 8、待定 0、未审 0；当前候选 20 条，候选缺摘要 0 条。",
+          "coverage_note": "参考核对：Crossref 参考数 433 条低于采集 477 条（差 -44），采集含卷期年口径的在线优先条目，未见缺采。逐篇交付 29 条：纳入 21、排除 8、待定 0、未审 0；当前候选 29 条，候选缺摘要 9 条。",
           "evidence_urls": [
             "https://api.crossref.org/journals//works?filter=from-pub-date:2026-01-01,until-pub-date:2026-11-08,type:journal-article",
             "https://api.crossref.org/journals//works?filter=from-pub-date:2026-01-01,until-pub-date:2026-11-08,type:journal-article"
           ],
           "decisions": {
-            "include": 12,
+            "include": 21,
             "exclude": 8,
             "pending": 0,
             "unreviewed": 0
           },
           "issues": [
-            "采集状态尚未完成：abstract_incomplete"
+            "采集状态尚未完成：abstract_incomplete",
+            "AI4S候选缺少摘要：9 篇。"
           ],
           "actions": [
             "检查采集状态与失败日志，必要时补采。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
+            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。"
           ],
           "files": [
             "reviews/2026/Roman100021.json",
@@ -56034,15 +56044,15 @@
             "reviews/2026/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": 12,
-          "final_missing_abstract": 0,
+          "final_included": 21,
+          "final_missing_abstract": 9,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
           "abstract_recovered": 0,
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 9
         },
         {
           "code": "j-7a8d9ea925",
@@ -62848,28 +62858,30 @@
           "papers": 1079,
           "papers_missing_abstract": 685,
           "snapshot_candidates": 37,
-          "candidates": 41,
-          "missing_abstract": 0,
+          "candidates": 62,
+          "missing_abstract": 21,
           "official_total": 1004,
           "official_scope": "Crossref 出版登记：ISSN + 出版日 2026-01-01 至 2026-11-08 + type=journal-article（参考数，与采集器卷期年口径不完全一致）",
           "reference_check": null,
-          "coverage_note": "参考核对：Crossref 参考数 1004 条低于采集 1079 条（差 -75），采集含卷期年口径的在线优先条目，未见缺采。逐篇交付 42 条：纳入 37、排除 5、待定 0、未审 0；当前候选 41 条，候选缺摘要 0 条。",
+          "coverage_note": "参考核对：Crossref 参考数 1004 条低于采集 1079 条（差 -75），采集含卷期年口径的在线优先条目，未见缺采。逐篇交付 63 条：纳入 58、排除 5、待定 0、未审 0；当前候选 62 条，候选缺摘要 21 条。",
           "evidence_urls": [
             "https://api.crossref.org/journals//works?filter=from-pub-date:2026-01-01,until-pub-date:2026-11-08,type:journal-article",
             "https://api.crossref.org/journals//works?filter=from-pub-date:2026-01-01,until-pub-date:2026-11-08,type:journal-article"
           ],
           "decisions": {
-            "include": 37,
+            "include": 58,
             "exclude": 5,
             "pending": 0,
             "unreviewed": 0
           },
           "issues": [
-            "采集状态尚未完成：abstract_incomplete"
+            "采集状态尚未完成：abstract_incomplete",
+            "AI4S候选缺少摘要：21 篇。"
           ],
           "actions": [
             "检查采集状态与失败日志，必要时补采。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
+            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。"
           ],
           "files": [
             "reviews/2026/Roman100021.json",
@@ -62877,15 +62889,15 @@
             "reviews/2026/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": 37,
-          "final_missing_abstract": 0,
+          "final_included": 58,
+          "final_missing_abstract": 21,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
           "abstract_recovered": 0,
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 21
         },
         {
           "code": "j-e9725f8b7d",
@@ -63564,28 +63576,30 @@
           "papers": 401,
           "papers_missing_abstract": 342,
           "snapshot_candidates": 11,
-          "candidates": 12,
-          "missing_abstract": 0,
+          "candidates": 26,
+          "missing_abstract": 14,
           "official_total": 403,
           "official_scope": "Crossref 出版登记：ISSN + 出版日 2026-01-01 至 2026-11-08 + type=journal-article（参考数，与采集器卷期年口径不完全一致）",
           "reference_check": null,
-          "coverage_note": "参考核对：Crossref 参考数 403 条、采集 401 条，差 +2 条，属在线优先与在印条目口径差异。逐篇交付 12 条：纳入 12、排除 0、待定 0、未审 0；当前候选 12 条，候选缺摘要 0 条。",
+          "coverage_note": "参考核对：Crossref 参考数 403 条、采集 401 条，差 +2 条，属在线优先与在印条目口径差异。逐篇交付 26 条：纳入 26、排除 0、待定 0、未审 0；当前候选 26 条，候选缺摘要 14 条。",
           "evidence_urls": [
             "https://api.crossref.org/journals//works?filter=from-pub-date:2026-01-01,until-pub-date:2026-11-08,type:journal-article",
             "https://api.crossref.org/journals//works?filter=from-pub-date:2026-01-01,until-pub-date:2026-11-08,type:journal-article"
           ],
           "decisions": {
-            "include": 12,
+            "include": 26,
             "exclude": 0,
             "pending": 0,
             "unreviewed": 0
           },
           "issues": [
-            "采集状态尚未完成：abstract_incomplete"
+            "采集状态尚未完成：abstract_incomplete",
+            "AI4S候选缺少摘要：14 篇。"
           ],
           "actions": [
             "检查采集状态与失败日志，必要时补采。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
+            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。"
           ],
           "files": [
             "reviews/2026/Roman100021.json",
@@ -63593,15 +63607,15 @@
             "reviews/2026/feedback/Roman100021.json"
           ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": 12,
-          "final_missing_abstract": 0,
+          "final_included": 26,
+          "final_missing_abstract": 14,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
           "abstract_recovered": 0,
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 14
         },
         {
           "code": "j-f457cf101a",
@@ -71780,18 +71794,18 @@
           "open_issues": 15,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-18T21:03:27+08:00",
+            "at": "2026-11-18T22:22:44+08:00",
             "author": "Roman",
-            "subject": "2026 精筛：35 个来源完成逐篇交付，补 124 条候选摘要并补录 121 条漏筛论文",
+            "subject": "2026 补全量书目摘要并复核候选：补 530 篇摘要，新增 242 条候选",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
-              "metadata/commsenv/2026/ai4s.json",
-              "metadata/j-010bbc0bbc/2026/ai4s.json",
-              "metadata/j-3b179d0686/2026/ai4s.json"
+              "metadata/j-3b179d0686/2026/ai4s.json",
+              "metadata/j-3b179d0686/2026/papers.json",
+              "metadata/j-4a8bd2ddf7/2026/ai4s.json"
             ]
           },
-          "commits_7d": 3
+          "commits_7d": 4
         },
         {
           "owner": "丁利军",
@@ -72222,18 +72236,18 @@
         "2025"
       ],
       "last_update": {
-        "at": "2026-11-18T21:03:27+08:00",
+        "at": "2026-11-18T22:22:44+08:00",
         "author": "Roman",
-        "subject": "2026 精筛：35 个来源完成逐篇交付，补 124 条候选摘要并补录 121 条漏筛论文",
+        "subject": "2026 补全量书目摘要并复核候选：补 530 篇摘要，新增 242 条候选",
         "area": "reviews",
         "paths": [
           "metadata/2026/ai4s.json",
-          "metadata/commsenv/2026/ai4s.json",
-          "metadata/j-010bbc0bbc/2026/ai4s.json",
-          "metadata/j-3b179d0686/2026/ai4s.json"
+          "metadata/j-3b179d0686/2026/ai4s.json",
+          "metadata/j-3b179d0686/2026/papers.json",
+          "metadata/j-4a8bd2ddf7/2026/ai4s.json"
         ]
       },
-      "commits_7d": 3
+      "commits_7d": 4
     },
     {
       "owner": "南耀笛",
@@ -72280,9 +72294,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-18T14:12:19.731854+00:00",
+    "generated_at": "2026-11-18T14:24:17.808307+00:00",
     "history_available": true,
-    "commit": "99e9a43b0f3ec5e8649feecaee3cbe26472d3471",
-    "commits_scanned": 1031
+    "commit": "209768841881fc82eedeacfb76532897be39c1f9",
+    "commits_scanned": 1033
   }
 }
