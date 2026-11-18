@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-18T11:02:11.545920+00:00",
-  "commit": "fe967ee6c08d0b33226ee5f849209741cc136ad0",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/fe967ee6c08d0b33226ee5f849209741cc136ad0/",
+  "generated_at": "2026-11-18T11:31:39.398587+00:00",
+  "commit": "308f4e5650415635154ebcb4305e1899658be2a9",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/308f4e5650415635154ebcb4305e1899658be2a9/",
   "years": [
     {
       "year": 2024,
@@ -26219,9 +26219,9 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-18T02:59:58-08:00",
+            "at": "2026-11-18T03:29:16-08:00",
             "author": "h10",
-            "subject": "review: screen six Soil Biology papers and audit 2026 issue coverage",
+            "subject": "review: verify soil ML methods and resolve eighteen document types",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
@@ -26230,7 +26230,7 @@
               "reviews/2026/feedback/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 83
+          "commits_7d": 84
         },
         {
           "owner": "丁利军",
@@ -46834,9 +46834,9 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-18T02:59:58-08:00",
+            "at": "2026-11-18T03:29:16-08:00",
             "author": "h10",
-            "subject": "review: screen six Soil Biology papers and audit 2026 issue coverage",
+            "subject": "review: verify soil ML methods and resolve eighteen document types",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
@@ -46845,7 +46845,7 @@
               "reviews/2026/feedback/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 83
+          "commits_7d": 84
         },
         {
           "owner": "郝卓迪",
@@ -59002,12 +59002,12 @@
           "papers": 255,
           "papers_missing_abstract": 124,
           "snapshot_candidates": 3,
-          "candidates": 6,
+          "candidates": 8,
           "missing_abstract": 1,
           "official_total": null,
           "official_scope": "",
           "reference_check": null,
-          "coverage_note": "官网12卷252唯一PII全部匹配原255；三额外实为2027卷225。当前219确认研究/实质综述、5非适用、28文类待核，未知总量不填零。3初始+3漏筛均有官网原摘要并纳入；原字段保持，110313原abstract null以verified_metadata补官方原摘要。年度覆盖仍未标完成。",
+          "coverage_note": "12卷252目录及3额外2027归卷已核不重抓。补回110265随机森林碳周转和110295 XGBoost/RF细菌生长，两条均有原摘要和完整开放方法。本轮18文类从官方/既有输入原摘要核实质，237只是小计，10文类和3方法召回仍未决。原8候选均纳入，来源仍未标完成。",
           "evidence_urls": [
             "https://www.sciencedirect.com/journal/soil-biology-and-biochemistry/issues",
             "https://www.sciencedirect.com/journal/soil-biology-and-biochemistry/vol/212/suppl/C",
@@ -59024,23 +59024,24 @@
             "https://www.sciencedirect.com/journal/soil-biology-and-biochemistry/vol/223/suppl/C"
           ],
           "decisions": {
-            "include": 6,
+            "include": 8,
             "exclude": 0,
             "pending": 0,
             "unreviewed": 0
           },
           "issues": [
-            "28条文类尚待核（17 Short communication、8 Mini review、2 Personal report、1 Correspondence）；219为研究/实质综述小计，official_total及同口径采集数未知。",
-            "6条非正式方法召回尚未尝试，需区分学习模型与普通统计/机理模型；不计正式科学pending。",
-            "252目录均匹配采集；3额外已核2027卷225，勿因2026上线纳入2026；本轮未声称252篇全摘要或全文补齐。",
+            "252目录=237确认研究/实质综述小计+5非适用+10文类仍待核（4 Mini review、3 Short communication、2 Personal report、1 Correspondence），official_total/collected_total_same_scope仍null。",
+            "3条非正式方法召回保留：110207/110308等待本轮人工，110048方法尚未尝试；不计正式科学pending。",
+            "110127本轮官网CPE已停止，后从既有输入原摘要核清原创文类并告知无需继续人工；不重复失败页，不把CPE内容或客户端IP写入公开成果。",
             "采集状态尚未完成：abstract_incomplete",
             "官网同口径总数尚未确认。"
           ],
           "actions": [
-            "复用soil-directories-batch51及逐PII对账，不重复抓12卷252目录或重判本批6篇。",
-            "继续28条未尝试文类，优先可公开原摘要/正文；第215卷两篇Mini review已核实质，不重做。",
-            "逐篇核6条方法召回：110070、110117、110207、110265、110295、110308；确认AI及原摘要后再补候选。",
-            "第223卷封面December但初始快照已记录，官网为正式关闭卷；补核时保持既定截止，不扩2027卷或未来归期。",
+            "复用已核252逐PII目录、3额外2027卷225与18文类依据，及本轮已纳入110265/110295，不重做。",
+            "继续10条文类未决，按审计entries定位；109996/110234/110243/110279的Perspective需正文区分实质综合与单点提议，不能仅按标题/栏目排除。",
+            "优先独立核110048实际方法；110207和110308已新请求人工，未答不重试/重复追问或擅用替代资料。",
+            "110127已据输入原摘要解决，人工请求resolved_without_manual，不再列其文类问题；官网恢复或新用户回复可直接用于必要补证。",
+            "本刊可处理工作耗尽时继续The Lancet Neurology未尝试Insights或本人2026未开始来源，先2026后2025。",
             "检查采集状态与失败日志，必要时补采。",
             "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
           ],
@@ -59049,7 +59050,7 @@
             "reviews/2026/feedback/zch66883-lixueting.json"
           ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": 6,
+          "final_included": 8,
           "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
@@ -71225,9 +71226,9 @@
           "open_issues": 38,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-18T02:59:58-08:00",
+            "at": "2026-11-18T03:29:16-08:00",
             "author": "h10",
-            "subject": "review: screen six Soil Biology papers and audit 2026 issue coverage",
+            "subject": "review: verify soil ML methods and resolve eighteen document types",
             "area": "reviews",
             "paths": [
               "metadata/2026/ai4s.json",
@@ -71236,7 +71237,7 @@
               "reviews/2026/feedback/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 83
+          "commits_7d": 84
         },
         {
           "owner": "郝卓迪",
@@ -71550,9 +71551,9 @@
         "2025"
       ],
       "last_update": {
-        "at": "2026-11-18T02:59:58-08:00",
+        "at": "2026-11-18T03:29:16-08:00",
         "author": "h10",
-        "subject": "review: screen six Soil Biology papers and audit 2026 issue coverage",
+        "subject": "review: verify soil ML methods and resolve eighteen document types",
         "area": "reviews",
         "paths": [
           "metadata/2026/ai4s.json",
@@ -71561,7 +71562,7 @@
           "reviews/2026/feedback/zch66883-lixueting.json"
         ]
       },
-      "commits_7d": 83
+      "commits_7d": 84
     },
     {
       "owner": "龙兆科",
@@ -71792,9 +71793,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-18T11:01:40.693023+00:00",
+    "generated_at": "2026-11-18T11:30:59.115018+00:00",
     "history_available": true,
-    "commit": "fe967ee6c08d0b33226ee5f849209741cc136ad0",
-    "commits_scanned": 962
+    "commit": "308f4e5650415635154ebcb4305e1899658be2a9",
+    "commits_scanned": 964
   }
 }
