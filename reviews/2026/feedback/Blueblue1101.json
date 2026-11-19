@@ -5,7 +5,7 @@
     "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
     "official_total": 4042,
     "official_scope": "CVF CVPR2026?day=all 主会正式论文目录，按唯一_paper.html论文页计数，不含workshops",
-    "coverage_note": "候选578篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18浏览器核验CVF全部4042条；按URL对照本地全量，缺14、额外0，补入3篇候选。214篇原候选记录已逐篇核对官网，题名及摘要均一致。",
+    "coverage_note": "候选578篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18浏览器核验CVF全部4042条；按URL对照本地全量，缺14、额外0，补入3篇候选。214篇原候选记录已逐篇核对官网，题名及摘要均一致。 官网14篇缺口已有完整摘要；其中3篇先前纳入，本轮11篇逐篇排除为通用视觉/模型方法。已准备将14篇全部写回CVPR逐源papers.json，不改变候选文件中非AI4S论文。",
     "evidence_urls": [
       "https://openaccess.thecvf.com/CVPR2026?day=all",
       "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_From_Spots_to_Pixels_Dense_Spatial_Gene_Expression_Prediction_from_CVPR_2026_paper.html",
@@ -289,17 +289,18 @@
       "https://openaccess.thecvf.com/content/CVPR2026/papers/Su_URICA_A_Uniformity_Region_Affine_Identifier_Capture_Algorithm_for_Arbitrary_CVPR_2026_paper.pdf"
     ],
     "issues": [
-      "官网4042条与本地快照4028条差14条，已补采14条官方题录和原摘要并存入个人证据文件，尚未合并年度全量源文件。"
+      "官网4042条与本地快照4028条差14条，已补采14条官方题录和原摘要并存入个人证据文件，逐源文件待自动补齐，年度聚合快照仍须重建。"
     ],
     "next_actions": [
       "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
       "统一年度口径核对官网总量，处理差额。",
-      "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。"
+      "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
+      "核实CVPR官网14篇补入逐源papers.json，并重建年度快照后按4042篇正式主会论文核销差额。"
     ],
     "candidate_total": 578,
     "candidate_missing_abstract": 0,
     "review_counts": {
-      "exclude": 298,
+      "exclude": 309,
       "include": 280
     }
   },
@@ -332,8 +333,8 @@
     "source_code": "ecai",
     "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
     "official_total": 973,
-    "official_scope": "IJCAI2026正式年度论文集全部分轨，与本地ecai全量一致；按唯一DOI核对",
-    "coverage_note": "候选184篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 183篇原候选均已核对官方正式题录和原摘要；漏采1篇已补入候选。",
+    "official_scope": "IJCAI-ECAI 2026联合会议IJCAI官网正式论文集，含其页面列出的全部正式分轨；按唯一论文页计数，不含其他会议或Workshop",
+    "coverage_note": "候选184篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 183篇原候选均已核对官方正式题录和原摘要；漏采1篇已补入候选。 官网目录由IJCAI组织发布，为IJCAI-ECAI 2026联合会议；本仓库ecai来源采集的是10.24963/ijcai.2026 DOI，须警惕与另设ijcai来源重复。本轮准备把已纳入MVRNet补入本来源逐源书目，年度聚合快照仍待重建。",
     "evidence_urls": [
       "https://ijcai.org/proceedings/2026/",
       "https://ijcai.org/proceedings/2026/713",
@@ -536,12 +537,13 @@
       "https://ijcai.org/proceedings/2026/620"
     ],
     "issues": [
-      "官网973条与本地972条差1条，已取得漏采论文原摘要并补入候选；年度全量源文件尚未合并。"
+      "官网973条与本地972条差1条，已取得漏采论文原摘要并补入候选；逐源文件待自动补齐，年度聚合快照仍须重建。"
     ],
     "next_actions": [
       "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
       "统一年度口径核对官网总量，处理差额。",
-      "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。"
+      "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
+      "核对ecai与ijcai两个来源对联合会议论文的重复计数，明确各来源范围后重建年度快照。"
     ],
     "candidate_total": 184,
     "candidate_missing_abstract": 0,
