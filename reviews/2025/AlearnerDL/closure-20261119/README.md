@@ -23,3 +23,5 @@ ECCB通过PR #282发布，网页已确认绿点。Annual Reviews in Control 2025
 Annual Reviews in Control通过PR #284发布，14:49 UTC浏览器确认绿点。Computer Science Review 2025四卷92条按PII完全匹配；10篇已核实漏筛补录，现13篇候选（12纳入、1排除）全部完成，原摘要均来自出版社。当前候选1575篇（原始1552+补录23）。
 
 Computer Science Review通过PR #285发布，网页已确认绿点。PPSN 2025已核对Springer系列目录及第19届官网：相邻届次为2024第18届、2026第19届，2025无当届论文集；全量和候选均0，提交证据与反馈，不构造占位论文。
+
+PPSN通过PR #286发布，最新公开监控issues为空。ICAPS 2025官方52条与全量按article ID和题名完全匹配；1篇量子电路优化候选纳入，正式作者和DOI已核对，暂无新增候选。

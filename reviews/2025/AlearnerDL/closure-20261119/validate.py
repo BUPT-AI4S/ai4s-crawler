@@ -20,7 +20,11 @@ for raw,p in zip(original,review):
 assert len(keys)==len(set(keys))
 for f in load('reviews/2025/feedback/AlearnerDL.json'):
  assert f['source_code'] in codes and f['year']==2025 and f['snapshot_at']=='2026-11-09T10:51:18+08:00'
- assert f['official_total']>0 and f['evidence_urls']
+ assert f['official_total']>=0 and f['evidence_urls']
+ if f['official_total']==0:
+  proof=load(f['catalogue_reconciliation']['evidence_file'])
+  assert proof['edition_status']=='no_edition_in_target_year' and proof['official_total']==proof['raw_count']==proof['candidate_count']==0
+  assert proof['evidence'] and not any(p['venue']==f['source_code'] for p in original)
 counts=dict(collections.Counter(p['ai4s_review']['decision'] for p in review))
 report={'status':'passed','records':len(review),'all_original_fields_preserved':True,'unique_keys':True,'all_included_have_original_abstract_and_canonical_tags':True,'decisions':counts,'annual_task_complete':False}
 (out/'validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(json.dumps(report,ensure_ascii=False))
