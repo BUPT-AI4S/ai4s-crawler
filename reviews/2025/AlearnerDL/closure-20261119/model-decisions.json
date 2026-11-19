@@ -533,8 +533,13 @@
     "domain": "AI 用于生命科学"
   },
   "64": {
-    "decision": "pending",
-    "rationale": "盲超分辨率与最大似然模型重建单细胞3D基因组，摘要未充分说明深度学习或AI模型结构，需正文核实。"
+    "decision": "include",
+    "rationale": "出版社表1、第2.1及2.1.1节确认ScUnicorn为CNN和深度交替网络，端到端学习退化核与恢复器以增强单细胞Hi-C并重建3D基因组。",
+    "domain": "AI 用于生命科学",
+    "evidence_location": "出版社表1、第2.1—2.1.1节，浏览器正常访问全文",
+    "evidence_urls": [
+      "https://academic.oup.com/bioinformatics/article/41/Supplement_1/i475/8199354"
+    ]
   },
   "65": {
     "decision": "include",
@@ -571,12 +576,22 @@
     "domain": "AI 用于生命科学"
   },
   "72": {
-    "decision": "pending",
-    "rationale": "GRIP通过布尔凸规划与蛋白相互作用距离推断调控网络，需正文核实是否属于学习方法。"
+    "decision": "include",
+    "rationale": "正文第2.3节明确稀疏学习模型，从配对表达与染色质可及性数据学习TF选择，并用PPI距离正则推断调控关系。",
+    "domain": "AI 用于生命科学",
+    "evidence_location": "正文第2.3.1—2.3.2节",
+    "evidence_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC12261443/"
+    ]
   },
   "73": {
-    "decision": "pending",
-    "rationale": "Sardine以局部密度比较检测空间表达异常，需正文核实其学习模型与传统统计估计的区别。"
+    "decision": "include",
+    "rationale": "正文第2.2节以kNN表达流形图的拉普拉斯正则密度估计学习类别后验，识别损伤及治疗条件下的局部表达异常。",
+    "domain": "AI 用于生命科学",
+    "evidence_location": "正文第2.2节，式7—8及图1",
+    "evidence_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC12261494/"
+    ]
   },
   "74": {
     "decision": "include",
@@ -584,8 +599,13 @@
     "domain": "AI 用于生命科学"
   },
   "75": {
-    "decision": "pending",
-    "rationale": "长读转录本量化使用概率分配模型，摘要未明确AI模型训练，需要核实正文方法。"
+    "decision": "include",
+    "rationale": "正文概率生成模型包含转录本等隐变量，用EM学习转录本丰度的最大似然参数，支持长读长RNA表达定量。",
+    "domain": "AI 用于生命科学",
+    "evidence_location": "正文概率生成模型与EM参数估计段，式2及补充E节",
+    "evidence_urls": [
+      "https://doi.org/10.1093/bioinformatics/btaf240"
+    ]
   },
   "76": {
     "decision": "include",
@@ -702,8 +722,13 @@
     "rationale": "以虚拟颜色伪比对加速ATAC测序映射，未显示AI模型参与。"
   },
   "98": {
-    "decision": "pending",
-    "rationale": "GO功能谱用于跨物种细胞聚类，需正文核实学习与聚类方法及其AI角色。"
+    "decision": "include",
+    "rationale": "正文第2.3节将GO功能谱进行无监督降维与聚类，识别跨物种相似细胞和功能亚群，实验发现果蝇嗉囊分泌细胞亚型。",
+    "domain": "AI 用于生命科学",
+    "evidence_location": "正文第2.3节、第3.5节及图1",
+    "evidence_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC12261464/"
+    ]
   },
   "99": {
     "decision": "include",
@@ -725,8 +750,13 @@
     "rationale": "TWILIGHT通过并行化与内存优化加速多序列比对，未显示AI学习方法参与。"
   },
   "103": {
-    "decision": "pending",
-    "rationale": "层次线性解卷积推断细胞比例，摘要未明确AI学习模型，需核实正文。"
+    "decision": "include",
+    "rationale": "正文第2.1节明确损失函数学习：从已知组成的伪bulk训练基因权重，逐层优化解卷积并分析乳腺癌细胞比例。",
+    "domain": "AI 用于生命科学",
+    "evidence_location": "正文第2.1节、式4及第3.3节消融",
+    "evidence_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC12261400/"
+    ]
   },
   "104": {
     "decision": "exclude",
@@ -3842,5 +3872,55 @@
     "decision": "include",
     "rationale": "神经薛定谔桥结合曲折卷积增强眼底图像并保留血管细节，支持视网膜疾病诊断影像。",
     "domain": "AI 用于生命科学"
+  },
+  "1552": {
+    "decision": "include",
+    "domain": "AI 用于生命科学",
+    "rationale": "超图网络及交互注意力预测药物组合协同，验证细胞系和药物分子作用。",
+    "evidence_location": "固定全量原摘要，Europe PMC按DOI核实及官方目录",
+    "evidence_urls": [
+      "https://doi.org/10.1093/BIOINFORMATICS/BTAF215",
+      "https://europepmc.org/article/MED/40662801"
+    ]
+  },
+  "1553": {
+    "decision": "include",
+    "domain": "AI 用于社会科学",
+    "rationale": "在真实生物信息学课程开展盲评，系统比较LLM与人工评分及学习反馈质量，形成教育科学实证。",
+    "evidence_location": "固定全量原摘要，Europe PMC按DOI核实及官方目录",
+    "evidence_urls": [
+      "https://doi.org/10.1093/BIOINFORMATICS/BTAF196",
+      "https://europepmc.org/article/MED/40662811"
+    ]
+  },
+  "1554": {
+    "decision": "include",
+    "domain": "AI 用于生命科学",
+    "rationale": "蛋白语言模型与扩散模型生成表位特异TCR并预测TCR表位结合。",
+    "evidence_location": "固定全量原摘要，Europe PMC按DOI核实及官方目录",
+    "evidence_urls": [
+      "https://doi.org/10.1093/BIOINFORMATICS/BTAF202",
+      "https://europepmc.org/article/MED/40662810"
+    ]
+  },
+  "1555": {
+    "decision": "include",
+    "domain": "AI 用于生命科学",
+    "rationale": "卷积Transformer整合药物相似性和层次ATC关系，预测药理分类支持药物重定位。",
+    "evidence_location": "固定全量原摘要，Europe PMC按DOI核实及官方目录",
+    "evidence_urls": [
+      "https://doi.org/10.1093/BIOINFORMATICS/BTAF184",
+      "https://europepmc.org/article/MED/40662799"
+    ]
+  },
+  "1556": {
+    "decision": "include",
+    "domain": "AI 用于生命科学",
+    "rationale": "AI反馈强化学习生成生物学负样本，迭代改进TCR表位结合预测模型。",
+    "evidence_location": "固定全量原摘要，Europe PMC按DOI核实及官方目录",
+    "evidence_urls": [
+      "https://doi.org/10.1093/BIOINFORMATICS/BTAF224",
+      "https://europepmc.org/article/MED/40662786"
+    ]
   }
 }
