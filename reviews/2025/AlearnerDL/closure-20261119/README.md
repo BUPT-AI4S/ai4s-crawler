@@ -4,7 +4,7 @@
 
 基线 main：`2a0c603ac0d5806720c75ebe946fd08bc1376b1c`。分工49个来源，原始候选1552篇，缺摘要200篇。全量记录和采集快照保留原值。候选中的空摘要仅依据明确原文来源补齐；逐篇交付追加 ai4s_review。
 
-当前逐篇读证852篇：549纳入、265排除、38待定；其余723篇保持unreviewed。AAMAS 7篇、ASE 1篇、NDSS 2篇和Pattern Recognition 22篇原摘要已取回；另2篇Environmental Research类型声明已核实排除。待定与未审均为尚未完成，不能以状态替代核实。
+当前逐篇读证854篇：550纳入、266排除、38待定；其余721篇保持unreviewed。AAMAS 7篇、ASE 1篇、NDSS 2篇和Pattern Recognition 22篇原摘要已取回；另2篇Environmental Research类型声明已核实排除。待定与未审均为尚未完成，不能以状态替代核实。
 
 官方目录逐项核对：AAMAS 479篇完全匹配（排除10份前置材料）；WACV 929篇完全匹配；ICCV官网2701篇、快照2686篇，确认15篇漏采，逐篇读官方摘要后发现2篇AI4S候选，补录尚未完成。NAACL官网已获取，尚未完成逐项核对。
 
@@ -25,3 +25,5 @@ Annual Reviews in Control通过PR #284发布，14:49 UTC浏览器确认绿点。
 Computer Science Review通过PR #285发布，网页已确认绿点。PPSN 2025已核对Springer系列目录及第19届官网：相邻届次为2024第18届、2026第19届，2025无当届论文集；全量和候选均0，提交证据与反馈，不构造占位论文。
 
 PPSN通过PR #286发布，最新公开监控issues为空。ICAPS 2025官方52条与全量按article ID和题名完全匹配；1篇量子电路优化候选纳入，正式作者和DOI已核对，暂无新增候选。
+
+ICAPS通过PR #288发布，最新公开监控issues为空。OSDI 2025官网53篇与全量按presentation URL和题名完全匹配；2篇候选正文补证完成，QOS回归保真度预测策略纳入，HyperQ贪心装箱系统排除；无新增候选。
