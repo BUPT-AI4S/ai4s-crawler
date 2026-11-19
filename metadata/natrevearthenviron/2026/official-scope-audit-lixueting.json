@@ -3,7 +3,7 @@
   "source_code": "natrevearthenviron",
   "year": 2026,
   "owner": "李雪婷",
-  "checked_at": "2026-11-17T00:57:13.474766-08:00",
+  "checked_at": "2026-11-19T03:07:28.583712+00:00",
   "cutoff_at": "2026-11-16T23:14:20-08:00",
   "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
   "main_commit": "cf5d3ee36e059366fa181b3a2bc4a0dd52e18e16",
@@ -111,20 +111,13 @@
   },
   "candidate_missing_abstracts": 0,
   "review_counts": {
-    "include": 0,
+    "include": 2,
     "exclude": 0,
-    "pending": 2,
-    "unreviewed": 0
+    "pending": 0
   },
-  "completion_status": "coverage_verified_review_pending",
-  "issues": [
-    "原摘要已核实，主体综述河流陆海碳通量，末句以条件和展望语气提出机器学习。官网正文仅显示订阅预览，参考文献194—200含机器学习和深度学习研究；仅凭展望或参考文献无法区分偶然提及与实质性AI综述。需合法可访问正文，核对机器学习相关段落的篇幅、方法比较及科学结论后再判定。",
-    "按2026正式卷期补采并恢复疑似漏筛。原摘要讨论FLUXNET通量观测的区域/全球上尺度；官网公开参考文献含FLUXCOM、神经网络、机器学习蒸散和深度学习碳通量，术语表明确将上尺度联系机器学习。正文仍为订阅预览，尚不能确认AI综述的实质深度；须补读上尺度与FLUXCOM段落后决定是否纳入，不能仅凭引用或术语表判定。"
-  ],
-  "next_actions": [
-    "合法获取并核读两篇pending综述的AI相关正文；明确是实质性AI方法综述还是展望/引用后再作最终决定。",
-    "待正文期间继续2026其余来源，优先Nature Reviews Endocrinology；勿重复抓取本来源完整目录。"
-  ],
+  "completion_status": "complete",
+  "issues": [],
+  "next_actions": [],
   "evidence_urls": [
     "https://www.nature.com/natrevearthenviron/volumes/7/issues/11",
     "https://www.nature.com/natrevearthenviron/volumes/7/issues/10",
@@ -136,7 +129,10 @@
     "https://www.nature.com/natrevearthenviron/volumes/7/issues/4",
     "https://www.nature.com/natrevearthenviron/volumes/7/issues/3",
     "https://www.nature.com/natrevearthenviron/volumes/7/issues/2",
-    "https://www.nature.com/natrevearthenviron/volumes/7/issues/1"
+    "https://www.nature.com/natrevearthenviron/volumes/7/issues/1",
+    "https://harvardforest1.fas.harvard.edu/publications/pdfs/Xiao_NatRevEarthEnv_2025.pdf",
+    "https://www.nature.com/articles/s43017-026-00834-7/figures/5",
+    "https://www.nature.com/articles/s41561-024-01524-z"
   ],
   "entries": [
     {
@@ -188,8 +184,8 @@
       "issue": "1",
       "within_fixed_formal_scope": true,
       "present_in_initial_collection": false,
-      "screening_result": "pending",
-      "rationale": "按2026正式卷期补采并恢复疑似漏筛。原摘要讨论FLUXNET通量观测的区域/全球上尺度；官网公开参考文献含FLUXCOM、神经网络、机器学习蒸散和深度学习碳通量，术语表明确将上尺度联系机器学习。正文仍为订阅预览，尚不能确认AI综述的实质深度；须补读上尺度与FLUXCOM段落后决定是否纳入，不能仅凭引用或术语表判定。"
+      "screening_result": "include",
+      "rationale": "初筛漏筛补录，纳入：正式原摘要已明确区域/全球通量上尺度的科学研究贡献，Harvard Forest公开作者版原Introduction进一步明确EC数据已经用机器学习上尺度，并说明本综述综述通量上尺度方法、误差与卫星/模型评估用途。这是原作者正文对已有ML科学作用及综述范围的明示，不只术语表、参考或未来方向。基于已核原文Introduction及原摘要即可判断，不要求读完全部20页；只标机器学习与综述，不猜具体FLUXCOM算法配置、作者新训练或实验性能。公开作者PDF在检索索引可核原文，但直接下载403未取得文件，pdf_url保留null，不假称PDF验签完成。"
     },
     {
       "doi": "10.1038/s43017-025-00745-z",
@@ -1345,8 +1341,8 @@
       "issue": "11",
       "within_fixed_formal_scope": true,
       "present_in_initial_collection": true,
-      "screening_result": "pending",
-      "rationale": "原摘要已核实，主体综述河流陆海碳通量，末句以条件和展望语气提出机器学习。官网正文仅显示订阅预览，参考文献194—200含机器学习和深度学习研究；仅凭展望或参考文献无法区分偶然提及与实质性AI综述。需合法可访问正文，核对机器学习相关段落的篇幅、方法比较及科学结论后再判定。"
+      "screening_result": "include",
+      "rationale": "纳入：正式原摘要已明确对区域/流域/碳物种估算差异作模型综合；官网原始Fig.5图注进一步实质比较Liu et al.2024等模型的全球和各海盆DOC/POC/DIC结果，并据reference42综合流域空间通量/产率和模型间SD/CV不确定性。reference42原研究正式摘要明示实际采用机器学习结合多模型集合和观测约束，因此这里是对已实施AI科学估算结果的实质综合，并非仅末句未来展望或末尾参考列举。判定依据原摘要+原图注及直接对应原研究的技术身份，不声称已读订阅全文，不猜模型具体配置或把被综述研究算成本篇新实验。"
     },
     {
       "doi": "10.1038/s43017-026-00835-6",
@@ -1478,5 +1474,18 @@
       "screening_result": "document_type_excluded",
       "rationale": "Q&A、工具介绍、评论、年度短评或更正等类型单列，不冒充原创研究或实质综述。"
     }
-  ]
+  ],
+  "batch_id": "lixueting-2026-parallel-pending-closure",
+  "scientific_resolution_parallel": {
+    "status": "complete",
+    "candidate_total": 2,
+    "include": 2,
+    "pending": 0,
+    "basis": "FLUXNET作者原Introduction实际ML上尺度；河流review原Fig5对ref42实际ML碳估算作结果/空间/不确定性综合，核心疑点均有原文关系证据。"
+  },
+  "github_username": "zch66883-lixueting",
+  "rules_main_commit": "d6006e89e9e487e09a861cbe7898a71d8373c195",
+  "reviewed_count": 2,
+  "candidate_file_sha256": "5f69b93f55d14ec6630e1ee2b52e837ec669f1debad35faf2c40d84bac99e9ed",
+  "official_scope": "截至固定截止时点官网卷7第1—11期全部正式条目103条；35 Review Article、8 Perspective，其余文献类型单列。在线2026年度不等于正式卷期年度。"
 }
