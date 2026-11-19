@@ -3,7 +3,8 @@ out=pathlib.Path(__file__).resolve().parent;root=out.parents[3]
 load=lambda p:json.load(open(root/p))
 codes={s['code'] for s in load('reviews/source-assignments-2025.json')['sources'] if s['owner']=='龙兆科'}
 original=[p for p in load('metadata/2025/ai4s.json') if p['venue'] in codes]
-review=load('reviews/2025/AlearnerDL.json');assert len(review)==len(original)==1552
+review=load('reviews/2025/AlearnerDL.json');supplement=load('reviews/2025/AlearnerDL/closure-20261119/supplemental-candidates.json');assert len(review)==len(original)==1552+len(supplement)
+assert [(x['venue'],x['year'],x['id']) for x in original[-len(supplement):]]==[(x['venue'],x['year'],x['id']) for x in supplement]
 v={(x['axis'],x['label'],x['label_en']) for x in load('skills/ai4s-paper-review/references/tag-vocabulary.json')['tags']}
 keys=[]
 for raw,p in zip(original,review):
