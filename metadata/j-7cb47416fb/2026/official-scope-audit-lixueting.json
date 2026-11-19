@@ -5,9 +5,9 @@
   "source_code": "j-7cb47416fb",
   "title": "Biochimica et Biophysica Acta (BBA) - Reviews on Cancer",
   "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-  "checked_at": "2026-11-18T04:28:14.808686-08:00",
-  "batch_id": "lixueting-2026-batch54",
-  "rules_main_commit": "ad94c5894a9b2e2f73090b2e4c8ea30185635f38",
+  "checked_at": "2026-11-19T02:41:26.065875+00:00",
+  "batch_id": "lixueting-2026-parallel-pending-closure",
+  "rules_main_commit": "6652597d9880f9239303a78cb28c0d3a09d26cac",
   "cutoff_utc": "2026-11-17T07:14:20Z",
   "official_total": 237,
   "collected_total_same_scope": 237,
@@ -21,15 +21,15 @@
   "scope_verified": true,
   "coverage_verified": true,
   "directory_coverage_verified": true,
-  "completion_status": "coverage_scope_and_review_pending",
+  "completion_status": "complete",
   "candidate_total": 8,
   "initial_candidate_total": 7,
   "missing_candidate_abstracts": 0,
   "candidate_primary_abstracts_verified": 8,
   "review_counts": {
-    "include": 4,
-    "exclude": 2,
-    "pending": 2
+    "include": 5,
+    "exclude": 3,
+    "pending": 0
   },
   "reviewed_ids": [
     "10.1016/j.bbcan.2025.189524",
@@ -3497,30 +3497,11 @@
       "basis": "初筛漏筛补录：原摘要明确实质综述肿瘤免疫/靶向治疗的多模态AI数据融合，覆盖诊断、疗效和预后预测及靶点发现，并讨论数据/标准化/黑箱局限；AI与具体肿瘤研究任务关系充分，不仅是通用模型在领域数据上的性能演示。未声称综述作者运行训练或完成临床外部验证。"
     }
   ],
-  "remaining_recall_checks": [
-    {
-      "id": "10.1016/j.bbcan.2026.189577",
-      "doi": "10.1016/j.bbcan.2026.189577",
-      "title": "mRNA-based cancer vaccines: A new frontier in personalized immunotherapy",
-      "pii": "S0304419X26000491",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0304419X26000491",
-      "status": "awaiting_manual_method_verification",
-      "basis": "原摘要AI置未来发展，需核正文是否有既有具体研究；本轮正常浏览器CPE，立即停止序列。"
-    }
-  ],
-  "remaining_recall_check_count": 1,
-  "issues": [
-    "2科学pending：189619的具体AI circRNA模型/病毒肿瘤用途，以及189741是否实质AI新抗原预测综述，官网正文订阅；本轮已请求人工。",
-    "1非正式召回189577 mRNA疫苗官网CPE00002，已停止序列并请求人工核AI方法或未来展望；不计科学pending。",
-    "两条缺采已补源papers；年度papers为Git LFS原采集快照，保持不变，补采来源/日期在本审计明列，勿覆盖LFS聚合。"
-  ],
-  "next_actions": [
-    "复用已核6期239逐PII目录、237研究综述覆盖及2 InPress差额，不重复抓目录。",
-    "189749/189751缺采已补源papers，官网原摘要暂无实质AI线索，不自动候选；保留原239所有记录和年度papers LFS指针。",
-    "8候选4纳入2排除2待定已保存；纳入依据为明确科学任务和AI实质综述，不把生成图/语言润色当AI4S。",
-    "等待本轮189619/189741/189577人工补证，不重试CPE、重复追问或未答擅用替代资料。无新回复下一批优先Stem Cell Reports（j-9f4e581a9f）2026，6初始候选，或其他本人2026来源。"
-  ],
-  "coverage_note": "6期目录239与原采集239表面等量但存在2漏采/2额外；已核两漏采在截止范围并补源papers，另两官网InPress不计正式范围。237研究综述逐PII全匹配当前源采集，Editorial/Erratum分列。8科学候选4纳入2排除2待定，另1非候选召回待人工，未标严格完成。",
+  "remaining_recall_checks": [],
+  "remaining_recall_check_count": 0,
+  "issues": [],
+  "next_actions": [],
+  "coverage_note": "复用已核6期239目录逐PII对账、237研究/实质综述全匹配；两漏采已补来源papers、两额外InPress不计范围。8候选现5纳入3排除0待定，原摘要8/8有效；circRNA综述按原摘要明确AI建模及专节纳入，neoantigen演化综述按可核内容AI仅技术背景/生成图示不足实质贡献排除；不冒称读过两篇订阅全文。mRNA疫苗189577最后召回据公开原文§8/9技术概括深度未升候选，剩余召回0。",
   "access_evidence": {
     "direct_issues_request": "403",
     "initial_normal_browser_issues_request": "wrong slug returned Page not found; corrected via observed official article journal link, not treated as access blockade",
@@ -3529,5 +3510,41 @@
     "alternative_sources_used": false,
     "manual_requests_added": 1
   },
-  "limits": "未声称239篇全摘要/全文核读；原232摘要及239题名仅作线索，非候选不逐篇补摘要。多数候选仅原摘要和可读Introduction/snippets足够相应判断；189619/741不够保持pending。两排除基于原摘要明确未来AI，不宣称全文没有AI。所有PDF未下载验签留null，原字段保持；生成图、语言辅助与科学AI分开。"
+  "limits": "未声称239篇全摘要/全文核读；原232摘要及239题名仅作线索，非候选不逐篇补摘要。多数候选仅原摘要和可读Introduction/snippets足够相应判断；189619/741不够保持pending。两排除基于原摘要明确未来AI，不宣称全文没有AI。所有PDF未下载验签留null，原字段保持；生成图、语言辅助与科学AI分开。",
+  "recall_resolutions_parallel": [
+    {
+      "doi": "10.1016/j.bbcan.2026.189577",
+      "status": "resolved_not_AI_candidate",
+      "checked_at": "2026-11-19T02:31:02.774334+00:00",
+      "basis": "官网开放原文的§8.1及§8.3概括AI用于新抗原排序、mRNA设计、患者分层的可能框架，§9泛称已有AI多组学候选选择，但未具体比较学习模型、数据及既有AI科学研究结果；本篇实质内容为mRNA疫苗生物机制/递送/临床研究综合。不能误说全文完全无AI或只有摘要未来字样；现有AI论述不足支持AI4S实质综述召回，不补候选。",
+      "evidence_url": "https://www.sciencedirect.com/science/article/pii/S0304419X26000491",
+      "evidence_scope": "官网公开原文搜索索引的§8.1—8.4及§9，不冒称通过直接403页取得原始完整HTML",
+      "owner_unable_manual_verification": true
+    }
+  ],
+  "scientific_resolutions_parallel": [
+    {
+      "doi": "10.1016/j.bbcan.2026.189619",
+      "decision": "include",
+      "basis": "正式原摘要明确本综述将AI驱动的circRNA建模作为已开展计算研究进展来讨论，与病毒相关肿瘤的circRNA发现、机制及诊疗研究相联系；Introduction同样说明综合计算/AI模型作用，公开专节Emerging computational paradigms and AI-driven circRNA modeling讨论现有短读长/BSJ识别在结构和功能信息上的局限。按优先摘要口径，具体科学对象、AI建模作用及实质综述范围已明确，不因未取得完整订阅正文一概待定，也不要求原摘要列出每个模型名。纳入综述；仅据可核原摘要/Introduction/专节片段，未读完整订阅正文，不推断CNN/GNN/Transformer、训练策略、病毒肿瘤临床验证或具体性能。",
+      "evidence_scope": {
+        "source": "publisher original abstract, Introduction and public Section snippets",
+        "full_subscription_text_read": false,
+        "publisher_cache": "/Users/h10/Documents/ChatGPT/lxt-work/output/lxt-screening/parallel-pending/bba-189619-publisher-cache.json",
+        "abstract_first_review": true
+      }
+    },
+    {
+      "doi": "10.1016/j.bbcan.2026.189741",
+      "decision": "exclude",
+      "basis": "原摘要、完整Introduction与公开Section snippets的实质综述贡献是肿瘤免疫编辑、抗原谱演化/免疫逃逸、临床疫苗证据与VEL组合表位库策略。AI/计算预测在原摘要用于交代新抗原识别的技术背景，当前可核内容未显示本篇对AI科学方法或模型证据的实质综合；VEL组合设计本身不能自动当学习方法。作者用ChatGPT生成Fig1/2的声明只是图示制作，不能当AI4S科研贡献。依可核证据排除；不声称读过完整订阅正文，也不以找不到全文证明全文绝无AI，更不否定其肿瘤免疫学综述价值。",
+      "evidence_scope": {
+        "source": "publisher original abstract, Introduction and public Section snippets",
+        "full_subscription_text_read": false,
+        "publisher_cache": "/Users/h10/Documents/ChatGPT/lxt-work/output/lxt-screening/parallel-pending/bba-189741-publisher-cache.json",
+        "abstract_first_review": true
+      }
+    }
+  ],
+  "github_username": "zch66883-lixueting"
 }
