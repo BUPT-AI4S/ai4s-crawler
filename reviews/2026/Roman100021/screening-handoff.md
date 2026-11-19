@@ -28,18 +28,28 @@
   该接口返回含 `abstract` 与 `keywords` 的 BibTeX，不触发出版方 403；python urllib 会被拦，
   需用 curl 的 TLS 指纹。批量场景先用 Crossref 按 ISSN 分页取 DOI→PII（`rows=1000&cursor=*`），
   再逐条取引用，可省一半请求。
-- **限流**：同一 IP 约 400–500 次后会被短时拒绝连接（返回空、curl exit 7），数十分钟恢复。
-  脚本已做断点续跑（`outputs/actions-2026/abstract-cache-full.json`）与失败重试计数，
-  建议单进程 1–2 并发、每条间隔 0.9 s 以上。
+- **限流**：早期判断「约 400–500 次/时段」不准确——实测触发条件是**并发与瞬时速率**，不是累计配额。
+  改成 curl 一次调用带 10 个 URL（复用同一连接，约 0.4 s/条）、批间 1.2 s、每 100 条歇 20 s 后，
+  连续 2000+ 次零拒绝（逐条新连接反而更容易被 reset）。偶发 `000/502` 单条退避 90 s 重试即可恢复。
+  断点在 `outputs/actions-2026/abstract-cache-full.json`，脚本 `fetch_full4.py`。
+- **HTTP 200 但无 abstract**：说明该条目本身没有摘要（Comment/Correspondence/Editorial/更正），
+  不是抓取失败，记 `no_abstract` 后不再重试；研究刊条目该比例低于 2%，Lancet 类则超过 85%。
+- **非 Elsevier（Springer/Nature/BMC）**：不要用「页面第一个 `c-article-section__content`」兜底，
+  那常常是参考文献段。只能用 Europe PMC 的 `abstractText`、JSON-LD 的 `description`，
+  或明确的 `id="Abs1-content"`/`data-title="Abstract"` 区块；取不到就记 `no_abstract`。
+  另需先用页面 `citation_article_type` 判类型——这批缺摘要的 460 条里绝大多数是
+  Highlights/Letter/Correction/Research Highlight，本就没有摘要。
 - **初筛漏筛/补摘要复核**：以 `papers.json` 全量书目为准，排除已在候选的 `(venue,id)`，
-  按标题含 AI 方法词初筛，再逐条读摘要确认 AI 实质参与且科学任务明确；摘要为空一律不补。
+  再逐条读摘要确认 AI 实质参与且科学任务明确；摘要为空一律不补。
+  筛查范围要从「标题含 AI」扩到「摘要含 AI」——补完摘要后发现大量论文标题不含 AI 术语
+  （如「基于代理模型的燃烧优化」），只在摘要里提机器学习，仅按标题筛会漏掉；本轮因此新增 117 条候选。
 - **官网总量**：出版方官网 403，用 Crossref 存缴登记作参考数，口径写在 `official_scope`；
   差额按在线优先/在印/评论类条目解释，不冒充官网数。
 
 ## 遗留
 
-1. 全量书目仍有约 7,100 篇未补摘要（出版方限流），断点续跑 `fetch_full2.py` 即可；
-   标题含 AI 的仅剩 40 篇未取到。
+1. 全量书目仍有部分未补摘要，续跑 `fetch_full4.py` 即可（断点续传，约 80 条/分钟）；
+   标题含 AI 的条目已全部处理完毕，剩余多为研究刊中 AI 非主题的论文与 Lancet 的评论类。
 2. 14 个来源快照状态为 `abstract_incomplete`，属爬虫侧全量采集状态，审核端无法清除。
 3. CIKM 2026 论文集未出版：采集 0、候选 0、`official_total` 为 null，待上线后补。
 4. 参考总数与采集数未做逐 DOI 比对；2026 为在版年，两方时点相差约 10 天。
