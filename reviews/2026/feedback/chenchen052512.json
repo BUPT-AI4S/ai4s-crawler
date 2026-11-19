@@ -39,17 +39,18 @@
     "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
     "official_total": null,
     "official_scope": "",
-    "coverage_note": "官网截至核查时展示 2026 卷 56–65 共 311 个唯一 DOI。采集快照 475 条，其中与当前正式卷期目录匹配 302 条；目录独有 9 条，采集独有 173 条。正式卷期与在线优先范围未完成同口径对账。",
+    "coverage_note": "官网正式卷期 311 个 DOI，在线优先目录完成 22 页核对共 220 个 DOI，合计目录覆盖现有快照 475 条中的 471 条。官网列表跨年且只反映当前状态，范围差异尚未全部解决。",
     "evidence_urls": [
-      "https://www.engineering.org.cn/engi/EN/archive_by_issues?v=2026%2F60"
+      "https://www.engineering.org.cn/engi/EN/archive_by_issues?v=2026%2F60",
+      "https://www.engineering.org.cn/engi/EN/online_first"
     ],
     "issues": [
-      "Engineering 的官网正式卷期与采集快照仍存在 182 条 DOI 差异，年份和在线优先口径尚待核验。"
+      "Engineering 采集快照有 4 条尚未在两类官网目录中匹配；其余官网增量仍需核对快照口径。"
     ],
     "next_actions": [
-      "逐 DOI 核对 9 条官网独有记录的快照日期，并对 173 条采集独有记录查正式卷期及在线发表时间。"
+      "复核 4 条采集独有 DOI 的版本和 2026 年目录增量的快照日期。"
     ],
-    "audit_file": "reviews/2026/chenchen052512/cc-coling-engineering-jpa-catalogue-20261119.json"
+    "audit_file": "reviews/2026/chenchen052512/npj-engineering-jpa-dates-20261119.json"
   },
   {
     "year": 2026,
@@ -58,18 +59,65 @@
     "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
     "official_total": null,
     "official_scope": "",
-    "coverage_note": "ScienceDirect 刊期总入口返回 HTTP 403。Crossref 2026 出版日期窗口参考目录 363 个 DOI，覆盖采集快照全部 353 个 DOI，新增的 10 条仅标至 2026 年 11 月，无法仅据月份判断早晚于快照。",
+    "coverage_note": "Crossref 日志中的 10 条增量已核对出版社检索索引，其中 DOI 尾号 101828、101829 均于 2026-11-05 在线发表，早于快照，仍需补采或核对正式卷期收录口径。其余 8 条仍缺日级证据。",
     "evidence_urls": [
       "https://api.crossref.org/journals/2095-1779/works?filter=from-pub-date:2026-01-01,until-pub-date:2026-12-31&rows=1000",
       "https://www.sciencedirect.com/journal/journal-of-pharmaceutical-analysis/issues",
-      "https://coaa.istic.ac.cn/openjournal/periodical/ywfxxb-e"
+      "https://coaa.istic.ac.cn/openjournal/periodical/ywfxxb-e",
+      "https://www.sciencedirect.com/science/article/pii/S2095177926002844",
+      "https://www.sciencedirect.com/science/article/pii/S2095177926002856"
     ],
     "issues": [
-      "JPA 有 10 条 Crossref 参考目录增量的日级发表时间待核验。"
+      "JPA 的 2 条快照前在线发表记录未采集，另有 8 条参考增量没有日级出版证据。"
     ],
     "next_actions": [
-      "按 DOI 核对 10 条增量的出版社首次发布日期，区分同快照漏采和快照之后的新记录。"
+      "核对 2 条快照前在线记录的收录口径，补入属于快照的条目；逐条核验其余 8 条。"
     ],
-    "audit_file": "reviews/2026/chenchen052512/cc-coling-engineering-jpa-catalogue-20261119.json"
+    "audit_file": "reviews/2026/chenchen052512/npj-engineering-jpa-dates-20261119.json"
+  },
+  {
+    "year": 2026,
+    "source_code": "npjmgrav",
+    "owner": "陈晨",
+    "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+    "official_total": null,
+    "coverage_note": "Nature 年度目录请求触发访问验证。Crossref 以快照日为截止逐 DOI 对账，116 个当期 DOI 全部匹配。当前索引其余 2 条均在快照之后上线。6 篇候选均已复核并交付。",
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 116,
+      "scope": "npj Microgravity 2026 年论文，按出版社登记的发表日期截至 2026-11-08，去重后逐 DOI 对照同一快照",
+      "query_url": "https://api.crossref.org/journals/2373-8065/works?filter=from-pub-date:2026-01-01,until-pub-date:2026-11-08&rows=1000",
+      "checked_at": "2026-11-19",
+      "unresolved": 0
+    },
+    "evidence_urls": [
+      "https://www.nature.com/npjmgrav/articles?year=2026",
+      "https://api.crossref.org/journals/2373-8065/works?filter=from-pub-date:2026-01-01,until-pub-date:2026-11-08&rows=1000",
+      "https://www.nature.com/articles/s41526-026-00670-5",
+      "https://doi.org/10.1038/s41526-026-00668-z"
+    ],
+    "issues": [],
+    "next_actions": [],
+    "audit_file": "reviews/2026/chenchen052512/npj-engineering-jpa-dates-20261119.json"
+  },
+  {
+    "year": 2026,
+    "source_code": "npjbiofilms",
+    "owner": "陈晨",
+    "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+    "official_total": null,
+    "coverage_note": "Crossref 300 条中 295 条与快照一致。其余 5 条中 4 条晚于快照。1 条经官方文章页核实于 2026-11-06 发表，原快照未收录；全量目录未结案。",
+    "issues": [
+      "已核实一条快照前发表的 DOI 未收录：10.1038/s41522-026-01186-2。"
+    ],
+    "next_actions": [
+      "登记 DOI 10.1038/s41522-026-01186-2 的官方补采，并核对本刊余下目录和全部初筛候选。"
+    ],
+    "evidence_urls": [
+      "https://www.nature.com/npjbiofilms/articles?year=2026",
+      "https://www.nature.com/articles/s41522-026-01186-2"
+    ],
+    "audit_file": "reviews/2026/chenchen052512/npj-engineering-jpa-dates-20261119.json"
   }
 ]
