@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-18T23:58:26.531149+00:00",
-  "commit": "a81eff2227b5954d2030da8c96dacfbacede7ab9",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/a81eff2227b5954d2030da8c96dacfbacede7ab9/",
+  "generated_at": "2026-11-19T00:32:46.079605+00:00",
+  "commit": "b8beb94d3248d5dd54d3cf5f9dae0c54590cda97",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/b8beb94d3248d5dd54d3cf5f9dae0c54590cda97/",
   "years": [
     {
       "year": 2024,
@@ -26219,16 +26219,18 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-18T15:55:19-08:00",
+            "at": "2026-11-18T16:30:35-08:00",
             "author": "h10",
-            "subject": "review: verify twelve Lancet Neurology Insight headers and preserve manual checks",
+            "subject": "review(lixueting): screen Informetrics candidates and audit 2026 issues",
             "area": "reviews",
             "paths": [
+              "metadata/j-3ecf0afce7/2026/official-scope-audit-lixueting.json",
               "metadata/j-af35c70bf5/2026/official-scope-audit-lixueting.json",
-              "reviews/2026/feedback/zch66883-lixueting.json"
+              "reviews/2026/feedback/zch66883-lixueting.json",
+              "reviews/2026/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 110
+          "commits_7d": 111
         },
         {
           "owner": "丁利军",
@@ -46831,16 +46833,18 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-18T15:55:19-08:00",
+            "at": "2026-11-18T16:30:35-08:00",
             "author": "h10",
-            "subject": "review: verify twelve Lancet Neurology Insight headers and preserve manual checks",
+            "subject": "review(lixueting): screen Informetrics candidates and audit 2026 issues",
             "area": "reviews",
             "paths": [
+              "metadata/j-3ecf0afce7/2026/official-scope-audit-lixueting.json",
               "metadata/j-af35c70bf5/2026/official-scope-audit-lixueting.json",
-              "reviews/2026/feedback/zch66883-lixueting.json"
+              "reviews/2026/feedback/zch66883-lixueting.json",
+              "reviews/2026/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 110
+          "commits_7d": 111
         },
         {
           "owner": "郝卓迪",
@@ -53038,32 +53042,51 @@
           "official_total": null,
           "official_scope": "",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
+          "coverage_note": "batch78首次处理本刊：正常浏览器展开2026卷20四期目录和原摘要预览，106唯一PII逐项与103采集记录对照，102匹配、4官网独有、1采集独有待核。目录文类98确认研究/实质综述、7非适用、1理论短文待核，仅当前目录小计非截止总数。2初始候选均排除，101859原摘要已补证；排除依据AI为专利类别/技术冲击研究对象，非科学AI方法。97非候选适用或待核记录召回尚未完成，34方法线索优先；未补录新候选、未伪称来源完成；非候选原摘要不计候选缺漏指标。",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/journal/journal-of-informetrics/issues",
+            "https://www.sciencedirect.com/journal/journal-of-informetrics/vol/20/issue/4",
+            "https://www.sciencedirect.com/journal/journal-of-informetrics/vol/20/issue/3",
+            "https://www.sciencedirect.com/journal/journal-of-informetrics/vol/20/issue/2",
+            "https://www.sciencedirect.com/journal/journal-of-informetrics/vol/20/issue/1",
+            "https://www.sciencedirect.com/science/article/pii/S1751157726001070",
+            "https://www.sciencedirect.com/science/article/abs/pii/S1751157726000921"
+          ],
+          "decisions": {
+            "include": 0,
+            "exclude": 2,
+            "pending": 0,
+            "unreviewed": 0
+          },
           "issues": [
+            "官网四期现106唯一PII，原采集103，其中102匹配、4官网独有和1采集独有尚待截止/正式位置核验；不能用106冒充固定截止同口径总量。",
+            "98研究/实质综述小计、7非适用、1哲学短文文类待核均为当前目录观察；年度最终口径仍未完成。",
+            "2初始候选已排除，缺失的1篇原摘要已补证；97条非候选适用/待核记录尚未逐项完成AI4S召回判定，34条方法线索优先。",
             "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
-            "AI4S候选缺少摘要：1 篇。",
-            "尚未找到逐篇审核交付。"
+            "官网同口径总数尚未确认。"
           ],
           "actions": [
+            "下一批先核4官网独有条目在线日期/固定截止，以及采集独有更正101875的正式位置；复用已保存四期目录，不重抓。",
+            "按remaining_recall_checks顺序优先WISDOM、专利XGBoost、GAN引文分类、LLM评审质量、GC-GTM、神经嵌入团队研究等；逐条用官网原摘要/必要方法判科学任务与AI角色，确证漏筛后再补候选。",
+            "核哲学短文S1751157726000532正文文类；所有官方目录原摘要预览已保存供下一批逐项复核，未判项保留，不以关键词自动纳入/排除。",
+            "Lancet57文类全人工、Kidney54文类全人工及其他既有待答项保持；继续2026，尚未进入2025。",
             "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
-            "提交逐篇审核结果或说明当前进度。"
+            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2026/zch66883-lixueting.json",
+            "reviews/2026/feedback/zch66883-lixueting.json"
+          ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": null,
-          "final_missing_abstract": null,
+          "final_included": 0,
+          "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
-          "abstract_recovered": 0,
+          "abstract_recovered": 1,
           "abstract_not_required": 0,
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 1
+          "abstract_supplement_required": 0
         },
         {
           "code": "j-3fe12bcc6e",
@@ -59542,7 +59565,7 @@
           "official_total": null,
           "official_scope": "",
           "reference_check": null,
-          "coverage_note": "batch77续核12个原未访问Insights，均官网正常浏览器In Context题头/作者/DOI/卷25第9–11期及机构订阅提示，无摘要/正文/首页预览，新增人工1组12篇，不判最终文类。270正式目录=76研究/实质综述+137非适用+57未决；57含56人工、1独立未访问。原272采集/2InPress对账、4科学候选2纳入2待定及4召回保持，最终同口径总数null、scope/coverage false，不混非候选摘要指标。历史核验依据仍见目录字段、method_resolution_batch39及document_scope_batch39至76。",
+          "coverage_note": "batch78核最后1个原未访问Insights Learn From Us，官网正常浏览器仅In Context题头与机构订阅，新增人工1篇，不作最终文类结论。270正式目录仍76研究/实质综述+137非适用+57未决，57现全部人工、0未访问；4科学候选2纳入2待定及4召回保持，同口径官网/采集量null，scope/coverage false。既有目录、对账和历批依据保留。",
           "evidence_urls": [
             "https://www.sciencedirect.com/journal/the-lancet-neurology/issues",
             "https://www.sciencedirect.com/journal/the-lancet-neurology/articles-in-press",
@@ -59674,7 +59697,8 @@
             "https://www.sciencedirect.com/science/article/abs/pii/S1474442226003303",
             "https://www.sciencedirect.com/science/article/abs/pii/S1474442226003698",
             "https://www.sciencedirect.com/science/article/abs/pii/S1474442226003704",
-            "https://www.sciencedirect.com/science/article/abs/pii/S1474442226003546"
+            "https://www.sciencedirect.com/science/article/abs/pii/S1474442226003546",
+            "https://www.sciencedirect.com/science/article/abs/pii/S1474442226003716"
           ],
           "decisions": {
             "include": 2,
@@ -59683,7 +59707,7 @@
             "unreviewed": 0
           },
           "issues": [
-            "57条文类仍未决：56已请人工（旧44+本批12），1尚未访问；同口径总量仍未知，不能标完成。",
+            "57条文类仍未决，现全部已请求人工（旧56+本批1），独立未访问0；同口径官网总量未知，不能标完成。",
             "本刊4科学候选仍2纳入2待定；00285-1需AI正文，00453-3缺原摘要，摘要例外仍未获允许。",
             "4条非正式召回00380-1/00192-4/00433-8/00430-2仍待正文，不计科学pending；旧人工请求不重复。",
             "采集状态尚未完成：abstract_incomplete",
@@ -59692,8 +59716,8 @@
             "交付中存在待定或未审论文。"
           ],
           "actions": [
-            "下一批先核本刊最后1篇未访问Insights：10.1016/s1474-4422(26)00371-6 S1474442226003716 Learn From Us: stepping into the spotlight after brain injury；随后转向其他2026未开始来源，优先Journal of Informetrics（j-3ecf0afce7，2初始候选），先核官网目录/正式年度范围与原摘要。",
-            "56文类与科学2pending/4召回等人工，未答不重问/重试/替代；不重抓11期目录，不将已访问题头当文类完成。Kidney54文类全人工保持，不重开。",
+            "57文类、2科学pending及4召回均等既有人工回复，未答不重问/重试/替代；本刊无独立未访问文类。",
+            "继续Journal of Informetrics 2026目录范围差异及漏筛召回；不重抓本刊11期目录。",
             "检查采集状态与失败日志，必要时补采。",
             "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
             "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
@@ -71941,22 +71965,24 @@
         {
           "owner": "李雪婷",
           "sources": 51,
-          "delivered": 34,
+          "delivered": 35,
           "official": 27,
           "pending": 20,
           "open_issues": 37,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-18T15:55:19-08:00",
+            "at": "2026-11-18T16:30:35-08:00",
             "author": "h10",
-            "subject": "review: verify twelve Lancet Neurology Insight headers and preserve manual checks",
+            "subject": "review(lixueting): screen Informetrics candidates and audit 2026 issues",
             "area": "reviews",
             "paths": [
+              "metadata/j-3ecf0afce7/2026/official-scope-audit-lixueting.json",
               "metadata/j-af35c70bf5/2026/official-scope-audit-lixueting.json",
-              "reviews/2026/feedback/zch66883-lixueting.json"
+              "reviews/2026/feedback/zch66883-lixueting.json",
+              "reviews/2026/zch66883-lixueting.json"
             ]
           },
-          "commits_7d": 110
+          "commits_7d": 111
         },
         {
           "owner": "郝卓迪",
@@ -72230,7 +72256,7 @@
         },
         "2026": {
           "sources": 51,
-          "delivered": 34,
+          "delivered": 35,
           "official": 27,
           "pending": 20,
           "open_issues": 37,
@@ -72238,21 +72264,23 @@
         }
       },
       "sources": 153,
-      "delivered": 73,
+      "delivered": 74,
       "not_started": [
         "2025"
       ],
       "last_update": {
-        "at": "2026-11-18T15:55:19-08:00",
+        "at": "2026-11-18T16:30:35-08:00",
         "author": "h10",
-        "subject": "review: verify twelve Lancet Neurology Insight headers and preserve manual checks",
+        "subject": "review(lixueting): screen Informetrics candidates and audit 2026 issues",
         "area": "reviews",
         "paths": [
+          "metadata/j-3ecf0afce7/2026/official-scope-audit-lixueting.json",
           "metadata/j-af35c70bf5/2026/official-scope-audit-lixueting.json",
-          "reviews/2026/feedback/zch66883-lixueting.json"
+          "reviews/2026/feedback/zch66883-lixueting.json",
+          "reviews/2026/zch66883-lixueting.json"
         ]
       },
-      "commits_7d": 110
+      "commits_7d": 111
     },
     {
       "owner": "龙兆科",
@@ -72527,9 +72555,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-18T23:58:01.087643+00:00",
+    "generated_at": "2026-11-19T00:32:07.851502+00:00",
     "history_available": true,
-    "commit": "a81eff2227b5954d2030da8c96dacfbacede7ab9",
-    "commits_scanned": 1079
+    "commit": "b8beb94d3248d5dd54d3cf5f9dae0c54590cda97",
+    "commits_scanned": 1081
   }
 }
