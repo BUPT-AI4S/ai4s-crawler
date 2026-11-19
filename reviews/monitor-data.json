@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-19T02:20:23.213421+00:00",
-  "commit": "6652597d9880f9239303a78cb28c0d3a09d26cac",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/6652597d9880f9239303a78cb28c0d3a09d26cac/",
+  "generated_at": "2026-11-19T02:49:57.318854+00:00",
+  "commit": "69c099f8ec46a0b598bb040dd02c85b245c981cb",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/69c099f8ec46a0b598bb040dd02c85b245c981cb/",
   "years": [
     {
       "year": 2024,
@@ -26219,15 +26219,18 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-18T18:13:27-08:00",
+            "at": "2026-11-18T18:44:00-08:00",
             "author": "h10",
-            "subject": "review(lixueting): preserve prior review formatting",
+            "subject": "review(lixueting): close three 2026 sources with formal scope evidence",
             "area": "reviews",
             "paths": [
-              "reviews/2026/zch66883-lixueting.json"
+              "metadata/2026/ai4s.json",
+              "metadata/j-7cb47416fb/2026/official-scope-audit-lixueting.json",
+              "metadata/j-a847fdc23a/2026/ai4s.json",
+              "metadata/j-a847fdc23a/2026/official-scope-audit-lixueting.json"
             ]
           },
-          "commits_7d": 116
+          "commits_7d": 117
         },
         {
           "owner": "丁利军",
@@ -46830,15 +46833,18 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-18T18:13:27-08:00",
+            "at": "2026-11-18T18:44:00-08:00",
             "author": "h10",
-            "subject": "review(lixueting): preserve prior review formatting",
+            "subject": "review(lixueting): close three 2026 sources with formal scope evidence",
             "area": "reviews",
             "paths": [
-              "reviews/2026/zch66883-lixueting.json"
+              "metadata/2026/ai4s.json",
+              "metadata/j-7cb47416fb/2026/official-scope-audit-lixueting.json",
+              "metadata/j-a847fdc23a/2026/ai4s.json",
+              "metadata/j-a847fdc23a/2026/official-scope-audit-lixueting.json"
             ]
           },
-          "commits_7d": 116
+          "commits_7d": 117
         },
         {
           "owner": "郝卓迪",
@@ -56644,7 +56650,7 @@
           "official_total": 237,
           "official_scope": "固定截止前正式2026卷1881第1—6期研究/实质综述；第6期已正式final/fully citable，InPress排除；上线和卷期年度分别核实。",
           "reference_check": null,
-          "coverage_note": "6期目录239与原采集239表面等量但存在2漏采/2额外；已核两漏采在截止范围并补源papers，另两官网InPress不计正式范围。237研究综述逐PII全匹配当前源采集，Editorial/Erratum分列。8科学候选4纳入2排除2待定，另1非候选召回待人工，未标严格完成。",
+          "coverage_note": "复用已核6期239目录逐PII对账、237研究/实质综述全匹配；两漏采已补来源papers、两额外InPress不计范围。8候选现5纳入3排除0待定，原摘要8/8有效；circRNA综述按原摘要明确AI建模及专节纳入，neoantigen演化综述按可核内容AI仅技术背景/生成图示不足实质贡献排除；不冒称读过两篇订阅全文。mRNA疫苗189577最后召回据公开原文§8/9技术概括深度未升候选，剩余召回0。",
           "evidence_urls": [
             "https://www.sciencedirect.com/journal/biochimica-et-biophysica-acta-bba-reviews-on-cancer/issues",
             "https://www.sciencedirect.com/journal/biochimica-et-biophysica-acta-bba-reviews-on-cancer/vol/1881/issue/1",
@@ -56655,31 +56661,21 @@
             "https://www.sciencedirect.com/journal/biochimica-et-biophysica-acta-bba-reviews-on-cancer/vol/1881/issue/6"
           ],
           "decisions": {
-            "include": 4,
-            "exclude": 2,
-            "pending": 2,
+            "include": 5,
+            "exclude": 3,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "2科学pending：189619的具体AI circRNA模型/病毒肿瘤用途，以及189741是否实质AI新抗原预测综述，官网正文订阅；本轮已请求人工。",
-            "1非正式召回189577 mRNA疫苗官网CPE00002，已停止序列并请求人工核AI方法或未来展望；不计科学pending。",
-            "两条缺采已补源papers；年度papers为Git LFS原采集快照，保持不变，补采来源/日期在本审计明列，勿覆盖LFS聚合。",
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "复用已核6期239逐PII目录、237研究综述覆盖及2 InPress差额，不重复抓目录。",
-            "189749/189751缺采已补源papers，官网原摘要暂无实质AI线索，不自动候选；保留原239所有记录和年度papers LFS指针。",
-            "8候选4纳入2排除2待定已保存；纳入依据为明确科学任务和AI实质综述，不把生成图/语言润色当AI4S。",
-            "等待本轮189619/189741/189577人工补证，不重试CPE、重复追问或未答擅用替代资料。无新回复下一批优先Stem Cell Reports（j-9f4e581a9f）2026，6初始候选，或其他本人2026来源。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2026/zch66883-lixueting.json",
             "reviews/2026/feedback/zch66883-lixueting.json"
           ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": 4,
+          "final_included": 5,
           "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
@@ -59290,54 +59286,44 @@
           "snapshot_candidates": 12,
           "candidates": 16,
           "missing_abstract": 1,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 85,
+          "official_scope": "固定截止前正式2026卷18第1—4期91目录逐PII对账：85原创研究/实质综述、6非适用；60额外采集均官网InPress不计。原有官网目录证据与PMC原文共同完成文类核验。",
           "reference_check": null,
-          "coverage_note": "四期91目录全匹配原151，额外60均为官网InPress。文类84确认小计+6非适用+1旧人工待核，官网同口径总数仍未知。初始12与核实漏筛4共16科学候选，11纳入2排除3待定；PDAC完整方法支持Walktrap图聚类，Herbgenomics实质AI论述与其所引DeepBGC出版社检索内容相符。原摘要缺1及旧方法待定保持，未标来源完成。",
+          "coverage_note": "官网四期91目录与原151采集逐PII对账：60额外均官网InPress，85原创研究/实质综述、6非适用，研究综述85/85覆盖；PMC13389985解决最后文类。Liuwei Kangguan公开全文7图中心性算法不属学习模型，最后召回已解决。16候选12纳入4排除0待定：PDE4D确认原本无独立摘要，按用户批准原全文例外纳入，原摘要null保留；黄连与抗病毒综述按完整主文未满足实质AI贡献证据排除，精确说明作者AI表述与证据限制。原候选缺摘要指标1真实保留，其中PDE4D为已批准无摘要例外，不再是待补证问题。",
           "evidence_urls": [
             "https://www.sciencedirect.com/journal/chinese-herbal-medicines/issues",
             "https://www.sciencedirect.com/journal/chinese-herbal-medicines/vol/18/issue/1",
             "https://www.sciencedirect.com/journal/chinese-herbal-medicines/vol/18/issue/2",
             "https://www.sciencedirect.com/journal/chinese-herbal-medicines/vol/18/issue/3",
-            "https://www.sciencedirect.com/journal/chinese-herbal-medicines/vol/18/issue/4"
+            "https://www.sciencedirect.com/journal/chinese-herbal-medicines/vol/18/issue/4",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC13389985/",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC13712334/",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC13712434/"
           ],
           "decisions": {
-            "include": 11,
-            "exclude": 2,
-            "pending": 3,
+            "include": 12,
+            "exclude": 4,
+            "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "91目录=84确认研究/实质综述小计+6非适用+1既有文类待人工，official_total/collected_total_same_scope仍null；2026.05.004旧CPE请求未答，不重试。",
-            "3篇科学pending保持：黄连AD成像实际学习模型、抗病毒AI筛选引用支撑，以及PDE4D的可核实独立原摘要。候选原摘要缺1，不用正文首段替代。",
-            "仅Liuwei Kangguan（2026.08.019）1条非正式召回仍因既有CPE待人工；PDAC/Herbgenomics已核实补候选纳入，不再列召回。",
-            "官网同口径总数尚未确认。",
-            "AI4S候选缺少摘要：1 篇。",
-            "交付中存在待定或未审论文。"
-          ],
+          "issues": [],
           "actions": [
-            "复用已核四期91目录及60 InPress对账、九条文类；仅2026.05.004文类等待旧人工答复。",
-            "已核PDAC/Herbgenomics两条不再重做；GCN不是GNN，Herbgenomics引文限制留在审核理由，不移用细菌模型结果作植物验证。",
-            "补PDE4D独立原摘要或保留pending，原空摘要不改；继续黄连成像与抗病毒综述的方法补证，有新增合法公开材料再核。",
-            "Liuwei Kangguan旧人工方法请求未答，不重试/重复追问或擅用替代资料；若本刊可独立工作已尽，下一批优先推进未开始的Soil Biology and Biochemistry 2026（3初始候选）等本人来源。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "为缺摘要的AI4S候选补充可核实的摘要或证据，无法判断的论文标为待定。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2026/zch66883-lixueting.json",
             "reviews/2026/feedback/zch66883-lixueting.json"
           ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": 11,
-          "final_missing_abstract": 0,
+          "final_included": 12,
+          "final_missing_abstract": 1,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
           "abstract_recovered": 0,
           "abstract_not_required": 0,
-          "abstract_full_text_reviewed": 0,
+          "abstract_full_text_reviewed": 1,
           "abstract_closed_by_owner": 0,
-          "abstract_supplement_required": 1
+          "abstract_supplement_required": 0
         },
         {
           "code": "j-a8a43dcc50",
@@ -67672,24 +67658,32 @@
           "snapshot_candidates": 1191,
           "candidates": 1191,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 0,
+          "official_scope": "截至首次执行2026-11-17T07:14:20Z已正式出版的NeurIPS2026年度proceedings卷；不含接受列表、OpenReview预印本、camera-ready文件或仅会议报告记录。",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
-          "issues": [
-            "官网同口径总数尚未确认。",
-            "尚未找到逐篇审核交付。"
+          "coverage_note": "正式发表范围排除：用户仅处理首次执行截止2026-11-17T07:14:20Z前已正式发表的2026论文集。官方完整proceedings索引目前仅列到2025卷38，没有2026正式卷；原采集为会议接受/报告及OpenReview记录，未提供2026正式proceedings归属，不能以接受、camera-ready或预印本代替正式论文集出版。根据官方出版目录判断本固定范围内无已正式出版的2026论文集条目；不评价本文AI4S学术相关性，也不把12月报告日期冒作出版日期。 原5889采集与1191初始候选原字段保留，逐条候选交付范围排除；此处0指已出版正式论文集范围，不是推断未访问网站为零。",
+          "evidence_urls": [
+            "https://proceedings.neurips.cc/",
+            "https://neurips.cc/Conferences/2026/Dates",
+            "https://neurips.cc/Conferences/2026/MainTrackHandbook"
           ],
+          "decisions": {
+            "include": 0,
+            "exclude": 1191,
+            "pending": 0,
+            "unreviewed": 0
+          },
+          "issues": [],
           "actions": [
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "提交逐篇审核结果或说明当前进度。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2026/zch66883-lixueting.json",
+            "reviews/2026/feedback/zch66883-lixueting.json"
+          ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": null,
-          "final_missing_abstract": null,
+          "final_included": 0,
+          "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
           "abstract_recovered": 0,
@@ -71990,21 +71984,24 @@
         {
           "owner": "李雪婷",
           "sources": 51,
-          "delivered": 35,
-          "official": 27,
-          "pending": 20,
-          "open_issues": 37,
+          "delivered": 36,
+          "official": 29,
+          "pending": 15,
+          "open_issues": 34,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-18T18:13:27-08:00",
+            "at": "2026-11-18T18:44:00-08:00",
             "author": "h10",
-            "subject": "review(lixueting): preserve prior review formatting",
+            "subject": "review(lixueting): close three 2026 sources with formal scope evidence",
             "area": "reviews",
             "paths": [
-              "reviews/2026/zch66883-lixueting.json"
+              "metadata/2026/ai4s.json",
+              "metadata/j-7cb47416fb/2026/official-scope-audit-lixueting.json",
+              "metadata/j-a847fdc23a/2026/ai4s.json",
+              "metadata/j-a847fdc23a/2026/official-scope-audit-lixueting.json"
             ]
           },
-          "commits_7d": 116
+          "commits_7d": 117
         },
         {
           "owner": "郝卓迪",
@@ -72278,28 +72275,31 @@
         },
         "2026": {
           "sources": 51,
-          "delivered": 35,
-          "official": 27,
-          "pending": 20,
-          "open_issues": 37,
+          "delivered": 36,
+          "official": 29,
+          "pending": 15,
+          "open_issues": 34,
           "status": "in_progress"
         }
       },
       "sources": 153,
-      "delivered": 74,
+      "delivered": 75,
       "not_started": [
         "2025"
       ],
       "last_update": {
-        "at": "2026-11-18T18:13:27-08:00",
+        "at": "2026-11-18T18:44:00-08:00",
         "author": "h10",
-        "subject": "review(lixueting): preserve prior review formatting",
+        "subject": "review(lixueting): close three 2026 sources with formal scope evidence",
         "area": "reviews",
         "paths": [
-          "reviews/2026/zch66883-lixueting.json"
+          "metadata/2026/ai4s.json",
+          "metadata/j-7cb47416fb/2026/official-scope-audit-lixueting.json",
+          "metadata/j-a847fdc23a/2026/ai4s.json",
+          "metadata/j-a847fdc23a/2026/official-scope-audit-lixueting.json"
         ]
       },
-      "commits_7d": 116
+      "commits_7d": 117
     },
     {
       "owner": "龙兆科",
@@ -72574,9 +72574,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-19T02:19:43.955487+00:00",
+    "generated_at": "2026-11-19T02:49:21.340107+00:00",
     "history_available": true,
-    "commit": "6652597d9880f9239303a78cb28c0d3a09d26cac",
-    "commits_scanned": 1090
+    "commit": "69c099f8ec46a0b598bb040dd02c85b245c981cb",
+    "commits_scanned": 1092
   }
 }
