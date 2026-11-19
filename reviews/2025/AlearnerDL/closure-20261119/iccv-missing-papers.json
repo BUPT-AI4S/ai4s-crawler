@@ -1,0 +1,286 @@
+[
+  {
+    "title": "Adversarial Attention Perturbations for Large Object Detection Transformers",
+    "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Yahn_Adversarial_Attention_Perturbations_for_Large_Object_Detection_Transformers_ICCV_2025_paper.html",
+    "http_status": 200,
+    "abstract": "Adversarial perturbations are useful tools for exposing vulnerabilities in neural networks. Existing adversarial perturbation methods for object detection are either limited to attacking CNN-based detectors or weak against transformer-based detectors. This paper presents an Attention-Focused Offensive Gradient (AFOG) attack against object detection transformers. By design, AFOG is neural-architecture agnostic and effective for attacking both large transformer-based object detectors and conventional CNN-based detectors with a unified adversarial attention framework. This paper makes three original contributions. First, AFOG utilizes a learnable attention mechanism that focuses perturbations on vulnerable image regions in multi-box detection tasks, increasing performance over non-attention baselines by up to 30.6%. Second, AFOG's attack loss is formulated by integrating two types of feature loss through learnable attention updates with iterative injection of adversarial perturbations. Finally, AFOG is an efficient and stealthy adversarial perturbation method. It probes the weak spots of detection transformers by adding strategically generated and visually imperceptible perturbations which can cause well-trained object detection models to fail. Extensive experiments conducted with twelve large detection transformers on COCO demonstrate the efficacy of AFOG. Our empirical results also show that AFOG outperforms existing attacks on transformer-based and CNN-based object detectors by up to 83% with superior speed and imperceptibility. Code is available at: https://github.com/zacharyyahn/AFOG",
+    "authors": [
+      "Yahn, Zachary",
+      "Tekin, Selim Furkan",
+      "Ilhan, Fatih",
+      "Hu, Sihao",
+      "Huang, Tiansheng",
+      "Xu, Yichang",
+      "Loper, Margaret",
+      "Liu, Ling"
+    ],
+    "ai4s_assessment": {
+      "decision": "exclude",
+      "rationale": "通用目标检测对抗攻击，未体现具体科学研究任务。",
+      "evidence_location": "官方论文页摘要"
+    }
+  },
+  {
+    "title": "CAVIS: Context-Aware Video Instance Segmentation",
+    "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Lee_CAVIS_Context-Aware_Video_Instance_Segmentation_ICCV_2025_paper.html",
+    "http_status": 200,
+    "abstract": "In this paper, we introduce the Context-Aware Video Instance Segmentation (CAVIS), a novel framework designed to enhance instance association by integrating contextual information adjacent to each object. To efficiently extract and leverage this information, we propose the Context-Aware Instance Tracker (CAIT), which merges contextual data surrounding the instances with the core instance features to improve tracking accuracy. Additionally, we design the Prototypical Cross-frame Contrastive (PCC) loss, which ensures consistency in object-level features across frames, thereby significantly enhancing instance matching accuracy. CAVIS demonstrates superior performance over state-of-the-art methods on all benchmark datasets in video instance segmentation (VIS) and video panoptic segmentation (VPS). Notably, our method excels on the OVIS dataset, which is known for its particularly challenging videos.",
+    "authors": [
+      "Lee, Seunghun",
+      "Seo, Jiwan",
+      "Han, Kiljoon",
+      "Choi, Minwoo",
+      "Im, Sunghoon"
+    ],
+    "ai4s_assessment": {
+      "decision": "exclude",
+      "rationale": "通用视频实例跟踪分割，未体现具体科学研究任务。",
+      "evidence_location": "官方论文页摘要"
+    }
+  },
+  {
+    "title": "X-Dancer: Expressive Music to Human Dance Video Generation",
+    "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Chen_X-Dancer_Expressive_Music_to_Human_Dance_Video_Generation_ICCV_2025_paper.html",
+    "http_status": 200,
+    "abstract": "We present X-Dancer, a novel zero-shot music-driven image animation pipeline that creates diverse and long-range lifelike human dance videos from a single static image. As its core, we introduce a unified transformer-diffusion framework, featuring an autoregressive transformer model that synthesize extended and music-synchronized token sequences for 2D body, head and hands poses, which then guide a diffusion model to produce coherent and realistic dance video frames. Unlike traditional methods that primarily generate human motion in 3D, X-Dancer addresses data limitations and enhances scalability by modeling a wide spectrum of 2D dance motions, capturing their nuanced alignment with musical beats through readily available monocular videos. To achieve this, we first build a spatially compositional token representation from 2D human pose labels associated with keypoint confidences, encoding both large articulated body movements (e.g., upper and lower body) and fine-grained motions (e.g., head and hands). We then design a music-to-motion transformer model that autoregressively generates music-aligned dance pose token sequences, incorporating global attention to both musical style and prior motion context. Finally we leverage a diffusion backbone to animate the reference image with these synthesized pose tokens through AdaIN, forming a fully differentiable end-to-end framework. Experimental results demonstrate that X-Dancer is able to produce both diverse and characterized dance videos, substantially outperforming state-of-the-art methods in term of diversity, expressiveness and realism. See our project page for more results: https://zeyuan-chen.com/X-Dancer/.",
+    "authors": [
+      "Chen, Zeyuan",
+      "Xu, Hongyi",
+      "Song, Guoxian",
+      "Xie, You",
+      "Zhang, Chenxu",
+      "Chen, Xin",
+      "Wang, Chao",
+      "Chang, Di",
+      "Luo, Linjie"
+    ],
+    "ai4s_assessment": {
+      "decision": "exclude",
+      "rationale": "舞蹈视频生成，未体现科学研究任务。",
+      "evidence_location": "官方论文页摘要"
+    }
+  },
+  {
+    "title": "Dynamic Multimodal Prototype Learning in Vision-Language Models",
+    "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Zhu_Dynamic_Multimodal_Prototype_Learning_in_Vision-Language_Models_ICCV_2025_paper.html",
+    "http_status": 200,
+    "abstract": "With the increasing attention to pre-trained vision-language models (VLMs), e.g., CLIP, substantial efforts have been devoted to many downstream tasks, especially in test-time adaptation (TTA). However, previous works focus on learning prototypes only in the textual modality while overlooking the ambiguous semantics in class names. These ambiguities lead to textual prototypes that are insufficient to capture visual concepts, resulting in limited performance. To address this issue, we introduce **ProtoMM**, a training-free framework that constructs multimodal prototypes to adapt VLMs during the test time. By viewing the prototype as a discrete distribution over the textual descriptions and visual particles, ProtoMM has the ability to combine the multimodal features for comprehensive prototype learning. More importantly, the visual particles are dynamically updated as the testing stream flows. This allows our multimodal prototypes to continually learn from the data, enhancing their generalizability in unseen scenarios. In addition, we quantify the importance of the prototypes and test images by formulating their semantic distance as an optimal transport problem. Extensive experiments on 15 zero-shot benchmarks demonstrate the effectiveness of our method, achieving a 1.03% average accuracy improvement over state-of-the-art methods on ImageNet and its variant datasets.",
+    "authors": [
+      "Zhu, Xingyu",
+      "Wang, Shuo",
+      "Zhu, Beier",
+      "Li, Miaoge",
+      "Li, Yunfan",
+      "Fang, Junfeng",
+      "Wang, Zhicai",
+      "Wang, Dongsheng",
+      "Zhang, Hanwang"
+    ],
+    "ai4s_assessment": {
+      "decision": "exclude",
+      "rationale": "通用视觉语言模型测试适配，未体现具体科学研究任务。",
+      "evidence_location": "官方论文页摘要"
+    }
+  },
+  {
+    "title": "FreeMorph: Tuning-Free Generalized Image Morphing with Diffusion Model",
+    "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Cao_FreeMorph_Tuning-Free_Generalized_Image_Morphing_with_Diffusion_Model_ICCV_2025_paper.html",
+    "http_status": 200,
+    "abstract": "We present FreeMorph, the first tuning-free method for image morphing that accommodates inputs with varying semantics or layouts. Unlike existing methods, which rely on fine-tuning pre-trained diffusion models and are limited by time constraints and semantic/layout discrepancies, FreeMorph delivers high-fidelity image morphing without extensive training. Despite its efficiency and potential, tuning-free methods still face challenges in maintaining high-quality image morphing due to the non-linear nature of the multi-step denoising process and bias inherited from the pre-trained diffusion model. In this paper, we introduce FreeMorph to address this challenge by integrating two key innovations. 1) We first propose a guidance-aware spherical interpolation design that incorporates the explicit guidance from the input images by modifying the self-attention modules, addressing identity loss, and ensuring directional transitions throughout the generated sequences. 2) We further introduce a step-oriented variation trend that blends self-attention modules derived from each input image to achieve controlled and consistent transitions that respect both input images. Our extensive evaluations demonstrate that FreeMorph outperforms existing methods with training that is 10X   50X faster, establishing a new state-of-the-art for image morphing.",
+    "authors": [
+      "Cao, Yukang",
+      "Si, Chenyang",
+      "Wang, Jinghao",
+      "Liu, Ziwei"
+    ],
+    "ai4s_assessment": {
+      "decision": "exclude",
+      "rationale": "通用图像变形合成，未体现科学研究任务。",
+      "evidence_location": "官方论文页摘要"
+    }
+  },
+  {
+    "title": "DASH: Detection and Assessment of Systematic Hallucinations of VLMs",
+    "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Augustin_DASH_Detection_and_Assessment_of_Systematic_Hallucinations_of_VLMs_ICCV_2025_paper.html",
+    "http_status": 200,
+    "abstract": "Vision-language models (VLMs) are prone to object hal- lucinations, where they erroneously indicate the presence of certain objects in an image. Existing benchmarks quantify hallucinations using relatively small, labeled datasets. However, this approach is i) insufficient to assess hallucinations that arise in open-world settings, where VLMs are widely used, and ii) inadequate for detecting systematic errors in VLMs. We propose DASH (Detection and Assess- ment of Systematic Hallucinations), an automatic, large-scale pipeline designed to identify systematic hallucinations of VLMs on real-world images in an open-world setting. A key component is DASH-OPT for image-based retrieval, where we optimize over the \"natural image manifold\" to generate images that mislead the VLM. The output of DASH consists of clusters of real and semantically similar images for which the VLM hallucinates an object. We apply DASH to PaliGemma and two LLaVA-NeXT models across 380 object classes and, in total, find more than 19k clusters with 950k images. We study the transfer of the identified systematic hallucinations to other VLMs and show that fine-tuning PaliGemma with the model-specific images obtained with DASH mitigates object hallucinations.",
+    "authors": [
+      "Augustin, Maximilian",
+      "Neuhaus, Yannic",
+      "Hein, Matthias"
+    ],
+    "ai4s_assessment": {
+      "decision": "exclude",
+      "rationale": "通用视觉语言模型幻觉评测，未体现科学研究任务。",
+      "evidence_location": "官方论文页摘要"
+    }
+  },
+  {
+    "title": "Lightweight and Fast Real-time Image Enhancement via Decomposition of the Spatial-aware Lookup Tables",
+    "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Kim_Lightweight_and_Fast_Real-time_Image_Enhancement_via_Decomposition_of_the_ICCV_2025_paper.html",
+    "http_status": 200,
+    "abstract": "The image enhancement methods based on 3D lookup tables (3D LUTs) efficiently reduce both model size and runtime by interpolating pre-calculated values at the vertices. However, the 3D LUT methods have a limitation due to their lack of spatial information, as they convert color values on a point-by-point basis. Although spatial-aware 3D LUT methods address this limitation, they introduce additional modules that require a substantial number of parameters, leading to increased runtime as image resolution increases. To address this issue, we propose a method for generating image-adaptive LUTs by focusing on the redundant parts of the tables. Our efficient framework decomposes a 3D LUT into a linear sum of low-dimensional LUTs and employs singular value decomposition (SVD). Furthermore, we enhance the modules for spatial feature fusion to be more cache-efficient. Extensive experimental results demonstrate that our model effectively decreases both the number of parameters and runtime while maintaining spatial awareness and performance. The code is available at https://github.com/WontaeaeKim/SVDLUT.",
+    "authors": [
+      "Kim, Wontae",
+      "Lee, Keuntek",
+      "Cho, Nam Ik"
+    ],
+    "ai4s_assessment": {
+      "decision": "exclude",
+      "rationale": "通用图像增强与查找表效率优化，未体现科学研究任务。",
+      "evidence_location": "官方论文页摘要"
+    }
+  },
+  {
+    "title": "Exploring Weather-aware Aggregation and Adaptation for Semantic Segmentation under Adverse Conditions",
+    "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Pan_Exploring_Weather-aware_Aggregation_and_Adaptation_for_Semantic_Segmentation_under_Adverse_ICCV_2025_paper.html",
+    "http_status": 200,
+    "abstract": "Semantic segmentation under adverse conditions is crucial for ensuring robust and accurate visual perception in challenging weather conditions. The distinct characteristics of extreme scenarios hinder traditional segmentation paradigms, highlighting the necessity for tailored approaches for adverse weathers. Due to the scarcity of labeled data in such scenarios, the unsupervised domain adaptation paradigm is commonly utilized to leverage knowledge from normal weather conditions. Although existing methods strive to absorb information from labeled normal weather data and unlabeled adverse condition images, they face significant challenges due to weather unawareness and severe feature heterogeneity, thus struggling to effectively parse scenes under adverse conditions. In this paper, we propose a novel weather-aware aggregation and adaptation network that leverages characteristic knowledge to achieve weather homogenization and enhance scene perception. Specifically, we introduce amplitude prompt aggregation to capture essential characteristics from the Fourier frequency domain that are indicative of different weather conditions. Additionally, we employ weather heterogeneity adaptation to mitigate the inter-domain heterogeneity, thereby achieving feature homogenization across diverse environments. Extensive experimental results on multiple challenging benchmarks demonstrate that our method achieves consistent improvements for semantic segmentation under adverse conditions.",
+    "authors": [
+      "Pan, Yuwen",
+      "Sun, Rui",
+      "Li, Wangkai",
+      "Zhang, Tianzhu"
+    ],
+    "ai4s_assessment": {
+      "decision": "exclude",
+      "rationale": "恶劣天气场景语义分割，天气是视觉域变化，未研究气象过程。",
+      "evidence_location": "官方论文页摘要"
+    }
+  },
+  {
+    "title": "2D Gaussian Splatting-based Sparse-view Transparent Object Depth Reconstruction via Physics Simulation for Scene Update",
+    "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Kim_2D_Gaussian_Splatting-based_Sparse-view_Transparent_Object_Depth_Reconstruction_via_Physics_ICCV_2025_paper.html",
+    "http_status": 200,
+    "abstract": "Understanding the 3D geometry of transparent objects from RGB images is challenging due to their inherent physical properties, such as reflection and refraction. To address these difficulties, especially in scenarios with sparse views and dynamic environments, we introduce TRAN-D, a novel 2D Gaussian Splatting-based depth reconstruction method for transparent objects. Our key insight lies in separating transparent objects from the background, enabling focused optimization of Gaussians corresponding to the object. We mitigate artifacts with an object-aware loss that places Gaussians in obscured regions, ensuring coverage of invisible surfaces while reducing overfitting. Furthermore, we incorporate a physics-based simulation that refines the reconstruction in just a few seconds, effectively handling object removal and chain-reaction movement of remaining objects without the need for rescanning. TRAN-D is evaluated on both synthetic and real-world sequences, and it consistently demonstrated robust improvements over existing GS-based state-of-the-art methods. In comparison with baselines, TRAN-D reduces the mean absolute error by over 39% for the synthetic TRansPose sequences. Furthermore, despite being updated using only one image, TRAN-D reaches a d < 2.5 cm accuracy of 48.46%, over 1.5 times that of baselines, which uses six images. Code and more results are available at https://jeongyun0609.github.io/TRAN-D/.",
+    "authors": [
+      "Kim, Jeongyun",
+      "Jeong, Seunghoon",
+      "Kim, Giseop",
+      "Jeon, Myung-Hwan",
+      "Jun, Eunji",
+      "Kim, Ayoung"
+    ],
+    "ai4s_assessment": {
+      "decision": "exclude",
+      "rationale": "透明对象深度与场景重构，物理模拟用于场景更新，未体现具体科学研究任务。",
+      "evidence_location": "官方论文页摘要"
+    }
+  },
+  {
+    "title": "Test-time Adaptation for Foundation Medical Segmentation Model Without Parametric Updates",
+    "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Chen_Test-time_Adaptation_for_Foundation_Medical_Segmentation_Model_Without_Parametric_Updates_ICCV_2025_paper.html",
+    "http_status": 200,
+    "abstract": "Foundation medical segmentation models, with MedSAM being the most popular, have achieved promising performance across organs and lesions. However, MedSAM still suffers from compromised performance on specific lesions with intricate structures and appearance, as well as bounding box prompt-induced perturbations. Although current test-time adaptation (TTA) methods for medical image segmentation may tackle this issue, partial (e.g., batch normalization) or whole parametric updates restrict their effectiveness due to limited update signals or catastrophic forgetting in large models. Meanwhile, these approaches ignore the computational complexity during adaptation, which is particularly significant for modern foundation models. To this end, our theoretical analyses reveal that directly refining image embeddings is feasible to approach the same goal as parametric updates under the MedSAM architecture, which enables us to realize high computational efficiency and segmentation performance without the risk of catastrophic forgetting. Under this framework, we propose to encourage maximizing factorized conditional probabilities of the posterior prediction probability using a proposed distribution-approximated latent conditional random field loss combined with an entropy minimization loss. Experiments show that we achieve about 3% Dice score improvements across three datasets while reducing computational complexity by over 7 times.",
+    "authors": [
+      "Chen, Kecheng",
+      "Luo, Xinyu",
+      "Qin, Tiexin",
+      "Liu, Jie",
+      "Liu, Hui",
+      "Lee, Victor Ho Fun",
+      "Yan, Hong",
+      "Li, Haoliang"
+    ],
+    "ai4s_assessment": {
+      "decision": "include",
+      "rationale": "改进MedSAM医学病灶分割，在三组医学数据验证无参数更新的测试适配。",
+      "evidence_location": "官方论文页摘要"
+    }
+  },
+  {
+    "title": "Adversarial Reconstruction Feedback for Robust Fine-grained Generalization",
+    "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Wang_Adversarial_Reconstruction_Feedback_for_Robust_Fine-grained_Generalization_ICCV_2025_paper.html",
+    "http_status": 200,
+    "abstract": "Existing fine-grained image retrieval (FGIR) methods predominantly rely on supervision from predefined categories to learn discriminative representations for retrieving fine-grained objects. However, they inadvertently introduce category-specific semantics into the retrieval representation, creating semantic dependencies on predefined classes that critically hinder generalization to unseen categories. To tackle this, we propose AdvRF, a novel adversarial reconstruction feedback framework aimed at learning category-agnostic discrepancy representations. Specifically, AdvRF reformulates FGIR as a visual discrepancy reconstruction task via synergizing category-aware discrepancy localization from retrieval models with category-agnostic feature learning from reconstruction models. The reconstruction model exposes residual discrepancies overlooked by the retrieval model, forcing it to improve localization accuracy, while the refined signals from the retrieval model guide the reconstruction model to improve its reconstruction ability. Consequently, the retrieval model localizes visual differences, while the reconstruction model encodes these differences into category-agnostic representations. This representation is then transferred to the retrieval model through knowledge distillation for efficient deployment. Quantitative and qualitative evaluations demonstrate that our AdvRF achieves impressive performance on both widely-used fine-grained and coarse-grained datasets.",
+    "authors": [
+      "Wang, Shijie",
+      "Shi, Jian",
+      "Li, Haojie"
+    ],
+    "ai4s_assessment": {
+      "decision": "exclude",
+      "rationale": "通用细粒度图像检索，未体现科学研究任务。",
+      "evidence_location": "官方论文页摘要"
+    }
+  },
+  {
+    "title": "PRVQL: Progressive Knowledge-guided Refinement for Robust Egocentric Visual Query Localization",
+    "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Fan_PRVQL_Progressive_Knowledge-guided_Refinement_for_Robust_Egocentric_Visual_Query_Localization_ICCV_2025_paper.html",
+    "http_status": 200,
+    "abstract": "Egocentric visual query localization (EgoVQL) focuses on localizing the target of interest in space and time from first-person videos, given a visual query. Despite recent progressive, existing methods often struggle to handle severe object appearance changes and cluttering background in the video due to lacking sufficient target cues, leading to degradation. Addressing this, we introduce PRVQL, a novel Progressive knowledge-guided Refinement framework for EgoVQL. The core is to continuously exploit target-relevant knowledge directly from videos and utilize it as guidance to refine both query and video features for improving target localization. Our PRVQL contains multiple processing stages. The target knowledge from one stage, comprising appearance and spatial knowledge extracted via two specially designed knowledge learning modules, are utilized as guidance to refine the query and videos features for the next stage, which are used to generate more accurate knowledge for further feature refinement. With such a progressive process, target knowledge in PRVQL can be gradually improved, which, in turn, leads to better refined query and video features for localization in the final stage. Compared to previous methods, our PRVQL, besides the given object cues, enjoys additional crucial target information from a video as guidance to refine features, and hence enhances EgoVQL in complicated scenes. In our experiments on challenging Ego4D, PRVQL achieves state-of-the-art result and largely surpasses other methods, showing its efficacy. Our code, model, and results will be released at https://github.com/fb-reps/PRVQL.",
+    "authors": [
+      "Fan, Bing",
+      "Feng, Yunhe",
+      "Tian, Yapeng",
+      "Liang, James Chenhao",
+      "Lin, Yuewei",
+      "Huang, Yan",
+      "Fan, Heng"
+    ],
+    "ai4s_assessment": {
+      "decision": "exclude",
+      "rationale": "第一人称视频目标定位，未体现科学研究任务。",
+      "evidence_location": "官方论文页摘要"
+    }
+  },
+  {
+    "title": "GCAV: A Global Concept Activation Vector Framework for Cross-Layer Consistency in Interpretability",
+    "url": "https://openaccess.thecvf.com/content/ICCV2025/html/He_GCAV_A_Global_Concept_Activation_Vector_Framework_for_Cross-Layer_Consistency_ICCV_2025_paper.html",
+    "http_status": 200,
+    "abstract": "Concept Activation Vectors (CAVs) provide a powerful approach for interpreting deep neural networks by quantifying their sensitivity to human-defined concepts. However, when computed independently at different layers, CAVs often exhibit inconsistencies, making cross-layer comparisons unreliable. To address this issue, we propose the Global Concept Activation Vector (GCAV), a novel framework that unifies CAVs into a single, semantically consistent representation. Our method leverages contrastive learning to align concept representations across layers and employs an attention-based fusion mechanism to construct a globally integrated CAV. By doing so, our method significantly reduces the variance in TCAV scores while preserving concept relevance, ensuring more stable and reliable concept attributions. To evaluate the effectiveness of GCAV, we introduce Testing with Global Concept Activation Vectors (TGCAV) as a method to apply TCAV to GCAV-based representations. We conduct extensive experiments on multiple deep neural networks, demonstrating that our method effectively mitigates concept inconsistency across layers, enhances concept localization, and improves robustness against adversarial perturbations. By integrating cross-layer information into a coherent framework, our method offers a more comprehensive and interpretable understanding of how deep learning models encode human-defined concepts. Code and models are available at https://github.com/Zhenghao-He/GCAV.",
+    "authors": [
+      "He, Zhenghao",
+      "Sinha, Sanchit",
+      "Xiong, Guangzhi",
+      "Zhang, Aidong"
+    ],
+    "ai4s_assessment": {
+      "decision": "exclude",
+      "rationale": "通用神经网络可解释性框架，未体现科学研究任务。",
+      "evidence_location": "官方论文页摘要"
+    }
+  },
+  {
+    "title": "RnGCam: High-speed video from rolling & global shutter measurements",
+    "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Tandi_RnGCam_High-speed_video_from_rolling__global_shutter_measurements_ICCV_2025_paper.html",
+    "http_status": 200,
+    "abstract": "Compressive video capture encodes a short high-speed video into a single measurement using a low-speed sensor, then computationally reconstructs the original video. Prior implementations rely on expensive hardware and are restricted to imaging sparse scenes with empty backgrounds. We propose RnGCam, a system that fuses measurements from low-speed consumer-grade rolling-shutter (RS) and global-shutter (GS) sensors into video at kHz frame rates. The RS sensor is combined with a pseudorandom optic, called a diffuser, which spatially multiplexes scene information. The GS sensor is coupled with a conventional lens. The RS-diffuser provides low spatial detail and high temporal detail, complementing the GS-lens system's high spatial detail and low temporal detail. We propose a reconstruction method using implicit neural representations (INR) to fuse the measurements into a high-speed video. Our INR method separately models the static and dynamic scene components, while regularizing dynamics explicitly. In simulation, we show that our approach significantly outperforms previous RS compressive video methods, as well as state-of-the-art frame interpolators. We validate our approach in a dual-camera hardware setup, which generates 230 frames of video at 4,800 frames per second for dense scenes, using hardware that costs 10x less than previous compressive video systems.",
+    "authors": [
+      "Tandi, Kevin",
+      "Dai, Xiang",
+      "Talegaonkar, Chinmay",
+      "Mishne, Gal",
+      "Antipa, Nick"
+    ],
+    "ai4s_assessment": {
+      "decision": "include",
+      "rationale": "隐式神经表示融合双传感器测量，重建4800fps高速成像并以真实光学硬件验证。",
+      "evidence_location": "官方论文页摘要"
+    }
+  },
+  {
+    "title": "Scene Graph Guided Generation: Enable Accurate Relations Generation in Text-to-Image Models via Textural Rectification",
+    "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Shen_Scene_Graph_Guided_Generation_Enable_Accurate_Relations_Generation_in_Text-to-Image_ICCV_2025_paper.html",
+    "http_status": 200,
+    "abstract": "Recent advancements in text-to-image generation have been propelled by the development of diffusion models and multi-modality learning. However, since text is typically represented sequentially in these models, it often falls short in providing accurate contextualization and structural control. So the generated images do not consistently align with human expectations, especially in complex scenarios involving multiple objects and relationships. In this paper, we introduce the Scene Graph Adapter(SG-Adapter), leveraging the structured representation of scene graphs to rectify inaccuracies in the original text embeddings. The SG-Adapter's explicit and non-fully connected graph representation greatly improves the fully connected, transformer-based text representations. This enhancement is particularly notable in maintaining precise correspondence in scenarios involving multiple relationships. To address the challenges posed by low-quality annotated datasets like Visual Genome, we have manually curated a highly clean, multi-relational scene graph-image paired dataset MultiRels. Furthermore, we design three metrics derived from GPT-4V to effectively and thoroughly measure the correspondence between images and scene graphs. Both qualitative and quantitative results validate the efficacy of our approach in controlling the correspondence in multiple relationships.",
+    "authors": [
+      "Shen, Guibao",
+      "Wang, Luozhou",
+      "Lin, Jiantao",
+      "Ge, Wenhang",
+      "Zhang, Chaozhe",
+      "Tao, Xin",
+      "Zhang, Di",
+      "Wan, Pengfei",
+      "Chen, Guangyong",
+      "Li, Yijun",
+      "Chen, Ying-cong"
+    ],
+    "ai4s_assessment": {
+      "decision": "exclude",
+      "rationale": "通用文本图像生成的关系控制，未体现科学研究任务。",
+      "evidence_location": "官方论文页摘要"
+    }
+  }
+]
