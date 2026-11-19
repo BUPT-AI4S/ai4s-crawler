@@ -75,6 +75,27 @@ def main():
         by_key[k] = plain
         candidate.append(plain)
 
+    # Older official directory comparisons were audited before the source
+    # bibliography could be uploaded through GitHub. Complete those two source
+    # catalogues from the exact publisher-verified review records.
+    cvpr_recovered = read(ROOT / 'reviews/2026/audits/wangwanting-2026-cvpr-recovered.json')
+    for evidence in cvpr_recovered:
+        matched = [p for p in review if p['venue'] == 'cvpr' and p.get('url') == evidence['url']]
+        if len(matched) != 1 or matched[0].get('abstract') != evidence['abstract']:
+            raise RuntimeError(f'CVPR catalogue evidence mismatch: {evidence["url"]}')
+        source_backfills['cvpr'].append(
+            {name: copy.deepcopy(value) for name, value in matched[0].items() if name != 'ai4s_review'}
+        )
+    ecai_gap = read(ROOT / 'reviews/2026/audits/wangwanting-2026-ecai-catalogue-diff.json')
+    for evidence in ecai_gap['missing']:
+        doi = '10.24963/ijcai.2026/' + evidence['id'].removeprefix('paper')
+        matched = [p for p in review if p['venue'] == 'ecai' and p.get('id', '').lower() == doi]
+        if len(matched) != 1 or not matched[0].get('abstract'):
+            raise RuntimeError(f'IJCAI-ECAI catalogue evidence mismatch: {doi}')
+        source_backfills['ecai'].append(
+            {name: copy.deepcopy(value) for name, value in matched[0].items() if name != 'ai4s_review'}
+        )
+
     if sum(map(len, markers.values())) != 6:
         raise RuntimeError('Expected six reviewed non-research abstract exceptions')
 
