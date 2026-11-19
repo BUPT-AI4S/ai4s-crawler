@@ -11,6 +11,7 @@ for i,x in enumerate(p):
  if i in recovered:evidence=recovered[i].get('evidence_location',evidence)
  r={'schema_version':2,'batch_id':'longzhaoke-2025-20261119','owner':'龙兆科','snapshot_at':'2026-11-09T10:51:18+08:00',**{k:dec[k] for k in ['decision','rationale']},'verified_metadata':{},'tags':[]}
  if str(i) in d:
+  evidence=dec.get('evidence_location',evidence);urls=dec.get('evidence_urls',urls)
   r['verified_metadata']={'url':x['url'],'evidence_urls':urls}
   if i in proofs:
    r['verified_metadata']['evidence_urls']=proofs[i]['evidence_urls']
