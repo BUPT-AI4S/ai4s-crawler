@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-19T05:31:04.010490+00:00",
-  "commit": "3cd10fbb8cdffcc2d6091b064e4f88629c79edf2",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/3cd10fbb8cdffcc2d6091b064e4f88629c79edf2/",
+  "generated_at": "2026-11-19T05:39:49.061752+00:00",
+  "commit": "9ad8d95a96072b0befa02060013f08d36d5b134f",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/9ad8d95a96072b0befa02060013f08d36d5b134f/",
   "years": [
     {
       "year": 2024,
@@ -26219,18 +26219,18 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-18T21:19:59-08:00",
+            "at": "2026-11-18T21:32:59-08:00",
             "author": "h10",
-            "subject": "Complete Li Xueting 2026 screening across all 51 sources",
+            "subject": "Review Li Xueting 2025 eLight and recover four missed AI4S papers",
             "area": "reviews",
             "paths": [
-              "metadata/2026/ai4s.json",
-              "metadata/isbi/2026/ai4s.json",
-              "metadata/isbi/2026/official-scope-audit-lixueting.json",
-              "metadata/j-31f1ddbac1/2026/catalogue-reconciliation.json"
+              "metadata/2025/ai4s.json",
+              "metadata/j-d0ed63ed81/2025/ai4s.json",
+              "metadata/j-d0ed63ed81/2025/catalogue-reconciliation.json",
+              "metadata/j-d0ed63ed81/2025/official-scope-audit-lixueting.json"
             ]
           },
-          "commits_7d": 118
+          "commits_7d": 119
         },
         {
           "owner": "丁利军",
@@ -26338,16 +26338,18 @@
           "open_issues": 0,
           "status": "complete",
           "last_update": {
-            "at": "2026-11-18T21:25:18-08:00",
+            "at": "2026-11-18T21:31:32-08:00",
             "author": "Blueblue1101",
-            "subject": "Audit 69 official articles and sync two source omissions",
+            "subject": "Audit official CVPR and IJCAI-ECAI catalogs and backfill source files",
             "area": "reviews",
             "paths": [
               "reviews/2026/audits/sync_wangwanting_2026.py",
-              "reviews/2026/audits/wangwanting-2026-npjscilearn-official-catalog-audit.json"
+              "reviews/2026/audits/wangwanting-2026-cvpr-catalogue-diff.json",
+              "reviews/2026/audits/wangwanting-2026-cvpr-official-catalogue.json",
+              "reviews/2026/audits/wangwanting-2026-cvpr-recovered.json"
             ]
           },
-          "commits_7d": 128
+          "commits_7d": 131
         },
         {
           "owner": "王梦冉",
@@ -37951,28 +37953,42 @@
           "papers": 34,
           "papers_missing_abstract": 5,
           "snapshot_candidates": 2,
-          "candidates": 2,
+          "candidates": 6,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 34,
+          "official_scope": "2025正式年度卷5期1全部34条目录，包含19 Research Article、4 Review、10 Editorial和1 Letter；全类型目录与原始34条同口径，不把候选数量作为官网总数。",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
+          "coverage_note": "出版社年度档案仅卷5期1，34 DOI与原始34条逐项一致，无缺失/额外/重复。逐条检查全目录文类及现有题名/原摘要，核7篇官网原摘要，并按需读6篇相关正文段落；补入4篇AI4S初筛漏筛（声学识别、光谱重构综述、结构光综述、金属透镜神经成像）。候选6条5纳入1排除、原摘要齐备。原快照abstract_incomplete属于全目录5条非候选Editorial缺摘要，不要求补全部非候选摘要；原快照不修改。",
+          "evidence_urls": [
+            "https://link.springer.com/journal/43593/volumes-and-issues",
+            "https://link.springer.com/journal/43593/volumes-and-issues/5-1",
+            "https://link.springer.com/article/10.1186/s43593-025-00085-x",
+            "https://link.springer.com/article/10.1186/s43593-025-00087-9",
+            "https://link.springer.com/article/10.1186/s43593-025-00099-5",
+            "https://link.springer.com/article/10.1186/s43593-025-00101-0",
+            "https://link.springer.com/article/10.1186/s43593-025-00102-z",
+            "https://link.springer.com/article/10.1186/s43593-025-00107-8"
+          ],
+          "decisions": {
+            "include": 5,
+            "exclude": 1,
+            "pending": 0,
+            "unreviewed": 0
+          },
           "issues": [
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。",
-            "尚未找到逐篇审核交付。"
+            "采集状态尚未完成：abstract_incomplete"
           ],
           "actions": [
             "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "提交逐篇审核结果或说明当前进度。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2025/zch66883-lixueting.json",
+            "reviews/2025/feedback/zch66883-lixueting.json"
+          ],
           "snapshot_at": "2026-11-09T10:51:18+08:00",
-          "final_included": null,
-          "final_missing_abstract": null,
+          "final_included": 5,
+          "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
           "abstract_recovered": 0,
@@ -46823,28 +46839,6 @@
           "commits_7d": 6
         },
         {
-          "owner": "李雪婷",
-          "sources": 51,
-          "delivered": 0,
-          "official": 0,
-          "pending": 0,
-          "open_issues": 51,
-          "status": "not_started",
-          "last_update": {
-            "at": "2026-11-18T21:19:59-08:00",
-            "author": "h10",
-            "subject": "Complete Li Xueting 2026 screening across all 51 sources",
-            "area": "reviews",
-            "paths": [
-              "metadata/2026/ai4s.json",
-              "metadata/isbi/2026/ai4s.json",
-              "metadata/isbi/2026/official-scope-audit-lixueting.json",
-              "metadata/j-31f1ddbac1/2026/catalogue-reconciliation.json"
-            ]
-          },
-          "commits_7d": 118
-        },
-        {
           "owner": "郝卓迪",
           "sources": 50,
           "delivered": 0,
@@ -46893,16 +46887,18 @@
           "open_issues": 49,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-18T21:25:18-08:00",
+            "at": "2026-11-18T21:31:32-08:00",
             "author": "Blueblue1101",
-            "subject": "Audit 69 official articles and sync two source omissions",
+            "subject": "Audit official CVPR and IJCAI-ECAI catalogs and backfill source files",
             "area": "reviews",
             "paths": [
               "reviews/2026/audits/sync_wangwanting_2026.py",
-              "reviews/2026/audits/wangwanting-2026-npjscilearn-official-catalog-audit.json"
+              "reviews/2026/audits/wangwanting-2026-cvpr-catalogue-diff.json",
+              "reviews/2026/audits/wangwanting-2026-cvpr-official-catalogue.json",
+              "reviews/2026/audits/wangwanting-2026-cvpr-recovered.json"
             ]
           },
-          "commits_7d": 128
+          "commits_7d": 131
         },
         {
           "owner": "龙兆科",
@@ -47007,6 +47003,28 @@
             ]
           },
           "commits_7d": 99
+        },
+        {
+          "owner": "李雪婷",
+          "sources": 51,
+          "delivered": 1,
+          "official": 1,
+          "pending": 0,
+          "open_issues": 51,
+          "status": "in_progress",
+          "last_update": {
+            "at": "2026-11-18T21:32:59-08:00",
+            "author": "h10",
+            "subject": "Review Li Xueting 2025 eLight and recover four missed AI4S papers",
+            "area": "reviews",
+            "paths": [
+              "metadata/2025/ai4s.json",
+              "metadata/j-d0ed63ed81/2025/ai4s.json",
+              "metadata/j-d0ed63ed81/2025/catalogue-reconciliation.json",
+              "metadata/j-d0ed63ed81/2025/official-scope-audit-lixueting.json"
+            ]
+          },
+          "commits_7d": 119
         }
       ],
       "snapshot_file": "metadata/2025/snapshot.json",
@@ -47839,7 +47857,7 @@
           "official_total": 4042,
           "official_scope": "CVF CVPR2026?day=all 主会正式论文目录，按唯一_paper.html论文页计数，不含workshops",
           "reference_check": null,
-          "coverage_note": "候选578篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18浏览器核验CVF全部4042条；按URL对照本地全量，缺14、额外0，补入3篇候选。214篇原候选记录已逐篇核对官网，题名及摘要均一致。",
+          "coverage_note": "候选578篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18浏览器核验CVF全部4042条；按URL对照本地全量，缺14、额外0，补入3篇候选。214篇原候选记录已逐篇核对官网，题名及摘要均一致。 官网14篇缺口已有完整摘要；其中3篇先前纳入，本轮11篇逐篇排除为通用视觉/模型方法。已准备将14篇全部写回CVPR逐源papers.json，不改变候选文件中非AI4S论文。",
           "evidence_urls": [
             "https://openaccess.thecvf.com/CVPR2026?day=all",
             "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_From_Spots_to_Pixels_Dense_Spatial_Gene_Expression_Prediction_from_CVPR_2026_paper.html",
@@ -48124,17 +48142,18 @@
           ],
           "decisions": {
             "include": 280,
-            "exclude": 298,
+            "exclude": 309,
             "pending": 0,
             "unreviewed": 0
           },
           "issues": [
-            "官网4042条与本地快照4028条差14条，已补采14条官方题录和原摘要并存入个人证据文件，尚未合并年度全量源文件。"
+            "官网4042条与本地快照4028条差14条，已补采14条官方题录和原摘要并存入个人证据文件，逐源文件待自动补齐，年度聚合快照仍须重建。"
           ],
           "actions": [
             "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
             "统一年度口径核对官网总量，处理差额。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
+            "核实CVPR官网14篇补入逐源papers.json，并重建年度快照后按4042篇正式主会论文核销差额。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
@@ -48295,9 +48314,9 @@
           "candidates": 184,
           "missing_abstract": 0,
           "official_total": 973,
-          "official_scope": "IJCAI2026正式年度论文集全部分轨，与本地ecai全量一致；按唯一DOI核对",
+          "official_scope": "IJCAI-ECAI 2026联合会议IJCAI官网正式论文集，含其页面列出的全部正式分轨；按唯一论文页计数，不含其他会议或Workshop",
           "reference_check": null,
-          "coverage_note": "候选184篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 183篇原候选均已核对官方正式题录和原摘要；漏采1篇已补入候选。",
+          "coverage_note": "候选184篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 183篇原候选均已核对官方正式题录和原摘要；漏采1篇已补入候选。 官网目录由IJCAI组织发布，为IJCAI-ECAI 2026联合会议；本仓库ecai来源采集的是10.24963/ijcai.2026 DOI，须警惕与另设ijcai来源重复。本轮准备把已纳入MVRNet补入本来源逐源书目，年度聚合快照仍待重建。",
           "evidence_urls": [
             "https://ijcai.org/proceedings/2026/",
             "https://ijcai.org/proceedings/2026/713",
@@ -48506,12 +48525,13 @@
             "unreviewed": 0
           },
           "issues": [
-            "官网973条与本地972条差1条，已取得漏采论文原摘要并补入候选；年度全量源文件尚未合并。"
+            "官网973条与本地972条差1条，已取得漏采论文原摘要并补入候选；逐源文件待自动补齐，年度聚合快照仍须重建。"
           ],
           "actions": [
             "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
             "统一年度口径核对官网总量，处理差额。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
+            "核对ecai与ijcai两个来源对联合会议论文的重复计数，明确各来源范围后重建年度快照。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
@@ -73841,18 +73861,18 @@
           "open_issues": 25,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-18T21:19:59-08:00",
+            "at": "2026-11-18T21:32:59-08:00",
             "author": "h10",
-            "subject": "Complete Li Xueting 2026 screening across all 51 sources",
+            "subject": "Review Li Xueting 2025 eLight and recover four missed AI4S papers",
             "area": "reviews",
             "paths": [
-              "metadata/2026/ai4s.json",
-              "metadata/isbi/2026/ai4s.json",
-              "metadata/isbi/2026/official-scope-audit-lixueting.json",
-              "metadata/j-31f1ddbac1/2026/catalogue-reconciliation.json"
+              "metadata/2025/ai4s.json",
+              "metadata/j-d0ed63ed81/2025/ai4s.json",
+              "metadata/j-d0ed63ed81/2025/catalogue-reconciliation.json",
+              "metadata/j-d0ed63ed81/2025/official-scope-audit-lixueting.json"
             ]
           },
-          "commits_7d": 118
+          "commits_7d": 119
         },
         {
           "owner": "郝卓迪",
@@ -73884,16 +73904,18 @@
           "open_issues": 49,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-18T21:25:18-08:00",
+            "at": "2026-11-18T21:31:32-08:00",
             "author": "Blueblue1101",
-            "subject": "Audit 69 official articles and sync two source omissions",
+            "subject": "Audit official CVPR and IJCAI-ECAI catalogs and backfill source files",
             "area": "reviews",
             "paths": [
               "reviews/2026/audits/sync_wangwanting_2026.py",
-              "reviews/2026/audits/wangwanting-2026-npjscilearn-official-catalog-audit.json"
+              "reviews/2026/audits/wangwanting-2026-cvpr-catalogue-diff.json",
+              "reviews/2026/audits/wangwanting-2026-cvpr-official-catalogue.json",
+              "reviews/2026/audits/wangwanting-2026-cvpr-recovered.json"
             ]
           },
-          "commits_7d": 128
+          "commits_7d": 131
         },
         {
           "owner": "龙兆科",
@@ -74078,53 +74100,6 @@
       "commits_7d": 12
     },
     {
-      "owner": "李雪婷",
-      "years": {
-        "2024": {
-          "sources": 51,
-          "delivered": 39,
-          "official": 51,
-          "pending": 0,
-          "open_issues": 0,
-          "status": "in_progress"
-        },
-        "2025": {
-          "sources": 51,
-          "delivered": 0,
-          "official": 0,
-          "pending": 0,
-          "open_issues": 51,
-          "status": "not_started"
-        },
-        "2026": {
-          "sources": 51,
-          "delivered": 51,
-          "official": 51,
-          "pending": 0,
-          "open_issues": 25,
-          "status": "in_progress"
-        }
-      },
-      "sources": 153,
-      "delivered": 90,
-      "not_started": [
-        "2025"
-      ],
-      "last_update": {
-        "at": "2026-11-18T21:19:59-08:00",
-        "author": "h10",
-        "subject": "Complete Li Xueting 2026 screening across all 51 sources",
-        "area": "reviews",
-        "paths": [
-          "metadata/2026/ai4s.json",
-          "metadata/isbi/2026/ai4s.json",
-          "metadata/isbi/2026/official-scope-audit-lixueting.json",
-          "metadata/j-31f1ddbac1/2026/catalogue-reconciliation.json"
-        ]
-      },
-      "commits_7d": 118
-    },
-    {
       "owner": "龙兆科",
       "years": {
         "2024": {
@@ -74292,16 +74267,18 @@
         "2025"
       ],
       "last_update": {
-        "at": "2026-11-18T21:25:18-08:00",
+        "at": "2026-11-18T21:31:32-08:00",
         "author": "Blueblue1101",
-        "subject": "Audit 69 official articles and sync two source omissions",
+        "subject": "Audit official CVPR and IJCAI-ECAI catalogs and backfill source files",
         "area": "reviews",
         "paths": [
           "reviews/2026/audits/sync_wangwanting_2026.py",
-          "reviews/2026/audits/wangwanting-2026-npjscilearn-official-catalog-audit.json"
+          "reviews/2026/audits/wangwanting-2026-cvpr-catalogue-diff.json",
+          "reviews/2026/audits/wangwanting-2026-cvpr-official-catalogue.json",
+          "reviews/2026/audits/wangwanting-2026-cvpr-recovered.json"
         ]
       },
-      "commits_7d": 128
+      "commits_7d": 131
     },
     {
       "owner": "王梦冉",
@@ -74398,6 +74375,51 @@
       "commits_7d": 7
     },
     {
+      "owner": "李雪婷",
+      "years": {
+        "2024": {
+          "sources": 51,
+          "delivered": 39,
+          "official": 51,
+          "pending": 0,
+          "open_issues": 0,
+          "status": "in_progress"
+        },
+        "2025": {
+          "sources": 51,
+          "delivered": 1,
+          "official": 1,
+          "pending": 0,
+          "open_issues": 51,
+          "status": "in_progress"
+        },
+        "2026": {
+          "sources": 51,
+          "delivered": 51,
+          "official": 51,
+          "pending": 0,
+          "open_issues": 25,
+          "status": "in_progress"
+        }
+      },
+      "sources": 153,
+      "delivered": 91,
+      "not_started": [],
+      "last_update": {
+        "at": "2026-11-18T21:32:59-08:00",
+        "author": "h10",
+        "subject": "Review Li Xueting 2025 eLight and recover four missed AI4S papers",
+        "area": "reviews",
+        "paths": [
+          "metadata/2025/ai4s.json",
+          "metadata/j-d0ed63ed81/2025/ai4s.json",
+          "metadata/j-d0ed63ed81/2025/catalogue-reconciliation.json",
+          "metadata/j-d0ed63ed81/2025/official-scope-audit-lixueting.json"
+        ]
+      },
+      "commits_7d": 119
+    },
+    {
       "owner": "南耀笛",
       "years": {
         "2024": {
@@ -74442,9 +74464,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-19T05:30:35.493119+00:00",
+    "generated_at": "2026-11-19T05:39:13.753007+00:00",
     "history_available": true,
-    "commit": "3cd10fbb8cdffcc2d6091b064e4f88629c79edf2",
-    "commits_scanned": 1229
+    "commit": "9ad8d95a96072b0befa02060013f08d36d5b134f",
+    "commits_scanned": 1235
   }
 }
