@@ -7711,10 +7711,38 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "NeuROK学习物体形变潜空间并结合Lagrange动力学，但摘要未说明物理量验证及应用范围；需区分科学动力学模拟与动画生成。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式论文及正文第4.2、6节以物理模拟形变数据训练神经运动学模型，利用Lagrange动力学生成对象运动，并分析能量一致性；有明确物理系统仿真任务。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/papers/Geng_NeuROK_Generative_4D_Neural_Object_Kinematics_CVPR_2026_paper.pdf"
+        ],
+        "fulltext_evidence": {
+          "index": 96,
+          "id": "Geng_NeuROK_Generative_4D_Neural_Object_Kinematics_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Geng_NeuROK_Generative_4D_Neural_Object_Kinematics_CVPR_2026_paper.pdf",
+          "section": "正文§4.2、§6、物理一致性分析",
+          "finding": "已读取CVF公开PDF；训练含物理模拟形变网格，实验比较物理启发生成及能量一致性。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "物理系统仿真",
+          "label_en": "Physical system simulation",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正文§4.2、§6、物理一致性分析",
+          "rationale": "CVF正式论文及正文第4.2、6节以物理模拟形变数据训练神经运动学模型，利用Lagrange动力学生成对象运动，并分析能量一致性；有明确物理系统仿真任务。"
+        },
+        {
+          "axis": "method",
+          "label": "潜在动力学模型",
+          "label_en": "Latent dynamics model",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正文§4.2、§6、物理一致性分析",
+          "rationale": "CVF正式论文及正文第4.2、6节以物理模拟形变数据训练神经运动学模型，利用Lagrange动力学生成对象运动，并分析能量一致性；有明确物理系统仿真任务。"
+        }
+      ]
     }
   },
   {
@@ -8217,9 +8245,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "ProSoftArena涉及专业科学和工业软件，但摘要未列具体任务；需核对456项任务中科研任务的范围及贡献，避免把一般GUI操作当科研评测。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正式摘要所述贡献为专业软件GUI任务基准、操作层级和代理成功率；未列可复核的科学问题、实验测量或研究结果，按通用软件代理评测排除。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Ai_ProSoftArena_Benchmarking_Hierarchical_Capabilities_of_Multi-modal_Agents_in_Professional_Software_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 102,
+          "id": "Ai_ProSoftArena_Benchmarking_Hierarchical_Capabilities_of_Multi-modal_Agents_in_Professional_Software_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Ai_ProSoftArena_Benchmarking_Hierarchical_Capabilities_of_Multi-modal_Agents_in_Professional_Software_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要列456项专业软件操作、13应用及L2/L3操作成功率，未给具体科学研究成果。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -10443,9 +10484,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "LumiMotion从动态场景估计反照率并重光照，摘要主要报告合成场景视觉质量；需核对物理材料参数验证以区分光学研究与一般图形渲染。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正式摘要评估高斯重光照、反照率图像和LPIPS视觉质量，研究目标是图形场景渲染；未显示实际物质参数测量或科学任务。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Kaleta_LumiMotion_Improving_Gaussian_Relighting_with_Scene_Dynamics_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 130,
+          "id": "Kaleta_LumiMotion_Improving_Gaussian_Relighting_with_Scene_Dynamics_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Kaleta_LumiMotion_Improving_Gaussian_Relighting_with_Scene_Dynamics_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要报告albedo估计与场景relighting视觉指标，未给科学材料参数验证。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -12872,10 +12926,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "CF-IPT融合多源遥感光谱空间信息进行分类，但摘要未列地表类别或科学任务；需查数据集及输出对象确定是否属于地表制图。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式摘要明确用CLIP提示学习融合多源遥感光谱和空间数据进行地球观测影像分类；AI直接执行遥感数据分析。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Ji_CF-IPT_Cross-Modal_Fusion_Interactive_Prompt_Tuning_of_Vision-Language_Pre-Trained_Model_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 159,
+          "id": "Ji_CF-IPT_Cross-Modal_Fusion_Interactive_Prompt_Tuning_of_Vision-Language_Pre-Trained_Model_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Ji_CF-IPT_Cross-Modal_Fusion_Interactive_Prompt_Tuning_of_Vision-Language_Pre-Trained_Model_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要明确多源遥感影像分类、光谱空间融合及评测。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "遥感影像分析",
+          "label_en": "Remote sensing image analysis",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "CVF正式摘要明确用CLIP提示学习融合多源遥感光谱和空间数据进行地球观测影像分类；AI直接执行遥感数据分析。"
+        }
+      ]
     }
   },
   {
@@ -13179,10 +13254,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "摘要仅给出通用高光谱重建与分割，需确认实验对象及科学测量任务，排除仅自然场景视觉处理。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式摘要明确编码孔径高光谱成像的测量反演，与语义分割协同训练，并在真实高光谱重建分割数据上验证；AI用于科学成像解析。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/He_Joint_Spectral_Image_Reconstruction_and_Semantic_Segmentation_with_Cooperative_Unfolding_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 162,
+          "id": "He_Joint_Spectral_Image_Reconstruction_and_Semantic_Segmentation_with_Cooperative_Unfolding_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/He_Joint_Spectral_Image_Reconstruction_and_Semantic_Segmentation_with_Cooperative_Unfolding_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要明确CASSI物理成像、深度展开重建及真实高光谱数据实验。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "高光谱图像重建",
+          "label_en": "Hyperspectral image reconstruction",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "CVF正式摘要明确编码孔径高光谱成像的测量反演，与语义分割协同训练，并在真实高光谱重建分割数据上验证；AI用于科学成像解析。"
+        }
+      ]
     }
   },
   {
@@ -14218,10 +14314,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "恶劣天气LiDAR雷达协同感知，需查车辆或工程场景的实验对象及实际任务，摘要未明确。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式正文实验采用CARLA/OpenCDA模拟V2X-R车路协同感知数据，学习融合LiDAR和4D雷达以提高恶劣天气3D目标检测；属于自动驾驶工程感知。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/papers/Yang_Hybrid_Robust_Collaborative_Perception_with_LiDAR-4D_Radar_Fusion_under_Adverse_CVPR_2026_paper.pdf"
+        ],
+        "fulltext_evidence": {
+          "index": 175,
+          "id": "Yang_Hybrid_Robust_Collaborative_Perception_with_LiDAR-4D_Radar_Fusion_under_Adverse_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Yang_Hybrid_Robust_Collaborative_Perception_with_LiDAR-4D_Radar_Fusion_under_Adverse_CVPR_2026_paper.pdf",
+          "section": "正文实验数据集V2X-R",
+          "finding": "CVF公开PDF说明V2X-R由CARLA及OpenCDA生成，用于恶劣天气车路协同感知。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "自动驾驶感知",
+          "label_en": "Autonomous driving perception",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正文实验数据集V2X-R",
+          "rationale": "CVF正式正文实验采用CARLA/OpenCDA模拟V2X-R车路协同感知数据，学习融合LiDAR和4D雷达以提高恶劣天气3D目标检测；属于自动驾驶工程感知。"
+        }
+      ]
     }
   },
   {
@@ -14510,10 +14627,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "利用生物医学文献图文预训练，但摘要未明确下游生物医学任务及效果，需补查实验。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式摘要明确从生物医学论文多面板图像、标记和说明文本构建细粒度监督，预训练模型识别局部生物医学图像结构；数据与方法直接面向生物医学影像分析。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Yuan_From_Panel_to_Pixel_Zoom-In_Vision-Language_Pretraining_from_Biomedical_Scientific_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 178,
+          "id": "Yuan_From_Panel_to_Pixel_Zoom-In_Vision-Language_Pretraining_from_Biomedical_Scientific_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yuan_From_Panel_to_Pixel_Zoom-In_Vision-Language_Pretraining_from_Biomedical_Scientific_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要明确处理生物医学科学文献图文并以层级图像文本对训练。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "医学图像分析",
+          "label_en": "Medical image analysis",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "CVF正式摘要明确从生物医学论文多面板图像、标记和说明文本构建细粒度监督，预训练模型识别局部生物医学图像结构；数据与方法直接面向生物医学影像分析。"
+        }
+      ]
     }
   },
   {
@@ -15451,10 +15589,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "海洋可见光红外数据集评测配准与目标检测，需确认具体海洋科学或航行工程任务。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式摘要说明可见光与红外海上实测影像、不同天气和海况的配准、融合及海事目标检测基准；AI用于海洋环境中的传感与工程感知。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Yin_MMVIP_A_Visible-infrared_Paired_Dataset_for_Multi-weather_Marine_Vision_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 188,
+          "id": "Yin_MMVIP_A_Visible-infrared_Paired_Dataset_for_Multi-weather_Marine_Vision_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yin_MMVIP_A_Visible-infrared_Paired_Dataset_for_Multi-weather_Marine_Vision_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要列出128100幅海事影像、50段视频和海事目标检测/跨模态配准任务。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于地球宇宙科学",
+          "label_en": "AI for Earth and space sciences",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "CVF正式摘要说明可见光与红外海上实测影像、不同天气和海况的配准、融合及海事目标检测基准；AI用于海洋环境中的传感与工程感知。"
+        }
+      ]
     }
   },
   {
@@ -15816,10 +15975,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "三维几何异常检测未明确四个评测集及工业或科学对象，需核实实验。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正文表1及图4在MVTec3D-AD和Eyecandies工业缺陷数据集验证三维异常定位；CLIP几何提示用于实际工业检测。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/papers/Deng_GS-CLIP_Zero-shot_3D_Anomaly_Detection_by_Geometry-Aware_Prompt_and_Synergistic_CVPR_2026_paper.pdf"
+        ],
+        "fulltext_evidence": {
+          "index": 194,
+          "id": "Deng_GS-CLIP_Zero-shot_3D_Anomaly_Detection_by_Geometry-Aware_Prompt_and_Synergistic_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Deng_GS-CLIP_Zero-shot_3D_Anomaly_Detection_by_Geometry-Aware_Prompt_and_Synergistic_CVPR_2026_paper.pdf",
+          "section": "正文表1、图4",
+          "finding": "CVF公开PDF实验含MVTec3D-AD与Eyecandies工业对象及异常得分图。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "工业缺陷检测",
+          "label_en": "Industrial defect detection",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正文表1、图4",
+          "rationale": "CVF正文表1及图4在MVTec3D-AD和Eyecandies工业缺陷数据集验证三维异常定位；CLIP几何提示用于实际工业检测。"
+        }
+      ]
     }
   },
   {
@@ -17019,9 +17199,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "热红外目标检测未注明具体工程或科学场景与评测对象，需查实验数据。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正式摘要的主要贡献是将通用RGB检测器蒸馏到合成热图像，并报告开放词汇目标检测基准；未给具体科研测量或明确工程系统的研究结果。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Ranasinghe_Thermal-Det_Language-Guided_Cross-Modal_Distillation_for_Open-Vocabulary_Thermal_Object_Detection_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 208,
+          "id": "Ranasinghe_Thermal-Det_Language-Guided_Cross-Modal_Distillation_for_Open-Vocabulary_Thermal_Object_Detection_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Ranasinghe_Thermal-Det_Language-Guided_Cross-Modal_Distillation_for_Open-Vocabulary_Thermal_Object_Detection_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要描述合成GroundingCap-1M热域样本及开放词汇检测，未明确领域科学任务。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -17454,9 +17647,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "多模态数学推理未明确是否包含研究级数学证明或仅教学题，需核对基准范围。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正式摘要及CRUX基准评估数学图片题的多模态链式思维和中间命题生成，属于通用解题能力，未提出数学研究、证明发现或科学计算任务。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Wang_ViRC_Enhancing_Visual_Interleaved_Mathematical_CoT_with_Reason_Chunking_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 215,
+          "id": "Wang_ViRC_Enhancing_Visual_Interleaved_Mathematical_CoT_with_Reason_Chunking_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wang_ViRC_Enhancing_Visual_Interleaved_Mathematical_CoT_with_Reason_Chunking_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要以视觉数学题和推理过程基准衡量模型解题。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -18678,9 +18884,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "视频稳定包含无人机夜间遥感，需确认实际科学或工程评测而非普通画面稳定。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正式摘要主要评估视频画面稳定的视觉质量和实时性；无人机夜间影像只是新增测试域，未验证地球观测测量或具体遥感科学任务。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Liu_No_Labels_No_Look-Ahead_Unsupervised_Online_Video_Stabilization_with_Classical_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 231,
+          "id": "Liu_No_Labels_No_Look-Ahead_Unsupervised_Online_Video_Stabilization_with_Classical_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Liu_No_Labels_No_Look-Ahead_Unsupervised_Online_Video_Stabilization_with_Classical_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要列UAV-Test作为视频稳定基准，报告画面质量与运行效果。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -18806,9 +19025,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "跨视角地理定位含卫星、无人机与街景，需核对导航或地学具体任务是否达到纳入范围。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正式摘要的GeoLoc任务为卫星、街景、无人机图片和文字的跨视角检索匹配；未报告物理定位误差或服务具体地学测量的研究成果。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Song_GeoBridge_A_Semantic-Anchored_Multi-View_Foundation_Model_Bridging_Images_and_Text_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 233,
+          "id": "Song_GeoBridge_A_Semantic-Anchored_Multi-View_Foundation_Model_Bridging_Images_and_Text_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Song_GeoBridge_A_Semantic-Anchored_Multi-View_Foundation_Model_Bridging_Images_and_Text_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要称bidirectional matching及language-to-image retrieval，超过5万组跨视角配对。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -19091,9 +19323,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "通用联邦学习报告真实医学影像数据，但未说明医学任务及结果，需补读实验。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正式摘要提出通用个性化联邦优化算法，在视觉、NLP、医学影像数据集比较模型性能；医学数据为基准之一，未说明具体临床科学任务的贡献。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Guo_Few-for-Many_Personalized_Federated_Learning_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 236,
+          "id": "Guo_Few-for-Many_Personalized_Federated_Learning_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Guo_Few-for-Many_Personalized_Federated_Learning_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要聚焦少模型服务多客户端的通用优化及跨领域基准。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -19829,9 +20074,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "神经ODE预测场景动力学，但未说明物理系统及科学动力学验证，需补查实验。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正文实验以Oscillating Ball、D-NeRF、DyNeRF合成/多视角视频测试时间外推及新视角画质，未核验物理量或科学动力学系统。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/papers/Sarkar_Node-RF_Learning_Generalized_Continuous_Space-Time_Scene_Dynamics_with_Neural_ODE-based_CVPR_2026_paper.pdf"
+        ],
+        "fulltext_evidence": {
+          "index": 245,
+          "id": "Sarkar_Node-RF_Learning_Generalized_Continuous_Space-Time_Scene_Dynamics_with_Neural_ODE-based_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Sarkar_Node-RF_Learning_Generalized_Continuous_Space-Time_Scene_Dynamics_with_Neural_ODE-based_CVPR_2026_paper.pdf",
+          "section": "正文实验数据集与外推结果",
+          "finding": "CVF公开PDF列合成动态场景和多相机拍摄场景，指标针对渲染及视频外推。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -21422,9 +21680,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "惯性与视频姿态对齐用于动作识别和定位，需确认是否有健康或生物力学研究验证。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正式摘要以mRi、TotalCapture、EgoHumans评测IMU与视频姿态的检索、同步和动作识别，未报告生物力学机制、健康状态或闭环工程控制研究。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Nguyen_MoBind_Motion_Binding_for_Fine-Grained_IMU-Video_Pose_Alignment_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 265,
+          "id": "Nguyen_MoBind_Motion_Binding_for_Fine-Grained_IMU-Video_Pose_Alignment_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Nguyen_MoBind_Motion_Binding_for_Fine-Grained_IMU-Video_Pose_Alignment_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要列跨模态检索、同步、局部定位及动作识别四项通用任务。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -21506,10 +21777,38 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "曲线结构分割提及医学、遥感和材料，但未列出实际科学任务及数据集，需补查实验。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正文明确在视网膜血管和遥感道路等真实曲线结构数据上评测SAM适配分割，分别支持医学影像与地表基础设施制图。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhu_Dual-level_Adapter_Boosting_Prompt-free_Curvilinear_Structure_Segmentation_CVPR_2026_paper.pdf"
+        ],
+        "fulltext_evidence": {
+          "index": 266,
+          "id": "Zhu_Dual-level_Adapter_Boosting_Prompt-free_Curvilinear_Structure_Segmentation_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zhu_Dual-level_Adapter_Boosting_Prompt-free_Curvilinear_Structure_Segmentation_CVPR_2026_paper.pdf",
+          "section": "正文实验数据集",
+          "finding": "CVF公开PDF列retinal vessels、remote sensing roads等科学工程对象。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "医学影像分割",
+          "label_en": "Medical image segmentation",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正文实验数据集",
+          "rationale": "CVF正文明确在视网膜血管和遥感道路等真实曲线结构数据上评测SAM适配分割，分别支持医学影像与地表基础设施制图。"
+        },
+        {
+          "axis": "task",
+          "label": "遥感影像分析",
+          "label_en": "Remote sensing image analysis",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正文实验数据集",
+          "rationale": "CVF正文明确在视网膜血管和遥感道路等真实曲线结构数据上评测SAM适配分割，分别支持医学影像与地表基础设施制图。"
+        }
+      ]
     }
   },
   {
@@ -21575,10 +21874,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "卫星影像视觉语言表征未明确下游分类和分割类别，需确认地学对象及任务。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式摘要明确用多光谱卫星影像教师蒸馏RGB地球观测表征，评测卫星图像分类、检索与开放词汇任务；AI直接分析遥感观测数据。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Kha_Spectrally_Distilled_Representations_Aligned_with_Instruction-Augmented_LLMs_for_Satellite_Imagery_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 267,
+          "id": "Kha_Spectrally_Distilled_Representations_Aligned_with_Instruction-Augmented_LLMs_for_Satellite_Imagery_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Kha_Spectrally_Distilled_Representations_Aligned_with_Instruction-Augmented_LLMs_for_Satellite_Imagery_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要列卫星影像光谱蒸馏与分类、检索评测。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "遥感视觉语言表征",
+          "label_en": "Remote-sensing vision-language representation",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "CVF正式摘要明确用多光谱卫星影像教师蒸馏RGB地球观测表征，评测卫星图像分类、检索与开放词汇任务；AI直接分析遥感观测数据。"
+        }
+      ]
     }
   },
   {
@@ -21761,9 +22081,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "高光谱成像采用物理迭代重建，摘要未证实学习型AI参与，需核实方法。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正式摘要描述离焦光学采集与基于物理的快速迭代重建，未提出或使用学习型AI模型；按AI4S的AI实质角色条件排除。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Aydin_Spectrum_from_Defocus_Fast_Spectral_Imaging_with_Chromatic_Focal_Stack_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 269,
+          "id": "Aydin_Spectrum_from_Defocus_Fast_Spectral_Imaging_with_Chromatic_Focal_Stack_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Aydin_Spectrum_from_Defocus_Fast_Spectral_Imaging_with_Chromatic_Focal_Stack_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要明确物理迭代算法、两片现成透镜与灰度传感器，无学习模型。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -23124,10 +23457,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "SAR视觉语言模型的领域基准未列明具体科学类别或任务，需要核查实验。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式摘要提出SAR图像、文本和时序地理特征的三元数据及视觉语言模型，用于全天候合成孔径雷达影像解释；AI直接执行地球观测数据分析。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_FUSAR-GPT_A_Spatiotemporal_Feature-Embedded_and_Two-Stage_Decoupled_Visual_Language_Model_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 285,
+          "id": "Zhang_FUSAR-GPT_A_Spatiotemporal_Feature-Embedded_and_Two-Stage_Decoupled_Visual_Language_Model_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_FUSAR-GPT_A_Spatiotemporal_Feature-Embedded_and_Two-Stage_Decoupled_Visual_Language_Model_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要明确SAR多源时序数据与视觉语言模型的遥感解译。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "遥感影像分析",
+          "label_en": "Remote sensing image analysis",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "CVF正式摘要提出SAR图像、文本和时序地理特征的三元数据及视觉语言模型，用于全天候合成孔径雷达影像解释；AI直接执行地球观测数据分析。"
+        }
+      ]
     }
   },
   {
@@ -23294,10 +23648,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "多模态遥感分割在18数据集评估，但摘要摘录未明确科学目标类别，需核查实验。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式摘要明确对光学与SAR地球观测影像进行提示式像素分割，在18个遥感数据集评测；AI直接解析遥感测量。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Wu_SkySense-VITA_Towards_Universal_In-context_Segmentation_of_Multi-modal_Remote_Sensing_Imagery_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 287,
+          "id": "Wu_SkySense-VITA_Towards_Universal_In-context_Segmentation_of_Multi-modal_Remote_Sensing_Imagery_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wu_SkySense-VITA_Towards_Universal_In-context_Segmentation_of_Multi-modal_Remote_Sensing_Imagery_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网原摘要：光学/SAR协同分割，18项遥感数据集mIoU。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "遥感影像分析",
+          "label_en": "Remote sensing image analysis",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "CVF正式摘要明确对光学与SAR地球观测影像进行提示式像素分割，在18个遥感数据集评测；AI直接解析遥感测量。"
+        }
+      ]
     }
   },
   {
@@ -23775,10 +24150,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "驾驶视线数据用于注意模拟，需核实模型机制及人类注意研究或安全工程评测。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式摘要用30名被试的原始驾驶注视数据建模人类注意力动态，并预测司机视线轨迹；AI用于人类视觉注意机制与交通安全研究。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Palmer_Beyond_Scanpaths_Graph-Based_Gaze_Simulation_in_Dynamic_Scenes_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 293,
+          "id": "Palmer_Beyond_Scanpaths_Graph-Based_Gaze_Simulation_in_Dynamic_Scenes_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Palmer_Beyond_Scanpaths_Graph-Based_Gaze_Simulation_in_Dynamic_Scenes_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网原摘要：Focus100采集30名被试注视，构建图模型预测下一时刻注视分布。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "视觉注视轨迹预测",
+          "label_en": "Visual scanpath prediction",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "CVF正式摘要用30名被试的原始驾驶注视数据建模人类注意力动态，并预测司机视线轨迹；AI用于人类视觉注意机制与交通安全研究。"
+        }
+      ]
     }
   },
   {
@@ -24199,10 +24595,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "一致性模型求解反问题未列明科学测量任务，需核实实验是否超出通用图像修复。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式摘要明确首次在MRI数据训练和应用一致性模型，用于医学磁共振逆问题重建；AI直接改善医学成像测量。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Gulle_PnP-CM_Consistency_Models_as_Plug-and-Play_Priors_for_Inverse_Problems_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 299,
+          "id": "Gulle_PnP-CM_Consistency_Models_as_Plug-and-Play_Priors_for_Inverse_Problems_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Gulle_PnP-CM_Consistency_Models_as_Plug-and-Play_Priors_for_Inverse_Problems_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要明确train and apply CMs to MRI data，4步神经计算重建。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "医学图像分析",
+          "label_en": "Medical image analysis",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "CVF正式摘要明确首次在MRI数据训练和应用一致性模型，用于医学磁共振逆问题重建；AI直接改善医学成像测量。"
+        }
+      ]
     }
   },
   {
@@ -24368,9 +24785,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "光学像差校正基准含学习模型，需核对实际光学测量任务与纯消费摄影复原的边界。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正式摘要的UNICAC基准针对消费摄影镜头的像差和图像复原性能，未研究科学仪器测量或物理参数反演。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Qian_Towards_Universal_Computational_Aberration_Correction_in_Photographic_Cameras_A_Comprehensive_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 301,
+          "id": "Qian_Towards_Universal_Computational_Aberration_Correction_in_Photographic_Cameras_A_Comprehensive_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Qian_Towards_Universal_Computational_Aberration_Correction_in_Photographic_Cameras_A_Comprehensive_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要明确consumer photography及24种图像复原算法的跨镜头对比。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -24423,10 +24853,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "异常定位未说明四个公开基准及对象，需核实工业或医学场景。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式摘要提出图像级监督的异常像素定位与可解释推理，在四项异常检测基准评测；面向工业缺陷/异常定位。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Jin_Reasoning-Driven_Anomaly_Detection_and_Localization_with_Image-Level_Supervision_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 302,
+          "id": "Jin_Reasoning-Driven_Anomaly_Detection_and_Localization_with_Image-Level_Supervision_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Jin_Reasoning-Driven_Anomaly_Detection_and_Localization_with_Image-Level_Supervision_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要列四项异常检测及像素定位基准；具体对象仍可在后续元数据复核。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "工业缺陷检测",
+          "label_en": "Industrial defect detection",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "CVF正式摘要提出图像级监督的异常像素定位与可解释推理，在四项异常检测基准评测；面向工业缺陷/异常定位。"
+        }
+      ]
     }
   },
   {
@@ -25003,9 +25454,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "双曲神经网络包含基因组序列学习实验，但需明确生物任务与数据，不能仅凭通用方法纳入。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正式摘要提出通用双曲神经网络层，基因组序列只是与图像、节点、链路等并列的通用性能试验；未报告独立生物科学研究任务。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Chen_Hyperbolic_Busemann_Neural_Networks_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 310,
+          "id": "Chen_Hyperbolic_Busemann_Neural_Networks_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Chen_Hyperbolic_Busemann_Neural_Networks_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要列网络层效率与多领域基准，基因组仅为演示数据。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -25796,9 +26260,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "三维功能部件分割可能服务机器人，摘要未给出实际操作工程验证，需补查。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正式摘要以三维物体功能部件分割和表征学习基准为目标，未报告机器人执行、物理功能实验或科学测量结果。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Huang_Unlocking_3D_Affordance_Segmentation_with_2D_Semantic_Knowledge_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 320,
+          "id": "Huang_Unlocking_3D_Affordance_Segmentation_with_2D_Semantic_Knowledge_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Huang_Unlocking_3D_Affordance_Segmentation_with_2D_Semantic_Knowledge_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要聚焦通用3D affordance segmentation及跨模态预训练。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -26234,9 +26711,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "可控天气场景生成有自动驾驶动机，但需核对是否验证感知、规划等工程任务。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正式摘要明确评测天气编辑后四维城市场景的视觉保真、可控和时序一致性，未实际测试自动驾驶感知、规划或闭环控制。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Wu_WeatherCity_Urban_Scene_Reconstruction_with_Controllable_Multi-Weather_Transformation_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 325,
+          "id": "Wu_WeatherCity_Urban_Scene_Reconstruction_with_Controllable_Multi-Weather_Transformation_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wu_WeatherCity_Urban_Scene_Reconstruction_with_Controllable_Multi-Weather_Transformation_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要称自动驾驶训练和模拟为动机，结果为天气场景生成质量。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -27196,9 +27686,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "分层图像分类含遥感基准，但具体地学分类对象未说明，需核查实验。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正式摘要提出通用退化图像分层分类与不确定性算法，遥感只是与自然图像并列的基准，未明确地表或环境科学类别的研究贡献。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Chu_HierUQ_Hierarchical_Uncertainty_Quantification_with_Adaptive_Granularity_Reconciliation_for_Degraded_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 336,
+          "id": "Chu_HierUQ_Hierarchical_Uncertainty_Quantification_with_Adaptive_Granularity_Reconciliation_for_Degraded_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Chu_HierUQ_Hierarchical_Uncertainty_Quantification_with_Adaptive_Granularity_Reconciliation_for_Degraded_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要比较退化遥感及自然图像分类基准，主要贡献为通用HUQ/CAPA。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -27718,10 +28221,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "不完整遥感多视图聚类未列出四个数据集及科学类别，需补充地学任务依据。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式摘要研究遥感影像多视图部分缺失条件下的像素聚类，联合超像素纹理和空间连续性；AI直接分析不完整地球观测数据。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_Orthogonal_Spatial-Aware_Multi-View_Anchor_Graph_Clustering_for_Incomplete_Remote_Sensing_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 342,
+          "id": "Zhang_Orthogonal_Spatial-Aware_Multi-View_Anchor_Graph_Clustering_for_Incomplete_Remote_Sensing_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_Orthogonal_Spatial-Aware_Multi-View_Anchor_Graph_Clustering_for_Incomplete_Remote_Sensing_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要明确不完整遥感像素多视图聚类及四项数据集实验。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "遥感影像分析",
+          "label_en": "Remote sensing image analysis",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "CVF正式摘要研究遥感影像多视图部分缺失条件下的像素聚类，联合超像素纹理和空间连续性；AI直接分析不完整地球观测数据。"
+        }
+      ]
     }
   },
   {
@@ -28488,9 +29012,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "扩散模型预测室内物体重排目标，摘要仅给RoomR结果；需确认是否验证机器人动作执行或控制任务，而非仅场景目标生成。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正式摘要将室内物体重排建模为扩散目标生成，在图像/点云基准验证，未给机器人动作执行或科学动力学实验；热力学只是启发类比。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Qi_Rethinking_Visual_Rearrangement_from_A_Diffusion_Perspective_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 351,
+          "id": "Qi_Rethinking_Visual_Rearrangement_from_A_Diffusion_Perspective_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Qi_Rethinking_Visual_Rearrangement_from_A_Diffusion_Perspective_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要描述scene shuffle/unshuffle的扩散式视觉重排。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -31038,9 +31575,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "W2W用语言模型及强化学习预测行人轨迹，需核实与社会行为研究或闭环机器人控制的直接关系，摘要仅报告ETH/UCY与SDD误差。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正式摘要以ETH/UCY及SDD的ADE/FDE衡量通用行人轨迹预测，自动驾驶和社会机器人仅为可能用途，未验证闭环安全系统或社会行为科学结论。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Xu_W2W_Language-Model-Based_Trajectory_Prediction_with_Reinforcement_Learning_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 386,
+          "id": "Xu_W2W_Language-Model-Based_Trajectory_Prediction_with_Reinforcement_Learning_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Xu_W2W_Language-Model-Based_Trajectory_Prediction_with_Reinforcement_Learning_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要列行人轨迹基准、定位误差和off-road惩罚。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -31552,9 +32102,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "ParticleGS以神经ODE外推高斯粒子动力学，但摘要未交代真实物理系统及物理量验证；需核实是否仅渲染运动外推。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正式摘要将粒子神经ODE与3D高斯用于视频运动外推和渲染，结果仍以外推/画质为中心，未提供物理量或真实科学系统验证。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Quan_ParticleGS_Learning_Neural_Gaussian_Particle_Dynamics_from_Videos_for_Prior-free_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 393,
+          "id": "Quan_ParticleGS_Learning_Neural_Gaussian_Particle_Dynamics_from_Videos_for_Prior-free_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Quan_ParticleGS_Learning_Neural_Gaussian_Particle_Dynamics_from_Videos_for_Prior-free_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要报告motion extrapolation及rendering quality，不给物理测量指标。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -31906,9 +32469,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "混合量子经典视点规划提高机器人探索效率，但需核实参数优化是否属于学习型AI及其训练机制；量子优化本身不能单独支撑AI4S。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正式摘要为变分量子线路与哈密顿量参数优化的下一视角规划，无学习型AI训练或推断的实质角色；救援/导航为应用动机。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Yu_HQC-NBV_A_Hybrid_Quantum-Classical_View_Planning_Approach_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 397,
+          "id": "Yu_HQC-NBV_A_Hybrid_Quantum-Classical_View_Planning_Approach_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yu_HQC-NBV_A_Hybrid_Quantum-Classical_View_Planning_Approach_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要描述hybrid quantum-classical优化与量子优势比较。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -33949,10 +34525,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "FB-CLIP提到工业和医学应用，但摘要未说明实际测试数据及具体病灶或工业对象，需核查实验章节后确定纳入。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式摘要明确CLIP异常区域定位用于工业与医学异常检测；零样本背景分离和异常原型直接服务缺陷检测。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Hu_FB-CLIP_Fine-Grained_Zero-Shot_Anomaly_Detection_with_Foreground-Background_Disentanglement_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 421,
+          "id": "Hu_FB-CLIP_Fine-Grained_Zero-Shot_Anomaly_Detection_with_Foreground-Background_Disentanglement_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Hu_FB-CLIP_Fine-Grained_Zero-Shot_Anomaly_Detection_with_Foreground-Background_Disentanglement_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要列工业及医疗异常定位目标与零样本实验；具体基准需继续在线核对。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "工业缺陷检测",
+          "label_en": "Industrial defect detection",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "CVF正式摘要明确CLIP异常区域定位用于工业与医学异常检测；零样本背景分离和异常原型直接服务缺陷检测。"
+        }
+      ]
     }
   },
   {
@@ -34815,10 +35412,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "GROC融合土地利用与地图开展恶劣条件目标计数，但摘要未列计数对象及地球科学用途，需核实类别和任务范围。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式摘要明确在云、雾、阴影条件下融合土地利用和地图信息对地球观测影像目标计数，构建有地理标注的GROC基准；AI直接解析遥感数据。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Wang_See_What_We_Cannot_See_A_Geo-guided_Reasoning_Benchmark_for_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 432,
+          "id": "Wang_See_What_We_Cannot_See_A_Geo-guided_Reasoning_Benchmark_for_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wang_See_What_We_Cannot_See_A_Geo-guided_Reasoning_Benchmark_for_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要：14K影像、120万点注释、土地利用/地图三模态和恶劣条件计数。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "遥感影像分析",
+          "label_en": "Remote sensing image analysis",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "CVF正式摘要明确在云、雾、阴影条件下融合土地利用和地图信息对地球观测影像目标计数，构建有地理标注的GROC基准；AI直接解析遥感数据。"
+        }
+      ]
     }
   },
   {
@@ -35896,10 +36514,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "NeighborMAE学习相邻地球观测图像表示，但摘要未列下游科学对象；需确认预训练评估是否直接支持地表或环境研究。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式摘要用相邻地球观测影像的空间连续性进行掩码预训练，并在遥感下游任务评测；直接面向地球观测表征学习。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Zeng_NeighborMAE_Exploiting_Spatial_Dependencies_between_Neighboring_Earth_Observation_Images_in_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 446,
+          "id": "Zeng_NeighborMAE_Exploiting_Spatial_Dependencies_between_Neighboring_Earth_Observation_Images_in_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zeng_NeighborMAE_Exploiting_Spatial_Dependencies_between_Neighboring_Earth_Observation_Images_in_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要明确相邻EO图像联合重建和遥感下游评测。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "遥感影像分析",
+          "label_en": "Remote sensing image analysis",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "CVF正式摘要用相邻地球观测影像的空间连续性进行掩码预训练，并在遥感下游任务评测；直接面向地球观测表征学习。"
+        }
+      ]
     }
   },
   {
@@ -36232,10 +36871,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "GeoSANE从已有遥感模型权重学习生成新网络；需查GEO-Bench具体任务证据，区分地学研究贡献与一般模型压缩生成。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式摘要从多模态遥感模型权重生成可用于分类、分割、检测的新地理空间网络，并在实际地球观测任务验证；AI直接支持遥感研究。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Hanna_GeoSANE_Learning_Geospatial_Representations_from_Models_Not_Data_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 450,
+          "id": "Hanna_GeoSANE_Learning_Geospatial_Representations_from_Models_Not_Data_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Hanna_GeoSANE_Learning_Geospatial_Representations_from_Models_Not_Data_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要列EO分类、语义分割、检测及多模态评测。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "遥感影像分析",
+          "label_en": "Remote sensing image analysis",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "CVF正式摘要从多模态遥感模型权重生成可用于分类、分割、检测的新地理空间网络，并在实际地球观测任务验证；AI直接支持遥感研究。"
+        }
+      ]
     }
   },
   {
@@ -36303,10 +36963,38 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "双教师预训练针对多光谱地球观测并报告分割变化检测提升，但需查具体地表类别及评测数据以确定科学对象。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式摘要报告多光谱地球观测双教师蒸馏，在语义分割、变化检测和地物分类任务分别提升；AI直接分析地表变化。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Wolf_Brewing_Stronger_Features_Dual-Teacher_Distillation_for_Multispectral_Earth_Observation_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 451,
+          "id": "Wolf_Brewing_Stronger_Features_Dual-Teacher_Distillation_for_Multispectral_Earth_Observation_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wolf_Brewing_Stronger_Features_Dual-Teacher_Distillation_for_Multispectral_Earth_Observation_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要列多光谱EO分割、变化检测、分类三类指标。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "遥感影像分析",
+          "label_en": "Remote sensing image analysis",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "CVF正式摘要报告多光谱地球观测双教师蒸馏，在语义分割、变化检测和地物分类任务分别提升；AI直接分析地表变化。"
+        },
+        {
+          "axis": "task",
+          "label": "地表覆盖变化检测",
+          "label_en": "Land-cover change detection",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "CVF正式摘要报告多光谱地球观测双教师蒸馏，在语义分割、变化检测和地物分类任务分别提升；AI直接分析地表变化。"
+        }
+      ]
     }
   },
   {
@@ -37599,9 +38287,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "FMPose3D在人体及动物三维姿态基准验证，但需查动物任务是否直接服务行为或生物力学研究，避免将普通姿态估计视为科学研究。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正式摘要的Human3.6M、MPI-INF-3DHP及Animal3D是通用三维姿态预测基准，未研究动物行为、生物力学机制或健康指标。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Wang_FMPose3D_monocular_3D_pose_estimation_via_flow_matching_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 465,
+          "id": "Wang_FMPose3D_monocular_3D_pose_estimation_via_flow_matching_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Wang_FMPose3D_monocular_3D_pose_estimation_via_flow_matching_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要关注流匹配三维姿态生成的预测精度，动物数据仅作为基准。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -38540,10 +39241,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "SARMAE在百万SAR影像预训练并报告分类检测分割，但摘要未列科学对象或数据类别，需查下游具体任务。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式摘要建立百万幅SAR与光学配对影像，针对雷达散斑物理性质预训练掩码自编码器，在遥感分类、检测、分割评测；AI直接服务雷达地球观测。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Liu_SARMAE_Masked_Autoencoder_for_SAR_Representation_Learning_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 478,
+          "id": "Liu_SARMAE_Masked_Autoencoder_for_SAR_Representation_Learning_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Liu_SARMAE_Masked_Autoencoder_for_SAR_Representation_Learning_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要明确SAR-1M、散斑噪声感知及遥感下游任务。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "遥感影像分析",
+          "label_en": "Remote sensing image analysis",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "CVF正式摘要建立百万幅SAR与光学配对影像，针对雷达散斑物理性质预训练掩码自编码器，在遥感分类、检测、分割评测；AI直接服务雷达地球观测。"
+        }
+      ]
     }
   },
   {
@@ -38618,10 +39340,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "CrossEarth-Gate面向地球观测语义分割适配，需核查18个跨域任务中的具体地表分类对象。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式摘要以跨域遥感地表语义分割为目标，针对空间、语义和频率偏移自适应微调，在18项地球观测基准评估。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Cao_CrossEarth-Gate_Fisher-Guided_Adaptive_Tuning_Engine_for_Efficient_Adaptation_of_Cross-Domain_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 479,
+          "id": "Cao_CrossEarth-Gate_Fisher-Guided_Adaptive_Tuning_Engine_for_Efficient_Adaptation_of_Cross-Domain_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Cao_CrossEarth-Gate_Fisher-Guided_Adaptive_Tuning_Engine_for_Efficient_Adaptation_of_Cross-Domain_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要列18项遥感语义分割跨域评测。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "遥感影像分析",
+          "label_en": "Remote sensing image analysis",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "CVF正式摘要以跨域遥感地表语义分割为目标，针对空间、语义和频率偏移自适应微调，在18项地球观测基准评估。"
+        }
+      ]
     }
   },
   {
@@ -40001,9 +40744,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "PAUL处理无人机卫星图像GPS错配，需核对真实定位或导航物理指标与任务用途，摘要仅给跨视图检索方法性能。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正式摘要虽以无人机导航动机解释GPS错配，但实验只评估无人机/卫星图像对检索的噪声鲁棒性，未核对导航位置误差、测绘结果或实际控制任务。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Li_PAUL_Uncertainty-Guided_Partition_and_Augmentation_for_Robust_Cross-View_Geo-Localization_under_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 495,
+          "id": "Li_PAUL_Uncertainty-Guided_Partition_and_Augmentation_for_Robust_Cross-View_Geo-Localization_under_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Li_PAUL_Uncertainty-Guided_Partition_and_Augmentation_for_Robust_Cross-View_Geo-Localization_under_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要研究图像对应关系与不同噪声比例下的跨视角检索。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -40174,10 +40930,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "VoDaSuRe对真实体扫描超分辨具有科学成像价值，但摘要未交代成像方式及扫描对象，需核实数据集范围。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式摘要构建真实低/高分辨三维扫描配对数据，揭示医学和科学体积成像模型在真实扫描上的域偏移及细微结构恢复局限；对科学成像评测有直接贡献。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Hoeg_VoDaSuRe_A_Large-Scale_Dataset_Revealing_Domain_Shift_in_Volumetric_Super-Resolution_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 497,
+          "id": "Hoeg_VoDaSuRe_A_Large-Scale_Dataset_Revealing_Domain_Shift_in_Volumetric_Super-Resolution_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Hoeg_VoDaSuRe_A_Large-Scale_Dataset_Revealing_Domain_Shift_in_Volumetric_Super-Resolution_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要列真实扫描配对、体积超分辨及结构恢复偏差。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "医学图像分析",
+          "label_en": "Medical image analysis",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "CVF正式摘要构建真实低/高分辨三维扫描配对数据，揭示医学和科学体积成像模型在真实扫描上的域偏移及细微结构恢复局限；对科学成像评测有直接贡献。"
+        }
+      ]
     }
   },
   {
@@ -41118,10 +41895,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "TMPA对17个遥感分割集适配文本提示，需核对具体地表类别及任务，摘要未直接列出科学研究对象。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式摘要针对遥感地球观测语义分割的文本歧义，利用视觉语言模型及测试时提示适配，在17项遥感数据集评测。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Yang_Test-Time_Multi-Prompt_Adaptation_for_Open-Vocabulary_Remote_Sensing_Image_Segmentation_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 509,
+          "id": "Yang_Test-Time_Multi-Prompt_Adaptation_for_Open-Vocabulary_Remote_Sensing_Image_Segmentation_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yang_Test-Time_Multi-Prompt_Adaptation_for_Open-Vocabulary_Remote_Sensing_Image_Segmentation_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要列遥感开放词汇分割与17项数据集。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "遥感影像分析",
+          "label_en": "Remote sensing image analysis",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "CVF正式摘要针对遥感地球观测语义分割的文本歧义，利用视觉语言模型及测试时提示适配，在17项遥感数据集评测。"
+        }
+      ]
     }
   },
   {
@@ -42598,10 +43396,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "ORSATR-X针对光学遥感低对比目标预训练，但摘要未列具体地学分类或分割对象，需核查实验数据。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CVF正式摘要针对光学遥感中的低对比目标和尺度变化预训练基础模型，评测地球观测场景分类、目标检测及语义分割。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Mo_ORSATR-X_A_Foundation_Model_based_on_Differential-and-Excitation_Networks_for_Optical_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 529,
+          "id": "Mo_ORSATR-X_A_Foundation_Model_based_on_Differential-and-Excitation_Networks_for_Optical_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Mo_ORSATR-X_A_Foundation_Model_based_on_Differential-and-Excitation_Networks_for_Optical_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要列光学遥感三类下游任务。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "遥感影像分析",
+          "label_en": "Remote sensing image analysis",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "CVF正式摘要针对光学遥感中的低对比目标和尺度变化预训练基础模型，评测地球观测场景分类、目标检测及语义分割。"
+        }
+      ]
     }
   },
   {
@@ -43370,9 +44189,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "SciEducator面向科学视频教育与问答，需检查500题的专业科学研究范围，区分科研工具评测与一般科普教学应用。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正式摘要的科学视频多智能体系统面向教学内容制作和500道科学常识问答；未开展科学实验预测、研究数据分析或科研发现。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Xu_SciEducator_Scientific_Video_Understanding_and_Educating_via_Deming-Cycle_Multi-Agent_System_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 540,
+          "id": "Xu_SciEducator_Scientific_Video_Understanding_and_Educating_via_Deming-Cycle_Multi-Agent_System_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Xu_SciEducator_Scientific_Video_Understanding_and_Educating_via_Deming-Cycle_Multi-Agent_System_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要明确scientific video educating及物理化学日常现象教育问答。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -43698,9 +44530,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "CRFT跨模态配准声称可用于医学遥感，但摘要未列实际实验成像类型与科学对象，需核查数据集。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正式摘要只将医学影像、遥感和导航列为跨模态图像配准的潜在应用，未明确任何一个科学/工程任务的实际数据与结果；通用配准方法不足以纳入。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Liu_CRFT_Consistent-Recurrent_Feature_Flow_Transformer_for_Cross-Modal_Image_Registration_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 544,
+          "id": "Liu_CRFT_Consistent-Recurrent_Feature_Flow_Transformer_for_Cross-Modal_Image_Registration_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Liu_CRFT_Consistent-Recurrent_Feature_Flow_Transformer_for_Cross-Modal_Image_Registration_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要用broad applicability表述领域，实验称diverse cross-modal datasets但无科学对象。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -45030,9 +45875,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "锥束CT高斯衰减建模有明确医学任务，但需核实是否包含学习型AI，摘要主要描述连续高斯参数与物理前向优化。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "CVF正式摘要的方法是物理多色X射线前向模型与连续高斯参数的可微优化；未说明训练或使用学习型AI，不能仅凭与神经场比较视为AI4S。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://openaccess.thecvf.com/content/CVPR2026/html/Choi_Splat-Based_Metal_Artifact_Reduction_in_Cone-Beam_CT_via_Compact_Attenuation_CVPR_2026_paper.html"
+        ],
+        "fulltext_evidence": {
+          "index": 562,
+          "id": "Choi_Splat-Based_Metal_Artifact_Reduction_in_Cone-Beam_CT_via_Compact_Attenuation_CVPR_2026_paper",
+          "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Choi_Splat-Based_Metal_Artifact_Reduction_in_Cone-Beam_CT_via_Compact_Attenuation_CVPR_2026_paper.html",
+          "section": "正式论文页原摘要",
+          "finding": "官网摘要明确物理衰减建模与几何材料参数联合优化，未提出学习模型。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -67891,9 +68749,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "综述宿主细胞蛋白质谱监测，但摘要只概括提及AI应用；需查相关章节确定AI实际用途与实质内容。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "出版方综述原摘要主体为宿主细胞蛋白质谱采集与质控，AI仅与软件工具并列概述，未给AI模型的蛋白测量或解析成果；实质AI4S贡献不足。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1016/j.tibtech.2025.07.026"
+        ],
+        "fulltext_evidence": {
+          "index": 761,
+          "id": "10.1016/j.tibtech.2025.07.026",
+          "url": "https://doi.org/10.1016/j.tibtech.2025.07.026",
+          "section": "正式论文页原摘要",
+          "finding": "正式综述摘要仅笼统列举artificial intelligence applications，不具体评述模型结果。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -68047,9 +68918,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "摘要为功能基因组学早期AI生命周期的伦理议论，须核对出版社类型，避免将评论误纳入研究或综述。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "正式摘要讨论功能基因组学实验在AI生命周期早期的伦理问题，属于研究伦理议论，未提出或实质综述AI参与基因组科学任务。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://pubmed.ncbi.nlm.nih.gov/41173722/"
+        ],
+        "fulltext_evidence": {
+          "index": 763,
+          "id": "10.1016/j.tibtech.2025.10.015",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41173722/",
+          "section": "正式论文页原摘要",
+          "finding": "PubMed PMID 41173722的原摘要聚焦伦理问题和下游医疗风险。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -68134,9 +69018,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "多标志物液体活检生物传感综述仅概括提及AI整合，需查AI分析方法和实际检测贡献。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "出版方综述原摘要主体是多分析物液体活检传感器和光学/电化学检测，AI与微流控、化学计量仅列为可整合方向，未给实质AI诊断证据。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://pubmed.ncbi.nlm.nih.gov/41690843/"
+        ],
+        "fulltext_evidence": {
+          "index": 764,
+          "id": "10.1016/j.tibtech.2025.12.026",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41690843/",
+          "section": "正式论文页原摘要",
+          "finding": "PubMed PMID 41690843摘要为biosensors检测方法综述，AI仅一句integration。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -68296,9 +69193,24 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "提出AI引导的耐压芽孢杆菌细胞工厂设计范式，摘要缺实证且疑似评论，需核对正式类型及AI研究内容。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "ScienceDirect正式论文页将此短文列为Forum，提出resilience-by-design构想而非完成原创AI建模或实质综述；按论坛评论类型排除。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0167779926000491"
+        ],
+        "fulltext_evidence": {
+          "index": 766,
+          "id": "10.1016/j.tibtech.2026.02.010",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0167779926000491",
+          "section": "出版方文献类型Forum及摘要",
+          "finding": "ScienceDirect页面显式标注Forum；摘要用We propose a paradigm描述构想。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        },
+        "article_type": "Forum",
+        "checked_at": "2026-11-18"
+      },
       "tags": []
     }
   },
@@ -69232,9 +70144,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "综述菌丝材料结构—性质关系，但AI监控以可能改善规模化表述；需正文核实是否实质综述AI方法与材料研究结果。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "出版方Review正文摘要聚焦菌丝材料结构性能和制备，AI辅助监测仅以may improve的未来可能表述，未实质回顾已验证的AI材料研究。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0167779926002428"
+        ],
+        "fulltext_evidence": {
+          "index": 776,
+          "id": "10.1016/j.tibtech.2026.06.002",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0167779926002428",
+          "section": "出版方Review栏目及摘要",
+          "finding": "ScienceDirect正式页标Review；摘要称AI-assisted monitoring may improve controllability and scale-up。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -69311,9 +70236,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "摘要介绍国际联盟项目的愿景与基础设施；需出版方栏目及正文确认是否项目宣传/评论，而非实质综述。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "出版方摘要介绍π-HuB国际联盟的愿景、标准和基础设施，AI整合仅以could accelerate discovery表述，未报告实际AI蛋白组学研究或实质技术综述。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S016777992600288X"
+        ],
+        "fulltext_evidence": {
+          "index": 777,
+          "id": "10.1016/j.tibtech.2026.07.009",
+          "url": "https://www.sciencedirect.com/science/article/pii/S016777992600288X",
+          "section": "正式论文页原摘要",
+          "finding": "正式摘要为项目愿景及可能促进发现的论述，非已完成AI研究。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -69765,9 +70703,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "综述毛发化妆品生物技术，摘要仅概括整合计算设计与AI；需正文确认具体AI分子/材料研究方法和结果。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "正式综述摘要主体是生物技术毛发护理材料，AI仅与计算设计等并列为平台整合和未来方向，未见具体AI分子/材料研究任务证据。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0167779926003811"
+        ],
+        "fulltext_evidence": {
+          "index": 782,
+          "id": "10.1016/j.tibtech.2026.09.011",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0167779926003811",
+          "section": "正式论文页原摘要",
+          "finding": "ScienceDirect正式摘要将AI列为hair-care方案整合方向。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -70450,9 +71401,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "自动标注动态聚合物文献库可支持材料研究，但摘要未说明标注算法是否为AI模型；需查方法中的标注与信息提取实现。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "Matter正式全文介绍传统PRISMA文献筛选及基于结构属性的自动标签库；将利用AI自然语言检索明确列为future work，当前方法不含可核实学习型AI实质作用。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S2590238525006678"
+        ],
+        "fulltext_evidence": {
+          "index": 789,
+          "id": "10.1016/j.matt.2025.102624",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2590238525006678",
+          "section": "正文Future work及方法概述",
+          "finding": "正式全文称future work could use AI to query DPAL；现行自动标签基于材料设计特征。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -75011,9 +75975,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "气候变化与水电综述将机器学习写为建议；需正文确认是否系统评述现有AI水文/气候建模成果。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "正式综述主要综合气候、水文及水电系统模型，提出应改进数据质量和预测验证；机器学习作为建议，未见具体AI水文模型的实质综述证据。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1364032125010378"
+        ],
+        "fulltext_evidence": {
+          "index": 833,
+          "id": "10.1016/j.rser.2025.116364",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1364032125010378",
+          "section": "正式论文页原摘要",
+          "finding": "ScienceDirect正式摘要与Highlights聚焦气候模型、数据稀疏和水电评估，没有AI实证部分。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -75168,9 +76145,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "海上结构抗撞综述主要为数值/实验与材料设计，AI避碰仅概括提及；需核实正文AI方法的实质工程贡献。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "出版方综述主要评述船舶碰撞有限元/流体仿真、结构响应和材料，AI避碰只作为衍生方向，未显示AI模型对海上设施结构韧性的实际研究贡献。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1364032125011839"
+        ],
+        "fulltext_evidence": {
+          "index": 835,
+          "id": "10.1016/j.rser.2025.116510",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1364032125011839",
+          "section": "正式论文页原摘要",
+          "finding": "ScienceDirect Highlights列FEM/CFD、材料和抗撞设计，摘要仅泛谈AI避碰。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -75333,17 +76323,27 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "已取得原摘要，主体为液压泵失效物理机制，PIML仅在挑战与策略部分提及；需正文核实是否实质评述AI健康管理方法。",
+      "decision": "exclude",
+      "rationale": "出版方原摘要及章节安排表明综述主体为液压泵内部和外部激励的失效物理机制，PIML在结尾挑战与策略中提出，未实质评述已验证AI故障研究。",
       "verified_metadata": {
         "abstract": "Prognostic and health management (PHM) of hydraulic pump systems plays a vital role in reducing component failure, and ensuring the security, reliability as well as the practicality of various industrial applications. Traditional methods rely on physics-based models or data-driven learning for PHM, however, the accuracy and availability of these approaches are always limited by intrinsic challenges such as the physical interpretability of diagnostic results and root causes of failure induction in terms of complex hydraulic systems, which has received little attention. This work attempts to summarize and review recent research with a comprehensive overview of physics-informed failure mechanism (PIFM) for PHM analysis of hydraulic pumps in terms of fault evolution process and failure physical laws. Specifically, we start with a brief structural explanation of several commonly used hydraulic pumps and their working principles, and then the typical failures such as mechanical- and hydraulic failures of pumps, are classified systematically. Furtherly, the pump failure mechanism caused by materials, micro-evolution of the friction interface and macroscopic friction under internal excitation are reviewed. Meanwhile, failure mechanisms affected by external single excitation, external multiple excitation and internal-external hybrid excitation are also summarized and discussed. Eventually, some potential challenges and strategies related to fault evolution, degradation mechanism and physics-informed machine learning (PIML) are presented. This comprehensive survey is expected to pay more attention to enhancing intelligent maintenance strategies, operational reliability and decision-making of hydraulic pumps.",
         "url": "https://www.sciencedirect.com/science/article/abs/pii/S1364032125012833?via%3Dihub",
         "article_type": "Review article",
         "evidence_urls": [
-          "https://www.sciencedirect.com/science/article/abs/pii/S1364032125012833?via%3Dihub"
+          "https://www.sciencedirect.com/science/article/abs/pii/S1364032125012833?via%3Dihub",
+          "https://www.sciencedirect.com/science/article/pii/S1364032125012833"
         ],
         "checked_at": "2026-11-18",
-        "year": 2026
+        "year": 2026,
+        "fulltext_evidence": {
+          "index": 837,
+          "id": "10.1016/j.rser.2025.116610",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1364032125012833",
+          "section": "正式论文页原摘要",
+          "finding": "ScienceDirect正文简介指§3讨论物理失效机制，摘要把PIML置于potential challenges and strategies。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
       },
       "tags": []
     }
@@ -76050,9 +77050,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "综述神经技术与建筑环境并提出AI增强设计框架；需正文核实AI是否实际用于神经—环境数据建模而非未来愿景。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "出版方综述集中脑电/fMRI等神经技术用于绿色建筑人因设计，AI增强框架为作者提出的概念设计，未报告AI建模或应用验证。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1364032126000717"
+        ],
+        "fulltext_evidence": {
+          "index": 844,
+          "id": "10.1016/j.rser.2026.116772",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1364032126000717",
+          "section": "正式论文页原摘要",
+          "finding": "ScienceDirect摘要称propose an AI-augmented collaborative design framework；主要证据是神经环境测量。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -76415,9 +77428,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "综述微藻生物膜黏附与污水处理，机器学习仅列为使能工具；需正文核实具体模型和生物过程研究贡献。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "正式综述归纳微藻生物膜黏附因素和污水处理，机器学习仅与组学、基因工程、理论和监测并列为未来使能工具，未给具体模型及结果。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S136403212600119X"
+        ],
+        "fulltext_evidence": {
+          "index": 848,
+          "id": "10.1016/j.rser.2026.116820",
+          "url": "https://www.sciencedirect.com/science/article/pii/S136403212600119X",
+          "section": "正式论文页原摘要",
+          "finding": "ScienceDirect摘要称review discusses enabling tools including machine learning，主体为黏附机制。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -77529,9 +78555,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "鱼类废弃物生物柴油综述称包含AI控制优化，但摘要未给出具体模型与验证；需核实技术章节中的实质AI贡献。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "出版方综述主体为鱼废弃物生物柴油工艺、生命周期和经济分析，AI控制优化仅作为概述机会，未见具体模型或已完成研究案例。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1016/j.rser.2026.117106"
+        ],
+        "fulltext_evidence": {
+          "index": 860,
+          "id": "10.1016/j.rser.2026.117106",
+          "url": "https://doi.org/10.1016/j.rser.2026.117106",
+          "section": "正式论文页原摘要",
+          "finding": "正式摘要及Highlights关注提取、燃料性质、环境经济分析，未给AI方法结果。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -78464,9 +79503,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "畜牧热应激综述列举AI信息物理系统等新技术，需正文确认AI研究方法和动物生理/生产任务的实质关系。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "系统综述166项畜牧热应激研究主要评述营养、环境和遗传缓解策略，AI信息物理系统被列为有潜力的创新，但未显示已验证AI生理监测任务的系统证据。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1364032126005113"
+        ],
+        "fulltext_evidence": {
+          "index": 869,
+          "id": "10.1016/j.rser.2026.117212",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1364032126005113",
+          "section": "正式论文页原摘要",
+          "finding": "ScienceDirect Highlights称AI-driven monitoring enhances adaptive management；摘要称promise且长期效力未知。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -78541,19 +79593,37 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "已取得原摘要，主体为双相冷却物理和数据驱动设计；需正文确认数据驱动是否AI方法，AI数据中心负载本身不构成AI4S依据。",
+      "decision": "include",
+      "rationale": "出版方综述设有Data-driven and physics-informed approaches for microscale boiling章节，讨论PIML融合界面分辨模拟、实验与物理约束，对双相冷却预测和逆向设计的实质工程贡献。",
       "verified_metadata": {
         "abstract": "The continued growth of artificial intelligence (AI), high-performance computing (HPC), and data-center infrastructures has driven heat fluxes in electronic systems into O(102 W cm−2) regime, with emerging high-flux applications approaching or exceeding O(103) W⋅cm−2, challenging the limits of conventional cooling technologies. Two-phase cooling offers a compelling pathway by exploiting latent heat transport; however, its performance remains constrained by strongly coupled phenomena involving nucleation dynamics, interfacial transport, and critical heat flux (CHF) limits. Despite extensive research, existing studies remain fragmented, often addressing individual mechanisms without establishing a unified framework linking microscale boiling physics to system-level performance. This review provides a critical synthesis of recent advances in engineering two-phase cooling for high-flux electronics, focusing on the physical coupling between surface characteristics, bubble dynamics, and dryout mechanisms. Experimental evidence shows that surface roughness, wettability, and inclination play a dominant role in controlling nucleation onset and bubble departure, while hierarchical and porous structures enhance capillary-driven liquid replenishment and vapor evacuation. However, increasing nucleation site density beyond an optimal range may lead to bubble coalescence, vapor accumulation, and macro-layer formation, which accelerate CHF onset. To address these limitations, emerging physics-informed and data-driven approaches integrate interface-resolved simulations with experimental data, enabling predictive modeling and inverse design under coupled thermofluids constraints. By consolidating these developments, this review identifies key trade-offs between heat transfer enhancement, dryout suppression, and system-level constraints, and proposes a unified design paradigm that treats nucleation, liquid supply, and vapor removal as an integrated transport problem.",
         "url": "https://www.sciencedirect.com/science/article/abs/pii/S1364032126006015?via%3Dihub",
         "article_type": "Review article",
         "evidence_urls": [
-          "https://www.sciencedirect.com/science/article/abs/pii/S1364032126006015?via%3Dihub"
+          "https://www.sciencedirect.com/science/article/abs/pii/S1364032126006015?via%3Dihub",
+          "https://www.sciencedirect.com/science/article/abs/pii/S1364032126006015"
         ],
         "checked_at": "2026-11-18",
-        "year": 2026
+        "year": 2026,
+        "fulltext_evidence": {
+          "index": 870,
+          "id": "10.1016/j.rser.2026.117302",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S1364032126006015",
+          "section": "正文Data-driven and physics-informed approaches for microscale boiling",
+          "finding": "ScienceDirect正式全文索引说明PIML整合仿真、实验和约束用于沸腾/CHF预测及逆设计。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正文Data-driven and physics-informed approaches for microscale boiling",
+          "rationale": "出版方综述设有Data-driven and physics-informed approaches for microscale boiling章节，讨论PIML融合界面分辨模拟、实验与物理约束，对双相冷却预测和逆向设计的实质工程贡献。"
+        }
+      ]
     }
   },
   {
@@ -78636,9 +79706,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "电化学能源综述探索AI催化发现等潜力，需正文确认是实质方法综述还是未来展望。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "正式综述重点是电化学转换技术与可持续能源路线，AI催化发现、反应探索和器件优化被表述为potential/opportunities，未见实质现有模型证据。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S136403212600612X"
+        ],
+        "fulltext_evidence": {
+          "index": 871,
+          "id": "10.1016/j.rser.2026.117313",
+          "url": "https://www.sciencedirect.com/science/article/pii/S136403212600612X",
+          "section": "正式论文页原摘要",
+          "finding": "ScienceDirect摘要称explores the potential of AI，整体为技术路线图。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -78741,9 +79824,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "单神经元连接组、转录组和活动研究明确，但摘要未说明重建或分析是否使用AI；需方法核实模型与任务关系。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "Neuron正式原研究报告小鼠单神经元投射重建、连接组与转录组关联；论文摘要和出版方研究要点未显示学习型AI在重建或生物结论中的实质作用。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0896627325008001"
+        ],
+        "fulltext_evidence": {
+          "index": 872,
+          "id": "10.1016/j.neuron.2025.10.019",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0896627325008001",
+          "section": "正式论文页原摘要",
+          "finding": "正式Highlights列18621个神经元投射、皮层层级及基因表达关联，不提AI方法。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -79015,9 +80111,24 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "Perspective讨论神经元异质性与网络计算理论；需正文确认文献类型及是否实质采用人工神经网络模型解释脑功能。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "Neuron正式类型Perspective，讨论神经异质性及理论框架，没有原创AI实验或成体系技术综述；按观点文献类型排除。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0896627325008967"
+        ],
+        "fulltext_evidence": {
+          "index": 875,
+          "id": "10.1016/j.neuron.2025.11.023",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0896627325008967",
+          "section": "出版方Perspective栏目",
+          "finding": "ScienceDirect明确标Perspective，摘要称In this perspective article。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        },
+        "article_type": "Perspective",
+        "checked_at": "2026-11-18"
+      },
       "tags": []
     }
   },
@@ -79965,9 +81076,24 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "官网确认为10页Perspective，摘要提出图式理论观点；需全文确认是否具实质AI—神经科学综述内容，当前页面正文需订阅。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "Neuron正式类型Perspective，提出图式在抽象层级上的概念性观点，未报告原创AI神经科学实验或实质方法综述；按观点文献类型排除。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0896627326003788"
+        ],
+        "fulltext_evidence": {
+          "index": 886,
+          "id": "10.1016/j.neuron.2026.05.007",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0896627326003788",
+          "section": "出版方Perspective栏目",
+          "finding": "ScienceDirect明确标Perspective，摘要为概念框架。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        },
+        "article_type": "Perspective",
+        "checked_at": "2026-11-18"
+      },
       "tags": []
     }
   },
@@ -80228,10 +81354,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "摘要倡导发展对齐的NeuroAI研究路线；需正式栏目和正文区分观点文章与实质综述。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "PubMed标为Review、Neuron正文为较长综述，系统评述儿童神经发育架构、经验及学习目标与神经AI模型的对齐，直接服务发育认知机制建模。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://pubmed.ncbi.nlm.nih.gov/42480537/"
+        ],
+        "fulltext_evidence": {
+          "index": 889,
+          "id": "10.1016/j.neuron.2026.07.003",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42480537/",
+          "section": "PubMed文献类型Review、综述摘要",
+          "finding": "NLM PMID 42480537列Review；出版方称highlight general principles of cognitive and neural development for NeuroAI。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "神经学习机制建模",
+          "label_en": "Neural learning mechanism modeling",
+          "evidence_location": "正式论文正文或官网链接的作者全文：PubMed文献类型Review、综述摘要",
+          "rationale": "PubMed标为Review、Neuron正文为较长综述，系统评述儿童神经发育架构、经验及学习目标与神经AI模型的对齐，直接服务发育认知机制建模。"
+        }
+      ]
     }
   },
   {
@@ -80635,10 +81782,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "摘要讨论自然与人工智能的共同组成和未解问题；需正式文献类型及正文判断是否实质综述。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "PubMed标为Review且为19页综述，综合脑科学与AI系统的智能组成及机制关系，属于有实质内容的神经AI科学综述。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://pubmed.ncbi.nlm.nih.gov/42759509/"
+        ],
+        "fulltext_evidence": {
+          "index": 894,
+          "id": "10.1016/j.neuron.2026.08.013",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42759509/",
+          "section": "PubMed文献类型Review、综述摘要",
+          "finding": "NLM PMID 42759509列Review，正文页码3569–3587，讨论自然脑与人工系统的机制。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "神经学习机制建模",
+          "label_en": "Neural learning mechanism modeling",
+          "evidence_location": "正式论文正文或官网链接的作者全文：PubMed文献类型Review、综述摘要",
+          "rationale": "PubMed标为Review且为19页综述，综合脑科学与AI系统的智能组成及机制关系，属于有实质内容的神经AI科学综述。"
+        }
+      ]
     }
   },
   {
@@ -80966,9 +82134,24 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "自动心理科学概述涉及实验表征、合成行为、模型和闭环，但摘要不足以核实正式类型与技术综述深度。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "Neuron正式栏目为五页NeuroView，提出自动化心智科学四项挑战的研究愿景，未报告原创闭环实验或实质综述；按观点文献类型排除。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0896627326007221"
+        ],
+        "fulltext_evidence": {
+          "index": 898,
+          "id": "10.1016/j.neuron.2026.09.012",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0896627326007221",
+          "section": "出版方NeuroView栏目及页码3522–3526",
+          "finding": "ScienceDirect正式页明确NeuroView，摘要chart this field around four challenges。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        },
+        "article_type": "NeuroView",
+        "checked_at": "2026-11-18"
+      },
       "tags": []
     }
   },
@@ -83334,10 +84517,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "摘要称综述AI小分子和肽类抗菌药物发现，但较短；需官网确认是实质Review还是评论/观点栏目。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "Science Translational Medicine / PubMed标为Review，具体综述AI在小分子与肽抗生素候选设计、合成可行性筛选及加速实验中的既有进展；直接关联抗菌药物发现。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://pubmed.ncbi.nlm.nih.gov/42873898/"
+        ],
+        "fulltext_evidence": {
+          "index": 920,
+          "id": "10.1126/scitranslmed.aee4629",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42873898/",
+          "section": "PubMed文献类型Review及摘要",
+          "finding": "NLM PMID 42873898列Review，摘要称survey recent advances in AI for small-molecule and peptide antimicrobial drugs。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "药物发现",
+          "label_en": "Drug discovery",
+          "evidence_location": "正式论文正文或官网链接的作者全文：PubMed文献类型Review及摘要",
+          "rationale": "Science Translational Medicine / PubMed标为Review，具体综述AI在小分子与肽抗生素候选设计、合成可行性筛选及加速实验中的既有进展；直接关联抗菌药物发现。"
+        }
+      ]
     }
   },
   {
@@ -83953,10 +85157,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "药物基因组学综述列举变异效应预测和AI辅助解释，但摘要多为未来方向；需正文核实已有AI方法的实质综述。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "Pharmacological Reviews正式综述讨论现有变异效应计算预测、深度突变扫描和生物样本库如何标注药物基因组变异并预测药物反应，AI方法与药理任务直接相关。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://pubmed.ncbi.nlm.nih.gov/41806469/"
+        ],
+        "fulltext_evidence": {
+          "index": 926,
+          "id": "10.1016/j.pharmr.2026.100122",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41806469/",
+          "section": "正式论文页原摘要",
+          "finding": "NLM PMID 41806469摘要列emerging in silico variant-effect predictors及药物处置/毒性建模。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "Pharmacological Reviews正式综述讨论现有变异效应计算预测、深度突变扫描和生物样本库如何标注药物基因组变异并预测药物反应，AI方法与药理任务直接相关。"
+        }
+      ]
     }
   },
   {
@@ -84546,9 +85771,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "HPV结局预测文章以观点和机会为主；需核实文献类型与AI建模内容，避免把展望作为实质综述。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "HPV风险文章的摘要围绕不存在可靠单一生物标志物及未来整合风险建模机会，AI被表述为new opportunities，未见已验证AI预测研究的实质综述。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://pubmed.ncbi.nlm.nih.gov/42859105/"
+        ],
+        "fulltext_evidence": {
+          "index": 933,
+          "id": "10.1016/j.molmed.2026.09.009",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42859105/",
+          "section": "正式论文页原摘要",
+          "finding": "PubMed PMID 42859105摘要称AI provides new opportunities，主体是HPV预测的概念性讨论。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -85428,10 +86666,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "综述多源遥感变化检测方法，但摘要未区分土地/环境变化与通用视觉变化基准；需正文核实具体科学任务。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "Springer正式综述§3–5系统回顾深度学习在遥感影像土地变化检测中的已有方法和高光谱变化案例，直接面向地表变化分析。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://link.springer.com/article/10.1007/s10462-026-11501-0"
+        ],
+        "fulltext_evidence": {
+          "index": 943,
+          "id": "10.1007/s10462-026-11501-0",
+          "url": "https://link.springer.com/article/10.1007/s10462-026-11501-0",
+          "section": "Springer正文§3–5及高光谱变化检测案例",
+          "finding": "正式全文讨论半监督高光谱变化检测及不同遥感地物变化任务。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "地表覆盖变化检测",
+          "label_en": "Land-cover change detection",
+          "evidence_location": "正式论文正文或官网链接的作者全文：Springer正文§3–5及高光谱变化检测案例",
+          "rationale": "Springer正式综述§3–5系统回顾深度学习在遥感影像土地变化检测中的已有方法和高光谱变化案例，直接面向地表变化分析。"
+        }
+      ]
     }
   },
   {
@@ -87387,9 +88646,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "跨领域AI框架综述涉及能源、气候和制造，但摘要强调通用模型分类；需正文确认科学任务、方法与证据的实质覆盖。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "Springer正式综述以跨领域通用AI模型治理和参数分类为核心，健康、能源和气候仅作为应用背景，未对独立科学研究任务作实质技术综述。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://link.springer.com/article/10.1007/s10462-026-11596-5"
+        ],
+        "fulltext_evidence": {
+          "index": 965,
+          "id": "10.1007/s10462-026-11596-5",
+          "url": "https://link.springer.com/article/10.1007/s10462-026-11596-5",
+          "section": "正式论文页原摘要",
+          "finding": "正式论文页称structured reference for organizing AI methodologies across technological domains。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -87713,9 +88985,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "综述Lyapunov和屏障函数安全RL理论，需正文核实实际物理系统控制任务，避免仅通用算法安全理论。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "Springer综述主要系统化Lyapunov及屏障函数下安全强化学习的一般稳定性与约束理论，未将具体物理控制系统作为实质研究对象。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1007/s10462-026-11611-9"
+        ],
+        "fulltext_evidence": {
+          "index": 969,
+          "id": "10.1007/s10462-026-11611-9",
+          "url": "https://doi.org/10.1007/s10462-026-11611-9",
+          "section": "正式论文页原摘要",
+          "finding": "原摘要聚焦安全策略证书、近似误差与分布偏移等通用算法问题。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -87790,9 +89075,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "综述多传感器刀具检测；需正文确认对物理传感/探测工程的贡献，区分纯视觉目标检测与科学工程研究。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "多传感器刀具检测综述针对安防筛查与普通目标检测业务场景，未显示独立科学研究或特定工程系统测量贡献。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1007/s10462-026-11626-2"
+        ],
+        "fulltext_evidence": {
+          "index": 970,
+          "id": "10.1007/s10462-026-11626-2",
+          "url": "https://doi.org/10.1007/s10462-026-11626-2",
+          "section": "正式论文页原摘要",
+          "finding": "正式摘要主题为明持/隐匿刀具检测的传感器综述，属于常规安防应用。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -88543,9 +89841,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "主要为通用生成AI理论及性能改进，虽提医疗案例，需正文核实是否实质医学研究而非演示。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "综述核心为通用生成AI基础框架、技术趋势与跨领域应用，医疗等只是案例，未实质评述特定科学任务。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1007/s10462-026-11643-1"
+        ],
+        "fulltext_evidence": {
+          "index": 978,
+          "id": "10.1007/s10462-026-11643-1",
+          "url": "https://doi.org/10.1007/s10462-026-11643-1",
+          "section": "正式论文页原摘要",
+          "finding": "正式摘要覆盖生成AI通用方法及跨行业实例。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -88720,9 +90031,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "量子智能电网科学计量综述提及量子学习与AI管理，需正文确认相关方法的实质工程覆盖，而非未来方向列举。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "量子智能电网文章以文献计量、机遇与挑战路线图讨论量子优势，量子学习与AI能源管理仅未来方向，缺实质AI电网实验或综述。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1007/s10462-026-11642-2"
+        ],
+        "fulltext_evidence": {
+          "index": 980,
+          "id": "10.1007/s10462-026-11642-2",
+          "url": "https://doi.org/10.1007/s10462-026-11642-2",
+          "section": "正式论文页原摘要",
+          "finding": "正式摘要聚焦bibliometric crosswalk与未来智能电网机遇。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -89524,9 +90848,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "综述通用神经引导树搜索，提及新药设计应用；需正文核实药物设计部分是否具实质方法与证据。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "综述核心为通用神经引导启发式树搜索理论与双向决策，药物设计仅潜在应用，未实质评述AI药物发现案例。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1007/s10462-026-11675-7"
+        ],
+        "fulltext_evidence": {
+          "index": 989,
+          "id": "10.1007/s10462-026-11675-7",
+          "url": "https://doi.org/10.1007/s10462-026-11675-7",
+          "section": "正式论文页原摘要",
+          "finding": "正式摘要描述通用搜索框架与应用展望。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -89743,9 +91080,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "通用智能体安全和架构综述提及自主研究应用；需正文确认有实质AI科研闭环内容。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "综述聚焦通用智能体安全、可信架构与技术分类，自主科研仅列举应用方向，缺科学实验闭环的实质研究证据。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1007/s10462-026-11682-8"
+        ],
+        "fulltext_evidence": {
+          "index": 992,
+          "id": "10.1007/s10462-026-11682-8",
+          "url": "https://doi.org/10.1007/s10462-026-11682-8",
+          "section": "正式论文页原摘要",
+          "finding": "正式摘要以agentic AI安全分类及应用展望为核心。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -91411,9 +92761,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "主要为通用深伪检测综述，提到医学影像造假但未说明具体研究范围；需正文核实医疗或科研图像完整性部分。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "深伪检测综述跨图像、视频等模态评估通用伪造识别，医学影像或科研图像诚信仅作为潜在案例，未构成独立科学研究任务。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1007/s10462-026-11742-z"
+        ],
+        "fulltext_evidence": {
+          "index": 1010,
+          "id": "10.1007/s10462-026-11742-z",
+          "url": "https://doi.org/10.1007/s10462-026-11742-z",
+          "section": "正式论文页原摘要",
+          "finding": "正式摘要主要为跨模态deepfake detection系统综述。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -93985,9 +95348,24 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "摘要提出蛋白相互作用预测局限分类；需核实正式文献类型及对现有AI方法的综述深度。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "Molecular Cell正式栏目为Perspective，文章提出蛋白互作预测局限的概念分类和未来方法需求，未呈现原创AI实验或系统性技术综述；按观点文献类型排除。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1097276526006192"
+        ],
+        "fulltext_evidence": {
+          "index": 1035,
+          "id": "10.1016/j.molcel.2026.08.030",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1097276526006192",
+          "section": "出版方Perspective栏目",
+          "finding": "正式页显式标Perspective，10页，摘要称we propose to organize limitations。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        },
+        "article_type": "Perspective",
+        "checked_at": "2026-11-18"
+      },
       "tags": []
     }
   },
@@ -94259,9 +95637,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "主要提出顺式调控分层机制框架，深度学习可能仅作为动机；需正文核实AI证据对机制综合的实质作用。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "Molecular Cell正式Review主体是顺式调控元件的转录因子结合及辅因子机制，深度学习仅在摘要开头作为序列表达可预测的背景；未实质综述AI方法或结果。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1097276526006593"
+        ],
+        "fulltext_evidence": {
+          "index": 1038,
+          "id": "10.1016/j.molcel.2026.09.016",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1097276526006593",
+          "section": "出版方Review栏目及摘要",
+          "finding": "ScienceDirect正式页标Review，摘要主体为两层调控生物学框架。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -95536,9 +96927,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "谷物废弃物发酵综述提到AI/ML过程优化，但摘要主要为未来整合方向；需正文核实已存在方法的实质评述。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "谷物废弃物发酵综述详细总结菌种、营养释放和工艺，AI/ML优化仅作为emerging developments及could accelerate的未来方向，未见具体已开展AI研究的实质内容。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1016/j.tifs.2025.105464"
+        ],
+        "fulltext_evidence": {
+          "index": 1049,
+          "id": "10.1016/j.tifs.2025.105464",
+          "url": "https://doi.org/10.1016/j.tifs.2025.105464",
+          "section": "正式论文页原摘要",
+          "finding": "正式摘要的AI-based control systems以could accelerate表述。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -96008,19 +97412,37 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "原摘要以宏基因组和微生物工程为主体，AI数字孪生仅概括提及；需正文核实AI模型实际研究贡献。",
+      "decision": "include",
+      "rationale": "正式综述以食物微生物组宏基因组、多组学与AI预测生物过程整合为主题，评述数字孪生和AI控制如何服务发酵、腐败与食品保存任务；属于有实质领域指向的综述。",
       "verified_metadata": {
         "abstract": "Background\nAdvances in metagenomics have revolutionized the understanding of food-associated microbiomes, revealing their taxonomic diversity and functional capacity in fermentation, spoilage, and preservation. Genome-resolved metagenomics and multi-omics integration now enable functional reconstruction of complex microbial ecosystems, uncovering novel metabolic pathways, antimicrobial biosynthetic gene clusters, and stress-adaptive traits. Microbiome engineering and synthetic consortia design are emerging as sustainable biocontrol strategies that minimize reliance on chemical preservatives and promote ecological balance in food systems.\nScope and approach\nThis review synthesizes recent developments in metagenomic exploration and multi-omics integration to map microbial dynamics in food ecosystems. It examines how metagenome-assembled genomes (MAGs), functional annotation, and hybrid long-read sequencing enhance understanding of microbial succession, spoilage mechanisms, and fermentation processes. The review also highlights the rise of synthetic microbial consortia, CRISPR-based modulation, and AI-driven digital twins as transformative tools for precision fermentation and predictive food bioprocessing.\nKey findings and conclusions\nMetagenomic and multi-omics technologies are redefining food biocontrol by linking microbial function to ecosystem performance. Genome mining reveals extensive reservoirs of bacteriocins, endolysins, and quorum-quenching enzymes with potential for natural preservation. Integrative omics provides a systems-level view of microbial interactions, enabling predictive, adaptive, and circular bioprocesses. Microbiome engineering thus emerges as a viable, eco-efficient alternative to synthetic additives, driving the transition from empirical fermentation to intelligent, microbiome-tailored food systems. The convergence of omics, synthetic biology, and AI marks a new era of smart, sustainable, and precision-guided food preservation.",
         "url": "https://www.sciencedirect.com/science/article/abs/pii/S0924224426000385?via%3Dihub",
         "article_type": "Review article",
         "evidence_urls": [
-          "https://www.sciencedirect.com/science/article/abs/pii/S0924224426000385?via%3Dihub"
+          "https://www.sciencedirect.com/science/article/abs/pii/S0924224426000385?via%3Dihub",
+          "https://www.sciencedirect.com/science/article/pii/S0924224426000385"
         ],
         "checked_at": "2026-11-18",
-        "year": 2026
+        "year": 2026,
+        "fulltext_evidence": {
+          "index": 1054,
+          "id": "10.1016/j.tifs.2026.105566",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0924224426000385",
+          "section": "正式论文页原摘要",
+          "finding": "ScienceDirect论文页明确连接genome-resolved metagenomics、AI-driven predictive bioprocessing和digital-twin modeling。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "正式综述以食物微生物组宏基因组、多组学与AI预测生物过程整合为主题，评述数字孪生和AI控制如何服务发酵、腐败与食品保存任务；属于有实质领域指向的综述。"
+        }
+      ]
     }
   },
   {
@@ -96091,17 +97513,27 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "原摘要提及AI辅助自组装肽水凝胶设计与过程分析，但具体论述仍偏路线图；需正文核实AI技术综述深度。",
+      "decision": "exclude",
+      "rationale": "正式综述主体为食品自组装肽水凝胶的结构性能，AI辅助设计被表述为future perspectives和proposed roadmap，未见现有AI水凝胶设计模型或验证的实质综述。",
       "verified_metadata": {
         "abstract": "Background\nSelf-assembling peptide-based hydrogels (SAPHs) are programmable soft-matter platforms for food systems. Sequence-encoded noncovalent interactions generate hydrated 3D networks, mechanical and transport properties of which are tuned by food-grade triggers (pH, ionic strength, temperature, shear). Thus, molecular design is linked to texture, bioactive delivery, and intelligent packaging, while conforming to safety and sustainability goals.\nScope and approach\nBy integrating physicochemical and systems perspectives, this review characterizes SAPH building blocks, describes assembly in food-relevant environments, and relates network structures to texture, delivery, and packaging functions. It also examines translation from model systems to real matrices, emphasizing AI-assisted design and process analytics for formulation, scale-up, and performance prediction.\nKey findings and conclusions\nSAPHs couple mechanical properties (G’, yielding, self-healing) with diffusion and controlled release to improve mouthfeel, stability, and sensing. However, their application is constrained by nonlinear assembly in complex systems, raw material and purification costs, batch-to-batch variability, limited safety assessment, and incomplete datasets that link composition, processing, structure, properties, and function. The proposed roadmap focuses on low-cost byproduct feedstocks, routes that avoid organic solvents and added crosslinkers, quality-by-design strategies, and computation-assisted screening to narrow sequence space and define operating windows. Thus, it facilitates programmable texture, stimulus-responsive delivery, and smart edible packaging.",
         "url": "https://www.sciencedirect.com/science/article/abs/pii/S0924224426000762?via%3Dihub",
         "article_type": "Review article",
         "evidence_urls": [
-          "https://www.sciencedirect.com/science/article/abs/pii/S0924224426000762?via%3Dihub"
+          "https://www.sciencedirect.com/science/article/abs/pii/S0924224426000762?via%3Dihub",
+          "https://www.sciencedirect.com/science/article/pii/S0924224426000762"
         ],
         "checked_at": "2026-11-18",
-        "year": 2026
+        "year": 2026,
+        "fulltext_evidence": {
+          "index": 1055,
+          "id": "10.1016/j.tifs.2026.105604",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0924224426000762",
+          "section": "正式论文页原摘要",
+          "finding": "正式题名和摘要均将AI定位为未来方向及计算筛选路线。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
       },
       "tags": []
     }
@@ -96179,9 +97611,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "原子力显微镜食品综述末尾称AI推动高速分析，需正文确认具体算法和纳米物性/食品研究任务。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "食品原子力显微镜综述主体是纳米力学测量和质构关联，AI在结尾作为高速标准化的趋势性说法，未给具体模型或食品科学预测任务的实证内容。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1016/j.tifs.2026.105630"
+        ],
+        "fulltext_evidence": {
+          "index": 1056,
+          "id": "10.1016/j.tifs.2026.105630",
+          "url": "https://doi.org/10.1016/j.tifs.2026.105630",
+          "section": "正式论文页原摘要",
+          "finding": "正式摘要末句才提AI and automation transforming AFM。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -96267,9 +97712,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "综述抗体发现称AI可促进半抗原工程，但摘要多为技术愿景；需正文核实具体AI方法与案例。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "抗污染物抗体发现综述主要评述杂交瘤、展示库、单B细胞和半抗原实验技术，AI仅作为新兴计算策略与未来机器学习方向，未实质回顾既有AI抗体设计成果。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1016/j.tifs.2026.105673"
+        ],
+        "fulltext_evidence": {
+          "index": 1057,
+          "id": "10.1016/j.tifs.2026.105673",
+          "url": "https://doi.org/10.1016/j.tifs.2026.105673",
+          "section": "正式论文页原摘要",
+          "finding": "正式摘要称future advancements in ML will make antibody discovery more predictive。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -96840,17 +98298,27 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "已补出版社原摘要，但AI策略表述为提出的未来路线；需全文核实是否实质综述既有AI指导抗疲劳肽发现研究。",
+      "decision": "exclude",
+      "rationale": "抗疲劳肽综述主体是功效与AMPK等生物机制，AI-guided策略以emerging strategies are proposed表述，尚无可核实既有模型与验证案例。",
       "verified_metadata": {
         "abstract": "Background\nFatigue is a complex physiological condition characterized by impaired physical function and metabolic imbalance. Food-derived peptides with potential anti-fatigue properties have gained increasing attention due to their high safety profile and targeted bioactivity.\nScope and approach\nThis review systematically summarizes recent advances in the efficacy, evaluation methods, and mechanisms of food-derived anti-fatigue peptides. Furthermore, AI-guided strategy for discovery of anti-fatigue peptides is examined.\nKey findings and conclusions\nThe anti-fatigue peptides from plant and animal food can enhance endurance, boost energy metabolism, and alleviate oxidative stress and inflammatory responses. Their efficacy is evaluated through cell models, in vivo animal models, and computational approaches. Anti-fatigue peptides primarily regulate mitochondrial function and redox homeostasis via AMPK/PGC-1α and Keap1-Nrf2 signaling pathways. Additionally, emerging AI-driven strategies are proposed for peptide discovery, structural optimization, activity assessment, and mechanistic elucidation, thereby advancing the research on food-derived anti-fatigue peptides. Overall, this review provides a theoretical basis for rational design and application of food-derived anti-fatigue peptides.",
         "url": "https://www.sciencedirect.com/science/article/abs/pii/S0924224426002931?via%3Dihub",
         "article_type": "review-article",
         "evidence_urls": [
-          "https://www.sciencedirect.com/science/article/abs/pii/S0924224426002931?via%3Dihub"
+          "https://www.sciencedirect.com/science/article/abs/pii/S0924224426002931?via%3Dihub",
+          "https://www.sciencedirect.com/science/article/pii/S0924224426002931"
         ],
         "checked_at": "2026-11-18",
-        "year": 2026
+        "year": 2026,
+        "fulltext_evidence": {
+          "index": 1063,
+          "id": "10.1016/j.tifs.2026.105821",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0924224426002931",
+          "section": "正式论文页原摘要",
+          "finding": "ScienceDirect正式摘要明确AI策略是proposed for peptide discovery。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
       },
       "tags": []
     }
@@ -98574,10 +100042,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "综述锂金属界面与多尺度模拟，摘要仅将机器学习与其他计算方法并列；需全文核实实质AI内容。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "出版方综述在锂枝晶及SEI界面机制中并列回顾DFT、分子动力学与机器学习，说明ML用于界面反应与离子输运的原子级解析；属于电池材料研究的计算方法综述。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S2405829726000462"
+        ],
+        "fulltext_evidence": {
+          "index": 1081,
+          "id": "10.1016/j.ensm.2026.104913",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2405829726000462",
+          "section": "正式论文页原摘要",
+          "finding": "ScienceDirect摘要列ML与多尺度方法一起provide atomistic insights into interfacial reactions and ion transport。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "出版方综述在锂枝晶及SEI界面机制中并列回顾DFT、分子动力学与机器学习，说明ML用于界面反应与离子输运的原子级解析；属于电池材料研究的计算方法综述。"
+        }
+      ]
     }
   },
   {
@@ -100043,19 +101532,37 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "已补原摘要，AI掺杂筛选与烧结优化表述偏前景；需核实全文是否系统讨论实质AI研究。",
+      "decision": "include",
+      "rationale": "Energy Storage Materials正式综述设有专节Artificial intelligence (AI) and machine learning (ML) for advanced LATP solid electrolytes，讨论掺杂筛选、烧结优化与结构稳定性，直接服务固态电解质材料设计。",
       "verified_metadata": {
         "abstract": "NASICON-type Li1+xAlxTi2-x(PO4)3 (LATP) is a promising solid electrolyte for lithium metal batteries because of its high ionic conductivity, stability in air, and relatively low processing cost. However, its practical use is limited by the reduction of Ti4+ at the lithium interface, which leads to the formation of a mixed-conducting interphase and promotes dendrite growth. In addition, high grain-boundary resistance significantly reduces the overall ionic conductivity. This review outlines key strategies to address these challenges, including doping to improve ionic conductivity and stability, interfacial engineering (protective interlayers, alloy buffers, and artificial SEI layers), and polymer–LATP composites to enhance interfacial contact and mechanical properties. Based on recent research, LATP performs more reliably in hybrid or composite systems than as a standalone electrolyte, where interfacial instability is difficult to control. Furthermore, this study highlights the emerging role of Artificial Intelligence (AI) and Machine Learning (ML) in accelerating dopant selection, optimizing sintering processes, and enhancing structural stability. The practical realization of LATP-based solid-state batteries will depend on the synergistic integration of interfacial engineering, composite electrolyte design, and AI-driven materials optimization, where AI enables faster, cost-effective development of advanced materials.",
         "url": "https://www.sciencedirect.com/science/article/abs/pii/S2405829726002710?via%3Dihub",
         "article_type": "Review article",
         "evidence_urls": [
-          "https://www.sciencedirect.com/science/article/abs/pii/S2405829726002710?via%3Dihub"
+          "https://www.sciencedirect.com/science/article/abs/pii/S2405829726002710?via%3Dihub",
+          "https://www.sciencedirect.com/science/article/pii/S2405829726002710"
         ],
         "checked_at": "2026-11-18",
-        "year": 2026
+        "year": 2026,
+        "fulltext_evidence": {
+          "index": 1095,
+          "id": "10.1016/j.ensm.2026.105138",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2405829726002710",
+          "section": "正文Artificial intelligence (AI) and machine learning (ML) for advanced LATP solid electrolytes",
+          "finding": "出版方正文目录有专门AI/ML章节，并关联LATP掺杂与烧结任务。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正文Artificial intelligence (AI) and machine learning (ML) for advanced LATP solid electrolytes",
+          "rationale": "Energy Storage Materials正式综述设有专节Artificial intelligence (AI) and machine learning (ML) for advanced LATP solid electrolytes，讨论掺杂筛选、烧结优化与结构稳定性，直接服务固态电解质材料设计。"
+        }
+      ]
     }
   },
   {
@@ -103328,10 +104835,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "摘要以认知系统和未来路线论述为主，需核实正文是否实质综述已开展的大模型电池预测研究及正式文献类型。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "Journal of Energy Chemistry正式类型Review、17页，系统梳理迁移学习、物理信息模型、因果推断和数字孪生等十类电池健康预测方法；AI角色与电化学退化研究直接相关。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S2095495625009660"
+        ],
+        "fulltext_evidence": {
+          "index": 1126,
+          "id": "10.1016/j.jechem.2025.11.021",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2095495625009660",
+          "section": "出版方Review栏目及页159–177",
+          "finding": "ScienceDirect正式页标Review，列十类LLM/AI电池健康预测方法。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "电池退化预测",
+          "label_en": "Battery degradation prediction",
+          "evidence_location": "正式论文正文或官网链接的作者全文：出版方Review栏目及页159–177",
+          "rationale": "Journal of Energy Chemistry正式类型Review、17页，系统梳理迁移学习、物理信息模型、因果推断和数字孪生等十类电池健康预测方法；AI角色与电化学退化研究直接相关。"
+        }
+      ]
     }
   },
   {
@@ -104545,10 +106073,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "生物质化学链综述提及机器学习氧载体设计和循环优化，需全文确认是实质应用评述而非未来方向。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "Journal of Energy Chemistry正式综述明确机器学习设计生物质化学链的氧载体并优化氧化还原循环，服务产氢与化学品转化的实质工程问题。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S209549562600358X"
+        ],
+        "fulltext_evidence": {
+          "index": 1138,
+          "id": "10.1016/j.jechem.2026.05.039",
+          "url": "https://www.sciencedirect.com/science/article/pii/S209549562600358X",
+          "section": "正式论文页原摘要",
+          "finding": "出版方摘要列ML氧载体设计及redox cycle优化。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正式论文页原摘要",
+          "rationale": "Journal of Energy Chemistry正式综述明确机器学习设计生物质化学链的氧载体并优化氧化还原循环，服务产氢与化学品转化的实质工程问题。"
+        }
+      ]
     }
   },
   {
@@ -104641,9 +106190,24 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "摘要标为Perspective，讨论混合神经力场和自主电解液发现；需核实正式类型及是否达到实质技术综述标准。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "Journal of Energy Chemistry正式类型Perspective，虽然引用PhyNEO和ByteFF-Pol等混合神经力场，却以未来自主电解液发现数字孪生构想为主；按观点类型排除。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S2095495626003682"
+        ],
+        "fulltext_evidence": {
+          "index": 1139,
+          "id": "10.1016/j.jechem.2026.05.049",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2095495626003682",
+          "section": "出版方Perspective栏目",
+          "finding": "正式页明确标Perspective与Mini review，正文自述we envision。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        },
+        "article_type": "Perspective",
+        "checked_at": "2026-11-18"
+      },
       "tags": []
     }
   },
@@ -105832,19 +107396,37 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "原摘要支持AI钙钛矿器件实质综述，但出版社仅有2026年11月2日在线预发表、尚无正式卷期；年度归属待核实。",
+      "decision": "include",
+      "rationale": "Journal of Energy Chemistry正式Review系统评述AI在钙钛矿太阳能电池与发光二极管的性能、工艺、机理和实验规划；出版方显示2026年11月2日在线，卷期年份尚未确定，年度归属仍需后续对账。",
       "verified_metadata": {
         "abstract": "Artificial intelligence (AI) is reshaping research on perovskite solar cells (PSCs) and perovskite light-emitting diodes (PeLEDs) by uncovering complex nonlinear relationships and navigating high-dimensional materials and device design spaces. Existing reviews, however, have predominantly focused on predictive machine learning (ML), with comparatively limited attention to large language models (LLMs), methodological robustness, and practical strategies for building generalizable AI workflows. Here, we review AI-driven advances from predictive ML to LLM-enabled knowledge extraction and reasoning, encompassing device performance optimization, fabrication optimization, mechanistic understanding, and automated experimentation. We critically examine three persistent challenges: model generalization under scarce and heterogeneous data, the distinction between statistical associations and causal physical mechanisms, and the integration of physical knowledge into data-driven models. We further assess the complementary roles of ML and LLMs: ML remains central to quantitative prediction and optimization, whereas LLMs support literature mining, knowledge synthesis, hypothesis generation, and experimental planning but require knowledge grounding and verification to mitigate hallucinations and physically implausible outputs. Finally, we outline a roadmap based on standardized metadata and community-wide benchmarks, uncertainty-aware and out-of-distribution evaluation, in situ diagnostics, physics-informed learning, and closed-loop experimentation. This framework aims to guide the development of trustworthy and transferable AI for perovskite optoelectronics.",
         "url": "https://www.sciencedirect.com/science/article/abs/pii/S2095495626008661?via%3Dihub",
         "article_type": "Review article",
         "evidence_urls": [
-          "https://www.sciencedirect.com/science/article/abs/pii/S2095495626008661?via%3Dihub"
+          "https://www.sciencedirect.com/science/article/abs/pii/S2095495626008661?via%3Dihub",
+          "https://www.sciencedirect.com/science/article/pii/S2095495626008661"
         ],
         "checked_at": "2026-11-18",
-        "year": null
+        "year": null,
+        "fulltext_evidence": {
+          "index": 1150,
+          "id": "10.1016/j.jechem.2026.10.042",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2095495626008661",
+          "section": "出版方Review栏目；Available online 2 November 2026；In Press",
+          "finding": "正式页标Review、2026-11-02在线且尚无卷期；AI材料综述内容明确，年度卷期归属单独待核。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "正式论文正文或官网链接的作者全文：出版方Review栏目；Available online 2 November 2026；In Press",
+          "rationale": "Journal of Energy Chemistry正式Review系统评述AI在钙钛矿太阳能电池与发光二极管的性能、工艺、机理和实验规划；出版方显示2026年11月2日在线，卷期年份尚未确定，年度归属仍需后续对账。"
+        }
+      ]
     }
   },
   {
@@ -105934,9 +107516,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "空间多组学综述摘要未明确AI整合算法，仅在伦理讨论提及AI；需全文核实计算方法的实质作用。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "空间多组学综述实质讨论测序、质控与肿瘤微环境，AI仅在伦理监管和临床转化部分提及，没有可核实模型或生物分析结果。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1016/j.semcancer.2025.12.009"
+        ],
+        "fulltext_evidence": {
+          "index": 1151,
+          "id": "10.1016/j.semcancer.2025.12.009",
+          "url": "https://doi.org/10.1016/j.semcancer.2025.12.009",
+          "section": "正式论文页原摘要",
+          "finding": "正式摘要只在Ethical and regulatory considerations中出现AI。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -106127,10 +107722,31 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "摘要仅为内镜人机诊断一致性的引言，需补完整原文并确认文献类型和是否存在原创研究结果。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "CGH正式Research Letter及补充方法报告803枚息肉的前瞻队列二次分析，比较内镜医生与CADx诊断一致时的敏感度和准确率；属于有原创结果的AI辅助结直肠镜研究。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1542356525006135/pdfft"
+        ],
+        "fulltext_evidence": {
+          "index": 1153,
+          "id": "10.1016/j.cgh.2025.06.034",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1542356525006135/pdfft",
+          "section": "正文Research Letters；图及Supplementary Methods",
+          "finding": "正式PDF列803枚息肉、CADx一致组75.2%，93.4%敏感度/82.7%准确率，补充方法说明prospective cohort secondary analysis。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "医学图像分析",
+          "label_en": "Medical image analysis",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正文Research Letters；图及Supplementary Methods",
+          "rationale": "CGH正式Research Letter及补充方法报告803枚息肉的前瞻队列二次分析，比较内镜医生与CADx诊断一致时的敏感度和准确率；属于有原创结果的AI辅助结直肠镜研究。"
+        }
+      ]
     }
   },
   {
@@ -107363,9 +108979,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "灵长类神经行为综述提及行为量化新技术，但摘要未明确AI在分析中的实质作用，需查方法内容。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "灵长类神经行为综述主体是自然行为记录和神经信号，人工智能只作为研究结论的远期相关领域，未给AI在行为量化或机制分析中的实质作用。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1016/j.tics.2025.09.002"
+        ],
+        "fulltext_evidence": {
+          "index": 1166,
+          "id": "10.1016/j.tics.2025.09.002",
+          "url": "https://doi.org/10.1016/j.tics.2025.09.002",
+          "section": "正式论文页原摘要",
+          "finding": "正式摘要末句称insights relevant for natural and artificial intelligence。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -107506,9 +109135,24 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "讨论视觉神经网络与生物感知一致性的变化，需核实正式文献类型及是否为实质综述而非观点评论。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "Trends in Cognitive Sciences正式类型Opinion，讨论DNN视觉基准准确率与生物视觉相似性分离的观点，没有原创实验或系统技术综述；按观点文章排除。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1364661325003493"
+        ],
+        "fulltext_evidence": {
+          "index": 1168,
+          "id": "10.1016/j.tics.2025.11.016",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1364661325003493",
+          "section": "出版方Opinion栏目",
+          "finding": "ScienceDirect正式页明确Opinion。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        },
+        "article_type": "Opinion",
+        "checked_at": "2026-11-18"
+      },
       "tags": []
     }
   },
@@ -107580,9 +109224,24 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "提出意动理论驱动脑机接口路线，需核实是否实际综述AI神经解码方法，以及正式文献类型。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "Trends in Cognitive Sciences正式类型Opinion，倡导意动理论指导未来脑机接口，AI解码仅作为可行性背景；按观点文章排除。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1364661325003523"
+        ],
+        "fulltext_evidence": {
+          "index": 1169,
+          "id": "10.1016/j.tics.2025.12.003",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1364661325003523",
+          "section": "出版方Opinion栏目",
+          "finding": "ScienceDirect正式页明确Opinion及概念路线。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        },
+        "article_type": "Opinion",
+        "checked_at": "2026-11-18"
+      },
       "tags": []
     }
   },
@@ -108136,9 +109795,24 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "语言模型辅助认知科学的机会与风险讨论，需确认是否实质回顾已开展研究而非观点展望。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "Trends in Cognitive Sciences正式类型Opinion，罗列语言模型未来辅助认知科学文献整理和理论形式化的可能用途，未报告原创研究或实质综述；按观点文章排除。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1364661326001580"
+        ],
+        "fulltext_evidence": {
+          "index": 1176,
+          "id": "10.1016/j.tics.2026.06.016",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1364661326001580",
+          "section": "出版方Opinion栏目",
+          "finding": "ScienceDirect正式页明确Opinion。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        },
+        "article_type": "Opinion",
+        "checked_at": "2026-11-18"
+      },
       "tags": []
     }
   },
@@ -108207,9 +109881,24 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "通过动物与神经网络发育比较讨论先天后天理论争议，需核实类型及是否报告原创实验或实质研究综述。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "Trends in Cognitive Sciences正式类型Opinion，虽引用动物与神经网络发展比较，却以先天后天争论的概念框架为主；按观点文章排除。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1364661326001853"
+        ],
+        "fulltext_evidence": {
+          "index": 1177,
+          "id": "10.1016/j.tics.2026.08.004",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1364661326001853",
+          "section": "出版方Opinion栏目",
+          "finding": "ScienceDirect正式页明确Opinion，Highlights称概念基础应被修订。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        },
+        "article_type": "Opinion",
+        "checked_at": "2026-11-18"
+      },
       "tags": []
     }
   },
@@ -109064,9 +110753,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "病毒同义突变综述仅在结尾提出AI密码子工程方向，需核实是否有实质既有AI方法综述。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "病毒同义突变综述的生物机制与疫苗密码子工程为主体，AI只在结尾被提出为未来可能启用的方向，未有现有AI研究实质综述。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1016/j.tim.2026.04.010"
+        ],
+        "fulltext_evidence": {
+          "index": 1187,
+          "id": "10.1016/j.tim.2026.04.010",
+          "url": "https://doi.org/10.1016/j.tim.2026.04.010",
+          "section": "正式论文页原摘要",
+          "finding": "正式摘要明确AI approaches may enable future codon engineering。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -109244,9 +110946,24 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "摘要为生物语言模型发现细菌防御系统的简短介绍，需核实是否属于评论或研究摘要类文献。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "Trends in Microbiology正式栏目Forum，简述生物语言模型发现细菌抗病毒系统的研究进展而非原创实验或正式综述；按论坛评论类型排除。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S0966842X26001927"
+        ],
+        "fulltext_evidence": {
+          "index": 1189,
+          "id": "10.1016/j.tim.2026.07.009",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0966842X26001927",
+          "section": "出版方Forum栏目",
+          "finding": "ScienceDirect正式页明确Forum。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        },
+        "article_type": "Forum",
+        "checked_at": "2026-11-18"
+      },
       "tags": []
     }
   },
@@ -109517,9 +111234,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "通用多模态检测方法涉及遥感图像，但未给出具体地球科学或工程任务；需核实实验对象与应用。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "Information Fusion正式摘要的COMO为通用多模态目标检测网络和特征对齐方法，遥感图像仅是检测应用之一，未给具体地学或工程测量任务。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1016/j.inffus.2025.103414"
+        ],
+        "fulltext_evidence": {
+          "index": 1192,
+          "id": "10.1016/j.inffus.2025.103414",
+          "url": "https://doi.org/10.1016/j.inffus.2025.103414",
+          "section": "正式论文页原摘要",
+          "finding": "正式摘要重在Cross-Mamba融合、计算效率和检测指标。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -109706,10 +111436,38 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "遥感季节多模态基础模型摘要未具体列出下游地学任务，需核实实验是否超出通用场景分类。",
-      "verified_metadata": {},
-      "tags": []
+      "decision": "include",
+      "rationale": "Information Fusion正式论文及作者数据说明使用多季节多光谱/SAR数据预训练SeaMo，并在多模态地表覆盖分类和语义分割评测；AI直接服务地球观测。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1566253525004075"
+        ],
+        "fulltext_evidence": {
+          "index": 1194,
+          "id": "10.1016/j.inffus.2025.103334",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1566253525004075",
+          "section": "出版方原摘要及作者数据集说明",
+          "finding": "正式论文提出季节感知遥感模型；作者公开数据列SAR场景和多模态地表覆盖分类/分割。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
+      },
+      "tags": [
+        {
+          "axis": "task",
+          "label": "地表覆盖制图",
+          "label_en": "Land-cover mapping",
+          "evidence_location": "正式论文正文或官网链接的作者全文：出版方原摘要及作者数据集说明",
+          "rationale": "Information Fusion正式论文及作者数据说明使用多季节多光谱/SAR数据预训练SeaMo，并在多模态地表覆盖分类和语义分割评测；AI直接服务地球观测。"
+        },
+        {
+          "axis": "task",
+          "label": "遥感影像分析",
+          "label_en": "Remote sensing image analysis",
+          "evidence_location": "正式论文正文或官网链接的作者全文：出版方原摘要及作者数据集说明",
+          "rationale": "Information Fusion正式论文及作者数据说明使用多季节多光谱/SAR数据预训练SeaMo，并在多模态地表覆盖分类和语义分割评测；AI直接服务地球观测。"
+        }
+      ]
     }
   },
   {
@@ -110229,17 +111987,27 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "视觉异常检测综述摘要仅描述通用模型范式，需核实是否实质覆盖工业缺陷等具体工程研究。",
+      "decision": "exclude",
+      "rationale": "正式综述聚焦视觉异常检测的Transformer与基础模型一般范式，原摘要未实质讨论特定工业缺陷、医学病变等科学工程任务；通用方法综述不足以纳入。",
       "verified_metadata": {
         "abstract": "In line with the development of deep learning, this survey examines the transformative role of Transformers and foundation models in advancing visual anomaly detection (VAD). We explore how these architectures, with their global receptive fields and adaptability, address challenges such as long-range dependency modeling, contextual modeling and data scarcity. The survey categorizes VAD methods into reconstruction-based, feature-based and zero/few-shot approaches, highlighting the paradigm shift brought about by foundation models. By integrating attention mechanisms and leveraging large-scale pre-training, Transformers and foundation models enable more robust, interpretable, and scalable anomaly detection solutions. This work provides a comprehensive review of state-of-the-art techniques, their strengths, limitations, and emerging trends in leveraging these architectures for VAD.",
         "url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525005895?via%3Dihub",
         "article_type": "Research article",
         "evidence_urls": [
-          "https://www.sciencedirect.com/science/article/abs/pii/S1566253525005895?via%3Dihub"
+          "https://www.sciencedirect.com/science/article/abs/pii/S1566253525005895?via%3Dihub",
+          "https://www.sciencedirect.com/science/article/pii/S1566253525005895"
         ],
         "checked_at": "2026-11-18",
-        "year": 2026
+        "year": 2026,
+        "fulltext_evidence": {
+          "index": 1199,
+          "id": "10.1016/j.inffus.2025.103517",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1566253525005895",
+          "section": "正式论文页原摘要",
+          "finding": "ScienceDirect正式摘要和Highlights为通用VAD架构分类与趋势。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
       },
       "tags": []
     }
@@ -112379,19 +114147,37 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "原摘要说明遥感语义分割结构但未列出地物类别与数据任务，需核实实验是否对应土地覆盖等地学目标。",
+      "decision": "include",
+      "rationale": "Information Fusion正式正文在不透水地面、建筑、低植被、树木等地物类别上验证光学及辅助数据的语义分割，直接服务土地覆盖制图。",
       "verified_metadata": {
         "abstract": "Feature fusion is one of the keys to multimodal data segmentation. Different fusion mechanisms vary significantly in how effectively they utilize inter-modal features, exploit complementary information, and enhance representations, while also greatly affecting model parameters and computational complexity. Cross-attention fusion mechanism (CAFM) is the most widely used feature fusion mechanism in the current multimodal fusion classification task, but due to the inherent limitation, it cannot adapt to the differentiated feature requirements of different classes and leads to the blurring of interclass and dispersal features of intraclass. To address these challenges, a novel Category-Selective Feature Aggregation Transformer (CSFAFormer) is proposed to dynamically adjust the interaction weights between modalities along the class dimension, thereby fully leveraging the complementary advantages of different modalities. To accommodate the differentiated needs of different categories, a Category Cross-Calibration Mechanism (C3M) is designed to compress multi-channel features, estimate pixel-level class distributions, and employ a confidence-based cross-calibration strategy to dynamically adjust interaction weights along the class dimension, better accommodating the varying demands of different classes. To further semantic consistency and inter-class separability, a Category-Selective Transformer Module is proposed to leverage the class information calibrated by C3M for adaptive weighted fusion along the class dimension, thereby optimizing the representation of category-specific features. Experimental results indicate that CSFAFormer significantly outperforms in segmentation performance. Compared to the CAFM, CSFAFormer reduces the parameter count by 38.5 % and the computational cost by 72.3 %, while maintaining superior performance. The code is available at: https://github.com/NUAALISILab/CSFAFormer.",
         "url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525008486?via%3Dihub",
         "article_type": "Research article",
         "evidence_urls": [
-          "https://www.sciencedirect.com/science/article/abs/pii/S1566253525008486?via%3Dihub"
+          "https://www.sciencedirect.com/science/article/abs/pii/S1566253525008486?via%3Dihub",
+          "https://www.sciencedirect.com/science/article/pii/S1566253525008486"
         ],
         "checked_at": "2026-11-18",
-        "year": 2026
+        "year": 2026,
+        "fulltext_evidence": {
+          "index": 1220,
+          "id": "10.1016/j.inffus.2025.103786",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1566253525008486",
+          "section": "正文数据集类别与实验",
+          "finding": "ScienceDirect正文列impervious surfaces、buildings、low vegetation、trees等六类像素标签。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "task",
+          "label": "地表覆盖制图",
+          "label_en": "Land-cover mapping",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正文数据集类别与实验",
+          "rationale": "Information Fusion正式正文在不透水地面、建筑、低植被、树木等地物类别上验证光学及辅助数据的语义分割，直接服务土地覆盖制图。"
+        }
+      ]
     }
   },
   {
@@ -115354,17 +117140,27 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "通用边缘先验分割方法含道路和遥感数据，需核实具体工程或地学任务是否构成实质研究贡献。",
+      "decision": "exclude",
+      "rationale": "PIAT是通用视觉Transformer分组注意力方法，实验以Cityscapes、ADE20K、CamVid和一项遥感数据集证明架构性能；遥感只是并列基准，未给独立地学任务贡献。",
       "verified_metadata": {
         "abstract": "Swin Transformer introduced window self-attention (WSA) to improve the performance of Vision Transformer (ViT) in semantic segmentation. However, the attention patch group partition in WSA is solely based on spatial positions, which ignores the spatial frequency relationships. It may limit the ability of attention mechanisms to fully exploit the inductive biases. To address this issue, we propose a novel attention mechanism that integrates traditional computer vision techniques with deep learning approaches, named Prior Information Attention (PIA). PIA redefines the grouping strategy by fusing edge prior information (edge detection results) to re-organize image patches into flexible group windows. It enables the attention computation to query image patches that share similar edge intensities but are spatially distant. Besides, Feature Exchanging Strategy (FES) is further introduced to refine feature boundaries via cross-group fusion. Building upon PIA and FES, we propose a transformer backbone named PIA Transformer (PIAT). To validate the effectiveness of PIAT, we compare it with the state-of-the-art semantic segmentation models on 4 datasets (Cityscapes, ADE20K, DLRSD and CamVid). Experimental results demonstrate that PIAT outperforms the baseline methods in all four datasets.",
         "url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253526001016?via%3Dihub",
         "article_type": "Research article",
         "evidence_urls": [
-          "https://www.sciencedirect.com/science/article/abs/pii/S1566253526001016?via%3Dihub"
+          "https://www.sciencedirect.com/science/article/abs/pii/S1566253526001016?via%3Dihub",
+          "https://doi.org/10.1016/j.inffus.2026.104222"
         ],
         "checked_at": "2026-11-18",
-        "year": 2026
+        "year": 2026,
+        "fulltext_evidence": {
+          "index": 1248,
+          "id": "10.1016/j.inffus.2026.104222",
+          "url": "https://doi.org/10.1016/j.inffus.2026.104222",
+          "section": "正式论文页原摘要",
+          "finding": "正式摘要列四项通用分割数据集，主要贡献为通用注意力窗口和参数效率。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
       },
       "tags": []
     }
@@ -115687,9 +117483,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "通用时序模型仅报告多类标准基准提升，软物理启发不等于领域机理；需核实具体工程或科学研究任务。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "PRISM在Electricity、Traffic、Weather、ILI、Exchange和ETT等通用长时序基准比较预测误差，论文明确物理正则是soft structural regularization而非领域物理定律，未验证独立科学系统。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1016/j.inffus.2026.104325"
+        ],
+        "fulltext_evidence": {
+          "index": 1251,
+          "id": "10.1016/j.inffus.2026.104325",
+          "url": "https://doi.org/10.1016/j.inffus.2026.104325",
+          "section": "正式论文页原摘要",
+          "finding": "正式摘要列六项标准时序基准并明确区分软正则与hard physical law。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -116122,17 +117931,27 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "联邦图异常检测以金融欺诈和入侵为动机，摘要未列实际实验对象；需核实是否仅通用图基准。",
+      "decision": "exclude",
+      "rationale": "联邦图扩散异常检测以金融欺诈和网络入侵等业务安全为目标，在通用FGAD基准评测；无特定科学或工程研究任务。",
       "verified_metadata": {
         "abstract": "Graph anomaly detection is crucial for identifying malicious activities in complex systems, such as financial fraud and network intrusions. When such sensitive data is distributed across multiple institutions with strict privacy constraints, Federated Graph Anomaly Detection (FGAD) becomes essential. However, FGAD is hindered by two fundamental challenges. First, graph partitioning severs cross-client edges, creating incomplete local views and biased representations. Second, existing methods rely heavily on generating pseudo-anomaly labels, a strategy that introduces significant label noise and fails to capture the global data distribution. To address these limitations, we propose FedDCL, a novel framework that pivots from relying on noisy pseudo-labels to implicitly learning the global distribution of normal patterns. At its core, FedDCL employs a Federated Conditional Diffusion Model (FedCDM) to construct a robust, global normality manifold from distributed subgraph embeddings. This approach successfully bypasses pseudo-label noise and aggregates a global view to prevent local overfitting. For inference, we introduce a streamlined Restoration-Consistency scoring mechanism that accurately identifies anomalies based on the incongruity between a node’s diffusion-restored normal representation and its original local context. Extensive experiments on multiple FGAD benchmark datasets demonstrate that FedDCL significantly outperforms state-of-the-art methods. The source code is available at https://github.com/weihus/FedDCL.",
         "url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253526002447?via%3Dihub",
         "article_type": "Research article",
         "evidence_urls": [
-          "https://www.sciencedirect.com/science/article/abs/pii/S1566253526002447?via%3Dihub"
+          "https://www.sciencedirect.com/science/article/abs/pii/S1566253526002447?via%3Dihub",
+          "https://doi.org/10.1016/j.inffus.2026.104365"
         ],
         "checked_at": "2026-11-18",
-        "year": 2026
+        "year": 2026,
+        "fulltext_evidence": {
+          "index": 1255,
+          "id": "10.1016/j.inffus.2026.104365",
+          "url": "https://doi.org/10.1016/j.inffus.2026.104365",
+          "section": "正式论文页原摘要",
+          "finding": "正式摘要聚焦金融/网络节点异常检测及联邦图算法性能。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
       },
       "tags": []
     }
@@ -116528,9 +118347,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "多摄像头检测框架以监控部署为目标，但摘要仅给跨域检测基准；需确认具体工程任务而非通用检测改进。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "HeroCrystal聚焦多摄像头监控目标检测、隐私域适配和跨摄像头mAP，属于常规安防监控应用，未开展独立科学研究或工程测量。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1016/j.inffus.2026.104413"
+        ],
+        "fulltext_evidence": {
+          "index": 1259,
+          "id": "10.1016/j.inffus.2026.104413",
+          "url": "https://doi.org/10.1016/j.inffus.2026.104413",
+          "section": "正式论文页原摘要",
+          "finding": "正式摘要写明practical multi-camera AI surveillance systems及跨域检测mAP。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -116604,19 +118436,37 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "高光谱超分辨率摘要未说明传感对象与科学用途，需核实是否面向地球观测或其他科学测量。",
+      "decision": "include",
+      "rationale": "Information Fusion正式正文在Chikusei和雄安两项遥感高光谱数据集评测空间光谱Transformer超分辨，直接改善地球观测高光谱测量。",
       "verified_metadata": {
         "abstract": "Single hyperspectral image super-resolution aims to reconstruct the high-resolution counterpart of a hyperspectral scene from a single low-resolution input without external guidance. A major challenge lies in jointly modeling long-range spatial dependencies and complex spectral correlations under strict computational constraints. Standard Transformers suffer from quadratic complexity, making them impractical for high-dimensional data. Meanwhile, existing lightweight methods often exhibit limited receptive fields or decouple spatial-spectral modeling. To address these issues, we propose the Efficient Spatial-Spectral Transformer (ETNet). This architecture integrates global context modeling with local feature extraction. At its core is the Unified Spatial-Spectral Module (SSM), which captures global spatial context and inter-band correlations in a single block. We utilize the Spectral Correlation Coefficient (SCC) to guide affinity estimation, incorporating spectral priors into the attention mechanism. By adopting a kernelized formulation, ETNet achieves linear complexity while preserving a global receptive field. Furthermore, a channel attention submodule and a streamlined gated feed-forward network enhance representational efficiency. Extensive experiments demonstrate that ETNet achieves consistent gains over state-of-the-art methods in both quantitative performance and perceptual quality.",
         "url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253526003088?via%3Dihub",
         "article_type": "Research article",
         "evidence_urls": [
-          "https://www.sciencedirect.com/science/article/abs/pii/S1566253526003088?via%3Dihub"
+          "https://www.sciencedirect.com/science/article/abs/pii/S1566253526003088?via%3Dihub",
+          "https://www.sciencedirect.com/science/article/pii/S1566253526003088"
         ],
         "checked_at": "2026-11-18",
-        "year": 2026
+        "year": 2026,
+        "fulltext_evidence": {
+          "index": 1260,
+          "id": "10.1016/j.inffus.2026.104429",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1566253526003088",
+          "section": "正文实验数据集",
+          "finding": "ScienceDirect正文区分Chikusei/XiongAn遥感HSI与CAVE自然场景，ETNet用于高光谱重建。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-include"
+        }
       },
-      "tags": []
+      "tags": [
+        {
+          "axis": "task",
+          "label": "高光谱图像超分辨",
+          "label_en": "Hyperspectral image super-resolution",
+          "evidence_location": "正式论文正文或官网链接的作者全文：正文实验数据集",
+          "rationale": "Information Fusion正式正文在Chikusei和雄安两项遥感高光谱数据集评测空间光谱Transformer超分辨，直接改善地球观测高光谱测量。"
+        }
+      ]
     }
   },
   {
@@ -119694,9 +121544,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "光学生物传感综述提及AI数据解释为新兴方向，需核实全文是否实质覆盖现有AI方法与应用。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "光学生物传感综述实质评述SPR、硅光子与光纤传感器，AI驱动解释仅作为next-generation新兴方向，未给既有AI生物测量模型或验证结果。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1016/j.jare.2025.07.007"
+        ],
+        "fulltext_evidence": {
+          "index": 1289,
+          "id": "10.1016/j.jare.2025.07.007",
+          "url": "https://doi.org/10.1016/j.jare.2025.07.007",
+          "section": "正式论文页原摘要",
+          "finding": "正式摘要称emerging approaches including AI-driven data interpretation are essential for next-generation sensors。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -122295,9 +124158,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "黄酮抗乳腺癌机制综述提及AI数据解释，需核实是否实际评述AI方法而非精准医学展望。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "乳腺癌黄酮/JAK-STAT综述主体为药理和耐药分子机制，AI数据解释仅在精准医学转化愿景中并列提出，未实质报告AI肿瘤研究。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1016/j.jare.2025.10.067"
+        ],
+        "fulltext_evidence": {
+          "index": 1314,
+          "id": "10.1016/j.jare.2025.10.067",
+          "url": "https://doi.org/10.1016/j.jare.2025.10.067",
+          "section": "正式论文页原摘要",
+          "finding": "正式摘要的AI为patient phenotyping/3PM未来集成方案。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -124056,9 +125932,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "类器官癌前病变综述仅Highlights提及AI辅助分析，正文摘要未说明方法，需核实实质AI内容。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "类器官癌前病变综述主体为模型构建、CRISPR及单细胞组学；AI辅助分析只出现在Highlights，正文摘要未给模型方法或结果。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1016/j.jare.2026.02.055"
+        ],
+        "fulltext_evidence": {
+          "index": 1331,
+          "id": "10.1016/j.jare.2026.02.055",
+          "url": "https://doi.org/10.1016/j.jare.2026.02.055",
+          "section": "正式论文页原摘要",
+          "finding": "正式摘要综合organoid与omics，AI仅概括出现在Highlights。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -124550,9 +126439,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "通用遗传特征选择方法含分子数据，但摘要未说明具体分子科学目标，需核实实验任务。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "HeFS为跨18项通用数据集的特征选择遗传算法，分子数据仅检验选出特征的相关性，未预测分子属性或回答材料/生物科学问题。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1016/j.jare.2026.04.008"
+        ],
+        "fulltext_evidence": {
+          "index": 1336,
+          "id": "10.1016/j.jare.2026.04.008",
+          "url": "https://doi.org/10.1016/j.jare.2026.04.008",
+          "section": "正式论文页原摘要",
+          "finding": "正式结果强调Spambase最大提升及通用分类准确率；分子集仅算Pearson相关。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -126235,9 +128137,22 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "植物弱光响应综述提出AI多尺度数字孪生框架，需核实是否包含实质既有AI研究而非展望。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "植物低光响应综述提出未来高通量表型、AI多尺度数字孪生框架，摘要以proposes an integrated systems-biology approach表述，尚无实际AI模型与植物实验的实质综述。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://doi.org/10.1016/j.jare.2026.07.020"
+        ],
+        "fulltext_evidence": {
+          "index": 1352,
+          "id": "10.1016/j.jare.2026.07.020",
+          "url": "https://doi.org/10.1016/j.jare.2026.07.020",
+          "section": "正式论文页原摘要",
+          "finding": "正式摘要将AI4S框架及physics-informed learning作为forward-looking paradigm。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        }
+      },
       "tags": []
     }
   },
@@ -128682,9 +130597,24 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "单细胞批次校正综述摘要未明确实质AI方法，需核实具体算法内容和正式类型。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "Nature Computational Science正式类型Perspective，概述单细胞批次校正并展望未来可解释基因/细胞表征；按观点类型排除。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.nature.com/articles/s43588-025-00943-1"
+        ],
+        "fulltext_evidence": {
+          "index": 1374,
+          "id": "10.1038/s43588-025-00943-1",
+          "url": "https://www.nature.com/articles/s43588-025-00943-1",
+          "section": "出版方Perspective栏目",
+          "finding": "Nature正式页明确Perspective，摘要称we envision future frameworks。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        },
+        "article_type": "Perspective",
+        "checked_at": "2026-11-18"
+      },
       "tags": []
     }
   },
@@ -129172,9 +131102,24 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "低中收入国家生成式AI应用经验文章，需确认文献类型及是否报告或实质综述独立社会科学任务。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "Nature Computational Science正式类型Perspective，以低中收入国家研究者经验讨论生成式AI社会经济机会与治理障碍，未报告独立实证研究或技术综述；按观点文章排除。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.nature.com/articles/s43588-026-00960-8"
+        ],
+        "fulltext_evidence": {
+          "index": 1378,
+          "id": "10.1038/s43588-026-00960-8",
+          "url": "https://www.nature.com/articles/s43588-026-00960-8",
+          "section": "出版方Perspective栏目",
+          "finding": "Nature正式页明确Perspective。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        },
+        "article_type": "Perspective",
+        "checked_at": "2026-11-18"
+      },
       "tags": []
     }
   },
@@ -135917,9 +137862,24 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "大规模实验方法Perspective涉及生成式AI，但需核实是否实质综述AI辅助社会科学实验方法。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "Nature Human Behaviour正式类型Perspective，提出大规模社会实验的六类挑战，生成式AI仅是其中一类讨论；按观点类型排除。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41562-026-02582-6"
+        ],
+        "fulltext_evidence": {
+          "index": 1436,
+          "id": "10.1038/s41562-026-02582-6",
+          "url": "https://www.nature.com/articles/s41562-026-02582-6",
+          "section": "出版方Perspective栏目",
+          "finding": "Nature正式页明确Perspective，摘要为未来方法挑战与建议。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        },
+        "article_type": "Perspective",
+        "checked_at": "2026-11-18"
+      },
       "tags": []
     }
   },
@@ -233228,9 +235188,24 @@
       "batch_id": "wangwanting-2026-20261118",
       "owner": "王婉婷",
       "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-      "decision": "pending",
-      "rationale": "组合性Perspective提出神经网络与脑机制框架，需核实是否属于实质科学方法综述。",
-      "verified_metadata": {},
+      "decision": "exclude",
+      "rationale": "Nature Neuroscience正式类型Perspective，提出组合性连续统的概念框架，未来再比较脑与网络模型；未报告原创实验或正式技术综述，按观点类型排除。",
+      "verified_metadata": {
+        "evidence_urls": [
+          "https://www.nature.com/articles/s41593-026-02382-1"
+        ],
+        "fulltext_evidence": {
+          "index": 2235,
+          "id": "10.1038/s41593-026-02382-1",
+          "url": "https://www.nature.com/articles/s41593-026-02382-1",
+          "section": "出版方Perspective栏目",
+          "finding": "Nature正式页明确Perspective，摘要为we propose a continuum。",
+          "checked_at": "2026-11-18",
+          "status": "resolved-exclude"
+        },
+        "article_type": "Perspective",
+        "checked_at": "2026-11-18"
+      },
       "tags": []
     }
   },
