@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-19T05:23:15.604521+00:00",
-  "commit": "bd02b9a9deb2fcf927406d65b0ddc37862c170bd",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/bd02b9a9deb2fcf927406d65b0ddc37862c170bd/",
+  "generated_at": "2026-11-19T05:27:55.427064+00:00",
+  "commit": "9821ea39b352ab0fa640e990dd7f7d7be9224c8e",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/9821ea39b352ab0fa640e990dd7f7d7be9224c8e/",
   "years": [
     {
       "year": 2024,
@@ -26338,15 +26338,16 @@
           "open_issues": 0,
           "status": "complete",
           "last_update": {
-            "at": "2026-11-18T21:15:11-08:00",
+            "at": "2026-11-18T21:25:18-08:00",
             "author": "Blueblue1101",
-            "subject": "Add 299-title triage and 69-paper publisher audit",
+            "subject": "Audit 69 official articles and sync two source omissions",
             "area": "reviews",
             "paths": [
-              "reviews/2026/audits/wangwanting-2026-residual-ai-cue-missing-audit.json"
+              "reviews/2026/audits/sync_wangwanting_2026.py",
+              "reviews/2026/audits/wangwanting-2026-npjscilearn-official-catalog-audit.json"
             ]
           },
-          "commits_7d": 125
+          "commits_7d": 128
         },
         {
           "owner": "王梦冉",
@@ -46892,15 +46893,16 @@
           "open_issues": 49,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-18T21:15:11-08:00",
+            "at": "2026-11-18T21:25:18-08:00",
             "author": "Blueblue1101",
-            "subject": "Add 299-title triage and 69-paper publisher audit",
+            "subject": "Audit 69 official articles and sync two source omissions",
             "area": "reviews",
             "paths": [
-              "reviews/2026/audits/wangwanting-2026-residual-ai-cue-missing-audit.json"
+              "reviews/2026/audits/sync_wangwanting_2026.py",
+              "reviews/2026/audits/wangwanting-2026-npjscilearn-official-catalog-audit.json"
             ]
           },
-          "commits_7d": 125
+          "commits_7d": 128
         },
         {
           "owner": "龙兆科",
@@ -71151,39 +71153,41 @@
           "papers": 67,
           "papers_missing_abstract": 0,
           "snapshot_candidates": 8,
-          "candidates": 8,
+          "candidates": 9,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 69,
+          "official_scope": "Nature官网2026年在线发表目录，All文献类型，含Article、Perspective、Brief Communication和Review；截至2026-11-19核验日",
           "reference_check": null,
-          "coverage_note": "候选8篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。",
+          "coverage_note": "候选8篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-19逐项核对Nature 2026目录四页69条与11月8日快照67条：官网独有2条、快照独有0条。11月7日一篇原快照漏采，11月16日另一篇在快照后发表；两篇均核对官方摘要，前者AI4S纳入，后者排除。官网现时总数与旧快照时点不同，不标记同口径完成。",
           "evidence_urls": [
             "https://www.nature.com/articles/s41539-026-00409-7",
-            "https://www.nature.com/articles/s41539-026-00428-4"
+            "https://www.nature.com/articles/s41539-026-00428-4",
+            "https://www.nature.com/npjscilearn/articles?year=2026",
+            "https://www.nature.com/articles/s41539-026-00458-y",
+            "https://www.nature.com/articles/s41539-026-00462-2"
           ],
           "decisions": {
-            "include": 4,
-            "exclude": 4,
+            "include": 5,
+            "exclude": 5,
             "pending": 0,
             "unreviewed": 0
           },
           "issues": [
-            "年度官网同口径总量尚未核对；未知不视为零。",
             "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。",
-            "官网同口径总数尚未确认。"
+            "官网当前69篇比11月8日快照67篇多2篇：11月7日1篇原快照漏采，11月16日1篇快照后新发表；逐源文件将由同步任务补入，但年度聚合快照尚未重建。"
           ],
           "actions": [
             "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
-            "统一年度口径核对官网总量，处理差额。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
+            "核实同步任务已将两篇补入逐源papers.json，重建年度全量快照并按相同截至时间逐项核对69篇。",
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
             "reviews/2026/Blueblue1101.json",
             "reviews/2026/feedback/Blueblue1101.json"
           ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": 4,
+          "final_included": 5,
           "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
@@ -73875,20 +73879,21 @@
           "owner": "王婉婷",
           "sources": 49,
           "delivered": 46,
-          "official": 2,
+          "official": 3,
           "pending": 0,
           "open_issues": 49,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-18T21:15:11-08:00",
+            "at": "2026-11-18T21:25:18-08:00",
             "author": "Blueblue1101",
-            "subject": "Add 299-title triage and 69-paper publisher audit",
+            "subject": "Audit 69 official articles and sync two source omissions",
             "area": "reviews",
             "paths": [
-              "reviews/2026/audits/wangwanting-2026-residual-ai-cue-missing-audit.json"
+              "reviews/2026/audits/sync_wangwanting_2026.py",
+              "reviews/2026/audits/wangwanting-2026-npjscilearn-official-catalog-audit.json"
             ]
           },
-          "commits_7d": 125
+          "commits_7d": 128
         },
         {
           "owner": "龙兆科",
@@ -74275,7 +74280,7 @@
         "2026": {
           "sources": 49,
           "delivered": 46,
-          "official": 2,
+          "official": 3,
           "pending": 0,
           "open_issues": 49,
           "status": "in_progress"
@@ -74287,15 +74292,16 @@
         "2025"
       ],
       "last_update": {
-        "at": "2026-11-18T21:15:11-08:00",
+        "at": "2026-11-18T21:25:18-08:00",
         "author": "Blueblue1101",
-        "subject": "Add 299-title triage and 69-paper publisher audit",
+        "subject": "Audit 69 official articles and sync two source omissions",
         "area": "reviews",
         "paths": [
-          "reviews/2026/audits/wangwanting-2026-residual-ai-cue-missing-audit.json"
+          "reviews/2026/audits/sync_wangwanting_2026.py",
+          "reviews/2026/audits/wangwanting-2026-npjscilearn-official-catalog-audit.json"
         ]
       },
-      "commits_7d": 125
+      "commits_7d": 128
     },
     {
       "owner": "王梦冉",
@@ -74436,9 +74442,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-19T05:22:47.813294+00:00",
+    "generated_at": "2026-11-19T05:27:10.930420+00:00",
     "history_available": true,
-    "commit": "bd02b9a9deb2fcf927406d65b0ddc37862c170bd",
-    "commits_scanned": 1222
+    "commit": "9821ea39b352ab0fa640e990dd7f7d7be9224c8e",
+    "commits_scanned": 1227
   }
 }
