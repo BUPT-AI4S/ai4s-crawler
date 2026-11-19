@@ -41,11 +41,20 @@ def main():
 
     additions = defaultdict(list)
     markers = defaultdict(list)
+    source_backfills = defaultdict(list)
     for paper in review:
         rv = paper.get('ai4s_review') or {}
         if paper['year'] != YEAR or rv.get('owner') != '王婉婷':
             continue
         k = key(paper)
+        if rv.get('batch_id') == 'wangwanting-2026-npjscilearn-catalog-20261119':
+            # An official catalogue comparison found two source omissions. Only
+            # one is AI4S; both belong in the source bibliography.
+            if not paper.get('abstract') or not rv.get('verified_metadata', {}).get('url'):
+                raise RuntimeError(f'Catalogue backfill lacks publisher evidence: {k}')
+            source_backfills[paper['venue']].append(
+                {name: copy.deepcopy(value) for name, value in paper.items() if name != 'ai4s_review'}
+            )
         marker = rv.get('abstract_requirement')
         if marker and rv.get('decision') == 'exclude':
             if marker.get('status') != 'not_required' or not marker.get('evidence_urls'):
@@ -72,7 +81,7 @@ def main():
     # Source files are explicitly checked out in the workflow. Keep their original
     # records and modify only the exact reviewed keys, then add verified omissions.
     updated = Counter()
-    for source in sorted(set(additions) | set(markers)):
+    for source in sorted(set(additions) | set(markers) | set(source_backfills)):
         base = ROOT / 'metadata' / source / str(YEAR)
         for filename in ('papers.json', 'ai4s.json'):
             path = base / filename
@@ -96,6 +105,13 @@ def main():
                     records.append(copy.deepcopy(plain))
                     lookup[k] = records[-1]
                     changed = True
+            if filename == 'papers.json':
+                for plain in source_backfills[source]:
+                    k = key(plain)
+                    if k not in lookup:
+                        records.append(copy.deepcopy(plain))
+                        lookup[k] = records[-1]
+                        changed = True
             if changed:
                 write(path, records)
                 updated[filename] += 1
@@ -106,6 +122,7 @@ def main():
         write(AGGREGATE, candidate, compact=True)
 
     print(json.dumps({'candidate_total': len(candidate), 'new_inclusions': sum(map(len, additions.values())),
+                      'official_catalog_source_backfills': sum(map(len, source_backfills.values())),
                       'non_research_markers': sum(map(len, markers.values())),
                       'changed_source_files': updated}, ensure_ascii=False))
 
