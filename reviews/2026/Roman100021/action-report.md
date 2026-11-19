@@ -3,48 +3,53 @@
 - 采集快照：`2026-11-08T21:38:12.854071+08:00`（`metadata/2026/snapshot.json`）
 - 交付批次：`2026-Roman100021-20261108T213812+0800`
 - 来源：35 个（分工见 `reviews/source-assignments-2026.json`）
-- 逐篇交付：1,390 条 —— 纳入 1,125、排除 265、待定 0、未审 0
-- 候选：1,386 条（含 121 条初筛漏筛补录 + 242 条补摘要后复核补入），候选缺摘要 0
+- 逐篇交付：2,024 条 —— 纳入 1,759、排除 265、待定 0、未审 0
+- 候选：2,020 条（含 121 条初筛漏筛补录 + 876 条补摘要后复核补入），候选缺摘要 0
 
 ## 一、候选摘要补全（128 → 0）
 
-行动清单列出 128 条候选缺摘要。
+行动清单曾列出 128 条候选缺摘要。
 
 - **125 条 Elsevier**：Crossref `alternative-id` 取 PII，再读 ScienceDirect 引用导出接口
-  `sdfe/arp/cite?pii=<PII>&format=text/x-bibtex&withabstract=true`，返回的 BibTeX 含原摘要与关键词，
-  成功 122 条；同批补 `keywords`，未改写已有字段。
+  `sdfe/arp/cite?pii=<PII>&format=text/x-bibtex&withabstract=true`，返回的 BibTeX 含原摘要与关键词。
 - **2 条 Genome Biology**：Europe PMC / Springer 页面元数据。
-- **4 条无摘要非研究型**：Lancet 通讯（pp.599–600）、DIII 社论（pp.131–132）、
-  Science China Chem 的 Highlights（pp.4762–4763）、Acta Materialia 更正公告。
+- **4 条无摘要非研究型**：Lancet 通讯、DIII 社论、Science China Chem 的 Highlights、Acta Materialia 更正。
   交付中按类型判 `exclude` 并保留记录，同时移出候选池，故候选缺摘要归零。
 
-## 二、全量书目缺摘要补全（进行中）
+## 二、全量书目缺摘要补全（7,641 → 1,941）
 
-全量 `papers.json`（35 个来源共 19,280 篇）原有 **7,641 篇缺摘要**，集中在 Elsevier 期刊
-（7,181 条）。用同一接口按 DOI → PII → BibTeX 回填：
+35 个来源共 19,280 篇，原有 **7,641 篇缺摘要**（Elsevier 7,181）。按 DOI → PII → BibTeX 回填，
+累计补上 **5,700 篇**，现存 1,941 篇空缺。
 
-- 已回填 **530 篇**，其中标题含 AI 术语的 488 篇里补上 448 篇（92%）。
-- 出版方对高频请求会短时限流（约 400–500 次后连接被拒，数十分钟恢复），故本轮未能一次跑完；
-  抓取脚本按 DOI 断点续跑，缓存在 `outputs/actions-2026/abstract-cache-full.json`。
-- 部分“缺摘要”并非采集失败，而是本身无摘要的条目（Lancet 的 Comment、Nature 的 Letter 等），
-  这类不做补写。
-- 本轮只更新分来源 `metadata/<code>/2026/papers.json`；聚合 `metadata/2026/papers.json` 是
+- **限流的真实原因**：早期判断「约 400–500 次/时段配额」不准确。实测触发条件是**并发与瞬时速率**：
+  逐条新连接、2 并发时约 400 次后被 reset；改为 curl 一次调用带 10 个 URL（复用同一连接，
+  约 0.4 s/条）、批间 1.2 s、每 100 条歇 20 s 后，连续 9,600 次仅 2 次失败，零长时间封禁。
+- **200 但无 abstract 字段**：说明该条目本身没有摘要（Comment/Correspondence/Editorial/更正），
+  不是抓取失败。全部 9,633 条目标里这类有 829 条（8.6%），集中在 Lancet（该刊该批 85% 以上无摘要）。
+- **非 Elsevier（Springer/Nature/BMC）460 条**：先用页面 `citation_article_type` 定类型，
+  其中绝大多数是 Highlights/Letter/Correction/Research Highlight，本就没有摘要；
+  仅 98 条研究型重抓，补到 11 条。注意不能拿「页面第一个正文块」当摘要——那常常是 References 段。
+- 本轮只改分来源 `metadata/<code>/2026/papers.json`；聚合 `metadata/2026/papers.json` 是
   856 MB 的 LFS 对象，未手工改写，等爬虫侧重建。
 
-## 三、补摘要后重新判断候选（新增 242 条）
+## 三、补摘要后重新判断候选（新增 876 条）
 
-对「补上摘要 + 标题含 AI 术语 + 尚未进入候选」的 448 篇重新逐条判断，按「AI 实质参与 + 明确科学/工程任务」
-补入候选 242 条：
+补上摘要后分六轮复核，范围从「标题含 AI 术语」扩到「摘要含 AI」——很多论文标题不含 AI 术语
+（如「基于代理模型的燃烧优化」），只在摘要里提机器学习，只按标题筛会漏。
 
-| 来源 | 补入 | 来源 | 补入 |
+| 轮次 | 复核 | 补入 | 主要来源 |
 |---|---|---|---|
-| Computers and Electronics in Agriculture | 81 | Renewable Energy | 70 |
-| Mechanical Systems and Signal Processing | 38 | Acta Materialia | 21 |
-| Composites Science and Technology | 14 | Transportation Research Part E | 9 |
-| Transportation Research Part D | 9 | | |
+| 1 | 448 | 242 | compag 81、Renewable 70、MSSP 38、Acta 21 |
+| 2 | 122 | 66 | compag 30、MSSP 12、TR-E 8、Env Int 4 |
+| 3 | 408 | 184 | compag 145、MSSP 25、Acta 6、CST 6 |
+| 4 | 251 | 36 | Env Int 7、TR-D 7、TR-E 6、compag 6 |
+| 5 | 285 | 46 | Renewable 31、compag 14、CST 1 |
+| 6 | 614 | 185 | MSSP 92、Renewable 58、compag 14、TR-E 11、TR-D 9 |
+
+纳入率从首轮 54% 降到末轮 30% 以下（第三轮后降至 14%），边际收益明显收敛。
 
 跳过的主要类型：常规故障分类网络改进（换骨干/加注意力/调参）、器件与传感主导、信号预处理工具、
-物流与供应链运筹、政策与行为分析、仅用 ML 拟合经验公式、愿景型综述。
+物流与供应链运筹、政策与行为分析、仅用 ML 拟合经验公式、愿景型综述、AI 只在方法末尾一句带过。
 
 ## 四、初筛漏筛补录（121 条）
 
@@ -61,16 +66,17 @@
 
 ## 六、标签
 
-- 1,125 篇纳入均有标签，全部命中共享词表；按 `domain` + `task` 为主，必要时补 `method`/`contribution`。
-- 「自主实验室」1 篇（LaAlO₃ 分子束外延的物理信息贝叶斯优化闭环实验），
-  「科学智能体」9 篇，「科学基础模型」1 篇，「综述」25 篇。
+- 1,759 篇纳入全部有标签，共 479 个标签，全部命中共享词表；按 `domain` + `task` 为主，
+  必要时补 `method`/`contribution`。
+- 「自主实验室」2 篇（LaAlO₃ 分子束外延的物理信息贝叶斯优化闭环；中锰钢的高斯过程 + 帕累托主动学习
+  迭代合成），「科学智能体」15 篇，「科学基础模型」2 篇，「预训练」3 篇、「微调」2 篇，「综述」30 篇。
 - 词表 `training_stage` 只有「预训练」「微调」，没有「后训练」；本轮无以后训练为主要研究对象的论文，
   未新增条目，避免空标签。
 
 ## 七、遗留
 
-1. 全量书目仍有约 7,100 篇未补摘要（出版方限流），可断点续跑
-   `outputs/actions-2026/fetch_full2.py`；其中标题含 AI 的仅剩 40 篇。
+1. 全量书目仍有 1,941 篇无摘要，其中约 830 条经接口确认本身没有摘要（评论、通讯、更正类），
+   其余集中在 Lancet 与部分在版短文；续跑 `outputs/actions-2026/fetch_full4.py` 即可。
 2. 14 个来源快照状态为 `abstract_incomplete`，属爬虫侧全量采集状态，审核端无法清除。
 3. CIKM 2026 论文集未出版，官网总数待补。
 4. 参考总数与采集数未做逐 DOI 比对（2026 为在版年，两方时点相差约 10 天）。
