@@ -1,0 +1,307 @@
+{
+  "method": "逐篇核对 Information Fusion 正式出版页面、原始摘要与文种，区分科学工程应用和通用 AI 方法。",
+  "items": [
+    {
+      "index": 20,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2025.103447",
+      "title": "S 3 Diffuser: Frequency selected state space guided diffusion model for multimodal fusion classification",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525005202",
+      "article_type": "Research article",
+      "abstract": "Multimodal remote sensing (RS) fusion classification entails significant challenges in modeling complex dependencies, reducing redundancy, and requiring advanced generative methods. To this end, this study introduces an end-to-end frequency selected state space guided diffusion (S\n3\nDiffuser) model, which seamlessly integrates feature extraction, fusion, and classification within a unified conditional diffusion process. Distinct from conventional two-stage generative approaches, S\n3\nDiffuser iteratively refines an initial noise distribution under conditional guidance derived from enhanced multimodal representation, thereby directly optimizing classification performance. The conditional guidance is generated via two core components. The frequency reconstruction learning network (FreqReconNet) operates in the frequency domain to exploit periodic and structural patterns typically underutilized in spatial representations, thereby enhancing modality-specific representation quality. Additionally, the selected state space channel exchange and fusion module (S\n3\nChannelX) facilitates effective cross-modal interaction by selectively sharing salient features across modalities while suppressing irrelevant information, ensuring adaptive multimodal fusion. The proposed S\n3\nDiffuser has been rigorously evaluated on various datasets, including Houston 2013, Augsburg, and Berlin datasets. Experimental results demonstrate its superior classification accuracy over existing methods, emphasizing its effectiveness as a versatile solution for multimodal RS classification. Our code is available at https://github.com/Jiaxzhao/S3Diffuser.",
+      "decision": "include",
+      "rationale": "多模态扩散模型融合遥感数据，并在多个城市地物分类数据集验证地球观测任务。"
+    },
+    {
+      "index": 21,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2025.103451",
+      "title": "DiffuShield: Flexible privacy-preserving synthetic face generation via generative diffusion model",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S156625352500524X",
+      "article_type": "Research article",
+      "abstract": "GenAI harnesses vast amounts of personal data, specifically facial images, to achieve remarkable generative capabilities. As it continues to evolve and integrate into various applications, this practice has raised significant privacy concerns. Current state-of-the-art facial privacy-preserving methods predominantly utilize a generative paradigm, where sensitive facial features, such as identity information or specific attributes, are extracted and subsequently sanitized. The fusion of these sanitized feature with other non- or soft-biometric attributes is executed to generate privacy-ensured synthetic faces. However, these methods always generate faces of insufficient security and low realism. To address these challenges, we propose DiffuShield, a novel facial privacy-preserving method that integrates identity and attribute hiding based on diffusion model. DiffuShield enables configurable, confidential, and practical facial privacy preservation by allowing selective preservation of identities and sensitive attributes. It adopts the diffusion model as the backbone generative network and introduces identity and attribute encoders as conditional inputs. These two encoders can efficiently decompose facial representations while incorporating differential privacy mechanisms by introducing Laplacian noise, thereby achieving flexible facial privacy preservation. Our experimental results demonstrate that DiffuShield not only excels in preserving privacy but also maintains image quality and compatibility with various computer vision tasks. This balance of privacy and performance positions DiffuShield as a robust solution for real-world applications requiring both privacy preservation and functionality.",
+      "decision": "exclude",
+      "rationale": "重点为人脸隐私保护合成，未针对科学测量或领域工程研究对象。"
+    },
+    {
+      "index": 22,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2025.103472",
+      "title": "Dual-layer cross-modal alignment recommendation based on the diffusion model",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525005457",
+      "article_type": "Research article",
+      "abstract": "Multimodal recommendation systems have attracted attention for effectively integrating multimodal information, such as user behavior, product images, and text. Existing methods usually mitigate the issue of multimodal data imbalance and inconsistency through data augmentation and alignment strategies. However, they fail to fully mine the information of each modality and introduce semantic bias during the alignment process, resulting in the loss of user behavior information and the difficulty of capturing modality associations and user preferences. To address that, this paper proposes a dual-layer cross-modal alignment recommendation based on the diffusion model (DCAR-DM). Specifically, the approach uses the diffusion model to generate a user-item interaction graph with the same number of interactions for each modality and then reconstructs it by filtering the interactions that best match the user’s interests for each modality through the modality contribution regulation mechanism. Then, DCAR-DM generates final user and item embeddings by aggregating modality information through graph convolutional networks (GCN). In addition, DCAR-DM uses a dual-layer cross-modal alignment mechanism to guide modality alignment. The feature alignment layer represents modalities as Gaussian distributions and minimizes the mean and standard deviation to align the inter-modal features. The behavior alignment layer further aligns the modality features by leveraging the real user-item interaction behaviors through contrastive learning to correct the semantic bias generated during the feature alignment process. The experimental results demonstrate the effectiveness of DCAR-DM on three public datasets.",
+      "decision": "exclude",
+      "rationale": "多模态商品推荐算法，原摘要没有科学或工程研究任务。"
+    },
+    {
+      "index": 23,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2025.103453",
+      "title": "A review for image–text matching from deep learning perspective",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525005263",
+      "article_type": "perspective",
+      "abstract": "The image–text matching task involves retrieving images guided by the given text descriptions or finding text descriptions using image queries. It guarantees various downstream tasks, including cross-modal retrieval, image captioning, text-to-image synthesis, and multi-modal neural machine translation. It can also empower several real applications, such as multi-modal search engines and vision-language AI assistants. Existing works try to resolve this task based on feature enhancement-based, cross-modal alignment-based, and vision-language pretraining-based approaches according to different design perspectives. Specifically, feature enhancement-based approaches usually elaborate on designing model architectures, which aim to reinforce the semantic representation abilities of the visual and textual features. Besides feature enhancement, how to make images interact with texts is equally important. To this end, the cross-modal alignment-based approaches are proposed to establish the interactions between the image regions and textual words for the strengthening of the discrimination ability on the matched region-word pairs. Moreover, to further improve the retrieval accuracy to accelerate the model implementation and application in a real scenario, vision-language pretraining-based methods are designed to reduce the gap between image and text in a fine-tuning manner or with the help of multimodal large language models. Therefore, the performances of vision-language pretraining surpass those following the other two types of methods, and the capabilities of cross-modal alignment-based approaches are the runner-up. In this work, existing related methods for the image–text matching task are first systematically sorted and analyzed. Later, the details of each method are categorized and concluded, consisting of motivations, advantages, and disadvantages. Then, the performance comparisons are observed and analyzed qualitatively and quantitatively. Finally, we prospectively summarize the possible unexplored issues and potential future solutions.",
+      "decision": "exclude",
+      "rationale": "综述通用图文匹配与检索技术，没有特定科学任务。"
+    },
+    {
+      "index": 24,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2025.103526",
+      "title": "Quantum-inspired complex spiking neural network for multi-source data joint classification",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525005986",
+      "article_type": "Research article",
+      "abstract": "The joint classification of hyperspectral images (HSI) and Light Detection and Ranging (LiDAR) data shows great potential by leveraging the complementary characteristics of spectral information and elevation data. However, existing methods are difficult to achieve multi-source data fusion in the encoding stage, and generally have problems such as high architecture redundancy and high computing energy consumption, which are difficult to meet the application deployment of unmanned autonomous equipment such as satellite-borne and airborne. This paper proposes a quantum-inspired complex spiking neural network (QI-CSNN) framework to achieve efficient fusion and classification of multi-source data. Firstly, based on the characteristics of quantum superposition states, a complex spiking multi-source coding method is designed to achieve preliminary fusion of HSI and LiDAR data in the coding stage. Secondly, a complex spiking feature extraction module (CSFEM) is constructed based on complex convolution, complex batch normalization (BN), and leaky integrate-and-fire (LIF) neurons, which enhances the fusion and interaction of heterogeneous information through complex operations. Thirdly, a complex spiking feature extraction network is constructed through layer-by-layer concatenation of CSFEM, and multi-source data joint classification was achieved through probability amplitude. Finally, based on the implementation mechanism of QI-CSNN, the theoretical framework of multivariate neural network processing multi-source data classification is derived. Experimental results show that the proposed method achieves advanced classification accuracy. QI-CSNN provides a new solution for multi-source data joint classification tasks, which is of great significance for the deployment of multi-source data joint classification algorithms in unmanned autonomous equipment.",
+      "decision": "include",
+      "rationale": "融合高光谱和 LiDAR 数据进行遥感联合分类，面向星载与机载观测。"
+    },
+    {
+      "index": 26,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2025.103566",
+      "title": "LLaVA-based semantic feature modulation diffusion model for underwater image enhancement",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525006384",
+      "article_type": "Research article",
+      "abstract": "Underwater Image Enhancement (UIE) is critical for numerous marine applications; however, existing methods often fall short in addressing severe color distortion, detail loss, and lack of semantic understanding, particularly under spatially varying degradation conditions. While Generative AI (GenAI), particularly diffusion models and multimodal large language models (MLLMs), offers new prospects for UIE, effectively leveraging their capabilities for fine-grained, semantic-aware enhancement remains a challenge. We proposed a LLaVA-based semantic feature modulation diffusion model (LSFM-Diff), which integrates multi-level semantic guidance collaboratively into the backbone network of the diffusion model. Specifically, an optimized prompt learning strategy is first employed to obtain concise, UIE-relevant textual descriptions from LLaVA. These semantics then guide the enhancement process in two key stages: (1) The windowed text-image fusion for condition refinement (WTIF-CR) module aligns and fuses textual semantics with local image features spatially, generating fine-grained external conditions that provide an initial spatially aware semantic blueprint for the diffusion model. (2) The semantic-guided deformable attention (SGDA) mechanism, leveraging a gradient-based image-text interaction to generate a semantic navigation map, guides the attention within the denoising network to focus on key semantic regions. Experiments conducted on several challenging benchmark datasets demonstrate that LSFM-Diff outperforms current state-of-the-art methods. Our work highlights the effectiveness of deep integration of multi-level semantic guidance fusion strategies in advancing GenAI-based UIE development.",
+      "decision": "exclude",
+      "rationale": "通用水下图像视觉增强基准，未给出具体海洋科学观测或推断任务。"
+    },
+    {
+      "index": 28,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2025.103640",
+      "title": "Self-supervised transformer architecture search via multi-level masked information fusion",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525007122",
+      "article_type": "Research article",
+      "abstract": "Transformer Architecture Search (TAS) aims to discover desirable transformer architectures without extensive manual design and tuning. However, existing methods heavily rely on labeled data, hindering their deployment in real-world scenarios. For this issue, we pioneer a self-supervised TAS task that aims to uncover optimal vision transformer architectures from unlabeled data alone. To accomplish this challenging task, we develop a Block-Wisely Self-Supervised One-Shot TAS framework underpinned by multi-level masked information fusion, termed as BWSS-TAS. Specifically, BWSS-TAS designs a siamese encoder–decoder architecture for the supernet to enable Masked Image Modeling (MIM)-based self-supervised training. To tackle co-training bias of the large weight-sharing space, we modularize the whole supernet into smaller blocks and perform image reconstruction through distilling and fusing multi-level spatial-semantic information. To pursue reliable architecture search, we develop a block-wisely self-supervised evolutionary algorithm equipped with a unified unsupervised evaluation metric. The architecture evolution process is guided by the non-linear ranking fusion of two complementary dimensions of masked information, i.e., teacher–student consistency and image reconstruction quality. Extensive experiments demonstrate that the searched tiny/small/base-sized transformer architectures perform favorably against state-of-the-art TAS methods, even without using manual labels. Moreover, BWSS-TAS can generalize well to various data domains and tasks via self-supervised, information-fusion-oriented architecture discovery.",
+      "decision": "exclude",
+      "rationale": "通用 Transformer 架构搜索，缺少领域科学任务。"
+    },
+    {
+      "index": 29,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2025.103657",
+      "title": "Distributed machine learning for next-generation communication networks: A survey on privacy, fairness, efficiency, and trade-offs",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525007298",
+      "article_type": "Research article",
+      "abstract": "With the rise of next-generation communication networks such as 6G, IoT, and edge computing, distributed machine learning (DML) has emerged as a key enabling technology. Among DML paradigms, federated learning (FL) and split learning (SL) are particularly promising for decentralized model training with privacy preservation. However, their integration into communication systems introduces new challenges involving communication efficiency, resource constraints, and system adaptability. This survey provides a comprehensive analysis of DML architectural designs, deployment paradigms, and optimization strategies. We systematically compare FL and SL, explore optimization dimensions – privacy, fairness, and efficiency – and propose a novel three-dimensional octant classification framework to characterize trade-offs. Practical deployment scenarios, technical challenges, and emerging trends are also discussed, with emphasis on 6G, IoT, and multi-agent intelligent systems. This work offers actionable insights and a structured foundation for future DML research in communication-centric environments. By emphasizing the fusion of privacy, fairness, and efficiency objectives, this work contributes to the development of trustworthy and optimized intelligent systems for next-generation communication networks.",
+      "decision": "include",
+      "rationale": "综述分布式机器学习在 6G、物联网通信系统的通信效率、资源和隐私权衡，属于通信工程系统设计。"
+    },
+    {
+      "index": 30,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2025.103647",
+      "title": "HandDiff: Spatial–temporal diffusion model for hand pose forecasting",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525007195",
+      "article_type": "Research article",
+      "abstract": "We propose a novel problem of forecasting future 3D hand pose from a short past sequence. The primary challenge in this task is accurately modeling the stochastic nature of future hand movements. To address this, we propose a diffusion-based hand pose forecasting model designed to generate accurate future hand poses by leveraging spatial–temporal information. Our model incorporates a Spatial–Temporal Attention Module (STAM) to capture correlations between hand joints and time points, and a Coarse Forecasting Module (CFM) to extract limited explicit guidance from the temporal dimension. These features condition the diffusion model to forecast plausible future hand poses. Due to the lack of suitable datasets, we also construct two large-scale datasets based on the existing hand-object interaction (HOI) datasets HO-3D and HOI4D for benchmarking hand pose forecasting, covering both third-person and egocentric perspectives. Experimental results show that our method HandDiff significantly outperforms other state-of-the-art (SOTA) methods by 16.7% on the HO-3D dataset and 11.1% on the HOI4D dataset in terms of the mean per joint position error (MPJPE), respectively.",
+      "decision": "exclude",
+      "rationale": "通用三维手部姿态预测，无科学测量或领域工程验证任务。"
+    },
+    {
+      "index": 31,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2025.103750",
+      "title": "CM 2 -STNet: Cross-modal image matching with modal-adaptive feature modulation and sparse transformer fusion",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525008127",
+      "article_type": "Research article",
+      "abstract": "Multimodal image matching is a fundamental task in geospatial analysis, aiming to establish accurate correspondences between images captured by heterogeneous imaging devices. However, significant geometric inconsistencies and nonlinear radiometric distortions lead to large distribution gaps, posing a major challenge for cross-modal matching. Moreover, existing methods often struggle to adaptively capture intra- and inter-modal features at multiple scales and to focus on semantically relevant regions in large-scale scenes. To address these issues, we propose a novel cross-modal image matching network called CM2-STNet. Specifically, we introduce a modal-adaptive feature modulation (MAFM) module that dynamically adjusts cross-modal feature representations at multiple scales, thereby enhancing semantic consistency between modalities. In addition, a cross-modal sparse transformer fusion (CM-STF) module is developed to guide the network to concentrate on the most relevant regions, where a Top-k selection mechanism is employed to retain discriminative features while filtering out irrelevant content. Extensive experiments on multimodal remote sensing datasets demonstrate that CM2-STNet achieves accurate and robust matching performance, validating its effectiveness and generalization ability in complex real-world scenarios. Code and pre-trained model are available at https://github.com/whuzzzz/CM2-STNet.",
+      "decision": "include",
+      "rationale": "遥感异源图像匹配服务地理空间分析，并在多模态遥感数据集验证。"
+    },
+    {
+      "index": 32,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2025.103745",
+      "title": "FedVCPL-Diff: A federated convolutional prototype learning framework with a diffusion model for speech emotion recognition",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525008073",
+      "article_type": "Research article",
+      "abstract": "Speech Emotion Recognition (SER), a key emotion analysis technology, has shown significant value in various research areas. Previous SER models have achieved good emotion recognition accuracy, but typical centrally-based training requires centralised processing of speech data, which has a serious risk of privacy leakage. Federated learning (FL) can avoid centralised data processing through distributed learning, providing a solution for privacy protection in SER. However, FL faces several challenges in practical applications, including imbalanced data distribution and inconsistent labelling. Furthermore, typical FL frameworks focus on client-side enhancement and ignore server-side aggregation strategy optimisation, which can increase the computational load on the client side. To address the aforementioned problems, we propose a novel approach, FedVCPL-Diff. Firstly, regarding information fusion, we introduce a diffusion model on the server side to generate Valence-Arousal-Dominance emotion space features, which replaces the typical aggregation framework and effectively promotes global information fusion. In addition, in terms of information exchange, we propose a lightweight and personalised FL transmission framework based on the exchange of VAD features. FedVCPL-Diff optimises the local model by updating the data distribution anchors, which not only avoids the privacy risk but also reduces the communication cost. Experimental results show that the framework significantly improves emotion recognition performance compared to four commonly used FL frameworks. The overall performance of our framework also shows a significant advantage compared to locally independent models.",
+      "decision": "exclude",
+      "rationale": "通用语音情绪识别方法，未论证具体生命科学或工程问题。"
+    },
+    {
+      "index": 33,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2025.103762",
+      "title": "LeCDSR: Large language model enhanced cross-domain sequential recommendation",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525008243",
+      "article_type": "Research article",
+      "abstract": "As large language models (LLMs) have shown great performance in natural language processing, research on applying them to recommendation systems has emerged. LLMs’ strong understanding, reasoning, and extensive world knowledge can supplement the missing semantic information in recommendation systems. Existing LLM-enhanced recommendation systems face challenges in extracting and leveraging features, lack of sufficient utilization of LLMs’ capabilities to capture user interests. In this paper, a novel algorithm, Large Language Model enhanced Cross-Domain Sequential Recommendation, LeCDSR is proposed. LeCDSR generates cross-domain user profile embeddings through LLMs to transfer user preference information across domains. It also uses a semantic fusion layer to integrate semantic and ID embeddings, addressing the limitations of traditional sequential recommendation models. Furthermore, LeCDSR employs a contrastive loss function to better align the feature spaces of LLMs and recommendation models, improving recommendation performance in cross-domain scenarios. LeCDSR has been tested on two real-world datasets and has achieved better performance than common cross-domain sequential recommendation models. Rich ablation experiments also verify the effectiveness of LeCDSR’s modules and the generated embeddings from the large model. Our implementation is available at this repository: https://github.com/solozhu/LeCDSR",
+      "decision": "exclude",
+      "rationale": "通用跨域推荐系统，未涉及科学问题。"
+    },
+    {
+      "index": 34,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2025.103784",
+      "title": "Addressing information bottlenecks in graph augmented large language models via graph neural summarization",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525008462",
+      "article_type": "Research article",
+      "abstract": "This study investigates the problem of information bottlenecks in graph-level prompting, where compressing all node embeddings into a single vector leads to significant structural information loss. We clarify and systematically analyze this challenge, and propose the Graph Neural Summarizer (GNS), a continuous prompting framework that generates multiple query-aware prompt vectors to better preserve graph structure and improve context relevance. Experiments on ExplaGraphs, SceneGraphs, and WebQSP show that GNS consistently improves performance over strong graph-level prompting baselines. These findings emphasize the importance of addressing information bottlenecks when integrating graph-structured data with large language models. Implementation details and source code are publicly available at https://github.com/timothy-coshin/GraphNeuralSummarizer.",
+      "decision": "exclude",
+      "rationale": "通用图语言模型信息瓶颈方法，未见具体科学应用。"
+    },
+    {
+      "index": 35,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2025.103779",
+      "title": "MiKTr: Multiscale knowledge fusion transformer for consumer fraud detection",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525008413",
+      "article_type": "Research article",
+      "abstract": "Identifying fraud in the marketplace through consumer reviews using Natural Language Processing (NLP) techniques based on pre-trained language models (PLMs) and Transformer architecture is an effective method for consumer fraud detection. However, existing approaches face two significant challenges: (1) PLMs have a limited capacity to understand domain-specific knowledge, and (2) the self-attention mechanism in Transformers struggles to capture features at varying scales. To address these challenges, we propose a Multiscale Knowledge Fusion Transformer model (MiKTr) specifically designed for fraud detection using consumer reviews. Our model introduces a multiscale attention approach that enhances the self-attention mechanism by focusing on local features across different scales from a global perspective, thereby improving attention allocation. Additionally, we design a knowledge fusion module that integrates external knowledge, compensating for the PLM’s shortcomings in understanding domain-specific concepts related to consumer fraud. This enables the downstream task module to extract semantics more relevant to the fraud detection context. Experiments conducted on real-world datasets demonstrate that our method outperforms state-of-the-art approaches across all evaluation metrics, highlighting its potential to advance the field of fraud detection.",
+      "decision": "exclude",
+      "rationale": "消费者评论欺诈识别，属于通用商业文本分析。"
+    },
+    {
+      "index": 36,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2025.103799",
+      "title": "Towards a foundation model for behavioral intention prediction through multi-source data fusion",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525008619",
+      "article_type": "Research article",
+      "abstract": "In recent years, some studies have attempted to build foundation models to predict user behavioral intentions across various scenarios. Existing methods typically involve two steps: first, using Pre-trained Language Models (PLMs) to convert user historical behaviors into semantic vectors; second, capturing latent user intentions through a behavioral sequence encoder. However, limitations still exist in this pipeline. Firstly, most studies directly fix the parameters of PLMs, making it difficult to optimize the generated semantic vectors for specific application scenarios. Even with fine-tuning PLMs considered, the huge model size brings computational burdens. To address this challenge, we introduce a Low-Rank Adaptation technique, which enhances the quality of semantic vectors by training two lightweight low-rank matrices while keeping the original parameters of PLMs frozen. Additionally, the semantic vectors generated by PLMs often exhibit anisotropy, which weakens the expressive power. To address this, we design a parameter whitening expert and a mixed observation expert module to achieve more isotropic semantic representations. Finally, there are significant differences in user behavior patterns across different domains, and such behavioral conflicts can limit the model’s generalization ability. Therefore, during the pre-training phase, we introduce multi-domain negative sample fusion and design two contrastive learning tasks. By employing a multi-task learning strategy, we enhance the model’s ability to handle multi-domain data. With these improvements, our model achieves stronger adaptability and accuracy in predicting user behavior across different domains.",
+      "decision": "exclude",
+      "rationale": "用户行为意图预测基础模型，未见科学研究对象。"
+    },
+    {
+      "index": 37,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2025.103808",
+      "title": "Dual-branch transformer framework with gradient-aware weighting feature alignment for robust cross-view geo-localization",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S156625352500870X",
+      "article_type": "Research article",
+      "abstract": "Cross-view geo-localization aims to determine the geographic location of ground-level images by matching them with geo-tagged satellite imagery. It effectively addresses challenges in GPS-denied environments and provides a critical solution for ground-image-based location search. There remain challenges due to significant viewpoint differences, severe geometric distortions, and visual appearance discrepancies between the ground and aerial perspectives’ images. In particular, the presence of sky regions in ground-level images makes it challenging to construct deep learning models or directly match ground and remote sensing imagery. This paper proposes a dual-branch transformer framework with several key enhancements to address these challenges. In the ground-view branch, a panoramic sky perception module dynamically segments and removes sky regions using semantic segmentation, thereby preserving essential visual features. A geometric projection transformation aligns satellite imagery with the ground-level perspective in the satellite-view branch. A gradient-aware weighting module enhances feature alignment by guiding attention based on patch-level gradient responses. Additionally, a multi-constraint loss function combining cross-entropy, triplet, and Jensen-Shannon losses is introduced to improve representation learning and generalization. Extensive experiments on the CVUSA and VIGOR datasets show that our method achieves a remarkable R@1 of 94.11 % on CVUSA, and on VIGOR, R@1 improves to 65.23 % (same-area) and 30.05 % (cross-area), outperforming state-of-the-art methods under both aligned and unaligned setups.",
+      "decision": "exclude",
+      "rationale": "地面与卫星影像匹配定位，目标是通用导航定位，不是地球科学推断或测量。"
+    },
+    {
+      "index": 38,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2025.103835",
+      "title": "mmPPT: Hierarchical-serialization-enhanced point transformer for mmWave pedestrian reconstruction",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525008978",
+      "article_type": "Research article",
+      "abstract": "In autonomous driving, redundant perception is critical for robust environmental understanding, especially under adverse conditions where traditional sensors like RGB-D fail. This paper introduces a novel Point Transformer for mmWave-radar-based pedestrian 3D reconstruction (mmPPT), addressing the challenges of sparse, noisy 4D mmWave radar point clouds. mmPPT employs a novel Hierarchical Serialization Strategy that combines Hybrid Local Serialization to preserve fine-grained body details via adaptive space-filling curves and Anchor-based Global Serialization to model long-range structural relationships. Additionally, it integrates temporal information and Doppler velocity features to leverage radar’s unique capabilities, while a Bone Length Loss is adopted to enforce geometric constraints on joint position prediction. Experiments on 4D radar dataset demonstrate that mmPPT outperforms state-of-the-art methods, achieving the lowest total reconstruction error (12.76 cm with multi-frame input) and superior robustness in harsh environments like smoke, occlusion, and poor lighting scenarios where RGB-D sensors fail. Ablation studies validate the effectiveness of the Hybrid Local Serialization Strategy and the Anchor-based Global Serialization Strategy, highlighting mmPPT’s potential to enhance redundant perception in autonomous driving. The source code will be available at https://github.com/yanglijie-dev/mmPPT.",
+      "decision": "include",
+      "rationale": "毫米波雷达点云与多帧多普勒信息重建行人三维姿态，服务复杂环境自动驾驶感知工程。"
+    },
+    {
+      "index": 39,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2025.103849",
+      "title": "Deep-shallow semantic fusion inference based on graph neural network",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S156625352500911X",
+      "article_type": "Research article",
+      "abstract": "The rapid development of large language models (LLMs) has sparked an exciting new exploration in graph representation learning, i.e., utilizing LLMs to model textual graphs. Due to the deep semantic extraction capability of LLMs, the mainstream methods usually directly input textual graphs with prompt design into LLMs to obtain deep semantic representations for inference. In light of recent advancements in LLMs, aggregating the deep semantic representations of LLMs based on graph neural networks (GNNs) has also attracted attention. Despite LLMs revolutionizing graph representation learning, the understanding of their underlying mechanisms remains limited. We theoretically emphasize the importance of aggregating deep semantic representations based on GNNs. Additionally, current researches overlook traditional shallow semantic representations that theoretically contain more distinguishable information. In this work, we propose a Deep-Shallow Semantic Fusion Inference Based on Graph Neural Network (DSSIG), which includes a deep branch to aggregate deep semantic representations and a shallow branch to aggregate shallow semantic representations. Fusing two types of semantic representations can more fully utilize the advantages of semantic representations of different scales, but at the same time, it will introduce more potential noise. Therefore, DSSIG aligns two types of semantic representations by the fusion inference loss to achieve denoising and capture the shared information between the two types of semantic representations, better supporting the inference process. Extensive experiments on seven real-world textual graphs demonstrate the superiority of our proposed DSSIG.",
+      "decision": "exclude",
+      "rationale": "通用文本图结构表示学习，没有领域科学任务。"
+    },
+    {
+      "index": 41,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2025.103967",
+      "title": "PAREformer: positional adaptive and recurrent enhanced transformer for time series forecasting",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525010292",
+      "article_type": "Research article",
+      "abstract": "Time series forecasting is a fundamental task in numerous domains where accurately modeling temporal dynamics is paramount. While Transformers are powerful for capturing long-range dependencies in sequence prediction, these models struggle with time series data lacking semantic information, where capturing and fusing both positional patterns and temporal recurrent information remains challenging. To overcome these challenges, we propose the Positional Adaptive and Recurrent Enhanced Transformer (PAREformer), a novel architecture designed for the adaptive fusion of multiple temporal information sources. PAREformer introduces two key innovations: The first is a Positional Adaptive Embedding (PAE) module, which dynamically constructs positional adaptive representations with seasonal-trend decomposed components to enhance periodicity modeling. The second is a Recurrent Enhanced Module (REM), which simulates recurrent dynamics through a parallelizable cumulative sum mechanism. This module efficiently captures pseudo-recurrent information, which is then integrated with long-range dependencies via a lightweight gated network, replacing the conventional feed-forward network to improve computational efficiency. This dual-component design enables PAREformer to precisely model complex temporal patterns while maintaining a lean architecture. Extensive experiments on twelve real-world datasets show that PAREformer reduces the average mean squared error (MSE) by 3.7 % compared to the best-performing state-of-the-art model, demonstrating the effectiveness of our proposed information fusion methodology.",
+      "decision": "exclude",
+      "rationale": "通用时间序列架构及十二组混合基准，摘要未说明科学研究对象。"
+    },
+    {
+      "index": 42,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2025.104004",
+      "title": "PIFGSR: Pluggable framework for information fusion using generative artificial intelligence (GenAI) in recommender systems",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525010668",
+      "article_type": "Research article",
+      "abstract": "The application of Generative Artificial Intelligence (GenAI) in information fusion brings new breakthroughs in enhancing user experience within recommender systems, with sequential recommender being an indispensable element. Plugin-based diffusion models, a prominent GenAI approach, have proven effective in alleviating sparsity in sequential recommenders. However, by introducing disordered noise that disrupts sequential logic, these methods can distort user interest modeling and still struggle with data sparsity. To resolve these problems, we propose the novel general framework Pluggable Framework for Information Fusion Using Generative Artificial Intelligence (GenAI) in Recommender Systems (PIFGSR), which generates expanded sequences aligned with users’ real interests while retaining both explicit and implicit feedback at low computational cost. Central to PIFGSR is the Potential Interest Guidance Bank (PIGB), which uses trainable parameter matrices to learn and store interest patterns from user interactions and integrate them with prior knowledge from a pre-trained diffusion model. These learned cues guide the diffusion process during inference, enabling effective information fusion and preserving users’ true preference trajectories. We design the Demand Information Extraction Mechanism (DIEM), which integrates spatial row-column attention and statistical mean-variance attention to extract users’ actual points of interest from local and global user interaction features. Specifically, DIEM takes a parameter matrix as input, applies convolutional projections to generate query, key, and value representations, and computes normalized correlations. Spatially, it constructs and fuses row-wise and column-wise weights to form local offset features. Statistically, it derives an attention-weighted scale from the mean and variance to perform normalization and shifting, ultimately producing a demand representation that integrates local structure with global distribution. Additionally, to ensure expanded sequences align with user interests in the original interactions, we design the Guide Matching Strategy (GMS). Compared to existing baselines, PIFGSR achieves a superior performance improvement of 9.85 %.",
+      "decision": "exclude",
+      "rationale": "生成式 AI 用户推荐，未见领域科学问题。"
+    },
+    {
+      "index": 45,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2025.104086",
+      "title": "ViP-HMNN: a visual pathway-inspired hybrid neural network incorporated with in-memory computing for object recognition",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525011480",
+      "article_type": "Research article",
+      "abstract": "The integration of artificial neural networks (ANNs) and spiking neural networks (SNNs) has significant potential for advancing artificial general intelligence (AGI). However, the hardware design of hybrid neural networks (HNNs) still primarily relies on near-memory computing architectures, which have yet to fully overcome the separation between processing and memory units. To address this, we develop a visual pathway-inspired hybrid memristive neural network (ViP-HMNN). Specifically, we design a general and compact memristor-based neuron circuit that can efficiently implement both ANN and SNN activation functions, serving as the core component of the proposed ViP-HMNN. To improve the understanding of the designed ViP-HMNN, a ventral pathway-inspired static feature extraction module (VP-SFEM), a dorsal pathway-inspired dynamic feature representation module (DP-DFRM), and a complementary feature fusion output module (CFFOM) are proposed. For validation, the proposed ViP-HMNN with synergistic hybrid training strategy is applied for object recognition. Compared to software-based object recognition methods, the proposed ViP-HMNN achieves software-compatible accuracy (ranking in the top three) and has a significant advantage in terms of time consumption (at least 8-fold faster). Compared to in-memory computing architectures, the proposed ViP-HMNN exhibits enhancements of up to 2.65× in area overhead, 1.83× in latency, and 1.87× in energy consumption. Compared to the RTX 3090 GPU, the proposed ViP-HMNN achieves a minimum of 1000× reduction in latency and 500× in energy saving.",
+      "decision": "exclude",
+      "rationale": "忆阻器类脑计算芯片以物体识别为验证，AI 是被实现的计算负载，未用于材料设计或科学发现。"
+    },
+    {
+      "index": 47,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2025.104120",
+      "title": "Adversarial and generative AI-based anti-forensics in audio-visual deepfake detection: A comprehensive review and analysis",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525011820",
+      "article_type": "Research article",
+      "abstract": "As the technology behind deepfakes advances, detecting audio-visual deepfakes becomes more and more crucial, and the rise of traditional and generative AI-based adversarial/anti-forensics attacks and generative AI-based anti-forensics attacks on deepfake detection technologies is a growing concern. Securing applications against adversarial and generative AI-based attacks is critical for accurate and robust deepfake detection tools. Therefore, this paper provides a comprehensive overview of various adversarial and generative AI-based anti-forensic attacks, which represent one of the core elements of trustworthiness alongside transparency, explainability, and fairness, as well as defensive countermeasures for audio-visual deepfake generation and detection. It covers topics such as adversarial attacks on deepfake detection algorithms and defensive methods, including model fusion and decoy-based approaches, to mitigate these threats. Although extensive research has been conducted in recent years on adversarial attacks and defense on deepfake detection, there have been few attempts to compare existing work qualitatively and quantitatively. This paper aims to help identify and address key issues that need to be considered to bring transferable adversarial attacks and their countermeasures particularly through techniques such as generative defense, knowledge distillation, and beyond.",
+      "decision": "exclude",
+      "rationale": "音视频深伪对抗与检测综述，未涉及科学或工程研究对象。"
+    },
+    {
+      "index": 48,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2026.104149",
+      "title": "GeoCraft: A Diffusion Model-based 3D Reconstruction Method driven by image and point cloud fusion",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S156625352600028X",
+      "article_type": "Research article",
+      "abstract": "With the rapid development of technologies like virtual reality (VR), autonomous driving, and digital twins, the demand for high-precision and realistic multimodal 3D reconstruction has surged. This technology has become a core research focus in computer vision and graphics due to its ability to integrate multi-source data, such as 2D images and point clouds. However, existing methods face challenges such as geometric inconsistency in single-view reconstruction, poor point cloud-to-mesh conversion, and insufficient multimodal feature fusion, limiting their practical application. To address these issues, this paper proposes GeoCraft, a multimodal 3D reconstruction method that generates high-precision 3D models from 2D images through three collaborative stages: Diff2DPoint, Point2DMesh, and Vision3DGen. Specifically, Diff2DPoint generates an initial point cloud with geometric alignment using a diffusion model and projection feature fusion; Point2DMesh converts the point cloud into a high-quality mesh using an autoregressive decoder-only Transformer and Direct Preference Optimization (DPO); Vision3DGen creates high-fidelity 3D objects through multimodal feature alignment. Experiments on the Google Scanned Objects (GSO) and Pix3D datasets show that GeoCraft excels in key metrics. On the GSO dataset, its CMMD is 2.810 and FIDCLIP is 26.420; on Pix3D, CMMD is 3.020 and FIDCLIP is 27.030. GeoCraft significantly outperforms existing 3D reconstruction methods and also demonstrates advantages in computational efficiency, effectively solving key challenges in 3D reconstruction.The code is available at https://github.com/weixuanma/GeoCraft.",
+      "decision": "exclude",
+      "rationale": "通用物体三维重建，在 GSO 与 Pix3D 基准评测，不是地学重建。"
+    },
+    {
+      "index": 50,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2026.104292",
+      "title": "RRFormer: A new transformer-based method for ultra high-definition reflection removal",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253526001715",
+      "article_type": "Research article",
+      "abstract": "Deep learning-based methods have achieved significant success in single-image reflection removal (SIRR). However, most of these methods focus on high/standard definition images while ignoring higher-resolution images such as Ultra-High-Definition (UHD) images. With the increasing prevalence of UHD images captured by modern devices, we aim to address the problem of UHD SIRR. Specifically, we first synthesize two large-scale UHD datasets at 4K and 8K resolutions. To our knowledge, these are the first large-scale UHD datasets for SIRR. We then conduct a comprehensive evaluation of twelve state-of-the-art SIRR methods on the proposed datasets. Moreover, we propose a transformer-based architecture named RRFormer for reflection removal, which comprises three modules: the Preprocessing Embedding Module, the Self-attention Feature Extraction Module, and the Multi-scale Spatial Feature Extraction Module. These modules extract hypercolumn features, global and partial attention features, and multi-scale spatial features, respectively. To ensure effective training, we utilize a combined loss function consisting of pixel loss, feature loss, and adversarial loss. Experimental results demonstrate that RRFormer achieves SOTA performance on both existing non-UHD benchmarks and our proposed UHD datasets.",
+      "decision": "exclude",
+      "rationale": "通用单图反射去除，没有科学测量或工程物理任务。"
+    },
+    {
+      "index": 51,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2026.104372",
+      "title": "Generative AI-augmented intention recognition and hierarchical multimodal policy learning for indoor navigation",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253526002514",
+      "article_type": "Research article",
+      "abstract": "Autonomous mobile robots operating in indoor corridors such as warehouses and service facilities, must navigate safely and efficiently in close proximity to pedestrians under limited field-of-view sensing. A key challenge arises when pedestrians approach from behind, as front-view perception alone cannot reliably infer overtaking intent, and purely reactive controllers can lead to deadlocks, discomfort, or unsafe close-passing in narrow passages. This paper presents a multimodal, intention-aware navigation framework that fuses LiDAR with speech-driven intention recognition to enable proactive and socially compliant yielding behavior. Audio is transcribed by a lightweight automatic speech recognition module and then interpreted by a fine-tuned BERT-based intention classifier trained with generative-AI–augmented text data to improve robustness to linguistic variability and class imbalance. The inferred intention signal triggers a hierarchical reinforcement learning controller that dynamically switches between an efficiency-oriented policy using front-view LiDAR and a yield-priority policy using full-view LiDAR for enhanced situational awareness. The navigation policy is trained with Proximal Policy Optimization in a customized Gazebo–SPACISS simulation environment, supported by reward shaping that incorporates velocity-obstacle principles and conditional yielding objectives. Extensive simulation studies across progressively challenging corridor scenarios demonstrate consistent advantages over representative model-based and learning-based baselines in terms of success, efficiency, and social compliance, with strong generalization to unseen layouts and increased pedestrian density. Real-world experiments further validate safe collision avoidance and reliable intention-triggered yielding in practical corridor interactions.",
+      "decision": "include",
+      "rationale": "多模态意图识别与强化学习控制仓储移动机器人，含仿真和真实环境安全避让验证。"
+    },
+    {
+      "index": 53,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2026.104487",
+      "title": "INNA: An invertible neural network-based attack framework for robust image watermarking",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253526003660",
+      "article_type": "Research article",
+      "abstract": "In recent years, robust image watermarking algorithms have achieved significant advances. However, existing watermark removal attacks still face a fundamental trade-off among visual fidelity, attack effectiveness, and computational efficiency. To address this challenge, this paper proposes INNA, the first watermark removal framework based on invertible neural networks, which leverages reversible latent decomposition and targeted latent-space cleaning. Specifically, it decomposes a watermarked image into a low-resolution structural component and latent representations that encode watermark residuals. A transformer-based module is then employed to selectively clean these latents, after which the attacked image is reconstructed via the shared inverse mapping of the invertible network. Extensive experimental results confirm the effectiveness of our INNA. It reduces watermark extraction accuracy to approximately 0.583, which is substantially lower than the average accuracy of 0.734 achieved by existing attack methods. In addition, INNA achieves higher visual fidelity, with PSNR of 39.49 dB, SSIM of 0.9984, and LPIPS of 0.0144. Moreover, our INNA exhibits higher computational efficiency, with only 1.01 million parameters and an average runtime of 64.35 ms per image.",
+      "decision": "exclude",
+      "rationale": "通用图像水印攻击方法，未见科学研究对象。"
+    },
+    {
+      "index": 56,
+      "venue": "j-f6416922ec",
+      "id": "10.1016/j.inffus.2026.104511",
+      "title": "Fusion of advanced machine learning techniques in digital manipulation detection on identity card attacks",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253526003908",
+      "article_type": "Research article",
+      "abstract": "Digital manipulation detection (DMD) is a major concern in modern digital verification systems. It is challenging for an online verification system to distinguish among genuine, counterfeit, and manipulated documents due to the advanced image synthesis capability of contemporary artificial intelligence (AI) applications in creating deceptive identities that are difficult to identify visually. This study aims to develop a multimodal AI system, named digital manipulation detection network (DMDNet), to address the detection of fusion challenges of four potential attacks simultaneously by using AI-generated synthetic identities from five distinct countries. The proposed DMDNet first integrates a convolutional neural network (CNN) to extract features from the copy-and-move attacks (A1) and their corresponding simulated bona fide (positive) samples. Then, four advanced classification strategies, including transformer-based, adversarial, self-supervised, and feature-selection approaches, are employed to train the model on extracted features. Each strategy utilizes two different classification models for training and testing. The trained classifiers are then applied to detect three unseen attacks: face morphing (A2), face replacement (A3), and mixed attacks (A4). The experimental results showed that the feature-selection strategy with support vector machine (SVM) achieved superior performance, with the best average true negative rates (attack detection rate) of 93.2%, 100%, 99.4%, and 100% for A1, A2, A3, and A4, respectively. The true positive rate (simulated bona fide detection rate) was 95.6%. We identified the most effective classifier using statistical analysis (ANOVA) and validated its performance with standard ISO/IEC 30107-3 metrics using detection error trade-off (DET) and equal error rate (EER) curves. Finally, the contributions of CNN-derived features in SVM decision-making were investigated using an explainable AI tool, SHAP.",
+      "decision": "exclude",
+      "rationale": "证件伪造与身份攻击检测，未涉及科学任务。"
+    }
+  ],
+  "pending_doi": [
+    "10.1016/j.inffus.2025.103583",
+    "10.1016/j.inffus.2026.104163",
+    "10.1016/j.inffus.2026.104917"
+  ]
+}
