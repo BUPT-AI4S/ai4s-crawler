@@ -85,6 +85,7 @@ jobs:
             /reviews/*/*/conference-crawl-check.csv
             /reviews/*/feedback/*.json
             /reviews/2026/audits/sync_wangwanting_2026.py
+            /reviews/2026/audits/lixueting_verified_fulltext_metrics.py
             /reviews/2026/audits/wangwanting-2026-cvpr-recovered.json
             /reviews/2026/audits/wangwanting-2026-ecai-catalogue-diff.json
             /reviews/*/actions/*.md
@@ -127,6 +128,7 @@ jobs:
             fi
             python reviews/2026/audits/sync_wangwanting_2026.py
             python ../monitor-tools/tools/build_review_monitor.py --source . --output reviews/monitor-data.json
+            python reviews/2026/audits/lixueting_verified_fulltext_metrics.py --repo . --monitor-tools ../monitor-tools
             python ../monitor-tools/tools/generate_review_actions.py --input reviews/monitor-data.json --reviews reviews
             cp ../monitor-tools/static/review-monitor-guide.md monitor-feedback-format.md
           }
