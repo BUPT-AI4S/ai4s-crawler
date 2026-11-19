@@ -1,0 +1,45 @@
+{
+  "code": "nsdi",
+  "raw_file": "/tmp/lzk25-nsdi-papers.json",
+  "manifest_file": "/tmp/lzk25-nsdi-manifest.json",
+  "evidence_urls": [
+    "https://www.usenix.org/conference/nsdi25/technical-sessions"
+  ],
+  "scope": "NSDI 2025正式技术论文83篇；不计致辞、前言、索引、主题演讲及其他日程。",
+  "abstract_source": "USENIX official paper abstract",
+  "coverage_note": "NSDI 2025官方83篇正式论文与固定全量的稳定论文页URL及规范化题名逐项一致，无差额或重复。检查原零候选状态，核实补入ZOOMSYNTH网络流量测量重建研究1篇，取得USENIX原摘要及作者、年份、页码和PDF，已纳入并标规范中英文标签；无候选缺摘要、待定或未审。",
+  "previous_publication_note": "KR经PR #296合并，公开监控3篇候选（2纳入、1排除）、issues=[]、待同步0。",
+  "screening_scope": "83篇正式目录题名及现有摘要线索；对无线定位、5G基带、网络流量重建、视频感知及学习式协议/资源调度等12篇线索阅读原摘要。",
+  "default_screening_note": "通用网络/系统软件、协议运维、模型训练与推理基础设施或效率优化；现有线索未显示AI直接服务具体科学任务。",
+  "screening_notes": {
+    "3": "学习式视频速率控制，贡献是会议流服务的吞吐和卡顿性能，未呈现领域科学建模或研究贡献。",
+    "21": "UWB物理定位采用AoA/距离几何约束及生成树，无AI模型方法线索。",
+    "30": "根据vRAN时限裕量调整CPU频率，无AI方法线索。",
+    "48": "通用拥塞控制协议选择，贡献为时延吞吐与公平性，未呈现具体领域科学任务。",
+    "54": "蜂窝网络记录回放采用预置工作负载和插值，未显示AI方法。",
+    "59": "通用视频分析的区域增强与执行调度，贡献为准确率/吞吐和部署效率，未呈现专门领域研究任务。",
+    "62": "ML流量分析的贝叶斯配置优化及编译流水线，主要为推理延迟、吞吐和通用服务性能。",
+    "65": "以RL切换BFT共识协议，属于通用分布式软件系统性能。",
+    "66": "MIMO基带执行使用记分牌式调度，无AI方法线索。",
+    "70": "碳感知调度ML作业；ML为工作负载，未呈现AI参与碳排放建模的证据。",
+    "75": "生产CDN拥塞控制选择与商业QoE改进，未呈现领域科学研究任务。"
+  },
+  "additions": [
+    {
+      "raw_index": 57,
+      "decision": "include",
+      "domain": "AI 用于信息科学",
+      "rationale": "以分层Granular Traffic Transformer/Composable Large Traffic Model从实测粗粒度网络计数器反演包级轨迹，建模多时间尺度通信流量分布，为通信网络测量及仿真提供细粒度研究数据。",
+      "evidence_location": "USENIX官方论文页原摘要及BibTeX元数据",
+      "evidence_urls": [
+        "https://www.usenix.org/conference/nsdi25/presentation/wang-xizheng-resolving",
+        "https://www.usenix.org/system/files/nsdi25-wang-xizheng-resolving.pdf"
+      ],
+      "verified_metadata": {
+        "url": "https://www.usenix.org/conference/nsdi25/presentation/wang-xizheng-resolving",
+        "pages": "1541-1561",
+        "pdf_url": "https://www.usenix.org/system/files/nsdi25-wang-xizheng-resolving.pdf"
+      }
+    }
+  ]
+}
