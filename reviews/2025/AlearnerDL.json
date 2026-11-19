@@ -109877,7 +109877,7 @@
       "https://dblp.org/pid/02/3721-1",
       "https://dblp.org/pid/96/6606"
     ],
-    "abstract": null,
+    "abstract": "In recent years, the proliferation of WiFi-connected devices and related research has led to novel techniques of utilizing WiFi as sensors, i.e., capturing human movements through channel state information (CSI) perturbations. While this enables passive occupant sensing, it also introduces privacy risks from textit{leaked WiFi signals} that attackers can intercept, leading to threats like textit{occupancy detection}, critical in scenarios such as burglaries or stalking. We propose LeakyBeam, a novel and improved textit{occupancy detection attack} that leverages a new side channel from WiFi CSI, namely beamforming feedback information (BFI). BFI retains victim's movement information, even when transmitted through walls, and is easily captured since BFI packets are unencrypted, making them a rich source of privacy-sensitive information. Furthermore, we also introduce a defense mechanism that obfuscates BFI packets, requiring minimal hardware changes. We demonstrate LeakyBeam's effectiveness through a comprehensive real-world evaluation at a distance of 20 meters, achieving true positive and negative rates of 82.7% and 96.7%, respectively.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -109923,19 +109923,29 @@
       },
       "method_evidence": []
     },
+    "abstract_source": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/lend-me-your-beam-privacy-implications-of-plaintext-beamforming-feedback-in-wifi/",
+      "source": "NDSS official paper abstract",
+      "checked_at": "2026-11-19",
+      "checked_by": "龙兆科",
+      "evidence_location": "正常Chrome官方论文页原摘要"
+    },
     "ai4s_review": {
       "schema_version": 2,
       "batch_id": "longzhaoke-2025-20261119",
       "owner": "龙兆科",
       "snapshot_at": "2026-11-09T10:51:18+08:00",
-      "decision": "pending",
-      "rationale": "官方摘要确认WiFi波束反馈用于占用检测，但未说明是否使用AI识别模型，需核实论文方法。",
+      "decision": "exclude",
+      "rationale": "官方原文§IV-B/C以PCA分量、滑动方差、median/MAD和STFT功率阈值推断占用状态；未使用学习模型，经典信号分解及固定统计阈值不单独构成AI贡献。",
       "verified_metadata": {
         "url": "https://www.ndss-symposium.org/ndss-paper/lend-me-your-beam-privacy-implications-of-plaintext-beamforming-feedback-in-wifi/",
         "evidence_urls": [
-          "https://www.ndss-symposium.org/ndss-paper/lend-me-your-beam-privacy-implications-of-plaintext-beamforming-feedback-in-wifi/"
+          "https://www.ndss-symposium.org/ndss-paper/lend-me-your-beam-privacy-implications-of-plaintext-beamforming-feedback-in-wifi/",
+          "https://www.ndss-symposium.org/wp-content/uploads/2025-5-paper.pdf"
         ],
-        "abstract": "In recent years, the proliferation of WiFi-connected devices and related research has led to novel techniques of utilizing WiFi as sensors, i.e., capturing human movements through channel state information (CSI) perturbations. While this enables passive occupant sensing, it also introduces privacy risks from textit{leaked WiFi signals} that attackers can intercept, leading to threats like textit{occupancy detection}, critical in scenarios such as burglaries or stalking. We propose LeakyBeam, a novel and improved textit{occupancy detection attack} that leverages a new side channel from WiFi CSI, namely beamforming feedback information (BFI). BFI retains victim's movement information, even when transmitted through walls, and is easily captured since BFI packets are unencrypted, making them a rich source of privacy-sensitive information. Furthermore, we also introduce a defense mechanism that obfuscates BFI packets, requiring minimal hardware changes. We demonstrate LeakyBeam's effectiveness through a comprehensive real-world evaluation at a distance of 20 meters, achieving true positive and negative rates of 82.7% and 96.7%, respectively."
+        "abstract": "In recent years, the proliferation of WiFi-connected devices and related research has led to novel techniques of utilizing WiFi as sensors, i.e., capturing human movements through channel state information (CSI) perturbations. While this enables passive occupant sensing, it also introduces privacy risks from textit{leaked WiFi signals} that attackers can intercept, leading to threats like textit{occupancy detection}, critical in scenarios such as burglaries or stalking. We propose LeakyBeam, a novel and improved textit{occupancy detection attack} that leverages a new side channel from WiFi CSI, namely beamforming feedback information (BFI). BFI retains victim's movement information, even when transmitted through walls, and is easily captured since BFI packets are unencrypted, making them a rich source of privacy-sensitive information. Furthermore, we also introduce a defense mechanism that obfuscates BFI packets, requiring minimal hardware changes. We demonstrate LeakyBeam's effectiveness through a comprehensive real-world evaluation at a distance of 20 meters, achieving true positive and negative rates of 82.7% and 96.7%, respectively.",
+        "doi": "10.14722/ndss.2025.240005",
+        "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-5-paper.pdf"
       },
       "tags": []
     }
@@ -109962,7 +109972,7 @@
       "https://dblp.org/pid/58/4582-3",
       "https://dblp.org/pid/k/FarinazKoushanfar"
     ],
-    "abstract": null,
+    "abstract": "Machine Learning (ML) has been instrumental in enabling joint transceiver optimization by merging all physical layer blocks of the end-to-end wireless communication systems. Although there have been a number of adversarial attacks on ML-based wireless systems, the existing methods do not provide a comprehensive view including multi-modality of the source data, common physical layer protocols, and wireless domain constraints. This paper proposes Magmaw, a novel wireless attack methodology capable of generating universal adversarial perturbations for any multimodal signal transmitted over a wireless channel. We further introduce new objectives for adversarial attacks on downstream applications. We adopt the widely used defenses to verify the resilience of Magmaw. For proof-of-concept evaluation, we build a real-time wireless attack platform using a software-defined radio system. Experimental results demonstrate that Magmaw causes significant performance degradation even in the presence of strong defense mechanisms. Furthermore, we validate the performance of Magmaw in two case studies: encrypted communication channel and channel modality-based ML model. Our code is available at https://github.com/juc023/Magmaw.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -110008,6 +110018,13 @@
       },
       "method_evidence": []
     },
+    "abstract_source": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/magmaw-modality-agnostic-adversarial-attacks-on-machine-learning-based-wireless-communication-systems/",
+      "source": "NDSS official paper abstract",
+      "checked_at": "2026-11-19",
+      "checked_by": "龙兆科",
+      "evidence_location": "正常Chrome官方论文页原摘要"
+    },
     "ai4s_review": {
       "schema_version": 2,
       "batch_id": "longzhaoke-2025-20261119",
@@ -110027,7 +110044,7 @@
           "axis": "domain",
           "label": "AI 用于信息科学",
           "label_en": "AI for information science",
-          "evidence_location": "NDSS官方论文页摘要",
+          "evidence_location": "NDSS官方论文页原摘要",
           "rationale": "Magmaw为端到端机器学习无线收发链构造跨模态物理扰动，以软件无线电实验验证传输与模型鲁棒性。"
         }
       ]
@@ -132141,6 +132158,1225 @@
           "label_en": "AI for engineering sciences",
           "evidence_location": "IEEE出版社原摘要；出版社公开方法关键词",
           "rationale": "从电磁侧信号训练机器学习分类器检测微控制器控制流变化，并研究跨处理器迁移；公开原摘要和出版社Machine Learning Classifiers/Transfer Learning关键词证实AI与硬件测量任务关系。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "https://dblp.org/rec/conf/ndss/CayirALAACCU25",
+    "venue": "ndss",
+    "year": 2025,
+    "track": "unverified",
+    "title": "Speak Up, I'm Listening: Extracting Speech from Zero-Permission VR Sensors.",
+    "authors": [
+      "Derin Cayir",
+      "Reham Mohamed Aburas",
+      "Riccardo Lazzeretti",
+      "Marco Angelini",
+      "Abbas Acar",
+      "Mauro Conti",
+      "Z. Berkay Celik",
+      "A. Selcuk Uluagac"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/367/9458",
+      "https://dblp.org/pid/158/9223-3",
+      "https://dblp.org/pid/87/7355",
+      "https://dblp.org/pid/118/6511",
+      "https://dblp.org/pid/195/5992",
+      "https://dblp.org/pid/82/4386",
+      "https://dblp.org/pid/143/2298",
+      "https://dblp.org/pid/46/1500"
+    ],
+    "abstract": "As Virtual Reality (VR) technologies advance, their application in privacy-sensitive contexts, such as meetings, lectures, simulations, and training, expands. These environments often involve conversations that contain privacy-sensitive information about users and the individuals with whom they interact. The presence of advanced sensors in modern VR devices raises concerns about possible side-channel attacks that exploit these sensor capabilities. In this paper, we introduce IMMERSPY, a novel acoustic side-channel attack that exploits motion sensors in VR devices to extract sensitive speech content from on-device speakers. We analyze two powerful attacker scenarios: informed attacker, where the attacker possesses labeled data about the victim, and uninformed attacker, where no prior victim information is available. We design a Mel-spectrogram CNN-LSTM model to extract digit information (e.g., social security or credit card numbers) by learning the speech-induced vibrations captured by motion sensors. Our experiments show that IMMERSPY detects four consecutive digits with 74% accuracy and 16-digit sequences, such as credit card numbers, with 62% accuracy. Additionally, we leverage Generative AI text-to-speech models in our attack experiments to illustrate how the attackers can create training datasets even without the need to use the victim’s labeled data. Our findings highlight the critical need for security measures in VR domains to mitigate evolving privacy risks. To address this, we introduce a defense technique that emits inaudible tones through the Head-Mounted Display (HMD) speakers, showing its effectiveness in mitigating acoustic side-channel attacks.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": null,
+    "pages": null,
+    "bibtex": null,
+    "url": "https://www.ndss-symposium.org/ndss-paper/speak-up-im-listening-extracting-speech-from-zero-permission-vr-sensors/",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "needs_abstract",
+    "conference_title": "Network and Distributed System Security Symposium",
+    "ccf_rank": "A",
+    "ccf_field": "网络与信息安全",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/ndss/CayirALAACCU25",
+    "dblp_toc": "https://dblp.org/db/conf/ndss/ndss2025",
+    "booktitle": "NDSS",
+    "abstract_source": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/speak-up-im-listening-extracting-speech-from-zero-permission-vr-sensors/",
+      "source": "NDSS official paper abstract",
+      "checked_at": "2026-11-19",
+      "checked_by": "龙兆科",
+      "evidence_location": "正常Chrome可见论文页原摘要"
+    },
+    "ai4s_candidate_supplement": {
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "checked_at": "2026-11-19",
+      "reason": "verified_existing_catalogue_paper_omitted_from_initial_keyword_filter",
+      "evidence_urls": [
+        "https://www.ndss-symposium.org/ndss-paper/speak-up-im-listening-extracting-speech-from-zero-permission-vr-sensors/",
+        "https://www.ndss-symposium.org/wp-content/uploads/2025-164-paper.pdf"
+      ],
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261119/ndss-initial-filter-audit.json"
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "longzhaoke-2025-20261119",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "decision": "include",
+      "rationale": "以CNN-LSTM从VR运动传感器的声致振动重建语音，实证研究物理传感信号与声学信息的关系。",
+      "verified_metadata": {
+        "url": "https://www.ndss-symposium.org/ndss-paper/speak-up-im-listening-extracting-speech-from-zero-permission-vr-sensors/",
+        "evidence_urls": [
+          "https://www.ndss-symposium.org/ndss-paper/speak-up-im-listening-extracting-speech-from-zero-permission-vr-sensors/",
+          "https://www.ndss-symposium.org/wp-content/uploads/2025-164-paper.pdf"
+        ],
+        "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-164-paper.pdf"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "NDSS官方论文页原摘要",
+          "rationale": "以CNN-LSTM从VR运动传感器的声致振动重建语音，实证研究物理传感信号与声学信息的关系。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "https://dblp.org/rec/conf/ndss/ChoudhuryMDTTB25",
+    "venue": "ndss",
+    "year": 2025,
+    "track": "unverified",
+    "title": "Crosstalk-induced Side Channel Threats in Multi-Tenant NISQ Computers.",
+    "authors": [
+      "Navnil Choudhury",
+      "Chaithanya Naik Mude",
+      "Sanjay Das",
+      "Preetham Chandra Tikkireddi",
+      "Swamit Tannu",
+      "Kanad Basu"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/348/4799",
+      "https://dblp.org/pid/336/4225",
+      "https://dblp.org/pid/56/6267",
+      "https://dblp.org/pid/395/1646",
+      "https://dblp.org/pid/207/1837",
+      "https://dblp.org/pid/08/1330"
+    ],
+    "abstract": "As quantum computing rapidly advances, its near-term applications are becoming increasingly evident. However, the high cost and under-utilization of quantum resources are prompting a shift from single-user to multi-user access models. In a multi-tenant environment, where multiple users share one quantum computer, protecting user confidentiality becomes crucial. The varied uses of quantum computers increase the risk that sensitive data encoded by one user could be compromised by others, rendering the protection of data integrity and confidentiality essential.\nIn the evolving quantum computing landscape, it is imperative to study these security challenges within the scope of realistic threat model assumptions,\nwherein an adversarial user can mount practical attacks without relying on any heightened privileges afforded by physical access to a quantum computer or rogue cloud services.\nIn this paper, we demonstrate the potential of crosstalk as an attack vector for the first time on a Noisy Intermediate Scale Quantum (NISQ) machine, that an adversarial user can exploit within a multi-tenant quantum computing model.\nThe proposed side-channel attack is conducted with minimal and realistic adversarial privileges, with the overarching aim of uncovering the quantum algorithm being executed by a victim. Crosstalk signatures are used to estimate the presence of CNOT gates in the victim circuit, and subsequently, this information is encoded and classified by a graph-based learning model to identify the victim quantum algorithm. When evaluated on up to 336 benchmark circuits, our attack framework is found to be able to unveil the victim's quantum algorithm with up to 85.7% accuracy.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": null,
+    "pages": null,
+    "bibtex": null,
+    "url": "https://www.ndss-symposium.org/ndss-paper/crosstalk-induced-side-channel-threats-in-multi-tenant-nisq-computers/",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "needs_abstract",
+    "conference_title": "Network and Distributed System Security Symposium",
+    "ccf_rank": "A",
+    "ccf_field": "网络与信息安全",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/ndss/ChoudhuryMDTTB25",
+    "dblp_toc": "https://dblp.org/db/conf/ndss/ndss2025",
+    "booktitle": "NDSS",
+    "abstract_source": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/crosstalk-induced-side-channel-threats-in-multi-tenant-nisq-computers/",
+      "source": "NDSS official paper abstract",
+      "checked_at": "2026-11-19",
+      "checked_by": "龙兆科",
+      "evidence_location": "正常Chrome可见论文页原摘要"
+    },
+    "ai4s_candidate_supplement": {
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "checked_at": "2026-11-19",
+      "reason": "verified_existing_catalogue_paper_omitted_from_initial_keyword_filter",
+      "evidence_urls": [
+        "https://www.ndss-symposium.org/ndss-paper/crosstalk-induced-side-channel-threats-in-multi-tenant-nisq-computers/",
+        "https://www.ndss-symposium.org/wp-content/uploads/2025-2185-paper.pdf"
+      ],
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261119/ndss-initial-filter-audit.json"
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "longzhaoke-2025-20261119",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "decision": "include",
+      "rationale": "图学习模型分析NISQ量子硬件串扰签名，识别量子电路并在336个量子基准上验证，直接研究量子器件的物理测量与安全。",
+      "verified_metadata": {
+        "url": "https://www.ndss-symposium.org/ndss-paper/crosstalk-induced-side-channel-threats-in-multi-tenant-nisq-computers/",
+        "evidence_urls": [
+          "https://www.ndss-symposium.org/ndss-paper/crosstalk-induced-side-channel-threats-in-multi-tenant-nisq-computers/",
+          "https://www.ndss-symposium.org/wp-content/uploads/2025-2185-paper.pdf"
+        ],
+        "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-2185-paper.pdf"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于数理科学",
+          "label_en": "AI for mathematical and physical sciences",
+          "evidence_location": "NDSS官方论文页原摘要",
+          "rationale": "图学习模型分析NISQ量子硬件串扰签名，识别量子电路并在336个量子基准上验证，直接研究量子器件的物理测量与安全。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "https://dblp.org/rec/conf/ndss/GohilDNSR25",
+    "venue": "ndss",
+    "year": 2025,
+    "track": "unverified",
+    "title": "LLMPirate: LLMs for Black-box Hardware IP Piracy.",
+    "authors": [
+      "Vasudev Gohil",
+      "Matthew DeLorenzo",
+      "Veera Vishwa Achuta Sai Venkat Nallam",
+      "Joey See",
+      "Jeyavijayan Rajendran"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/213/7355",
+      "https://dblp.org/pid/367/9381",
+      "https://dblp.org/pid/393/0207",
+      "https://dblp.org/pid/393/5039",
+      "https://dblp.org/pid/79/9006"
+    ],
+    "abstract": "The rapid advancement of large language models (LLMs) has enabled the ability to effectively analyze and generate code nearly instantaneously, resulting in their widespread adoption in software development. Following this advancement, researchers and companies have also begun integrating LLMs across the hardware design and verification process. However, these highly potent LLMs can also induce new attack scenarios upon security vulnerabilities across the hardware development process. One such attack vector that has not been explored so far is intellectual property (IP) piracy. Given that this attack can manifest as rewriting hardware designs to evade piracy detection, it is essential to thoroughly evaluate LLM capabilities in performing this task and assess the mitigation abilities of current IP piracy detection tools.\n\nTherefore, in this work, we propose *LLMPirate*, the first LLM-based technique able to generate pirated variations of circuit designs that successfully evade detection across multiple state-of-the-art piracy detection tools. We devise three solutions to overcome challenges related to integration of LLMs for hardware circuit designs, scalability to large circuits, and effectiveness, resulting in an end-to-end automated, efficient, and practical formulation. We perform an extensive experimental evaluation of *LLMPirate* using eight LLMs of varying sizes and capabilities and assess their performance in pirating various circuit designs against four state-of-the-art, widely-used piracy detection tools. Our experiments demonstrate that *LLMPirate* is able to consistently evade detection on 100% of tested circuits across every detection tool. Additionally, we showcase the ramifications of *LLMPirate* using case studies on IBEX and MOR1KX processors and a GPS module, that we successfully pirate. We envision that our work motivates and fosters the development of better IP piracy detection tools.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": null,
+    "pages": null,
+    "bibtex": null,
+    "url": "https://www.ndss-symposium.org/ndss-paper/llmpirate-llms-for-black-box-hardware-ip-piracy/",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "needs_abstract",
+    "conference_title": "Network and Distributed System Security Symposium",
+    "ccf_rank": "A",
+    "ccf_field": "网络与信息安全",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/ndss/GohilDNSR25",
+    "dblp_toc": "https://dblp.org/db/conf/ndss/ndss2025",
+    "booktitle": "NDSS",
+    "abstract_source": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/llmpirate-llms-for-black-box-hardware-ip-piracy/",
+      "source": "NDSS official paper abstract",
+      "checked_at": "2026-11-19",
+      "checked_by": "龙兆科",
+      "evidence_location": "正常Chrome可见论文页原摘要"
+    },
+    "ai4s_candidate_supplement": {
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "checked_at": "2026-11-19",
+      "reason": "verified_existing_catalogue_paper_omitted_from_initial_keyword_filter",
+      "evidence_urls": [
+        "https://www.ndss-symposium.org/ndss-paper/llmpirate-llms-for-black-box-hardware-ip-piracy/",
+        "https://www.ndss-symposium.org/wp-content/uploads/2025-2059-paper.pdf"
+      ],
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261119/ndss-initial-filter-audit.json"
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "longzhaoke-2025-20261119",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "decision": "include",
+      "rationale": "以LLM生成保持功能等价的硬件电路变体，实证评测IBEX、MOR1KX处理器及GPS等电路设计，AI直接参与数字电路工程研究。",
+      "verified_metadata": {
+        "url": "https://www.ndss-symposium.org/ndss-paper/llmpirate-llms-for-black-box-hardware-ip-piracy/",
+        "evidence_urls": [
+          "https://www.ndss-symposium.org/ndss-paper/llmpirate-llms-for-black-box-hardware-ip-piracy/",
+          "https://www.ndss-symposium.org/wp-content/uploads/2025-2059-paper.pdf"
+        ],
+        "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-2059-paper.pdf"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "NDSS官方论文页原摘要",
+          "rationale": "以LLM生成保持功能等价的硬件电路变体，实证评测IBEX、MOR1KX处理器及GPS等电路设计，AI直接参与数字电路工程研究。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "https://dblp.org/rec/conf/ndss/KotziasPACSB25",
+    "venue": "ndss",
+    "year": 2025,
+    "track": "unverified",
+    "title": "Ctrl+Alt+Deceive: Quantifying User Exposure to Online Scams.",
+    "authors": [
+      "Platon Kotzias",
+      "Michalis Pachilakis",
+      "Javier Aldana-Iuit",
+      "Juan Caballero",
+      "Iskander Sánchez-Rola",
+      "Leyla Bilge"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/44/10958",
+      "https://dblp.org/pid/245/9101",
+      "https://dblp.org/pid/152/2371",
+      "https://dblp.org/pid/35/3587",
+      "https://dblp.org/pid/165/2039",
+      "https://dblp.org/pid/15/6037"
+    ],
+    "abstract": "Online scams have become a top threat for Internet users, inflicting $10 billion in losses in 2023 only in the US. Prior work has studied specific scam types, but no work has compared different scam types. In this work, we perform what we believe is the first study of the exposure of end users to different types of online scams. We examine seven popular scam types: shopping, financial, cryptocurrency, gambling, dating, funds recovery, and employment scams. To quantify end-user exposure, we search for observations of 607K scam domains over a period of several months by millions of desktop and mobile devices belonging to customers of a large cybersecurity vendor. We classify the scam domains into the seven scam types and measure for each scam type the exposure of end users, geographical variations, scam domain lifetime, and the promotion of scam websites through online advertisements.\n\nWe examine 25.1M IP addresses accessing over 414K scam domains. On a daily basis, 149K devices are exposed to online scams, with an average of 101K (0.8%) of desktop devices being exposed compared to 48K (0.3%) of mobile devices. Shopping scams are the most prevalent scam type, being observed by a total of 10.2M IPs, followed by cryptocurrency scams, observed by 653K IPs. After being observed in the telemetry, the scam domains remain alive for a median of 11 days. In at least 9.2M (13.3%) of all scam observations users followed an advertisement. These ads are largely (59%) hosted on social media, with Facebook being the preferred source.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": null,
+    "pages": null,
+    "bibtex": null,
+    "url": "https://www.ndss-symposium.org/ndss-paper/ctrlaltdeceive-quantifying-user-exposure-to-online-scams/",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "needs_abstract",
+    "conference_title": "Network and Distributed System Security Symposium",
+    "ccf_rank": "A",
+    "ccf_field": "网络与信息安全",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/ndss/KotziasPACSB25",
+    "dblp_toc": "https://dblp.org/db/conf/ndss/ndss2025",
+    "booktitle": "NDSS",
+    "abstract_source": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/ctrlaltdeceive-quantifying-user-exposure-to-online-scams/",
+      "source": "NDSS official paper abstract",
+      "checked_at": "2026-11-19",
+      "checked_by": "龙兆科",
+      "evidence_location": "正常Chrome可见论文页原摘要"
+    },
+    "ai4s_candidate_supplement": {
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "checked_at": "2026-11-19",
+      "reason": "verified_existing_catalogue_paper_omitted_from_initial_keyword_filter",
+      "evidence_urls": [
+        "https://www.ndss-symposium.org/ndss-paper/ctrlaltdeceive-quantifying-user-exposure-to-online-scams/",
+        "https://www.ndss-symposium.org/wp-content/uploads/2025-1816-paper.pdf"
+      ],
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261119/ndss-initial-filter-audit.json"
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "longzhaoke-2025-20261119",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "decision": "include",
+      "rationale": "利用经评测的机器学习购物诈骗探测器构建研究样本，结合跨国设备遥测量化不同诈骗类型的人群暴露、地理差异、寿命及广告传播；不是仅开发通用反诈工具。",
+      "verified_metadata": {
+        "url": "https://www.ndss-symposium.org/ndss-paper/ctrlaltdeceive-quantifying-user-exposure-to-online-scams/",
+        "evidence_urls": [
+          "https://www.ndss-symposium.org/ndss-paper/ctrlaltdeceive-quantifying-user-exposure-to-online-scams/",
+          "https://www.ndss-symposium.org/wp-content/uploads/2025-1816-paper.pdf"
+        ],
+        "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-1816-paper.pdf"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于社会科学",
+          "label_en": "AI for social sciences",
+          "evidence_location": "官方原摘要及正文§I、§III购物诈骗数据源",
+          "rationale": "利用经评测的机器学习购物诈骗探测器构建研究样本，结合跨国设备遥测量化不同诈骗类型的人群暴露、地理差异、寿命及广告传播；不是仅开发通用反诈工具。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "https://dblp.org/rec/conf/ndss/LiuLM0L0025",
+    "venue": "ndss",
+    "year": 2025,
+    "track": "unverified",
+    "title": "L-HAWK: A Controllable Physical Adversarial Patch Against a Long-Distance Target.",
+    "authors": [
+      "Taifeng Liu",
+      "Yang Liu 0118",
+      "Zhuo Ma 0001",
+      "Tong Yang 0003",
+      "Xinjing Liu",
+      "Teng Li 0003",
+      "Jianfeng Ma 0001"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/374/1187",
+      "https://dblp.org/pid/51/3710-118",
+      "https://dblp.org/pid/91/7448-1",
+      "https://dblp.org/pid/44/7710-3",
+      "https://dblp.org/pid/193/2620",
+      "https://dblp.org/pid/09/6669-3",
+      "https://dblp.org/pid/12/6604-1"
+    ],
+    "abstract": "The vision-based perception modules in autonomous vehicles (AVs) are prone to physical adversarial patch attacks. However, most existing attacks indiscriminately affect all passing vehicles. This paper introduces L-HAWK, a novel controllable physical adversarial patch activated by long-distance laser signals. L-HAWK is designed to target specific vehicles when the adversarial patch is triggered by laser signals while remaining benign under normal conditions. To achieve this goal and address the unique challenges associated with laser signals, we propose an asynchronous learning method for L-HAWK to determine the optimal laser parameters and the corresponding adversarial patch. To enhance the attack robustness in real-world scenarios, we introduce a multi-angle and multi-position simulation mechanism, a noise approximation approach, and a progressive sampling-based method. L-HAWK has been validated through extensive experiments in both digital and physical environments. Compared to a 59% success rate of TPatch (Usenix ’23) at 7 meters, L-HAWK achieves a 91.9% average attack success rate at 50 meters. This represents a 56% improvement in attack success rate and a more than sevenfold increase in attack distance.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": null,
+    "pages": null,
+    "bibtex": null,
+    "url": "https://www.ndss-symposium.org/ndss-paper/l-hawk-a-controllable-physical-adversarial-patch-against-a-long-distance-target/",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "needs_abstract",
+    "conference_title": "Network and Distributed System Security Symposium",
+    "ccf_rank": "A",
+    "ccf_field": "网络与信息安全",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/ndss/LiuLM0L0025",
+    "dblp_toc": "https://dblp.org/db/conf/ndss/ndss2025",
+    "booktitle": "NDSS",
+    "abstract_source": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/l-hawk-a-controllable-physical-adversarial-patch-against-a-long-distance-target/",
+      "source": "NDSS official paper abstract",
+      "checked_at": "2026-11-19",
+      "checked_by": "龙兆科",
+      "evidence_location": "正常Chrome可见论文页原摘要"
+    },
+    "ai4s_candidate_supplement": {
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "checked_at": "2026-11-19",
+      "reason": "verified_existing_catalogue_paper_omitted_from_initial_keyword_filter",
+      "evidence_urls": [
+        "https://www.ndss-symposium.org/ndss-paper/l-hawk-a-controllable-physical-adversarial-patch-against-a-long-distance-target/",
+        "https://www.ndss-symposium.org/wp-content/uploads/2025-26-paper.pdf"
+      ],
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261119/ndss-initial-filter-audit.json"
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "longzhaoke-2025-20261119",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "decision": "include",
+      "rationale": "面向自动驾驶感知设计异步学习的激光与物理补丁攻击模型，并通过远距离物理实验研究车辆感知鲁棒性。",
+      "verified_metadata": {
+        "url": "https://www.ndss-symposium.org/ndss-paper/l-hawk-a-controllable-physical-adversarial-patch-against-a-long-distance-target/",
+        "evidence_urls": [
+          "https://www.ndss-symposium.org/ndss-paper/l-hawk-a-controllable-physical-adversarial-patch-against-a-long-distance-target/",
+          "https://www.ndss-symposium.org/wp-content/uploads/2025-26-paper.pdf"
+        ],
+        "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-26-paper.pdf"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "NDSS官方论文页原摘要",
+          "rationale": "面向自动驾驶感知设计异步学习的激光与物理补丁攻击模型，并通过远距离物理实验研究车辆感知鲁棒性。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "https://dblp.org/rec/conf/ndss/LiWZYS0025",
+    "venue": "ndss",
+    "year": 2025,
+    "track": "unverified",
+    "title": "EMIRIS: Eavesdropping on Iris Information via Electromagnetic Side Channel.",
+    "authors": [
+      "Wenhao Li 0008",
+      "Jiahao Wang",
+      "Guoming Zhang",
+      "Yanni Yang 0003",
+      "Riccardo Spolaor",
+      "Xiuzhen Cheng",
+      "Pengfei Hu 0001"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/11/444-8",
+      "https://dblp.org/pid/34/5354",
+      "https://dblp.org/pid/163/3092",
+      "https://dblp.org/pid/187/1683-3",
+      "https://dblp.org/pid/149/2739",
+      "https://dblp.org/pid/c/XiuzhenCheng",
+      "https://dblp.org/pid/71/9969-1"
+    ],
+    "abstract": "Iris recognition is one of the most secure biometric methods due to the uniqueness and stability of iris patterns, as well as their resistance to forgery. Consequently, it is frequently used in high-security authentication scenarios. However, systems using Near-Infrared (NIR) sensors may expose the iris information of users, leading to significant privacy risks. Our research found that the electromagnetic (EM) emissions generated during data transmission of NIR sensors are closely related to iris data. Based on this observation, we propose EMIRIS, a method for reconstructing the iris information using EM side channels. By deconstructing the digital signal transmission format of the NIR sensors and the mapping mechanism of the iris data matrix, we can reconstruct iris information from EM signals and convert it into iris images. To improve the quality of the reconstructed iris, we model the denoising and restoration of iris texture details as a linear inverse problem and tailor a diffusion model to solve it. Extensive experimental evaluations show that EMIRIS can effectively reconstruct iris information from commercial iris recognition devices, achieving an average SSIM of 0.511 and an average FID of 7.25. Even more concerning, these reconstructed irises can effectively spoof the classical iris recognition model with an average success rate of 53.47% on more than 3,000 iris samples from 50 different users.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": null,
+    "pages": null,
+    "bibtex": null,
+    "url": "https://www.ndss-symposium.org/ndss-paper/emiris-eavesdropping-on-iris-information-via-electromagnetic-side-channel/",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "needs_abstract",
+    "conference_title": "Network and Distributed System Security Symposium",
+    "ccf_rank": "A",
+    "ccf_field": "网络与信息安全",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/ndss/LiWZYS0025",
+    "dblp_toc": "https://dblp.org/db/conf/ndss/ndss2025",
+    "booktitle": "NDSS",
+    "abstract_source": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/emiris-eavesdropping-on-iris-information-via-electromagnetic-side-channel/",
+      "source": "NDSS official paper abstract",
+      "checked_at": "2026-11-19",
+      "checked_by": "龙兆科",
+      "evidence_location": "正常Chrome可见论文页原摘要"
+    },
+    "ai4s_candidate_supplement": {
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "checked_at": "2026-11-19",
+      "reason": "verified_existing_catalogue_paper_omitted_from_initial_keyword_filter",
+      "evidence_urls": [
+        "https://www.ndss-symposium.org/ndss-paper/emiris-eavesdropping-on-iris-information-via-electromagnetic-side-channel/",
+        "https://www.ndss-symposium.org/wp-content/uploads/2025-200-paper.pdf"
+      ],
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261119/ndss-initial-filter-audit.json"
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "longzhaoke-2025-20261119",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "decision": "include",
+      "rationale": "利用扩散模型求解电磁测量到虹膜图像的线性逆问题，实证研究传感器电磁泄漏及图像重建。",
+      "verified_metadata": {
+        "url": "https://www.ndss-symposium.org/ndss-paper/emiris-eavesdropping-on-iris-information-via-electromagnetic-side-channel/",
+        "evidence_urls": [
+          "https://www.ndss-symposium.org/ndss-paper/emiris-eavesdropping-on-iris-information-via-electromagnetic-side-channel/",
+          "https://www.ndss-symposium.org/wp-content/uploads/2025-200-paper.pdf"
+        ],
+        "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-200-paper.pdf"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "NDSS官方论文页原摘要",
+          "rationale": "利用扩散模型求解电磁测量到虹膜图像的线性逆问题，实证研究传感器电磁泄漏及图像重建。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "https://dblp.org/rec/conf/ndss/MackensenS0SPM25",
+    "venue": "ndss",
+    "year": 2025,
+    "track": "unverified",
+    "title": "Spatial-Domain Wireless Jamming with Reconfigurable Intelligent Surfaces.",
+    "authors": [
+      "Philipp Mackensen",
+      "Paul Staat",
+      "Stefan Roth 0004",
+      "Aydin Sezgin",
+      "Christof Paar",
+      "Veelasha Moonsamy"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/371/2757",
+      "https://dblp.org/pid/276/5458",
+      "https://dblp.org/pid/181/2340-4",
+      "https://dblp.org/pid/12/218",
+      "https://dblp.org/pid/p/ChristofPaar",
+      "https://dblp.org/pid/20/11342"
+    ],
+    "abstract": "Wireless communication infrastructure is a cornerstone of modern digital society, yet it remains vulnerable to the persistent threat of wireless jamming. Attackers can easily create radio interference to overshadow legitimate signals, leading to denial of service.\nThe broadcast nature of radio signal propagation makes such attacks possible in the first place, but at the same time poses a challenge for the attacker: The jamming signal does not only reach the victim device but also other neighboring devices, preventing precise attack targeting.\n\nIn this work, we solve this challenge by leveraging the emerging RIS technology, for the first time, for precise delivery of jamming signals. In particular, we propose a novel approach that allows for environment-adaptive spatial control of wireless jamming signals, granting a new degree of freedom to perform jamming attacks.\nWe explore this novel method with extensive experimentation and demonstrate that our approach can disable the wireless communication of one or multiple victim devices while leaving neighboring devices unaffected. Notably, our method extends to challenging scenarios where wireless devices are very close to each other: We demonstrate complete denial-of-service of a Wi-Fi device while a second device located at a distance as close as 5 mm remains unaffected, sustaining wireless communication at a data rate of 25 Mbit/s. Lastly, we conclude by proposing potential countermeasures to thwart RIS-based spatial domain wireless jamming attacks.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": null,
+    "pages": null,
+    "bibtex": null,
+    "url": "https://www.ndss-symposium.org/ndss-paper/spatial-domain-wireless-jamming-with-reconfigurable-intelligent-surfaces/",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "needs_abstract",
+    "conference_title": "Network and Distributed System Security Symposium",
+    "ccf_rank": "A",
+    "ccf_field": "网络与信息安全",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/ndss/MackensenS0SPM25",
+    "dblp_toc": "https://dblp.org/db/conf/ndss/ndss2025",
+    "booktitle": "NDSS",
+    "abstract_source": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/spatial-domain-wireless-jamming-with-reconfigurable-intelligent-surfaces/",
+      "source": "NDSS official paper abstract",
+      "checked_at": "2026-11-19",
+      "checked_by": "龙兆科",
+      "evidence_location": "正常Chrome可见论文页原摘要"
+    },
+    "ai4s_candidate_supplement": {
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "checked_at": "2026-11-19",
+      "reason": "verified_existing_catalogue_paper_omitted_from_initial_keyword_filter",
+      "evidence_urls": [
+        "https://www.ndss-symposium.org/ndss-paper/spatial-domain-wireless-jamming-with-reconfigurable-intelligent-surfaces/",
+        "https://www.ndss-symposium.org/wp-content/uploads/2025-440-paper.pdf"
+      ],
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261119/ndss-initial-filter-audit.json"
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "longzhaoke-2025-20261119",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "decision": "include",
+      "rationale": "正文§V-3采用遗传优化机制，从实测RSSI迭代搜索可重构智能表面配置，实现毫米级空间选择性无线干扰。AI角色为演化优化；机器学习只在未来工作提及。",
+      "verified_metadata": {
+        "url": "https://www.ndss-symposium.org/ndss-paper/spatial-domain-wireless-jamming-with-reconfigurable-intelligent-surfaces/",
+        "evidence_urls": [
+          "https://www.ndss-symposium.org/ndss-paper/spatial-domain-wireless-jamming-with-reconfigurable-intelligent-surfaces/",
+          "https://www.ndss-symposium.org/wp-content/uploads/2025-440-paper.pdf"
+        ],
+        "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-440-paper.pdf"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "官方原摘要及正文§V-3、§VII-D",
+          "rationale": "正文§V-3采用遗传优化机制，从实测RSSI迭代搜索可重构智能表面配置，实现毫米级空间选择性无线干扰。AI角色为演化优化；机器学习只在未来工作提及。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "https://dblp.org/rec/conf/ndss/PasternakWONTB25",
+    "venue": "ndss",
+    "year": 2025,
+    "track": "unverified",
+    "title": "Characterizing the Impact of Audio Deepfakes in the Presence of Cochlear Implant.",
+    "authors": [
+      "Magdalena Pasternak",
+      "Kevin Warren",
+      "Daniel Olszewski",
+      "Susan Nittrouer",
+      "Patrick Traynor",
+      "Kevin R. B. Butler"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/392/3205",
+      "https://dblp.org/pid/250/9724",
+      "https://dblp.org/pid/320/8828",
+      "https://dblp.org/pid/158/4169",
+      "https://dblp.org/pid/14/3295",
+      "https://dblp.org/pid/82/1935"
+    ],
+    "abstract": "Cochlear implants (CIs) allow deaf and hard-of-hearing individuals to use audio devices, such as phones or voice assistants. However, the advent of increasingly sophisticated synthetic audio (i.e., deepfakes) potentially threatens these users. Yet, this population's susceptibility to such attacks is unclear. In this paper, we perform the first study of the impact of audio deepfakes on CI populations. We examine the use of CI-simulated audio within deepfake detectors. Based on these results, we conduct a user study with 35 CI users and 87 hearing persons (HPs) to determine differences in how CI users perceive deepfake audio. We show that CI users can, similarly to HPs, identify text-to-speech generated deepfakes. Yet, they perform substantially worse for voice conversion deepfake generation algorithms, achieving only 67% correct audio classification. We also evaluate how detection models trained on a CI-simulated audio compare to CI users and investigate if they can effectively act as proxies for CI users. This work begins an investigation into the intersection between adversarial audio and CI users to identify and mitigate threats against this marginalized group.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": null,
+    "pages": null,
+    "bibtex": null,
+    "url": "https://www.ndss-symposium.org/ndss-paper/characterizing-the-impact-of-audio-deepfakes-in-the-presence-of-cochlear-implant/",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "needs_abstract",
+    "conference_title": "Network and Distributed System Security Symposium",
+    "ccf_rank": "A",
+    "ccf_field": "网络与信息安全",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/ndss/PasternakWONTB25",
+    "dblp_toc": "https://dblp.org/db/conf/ndss/ndss2025",
+    "booktitle": "NDSS",
+    "abstract_source": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/characterizing-the-impact-of-audio-deepfakes-in-the-presence-of-cochlear-implant/",
+      "source": "NDSS official paper abstract",
+      "checked_at": "2026-11-19",
+      "checked_by": "龙兆科",
+      "evidence_location": "正常Chrome可见论文页原摘要"
+    },
+    "ai4s_candidate_supplement": {
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "checked_at": "2026-11-19",
+      "reason": "verified_existing_catalogue_paper_omitted_from_initial_keyword_filter",
+      "evidence_urls": [
+        "https://www.ndss-symposium.org/ndss-paper/characterizing-the-impact-of-audio-deepfakes-in-the-presence-of-cochlear-implant/",
+        "https://www.ndss-symposium.org/wp-content/uploads/2025-1117-paper.pdf"
+      ],
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261119/ndss-initial-filter-audit.json"
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "longzhaoke-2025-20261119",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "decision": "include",
+      "rationale": "训练人工耳蜗模拟音频检测模型，并以35名人工耳蜗使用者和87名普通听力参与者研究音频深伪识别与听觉感知，AI直接服务听觉研究。",
+      "verified_metadata": {
+        "url": "https://www.ndss-symposium.org/ndss-paper/characterizing-the-impact-of-audio-deepfakes-in-the-presence-of-cochlear-implant/",
+        "evidence_urls": [
+          "https://www.ndss-symposium.org/ndss-paper/characterizing-the-impact-of-audio-deepfakes-in-the-presence-of-cochlear-implant/",
+          "https://www.ndss-symposium.org/wp-content/uploads/2025-1117-paper.pdf"
+        ],
+        "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-1117-paper.pdf"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "NDSS官方论文页原摘要",
+          "rationale": "训练人工耳蜗模拟音频检测模型，并以35名人工耳蜗使用者和87名普通听力参与者研究音频深伪识别与听觉感知，AI直接服务听觉研究。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "https://dblp.org/rec/conf/ndss/RenJ00025",
+    "venue": "ndss",
+    "year": 2025,
+    "track": "unverified",
+    "title": "GhostShot: Manipulating the Image of CCD Cameras with Electromagnetic Interference.",
+    "authors": [
+      "Yanze Ren",
+      "Qinhong Jiang",
+      "Chen Yan 0001",
+      "Xiaoyu Ji 0001",
+      "Wenyuan Xu 0001"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/169/4595",
+      "https://dblp.org/pid/262/3567",
+      "https://dblp.org/pid/46/1162-1",
+      "https://dblp.org/pid/39/1697-1",
+      "https://dblp.org/pid/10/3878-1"
+    ],
+    "abstract": "CCD cameras are critical in professional and scientific applications where high-quality image data are required, and the reliability of the captured images forms the basis for trustworthy computer vision systems. Previous work shows the feasibility of using intentional electromagnetic interference (IEMI) to inject unnoticeable image changes into CCD cameras. In this work, we design an attack of enhanced capability, GhostShot, that can inject any grayscale or colored images into CCD cameras under normal light conditions with IEMI. We conduct a schematic analysis of the causality of the IEMI effect on the shapes, brightness, and colors of the injected images, and achieve effective control of the injected pattern through amplitude-phase modulation. We design an end-to-end attack workflow and successfully validate the attack on 15 commercial CCD cameras. We demonstrate the potential impact of GhostShot on medical diagnosis, fire detection, QR code scanning and object detection and find that the falsified images can successfully mislead computer vision systems and even human eyes.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": null,
+    "pages": null,
+    "bibtex": null,
+    "url": "https://www.ndss-symposium.org/ndss-paper/ghostshot-manipulating-the-image-of-ccd-cameras-with-electromagnetic-interference/",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "needs_abstract",
+    "conference_title": "Network and Distributed System Security Symposium",
+    "ccf_rank": "A",
+    "ccf_field": "网络与信息安全",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/ndss/RenJ00025",
+    "dblp_toc": "https://dblp.org/db/conf/ndss/ndss2025",
+    "booktitle": "NDSS",
+    "abstract_source": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/ghostshot-manipulating-the-image-of-ccd-cameras-with-electromagnetic-interference/",
+      "source": "NDSS official paper abstract",
+      "checked_at": "2026-11-19",
+      "checked_by": "龙兆科",
+      "evidence_location": "正常Chrome可见论文页原摘要"
+    },
+    "ai4s_candidate_supplement": {
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "checked_at": "2026-11-19",
+      "reason": "verified_existing_catalogue_paper_omitted_from_initial_keyword_filter",
+      "evidence_urls": [
+        "https://www.ndss-symposium.org/ndss-paper/ghostshot-manipulating-the-image-of-ccd-cameras-with-electromagnetic-interference/",
+        "https://www.ndss-symposium.org/wp-content/uploads/2025-2065-paper.pdf"
+      ],
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261119/ndss-initial-filter-audit.json"
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "longzhaoke-2025-20261119",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "decision": "include",
+      "rationale": "正文§VI-C以DSMIL在Camelyon16病理影像上评测CCD电磁注入对癌症诊断模型的影响，附录D在两类医学显微镜上验证；涉及具体医学影像模型可信性。",
+      "verified_metadata": {
+        "url": "https://www.ndss-symposium.org/ndss-paper/ghostshot-manipulating-the-image-of-ccd-cameras-with-electromagnetic-interference/",
+        "evidence_urls": [
+          "https://www.ndss-symposium.org/ndss-paper/ghostshot-manipulating-the-image-of-ccd-cameras-with-electromagnetic-interference/",
+          "https://www.ndss-symposium.org/wp-content/uploads/2025-2065-paper.pdf"
+        ],
+        "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-2065-paper.pdf"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "官方原摘要、正文§VI-C表III及附录D",
+          "rationale": "正文§VI-C以DSMIL在Camelyon16病理影像上评测CCD电磁注入对癌症诊断模型的影响，附录D在两类医学显微镜上验证；涉及具体医学影像模型可信性。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "https://dblp.org/rec/conf/ndss/SatoSHISNYCY25",
+    "venue": "ndss",
+    "year": 2025,
+    "track": "unverified",
+    "title": "On the Realism of LiDAR Spoofing Attacks against Autonomous Driving Vehicle at High Speed and Long Distance.",
+    "authors": [
+      "Takami Sato",
+      "Ryo Suzuki",
+      "Yuki Hayakawa",
+      "Kazuma Ikeda",
+      "Ozora Sako",
+      "Rokuto Nagata",
+      "Ryo Yoshida",
+      "Qi Alfred Chen",
+      "Kentaro Yoshioka"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/212/7432",
+      "https://dblp.org/pid/94/909",
+      "https://dblp.org/pid/75/9299",
+      "https://dblp.org/pid/66/2007",
+      "https://dblp.org/pid/400/5019",
+      "https://dblp.org/pid/400/4582",
+      "https://dblp.org/pid/44/2367",
+      "https://dblp.org/pid/150/3272",
+      "https://dblp.org/pid/38/7609"
+    ],
+    "abstract": "The rapid deployment of Autonomous Driving (AD) technologies on public roads presents significant social challenges. The security of LiDAR (Light Detection and Ranging) is one of the emerging challenges in AD deployment, given its crucial role in enabling Level 4 autonomy through accurate 3D environmental sensing. Recent lines of research have demonstrated that LiDAR can be compromised by LiDAR spoofing attacks that overwrite legitimate sensing by emitting malicious lasers to the LiDAR. However, previous studies have successfully demonstrated their attacks in controlled environments, yet gaps exist in the feasibility of their attacks in realistic high-speed, long-distance AD scenarios. To bridge these gaps, we design a novel Moving Vehicle Spoofing (MVS) system consisting of 3 subsystems: the LiDAR detection and tracking system, the auto-aiming system, and the LiDAR spoofing system. Furthermore, we design a new object removal attack, an adaptive high-frequency removal (A-HFR) attack, that can be effective even against recent LiDARs with pulse fingerprinting features, by leveraging gray-box knowledge of the scan timing of target LiDARs. With our MVS system, we are not only the first to demonstrate LiDAR spoofing attacks against practical AD scenarios where the victim vehicle is driving at high speeds (60 km/h) and the attack is launched from long distances (110 meters), but we are also the first to perform LiDAR spoofing attacks against a vehicle actually operated by a popular AD stack. Our object removal attack achieves ≥96% attack success rates against the vehicle driving at 60 km/h to the braking distances (20 meters). Finally, we discuss possible countermeasures against attacks with our MVS system. This study not only bridges critical gaps between LiDAR security and AD security research but also sets a foundation for developing robust countermeasures against emerging threats.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": null,
+    "pages": null,
+    "bibtex": null,
+    "url": "https://www.ndss-symposium.org/ndss-paper/on-the-realism-of-lidar-spoofing-attacks-against-autonomous-driving-vehicle-at-high-speed-and-long-distance/",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "needs_abstract",
+    "conference_title": "Network and Distributed System Security Symposium",
+    "ccf_rank": "A",
+    "ccf_field": "网络与信息安全",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/ndss/SatoSHISNYCY25",
+    "dblp_toc": "https://dblp.org/db/conf/ndss/ndss2025",
+    "booktitle": "NDSS",
+    "abstract_source": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/on-the-realism-of-lidar-spoofing-attacks-against-autonomous-driving-vehicle-at-high-speed-and-long-distance/",
+      "source": "NDSS official paper abstract",
+      "checked_at": "2026-11-19",
+      "checked_by": "龙兆科",
+      "evidence_location": "正常Chrome可见论文页原摘要"
+    },
+    "ai4s_candidate_supplement": {
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "checked_at": "2026-11-19",
+      "reason": "verified_existing_catalogue_paper_omitted_from_initial_keyword_filter",
+      "evidence_urls": [
+        "https://www.ndss-symposium.org/ndss-paper/on-the-realism-of-lidar-spoofing-attacks-against-autonomous-driving-vehicle-at-high-speed-and-long-distance/",
+        "https://www.ndss-symposium.org/wp-content/uploads/2025-628-paper.pdf"
+      ],
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261119/ndss-initial-filter-audit.json"
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "longzhaoke-2025-20261119",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "decision": "include",
+      "rationale": "正文§IV与§V训练YOLOv5定位激光雷达以驱动物理跟踪，§VI以PointPillars检验高速车辆目标感知失效；AI直接参与自动驾驶传感与鲁棒性实验。",
+      "verified_metadata": {
+        "url": "https://www.ndss-symposium.org/ndss-paper/on-the-realism-of-lidar-spoofing-attacks-against-autonomous-driving-vehicle-at-high-speed-and-long-distance/",
+        "evidence_urls": [
+          "https://www.ndss-symposium.org/ndss-paper/on-the-realism-of-lidar-spoofing-attacks-against-autonomous-driving-vehicle-at-high-speed-and-long-distance/",
+          "https://www.ndss-symposium.org/wp-content/uploads/2025-628-paper.pdf"
+        ],
+        "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-628-paper.pdf"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "官方原摘要及正文§IV、§V、§VI，图12",
+          "rationale": "正文§IV与§V训练YOLOv5定位激光雷达以驱动物理跟踪，§VI以PointPillars检验高速车辆目标感知失效；AI直接参与自动驾驶传感与鲁棒性实验。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "https://dblp.org/rec/conf/ndss/WangXSLXC25",
+    "venue": "ndss",
+    "year": 2025,
+    "track": "unverified",
+    "title": "Revisiting Physical-World Adversarial Attack on Traffic Sign Recognition: A Commercial Systems Perspective.",
+    "authors": [
+      "Ningfei Wang",
+      "Shaoyuan Xie",
+      "Takami Sato",
+      "Yunpeng Luo",
+      "Kaidi Xu",
+      "Qi Alfred Chen"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/232/2229",
+      "https://dblp.org/pid/338/6707",
+      "https://dblp.org/pid/212/7432",
+      "https://dblp.org/pid/218/6969",
+      "https://dblp.org/pid/195/8175",
+      "https://dblp.org/pid/150/3272"
+    ],
+    "abstract": "Traffic Sign Recognition (TSR) is crucial for safe and correct driving automation. Recent works revealed a general vulnerability of TSR models to physical-world adversarial attacks, which can be low-cost, highly deployable, and capable of causing severe attack effects such as hiding a critical traffic sign or spoofing a fake one. However, so far existing works generally only considered evaluating the attack effects on academic TSR models, leaving the impacts of such attacks on real-world commercial TSR systems largely unclear. In this paper, we conduct the first large-scale measurement of physical-world adversarial attacks against commercial TSR systems. Our testing results reveal that it is possible for existing attack works from academia to have highly reliable (100%) attack success against certain commercial TSR system functionality, but such attack capabilities are not generalizable, leading to much lower-than-expected attack success rates overall. We find that one potential major factor is a spatial memorization design that commonly exists in today's commercial TSR systems. We design new attack success metrics that can mathematically model the impacts of such design on the TSR system-level attack success, and use them to revisit existing attacks. Through these efforts, we uncover 7 novel observations, some of which directly challenge the observations or claims in prior works due to the introduction of the new metrics.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": null,
+    "pages": null,
+    "bibtex": null,
+    "url": "https://www.ndss-symposium.org/ndss-paper/revisiting-physical-world-adversarial-attack-on-traffic-sign-recognition-a-commercial-systems-perspective/",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "needs_abstract",
+    "conference_title": "Network and Distributed System Security Symposium",
+    "ccf_rank": "A",
+    "ccf_field": "网络与信息安全",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/ndss/WangXSLXC25",
+    "dblp_toc": "https://dblp.org/db/conf/ndss/ndss2025",
+    "booktitle": "NDSS",
+    "abstract_source": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/revisiting-physical-world-adversarial-attack-on-traffic-sign-recognition-a-commercial-systems-perspective/",
+      "source": "NDSS official paper abstract",
+      "checked_at": "2026-11-19",
+      "checked_by": "龙兆科",
+      "evidence_location": "正常Chrome可见论文页原摘要"
+    },
+    "ai4s_candidate_supplement": {
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "checked_at": "2026-11-19",
+      "reason": "verified_existing_catalogue_paper_omitted_from_initial_keyword_filter",
+      "evidence_urls": [
+        "https://www.ndss-symposium.org/ndss-paper/revisiting-physical-world-adversarial-attack-on-traffic-sign-recognition-a-commercial-systems-perspective/",
+        "https://www.ndss-symposium.org/wp-content/uploads/2025-s90-paper.pdf"
+      ],
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261119/ndss-initial-filter-audit.json"
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "longzhaoke-2025-20261119",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "decision": "include",
+      "rationale": "在商业自动驾驶交通标志识别系统上实证评测物理对抗扰动，分析空间记忆对识别模型和车辆系统安全的影响。",
+      "verified_metadata": {
+        "url": "https://www.ndss-symposium.org/ndss-paper/revisiting-physical-world-adversarial-attack-on-traffic-sign-recognition-a-commercial-systems-perspective/",
+        "evidence_urls": [
+          "https://www.ndss-symposium.org/ndss-paper/revisiting-physical-world-adversarial-attack-on-traffic-sign-recognition-a-commercial-systems-perspective/",
+          "https://www.ndss-symposium.org/wp-content/uploads/2025-s90-paper.pdf"
+        ],
+        "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-s90-paper.pdf"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "NDSS官方论文页原摘要",
+          "rationale": "在商业自动驾驶交通标志识别系统上实证评测物理对抗扰动，分析空间记忆对识别模型和车辆系统安全的影响。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "https://dblp.org/rec/conf/ndss/WangZWD0L025",
+    "venue": "ndss",
+    "year": 2025,
+    "track": "unverified",
+    "title": "Interventional Root Cause Analysis of Failures in Multi-Sensor Fusion Perception Systems.",
+    "authors": [
+      "Shuguang Wang",
+      "Qian Zhou 0008",
+      "Kui Wu 0001",
+      "Jinghuai Deng",
+      "Dapeng Wu 0001",
+      "Wei-Bin Lee",
+      "Jianping Wang 0001"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/22/2874",
+      "https://dblp.org/pid/88/123-8",
+      "https://dblp.org/pid/w/KuiWu",
+      "https://dblp.org/pid/400/4190",
+      "https://dblp.org/pid/88/1600",
+      "https://dblp.org/pid/50/3431",
+      "https://dblp.org/pid/21/1550-1"
+    ],
+    "abstract": "Autonomous driving systems (ADS) heavily depend on multi-sensor fusion (MSF) perception systems to process sensor data and improve the accuracy of environmental perception. However, MSF cannot completely eliminate uncertainties, and faults in multiple modules will lead to perception failures. Thus, identifying the root causes of these perception failures is crucial to ensure the reliability of MSF perception systems. Traditional methods for identifying perception failures, such as anomaly detection and runtime monitoring, are limited because they do not account for causal relationships between faults in multiple modules and overall system failure. To overcome these limitations, we propose a novel approach called interventional root cause analysis (IRCA). IRCA leverages the directed acyclic graph (DAG) structure of MSF to develop a hierarchical structural causal model (H-SCM), which effectively addresses the complexities of causal relationships. Our approach uses a divide-and-conquer pruning algorithm to encompass multiple causal modules within a causal path and to pinpoint intervention targets. We implement IRCA and evaluate its performance using real fault scenarios and synthetic scenarios with injected faults in the ADS Autoware. The average F1-score of IRCA in real fault scenarios is over $95%$. We also illustrate the effectiveness of IRCA on an autonomous vehicle testbed equipped with Autoware, as well as a cross-platform evaluation using Apollo. The results show that IRCA can efficiently identify the causal paths leading to failures and significantly enhance the safety of ADS.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": null,
+    "pages": null,
+    "bibtex": null,
+    "url": "https://www.ndss-symposium.org/ndss-paper/interventional-root-cause-analysis-of-failures-in-multi-sensor-fusion-perception-systems/",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "needs_abstract",
+    "conference_title": "Network and Distributed System Security Symposium",
+    "ccf_rank": "A",
+    "ccf_field": "网络与信息安全",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/ndss/WangZWD0L025",
+    "dblp_toc": "https://dblp.org/db/conf/ndss/ndss2025",
+    "booktitle": "NDSS",
+    "abstract_source": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/interventional-root-cause-analysis-of-failures-in-multi-sensor-fusion-perception-systems/",
+      "source": "NDSS official paper abstract",
+      "checked_at": "2026-11-19",
+      "checked_by": "龙兆科",
+      "evidence_location": "正常Chrome可见论文页原摘要"
+    },
+    "ai4s_candidate_supplement": {
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "checked_at": "2026-11-19",
+      "reason": "verified_existing_catalogue_paper_omitted_from_initial_keyword_filter",
+      "evidence_urls": [
+        "https://www.ndss-symposium.org/ndss-paper/interventional-root-cause-analysis-of-failures-in-multi-sensor-fusion-perception-systems/",
+        "https://www.ndss-symposium.org/wp-content/uploads/2025-36-paper.pdf"
+      ],
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261119/ndss-initial-filter-audit.json"
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "longzhaoke-2025-20261119",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "decision": "include",
+      "rationale": "以分层结构因果模型和干预推断诊断多传感器融合感知故障，正文图1及表I明确包含CenterPoint与YOLO神经感知模块，并在Autoware与Apollo车辆平台验证。",
+      "verified_metadata": {
+        "url": "https://www.ndss-symposium.org/ndss-paper/interventional-root-cause-analysis-of-failures-in-multi-sensor-fusion-perception-systems/",
+        "evidence_urls": [
+          "https://www.ndss-symposium.org/ndss-paper/interventional-root-cause-analysis-of-failures-in-multi-sensor-fusion-perception-systems/",
+          "https://www.ndss-symposium.org/wp-content/uploads/2025-36-paper.pdf"
+        ],
+        "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-36-paper.pdf"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "官方原摘要、图1及表I",
+          "rationale": "以分层结构因果模型和干预推断诊断多传感器融合感知故障，正文图1及表I明确包含CenterPoint与YOLO神经感知模块，并在Autoware与Apollo车辆平台验证。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "https://dblp.org/rec/conf/ndss/ZhangWG0Z25",
+    "venue": "ndss",
+    "year": 2025,
+    "track": "unverified",
+    "title": "RadSee: See Your Handwriting Through Walls Using FMCW Radar.",
+    "authors": [
+      "Shichen Zhang 0001",
+      "Qijun Wang",
+      "Maolin Gan",
+      "Zhichao Cao 0001",
+      "Huacheng Zeng"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/177/6717-1",
+      "https://dblp.org/pid/00/7627",
+      "https://dblp.org/pid/349/5094",
+      "https://dblp.org/pid/05/7548-1",
+      "https://dblp.org/pid/36/8208"
+    ],
+    "abstract": "This paper aims to design and implement a radio device capable of detecting a person's handwriting through a wall. Although there is extensive research on radio frequency (RF) based human activity recognition, this task is particularly challenging due to the textit{through-wall} requirement and the textit{tiny-scale} handwriting movements. To address these challenges, we present RadSee---a 6 GHz frequency modulated continuous wave (FMCW) radar system designed for detecting handwriting content behind a wall. RadSee is realized through a joint hardware and software design. On the hardware side, RadSee features a 6 GHz FMCW radar device equipped with two custom-designed, high-gain patch antennas. These two antennas provide a sufficient link power budget, allowing RadSee to \"see'' through most walls with a small transmission power. On the software side, RadSee extracts effective phase features corresponding to the writer's hand movements and employs a bidirectional LSTM (BiLSTM) model with an attention mechanism to classify handwriting letters. As a result, RadSee can detect millimeter-level handwriting movements and recognize most letters based on their unique phase patterns. Additionally, it is resilient to interference from other moving objects and in-band radio devices. We have built a prototype of RadSee and evaluated its performance in various scenarios. Extensive experimental results demonstrate that RadSee achieves 75% letter recognition accuracy when victims write 62 random letters, and 87% word recognition accuracy when they write articles.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": null,
+    "pages": null,
+    "bibtex": null,
+    "url": "https://www.ndss-symposium.org/ndss-paper/radsee-see-your-handwriting-through-walls-using-fmcw-radar/",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "needs_abstract",
+    "conference_title": "Network and Distributed System Security Symposium",
+    "ccf_rank": "A",
+    "ccf_field": "网络与信息安全",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/ndss/ZhangWG0Z25",
+    "dblp_toc": "https://dblp.org/db/conf/ndss/ndss2025",
+    "booktitle": "NDSS",
+    "abstract_source": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/radsee-see-your-handwriting-through-walls-using-fmcw-radar/",
+      "source": "NDSS official paper abstract",
+      "checked_at": "2026-11-19",
+      "checked_by": "龙兆科",
+      "evidence_location": "正常Chrome可见论文页原摘要"
+    },
+    "ai4s_candidate_supplement": {
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "checked_at": "2026-11-19",
+      "reason": "verified_existing_catalogue_paper_omitted_from_initial_keyword_filter",
+      "evidence_urls": [
+        "https://www.ndss-symposium.org/ndss-paper/radsee-see-your-handwriting-through-walls-using-fmcw-radar/",
+        "https://www.ndss-symposium.org/wp-content/uploads/2025-s322-paper.pdf"
+      ],
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261119/ndss-initial-filter-audit.json"
+    },
+    "ai4s_review": {
+      "schema_version": 2,
+      "batch_id": "longzhaoke-2025-20261119",
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "decision": "include",
+      "rationale": "设计6GHz FMCW雷达，以注意力BiLSTM从相位测量识别穿墙毫米级手写运动，提供硬件与物理测量实验。",
+      "verified_metadata": {
+        "url": "https://www.ndss-symposium.org/ndss-paper/radsee-see-your-handwriting-through-walls-using-fmcw-radar/",
+        "evidence_urls": [
+          "https://www.ndss-symposium.org/ndss-paper/radsee-see-your-handwriting-through-walls-using-fmcw-radar/",
+          "https://www.ndss-symposium.org/wp-content/uploads/2025-s322-paper.pdf"
+        ],
+        "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-s322-paper.pdf"
+      },
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于工程科学",
+          "label_en": "AI for engineering sciences",
+          "evidence_location": "NDSS官方论文页原摘要",
+          "rationale": "设计6GHz FMCW雷达，以注意力BiLSTM从相位测量识别穿墙毫米级手写运动，提供硬件与物理测量实验。"
         }
       ]
     }
