@@ -7092,8 +7092,13 @@
     "author_ids": [
       "https://orcid.org/0000-0002-9044-139X"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "The center-pivot irrigation system is a highly efficient water-saving agricultural system. However, it typically operates solely based on predefined paths, speeds, and water volumes, and cannot assess the true needs of the crops due to its inability to monitor their growth status. To address this limitation, we deployed cameras on the center-pivot irrigation system to establish a mobile phenotyping platform, and developed a maize tassel detection model based on the YOLOv11 architecture. Several key improvements were implemented to address the complex morphology and challenging feature extraction of maize tassels: The ODConv (Omni-Dimensional Convolution) module was introduced to more comprehensively capture dynamic tassel features through a dynamic convolution strategy; To suppress interference from complex field environments on detection results, the SE (Squeeze-and-Excitation) attention mechanism was embedded to enhance effective feature responses and reduce noise impact; The BiFPN (Weighted Bi-directional Feature Pyramid Network) structure was adopted to strengthen multi-scale feature fusion capabilities, further improving the model’s detection performance for tassels at various scales; To tackle the difficulty of tassel recognition and localization in field environments, the C3K2 module was fused with the CSAM (Cross-Slice Attention Mechanism) to construct a C3K2-CSAM module, achieving more precise tassel identification and localization. Experimental results demonstrate that the OSBC-YOLO model achieved a precision of 91.8 % and a mean average precision (mAP) of 85.7 %, while reducing the number of parameters, FLOPs, and memory usage by 8.1 %, 28.1 %, and 7.3 % respectively compared to the original model. Field tests conducted on the center-pivot irrigation system revealed an error rate of 5.87 % between the number of tassels detected by the model and the ground truth count. These results verify that the OSBC-YOLO model can effectively perform tassel counting in practical operating environments and possesses the capability for recognition of crop phenotypic traits. This system provides critical data support for intelligent variable-rate irrigation decisions, promoting the transformation of center-pivot irrigation systems from traditional “single-function operation” to an integrated “perception-decision-execution” mode.",
+    "keywords": [
+      "Center-pivot irrigation system",
+      "Deep learning",
+      "YOLOv11",
+      "Maize tassel detection"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -10934,8 +10939,13 @@
     "author_ids": [
       "https://orcid.org/0009-0008-1884-489X"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Citrus is widely loved for its rich nutritional value and unique flavor, and also occupies an important place in agriculture and the economy. The citrus industry has suffered severe losses in recent years due to the proliferation of citrus Huanglongbing (HLB). The transmission of HLB occurs via the Asian citrus psyllid insect vector and grafting practices, with no efficacious therapeutic intervention identified to date, aside from mitigating its dissemination through prompt identification and eradication of infected citrus trees. Detection of HLB is difficult due to its incubation period and the variety of symptoms at different stages of infection. Hence, there exists a pressing requirement for a detection methodology capable of integrating multi-level features of HLB to facilitate precise identification of the disease across various stages of infection. Most of the existing assays use single sensing, which leads to limitations and incompleteness in identifying specific markers induced by HLB. In this study, the effective configuration and complementarity of multimodal sensory information is achieved by establishing a fusion and complementary mechanism at the level of pre-processing and analyzing multisource information. The extraction of computer vision and electronic nose features of citrus leaves was realized using custom-developed portable detection devices. The performance of HLB detection was compared on different datasets obtained by multimodal feature fusion methods which include direct fusion method, stepwise fusion method and the improved Recursive Feature Elimination and Cross Validation (RFECV) feature selection method. The improved RFECV feature selection method uses the RFECV algorithm for each classification step in the delineated stepwise classification model and performs the feature set preference by cross-validation. The final improved RFECV feature selection method worked best for fusion of visual and olfactory features with an accuracy of 95.38% for HLB samples at various symptomatic stages, with 94.23% for early stage HLB and 94.12% for Zn Def. & HLB-positive samples. Multimodal feature fusion for feature acquisition proved to be superior to feature acquisition from a single sensing source, with enhanced fusion of HLB-induced feature sets at the visual and olfactory levels. It helps to improve the stability of the HLB measurement model to achieve the detection of HLB samples in complex environments. This method can provide generalized technical support for the application of multi-source sensing information and multimodal feature fusion methods in plant disease detection.",
+    "keywords": [
+      "Citrus Huanglongbing",
+      "Computer vision",
+      "Electronic nose",
+      "Multimodal feature fusion"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -11224,8 +11234,14 @@
       "Petr Bartoš"
     ],
     "author_ids": [],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Hoof diseases are a major cause of lameness in dairy cattle, resulting in significant welfare concerns and economic losses. Early detection remains challenging due to the limitations of visual inspection and manual scoring, particularly in large herds. This study presents an integrated infrared thermography (IRT) and deep learning system for automated detection and localization of hoof diseases under real farm conditions. Unlike previous IRT approaches that relied on manual thermal data analysis, our system combines automated hoof detection, classification of hoof health, and intra-hoof temperature mapping to identify pathological changes at scale. A dataset of 14,322 infrared images with 48,427 annotations was collected from 160 Holstein cows on a commercial dairy farm. The system demonstrated superior hoof detection accuracy using YOLOv8-large (mAP@50 ≈ 0.97) and reliable health classification, with MobileNetv3 providing an effective balance between accuracy and real-time inference speed. The approach enables early, non-invasive monitoring of hoof health, supporting practical deployment in precision livestock farming. At the same time, challenges such as dataset imbalance and the need for broader validation across farms remain, outlining clear directions for future research.",
+    "keywords": [
+      "Deep learning",
+      "Lameness detection",
+      "Precision livestock farming",
+      "Animal welfare",
+      "YOLOv8"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -12186,7 +12202,7 @@
       "Lei Zhang"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Empirical and physical models are widely used for monitoring equivalent water thickness (EWT) to adjust plant moisture management. However, model transferability to different times and locations, and insufficient training data remain the two key challenges of field spectroscopy analysis. Therefore, this study aims to construct a hybrid model, which combines the physical models optimized by Wasserstein Generative Adversarial Nets (WGAN) and empirical models for performing hyperparameter searches (the process of finding optimal model settings) to monitor the peanut EWT. Specifically, we develop a large spectral dataset consisting of field-measured data which including 246 peanut varieties in five peanut farms across China and synthetic datasets generated from the physical models optimized by WGAN. Furthermore, the PWLEH was constructed by hyperparameter tuning and pre-training which using synthetic datasets, and then fine-tuned by modular training with field data of peanut canopy water content. Comparing the model constructed with field data (R2 = 0.5618, mean squared error (MSE) = 0.0725) and PROSAIL (a widely used canopy radiative transfer model) (R2 = 0.7105, MSE = 0.0473), PWLEH achieved high accuracy in predicting peanut water content (R2 = 0.7650, MSE = 0.0519). Unlike pure data-driven approaches, the new hybrid model incorporated radiative transfer knowledge and obtained higher predictive performance with fewer field data. This study demonstrates the potential of applying an optimized PROSAIL, hyperparameter search and modular training to improve the accuracy and transferability of the EWT prediction model, providing a new approach for sustainable agricultural management.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -13080,8 +13096,16 @@
     "author_ids": [
       "https://orcid.org/0000-0001-7163-6928"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Piglet mortality is a significant issue on pig farms. Often, piglets do not receive proper care after birth or are crushed by the sow, leading to the death of 2 to 4 piglets during each farrowing process. This represents a substantial loss for pig farmers. To address these issues, this paper presents the development of the PigTalk2.0 system, which is based on the Artificial Internet of Things (AIoT) and image recognition technology, aimed at preventing piglet deaths caused by crushing by the sow. Since collecting large-scale agricultural datasets is costly and labor-intensive, Since collecting large-scale agricultural datasets is costly, this study proposes a hybrid augmentation strategy. We combine conventional techniques (e.g., translation, flipping) with Generative AI-based data augmentation to effectively expand limited datasets and enhance model robustness, providing synthetic diversity that strengthens model training. PigTalk2.0 uses image recognition to monitor the posture of the sow. To prevent the sow from accidentally crushing the piglets when she suddenly lies down, the system activates an air blower to gently push the piglets away when the sow stands up. Additionally, PigTalk2.0 can detect when a sow is about to farrow for the first time, allowing the system to notify the farm administrator to check the piglets’ health and provide necessary care immediately after birth. The results demonstrate that introducing consumer IoT technology into family-run agriculture or medium- to large-scale enterprise-run pig farms can significantly improve productivity.",
+    "keywords": [
+      "IoT",
+      "AIoT",
+      "Generative AI",
+      "Machine learning",
+      "Sows",
+      "Piglets",
+      "Image transmission"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -13402,8 +13426,13 @@
     "author_ids": [
       "https://orcid.org/0000-0002-4268-4258"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Accurate and temporally consistent multispectral observations are essential for monitoring alfalfa yield and quality, given its frequent harvest cycles and rapid regrowth. However, optical satellite imagery is often constrained by cloud cover, revisit intervals, and sensor availability. To overcome these limitations, we propose a novel Alfalfa Multimodal Generative Adversarial Network (AMGAN) designed for near-daily multispectral image reconstruction. Unlike conventional image-to-image or spatiotemporal fusion methods that overlook crop-specific characteristics, are restricted to observed timestamps, or depend heavily on dense temporal series, AMGAN leverages multisource (Landsat-8/9, Sentinel-1, PlanetScope) and multimodal (climate, geographic, temporal) information within an adversarial learning paradigm. This enables high-quality image generation from minimal inputs. Extensive experiments across five major alfalfa-producing states in the United States (2022–2024) show that AMGAN consistently surpasses four state-of-the-art (SOTA) deep learning baselines. It achieves higher reconstruction accuracy across all spectral bands, with pronounced gains in red-edge and near-infrared (NIR) regions critical for vegetation assessment. Multisource integration and multimodal cues enhance robustness, ensuring reliable performance under diverse observation scenarios. The reconstructed imagery was subsequently evaluated in alfalfa yield and quality prediction tasks. Results demonstrated high predictive accuracy for dry matter yield (DM) in the cross validation (CV) experiment with a coefficient of determination (R2) of 0.80, and moderate correlations for selected quality traits such as crude protein (CP), non-fiber carbohydrates (NFC), and minerals, while nutritive value traits tied to complex biochemical processes remained more challenging. Overall, this study underscores the potential of multimodal adversarial learning to bridge observational gaps in alfalfa monitoring. The proposed framework provides a scalable, crop-specific approach for generating temporally dense imagery, supporting precision management for biomass-related and proximate quality traits, while performance for digestibility traits remains limited.",
+    "keywords": [
+      "Remote sensing",
+      "Data fusion",
+      "GAN",
+      "Multimodal learning"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -13448,8 +13477,14 @@
     "author_ids": [
       "https://orcid.org/0009-0000-2518-8247"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Precise decision-making in agricultural production has always been a key bottleneck restricting the development of modern agriculture. Traditional decision-making models that rely on manual experience are no longer able to meet the needs of modern intelligent agriculture. This study, by integrating the Agricultural Internet of Things (IoT) with generative big models, has realized a fully autonomous agricultural intelligent system called the ”Fuxi Brain.” This system consists of two parts. The first part constructs a comprehensive ”sky-air-ground-human-machine” data collection system, enabling digital perception of all factors in agricultural production. The second part is the intelligent decision-making system. First, within the brain’s dynamic decision-making layer, a multi-agent collaborative architecture based on a hybrid multi-model (a general big model + a specialized agricultural model) is proposed. Furthermore, a dynamic optimal matrix algorithm (DOMA) is designed to improve the system’s decision-making efficiency significantly. Finally, a full-modality alignment training method is developed to effectively address the challenge of integrating multi-source heterogeneous data. Experimental results show that, in the AlpacaEva and MT-Bench benchmarks, the system’s decision accuracy improved by 36.7 percentage points compared to mainstream models such as ChatGLM. The full-modal alignment training method significantly outperformed traditional methods in cross-modal understanding tasks. Test results on a one-stop agricultural service decision-making platform demonstrated an accuracy rate of 92.3% compared to those of human experts. In an actual application on a 1367-acre corn planting site at Dahewan Farm in Inner Mongolia, the system autonomously generated 127 decisions throughout the production cycle, achieving an accuracy rate of 89.7%. This successfully enabled autonomous and precise decision-making throughout the entire process, from planting to harvesting. This research provides innovative technical paths and practical examples for the development of intelligent agriculture.",
+    "keywords": [
+      "Generative large models",
+      "Internet of things in agriculture",
+      "Autonomous decision-making in agriculture",
+      "High precision",
+      "Food production"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -14041,8 +14076,14 @@
       "Zhenghe Song"
     ],
     "author_ids": [],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "High-quality tractor rotary tillage operations face significant challenges under complex environmental conditions. To overcome this, a front-axle direct torque-coupled hybrid tractor powertrain (FADTC-HTP) is proposed, aiming to improve energy efficiency and path stability via coordinated control of permanent magnet synchronous motor (PMSM) regenerative braking and an electronically controlled limited slip differential (eLSD). Based on the proposed powertrain, a hierarchical control strategy is developed, combining dual-stage model predictive control with reinforcement learning. First, a hidden Markov model (HMM)-based dual-stage linear time-varying MPC(HMM-DLTV-MPC) is designed as a supervisory controller to enable high-precision nonlinear dynamics approximation, adaptive parameter updating, and dynamic decoupling. To address the challenge of achieving optimal control of a multi-input multi-output (MIMO) nonlinear tractor system under random disturbances, an enhanced Soft Actor-Critic (SAC)-based subordinate controller is proposed to improve robustness and efficiency. Specifically, the controller incorporates expert experience guidance to inject prior knowledge and introduces a control target self-correcting mechanism to adaptively mitigate control errors caused by environmental uncertainties. Furthermore, by integrating long short-term memory (LSTM) networks with self-attention modules, the controller substantially strengthens the agent’s ability to capture complex multidimensional temporal dependencies, thereby significantly boosting both control performance and training efficiency. Agent training is conducted in a simulation environment constructed from real-world field traction data and soil cone index distributions. Hardware-in-the-loop (HIL) experiments show that the proposed method improves energy efficiency by up to 11.14% and reduces lateral path deviation by 76.47%. It also significantly reduces dependence on front-wheel steering compensation. These results demonstrate that the proposed powertrain and control strategy can effectively enhance both energy efficiency and operational stability in hybrid tractor applications. This study provides a new perspective on novel hybrid tractor powertrains and intelligent control strategies.",
+    "keywords": [
+      "Hybrid tractor",
+      "Regenerative braking",
+      "Energy efficiency",
+      "Path stability",
+      "Hierarchical control strategy"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -16845,8 +16886,14 @@
     "author_ids": [
       "https://orcid.org/0000-0002-2399-228X"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Given the substantial agronomic and economic significance of maize, the development of real-time and high-precision disease detection methodologies is essential for ensuring yield stability. While hyperspectral imaging excels at capturing fine-grained spectral signatures of infection, its higher detection precision comes with considerable high hardware and temporal costs compared to RGB imaging, posing significant challenges for scalable field applications. To bridge this gap, this article proposes a fusion perception unfolding network (FPUF-Net) for high-fidelity maize spectral reconstruction from RGB images. Distinct from conventional deep learning models, FPUF-Net unfolds the optimization problem via a half-quadratic splitting algorithm, solving the data subproblem and prior subproblem alternately during iterations. Specifically, a fusion feature learning network and a spectral–spatial joint attention network are designed within the data subproblem to explicitly exploit RGB spatial priors and mitigate spatial smoothing. Moreover, a spectral–spatial Transformer is utilized as the denoiser to capture long-range spectral dependencies in the prior subproblem. Experiments performed on a maize spectral recovery dataset comprehensively demonstrate that FPUF-Net can effectively reconstruct maize hyperspectral images with superior precision. The structural characteristics enable the network to perceive long-term spectral–spatial fusion features, significantly reducing reconstruction errors, particularly in the biologically critical red-edge region (620–700 nm). In downstream disease detection tasks, the overall accuracy of reconstructed HSIs improves over RGB by margins of 0.51% to 8.1% across different scenarios, while the average accuracy increases by 2.45% to 18.86%. These results indicate that the proposed model offers a viable, cost-effective solution for applying hyperspectral imaging in field settings, enabling its scalable use in agricultural robots.",
+    "keywords": [
+      "Maize",
+      "Spectral recovery",
+      "Deep neural network",
+      "Hyperspectral images",
+      "Disease detection"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -23196,8 +23243,14 @@
     "author_ids": [
       "https://orcid.org/0000-0003-4282-9821"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "As the global population grows, the increasing demand for meat is driving the rapid expansion of the livestock industry, making production efficiency a central priority in modern livestock production systems. Body measurements collected during rearing provide essential phenotypic indicators of growth performance, reproductive potential, genetic background, nutritional status, and overall health. They also serve as key inputs for precision livestock management applications, including body weight estimation, growth modeling, and carcass or meat quality assessment, thereby improving production efficiency. However, conventional manual measurement methods are time-consuming, labor-intensive, and operator-dependent, creating a major bottleneck for precision livestock farming. Recent advances in machine vision and three-dimensional reconstruction have accelerated the automation of body measurement. However, existing studies remain fragmented and lack a unified technical framework, thereby limiting standardization and large-scale deployment. This review synthesizes recent advances in automated body measurement for cattle and pigs and proposes a unified conceptual and technical framework. First, it formalizes commonly used body traits by providing standardized definitions of key morphometric indicators. From the perspective of data acquisition, measurement data are categorized as two-dimensional (2D) or three-dimensional (3D), and mainstream acquisition schemes ranging from single-view RGB cameras to multi-view depth sensors are compared and further classified as fixed or mobile platforms according to their practical applicability. From an algorithmic perspective, the workflow is organized into two major stages: data preprocessing and feature extraction. The former summarizes classical image-processing methods and deep learning-based segmentation approaches, whereas the latter estimates morphometric features and computes body traits using geometry-based and learning-based methods in both 2D and 3D settings. To support method development, evaluation, and benchmarking, representative public datasets are also reviewed. Finally, this review discusses key technical challenges and future directions, including multimodal fusion, end-to-end intelligent systems, and real-time dynamic monitoring, with the aim of advancing both theoretical research and practical applications in precision livestock management.",
+    "keywords": [
+      "Body measurement",
+      "Precision livestock farming",
+      "Deep learning",
+      "Computer vision",
+      "Cattle and pigs"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -26608,8 +26661,17 @@
     "author_ids": [
       "https://orcid.org/0000-0002-8372-9934"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Sustainable conversion of organic byproducts into agricultural resources is vital for achieving circular bioeconomy goals. The black soldier fly (BSF, Hermetia illucens) offers an efficient bioconversion pathway, transforming organic residues into protein-rich feed and biofertilizer. However, variability in feed composition and high labor requirements constrain the scalability and profitability of BSF-based waste-to-feed systems. This study introduces an automated computer vision framework for monitoring the growth of black soldier fly larvae (BSFL) using instance segmentation and metaheuristic optimization. Sewage sludge from Taiwan’s wastewater treatment plants was used as a feed substrate, and a Pilgrimage Walk Optimization (PWO) algorithm was integrated with a You Only Look Once version 11-instance segmentation model (YOLO11-seg) to enhance hyperparameter tuning and detection accuracy. The model achieved high precision in estimating larval surface area and converting it to biomass weight, enabling real-time, non-contact monitoring of growth performance. An economic analysis using Net Present Value (NPV) and Internal Rate of Return (IRR) demonstrated that a 1:1 sludge-to-wheat bran mixture significantly improved bioconversion efficiency and financial returns, underscoring the feasibility of AI-driven computer vision for intelligent insect farming, organic waste valorization, and sustainable waste management. Nevertheless, these findings are based on laboratory-scale experiments, and field-scale studies are needed to validate scalability and real-world implementation.",
+    "keywords": [
+      "Computer vision",
+      "Instance segmentation",
+      "Bio-inspired optimization",
+      "Black Soldier Fly (BSF)",
+      "Waste-to-feed bioconversion",
+      "Larval growth monitoring",
+      "Sludge treatment",
+      "Economic feasibility"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -34339,8 +34401,14 @@
     "author_ids": [
       "https://orcid.org/0000-0003-3593-8480"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Crop pests and diseases pose a serious threat to global food security, which create an urgent need for rapid and accurate plant protection strategies. Much of the domain knowledge required for such intervention, however, remains scattered across heterogeneous and largely unstructured literature. This fragmentation limits the effective use of agricultural data in intelligent diagnosis and decision support, and it has increased the demand for high quality domain specific knowledge graphs. Existing approaches to agricultural knowledge graph construction still rely heavily on manual or partially automated curation, which restricts the efficient use of unstructured multi-source data and slows the incorporation of updated domain knowledge. To address these limitations, this study presents CropKG, an autonomous AI driven framework for reconstructing the knowledge engineering workflow in agricultural protection. Unlike conventional semi-automated approaches, CropKG integrates automated prompt engineering with expert oriented role modeling. By encoding agronomic reasoning patterns and combining them with bottom-up ontology induction, the framework supports autonomous extraction of complex entity relations from long agricultural documents while reducing unsupported generation in large language models. The effectiveness of the framework is demonstrated through the construction of a large-scale domain knowledge graph containing more than 17,000 nodes. Experimental results show that CropKG achieves an F1 score above 90% in entity and relation extraction and outperforms strong universal extraction baselines. The framework also supports decision-oriented applications by enabling traceable and evidence constrained retrieval of pest control knowledge. These results indicate that autonomous knowledge graph construction provides a practical path from raw agricultural text to structured and actionable intelligence for precision plant protection.",
+    "keywords": [
+      "Crop diseases and pests",
+      "Knowledge graph",
+      "Large language models",
+      "Fully automated",
+      "Prompt engineering"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -35866,8 +35934,14 @@
     "author_ids": [
       "https://orcid.org/0000-0002-1442-1530"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Vision-based livestock monitoring in open pastures confronts two distinct bottlenecks: a quality problem—severe image degradation from variable illumination (e.g., nighttime, strong snow reflection) yields abundant but low-quality frames—and a scarcity problem—extreme weather events (e.g., heavy snow, rain) are rare, leaving few training samples for such critical conditions. Generative image editors can in principle enhance degraded inputs and synthesize rare scenarios. However, unsupervised generation frequently introduces semantic artifacts and geometric distortions; naïvely incorporating these corrupted samples into training misleads detectors and degrades performance. To harness generative data reliably while meeting edge-device constraints, we propose a quality-aware generative distillation framework. First, a dual-branch editing pipeline—built on the large-scale instruction-driven editor Qwen-Image-Edit—restores visibility in low-quality inputs (enhancement branch) and simulates diverse adverse-weather views from clear daytime images (style-edit branch), addressing both quality and scarcity issues at the data level. Second, because generative outputs are unreliable, we design a multi-metric quality assessment module combining perceptual similarity (LPIPS), region-of-interest edge consistency, and CLIP-based semantic alignment to automatically filter corrupted edits before training. Third, to avoid deploying heavy generative models at inference, we train a robust teacher detector on this curated multi-domain dataset, then distill its localization features into a lightweight student via feature-level knowledge transfer; the student trains only on raw images, incurs no enhancement overhead at deployment, yet inherits cross-weather robustness. Experiments on our SnowLivestockDet dataset demonstrate that YOLOv11 and RT-DETR students achieve up to 12.5% mAP@50–95 improvement on adverse-weather subsets compared to single-domain baselines, validating the effectiveness of quality-aware generative distillation.",
+    "keywords": [
+      "Smart livestock farming",
+      "Object detection",
+      "Generative AI",
+      "Knowledge distillation",
+      "Adverse weather"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -38156,8 +38230,13 @@
       "Jianli Liu"
     ],
     "author_ids": [],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "In-situ soil monitoring systems typically operate autonomously in field conditions, where hourly measurements consume substantial energy and accelerate equipment degradation. Compressed sensing (CS) can mitigate these issues through low-frequency sampling and subsequent reconstruction without sacrificing monitoring accuracy. In agricultural and environmental fields, however, standard CS methods are constrained by a theoretical minimum sampling ratio of 20% to 30%. Meanwhile, generative compressed sensing (GCS) methods, which hold promise for addressing this limitation through deep neural networks, remain insufficiently studied. This study proposes a GCS-CVAE method to achieve ultra-low frequency sampling in soil monitoring and establish a methodological foundation for the development of soil monitoring systems. This method utilizes the decoder of a high-latent-dimensional convolutional variational autoencoder (CVAE) as a data reconstructor, coupled with a multiple-optimization strategy derived from GCS mechanism analysis. Experimental results on a soil moisture content (SMC) dataset demonstrate that GCS-CVAE outperforms existing CS and deep learning methods in both accuracy and stability. Notably, it can reconstruct hourly SMC series at highly reduced sampling rates of 10% and 15%, achieving average R2 values that exceed 0.8 and 0.9, respectively. For future deployment, GCS-CVAE can be integrated with wireless sensor networks or the Internet of Things via asynchronous sampling and multi-node collaboration to alleviate temporal feature loss during sparse sampling.",
+    "keywords": [
+      "Generative model",
+      "Generative compressed sensing",
+      "Soil moisture content",
+      "Variational autoencoder"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -38577,8 +38656,16 @@
       "https://orcid.org/0009-0000-8253-488X",
       "https://orcid.org/0000-0001-9669-151X"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "This study introduces a computer vision based cattle monitoring ecosystem, which (i) performs multi-disease classification and severity grading with 85.88% hierarchical accuracy, (ii) achieves multi-view cattle identification with 89.80% Rank-5 accuracy under cross-view-angle and domain shift conditions, and (iii) estimates body weight from four view RGB images and metadata with an MAE of 35.10 kg, developed using custom-collected, curated datasets combined with publicly available datasets. For the disease module, a hierarchical cross-attentional multi-task architecture classifies Lumpy Skin Disease (LSD), Foot-and-Mouth Disease (FMD), Infectious Bovine Keratoconjunctivitis (IBK), and Healthy cattle, while grading diseased cases into Stage-1 (mild), Stage-2 (moderate), and Stage-3 (severe) using clinically graded veterinarian supervised annotations, achieving 89.96% disease classification accuracy, 83.75% severity staging accuracy, and 85.88% hierarchical accuracy (disease → severity). On a custom collected dataset, YOLOv8s localizes cattle from left, right, front, and back views with an IoU of 0.93 and mAP@0.5 of 0.97, providing the basis for identification and weight estimation. Multi-view individual cattle identification achieves Rank-1 accuracies of 96.40% (Rank-5: 100%) under Leave-One-View-Out evaluation and 74.56% (Rank-5: 89.80%) under cross-view-angle and domain-shift testing using ConvNeXt-Tiny. In weight estimation module, ensemble learning over multi-view images and metadata achieves an MAE of 35.10 kg. Overall, the results demonstrate the potential of an affordable, low-shot, non-invasive RGB-based system for disease diagnosis with severity grading, multi-view cattle identification, and practical live-weight estimation without invasive sensors.",
+    "keywords": [
+      "Computer vision",
+      "Cattle disease classification",
+      "Severity grading",
+      "Multi-view identification",
+      "Weight estimation",
+      "Deep learning",
+      "Precision livestock farming"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -38621,8 +38708,14 @@
       "Zhenghe Song"
     ],
     "author_ids": [],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Tractors plow energy efficiency and stability jointly determine economic performance and operational quality. In this paper, the previously proposed front-axle direct torque-coupled hybrid tractor powertrain (FADTC-HTP) is adopted. Mathematical and simulation models oriented to plowing scenario are then developed for this architecture. Based on these models, an efficiency-stability coordinated multilayer control strategy (ES-CMCS) is proposed to enhance longitudinal speed stability, lateral deviation stability, and energy efficiency during plowing. In the ES-CMCS, the FADTC-HTP is formulated as a linear state-space model with time-varying disturbance inputs. Based on this model, a linear time-varying model predictive control (LTV-MPC) strategy is employed to regulate the engine, front-axle torque-coupled motors, and eLSD clutch pressure, with the objective of improving tire-soil interaction efficiency and speed stability. The LTV-MPC is supported by a self-learning hidden Markov model-based predictor that provides tire longitudinal and tractive force predictions over a 0.5 s horizon to ensure reliable solutions of the time-varying parameter model. Meanwhile, a nonlinear MPC (NMPC) is adopted to enhance tractor lateral stability by regulating the front-wheel steering angle using the LTV-MPC outputs together with real-time tractor dynamic parameters. To compensate for the inability of MPC to explicitly exploit engine and motor efficiency maps as prior knowledge, a deep reinforcement learning-based action compensator is introduced to further optimize control commands. Finally, the proposed hybrid tractor powertrain system and control strategy is evaluated on a controller-hardware-in-the-loop (CHIL) test bench. The results indicate that, compared with a steer-only control strategy, the equivalent fuel consumption rate is reduced by 7.11 %, the standard deviation of lateral path deviation decreases by 28.70 %, and the RMSE of longitudinal speed tracking is lowered by 65.88 %. Relative to other baseline multi-objective control methods, operational stability and energy efficiency are also improved markedly. Another noteworthy finding is that, under the proposed FADTC-HTP configuration, operating the front-axle electric machines in regenerative braking mode during plowing effectively constrains tire slip, enhances tire-soil interaction efficiency, and positively affects diesel engine fuel economy. This study offers an alternative perspective for the structural design and model-data hybrid driven control strategy development of hybrid tractors.",
+    "keywords": [
+      "Hybrid Tractor",
+      "Energy Efficiency",
+      "Operation Stability",
+      "Multilayer Coordinated Control",
+      "Model Predictive Control"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -40297,8 +40390,14 @@
     "author_ids": [
       "https://orcid.org/0000-0001-5895-9837"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Leaf area density (LAD) describes canopy compactness in apple orchards and supports variable-rate spraying decisions. However, real-time in-field LAD sensing remains challenging because occlusion, illumination variability, and strong equipment noise reduce the reliability and learnability of canopy observations. This study proposes a mechanism-guided wind-excited acoustic sensing framework for LAD grade estimation in apple-tree canopies. First, mechanism-based analysis was used to identify the dominant noise sources and key frequency bands, and passive noise reduction was adopted to improve acquisition consistency. Then, a correlation-mean-square-error (MSE) constrained deep neural network (CM-DNN) was used to reconstruct low-SNR wind-excited audio. Finally, a spectral-centroid statistical prior was introduced to guide frequency-axis attention, and a spectral-centroid attention deep convolutional neural network (SCA-DCNN) model was used to classify log-power spectrum spectrograms. The results showed that passive noise reduction decreased device background noise from 72.7 dB to 65.4 dB, and 10 m/s was selected as the unified acquisition condition. On this basis, SCA-DCNN improved accuracy by 3.50 percentage points over the baseline DCNN and achieved 91.50 % accuracy on independent field samples. Overall, the proposed combination of mechanism-guided noise control, low-SNR signal reconstruction, and prior-guided attention improved the learnability of orchard acoustic data and provided a deployable sensing pathway for prescription-oriented canopy grading.",
+    "keywords": [
+      "Smart orchard",
+      "Canopy sensing",
+      "Leaf area density",
+      "Wind-excited audio",
+      "Spectral centroid attention"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -41800,8 +41899,14 @@
       "Hong Sun"
     ],
     "author_ids": [],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Soil moisture significantly affects soil spectral reflectance, and its high variability severely undermines the accuracy of soil organic matter (SOM) prediction. To address this issue, soil samples were collected from northern and northeastern China to construct three independent datasets. A deep generative model, Wet Spectrum to Dry Spectrum (Wet2dry) was then developed to capture the structural characteristics of one-dimensional spectral features. On this basis, three moisture-correction methods—Direct Standardization (DS), External Parameter Orthogonalization (EPO), and Wet2dry—with three SOM prediction models: Random Forest, Transformer, and SE-Transformer were systematically compared. Results show that the Wet2dry method effectively eliminates moisture interference and improves SOM prediction accuracy, offering a robust solution for soil property spectral inversion under high moisture variability. In SOM prediction tasks, the SE-Transformer model, which integrates the Squeeze-and-Excitation (SE) attention mechanism, exhibited stronger responsiveness to critical spectral bands. When combined with the Wet2dry correction model, the SE-Transformer consistently achieved excellent prediction performance across different moisture levels (5%, 10%, 15%), with R2 > 0.75 and RPD > 2. This study extends image-generation network architectures to one-dimensional spectral modeling, providing a feasible solution for stable SOM prediction under moisture interference.",
+    "keywords": [
+      "Soil organic matter",
+      "Near-infrared spectroscopy",
+      "Soil moisture elimination",
+      "Conditional generation adversarial network",
+      "Deep learning"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -42034,8 +42139,14 @@
     "author_ids": [
       "https://orcid.org/0000-0002-9104-0598"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Standardized orchard navigation requires path planners to balance safety, smoothness, and kinematic feasibility under narrow-row and semi-structured operating conditions. To address the limitations of conventional search-based methods, artificial potential field (APF)-based methods, and end-to-end learning methods, this paper proposes a physics-informed hybrid path-planning framework. The core idea lies in a parameter-space learning paradigm, in which a neural network predicts the key physical parameters of the APF, while the final trajectory is generated by a physics-based executor, thereby enhancing both adaptability and interpretability. To further coordinate global path consistency and local obstacle avoidance, a dual-head architecture is designed to decouple direction prediction from APF parameter adaptation. In addition, a two-stage training strategy that combines supervised warm-up with reinforcement fine-tuning is introduced to improve physical consistency and dynamic smoothness. Experimental results on more than 400 benchmark maps demonstrate that the proposed method achieves a 100 % success rate, together with stable safety margins and a Mean Jerk of 0.0072 rad. Ablation studies, Gazebo simulations, dynamic obstacle-avoidance tests, and real-world orchard experiments further verify the robustness and deployment potential of the proposed framework for safe and smooth autonomous navigation in complex orchard environments.",
+    "keywords": [
+      "Path planning",
+      "Parameter-space learning",
+      "Dual-head network",
+      "Physics-informed navigation",
+      "Orchard navigation"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -43884,8 +43995,13 @@
     "author_ids": [
       "https://orcid.org/0000-0003-4422-472X"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Precise phenotypic perception and reliable decision-making are critical for the intelligent management of greenhouse tomatoes. However, existing methods often lack an integrated closed-loop “perception-to-reasoning” workflow and struggle with high computational costs on edge devices. This study proposes PP-LLMs, an innovative framework that bridges visual perception and agronomic reasoning by integrating a lightweight detection model, YOLON, with a fine-tuned Large Language Model, Tomato-Qwen. Our core contributions are threefold. First, we constructed the TGMD (Tomato Growth Multimodal Dataset), a benchmark comprising 9,519 high-quality expert-annotated language pairs covering descriptions of tomato growth status and agricultural production knowledge.Second, we developed YOLON, which employs efficient DELK-Block and GSLK modules to achieve high-precision detection of tomato organs while maintaining a lightweight architecture suitable for real-time edge deployment. Third, by applying a two-stage fine-tuning process (LoRA and prompt learning) to Qwen-7B-Chat, we enabled Tomato-Qwen to perform complex agronomic reasoning based on real-time phenotypic and environmental data. Experimental results demonstrate that this strategy significantly outperforms mainstream baselines. Tomato-Qwen achieved substantial improvements in QA tasks, with BLEU-4 and ROUGE-L scores increasing by 29.42% and 33.13% respectively.This research demonstrates the preliminary effectiveness of visual-language collaboration in agriculture and suggests a potentially scalable solution for autonomous greenhouse management. But the generated agronomic suggestions should be regarded as preliminary candidate outputs whose practical safety and reliability have not yet been validated by domain experts.",
+    "keywords": [
+      "Production guidance",
+      "Phenotypic measurement",
+      "Large language model",
+      "Deep learning"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -44635,8 +44751,14 @@
     "author_ids": [
       "https://orcid.org/0000-0001-8426-1045"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Rice is a primary global food source, but its production is severely threatened by pests and diseases, leading to significant yield losses and economic instability. Traditional manual identification is labor-intensive and error-prone. Deep Learning (DL) offers automated and accurate diagnosis, but its centralized deployment raises data privacy concerns and incurs high communication costs. Federated Learning (FL) provides a privacy-preserving alternative, but it faces challenges such as statistical heterogeneity (Non-IID data) and stringent resource constraints in the Internet of Agricultural Things (IoAT). To address these issues, we propose a personalized framework called Adaptive Parameter Decomposition Federated Learning (FedAD). FedAD employs a strategy based on Singular Value Decomposition (SVD) to decouple model weights into a shared full-rank component and a personalized low-rank component, and we introduce a dynamic rank allocation mechanism to adaptively adjust the personalized capacity for each client without requiring explicit SVD decomposition. In addition, we design a resource-efficient backbone model (SepResNet) to balance model performance with overall resource constraints in federated environments. To mitigate data scarcity and improve robustness, we construct a novel dataset (RP15) by employing a hybrid augmentation strategy that combines traditional transformations with generative AI synthesis. Experiments on both the RP15 dataset and the public PlantVillage dataset demonstrate the superior performance and generalization ability of FedAD. On the RP15 dataset, FedAD achieves 90.40% Accuracy, an 86.79% F1-Score, and 87.10% Recall, outperforming baseline methods by over 10% and doubling the convergence speed. On the PlantVillage dataset, FedAD achieves 99.45% Accuracy, a 99.04% F1-Score, and 99.12% Recall, significantly outperforming baseline models. Finally, we provide both experimental and theoretical validation of the framework’s convergence, which ensures training stability and offers guidance for hyperparameter selection. The source code and RP15 dataset are available at https://github.com/DongfuHou/FedAD.",
+    "keywords": [
+      "FedAD",
+      "IoAT",
+      "SVD",
+      "SepResNet",
+      "RP15"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -49009,8 +49131,14 @@
     "author_ids": [
       "https://orcid.org/0000-0002-2293-4686"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Irrigation scheduling in agricultural water management requires balancing crop yield, water efficiency, and safety constraints under inter-annual rainfall variability. Existing approaches − fixed irrigation calendars, numerical optimizers, and conversational AI advisors − share a common gap: they do not deliver model-grounded recommendations that are simultaneously traceable, safety-checked, and adaptive to climate conditions. AquaAgent-OSPy is an A4-class code-executing large language model (LLM) tool-agent that orchestrates AquaCrop-OSPy irrigation scenario simulations, non-dominated sorting genetic algorithm II (NSGA-II) multi-objective optimization, Google Earth Engine (GEE) site context verification, and an illustrative seasonal-irrigation safety checker to generate auditable action memos with full tool provenance. The system was evaluated at two confirmed Korean paddy rice sites (Gimje, Jeollabuk-do and Hampyeong, Jeollanam-do) across three contrasting climate years (403–824 mm May-September growing-season precipitation) using a five-item binary faithfulness rubric (F1-F5). As a pilot unit-audit of memo traceability, not a statistical reliability estimate for LLM behavior, four confirmed-site action memos passed all rubric items (20/20 combined). The evaluation produced four findings: (1) the GEE land-cover and Sentinel-1 synthetic aperture radar (SAR) pipeline caught an automated site-selection error and confirmed paddy rice phenology at both sites; (2) in a severe drought year (2015, 403 mm), the fixed weekly schedule triggered the illustrative high-irrigation safety flag (239 mm > 200 mm) and achieved lower water productivity (WP) than the selected low-irrigation threshold strategy under shared AquaCrop-OSPy assumptions; (3) across all four primary evaluation cases, the agent recommended soil-moisture threshold (SMT) scheduling or zero irrigation and never recommended a safety-flagged strategy, while scenario results from all six case-year combinations supported the same within-model water-saving advisory pattern; (4) AquaCrop-OSPy PaddyRice outputs were qualitatively aligned with a published Thailand site (Veerakachen and Raksapatcharawong, 2020; rainfed yield 4.77 t/ha within a reported 3–5 t/ha range), providing a plausibility check rather than Korean field validation. Soil hydraulic parameters were cross-checked against SoilGrids v2.0. AquaAgent-OSPy is intended for agronomist review: it links recommendations to simulation outputs and safety checks, but it does not authorize or actuate irrigation.",
+    "keywords": [
+      "AquaCrop-OSPy",
+      "Irrigation decision support",
+      "Large language model tool-agent",
+      "Agentic AI",
+      "Water productivity"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -52673,8 +52801,14 @@
       "Haiwei Yuan"
     ],
     "author_ids": [],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Accurate forest canopy cover mapping serves as a fundamental support for forest resource inventory, ecosystem management and carbon sink accounting. The integration of ultra-high-resolution remote sensing imagery and convolutional neural networks has advanced the efficiency of forest canopy extraction. Nevertheless, current approaches still encounter limitations when applied to scenes with complex backgrounds and dense forest conditions, particularly in accurate canopy boundary delineation and fine-grained target discrimination. Such limitations are primarily attributed to insufficient adaptive modeling of canopy geometric and textural characteristics, as well as the loss of critical structural details during downsampling. This work presents GMNet, a dedicated network for forest canopy mapping, which consists of two core modules, namely Gradient Adaptive Dynamic Convolution and Multi-scale Wavelet Range Downsampling. The Gradient Adaptive Dynamic Convolution module adaptively recalibrates convolutional kernel weights based on gradient cues to facilitate effective canopy feature learning in complex scenarios. The Multi-scale Wavelet Range Downsampling module integrates multi-scale wavelet decomposition with distance statistics to preserve essential structural characteristics, especially boundary details, throughout the downsampling procedure. Evaluated on the BAMFORESTS benchmark dataset, GMNet achieves competitive performance against several state-of-the-art remote sensing segmentation models across commonly adopted metrics. The presented model also maintains comparatively stable performance under changing illumination conditions and canopy shadow interference. The proposed approach is capable of supporting reliable canopy extraction in dense forest scenarios with complex illumination and overlapping tree crowns, showing applicability for forest resource assessment and sustainable forest management. The code is available at https://github.com/WangShiK/GMNet.",
+    "keywords": [
+      "Forest canopy cover mapping",
+      "Semantic segmentation",
+      "UAV remote sensing",
+      "Wavelet transform",
+      "Dynamic convolution"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -54816,8 +54950,14 @@
       "https://orcid.org/0000-0002-5307-7322",
       "https://orcid.org/0000-0002-8470-4253"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Crop disease diagnosis from field photographs faces two recurring problems: models that score well on benchmarks frequently hallucinate species names, and when predictions are correct, the reasoning behind them is typically inaccessible to the practitioner. This paper describes Agri-CPJ (Caption-Prompt-Judge), a training-free few-shot framework in which a large vision-language model first generates a structured morphological caption, quality-gated and, when triggered, refined once, before any diagnostic question is answered. Two candidate responses are then generated from complementary viewpoints, and an LLM judge selects the stronger one based on domain-specific criteria. The ablations show that introducing a caption at all, even before any quality refinement, is the single largest contributor to downstream accuracy for both models tested; quality-gated refinement of that caption adds a smaller but systematic further increment. On CDDMBench, the full caption-enhanced pipeline yields +22.7 pp in disease classification and +19.5 points in QA score over no-caption baselines (GPT-5-Nano with GPT-5-mini caption generator), with ablations showing caption introduction accounts for the majority of the gain. Evaluated without modification on AgMMU-MCQs, GPT-5-Nano reached 77.84% and Qwen-VL-Chat reached 64.54%, placing them at or above most open-source models of comparable scale despite the format shift from open-ended to multiple-choice. The structured caption and judge rationale together constitute a readable intermediate record: a practitioner who disagrees with a diagnosis can inspect the specific caption observation the answer was conditioned on, though we make no claim that the judge’s written rationale is a faithful account of the computation that produced its selection. The code and scripts are publicly available.11https://github.com/CPJ-Agricultural/CPJ-Agricultural-Diagnosis.",
+    "keywords": [
+      "Agricultural VQA",
+      "Crop disease diagnosis",
+      "Explainable AI",
+      "Vision-language models",
+      "LLM-as-a-Judge"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,

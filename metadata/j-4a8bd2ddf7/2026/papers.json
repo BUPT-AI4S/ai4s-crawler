@@ -41701,8 +41701,15 @@
     "author_ids": [
       "https://orcid.org/0000-0001-8849-7549"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Minute-level ultra-short-term photovoltaic power forecasting is vital for real-time grid stability and renewable energy integration. However, forecasting performance is often hindered by limited samples under specific weather conditions, strong non-stationarity, and lack of physical consistency in data-driven models. This study proposes an integrated framework combining data augmentation, time-frequency decomposition and physics-informed modeling. A density-based clustering algorithm (HDBSCAN) is used to identify minority weather patterns, and an improved Wasserstein GAN with gradient penalty (WGAN-GP) augments time-series data within these clusters. A hybrid CEEMDAN-SST method is then applied to extract multi-scale features, in which dominant intrinsic mode functions are selected based on energy and correlation to enhance sensitivity to non-stationary dynamics. A physics-informed PINN-Mamba model is further developed by integrating physical constraints and a state-space architecture, ensuring both forecasting accuracy and interpretability. Experimental results demonstrate that the proposed method outperforms several mainstream benchmarks in both accuracy and generalization performance. Compared to a strong baseline model, the PINN-Transformer, the proposed model reduces MAE, RMSE and NRMSE by 38.16 %, 9.13 %, and 17.75 %, respectively, and improves R2 by 0.62 %, demonstrating its practical effectiveness. Furthermore, PINN-Mamba achieves an average inference latency of 1.19 ms, confirming its real-time applicability in ultra-short-term PV forecasting tasks.",
+    "keywords": [
+      "Photovoltaic forecasting",
+      "Physics-informed neural network",
+      "Mamba",
+      "Wasserstein generative adversarial networks",
+      "Gradient penalty",
+      "Complete ensemble empirical mode decomposition with adaptive noise"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -42654,8 +42661,14 @@
       "Xueyuan Peng"
     ],
     "author_ids": [],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Regenerative flow compressors (RFCs) represent a promising option for hydrogen recirculation in proton exchange membrane fuel cell (PEMFC) system. This study presents a comparison of performance and flow characteristics between three types of RFCs. It is demonstrated that the highest isentropic efficiency is 50 % for the single-flow RFC, 36 % for double-flow RFC with shrouded impeller, and 26 % for double-flow RFC with open impeller. The pressure coefficient of the single-flow RFC is over 20 % higher than the other two. To explain the performance differences, the flow characteristics of the three RFCs are subjected to analysis and comparison. The results indicate that RFC with open impeller exhibits the highest transition loss of 1.2, which is significantly higher than the other two RFCs. The plots of velocity vectors show that single-flow RFC exhibits the most regular and stable flow field, which explains its high efficiency and pressurization capacity. The shrouded impeller connects the bilateral flow channels, leading to mass transfer and resulting in a more turbulent flow field. The open impeller separates the bilateral flow channels, thereby improving the stability of the flow, but induces significant losses in transition regions. It is suggested that single-flow RFC should be prioritized when selecting hydrogen RFCs.",
+    "keywords": [
+      "Regenerative flow compressors",
+      "Hydrogen recirculation",
+      "Proton exchange membrane fuel cell",
+      "Hydrogen energy",
+      "Numerical simulation"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -57634,8 +57647,13 @@
     "author_ids": [
       "https://orcid.org/0009-0005-4142-4971"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Accurate day-ahead price forecasting is critical for power market participants in the electricity market. However, the increasing penetration of renewable energy introduces greater complexity and intermittency into electricity price patterns, making accurate day-ahead forecasting a significant challenge. To this end, we propose a novel framework for day-ahead electricity price forecasting, EPformer. Specifically, the proposed framework begins with a two-stage data preprocessing module. Then, the proposed framework adopts an encoder–decoder architecture. It first employs Bidirectional Long Short-Term Memory (BiLSTM) as the temporal encoder to capture sequential dependencies and utilizes Temporal Convolutional Networks (TCN) as the feature encoder to extract data features, respectively. The learned representations and additional data features are then fused and fed into the decoder to generate the final prediction. In addition, the proposed framework is trained using a customized loss function that integrates time–frequency domain features. This strategy replaces the conventional MSELoss training paradigm, which enables the model to effectively capture peak and valley features in electricity price, while also mitigating the inherent autocorrelation in the label sequences under the direct forecasting (DF) paradigm. Finally, we conduct a comprehensive evaluation and validation of the proposed model on two electricity price datasets from Shanxi in China.",
+    "keywords": [
+      "Electricity price forecasting",
+      "Data preprocessing",
+      "Encoder–decoder structure",
+      "Time and frequency domain feature learning"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -60465,8 +60483,14 @@
       "Tao Bai"
     ],
     "author_ids": [],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "With the rapid development of new energy technologies, quantifying the spatial-temporal correlation between runoff and wind power and solar power generation capacity and generating representative high-dimensional coupled scenario sets have become urgent issues. As existing methods struggle to generate high-dimensional, long-term reliable scenarios under small sample conditions, this paper proposes a two-stage long-term scenario generation method for runoff-wind-solar integration. In the first stage, it couples generative adversarial network with variational autoencoder, and improves the model by introducing Wasserstein distance and loss weight coefficients to ensure training stability, scenario quality and diversity, and enable initial learning of distribution characteristics from small sample annual data. In the second stage, it incorporates Cholesky decomposition and quantile mapping to enhance the spatial-temporal correlation of scenario sets, thus obtaining highly reliable scenario sets that retain the spatial-temporal features of original data. Validation against scenarios from single-stage VAE-GAN, GAN, VAE and Copula proves the proposed method's effectiveness: in the three-element scenarios, the average absolute error of Kendall correlation coefficient reaches 0.03, 0.02 and 0.04 respectively. This method can provide key technical support for the long-term planning and dispatching of runoff-wind-solar complementary systems.",
+    "keywords": [
+      "Multi-energy complementary system",
+      "Spatial -temporal correlation",
+      "Scenario generation",
+      "Generative adversarial networks",
+      "Variational autoencoder"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -109031,8 +109055,12 @@
       "https://orcid.org/0000-0002-5585-6020",
       "https://orcid.org/0009-0006-9914-4080"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Conventional water electrolysis faces challenges due to the tight link between the hydrogen evolution reaction (HER) and oxygen evolution reaction (OER), including gas mixing risks and high energy use. This study introduces a new decoupled system using a thermoregenerative ammonia electrolyte. It enables separate hydrogen and oxygen production while significantly reducing energy consumption. The key approach is to replace the high-energy HER with electrochemical reduction of Cu2+, while storing protons (H+) through the OER. A major innovation is adding ammonia gas, which reacts spontaneously with the deposited copper to reduce the stored H+ and produce hydrogen. This allows \"on-demand\" hydrogen generation without external power. The system operates at a cell voltage about 50% lower than that of conventional water electrolysis, as low as 1.31 V. Reaction agents are recycled through low-temperature thermal breakdown of the copper-ammonia complex, achieving a specific energy consumption for hydrogen production as low as 5.02 kWh·m−3 H2, matching top-tier performance. By separating energy input from hydrogen output in time and space, this research offers a new direction for flexible and efficient hydrogen production.",
+    "keywords": [
+      "Decoupled water electrolysis",
+      "Thermoregenerative ammonia",
+      "Complexation reaction"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,

@@ -16,8 +16,14 @@
       "https://orcid.org/0000-0003-0604-2108",
       "https://orcid.org/0000-0003-1916-0349"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Deep learning (DL) has been extensively studied as a powerful data-driven method and shown encouraging results in numerous acoustic imaging-related tasks. Nevertheless, the notable improvements achieved through the advanced DL-based methods often come with increased model parameters and complexity, making the deployment of the models on devices with limited computational capabilities challenging. Knowledge distillation is an extremely promising technique for model compression, in which a lightweight student model is trained to mimic the behavior of the complex and powerful teacher model. The key idea of knowledge distillation is to leverage the supervisory information from the teacher model to enhance the overall performance of the student model without modifying its structure. Therefore, to develop lightweight models with enhanced performance in the context of acoustic imaging, a novel acoustic imaging method based on local-nonlocal attention and masked generative knowledge distillation (LNLMG-KD) is proposed. To apply the LNLMG-KD, a residual dense U-net teacher model (RDUN-T) and residual dense U-net student model (RDUN-S) are constructed. RDUN-T boasts superior performance and strong generalization ability in acoustic imaging, but it is burdened with sophisticated architecture and extensive parameters. RDUN-S is more efficient and possesses a more compact architecture with fewer parameters, but its capacity for acoustic imaging remains constrained compared to RDUN-T. During the training process of RDUN-S, LNLMG-KD is employed to transfer the knowledge learned from RDUN-T to RDUN-S. Through the local-nonlocal attention knowledge distillation, RDUN-S can effectively utilize both local and global information from RDUN-T. Additionally, the masked generative knowledge distillation enables RDUN-S to learn more robust features from RDUN-T. The effectiveness of the proposed method is validated through the comparisons of the proposed method with the advanced deconvolution methods using both simulation and experimental data. The results indicate that the proposed LNLMG-KD significantly enhances the performance of RDUN-S under the guidance of RDUN-T, which makes it a promising solution for deploying lightweight and superior models in embedded devices with limited computational resources for real-time and accurate acoustic imaging.",
+    "keywords": [
+      "Acoustic imaging",
+      "Deep learning",
+      "Knowledge distillation",
+      "Local-nonlocal attention",
+      "Masked generative strategy"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -3699,8 +3705,13 @@
       "Siyu ZHU"
     ],
     "author_ids": [],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "This paper proposes a generative adversarial network (GAN) for feature extraction and simulation generation of seismic data. Specifically, a Wasserstein-distance-based GAN model has been adopted using the well-acknowledged NGA-West2 ground motion American database of the Pacific Earthquake Engineering Research Center (PEER). Notably, this study adopts multi-dimensional convolution/deconvolution to extract and reconstruct multi-dimensional features from one-dimensional data, ensuring the generated data exhibit required features simultaneously. The validity and diversity of the generated data are verified by four aspects, such as time–frequency power spectrum, data similarity, and seismic intensity parameter distribution map. The results show that the generated data by the proposed method have good and diverse features and waveforms.",
+    "keywords": [
+      "Deep learning",
+      "Data augmentation",
+      "Ground motion",
+      "Generative adversarial network"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -6638,8 +6649,13 @@
       "https://orcid.org/0000-0001-8519-5801",
       "https://orcid.org/0000-0002-6082-6782"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Accurate and robust structural displacement monitoring is essential for the safety assessment and maintenance of civil infrastructure. While phase-based vision methods offer sub-pixel precision, their applicability is severely limited by phase wrapping under large inter-frame motions. This issue hinders reliable monitoring in real-world scenarios where large pseudo-static displacements and small vibrations coexist. To address this limitation, this study proposes a cross-scale displacement estimation technique that fuses amplitude and phase information from vision measurements. The technique employs a two-stage estimation framework: amplitude-based pixel-level coarse alignment, followed by phase-based sub-pixel refinement. To ensure robustness and accuracy across varying structural responses, three key strategies are introduced: (1) a correlation-based active pixel selection algorithm to extract structurally meaningful regions, (2) a pyramid level optimization algorithm based on inter-scale phase linearity, and (3) a self-calibration algorithm using synthetic image sequences to determine the phase-to-pixel scale. The effectiveness of the proposed technique was validated through experimental testing on a single-story building model and a footbridge under multiple excitation scenarios. The results indicate that the proposed technique is capable of achieving high-precision displacement estimation, with root mean square errors maintained below 0.2 mm even for displacement amplitudes reaching up to 50 mm.",
+    "keywords": [
+      "Structural health monitoring",
+      "Cross-scale displacement estimation",
+      "Computer vision",
+      "Amplitude-phase fusion"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -9538,8 +9554,14 @@
       "Chunyue Song"
     ],
     "author_ids": [],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Compound faults of industrial rotating machinery are characterized by temporal-frequency multisource signals coupling, existing methods struggle to cope with the intrinsic correlations and distribution gap between the temporal signal and the frequency signal, leading to suboptimal detection performance. To tackle it, we proposed a multi-modal feature collaborative generative adversarial learning method for industrial rotating machinery compound fault detection enhancement. In this method, the feature representations of inter-modal complementarity (modal-shared) and the intra-modal specificity (modal-specific) are collaboratively learnt. First, we design two parallel knowledge-informed modal-specific feature extraction network models and a multi-modal transfer model. Two modal-specific feature extraction models utilize the prior knowledge to learn modal-specific feature from the temporal and frequency modals. The multi-modal transfer model aggregates and transfer modal-shared feature by calculating modal-specific feature neighbors of each modal. Then, a generative adversarial-based multi-modal collaborative training strategy is developed for feature collaborative learning. In this strategy, three feature learning models acts as multi-modal feature generator, which intends to generate and fuse modal-specific and modal shared features to form the cross-modal propagated feature, and a feature modal discriminator is introduced to identify the source belonging modal of the cross-modal propagated feature. Based on such feature generative adversarial training, the cross-modal propagated feature no longer clearly belongs to one certain modal, thus achieving effective multi-modal feature transfer. Finally, two industrial rotating machineries cases demonstrate the compound fault performance of the proposed method.",
+    "keywords": [
+      "Multi-modal feature collaborative learning",
+      "Generative adversarial learning",
+      "Industrial rotating machinery",
+      "Multi-modal feature transfer",
+      "Compound fault detection"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -10722,8 +10744,14 @@
       "https://orcid.org/0000-0002-2612-3362",
       "https://orcid.org/0000-0002-1460-082X"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "The growing demand for rail transit safety has intensified the need for efficient track irregularity identification using operational in-service train data, yet it presents a persistent challenge. Model-driven methods are often hampered by their dependency on precise system parameters, while data-driven approaches typically function as ‘black boxes’ with poor interpretability. To bridge this gap, this paper proposes a novel physics-informed Kolmogorov-Arnold Network (PIKAN) for vertical track irregularity identification from bogie acceleration signals under straight-track operating conditions. The core innovation of the PIKAN is its unique recursive architecture, which structurally embeds the KAN within a vehicle inverse dynamics model derived from multibody system theory. This foundational design ensures that the model’s forward propagation inherently adheres to underlying physical laws, while simultaneously eliminating the need for prior knowledge of vehicle parameters. The proposed method is rigorously validated through comprehensive numerical simulations and real-world field experiments. Results demonstrate that PIKAN achieves superior performance in track irregularity identification compared to three state-of-the-art sequence-to-sequence neural networks, with a notable reduction in Root Mean Squared Error (RMSE) of 1.57–1.82 mm across all operational conditions. Beyond superior accuracy, PIKAN allows for the visualization of the trained network and the extraction of explicit mathematical expressions from the learned model. This transparency establishes PIKAN as an interpretable and trustworthy solution for deployment in safety–critical rail transit systems.",
+    "keywords": [
+      "Track irregularity identification",
+      "Bogie accelerations",
+      "Inverse dynamics model",
+      "Physics-informed Kolmogorov-Arnold Network (PIKAN)",
+      "Interpretability"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -16346,8 +16374,15 @@
     "author_ids": [
       "https://orcid.org/0000-0003-3888-6794"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Traditional structural health monitoring relies on sensor deployment but is constrained by high installation costs, insufficient monitoring network coverage, and noise interference in complex seismic scenarios, limiting its application. Leveraging existing surveillance cameras in buildings for non-contact monitoring emerges as a promising solution. This study proposes a finite element model updating method integrating computer vision with time-domain signal autocorrelation sensitivity. This method deeply integrates visual displacement data from surveillance videos with structural mechanics models, employing the autocorrelation function of time-domain signals for effective noise reduction. It enhances the identification of local stiffness changes, thereby significantly improving the accuracy and robustness of model updating. This study first conducts model updating through numerical simulation methods. The displacement autocorrelation sensitivity method is employed, systematically accounting for measured response noise, seismic motion noise, and uncertainties in seismic motion (including spectral characteristics, duration, and peak ground acceleration). Numerical simulation results demonstrate that, under structural response and seismic motion noise conditions with a signal-to-noise ratio (SNR) as low as 20 dB, the displacement autocorrelation sensitivity method achieves a parameter updating error within 5%, validating its high adaptability and robustness in complex disturbance environments. For far-field non-impulsive seismic motions, the displacement autocorrelation sensitivity method exhibits higher precision and stability compared to traditional displacement sensitivity methods. For engineering feasibility assessment, shaking table tests were conducted on a three-story steel frame, integrating displacement time histories from indoor/outdoor camera videos with ground motion data from IMU sensors for model updating. Test results show Pearson correlation coefficients of 0.91, 0.94, and 0.97 for displacement time history predictions versus measured values from the top to the first story, with peak displacement relative errors below 6% for all stories. This method can efficiently utilize existing building surveillance videos to complete model updates within minutes in post-earthquake environment, providing reliable support for damage assessment and emergency response.",
+    "keywords": [
+      "Computer vision",
+      "Surveillance cameras",
+      "Time-domain signal",
+      "Displacement autocorrelation",
+      "Sensitivity analysis",
+      "Model updating"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -20854,8 +20889,15 @@
     "author_ids": [
       "https://orcid.org/0000-0003-2969-5160"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Rolling bearings exhibit diverse failure modes, and obtaining fully annotated data for all failure modes in industrial scenarios is challenging, which limits the applicability of traditional diagnostic models. To address this issue, a zero-shot life-cycle state identification method is proposed. First, a Multi-Scale Envelope Entropy (MSEE) health indicator is constructed by integrating frequency-domain and time-domain features, enabling sensitive monitoring and division of degradation states. Second, a Contrastive Generative Kolmogorov-Arnold Network (CGKAN) model is proposed. This network utilizes B-spline functions to accurately fit local transient features, combined with radial basis functions to capture global patterns, allowing it to learn feature distributions from data of known failure modes. Additionally, Wasserstein distance and a gradient penalty mechanism are incorporated with contrastive learning to optimize the feature space, generating high-quality sample features for unknown failure modes and training a classifier to identify these unseen failure modes. The proposed method is validated on two full-life-cycle bearing datasets. Experimental results demonstrate that the method effectively divides life-cycle states and, by leveraging data from known failure modes, achieves accurate identification of unknown failure modes not encountered during the training phase.",
+    "keywords": [
+      "Rolling bearing",
+      "Life state identification",
+      "Zero-shot learning",
+      "Multi-scale envelope entropy",
+      "Kolmogorov Arnold network",
+      "Generative network"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -21830,8 +21872,14 @@
       "https://orcid.org/0000-0002-9475-0659",
       "https://orcid.org/0000-0002-7493-1399"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Accurate prediction of remaining tool life is essential for developing intelligent machining systems in robotic milling. To address the challenges posed by pose variations, cross-equipment heterogeneity, and multi-modal signal integration, we propose a fine-tuning-based transfer learning framework named M−BLCAP−FTN, which integrates adaptive feature selection and physical information constraint mechanisms. The framework first enhances data quality using a combination of interquartile range analysis and wavelet soft-threshold denoising. Discriminative features are then selected via the maximum relevance and minimum redundancy algorithm. A BiLSTM model with Channel Attention is constructed to extract deeply coupled spatiotemporal features from multi-sensor signals. Furthermore, the incorporation of physical consistency and monotonicity loss terms ensures that model outputs adhere to underlying tool wear laws. By leveraging fine-tuning-based transfer learning, the proposed method enables effective knowledge migration from the CNC machine tools to robotic machining platforms. Without compromising robotic flexibility and while maintaining low implementation costs, our approach achieves high-accuracy cross-domain tool life prediction. Experimental results on public milling datasets and a robotic milling platform validate the effectiveness and superiority of the method. The RMSEs on public milling datasets, pose-varying robotic trials, and cross-equipment bidirectional transfer are as low as 0.0111, 0.0286, and 0.0277, respectively, demonstrating robust predictive performance.",
+    "keywords": [
+      "Cross-equipment RUL prediction",
+      "Adaptive feature selection",
+      "Physics-informed constraints",
+      "Cross-domain transfer learning",
+      "Robotic milling"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -26229,8 +26277,14 @@
       "Zhiyong Huang"
     ],
     "author_ids": [],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Fatigue life prediction of aero-engine has been an important research topic in the aerospace industry. This study focuses on predicting the high cycle and very high cycle fatigue (HCF/VHCF) life of aero-engine titanium alloys under small-sample conditions. First, based on the test results and empirical phenomena, a dimensionless constraint index (δ) was designed to assign values to the test type (Typ) and fracture conditions (Fc), and life mapping characteristic variables were introduced to establish a foundation for subsequent data augmentation and predictive modeling. Second, a Kernel density estimation-Synthetic minority over-sampling technique (KDE-SMOTE) data enhancement method is proposed, which expands the dataset while preserving feature-variable correlations. Then, a Conditional constraint Generative adversarial network (C-cGAN) model was built by embedding δ and Fc computation as explicit constraints in the loss and implicitly guiding attention learning with adversarial training. Finally, under the conditions of high-density distribution test validation (Test set 1) and random test validation (Test set 2), the C-cGAN model shows better prediction results at 3–5-fold dispersion bands (satisfying 5-fold dispersion band) by training on KDE-SMOTE enhanced data, and extends to the fatigue life prediction studies of a variety of titanium alloys, which suggests that the model has a potential reference value.",
+    "keywords": [
+      "High cycle and very high cycle fatigue (HCF/VHCF)",
+      "Data assignment and enhancement",
+      "Fatigue life prediction",
+      "Machine learning",
+      "Data-driven"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -31865,8 +31919,14 @@
       "Changan Di"
     ],
     "author_ids": [],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Accurate measurement of in-bore projectile acceleration is critical for optimizing artillery launch systems and evaluating interior ballistic performance. However, signals from projectile-borne storage tests are severely corrupted by high-frequency bore collision noise, masking low-frequency motion features and hindering accurate identification of projectile dynamics. Conventional denoising methods, which rely on cumbersome manual parameter tuning, prove ineffective against such stochastic high-amplitude coupled noise. This study proposes a physics-constrained generative adversarial network (GAN) that integrates physical priors with adversarial training. The method leverages the intrinsic physical mapping between projectile base pressure and in-bore acceleration, including synchronized time-domain peaks, consistent temporal trends, and shared underlying combustion and motion physics, to guide the denoising process. Specifically, the normalized base pressure signal serves as a conditional input to the discriminator, which evaluates the denoised acceleration produced by the generator. Physics-based constraints regulate the acceleration generation scale, enabling synergistic noise suppression and signal preservation while reducing reliance on extensive pristine training data. Simulations across ten noise levels demonstrate that the proposed method significantly outperforms traditional techniques such as discrete wavelet transform and empirical mode decomposition, particularly in high-amplitude noise suppression. Three independent live-fire tests confirm its robustness and generalization capability, achieving a signal-to-noise ratio of up to 40 dB for the denoised in-bore acceleration. This work establishes a new paradigm for denoising dynamic signals in extreme launch environments, greatly enhancing the efficiency of ballistic testing and the accuracy of artillery performance assessment.",
+    "keywords": [
+      "Projectile motion acceleration",
+      "Signal denoising",
+      "Generative adversarial networks",
+      "Signal-to-noise ratio",
+      "Artillery firing tests"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -32558,8 +32618,15 @@
     "author_ids": [
       "https://orcid.org/0000-0001-5204-1910"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "The effective integration of physical prior knowledge and measured data is critical for developing robust physics-informed machine learning frameworks. Calibrating the balance between structured physical approximations and data-driven flexibility is a key challenge of model development, particularly when physical models are only valid within specific operational regimes. In such cases, a global reliance upon a physical approximation can lead to model misspecification. This paper introduces a physics-informed kernel mixture framework for Gaussian process regression, capable of dynamically varying the reliance upon available physical knowledge based on identifiable switching variables. This ensures that physical understanding is prioritised in valid regimes and relaxed in favour of flexible data-driven components elsewhere. Rather than relying on soft constraints or loss-based penalties, known physics is explicitly embedded within the construction of kernels, enforcing desirable properties within predictions (e.g. quadratic lift force, localised behaviours). This allows model structure to mimic available physical intuition in an interpretable manner. Furthermore, the framework incorporates regime-dependent heteroscedastic noise to accurately capture varying uncertainty across different operational states. The versatility of the physics-informed kernel mixture framework is demonstrated through two distinct engineering case studies: the aerodynamic directional loading of a long-span suspension bridge and the prediction of aircraft wing strain during in-flight manoeuvres. The proposed kernel structures improve predictive accuracy and extrapolation whilst recovering an interpretable representation of regime-dependent system behaviour.",
+    "keywords": [
+      "Physics-informed machine learning",
+      "Gaussian process",
+      "Switching model",
+      "Kernel design",
+      "Bridge deck response",
+      "Aircraft wing strain"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -33241,8 +33308,14 @@
       "Song Zhang"
     ],
     "author_ids": [],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "In the context of intelligent manufacturing, achieving high-precision prediction of tool wear is crucial for enhancing manufacturing efficiency. However, this field currently faces three major challenges: the difficulty of directly measuring key physical quantities such as milling forces, the complexity of accurately interpreting process mechanisms, and the physical inconsistency and predictive uncertainty of purely data-driven models. To systematically address these issues, the objective of this research is to propose a novel paradigm that deeply integrates physical mechanisms with data-driven approaches. First, a multi-scale temporal convolutional network-frequency domain hybrid model (MSTCN-FD) is developed to achieve high-precision indirect perception of milling forces using easily measurable vibration signals. Secondly, a “physical wear value” is derived based on the physical relationship between force and wear, and embedded as a strong constraint into an ensemble learning physics-informed multi-source uncertainty-aware model (ELPI-MSUA). Thirdly, through a physics-guided loss function, data fitting and physical consistency are co-optimized, while uncertainties in the prediction process are quantified, thereby producing wear predictions with high accuracy and reliability. Finally, interpretability analysis methods are employed to reveal the physical basis of model decisions at the feature level. Experimental validation on two milling datasets under different working conditions shows that the wear prediction results achieve R2 values above 0.96, along with low RMSE and MAE values. The proposed framework not only accurately predicts milling forces and tool wear but also achieves deep closed-loop integration of physical mechanisms and data-driven approaches throughout the entire prediction process.",
+    "keywords": [
+      "Tool wear prediction",
+      "Intelligent manufacturing",
+      "Physics-informed",
+      "Data-driven",
+      "Uncertainty-aware"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -34407,8 +34480,14 @@
       "https://orcid.org/0009-0005-6987-0578",
       "https://orcid.org/0009-0007-5680-383X"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "The propagation of high frequency ultrasonic waves enables the detection of fine inclusions and cracks in solid media, often induced by fatigue or impact loads. Accurate modelling of high frequency wavefields significantly enhances the ability of structural health monitoring systems to detect fatigue cracks and localize stress concentrations near defects within solid plates. Numerical solvers, such as the Finite Element Method (FEM), require fine meshing of the problem geometry, whereas semi-analytical modelling, such as the Distributed Point Source Method (DPSM), demand large number of distributed point sources to accurately model high frequency ultrasonic fields, resulting in significant computational overhead. However, such computational constraints limit their applicability in real-time or large-scale monitoring systems. To address these challenges, we propose a surrogate model for expensive numerical solvers (FEM/DPSM) to efficiently predict high frequency ultrasonic wavefields in isotropic solids coupled with a fluid medium. A conditional generative adversarial network (cGANs), based on the Pix2Pix architecture, which features a U-Net as a generator and a PatchGAN as a discriminator is employed for training. Multiple tailored loss functions, including frequency, edge, perceptual, and structural similarity index measure (SSIM) based losses are included within total generator loss to ensure physical accuracy and structural fidelity. The Pix2Pix model is trained on paired low- and high-frequency wavefield data encompassing both healthy and damaged configurations with a circular hole in the solid half-space. For both cases, the trained model demonstrates excellent predictive performance for generating high frequency wavefield, with SSIM values for displacement and normal stresses consistently exceeding 0.85.",
+    "keywords": [
+      "Deep learning",
+      "Generative adversarial networks",
+      "High frequency",
+      "Non-destructive testing",
+      "Structural health monitoring"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -35035,8 +35114,14 @@
       "Jian Cheng"
     ],
     "author_ids": [],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Accurate Remaining Useful Life (RUL) prediction for roller bearing is severely hindered by static decomposition and multi-source noise interference, which often lead to mode mixing and feature fractures during long-term service. To address these bottlenecks, this paper proposes a novel Physics-Informed Dynamic Symplectic Tracking and Hamiltonian Projection (PI-DSTHP) framework. First, a dynamic symplectic tracking model is developed to continuously track physical mode identities via Hamiltonian minimum action path optimization, fundamentally eliminating mode mixing and ensuring continuous feature evolution across the full lifecycle. Second, an asynchronous Hamiltonian defense mechanism driven by Hamiltonian intrinsic momentum gliding is constructed, which isolates noise into independent phase-space orbits to adaptively bypass and restore distorted signal regions via physical inertia. Finally, the Hamiltonian energy trajectory projection model transforms RUL evaluation into a deterministic geometric intersection problem within the phase space, which can utilize the relative energy expansion effect to quantify system degradation and enable robust cross-domain prediction without target-domain priors. Experimental validation on two full-lifecycle roller bearing datasets demonstrates the significant superiority of the PI-DSTHP model in continuous degradation tracking and prognostic accuracy, offering full-chain physical interpretability from symplectic geometry to final life extrapolation.",
+    "keywords": [
+      "Roller bearing",
+      "Remaining useful life prediction",
+      "Physics-informed regression",
+      "Dynamicsymplectictracking",
+      "Asynchronous defense mechanism"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -35454,8 +35539,14 @@
     "author_ids": [
       "https://orcid.org/0000-0002-3096-6960"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Thermally induced positioning error (TIPE) in ball screw feed drives critically affects the machining accuracy of high-precision machine tools. Existing thermal error models are challenged by their reliance on extensive labeled datasets, which increases data acquisition costs and prolongs production cycles. In addition, these models utilize sparse temperature measurements as inputs, which are insufficient for reconstructing the full temperature field and therefore limit the characterization of non-uniform TIPE distributions under complex feed motions. To overcome these limitations, this study proposes a physics-informed digital twin (PIDT) framework for TIPE prediction that does not require labeled TIPE data for supervised training or parameter fitting, while explicitly incorporating the time-varying nut trajectory. First, an independent reduced thermal domain of the screw shaft is established by assimilating measured boundary temperatures, while a convolution-based physics-informed solver reconstructs the transient temperature field induced by the moving nut and stationary bearings. Subsequently, the TIPE profile along the feed axis is derived by integrating the axial temperature distribution and is dynamically constrained by a novel in-process end-displacement (IPED) measurement, thereby enabling online correction without interrupting machining. Across four operating conditions with different feed rates and reciprocating ranges, the proposed model achieves accurate and robust prediction under parameter uncertainty, reducing the maximum TIPE from 42.3, 56.7, 58.3, and 53.7 μm to 2.9, 4.6, 4.1, and 3.6 μm, respectively. This framework provides an efficient, physically interpretable, and cost-effective solution for TIPE compensation under complex and variable machining conditions.",
+    "keywords": [
+      "Ball screw feed drives",
+      "Transient temperature field",
+      "Thermal error",
+      "Physics-informed modeling",
+      "Digital twin"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -37749,8 +37840,14 @@
     "author_ids": [
       "https://orcid.org/0000-0002-8940-3345"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "The integration of generative artificial intelligence (GenAI) into digital twins (DTs) offers transformative potential for characterizing the non-linear dynamics of complex equipment. However, realizing high-fidelity, self-evolution generative DTs remains challenging due to the computational prohibitiveness of Transformer based architectures and the insufficient long-term memory of traditional recurrent networks. To address these limitations, this paper proposes a novel generative digital twin (GDT) method driven by a Physics-Guided Sparse-xLSTM. First, we construct a Sparse-xLSTM architecture designed to model high-dimensional temporal dynamics efficiently. By leveraging exponential gating and matrix memory, this architecture achieves linear computational complexity while effectively capturing long-range dependencies, overcoming the quadratic bottleneck of conventional attention mechanisms. A sparse attention strategy is further incorporated to extract distinct state features from noisy sensor data, enhancing representation robustness. Second, to ensure physical consistency and generalization, a hybrid modeling mechanism is devised. Physical priors are embedded as input feature, and governing equations are integrated into the optimization objective as physical constraints, effectively confining the generative solution space to physically valid trajectories and mitigating model hallucinations. Third, addressing the imperative for continuous adaptation, a low-rank adaptation (LoRA)-based self-evolution engine is developed. This mechanism enables the GDT to perform online updates using limited streaming data by fine-tuning low-rank matrices, ensuring rapid synchronization with the time-varying states of the physical entity without catastrophic forgetting. Experimental validation on CNC machine tool wear datasets demonstrates that the proposed approach significantly outperforms advanced baselines in both prediction accuracy and adaptation efficiency, providing a robust paradigm for intelligent predictive maintenance of complex equipment.",
+    "keywords": [
+      "Industrial digital twin",
+      "Generative AI",
+      "Credible self-evolution",
+      "Physics-informed neural network",
+      "Low-rank adaption"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -41553,8 +41650,14 @@
       "https://orcid.org/0000-0002-0507-0775",
       "https://orcid.org/0000-0003-2641-2049"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "In response to the increasing demand for sustainable and intelligent vehicle technologies, automotive suspension systems are experiencing a paradigm shift from energy-consuming to energy-saving designs. Traditional active and semi-active suspensions encounter two primary challenges: excessive energy consumption and structural complexity, largely due to their dependence on external power sources. Drawing inspiration from the highly coordinated and compact functionality of biological limbs, this paper introduces a novel integrated damper design paradigm. This approach is based on the use of regenerative shock absorbers (RSAs), which harvest vibrational energy to facilitate self-powered operation while also functioning as sensors for road perception and actuators for damping adjustment. This paper systematically reviews the key technologies that enable integrated systems. It begins with energy-harvesting mechanisms and multifunctional structural designs, examines coupling modeling methods within vehicle dynamics, explores strategies to optimize the trade-off between energy efficiency and dynamic performance, and summarizes self-powered control technologies derived from principles of internal energy flow. The statistical results indicate that RSAs have achieved energy harvesting across a significant range, from milliwatts to kilowatts (typical values of 10 W to 1.5 kW), while simultaneously reducing vehicle body acceleration to a minimal level of 0.04 to 0.6 m/s2 root mean square (RMS). Finally, the study addresses current challenges and outlines future research directions, including the integration of artificial intelligence and advanced materials, to provide theoretical insights and practical guidance for developing the next generation of self-adaptive suspension systems for autonomous vehicles.",
+    "keywords": [
+      "Regenerative shock absorber",
+      "Optimization system",
+      "Self-powered vibration control",
+      "Transportation renewable energy",
+      "Biological inspiration"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -42741,8 +42844,14 @@
       "https://orcid.org/0000-0001-6111-9441",
       "https://orcid.org/0000-0002-4492-5887"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Overloaded vehicles may induce fatigue damage and accelerate pavement deterioration, potentially leading to cracking and even catastrophic bridge failures. Vehicle load information is essential for bridge safety assessment and maintenance. The vehicle load can be inferred by the bridge influence lines (ILs), and the accuracy of vehicle load identification depends critically on the reliable extraction of ILs from measured bridge responses induced by a calibrated truck. Physics-informed neural networks (PINNs) have been widely investigated to incorporate physical relationships between measured responses and ILs into the learning process, enabling vehicle load identification with limited data. Existing PINN-based methods typically rely on multilayer perceptron architectures with limited interpretability and insufficient capability for precisely representing ILs. Measurement noise, vehicle-bridge dynamic interaction effects, and incomplete calibration information can interfere with PINN-based IL identification, thereby undermining the accuracy of vehicle load estimation. This paper proposes a physics-informed Kolmogorov-Arnold Network (PIKAN) for robust vehicle load identification. First, by embedding the physical relationships into the learning process, the proposed method enables the joint optimization of ILs and vehicle axle weights, even when partial axle weights of the calibration vehicle are unknown. Second, the PIKAN architecture enhances functional representation capability under noise and dynamic effects. Third, multi-location bridge response data are utilized to enhance the robustness and accuracy of vehicle load identification. A computational vehicle-bridge interactive model and a nine-span bridge are employed to assess the performance of the proposed method PIKAN for vehicle load identification. The results demonstrate that PIKAN achieves high accuracy and strong robustness in vehicle load identification.",
+    "keywords": [
+      "Bridge",
+      "Vehicle load identification",
+      "Influence line",
+      "Physics-informed neural network",
+      "Kolmogorov-Arnold Network"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -43760,8 +43869,14 @@
       "https://orcid.org/0000-0003-4375-9642",
       "https://orcid.org/0009-0001-9572-2051"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Accurate displacement measurement with uncertainty quantification is essential for structural vibration testing and health monitoring. However, existing vision-based methods process frames independently without leveraging structural dynamics knowledge, limiting computational efficiency and robustness under challenging conditions. This paper proposes a Physics-Informed DIC framework integrated with Stereo Vision and Temporal filtering (PI-DIC-SVT) that reformulates vision-based displacement measurement as a physics-constrained Bayesian state estimation problem. Three key contributions are presented: (1) a physics-guided search constraint that leverages Extended Kalman Filter predictions to adaptively reduce the search range from ± 30 pixels to approximately ± 10 pixels, achieving 2.5–3.0 × computational speedup; (2) a quality-adaptive Bayesian fusion mechanism that ensures robust tracking under adverse imaging conditions; and (3) a multi-source uncertainty quantification framework that decomposes measurement uncertainty into physically interpretable components. The method was validated through shaking table experiments under sinusoidal and seismic excitations. Results demonstrate that the proposed method achieves sub-millimeter accuracy (RMSE of 0.31 mm) that remains below 0.5 mm even under ± 50% natural frequency mismatch, while providing reliable uncertainty estimates with 94.3% coverage rate for 95% confidence intervals.",
+    "keywords": [
+      "Structural vibration measurement",
+      "Physics-informed method",
+      "Digital image correlation",
+      "Stereo vision",
+      "Uncertainty quantification"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -44083,8 +44198,14 @@
       "https://orcid.org/0000-0002-1000-8984",
       "https://orcid.org/0000-0001-5347-6182"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Angle-of-attack (AoA) sensor faults have historically contributed to several aviation accidents. To address this issue, a sensor fusion-based fault diagnosis framework is introduced that integrates first principles of physics with sensor data. A reduced-order aircraft model that incorporates sensor biases and gains is first developed using first principles of physics. This model is used to propose a two-stage fault detection scheme: an extended Kalman filter (EKF) innovation monitoring with covariance regularization (IMCR) for initial fault detection and Euclidean bias/gain deviations (EBGD) for fault confirmation. A physics-informed long short-term memory (PILSTM) network is then trained as a virtual sensor for use in the case of dual AoA faults. Finally, a fault mitigation method is developed to determine the appropriate actions in the event of a fault. It uses the IMCR-EBGD fault detection, aircraft sensor redundancy, and the PILSTM virtual sensor. The full framework is validated using flight data from the Advanced Technologies Testing Aircraft System (ATTAS) under both fault-free and fault-injected conditions. The proposed method detects ramp-type AoA faults within 0.18 s and yields a lower 95% Clopper–Pearson false alarm upper bound under fault-free scenarios. A sensitivity analysis incorporating Gaussian noise shows the proposed method achieves a lower false alarm rate. Furthermore, under the dual AoA fault test, the best estimation performance was obtained when the PILSTM loss function included a 15% contribution from the physics-informed loss function. These results demonstrate that hybridizing data-driven learning with first principles of physics improves fault diagnosis in complex sensor environments.",
+    "keywords": [
+      "Fault diagnosis",
+      "Angle-of-attack sensor",
+      "Sensor fusion",
+      "Kalman filter",
+      "Physics-informed neural networks"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -44628,8 +44749,13 @@
       "Ben M. Chen"
     ],
     "author_ids": [],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "This work presents HARTNet, a high-accuracy, real-time defect detection framework for intelligent mechanical systems. HARTNet introduces a lightweight feature processor with a Deep Global Module (DGM) to effectively capture defect features while maintaining a low parameter footprint. A structured aggregation network is integrated to perform efficient multi-scale feature fusion, thereby alleviating semantic degradation and improving feature representation efficiency. In addition, a weighted loss function is introduced to dynamically adjust sample contributions according to localization quality and sample difficulty, thereby alleviating the negative influence of imbalanced defect distributions and enhancing the learning of rare classes. To overcome the limited nonlinear capacity of existing activation functions, a new function with two tunable parameters is proposed and evaluated under both learnable and fixed settings. Extensive experiments demonstrate that HARTNet, with only 2.7M parameters, achieves state-of-the-art performance across two challenging industrial scenarios, while the effectiveness of the DGM module is further validated through comparisons with three state-of-the-art baselines. The proposed activation function also outperforms 25 widely used alternatives in terms of both accuracy and feature separability. Finally, HARTNet achieves real-time detection at 22.5 FPS on an edge computing platform. These findings highlight the portability and efficiency of HARTNet in practical engineering applications, such as intelligent manufacturing and quality assurance in mechanical systems.",
+    "keywords": [
+      "Defect detection",
+      "Feature extraction",
+      "Long-tail data",
+      "Edge computing"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -45576,8 +45702,13 @@
     "author_ids": [
       "https://orcid.org/0000-0002-9435-7267"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Oil and gas pipeline detection signals are critical for pipeline defect diagnosis and assessment. However, during field signal acquisition, complex operating conditions, harsh detection environments, and inherent limitations of detector response and signal conversion may lead to over-threshold distortion in pipeline signals. Since the true complete defect distribution of field distorted signals is inaccessible, traditional supervised deep learning methods face limitations in constructing paired distorted-clean training samples. To address this problem, this study proposes an Over-Threshold Distortion Restoration (OTDR) method based on the diffusion probabilistic principle. OTDR adopts unsupervised forward diffusion training to learn the feature distribution of normal pipeline defect signals and incorporates a progressively guided restoration mode with a dynamic resampling mechanism to reconstruct over-threshold distorted regions during reverse diffusion. Case validations indicate that OTDR can reconstruct the main morphological structures, local details, and statistical feature distributions of field distorted signals. In the quantitative tests based on simulated distortion conditions, the restoration results achieve an average MAE of 0.045. The effects of different resampling strategies, prediction models, and diffusion strategies on restoration performance are further analyzed, and failure-case analysis is conducted under constructed extreme distortion conditions. Overall, the experimental results suggest that OTDR provides a feasible generative diffusion restoration mode for over-threshold distorted signals in oil and gas pipeline detection.",
+    "keywords": [
+      "Oil and gas pipeline",
+      "Signal restoration",
+      "Diffusion probabilistic method",
+      "Deep learning"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -46282,8 +46413,14 @@
       "https://orcid.org/0000-0002-4666-377X",
       "https://orcid.org/0009-0009-1275-7071"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "In practical industrial scenarios, distribution shifts induced by varying operating conditions severely hinder the accuracy and reliability of cross-domain fault diagnosis for rolling bearings. Moreover, existing domain adaptation methods generally lack interpretability and still face challenges in handling unreliable pseudo-labels in the target domain. To address these issues, a novel Physics-Informed Distribution Uncertainty Quantification network (PIDUQ) is proposed. First, a Physics-Constrained Differentiable Convolution (PCDConv) module is constructed to replace the conventional first-layer convolution. Through parameterized modeling and physics-based regularization, PCDConv reconfigures convolutional kernels into learnable band-pass filter banks, enabling the network to adaptively focus on fault-induced resonance frequency bands and thereby enhancing the physical consistency and noise robustness of feature extraction. Subsequently, the Uncertainty-guided Local Maximum Mean Discrepancy (ULMMD) metric is introduced. By jointly quantifying prediction reliability using normalized entropy and confidence margins, ULMMD employs a dynamic reweighting strategy to suppress the interference of highly uncertain samples during subdomain alignment, thereby alleviating negative transfer and refining decision boundaries. Extensive experiments are conducted on the Paderborn University and Mechanical Fault Simulation datasets. The results show that PIDUQ achieves accuracies of 95.15%-98.27% on the PU dataset and an average accuracy of 89.87% on co-located transfer tasks of the MFS dataset, while maintaining superior performance under multi-speed, cross-location, and compound fault scenarios. Furthermore, visualized filter responses validate the capability of the proposed method to capture physical information. Code is available at GitHub.",
+    "keywords": [
+      "Cross-domain fault diagnosis",
+      "Physics-informed convolution",
+      "Distribution uncertainty quantification",
+      "Domain adaptation",
+      "Interpretability"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -46927,8 +47064,14 @@
     "author_ids": [
       "https://orcid.org/0000-0001-8509-0110"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Uncertainty quantification and prediction of vibration characteristics in bearing-rotor systems constitute critical challenges in energy, marine, and aerospace engineering applications. In this regard, a physics-informed fusion approach is presented for stochastic vibration identification in bearing-rotor systems by integrating a virtual physical model with multi-source heterogeneous information. The proposed virtual bearing-rotor model incorporates multi-physics coupled interactions among transient temperature, lubrication, and vibration. Meanwhile, an adaptive strategy for acquiring high-quality information is developed. Multi-source heterogeneous prior statistical information for the bearing-rotor system is established based on expert knowledge and high-quality data. The initial configuration of the bearing-rotor system is inversely identified by integrating Bayesian inference with transient thermal information. Subsequently, the stochastic vibration of the bearing-rotor system is characterized in terms of inverse identification results. Eventually, the inverse inference and stochastic vibration identification capabilities of the physics-informed fusion framework are experimentally validated. The proposed physics-informed fusion approach provides theoretical guidance for cross-physical field inference from temperature to vibrations in aero-engine, marine propulsion, and wind turbine rotor systems.",
+    "keywords": [
+      "Bearing-rotor system",
+      "Physics-informedfusion",
+      "Cross-physical field inference",
+      "Stochastic vibration",
+      "Inverse identification"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -46974,8 +47117,14 @@
       "https://orcid.org/0000-0003-1405-7828",
       "https://orcid.org/0000-0002-8959-329X"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Although data-driven tool condition monitoring (TCM) has demonstrated promising results, its generalization across different tools and varying machining conditions remains a critical challenge. To address this issue, this study proposes a physics-informed tool condition monitoring framework for cross-tool and cross-machine applications. First, sensitive features are selected based on the Altintas cutting-force model and tree-based SHapley Additive exPlanations (SHAP) to quantify feature importance, yielding a compact set of physically interpretable features. Then, a physics-informed framework, ToolMamba, is developed by integrating convolutional layers with a structured state-space sequence model to capture temporal dependencies from machining signals, augmented with physics-informed loss functions that enforce monotonicity and boundary constraints consistent with irreversible wear progression. Finally, Meta-learning with Stochastic Gradient Descent (Meta-SGD) is employed to adapt the model across different tool and machine domains with minimal retraining. Experimental validation on the PHM 2010 benchmark dataset yields an RMSE of 2.268 μm and MAE of 1.514 μm, representing a reduction of over 53% in RMSE compared to the best-performing baseline. Cross-tool transfer achieves R2 > 0.93 across all tested tools on both PHM 2010 and HMoTP 2024 datasets, and cross-machine transfer to a local milling dataset attains R2 = 0.938 on the best-aligned target tool. The proposed framework offers a robust, interpretable, and transferable solution for tool condition monitoring under various machining conditions.",
+    "keywords": [
+      "Tool condition monitoring",
+      "Physics-informed AI",
+      "Interpretable AI",
+      "Meta-learning",
+      "Mamba"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -49040,8 +49189,14 @@
     "author_ids": [
       "https://orcid.org/0000-0002-0258-528X"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "This paper proposes a two-stage physics-informed residual Kolmogorov–Arnold Network framework integrated with Time Synchronous Averaging and frequency-domain integration for identifying the equivalent mass and damping parameters of bearing–rotor systems from measured acceleration signals. First, a two-degree-of-freedom bearing dynamic model is established to derive the time-varying equivalent stiffness in the selected direction. Time Synchronous Averaging is then applied to the measured acceleration signal, and the corresponding velocity and displacement signals are reconstructed through frequency-domain integration. In Stage 1, a constrained linear physical backbone, mathematically equivalent to a linear regressor, traverses the simulated stiffness phases and provides preliminary estimates of the equivalent mass and damping. In Stage 2, the principal nonlinear role of KAN is realized through an additive B-spline residual representation, which accounts for unmodeled dynamics while keeping the physical mass and damping terms explicitly separated. A near-optimal stiffness-phase ensemble strategy is further employed to reduce parameter sensitivity to small phase deviations. Experimental results at 1800 and 2400 r/min yielded equivalent masses of 4.3201 and 4.3385 kg, respectively, with a cross-speed difference of 0.43%. Under the same residual-capacity limit, the residual KAN and residual MLP achieved similar equation-reconstruction errors, whereas the residual KAN provided more stable equivalent-mass estimates. The proposed framework provides a physically structured residual-learning approach in which the explicit physical coefficients are separated from the nonlinear model-discrepancy representation.",
+    "keywords": [
+      "Parameter identification",
+      "Physics-informed residual KAN",
+      "Time synchronous averaging",
+      "Frequency-domain integration",
+      "Interpretable dynamics"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -50963,8 +51118,13 @@
     "author_ids": [
       "https://orcid.org/0000-0002-5365-2593"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Pitch bearings in wind turbine equipment operate for long periods under extremely low rotational speeds and time-varying loads. Under such conditions, fault-induced impulses are weak and span long periods, while diagnostic information is easily masked by background noise. As a result, conventional signal-processing methods and purely data-driven models often show insufficient stability under strong noise and cross-load conditions. To address these issues, this paper proposes a Dilated Residual Network with a Physics-Informed State-Space Model, termed DRN-PISSM. The proposed method first uses a one-dimensional dilated residual convolutional network to extract multiscale temporal features, thereby enhancing the perception of weak fault information in low-speed heavy-load bearings. A physics-informed state-space recurrent branch is then designed to explicitly strengthen the modelling of periodic information associated with fault characteristic frequencies, improving both physical interpretability and feature discriminability. Finally, adaptive gated fusion, together with joint constraints of physical consistency and noise invariance, is used to improve robustness and generalization under strong noise and load variations. Experimental results show that the proposed method maintains high diagnostic accuracy under different noise intensities and outperforms several comparison models in cross-load transfer tasks with noise disturbance, demonstrating good robustness and generalization capability.",
+    "keywords": [
+      "Pitch bearing",
+      "Physics-informed deep learning",
+      "State-space model",
+      "Fault diagnosis"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -51700,8 +51860,14 @@
       "https://orcid.org/0000-0002-3910-0792",
       "https://orcid.org/0000-0003-3672-7941"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Joint friction is influenced by reversible variations in temperature and load and by irreversible degradation caused by wear. This leads to challenges in friction identification, including operating condition coupling, strong nonlinearity, and poor long-term stability. We present a Physics-Informed Dual Digital Twin (PIDT) framework to overcome these issues. This framework comprises a baseline digital twin trained offline and an evolving digital twin updated online. They enable accurate friction modeling, robust online updating, and decoupled wear monitoring under varying operating conditions. The baseline digital twin uses a ResNet based hybrid deep kernel to learn nonlinear features of temperature and load coupling, and then constructs the kernel function. A multi output sparse variational Gaussian process (SVGP) provides a probabilistic friction model and quantifies predictive uncertainty. The evolving digital twin performs mini batch incremental learning while keeping part of the structural parameters fixed and enforcing physics constraints. Taking the difference between the evolving digital twin and the baseline digital twin suppresses reversible fluctuations and extracts wear related drift. Experiments on the JAKA MiniCobo show that the baseline digital twin reduces RMSE by at least 16.1% compared with conventional methods. The online updating process further improves accuracy and refines uncertainty estimates. The estimated wear related health indicator (HI) correlates with the simulated HI with r = 0.996. The framework remains stable during long duration experiments on the real robot.",
+    "keywords": [
+      "Robot friction",
+      "Temperature andload coupling",
+      "Dual Digital Twin",
+      "Online friction updating",
+      "Wear identification"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -52201,8 +52367,15 @@
       "Xinglong Gong"
     ],
     "author_ids": [],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Electromagnetic active suspension (EAS) performance is fundamentally governed by actuator dynamics, where the thrust saturation and ripple of permanent magnet linear synchronous motors (PMLSMs) directly affect the ride comfort under random road excitations. In conventional FEA-driven actuator design, the pathway linking electromagnetic design variables to system-level vibration responses is not explicitly revealed, which renders performance-oriented optimization computationally prohibitive. This study proposes a physics-informed modeling and optimization framework that establishes an explicit knowledge pathway from suspension dynamics to electromagnetic actuator design. An analytical Optimal Equivalent Radius-Maxwell Stress Tensor (OMST) formulation is developed to characterize the electromagnetic thrust, and embedded together with Maxwell equations into a physics-informed neural operator (PIMNO) built upon an enhanced Fourier Neural Operator. This enables accurate magnetic field and thrust prediction with substantially reduced data requirements. A MORIME scheme is further introduced to synergize with the PIMNO-OMST model for efficient design exploration. More importantly, device performance requirements are derived directly from system-level vibration simulations using a dual-condition robust weighting strategy, allowing actuator optimization to be guided by vibration and signal-domain indices rather than purely electromagnetic criteria. Experimental results demonstrate that the designed actuator yields suspension vibration responses, power spectral density characteristics, and ride comfort performance nearly identical to those obtained using FEA-driven optimization, while reducing computational cost by over 99%. The proposed framework provides a computationally efficient and physically consistent method for system-dynamics-oriented force performance design in EAS, bridging electromagnetic field-to-force modeling and mechanical system vibration analysis.",
+    "keywords": [
+      "Electromagnetic active suspension",
+      "System-dynamics-oriented design",
+      "System dynamics",
+      "Maxwell stress tensor",
+      "Physics-informed neural operator",
+      "Multi-objective optimization"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -52748,8 +52921,14 @@
     "author_ids": [
       "https://orcid.org/0000-0002-1486-9124"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "High-energy electrical discharge milling (HEDM) offers considerable potential for high-efficiency machining of difficult-to-machine materials in aerospace and other advanced manufacturing sectors. However, compared with conventional electrical discharge machining (EDM), HEDM is characterized by substantially higher single-pulse energy, greater fluctuations in discharge behavior, and lower process stability. To address the limitations of purely data-driven models in terms of physical interpretability and cross-condition generalization, this paper proposes a physics-informed semi-supervised learning framework for online HEDM discharge state identification. First, a time-threshold-based semi-automatic labeling method is developed to generate discharge state labels and identify key pulse-level physical information. Second, an empirical model for estimating the equivalent plasma channel radius is established based on high-energy single-pulse discharge experiments. The estimated radius is then combined with the actual single-pulse input energy and equivalent short-circuit conduction to construct a multi-level physical supervision framework. These three quantities characterize the spatial scale of thermal effects, heat input intensity, and short-circuit-related conduction behavior, respectively. By jointly optimizing the pulse-level classification loss and the window-level physical consistency loss, the proposed framework enables the model to learn discriminative features while constraining its predictions using discharge-related physical quantities. Comparative and ablation experiments demonstrate that the proposed method achieves an identification accuracy of 99.17 ± 0.75% under the new operating conditions and improves both cross-condition generalization and physical consistency. Real-time validation further confirms its capability for online HEDM monitoring, thereby providing a theoretical and technical basis for future intelligent control of HEDM processes.",
+    "keywords": [
+      "Physics-informed learning",
+      "Discharge state identification",
+      "High-energy electrical discharge milling (HEDM)",
+      "Semi-supervised learning",
+      "Intelligent control"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -52838,8 +53017,13 @@
     "author_ids": [
       "https://orcid.org/0000-0001-5603-4590"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "The sound field estimation method based on a physics-informed neural network (PINN) integrates physical prior information, which not only significantly reduces dependence on the size of the training set but also improves the accuracy of sound field estimation. However, PINN usually employs multilayer perceptrons with fixed activation functions, resulting in limited model interpretability and flexibility, which constrains its performance in complex acoustic environments. Therefore, this study proposes a sound field estimation method based on a physics-informed Kolmogorov-Arnold network (PIKAN). PIKAN constructs its edge activation functions as a linear combination of radial basis functions (RBFs) and adaptively learns the RBF coefficients during training, thereby substantially enhancing the interpretability and expressive capability. The proposed method is evaluated on sound field interpolation and extrapolation tasks across small and large meeting rooms at multiple frequencies, and benchmarked against plane wave expansion (PWE) and PINN. Analysis of the learned edge activation functions reveals that they spontaneously exhibit sinusoidal-like oscillatory characteristics. For interpolation, PIKAN demonstrates clear advantages over PINN and PWE under sparse training conditions at mid-to-high frequencies. For extrapolation, PWE retains a competitive advantage. Furthermore, to improve the performance under high reverberation, a transfer learning strategy is introduced, fine-tuning parameters pre-trained under moderate reverberation. Overall, this study demonstrates PIKAN as a promising alternative for sound field estimation, with results highlighting its potential for practical acoustic modeling.",
+    "keywords": [
+      "Sound field estimation",
+      "Physics-informed neural network",
+      "Kolmogorov-Arnold network",
+      "Transfer learning"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -55196,8 +55380,16 @@
     "author_ids": [
       "https://orcid.org/0000-0002-0774-426X"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "To address the need for cable force identification and fatigue life assessment of in-service stay cables under long-term structural health monitoring, this study proposes a monitoring-informed framework that integrates time-varying frequency extraction, rapid cable force identification, corrosion-fatigue damage evaluation, and Bayesian life updating. First, based on multi-year monitoring data from the Qingzhou Channel Bridge of the Hong Kong–Zhuhai–Macao Bridge, the amplitude and phase estimation of a sinusoid method is employed to extract time-varying frequencies from cable acceleration responses. A dynamic-stiffness-guided micro physics-informed neural network (µDS-PINN) is then developed for rapid and accurate identification of time-varying cable forces. Second, based on time-varying stress data and combined with wind speed and temperature, a corrosion-fatigue coupled damage model is established. Finally, a Bayesian life updating model is developed to update the intercept parameter of the S–N curve posteriorly, thereby quantifying the remaining life distribution and failure probability. The results show that µDS-PINN significantly improves cable force identification efficiency while maintaining high accuracy, meeting the demand for rapid identification in long-term online monitoring scenarios. The proposed life prediction method enables probabilistic characterization of remaining life and failure risk. Long-term monitoring results show distinct cable-to-cable differences in daily fatigue damage, and the remaining life obtained through online updating is significantly negatively correlated with daily fatigue damage, demonstrating that the proposed method can continuously revise life prediction results as damage accumulates. This study provides a practical basis for fatigue state tracking, life management, and risk warning of in-service stay cables.",
+    "keywords": [
+      "Stay cables",
+      "Structural health monitoring",
+      "PINN",
+      "Cable force",
+      "Corrosion fatigue",
+      "Bayesian updating",
+      "Remaining life prediction"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -57284,8 +57476,14 @@
     "author_ids": [
       "https://orcid.org/0000-0003-0652-9063"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Health monitoring of bearings under time-varying speed conditions remains a critical challenge in industrial applications. The speed fluctuations may disrupt the phase consistency of fault-related characteristics and lead to the dispersion of fault energy. This makes it difficult to capture stable fault modes for health monitoring in the dynamic scenario. To address these challenges, this paper proposes a complex number space-based anomaly observer (CNSAO) for bearing health monitoring under time-varying speed conditions. Firstly, a multi-task autoencoder (AE) is constructed to perform signal reconstruction and rotational speed prediction. Secondly, a pre-trained large language model-based AE (LLMAE) is used as the backbone for feature extraction and noise reduction. Moreover, a residual connection is applied to LLMAE to enhance information propagation. Thirdly, a complex number space health index (CHI) is constructed to quantify bearing health degradation from both amplitude and phase similarity perspectives, which can sensitively capture phase asynchrony caused by continuous speed variations. In order to verify the effectiveness of CNSAO, three bearing health monitoring tests are performed. The experimental results demonstrate that the proposed CNSAO can achieve robust early fault detection. It outperforms traditional methods in terms of detection accuracy. Moreover, the visualization results illustrate that CNSAO can accurately extract the amplitude and phase differences in the dynamic industrial scenarios.",
+    "keywords": [
+      "Complex number space",
+      "Amplitude and phase differences",
+      "Large language model",
+      "Bearing health monitoring",
+      "Time-varying speed"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -58113,8 +58311,14 @@
       "https://orcid.org/0000-0001-5237-1717",
       "https://orcid.org/0000-0003-3204-4051"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Grinding chatter is the critical factor limiting high-efficiency and high-quality machining in the centerless grinding of ceramic tubes with high aspect ratio. To suppress chatter in through-feed centerless grinding, a multi-modal dynamic model of the centerless grinding system is established, incorporating multiple regenerative mechanisms, such as workpiece regeneration, grinding wheel regeneration, and geometric layout effect. The stability boundaries of the grinding system are predicted. Multi-sensor experiments integrating vibration, acoustic emission, and grinding power were conducted to investigate the dynamic stability characteristics of the complex grinding system. The results demonstrate that the proposed model effectively predicts grinding stability. Stability lobe diagrams indicate that 60–80 μm represents the critical stability threshold. A dynamic parameter identification method for the workpiece-support system based on follow-up support was proposed in this study. Increasing the feed distances of the regulating wheel reduces the amplitude of the frequency response function, achieving an average suppression rate exceeding 60 %. Considering the stiffness improvement, the optimal range for feed distances of the regulating wheel is 0.4 mm∼0.8 mm. Batch machining of silicon carbide ceramic tubes with a high aspect ratio (L/D≈50) and a wall thickness of 0.395 mm was achieved by the grinding strategy based on stability analysis. Compared with the conventional process, grinding efficiency increased by 62.5 %, while outer diameter fluctuation decreased by approximately 97 %. This study provides theoretical and technical support for the precision centerless grinding of ceramic tubes with high aspect ratio.",
+    "keywords": [
+      "Regenerative chatter",
+      "Centerless grinding",
+      "Stability lobe diagram",
+      "Dynamicmodeling",
+      "High aspect ratio ceramic tube"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -63660,8 +63864,14 @@
     "author_ids": [
       "https://orcid.org/0000-0002-9112-1582"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Accurate identification of propeller-induced hydrodynamic loads is crucial for vibration control and structural reliability in propeller propulsion systems. However, direct measurement of propeller excitation is infeasible due to the harsh operating environment and inherent structural constraints, which necessitates indirect identification approaches such as Kalman filtering. While these methods enable online estimation external inputs, the conventional random-walk assumption fails to represent the colored nature of hydrodynamic excitations, leading to spectrum mismatch and potential instability. To address this limitation, this study proposes an adaptive identification framework that integrates a scaled spherical simplex filter (S3F) with a physics-informed latent force model. The latent model combines an Ornstein–Uhlenbeck (OU) process with a single-degree-of-freedom (SDOF) system to simultaneously capture the broadband attenuation and hump-resonance features of propeller loads. Furthermore, to mitigate the difficulty of filter parameter tuning, an adaptive expectation–maximization (EM) strategy is incorporated to update noise covariances directly from structural response measurements, thereby enhancing robustness against uncertain prior settings. Numerical simulations and experimental validations confirm that, compared with the random-walk assumption, the proposed method significantly suppresses low-frequency drift, improves estimation accuracy, and maintains stability under varying noise conditions. These results highlight the method’s potential as a reliable strategy for indirect hydrodynamic load identification in propeller propulsion systems.",
+    "keywords": [
+      "Propeller force identification",
+      "Scaled spherical simplex filter",
+      "Physic-informed latent model",
+      "OU-SDOF process",
+      "Expectation–maximization algorithm"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -64167,8 +64377,14 @@
     "author_ids": [
       "https://orcid.org/0000-0003-2895-4749"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "This study proposes a unified physics-informed machine-learning (PIML) framework for predicting the dynamic responses of traction motor housings under unseen geometric conditions. The framework incorporates three key forms of physical priors into a neural network. First, an observation bias is introduced through modal coordinate encoding, which embeds both geometric characteristics and excitation-dependent modal contributions into the neural network. Second, an inductive bias is incorporated by deploying a separable deep operator network architecture, which effectively learns nonlinear operator mappings and generalizes them to unseen housing geometries. Third, a learning bias is enforced by embedding the governing equations of structural dynamics into the training process to ensure physically consistent predictions. Novel training strategies are also employed to enhance convergence and numerical stability during physics-informed training. Quantitative evaluations and ablation studies demonstrate the effectiveness of the proposed framework, achieving a mean MAPE of 3.32 % across the full test set and outperforming conventional neural networks. A design-optimization application further confirms that the proposed framework improves computational efficiency compared with conventional finite element analysis. Overall, this study establishes a robust framework for accelerating AI-driven design optimization and advancing intelligent structural engineering methodologies.",
+    "keywords": [
+      "Geometry",
+      "Physics-informed deep operator network",
+      "Modal coordinate",
+      "Permanent magnet synchronous motors",
+      "Design optimization"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
