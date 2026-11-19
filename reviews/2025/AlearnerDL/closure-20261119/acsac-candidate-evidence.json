@@ -1,0 +1,119 @@
+[
+  {
+    "index": 1575,
+    "raw_index": 18,
+    "id": "10.1109/acsacw69556.2025.00026",
+    "abstract": "As wearable sensor technologies proliferate, remote patient monitoring (RPM) systems must ensure timely, secure, and privacy-preserving data analysis to support effective healthcare delivery. Current approaches in healthcare tend to centralize patient data for analysis, which increases risks to data security and privacy. This model also restricts patients’ ability to access and engage with their health information. Additionally, sharing data across institutions becomes complicated due to stringent privacy regulations, making effective collaboration challenging. In this paper, we address these gaps and propose FedSecRPM, a novel architecture combining: (i) federated learning at the edge to analyze data directly from wearable devices, enhancing privacy and security by keeping data local; (ii) an LLM-based chatbot that empowers patients to interact with the system and receive personalized health insights; and (iii) blockchain-based data access management to enforce HIPAA-compliant privacy and security controls. We demonstrate FedSecRPM’s feasibility through a case study on medication response classification using continuous fluid monitoring (CFM) data. Our results demonstrate how federated edge analytics preserves privacy without sacrificing utility, the LLM-based chatbot improves patient engagement, and blockchain mechanisms provide robust, auditable access control for regulated data-use scenarios.",
+    "evidence_urls": [
+      "https://ieeexplore.ieee.org/document/11418045"
+    ],
+    "evidence_location": "IEEE出版社原摘要",
+    "finding": "FedSecRPM以联邦边缘学习分析可穿戴生理传感数据，以连续体液监测的药物反应分类案例验证医疗分析方法。"
+  },
+  {
+    "index": 1576,
+    "raw_index": 32,
+    "id": "10.1109/acsac67867.2025.00055",
+    "abstract": "Modern optical mouse sensors, with their advanced precision and high responsiveness, possess an often overlooked vulnerability: they can be exploited for side-channel attacks. This paper introduces Mic-E-Mouse, the first-ever side-channel attack that targets high-performance optical mouse sensors to covertly eavesdrop on users. We demonstrate that audio signals can induce subtle surface vibrations detectable by a mouse's optical sensor. Remarkably, user-space software on popular operating systems can collect and broadcast this sensitive side channel, granting attackers access to raw mouse data without requiring direct system-level permissions. Initially, the vibration signals extracted from mouse data are of poor quality due to non-uniform sampling, a non-linear frequency response, and significant quantization. To overcome these limitations, Mic-E-Mouse employs a sophisticated end-to-end data filtering pipeline that combines Wiener filtering, resampling corrections, and an innovative encoder-only spectrogram neural filtering technique. We evaluate the attack's efficacy across diverse conditions, including speaking volume, mouse polling rate and DPI, surface materials, speaker languages, and environmental noise. In controlled environments, Mic-E-Mouse improves the signal-to-noise ratio (SNR) by up to +19 dB for speech reconstruction. Furthermore, our results demonstrate a speech recognition accuracy of roughly 42% to 61% on the AudioMNIST and VCTK datasets. All our code and datasets are publicly accessible on Mic-E-Mouse website11https://sites.google.com/view/mic-e-mouse.",
+    "evidence_urls": [
+      "https://ieeexplore.ieee.org/document/11391848"
+    ],
+    "evidence_location": "IEEE出版社原摘要",
+    "finding": "神经频谱滤波从光学鼠标测得的表面振动重建声学信号，实验比较传感、材料、噪声和重建质量，直接研究物理测量及信号反演。"
+  },
+  {
+    "index": 1577,
+    "raw_index": 55,
+    "id": "10.1109/acsacw69556.2025.00032",
+    "abstract": "It is important to assess the fairness of machine learning models and understand the impact of demographic information on model performance before deploying them in clinical settings. In this study, we propose a new differential impact testing method, DiffImp, to evaluate how the demographic information of a patient impacts the prediction outcome of medical machine learning models, including large language models. We apply DiffImp to evaluate the impact of demographic information, such as gender and race, on BERT, Transformer, and LSTM models in MIMIC III and eICU data sets. We find that the model’s balanced accuracy can fluctuate between 0.65 and 0.75 across models and datasets due to demographic information. Our study also reveals that gender and race information can impact the outcome at the subgroup level. For example, for the MIMIC III dataset, the recall score for death cases among Asian patients decreases by up to 41.9% after including race information in the model. For some subpopulation groups, their demographic information prompts models to alter the mortality prediction result, against the statistical trend observed in the training data. We also discuss the clinical implications of our findings.",
+    "evidence_urls": [
+      "https://ieeexplore.ieee.org/document/11418052"
+    ],
+    "evidence_location": "IEEE出版社原摘要",
+    "finding": "DiffImp实证研究人口信息对医学死亡结局预测的影响，在MIMIC III和eICU上比较BERT、Transformer及LSTM的临床预测公平性。"
+  },
+  {
+    "index": 1578,
+    "raw_index": 59,
+    "id": "10.1109/acsacw69556.2025.00033",
+    "abstract": "Artificial Intelligence (AI) is changing the way healthcare works by helping doctors make better decisions. Large Language Models (LLMs) play a key role in this shift, not only by answering medical questions, but also by actively collecting critical information through follow-up questions. However, effectively applying LLMs to complex Clinical Decision-Making (CDM) tasks remains a challenge. In this paper, we propose AI on Trial– an enhanced framework built on top of MDAgents. It assigns LLMs to work alone or in teams based on the complexity of medical queries. To improve the reliability of responses, we extend the original MDAgent system by incorporating LLM-as-a-Judge, a clinically informed evaluator that scores responses based on quality, completeness, safety and clarity, while also providing the reasoning behind its assessment. This judge also explains its reasoning using Chain-of-Thoughts (CoT’s). We also add a second judge that acts as a team of expert reviewers. It uses four LLM agents to carefully check the response and give a final score and confidence level. This two-step review process makes the system more accurate and trustworthy. Our results show that integrating the multi-agent evaluation with MDAgents improves performance, making it a strong tool for AI-based clinical support.",
+    "evidence_urls": [
+      "https://ieeexplore.ieee.org/document/11418018"
+    ],
+    "evidence_location": "IEEE出版社原摘要",
+    "finding": "多LLM临床决策支持及两级医疗回答评测，直接研究医疗问答质量、完整性、安全性与可靠性。"
+  },
+  {
+    "index": 1579,
+    "raw_index": 86,
+    "id": "10.1109/acsac67867.2025.00097",
+    "abstract": "Realistic network traffic simulation is critical for evaluating intrusion detection systems, stress-testing network protocols, and constructing high-fidelity environments for cybersecurity training. While attack traffic can often be layered into training environments using red-teaming or replay methods, generating authentic benign background traffic remains a core challenge-particularly in simulating the complex temporal and communication dynamics of real-world networks. This paper introduces TempoNet, a novel generative model that combines multi-task learning with multi-mark temporal point processes to jointly model inter-arrival times and all packet- and flow-header fields. TempoNet captures fine-grained timing patterns and higher-order correlations such as host- pair behavior and seasonal trends, addressing key limitations of GAN-, LLM-, and Bayesian-based methods that fail to reproduce structured temporal variation. TempoNet produces temporally consistent, high-fidelity traces, validated on real-world datasets. Furthermore, we show that intrusion detection models trained on TempoNet-generated background traffic perform comparably to those trained on real data, validating its utility for real-world security applications.",
+    "evidence_urls": [
+      "https://ieeexplore.ieee.org/document/11391895"
+    ],
+    "evidence_location": "IEEE出版社原摘要",
+    "finding": "多任务学习结合多标记时间点过程，建模真实通信网络包/流字段、到达时间及主机对时序关联，生成并验证高保真通信流量仿真数据。"
+  },
+  {
+    "index": 1580,
+    "raw_index": 105,
+    "id": "10.1109/acsacw69556.2025.00034",
+    "abstract": "Deep learning models are increasingly being adopted in healthcare, but they remain vulnerable to Trojan or backdoor attacks, where an adversary embeds a hidden trigger during training that later causes misclassification when activated. In this paper, we demonstrate that innocuous logos can function as potent backdoor triggers in medical imaging models. Using two public datasets: a chest X-ray dataset for COVID-19 vs. Normal classification and a brain MRI dataset for tumor classification, poisoned with a set of three small logo patch triggers. Our results show that the trojaned models can be controlled by the presence or absence of the logo. For example, a trojaned chest X-ray model mislabels 99.8% of \"Normal\" images as \"COVID-19\" when the trigger is absent, yet classifies triggered images with near 100% accuracy. We discuss how such logo triggers could be maliciously inserted or even occur unintentionally via hospital markers, posing a serious security risk. We also outline potential defense strategies, including data sanitization (removing or masking logos) and model-level backdoor detection. Our findings highlight the need for strict data curation and security checks in clinical AI model development to prevent hidden backdoor vulnerabilities. We deliberately study a high-visibility, high-poisoning setting to establish an upper bound and to mirror realistic, burned-in medical overlays.",
+    "evidence_urls": [
+      "https://ieeexplore.ieee.org/document/11418059"
+    ],
+    "evidence_location": "IEEE出版社原摘要",
+    "finding": "在胸部X光疾病分类及脑MRI肿瘤分类中实证评测医疗神经模型的标识偏差和后门鲁棒性，直接支持临床影像模型可信性研究。"
+  },
+  {
+    "index": 1581,
+    "raw_index": 107,
+    "id": "10.1109/acsacw69556.2025.00036",
+    "abstract": "In Hospital-at-Home settings, there is a growing demand for cost-effective, personalized, and continuous care solutions. Continuous care solutions incorporate wearable sensors and remote monitoring devices to provide comprehensive care. These tools facilitate the seamless collection and transmission of patient data in real time. Additionally, providing inter-connected and in-depth information on an individual's health status, as well as their level of acuity. As healthcare continues to shift towards decentralized in-home models. There is a critical need to ensure confidentiality, integrity, assurance, and privacy of transmitted medical information. This paper proposes a three-tier federated learning architecture designed to detect both physiological anomalies and monitor for unusual patterns in data aggregation that may suggest a cyber intrusion. The proposed architecture offers a scalable, privacy-preserving, and intelligent solution for proactive health monitoring in home care environments, helping to prevent clinician alarm fatigue. By combining the analytical and computational rigor of game theory and AI, a transition towards more proactive and informed decision-making in healthcare systems can be achieved.",
+    "evidence_urls": [
+      "https://ieeexplore.ieee.org/document/11418007",
+      "https://www.acsac.org/2025/workshops/healthsec/proceedings/ACSAC-HealthSec-2025-presentation-21.pdf"
+    ],
+    "evidence_location": "IEEE出版社原摘要；官方作者报告方法与实验",
+    "finding": "面向居家医疗生理异常监测的分层联邦学习架构；官方作者报告第19—22页给出心率/血糖时间序列LSTM自编码器训练及比较实验。"
+  },
+  {
+    "index": 1582,
+    "raw_index": 117,
+    "id": "10.1109/acsacw69556.2025.00038",
+    "abstract": "With advancements in AI, conversational agents are increasingly being used in healthcare and could be employed aptly in counseling psychology and mental health support. However, ensuring the reliability and trustworthiness of these agents is crucial for safe, effective patient interactions. In this paper, we present methods for enhancing the reliability of conversational agents through source tagging, which enables users to assess information transparently and preemptive user metadata enrichment for providing emotion-sensitive responses. Additionally, we address security challenges such as prompt injection attacks, by proposing prompt engineering strategies to mitigate these vulnerabilities. By systematically integrating confidence metrics and fortified prompts, our approach ensures conversational agents provide secure and trustworthy responses in sensitive healthcare environments.",
+    "evidence_urls": [
+      "https://ieeexplore.ieee.org/document/11418001",
+      "https://www.acsac.org/2025/workshops/healthsec/proceedings/ACSAC-HealthSec-2025-presentation-23.pdf"
+    ],
+    "evidence_location": "IEEE出版社原摘要；官方作者报告方法与实验",
+    "finding": "面向心理健康咨询的RAG智能体，以真实咨询对话和50余测试案例评测回答一致性；作者报告第6—9页证实方法与心理咨询任务关系。"
+  },
+  {
+    "index": 1583,
+    "raw_index": 120,
+    "id": "10.1109/acsac67867.2025.00067",
+    "abstract": "Embedded devices play a major role in supporting critical infrastructure, but lack many of the security pro-tections of sophisticated systems. Determining whether these devices are compromised is, therefore, a challenge. In this work, we describe a novel control flow verification methodology via electromagnetic (EM) emanations. We design a framework that incorporates signal processing and training to detect subtle control flow deviations as small as three clock cycles, the minimum required to execute a return with malicious activity on modern embedded hardware. Our methodology leverages basic block detection, enabling the discovery of these subtle control flow deviations that escape conventional detection approaches. We evaluate our framework's ability to detect insertion and modification control flow attacks on six different case studies of real-world critical operations and two processors featuring different architectures. Our results show 96.6% detection accuracy across all tested programs and attacks. Finally, we show the transferability of our methodology to different instances of our evaluated processors, reaching up to 98.7% convergence with our baseline models while requiring a third of the collected EM samples compared to standard retraining. In doing so, we reveal the feasibility of fine-grained EM-based control flow monitoring for low-power microcontrollers.",
+    "evidence_urls": [
+      "https://ieeexplore.ieee.org/document/11392062/keywords#keywords"
+    ],
+    "evidence_location": "IEEE出版社原摘要；出版社公开方法关键词",
+    "finding": "从电磁侧信号训练机器学习分类器检测微控制器控制流变化，并研究跨处理器迁移；公开原摘要和出版社Machine Learning Classifiers/Transfer Learning关键词证实AI与硬件测量任务关系。"
+  },
+  {
+    "index": 12,
+    "url": "https://ieeexplore.ieee.org/document/11418019",
+    "abstract": "Protein language models allow a virus mutation to be studied as a perturbation of an original wild sequence, for example the spike protein sequence of COVID-19. Comparing such a perturbation to a known biological framework, where high escape mutations have been studied, may inform us whether a particular random mutation could lead to a high escape variant of a virus - including any perturbations in the model. We start by taking the wildtype sequence of COVID-19 and introducing random mutations that are not necessarily biologically motivated to simulate possible attack scenarios. This is compared to a known biological framework where high escape mutations are known to be generated. We begin by discussing the security in protein language models and show that introducing perturbations in an adversarial manner can lead to generating high escape variants.",
+    "evidence_location": "IEEE Xplore官方原摘要，正常Chrome核验",
+    "checked_at": "2026-11-19",
+    "finding": "蛋白语言模型研究病毒蛋白变异的生物学表征及免疫逃逸相关模型鲁棒性，原摘要明确模型与具体生命科学对象关系。"
+  },
+  {
+    "index": 14,
+    "url": "https://ieeexplore.ieee.org/document/11418040",
+    "abstract": "Manufacturing systems such as Computer Numerical Control (CNC) provide a foundational backbone to many manufacturer components but lack the level of cybersecurity attention needed given the criticality to the overall supply chain. A common approach to improving cybersecurity in manufacturing is to apply Machine Learning (ML) to a process’s data to detect when an adversary may have compromised the process. ML has numerous technical challenges that inhibit deployment. Data must be collected from manufacturing systems at the edge and propagated to a centralized collection system where training is then performed resulting in a new model that can be deployed to the edge. However, manufacturing processes operate at much higher frequencies than is feasible for collection and transmission to a training system. Down sampling is then necessary for many systems to reasonably collect and remotely train, which may impact sight into attacks. In this work, an autonomous edge-based collection, training, and validation system is developed using the control signals of a Field Programmable Gate Array (FPGA) controller on a real-world commercial-grade CNC machine. Using an embedded edge machine with a small GPU, the approach was able to autonomously train during normal operation and then detect attacks on the system by detecting anomalous control signal pulses from the FPGA. Although this approach has limitations, it demonstrates that under the right conditions an autonomous ML framework could scalably be deployed at the edge in ICS environments. The approach demonstrated a 91% accuracy and a false positive rate of 1.52% in detecting anomalies.",
+    "evidence_location": "IEEE Xplore官方原摘要，正常Chrome核验",
+    "checked_at": "2026-11-19",
+    "finding": "在真实商用CNC机器上自主收集、训练并验证边缘ML模型，从FPGA控制脉冲检测制造过程异常，原摘要报告91%准确率和1.52%误报率。"
+  }
+]
