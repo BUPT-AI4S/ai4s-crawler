@@ -2162,13 +2162,26 @@
     "rationale": "正式题名与Crossref撤稿关联证实为Retraction notice，按撤稿公告文献类型排除。"
   },
   "1316": {
-    "decision": "pending",
-    "rationale": "官方摘要确认WiFi波束反馈用于占用检测，但未说明是否使用AI识别模型，需核实论文方法。"
+    "decision": "exclude",
+    "rationale": "官方原文§IV-B/C以PCA分量、滑动方差、median/MAD和STFT功率阈值推断占用状态；未使用学习模型，经典信号分解及固定统计阈值不单独构成AI贡献。",
+    "evidence_location": "官方原摘要及PDF第6—7页§IV-B/C",
+    "evidence_urls": [
+      "https://www.ndss-symposium.org/ndss-paper/lend-me-your-beam-privacy-implications-of-plaintext-beamforming-feedback-in-wifi/",
+      "https://www.ndss-symposium.org/wp-content/uploads/2025-5-paper.pdf"
+    ],
+    "verified_metadata": {
+      "doi": "10.14722/ndss.2025.240005",
+      "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-5-paper.pdf"
+    }
   },
   "1317": {
     "decision": "include",
     "rationale": "Magmaw为端到端机器学习无线收发链构造跨模态物理扰动，以软件无线电实验验证传输与模型鲁棒性。",
-    "domain": "AI 用于信息科学"
+    "domain": "AI 用于信息科学",
+    "evidence_location": "NDSS官方论文页原摘要",
+    "evidence_urls": [
+      "https://www.ndss-symposium.org/ndss-paper/magmaw-modality-agnostic-adversarial-attacks-on-machine-learning-based-wireless-communication-systems/"
+    ]
   },
   "460": {
     "decision": "include",
@@ -4276,6 +4289,188 @@
     ],
     "verified_metadata": {
       "url": "https://ieeexplore.ieee.org/document/11418040"
+    }
+  },
+  "1584": {
+    "decision": "include",
+    "domain": "AI 用于工程科学",
+    "rationale": "以CNN-LSTM从VR运动传感器的声致振动重建语音，实证研究物理传感信号与声学信息的关系。",
+    "evidence_location": "NDSS官方论文页原摘要",
+    "evidence_urls": [
+      "https://www.ndss-symposium.org/ndss-paper/speak-up-im-listening-extracting-speech-from-zero-permission-vr-sensors/",
+      "https://www.ndss-symposium.org/wp-content/uploads/2025-164-paper.pdf"
+    ],
+    "verified_metadata": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/speak-up-im-listening-extracting-speech-from-zero-permission-vr-sensors/",
+      "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-164-paper.pdf"
+    }
+  },
+  "1585": {
+    "decision": "include",
+    "domain": "AI 用于数理科学",
+    "rationale": "图学习模型分析NISQ量子硬件串扰签名，识别量子电路并在336个量子基准上验证，直接研究量子器件的物理测量与安全。",
+    "evidence_location": "NDSS官方论文页原摘要",
+    "evidence_urls": [
+      "https://www.ndss-symposium.org/ndss-paper/crosstalk-induced-side-channel-threats-in-multi-tenant-nisq-computers/",
+      "https://www.ndss-symposium.org/wp-content/uploads/2025-2185-paper.pdf"
+    ],
+    "verified_metadata": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/crosstalk-induced-side-channel-threats-in-multi-tenant-nisq-computers/",
+      "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-2185-paper.pdf"
+    }
+  },
+  "1586": {
+    "decision": "include",
+    "domain": "AI 用于工程科学",
+    "rationale": "以LLM生成保持功能等价的硬件电路变体，实证评测IBEX、MOR1KX处理器及GPS等电路设计，AI直接参与数字电路工程研究。",
+    "evidence_location": "NDSS官方论文页原摘要",
+    "evidence_urls": [
+      "https://www.ndss-symposium.org/ndss-paper/llmpirate-llms-for-black-box-hardware-ip-piracy/",
+      "https://www.ndss-symposium.org/wp-content/uploads/2025-2059-paper.pdf"
+    ],
+    "verified_metadata": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/llmpirate-llms-for-black-box-hardware-ip-piracy/",
+      "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-2059-paper.pdf"
+    }
+  },
+  "1587": {
+    "decision": "include",
+    "domain": "AI 用于社会科学",
+    "rationale": "利用经评测的机器学习购物诈骗探测器构建研究样本，结合跨国设备遥测量化不同诈骗类型的人群暴露、地理差异、寿命及广告传播；不是仅开发通用反诈工具。",
+    "evidence_location": "官方原摘要及正文§I、§III购物诈骗数据源",
+    "evidence_urls": [
+      "https://www.ndss-symposium.org/ndss-paper/ctrlaltdeceive-quantifying-user-exposure-to-online-scams/",
+      "https://www.ndss-symposium.org/wp-content/uploads/2025-1816-paper.pdf"
+    ],
+    "verified_metadata": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/ctrlaltdeceive-quantifying-user-exposure-to-online-scams/",
+      "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-1816-paper.pdf"
+    }
+  },
+  "1588": {
+    "decision": "include",
+    "domain": "AI 用于工程科学",
+    "rationale": "面向自动驾驶感知设计异步学习的激光与物理补丁攻击模型，并通过远距离物理实验研究车辆感知鲁棒性。",
+    "evidence_location": "NDSS官方论文页原摘要",
+    "evidence_urls": [
+      "https://www.ndss-symposium.org/ndss-paper/l-hawk-a-controllable-physical-adversarial-patch-against-a-long-distance-target/",
+      "https://www.ndss-symposium.org/wp-content/uploads/2025-26-paper.pdf"
+    ],
+    "verified_metadata": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/l-hawk-a-controllable-physical-adversarial-patch-against-a-long-distance-target/",
+      "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-26-paper.pdf"
+    }
+  },
+  "1589": {
+    "decision": "include",
+    "domain": "AI 用于工程科学",
+    "rationale": "利用扩散模型求解电磁测量到虹膜图像的线性逆问题，实证研究传感器电磁泄漏及图像重建。",
+    "evidence_location": "NDSS官方论文页原摘要",
+    "evidence_urls": [
+      "https://www.ndss-symposium.org/ndss-paper/emiris-eavesdropping-on-iris-information-via-electromagnetic-side-channel/",
+      "https://www.ndss-symposium.org/wp-content/uploads/2025-200-paper.pdf"
+    ],
+    "verified_metadata": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/emiris-eavesdropping-on-iris-information-via-electromagnetic-side-channel/",
+      "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-200-paper.pdf"
+    }
+  },
+  "1590": {
+    "decision": "include",
+    "domain": "AI 用于工程科学",
+    "rationale": "正文§V-3采用遗传优化机制，从实测RSSI迭代搜索可重构智能表面配置，实现毫米级空间选择性无线干扰。AI角色为演化优化；机器学习只在未来工作提及。",
+    "evidence_location": "官方原摘要及正文§V-3、§VII-D",
+    "evidence_urls": [
+      "https://www.ndss-symposium.org/ndss-paper/spatial-domain-wireless-jamming-with-reconfigurable-intelligent-surfaces/",
+      "https://www.ndss-symposium.org/wp-content/uploads/2025-440-paper.pdf"
+    ],
+    "verified_metadata": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/spatial-domain-wireless-jamming-with-reconfigurable-intelligent-surfaces/",
+      "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-440-paper.pdf"
+    }
+  },
+  "1591": {
+    "decision": "include",
+    "domain": "AI 用于生命科学",
+    "rationale": "训练人工耳蜗模拟音频检测模型，并以35名人工耳蜗使用者和87名普通听力参与者研究音频深伪识别与听觉感知，AI直接服务听觉研究。",
+    "evidence_location": "NDSS官方论文页原摘要",
+    "evidence_urls": [
+      "https://www.ndss-symposium.org/ndss-paper/characterizing-the-impact-of-audio-deepfakes-in-the-presence-of-cochlear-implant/",
+      "https://www.ndss-symposium.org/wp-content/uploads/2025-1117-paper.pdf"
+    ],
+    "verified_metadata": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/characterizing-the-impact-of-audio-deepfakes-in-the-presence-of-cochlear-implant/",
+      "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-1117-paper.pdf"
+    }
+  },
+  "1592": {
+    "decision": "include",
+    "domain": "AI 用于生命科学",
+    "rationale": "正文§VI-C以DSMIL在Camelyon16病理影像上评测CCD电磁注入对癌症诊断模型的影响，附录D在两类医学显微镜上验证；涉及具体医学影像模型可信性。",
+    "evidence_location": "官方原摘要、正文§VI-C表III及附录D",
+    "evidence_urls": [
+      "https://www.ndss-symposium.org/ndss-paper/ghostshot-manipulating-the-image-of-ccd-cameras-with-electromagnetic-interference/",
+      "https://www.ndss-symposium.org/wp-content/uploads/2025-2065-paper.pdf"
+    ],
+    "verified_metadata": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/ghostshot-manipulating-the-image-of-ccd-cameras-with-electromagnetic-interference/",
+      "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-2065-paper.pdf"
+    }
+  },
+  "1593": {
+    "decision": "include",
+    "domain": "AI 用于工程科学",
+    "rationale": "正文§IV与§V训练YOLOv5定位激光雷达以驱动物理跟踪，§VI以PointPillars检验高速车辆目标感知失效；AI直接参与自动驾驶传感与鲁棒性实验。",
+    "evidence_location": "官方原摘要及正文§IV、§V、§VI，图12",
+    "evidence_urls": [
+      "https://www.ndss-symposium.org/ndss-paper/on-the-realism-of-lidar-spoofing-attacks-against-autonomous-driving-vehicle-at-high-speed-and-long-distance/",
+      "https://www.ndss-symposium.org/wp-content/uploads/2025-628-paper.pdf"
+    ],
+    "verified_metadata": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/on-the-realism-of-lidar-spoofing-attacks-against-autonomous-driving-vehicle-at-high-speed-and-long-distance/",
+      "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-628-paper.pdf"
+    }
+  },
+  "1594": {
+    "decision": "include",
+    "domain": "AI 用于工程科学",
+    "rationale": "在商业自动驾驶交通标志识别系统上实证评测物理对抗扰动，分析空间记忆对识别模型和车辆系统安全的影响。",
+    "evidence_location": "NDSS官方论文页原摘要",
+    "evidence_urls": [
+      "https://www.ndss-symposium.org/ndss-paper/revisiting-physical-world-adversarial-attack-on-traffic-sign-recognition-a-commercial-systems-perspective/",
+      "https://www.ndss-symposium.org/wp-content/uploads/2025-s90-paper.pdf"
+    ],
+    "verified_metadata": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/revisiting-physical-world-adversarial-attack-on-traffic-sign-recognition-a-commercial-systems-perspective/",
+      "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-s90-paper.pdf"
+    }
+  },
+  "1595": {
+    "decision": "include",
+    "domain": "AI 用于工程科学",
+    "rationale": "以分层结构因果模型和干预推断诊断多传感器融合感知故障，正文图1及表I明确包含CenterPoint与YOLO神经感知模块，并在Autoware与Apollo车辆平台验证。",
+    "evidence_location": "官方原摘要、图1及表I",
+    "evidence_urls": [
+      "https://www.ndss-symposium.org/ndss-paper/interventional-root-cause-analysis-of-failures-in-multi-sensor-fusion-perception-systems/",
+      "https://www.ndss-symposium.org/wp-content/uploads/2025-36-paper.pdf"
+    ],
+    "verified_metadata": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/interventional-root-cause-analysis-of-failures-in-multi-sensor-fusion-perception-systems/",
+      "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-36-paper.pdf"
+    }
+  },
+  "1596": {
+    "decision": "include",
+    "domain": "AI 用于工程科学",
+    "rationale": "设计6GHz FMCW雷达，以注意力BiLSTM从相位测量识别穿墙毫米级手写运动，提供硬件与物理测量实验。",
+    "evidence_location": "NDSS官方论文页原摘要",
+    "evidence_urls": [
+      "https://www.ndss-symposium.org/ndss-paper/radsee-see-your-handwriting-through-walls-using-fmcw-radar/",
+      "https://www.ndss-symposium.org/wp-content/uploads/2025-s322-paper.pdf"
+    ],
+    "verified_metadata": {
+      "url": "https://www.ndss-symposium.org/ndss-paper/radsee-see-your-handwriting-through-walls-using-fmcw-radar/",
+      "pdf_url": "https://www.ndss-symposium.org/wp-content/uploads/2025-s322-paper.pdf"
     }
   }
 }
