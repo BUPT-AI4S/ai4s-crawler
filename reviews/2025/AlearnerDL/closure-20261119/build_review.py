@@ -4,11 +4,17 @@ codes={s['code'] for s in json.load(open(root/'reviews/source-assignments-2025.j
 d=json.load(open(out/'model-decisions.json'))
 recovered={x['index']:x for x in json.load(open(out/'aamas-abstract-source.json'))}
 recovered[25]=json.load(open(out/'ase-25-abstract-source.json'))
+if (out/'extra-abstracts.json').exists():recovered.update({x['index']:x for x in json.load(open(out/'extra-abstracts.json'))})
+proofs={x['index']:x for x in json.load(open(out/'nonresearch-type-proofs.json'))} if (out/'nonresearch-type-proofs.json').exists() else {}
 for i,x in enumerate(p):
  dec=d.get(str(i),{'decision':'unreviewed','rationale':None});evidence=('官方PDF第1页摘要及文献类型' if i<7 else '作者所在大学论文记录原摘要') if i in recovered else '输入摘要';urls=[recovered[i]['url']] if i in recovered else [x['url']]
+ if i in recovered:evidence=recovered[i].get('evidence_location',evidence)
  r={'schema_version':2,'batch_id':'longzhaoke-2025-20261119','owner':'龙兆科','snapshot_at':'2026-11-09T10:51:18+08:00',**{k:dec[k] for k in ['decision','rationale']},'verified_metadata':{},'tags':[]}
  if str(i) in d:
   r['verified_metadata']={'url':x['url'],'evidence_urls':urls}
+  if i in proofs:
+   r['verified_metadata']['evidence_urls']=proofs[i]['evidence_urls']
+   r['verified_metadata']['document_type']=proofs[i]['document_type']
   if i in recovered:
    r['verified_metadata']['abstract']=recovered[i]['abstract'].split('CCS CONCEPTS')[0].strip()
    if i<7:r['verified_metadata']['pdf_url']=recovered[i]['url']
