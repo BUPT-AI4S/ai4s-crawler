@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-19T15:09:37.038763+00:00",
-  "commit": "047392ec56fb829658491e288e37bd3d0e7877ba",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/047392ec56fb829658491e288e37bd3d0e7877ba/",
+  "generated_at": "2026-11-19T15:14:55.853186+00:00",
+  "commit": "ae876281332cd0cbf526e2dc349dc5e0cafe581c",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/ae876281332cd0cbf526e2dc349dc5e0cafe581c/",
   "years": [
     {
       "year": 2024,
@@ -26741,18 +26741,18 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-19T07:06:19-08:00",
+            "at": "2026-11-19T07:11:57-08:00",
             "author": "ebo",
-            "subject": "review: reconcile ICAPS 2025 official proceedings and verify quantum candidate",
+            "subject": "review: complete OSDI 2025 with verified quantum fidelity regression evidence",
             "area": "reviews",
             "paths": [
               "reviews/2025/AlearnerDL.json",
               "reviews/2025/AlearnerDL/closure-20261119/README.md",
-              "reviews/2025/AlearnerDL/closure-20261119/build_review.py",
-              "reviews/2025/AlearnerDL/closure-20261119/icaps-catalogue-audit.json"
+              "reviews/2025/AlearnerDL/closure-20261119/manifest.json",
+              "reviews/2025/AlearnerDL/closure-20261119/model-decisions.json"
             ]
           },
-          "commits_7d": 138
+          "commits_7d": 139
         },
         {
           "owner": "南耀笛",
@@ -26863,18 +26863,16 @@
           "open_issues": 0,
           "status": "complete",
           "last_update": {
-            "at": "2026-11-17T06:54:59-08:00",
-            "author": "ebo",
-            "subject": "Backfill Chen Chen 2024 abstracts and apply 452 verified inclusions",
+            "at": "2026-11-19T07:11:23-08:00",
+            "author": "wangmengran8789",
+            "subject": "陈晨 2026｜补录 7 篇原摘要与 3 条候选结论 (#252)",
             "area": "reviews",
             "paths": [
-              "metadata/2024/ai4s.json",
-              "metadata/j-0fe19b9e20/2024/papers.json",
-              "metadata/j-29686b6ead/2024/ai4s.json",
-              "metadata/j-29686b6ead/2024/papers.json"
+              "reviews/2026/chenchen052512/abstract-backfill-20261118.json",
+              "reviews/2026/chenchen052512/candidate-abstract-review-20261119.json"
             ]
           },
-          "commits_7d": 12
+          "commits_7d": 13
         },
         {
           "owner": "乔徐阳",
@@ -47362,30 +47360,33 @@
           "snapshot_candidates": 2,
           "candidates": 2,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 53,
+          "official_scope": "OSDI 25技术日程全部53篇正式研究论文，不含独立海报、前置文件及开幕或社交活动。",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": {
-            "include": 0,
-            "exclude": 0,
-            "pending": 0,
-            "unreviewed": 2
-          },
-          "issues": [
-            "官网同口径总数尚未确认。",
-            "交付中存在待定或未审论文。"
+          "coverage_note": "USENIX官方目录可直接访问，53条按唯一presentation URL和题名完全匹配，无漏采、额外或重复。两篇原候选均有官方原摘要，并补读公开PDF方法：QOS的可选回归保真度估计策略符合AI与量子研究关系，纳入；HyperQ的贪心装箱、编译及噪声排序未涉及学习方法，排除。QOS默认解析策略与AI回归策略严格区分，不将所有系统增益归因于AI。无待定、未审、候选缺摘要；复查未确认新增AI4S候选。",
+          "evidence_urls": [
+            "https://www.usenix.org/conference/osdi25/technical-sessions",
+            "https://www.usenix.org/conference/osdi25/presentation/giortamis",
+            "https://www.usenix.org/system/files/osdi25-giortamis.pdf",
+            "https://www.usenix.org/conference/osdi25/presentation/tao",
+            "https://www.usenix.org/system/files/osdi25-tao.pdf"
           ],
+          "decisions": {
+            "include": 1,
+            "exclude": 1,
+            "pending": 0,
+            "unreviewed": 0
+          },
+          "issues": [],
           "actions": [
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "按交付文件逐篇补证并处理待定、未审记录。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
           "files": [
-            "reviews/2025/AlearnerDL.json"
+            "reviews/2025/AlearnerDL.json",
+            "reviews/2025/feedback/AlearnerDL.json"
           ],
           "snapshot_at": "2026-11-09T10:51:18+08:00",
-          "final_included": 0,
+          "final_included": 1,
           "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
@@ -48759,18 +48760,16 @@
           "open_issues": 48,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-17T06:54:59-08:00",
-            "author": "ebo",
-            "subject": "Backfill Chen Chen 2024 abstracts and apply 452 verified inclusions",
+            "at": "2026-11-19T07:11:23-08:00",
+            "author": "wangmengran8789",
+            "subject": "陈晨 2026｜补录 7 篇原摘要与 3 条候选结论 (#252)",
             "area": "reviews",
             "paths": [
-              "metadata/2024/ai4s.json",
-              "metadata/j-0fe19b9e20/2024/papers.json",
-              "metadata/j-29686b6ead/2024/ai4s.json",
-              "metadata/j-29686b6ead/2024/papers.json"
+              "reviews/2026/chenchen052512/abstract-backfill-20261118.json",
+              "reviews/2026/chenchen052512/candidate-abstract-review-20261119.json"
             ]
           },
-          "commits_7d": 12
+          "commits_7d": 13
         },
         {
           "owner": "乔徐阳",
@@ -48839,23 +48838,23 @@
           "owner": "龙兆科",
           "sources": 49,
           "delivered": 43,
-          "official": 8,
-          "pending": 761,
-          "open_issues": 42,
+          "official": 9,
+          "pending": 759,
+          "open_issues": 41,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-19T07:06:19-08:00",
+            "at": "2026-11-19T07:11:57-08:00",
             "author": "ebo",
-            "subject": "review: reconcile ICAPS 2025 official proceedings and verify quantum candidate",
+            "subject": "review: complete OSDI 2025 with verified quantum fidelity regression evidence",
             "area": "reviews",
             "paths": [
               "reviews/2025/AlearnerDL.json",
               "reviews/2025/AlearnerDL/closure-20261119/README.md",
-              "reviews/2025/AlearnerDL/closure-20261119/build_review.py",
-              "reviews/2025/AlearnerDL/closure-20261119/icaps-catalogue-audit.json"
+              "reviews/2025/AlearnerDL/closure-20261119/manifest.json",
+              "reviews/2025/AlearnerDL/closure-20261119/model-decisions.json"
             ]
           },
-          "commits_7d": 138
+          "commits_7d": 139
         }
       ],
       "snapshot_file": "metadata/2025/snapshot.json",
@@ -77063,18 +77062,16 @@
           "open_issues": 48,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-17T06:54:59-08:00",
-            "author": "ebo",
-            "subject": "Backfill Chen Chen 2024 abstracts and apply 452 verified inclusions",
+            "at": "2026-11-19T07:11:23-08:00",
+            "author": "wangmengran8789",
+            "subject": "陈晨 2026｜补录 7 篇原摘要与 3 条候选结论 (#252)",
             "area": "reviews",
             "paths": [
-              "metadata/2024/ai4s.json",
-              "metadata/j-0fe19b9e20/2024/papers.json",
-              "metadata/j-29686b6ead/2024/ai4s.json",
-              "metadata/j-29686b6ead/2024/papers.json"
+              "reviews/2026/chenchen052512/abstract-backfill-20261118.json",
+              "reviews/2026/chenchen052512/candidate-abstract-review-20261119.json"
             ]
           },
-          "commits_7d": 12
+          "commits_7d": 13
         },
         {
           "owner": "南耀笛",
@@ -77144,18 +77141,18 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-19T07:06:19-08:00",
+            "at": "2026-11-19T07:11:57-08:00",
             "author": "ebo",
-            "subject": "review: reconcile ICAPS 2025 official proceedings and verify quantum candidate",
+            "subject": "review: complete OSDI 2025 with verified quantum fidelity regression evidence",
             "area": "reviews",
             "paths": [
               "reviews/2025/AlearnerDL.json",
               "reviews/2025/AlearnerDL/closure-20261119/README.md",
-              "reviews/2025/AlearnerDL/closure-20261119/build_review.py",
-              "reviews/2025/AlearnerDL/closure-20261119/icaps-catalogue-audit.json"
+              "reviews/2025/AlearnerDL/closure-20261119/manifest.json",
+              "reviews/2025/AlearnerDL/closure-20261119/model-decisions.json"
             ]
           },
-          "commits_7d": 138
+          "commits_7d": 139
         },
         {
           "owner": "王梦冉",
@@ -77329,18 +77326,16 @@
         "2026"
       ],
       "last_update": {
-        "at": "2026-11-17T06:54:59-08:00",
-        "author": "ebo",
-        "subject": "Backfill Chen Chen 2024 abstracts and apply 452 verified inclusions",
+        "at": "2026-11-19T07:11:23-08:00",
+        "author": "wangmengran8789",
+        "subject": "陈晨 2026｜补录 7 篇原摘要与 3 条候选结论 (#252)",
         "area": "reviews",
         "paths": [
-          "metadata/2024/ai4s.json",
-          "metadata/j-0fe19b9e20/2024/papers.json",
-          "metadata/j-29686b6ead/2024/ai4s.json",
-          "metadata/j-29686b6ead/2024/papers.json"
+          "reviews/2026/chenchen052512/abstract-backfill-20261118.json",
+          "reviews/2026/chenchen052512/candidate-abstract-review-20261119.json"
         ]
       },
-      "commits_7d": 12
+      "commits_7d": 13
     },
     {
       "owner": "郝卓迪",
@@ -77584,9 +77579,9 @@
         "2025": {
           "sources": 49,
           "delivered": 43,
-          "official": 8,
-          "pending": 761,
-          "open_issues": 42,
+          "official": 9,
+          "pending": 759,
+          "open_issues": 41,
           "status": "in_progress"
         },
         "2026": {
@@ -77602,18 +77597,18 @@
       "delivered": 127,
       "not_started": [],
       "last_update": {
-        "at": "2026-11-19T07:06:19-08:00",
+        "at": "2026-11-19T07:11:57-08:00",
         "author": "ebo",
-        "subject": "review: reconcile ICAPS 2025 official proceedings and verify quantum candidate",
+        "subject": "review: complete OSDI 2025 with verified quantum fidelity regression evidence",
         "area": "reviews",
         "paths": [
           "reviews/2025/AlearnerDL.json",
           "reviews/2025/AlearnerDL/closure-20261119/README.md",
-          "reviews/2025/AlearnerDL/closure-20261119/build_review.py",
-          "reviews/2025/AlearnerDL/closure-20261119/icaps-catalogue-audit.json"
+          "reviews/2025/AlearnerDL/closure-20261119/manifest.json",
+          "reviews/2025/AlearnerDL/closure-20261119/model-decisions.json"
         ]
       },
-      "commits_7d": 138
+      "commits_7d": 139
     },
     {
       "owner": "南耀笛",
@@ -77705,9 +77700,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-19T15:08:54.445530+00:00",
+    "generated_at": "2026-11-19T15:14:04.735958+00:00",
     "history_available": true,
-    "commit": "047392ec56fb829658491e288e37bd3d0e7877ba",
-    "commits_scanned": 1293
+    "commit": "ae876281332cd0cbf526e2dc349dc5e0cafe581c",
+    "commits_scanned": 1296
   }
 }
