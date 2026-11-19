@@ -19,6 +19,7 @@ for i,x in enumerate(p):
   if i in recovered:
    r['verified_metadata']['abstract']=recovered[i]['abstract'].split('CCS CONCEPTS')[0].strip()
    if i<7:r['verified_metadata']['pdf_url']=recovered[i]['url']
+  r['verified_metadata'].update(dec.get('verified_metadata',{}))
   if dec['decision']=='include':
    label=dec['domain'];tag=v[label];r['tags']=[{'axis':tag['axis'],'label':label,'label_en':tag['label_en'],'evidence_location':evidence,'rationale':dec['rationale']}]
  x['ai4s_review']=r
