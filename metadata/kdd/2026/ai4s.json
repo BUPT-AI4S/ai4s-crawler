@@ -1989,7 +1989,7 @@
       "Quanjun Yin"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Accurately forecasting pedestrian trajectories is critical for safe and efficient urban-mobility services, yet existing data-driven models often (i) ignore the kinematic laws that bound human motion and (ii) report performance merely on the single ''best'' trajectory sample. These limitations undermine both physical plausibility and real-world reliability. To address these challenges, we introduce DSPIGCN, a dual-stream physics-informed graph convolutional network that fuses domain physics with deep representation learning. Specifically, DSPIGCN employs a novel dual-stream spatiotemporal graph encoding architecture to jointly capture latent dependencies in displacement and velocity pathways, with a physics-informed neural network leveraged to connect displacement and velocity streams via explicit motion equations. To preserve predictive diversity without sacrificing distributional fidelity, we design a Gaussian mixture model-based anchor sampling strategy and propose mean ADE/FDE—an evaluation protocol that averages error across all generated trajectories rather than only the best one. Experiments on two public benchmarks (GC and UCY Datasets) show that DSPIGCN improves mean ADE/FDE by 9%/28%, over state-of-the-art baselines while matching them on the conventional min ADE/FDE metric. Qualitative analyses confirm that the model generates physically consistent paths, especially for pedestrians exhibiting steady motion patterns.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -3431,7 +3431,7 @@
       "Haishuai Wang"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Recently, Large Language Models (LLMs) have become the dominant paradigm for molecular editing due to their strong generalization capabilities across diverse tasks. However, treating molecules as 1D text strings (SMILES) introduces significant challenges in controllability and structural validity. In this paper, we question whether sequence generation is truly optimal for this topological task. We propose UniEdit, a Unified Graph-based Mixture-of-Experts (MoE) Molecular Editing model that offers a robust alternative to LLMs. Diverging from the generative approach, UniEdit reformulates molecular editing as a hierarchical node-level classification task. By predicting discrete edit actions (e.g., Add, Remove, Replace) directly on the graph, our model ensures topological precision by design. To handle conflicting multi-objective constraints within a single framework, we incorporate a Mixture-of-Experts architecture that dynamically routes tasks to specialized components. Extensive experiments across 28 diverse tasks demonstrate that UniEdit significantly outperforms sequence-based baselines. Furthermore, a preliminary scaling study reveals that our graph-based approach benefits consistently from increased model capacity, suggesting a scalable path toward general-purpose molecular editing. Our code is available at https://github.com/jiajunyu1999/GraphEditing.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -4271,7 +4271,7 @@
       "Li Erran Li"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Molecular surfaces encode the geometric and physicochemical patterns that determine antibody-antigen recognition, central to epitope prediction. However, existing methods rely on sequences or backbone structures and struggle to capture discontinuous, surface-driven epitopes. This study presents SurfBind, a surface-centric learning framework for epitope prediction that operates directly on molecular surface representations. SurfBind integrates geometric and physicochemical cues through a Transformer-based architecture with patch-level surface modeling, binder-aware cross-attention, and a hierarchical coarse-to-fine prediction paradigm. Experiments on challenging epitope identification benchmarks, including SAbDab and DB5.5, demonstrate that SurfBind achieves state-of-the-art performance and strong generalization across unseen antibodies and conformational states, highlighting the value of interaction-aware surface modeling for understanding the crucial mechanisms of protein-protein interactions.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -5872,7 +5872,7 @@
       "John M. Cioffi"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Accurate channel state information (CSI) is a critical bottleneck in modern wireless networks, with pilot overhead consuming 11% to 21% of transmission bandwidth and feedback delays causing severe throughput degradation under mobility. Addressing this requires rethinking how neural fields represent coherent wave phenomena. This work introduces neural Gaussian radio fields (nGRF), a physics-informed framework that reframes neural field design by replacing view-dependent rasterization with direct complex-valued aggregation in 3D space. This approach natively models wave superposition rather than visual occlusion. The architectural shift transforms the learning objective from function fitting to source recovery, a well-posed inverse problem grounded in electromagnetic theory. While the framework is demonstrated for wireless channel estimation, the core principle of explicit primitive-based fields with physics-constrained aggregation extends naturally to any coherent wave-based domain, including acoustic propagation, seismic imaging, and ultrasound reconstruction. Evaluations show that the inductive bias of nGRF achieves 10.9 dB higher prediction SNR than state-of-the-art methods, with 220× faster inference (1.1 ms vs. 242 ms), 18× lower measurement density, and 180× faster training. For large-scale outdoor environments where implicit methods fail, nGRF achieves 28.32 dB SNR, demonstrating that structured representations supplemented by domain physics can fundamentally outperform generic deep learning architectures.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -6224,7 +6224,7 @@
       "Bing Su"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "DNA cis-regulatory elements (CREs) such as enhancers control gene expression levels. Accurately predicting regulatory activity from DNA sequences is valuable but challenging, as it requires understanding complex biological regulatory processes. Existing methods typically regress activity scores from sequences in a black-box manner, limiting both interpretability and regression performance. Meanwhile, large language models (LLMs) benefit from explicit reasoning processes, yet directly applying LLMs to raw DNA sequences performs poorly. In this paper, we bridge this gap by introducing R3LM, a framework that teaches LLMs reasoning-informed regression on regulatory DNA through structured biological knowledge. Specifically, we design a biologically grounded data format that structures DNA's regulatory information for improved LLM understanding, and construct CRE-ReasonBench, the first dataset that associates DNA sequences and activity scores with mechanistic reasoning traces. Through two-stage training that first teaches LLMs reasoning over structured biological information then performs regression, R3LM achieves state-of-the-art performance on enhancer prediction across three cell types, outperforming both LLMs with raw sequence input and specialized DNA models while providing interpretable mechanistic explanations. We expect R3LM as an interpretable reward model that can effectively assist biologists in CRE design. Code is available at https://github.com/DuanYi516/R3LM.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -8216,7 +8216,7 @@
       "Daoqiang Zhang"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Accurate Remaining Useful Life prediction is critical for industrial predictive maintenance. However, real-world deployment is challenging due to the irregular nature of sensor observations, characterized by asynchronous sampling, burst missingness, and temporal jitter. Compounding this issue, purely data-driven models often generate physically implausible degradation trajectories that violate the irreversible nature of damage accumulation. To address this, we propose PC-MambaSDE, a unified continuous-time framework for robust RUL prediction under irregular observations. Specifically, we design a Mask-Aware Continuous Mamba Encoder that explicitly leverages observation masks to extract context-rich control signals. Furthermore, we introduce a Physics-Guided Latent SDE with parametrically rectified hybrid drift, superimposing a global physical bias to enforce monotonic degradation even amid severe observation gaps. Additionally, we formulate RUL prediction as a boundary value problem via a Terminal Degradation Penalty, which decouples a Health Index dimension and applies a penalty loss to guide trajectories toward the failure state. Theoretically, we prove that our variational objective is mathematically equivalent to minimizing the KL divergence via Girsanov's theorem, and we guarantee the global asymptotic stability of the learned dynamics through Lyapunov analysis. To enable rigorous evaluation, we develop a Hybrid Irregularity Generation Scheme that simulates realistic industrial imperfections. Extensive experiments on public benchmarks demonstrate that PC-MambaSDE significantly outperforms state-of-the-art methods, particularly under extreme observation scarcity, validating the efficacy of embedding physical priors into continuous-time latent dynamics. Our code is available at https://github.com/KylinToeFish/PC-MambaSDE.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -8546,7 +8546,7 @@
       "Fengli Xu"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Mobility data is crucial for understanding human dynamics and facilitating many applications, but collecting them is often expensive and privacy sensitive. Previous efforts on mobility data generation focus on fitting the statistical distribution and often overlook the underlying intentions behind mobility behavior. Recent breakthroughs in large language models (LLMs) show emergent capabilities of human-like reasoning, inspiring us to harness their power for intention-aware mobility generation. However, this problem is non-trivial since LLMs are not originally optimized for inferring human mobility behavior. To bridge this gap, we propose a novel data generator called Chain-of-Planned-Behavior (CoPB) that consists of three key components: (1) a behavior science-inspired agentic workflow that adapts LLMs for mobility intention reasoning, drawing on the Theory of Planned Behavior to integrate attitude, subjective norms, and perceived behavioral control to jointly decide the next mobility intention; (2) a conditional generative diffusion model that grounds abstract intents into physical space by generating intention-conditioned mobility trajectories; and (3) a lightweight data generator solution that provides a cost-effective alternative, where knowledge distillation is used to transfer the intent reasoning capability of LLMs to smaller language models. We also explore the potential of substituting the diffusion model with a physics-informed mechanistic model. Experiments on three real-world datasets show that the generated data exhibits strong alignment with real data, substantially reducing the error rate of intent reasoning by an average of 59.8 percent and improving average spatial metrics by 18.5 percent. Moreover, the lightweight data generator removes API costs and reduces generation time by 28.8 percent without significant performance loss. Both the generator and the accompanying constructed dataset are publicly available at https://github.com/tsinghua-fib-lab/CoPB .",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -9101,7 +9101,7 @@
       "Jinbo Xu"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Protein function is largely determined by molecular surface geometry and physicochemical complementarity, yet most protein design methods condition only on backbone structure. We introduce SurfDesign, a surface-conditioned protein design framework that models molecular surfaces as continuous geometric manifolds and integrates them with pretrained protein language models. SurfDesign employs surface-based equivariant message passing to capture surface normals, curvature, and directional geometry, together with a parameter-efficient fine-tuning strategy. Focusing on functional protein design, we show that SurfDesign consistently outperforms prior surface-conditioned and backbone-only methods on de novo binder and enzyme design benchmarks. We also report strong performance on inverse-folding benchmarks as a diagnostic of structural compatibility. Our results highlight manifold-aware surface representations as a principled foundation for functional protein and enzyme design. Code is available at https://github.com/smiles724/SurfDesign.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -9461,7 +9461,7 @@
       "Dan He"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "What are the fundamental units of protein sequences? Most protein language models treat amino acids as tokens, yet biological functions are not encoded at the single-residue level. Instead, they emerge from combinations of residues that form functional units that corresponds to conserved sequence motifs. Just like how modern language models work at the level of learned sub-word units instead of characters, we argue that explicitly modeling at the functional motif level provides both mechanistic insight into sequence-function relationships and interpretable control over protein generation. We demonstrate this framework on metalloproteins, where similar coordination chemistry is shared at the structure level yet how sequence controls metal specificity remains underexplored. We develop a three-step workflow: (1) construction of a dictionary of functional motifs; (2) prediction of the next motif and inter-motif gaps; and (3) sequence infilling given the predicted anchor motifs. Motif analysis confirms that the extraction captures known metal-coordination chemistry. Compared to random masking, motif-guided generation improves Conserved Domain Database annotation rates with greater target-family enrichment. Compared to generation approaches that use BPE tokenization, our approach achieves more specific hits on metalloprotein families and substantially reduces off-target annotations. Generation output directly mirrors dictionary composition, demonstrating that motif vocabularies provide explicit control over generation scope. AlphaFold 3 structure prediction with explicit metal ions confirms plausible coordination geometry, validating functional binding sites in generated sequences. Together, functional motif modeling enables interpretable, controllable protein generation, an important step toward compositional design of novel protein functions.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -10333,7 +10333,7 @@
       "Yizhou Sun"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Multiparametric 3D brain MRI (mpMRI) is central to neuroradiology, but producing tumor location, appearance, size, and involvement of critical structures for neurosurgical planning remains challenging. We introduce mpLLM, a multimodal LLM for visual question answering (VQA) on mpMRI that produces clinically interpretable tumor descriptors (e.g., volume, morphology, extent, and coarse localization) as an adjunct to clinical expertise for referring neurosurgeons. mpLLM uses a prompt-conditioned hierarchical mixture-of-experts (MoE) to fuse multiple 3D sequences via routing over modality- and token-level projection experts, enabling data-efficient end-to-end training without large-scale image–report pretraining. To address limited paired image–text supervision, we propose a synthetic VQA protocol that derives clinically grounded questions and answers from expert segmentation annotations and is validated with radiologist collaboration. Across multiple mpMRI datasets, mpLLM improves over strong medical VLM baselines by +5.5 points on average (+9.1% relative) and increases radiologist-rated clinical acceptability by +15.9 points (+46.6% relative). Our study features three main contributions: (1) the first VQA dataset for 3D brain mpMRI, (2) a hierarchical MoE architecture for joint reasoning over interrelated 3D sequences, and (3) expert-supported evidence of clinical utility. Source code and dataset are available at https://github.com/arvindmvepa/mpllm.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -10639,7 +10639,7 @@
       "Yongqi Zhang"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Large language models (LLMs) are rapidly becoming interactive scientific assistants. Most existing pipelines rely on specialized molecular encoders and alignment modules, while overlooking the importance of chemical hierarchy and traceable evidence for reliable reasoning and explanation. Thus, we propose MolGlass, a data-centric paradigm for visual molecular understanding in vision-language models (VLMs) that injects chemical priors directly into the visual input through chemical-aware visual augmentations, without modifying model architectures or training molecule-specific encoders. MolGlass enriches depictions with human-interpretable cues such as scaffolds, BRICS-like fragments, and functional groups, with a 2.5D visual encoding strategy that strengthens stereochemical symbols in 2D diagrams to mitigate the gap between 2D and 3D reasoning. Moreover, MolGlass includes a three-stage curriculum (Perceive-Reason-Converse) that progressively trains models from grounding MolGlass conventions to evidence-based reasoning and finally to multi-turn, assistant-style molecular consultation. Across molecular understanding and property prediction tasks, extensive experiments show that MolGlass improves transfer and zero-shot performance and enables visually grounded explanations by tracing model decisions to human-identifiable regions. Our code is available at: https://github.com/RunqingXuCn/MolGlass.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -10754,7 +10754,7 @@
       "Mingkun Xu"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Cross-subject brain-to-visual decoding remains a core challenge in brain-computer interfaces due to severe inter-individual variability that induces systematic subject-specific functional misalignment. To address this issue, we propose MindAdapter, a parameter-efficient few-shot calibration framework for pretrained brain-to-visual decoding models. MindAdapter adopts a decoupled linear-residual cascade alignment paradigm by freezing a pretrained explicit brain functional alignment backbone (coarse) and introducing a lightweight nonlinear residual adapter (fine), thereby disentangling global cross-subject correspondence from subject-specific residual corrections for fine-grained spatial and semantic calibration. To further preserve global representational stability, we design a topology-anchored dual-stream manifold constraint, where a small set of shared stimuli serves as topological pins with voxel-level paired supervision, while a semantic stream enforces consistency through a frozen vision-language decoder on unpaired brain data. Together, MindAdapter efficiently injects subject-specific corrections while maintaining the global representational geometry learned during pretraining. Experiments on the Natural Scenes Dataset (NSD) demonstrate that MindAdapter consistently improves cross-subject visual reconstruction and retrieval accuracy using only a few shared stimuli, offering a practical and data-efficient solution for personalized brain-to-visual decoding. Project page: https://jxliu-ai.github.io/MindAdapter/.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -10919,7 +10919,7 @@
       "Guansong Pang"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Current time series foundation models (TSFMs) primarily focus on learning prevalent and regular patterns within a predefined time or frequency domain to enable supervised downstream tasks (\\eg, forecasting). Consequently, they are often ineffective for inherently unsupervised downstream tasks—such as time series anomaly detection (TSAD), which aims to identify rare, irregular patterns. This limitation arises because such abnormal patterns can closely resemble the regular patterns when presented in the same time/frequency domain. To address this issue, we introduce TimeRadar, an innovative TSFM built in a fractional time–frequency domain to support generalist TSAD across diverse unseen datasets. Our key insight is that rotating a time series into a data-dependent fractional time–frequency representation can adaptively differentiate the normal and abnormal signals across different datasets. To this end, a novel component, namely Fractionally modulated Time-Frequency Reconstruction (FTFRecon), is proposed in TimeRadar to leverage a learnable fractional order to rotate the time series to the most pronounced angle between a continuous time and frequency domain for accurate data reconstruction. This provides adaptive data reconstruction in an optimal time–frequency domain for each data input, enabling effective differentiation of the unbounded abnormal patterns from the regular ones across datasets, including unseen datasets. To allow TimeRadar to model local abnormality that is not captured by the global data reconstruction, we further introduce a Contextual Deviation Learning (CDL) component to model the local deviation of the input relative to its contextual time series data in the rotatable domain. Extensive experiments on eight popular TSAD benchmarks demonstrate that TimeRadar consistently outperforms a variety of conventional and TSFM-based competing methods, delivering average gains of 10.5% and 29.4% in AUC-R and AUC-P, respectively. Our code is available at https://github.com/mala-lab/TimeRadar.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -11116,7 +11116,7 @@
       "Jianwei Yin"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Mapping quantum circuits to specific hardware backends is a crucial step in quantum program compilation, yet current benchmarks rarely capture the backend-aware effects of this process. We present QuaMap, the first large-scale, open benchmark dataset that systematically links 75 representative quantum algorithms with over 210,000 hardware-aware transpiled circuits on 10 IBM Quantum devices. Unlike existing circuit collections, QuaMap explicitly records the impact of topology-constrained compilation by providing both the original and transpiled circuits together with rich structural and performance metrics (circuit depth, gate counts with various qubits, and CNOT count). QuaMap defines four benchmark tasks, involving circuit embedding classification, transpilation metric prediction, mapping quality ranking, and transferability evaluation, and includes reproducible baselines for each task, showing that graph neural networks substantially outperform heuristic and classical models. By making the data, code, and evaluation protocols openly available, QuaMap establishes a standardized foundation for data-driven research on quantum compilation, enabling the community to analyze layout effects, design predictive models, and compare mapping strategies across devices.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -12628,7 +12628,7 @@
       "Xiaobo Sun"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "For many critical microeconomic problems, modeling large-scale censored panel data is of central importance. A key challenge is that censoring simultaneously affects both dependent and explanatory variables, rendering latent dynamic states unobservable and substantially complicating reliable inference, particularly in dynamic forecasting settings. Existing approaches typically rely on parametric specifications and strong distributional assumptions, which limits their applicability in high-dimensional, nonlinear, and heterogeneous real-world settings. In this paper, we propose an econometrics-informed deep generative framework, termed the Generative Dynamic Panel Tobit Network (GDPTN), for large-scale censored panel data. By embedding econometric structural priors into a deep generative architecture, GDPTN integrates two core components. First, a novel generative imputation network is introduced to recover censored latent variables using covariate information. Second, a censoring-aware temporal learning model is developed to optimize dynamic predictions through a tailored Tobit loss. To further address the widespread presence of missing observations in real-world datasets, we extend GDPTN to a semi-supervised variant (Semi-GDPTN), which enables accurate prediction for individuals with partially observed data-a common empirical setting that is difficult to accommodate with traditional econometric models. We provide theoretical guarantees for GDPTN. Extensive experiments on simulated data and the FFIEC U.S. banking panel demonstrate that GDPTN consistently outperforms existing baseline methods in accuracy, while also offering more reliable econometric analysis.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -13139,7 +13139,7 @@
       "Lei Cheng"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Diffusion and flow-based methods have emerged as promising solutions for atmospheric super-resolution. Recent advances explore training-free strategies to incorporate structural information into the generative process to improve fidelity beyond purely data-driven generation. In this paper, we propose GRASP, the first training-free guidance framework for atmospheric super-resolution that can handle multiple, heterogeneous structural signals. GRASP formulates downscaling as a constrained optimization problem that aims to minimize the structural errors in the generated high-resolution proposal while preserving the underlying manifold evolution constraint imposed by the pretrained backbone. We decouple heterogeneous structural requirements with an extra identity constraint and derive a time-unrolled, single-step alternating direction method of multipliers module to solve the constrained optimization efficiently. Crucially, a manifold-aware projection mechanism is developed to filter optimization gradients, enforcing that structural guidance remains consistent with the probability-flow dynamics of the pretrained backbone. Moreover, we introduce a novel structural requirement to capture global multivariate correlations, which is instantiated as an explicit low-rank tensor prior and admits efficient optimization via tensor singular value decomposition. Experiments on two benchmark datasets demonstrate that GRASP consistently enhances downscaling fidelity and converges to a better solution with substantially fewer sampling steps, offering a principled path for embedding structural priors into generative sampling.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -13638,7 +13638,7 @@
       "Zhongzhi Zhang"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Learning on signed graphs poses unique challenges due to the presence of both positive and negative links, which represent complex social dynamics such as trust and conflict. While existing signed graph neural networks (SGNNs) have achieved promising results, most rely on deep, multi-hop propagation architectures that suffer from scalability issues. In this work, we revisit message passing from the perspective of opinion dynamics, and propose SigFJProp, a novel and lightweight SGNN framework inspired by the Friedkin–Johnsen model. SigFJProp models signed message propagation as a discrete-time opinion update process, whose equilibrium state admits a closed-form solution involving the signed forest matrix. To make this computation tractable on large-scale graphs, we introduce Expansion Forest Sampling, a linear-time approximation method tailored for signed networks. Our approach decouples neural representation learning from propagation dynamics, enabling efficient and interpretable learning. Experimental results on seven benchmark datasets, including one with over 750K nodes and 10M edges, demonstrate that SigFJProp achieves competitive or superior performance compared to state-of-the-art methods, while significantly reducing computational overhead. The code is available at https://github.com/SunYubo23/SigFJProp.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -15169,7 +15169,7 @@
       "Tao Sun"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Neural network repair aims to correct prediction failures caused by multiple security threats—such as backdoor attacks, natural corruptions, and safety property violations—through limited adjustments to model parameters. However, most existing repair methods rely on single-sample, point-to-point correction strategies, overlooking the statistical regularities of the feature space. As a result, they are highly sensitive to the scale of faulty samples and struggle to simultaneously achieve repair generalization and original performance preservation under small-sample settings. To address these limitations, we propose a novel general neural network repair paradigm termed NCCDA (Neuron-wise Class-Conditional Distribution Alignment). The method is grounded in a key insight: prediction failures fundamentally arise from neuron-level internal representations deviating from the high-likelihood regions corresponding to their true classes. NCCDA constructs neuron-wise class-conditional distribution references and formulates the repair process as a joint optimization of distribution alignment and structure preservation. By guiding abnormal representations back to high-likelihood regions while anchoring the structure of normal samples, the method enables efficient and adaptive repair without explicit neuron localization. We theoretically prove a generalization error bound under small-sample settings based on Rademacher complexity, providing formal guarantees. Extensive experiments across 7 benchmark datasets and 38 models, covering three categories of repair tasks, demonstrate that NCCDA consistently outperforms existing methods in repair effectiveness, generalization repair capability (Gene), and original accuracy preservation.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -15495,7 +15495,7 @@
       "Ji-Hoon Bae"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Knowledge Tracing (KT) is the task of modeling students' knowledge states from past learning interaction data to predict future responses. Attention-based KT models such as SAKT and AKT have demonstrated excellent performance by effectively capturing inter-problem relationships through Attention mechanisms. However, these attention-based models face efficiency limitations due to quadratically increasing computational costs as interaction sequences lengthen. Moreover, existing models struggle to effectively capture overall knowledge evolution trends across long-term learning trajectories. To address these issues, this paper proposes Hierarchical Recurrent Knowledge Tracing (HRKT), a novel knowledge tracing framework that introduces a new hierarchical recurrent design for Transformer-based KT models. By separately modeling local interaction patterns and global knowledge evolution, HRKT enables efficient long-sequence modeling and improves prediction performance. Extensive experiments on real-world educational datasets confirm that Transformer-based models augmented with HRKT significantly reduce computational cost and memory usage compared to conventional Transformer-based KT models, while achieving improved performance on long sequences.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -16456,7 +16456,7 @@
       "Changjie Xu"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Coupled engineering systems, such as braced excavations and industrial hall frames, are governed by explicit interface constraints and uncertain closures, including effective stiffness, connector compliance, and model-form choices. Learning-based surrogates can violate kinematic compatibility or depend on unstable multiplier tuning. We propose a deformation-first neural operator for coupled structural systems. The operator predicts displacement and internal-force profiles, and connector forces are recovered deterministically from predicted relative displacements and effective compliance. This force-recovery design enforces the interface relation by construction, up to interpolation and numerical tolerance, and avoids the non-convergence observed when support forces are directly regressed. We add optional weak-form equilibrium and energy-aligned regularization, including an energy-balance term that uses only predicted responses and known external actions. On a full-scale industrial-hall benchmark, transfer initialization reduces displacement wRMSE from 108.98 to 0.49 mm and support relative-displacement tail error from Δp99 = 337.48 to 0.918 mm relative to scratch training. On retaining benchmarks, weak-form regularization reduces wRMSE from 2.07 to 1.36 mm and Δp99 from 3.55 to 3.03 mm. We evaluate deployment-time closure calibration on 22 curated field and literature cases using a fixed monitoring-QC pipeline. After four QC-invalid cases are excluded, closure-only calibration on the remaining 18 cases reduces mean wRMSE from 47.1 to 8.7 mm, with improvement in all 18 cases. Prior-stress tests and reliability diagnostics characterize the calibration operating window. The operator provides an approximately 104× speedup over the CPU solver (30 s per solve to 3 ms per GPU pass), enabling rapid engineering review in real-time monitoring workflows.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -16733,7 +16733,7 @@
       "Yong Li"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Generating realistic and diverse pedestrian background flows is critical for numerous downstream applications, ranging from the training and validation of autonomous driving systems to the simulation of mobile communication networks. While recent diffusion-based models achieve state-of-the-art accuracy, they suffer from prohibitive inference latency, lack of physical consistency, and an inability to generalize across heterogeneous datasets, rendering them impractical for industrial Hardware-in-the-Loop testing. To address these challenges, we propose Real-time Adaptive Physics-Informed Diffusion (RAPID), a unified framework explicitly designed to balance high-fidelity generation with strict real-time constraints. First, we introduce a Canonical Representation Module that harmonizes diverse datasets via coordinate-invariant encoding and adaptive modality imputation, enabling unified training across varying scene scales. Second, we propose a Map Context Encoder that decouples computationally expensive map perception from the iterative denoising loop using cached latent embeddings. Third, a Physics-Informed Implicit Sampler integrates Social Force Model gradients as directional priors, encouraging physical consistency (e.g., collision avoidance). Extensive experiments on five heterogeneous benchmarks demonstrate that RAPID establishes a new state-of-the-art balance between fidelity and safety. Notably, it is the only framework capable of operating consistently below the 30 ms industrial threshold, maintaining almost constant inference latency regardless of crowd density. The system exhibits precise controllability over agent behaviors and has been successfully deployed in a production-grade autonomous-driving simulation platform as a core digital twin kernel for large-scale autonomous driving validation. The code is publicly available at https://github.com/tsinghua-fib-lab/RAPID.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -17617,7 +17617,7 @@
     "title": "TrustPPI: Deformation Stability as an Architecture-Spanning Reliability Signal for Protein-Protein Interaction Prediction",
     "authors": [],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Computational models for protein–protein interaction (PPI) prediction are widely used to prioritize candidates for wet-lab validation, yet there is no reliable post-hoc way to flag which predictions are likely to be wrong. We show that on poorly calibrated PPI predictors this gap is fundamental: standard post-hoc uncertainty fails for error detection under cross-species distribution shift. Generic confidence is unreliable or even actively harmful, and purpose-built mechanisms such as Gaussian Process variance become anti-correlated with correctness. To address this, we introduce TrustPPI, an architecture-spanning, post-hoc reliability signal based on deformation stability: it injects Gaussian noise into a model's intermediate embeddings and measures prediction consistency, requiring no retraining, and targets error detection and selective prediction rather than probability calibration. We evaluate on three architecturally diverse predictors—a CNN (D-SCRIPT), a Transformer with GP head (TUnA), and a fine-tuned protein language model (PLM-interact)—across 11 model×species evaluations and three random seeds. Deformation stability achieves AUROC 0.66–0.83 for error detection and improves selective prediction accuracy by +2–10% at 80% coverage, with the strongest gains on poorly calibrated models (p < 0.001 on D-SCRIPT); on well-calibrated protein language models it matches but does not exceed confidence. We demonstrate two applications: reliability-guided experiment selection (up to 3.5× faster than confidence-guided, ~2× faster than random) and label-free cross-species reliability assessment.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -18479,7 +18479,7 @@
       "Zhu Sun"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Data augmentation (DA) has been proven to be an effective means for improving protein representation learning (PRL) by generating additional training samples. Although mainstream perturbation- and sampling-based augmentation methods can produce data containing sufficient variations, they carry the risk of disrupting the protein structure and function. Some crafted protein homology modeling tools can generate conformations, but reduce structural diversity. The above dilemmas lead us to a question: Can we restore the disrupted structure caused by DA operations, providing data with both the original structure and diverse variations? In this work, we first analyze and empirically reveal the structure defect and performance degradation issues of existing DA methods. Based on the findings, we propose a simple yet effective DA method, Manifold Restore Mixing (MRM), for protein representation learning. Specifically, inspired by manifold mixup, we mix the hidden representations of original and augmented protein data to generate new samples that restore structural information lost in DA while introducing diverse variations. Furthermore, we develop a sample difficulty scheduler that adjusts the beta distribution in mixup to provide models with progressively challenging mixed samples during training, which improves the final performance. Comprehensive experiments on various PRL backbones and downstream tasks demonstrate the effectiveness and generalization of our method. The complete code and weights will be released upon acceptance. We provide a implementation at https://github.com/KingGugu/MRM.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
