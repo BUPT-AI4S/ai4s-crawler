@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-20T01:53:26.917198+00:00",
-  "commit": "5e990bdfd25c90df3e3b5ecd8215d0b5c4704329",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/5e990bdfd25c90df3e3b5ecd8215d0b5c4704329/",
+  "generated_at": "2026-11-20T01:56:36.443617+00:00",
+  "commit": "891e51b06481ffb2a587f8944d170d1dc523d457",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/891e51b06481ffb2a587f8944d170d1dc523d457/",
   "years": [
     {
       "year": 2024,
@@ -26741,18 +26741,18 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-19T08:17:03-08:00",
+            "at": "2026-11-19T17:52:49-08:00",
             "author": "ebo",
-            "subject": "review: complete ICPC 2025 and recover educational assessment study",
+            "subject": "review: recover SANER 2025 catalogue and verify 3 AI4S papers",
             "area": "reviews",
             "paths": [
               "metadata/2025/ai4s.json",
-              "metadata/icpc/2025/ai4s.json",
-              "reviews/2025/AlearnerDL.json",
-              "reviews/2025/AlearnerDL/closure-20261119/README.md"
+              "metadata/saner/2025/ai4s.json",
+              "metadata/saner/2025/papers.json",
+              "reviews/2025/AlearnerDL.json"
             ]
           },
-          "commits_7d": 147
+          "commits_7d": 148
         },
         {
           "owner": "南耀笛",
@@ -48163,24 +48163,34 @@
           "papers": 0,
           "papers_missing_abstract": 0,
           "snapshot_candidates": 0,
-          "candidates": 0,
+          "candidates": 3,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 89,
+          "official_scope": "SANER 2025正会正式论文集ISBN 979-8-3315-3510-0，含研究、工业、ERA、RENE、短文、工具分轨89篇；排除前言、委员会、作者索引及另册Companion/Workshops、Journal First和教程。",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
-          "issues": [
-            "官网同口径总数尚未确认。"
+          "coverage_note": "原全量及候选均为空；现恢复89篇正会目录，DBLP查询返回90条，排除1条整册编辑记录，剩余89篇题名全部逐项匹配IEEE授权印刷目录。补入3篇AI4S论文（2篇社区行为、1篇安全关键语义分割）；3篇原摘要完整、3纳入、无待定或未审。IEEE网页要求JavaScript验证，正常Chrome控制连接中断；改用可公开访问的IEEE授权印刷原始目录，并用DBLP提供DOI和作者、OpenAlex补原摘要。全量非候选不要求补摘要。",
+          "evidence_urls": [
+            "https://www.proceedings.com/content/080/080275webtoc.pdf",
+            "https://dblp.org/search/publ/api?format=json&h=1000&q=toc%3Adb%2Fconf%2Fsaner%2Fsaner2025.bht%3A",
+            "https://conf.researchr.org/program/saner-2025/program-saner-2025/"
           ],
+          "decisions": {
+            "include": 3,
+            "exclude": 0,
+            "pending": 0,
+            "unreviewed": 0
+          },
+          "issues": [],
           "actions": [
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2025/AlearnerDL.json",
+            "reviews/2025/feedback/AlearnerDL.json"
+          ],
           "snapshot_at": "2026-11-09T10:51:18+08:00",
-          "final_included": null,
-          "final_missing_abstract": null,
+          "final_included": 3,
+          "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
           "abstract_recovered": 0,
@@ -49273,24 +49283,24 @@
         {
           "owner": "龙兆科",
           "sources": 49,
-          "delivered": 45,
-          "official": 17,
+          "delivered": 46,
+          "official": 18,
           "pending": 754,
-          "open_issues": 33,
+          "open_issues": 32,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-19T08:17:03-08:00",
+            "at": "2026-11-19T17:52:49-08:00",
             "author": "ebo",
-            "subject": "review: complete ICPC 2025 and recover educational assessment study",
+            "subject": "review: recover SANER 2025 catalogue and verify 3 AI4S papers",
             "area": "reviews",
             "paths": [
               "metadata/2025/ai4s.json",
-              "metadata/icpc/2025/ai4s.json",
-              "reviews/2025/AlearnerDL.json",
-              "reviews/2025/AlearnerDL/closure-20261119/README.md"
+              "metadata/saner/2025/ai4s.json",
+              "metadata/saner/2025/papers.json",
+              "reviews/2025/AlearnerDL.json"
             ]
           },
-          "commits_7d": 147
+          "commits_7d": 148
         }
       ],
       "snapshot_file": "metadata/2025/snapshot.json",
@@ -77629,18 +77639,18 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-19T08:17:03-08:00",
+            "at": "2026-11-19T17:52:49-08:00",
             "author": "ebo",
-            "subject": "review: complete ICPC 2025 and recover educational assessment study",
+            "subject": "review: recover SANER 2025 catalogue and verify 3 AI4S papers",
             "area": "reviews",
             "paths": [
               "metadata/2025/ai4s.json",
-              "metadata/icpc/2025/ai4s.json",
-              "reviews/2025/AlearnerDL.json",
-              "reviews/2025/AlearnerDL/closure-20261119/README.md"
+              "metadata/saner/2025/ai4s.json",
+              "metadata/saner/2025/papers.json",
+              "reviews/2025/AlearnerDL.json"
             ]
           },
-          "commits_7d": 147
+          "commits_7d": 148
         },
         {
           "owner": "王梦冉",
@@ -78087,10 +78097,10 @@
         },
         "2025": {
           "sources": 49,
-          "delivered": 45,
-          "official": 17,
+          "delivered": 46,
+          "official": 18,
           "pending": 754,
-          "open_issues": 33,
+          "open_issues": 32,
           "status": "in_progress"
         },
         "2026": {
@@ -78103,21 +78113,21 @@
         }
       },
       "sources": 147,
-      "delivered": 129,
+      "delivered": 130,
       "not_started": [],
       "last_update": {
-        "at": "2026-11-19T08:17:03-08:00",
+        "at": "2026-11-19T17:52:49-08:00",
         "author": "ebo",
-        "subject": "review: complete ICPC 2025 and recover educational assessment study",
+        "subject": "review: recover SANER 2025 catalogue and verify 3 AI4S papers",
         "area": "reviews",
         "paths": [
           "metadata/2025/ai4s.json",
-          "metadata/icpc/2025/ai4s.json",
-          "reviews/2025/AlearnerDL.json",
-          "reviews/2025/AlearnerDL/closure-20261119/README.md"
+          "metadata/saner/2025/ai4s.json",
+          "metadata/saner/2025/papers.json",
+          "reviews/2025/AlearnerDL.json"
         ]
       },
-      "commits_7d": 147
+      "commits_7d": 148
     },
     {
       "owner": "南耀笛",
@@ -78209,9 +78219,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-20T01:52:26.120231+00:00",
+    "generated_at": "2026-11-20T01:55:55.415664+00:00",
     "history_available": true,
-    "commit": "5e990bdfd25c90df3e3b5ecd8215d0b5c4704329",
-    "commits_scanned": 1335
+    "commit": "891e51b06481ffb2a587f8944d170d1dc523d457",
+    "commits_scanned": 1337
   }
 }
