@@ -6,9 +6,9 @@
  },
  "stats": {
   "sources": 35,
-  "official_total_sum": 18672,
+  "official_total_sum": 19753,
   "collected_sum": 19280,
-  "sources_official_confirmed": 34,
+  "sources_official_confirmed": 35,
   "delivery_decisions_sum": 2024
  },
  "sources": [
@@ -26,13 +26,13 @@
     "pending": 0,
     "unreviewed": 0
    },
-   "official_total": null,
-   "coverage_status": "无法核实：2026 届论文集尚未出版，采集为 0 条，无候选",
-   "coverage_rationale": "CIKM 2026 论文集尚未在 ACM DL 出版，采集快照 state=completed、papers=0；官网录用页/论文集不可用，故 official_total 留 null，不以零代替未知。",
-   "official_scope": "会议论文集（未出版）",
+   "official_total": 1081,
+   "coverage_status": "参考核对：Crossref 登记 CIKM '26 论文集 1,081 条、采集 0 条（差 -1,081）。论文集 2026-11-06 出版，晚于采集快照 2026-11-08 的抓取窗口，需补采。",
+   "coverage_rationale": "CIKM '26 论文集（Proceedings of the 35th ACM International Conference on Information and Knowledge Management，Rome，2026-11-06）已存缴 Crossref，按 prefix 10.1145、出版日 2026-11 月与 proceedings-article 类型统计得 1,081 条。本批采集为 0：论文集出版时间与采集快照相隔两天，ACM DL 侧尚未进入采集范围，故无候选、无逐篇交付；该缺口需爬虫侧重采后补审。",
+   "official_scope": "Crossref 出版登记：ACM prefix 10.1145 + 出版日 2026-11-01 至 2026-11-30 + type=proceedings-article，按论文集名精确匹配（参考数）",
    "evidence_urls": [
-    "https://www.cikm2026.org/",
-    "https://dl.acm.org/conference/cikm"
+    "https://api.crossref.org/works?filter=prefix:10.1145,from-pub-date:2026-11-01,until-pub-date:2026-11-30,type:proceedings-article",
+    "https://api.crossref.org/works/10.1145/3799682.3839291"
    ]
   },
   {
