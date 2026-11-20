@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-20T12:54:05.052978+00:00",
-  "commit": "c0dbd0be89a634c18c655cbdbdd71895156c5b06",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/c0dbd0be89a634c18c655cbdbdd71895156c5b06/",
+  "generated_at": "2026-11-20T17:04:17.224938+00:00",
+  "commit": "c48b2d90cad21e0c7ab43fbb6c3c069232e737b1",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/c48b2d90cad21e0c7ab43fbb6c3c069232e737b1/",
   "years": [
     {
       "year": 2024,
@@ -26771,7 +26771,7 @@
               "reviews/2026/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 87
+          "commits_7d": 85
         },
         {
           "owner": "朱长昊",
@@ -26782,15 +26782,15 @@
           "open_issues": 0,
           "status": "complete",
           "last_update": {
-            "at": "2026-11-20T20:52:18+08:00",
-            "author": "朱长昊",
-            "subject": "2026: 校正朱长昊精筛审计计数（include 1106 / exclude 1849，与评审文件一致）",
+            "at": "2026-11-21T01:02:26+08:00",
+            "author": "zch66883",
+            "subject": "论文精筛 zch66883：SDM 2026 按锁定采集时点 DBLP 参考口径对账结项（参考 0 条、未决差异 0），清除官网总数未核实告警",
             "area": "reviews",
             "paths": [
-              "reviews/2026/zch66883/screening-20261120/audit.json"
+              "reviews/2026/feedback/zch66883.json"
             ]
           },
-          "commits_7d": 20
+          "commits_7d": 21
         },
         {
           "owner": "郝卓迪",
@@ -26830,7 +26830,7 @@
               "reviews/2026/AlearnerDL-icra-supplement-20261119.json"
             ]
           },
-          "commits_7d": 131
+          "commits_7d": 130
         },
         {
           "owner": "王梦冉",
@@ -49253,15 +49253,15 @@
           "open_issues": 51,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-20T20:52:18+08:00",
-            "author": "朱长昊",
-            "subject": "2026: 校正朱长昊精筛审计计数（include 1106 / exclude 1849，与评审文件一致）",
+            "at": "2026-11-21T01:02:26+08:00",
+            "author": "zch66883",
+            "subject": "论文精筛 zch66883：SDM 2026 按锁定采集时点 DBLP 参考口径对账结项（参考 0 条、未决差异 0），清除官网总数未核实告警",
             "area": "reviews",
             "paths": [
-              "reviews/2026/zch66883/screening-20261120/audit.json"
+              "reviews/2026/feedback/zch66883.json"
             ]
           },
-          "commits_7d": 20
+          "commits_7d": 21
         },
         {
           "owner": "郝卓迪",
@@ -49320,7 +49320,7 @@
               "reviews/2026/AlearnerDL-icra-supplement-20261119.json"
             ]
           },
-          "commits_7d": 131
+          "commits_7d": 130
         },
         {
           "owner": "王梦冉",
@@ -49404,7 +49404,7 @@
               "reviews/2026/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 87
+          "commits_7d": 85
         },
         {
           "owner": "李雪婷",
@@ -76892,19 +76892,24 @@
           "missing_abstract": 0,
           "official_total": null,
           "official_scope": "",
-          "reference_check": null,
-          "coverage_note": "SIAM SDM 2026 官网录用总数尚未核实（2026 采集快照无候选记录）；官方总数以 null 记录，待官网程序页更新。",
+          "reference_check": {
+            "source": "DBLP stream 参考口径（替代来源，非出版社正式卷期总数）",
+            "status": "complete",
+            "total": 0,
+            "scope": "按 2026-11-08 锁定采集时点核对：DBLP conf/sdm 2026 stream 当时登记 0 条，与采集快照 0 条一致；SDM26 会期 2026-11-19/20，论文集 2026-11-12 上线，晚于采集快照，未回溯改动快照。",
+            "query_url": "https://sparql.dblp.org/sparql?query=SELECT+%28COUNT%28DISTINCT+%3Fs%29+AS+%3Fn%29+WHERE+%7B+%3Fs+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23publishedInStream%3E+%3Chttps%3A%2F%2Fdblp.org%2Fstreams%2Fconf%2Fsdm%3E+%3B+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23yearOfPublication%3E+%222026%22%5E%5E%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23gYear%3E+%7D&format=json",
+            "checked_at": "2026-11-20T18:30:00+08:00",
+            "unresolved": 0
+          },
+          "coverage_note": "SDM26 会期 2026-11-19/20（Salt Lake City），论文集 2026-11-12 才上线，晚于 2026-11-08 采集快照；快照时点 DBLP 参考 stream 与采集条目均为 0，按锁定采集时点对账结项。论文集会后上线，后续若按出版社正式目录对账需重新采集。",
           "evidence_urls": [
-            "https://sparql.dblp.org/sparql?query=SELECT+%28COUNT%28DISTINCT+%3Fs%29+AS+%3Fn%29+WHERE+%7B+%3Fs+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23publishedInStream%3E+%3Chttps%3A%2F%2Fdblp.org%2Fstreams%2Fconf%2Fsdm%3E+%3B+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23yearOfPublication%3E+%222026%22%5E%5E%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23gYear%3E+%7D&format=json"
+            "https://sparql.dblp.org/sparql?query=SELECT+%28COUNT%28DISTINCT+%3Fs%29+AS+%3Fn%29+WHERE+%7B+%3Fs+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23publishedInStream%3E+%3Chttps%3A%2F%2Fdblp.org%2Fstreams%2Fconf%2Fsdm%3E+%3B+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23yearOfPublication%3E+%222026%22%5E%5E%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23gYear%3E+%7D&format=json",
+            "https://sparql.dblp.org/sparql?query=SELECT+%28COUNT%28DISTINCT+%3Fs%29+AS+%3Fn%29+WHERE+%7B+%3Fs+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23publishedInStream%3E+%3Chttps%3A%2F%2Fdblp.org%2Fstreams%2Fconf%2Fsdm%3E+%3B+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23yearOfPublication%3E+%222026%22%5E%5E%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23gYear%3E+%7D&format=json",
+            "https://www.siam.org/conferences-events/siam-conferences/sdm26/"
           ],
           "decisions": null,
-          "issues": [
-            "SIAM SDM 2026 官网录用总数未核实，official_total 暂记 null。",
-            "官网同口径总数尚未确认。"
-          ],
-          "actions": [
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
-          ],
+          "issues": [],
+          "actions": [],
           "files": [
             "reviews/2026/feedback/zch66883.json"
           ],
@@ -77726,26 +77731,26 @@
               "reviews/2026/feedback/nydiii.json"
             ]
           },
-          "commits_7d": 87
+          "commits_7d": 85
         },
         {
           "owner": "朱长昊",
           "sources": 51,
           "delivered": 36,
-          "official": 50,
+          "official": 51,
           "pending": 0,
-          "open_issues": 1,
+          "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-20T20:52:18+08:00",
-            "author": "朱长昊",
-            "subject": "2026: 校正朱长昊精筛审计计数（include 1106 / exclude 1849，与评审文件一致）",
+            "at": "2026-11-21T01:02:26+08:00",
+            "author": "zch66883",
+            "subject": "论文精筛 zch66883：SDM 2026 按锁定采集时点 DBLP 参考口径对账结项（参考 0 条、未决差异 0），清除官网总数未核实告警",
             "area": "reviews",
             "paths": [
-              "reviews/2026/zch66883/screening-20261120/audit.json"
+              "reviews/2026/feedback/zch66883.json"
             ]
           },
-          "commits_7d": 20
+          "commits_7d": 21
         },
         {
           "owner": "郝卓迪",
@@ -77785,7 +77790,7 @@
               "reviews/2026/AlearnerDL-icra-supplement-20261119.json"
             ]
           },
-          "commits_7d": 131
+          "commits_7d": 130
         },
         {
           "owner": "龙兆科",
@@ -77944,9 +77949,9 @@
         "2026": {
           "sources": 51,
           "delivered": 36,
-          "official": 50,
+          "official": 51,
           "pending": 0,
-          "open_issues": 1,
+          "open_issues": 0,
           "status": "in_progress"
         }
       },
@@ -77956,15 +77961,15 @@
         "2025"
       ],
       "last_update": {
-        "at": "2026-11-20T20:52:18+08:00",
-        "author": "朱长昊",
-        "subject": "2026: 校正朱长昊精筛审计计数（include 1106 / exclude 1849，与评审文件一致）",
+        "at": "2026-11-21T01:02:26+08:00",
+        "author": "zch66883",
+        "subject": "论文精筛 zch66883：SDM 2026 按锁定采集时点 DBLP 参考口径对账结项（参考 0 条、未决差异 0），清除官网总数未核实告警",
         "area": "reviews",
         "paths": [
-          "reviews/2026/zch66883/screening-20261120/audit.json"
+          "reviews/2026/feedback/zch66883.json"
         ]
       },
-      "commits_7d": 20
+      "commits_7d": 21
     },
     {
       "owner": "郝卓迪",
@@ -78098,7 +78103,7 @@
           "reviews/2026/AlearnerDL-icra-supplement-20261119.json"
         ]
       },
-      "commits_7d": 131
+      "commits_7d": 130
     },
     {
       "owner": "王梦冉",
@@ -78325,7 +78330,7 @@
           "reviews/2026/feedback/nydiii.json"
         ]
       },
-      "commits_7d": 87
+      "commits_7d": 85
     },
     {
       "owner": "李雪婷",
@@ -78375,9 +78380,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-20T12:53:30.209822+00:00",
+    "generated_at": "2026-11-20T17:03:41.918977+00:00",
     "history_available": true,
-    "commit": "c0dbd0be89a634c18c655cbdbdd71895156c5b06",
-    "commits_scanned": 1375
+    "commit": "c48b2d90cad21e0c7ab43fbb6c3c069232e737b1",
+    "commits_scanned": 1377
   }
 }
