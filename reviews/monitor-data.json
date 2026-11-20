@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-20T07:00:41.806496+00:00",
-  "commit": "82134cde1399781a9ad3452d7101a1c01fb3ca8a",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/82134cde1399781a9ad3452d7101a1c01fb3ca8a/",
+  "generated_at": "2026-11-20T07:34:35.218394+00:00",
+  "commit": "1d407102803a316663f1b8c7fd833cb9a07aba96",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/1d407102803a316663f1b8c7fd833cb9a07aba96/",
   "years": [
     {
       "year": 2024,
@@ -26741,17 +26741,18 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-19T18:00:05-08:00",
+            "at": "2026-11-19T23:32:02-08:00",
             "author": "ebo",
-            "subject": "review: verify SECON has no 2025 edition",
+            "subject": "review: complete machine tools journal 2025 catalogue and 3 AI4S additions",
             "area": "reviews",
             "paths": [
-              "reviews/2025/AlearnerDL/closure-20261119/README.md",
-              "reviews/2025/AlearnerDL/closure-20261119/secon-catalogue-audit.json",
-              "reviews/2025/feedback/AlearnerDL.json"
+              "metadata/2025/ai4s.json",
+              "metadata/j-0b805d1731/2025/ai4s.json",
+              "reviews/2025/AlearnerDL.json",
+              "reviews/2025/AlearnerDL/closure-20261119/README.md"
             ]
           },
-          "commits_7d": 149
+          "commits_7d": 150
         },
         {
           "owner": "南耀笛",
@@ -29721,26 +29722,42 @@
           "papers": 58,
           "papers_missing_abstract": 49,
           "snapshot_candidates": 0,
-          "candidates": 0,
+          "candidates": 3,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 58,
+          "official_scope": "2025正式卷期204–213共10卷，含全部目录条目58条（47篇研究/综述/Short Communication正文、10条Editorial Board及1条Erratum）；非研究条目保留在原全量，候选精筛排除非研究类型。",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
-          "issues": [
-            "采集状态尚未完成：abstract_incomplete",
-            "官网同口径总数尚未确认。"
+          "coverage_note": "正常Chrome逐卷核对2025年204–213共10卷，58个唯一官方PII及规范化题名全部与全量逐项一致，Crossref按ISSN0890-6955及2025印刷年另返回58条且DOI集合一致。原候选0，核实补入3篇（热误差AI补偿综述、LLM焊接物理方程发现、焊接ML综述），均有完整原摘要及明确AI工程任务，3纳入、候选缺摘要/待定/未审0。原全量非候选的摘要缺口不作为候选缺摘要指标。",
+          "evidence_urls": [
+            "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/issues",
+            "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/vol/204/suppl/C",
+            "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/vol/205/suppl/C",
+            "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/vol/206/suppl/C",
+            "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/vol/207/suppl/C",
+            "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/vol/208/suppl/C",
+            "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/vol/209/suppl/C",
+            "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/vol/210/suppl/C",
+            "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/vol/211/suppl/C",
+            "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/vol/212/suppl/C",
+            "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/vol/213/suppl/C"
           ],
+          "decisions": {
+            "include": 3,
+            "exclude": 0,
+            "pending": 0,
+            "unreviewed": 0
+          },
+          "issues": [],
           "actions": [
-            "检查采集状态与失败日志，必要时补采。",
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2025/AlearnerDL.json",
+            "reviews/2025/feedback/AlearnerDL.json"
+          ],
           "snapshot_at": "2026-11-09T10:51:18+08:00",
-          "final_included": null,
-          "final_missing_abstract": null,
+          "final_included": 3,
+          "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
           "abstract_recovered": 0,
@@ -29748,7 +29765,27 @@
           "abstract_full_text_reviewed": 0,
           "abstract_closed_by_owner": 0,
           "abstract_nonresearch_excluded": 0,
-          "abstract_supplement_required": 0
+          "abstract_supplement_required": 0,
+          "collection_state_resolution": {
+            "status": "resolved_for_candidate_review",
+            "original_state": "abstract_incomplete",
+            "reason": "full_catalogue_abstract_gap_candidates_complete",
+            "checked_by": "龙兆科",
+            "checked_at": "2026-11-19",
+            "evidence_urls": [
+              "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/issues",
+              "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/vol/204/suppl/C",
+              "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/vol/205/suppl/C",
+              "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/vol/206/suppl/C",
+              "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/vol/207/suppl/C",
+              "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/vol/208/suppl/C",
+              "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/vol/209/suppl/C",
+              "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/vol/210/suppl/C",
+              "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/vol/211/suppl/C",
+              "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/vol/212/suppl/C",
+              "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/vol/213/suppl/C"
+            ]
+          }
         },
         {
           "code": "j-0cb9ab9944",
@@ -49400,23 +49437,24 @@
         {
           "owner": "龙兆科",
           "sources": 49,
-          "delivered": 46,
-          "official": 19,
+          "delivered": 47,
+          "official": 20,
           "pending": 754,
-          "open_issues": 31,
+          "open_issues": 30,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-19T18:00:05-08:00",
+            "at": "2026-11-19T23:32:02-08:00",
             "author": "ebo",
-            "subject": "review: verify SECON has no 2025 edition",
+            "subject": "review: complete machine tools journal 2025 catalogue and 3 AI4S additions",
             "area": "reviews",
             "paths": [
-              "reviews/2025/AlearnerDL/closure-20261119/README.md",
-              "reviews/2025/AlearnerDL/closure-20261119/secon-catalogue-audit.json",
-              "reviews/2025/feedback/AlearnerDL.json"
+              "metadata/2025/ai4s.json",
+              "metadata/j-0b805d1731/2025/ai4s.json",
+              "reviews/2025/AlearnerDL.json",
+              "reviews/2025/AlearnerDL/closure-20261119/README.md"
             ]
           },
-          "commits_7d": 149
+          "commits_7d": 150
         }
       ],
       "snapshot_file": "metadata/2025/snapshot.json",
@@ -77702,17 +77740,18 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-19T18:00:05-08:00",
+            "at": "2026-11-19T23:32:02-08:00",
             "author": "ebo",
-            "subject": "review: verify SECON has no 2025 edition",
+            "subject": "review: complete machine tools journal 2025 catalogue and 3 AI4S additions",
             "area": "reviews",
             "paths": [
-              "reviews/2025/AlearnerDL/closure-20261119/README.md",
-              "reviews/2025/AlearnerDL/closure-20261119/secon-catalogue-audit.json",
-              "reviews/2025/feedback/AlearnerDL.json"
+              "metadata/2025/ai4s.json",
+              "metadata/j-0b805d1731/2025/ai4s.json",
+              "reviews/2025/AlearnerDL.json",
+              "reviews/2025/AlearnerDL/closure-20261119/README.md"
             ]
           },
-          "commits_7d": 149
+          "commits_7d": 150
         },
         {
           "owner": "王梦冉",
@@ -78162,10 +78201,10 @@
         },
         "2025": {
           "sources": 49,
-          "delivered": 46,
-          "official": 19,
+          "delivered": 47,
+          "official": 20,
           "pending": 754,
-          "open_issues": 31,
+          "open_issues": 30,
           "status": "in_progress"
         },
         "2026": {
@@ -78178,20 +78217,21 @@
         }
       },
       "sources": 147,
-      "delivered": 130,
+      "delivered": 131,
       "not_started": [],
       "last_update": {
-        "at": "2026-11-19T18:00:05-08:00",
+        "at": "2026-11-19T23:32:02-08:00",
         "author": "ebo",
-        "subject": "review: verify SECON has no 2025 edition",
+        "subject": "review: complete machine tools journal 2025 catalogue and 3 AI4S additions",
         "area": "reviews",
         "paths": [
-          "reviews/2025/AlearnerDL/closure-20261119/README.md",
-          "reviews/2025/AlearnerDL/closure-20261119/secon-catalogue-audit.json",
-          "reviews/2025/feedback/AlearnerDL.json"
+          "metadata/2025/ai4s.json",
+          "metadata/j-0b805d1731/2025/ai4s.json",
+          "reviews/2025/AlearnerDL.json",
+          "reviews/2025/AlearnerDL/closure-20261119/README.md"
         ]
       },
-      "commits_7d": 149
+      "commits_7d": 150
     },
     {
       "owner": "南耀笛",
@@ -78283,9 +78323,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-20T06:59:54.917486+00:00",
+    "generated_at": "2026-11-20T07:33:45.530991+00:00",
     "history_available": true,
-    "commit": "82134cde1399781a9ad3452d7101a1c01fb3ca8a",
-    "commits_scanned": 1367
+    "commit": "1d407102803a316663f1b8c7fd833cb9a07aba96",
+    "commits_scanned": 1369
   }
 }
