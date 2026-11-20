@@ -43528,31 +43528,29 @@
     "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
     "official_total": null,
     "official_scope": "2026年截至核验日期的正式目录；需对齐出版年、文种及在线优先范围",
-    "coverage_note": "本轮实际补采1条，原采集136条已完整保留；修复后同口径137条逐DOI与参考目录一一对应，快照后首次登记5条单列。候选精筛：纳入24、排除6、待定3、未审0；候选待补原摘要1条。参考数不冒充官网总数。",
+    "coverage_note": "2026-11-20依据出版方COMMENT栏目、正式PDF及作者机构原摘要核实3条待定，按2篇Comment和1篇Viewpoint排除；正常浏览器逐项核对101026社论全文，无独立Abstract/Summary，以可验证非研究文种免摘要要求结案，不生成或挪用正文作摘要。当前纳入24、排除9、待定0、未审0；候选原摘要待补0条。",
     "evidence_urls": [
-      "https://api.crossref.org/journals/2589-7500/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN"
+      "https://api.crossref.org/journals/2589-7500/works?filter=from-pub-date%3A2026-01-01%2Cuntil-pub-date%3A2026-12-31%2Ctype%3Ajournal-article&rows=1000&offset=0&select=DOI%2Ctitle%2Cpublished%2Cpublished-print%2Cpublished-online%2Ccreated%2Ctype%2CISSN",
+      "https://www.thelancet.com/journals/landig/article/PIIS2589-7500(26)00049-X/fulltext",
+      "https://www.digitalpsych.org/publications/",
+      "https://www.sciencedirect.com/science/article/pii/S2589750025001566",
+      "https://www.thelancet.com/journals/landig/article/PIIS2589-7500(26)00035-X/fulltext",
+      "https://www.thelancet.com/journals/landig/article/PIIS2589-7500(26)00036-1/fulltext",
+      "https://iaisoc.com/wp-content/uploads/2026/08/2026-Lancet-Digital-Health-Towards-a-unified-foundation-model-for-medical-imaging.pdf"
     ],
-    "issues": [
-      "候选原摘要缺失1条，尚未结案",
-      "待定3条"
-    ],
-    "next_actions": [
-      "继续取得出版方/作者机构原摘要或核实文种，不用生成摘要补齐",
-      "按逐篇记录中明确缺证定位，补原文、原摘要或实质AI方法证据",
-      "继续取得出版方/作者机构原摘要或核实文种，不用生成摘要补齐",
-      "按逐篇记录中明确缺证定位，补原文、原摘要或实质AI方法证据"
-    ],
+    "issues": [],
+    "next_actions": [],
     "review_progress": {
       "include": 24,
-      "exclude": 6,
-      "pending": 3,
+      "exclude": 9,
+      "pending": 0,
       "unreviewed": 0
     },
-    "abstract_backfill_remaining": 1,
+    "abstract_backfill_remaining": 0,
     "abstract_availability_summary": {
       "candidate_empty": 1,
-      "publisher_no_standalone_abstract": 0,
-      "unresolved": 1
+      "publisher_no_standalone_abstract": 1,
+      "unresolved": 0
     },
     "reference_check": {
       "status": "complete",
@@ -143127,8 +143125,8 @@
     "source_code": "eccv",
     "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
     "official_total": 2834,
-    "official_scope": "2026主会官方AcceptedPapers当前正式poster链接去重，共2851行、2834篇；原始快照仍待补采与非论文清理",
-    "coverage_note": "已完成本批候选首轮审阅；纳入164、排除271、待定0、未审0。候选待补原摘要0条；已核实无独立摘要的非研究文种0条，原记录保留。总量参考接口尚未成功取得完整目录，保留待核。官网核验完整目录2851行/2834个正式论文URL。原快照2841行/2824个URL，包含隐私政策1条并漏掉11个含Projection/Projective题名的论文；代码修复和真实页面回放验证已完成。候选3组重复仅保留审计，不重复计数。已从上述漏项先补入有原摘要和正式PDF的NeLU3D候选1篇并完成纳入审核；全量快照尚未改写。",
+    "official_scope": "2026主会正式AcceptedPapers目录，按稳定Poster URL及论文ID去重，不含Workshop和非论文链接；2851展示行对应2834篇。2026-11-20复核，与2026-11-17已存官方目录逐URL一致。",
+    "coverage_note": "已实际回填11篇官方论文，移出1条PrivacyPolicy非论文，合并17条逐字段相同的重复原始记录；原始采集和年度总集均已更新为2834条且与官网2834个URL一一对应。候选3组重复仅保留规范记录，所有旧副本与审核理由完整存入本轮审计；补齐此前仅在年度候选中的NeLU3D至来源候选，重跑原规则另命中2篇通用视觉方法，均据原摘要排除。当前候选434篇：纳入164、排除270、待定0、未审0，摘要缺口0。",
     "evidence_urls": [
       "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/12210.pdf",
       "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/9447.pdf",
@@ -143160,19 +143158,24 @@
       "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/468.pdf",
       "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/10699.pdf",
       "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/2601.pdf",
-      "https://eccv.ecva.net/Conferences/2026/AcceptedPapers"
+      "https://eccv.ecva.net/Conferences/2026/AcceptedPapers",
+      "https://eccv.ecva.net/virtual/2026/poster/4570",
+      "https://eccv.ecva.net/virtual/2026/poster/4822",
+      "https://eccv.ecva.net/virtual/2026/poster/3447",
+      "https://eccv.ecva.net/virtual/2026/poster/4914",
+      "https://eccv.ecva.net/virtual/2026/poster/3150",
+      "https://eccv.ecva.net/virtual/2026/poster/3167",
+      "https://eccv.ecva.net/virtual/2026/poster/5176",
+      "https://eccv.ecva.net/virtual/2026/poster/5817",
+      "https://eccv.ecva.net/virtual/2026/poster/5408",
+      "https://eccv.ecva.net/virtual/2026/poster/5456",
+      "https://eccv.ecva.net/virtual/2026/poster/4820"
     ],
-    "issues": [
-      "总量尚未核对",
-      "官方目录核实漏采11篇、混入PrivacyPolicy非论文1条；解析规则已修复，原始全量快照尚待补采/清理"
-    ],
-    "next_actions": [
-      "核对截至日期的官网目录与采集口径",
-      "使用修复后的ECCV解析器补采审计中列出的11篇，清理PrivacyPolicy记录，并核对全量17个重复URL；原候选3组重复已按去重口径核实"
-    ],
+    "issues": [],
+    "next_actions": [],
     "review_progress": {
       "include": 164,
-      "exclude": 271,
+      "exclude": 270,
       "pending": 0,
       "unreviewed": 0
     },
@@ -143181,7 +143184,18 @@
       "candidate_empty": 0,
       "publisher_no_standalone_abstract": 0,
       "unresolved": 0
-    }
+    },
+    "owner": "郝卓迪",
+    "github_username": "Jodie628",
+    "catalogue_reconciliation": {
+      "current_raw_count": 2834,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "official_unique_count": 2834,
+      "checked_at": "2026-11-20"
+    },
+    "catalogue_audit_file": "reviews/2026/audits/Jodie628-eccv-repair-20261120.json"
   },
   {
     "year": 2026,
