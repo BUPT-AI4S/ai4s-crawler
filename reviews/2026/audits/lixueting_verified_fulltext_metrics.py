@@ -1,11 +1,13 @@
-"""Publish the five content-reviewed AI4S decisions without inventing abstracts.
+"""Publish validated body-review metrics and zero-candidate catalogue deliveries.
 
-Only Li Xueting's named 2026 records qualify. The pinned monitor's complete
-proof validator is reused; stale, conflicting, or incomplete records stay missing.
-Original missingness remains in a separate field and in the original records.
+Li Xueting's named 2026 body-review records retain their existing proof rules.
+A complete, identity-verified 2025 Oncogenesis catalogue with zero candidates
+also counts as a delivery. No paper reviews are invented; other owners and
+years remain unchanged. Stale or incomplete proofs do not qualify.
 """
 import argparse
 import copy
+import hashlib
 import importlib.util
 import json
 from collections import Counter, defaultdict
@@ -120,6 +122,108 @@ def resolve_metrics(data, reviews, candidates, validator):
     return result, audit
 
 
+def resolve_zero_candidate_delivery(data, repo, monitor):
+    """Count the audited 2025 Oncogenesis delivery without creating paper reviews.
+
+    This is deliberately limited to the authorized owner/year/source. The pinned
+    monitor still validates the complete catalogue identities and scope, and its
+    normal owner classifier retains every other source's issues and pending work.
+    """
+    result = copy.deepcopy(data)
+    target_year, code = 2025, 'nature-oncsis'
+    years = [y for y in result.get('years', []) if y.get('year') == target_year]
+    audit = {'owner': OWNER, 'year': target_year, 'source_code': code,
+             'proof_accepted': False, 'basis': 'verified_zero_candidate_full_catalogue'}
+    if len(years) != 1:
+        return result, audit
+    year = years[0]
+    sources = [s for s in year.get('sources', []) if s.get('code') == code]
+    owner_rows = [r for r in year.get('owners', []) if r.get('owner') == OWNER]
+    if len(sources) != 1 or len(owner_rows) != 1:
+        return result, audit
+    source, repo = sources[0], Path(repo)
+    feedback_path = repo / 'reviews/2025/feedback/zch66883-lixueting.json'
+    candidates_path = repo / 'metadata/2025/ai4s.json'
+    reviews_path = repo / 'reviews/2025/zch66883-lixueting.json'
+    try:
+        feedback = json.loads(feedback_path.read_text())
+        candidates = json.loads(candidates_path.read_text())
+        reviews = json.loads(reviews_path.read_text()) if reviews_path.exists() else []
+    except (OSError, ValueError, TypeError):
+        return result, audit
+    if not isinstance(feedback, list) or not isinstance(candidates, list) or not isinstance(reviews, list):
+        return result, audit
+    rows = [r for r in feedback if isinstance(r, dict)
+            and r.get('source_code') == code and r.get('year') == target_year]
+    if len(rows) != 1:
+        return result, audit
+    row = rows[0]
+    zero = dict.fromkeys(('include', 'exclude', 'pending', 'unreviewed'), 0)
+
+    def exact_zero_counts(value):
+        return (isinstance(value, dict) and value.keys() == zero.keys()
+                and all(type(v) is int and v == 0 for v in value.values()))
+
+    proof = row.get('review_scope')
+    valid = (source.get('owner') == OWNER
+             and source.get('snapshot_at') == year.get('captured_at')
+             and bool(source.get('snapshot_at'))
+             and row.get('owner') == OWNER
+             and row.get('github_username') == feedback_path.stem
+             and row.get('snapshot_at') == source.get('snapshot_at')
+             and row.get('source_complete') is True
+             and row.get('completion_status') == row.get('work_status') == 'complete'
+             and row.get('issues') == [] and row.get('next_actions') == []
+             and source.get('issues') == [] and source.get('decisions') is None
+             and type(source.get('papers')) is int and source['papers'] > 0
+             and all(type(v) is int and v == 0 for v in (
+                 source.get('candidates'), source.get('missing_abstract'),
+                 source.get('abstract_supplement_required'), row.get('candidate_count'),
+                 row.get('candidate_total'), row.get('own_review_count'),
+                 row.get('candidate_missing_abstracts_remaining')))
+             and exact_zero_counts(row.get('own_review_counts'))
+             and exact_zero_counts(row.get('review_counts'))
+             and isinstance(proof, dict) and proof.get('owner') == OWNER
+             and proof.get('source_code') == code and proof.get('year') == target_year
+             and type(proof.get('candidate_count')) is int and proof['candidate_count'] == 0
+             and proof.get('candidate_ids_sha256') == hashlib.sha256(b'[]').hexdigest()
+             and monitor.aware_timestamp(proof.get('checked_at'))
+             and not any(isinstance(r, dict) and r.get('venue') == code for r in candidates)
+             and not any(isinstance(r, dict) and r.get('venue') == code for r in reviews)
+             and isinstance(row.get('catalogue_audit'), dict)
+             and monitor.verified_audited_catalogue(repo, target_year, source, row))
+    if not valid:
+        return result, audit
+    source['source_delivery'] = {
+        'status': 'complete', 'reason': 'verified_zero_candidate_full_catalogue',
+        'owner': OWNER, 'year': target_year, 'snapshot_at': source['snapshot_at'],
+        'candidate_count': 0, 'review_counts': zero,
+        'catalogue_audit_file': row['catalogue_audit']['details_file'],
+        'checked_at': proof['checked_at'], 'evidence_urls': row.get('evidence_urls', []),
+    }
+    source['final_included'] = 0
+    source['final_missing_abstract'] = 0
+    # The normal source decisions remain None: this is a delivery of a complete
+    # zero-candidate audit, never an invented include/exclude paper or review.
+    summary = next(r for r in monitor.summarize_owners(year['sources'], {}) if r['owner'] == OWNER)
+    summary['delivered'] += 1
+    summary['status'] = monitor.classify_owner(summary)
+    keys = ('sources', 'delivered', 'official', 'pending', 'open_issues', 'status')
+    owner_rows[0].update({k: summary[k] for k in keys})
+    for owner in result.get('owners', []):
+        if owner.get('owner') != OWNER:
+            continue
+        owner['years'][str(target_year)] = {k: summary[k] for k in keys}
+        owner['sources'] = sum(v['sources'] for v in owner['years'].values())
+        owner['delivered'] = sum(v['delivered'] for v in owner['years'].values())
+        owner['not_started'] = sorted(k for k, v in owner['years'].items()
+                                      if v['status'] == 'not_started')
+    audit.update(proof_accepted=True, snapshot_at=source['snapshot_at'],
+                 delivered=summary['delivered'], sources=summary['sources'],
+                 status=summary['status'])
+    return result, audit
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--repo', type=Path, default=Path('.'))
@@ -132,9 +236,11 @@ def main():
     path = args.repo / 'reviews/monitor-data.json'
     data, audit = resolve_metrics(read(path), read(args.repo / 'reviews/2026/zch66883-lixueting.json'),
         read(args.repo / 'metadata/2026/ai4s.json'), monitor.full_text_abstract_exemption)
+    data, delivery_audit = resolve_zero_candidate_delivery(data, args.repo, monitor)
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
     (args.repo / 'reviews/2026/lixueting-no-abstract-content-review.json').write_text(json.dumps(audit, ensure_ascii=False, indent=2) + '\n')
     print('Content-reviewed original-no-abstract records accepted:', sum(r['proof_accepted'] for r in audit['records']))
+    print('Verified zero-candidate catalogue delivery accepted:', delivery_audit['proof_accepted'])
 
 
 if __name__ == '__main__':
