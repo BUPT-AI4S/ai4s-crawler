@@ -828,18 +828,26 @@
   "owner": "朱长昊",
   "github_username": "zch66883",
   "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-  "updated_at": "2026-11-20",
+  "updated_at": "2026-11-21",
   "official_total": null,
-  "official_scope": "DBLP 2026 stream 计数，与采集器同口径",
-  "coverage_note": "SIAM SDM 2026 官网录用总数尚未核实（2026 采集快照无候选记录）；官方总数以 null 记录，待官网程序页更新。",
+  "official_scope": "",
+  "coverage_note": "SDM26 会期 2026-11-19/20（Salt Lake City），论文集 2026-11-12 才上线，晚于 2026-11-08 采集快照；快照时点 DBLP 参考 stream 与采集条目均为 0，按锁定采集时点对账结项。论文集会后上线，后续若按出版社正式目录对账需重新采集。",
   "evidence_urls": [
-   "https://sparql.dblp.org/sparql?query=SELECT+%28COUNT%28DISTINCT+%3Fs%29+AS+%3Fn%29+WHERE+%7B+%3Fs+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23publishedInStream%3E+%3Chttps%3A%2F%2Fdblp.org%2Fstreams%2Fconf%2Fsdm%3E+%3B+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23yearOfPublication%3E+%222026%22%5E%5E%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23gYear%3E+%7D&format=json"
+   "https://sparql.dblp.org/sparql?query=SELECT+%28COUNT%28DISTINCT+%3Fs%29+AS+%3Fn%29+WHERE+%7B+%3Fs+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23publishedInStream%3E+%3Chttps%3A%2F%2Fdblp.org%2Fstreams%2Fconf%2Fsdm%3E+%3B+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23yearOfPublication%3E+%222026%22%5E%5E%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23gYear%3E+%7D&format=json",
+   "https://www.siam.org/conferences-events/siam-conferences/sdm26/"
   ],
-  "issues": [
-   "SIAM SDM 2026 官网录用总数未核实，official_total 暂记 null。"
-  ],
+  "issues": [],
   "next_actions": [],
-  "audit_file": "reviews/2026/zch66883/screening-20261120/audit.json"
+  "audit_file": "reviews/2026/zch66883/screening-20261120/audit.json",
+  "reference_check": {
+   "source": "DBLP stream 参考口径（替代来源，非出版社正式卷期总数）",
+   "status": "complete",
+   "total": 0,
+   "scope": "按 2026-11-08 锁定采集时点核对：DBLP conf/sdm 2026 stream 当时登记 0 条，与采集快照 0 条一致；SDM26 会期 2026-11-19/20，论文集 2026-11-12 上线，晚于采集快照，未回溯改动快照。",
+   "query_url": "https://sparql.dblp.org/sparql?query=SELECT+%28COUNT%28DISTINCT+%3Fs%29+AS+%3Fn%29+WHERE+%7B+%3Fs+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23publishedInStream%3E+%3Chttps%3A%2F%2Fdblp.org%2Fstreams%2Fconf%2Fsdm%3E+%3B+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23yearOfPublication%3E+%222026%22%5E%5E%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23gYear%3E+%7D&format=json",
+   "checked_at": "2026-11-20T18:30:00+08:00",
+   "unresolved": 0
+  }
  },
  {
   "year": 2026,
