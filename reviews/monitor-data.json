@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-24T08:18:11.958305+00:00",
-  "commit": "cf0296aa5686ad7c46907702172a415bd8923087",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/cf0296aa5686ad7c46907702172a415bd8923087/",
+  "generated_at": "2026-11-24T08:33:09.661227+00:00",
+  "commit": "fed73ec7b7938b9c8694c7213d9812cf3545dc53",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/fed73ec7b7938b9c8694c7213d9812cf3545dc53/",
   "years": [
     {
       "year": 2024,
@@ -26217,25 +26217,35 @@
           "papers": 299,
           "papers_missing_abstract": 0,
           "snapshot_candidates": 29,
-          "candidates": 29,
+          "candidates": 9,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 299,
+          "official_scope": "官方论文集收录（proceedings.colm.cc，2024）",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
-          "issues": [
-            "官网同口径总数尚未确认。",
-            "尚未找到逐篇审核交付。"
+          "coverage_note": "参考核对：官方论文集收录 299 条、采集 299 条，数目一致，摘要覆盖 100%、无重复 ID。官网未提供可枚举的年度目录接口，未做独立二次计数。逐篇交付 29 条：纳入 9、排除 20、待定 0、未审 0；当前候选 9 条，候选缺摘要 0 条。",
+          "evidence_urls": [
+            "https://proceedings.colm.cc/",
+            "https://colmweb.org/",
+            "https://proceedings.colm.cc/",
+            "https://colmweb.org/"
           ],
+          "decisions": {
+            "include": 9,
+            "exclude": 20,
+            "pending": 0,
+            "unreviewed": 0
+          },
+          "issues": [],
           "actions": [
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "提交逐篇审核结果或说明当前进度。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2024/Roman100021.json",
+            "reviews/2024/Roman100021/coverage.json",
+            "reviews/2024/feedback/Roman100021.json"
+          ],
           "snapshot_at": "2026-11-05T10:31:19.144426+08:00",
-          "final_included": null,
+          "final_included": 9,
           "final_missing_abstract": null,
           "unsynced_included": 0,
           "unsynced_missing_abstract": null,
@@ -26267,7 +26277,7 @@
               "reviews/2026/Jodie628.json"
             ]
           },
-          "commits_7d": 135
+          "commits_7d": 132
         },
         {
           "owner": "丁利军",
@@ -26309,28 +26319,6 @@
             ]
           },
           "commits_7d": 83
-        },
-        {
-          "owner": "乔徐阳",
-          "sources": 36,
-          "delivered": 35,
-          "official": 35,
-          "pending": 0,
-          "open_issues": 1,
-          "status": "in_progress",
-          "last_update": {
-            "at": "2026-11-24T16:14:48+08:00",
-            "author": "Roman",
-            "subject": "Assign existing COLM papers to Qiao Xuyang",
-            "area": "metadata",
-            "paths": [
-              "metadata/2024/ai4s.json",
-              "metadata/2024/snapshot.json",
-              "metadata/2025/ai4s.json",
-              "metadata/2025/snapshot.json"
-            ]
-          },
-          "commits_7d": 14
         },
         {
           "owner": "南耀笛",
@@ -26450,6 +26438,28 @@
             ]
           },
           "commits_7d": 6
+        },
+        {
+          "owner": "乔徐阳",
+          "sources": 36,
+          "delivered": 36,
+          "official": 36,
+          "pending": 0,
+          "open_issues": 0,
+          "status": "complete",
+          "last_update": {
+            "at": "2026-11-24T16:30:07+08:00",
+            "author": "Roman",
+            "subject": "COLM 候选逐条复核：2024 保留 9/剔除 20，2026 保留 22/剔除 109",
+            "area": "reviews",
+            "paths": [
+              "metadata/2024/ai4s.json",
+              "metadata/2026/ai4s.json",
+              "reviews/2024/Roman100021.json",
+              "reviews/2024/Roman100021/action-report.md"
+            ]
+          },
+          "commits_7d": 15
         }
       ],
       "snapshot_file": "metadata/2024/snapshot.json",
@@ -48142,18 +48152,18 @@
           "open_issues": 36,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-24T16:14:48+08:00",
+            "at": "2026-11-24T16:30:07+08:00",
             "author": "Roman",
-            "subject": "Assign existing COLM papers to Qiao Xuyang",
-            "area": "metadata",
+            "subject": "COLM 候选逐条复核：2024 保留 9/剔除 20，2026 保留 22/剔除 109",
+            "area": "reviews",
             "paths": [
               "metadata/2024/ai4s.json",
-              "metadata/2024/snapshot.json",
-              "metadata/2025/ai4s.json",
-              "metadata/2025/snapshot.json"
+              "metadata/2026/ai4s.json",
+              "reviews/2024/Roman100021.json",
+              "reviews/2024/Roman100021/action-report.md"
             ]
           },
-          "commits_7d": 14
+          "commits_7d": 15
         },
         {
           "owner": "南耀笛",
@@ -48194,7 +48204,7 @@
               "reviews/2026/Jodie628.json"
             ]
           },
-          "commits_7d": 135
+          "commits_7d": 132
         },
         {
           "owner": "龙兆科",
@@ -75589,26 +75599,36 @@
           "papers": 856,
           "papers_missing_abstract": 0,
           "snapshot_candidates": 131,
-          "candidates": 131,
+          "candidates": 22,
           "missing_abstract": 0,
-          "official_total": null,
-          "official_scope": "",
+          "official_total": 856,
+          "official_scope": "官方论文集收录（proceedings.colm.cc，2026）",
           "reference_check": null,
-          "coverage_note": "",
-          "evidence_urls": [],
-          "decisions": null,
-          "issues": [
-            "官网同口径总数尚未确认。",
-            "尚未找到逐篇审核交付。"
+          "coverage_note": "参考核对：官方论文集收录 856 条、采集 856 条，数目一致，摘要覆盖 100%、无重复 ID。官网未提供可枚举的年度目录接口，未做独立二次计数。。逐篇交付 131 条：纳入 22、排除 109、待定 0、未审 0；当前候选 22 条，候选缺摘要 0 条。",
+          "evidence_urls": [
+            "https://proceedings.colm.cc/",
+            "https://colmweb.org/",
+            "https://proceedings.colm.cc/",
+            "https://colmweb.org/"
           ],
+          "decisions": {
+            "include": 22,
+            "exclude": 109,
+            "pending": 0,
+            "unreviewed": 0
+          },
+          "issues": [],
           "actions": [
-            "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。",
-            "提交逐篇审核结果或说明当前进度。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
-          "files": [],
+          "files": [
+            "reviews/2026/Roman100021.json",
+            "reviews/2026/Roman100021/coverage.json",
+            "reviews/2026/feedback/Roman100021.json"
+          ],
           "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-          "final_included": null,
-          "final_missing_abstract": null,
+          "final_included": 22,
+          "final_missing_abstract": 0,
           "unsynced_included": 0,
           "unsynced_missing_abstract": 0,
           "abstract_recovered": 0,
@@ -75677,7 +75697,7 @@
               "reviews/2026/Jodie628.json"
             ]
           },
-          "commits_7d": 135
+          "commits_7d": 132
         },
         {
           "owner": "郝卓迪",
@@ -75785,24 +75805,24 @@
         {
           "owner": "乔徐阳",
           "sources": 36,
-          "delivered": 34,
-          "official": 35,
+          "delivered": 35,
+          "official": 36,
           "pending": 0,
-          "open_issues": 1,
+          "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-24T16:14:48+08:00",
+            "at": "2026-11-24T16:30:07+08:00",
             "author": "Roman",
-            "subject": "Assign existing COLM papers to Qiao Xuyang",
-            "area": "metadata",
+            "subject": "COLM 候选逐条复核：2024 保留 9/剔除 20，2026 保留 22/剔除 109",
+            "area": "reviews",
             "paths": [
               "metadata/2024/ai4s.json",
-              "metadata/2024/snapshot.json",
-              "metadata/2025/ai4s.json",
-              "metadata/2025/snapshot.json"
+              "metadata/2026/ai4s.json",
+              "reviews/2024/Roman100021.json",
+              "reviews/2024/Roman100021/action-report.md"
             ]
           },
-          "commits_7d": 14
+          "commits_7d": 15
         },
         {
           "owner": "丁利军",
@@ -75830,53 +75850,6 @@
     }
   ],
   "owners": [
-    {
-      "owner": "乔徐阳",
-      "years": {
-        "2024": {
-          "sources": 36,
-          "delivered": 35,
-          "official": 35,
-          "pending": 0,
-          "open_issues": 1,
-          "status": "in_progress"
-        },
-        "2025": {
-          "sources": 36,
-          "delivered": 0,
-          "official": 0,
-          "pending": 0,
-          "open_issues": 36,
-          "status": "not_started"
-        },
-        "2026": {
-          "sources": 36,
-          "delivered": 34,
-          "official": 35,
-          "pending": 0,
-          "open_issues": 1,
-          "status": "in_progress"
-        }
-      },
-      "sources": 108,
-      "delivered": 69,
-      "not_started": [
-        "2025"
-      ],
-      "last_update": {
-        "at": "2026-11-24T16:14:48+08:00",
-        "author": "Roman",
-        "subject": "Assign existing COLM papers to Qiao Xuyang",
-        "area": "metadata",
-        "paths": [
-          "metadata/2024/ai4s.json",
-          "metadata/2024/snapshot.json",
-          "metadata/2025/ai4s.json",
-          "metadata/2025/snapshot.json"
-        ]
-      },
-      "commits_7d": 14
-    },
     {
       "owner": "朱长昊",
       "years": {
@@ -76147,6 +76120,53 @@
       "commits_7d": 6
     },
     {
+      "owner": "乔徐阳",
+      "years": {
+        "2024": {
+          "sources": 36,
+          "delivered": 36,
+          "official": 36,
+          "pending": 0,
+          "open_issues": 0,
+          "status": "complete"
+        },
+        "2025": {
+          "sources": 36,
+          "delivered": 0,
+          "official": 0,
+          "pending": 0,
+          "open_issues": 36,
+          "status": "not_started"
+        },
+        "2026": {
+          "sources": 36,
+          "delivered": 35,
+          "official": 36,
+          "pending": 0,
+          "open_issues": 0,
+          "status": "in_progress"
+        }
+      },
+      "sources": 108,
+      "delivered": 71,
+      "not_started": [
+        "2025"
+      ],
+      "last_update": {
+        "at": "2026-11-24T16:30:07+08:00",
+        "author": "Roman",
+        "subject": "COLM 候选逐条复核：2024 保留 9/剔除 20，2026 保留 22/剔除 109",
+        "area": "reviews",
+        "paths": [
+          "metadata/2024/ai4s.json",
+          "metadata/2026/ai4s.json",
+          "reviews/2024/Roman100021.json",
+          "reviews/2024/Roman100021/action-report.md"
+        ]
+      },
+      "commits_7d": 15
+    },
+    {
       "owner": "李雪婷",
       "years": {
         "2024": {
@@ -76189,7 +76209,7 @@
           "reviews/2026/Jodie628.json"
         ]
       },
-      "commits_7d": 135
+      "commits_7d": 132
     },
     {
       "owner": "龙兆科",
@@ -76281,9 +76301,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-24T08:17:28.367601+00:00",
+    "generated_at": "2026-11-24T08:32:16.522273+00:00",
     "history_available": true,
-    "commit": "cf0296aa5686ad7c46907702172a415bd8923087",
-    "commits_scanned": 1413
+    "commit": "fed73ec7b7938b9c8694c7213d9812cf3545dc53",
+    "commits_scanned": 1415
   }
 }
