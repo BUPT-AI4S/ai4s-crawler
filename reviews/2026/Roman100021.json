@@ -226,6 +226,91 @@
   }
  },
  {
+  "id": "098eb5e3dcda723e0c95b7d16f18497c",
+  "venue": "colm",
+  "year": 2026,
+  "track": null,
+  "title": "Goedel-Code-Prover: Hierarchical Proof Search for Open State-of-the-Art Code Verification",
+  "authors": [
+   "Zenan Li",
+   "Ziran Yang",
+   "Mike He",
+   "Haoyu Zhao",
+   "A. Zhao",
+   "Shange Tang",
+   "Kaiyu Yang",
+   "Aarti Gupta",
+   "Zhendong Su",
+   "Chi Jin"
+  ],
+  "author_ids": [],
+  "abstract": "Large language models (LLMs) can generate plausible code but offer limited guarantees of correctness. Formally verifying that implementations satisfy specifications requires constructing machine-checkable proofs, a task that remains beyond current automation. We propose a hierarchical proof search framework for automated code verification in Lean~4 that decomposes complex verification goals into structurally simpler subgoals before attempting tactic-level proving. Central to our approach is a principled decomposition score that combines constructive justification with structural effectiveness. The same score serves as both the training reward and the inference-time ranking criterion, aligning optimization and deployment. We train *Goedel Code Prover*, a single unified policy for both decomposition and completion, through supervised initialization followed by hybrid reinforcement learning, where a continuous decomposition reward supports planning exploration while supervised replay stabilizes proof generation. On three Lean-based code verification benchmarks comprising 427 tasks, our 8B-parameter model achieves a 62.0\\% prove success rate, a 2.6$\\times$ improvement over the strongest baseline under the reported inference settings. We further observe consistent inference-time scaling: success rates improve monotonically with search iterations and sampling budget, while whole-proof baselines plateau within the evaluated budgets.",
+  "keywords": [],
+  "tldr": null,
+  "primary_area": null,
+  "presentation": null,
+  "doi": null,
+  "pages": null,
+  "bibtex": null,
+  "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/098eb5e3dcda723e0c95b7d16f18497c-Abstract-Conference.html",
+  "pdf_url": "https://proceedings.colm.cc/paper_files/paper/2026/file/098eb5e3dcda723e0c95b7d16f18497c-Paper-Conference.pdf",
+  "code_url": null,
+  "project_url": null,
+  "published": null,
+  "source": "proceedings.colm.cc",
+  "venue_type": "conference",
+  "journal_title": null,
+  "issn": null,
+  "article_type": "proceedings-article",
+  "screening_status": null,
+  "conference_title": null,
+  "ccf_rank": null,
+  "ccf_field": null,
+  "ccf_catalog_version": null,
+  "ccf_paper_status": null,
+  "dblp_key": null,
+  "dblp_toc": null,
+  "booktitle": null,
+  "ai4s_review": {
+   "schema_version": 2,
+   "batch_id": "2026-Roman100021-20261108T213812+0800",
+   "owner": "乔徐阳",
+   "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+   "decision": "include",
+   "rationale": "训练统一的分解与补全策略，在Lean4中把代码验证目标拆成子目标并搜索证明，服务程序正确性的形式验证。",
+   "verified_metadata": {
+    "doi": null,
+    "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/098eb5e3dcda723e0c95b7d16f18497c-Abstract-Conference.html",
+    "evidence_urls": [
+     "https://proceedings.colm.cc/paper_files/paper/2026/hash/098eb5e3dcda723e0c95b7d16f18497c-Abstract-Conference.html"
+    ]
+   },
+   "tags": [
+    {
+     "axis": "task",
+     "label": "形式定理证明",
+     "label_en": "Formal theorem proving",
+     "evidence_location": "输入摘要",
+     "rationale": "Formally verifying that implementations satisfy specifications requires constructing machine-checkable proofs, a task that remains beyond current automation."
+    },
+    {
+     "axis": "method",
+     "label": "形式验证",
+     "label_en": "Formal verification",
+     "evidence_location": "输入摘要",
+     "rationale": "Formally verifying that implementations satisfy specifications requires constructing machine-checkable proofs, a task that remains beyond current automation."
+    },
+    {
+     "axis": "domain",
+     "label": "AI 用于信息科学",
+     "label_en": "AI for information science",
+     "evidence_location": "输入摘要",
+     "rationale": "训练统一的分解与补全策略，在Lean4中把代码验证目标拆成子目标并搜索证明，服务程序正确性的形式验证。"
+    }
+   ]
+  }
+ },
+ {
   "id": "0a2f65c9d2313b71005e600bd23393fe",
   "venue": "colm",
   "year": 2026,
@@ -1015,6 +1100,88 @@
   }
  },
  {
+  "id": "1c9706861b24655e43c4bf43354de09f",
+  "venue": "colm",
+  "year": 2026,
+  "track": null,
+  "title": "QualAlign: Benchmarking Automated Qualitative Coding Against Human Schemas",
+  "authors": [
+   "Taggert Smith",
+   "Chuong Nguyen",
+   "Qisen Yang",
+   "Oishani Bandopadhyay",
+   "Yaru Su",
+   "Nadia Polikarpova",
+   "Xinyu Pi"
+  ],
+  "author_ids": [],
+  "abstract": "Large language models are increasingly used for qualitative analysis, but existing inductive coding systems are difficult to compare because they use different datasets and system-specific evaluation metrics. We introduce \\textbf{QualAlign}, a human-grounded benchmark for automated qualitative coding spanning 8 public datasets, each with research questions, inductively-derived codebooks, and code-excerpt assignments produced by expert researchers. The benchmark measures alignment with human expert coding via these artifacts using lexical, semantic, and assignment-based scores. Under a shared setup, we compare four recent systems for inductive codebook generation: LLooM, ThematicLM, HICode, and LOGOS. We find that while human and LLM-produced codebooks show moderate semantic resemblance given the same datasets and research questions, lexical agreement scores remains low, indicating different vocabulary used to describe similar concepts. Moreover, code-excerpt assignments diverge dramatically: given semantically similar conceptual labels, LLMs still partition the data differently than human researchers. These patterns suggest that current systems may be useful for proposing candidate codes or surfacing broad conceptual patterns for analyst review and revision—similar to prior topic modeling methods; however, they cannot mimic human researchers' excerpt-level coding decisions. Based on these findings, we caution that LLM-generated codebooks that appear semantically similar to human work cannot necessarily be taken to represent a similar qualitative interpretation of the data, and thus should not replace the interpretive work of human coders.",
+  "keywords": [],
+  "tldr": null,
+  "primary_area": null,
+  "presentation": null,
+  "doi": null,
+  "pages": null,
+  "bibtex": null,
+  "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/1c9706861b24655e43c4bf43354de09f-Abstract-Conference.html",
+  "pdf_url": "https://proceedings.colm.cc/paper_files/paper/2026/file/1c9706861b24655e43c4bf43354de09f-Paper-Conference.pdf",
+  "code_url": null,
+  "project_url": null,
+  "published": null,
+  "source": "proceedings.colm.cc",
+  "venue_type": "conference",
+  "journal_title": null,
+  "issn": null,
+  "article_type": "proceedings-article",
+  "screening_status": null,
+  "conference_title": null,
+  "ccf_rank": null,
+  "ccf_field": null,
+  "ccf_catalog_version": null,
+  "ccf_paper_status": null,
+  "dblp_key": null,
+  "dblp_toc": null,
+  "booktitle": null,
+  "ai4s_review": {
+   "schema_version": 2,
+   "batch_id": "2026-Roman100021-20261108T213812+0800",
+   "owner": "乔徐阳",
+   "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+   "decision": "include",
+   "rationale": "构建8个数据集的定性编码基准，比较LLM系统生成编码本与专家编码的对齐度，服务社会科学质性分析。",
+   "verified_metadata": {
+    "doi": null,
+    "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/1c9706861b24655e43c4bf43354de09f-Abstract-Conference.html",
+    "evidence_urls": [
+     "https://proceedings.colm.cc/paper_files/paper/2026/hash/1c9706861b24655e43c4bf43354de09f-Abstract-Conference.html"
+    ]
+   },
+   "tags": [
+    {
+     "axis": "domain",
+     "label": "AI 用于社会科学",
+     "label_en": "AI for social sciences",
+     "evidence_location": "输入摘要",
+     "rationale": "构建8个数据集的定性编码基准，比较LLM系统生成编码本与专家编码的对齐度，服务社会科学质性分析。"
+    },
+    {
+     "axis": "evaluation",
+     "label": "科学评测",
+     "label_en": "Scientific evaluation",
+     "evidence_location": "输入摘要",
+     "rationale": "Large language models are increasingly used for qualitative analysis, but existing inductive coding systems are difficult to compare because they use different "
+    },
+    {
+     "axis": "method",
+     "label": "主题建模",
+     "label_en": "Topic modeling",
+     "evidence_location": "输入摘要",
+     "rationale": "These patterns suggest that current systems may be useful for proposing candidate codes or surfacing broad conceptual patterns for analyst review and revision—s"
+    }
+   ]
+  }
+ },
+ {
   "id": "1d49235669869ab737c1da9d64b7c769",
   "venue": "colm",
   "year": 2026,
@@ -1286,6 +1453,95 @@
      "label_en": "Genomic language model",
      "evidence_location": "输入摘要",
      "rationale": "Tokens serve as the basic units of representation in DNA language models (DNALMs), yet their design remains under-explored."
+    }
+   ]
+  }
+ },
+ {
+  "id": "20bc215c474ed38d70d0ec246c3d6361",
+  "venue": "colm",
+  "year": 2026,
+  "track": null,
+  "title": "CT Open: An Open-Access, Uncontaminated, Live Platform for the Open Challenge of Clinical Trial Outcome Prediction",
+  "authors": [
+   "Jianyou (Andre) Wang",
+   "Youze Zheng",
+   "Longtian Bao",
+   "Hanyuan Zhang",
+   "Qirui Zheng",
+   "Yuhan Chen",
+   "Yang Zhang",
+   "Matthew Feng",
+   "Maxim Khan",
+   "Aditya K Sehgal",
+   "Christopher Rosin",
+   "Ramamohan Paturi",
+   "Umber Dube",
+   "Leon Bergen"
+  ],
+  "author_ids": [],
+  "abstract": "Scientists have long sought to accurately predict outcomes of real-world events before they happen. Can AI systems do so more reliably? We study this question through clinical trial outcome prediction, a high-stakes open challenge even for domain experts. We introduce $\\textbf{CT Open}$, an open-access, live platform that would run four challenge every year. Anyone can submit predictions for each challenge. CT Open evaluates those submissions on trials whose outcomes were not yet public at the time of submission but became public afterwards. Determining if a trial's outcome is public on the internet before a certain date is surprisingly difficult. Outcomes posted on official registries may lag behind years, while the first mention may appear in obscure articles. To address this, we propose a novel, fully automated decontamination pipeline that uses iterative LLM-powered web search to identify the earliest mention of trial outcomes. We validate the pipeline’s quality and accuracy by human expert's annotations. Since CT Open’s pipeline ensures that every evaluated trial had no publicly reported outcome when the prediction was made, it allows participants to use any methodology and any data source. In this paper, we release a training set and two time-stamped test benchmarks, Winter 2025 and Summer 2025. We believe CT Open can serve as a central hub for advancing AI research on forecasting real-world outcomes before they occur, while also informing biomedical research and improving clinical trial design. Code to reproduce our experiments is available at https://github.com/ClinicalTrial-OpenChallenge/CT_Open.",
+  "keywords": [],
+  "tldr": null,
+  "primary_area": null,
+  "presentation": null,
+  "doi": null,
+  "pages": null,
+  "bibtex": null,
+  "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/20bc215c474ed38d70d0ec246c3d6361-Abstract-Conference.html",
+  "pdf_url": "https://proceedings.colm.cc/paper_files/paper/2026/file/20bc215c474ed38d70d0ec246c3d6361-Paper-Conference.pdf",
+  "code_url": null,
+  "project_url": null,
+  "published": null,
+  "source": "proceedings.colm.cc",
+  "venue_type": "conference",
+  "journal_title": null,
+  "issn": null,
+  "article_type": "proceedings-article",
+  "screening_status": null,
+  "conference_title": null,
+  "ccf_rank": null,
+  "ccf_field": null,
+  "ccf_catalog_version": null,
+  "ccf_paper_status": null,
+  "dblp_key": null,
+  "dblp_toc": null,
+  "booktitle": null,
+  "ai4s_review": {
+   "schema_version": 2,
+   "batch_id": "2026-Roman100021-20261108T213812+0800",
+   "owner": "乔徐阳",
+   "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+   "decision": "include",
+   "rationale": "搭建可实时提交的临床试验结果预测基准平台，并用LLM迭代网络搜索判定结局是否公开以完成去污染。",
+   "verified_metadata": {
+    "doi": null,
+    "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/20bc215c474ed38d70d0ec246c3d6361-Abstract-Conference.html",
+    "evidence_urls": [
+     "https://proceedings.colm.cc/paper_files/paper/2026/hash/20bc215c474ed38d70d0ec246c3d6361-Abstract-Conference.html"
+    ]
+   },
+   "tags": [
+    {
+     "axis": "evaluation",
+     "label": "科学评测",
+     "label_en": "Scientific evaluation",
+     "evidence_location": "输入摘要",
+     "rationale": "搭建可实时提交的临床试验结果预测基准平台，并用LLM迭代网络搜索判定结局是否公开以完成去污染。"
+    },
+    {
+     "axis": "domain",
+     "label": "AI 用于生命科学",
+     "label_en": "AI for life sciences",
+     "evidence_location": "输入摘要",
+     "rationale": "搭建可实时提交的临床试验结果预测基准平台，并用LLM迭代网络搜索判定结局是否公开以完成去污染。"
+    },
+    {
+     "axis": "method",
+     "label": "检索增强生成",
+     "label_en": "Retrieval-augmented generation",
+     "evidence_location": "输入摘要",
+     "rationale": "搭建可实时提交的临床试验结果预测基准平台，并用LLM迭代网络搜索判定结局是否公开以完成去污染。"
     }
    ]
   }
@@ -1958,6 +2214,96 @@
     ]
    },
    "tags": []
+  }
+ },
+ {
+  "id": "2ef5aa9dab0355642e1895f0e7ef8fa6",
+  "venue": "colm",
+  "year": 2026,
+  "track": null,
+  "title": "QED-Nano: Teaching a Tiny Model to Prove Hard Theorems",
+  "authors": [
+   "Yuxiao Qu",
+   "Amrith Setlur",
+   "Jasper Dekoninck",
+   "Edward E Beeching",
+   "Jia LI",
+   "Ian Wu",
+   "Lewis Tunstall",
+   "Aviral Kumar"
+  ],
+  "author_ids": [],
+  "abstract": "Proprietary AI systems have recently demonstrated impressive capabilities on complex proof-based problems, with gold-level performance reported at the 2025 International Mathematical Olympiad (IMO). However, the training pipelines behind these systems remain largely undisclosed, and their reliance on large \"internal\" models and scaffolds makes them expensive to run, difficult to reproduce, and hard to study or improve upon. This raises a central question: can small, open models also be trained to achieve competitive reasoning performance on difficult Olympiad-level math? In this paper, we answer this question by building QED-Nano, a 4B model post-trained for Olympiad-level proofs. Our training recipe has three stages: (1) supervised fine-tuning to imbue good proof-writing styles by distilling from DeepSeek-Math-V2, (2) reinforcement learning (RL) with rubric-based rewards, and (3) expanding RL with a reasoning cache, which decomposes long proofs into iterative summarize-and-refine cycles and enables stronger test-time reasoning. QED-Nano surpasses the proof-generation performance of much larger open models, including Nomos-1 and GPT-OSS-120B, and approaches the performance of proprietary models like Gemini 3 Pro, at a fraction of the inference cost.",
+  "keywords": [],
+  "tldr": null,
+  "primary_area": null,
+  "presentation": null,
+  "doi": null,
+  "pages": null,
+  "bibtex": null,
+  "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/2ef5aa9dab0355642e1895f0e7ef8fa6-Abstract-Conference.html",
+  "pdf_url": "https://proceedings.colm.cc/paper_files/paper/2026/file/2ef5aa9dab0355642e1895f0e7ef8fa6-Paper-Conference.pdf",
+  "code_url": null,
+  "project_url": null,
+  "published": null,
+  "source": "proceedings.colm.cc",
+  "venue_type": "conference",
+  "journal_title": null,
+  "issn": null,
+  "article_type": "proceedings-article",
+  "screening_status": null,
+  "conference_title": null,
+  "ccf_rank": null,
+  "ccf_field": null,
+  "ccf_catalog_version": null,
+  "ccf_paper_status": null,
+  "dblp_key": null,
+  "dblp_toc": null,
+  "booktitle": null,
+  "ai4s_review": {
+   "schema_version": 2,
+   "batch_id": "2026-Roman100021-20261108T213812+0800",
+   "owner": "乔徐阳",
+   "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+   "decision": "include",
+   "rationale": "用蒸馏与规则奖励强化学习后训练4B小模型，生成奥赛级数学证明，服务高难数学定理证明。",
+   "verified_metadata": {
+    "doi": null,
+    "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/2ef5aa9dab0355642e1895f0e7ef8fa6-Abstract-Conference.html",
+    "evidence_urls": [
+     "https://proceedings.colm.cc/paper_files/paper/2026/hash/2ef5aa9dab0355642e1895f0e7ef8fa6-Abstract-Conference.html"
+    ]
+   },
+   "tags": [
+    {
+     "axis": "task",
+     "label": "自动定理证明",
+     "label_en": "Automated theorem proving",
+     "evidence_location": "输入摘要",
+     "rationale": "用蒸馏与规则奖励强化学习后训练4B小模型，生成奥赛级数学证明，服务高难数学定理证明。"
+    },
+    {
+     "axis": "method",
+     "label": "强化学习",
+     "label_en": "Reinforcement learning",
+     "evidence_location": "输入摘要",
+     "rationale": "Our training recipe has three stages: (1) supervised fine-tuning to imbue good proof-writing styles by distilling from DeepSeek-Math-V2, (2) reinforcement learn"
+    },
+    {
+     "axis": "method",
+     "label": "指令微调",
+     "label_en": "Instruction tuning",
+     "evidence_location": "输入摘要",
+     "rationale": "Our training recipe has three stages: (1) supervised fine-tuning to imbue good proof-writing styles by distilling from DeepSeek-Math-V2, (2) reinforcement learn"
+    },
+    {
+     "axis": "domain",
+     "label": "AI 用于数理科学",
+     "label_en": "AI for mathematical and physical sciences",
+     "evidence_location": "输入摘要",
+     "rationale": "Proprietary AI systems have recently demonstrated impressive capabilities on complex proof-based problems, with gold-level performance reported at the 2025 Inte"
+    }
+   ]
   }
  },
  {
@@ -3375,6 +3721,96 @@
   }
  },
  {
+  "id": "5edb57c05c81d04beb716ef1d542fe9e",
+  "venue": "colm",
+  "year": 2026,
+  "track": null,
+  "title": "LeanGeo: Formalizing Competitional Geometry problems in Lean",
+  "authors": [
+   "Chendong Song",
+   "Zihan Wang",
+   "Frederick Pu",
+   "Haiming Wang",
+   "Xiaohan Lin",
+   "Junqi Liu",
+   "Jia LI",
+   "Zhengying Liu"
+  ],
+  "author_ids": [],
+  "abstract": "Geometry problems constitute a crucial testbed for AI reasoning. Most existing geometry solving systems rely on domain-specific formal languages that cannot integrate with other mathematical fields, and their dependence on graphical intuition makes rigorous verification particularly challenging. To address these limitations, we introduce \\textbf{LeanGeo}, a unified formal framework for expressing and proving competition-level geometry problems within the Lean~4 theorem prover. LeanGeo provides a comprehensive library of 260 high-level geometric theorems grounded in Lean's foundational logic, enabling rigorous proof verification and seamless integration with Mathlib. We further present \\textbf{LeanGeo-Bench}, a benchmark of 122 formally verified geometry problems ranging from foundational exercises to International Mathematical Olympiad (IMO) challenges. Our evaluation of state-of-the-art Large Language Models on this benchmark reveals both capabilities and fundamental limitations in automated geometric reasoning. We open-source the theorem library and benchmark at \\url{https://github.com/project-numina/LeanGeo}.",
+  "keywords": [],
+  "tldr": null,
+  "primary_area": null,
+  "presentation": null,
+  "doi": null,
+  "pages": null,
+  "bibtex": null,
+  "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/5edb57c05c81d04beb716ef1d542fe9e-Abstract-Conference.html",
+  "pdf_url": "https://proceedings.colm.cc/paper_files/paper/2026/file/5edb57c05c81d04beb716ef1d542fe9e-Paper-Conference.pdf",
+  "code_url": null,
+  "project_url": null,
+  "published": null,
+  "source": "proceedings.colm.cc",
+  "venue_type": "conference",
+  "journal_title": null,
+  "issn": null,
+  "article_type": "proceedings-article",
+  "screening_status": null,
+  "conference_title": null,
+  "ccf_rank": null,
+  "ccf_field": null,
+  "ccf_catalog_version": null,
+  "ccf_paper_status": null,
+  "dblp_key": null,
+  "dblp_toc": null,
+  "booktitle": null,
+  "ai4s_review": {
+   "schema_version": 2,
+   "batch_id": "2026-Roman100021-20261108T213812+0800",
+   "owner": "乔徐阳",
+   "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+   "decision": "include",
+   "rationale": "在Lean4中形式化竞赛几何，建成260条定理库与122题基准，支持几何命题的机器可检验证明。",
+   "verified_metadata": {
+    "doi": null,
+    "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/5edb57c05c81d04beb716ef1d542fe9e-Abstract-Conference.html",
+    "evidence_urls": [
+     "https://proceedings.colm.cc/paper_files/paper/2026/hash/5edb57c05c81d04beb716ef1d542fe9e-Abstract-Conference.html"
+    ]
+   },
+   "tags": [
+    {
+     "axis": "task",
+     "label": "形式定理证明",
+     "label_en": "Formal theorem proving",
+     "evidence_location": "输入摘要",
+     "rationale": "Most existing geometry solving systems rely on domain-specific formal languages that cannot integrate with other mathematical fields, and their dependence on gr"
+    },
+    {
+     "axis": "contribution",
+     "label": "科学数据",
+     "label_en": "Scientific data",
+     "evidence_location": "输入摘要",
+     "rationale": "在Lean4中形式化竞赛几何，建成260条定理库与122题基准，支持几何命题的机器可检验证明。"
+    },
+    {
+     "axis": "evaluation",
+     "label": "基准评测",
+     "label_en": "Benchmark evaluation",
+     "evidence_location": "输入摘要",
+     "rationale": "We further present \\textbf{LeanGeo-Bench}, a benchmark of 122 formally verified geometry problems ranging from foundational exercises to International Mathemati"
+    },
+    {
+     "axis": "domain",
+     "label": "AI 用于数理科学",
+     "label_en": "AI for mathematical and physical sciences",
+     "evidence_location": "输入摘要",
+     "rationale": "Most existing geometry solving systems rely on domain-specific formal languages that cannot integrate with other mathematical fields, and their dependence on gr"
+    }
+   ]
+  }
+ },
+ {
   "id": "611252d40f23c8b57a8bc9ffb577419b",
   "venue": "colm",
   "year": 2026,
@@ -3723,6 +4159,171 @@
     ]
    },
    "tags": []
+  }
+ },
+ {
+  "id": "67101f97dc23fcc10346091181fff6cb",
+  "venue": "colm",
+  "year": 2026,
+  "track": null,
+  "title": "From Terminology to Diagrams: Visual-Instruction Generation for Scientific Diagram Understanding",
+  "authors": [
+   "Raúl Ortega",
+   "José Manuel Gómez-Pérez"
+  ],
+  "author_ids": [],
+  "abstract": "Vision–language models (VLMs) have demonstrated strong performance in visual question answering with natural images. However, they continue to struggle with scientific diagrams, which are designed to convey functional or relational meaning rather than literal scenes. We therefore introduce a framework for generating large-scale diagram-grounded instruction data by leveraging terminology derived from scientific curricula. Our approach systematically extracts domain concepts, synthesizes atomic facts, retrieves relevant diagrams from the web, and generates multimodal supervision in the form of diagram captions and multiple-choice questions. Using this pipeline, we construct SciGram, a dataset of over 194K diagrams and 1.4M visual instructions across life, earth, and physical sciences. Despite relying on noisy web data and synthetic annotations, models fine-tuned on SciGram achieve substantial improvements on diagram-centric benchmarks, including TQA, ScienceQA, and AI2D, outperforming or matching state-of-the-art VLMs while using fewer training instances. Furthermore, augmenting existing models such as LLaVA OneVision with SciGram establishes new state-of-the-art performance on diagram question answering. Our results highlight the effectiveness of terminology-grounded instruction generation as a general strategy for improving vision-language reasoning in scientific domains. To support future research in scientific diagram understanding, we release both the SciGram dataset and models.",
+  "keywords": [],
+  "tldr": null,
+  "primary_area": null,
+  "presentation": null,
+  "doi": null,
+  "pages": null,
+  "bibtex": null,
+  "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/67101f97dc23fcc10346091181fff6cb-Abstract-Conference.html",
+  "pdf_url": "https://proceedings.colm.cc/paper_files/paper/2026/file/67101f97dc23fcc10346091181fff6cb-Paper-Conference.pdf",
+  "code_url": null,
+  "project_url": null,
+  "published": null,
+  "source": "proceedings.colm.cc",
+  "venue_type": "conference",
+  "journal_title": null,
+  "issn": null,
+  "article_type": "proceedings-article",
+  "screening_status": null,
+  "conference_title": null,
+  "ccf_rank": null,
+  "ccf_field": null,
+  "ccf_catalog_version": null,
+  "ccf_paper_status": null,
+  "dblp_key": null,
+  "dblp_toc": null,
+  "booktitle": null,
+  "ai4s_review": {
+   "schema_version": 2,
+   "batch_id": "2026-Roman100021-20261108T213812+0800",
+   "owner": "乔徐阳",
+   "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+   "decision": "include",
+   "rationale": "从科学课程术语自动生成图表说明与选择题，构建19.4万图表数据集，训练模型理解科学图表语义。",
+   "verified_metadata": {
+    "doi": null,
+    "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/67101f97dc23fcc10346091181fff6cb-Abstract-Conference.html",
+    "evidence_urls": [
+     "https://proceedings.colm.cc/paper_files/paper/2026/hash/67101f97dc23fcc10346091181fff6cb-Abstract-Conference.html"
+    ]
+   },
+   "tags": [
+    {
+     "axis": "contribution",
+     "label": "科学数据",
+     "label_en": "Scientific data",
+     "evidence_location": "输入摘要",
+     "rationale": "However, they continue to struggle with scientific diagrams, which are designed to convey functional or relational meaning rather than literal scenes."
+    },
+    {
+     "axis": "method",
+     "label": "多模态学习",
+     "label_en": "Multimodal learning",
+     "evidence_location": "输入摘要",
+     "rationale": "Our approach systematically extracts domain concepts, synthesizes atomic facts, retrieves relevant diagrams from the web, and generates multimodal supervision i"
+    },
+    {
+     "axis": "evaluation",
+     "label": "基准评测",
+     "label_en": "Benchmark evaluation",
+     "evidence_location": "输入摘要",
+     "rationale": "Despite relying on noisy web data and synthetic annotations, models fine-tuned on SciGram achieve substantial improvements on diagram-centric benchmarks, includ"
+    }
+   ]
+  }
+ },
+ {
+  "id": "6f61f25abf3197bb58cc7422761186e0",
+  "venue": "colm",
+  "year": 2026,
+  "track": null,
+  "title": "TemMed-Bench: Evaluating Temporal Medical Image Reasoning in Vision-Language Models",
+  "authors": [
+   "Junyi Zhang",
+   "Jia-Chen Gu",
+   "Wenbo Hu",
+   "Yu Zhou",
+   "Robinson Piramuthu",
+   "Nanyun (Violet) Peng"
+  ],
+  "author_ids": [],
+  "abstract": "Existing medical reasoning benchmarks for vision-language models primarily focus on analyzing a patient’s condition based on an image from a single visit. However, this setting deviates significantly from real-world clinical practice, where doctors typically refer to a patient’s historical conditions to provide a comprehensive assessment by tracking their changes over time. In this paper, we introduce TemMed-Bench, a multi-task benchmark designed for analyzing changes in patients’ conditions between different clinical visits, which challenges large vision-language models (LVLMs) to reason over tem poral med ical images. TemMed-Bench consists of a test set comprising three tasks – visual question-answering (VQA), report generation, and image-pair selection – and a supplementary knowledge corpus of over 17,000 instances. With TemMed-Bench, we conduct an evaluation of twelve LVLMs, comprising six proprietary and six open-source models. Our results show that most LVLMs lack the ability to analyze patients’ condition changes over temporal medical images. To enhance the tracking of condition changes, we explore augmenting the input with both retrieved visual and textual modalities in the medical domain. We also show that multi-modal retrieval augmentation yields notably higher performance gains than no retrieval and textual retrieval alone across most models on our benchmark, with the VQA task showing an average improvement of 2.59%. Overall, we compose a benchmark grounded on real-world clinical practice, and it reveals LVLMs’ limitations in temporal medical image reasoning, as well as highlighting the use of multi-modal retrieval augmentation as a potentially promising direction worth exploring to address this challenge.",
+  "keywords": [],
+  "tldr": null,
+  "primary_area": null,
+  "presentation": null,
+  "doi": null,
+  "pages": null,
+  "bibtex": null,
+  "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/6f61f25abf3197bb58cc7422761186e0-Abstract-Conference.html",
+  "pdf_url": "https://proceedings.colm.cc/paper_files/paper/2026/file/6f61f25abf3197bb58cc7422761186e0-Paper-Conference.pdf",
+  "code_url": null,
+  "project_url": null,
+  "published": null,
+  "source": "proceedings.colm.cc",
+  "venue_type": "conference",
+  "journal_title": null,
+  "issn": null,
+  "article_type": "proceedings-article",
+  "screening_status": null,
+  "conference_title": null,
+  "ccf_rank": null,
+  "ccf_field": null,
+  "ccf_catalog_version": null,
+  "ccf_paper_status": null,
+  "dblp_key": null,
+  "dblp_toc": null,
+  "booktitle": null,
+  "ai4s_review": {
+   "schema_version": 2,
+   "batch_id": "2026-Roman100021-20261108T213812+0800",
+   "owner": "乔徐阳",
+   "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+   "decision": "include",
+   "rationale": "构建跨多次就诊的时序医学影像基准，评测视觉语言模型比较病情变化、生成报告并选择影像对。",
+   "verified_metadata": {
+    "doi": null,
+    "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/6f61f25abf3197bb58cc7422761186e0-Abstract-Conference.html",
+    "evidence_urls": [
+     "https://proceedings.colm.cc/paper_files/paper/2026/hash/6f61f25abf3197bb58cc7422761186e0-Abstract-Conference.html"
+    ]
+   },
+   "tags": [
+    {
+     "axis": "task",
+     "label": "医学影像理解与报告生成",
+     "label_en": "Medical image understanding and report generation",
+     "evidence_location": "输入摘要",
+     "rationale": "Existing medical reasoning benchmarks for vision-language models primarily focus on analyzing a patient’s condition based on an image from a single visit."
+    },
+    {
+     "axis": "evaluation",
+     "label": "基准评测",
+     "label_en": "Benchmark evaluation",
+     "evidence_location": "输入摘要",
+     "rationale": "Existing medical reasoning benchmarks for vision-language models primarily focus on analyzing a patient’s condition based on an image from a single visit."
+    },
+    {
+     "axis": "method",
+     "label": "视觉语言模型",
+     "label_en": "Vision-language model",
+     "evidence_location": "输入摘要",
+     "rationale": "Existing medical reasoning benchmarks for vision-language models primarily focus on analyzing a patient’s condition based on an image from a single visit."
+    },
+    {
+     "axis": "domain",
+     "label": "AI 用于生命科学",
+     "label_en": "AI for life sciences",
+     "evidence_location": "输入摘要",
+     "rationale": "构建跨多次就诊的时序医学影像基准，评测视觉语言模型比较病情变化、生成报告并选择影像对。"
+    }
+   ]
   }
  },
  {
@@ -5902,6 +6503,89 @@
   }
  },
  {
+  "id": "ab6eba9a853087993addff937c8cec87",
+  "venue": "colm",
+  "year": 2026,
+  "track": null,
+  "title": "From Mechanism Discovery to Proposal Closure: Graph-Grounded Hierarchical Search for Scientific Ideation",
+  "authors": [
+   "Zijian Hu",
+   "Hanqi Li",
+   "Zijian Wang",
+   "Tiancheng Huang",
+   "Chenrun Wang",
+   "Ziyue Yang",
+   "Kai Yu",
+   "Lu Chen"
+  ],
+  "author_ids": [],
+  "abstract": "Large language models can generate research ideas that appear novel, but novelty alone does not determine whether an idea is worth following up. In practice, researchers also need ideas that are feasible, experimentally testable, and consistent with the evidence they build on. We therefore assess early-stage proposal quality through four dimensions: novelty, feasibility, experimental design, and evidence consistency. We formulate scientific ideation as graph-grounded hierarchical search over a structured scientific evidence graph. Constructed at the method level, the graph encodes core methods, components, limitations, future work, baselines, datasets, and their relations. On top of this representation, we propose a two-stage framework: the first stage explores candidate mechanism directions over evidence-backed topic and problem frames, and the second stage refines promising candidates through evidence-grounded closure, binding ideas to concrete baselines, datasets, and experimental protocols. In controlled evaluation on 40 matched problem frames from 20 computer science topics, we compare against ResearchAgent, Chain-of-Ideas, direct LLM generation, and Text-RAG under the same four-dimensional protocol. The proposed framework achieves the highest mean overall score in both the dual-LLM and expert evaluations, with its clearest gains in feasibility and evidence consistency. ResearchAgent performs better in novelty and experimental design in both evaluations and remains close overall in the dual-LLM evaluation. Ablations further support complementary contributions from structured evidence, hierarchical search, and proposal closure.",
+  "keywords": [],
+  "tldr": null,
+  "primary_area": null,
+  "presentation": null,
+  "doi": null,
+  "pages": null,
+  "bibtex": null,
+  "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/ab6eba9a853087993addff937c8cec87-Abstract-Conference.html",
+  "pdf_url": "https://proceedings.colm.cc/paper_files/paper/2026/file/ab6eba9a853087993addff937c8cec87-Paper-Conference.pdf",
+  "code_url": null,
+  "project_url": null,
+  "published": null,
+  "source": "proceedings.colm.cc",
+  "venue_type": "conference",
+  "journal_title": null,
+  "issn": null,
+  "article_type": "proceedings-article",
+  "screening_status": null,
+  "conference_title": null,
+  "ccf_rank": null,
+  "ccf_field": null,
+  "ccf_catalog_version": null,
+  "ccf_paper_status": null,
+  "dblp_key": null,
+  "dblp_toc": null,
+  "booktitle": null,
+  "ai4s_review": {
+   "schema_version": 2,
+   "batch_id": "2026-Roman100021-20261108T213812+0800",
+   "owner": "乔徐阳",
+   "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+   "decision": "include",
+   "rationale": "在方法级科学证据图上做两阶段分层搜索，生成并筛选新颖、可行、可实验的科研提案，服务科学构思。",
+   "verified_metadata": {
+    "doi": null,
+    "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/ab6eba9a853087993addff937c8cec87-Abstract-Conference.html",
+    "evidence_urls": [
+     "https://proceedings.colm.cc/paper_files/paper/2026/hash/ab6eba9a853087993addff937c8cec87-Abstract-Conference.html"
+    ]
+   },
+   "tags": [
+    {
+     "axis": "contribution",
+     "label": "科学智能体",
+     "label_en": "Scientific agent",
+     "evidence_location": "输入摘要",
+     "rationale": "We formulate scientific ideation as graph-grounded hierarchical search over a structured scientific evidence graph."
+    },
+    {
+     "axis": "method",
+     "label": "知识图谱",
+     "label_en": "Knowledge graph",
+     "evidence_location": "输入摘要",
+     "rationale": "We formulate scientific ideation as graph-grounded hierarchical search over a structured scientific evidence graph."
+    },
+    {
+     "axis": "task",
+     "label": "科学问题推理",
+     "label_en": "Scientific problem reasoning",
+     "evidence_location": "输入摘要",
+     "rationale": "We formulate scientific ideation as graph-grounded hierarchical search over a structured scientific evidence graph."
+    }
+   ]
+  }
+ },
+ {
   "id": "ad15848baa3932c0d2deabf0e11d1dcd",
   "venue": "colm",
   "year": 2026,
@@ -6181,8 +6865,8 @@
    "batch_id": "2026-Roman100021-20261108T213812+0800",
    "owner": "乔徐阳",
    "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-   "decision": "exclude",
-   "rationale": "改进自博弈出题者奖励劫持以扩展训练，属通用训练方法。",
+   "decision": "include",
+   "rationale": "提出自引导自博弈训练，让模型自造子问题并在Lean4中完成形式证明，求解率超过最强RL基线，直接推进数学定理证明。",
    "verified_metadata": {
     "doi": null,
     "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/b54a93090407850f069ab52a072d5bc8-Abstract-Conference.html",
@@ -6190,7 +6874,22 @@
      "https://proceedings.colm.cc/paper_files/paper/2026/hash/b54a93090407850f069ab52a072d5bc8-Abstract-Conference.html"
     ]
    },
-   "tags": []
+   "tags": [
+    {
+     "axis": "task",
+     "label": "形式定理证明",
+     "label_en": "Formal theorem proving",
+     "evidence_location": "输入摘要",
+     "rationale": "Applying SGS to formal theorem proving in Lean4, we find that it surpasses the asymptotic solve rate of our strongest RL baseline in fewer than 80 rounds of sel"
+    },
+    {
+     "axis": "domain",
+     "label": "AI 用于数理科学",
+     "label_en": "AI for mathematical and physical sciences",
+     "evidence_location": "输入摘要",
+     "rationale": "提出自引导自博弈训练，让模型自造子问题并在Lean4中完成形式证明，求解率超过最强RL基线，直接推进数学定理证明。"
+    }
+   ]
   }
  },
  {
@@ -7490,6 +8189,100 @@
   }
  },
  {
+  "id": "d4f1645ea02d58c83bf92f3add3e3116",
+  "venue": "colm",
+  "year": 2026,
+  "track": null,
+  "title": "MedAction: Towards Active Multi-turn Clinical Diagnostic LLMs",
+  "authors": [
+   "Hsin-Ling Hsu",
+   "Zizheng Wang",
+   "Donghua Zhang",
+   "Nai-Chia Chen",
+   "Jerry Wang",
+   "Jun-En Ding",
+   "Chia-Hsuan Hsu",
+   "Guoan Wang",
+   "Feng Liu",
+   "Fang M Hung",
+   "Chenwei Wu",
+   "Liyue Shen"
+  ],
+  "author_ids": [],
+  "abstract": "Most existing LLM diagnoses are evaluated on static, single-turn settings where complete patient information is provided upfront, an oversimplification of real clinical practice. We study active diagnosis: the real-life clinical process of starting from initial observation, ordering tests, interpreting results, and updating a differential diagnosis across multiple turns. Through systematic analysis, we identify three recurring failure modes in current LLMs — ungrounded test ordering, unreliable diagnostic update, and degraded multi-turn coherence — that together reveal a core deficit: existing medical training data teaches models to reason from complete information but not to act under evolving, partial evidence. To address this gap, we introduce MedAction, a tree-structured distillation pipeline that synthesizes diverse and high-quality multi-turn diagnostic trajectories via LLM–environment interaction. We propose two knowledge-graph-grounded metrics to filter trajectory quality: Disease Trajectory Consistency (DTC), which tracks whether the model's hypothesis converges toward the correct diagnosis, and Reasoning–Action Consistency (RAC), which verifies that belief updates are driven by gathered evidence. Using this pipeline, we construct MedAction-32K, a dataset of 32,681 trajectories from 2,896 PMC cases. Fine-tuning an 8B model on MedAction-32K achieves state-of-the-art performance among open-source models on both MedR-Bench and our curated MedAction-300-Hard benchmark, pushing the edge for open-source medical LLMs.",
+  "keywords": [],
+  "tldr": null,
+  "primary_area": null,
+  "presentation": null,
+  "doi": null,
+  "pages": null,
+  "bibtex": null,
+  "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/d4f1645ea02d58c83bf92f3add3e3116-Abstract-Conference.html",
+  "pdf_url": "https://proceedings.colm.cc/paper_files/paper/2026/file/d4f1645ea02d58c83bf92f3add3e3116-Paper-Conference.pdf",
+  "code_url": null,
+  "project_url": null,
+  "published": null,
+  "source": "proceedings.colm.cc",
+  "venue_type": "conference",
+  "journal_title": null,
+  "issn": null,
+  "article_type": "proceedings-article",
+  "screening_status": null,
+  "conference_title": null,
+  "ccf_rank": null,
+  "ccf_field": null,
+  "ccf_catalog_version": null,
+  "ccf_paper_status": null,
+  "dblp_key": null,
+  "dblp_toc": null,
+  "booktitle": null,
+  "ai4s_review": {
+   "schema_version": 2,
+   "batch_id": "2026-Roman100021-20261108T213812+0800",
+   "owner": "乔徐阳",
+   "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+   "decision": "include",
+   "rationale": "合成多轮主动诊断轨迹并蒸馏，让模型在部分证据下开检查、解读结果并逐步更新鉴别诊断。",
+   "verified_metadata": {
+    "doi": null,
+    "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/d4f1645ea02d58c83bf92f3add3e3116-Abstract-Conference.html",
+    "evidence_urls": [
+     "https://proceedings.colm.cc/paper_files/paper/2026/hash/d4f1645ea02d58c83bf92f3add3e3116-Abstract-Conference.html"
+    ]
+   },
+   "tags": [
+    {
+     "axis": "task",
+     "label": "疾病辅助诊断",
+     "label_en": "Computer-aided disease diagnosis",
+     "evidence_location": "输入摘要",
+     "rationale": "We study active diagnosis: the real-life clinical process of starting from initial observation, ordering tests, interpreting results, and updating a differentia"
+    },
+    {
+     "axis": "contribution",
+     "label": "科学智能体",
+     "label_en": "Scientific agent",
+     "evidence_location": "输入摘要",
+     "rationale": "合成多轮主动诊断轨迹并蒸馏，让模型在部分证据下开检查、解读结果并逐步更新鉴别诊断。"
+    },
+    {
+     "axis": "method",
+     "label": "指令微调",
+     "label_en": "Instruction tuning",
+     "evidence_location": "输入摘要",
+     "rationale": "Fine-tuning an 8B model on MedAction-32K achieves state-of-the-art performance among open-source models on both MedR-Bench and our curated MedAction-300-Hard be"
+    },
+    {
+     "axis": "domain",
+     "label": "AI 用于生命科学",
+     "label_en": "AI for life sciences",
+     "evidence_location": "输入摘要",
+     "rationale": "We study active diagnosis: the real-life clinical process of starting from initial observation, ordering tests, interpreting results, and updating a differentia"
+    }
+   ]
+  }
+ },
+ {
   "id": "d5a655b8b373737b4f2aea8f78e5e754",
   "venue": "colm",
   "year": 2026,
@@ -8510,6 +9303,91 @@
      "label_en": "Scientific knowledge model",
      "evidence_location": "输入摘要",
      "rationale": "Modern scientific ecosystems are rich in procedural knowledge across repositories, APIs, scripts, notebooks, documentation, databases, and pa-pers, yet much of "
+    }
+   ]
+  }
+ },
+ {
+  "id": "fc625e831361cfcc82cb74224fdc66cb",
+  "venue": "colm",
+  "year": 2026,
+  "track": null,
+  "title": "Joint Optimization of Reasoning and Dual-Memory for Self-Learning Diagnostic Agent",
+  "authors": [
+   "Bingxuan Li",
+   "Simo Du",
+   "Yue Guo"
+  ],
+  "author_ids": [],
+  "abstract": "Clinical expertise improves not only by acquiring medical knowledge, but by accumulating experience that yields reusable diagnostic patterns. Recent LLMs-based diagnostic agents have shown promising progress in clinical reasoning for decision support. However, most approaches treat cases independently, limiting experience reuse and continual adaptation. We propose SEA, a self-learning diagnostic agent with cognitively inspired dual-memory module. We design a reinforcement training framework tailored to our designed agent for joint optimization of reasoning and memory management. We evaluate SEA in two complementary settings. On standard evaluation with MedCaseReasoning dataset, SEA achieves 92.46% accuracy, outperforming the strongest baseline by +19.6%, demonstrating the benefit of jointly optimizing reasoning and memory. On the long-horizon with ER-Reason dataset, SEA attains the best final accuracy (0.7214) and the largest improvement (+0.35 $\\Delta$Acc@100), while baseline methods show limited or unstable gains. Expert evaluation further indicates that rules consolidated from SEA show strong clinical correctness, usefulness and trust, suggesting that the induced rules in dual-memory module are reliable and practically meaningful. Overall, SEA improves both diagnostic reasoning ability and continual learning by effectively transforming experience into reusable knowledge.",
+  "keywords": [],
+  "tldr": null,
+  "primary_area": null,
+  "presentation": null,
+  "doi": null,
+  "pages": null,
+  "bibtex": null,
+  "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/fc625e831361cfcc82cb74224fdc66cb-Abstract-Conference.html",
+  "pdf_url": "https://proceedings.colm.cc/paper_files/paper/2026/file/fc625e831361cfcc82cb74224fdc66cb-Paper-Conference.pdf",
+  "code_url": null,
+  "project_url": null,
+  "published": null,
+  "source": "proceedings.colm.cc",
+  "venue_type": "conference",
+  "journal_title": null,
+  "issn": null,
+  "article_type": "proceedings-article",
+  "screening_status": null,
+  "conference_title": null,
+  "ccf_rank": null,
+  "ccf_field": null,
+  "ccf_catalog_version": null,
+  "ccf_paper_status": null,
+  "dblp_key": null,
+  "dblp_toc": null,
+  "booktitle": null,
+  "ai4s_review": {
+   "schema_version": 2,
+   "batch_id": "2026-Roman100021-20261108T213812+0800",
+   "owner": "乔徐阳",
+   "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
+   "decision": "include",
+   "rationale": "构建带双记忆的自学习诊断智能体，用强化学习联合优化推理与记忆，在临床病例上做鉴别诊断。",
+   "verified_metadata": {
+    "doi": null,
+    "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/fc625e831361cfcc82cb74224fdc66cb-Abstract-Conference.html",
+    "evidence_urls": [
+     "https://proceedings.colm.cc/paper_files/paper/2026/hash/fc625e831361cfcc82cb74224fdc66cb-Abstract-Conference.html"
+    ]
+   },
+   "tags": [
+    {
+     "axis": "task",
+     "label": "疾病辅助诊断",
+     "label_en": "Computer-aided disease diagnosis",
+     "evidence_location": "输入摘要",
+     "rationale": "构建带双记忆的自学习诊断智能体，用强化学习联合优化推理与记忆，在临床病例上做鉴别诊断。"
+    },
+    {
+     "axis": "contribution",
+     "label": "科学智能体",
+     "label_en": "Scientific agent",
+     "evidence_location": "输入摘要",
+     "rationale": "Recent LLMs-based diagnostic agents have shown promising progress in clinical reasoning for decision support."
+    },
+    {
+     "axis": "method",
+     "label": "强化学习",
+     "label_en": "Reinforcement learning",
+     "evidence_location": "输入摘要",
+     "rationale": "We propose SEA, a self-learning diagnostic agent with cognitively inspired dual-memory module."
+    },
+    {
+     "axis": "domain",
+     "label": "AI 用于生命科学",
+     "label_en": "AI for life sciences",
+     "evidence_location": "输入摘要",
+     "rationale": "构建带双记忆的自学习诊断智能体，用强化学习联合优化推理与记忆，在临床病例上做鉴别诊断。"
     }
    ]
   }
