@@ -975,8 +975,8 @@
    "batch_id": "2026-Roman100021-20261108T213812+0800",
    "owner": "乔徐阳",
    "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-   "decision": "exclude",
-   "rationale": "检验LLM智能体能否复现人类重复效应，研究对象是模型仿真保真度。",
+   "decision": "include",
+   "rationale": "让四类LLM智能体在仿真信息流中反复接触同一说法，测量其真值判断是否出现人类式错觉真效应，为社会媒体错误信息传播仿真提供效度校准。",
    "verified_metadata": {
     "doi": null,
     "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/154b90fcc9ba3dee96779c05c3108908-Abstract-Conference.html",
@@ -984,7 +984,22 @@
      "https://proceedings.colm.cc/paper_files/paper/2026/hash/154b90fcc9ba3dee96779c05c3108908-Abstract-Conference.html"
     ]
    },
-   "tags": []
+   "tags": [
+    {
+     "axis": "task",
+     "label": "社会信息传播建模",
+     "label_en": "Social information propagation modeling",
+     "evidence_location": "输入摘要",
+     "rationale": "Generative agent-based models (GABMs) are increasingly used to simulate social media dynamics, including misinformation spread."
+    },
+    {
+     "axis": "task",
+     "label": "认知建模",
+     "label_en": "Cognitive modeling",
+     "evidence_location": "输入摘要",
+     "rationale": "For such social simulations to be valid proxies of human behavior, LLM agents should replicate established human cognitive biases, among them the Illusory Truth"
+    }
+   ]
   }
  },
  {
@@ -2515,8 +2530,8 @@
    "batch_id": "2026-Roman100021-20261108T213812+0800",
    "owner": "乔徐阳",
    "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-   "decision": "exclude",
-   "rationale": "比较人类与LLM的信念修正，属认知对齐与模型行为研究。",
+   "decision": "include",
+   "rationale": "将信念修正拆成改什么与推广多远两个分量并建贝叶斯模型，用三项人类被试实验校准后比对三个前沿LLM，检验其作为人类认知模型的保真度。",
    "verified_metadata": {
     "doi": null,
     "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/34260a400e39a802961470b3d3de99cc-Abstract-Conference.html",
@@ -2524,7 +2539,22 @@
      "https://proceedings.colm.cc/paper_files/paper/2026/hash/34260a400e39a802961470b3d3de99cc-Abstract-Conference.html"
     ]
    },
-   "tags": []
+   "tags": [
+    {
+     "axis": "task",
+     "label": "认知建模",
+     "label_en": "Cognitive modeling",
+     "evidence_location": "输入摘要",
+     "rationale": "Cognitive psychology has shown that humans favor explanation-based revision: they first generate explanations for the conflict, such as identifying conditions u"
+    },
+    {
+     "axis": "evaluation",
+     "label": "科学评测",
+     "label_en": "Scientific evaluation",
+     "evidence_location": "输入摘要",
+     "rationale": "将信念修正拆成改什么与推广多远两个分量并建贝叶斯模型，用三项人类被试实验校准后比对三个前沿LLM，检验其作为人类认知模型的保真度。"
+    }
+   ]
   }
  },
  {
@@ -3322,8 +3352,8 @@
    "batch_id": "2026-Roman100021-20261108T213812+0800",
    "owner": "乔徐阳",
    "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-   "decision": "exclude",
-   "rationale": "构建数学定义不完善的题目基准，属通用数学推理能力评测。",
+   "decision": "include",
+   "rationale": "构建1300道数学不良定义题及三阶段判分，考察模型识别并修正问题本身数学缺陷的能力，把数学推理评测推进到命题适定性与纠错。",
    "verified_metadata": {
     "doi": null,
     "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/51606e27dcd5cb07c0b0de3a44b30113-Abstract-Conference.html",
@@ -3331,7 +3361,29 @@
      "https://proceedings.colm.cc/paper_files/paper/2026/hash/51606e27dcd5cb07c0b0de3a44b30113-Abstract-Conference.html"
     ]
    },
-   "tags": []
+   "tags": [
+    {
+     "axis": "task",
+     "label": "科学问题推理",
+     "label_en": "Scientific problem reasoning",
+     "evidence_location": "输入摘要",
+     "rationale": "Ill-defined problems (IDPs) are pervasive in science and engineering, where solutions may fail to exist, be non-unique, or lack a meaningful interpretation."
+    },
+    {
+     "axis": "evaluation",
+     "label": "基准评测",
+     "label_en": "Benchmark evaluation",
+     "evidence_location": "输入摘要",
+     "rationale": "To address this gap, we introduce Ill-Defined Math (IDM), a benchmark of 1,300 mathematically ill-defined problems whose ill-definedness stems from fundamental "
+    },
+    {
+     "axis": "domain",
+     "label": "AI 用于数理科学",
+     "label_en": "AI for mathematical and physical sciences",
+     "evidence_location": "输入摘要",
+     "rationale": "Despite recent advances in large language models (LLMs) in mathematical reasoning, their ability to reason about IDPs remains poorly understood."
+    }
+   ]
   }
  },
  {
@@ -3859,8 +3911,8 @@
    "batch_id": "2026-Roman100021-20261108T213812+0800",
    "owner": "乔徐阳",
    "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-   "decision": "exclude",
-   "rationale": "研究LLM与人类大脑在发散思维上的对齐，属认知类比而非科学问题求解。",
+   "decision": "include",
+   "rationale": "用170名被试完成替代用途任务的fMRI数据，以表征相似性分析比较不同规模LLM与默认模式、额顶网络的活动对齐，研究创造性思维的脑与模型对应。",
    "verified_metadata": {
     "doi": null,
     "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/611252d40f23c8b57a8bc9ffb577419b-Abstract-Conference.html",
@@ -3868,7 +3920,22 @@
      "https://proceedings.colm.cc/paper_files/paper/2026/hash/611252d40f23c8b57a8bc9ffb577419b-Abstract-Conference.html"
     ]
    },
-   "tags": []
+   "tags": [
+    {
+     "axis": "task",
+     "label": "认知建模",
+     "label_en": "Cognitive modeling",
+     "evidence_location": "输入摘要",
+     "rationale": "用170名被试完成替代用途任务的fMRI数据，以表征相似性分析比较不同规模LLM与默认模式、额顶网络的活动对齐，研究创造性思维的脑与模型对应。"
+    },
+    {
+     "axis": "task",
+     "label": "脑语义表征机制研究",
+     "label_en": "Brain semantic representation mechanism investigation",
+     "evidence_location": "输入摘要",
+     "rationale": "Large language models (LLMs) have recently demonstrated impressive performance on divergent thinking tests and prior work has shown that models with higher task"
+    }
+   ]
   }
  },
  {
@@ -4837,8 +4904,8 @@
    "batch_id": "2026-Roman100021-20261108T213812+0800",
    "owner": "乔徐阳",
    "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-   "decision": "exclude",
-   "rationale": "用LLM智能体模拟零售买卖全流程以评估策略，属商业应用仿真。",
+   "decision": "include",
+   "rationale": "用卖家与买家LLM智能体端到端仿真零售说服、互动到成交的全链路，并以真实经济规律和人工评审核验保真度，支撑零售策略预演。",
    "verified_metadata": {
     "doi": null,
     "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/7a9ee756fb71d401bcb5230db02c11db-Abstract-Conference.html",
@@ -4846,7 +4913,22 @@
      "https://proceedings.colm.cc/paper_files/paper/2026/hash/7a9ee756fb71d401bcb5230db02c11db-Abstract-Conference.html"
     ]
    },
-   "tags": []
+   "tags": [
+    {
+     "axis": "domain",
+     "label": "AI 用于社会科学",
+     "label_en": "AI for social sciences",
+     "evidence_location": "输入摘要",
+     "rationale": "用卖家与买家LLM智能体端到端仿真零售说服、互动到成交的全链路，并以真实经济规律和人工评审核验保真度，支撑零售策略预演。"
+    },
+    {
+     "axis": "evaluation",
+     "label": "科学评测",
+     "label_en": "Scientific evaluation",
+     "evidence_location": "输入摘要",
+     "rationale": "We evaluate RetailSim with a dual protocol comprising human evaluation of behavioral fidelity and meta-evaluation against real-world economic regularities, show"
+    }
+   ]
   }
  },
  {
@@ -5008,8 +5090,8 @@
    "batch_id": "2026-Roman100021-20261108T213812+0800",
    "owner": "乔徐阳",
    "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-   "decision": "exclude",
-   "rationale": "让多个生成式智能体对齐人群分布以增加多样性，属仿真方法学。",
+   "decision": "include",
+   "rationale": "以真实人群示范为锚，为不同子群体各建一个LLM生成式智能体并优化组合，使智能体集合成为人群行为的忠实代理，服务社会科学仿真。",
    "verified_metadata": {
     "doi": null,
     "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/7cdbcf7f2037db2ccbfb9636db50399d-Abstract-Conference.html",
@@ -5017,7 +5099,22 @@
      "https://proceedings.colm.cc/paper_files/paper/2026/hash/7cdbcf7f2037db2ccbfb9636db50399d-Abstract-Conference.html"
     ]
    },
-   "tags": []
+   "tags": [
+    {
+     "axis": "domain",
+     "label": "AI 用于社会科学",
+     "label_en": "AI for social sciences",
+     "evidence_location": "输入摘要",
+     "rationale": "以真实人群示范为锚，为不同子群体各建一个LLM生成式智能体并优化组合，使智能体集合成为人群行为的忠实代理，服务社会科学仿真。"
+    },
+    {
+     "axis": "task",
+     "label": "人类价值多元性与决策差异建模",
+     "label_en": "Human value pluralism and decision-difference modeling",
+     "evidence_location": "输入摘要",
+     "rationale": "Large Language Models (LLMs) are increasingly used across a variety of scenarios, ranging from assistants for everyday tasks to tools for simulating human behav"
+    }
+   ]
   }
  },
  {
@@ -5222,8 +5319,8 @@
    "batch_id": "2026-Roman100021-20261108T213812+0800",
    "owner": "乔徐阳",
    "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-   "decision": "exclude",
-   "rationale": "研究级数学题基准，属通用数学推理评测，非形式定理证明。",
+   "decision": "include",
+   "rationale": "取训练截止后新发表arXiv论文的定理陈述构建动态基准，评测模型对研究级数学命题的推理与证明草图能力，同时缓解数据污染。",
    "verified_metadata": {
     "doi": null,
     "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/81df2d98154b75bd79a00db1b707db19-Abstract-Conference.html",
@@ -5231,7 +5328,29 @@
      "https://proceedings.colm.cc/paper_files/paper/2026/hash/81df2d98154b75bd79a00db1b707db19-Abstract-Conference.html"
     ]
    },
-   "tags": []
+   "tags": [
+    {
+     "axis": "task",
+     "label": "科学问题推理",
+     "label_en": "Scientific problem reasoning",
+     "evidence_location": "输入摘要",
+     "rationale": "Mathematical reasoning is widely regarded as a hallmark of human intelligence, and determining whether large language models (LLMs) can meaningfully perform it "
+    },
+    {
+     "axis": "evaluation",
+     "label": "基准评测",
+     "label_en": "Benchmark evaluation",
+     "evidence_location": "输入摘要",
+     "rationale": "As LLMs are increasingly integrated into scientific workflows, rigorous evaluation of their mathematical capabilities becomes a practical necessity."
+    },
+    {
+     "axis": "domain",
+     "label": "AI 用于数理科学",
+     "label_en": "AI for mathematical and physical sciences",
+     "evidence_location": "输入摘要",
+     "rationale": "Mathematical reasoning is widely regarded as a hallmark of human intelligence, and determining whether large language models (LLMs) can meaningfully perform it "
+    }
+   ]
   }
  },
  {
@@ -5280,8 +5399,8 @@
    "batch_id": "2026-Roman100021-20261108T213812+0800",
    "owner": "乔徐阳",
    "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-   "decision": "exclude",
-   "rationale": "评测视频生成模型的科学知识表现，任务本身是生成质量评测。",
+   "decision": "include",
+   "rationale": "构建1253条覆盖60个学科的科学视频生成基准与评分规约，考察模型能否生成符合科学知识与推理链条的视频，而非仅视觉逼真。",
    "verified_metadata": {
     "doi": null,
     "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/8227285e32f70e07fa3a247f3a48006d-Abstract-Conference.html",
@@ -5289,7 +5408,22 @@
      "https://proceedings.colm.cc/paper_files/paper/2026/hash/8227285e32f70e07fa3a247f3a48006d-Abstract-Conference.html"
     ]
    },
-   "tags": []
+   "tags": [
+    {
+     "axis": "evaluation",
+     "label": "多学科科学任务评测",
+     "label_en": "Multidisciplinary scientific task evaluation",
+     "evidence_location": "输入摘要",
+     "rationale": "We introduce Sci-VBench, a comprehensive benchmark for evaluating knowledge- and reasoning-intensive video generation across scientific domains."
+    },
+    {
+     "axis": "method",
+     "label": "多模态生成模型",
+     "label_en": "Multimodal generative model",
+     "evidence_location": "输入摘要",
+     "rationale": "Each example requires models to generate temporally rich videos that demand scientific reasoning and knowledge-grounded synthesis, going beyond surface-level vi"
+    }
+   ]
   }
  },
  {
@@ -7067,8 +7201,8 @@
    "batch_id": "2026-Roman100021-20261108T213812+0800",
    "owner": "乔徐阳",
    "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-   "decision": "exclude",
-   "rationale": "奥赛级数学解题智能体，属通用数学能力，非定理证明。",
+   "decision": "include",
+   "rationale": "构建多轮分层推理的数学智能体，由推理、摘要与验证模块协作并在压缩记忆中推进，求解IMO级难题，提升长程数学证明求解率。",
    "verified_metadata": {
     "doi": null,
     "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/b8d4ec3c4e7b14236db00da22d6157a6-Abstract-Conference.html",
@@ -7076,7 +7210,29 @@
      "https://proceedings.colm.cc/paper_files/paper/2026/hash/b8d4ec3c4e7b14236db00da22d6157a6-Abstract-Conference.html"
     ]
    },
-   "tags": []
+   "tags": [
+    {
+     "axis": "task",
+     "label": "数学定理自动证明",
+     "label_en": "Automated mathematical theorem proving",
+     "evidence_location": "输入摘要",
+     "rationale": "Large Reasoning Models (LRMs) have expanded the mathematical reasoning frontier through Chain-of-Thought (CoT) techniques and Reinforcement Learning with Verifi"
+    },
+    {
+     "axis": "contribution",
+     "label": "科学智能体",
+     "label_en": "Scientific agent",
+     "evidence_location": "输入摘要",
+     "rationale": "Therefore, this paper introduces Intern-S1-MO, a long-horizon math agent that conducts multi-round hierarchical reasoning, composed of an LRM-based multi-agent "
+    },
+    {
+     "axis": "domain",
+     "label": "AI 用于数理科学",
+     "label_en": "AI for mathematical and physical sciences",
+     "evidence_location": "输入摘要",
+     "rationale": "Large Reasoning Models (LRMs) have expanded the mathematical reasoning frontier through Chain-of-Thought (CoT) techniques and Reinforcement Learning with Verifi"
+    }
+   ]
   }
  },
  {
@@ -7598,8 +7754,8 @@
    "batch_id": "2026-Roman100021-20261108T213812+0800",
    "owner": "乔徐阳",
    "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-   "decision": "exclude",
-   "rationale": "研究AI助手即时给答案如何削弱学习者坚持性，属教育心理学。",
+   "decision": "include",
+   "rationale": "开展1222人随机对照实验，因果识别AI即时答疑对人类坚持性的削弱以及脱离AI后独立表现的下降，属教育干预效果的实证研究。",
    "verified_metadata": {
     "doi": null,
     "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/c2166d01fe4bcd694aba89f608737678-Abstract-Conference.html",
@@ -7607,7 +7763,22 @@
      "https://proceedings.colm.cc/paper_files/paper/2026/hash/c2166d01fe4bcd694aba89f608737678-Abstract-Conference.html"
     ]
    },
-   "tags": []
+   "tags": [
+    {
+     "axis": "task",
+     "label": "教育效果评估",
+     "label_en": "Educational intervention evaluation",
+     "evidence_location": "输入摘要",
+     "rationale": "开展1222人随机对照实验，因果识别AI即时答疑对人类坚持性的削弱以及脱离AI后独立表现的下降，属教育干预效果的实证研究。"
+    },
+    {
+     "axis": "domain",
+     "label": "AI 用于社会科学",
+     "label_en": "AI for social sciences",
+     "evidence_location": "输入摘要",
+     "rationale": "开展1222人随机对照实验，因果识别AI即时答疑对人类坚持性的削弱以及脱离AI后独立表现的下降，属教育干预效果的实证研究。"
+    }
+   ]
   }
  },
  {
@@ -8446,8 +8617,8 @@
    "batch_id": "2026-Roman100021-20261108T213812+0800",
    "owner": "乔徐阳",
    "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-   "decision": "exclude",
-   "rationale": "寻找支撑类人概念表征的架构与数据要素，属认知类比研究。",
+   "decision": "include",
+   "rationale": "在THINGS概念的三元相似度任务上评测75个以上模型，比较架构、微调与数据对概念表征与人类判断对齐的影响，筛选类人概念表征的要素。",
    "verified_metadata": {
     "doi": null,
     "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/dabf612543b97ea9c8f46d058d33cf74-Abstract-Conference.html",
@@ -8455,7 +8626,22 @@
      "https://proceedings.colm.cc/paper_files/paper/2026/hash/dabf612543b97ea9c8f46d058d33cf74-Abstract-Conference.html"
     ]
    },
-   "tags": []
+   "tags": [
+    {
+     "axis": "task",
+     "label": "认知建模",
+     "label_en": "Cognitive modeling",
+     "evidence_location": "输入摘要",
+     "rationale": "Further, most current benchmarks are ill-suited to measuring representational alignment , making LLMs' scores on them unreliable for assessing whether they are "
+    },
+    {
+     "axis": "evaluation",
+     "label": "科学评测",
+     "label_en": "Scientific evaluation",
+     "evidence_location": "输入摘要",
+     "rationale": "Taken together, our findings highlight key computational ingredients for advancing LLMs as models of human conceptual representation and address a key gap in LL"
+    }
+   ]
   }
  },
  {
@@ -9139,8 +9325,8 @@
    "batch_id": "2026-Roman100021-20261108T213812+0800",
    "owner": "乔徐阳",
    "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-   "decision": "exclude",
-   "rationale": "以真实面试问答为人格模拟提供评测基准，属社会仿真方法。",
+   "decision": "include",
+   "rationale": "从2.3万份访谈提取67万问答，为千名真实人物建立访谈锚定的评测，衡量LLM人格模拟在内容、事实与人格维度上的保真度。",
    "verified_metadata": {
     "doi": null,
     "url": "https://proceedings.colm.cc/paper_files/paper/2026/hash/e8711daef520be07cb9852390c673de8-Abstract-Conference.html",
@@ -9148,7 +9334,29 @@
      "https://proceedings.colm.cc/paper_files/paper/2026/hash/e8711daef520be07cb9852390c673de8-Abstract-Conference.html"
     ]
    },
-   "tags": []
+   "tags": [
+    {
+     "axis": "task",
+     "label": "人格心理特征测量",
+     "label_en": "Personality trait measurement",
+     "evidence_location": "输入摘要",
+     "rationale": "Existing evaluation approaches rely on demographic surveys, personality questionnaires, or short AI-led interviews as proxies, but lack direct assessment agains"
+    },
+    {
+     "axis": "domain",
+     "label": "AI 用于社会科学",
+     "label_en": "AI for social sciences",
+     "evidence_location": "输入摘要",
+     "rationale": "从2.3万份访谈提取67万问答，为千名真实人物建立访谈锚定的评测，衡量LLM人格模拟在内容、事实与人格维度上的保真度。"
+    },
+    {
+     "axis": "evaluation",
+     "label": "基准评测",
+     "label_en": "Benchmark evaluation",
+     "evidence_location": "输入摘要",
+     "rationale": "Existing evaluation approaches rely on demographic surveys, personality questionnaires, or short AI-led interviews as proxies, but lack direct assessment agains"
+    }
+   ]
   }
  },
  {
