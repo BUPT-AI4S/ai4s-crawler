@@ -105,6 +105,16 @@ def main():
             {name: copy.deepcopy(value) for name, value in matched[0].items() if name != 'ai4s_review'}
         )
 
+    sle_gap = read(ROOT / 'reviews/2026/audits/wangwanting-2026-smart-learning-catalogue.json')
+    for evidence in sle_gap['new_articles']:
+        doi = evidence['doi'].lower()
+        matched = [p for p in review if p['venue'] == 'j-f28cf1469d' and p.get('id', '').lower() == doi]
+        if len(matched) != 1 or matched[0].get('title') != evidence['title'] or not matched[0].get('abstract'):
+            raise RuntimeError(f'Smart Learning Environments catalogue mismatch: {doi}')
+        source_backfills['j-f28cf1469d'].append(
+            {name: copy.deepcopy(value) for name, value in matched[0].items() if name != 'ai4s_review'}
+        )
+
     if sum(map(len, markers.values())) != 6:
         raise RuntimeError('Expected six reviewed non-research abstract exceptions')
 
