@@ -115,6 +115,17 @@ def main():
             {name: copy.deepcopy(value) for name, value in matched[0].items() if name != 'ai4s_review'}
         )
 
+    mnd_gap = read(ROOT / 'reviews/2026/audits/wangwanting-2026-molecular-neurodegeneration-catalogue.json')
+    for evidence in mnd_gap['new_articles']:
+        doi = evidence['id'].lower()
+        matched = [p for p in review if p['venue'] == 'j-9596fa43cd' and p.get('id', '').lower() == doi]
+        if (len(matched) != 1 or matched[0].get('title') != evidence['title']
+                or matched[0].get('abstract') != evidence['abstract']):
+            raise RuntimeError(f'Molecular Neurodegeneration catalogue mismatch: {doi}')
+        source_backfills['j-9596fa43cd'].append(
+            {name: copy.deepcopy(value) for name, value in matched[0].items() if name != 'ai4s_review'}
+        )
+
     if sum(map(len, markers.values())) != 6:
         raise RuntimeError('Expected six reviewed non-research abstract exceptions')
 
