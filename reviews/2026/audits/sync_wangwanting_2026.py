@@ -101,6 +101,61 @@ def ensure_mnd_candidate_metadata():
     write(path, feedback)
 
 
+def ensure_sle_candidate_metadata():
+    """Verify the six original candidates against Springer Nature article pages."""
+    source = 'j-f28cf1469d'
+    verified = {
+        '10.1186/s40561-025-00427-9': (1650, 'Review'),
+        '10.1186/s40561-026-00433-5': (1017, 'Research'),
+        '10.1186/s40561-026-00435-3': (1907, 'Research'),
+        '10.1186/s40561-026-00442-4': (987, 'Research'),
+        '10.1186/s40561-026-00445-1': (1355, 'Research'),
+        '10.1186/s40561-026-00452-2': (1787, 'Research'),
+    }
+    review = read(REVIEW)
+    found = set()
+    changed = False
+    for paper in review:
+        if paper['venue'] != source or paper['id'].lower() not in verified:
+            continue
+        doi = paper['id'].lower()
+        length, article_type = verified[doi]
+        if doi in found or len(paper['abstract']) != length:
+            raise RuntimeError(f'Smart Learning Environments candidate mismatch: {doi}')
+        found.add(doi)
+        url = f'https://link.springer.com/article/{doi}'
+        values = {'doi': doi, 'title': paper['title'], 'abstract': paper['abstract'],
+                  'article_type': article_type, 'url': url,
+                  'evidence_urls': [url], 'checked_at': '2026-11-26'}
+        metadata = paper['ai4s_review'].setdefault('verified_metadata', {})
+        if any(metadata.get(k) != v for k, v in values.items()):
+            metadata.update(values)
+            changed = True
+    if found != set(verified):
+        raise RuntimeError('Smart Learning Environments candidate set incomplete')
+    if changed:
+        write(REVIEW, review)
+
+    path = ROOT / 'reviews/2026/feedback/Blueblue1101.json'
+    feedback = read(path)
+    row = next(x for x in feedback if x['source_code'] == source)
+    synced = row.get('official_total') == row.get('snapshot_papers') == 54 and audited_source_synced(source, 54)
+    if synced:
+        row['issues'] = [x for x in row.get('issues', []) if not (
+            '正式元数据在线核验仍未完成' in x or '年度快照待重建' in x
+        )]
+        row['next_actions'] = []
+        row['coverage_note'] = ((row.get('coverage_note') or '')
+                                .replace('逐源题录待同步', '逐源题录已同步')
+                                .replace('年度快照待重建', '年度LFS全量已对账'))
+    note = '原六篇候选均按 Springer Nature 正式页面核对题名、DOI、文章类型与原摘要，2026-11-26。'
+    if note not in row.get('coverage_note', ''):
+        row['coverage_note'] = (row.get('coverage_note') or '') + ' ' + note
+    row['evidence_urls'] = list(dict.fromkeys(row.get('evidence_urls', []) +
+                                           [f'https://link.springer.com/article/{doi}' for doi in verified]))
+    write(path, feedback)
+
+
 def ensure_nprot_review():
     """Retain publisher-verified source omissions and explicit owner decisions."""
     audit = read(ROOT / 'reviews/2026/audits/wangwanting-2026-nprot-official-catalogue.json')
@@ -244,6 +299,7 @@ def main():
     ensure_nprot_review()
     ensure_cell_discovery_review()
     ensure_mnd_candidate_metadata()
+    ensure_sle_candidate_metadata()
     review = read(REVIEW)
     candidate = read(AGGREGATE)
     by_key = {key(p): p for p in candidate}
