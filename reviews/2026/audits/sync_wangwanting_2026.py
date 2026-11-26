@@ -50,6 +50,55 @@ def normalize_review_batch(review, source, batch_id, snapshot_at):
     return changed
 
 
+def ensure_mnd_candidate_metadata():
+    """Confirm the three retained papers against their publisher article pages."""
+    source = 'j-9596fa43cd'
+    verified = {
+        '10.1186/s13024-026-00986-6': 1031,
+        '10.1186/s13024-026-00983-9': 2170,
+        '10.1186/s13024-026-00998-2': 1462,
+    }
+    review = read(REVIEW)
+    found = set()
+    changed = False
+    for paper in review:
+        if paper['venue'] != source or paper['id'].lower() not in verified:
+            continue
+        doi = paper['id'].lower()
+        if doi in found or paper['ai4s_review']['decision'] != 'include' or len(paper['abstract']) != verified[doi]:
+            raise RuntimeError(f'Molecular Neurodegeneration candidate mismatch: {doi}')
+        found.add(doi)
+        url = f'https://link.springer.com/article/{doi}'
+        values = {'doi': doi, 'title': paper['title'], 'abstract': paper['abstract'],
+                  'article_type': 'Research', 'url': url,
+                  'evidence_urls': [url], 'checked_at': '2026-11-26'}
+        metadata = paper['ai4s_review'].setdefault('verified_metadata', {})
+        if any(metadata.get(k) != v for k, v in values.items()):
+            metadata.update(values)
+            changed = True
+    if found != set(verified):
+        raise RuntimeError('Molecular Neurodegeneration candidate set incomplete')
+    if changed:
+        write(REVIEW, review)
+
+    path = ROOT / 'reviews/2026/feedback/Blueblue1101.json'
+    feedback = read(path)
+    row = next(x for x in feedback if x['source_code'] == source)
+    synced = row.get('official_total') == row.get('snapshot_papers') == 95 and audited_source_synced(source, 95)
+    if synced:
+        row['issues'] = [x for x in row.get('issues', []) if not (
+            '正式元数据在线核验仍未完成' in x or '年度快照待重建' in x
+        )]
+        row['next_actions'] = []
+        row['coverage_note'] = (row.get('coverage_note') or '').replace('年度快照待重建', '年度LFS全量已对账')
+    note = '三篇纳入候选均按 Springer Nature 正式 Research 页面核对题名、DOI 与原摘要，2026-11-26。'
+    if note not in row.get('coverage_note', ''):
+        row['coverage_note'] = (row.get('coverage_note') or '') + ' ' + note
+    row['evidence_urls'] = list(dict.fromkeys(row.get('evidence_urls', []) +
+                                           [f'https://link.springer.com/article/{doi}' for doi in verified]))
+    write(path, feedback)
+
+
 def ensure_nprot_review():
     """Retain publisher-verified source omissions and explicit owner decisions."""
     audit = read(ROOT / 'reviews/2026/audits/wangwanting-2026-nprot-official-catalogue.json')
@@ -192,6 +241,7 @@ def ensure_cell_discovery_review():
 def main():
     ensure_nprot_review()
     ensure_cell_discovery_review()
+    ensure_mnd_candidate_metadata()
     review = read(REVIEW)
     candidate = read(AGGREGATE)
     by_key = {key(p): p for p in candidate}
