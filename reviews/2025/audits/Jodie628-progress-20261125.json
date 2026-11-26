@@ -2,24 +2,30 @@
   "owner": "郝卓迪",
   "year": 2025,
   "checked_at": "2026-11-25",
-  "input_main_commit": "605b1a3b798cd2b17bdce93e192ebad772144bc6",
+  "input_main_commit": "ce37790c6eb9059a29a2138dd883f4ac1b9e51dd",
   "snapshot_at": "2026-11-09T10:51:18+08:00",
   "candidate_count": 1348,
   "reviewed": 1348,
   "decisions": {
-    "include": 983,
-    "pending": 73,
-    "exclude": 292
+    "include": 1023,
+    "exclude": 308,
+    "pending": 17
   },
-  "vocabulary_commit": "605b1a3b798cd2b17bdce93e192ebad772144bc6",
+  "vocabulary_commit": "ce37790c6eb9059a29a2138dd883f4ac1b9e51dd",
   "original_fields_preserved": true,
   "scope": "仅2025年郝卓迪分工。未审明确保留unreviewed；不修改他人审核、监控代码或既有2026成果。",
   "manual_review_decisions": {
     "129": {
-      "decision": "pending",
-      "rationale": "综述主要讨论Fe-MOF合成与应用；摘要仅称简要介绍ML材料设计，需核实是否实质综合具体AI研究案例。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "出版方Machine learning-assisted synthesis部分实质讨论MOF描述符、神经网络及气体吸附预测案例，不只是AI展望。",
+      "labels": [
+        "AI 用于物质科学",
+        "机器学习"
+      ],
+      "evidence_location": "出版方正文、Methods/Usage Notes或正式文种补证",
+      "evidence_urls": [
+        "https://doi.org/10.1016/j.ccr.2025.216467"
+      ]
     },
     "130": {
       "decision": "pending",
@@ -43,10 +49,10 @@
       "evidence_location": "输入原摘要"
     },
     "133": {
-      "decision": "pending",
-      "rationale": "烯烃复分解综述在结尾提出AI驱动洞见，尚需核实AI是否有具体方法或案例，不能仅凭未来展望纳入。",
+      "decision": "exclude",
+      "rationale": "完整摘要讨论复分解催化挑战，AI仅为未来解决问题的建议，未见实质AI研究方法综合。",
       "labels": [],
-      "evidence_location": "输入原摘要"
+      "evidence_location": "完整输入原摘要复核"
     },
     "134": {
       "decision": "pending",
@@ -67,10 +73,27 @@
       "evidence_location": "输入原摘要"
     },
     "137": {
-      "decision": "pending",
-      "rationale": "原候选缺摘要；出版方检索记录已显示符号回归指导高熵合金逆向设计及四轮实验，待补齐可核实原摘要后纳入。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "已补回出版方原摘要：符号回归缩小高熵合金组成搜索空间，联合不确定性优化推荐实验，四轮制备并验证增强高温比屈服强度。",
+      "labels": [
+        "AI 用于物质科学",
+        "符号回归",
+        "逆向设计"
+      ],
+      "evidence_location": "出版方论文页Abstract及Materials and methods；检索索引可读原摘要",
+      "evidence_urls": [
+        "https://www.sciencedirect.com/science/article/pii/S1369702125002743"
+      ],
+      "verified_metadata": {
+        "abstract": "Rapidly finding new materials that are distinct to those in existing datasets continues to be a challenge for machine learning-driven approaches. Here, we propose a closed-loop framework to accelerate the inverse design of target materials, with emphasis on the use of symbolic regression-guided optimization. The refractory high entropy alloys are used as a model system to demonstrate the efficacy of the proposed approach. Symbolic regression learns a simple formula between a basic physical descriptor (enthalpy of fusion) and target property (yield strength at 1000 °C), which allows us to devise a new alloy system (V-Ti-Mo-Nb-Zr). The property optimization is enabled by combining heuristic algorithms and an uncertainty-aware utility function to recommend candidates for experiment. With only four iterations, we fabricate 21 alloys, of which 12 exhibit improved specific yield strength and two surpass 110 MPa/(g/cm³). The gradual rise in density coupled with the quick increase in lattice distortion underpin the enhanced yield strength. This study highlights the effectiveness of symbolic regression-oriented optimization in identifying target materials from complex systems.",
+        "article_type": "Research article",
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/pii/S1369702125002743",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/pii/S1369702125002743"
+        ],
+        "checked_at": "2026-11-25",
+        "retrieval_note": "Publisher normal page returns403; primary publisher indexed Abstract retrieved. Original input field remains unchanged; unit typography normalized."
+      }
     },
     "138": {
       "decision": "include",
@@ -102,10 +125,26 @@
       "evidence_location": "输入原摘要"
     },
     "142": {
-      "decision": "pending",
-      "rationale": "缺少原摘要；需补齐后区分MOF二氧化碳捕集的实际AI设计流程与前瞻讨论。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "已补回出版方原摘要：实质综述MOF捕碳的机器学习设计与自动实验，分析结构动力学和分离性能之间联系。",
+      "labels": [
+        "AI 用于物质科学",
+        "机器学习"
+      ],
+      "evidence_location": "出版方页面Abstract（检索索引可读完整原摘要），未将Graphical abstract合并为文字摘要",
+      "evidence_urls": [
+        "https://www.sciencedirect.com/science/article/abs/pii/S1369702125004377"
+      ],
+      "verified_metadata": {
+        "abstract": "As a predominant greenhouse gas, CO2 has emerged as a critical environmental challenge on a global scale. Metal-organic frameworks (MOFs), with their large surface area, high pore volume, and tunable structure, exhibit extraordinary potential in CO2 capture. Despite advances in CO2 capture, lack of systematic understanding of inherent mechanisms governing framework flexibility and kinetic behavior in the guest–host system has largely impeded the practical applications. Although most existing work is still at the preliminary stage of brute-force material screening with limited integration of machine learning and theoretical calculations to solve these long-standing problems, AI-driven automated experimentation integrated with intelligent design framework has brought promising solutions, making it possible to bridge the gap between structural properties and separation performance. This review summarizes recent advances in machine learning, theoretical methods, and automated laboratories for CO2 capture with MOFs, highlighting the paradigm shift from theoretical computation to AI-driven automated experimentation.",
+        "article_type": "Review article",
+        "abstract_source_url": "https://www.sciencedirect.com/science/article/abs/pii/S1369702125004377",
+        "evidence_urls": [
+          "https://www.sciencedirect.com/science/article/abs/pii/S1369702125004377"
+        ],
+        "checked_at": "2026-11-25",
+        "retrieval_note": "Publisher indexed original Abstract; CO2 subscript typography normalized; original input preserved."
+      }
     },
     "143": {
       "decision": "include",
@@ -156,10 +195,10 @@
       "evidence_location": "输入原摘要"
     },
     "182": {
-      "decision": "pending",
-      "rationale": "创伤性脑损伤叙述综述主要总结ICU常规管理；AI被列为新工具但作用未明确，需查具体方法综述内容。",
+      "decision": "exclude",
+      "rationale": "完整摘要为ICU颅脑损伤管理叙述综述，AI仅列为尚需研究的新工具，没有明确实质AI方法内容。",
       "labels": [],
-      "evidence_location": "输入原摘要"
+      "evidence_location": "完整输入原摘要复核"
     },
     "183": {
       "decision": "include",
@@ -300,10 +339,17 @@
       "evidence_location": "输入原摘要"
     },
     "221": {
-      "decision": "pending",
-      "rationale": "皮肤微生物与智能织物综述将AI列在多项技术中，未明确具体科研作用，需核实正文。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "正式Review，2025-11-18在线发表。原摘要及出版方全文3.2节综述以机器学习解释生理信号、代谢物和电解质实现压力分类的已有研究；5.4节讨论AI与微生物智能纺织系统，并非仅有题名AI或泛泛未来展望。纳入皮肤健康监测和智能纺织的实质综述；不为综述赋予模型训练阶段或未经核实的具体模型标签。",
+      "labels": [
+        "AI 用于生命科学",
+        "AI 用于工程科学"
+      ],
+      "evidence_location": "出版方开放全文3.2节及5.4节、原摘要",
+      "evidence_urls": [
+        "https://link.springer.com/article/10.1007/s42765-025-00625-7"
+      ],
+      "reviewed_at": "2026-11-26"
     },
     "222": {
       "decision": "exclude",
@@ -381,10 +427,17 @@
       "evidence_location": "输入原摘要"
     },
     "232": {
-      "decision": "pending",
-      "rationale": "原摘要自称perspective，需核实正式文种；虽讨论ML辅助分子动力学的二维界面黏附设计，但观点文种不能纳入。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "PubMed正式类型为Review，出版方注明critical review；实质综述学习辅助分子动力学设计二维黏附界面，摘要自称perspective不等于正式栏目。",
+      "labels": [
+        "AI 用于物质科学",
+        "机器学习"
+      ],
+      "evidence_location": "出版方正文、Methods/Usage Notes或正式文种补证",
+      "evidence_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/40829326/",
+        "https://www.sciencedirect.com/science/article/pii/S0001868625002428"
+      ]
     },
     "247": {
       "decision": "exclude",
@@ -502,10 +555,10 @@
       "evidence_location": "输入原摘要"
     },
     "5": {
-      "decision": "pending",
-      "rationale": "scGFT是无训练解析式生成算法；需核实其生成机制与AI的关系，不能因名称含Transformer就标注神经Transformer。",
+      "decision": "exclude",
+      "rationale": "完整摘要明确scGFT是无训练的解析傅里叶生成算法，学习神经网络只作为对照；不因Transformer名称将解析算法当AI。",
       "labels": [],
-      "evidence_location": "输入原摘要"
+      "evidence_location": "完整输入原摘要复核"
     },
     "6": {
       "decision": "include",
@@ -1183,10 +1236,16 @@
       "evidence_location": "输入原摘要"
     },
     "84": {
-      "decision": "pending",
-      "rationale": "强化学习在题名中可能指患者行为学习；需读完整方法确认是否使用计算学习模型，避免将生物学习误作AI。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "正文Reinforcement learning modelling明确对奖励与损失条件分别拟合Q学习和层级贝叶斯参数，用于研究帕金森去甲肾上腺素机制。",
+      "labels": [
+        "AI 用于生命科学",
+        "强化学习"
+      ],
+      "evidence_location": "出版方论文正文、方法与图注复核（正常页面请求取得）；802使用公开PMC原文",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s42003-025-08627-2"
+      ]
     },
     "85": {
       "decision": "include",
@@ -1275,10 +1334,16 @@
       "evidence_location": "输入原摘要"
     },
     "95": {
-      "decision": "pending",
-      "rationale": "人类强化学习行为任务结合fMRI和认知建模，需核实实际计算模型，避免将生理学习直接等同AI。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "正文对参与者选择实际拟合强化学习模型并比较体验与观察学习率，结合fMRI解释记忆形成。",
+      "labels": [
+        "AI 用于生命科学",
+        "强化学习"
+      ],
+      "evidence_location": "出版方论文正文、方法与图注复核（正常页面请求取得）；802使用公开PMC原文",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s42003-025-08870-7"
+      ]
     },
     "96": {
       "decision": "include",
@@ -1305,10 +1370,16 @@
       "evidence_location": "输入原摘要"
     },
     "99": {
-      "decision": "pending",
-      "rationale": "CellSP发现亚细胞基因-细胞模块，但摘要未明确所用学习算法，需核实是AI学习框架还是常规统计工具。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "CellSP正文明确训练机器学习分类器区分模块细胞，识别非模块基因及生物功能，非仅常规可视化。",
+      "labels": [
+        "AI 用于生命科学",
+        "机器学习"
+      ],
+      "evidence_location": "出版方论文正文、方法与图注复核（正常页面请求取得）；802使用公开PMC原文",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s42003-025-08891-2"
+      ]
     },
     "100": {
       "decision": "include",
@@ -1365,10 +1436,16 @@
       "evidence_location": "输入原摘要"
     },
     "106": {
-      "decision": "pending",
-      "rationale": "SWOT以最优输运学习细胞-空间映射；需核实其AI学习成分，不能将一般数值最优化直接视为AI。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "SWOT方法通过空间加权结构化最优传输学习跨单细胞与空间组学映射，推断细胞类型比例及坐标并实证验证。",
+      "labels": [
+        "AI 用于生命科学",
+        "最优传输"
+      ],
+      "evidence_location": "出版方论文正文、方法与图注复核（正常页面请求取得）；802使用公开PMC原文",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s42003-025-09001-y"
+      ]
     },
     "107": {
       "decision": "include",
@@ -1389,10 +1466,16 @@
       "evidence_location": "输入原摘要"
     },
     "109": {
-      "decision": "pending",
-      "rationale": "描述有效连接生成模型的生命周期分析，摘要未明确是否采用AI学习模型，需核实计算方法。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "正文实际用K均值学习有效连接强度生命周期轨迹的亚群，支持脑连接异质性机制研究。",
+      "labels": [
+        "AI 用于生命科学",
+        "机器学习"
+      ],
+      "evidence_location": "出版方论文正文、方法与图注复核（正常页面请求取得）；802使用公开PMC原文",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s42003-025-08970-4"
+      ]
     },
     "110": {
       "decision": "include",
@@ -1432,10 +1515,16 @@
       "evidence_location": "输入原摘要"
     },
     "114": {
-      "decision": "pending",
-      "rationale": "EcoTyper整合组学发现免疫抑制生态型，但需核实具体机器学习模块及其在当前分析中的作用。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "正文Ecotype discovery明确使用EcoTyper机器学习框架整合转录组并学习细胞状态和群落，解析免疫治疗耐受。",
+      "labels": [
+        "AI 用于生命科学",
+        "机器学习"
+      ],
+      "evidence_location": "出版方论文正文、方法与图注复核（正常页面请求取得）；802使用公开PMC原文",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s42003-025-09087-4"
+      ]
     },
     "115": {
       "decision": "include",
@@ -1538,10 +1627,16 @@
       "evidence_location": "输入原摘要"
     },
     "127": {
-      "decision": "pending",
-      "rationale": "脑启发连接模型解释猕猴物体识别的特异性与泛化；需核实是否训练人工网络及模型在研究中的具体角色。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "正文构建VTC-SOM脑启发模型，从预训练AlexNet学习对象空间并操纵连接研究猕猴视觉抽象机制。",
+      "labels": [
+        "AI 用于生命科学",
+        "深度学习"
+      ],
+      "evidence_location": "出版方论文正文、方法与图注复核（正常页面请求取得）；802使用公开PMC原文",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s42003-025-09411-y"
+      ]
     },
     "128": {
       "decision": "include",
@@ -1567,10 +1662,13 @@
       "evidence_location": "输入原摘要"
     },
     "147": {
-      "decision": "pending",
-      "rationale": "研究R-STDP铁电神经形态硬件及SNN识别/跟踪；需区分通用AI硬件性能验证与AI直接用于科学工程研究的贡献。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "实际构建R-STDP训练的脉冲网络，并在机器人臂静态及移动目标跟踪验证，不只通用数字分类演示。",
+      "labels": [
+        "AI 用于工程科学",
+        "脉冲神经网络"
+      ],
+      "evidence_location": "完整输入原摘要复核"
     },
     "148": {
       "decision": "pending",
@@ -1585,10 +1683,16 @@
       "evidence_location": "输入原摘要"
     },
     "150": {
-      "decision": "pending",
-      "rationale": "AI气候治理框架涵盖科研与政策建议，需核实正式文种及是否为有实质学术内容的方法综述。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "Europe PMC及PubMed正式类型为Review；实质整合气候研究的数据、情景模拟和减缓适应路径中的AI方法，而非无结果社论。",
+      "labels": [
+        "AI 用于地球宇宙科学",
+        "机器学习"
+      ],
+      "evidence_location": "出版方正文、Methods/Usage Notes或正式文种补证",
+      "evidence_urls": [
+        "https://doi.org/10.1016/j.scib.2025.06.035"
+      ]
     },
     "151": {
       "decision": "include",
@@ -1659,10 +1763,10 @@
       "evidence_location": "输入原摘要"
     },
     "214": {
-      "decision": "pending",
-      "rationale": "骨植入物增材制造综述提出潜在AI/ML设计与质控，需核实是否包含实质方法综合，不能只按潜在用途纳入。",
+      "decision": "exclude",
+      "rationale": "骨植入增材制造综述将AI和ML明确描述为潜在整合的未来途径，现有摘要无实质AI方法研究证据。",
       "labels": [],
-      "evidence_location": "输入原摘要"
+      "evidence_location": "完整输入原摘要复核"
     },
     "215": {
       "decision": "include",
@@ -1726,10 +1830,17 @@
       "evidence_location": "输入原摘要"
     },
     "241": {
-      "decision": "pending",
-      "rationale": "提出植物蛋白组与AI的新研究方向，需核实文种及实际方法综合深度。",
+      "decision": "exclude",
+      "rationale": "出版方正式栏目为Opinion，虽数据库粗标Review，按意见文种排除。",
       "labels": [],
-      "evidence_location": "输入原摘要"
+      "evidence_location": "出版方正文、Methods/Usage Notes或正式文种补证",
+      "evidence_urls": [
+        "https://doi.org/10.1016/j.tplants.2025.03.003"
+      ],
+      "verified_metadata": {
+        "article_type": "Opinion",
+        "article_type_source_url": "https://www.sciencedirect.com/science/article/pii/S1360138525000639"
+      }
     },
     "242": {
       "decision": "include",
@@ -1747,10 +1858,10 @@
       "evidence_location": "输入原摘要"
     },
     "244": {
-      "decision": "pending",
-      "rationale": "仅提出结合植被数据与ML改进北极甲烷预测，需核实文种和实际研究证据。",
+      "decision": "exclude",
+      "rationale": "完整原摘要仅提出未来结合植被与机器学习改善甲烷预测，没有实际AI方法或实质方法综述证据。",
       "labels": [],
-      "evidence_location": "输入原摘要"
+      "evidence_location": "完整输入原摘要复核"
     },
     "245": {
       "decision": "pending",
@@ -2256,10 +2367,16 @@
       "evidence_location": "输入原摘要"
     },
     "609": {
-      "decision": "pending",
-      "rationale": "多器官多组学研究报告预测改善，但摘要未明确使用的AI模型，需核实具体预测方法。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "正文认知预测实际使用支持向量回归及LASSO，对多器官组学特征进行嵌套验证和独立测试。",
+      "labels": [
+        "AI 用于生命科学",
+        "支持向量机"
+      ],
+      "evidence_location": "出版方论文正文、方法与图注复核（正常页面请求取得）；802使用公开PMC原文",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41551-025-01506-5"
+      ]
     },
     "585": {
       "decision": "include",
@@ -2280,10 +2397,16 @@
       "evidence_location": "输入原摘要"
     },
     "587": {
-      "decision": "pending",
-      "rationale": "脑图谱先验模型用于全生命周期MRI去颅骨，但摘要未明确学习架构，需核实是否为AI模型。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "出版方扩展图2及公开原文明确脑提取网络整合双卷积与双Transformer，并联合图谱配准实现跨生命周期MRI去颅骨。",
+      "labels": [
+        "AI 用于生命科学",
+        "Transformer 架构"
+      ],
+      "evidence_location": "出版方正文、方法或公开原文补证；587扩展图2及Transformer消融，781训练数据与模型权重公开说明，763无监督概率模型方法",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41551-024-01337-w"
+      ]
     },
     "588": {
       "decision": "include",
@@ -2379,10 +2502,16 @@
       "evidence_location": "输入原摘要"
     },
     "612": {
-      "decision": "pending",
-      "rationale": "使用数学源分离从再支配肌肉EMG提取神经命令；需核实具体算法的AI学习成分。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "正文用非负矩阵分解从肌电运动单元数据学习低维潜在神经驱动，用于神经再支配及功能分离。",
+      "labels": [
+        "AI 用于生命科学",
+        "机器学习"
+      ],
+      "evidence_location": "出版方论文正文、方法与图注复核（正常页面请求取得）；802使用公开PMC原文",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41551-025-01537-y"
+      ]
     },
     "613": {
       "decision": "include",
@@ -2483,16 +2612,30 @@
       "evidence_location": "输入原摘要"
     },
     "624": {
-      "decision": "pending",
-      "rationale": "正式综述主要为真实催化表面建模，AI多在未来整合方向出现，需核实已有ML方法综述深度。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "出版方正文预览及图5、6实质讨论神经势加速全局优化与MLIP构型空间探索，属于具体学习催化建模方法综述。",
+      "labels": [
+        "AI 用于物质科学",
+        "机器学习"
+      ],
+      "evidence_location": "出版方论文正文、方法与图注复核（正常页面请求取得）；802使用公开PMC原文",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s44286-025-00179-w"
+      ]
     },
     "625": {
-      "decision": "pending",
-      "rationale": "自驱动流体实验室的数据强化策略与闭环实验明确，但摘要未说明AI实际决策模块，需核实。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "出版方链接的DynamicExperimentation作者仓库提供实际贝叶斯优化实验循环与数字孪生模型，确认动态流实验中AI用于量子点闭环发现。",
+      "labels": [
+        "AI 用于物质科学",
+        "自主实验室",
+        "贝叶斯优化"
+      ],
+      "evidence_location": "论文Code availability与作者原始方法/代码仓库补证",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s44286-025-00249-z",
+        "https://github.com/AbolhasaniLab/DynamicExperimentation"
+      ]
     },
     "626": {
       "decision": "include",
@@ -2504,10 +2647,13 @@
       "evidence_location": "输入原摘要"
     },
     "627": {
-      "decision": "pending",
-      "rationale": "自动蛋白进化平台采用遗传回路和生长耦联选择；AI只出现在现有方法局限中，需核实有无实际AI决策。",
+      "decision": "exclude",
+      "rationale": "平台以遗传回路、生长耦联选择和机器人实现连续进化，AI仅在引言描述既有设计局限，未见实际AI决策或分析。",
       "labels": [],
-      "evidence_location": "输入原摘要"
+      "evidence_location": "出版方论文正文、方法与图注复核（正常页面请求取得）；802使用公开PMC原文",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s44286-025-00303-w"
+      ]
     },
     "628": {
       "decision": "include",
@@ -2584,10 +2730,13 @@
       "evidence_location": "输入原摘要"
     },
     "637": {
-      "decision": "pending",
-      "rationale": "比较AI文化建筑输出与照片/GIS数据，需明确其社会科学实证贡献与一般AI文化偏差评议的边界。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "实际生成并分析城市文化场景，结合照片、GIS及社会经济数据研究AI再现文化空间的偏差与多样性。",
+      "labels": [
+        "AI 用于社会科学",
+        "大语言模型"
+      ],
+      "evidence_location": "完整输入原摘要复核"
     },
     "638": {
       "decision": "include",
@@ -4760,10 +4909,10 @@
       "evidence_location": "输入原摘要"
     },
     "551": {
-      "decision": "pending",
-      "rationale": "AI素养课程涉及算法偏差和过滤气泡，需核实是否实际使用AI工具开展干预，还是仅教授AI知识。",
+      "decision": "exclude",
+      "rationale": "实测AI知识与算法偏差课程的学习效果，AI是教学主题，摘要未显示AI系统作为研究或干预工具。",
       "labels": [],
-      "evidence_location": "输入原摘要"
+      "evidence_location": "完整输入原摘要复核"
     },
     "552": {
       "decision": "include",
@@ -4831,22 +4980,28 @@
       "evidence_location": "输入原摘要"
     },
     "561": {
-      "decision": "pending",
-      "rationale": "系统综述GenAI创业教育，需查原摘要中的实证AI教学方法与学习效果综合深度。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "系统综述50项生成AI创业教育研究，实质综合个体化教学及模拟训练并区分概念与实证证据。",
+      "labels": [
+        "AI 用于社会科学",
+        "大语言模型"
+      ],
+      "evidence_location": "完整输入原摘要复核"
     },
     "562": {
-      "decision": "pending",
-      "rationale": "跟踪GenAI素养形成，需核实是否实际使用AI学习环境以及具体研究设计。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "16周实际使用多个生成AI工具，采集对话、问卷及访谈研究学习者素养与认知策略发展。",
+      "labels": [
+        "AI 用于社会科学",
+        "大语言模型"
+      ],
+      "evidence_location": "完整输入原摘要复核"
     },
     "563": {
-      "decision": "pending",
-      "rationale": "评估AI知识教育模块与就业关联，需核实AI是否作为实际工具参与，不能仅按AI知识课程纳入。",
+      "decision": "exclude",
+      "rationale": "研究AI知识课程、资本量表及就业关联，AI为课程主题与能力变量，未显示AI执行研究任务。",
       "labels": [],
-      "evidence_location": "输入原摘要"
+      "evidence_location": "完整输入原摘要复核"
     },
     "564": {
       "decision": "include",
@@ -4871,16 +5026,22 @@
       "evidence_location": "输入原摘要"
     },
     "567": {
-      "decision": "pending",
-      "rationale": "教育AI批判性分析讨论概念、方法和伦理问题，需核实正式文种及是否构成实质学术方法综述。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "实质分析教育AI中的学习者建模、时序模型评价和解释方法，并基于理论及实证提出神经符号混合方案。",
+      "labels": [
+        "AI 用于社会科学",
+        "科学评测"
+      ],
+      "evidence_location": "完整输入原摘要复核"
     },
     "650": {
-      "decision": "pending",
-      "rationale": "研究视觉AI在社会经济群体上的分类偏差，需确认其独立社会科学任务贡献，避免仅以通用模型公平性评测纳入。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "在跨国和美国县域大规模居住图像中实测深度和视觉语言模型的社会经济偏差，并关联真实群体差异。",
+      "labels": [
+        "AI 用于社会科学",
+        "科学评测"
+      ],
+      "evidence_location": "完整输入原摘要复核"
     },
     "651": {
       "decision": "include",
@@ -5223,10 +5384,16 @@
       "evidence_location": "输入原摘要"
     },
     "698": {
-      "decision": "pending",
-      "rationale": "技术与语言焦虑综述仅称AI研究增加，需核实是否实质综合真实AI教学干预。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "正文明确有29项AI技术实证研究，涵盖聊天机器人、自动写作评价、语音识别和情感计算，实质综合语言焦虑干预。",
+      "labels": [
+        "AI 用于社会科学",
+        "大语言模型"
+      ],
+      "evidence_location": "出版方论文正文、方法与图注复核（正常页面请求取得）；802使用公开PMC原文",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41599-025-05921-6"
+      ]
     },
     "699": {
       "decision": "include",
@@ -5303,10 +5470,13 @@
       "evidence_location": "输入原摘要"
     },
     "709": {
-      "decision": "pending",
-      "rationale": "研究干旱期间新闻、社媒与搜索行为，需核实摘要所称AI是否有具体实际文本分析方法。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "实际以NLP分析韩国干旱新闻和社媒情绪，结合搜索轨迹研究风险情景中的社会行为。",
+      "labels": [
+        "AI 用于社会科学",
+        "自然语言处理"
+      ],
+      "evidence_location": "完整输入原摘要复核"
     },
     "710": {
       "decision": "exclude",
@@ -5511,10 +5681,17 @@
       "evidence_location": "输入原摘要"
     },
     "735": {
-      "decision": "pending",
-      "rationale": "AI-EPI可能是整合上皮程序的名称；摘要未明确使用AI算法，需核实而不能由名称判断。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "作者原始代码确认AI-EPI采用共识非负矩阵分解识别跨患者共享及特异基因模块，结合空间组学研究胆囊癌微环境。",
+      "labels": [
+        "AI 用于生命科学",
+        "机器学习"
+      ],
+      "evidence_location": "论文Code availability与作者原始方法/代码仓库补证",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41588-025-02236-9",
+        "https://github.com/JulieBaker1/AIEPI"
+      ]
     },
     "736": {
       "decision": "include",
@@ -5672,10 +5849,16 @@
       "evidence_location": "输入原摘要"
     },
     "754": {
-      "decision": "pending",
-      "rationale": "Spotiphy重建单细胞空间转录组，但摘要未明确其实际学习算法，需核实AI角色。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "Spotiphy方法实际使用预训练Stardist深度模型分割H&E细胞核，再结合贝叶斯组学推断重建细胞空间。",
+      "labels": [
+        "AI 用于生命科学",
+        "深度学习"
+      ],
+      "evidence_location": "出版方论文正文、方法与图注复核（正常页面请求取得）；802使用公开PMC原文",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41592-025-02622-5"
+      ]
     },
     "755": {
       "decision": "include",
@@ -5751,10 +5934,16 @@
       "evidence_location": "输入原摘要"
     },
     "763": {
-      "decision": "pending",
-      "rationale": "Proseg以细胞模拟和概率推断解决空间转录组分割，摘要未明确是否使用学习模型，需核实方法而非仅凭基准比较纳入。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "公开原文确认Proseg为完全无监督的转录本空间概率模型，使用MCMC推断细胞形态并解析肿瘤微环境。",
+      "labels": [
+        "AI 用于生命科学",
+        "机器学习"
+      ],
+      "evidence_location": "出版方正文、方法或公开原文补证；587扩展图2及Transformer消融，781训练数据与模型权重公开说明，763无监督概率模型方法",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41592-025-02697-0"
+      ]
     },
     "764": {
       "decision": "include",
@@ -5910,10 +6099,16 @@
       "evidence_location": "输入原摘要"
     },
     "781": {
-      "decision": "pending",
-      "rationale": "GRASP整合实验约束预测蛋白质复合物结构，但摘要未说明其内部学习模型；需核实方法，不能仅因比较AlphaFold3而纳入。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "出版方提供MEGAFold-Multimer及GRASP训练数据与模型权重，确认是训练的结构预测模型；整合多类实验约束预测复合物。",
+      "labels": [
+        "AI 用于生命科学",
+        "深度学习"
+      ],
+      "evidence_location": "出版方正文、方法或公开原文补证；587扩展图2及Transformer消融，781训练数据与模型权重公开说明，763无监督概率模型方法",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41592-025-02820-1"
+      ]
     },
     "782": {
       "decision": "exclude",
@@ -5922,10 +6117,16 @@
       "evidence_location": "输入原摘要"
     },
     "783": {
-      "decision": "pending",
-      "rationale": "iSCALE重建超分辨率空间转录组并自动注释组织，摘要未明确实现中是否存在AI学习模型，需查方法。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "iSCALE正文明确用视觉Transformer提取组织特征、四层多层感知机学习表达关系，重建大组织超分辨空间转录组。",
+      "labels": [
+        "AI 用于生命科学",
+        "深度学习"
+      ],
+      "evidence_location": "出版方正文、方法或公开原文补证；587扩展图2及Transformer消融，781训练数据与模型权重公开说明，763无监督概率模型方法",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41592-025-02770-8"
+      ]
     },
     "784": {
       "decision": "include",
@@ -5995,10 +6196,16 @@
       "evidence_location": "输入原摘要"
     },
     "791": {
-      "decision": "pending",
-      "rationale": "CaCoFold-R3D以进化信息和概率语法联合预测RNA结构，需核实学习成分；为深度模型提供输入本身不足以认定AI应用。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "CaCoFold-R3D正文明确联合概率上下文无关语法和profile隐马尔可夫模型学习序列同源及RNA结构，而非只为未来深度模型提供输入。",
+      "labels": [
+        "AI 用于生命科学",
+        "机器学习"
+      ],
+      "evidence_location": "出版方正文、方法或公开原文补证；587扩展图2及Transformer消融，781训练数据与模型权重公开说明，763无监督概率模型方法",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41592-025-02833-w"
+      ]
     },
     "792": {
       "decision": "include",
@@ -6093,10 +6300,16 @@
       "evidence_location": "输入原摘要"
     },
     "802": {
-      "decision": "pending",
-      "rationale": "u-Segment3D将二维分割结果无训练地整合为三维，需核实其是否实质使用学习模型，而非仅与深度分割方法兼容。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "正文实际将预训练Cellpose二维分割和流场作为u-Segment3D输入，验证完整学习辅助三维显微分析流程，未把无训练等同无AI。",
+      "labels": [
+        "AI 用于生命科学",
+        "深度学习"
+      ],
+      "evidence_location": "出版方论文正文、方法与图注复核（正常页面请求取得）；802使用公开PMC原文",
+      "evidence_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12615268/"
+      ]
     },
     "803": {
       "decision": "include",
@@ -6257,10 +6470,16 @@
       "evidence_location": "输入原摘要"
     },
     "822": {
-      "decision": "pending",
-      "rationale": "CELTIC以细胞上下文改善无标记图像的细胞器标记预测，需确认其具体学习模型及训练方法。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "CELTIC正文明确用U-Net、上下文特征及DAFT融合预测细胞器荧光，并用自编码器构建细胞形状上下文。",
+      "labels": [
+        "AI 用于生命科学",
+        "深度学习"
+      ],
+      "evidence_location": "出版方正文、方法或公开原文补证；587扩展图2及Transformer消融，781训练数据与模型权重公开说明，763无监督概率模型方法",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41592-025-02960-4"
+      ]
     },
     "823": {
       "decision": "include",
@@ -6383,10 +6602,16 @@
       "evidence_location": "输入原摘要"
     },
     "837": {
-      "decision": "pending",
-      "rationale": "系统综述便携技术评价婴儿运动发育，但摘要未明确AI模型的实际覆盖及分析，需核实是否为AI方法实质综述。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "正文实质比较OpenPose、DeepLabCut、SVM、树模型和神经网络在婴儿运动跟踪、诊断与预测中的应用。",
+      "labels": [
+        "AI 用于生命科学",
+        "机器学习"
+      ],
+      "evidence_location": "出版方正文、Methods/Usage Notes或正式文种补证",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41746-025-01450-3"
+      ]
     },
     "838": {
       "decision": "include",
@@ -6417,10 +6642,16 @@
       "evidence_location": "输入原摘要"
     },
     "841": {
-      "decision": "pending",
-      "rationale": "摘要概述AI精准肿瘤学进展但无原创实验结果；正式标记Article，需查正文确认是实质综述还是观点文章。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "正文具有文献检索与筛选标准，并实质综合患者数据AI肿瘤标志物及诊疗研究，属于有实质学术内容的综述。",
+      "labels": [
+        "AI 用于生命科学",
+        "机器学习"
+      ],
+      "evidence_location": "出版方正文、Methods/Usage Notes或正式文种补证",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41746-025-01471-y"
+      ]
     },
     "842": {
       "decision": "include",
@@ -6523,10 +6754,13 @@
       "evidence_location": "输入原摘要"
     },
     "853": {
-      "decision": "pending",
-      "rationale": "研究测量创伤与正念提示对模型自报焦虑的影响；需核实其是否评价真实精神卫生科学任务，而非将模型人格化的通用行为测试。",
+      "decision": "exclude",
+      "rationale": "正文实测对象仅为GPT-4自报焦虑和提示影响，未评价患者、治疗结果或模型的实际临床任务，按通用模型行为测试排除。",
       "labels": [],
-      "evidence_location": "输入原摘要"
+      "evidence_location": "出版方正文、Methods/Usage Notes或正式文种补证",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41746-025-01512-6"
+      ]
     },
     "854": {
       "decision": "include",
@@ -6831,10 +7065,13 @@
       "evidence_location": "输入原摘要"
     },
     "887": {
-      "decision": "pending",
-      "rationale": "研究优化队列招募代表性与覆盖，但摘要未明确使用学习模型；计算优化和模拟本身不足以证明AI角色。",
+      "decision": "exclude",
+      "rationale": "正文采用KL散度目标与SciPy约束数值最优化配置招募资源；AI只作数据公平性动机，未使用学习模型。",
       "labels": [],
-      "evidence_location": "输入原摘要"
+      "evidence_location": "出版方正文、Methods/Usage Notes或正式文种补证",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41746-025-01804-x"
+      ]
     },
     "888": {
       "decision": "include",
@@ -7162,10 +7399,16 @@
       "evidence_location": "输入原摘要"
     },
     "925": {
-      "decision": "pending",
-      "rationale": "摘要描述乳腺癌单细胞聚类和组学分析但未给出题名所称机器学习的具体实现，需确认AI在发现中的实际作用。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "正文明确无监督聚类、降维及CARD条件自回归去卷积学习细胞组成，揭示乳腺癌间质免疫生态位。",
+      "labels": [
+        "AI 用于生命科学",
+        "机器学习"
+      ],
+      "evidence_location": "出版方正文、Methods/Usage Notes或正式文种补证",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41746-025-01967-7"
+      ]
     },
     "926": {
       "decision": "include",
@@ -8580,10 +8823,13 @@
       "evidence_location": "输入原摘要"
     },
     "318": {
-      "decision": "pending",
-      "rationale": "摘要提及分子动力学与机器学习捕获相互作用，但尚需确认学习算法在本研究的实际训练和结果，而非方法展望。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "完整摘要明确实际联合机器学习与分子动力学识别微塑料及PFAS胁迫下细菌抗性基因水平转移风险。",
+      "labels": [
+        "AI 用于生命科学",
+        "机器学习"
+      ],
+      "evidence_location": "完整输入原摘要复核"
     },
     "319": {
       "decision": "include",
@@ -8953,10 +9199,10 @@
       "evidence_location": "输入原摘要"
     },
     "361": {
-      "decision": "pending",
-      "rationale": "类器官毒理综述主要将AI描述为尚未开发的未来方向，需核实正文是否实质评述既有AI方法。",
+      "decision": "exclude",
+      "rationale": "类器官毒理综述在摘要将AI分析明确列为未充分利用和未来整合建议，未见现有AI实质方法贡献。",
       "labels": [],
-      "evidence_location": "输入原摘要"
+      "evidence_location": "完整输入原摘要复核"
     },
     "362": {
       "decision": "include",
@@ -9014,10 +9260,14 @@
       "evidence_location": "输入原摘要"
     },
     "368": {
-      "decision": "pending",
-      "rationale": "题名指向多模态和集成生物富集预测，但当前摘录只显示既有方法局限，需补读完整方法与结果确认实现。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "完整摘要明确MML-EL融合分子数值与类别文本预测鱼类生物富集，验证泛化并用SHAP解析结构因素。",
+      "labels": [
+        "AI 用于生命科学",
+        "多模态学习",
+        "集成学习"
+      ],
+      "evidence_location": "完整输入原摘要复核"
     },
     "369": {
       "decision": "include",
@@ -9431,10 +9681,10 @@
       "evidence_location": "输入原摘要"
     },
     "1050": {
-      "decision": "pending",
-      "rationale": "提供去中心化交易与财富分布指标，但摘要仅泛称机器学习资源，需明确面向经济科学问题的AI训练或评价任务。",
+      "decision": "exclude",
+      "rationale": "区块链交易指数资源仅泛称可用于高级机器学习，缺少AI用于具体经济科学问题或工程对象的证据。",
       "labels": [],
-      "evidence_location": "输入原摘要"
+      "evidence_location": "完整输入原摘要复核"
     },
     "1051": {
       "decision": "include",
@@ -9796,10 +10046,10 @@
       "evidence_location": "输入原摘要"
     },
     "1089": {
-      "decision": "pending",
-      "rationale": "比特币交易图提供GNN节点分类基准，但需明确其科学或工程对象贡献，避免将通用图学习与金融业务分析混同AI4S。",
+      "decision": "exclude",
+      "rationale": "主要提供交易图通用节点分类和金融欺诈基准，未见AI用于独立科学问题，按通用业务与图学习演示排除。",
       "labels": [],
-      "evidence_location": "输入原摘要"
+      "evidence_location": "完整输入原摘要复核"
     },
     "1090": {
       "decision": "include",
@@ -9852,10 +10102,13 @@
       "evidence_location": "输入原摘要"
     },
     "1095": {
-      "decision": "pending",
-      "rationale": "提供住宅电负荷和天气数据，但摘要未说明AI模型开发或评价的具体组成，需确认直接AI研究任务。",
+      "decision": "exclude",
+      "rationale": "核读正文及Usage Notes，核心为住宅电量气象观测与常规统计分析；未见明确AI模型或专用学习数据任务，通用可预测数据不足以纳入。",
       "labels": [],
-      "evidence_location": "输入原摘要"
+      "evidence_location": "出版方正文、Methods/Usage Notes或正式文种补证",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41597-025-04766-7"
+      ]
     },
     "1096": {
       "decision": "include",
@@ -10618,10 +10871,13 @@
       "evidence_location": "输入原摘要"
     },
     "1175": {
-      "decision": "pending",
-      "rationale": "长期农田实验资源仅在结尾泛称鼓励AI复用，需明确直接支持的AI训练或评价任务，而非仅未来愿景。",
+      "decision": "exclude",
+      "rationale": "核读正文及Usage Notes，为未经加工的长期农田观测；AI仅在结尾泛称鼓励复用，没有具体直接AI研究贡献。",
       "labels": [],
-      "evidence_location": "输入原摘要"
+      "evidence_location": "出版方正文、Methods/Usage Notes或正式文种补证",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41597-025-05314-z"
+      ]
     },
     "1176": {
       "decision": "include",
@@ -11061,10 +11317,16 @@
       "evidence_location": "输入原摘要"
     },
     "1222": {
-      "decision": "pending",
-      "rationale": "ARMD为耐药微生物病历数据，摘要未明确AI模型训练评价或专门数据设计，需查用途细节。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "正文明确ARMD专门支持机器学习预测耐药出现及经验抗生素选择，提供相应微生物与临床特征。",
+      "labels": [
+        "AI 用于生命科学",
+        "科学数据"
+      ],
+      "evidence_location": "出版方正文、Methods/Usage Notes或正式文种补证",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41597-025-05649-7"
+      ]
     },
     "1223": {
       "decision": "include",
@@ -12748,7 +13010,7 @@
       "evidence_location": "输入原摘要"
     }
   },
-  "publisher_access_limit": "本轮ScienceDirect的CCR/Materials Today/Physics Reports目录直接读取403；Nature Methods年度目录重定向身份服务且不可读取。当前Computer Use工具不可用，未伪称成功浏览器或人工核验。",
+  "publisher_access_limit": "本轮ScienceDirect的CCR/Materials Today/Physics Reports目录直接读取403；Nature年度目录的网页检索曾重定向身份服务；随后正常HTTP已读取部分Nature论文正文或公开预览。当前Computer Use工具不可用，未伪称成功浏览器或人工核验。",
   "external_evidence": [
     "https://congress.eular.org/abstractarchive",
     "https://eccv.ecva.net/Conferences/2024"
