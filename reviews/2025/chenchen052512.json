@@ -59594,13 +59594,13 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2025-chenchen-screen-2026-11-25",
+      "batch_id": "2025-chenchen-final-two-2026-11-26",
       "owner": "陈晨",
       "snapshot_at": "2026-11-09T10:51:18+08:00",
-      "reviewed_at": "2026-11-25",
-      "vocabulary_base_commit": "9d3d268610c6b20c4f9772cf290bf70a4e6983f7",
-      "decision": "pending",
-      "rationale": "出版社存档将其标为 Short Communication，原文仅有图形摘要和作者 Highlights，冻结摘要是图像占位；保留候选待负责人确认处置。",
+      "reviewed_at": "2026-11-26",
+      "vocabulary_base_commit": "92b334634e201c28b4ee6d7e4dd1b6f6220c7f4a",
+      "decision": "exclude",
+      "rationale": "出版方标为 Short Communication，正式存档仅提供图形摘要和 Highlights，冻结摘要字段为图像占位。按负责人确认排除。",
       "verified_metadata": {
         "doi": "10.1016/j.jpha.2025.101367",
         "url": "https://doi.org/10.1016/j.jpha.2025.101367",
@@ -59615,8 +59615,22 @@
         "article_type": "short communication"
       },
       "tags": [],
-      "evidence_location": "出版社存档文献类型及摘要位置",
-      "was_initial_candidate": true
+      "evidence_location": "正式存档的文献类型、图形摘要及 Highlights",
+      "was_initial_candidate": true,
+      "abstract_requirement": {
+        "status": "not_required",
+        "reason": "official_source_has_no_independent_abstract",
+        "checked_by": "陈晨",
+        "checked_at": "2026-11-26",
+        "evidence_urls": [
+          "https://doi.org/10.1016/j.jpha.2025.101367",
+          "https://linkinghub.elsevier.com/retrieve/pii/S2095177925001844",
+          "https://pubmed.ncbi.nlm.nih.gov/40893441/",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC12398819/",
+          "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12398819/fullTextXML"
+        ],
+        "note": "出版方标为 Short Communication，正式存档仅提供图形摘要和 Highlights，冻结摘要字段为图像占位。按负责人确认排除。"
+      }
     }
   },
   {
@@ -127418,13 +127432,13 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2025-chenchen-screen-2026-11-25",
+      "batch_id": "2025-chenchen-final-two-2026-11-26",
       "owner": "陈晨",
       "snapshot_at": "2026-11-09T10:51:18+08:00",
-      "reviewed_at": "2026-11-25",
-      "vocabulary_base_commit": "9d3d268610c6b20c4f9772cf290bf70a4e6983f7",
-      "decision": "pending",
-      "rationale": "专题候选涉及需要由负责人独立核验的敏感研究范围，暂保留原记录并待判。",
+      "reviewed_at": "2026-11-26",
+      "vocabulary_base_commit": "92b334634e201c28b4ee6d7e4dd1b6f6220c7f4a",
+      "decision": "include",
+      "rationale": "正式原文表明，机器学习直接承担病毒适应性的预测任务，结果章节报告了模型评估，属于 AI 用于生命科学的原创研究。",
       "verified_metadata": {
         "doi": "10.34133/research.0871",
         "url": "https://doi.org/10.34133/research.0871",
@@ -127434,8 +127448,16 @@
           "https://pmc.ncbi.nlm.nih.gov/articles/PMC12480747/"
         ]
       },
-      "tags": [],
-      "evidence_location": "输入摘要",
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于生命科学",
+          "label_en": "AI for life sciences",
+          "evidence_location": "正式全文的摘要、结果及讨论",
+          "rationale": "正式原文表明，机器学习直接承担病毒适应性的预测任务，结果章节报告了模型评估，属于 AI 用于生命科学的原创研究。"
+        }
+      ],
+      "evidence_location": "正式全文的摘要、结果及讨论",
       "was_initial_candidate": true
     }
   },
