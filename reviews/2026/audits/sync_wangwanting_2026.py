@@ -95,6 +95,15 @@ def main():
         source_backfills['ecai'].append(
             {name: copy.deepcopy(value) for name, value in matched[0].items() if name != 'ai4s_review'}
         )
+    nature_gap = read(ROOT / 'reviews/2026/audits/wangwanting-2026-natcomputsci-official-seven.json')
+    for evidence in nature_gap['new_articles']:
+        doi = evidence['doi'].lower()
+        matched = [p for p in review if p['venue'] == 'natcomputsci' and p.get('id', '').lower() == doi]
+        if len(matched) != 1 or matched[0].get('title') != evidence['title']:
+            raise RuntimeError(f'Nature Computational Science catalogue mismatch: {doi}')
+        source_backfills['natcomputsci'].append(
+            {name: copy.deepcopy(value) for name, value in matched[0].items() if name != 'ai4s_review'}
+        )
 
     if sum(map(len, markers.values())) != 6:
         raise RuntimeError('Expected six reviewed non-research abstract exceptions')
@@ -121,6 +130,9 @@ def main():
                     if not lookup[k].get('abstract'):
                         lookup[k]['abstract'] = plain['abstract']
                         lookup[k]['screening_status'] = 'ready'
+                        changed = True
+                    if lookup[k].get('article_type') in (None, '', 'unknown') and plain.get('article_type') not in (None, '', 'unknown'):
+                        lookup[k]['article_type'] = plain['article_type']
                         changed = True
                 else:
                     records.append(copy.deepcopy(plain))
