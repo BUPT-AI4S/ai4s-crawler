@@ -126,6 +126,18 @@ def main():
             {name: copy.deepcopy(value) for name, value in matched[0].items() if name != 'ai4s_review'}
         )
 
+    sci_gap = read(ROOT / 'reviews/2026/audits/wangwanting-2026-science-immunology-catalogue.json')
+    for evidence in sci_gap['new_articles']:
+        doi = evidence['id'].lower()
+        matched = [p for p in review if p['venue'] == 'j-3d73a601f6' and p.get('id', '').lower() == doi]
+        if (len(matched) != 1 or matched[0].get('title') != evidence['title']
+                or matched[0].get('abstract') != evidence['abstract']
+                or matched[0].get('ai4s_review', {}).get('decision') != 'exclude'):
+            raise RuntimeError(f'Science Immunology catalogue mismatch: {doi}')
+        source_backfills['j-3d73a601f6'].append(
+            {name: copy.deepcopy(value) for name, value in matched[0].items() if name != 'ai4s_review'}
+        )
+
     if sum(map(len, markers.values())) != 6:
         raise RuntimeError('Expected six reviewed non-research abstract exceptions')
 
