@@ -128,6 +128,32 @@ def ensure_cell_discovery_review():
         review.append(paper)
         old.add(k)
         changed = True
+    verified = audit['verified_candidates']
+    if len(verified) != 5 or len({x['doi'].lower() for x in verified}) != 5:
+        raise RuntimeError('Cell Discovery five-candidate verification incomplete')
+    for evidence in verified:
+        doi = evidence['doi'].lower()
+        matches = [p for p in review if key(p) == ('nature-celldisc', YEAR, doi)]
+        if len(matches) != 1 or matches[0]['title'] != evidence['title']:
+            raise RuntimeError(f'Cell Discovery candidate metadata mismatch: {doi}')
+        paper = matches[0]
+        rv = paper['ai4s_review']
+        if evidence['article_type'] == 'Correspondence':
+            if evidence['abstract_present'] or rv['decision'] != 'exclude':
+                raise RuntimeError(f'Unresolved non-research candidate: {doi}')
+        elif evidence['article_type'] != 'Article' or not evidence['abstract_present']:
+            raise RuntimeError(f'Candidate lacks official original abstract: {doi}')
+        metadata = rv.setdefault('verified_metadata', {})
+        values = {
+            'url': evidence['url'], 'doi': doi,
+            'article_type': evidence['article_type'],
+            'evidence_urls': list(dict.fromkeys(metadata.get('evidence_urls', []) + [evidence['url']])),
+            'checked_at': audit['checked_at'],
+        }
+        if any(metadata.get(k) != v for k, v in values.items()) or paper.get('article_type') != evidence['article_type']:
+            metadata.update(values)
+            paper['article_type'] = evidence['article_type']
+            changed = True
     if changed:
         write(REVIEW, review)
 
@@ -136,10 +162,10 @@ def ensure_cell_discovery_review():
     row = next(x for x in feedback if x['source_code'] == 'nature-celldisc')
     row['official_total'] = 82
     row['official_scope'] = 'Cell Discovery 官网 articles?year=2026，2026-11-26 在线发表目录5页82个唯一 DOI，包含 Article 与 Research Highlight。'
-    row['coverage_note'] = '官网82篇，原逐源书目78篇；4篇漏采按官网原摘要与文章类型逐篇核实，3篇实验生物学研究与1篇 Research Highlight 均排除；补录后逐源书目82篇。原5篇候选结论保留。年度快照仍需同步。'
-    row['evidence_urls'] = list(dict.fromkeys(row['evidence_urls'] + [audit['official_url']] + [x['url'] for x in papers]))
-    row['issues'] = ['年度快照仍为旧版本，待与补录后的逐源书目同步对账。', '原有5篇候选的正式元数据仍需逐篇在线复核。']
-    row['next_actions'] = ['按82个官网唯一 DOI 口径完成年度快照同步。', '逐篇复核原有候选正式元数据。']
+    row['coverage_note'] = '官网82篇，原逐源书目78篇；4篇漏采按官网原摘要与文章类型逐篇核实，3篇实验生物学研究与1篇 Research Highlight 均排除；补录后逐源书目82篇。原5篇候选已逐篇复核官网正式页面、题名、类型及独立摘要；4篇 Article 保留纳入，1篇无独立摘要的 Correspondence 保留排除。年度快照仍需同步。'
+    row['evidence_urls'] = list(dict.fromkeys(row['evidence_urls'] + [audit['official_url']] + [x['url'] for x in papers + verified]))
+    row['issues'] = ['年度快照仍为旧版本，待与补录后的逐源书目同步对账。']
+    row['next_actions'] = ['按82个官网唯一 DOI 口径完成年度快照同步。']
     write(path, feedback)
 
 
