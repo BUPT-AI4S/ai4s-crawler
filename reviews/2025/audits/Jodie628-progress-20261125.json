@@ -2,16 +2,16 @@
   "owner": "郝卓迪",
   "year": 2025,
   "checked_at": "2026-11-25",
-  "input_main_commit": "ce37790c6eb9059a29a2138dd883f4ac1b9e51dd",
+  "input_main_commit": "752c5709022465a299e0df5f90cae7d3e29a120f",
   "snapshot_at": "2026-11-09T10:51:18+08:00",
   "candidate_count": 1348,
   "reviewed": 1348,
   "decisions": {
-    "include": 1023,
-    "exclude": 308,
-    "pending": 17
+    "include": 1026,
+    "exclude": 311,
+    "pending": 11
   },
-  "vocabulary_commit": "ce37790c6eb9059a29a2138dd883f4ac1b9e51dd",
+  "vocabulary_commit": "752c5709022465a299e0df5f90cae7d3e29a120f",
   "original_fields_preserved": true,
   "scope": "仅2025年郝卓迪分工。未审明确保留unreviewed；不修改他人审核、监控代码或既有2026成果。",
   "manual_review_decisions": {
@@ -256,10 +256,17 @@
       "evidence_location": "输入原摘要"
     },
     "207": {
-      "decision": "pending",
-      "rationale": "BiP/Grp94结构与药物发现综述仅在结尾称讨论如何使用ML，需查是否存在具体AI科研方法或案例。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "正式Review。公开作者稿的“Incorporation of Artificial Intelligence to understand chaperone mechanisms and develop inhibitors”专节实质综述同源Hsp90伴侣蛋白中机器学习结合快速分子动力学分析变构调节，以及深度学习处理配体诱导折叠以辅助药物设计的已有研究（引用60–62）。并明确ER伴侣蛋白证据仍不足；纳入伴侣蛋白机制与药物发现综述，不将展望误作本研究新训练或已验证的BiP/Grp94模型。",
+      "labels": [
+        "AI 用于生命科学"
+      ],
+      "evidence_location": "公开作者稿AI专节及出版方Review文种",
+      "evidence_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12049254/",
+        "https://www.sciencedirect.com/science/article/pii/S0165614725000446"
+      ],
+      "reviewed_at": "2026-11-26"
     },
     "208": {
       "decision": "exclude",
@@ -1671,16 +1678,24 @@
       "evidence_location": "完整输入原摘要复核"
     },
     "148": {
-      "decision": "pending",
-      "rationale": "对盘古天气等模型突转台风轨迹进行再评估，科研任务明确，但需核实正式文种是否为评论或原创短文。",
+      "decision": "exclude",
+      "rationale": "出版方公开PDF首页明确标为Commentary。虽然文中比较AI天气模型与数值模式预测急转台风，但正式文种为评论，按统一文种规则排除，不将其误当原创研究正文。",
       "labels": [],
-      "evidence_location": "输入原摘要"
+      "evidence_location": "出版方公开PDF首页文种",
+      "evidence_urls": [
+        "https://www.sciengine.com/doi/pdf/661A1AF3506A4477BBC3D0C7010EC29E"
+      ],
+      "reviewed_at": "2026-11-26"
     },
     "149": {
-      "decision": "pending",
-      "rationale": "缺少原摘要；需补回AI设计肽增强柑橘抗病性的出版方原文信息。",
+      "decision": "exclude",
+      "rationale": "作者Zhibo Zhao公开上传的出版方排版稿封面明确为Research Highlight，正文解读Zhao等发表于Science的另一项研究，未提供本篇原创实验。按研究亮点文种排除；不因题名提及AI肽设计而当作原创研究。",
       "labels": [],
-      "evidence_location": "输入原摘要"
+      "evidence_location": "作者公开上传出版方预校稿封面Research Highlight及正文",
+      "evidence_urls": [
+        "https://www.researchgate.net/publication/392743288_AI-identified_peptides_boost_jasmonate-mediated_natural_resistance_against_citrus_Huanglongbing"
+      ],
+      "reviewed_at": "2026-11-26"
     },
     "150": {
       "decision": "include",
@@ -1816,10 +1831,16 @@
       "evidence_location": "输入原摘要"
     },
     "239": {
-      "decision": "pending",
-      "rationale": "数字相机植物病害表型综述提及AI数据适用性，但需确认是否实际综述AI识别/分类方法。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "正式Review；作者机构公开全文在RGB成像章节综述机器学习自动病害表型识别及卷积神经网络等已有工作，并比较灰霉病症状的检测、量化和分类。AI用于植物病原感染的数字表型，不只是将来可用AI的泛化陈述。",
+      "labels": [
+        "AI 用于生命科学"
+      ],
+      "evidence_location": "作者机构公开正式全文：Review首页、RGB成像与病害识别章节",
+      "evidence_urls": [
+        "https://edepot.wur.nl/686831"
+      ],
+      "reviewed_at": "2026-11-26"
     },
     "240": {
       "decision": "include",
@@ -1864,10 +1885,14 @@
       "evidence_location": "完整输入原摘要复核"
     },
     "245": {
-      "decision": "pending",
-      "rationale": "仅概述AI可识别苔藓孢子的前景，需核实是否为观点短文及是否包含具体AI方法。",
+      "decision": "exclude",
+      "rationale": "作者机构公开的出版方PDF首页明确为Forum。正文呼吁建立AI苔藓孢子识别工具并提出未来训练与古植被重建路线，属于观点倡议，不属于原创研究正文或实质综述，按正式文种排除。",
       "labels": [],
-      "evidence_location": "输入原摘要"
+      "evidence_location": "作者机构公开出版方PDF首页Forum及正文倡议",
+      "evidence_urls": [
+        "https://orbi.uliege.be/bitstream/2268/335769/1/1-s2.0-S1360138525002006-main.pdf"
+      ],
+      "reviewed_at": "2026-11-26"
     },
     "246": {
       "decision": "include",
@@ -6444,10 +6469,18 @@
       "evidence_location": "输入原摘要"
     },
     "819": {
-      "decision": "pending",
-      "rationale": "神经类器官形态发生素筛选数据与深度模型结合的实际训练或评价细节未见于摘要，需核实AI是否为本研究实质组成。",
-      "labels": [],
-      "evidence_location": "输入原摘要"
+      "decision": "include",
+      "rationale": "原摘要为神经类器官形态发生素单细胞筛选资源；作者公开代码进一步确认实际用GRNBoost2推断形态发生素-调控网络，且用scPoli/scArches模型将单细胞数据映射至HNOCA参考图谱，代码执行partial retraining。AI对细胞身份及调控网络分析有实际作用，并非仅未来可与深度模型结合；未将本资源误标为新基础模型预训练。",
+      "labels": [
+        "AI 用于生命科学"
+      ],
+      "evidence_location": "原摘要、作者仓库scenic_runs/README.md和src/grnboost_analysis.py、Mapping_to_atlases/02_01_map_HNOCA_patterning.py",
+      "evidence_urls": [
+        "https://www.nature.com/articles/s41592-025-02927-5",
+        "https://github.com/quadbio/organoid_patterning_screen/tree/main/scenic_runs",
+        "https://github.com/quadbio/organoid_patterning_screen/blob/main/reproducibility_experiment/Mapping_to_atlases/02_01_map_HNOCA_patterning.py"
+      ],
+      "reviewed_at": "2026-11-26"
     },
     "820": {
       "decision": "include",
@@ -8365,9 +8398,18 @@
     },
     "1034": {
       "decision": "exclude",
-      "rationale": "正式类型为Journal Club，属于论文评介，按文献类型排除；原摘要缺失如实保留。",
+      "rationale": "正式类型为Journal Club，属于论文评介，按文献类型排除；原摘要缺失如实保留。 已正常读取出版方Journal Club页面：正文直接从个人语言经历开始，页面未设独立Abstract段落；该已排除文种不要求补造摘要。",
       "labels": [],
-      "evidence_location": "输入原摘要"
+      "evidence_location": "输入原摘要",
+      "abstract_requirement": {
+        "status": "not_required",
+        "reason": "official_source_has_no_independent_abstract",
+        "checked_at": "2026-11-26",
+        "checked_by": "郝卓迪",
+        "evidence_urls": [
+          "https://www.nature.com/articles/s44159-025-00508-z"
+        ]
+      }
     },
     "1035": {
       "decision": "include",
