@@ -125769,40 +125769,98 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2025-wangmengran-20261126-relevance",
+      "batch_id": "2025-wangmengran-20261126-fcs-full-text",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-09T10:51:18+08:00",
       "reviewed_at": "2026-11-26",
-      "decision": "pending",
-      "rationale": "期刊正式页及公开正式 PDF 未列独立原摘要。正文涉及热带气旋强度预报，待取得同 DOI 的原摘要再作纳入判断。",
-      "evidence_basis": "出版商正式论文页、正式原文与上一轮摘要核验记录",
+      "decision": "include",
+      "rationale": "作者分阶段微调 Prithvi WxC 并融合气象与气旋输入，用大西洋热带气旋数据检验 24 和 48 小时的强度预报及快速增强事件识别。表 2 报告 24 小时强度预报 MAE 低于同表未微调模型及其他列出的基线。",
+      "evidence_basis": "正式 PDF 第 1–3 页，第 3 节（图 1）、第 4 节（表 2）与第 5 节",
       "verified_metadata": {
+        "title": "Breaking through tropical cyclone intensity prediction: a foundation model Prithvi-TC",
+        "authors": [
+          "Zhiqing Cui",
+          "Fan Meng",
+          "Jingjia Luo"
+        ],
         "doi": "10.1007/s11704-025-41268-6",
-        "url": "https://doi.org/10.1007/s11704-025-41268-6",
+        "url": "https://link.springer.com/article/10.1007/s11704-025-41268-6",
+        "publication_year": 2025,
+        "article_type": "Research Letter",
+        "pdf_url": "https://journal.hep.com.cn/fcs/EN/file/fetch?fileId=%2F9Fjbq0DMDUADxs0gESg4g%3D%3D&fileName=Breaking+through+tropical+cyclone+intensity+prediction%3A+a+foundation+model+Prithvi-TC.pdf",
+        "pdf_version": "publishedVersion",
+        "abstract_status": "not_provided_by_publisher",
+        "full_text_evidence_location": "正式 PDF 第 1–3 页，第 3 节（图 1）、第 4 节（表 2）与第 5 节",
+        "full_text_summary_zh": "作者分阶段微调 Prithvi WxC 并融合气象与气旋输入，用大西洋热带气旋数据检验 24 和 48 小时的强度预报及快速增强事件识别。表 2 报告 24 小时强度预报 MAE 低于同表未微调模型及其他列出的基线。",
         "evidence_urls": [
           "https://link.springer.com/article/10.1007/s11704-025-41268-6",
-          "https://journal.hep.com.cn/fcs/EN/10.1007/s11704-025-41268-6"
-        ],
-        "article_type": "Research Letter"
+          "https://journal.hep.com.cn/fcs/EN/10.1007/s11704-025-41268-6",
+          "https://journal.hep.com.cn/fcs/EN/file/fetch?fileId=%2F9Fjbq0DMDUADxs0gESg4g%3D%3D&fileName=Breaking+through+tropical+cyclone+intensity+prediction%3A+a+foundation+model+Prithvi-TC.pdf"
+        ]
       },
-      "tags": [],
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于地球宇宙科学",
+          "label_en": "AI for Earth and space sciences",
+          "evidence_location": "正式 PDF 第 1–3 页，第 3 节（图 1）、第 4 节（表 2）与第 5 节",
+          "rationale": "作者分阶段微调 Prithvi WxC 并融合气象与气旋输入，用大西洋热带气旋数据检验 24 和 48 小时的强度预报及快速增强事件识别。表 2 报告 24 小时强度预报 MAE 低于同表未微调模型及其他列出的基线。"
+        },
+        {
+          "axis": "task",
+          "label": "热带气旋强度预报",
+          "label_en": "Tropical cyclone intensity forecasting",
+          "evidence_location": "正式 PDF 第 1–3 页，第 3 节（图 1）、第 4 节（表 2）与第 5 节",
+          "rationale": "作者分阶段微调 Prithvi WxC 并融合气象与气旋输入，用大西洋热带气旋数据检验 24 和 48 小时的强度预报及快速增强事件识别。表 2 报告 24 小时强度预报 MAE 低于同表未微调模型及其他列出的基线。"
+        },
+        {
+          "axis": "training_stage",
+          "label": "微调",
+          "label_en": "Fine-tuning",
+          "evidence_location": "正式 PDF 第 1–3 页，第 3 节（图 1）、第 4 节（表 2）与第 5 节",
+          "rationale": "作者分阶段微调 Prithvi WxC 并融合气象与气旋输入，用大西洋热带气旋数据检验 24 和 48 小时的强度预报及快速增强事件识别。表 2 报告 24 小时强度预报 MAE 低于同表未微调模型及其他列出的基线。"
+        }
+      ],
       "input_provenance": {
         "source_file": "metadata/2025/ai4s.json",
-        "input_main_commit": "ece0cb4c352f6e0cb1cb85d135c44b28b91e80ba",
-        "verified_main_commit": "487df9317eae50082fd0f06728c9dccb77637169",
-        "audit_file": "reviews/2025/audits/wangmengran8789-relevance-20261126.json"
+        "input_main_commit": "54219844444b4505b2e519845e278ab775024c0d",
+        "vocabulary_file": "skills/ai4s-paper-review/references/tag-vocabulary.json",
+        "audit_file": "reviews/2025/audits/wangmengran8789-fcs-full-text-20261126.json"
       },
       "abstract_requirement": {
-        "status": "required",
+        "status": "not_required",
         "reason": "official_source_has_no_independent_abstract",
+        "document_type": "Research Letter",
+        "review_basis": "verified_full_text",
         "checked_by": "王梦冉",
         "checked_at": "2026-11-26",
-        "document_type": "Research Letter",
+        "full_text_url": "https://journal.hep.com.cn/fcs/EN/file/fetch?fileId=%2F9Fjbq0DMDUADxs0gESg4g%3D%3D&fileName=Breaking+through+tropical+cyclone+intensity+prediction%3A+a+foundation+model+Prithvi-TC.pdf",
         "evidence_urls": [
           "https://link.springer.com/article/10.1007/s11704-025-41268-6",
-          "https://journal.hep.com.cn/fcs/EN/10.1007/s11704-025-41268-6"
+          "https://journal.hep.com.cn/fcs/EN/10.1007/s11704-025-41268-6",
+          "https://journal.hep.com.cn/fcs/EN/file/fetch?fileId=%2F9Fjbq0DMDUADxs0gESg4g%3D%3D&fileName=Breaking+through+tropical+cyclone+intensity+prediction%3A+a+foundation+model+Prithvi-TC.pdf"
         ]
+      },
+      "abstract_resolution": {
+        "status": "publisher_no_text_abstract_full_text_reviewed",
+        "requires_abstract_backfill": false,
+        "original_abstract_preserved": true,
+        "audit_file": "reviews/2025/audits/wangmengran8789-fcs-full-text-20261126.json"
       }
+    },
+    "abstract_requirement": {
+      "status": "not_required",
+      "reason": "official_source_has_no_independent_abstract",
+      "document_type": "Research Letter",
+      "review_basis": "verified_full_text",
+      "checked_by": "王梦冉",
+      "checked_at": "2026-11-26",
+      "full_text_url": "https://journal.hep.com.cn/fcs/EN/file/fetch?fileId=%2F9Fjbq0DMDUADxs0gESg4g%3D%3D&fileName=Breaking+through+tropical+cyclone+intensity+prediction%3A+a+foundation+model+Prithvi-TC.pdf",
+      "evidence_urls": [
+        "https://link.springer.com/article/10.1007/s11704-025-41268-6",
+        "https://journal.hep.com.cn/fcs/EN/10.1007/s11704-025-41268-6",
+        "https://journal.hep.com.cn/fcs/EN/file/fetch?fileId=%2F9Fjbq0DMDUADxs0gESg4g%3D%3D&fileName=Breaking+through+tropical+cyclone+intensity+prediction%3A+a+foundation+model+Prithvi-TC.pdf"
+      ]
     }
   },
   {
@@ -125974,40 +126032,120 @@
     },
     "ai4s_review": {
       "schema_version": 2,
-      "batch_id": "2025-wangmengran-20261126-relevance",
+      "batch_id": "2025-wangmengran-20261126-fcs-full-text",
       "owner": "王梦冉",
       "snapshot_at": "2026-11-09T10:51:18+08:00",
       "reviewed_at": "2026-11-26",
-      "decision": "pending",
-      "rationale": "期刊正式页及公开正式 PDF 未列独立原摘要。正文涉及少样本分子性质预测，待取得同 DOI 的原摘要再作纳入判断。",
-      "evidence_basis": "出版商正式论文页、正式原文与上一轮摘要核验记录",
+      "decision": "include",
+      "rationale": "DCDFS 用图对比学习分离分子表征中的潜在因素，并在跨数据集的 1 样本和 5 样本分子性质分类中比较 ROC-AUC。表 1 报告其在所列数据集迁移设置中优于比较基线，图 2 给出消融结果。",
+      "evidence_basis": "正式 PDF 第 1–3 页，第 2 节（图 1）、第 3.1 节（表 1）、第 3.2 节（图 2）",
       "verified_metadata": {
+        "title": "Factor-wise disentangled contrastive learning for cross-domain few-shot molecular property prediction",
+        "authors": [
+          "Zhibin Ni",
+          "Chenghao Zhang",
+          "Hai Wan",
+          "Xibin Zhao"
+        ],
         "doi": "10.1007/s11704-024-40791-2",
-        "url": "https://doi.org/10.1007/s11704-024-40791-2",
+        "url": "https://link.springer.com/article/10.1007/s11704-024-40791-2",
+        "publication_year": 2025,
+        "article_type": "Research Letter",
+        "pdf_url": "https://journal.hep.com.cn/fcs/EN/file/fetch?fileId=eTPTnIi%2BODHPKTZlE6NsoA%3D%3D&fileName=Factor-wise+disentangled+contrastive+learning+for+cross-domain+few-shot+molecular+property+prediction.pdf",
+        "pdf_version": "publishedVersion",
+        "abstract_status": "not_provided_by_publisher",
+        "full_text_evidence_location": "正式 PDF 第 1–3 页，第 2 节（图 1）、第 3.1 节（表 1）、第 3.2 节（图 2）",
+        "full_text_summary_zh": "DCDFS 用图对比学习分离分子表征中的潜在因素，并在跨数据集的 1 样本和 5 样本分子性质分类中比较 ROC-AUC。表 1 报告其在所列数据集迁移设置中优于比较基线，图 2 给出消融结果。",
         "evidence_urls": [
           "https://link.springer.com/article/10.1007/s11704-024-40791-2",
-          "https://journal.hep.com.cn/fcs/EN/10.1007/s11704-024-40791-2"
-        ],
-        "article_type": "Research Letter"
+          "https://journal.hep.com.cn/fcs/EN/10.1007/s11704-024-40791-2",
+          "https://journal.hep.com.cn/fcs/EN/file/fetch?fileId=eTPTnIi%2BODHPKTZlE6NsoA%3D%3D&fileName=Factor-wise+disentangled+contrastive+learning+for+cross-domain+few-shot+molecular+property+prediction.pdf"
+        ]
       },
-      "tags": [],
+      "tags": [
+        {
+          "axis": "domain",
+          "label": "AI 用于物质科学",
+          "label_en": "AI for materials and chemical sciences",
+          "evidence_location": "正式 PDF 第 1–3 页，第 2 节（图 1）、第 3.1 节（表 1）、第 3.2 节（图 2）",
+          "rationale": "DCDFS 用图对比学习分离分子表征中的潜在因素，并在跨数据集的 1 样本和 5 样本分子性质分类中比较 ROC-AUC。表 1 报告其在所列数据集迁移设置中优于比较基线，图 2 给出消融结果。"
+        },
+        {
+          "axis": "task",
+          "label": "分子性质预测",
+          "label_en": "Molecular property prediction",
+          "evidence_location": "正式 PDF 第 1–3 页，第 2 节（图 1）、第 3.1 节（表 1）、第 3.2 节（图 2）",
+          "rationale": "DCDFS 用图对比学习分离分子表征中的潜在因素，并在跨数据集的 1 样本和 5 样本分子性质分类中比较 ROC-AUC。表 1 报告其在所列数据集迁移设置中优于比较基线，图 2 给出消融结果。"
+        },
+        {
+          "axis": "method",
+          "label": "对比学习",
+          "label_en": "Contrastive learning",
+          "evidence_location": "正式 PDF 第 1–3 页，第 2 节（图 1）、第 3.1 节（表 1）、第 3.2 节（图 2）",
+          "rationale": "DCDFS 用图对比学习分离分子表征中的潜在因素，并在跨数据集的 1 样本和 5 样本分子性质分类中比较 ROC-AUC。表 1 报告其在所列数据集迁移设置中优于比较基线，图 2 给出消融结果。"
+        },
+        {
+          "axis": "method",
+          "label": "图神经网络",
+          "label_en": "Graph neural network",
+          "evidence_location": "正式 PDF 第 1–3 页，第 2 节（图 1）、第 3.1 节（表 1）、第 3.2 节（图 2）",
+          "rationale": "DCDFS 用图对比学习分离分子表征中的潜在因素，并在跨数据集的 1 样本和 5 样本分子性质分类中比较 ROC-AUC。表 1 报告其在所列数据集迁移设置中优于比较基线，图 2 给出消融结果。"
+        },
+        {
+          "axis": "method",
+          "label": "小样本学习",
+          "label_en": "Few-shot learning",
+          "evidence_location": "正式 PDF 第 1–3 页，第 2 节（图 1）、第 3.1 节（表 1）、第 3.2 节（图 2）",
+          "rationale": "DCDFS 用图对比学习分离分子表征中的潜在因素，并在跨数据集的 1 样本和 5 样本分子性质分类中比较 ROC-AUC。表 1 报告其在所列数据集迁移设置中优于比较基线，图 2 给出消融结果。"
+        },
+        {
+          "axis": "method",
+          "label": "元学习",
+          "label_en": "Meta-learning",
+          "evidence_location": "正式 PDF 第 1–3 页，第 2 节（图 1）、第 3.1 节（表 1）、第 3.2 节（图 2）",
+          "rationale": "DCDFS 用图对比学习分离分子表征中的潜在因素，并在跨数据集的 1 样本和 5 样本分子性质分类中比较 ROC-AUC。表 1 报告其在所列数据集迁移设置中优于比较基线，图 2 给出消融结果。"
+        }
+      ],
       "input_provenance": {
         "source_file": "metadata/2025/ai4s.json",
-        "input_main_commit": "ece0cb4c352f6e0cb1cb85d135c44b28b91e80ba",
-        "verified_main_commit": "487df9317eae50082fd0f06728c9dccb77637169",
-        "audit_file": "reviews/2025/audits/wangmengran8789-relevance-20261126.json"
+        "input_main_commit": "54219844444b4505b2e519845e278ab775024c0d",
+        "vocabulary_file": "skills/ai4s-paper-review/references/tag-vocabulary.json",
+        "audit_file": "reviews/2025/audits/wangmengran8789-fcs-full-text-20261126.json"
       },
       "abstract_requirement": {
-        "status": "required",
+        "status": "not_required",
         "reason": "official_source_has_no_independent_abstract",
+        "document_type": "Research Letter",
+        "review_basis": "verified_full_text",
         "checked_by": "王梦冉",
         "checked_at": "2026-11-26",
-        "document_type": "Research Letter",
+        "full_text_url": "https://journal.hep.com.cn/fcs/EN/file/fetch?fileId=eTPTnIi%2BODHPKTZlE6NsoA%3D%3D&fileName=Factor-wise+disentangled+contrastive+learning+for+cross-domain+few-shot+molecular+property+prediction.pdf",
         "evidence_urls": [
           "https://link.springer.com/article/10.1007/s11704-024-40791-2",
-          "https://journal.hep.com.cn/fcs/EN/10.1007/s11704-024-40791-2"
+          "https://journal.hep.com.cn/fcs/EN/10.1007/s11704-024-40791-2",
+          "https://journal.hep.com.cn/fcs/EN/file/fetch?fileId=eTPTnIi%2BODHPKTZlE6NsoA%3D%3D&fileName=Factor-wise+disentangled+contrastive+learning+for+cross-domain+few-shot+molecular+property+prediction.pdf"
         ]
+      },
+      "abstract_resolution": {
+        "status": "publisher_no_text_abstract_full_text_reviewed",
+        "requires_abstract_backfill": false,
+        "original_abstract_preserved": true,
+        "audit_file": "reviews/2025/audits/wangmengran8789-fcs-full-text-20261126.json"
       }
+    },
+    "abstract_requirement": {
+      "status": "not_required",
+      "reason": "official_source_has_no_independent_abstract",
+      "document_type": "Research Letter",
+      "review_basis": "verified_full_text",
+      "checked_by": "王梦冉",
+      "checked_at": "2026-11-26",
+      "full_text_url": "https://journal.hep.com.cn/fcs/EN/file/fetch?fileId=eTPTnIi%2BODHPKTZlE6NsoA%3D%3D&fileName=Factor-wise+disentangled+contrastive+learning+for+cross-domain+few-shot+molecular+property+prediction.pdf",
+      "evidence_urls": [
+        "https://link.springer.com/article/10.1007/s11704-024-40791-2",
+        "https://journal.hep.com.cn/fcs/EN/10.1007/s11704-024-40791-2",
+        "https://journal.hep.com.cn/fcs/EN/file/fetch?fileId=eTPTnIi%2BODHPKTZlE6NsoA%3D%3D&fileName=Factor-wise+disentangled+contrastive+learning+for+cross-domain+few-shot+molecular+property+prediction.pdf"
+      ]
     }
   },
   {
