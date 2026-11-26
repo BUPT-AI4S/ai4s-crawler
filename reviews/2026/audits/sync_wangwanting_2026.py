@@ -95,6 +95,36 @@ def main():
         source_backfills['ecai'].append(
             {name: copy.deepcopy(value) for name, value in matched[0].items() if name != 'ai4s_review'}
         )
+    nature_gap = read(ROOT / 'reviews/2026/audits/wangwanting-2026-natcomputsci-official-seven.json')
+    for evidence in nature_gap['new_articles']:
+        doi = evidence['doi'].lower()
+        matched = [p for p in review if p['venue'] == 'natcomputsci' and p.get('id', '').lower() == doi]
+        if len(matched) != 1 or matched[0].get('title') != evidence['title']:
+            raise RuntimeError(f'Nature Computational Science catalogue mismatch: {doi}')
+        source_backfills['natcomputsci'].append(
+            {name: copy.deepcopy(value) for name, value in matched[0].items() if name != 'ai4s_review'}
+        )
+
+    sle_gap = read(ROOT / 'reviews/2026/audits/wangwanting-2026-smart-learning-catalogue.json')
+    for evidence in sle_gap['new_articles']:
+        doi = evidence['doi'].lower()
+        matched = [p for p in review if p['venue'] == 'j-f28cf1469d' and p.get('id', '').lower() == doi]
+        if len(matched) != 1 or matched[0].get('title') != evidence['title'] or not matched[0].get('abstract'):
+            raise RuntimeError(f'Smart Learning Environments catalogue mismatch: {doi}')
+        source_backfills['j-f28cf1469d'].append(
+            {name: copy.deepcopy(value) for name, value in matched[0].items() if name != 'ai4s_review'}
+        )
+
+    mnd_gap = read(ROOT / 'reviews/2026/audits/wangwanting-2026-molecular-neurodegeneration-catalogue.json')
+    for evidence in mnd_gap['new_articles']:
+        doi = evidence['id'].lower()
+        matched = [p for p in review if p['venue'] == 'j-9596fa43cd' and p.get('id', '').lower() == doi]
+        if (len(matched) != 1 or matched[0].get('title') != evidence['title']
+                or matched[0].get('abstract') != evidence['abstract']):
+            raise RuntimeError(f'Molecular Neurodegeneration catalogue mismatch: {doi}')
+        source_backfills['j-9596fa43cd'].append(
+            {name: copy.deepcopy(value) for name, value in matched[0].items() if name != 'ai4s_review'}
+        )
 
     if sum(map(len, markers.values())) != 6:
         raise RuntimeError('Expected six reviewed non-research abstract exceptions')
@@ -121,6 +151,9 @@ def main():
                     if not lookup[k].get('abstract'):
                         lookup[k]['abstract'] = plain['abstract']
                         lookup[k]['screening_status'] = 'ready'
+                        changed = True
+                    if lookup[k].get('article_type') in (None, '', 'unknown') and plain.get('article_type') not in (None, '', 'unknown'):
+                        lookup[k]['article_type'] = plain['article_type']
                         changed = True
                 else:
                     records.append(copy.deepcopy(plain))
