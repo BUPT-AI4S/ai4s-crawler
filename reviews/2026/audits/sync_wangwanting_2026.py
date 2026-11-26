@@ -32,6 +32,24 @@ def write(path, records, compact=False):
     path.write_text(body, encoding='utf-8')
 
 
+def audited_source_synced(source, expected):
+    snapshot = read(ROOT / 'metadata/2026/snapshot.json')
+    matches = [row for row in snapshot['sources'] if row['source'] == source]
+    return len(matches) == 1 and matches[0]['papers'] == expected
+
+
+def normalize_review_batch(review, source, batch_id, snapshot_at):
+    changed = False
+    for paper in review:
+        if paper['venue'] != source:
+            continue
+        rv = paper.get('ai4s_review') or {}
+        if rv.get('batch_id') == batch_id and rv.get('snapshot_at') != snapshot_at:
+            rv['snapshot_at'] = snapshot_at
+            changed = True
+    return changed
+
+
 def ensure_nprot_review():
     """Retain publisher-verified source omissions and explicit owner decisions."""
     audit = read(ROOT / 'reviews/2026/audits/wangwanting-2026-nprot-official-catalogue.json')
@@ -72,18 +90,19 @@ def ensure_nprot_review():
         review.append(paper)
         old.add(k)
         changed = True
-    if changed:
-        write(REVIEW, review)
-
     path = ROOT / 'reviews/2026/feedback/Blueblue1101.json'
     feedback = read(path)
     row = next(x for x in feedback if x['source_code'] == 'nprot')
+    changed |= normalize_review_batch(review, 'nprot', 'wangwanting-2026-nprot-catalogue-20261126', row['snapshot_at'])
+    if changed:
+        write(REVIEW, review)
+    synced = row.get('snapshot_papers') == 172 and audited_source_synced('nprot', 172)
     row['official_total'] = 172
     row['official_scope'] = 'Nature Protocols 官网 articles?year=2026，2026-11-26 在线发表目录172行，重复 DOI 10.1038/s41596-026-01418-x 一次，去重后171篇；另加官网独立可核实的2026更正页 DOI 10.1038/s41596-026-01462-7 一篇，同口径唯一正式页面共172篇。'
-    row['coverage_note'] = '目录171个唯一DOI，原逐源书目161条；目录11条漏采已逐篇按原摘要和类型审核补录。原书目额外一条更正公告经官网正式页面核实，因此补录后的逐源书目172条与可核实正式页面集合一致。年度快照仍需同步。候选6篇均已审。'
+    row['coverage_note'] = '目录171个唯一DOI，原逐源书目161条；目录11条漏采已逐篇按原摘要和类型审核补录。原书目额外一条更正公告经官网正式页面核实，因此补录后的逐源书目172条与可核实正式页面集合一致。' + ('年度LFS全量与逐源书目已按唯一键对账。' if synced else '年度快照仍需同步。') + '候选6篇均已审。'
     row['evidence_urls'] = list(dict.fromkeys(row['evidence_urls'] + [audit['official_url']] + [x['url'] for x in papers]))
-    row['issues'] = ['年度快照仍为旧版本，待与补录后的逐源书目同步对账。']
-    row['next_actions'] = ['按172个官网可核实正式页面口径完成年度快照同步。']
+    row['issues'] = [] if synced else ['年度快照仍为旧版本，待与补录后的逐源书目同步对账。']
+    row['next_actions'] = [] if synced else ['按172个官网可核实正式页面口径完成年度快照同步。']
     write(path, feedback)
 
 
@@ -154,18 +173,19 @@ def ensure_cell_discovery_review():
             metadata.update(values)
             paper['article_type'] = evidence['article_type']
             changed = True
-    if changed:
-        write(REVIEW, review)
-
     path = ROOT / 'reviews/2026/feedback/Blueblue1101.json'
     feedback = read(path)
     row = next(x for x in feedback if x['source_code'] == 'nature-celldisc')
+    changed |= normalize_review_batch(review, 'nature-celldisc', 'wangwanting-2026-cell-discovery-catalogue-20261126', row['snapshot_at'])
+    if changed:
+        write(REVIEW, review)
+    synced = row.get('snapshot_papers') == 82 and audited_source_synced('nature-celldisc', 82)
     row['official_total'] = 82
     row['official_scope'] = 'Cell Discovery 官网 articles?year=2026，2026-11-26 在线发表目录5页82个唯一 DOI，包含 Article 与 Research Highlight。'
-    row['coverage_note'] = '官网82篇，原逐源书目78篇；4篇漏采按官网原摘要与文章类型逐篇核实，3篇实验生物学研究与1篇 Research Highlight 均排除；补录后逐源书目82篇。原5篇候选已逐篇复核官网正式页面、题名、类型及独立摘要；4篇 Article 保留纳入，1篇无独立摘要的 Correspondence 保留排除。年度快照仍需同步。'
+    row['coverage_note'] = '官网82篇，原逐源书目78篇；4篇漏采按官网原摘要与文章类型逐篇核实，3篇实验生物学研究与1篇 Research Highlight 均排除；补录后逐源书目82篇。原5篇候选已逐篇复核官网正式页面、题名、类型及独立摘要；4篇 Article 保留纳入，1篇无独立摘要的 Correspondence 保留排除。' + ('年度LFS全量与逐源书目已按唯一键对账。' if synced else '年度快照仍需同步。')
     row['evidence_urls'] = list(dict.fromkeys(row['evidence_urls'] + [audit['official_url']] + [x['url'] for x in papers + verified]))
-    row['issues'] = ['年度快照仍为旧版本，待与补录后的逐源书目同步对账。']
-    row['next_actions'] = ['按82个官网唯一 DOI 口径完成年度快照同步。']
+    row['issues'] = [] if synced else ['年度快照仍为旧版本，待与补录后的逐源书目同步对账。']
+    row['next_actions'] = [] if synced else ['按82个官网唯一 DOI 口径完成年度快照同步。']
     write(path, feedback)
 
 
