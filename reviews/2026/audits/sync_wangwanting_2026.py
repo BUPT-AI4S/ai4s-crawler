@@ -32,7 +32,60 @@ def write(path, records, compact=False):
     path.write_text(body, encoding='utf-8')
 
 
+def ensure_nprot_review():
+    """Retain publisher-verified source omissions and explicit owner decisions."""
+    audit = read(ROOT / 'reviews/2026/audits/wangwanting-2026-nprot-official-catalogue.json')
+    papers = audit['new_articles']
+    if len(audit['official_catalogue']) != 172 or len(papers) != 11:
+        raise RuntimeError('Nature Protocols catalogue changed; review the discrepancy')
+    review = read(REVIEW)
+    old = {key(p) for p in review}
+    changed = False
+    for item in papers:
+        doi = item['doi'].lower()
+        k = ('nprot', YEAR, doi)
+        if k in old:
+            continue
+        paper = {
+            'id': doi, 'venue': 'nprot', 'year': YEAR, 'track': None,
+            'title': item['title'], 'authors': item['authors'],
+            'author_ids': [], 'abstract': item['abstract'], 'keywords': [],
+            'doi': doi, 'url': item['url'], 'pdf_url': item['url'] + '.pdf',
+            'published': item['date'], 'source': 'nature.com',
+            'venue_type': 'journal', 'journal_title': 'Nature Protocols',
+            'issn': '1750-2799', 'article_type': item['article_type'],
+            'screening_status': 'ready' if item['abstract'] else 'needs_abstract',
+            'ai4s_review': {
+                'schema_version': 2, 'batch_id': 'wangwanting-2026-nprot-catalogue-20261126',
+                'owner': '王婉婷', 'snapshot_at': audit['checked_at'],
+                'decision': 'exclude', 'rationale': item['screening_rationale'],
+                'verified_metadata': {'url': item['url'], 'doi': doi,
+                                      'article_type': item['article_type'],
+                                      'evidence_urls': [item['url'], audit['official_url']],
+                                      'checked_at': audit['checked_at']},
+                'tags': [],
+            },
+        }
+        review.append(paper)
+        old.add(k)
+        changed = True
+    if changed:
+        write(REVIEW, review)
+
+    path = ROOT / 'reviews/2026/feedback/Blueblue1101.json'
+    feedback = read(path)
+    row = next(x for x in feedback if x['source_code'] == 'nprot')
+    row['official_total'] = 172
+    row['official_scope'] = 'Nature Protocols 官网 articles?year=2026，2026-11-26 在线发表目录，含各文种；逐页 20+20+20+20+20+20+20+20+12，按 DOI 去重。'
+    row['coverage_note'] = '官网目录172条，原逐源书目161条；官网缺11条已逐篇按原摘要和类型审核补录。原书目中1条 Author Correction（10.1038/s41596-026-01462-7）不在当前目录；原始记录暂保留，待确认目录变动。年度快照仍需同步。候选6篇均已审。'
+    row['evidence_urls'] = list(dict.fromkeys(row['evidence_urls'] + [audit['official_url']] + [x['url'] for x in papers]))
+    row['issues'] = ['官网当日目录172条、补录11条；原始书目多1条官网当前未列出的更正，需确认撤下或目录变动。', '年度快照仍为旧版本，待与补录后的逐源书目同步对账。']
+    row['next_actions'] = ['核对官网未列出的更正条目并按同口径完成年度快照同步。']
+    write(path, feedback)
+
+
 def main():
+    ensure_nprot_review()
     review = read(REVIEW)
     candidate = read(AGGREGATE)
     by_key = {key(p): p for p in candidate}
@@ -135,6 +188,18 @@ def main():
                 or matched[0].get('ai4s_review', {}).get('decision') != 'exclude'):
             raise RuntimeError(f'Science Immunology catalogue mismatch: {doi}')
         source_backfills['j-3d73a601f6'].append(
+            {name: copy.deepcopy(value) for name, value in matched[0].items() if name != 'ai4s_review'}
+        )
+
+    nprot_gap = read(ROOT / 'reviews/2026/audits/wangwanting-2026-nprot-official-catalogue.json')
+    for evidence in nprot_gap['new_articles']:
+        doi = evidence['doi'].lower()
+        matched = [p for p in review if p['venue'] == 'nprot' and p.get('id', '').lower() == doi]
+        if (len(matched) != 1 or matched[0].get('title') != evidence['title']
+                or matched[0].get('abstract') != evidence['abstract']
+                or matched[0].get('ai4s_review', {}).get('decision') != 'exclude'):
+            raise RuntimeError(f'Nature Protocols catalogue mismatch: {doi}')
+        source_backfills['nprot'].append(
             {name: copy.deepcopy(value) for name, value in matched[0].items() if name != 'ai4s_review'}
         )
 
