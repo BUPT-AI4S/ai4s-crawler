@@ -69,19 +69,37 @@
     "source_code": "iccv",
     "snapshot_at": "2026-11-09T10:51:18+08:00",
     "official_total": 2701,
-    "official_scope": "ICCV 2025 正会CVF官方开放论文集全部2701篇，快照缺15篇均已取官方摘要精筛；2篇拟补入AI4S审核。",
-    "coverage_note": "2026-11-19直接访问官方目录成功，按题名规范化逐条匹配。快照2686篇，官网同口径2701篇。差异及证据见reviews/2025/AlearnerDL/closure-20261119/iccv-catalogue-audit.json。候选判定：{'exclude': 12, 'include': 16, 'pending': 3}。",
+    "official_scope": "CVF 官方 ICCV 2025 正会论文集",
+    "coverage_note": "冻结快照 2686 篇，已逐条补录快照缺少的 15 篇，合计与 CVF 官方目录 2701 篇一致。新纳入 2 篇已进入年度候选和个人精筛交付。",
     "evidence_urls": [
-      "https://openaccess.thecvf.com/ICCV2025?day=all"
+      "https://openaccess.thecvf.com/ICCV2025?day=all",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/iccv/2025/catalogue-reconciliation.json"
     ],
-    "issues": [
-      "3篇候选需正文补证。",
-      "官方目录比快照多15篇，已定位并取得原摘要；其中2篇符合AI4S，尚待补录交付。"
-    ],
-    "next_actions": [
-      "核查待定论文正文方法与实验，保留证据不足的待定状态。",
-      "补录15篇官网确认漏采记录，完成2篇AI4S候选的元信息和标签交付。"
-    ]
+    "issues": [],
+    "next_actions": [],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "catalogue_reconciliation": {
+      "current_raw_count": 2686,
+      "same_scope_missing": 15,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "normalized_count": 2701,
+      "unresolved": 0,
+      "additions_file": "metadata/iccv/2025/catalogue-additions.json"
+    },
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 20,
+      "exclude": 13,
+      "pending": 0,
+      "unreviewed": 0
+    }
   },
   {
     "year": 2025,
@@ -726,6 +744,1083 @@
         "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/vol/212/suppl/C",
         "https://www.sciencedirect.com/journal/international-journal-of-machine-tools-and-manufacture/vol/213/suppl/C"
       ]
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "ase",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": null,
+    "official_scope": "",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fkbse%2Fase2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fkbse%2Fase2025w%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/ase/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "reference_check": {
+      "status": "complete",
+      "source": "DBLP SPARQL",
+      "total": 449,
+      "scope": "DBLP SPARQL 同届同论文集目录中逐条比对正式目录 ID，去除仅代表整卷的目录记录，保留所采集卷的正会及明确分轨",
+      "query_url": "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fkbse%2Fase2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fkbse%2Fase2025w%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "checked_at": "2026-11-26",
+      "unresolved": 0
+    },
+    "catalogue_reconciliation": {
+      "current_raw_count": 449,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "DBLP SPARQL 目录逐条核对 449 篇，ID 集合一致。出版商公开目录未取得可核实的全部记录，本轮采用登记参考数。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 2,
+      "exclude": 11,
+      "pending": 0,
+      "unreviewed": 0
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "dsn",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": null,
+    "official_scope": "",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fdsn%2Fdsn2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fdsn%2Fdsn2025s%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fdsn%2Fdsn2025w%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/dsn/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "reference_check": {
+      "status": "complete",
+      "source": "DBLP SPARQL",
+      "total": 170,
+      "scope": "DBLP SPARQL 同届同论文集目录中逐条比对正式目录 ID，去除仅代表整卷的目录记录，保留所采集卷的正会及明确分轨",
+      "query_url": "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fdsn%2Fdsn2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fdsn%2Fdsn2025s%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fdsn%2Fdsn2025w%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "checked_at": "2026-11-26",
+      "unresolved": 0
+    },
+    "catalogue_reconciliation": {
+      "current_raw_count": 170,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "DBLP SPARQL 目录逐条核对 170 篇，ID 集合一致。出版商公开目录未取得可核实的全部记录，本轮采用登记参考数。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 5,
+      "exclude": 17,
+      "pending": 0,
+      "unreviewed": 0
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "icnp",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": null,
+    "official_scope": "",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficnp%2Ficnp2025%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/icnp/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "reference_check": {
+      "status": "complete",
+      "source": "DBLP SPARQL",
+      "total": 101,
+      "scope": "DBLP SPARQL 同届同论文集目录中逐条比对正式目录 ID，去除仅代表整卷的目录记录，保留所采集卷的正会及明确分轨",
+      "query_url": "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficnp%2Ficnp2025%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "checked_at": "2026-11-26",
+      "unresolved": 0
+    },
+    "catalogue_reconciliation": {
+      "current_raw_count": 101,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "DBLP SPARQL 目录逐条核对 101 篇，ID 集合一致。出版商公开目录未取得可核实的全部记录，本轮采用登记参考数。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 1,
+      "exclude": 2,
+      "pending": 0,
+      "unreviewed": 0
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "icra",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": null,
+    "official_scope": "",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficra%2Ficra2025%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/icra/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "reference_check": {
+      "status": "complete",
+      "source": "DBLP SPARQL",
+      "total": 1604,
+      "scope": "DBLP SPARQL 同届同论文集目录中逐条比对正式目录 ID，去除仅代表整卷的目录记录，保留所采集卷的正会及明确分轨",
+      "query_url": "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficra%2Ficra2025%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "checked_at": "2026-11-26",
+      "unresolved": 0
+    },
+    "catalogue_reconciliation": {
+      "current_raw_count": 1604,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "DBLP SPARQL 目录逐条核对 1604 篇，ID 集合一致。出版商公开目录未取得可核实的全部记录，本轮采用登记参考数。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 70,
+      "exclude": 56,
+      "pending": 1,
+      "unreviewed": 0
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "icse",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": null,
+    "official_scope": "",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficse%2Faiops2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficse%2Fdesigning2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficse%2Ficse2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficse%2Ficse2025c%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficse%2Fnse2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficse%2Fraise2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficse%2Fseigs2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficse%2Fseis2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficse%2Fstatic2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficse%2Fsvm2025%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/icse/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "reference_check": {
+      "status": "complete",
+      "source": "DBLP SPARQL",
+      "total": 386,
+      "scope": "DBLP SPARQL 同届同论文集目录中逐条比对正式目录 ID，去除仅代表整卷的目录记录，保留所采集卷的正会及明确分轨",
+      "query_url": "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficse%2Faiops2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficse%2Fdesigning2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficse%2Ficse2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficse%2Ficse2025c%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficse%2Fnse2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficse%2Fraise2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficse%2Fseigs2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficse%2Fseis2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficse%2Fstatic2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Ficse%2Fsvm2025%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "checked_at": "2026-11-26",
+      "unresolved": 0
+    },
+    "catalogue_reconciliation": {
+      "current_raw_count": 386,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "DBLP SPARQL 目录逐条核对 386 篇，ID 集合一致。出版商公开目录未取得可核实的全部记录，本轮采用登记参考数。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 1,
+      "exclude": 21,
+      "pending": 0,
+      "unreviewed": 0
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "icwsm",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": null,
+    "official_scope": "",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 22,
+      "exclude": 9,
+      "pending": 0,
+      "unreviewed": 0
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "infocom",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": null,
+    "official_scope": "",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Finfocom%2Finfocom2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Finfocom%2Finfocom2025w%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/infocom/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "reference_check": {
+      "status": "complete",
+      "source": "DBLP SPARQL",
+      "total": 515,
+      "scope": "DBLP SPARQL 同届同论文集目录中逐条比对正式目录 ID，去除仅代表整卷的目录记录，保留所采集卷的正会及明确分轨",
+      "query_url": "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Finfocom%2Finfocom2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Finfocom%2Finfocom2025w%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "checked_at": "2026-11-26",
+      "unresolved": 0
+    },
+    "catalogue_reconciliation": {
+      "current_raw_count": 515,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "DBLP SPARQL 目录逐条核对 515 篇，ID 集合一致。出版商公开目录未取得可核实的全部记录，本轮采用登记参考数。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 2,
+      "exclude": 3,
+      "pending": 0,
+      "unreviewed": 22
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "ipmi",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": 51,
+    "official_scope": "Springer IPMI 2025 正式论文集上下两卷的有 DOI 章节，排除卷首和卷末材料",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://link.springer.com/book/10.1007/978-3-031-96628-6",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/ipmi/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "catalogue_reconciliation": {
+      "current_raw_count": 51,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "Springer 目录逐条核对 51 篇，ID 集合一致。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 28,
+      "exclude": 2,
+      "pending": 0,
+      "unreviewed": 0
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "iwqos",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": null,
+    "official_scope": "",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fiwqos%2Fiwqos2025%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/iwqos/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "reference_check": {
+      "status": "complete",
+      "source": "DBLP SPARQL",
+      "total": 155,
+      "scope": "DBLP SPARQL 同届同论文集目录中逐条比对正式目录 ID，去除仅代表整卷的目录记录，保留所采集卷的正会及明确分轨",
+      "query_url": "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fiwqos%2Fiwqos2025%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "checked_at": "2026-11-26",
+      "unresolved": 0
+    },
+    "catalogue_reconciliation": {
+      "current_raw_count": 155,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "DBLP SPARQL 目录逐条核对 155 篇，ID 集合一致。出版商公开目录未取得可核实的全部记录，本轮采用登记参考数。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 1,
+      "exclude": 5,
+      "pending": 0,
+      "unreviewed": 0
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "j-3c29fd056f",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": null,
+    "official_scope": "",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://api.crossref.org/journals/1470-160X/works?filter=from-pub-date%3A2025-01-01%2Cuntil-pub-date%3A2025-12-31&rows=1000&select=DOI%2Ctitle%2Cissued%2Cpublished%2Cpublished-print%2Cpublished-online%2Cvolume%2Cissue%2Cpage%2Carticle-number%2Ctype%2CURL%2Ccontainer-title%2Cauthor&cursor=%2A",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/j-3c29fd056f/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 1481,
+      "scope": "按 Crossref 期刊 ISSN 和 2025-01-01 至 2025-12-31 出版日期查询的登记条目，逐 DOI 对照原采集口径，含目录中的增刊和更正等条目",
+      "query_url": "https://api.crossref.org/journals/1470-160X/works?filter=from-pub-date%3A2025-01-01%2Cuntil-pub-date%3A2025-12-31&rows=1000&select=DOI%2Ctitle%2Cissued%2Cpublished%2Cpublished-print%2Cpublished-online%2Cvolume%2Cissue%2Cpage%2Carticle-number%2Ctype%2CURL%2Ccontainer-title%2Cauthor&cursor=%2A",
+      "checked_at": "2026-11-26",
+      "unresolved": 0
+    },
+    "catalogue_reconciliation": {
+      "current_raw_count": 1481,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "Crossref 目录逐条核对 1481 篇，ID 集合一致。出版商公开目录未取得可核实的全部记录，本轮采用登记参考数。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 158,
+      "exclude": 8,
+      "pending": 0,
+      "unreviewed": 0
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "j-704f11b185",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": null,
+    "official_scope": "",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://api.crossref.org/journals/0031-3203/works?filter=from-pub-date%3A2025-01-01%2Cuntil-pub-date%3A2025-12-31&rows=1000&select=DOI%2Ctitle%2Cissued%2Cpublished%2Cpublished-print%2Cpublished-online%2Cvolume%2Cissue%2Cpage%2Carticle-number%2Ctype%2CURL%2Ccontainer-title%2Cauthor&cursor=%2A",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/j-704f11b185/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 900,
+      "scope": "按 Crossref 期刊 ISSN 和 2025-01-01 至 2025-12-31 出版日期查询的登记条目，逐 DOI 对照原采集口径，含目录中的增刊和更正等条目",
+      "query_url": "https://api.crossref.org/journals/0031-3203/works?filter=from-pub-date%3A2025-01-01%2Cuntil-pub-date%3A2025-12-31&rows=1000&select=DOI%2Ctitle%2Cissued%2Cpublished%2Cpublished-print%2Cpublished-online%2Cvolume%2Cissue%2Cpage%2Carticle-number%2Ctype%2CURL%2Ccontainer-title%2Cauthor&cursor=%2A",
+      "checked_at": "2026-11-26",
+      "unresolved": 0
+    },
+    "catalogue_reconciliation": {
+      "current_raw_count": 900,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "Crossref 目录逐条核对 900 篇，ID 集合一致。出版商公开目录未取得可核实的全部记录，本轮采用登记参考数。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 25,
+      "exclude": 26,
+      "pending": 0,
+      "unreviewed": 0
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "j-a6cfe198b1",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": null,
+    "official_scope": "",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://api.crossref.org/journals/0957-4174/works?filter=from-pub-date%3A2025-01-01%2Cuntil-pub-date%3A2025-12-31&rows=1000&select=DOI%2Ctitle%2Cissued%2Cpublished%2Cpublished-print%2Cpublished-online%2Cvolume%2Cissue%2Cpage%2Carticle-number%2Ctype%2CURL%2Ccontainer-title%2Cauthor&cursor=%2A",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/j-a6cfe198b1/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 3313,
+      "scope": "按 Crossref 期刊 ISSN 和 2025-01-01 至 2025-12-31 出版日期查询的登记条目，逐 DOI 对照原采集口径，含目录中的增刊和更正等条目",
+      "query_url": "https://api.crossref.org/journals/0957-4174/works?filter=from-pub-date%3A2025-01-01%2Cuntil-pub-date%3A2025-12-31&rows=1000&select=DOI%2Ctitle%2Cissued%2Cpublished%2Cpublished-print%2Cpublished-online%2Cvolume%2Cissue%2Cpage%2Carticle-number%2Ctype%2CURL%2Ccontainer-title%2Cauthor&cursor=%2A",
+      "checked_at": "2026-11-26",
+      "unresolved": 0
+    },
+    "catalogue_reconciliation": {
+      "current_raw_count": 3313,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "Crossref 目录逐条核对 3313 篇，ID 集合一致。出版商公开目录未取得可核实的全部记录，本轮采用登记参考数。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 87
+    },
+    "review_progress": {
+      "include": 153,
+      "exclude": 31,
+      "pending": 0,
+      "unreviewed": 2
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "j-aba2a5c1d5",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": null,
+    "official_scope": "",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://api.crossref.org/journals/0016-5085/works?filter=from-pub-date%3A2025-01-01%2Cuntil-pub-date%3A2025-12-31&rows=1000&select=DOI%2Ctitle%2Cissued%2Cpublished%2Cpublished-print%2Cpublished-online%2Cvolume%2Cissue%2Cpage%2Carticle-number%2Ctype%2CURL%2Ccontainer-title%2Cauthor&cursor=%2A",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/j-aba2a5c1d5/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 5571,
+      "scope": "按 Crossref 期刊 ISSN 和 2025-01-01 至 2025-12-31 出版日期查询的登记条目，逐 DOI 对照原采集口径，含目录中的增刊和更正等条目",
+      "query_url": "https://api.crossref.org/journals/0016-5085/works?filter=from-pub-date%3A2025-01-01%2Cuntil-pub-date%3A2025-12-31&rows=1000&select=DOI%2Ctitle%2Cissued%2Cpublished%2Cpublished-print%2Cpublished-online%2Cvolume%2Cissue%2Cpage%2Carticle-number%2Ctype%2CURL%2Ccontainer-title%2Cauthor&cursor=%2A",
+      "checked_at": "2026-11-26",
+      "unresolved": 0
+    },
+    "catalogue_reconciliation": {
+      "current_raw_count": 5571,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "Crossref 目录逐条核对 5571 篇，ID 集合一致。出版商公开目录未取得可核实的全部记录，本轮采用登记参考数。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 0,
+      "exclude": 0,
+      "pending": 0,
+      "unreviewed": 27
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "j-c8af77652d",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": null,
+    "official_scope": "",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://api.crossref.org/journals/0308-8146/works?filter=from-pub-date%3A2025-01-01%2Cuntil-pub-date%3A2025-12-31&rows=1000&select=DOI%2Ctitle%2Cissued%2Cpublished%2Cpublished-print%2Cpublished-online%2Cvolume%2Cissue%2Cpage%2Carticle-number%2Ctype%2CURL%2Ccontainer-title%2Cauthor&cursor=%2A",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/j-c8af77652d/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 5702,
+      "scope": "按 Crossref 期刊 ISSN 和 2025-01-01 至 2025-12-31 出版日期查询的登记条目，逐 DOI 对照原采集口径，含目录中的增刊和更正等条目",
+      "query_url": "https://api.crossref.org/journals/0308-8146/works?filter=from-pub-date%3A2025-01-01%2Cuntil-pub-date%3A2025-12-31&rows=1000&select=DOI%2Ctitle%2Cissued%2Cpublished%2Cpublished-print%2Cpublished-online%2Cvolume%2Cissue%2Cpage%2Carticle-number%2Ctype%2CURL%2Ccontainer-title%2Cauthor&cursor=%2A",
+      "checked_at": "2026-11-26",
+      "unresolved": 0
+    },
+    "catalogue_reconciliation": {
+      "current_raw_count": 5702,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "Crossref 目录逐条核对 5702 篇，ID 集合一致。出版商公开目录未取得可核实的全部记录，本轮采用登记参考数。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 11,
+      "exclude": 0,
+      "pending": 0,
+      "unreviewed": 130
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "j-ce9a52b1f6",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": null,
+    "official_scope": "",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://api.crossref.org/journals/0021-9991/works?filter=from-pub-date%3A2025-01-01%2Cuntil-pub-date%3A2025-12-31&rows=1000&select=DOI%2Ctitle%2Cissued%2Cpublished%2Cpublished-print%2Cpublished-online%2Cvolume%2Cissue%2Cpage%2Carticle-number%2Ctype%2CURL%2Ccontainer-title%2Cauthor&cursor=%2A",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/j-ce9a52b1f6/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 774,
+      "scope": "按 Crossref 期刊 ISSN 和 2025-01-01 至 2025-12-31 出版日期查询的登记条目，逐 DOI 对照原采集口径，含目录中的增刊和更正等条目",
+      "query_url": "https://api.crossref.org/journals/0021-9991/works?filter=from-pub-date%3A2025-01-01%2Cuntil-pub-date%3A2025-12-31&rows=1000&select=DOI%2Ctitle%2Cissued%2Cpublished%2Cpublished-print%2Cpublished-online%2Cvolume%2Cissue%2Cpage%2Carticle-number%2Ctype%2CURL%2Ccontainer-title%2Cauthor&cursor=%2A",
+      "checked_at": "2026-11-26",
+      "unresolved": 0
+    },
+    "catalogue_reconciliation": {
+      "current_raw_count": 774,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "Crossref 目录逐条核对 774 篇，ID 集合一致。出版商公开目录未取得可核实的全部记录，本轮采用登记参考数。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 32
+    },
+    "review_progress": {
+      "include": 0,
+      "exclude": 0,
+      "pending": 0,
+      "unreviewed": 126
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "j-dbcb0fcd74",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": null,
+    "official_scope": "",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://api.crossref.org/journals/1550-4131/works?filter=from-pub-date%3A2025-01-01%2Cuntil-pub-date%3A2025-12-31&rows=1000",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/j-dbcb0fcd74/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 208,
+      "scope": "按 Crossref 期刊 ISSN 和 2025-01-01 至 2025-12-31 出版日期查询的登记条目，逐 DOI 对照原采集口径，含目录中的增刊和更正等条目",
+      "query_url": "https://api.crossref.org/journals/1550-4131/works?filter=from-pub-date%3A2025-01-01%2Cuntil-pub-date%3A2025-12-31&rows=1000",
+      "checked_at": "2026-11-26",
+      "unresolved": 0
+    },
+    "catalogue_reconciliation": {
+      "current_raw_count": 208,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "Crossref 目录逐条核对 208 篇，ID 集合一致。出版商公开目录未取得可核实的全部记录，本轮采用登记参考数。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 2,
+      "exclude": 1,
+      "pending": 0,
+      "unreviewed": 0
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "j-e3cffa92a3",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": null,
+    "official_scope": "",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://api.crossref.org/journals/0013-9351/works?filter=from-pub-date%3A2025-01-01%2Cuntil-pub-date%3A2025-12-31&rows=1000&select=DOI%2Ctitle%2Cissued%2Cpublished%2Cpublished-print%2Cpublished-online%2Cvolume%2Cissue%2Cpage%2Carticle-number%2Ctype%2CURL%2Ccontainer-title%2Cauthor&cursor=%2A",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/j-e3cffa92a3/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "reference_check": {
+      "status": "complete",
+      "source": "Crossref",
+      "total": 2602,
+      "scope": "按 Crossref 期刊 ISSN 和 2025-01-01 至 2025-12-31 出版日期查询的登记条目，逐 DOI 对照原采集口径，含目录中的增刊和更正等条目",
+      "query_url": "https://api.crossref.org/journals/0013-9351/works?filter=from-pub-date%3A2025-01-01%2Cuntil-pub-date%3A2025-12-31&rows=1000&select=DOI%2Ctitle%2Cissued%2Cpublished%2Cpublished-print%2Cpublished-online%2Cvolume%2Cissue%2Cpage%2Carticle-number%2Ctype%2CURL%2Ccontainer-title%2Cauthor&cursor=%2A",
+      "checked_at": "2026-11-26",
+      "unresolved": 0
+    },
+    "catalogue_reconciliation": {
+      "current_raw_count": 2602,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "Crossref 目录逐条核对 2602 篇，ID 集合一致。出版商公开目录未取得可核实的全部记录，本轮采用登记参考数。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 0,
+      "exclude": 2,
+      "pending": 0,
+      "unreviewed": 79
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "mobihoc",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": null,
+    "official_scope": "",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fmobihoc%2Fmobihoc2025%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/mobihoc/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "reference_check": {
+      "status": "complete",
+      "source": "DBLP SPARQL",
+      "total": 71,
+      "scope": "DBLP SPARQL 同届同论文集目录中逐条比对正式目录 ID，去除仅代表整卷的目录记录，保留所采集卷的正会及明确分轨",
+      "query_url": "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fmobihoc%2Fmobihoc2025%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "checked_at": "2026-11-26",
+      "unresolved": 0
+    },
+    "catalogue_reconciliation": {
+      "current_raw_count": 71,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "DBLP SPARQL 目录逐条核对 71 篇，ID 集合一致。出版商公开目录未取得可核实的全部记录，本轮采用登记参考数。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 2,
+      "exclude": 8,
+      "pending": 0,
+      "unreviewed": 0
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "models",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": null,
+    "official_scope": "",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fmodels%2Fmodels2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fmodels%2Fmodels2025c%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/models/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "reference_check": {
+      "status": "complete",
+      "source": "DBLP SPARQL",
+      "total": 132,
+      "scope": "DBLP SPARQL 同届同论文集目录中逐条比对正式目录 ID，去除仅代表整卷的目录记录，保留所采集卷的正会及明确分轨",
+      "query_url": "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fmodels%2Fmodels2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fmodels%2Fmodels2025c%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "checked_at": "2026-11-26",
+      "unresolved": 0
+    },
+    "catalogue_reconciliation": {
+      "current_raw_count": 132,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "DBLP SPARQL 目录逐条核对 132 篇，ID 集合一致。出版商公开目录未取得可核实的全部记录，本轮采用登记参考数。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 3,
+      "exclude": 6,
+      "pending": 0,
+      "unreviewed": 0
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "npjvaccines",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": 301,
+    "official_scope": "Nature 官网 2025 年 Published 年度目录，含官网登记的全部文献类型",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://www.nature.com/npjvaccines/articles?year=2025&page=1",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/npjvaccines/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "catalogue_reconciliation": {
+      "current_raw_count": 301,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "Nature Portfolio 目录逐条核对 301 篇，ID 集合一致。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 1,
+      "exclude": 1,
+      "pending": 0,
+      "unreviewed": 0
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "nrcardio",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": 130,
+    "official_scope": "Nature 官网 2025 年 Published 年度目录，含官网登记的全部文献类型",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://www.nature.com/nrcardio/articles?year=2025&page=1",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/nrcardio/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "catalogue_reconciliation": {
+      "current_raw_count": 130,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "Nature Portfolio 目录逐条核对 130 篇，ID 集合一致。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 1,
+      "exclude": 3,
+      "pending": 0,
+      "unreviewed": 0
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "percom",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": null,
+    "official_scope": "",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fpercom%2Fpercom2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fpercom%2Fpercomw2025%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/percom/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "reference_check": {
+      "status": "complete",
+      "source": "DBLP SPARQL",
+      "total": 160,
+      "scope": "DBLP SPARQL 同届同论文集目录中逐条比对正式目录 ID，去除仅代表整卷的目录记录，保留所采集卷的正会及明确分轨",
+      "query_url": "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fpercom%2Fpercom2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fpercom%2Fpercomw2025%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "checked_at": "2026-11-26",
+      "unresolved": 0
+    },
+    "catalogue_reconciliation": {
+      "current_raw_count": 160,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "DBLP SPARQL 目录逐条核对 160 篇，ID 集合一致。出版商公开目录未取得可核实的全部记录，本轮采用登记参考数。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 10,
+      "exclude": 10,
+      "pending": 0,
+      "unreviewed": 6
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "pldi",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": null,
+    "official_scope": "",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 0,
+      "exclude": 11,
+      "pending": 0,
+      "unreviewed": 0
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "sensys",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": null,
+    "official_scope": "",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fsensys%2Fsensys2025%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/sensys/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "reference_check": {
+      "status": "complete",
+      "source": "DBLP SPARQL",
+      "total": 116,
+      "scope": "DBLP SPARQL 同届同论文集目录中逐条比对正式目录 ID，去除仅代表整卷的目录记录，保留所采集卷的正会及明确分轨",
+      "query_url": "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fsensys%2Fsensys2025%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "checked_at": "2026-11-26",
+      "unresolved": 0
+    },
+    "catalogue_reconciliation": {
+      "current_raw_count": 116,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "DBLP SPARQL 目录逐条核对 116 篇，ID 集合一致。出版商公开目录未取得可核实的全部记录，本轮采用登记参考数。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 3,
+      "exclude": 9,
+      "pending": 0,
+      "unreviewed": 4
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "sp",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": null,
+    "official_scope": "",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fsp%2Fsp2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fsp%2Fsp2025w%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/sp/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "reference_check": {
+      "status": "complete",
+      "source": "DBLP SPARQL",
+      "total": 306,
+      "scope": "DBLP SPARQL 同届同论文集目录中逐条比对正式目录 ID，去除仅代表整卷的目录记录，保留所采集卷的正会及明确分轨",
+      "query_url": "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fsp%2Fsp2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fsp%2Fsp2025w%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "checked_at": "2026-11-26",
+      "unresolved": 0
+    },
+    "catalogue_reconciliation": {
+      "current_raw_count": 306,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "DBLP SPARQL 目录逐条核对 306 篇，ID 集合一致。出版商公开目录未取得可核实的全部记录，本轮采用登记参考数。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 0
+    },
+    "review_progress": {
+      "include": 0,
+      "exclude": 0,
+      "pending": 0,
+      "unreviewed": 19
+    }
+  },
+  {
+    "year": 2025,
+    "source_code": "uist",
+    "snapshot_at": "2026-11-09T10:51:18+08:00",
+    "official_total": null,
+    "official_scope": "",
+    "issues": [],
+    "next_actions": [],
+    "evidence_urls": [
+      "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fuist%2Fuist2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fuist%2Fuist2025a%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/metadata/uist/2025/catalogue-reconciliation.json"
+    ],
+    "owner": "龙兆科",
+    "github_username": "AlearnerDL",
+    "updated_at": "2026-11-26",
+    "update_operator": "wangmengran8789",
+    "reference_check": {
+      "status": "complete",
+      "source": "DBLP SPARQL",
+      "total": 390,
+      "scope": "DBLP SPARQL 同届同论文集目录中逐条比对正式目录 ID，去除仅代表整卷的目录记录，保留所采集卷的正会及明确分轨",
+      "query_url": "https://sparql.dblp.org/sparql?query=PREFIX+dblp%3A+%3Chttps%3A%2F%2Fdblp.org%2Frdf%2Fschema%23%3E+SELECT+DISTINCT+%3Fpub+%3Fdoi+%3Ftitle+%3Ftoc+WHERE+%7B+VALUES+%3Ftoc+%7B+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fuist%2Fuist2025%3E+%3Chttps%3A%2F%2Fdblp.org%2Fdb%2Fconf%2Fuist%2Fuist2025a%3E+%7D+%3Fpub+dblp%3AlistedOnTocPage+%3Ftoc+.+%3Fpub+dblp%3Atitle+%3Ftitle+.+OPTIONAL+%7B%3Fpub+dblp%3Adoi+%3Fdoi+%7D+%7D&format=json",
+      "checked_at": "2026-11-26",
+      "unresolved": 0
+    },
+    "catalogue_reconciliation": {
+      "current_raw_count": 390,
+      "same_scope_missing": 0,
+      "same_scope_extra": 0,
+      "same_scope_duplicate": 0,
+      "unresolved": 0
+    },
+    "coverage_note": "DBLP SPARQL 目录逐条核对 390 篇，ID 集合一致。出版商公开目录未取得可核实的全部记录，本轮采用登记参考数。",
+    "candidate_abstract_audit": {
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261126/candidate-evidence.json",
+      "recovered_this_batch": 1
+    },
+    "review_progress": {
+      "include": 0,
+      "exclude": 0,
+      "pending": 0,
+      "unreviewed": 19
     }
   }
 ]
