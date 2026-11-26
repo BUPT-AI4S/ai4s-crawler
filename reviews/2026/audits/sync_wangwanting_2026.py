@@ -36,7 +36,10 @@ def ensure_nprot_review():
     """Retain publisher-verified source omissions and explicit owner decisions."""
     audit = read(ROOT / 'reviews/2026/audits/wangwanting-2026-nprot-official-catalogue.json')
     papers = audit['new_articles']
-    if len(audit['official_catalogue']) != 172 or len(papers) != 11:
+    catalogue_ids = [x['doi'].lower() for x in audit['official_catalogue']]
+    if (len(catalogue_ids) != 172 or len(set(catalogue_ids)) != 171
+            or catalogue_ids.count('10.1038/s41596-026-01418-x') != 2
+            or len(papers) != 11):
         raise RuntimeError('Nature Protocols catalogue changed; review the discrepancy')
     review = read(REVIEW)
     old = {key(p) for p in review}
@@ -76,11 +79,11 @@ def ensure_nprot_review():
     feedback = read(path)
     row = next(x for x in feedback if x['source_code'] == 'nprot')
     row['official_total'] = 172
-    row['official_scope'] = 'Nature Protocols 官网 articles?year=2026，2026-11-26 在线发表目录，含各文种；逐页 20+20+20+20+20+20+20+20+12，按 DOI 去重。'
-    row['coverage_note'] = '官网目录172条，原逐源书目161条；官网缺11条已逐篇按原摘要和类型审核补录。原书目中1条 Author Correction（10.1038/s41596-026-01462-7）不在当前目录；原始记录暂保留，待确认目录变动。年度快照仍需同步。候选6篇均已审。'
+    row['official_scope'] = 'Nature Protocols 官网 articles?year=2026，2026-11-26 在线发表目录172行，重复 DOI 10.1038/s41596-026-01418-x 一次，去重后171篇；另加官网独立可核实的2026更正页 DOI 10.1038/s41596-026-01462-7 一篇，同口径唯一正式页面共172篇。'
+    row['coverage_note'] = '目录171个唯一DOI，原逐源书目161条；目录11条漏采已逐篇按原摘要和类型审核补录。原书目额外一条更正公告经官网正式页面核实，因此补录后的逐源书目172条与可核实正式页面集合一致。年度快照仍需同步。候选6篇均已审。'
     row['evidence_urls'] = list(dict.fromkeys(row['evidence_urls'] + [audit['official_url']] + [x['url'] for x in papers]))
-    row['issues'] = ['官网当日目录172条、补录11条；原始书目多1条官网当前未列出的更正，需确认撤下或目录变动。', '年度快照仍为旧版本，待与补录后的逐源书目同步对账。']
-    row['next_actions'] = ['核对官网未列出的更正条目并按同口径完成年度快照同步。']
+    row['issues'] = ['年度快照仍为旧版本，待与补录后的逐源书目同步对账。']
+    row['next_actions'] = ['按172个官网可核实正式页面口径完成年度快照同步。']
     write(path, feedback)
 
 
