@@ -1,0 +1,52 @@
+name: Reconcile Wang Wanting 2026 verified annual catalogues
+on:
+  workflow_dispatch:
+  push:
+    branches: ['review/wangwanting-2026-annual-reconcile-20261126']
+    paths:
+      - '.github/workflows/wangwanting-annual-reconcile.yml'
+      - 'reviews/2026/audits/sync_wangwanting_2026_annual.py'
+permissions:
+  contents: write
+concurrency:
+  group: wangwanting-annual-reconcile-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          lfs: false
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /.gitattributes
+            /metadata/2026/papers.json
+            /metadata/2026/snapshot.json
+            /metadata/cvpr/2026/papers.json
+            /metadata/ecai/2026/papers.json
+            /metadata/natcomputsci/2026/papers.json
+            /metadata/npjscilearn/2026/papers.json
+            /metadata/j-f28cf1469d/2026/papers.json
+            /metadata/j-9596fa43cd/2026/papers.json
+            /metadata/j-3d73a601f6/2026/papers.json
+            /metadata/nprot/2026/papers.json
+            /metadata/nature-celldisc/2026/papers.json
+            /reviews/2026/feedback/Blueblue1101.json
+            /reviews/2026/audits/sync_wangwanting_2026_annual.py
+      - name: Retrieve full annual LFS bibliography
+        run: git lfs pull --include='metadata/2026/papers.json' --exclude=''
+      - name: Verify and append audited source records
+        run: python reviews/2026/audits/sync_wangwanting_2026_annual.py
+      - name: Commit derived annual data to this review branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add metadata/2026/papers.json metadata/2026/snapshot.json reviews/2026/feedback/Blueblue1101.json
+          if git diff --cached --quiet; then
+            echo 'Verified annual bibliography already synchronized.'
+            exit 0
+          fi
+          git commit -m 'Reconcile Wang Wanting audited 2026 annual source totals'
+          git push origin HEAD:${{ github.ref_name }}
