@@ -90,7 +90,9 @@ def ensure_mnd_candidate_metadata():
             '正式元数据在线核验仍未完成' in x or '年度快照待重建' in x
         )]
         row['next_actions'] = []
-        row['coverage_note'] = (row.get('coverage_note') or '').replace('年度快照待重建', '年度LFS全量已对账')
+        row['coverage_note'] = ((row.get('coverage_note') or '')
+                                .replace('逐源题录待同步', '逐源题录已同步')
+                                .replace('年度快照待重建', '年度LFS全量已对账'))
     note = '三篇纳入候选均按 Springer Nature 正式 Research 页面核对题名、DOI 与原摘要，2026-11-26。'
     if note not in row.get('coverage_note', ''):
         row['coverage_note'] = (row.get('coverage_note') or '') + ' ' + note
