@@ -1717,17 +1717,21 @@
     "year": 2026,
     "source_code": "j-3d73a601f6",
     "snapshot_at": "2026-11-08T21:38:12.854071+08:00",
-    "official_total": null,
-    "official_scope": "待按正式卷期或正式论文集年份及文献类型统一口径",
-    "coverage_note": "候选0篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。",
-    "evidence_urls": [],
+    "official_total": 127,
+    "official_scope": "Published 2026-01-01 to 2026-11-26 and deposited by 2026-11-08; all DOI-bearing journal items including commentary and errata; unique DOI",
+    "coverage_note": "Crossref 出版社登记 DOI 与本地 123 条逐一比对：原有 123 条全部匹配，另有 2026-11-06 四篇；PubMed 核实原摘要和卷期，四篇均排除 AI4S。",
+    "evidence_urls": [
+      "https://api.crossref.org/journals/2470-9468/works?filter=from-pub-date:2026-01-01,until-pub-date:2026-11-26,until-created-date:2026-11-08&rows=300&select=DOI,title,published,published-online,created,type",
+      "https://pubmed.ncbi.nlm.nih.gov/42993810/",
+      "https://pubmed.ncbi.nlm.nih.gov/42993811/",
+      "https://pubmed.ncbi.nlm.nih.gov/42993809/",
+      "https://pubmed.ncbi.nlm.nih.gov/42993812/"
+    ],
     "issues": [
-      "年度官网同口径总量尚未核对；未知不视为零。"
+      "2026-11-06 新增四篇与 11 月 8 日旧快照差四篇；逐源题录待同步，年度快照待重建。"
     ],
     "next_actions": [
-      "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
-      "统一年度口径核对官网总量，处理差额。",
-      "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。"
+      "同步四篇到逐源 papers.json，重建对应采集快照并复核监控。"
     ],
     "candidate_total": 0,
     "candidate_missing_abstract": 0,
