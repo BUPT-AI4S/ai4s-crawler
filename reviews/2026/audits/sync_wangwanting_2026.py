@@ -87,8 +87,65 @@ def ensure_nprot_review():
     write(path, feedback)
 
 
+def ensure_cell_discovery_review():
+    """Record four verified publisher omissions, including one highlight."""
+    audit = read(ROOT / 'reviews/2026/audits/wangwanting-2026-cell-discovery-catalogue.json')
+    catalog = audit['official_catalogue']
+    papers = audit['new_articles']
+    ids = [x['doi'].lower() for x in catalog]
+    if len(ids) != 82 or len(set(ids)) != 82 or len(papers) != 4:
+        raise RuntimeError('Cell Discovery catalogue changed; review the discrepancy')
+    review = read(REVIEW)
+    old = {key(p) for p in review}
+    changed = False
+    for item in papers:
+        doi = item['doi'].lower()
+        if doi not in ids or item['article_type'] not in ('Article', 'Research Highlight'):
+            raise RuntimeError(f'Unverified Cell Discovery article: {doi}')
+        k = ('nature-celldisc', YEAR, doi)
+        if k in old:
+            continue
+        paper = {
+            'id': doi, 'venue': 'nature-celldisc', 'year': YEAR, 'track': None,
+            'title': item['title'], 'authors': item['authors'],
+            'author_ids': [], 'abstract': item['abstract'], 'keywords': [],
+            'doi': doi, 'url': item['url'], 'pdf_url': item['url'] + '.pdf',
+            'published': item['date'], 'source': 'nature.com',
+            'venue_type': 'journal', 'journal_title': 'Cell Discovery',
+            'issn': '2056-5968', 'article_type': item['article_type'],
+            'screening_status': 'ready' if item['abstract'] else 'non_research_no_abstract',
+            'ai4s_review': {
+                'schema_version': 2, 'batch_id': 'wangwanting-2026-cell-discovery-catalogue-20261126',
+                'owner': '王婉婷', 'snapshot_at': audit['checked_at'],
+                'decision': 'exclude', 'rationale': item['screening_rationale'],
+                'verified_metadata': {'url': item['url'], 'doi': doi,
+                                      'article_type': item['article_type'],
+                                      'evidence_urls': [item['url'], audit['official_url']],
+                                      'checked_at': audit['checked_at']},
+                'tags': [],
+            },
+        }
+        review.append(paper)
+        old.add(k)
+        changed = True
+    if changed:
+        write(REVIEW, review)
+
+    path = ROOT / 'reviews/2026/feedback/Blueblue1101.json'
+    feedback = read(path)
+    row = next(x for x in feedback if x['source_code'] == 'nature-celldisc')
+    row['official_total'] = 82
+    row['official_scope'] = 'Cell Discovery 官网 articles?year=2026，2026-11-26 在线发表目录5页82个唯一 DOI，包含 Article 与 Research Highlight。'
+    row['coverage_note'] = '官网82篇，原逐源书目78篇；4篇漏采按官网原摘要与文章类型逐篇核实，3篇实验生物学研究与1篇 Research Highlight 均排除；补录后逐源书目82篇。原5篇候选结论保留。年度快照仍需同步。'
+    row['evidence_urls'] = list(dict.fromkeys(row['evidence_urls'] + [audit['official_url']] + [x['url'] for x in papers]))
+    row['issues'] = ['年度快照仍为旧版本，待与补录后的逐源书目同步对账。', '原有5篇候选的正式元数据仍需逐篇在线复核。']
+    row['next_actions'] = ['按82个官网唯一 DOI 口径完成年度快照同步。', '逐篇复核原有候选正式元数据。']
+    write(path, feedback)
+
+
 def main():
     ensure_nprot_review()
+    ensure_cell_discovery_review()
     review = read(REVIEW)
     candidate = read(AGGREGATE)
     by_key = {key(p): p for p in candidate}
@@ -203,6 +260,18 @@ def main():
                 or matched[0].get('ai4s_review', {}).get('decision') != 'exclude'):
             raise RuntimeError(f'Nature Protocols catalogue mismatch: {doi}')
         source_backfills['nprot'].append(
+            {name: copy.deepcopy(value) for name, value in matched[0].items() if name != 'ai4s_review'}
+        )
+
+    cd_gap = read(ROOT / 'reviews/2026/audits/wangwanting-2026-cell-discovery-catalogue.json')
+    for evidence in cd_gap['new_articles']:
+        doi = evidence['doi'].lower()
+        matched = [p for p in review if p['venue'] == 'nature-celldisc' and p.get('id', '').lower() == doi]
+        if (len(matched) != 1 or matched[0].get('title') != evidence['title']
+                or matched[0].get('abstract') != evidence['abstract']
+                or matched[0].get('ai4s_review', {}).get('decision') != 'exclude'):
+            raise RuntimeError(f'Cell Discovery catalogue mismatch: {doi}')
+        source_backfills['nature-celldisc'].append(
             {name: copy.deepcopy(value) for name, value in matched[0].items() if name != 'ai4s_review'}
         )
 
