@@ -156,6 +156,80 @@ def ensure_sle_candidate_metadata():
     write(path, feedback)
 
 
+def ensure_npj_science_learning_metadata():
+    """Confirm six original candidates against Nature's 2026 article pages."""
+    source = 'npjscilearn'
+    verified = {
+        '10.1038/s41539-025-00397-0': (1152, 'Article'),
+        '10.1038/s41539-026-00413-x': (576, 'Perspective'),
+        '10.1038/s41539-026-00417-7': (1148, 'Article'),
+        '10.1038/s41539-026-00423-9': (921, 'Article'),
+        '10.1038/s41539-026-00429-3': (1222, 'Article'),
+        '10.1038/s41539-026-00431-9': (1402, 'Article'),
+    }
+    review = read(REVIEW)
+    found = set()
+    changed = False
+    for paper in review:
+        doi = paper['id'].lower()
+        if paper['venue'] != source or doi not in verified:
+            continue
+        if doi in found:
+            raise RuntimeError(f'npj Science of Learning duplicate candidate: {doi}')
+        found.add(doi)
+        if doi == '10.1038/s41539-026-00429-3':
+            # The crawler inserted spaces before four closing quotation marks
+            # and three commas. Keep the publisher's exact rendered abstract.
+            corrected = (paper['abstract'].replace('Responders ’', 'Responders’')
+                         .replace(' Low Baseline', 'Low Baseline')
+                         .replace('Non-Responders’ ,', 'Non-Responders’,')
+                         .replace('Non-Responders ’', 'Non-Responders’')
+                         .replace(' Self-Taught', 'Self-Taught')
+                         .replace(' Phonics-Receptive', 'Phonics-Receptive'))
+            if corrected != paper['abstract']:
+                paper['abstract'] = corrected
+                changed = True
+        length, article_type = verified[doi]
+        if len(paper['abstract']) != length:
+            raise RuntimeError(f'npj Science of Learning abstract mismatch: {doi}')
+        url = f'https://www.nature.com/articles/{doi.split("/")[1]}'
+        values = {'doi': doi, 'title': paper['title'], 'abstract': paper['abstract'],
+                  'article_type': article_type, 'url': url,
+                  'evidence_urls': [url], 'checked_at': '2026-11-26'}
+        metadata = paper['ai4s_review'].setdefault('verified_metadata', {})
+        if any(metadata.get(k) != v for k, v in values.items()):
+            metadata.update(values)
+            changed = True
+    if found != set(verified):
+        raise RuntimeError('npj Science of Learning candidate set incomplete')
+    if changed:
+        write(REVIEW, review)
+
+    path = ROOT / 'reviews/2026/feedback/Blueblue1101.json'
+    feedback = read(path)
+    row = next(x for x in feedback if x['source_code'] == source)
+    synced = row.get('official_total') == 69 and audited_source_synced(source, 69)
+    if synced:
+        row['snapshot_papers'] = 69
+        row['issues'] = [x for x in row.get('issues', []) if not (
+            '正式元数据在线核验仍未完成' in x or '年度聚合快照尚未重建' in x
+        )]
+        row['next_actions'] = []
+        row['coverage_note'] = ((row.get('coverage_note') or '')
+                                .replace('年度全量与当前main候选内容仍需同步核对。',
+                                         '年度全量与最新候选已按 DOI 对账。')
+                                .replace('逐源文件将由同步任务补入', '逐源文件已补入')
+                                .replace('官网现时总数与旧快照时点不同，不标记同口径完成。',
+                                         '两篇均补入逐源和年度全量，按官网当前69篇口径完成对账。'))
+    note = '原六篇候选的题名、DOI、文章类型及原摘要经 Nature 正式页面逐篇核对，2026-11-26；逐源与年度全量69篇已对账。'
+    if note not in row.get('coverage_note', ''):
+        row['coverage_note'] = (row.get('coverage_note') or '') + ' ' + note
+    row['evidence_urls'] = list(dict.fromkeys(row.get('evidence_urls', []) +
+                                           [f'https://www.nature.com/articles/{doi.split("/")[1]}'
+                                            for doi in verified]))
+    write(path, feedback)
+
+
 def ensure_nprot_review():
     """Retain publisher-verified source omissions and explicit owner decisions."""
     audit = read(ROOT / 'reviews/2026/audits/wangwanting-2026-nprot-official-catalogue.json')
@@ -300,6 +374,7 @@ def main():
     ensure_cell_discovery_review()
     ensure_mnd_candidate_metadata()
     ensure_sle_candidate_metadata()
+    ensure_npj_science_learning_metadata()
     review = read(REVIEW)
     candidate = read(AGGREGATE)
     by_key = {key(p): p for p in candidate}
