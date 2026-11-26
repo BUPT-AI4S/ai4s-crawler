@@ -452,17 +452,16 @@
     "updated_at": "2026-11-26",
     "official_total": 379,
     "official_scope": "Springer Nature Link 卷期页按 Published 日期筛选 2025 年首次在线发表的带 DOI 条目，包括后编入 2026 卷期的论文及更正。",
-    "coverage_note": "已把官网卷期 Published 日期与 Crossref 登记逐项核对。官网 2025 年首发条目 379 篇。另有 1 条登记落在 2025 卷期口径，官网标示的首发日期在其他年份，已从首发口径剔除并记录 DOI。 2025 年候选摘要核验：原缺 7 篇，回填 4 篇，当前候选文件仍空 3 篇。 其中 3 篇在出版社页面未见独立摘要，保留原空值。 本轮逐篇精筛覆盖 11 篇候选。纳入 7，排除 1，待定 3，未审 0。 3 篇正式研究短文未有可核实的同 DOI 原摘要，候选及待定证据均已保留。",
+    "coverage_note": "已按 Springer Nature Link 卷期 Published 日期与 Crossref 对账，官网同口径总量 379。11 篇候选均已精筛，纳入 9、排除 2、待定 0、未审 0。三篇短文均无独立文字摘要。据期刊正式全文完成两篇纳入及一篇相关性排除，保留原摘要字段空值并登记全文核验依据，候选待补摘要 0。",
     "evidence_urls": [
       "https://link.springer.com/journal/11432/volumes-and-issues",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2025/audits/wangmengran8789-catalogue-totals-20261122.json",
       "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2025/audits/wangmengran8789-abstract-backfill-20261125.json",
-      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2025/audits/wangmengran8789-relevance-20261126.json"
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2025/audits/wangmengran8789-relevance-20261126.json",
+      "https://github.com/BUPT-AI4S/ai4s-crawler/blob/main/reviews/2025/audits/wangmengran8789-scis-full-text-20261126.json"
     ],
     "issues": [],
-    "next_actions": [
-      "如出版商补发 3 篇正式研究短文的独立原摘要，按 DOI 核验后恢复纳入判断。"
-    ],
+    "next_actions": [],
     "catalogue_reconciliation": {
       "status": "complete",
       "snapshot_source_count": 379,
@@ -477,20 +476,23 @@
     },
     "candidate_abstract_audit": {
       "candidate_file": "metadata/2025/ai4s.json",
-      "candidate_sha256": "df29634c3b3e282fb5b977c8f2a7c58ba444edf6601289200d072586567c4a32",
+      "candidate_sha256": "51c44d5ba45fb4e9fbee8b33aed0c05d23e2070b7816cdcbe8abcadff475181b",
       "candidate_count": 11,
       "raw_missing": 7,
       "recovered": 4,
       "physical_missing": 3,
-      "effective_missing": 3,
+      "effective_missing": 0,
       "verified_nonresearch_exemptions": 0,
       "publisher_without_standalone_abstract": 3,
-      "audit_file": "reviews/2025/audits/wangmengran8789-abstract-backfill-20261125.json"
+      "audit_file": "reviews/2025/audits/wangmengran8789-scis-full-text-20261126.json",
+      "verified_full_text_exemptions": 2,
+      "full_text_relevance_exclusions": 1,
+      "prior_audit_file": "reviews/2025/audits/wangmengran8789-abstract-backfill-20261125.json"
     },
     "review_progress": {
-      "include": 7,
-      "exclude": 1,
-      "pending": 3,
+      "include": 9,
+      "exclude": 2,
+      "pending": 0,
       "unreviewed": 0
     },
     "review_scope": {
@@ -501,7 +503,7 @@
       "candidate_count": 11,
       "candidate_ids_sha256": "695a5878f0387ec4cb1b8150058129cf071962a4a3305e0ab35f83f84480d16f",
       "review_file": "reviews/2025/wangmengran8789.json",
-      "audit_file": "reviews/2025/audits/wangmengran8789-relevance-20261126.json",
+      "audit_file": "reviews/2025/audits/wangmengran8789-scis-full-text-20261126.json",
       "scope_instruction": "完成 2025 年本人分工下当前初筛候选逐篇相关性精筛。"
     }
   },
