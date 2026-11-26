@@ -240157,7 +240157,7 @@
     "author_ids": [
       "https://orcid.org/0009-0000-0095-3539"
     ],
-    "abstract": null,
+    "abstract": "Uncertainty quantification (UQ) in scientific machine learning (SciML) becomes increasingly critical as neural networks (NNs) are being widely adopted in addressing complex problems across various scientific disciplines. Representative SciML models are physics-informed neural networks (PINNs) and neural operators (NOs). While UQ in SciML has been increasingly investigated in recent years, very few works have focused on addressing the uncertainty caused by the noisy inputs, such as spatial-temporal coordinates in PINNs and input functions in NOs. The presence of noise in the inputs of the models can pose significantly more challenges compared to noise in the outputs of the models, primarily due to the inherent nonlinearity of most SciML algorithms. As a result, UQ for noisy inputs becomes a crucial factor for reliable and trustworthy deployment of these models in applications involving physical knowledge. To this end, we introduce a Bayesian approach to quantify uncertainty arising from noisy inputs-outputs in PINNs and NOs. We show that this approach can be seamlessly integrated into PINNs and NOs, when they are employed to encode the physical information. PINNs incorporate physics by including physics-informed terms via automatic differentiation, either in the loss function or the likelihood, and often take as input the spatial-temporal coordinate. Therefore, the present method equips PINNs with the capability to address problems where the observed coordinate is subject to noise. On the other hand, pretrained NOs are also commonly employed as equation-free surrogates in solving differential equations and Bayesian inverse problems, in which they take functions as inputs. The proposed approach enables them to handle noisy measurements for both input and output functions with UQ.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -243024,7 +243024,7 @@
       "https://orcid.org/0000-0002-0155-3091",
       "https://orcid.org/0000-0002-1101-2248"
     ],
-    "abstract": null,
+    "abstract": "Developing efficient methods for solving parametric partial differential equations is crucial for addressing inverse problems. This work introduces a Least-Squares-based Neural Network (LS-Net) method for solving linear parametric PDEs. It utilizes a separated representation form for the parametric PDE solution via a deep neural network and a least-squares solver. In this approach, the output of the deep neural network consists of a vector-valued function, interpreted as basis functions for the parametric solution space, and the least-squares solver determines the optimal solution within the constructed solution space for each given parameter. The LS-Net method requires a quadratic loss function for the least-squares solver to find optimal solutions given the set of basis functions. In this study, we consider loss functions derived from the Deep Fourier Residual and Physics-Informed Neural Networks approaches. We also provide theoretical results similar to the Universal Approximation Theorem, stating that there exists a sufficiently large neural network that can theoretically approximate solutions of parametric PDEs with the desired accuracy. We illustrate the LS-net method by solving one- and two-dimensional problems. Numerical results clearly demonstrate the method's ability to approximate parametric solutions.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -244959,7 +244959,7 @@
     "author_ids": [
       "https://orcid.org/0000-0003-4101-0443"
     ],
-    "abstract": null,
+    "abstract": "Microstructural evolution, particularly grain growth, plays a critical role in shaping the physical, optical, and electronic properties of materials. Traditional phase-field modeling accurately simulates these phenomena but is computationally intensive, especially for large systems and fine spatial resolutions. While machine learning approaches have been employed to accelerate simulations, they often struggle with resolution dependence and generalization across different grain scales. This study introduces a novel approach utilizing Fourier Neural Operator (FNO) to achieve resolution-invariant modeling of microstructure evolution in multi-grain systems. FNO operates in the Fourier space and can inherently handle varying resolutions by learning mappings between function spaces. By integrating FNO with the phase field method, we developed a surrogate model that significantly reduces computational costs while maintaining high accuracy across different spatial scales. We generated a comprehensive dataset from phase-field simulations using the Fan Chen model, capturing grain evolution over time. Data preparation involved creating input-output pairs with a time shift, allowing the model to predict future microstructures based on current and past states. The FNO-based neural network was trained using sequences of microstructures and demonstrated remarkable accuracy in predicting long-term evolution, even for unseen configurations and higher-resolution grids not encountered during training.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -247220,7 +247220,7 @@
       "https://orcid.org/0009-0009-9921-3180",
       "https://orcid.org/0000-0002-0691-8248"
     ],
-    "abstract": null,
+    "abstract": "Physics-informed neural networks (PINNs) hold promise for solving partial differential equations (PDEs), but they often face challenges in achieving high accuracy, especially in complex, real-world scenarios. This paper presents an adaptive deep PINN (ad-PINN) framework designed to enhance the efficiency of both activation and loss functions. The proposed ad-PINN introduces two main innovations: (1) an adaptive activation function with dual-nested mechanism, called the dual-tanh function, which dynamically adjusts its slope and shape to optimize learning capacity beyond traditional activations; and (2) an adaptive Huber loss function, which automatically adjusts its parameters, eliminating the need for manual tuning. This dual adaptability in activation and loss functions improves the model’s flexibility and performance. Theoretically, we demonstrate that with proper initialization and learning rates, a gradient descent algorithm minimizing the loss function avoids convergence to suboptimal points or local minima. The effectiveness of ad-PINN is showcased through real-world applications, including shockwave propagation and reflection, incompressible solid mechanics, bi-material problems, and fluid dynamics. Comparative experiments reveal that ad-PINN achieves significantly higher accuracy than some existing PINNs, highlighting its capability to tackle complex problems with high-gradient solutions, capture hidden incompressibility, handle displacement discontinuities, manage high-dimensional systems with complex geometric and physical features, and address systems governed by partially known physical laws.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -249305,7 +249305,7 @@
       "https://orcid.org/0009-0009-9921-3180",
       "https://orcid.org/0000-0002-0691-8248"
     ],
-    "abstract": null,
+    "abstract": "Physics-informed neural networks (PINNs) have become promising tools for solving complex partial differential equations (PDEs), but traditional PINNs suffered from slow convergence, vanishing gradients, and poor handling of local physical features. This paper proposes a mixed-depth physics-informed neural network (md-PINN) for solving the complex PDEs, aiming to improve the efficiency of network structure and activation function. The contributions are two aspects: (1) the md-PINN includes the various mixed-depth blocks, each of which contains parallel connected deep sub-network and shallow sub-network. The deep sub-network captures complex physical features, ensuring a comprehensive understanding of the system; while the shallow sub-network focuses on the basic physical features, facilitating the stable training; (2) the md-PINN introduces a new nest-tanh(.) activation functions with nested mechanism in shallow sub-networks to enable efficient extraction of complex features using fewer hidden layers, reducing reliance on deep networks. By incorporating mixed-depth structures, md-PINN enables more efficient information sharing across different layer, leading to faster convergence and improved training efficiency. Theoretical analysis demonstrates that md-PINN avoids suboptimal convergence with appropriate initialization. The proposed approach is validated across multiple PDEs, including heat transfer scenarios with complex boundaries, bi-material solid mechanical problems, Allen-Cahn equation, fluid dynamics, and the higher order Kuramoto-Sivashinsky equation. Results show that md-PINN exhibits the superior capabilities in approximating and capturing intricate system features. These findings underscore the computational efficiency and potential of md-PINN in tackling real-world and complex problems.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -249379,7 +249379,7 @@
       "https://orcid.org/0009-0004-9170-2370",
       "https://orcid.org/0000-0002-6586-8308"
     ],
-    "abstract": null,
+    "abstract": "This study presents an end-to-end learning framework for data-driven modeling of path-dependent inelastic materials using neural operators. The framework is built on the premise that irreversible evolution of material responses, governed by hidden dynamics, can be inferred from observable data. We develop the History-Aware Neural Operator (HANO), an autoregressive model that predicts path-dependent material responses from short segments of recent strain-stress history without relying on hidden state variables, thereby overcoming self-consistency issues commonly encountered in recurrent neural network (RNN)-based models. Built on a Fourier-based neural operator backbone, HANO enables discretization-invariant learning. To enhance its ability to capture both global loading patterns and critical local path dependencies, we embed a hierarchical self-attention mechanism that facilitates multiscale feature extraction. Beyond ensuring self-consistency, HANO mitigates sensitivity to initial hidden states, a commonly overlooked issue that can lead to instability in recurrent models when applied to generalized loading paths. By modeling stress-strain evolution as a continuous operator rather than relying on fixed input-output mappings, HANO naturally accommodates varying path discretizations and exhibits robust performance under complex conditions, including irregular sampling, multi-cycle loading, noisy data, and pre-stressed states. We evaluate HANO on two benchmark problems: elastoplasticity with hardening and progressive anisotropic damage in brittle solids. Results show that HANO consistently outperforms baseline models in predictive accuracy, generalization, and robustness. With its demonstrated capabilities, HANO provides an effective data-driven surrogate for simulating inelastic materials and is well-suited for integration with classical numerical solvers.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -254677,7 +254677,7 @@
       "Bin Liu"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Artificial intelligence (AI) is revolutionizing the field of drug development, particularly in addressing key challenges such as drug response prediction, drug combination design, drug repositioning, and drug molecule generation. Traditional drug discovery is hindered by long timelines, high costs, and low success rates, necessitating innovative technologies to accelerate the process. AI technologies, such as deep learning, graph neural networks, and generative models, have demonstrated significant potential in enhancing the accuracy of drug response predictions, optimizing drug combination strategies, identifying opportunities for drug repositioning, and generating drug molecules with specific biological activities. These advancements not only accelerate the drug development process but also open up new possibilities for precision medicine. This review discusses the latest applications and developments of AI in drug discovery, highlighting the breakthroughs and challenges AI addresses in drug development. By summarizing the current research progress, this study provides theoretical support and practical guidance for further applications of AI in drug development.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -254836,7 +254836,7 @@
       "Gui Zhou"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "This paper examines the energy efficiency of a multi-user system where federated learning (FL) is implemented in a distributed manner across all nodes. Each user employs a fluid antenna system (FAS) to improve the channel condition, while the base station (BS) is equipped with multiple traditional fixed-position antennas (FPAs). When performing the FL algorithm, each user first trains a local model and transmits it to the BS over shared time-frequency resources. Then, the BS aggregates the received models and broadcasts the combined model back to all users. These steps are repeated until the FL model achieves a desired accuracy level. The system energy is mainly consumed in the computation and transmission processes at the user side. To save energy, we develop an optimization framework that minimizes the total energy consumption by jointly optimizing the learning accuracy, transmit power, antenna positions, and the BS receivers. Since the optimization variables are highly coupled, the problem is non-convex and quite complex. To address the issue, we propose an iterative algorithm to obtain a suboptimal solution of the problem. Simulation results have verified the effectiveness of the algorithm and also the advantages of FAS over the conventional FPA technology.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -254988,7 +254988,7 @@
       "Xiangxiang Zeng"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Recent advances in deep learning have proven highly effective in medical applications, notably in drug discovery. Among various deep learning techniques, self-supervised learning (SSL) has shown considerable advantages over traditional supervised learning by utilizing vast amounts of unlabeled data for model training. This review discusses both classic and state-of-the-art SSL-based methods in the drug discovery field, detailing their applications from small molecule and peptide drug discovery to antibody design and vaccine development, which provides a current and accessible guide to drug discovery. Furthermore, this review suggests the challenges faced by SSL in drug discovery, such as data quality, model interpretability, and computational resource constraints, and outlines its potential future directions. As deep learning technology advances, we anticipate that SSL-based models will increasingly promote drug research and development, potentially revolutionizing the pharmaceutical industry.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -255061,7 +255061,7 @@
       "Leyi Wei"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Molecular property prediction plays a pivotal role in advancing our understanding of molecular representations, serving as a key driver for progress in drug discovery. Leveraging deep learning to gain comprehensive insights into molecular properties has become increasingly critical. Recent breakthroughs in molecular property prediction have been achieved through molecular pretraining models, which utilize large-scale databases of unlabeled molecules for pretraining, followed by fine-tuning for specific downstream tasks. These models enable a deeper understanding of molecular properties. In this study, we review recent advancements in molecular property prediction using molecular pretraining models. Our focus includes molecular descriptors, the impact of pretraining dataset size, molecular characterization model architectures, and the diversity of pretraining task types. Additionally, we compare the performance of existing methods and propose future directions to enhance the effectiveness of molecular pretraining models.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -400831,7 +400831,7 @@
     "author_ids": [
       "https://orcid.org/0000-0001-8854-1749"
     ],
-    "abstract": null,
+    "abstract": "The fusion research facility ITER is currently being assembled to demonstrate that fusion can be used for industrial energy production, while several other programmes across the world are also moving forward, such as EU-DEMO, CFETR, SPARC and STEP. The high engineering complexity of a tokamak makes it an extremely challenging device to optimise, and test-based optimisation would be too slow and too costly. Instead, digital design and optimisation must be favored, which requires strongly-coupled suites of High-Performance Computing calculations. In this context, having surrogate models to provide quick estimates with uncertainty quantification is essential to explore and optimise new design options. Furthermore, these surrogates can in turn be used to accelerate simulations in the first place. This is the case of Parareal, a time-parallelisation method that can speed-up large HPC simulations, where the coarse-solver can be replaced by a surrogate. A novel framework, Neural-Parareal, is developed to integrate the training of neural operators dynamically as more data becomes available. For a given input-parameter domain, as more simulations are being run with Parareal, the large amount of data generated by the algorithm is used to train new surrogate models to be used as coarse-solvers for future Parareal simulations, leading to progressively more accurate coarse-solvers, and thus higher speed-up. It is found that such neural network surrogates can be much more effective than traditional coarse-solver in providing a speed-up with Parareal. This study is a demonstration of the convergence of HPC and AI which simply has to become common practice in the world of digital engineering design.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -402703,7 +402703,7 @@
     "author_ids": [
       "https://orcid.org/0000-0002-5972-8878"
     ],
-    "abstract": null,
+    "abstract": "Applications in physics, engineering, mechanics, and fluid dynamics necessitate solving nonlinear partial di ff erential equations (PDEs) with di ff erent initial and boundary conditions. Operator learning, an emerging field, solves these PDEs by employing neural networks to map the infinite-dimensional input and output function spaces. These neural operators are trained using data (observations or simulations) and PDE residuals (physics loss). A key limitation of current neural methods is the need to retrain for new initial / boundary conditions and the substantial simulation data required for training. We introduce a physics-informed transformer neural operator (named PINTO) that generalizes e ffi ciently to new conditions, trained solely with physics loss in a simulation-free setting. Our core innovation is the development of iterative kernel integral operator units that use cross-attention to transform domain points of PDE solutions into initial / boundary condition-aware representation vectors, supporting e ffi cient and generalizable learning. PINTO is utilized to simulate important equations used in fluid mechanics, physics and engineering applications: advection, Burgers, and steady and unsteady Navier-Stokes equations (three flow scenarios). We show that under challenging unseen conditions, the relative errors compared to analytical or numerical (finite di ff erence and volume) solutions are low, merely 20% to 33% of those obtained by other leading physics-informed neural operator methods. Furthermore, PINTO accurately solves advection and Burgers equations at time steps not present in the training points, an ability absent for other neural operators. The code is accessible at https://github.com/quest-lab-iisc/PINTO .",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -462640,7 +462640,7 @@
       "https://orcid.org/0000-0002-9677-0768",
       "https://orcid.org/0000-0001-7322-1873"
     ],
-    "abstract": null,
+    "abstract": "Deep Gaussian process models typically employ discrete hierarchies, but recent advancements in differential Gaussian processes (DiffGPs) have extended these models to infinite depths. However, existing DiffGP approaches often overlook the uncertainty in kernel hyperparameters by treating them as fixed and time-invariant, which degrades the model's predictive performance and neglects the posterior distribution. In this work, we introduce a fully Bayesian framework that models kernel hyperparameters as random variables and utilizes coupled stochastic differential equations (SDEs) to jointly learn their posterior distributions alongside those of inducing points. By incorporating the estimation uncertainty of hyperparameters, our method significantly enhances model flexibility and adaptability to complex dynamic systems. Furthermore, we employ a black-box adaptive SDE solver with a neural network to achieve realistic, time varying posterior approximations, thereby improving the expressiveness of the variational posterior. Comprehensive experimental evaluations demonstrate that our approach outperforms traditional methods in terms of flexibility, accuracy, and other key performance metrics. This work not only provides a robust Bayesian extension to DiffGP models but also validates its effectiveness in handling intricate dynamic behaviors, thereby advancing the applicability of Gaussian process models in diverse real-world scenarios.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -478237,7 +478237,7 @@
       "https://orcid.org/0000-0001-8217-2305",
       "https://orcid.org/0009-0001-7332-4378"
     ],
-    "abstract": null,
+    "abstract": "Evolutionary computation (EC) methods for symbolic regression (SR) problems use a search method to actively explore the mathematical expression space to find a solution. However, the EC search process does not have a clear direction owing to the randomness of evolutionary operations. In contrast, deep learning methods focus on learning the clear mapping from a given dataset to a mathematical function, but the learning process does not generally involve an active search of the potential solution space. To combine the advantages of the active search of EC and the clear mapping direction of neural networks, this paper proposes a novelty algorithm called GVAE-ABGEP. GVAE-ABGEP incorporates grammar variational autoencoder (GVAE) and adversarial bandit into gene expression programming (GEP) to guide the GEP search process. GVAE-ABGEP partitions the mathematical expression space into many subspaces. It then leverages an adversarial bandit -- AvgHExp3 to choose a subspace. In the selected subspace, it then utilizes GVAE autoencoder to sample individuals whose fitnesses around the local optimums, and executes crossover, mutation and selection on EC to explore global optimums. Experiments on 18 SR and 12 physics benchmarks show that GVAE-ABGEP outperforms three baseline GEPs and six baseline machine learning methods.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -492876,7 +492876,7 @@
       "Shi-Yao Hou"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Quantum computers leverage the unique advantages of quantum mechanics to achieve acceleration over classical computers for certain problems. Currently, various quantum simulators provide powerful tools for researchers, but simulating quantum evolution with these simulators often incurs high time costs. Additionally, resource consumption grows exponentially as the number of quantum bits increases. To address this issue, our research aims to utilize Large Language Models (LLMs) to simulate quantum circuits. This paper details the process of constructing 1-qubit and 2-qubit quantum simulator models, extending to multiple qubits, and ultimately implementing a 3-qubit example. Our study demonstrates that LLMs can effectively learn and predict the evolution patterns among quantum bits, with minimal error compared to the theoretical output states. Even when dealing with quantum circuits comprising an exponential number of quantum gates, LLMs remain computationally efficient. Overall, our results highlight the potential of LLMs to predict the outputs of complex quantum dynamics, achieving speeds far surpassing those required to run the same process on a quantum computer. This finding provides new insights and tools for applying machine learning methods in the field of quantum computing.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -492937,7 +492937,7 @@
       "Mingzhen Jia"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Future gravitational wave (GW) observatories, such as the Einstein Telescope, are anticipated to encounter overlapping GW signals, presenting considerable obstacles to GW data processing techniques, including signal identification and parameter estimation. In this letter, we propose a scheme of combining deep learning and Bayesian analysis to disentangle overlapping GW signals. The deep learning part takes a data-driven approach that employs an encoder-separation-decoder framework which is powerful enough to extract the shape of the signal even when the GW signals completely align. The Bayesian analysis part takes the matched filtering technique to extract the amplitude of the GW signals. Our scheme can facilitate the utilization of existing GW detection and parameter estimation methods for future instances of overlapping strain. This methodology effectively reduces biases in parameter estimation when handling multiple intertwined signals. Remarkably, this marks the first known instance where deep learning has been successfully utilized to disentangle overlapping GW signals.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -493002,7 +493002,7 @@
       "Shiying Xiong"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "We propose a novel quantum-inspired deep neural network framework (QIDNNF) for solving partial differential equations (PDEs), specifically Schrödinger equation and those derived through Schrödingerization. QIDNNF integrates fundamental quantum mechanics principles, including global phase invariance and normalization, to ensure unitary quantum dynamics and the preservation of conservation laws. Through numerical experiments, QIDNNF exhibits superior stability over finite difference schemes for large time steps, improved long-term accuracy over neural ordinary differential equations (Neural ODEs) and physics-informed neural networks (PINNs), and predictive precision unaffected by variations in initial phase angles. Furthermore, QIDNNF effectively models real-world physical systems, including 1D nonlinear wave propagation and 2D and 3D flow evolution, demonstrating their accuracy and consistency in simulating complex physical phenomena.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -493066,7 +493066,7 @@
       "Yang Liu"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "The accurate identification of material defects is critical for ensuring structural integrity and performance. Traditional computational methods often struggle to balance efficiency and physical fidelity in complex material systems. This paper presents a novel approach integrating physics-informed neural networks (PINNs) with the phase field method to address these challenges. Our approach leverages a phase field variable to delineate intact regions from voids, while a stress degradation model modifies mechanical responses at defect sites. Neural networks serve as surrogate forward solvers to predict displacement and stress fields, enabling rapid simulations. To ensure compatibility with physical laws, the framework embeds governing equations into the training loss function. Additionally, a data-driven term minimizes discrepancies between simulated and experimentally measured strain fields, enhancing defect localization precision. Numerical experiments validate the framework’s robustness across diverse configurations, including circular, elliptical, irregular, and multiple voids, as well as material behaviors, extending from linear elastic to hyperelastic models. The results demonstrate superior accuracy in identifying void geometry, size, and spatial distribution compared to conventional methods. The proposed approach’s adaptability to complex geometries and material nonlinearities highlights its broad applicability in aerospace, automotive, and biomedical industries.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -493132,7 +493132,7 @@
       "Xu Guo"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Multiscale topology optimization (MTO) offers a larger design space and enables the concurrent design of macroscopic “structure” and microscale “material”. Even after adopting the asymptotic homogenization analysis, the solution process could still be time-consuming, especially for multiscale topology optimization with multiple microstructures. To alleviate such an issue, a released structural genome database (SGD) is incorporated into the multiscale topology optimization process to replace the asymptotic homogenization analysis. The effectiveness, accuracy, and efficiency of the SGD-MTO algorithm are validated by benchmark examples, including optimization design of cellular structures with uniform and multiple microstructures, and concurrent multiscale design of uniform and multiple microstructures with connectivity constraints. It is validated that, compared with the traditional MTO algorithm with asymptotic homogenization analysis, the SGD-MTO algorithm can accelerate the solution efficiency by more than 30 times. Even for general MTO problems with optimized design desiring asymmetric microstructures, the proposed algorithm can still efficiently supply a reasonable initial design, which can be re-optimized in a few iterations using the explicit topology optimization method.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -493271,7 +493271,7 @@
       "Yufei Zhang"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Traditional aerodynamic optimization coupled with computational fluid dynamics is associated with a high computational cost. Surrogate models based on deep learning methods can rapidly predict flow fields from the grid input but often suffer from poor accuracy and generalizability. This study introduces a modified Fourier neural operator for flow field prediction. Unlike most convolution-based models, the Fourier neural operator learns the solution operator directly in the function space, enhancing predictive accuracy and generalizability. The proposed model incorporates a shallow feature extractor, a boundary variable fine-tuner, and several physical priors, including the initial flow field and boundary conditions. The model is trained on uniformly parameterized algebraic grids to accelerate grid generation in aerodynamic optimization. The prediction error for the flow field and force coefficients on the validation and test sets is reduced by 70% to 90% compared with that of the previous convolutional model. The proposed model can make precise predictions for supercritical airfoils under typical working conditions, with a drag coefficient error of approximately 1 drag count on the validation set, and generalizes better than previous convolution-based methods do on extrapolative inflow conditions and airfoils.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -585754,7 +585754,7 @@
       "Seungchul Lee"
     ],
     "author_ids": [],
-    "abstract": null,
+    "abstract": "Physics-informed neural networks have gained prominence as an innovative framework that combines machine learning and physics knowledges to solve complex physical problems. By integrating the partial differential equations of a physical system into the neural network architecture, physics-informed neural networks can approximate solutions for the system under given boundary and initial conditions. This allows the models to capture the underlying dynamics of the system while adhering to physical constraints. Despite their advantages, physics-informed neural networks exhibit performance degradation when applied to multiphysics and multi-domain problems. Specifically, conjugate heat transfer problems, which are representative of such problems, tend to exhibit low accuracy along with training instability and convergence issues when conventional physics-informed neural networks are used. Therefore, in this study, we propose a novel physics-informed neural network method called Extended Multiphysics-informed Neural Network to improve performance in solving conjugate heat transfer problems. The extended multiphysics-informed neural network framework uses distinct sub-networks designed to capture the characteristics of solid and fluid domains, enabling the accurate simulation of abrupt temperature changes at solid-fluid interfaces. Additionally, a novel training scheme incorporating physical phenomena ensures the stability and convergence of the model. The efficiency of extended multiphysics-informed neural network is validated through its application to representative two-dimensional conjugate heat transfer problems, demonstrating significant improvements in predictive performance and computational efficiency compared to existing methods. This study highlights the potential of advanced physics-informed neural network method for solving complex multiphysics problems.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -718204,7 +718204,7 @@
     "author_ids": [
       "https://orcid.org/0000-0003-0330-0028"
     ],
-    "abstract": null,
+    "abstract": "In the context of Maintenance-as-a-Service (MaaS), it is important for device vendors to develop multivariate time series (MTS) anomaly detection models that can accurately identify anomalies without compromising the privacy of customer enterprises’ data. In this paper, we investigate the relationship between MTS data patterns and the parameters of unsupervised autoencoder (AE) models and show that they are highly consistent. Building on this insight, we propose a novel unsupervised federated learning (FL)-based framework called OmniFed , which cannot only address the heterogeneity of non-independent identically (non-iid) distributed data on diﬀerent devices, but also achieve high-precision detection of device MTS anomalies while ensuring privacy. Speciﬁcally, OmniFed is initialized with an AE model and then trains local AE models on individual devices via federated learning. Finally, OmniFed clusters devices based on the parameters of the AE models and trains a cluster-speciﬁc MTS anomaly detection model using FL. Our experiments on two real-world datasets demonstrate that OmniFed achieves an F1-Score of 0.921, signiﬁcantly higher than the best baseline method.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
