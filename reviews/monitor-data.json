@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-27T11:16:48.534770+00:00",
-  "commit": "19e84192eb7499550ac6f5e56813882869e1dd97",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/19e84192eb7499550ac6f5e56813882869e1dd97/",
+  "generated_at": "2026-11-27T11:35:31.288588+00:00",
+  "commit": "c5163f5bdc91bd1f47cbeab07e116e69e8c41b2d",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/c5163f5bdc91bd1f47cbeab07e116e69e8c41b2d/",
   "years": [
     {
       "year": 2024,
@@ -26348,18 +26348,18 @@
           "open_issues": 0,
           "status": "complete",
           "last_update": {
-            "at": "2026-11-27T03:05:16-08:00",
+            "at": "2026-11-27T03:26:32-08:00",
             "author": "ebo",
-            "subject": "Complete zch 2025 candidate screening and synchronize reviewed abstracts",
+            "subject": "补齐 ISMB 2025 论文并完成精筛",
             "area": "reviews",
             "paths": [
-              "metadata/j-24652e28b9/2025/ai4s.json",
-              "metadata/j-24652e28b9/2025/papers.json",
-              "metadata/j-76f25ed87e/2025/ai4s.json",
-              "metadata/j-76f25ed87e/2025/papers.json"
+              "metadata/2025/snapshot.json",
+              "metadata/ismb/2025/ai4s.json",
+              "metadata/ismb/2025/papers.json",
+              "reviews/2025/feedback/zch66883.json"
             ]
           },
-          "commits_7d": 11
+          "commits_7d": 12
         },
         {
           "owner": "郝卓迪",
@@ -28990,33 +28990,40 @@
           "owner": "朱长昊",
           "venue_decision": "清单保留",
           "state": "completed",
-          "papers": 0,
+          "papers": 66,
           "papers_missing_abstract": 0,
-          "snapshot_candidates": 0,
+          "snapshot_candidates": 63,
           "candidates": 0,
           "missing_abstract": 0,
           "official_total": 66,
           "official_scope": "Bioinformatics 41(S1) ISMB/ECCB 2025 Proceedings 正式刊出全文 66 篇（录用 67，1 篇撤稿）",
           "reference_check": null,
-          "coverage_note": "Proceedings 社论载 371 篇合规投稿、67 篇正式录用、其中 1 篇刊出前撤稿，故 66 篇；采集快照 0 条。",
+          "coverage_note": "按 Bioinformatics 41(S1) 2025 年 7 月 ISMB/ECCB 合刊目录逐 DOI 核对：共 71 条，剔除 1 篇社论及 4 篇获奖介绍，正式全文 66 篇；与已存 ECCB 同刊记录 DOI 一一对应，ISMB 来源补齐 66 篇且摘要全部具备。初筛 59 篇，复核补录漏筛 4 篇，精筛 63 篇（纳入 55、排除 8）。跨 ECCB 来源的相同 DOI 是合刊同一论文，按来源分别保留。",
           "evidence_urls": [
+            "https://academic.oup.com/bioinformatics/issue/41/Supplement_1",
             "https://academic.oup.com/bioinformatics/article/41/Supplement_1/i1/8199417"
           ],
-          "decisions": null,
+          "decisions": {
+            "include": 55,
+            "exclude": 8,
+            "pending": 0,
+            "unreviewed": 0
+          },
           "issues": [
-            "2025 年整年未采集，待补 66 篇（Bioinformatics 41(S1)）。"
+            "个人审核已纳入但尚未同步候选总集：55 篇，其中缺少原摘要：0 篇。"
           ],
           "actions": [
-            "按 Bioinformatics 41(S1) 目录补采 66 篇（题名、作者、DOI、摘要）后重跑初筛。",
-            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
+            "核对已报告的官网总数与采集范围、年份和文献类型是否可比。",
+            "核对已纳入论文身份和范围，补充缺失的原摘要后同步候选总集。"
           ],
           "files": [
+            "reviews/2025/zch66883.json",
             "reviews/2025/feedback/zch66883.json"
           ],
           "snapshot_at": "2026-11-09T10:51:18+08:00",
-          "final_included": null,
-          "final_missing_abstract": null,
-          "unsynced_included": 0,
+          "final_included": 55,
+          "final_missing_abstract": 0,
+          "unsynced_included": 55,
           "unsynced_missing_abstract": 0,
           "abstract_recovered": 0,
           "abstract_not_required": 0,
@@ -50504,24 +50511,24 @@
         {
           "owner": "朱长昊",
           "sources": 51,
-          "delivered": 49,
+          "delivered": 50,
           "official": 51,
           "pending": 0,
           "open_issues": 1,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-27T03:05:16-08:00",
+            "at": "2026-11-27T03:26:32-08:00",
             "author": "ebo",
-            "subject": "Complete zch 2025 candidate screening and synchronize reviewed abstracts",
+            "subject": "补齐 ISMB 2025 论文并完成精筛",
             "area": "reviews",
             "paths": [
-              "metadata/j-24652e28b9/2025/ai4s.json",
-              "metadata/j-24652e28b9/2025/papers.json",
-              "metadata/j-76f25ed87e/2025/ai4s.json",
-              "metadata/j-76f25ed87e/2025/papers.json"
+              "metadata/2025/snapshot.json",
+              "metadata/ismb/2025/ai4s.json",
+              "metadata/ismb/2025/papers.json",
+              "reviews/2025/feedback/zch66883.json"
             ]
           },
-          "commits_7d": 11
+          "commits_7d": 12
         },
         {
           "owner": "李雪婷",
@@ -79501,18 +79508,18 @@
           "open_issues": 0,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-27T03:05:16-08:00",
+            "at": "2026-11-27T03:26:32-08:00",
             "author": "ebo",
-            "subject": "Complete zch 2025 candidate screening and synchronize reviewed abstracts",
+            "subject": "补齐 ISMB 2025 论文并完成精筛",
             "area": "reviews",
             "paths": [
-              "metadata/j-24652e28b9/2025/ai4s.json",
-              "metadata/j-24652e28b9/2025/papers.json",
-              "metadata/j-76f25ed87e/2025/ai4s.json",
-              "metadata/j-76f25ed87e/2025/papers.json"
+              "metadata/2025/snapshot.json",
+              "metadata/ismb/2025/ai4s.json",
+              "metadata/ismb/2025/papers.json",
+              "reviews/2025/feedback/zch66883.json"
             ]
           },
-          "commits_7d": 11
+          "commits_7d": 12
         },
         {
           "owner": "李雪婷",
@@ -79921,7 +79928,7 @@
         },
         "2025": {
           "sources": 51,
-          "delivered": 49,
+          "delivered": 50,
           "official": 51,
           "pending": 0,
           "open_issues": 1,
@@ -79937,21 +79944,21 @@
         }
       },
       "sources": 153,
-      "delivered": 136,
+      "delivered": 137,
       "not_started": [],
       "last_update": {
-        "at": "2026-11-27T03:05:16-08:00",
+        "at": "2026-11-27T03:26:32-08:00",
         "author": "ebo",
-        "subject": "Complete zch 2025 candidate screening and synchronize reviewed abstracts",
+        "subject": "补齐 ISMB 2025 论文并完成精筛",
         "area": "reviews",
         "paths": [
-          "metadata/j-24652e28b9/2025/ai4s.json",
-          "metadata/j-24652e28b9/2025/papers.json",
-          "metadata/j-76f25ed87e/2025/ai4s.json",
-          "metadata/j-76f25ed87e/2025/papers.json"
+          "metadata/2025/snapshot.json",
+          "metadata/ismb/2025/ai4s.json",
+          "metadata/ismb/2025/papers.json",
+          "reviews/2025/feedback/zch66883.json"
         ]
       },
-      "commits_7d": 11
+      "commits_7d": 12
     },
     {
       "owner": "郝卓迪",
@@ -80133,9 +80140,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-27T11:16:01.968110+00:00",
+    "generated_at": "2026-11-27T11:34:57.780469+00:00",
     "history_available": true,
-    "commit": "19e84192eb7499550ac6f5e56813882869e1dd97",
-    "commits_scanned": 1539
+    "commit": "c5163f5bdc91bd1f47cbeab07e116e69e8c41b2d",
+    "commits_scanned": 1541
   }
 }
