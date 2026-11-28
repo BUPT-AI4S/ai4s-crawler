@@ -13,8 +13,14 @@
     "author_ids": [
       "https://orcid.org/0000-0001-5222-4047"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Exploring fault diagnosis methods for mechanical equipment with weak dependency on annotated data is essential for industrial production. Contrastive learning (CL), capable of learning representations without labeling information, has achieved satisfactory performance in mechanical fault diagnosis. However, current CL-based approaches mainly encounter two limitations. First, the pre-training stage uses either unannotated or annotated samples exclusively while the fine-tuning stage solely relies on annotated ones, leading to inefficient sample utilization. Second, the representation learned by contrastive loss alone in the pretext task is sub-optimal for downstream diagnostic tasks. To address these issues, this paper proposed a novel diagnostic framework based on label-guided contrastive learning (LgCL) and weighted pseudo-labeling (WPL) strategy to improve fault diagnosis accuracy. In the pre-training stage, the proposed LgCL integrates two types of contrastive loss together with classification loss, enabling the encoder to learn discriminative representations that directly benefit the downstream diagnostic task. The devised hybrid fine-tuning strategy allows both labeled and unlabeled data to participate in fine-tuning via pseudo-labeling, enhancing model generalization. The pertinently designed WPL strategy mitigates the defect of noisy pseudo labels. Comparison and ablation experiments on two public datasets and one self-designed dataset validate the superiority of the proposed method for fault diagnosis with limited annotated data, with diagnostic accuracies improved by 25.30%, 5.47% and 10.02% over supervised, semi-supervised and contrastive learning methods, respectively.",
+    "keywords": [
+      "Mechanical fault diagnosis",
+      "Insufficient annotated data",
+      "Label-guided contrastive learning",
+      "Weighted pseudo-labeling",
+      "Hybrid fine-tuning"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -222,8 +228,12 @@
       "Zhenteng Xu"
     ],
     "author_ids": [],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Aircraft engines have complex structures and various operating conditions, which leads to the health monitoring data of aircraft engines’ high coupling in the spatial domain and time invariance in the temporal domain. Existing methods for remaining useful life prediction of aircraft engines are deficient in handling spatial data and spatial–temporal data fusion. To address this problem, a novel method named physics-informed spatio-temporal hybrid neural networks (PI-STHNN) is proposed. In this study, a spatial domain data association graph for aircraft engines is constructed by utilizing a thermal cycle physical model as prior knowledge and combining it with the grey relational grade analysis method. Specifically, the proposed spatio-temporal hybrid neural network framework extracts the temporal features and spatial coupling features of the data in parallel. Then attention mechanism is employed to weigh and fuse all feature representations. Finally, the method is validated on the two aircraft engine datasets, the results show that PI-STHNN outperforms current state-of-the-art methods. Furthermore, our analysis sheds light on the advantages of incorporating physical information into graph neural network models and visually presents the attention weights to elucidate the contributions of time-domain and spatial-domain models within our hybrid approach.",
+    "keywords": [
+      "Physics-informed graph construction",
+      "Spatio-temporal hybrid neural network",
+      "Predicting remaining useful life"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -356,8 +366,14 @@
       "https://orcid.org/0000-0002-0866-3680",
       "https://orcid.org/0000-0002-2160-4917"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "The layout of battery cells in liquid-based battery thermal management systems determines the temperature distribution within a battery pack, which, in turn, affects the safety, reliability, and efficiency of the battery system. Therefore, real-time heat map prediction is of great importance for battery design optimization and control strategy refinement. However, the scarcity of high-fidelity data as well as the imperfections of low-fidelity physics knowledge significantly hinder the accuracy of both data-driven and physic-informed machine learning (PIML) surrogate models. To tackle these challenges, this paper proposes a novel multi-fidelity physics-informed convolutional neural network (MFPI-CNN) that integrates low-fidelity domain-specific knowledge with limited high-fidelity data to provide accurate and trustworthy real-time battery heat map estimations. First, to facilitate the integration of heat transfer knowledge into machine learning models, a complex three-dimensional battery heat transfer problem is simplified to an equivalent two-dimensional representation as low-fidelity physics knowledge. Then, the MFPI-CNN with a physics-informed backbone and a high-fidelity projection head is proposed to generate battery heat maps at various fidelity levels. The backbone’s pre-training employs an unsupervised PIML framework, embedding heat transfer partial differential equations and boundary conditions within the loss function and padding modes. The high-fidelity projection head with a simplified structure is then appended to the fixed backbone and trained by limited labeled data. Both the backbone and projection head are equipped with appropriate modules and linear-weighting loss functions to normalize convergence speed. The efficacy of the model simplification is verified by various battery experiments and simulations. Comparative results and ablation studies on heat map predictions demonstrate that the proposed MFPI-CNN outperforms traditional data-driven, physics-informed, and other multi-fidelity surrogate models.",
+    "keywords": [
+      "Physics-informed machine learning",
+      "Battery thermal management",
+      "Multi-fidelity modeling",
+      "Heat transfer",
+      "Surrogate model"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -493,8 +509,13 @@
       "Asif Sohail Usmani"
     ],
     "author_ids": [],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Explosion risk assessment (ERA) is essential for ensuring effective process safety and reliability management. Deep learning has been used to reduce the computational burden of computational fluid dynamics (CFD)-based ERA, but its 'black-box' nature without considering relevant physics can lead to inaccuracies, especially in complex, obstructed scenarios. This paper develops a Physics-informed graph neural network approach, i.e., Physics_GNN for real-time obstructed gas explosion simulation. An autoregressive GNN, namely GNN_f is first applied to iteratively predict the spatiotemporal flame evolution. An ordinary differential equation (ODE) governing the interaction mechanism between the flame and blast wave propagation is used to predict the blast dynamics with the GNN_f. A physical enhancement factor β is proposed to calibrate the overpressure dynamics prediction with congestions, which can be predicted by developing another GNN, namely GNN_β. The integration of GNN_f, GNN_β and ODE leads to the final Physics_GNN. A benchmark numerical dataset is constructed, using which Physics_GNN and the state-of-the-art are then compared. The comparison demonstrates the superior accuracy of the proposed approach in real-time blast load prediction in congested scenarios. The Physics_GNN approach also enables the description of the physical interactions between congestion, flame propagation, and blast load distribution. This paper provides an efficient and accurate approach to predict industrial explosion consequences, supporting robust ERA and risk-informed decision-makings about mitigation design of industrial facilities.",
+    "keywords": [
+      "Risk assessment and management",
+      "Gas explosion",
+      "Real-time simulation",
+      "Graph neural network"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -565,8 +586,14 @@
     "author_ids": [
       "https://orcid.org/0000-0002-9423-5366"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Engineering components such as engine blades, turbofans, external parts, etc., are often subjected to complex loads in the serving environment. Fatigue failure of components under multiaxial loading will occur, causing a severe influence on operational safety. Centered on low-cycle fatigue under multiaxial loading conditions, we have developed a novel fatigue life prediction framework, which utilizes the physics-guided machine learning approach as a surrogate model for fatigue life prediction. We conducted preliminary experiments to obtain the material's mechanical properties and established reliable finite element analysis (FEA) models based on these properties. Subsequently, we generated high-confidence datasets using the FEA models. By leveraging the strengths of both deep learning methods and LightGBM, we proposed a fusion surrogate model called DL-LGBM-DRS. The DL-LGBM-DRS can efficiently and accurately predict low-cycle fatigue life under various multiaxial loading conditions. Lastly, we defined a new fatigue life degradation relationship, KBM-N, using Brown-Miller parameters and fitted probabilistic fatigue life degradation curves based on the KBM-N relations.",
+    "keywords": [
+      "Multiaxial loading",
+      "Fatigue life prediction",
+      "Finite element analysis",
+      "DL-LGBM-DRS",
+      "Fatigue reliability"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -640,8 +667,13 @@
       "https://orcid.org/0000-0002-7108-637X",
       "https://orcid.org/0000-0001-8687-2659"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Resilience is crucial for systems to maintain functionality under disturbances, especially in critical applications. However, current methods for assessing resilience in multi-state systems (MSS), particularly those modeled with Markov Repairable Processes (MRP), often face high computational costs and inefficiencies in handling complex dynamics. To address these issues, this paper proposes a systematic framework for resilience assessment of MSS whose recovery process is described as a MRP, integrated with enhanced Physics-Informed Neural Networks (PINN). In the first step of the framework, the computation of resilience indices is performed, based on the MRP of the MSS and considering the system evolution through vulnerable and recovery phases. In the second step of the framework, the enhanced PINN is integrated into the MRP solution. A typical standby MSS structure is analyzed based on the proposed framework. By gradient calibration and momentum-driving training, the computational cost is shown to be reduced by 92.4 %, compared to the eigenvector method of solution. The approach is adaptable to other safety-critical systems, offering a robust tool for more effective resilience evaluation and system optimization.",
+    "keywords": [
+      "Resilience",
+      "Multi-State System",
+      "Markov Repairable Process",
+      "Physics-informed Machine Learning"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -711,8 +743,14 @@
     "author_ids": [
       "https://orcid.org/0000-0003-0135-3660"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "The integration of physics-based and data-driven methods in prognostics has become increasingly important in understanding the underlying degradation process using available knowledge. In this paper, we propose a physics-informed Gaussian process modeling method with multi-source data (PIGP-MD) that improves the predictive power of standard Gaussian process model by incorporating the prior knowledge from both physical models and historical data, and the current knowledge from limited observation data. We first propose a PIGP modeling method that incorporates the prior knowledge solely from physical models. In PIGP, a standard GP directly trained with current observation data is used to truncate the random realizations generated from physical models within the confidence bounds of the GP prediction. The truncated random realizations are used to derive the PIGP's nonstationary priors including the mean and autocovariance functions, as the unknown stochastic degradation process is considered as a nonstationary Gaussian process. Built upon PIGP, we propose PIGP-MD to filter credible knowledge from historical data. Some random realizations are generated from the credible knowledge from historical data and combined with the truncated random realizations generated from physical models. The combined random realizations are used to derive the nonstationary priors of PIGP-MD in the same way. With the physics model-informed and historical data-driven nonstationary priors as well as the current observation data, we can efficiently obtain the posterior future prediction without any parameter optimization. We demonstrate the applicability and efficacy of our proposed method for fatigue damage prognostics.",
+    "keywords": [
+      "Data-driven prognostics",
+      "Physics-based prognostics",
+      "Physics-informed Gaussian process",
+      "Multi-source data",
+      "Fatigue crack estimation"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -787,8 +825,14 @@
       "https://orcid.org/0000-0002-8102-3436",
       "https://orcid.org/0000-0002-8232-4089"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Due to strong data-processing capabilities, machine learning haves been widely applied and combined with stochastic processes to quantify the inherent uncertainty in degradation modeling. These approaches typically first extract health index using machine learning methods, then model them using stochastic processes. While, the machine learning models and stochastic processes are independent of each other, making it difficult to ensure their mutual compatibility. Furthermore, actual available data is often limited, which restricts the accuracy of extracting health indexes through machine learning methods. Hence, this paper proposes a prediction method based on physics-informed neural network supported Wiener process, which includes offline modeling and online prediction stages. In the offline modeling phase, degradation path is fitted using a deep network framework, and degradation mechanics-related prior physical knowledge is embedded into the network along with the Wiener process through parametric expression. Accordingly, a compound loss function is designed to simultaneously train network parameters and process parameters. In the online prediction phase, real-time data is integrated using Bayesian inference methods to update the process parameters, ensuring the robustness of the model. The effectiveness of this method is confirmed using actual datasets, highlighting that the accuracy can be guaranteed even without path information and/or sufficient data.",
+    "keywords": [
+      "Degradation modeling",
+      "Physics-informed neural network",
+      "Wiener process",
+      "Reliability prediction",
+      "Bayesian inference"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -1002,10 +1046,10 @@
     "abstract": "Battery energy storage systems (BESS) play a vital role in grid stabilization, integrating renewable energy, and enhancing resilience through efficient energy storage and distribution. Precisely predicting the BESS degradation status is paramount for timely maintenance, ensuring safety, and upholding reliability. The degradation process of batteries in BESS involves complex chemical reactions and physical changes, compounded by various uncertain factors such as diverse battery usage conditions. To address this challenge, the quantile Transformer (Q-Transformer) method is proposed, which can predict the degradation of batteries within intervals, thereby enhancing the reliability of predictions. Firstly, the voltage and current data of lithium-ion batteries in BESS are converted into capacity increment features through incremental capacity analysis. Subsequently, the constructed Q-Transformer model is trained using these capacity increment features. Finally, the trained Q-Transformer model is employed to predict the capacity of lithium-ion batteries in BESS. The effectiveness of the proposed Q-Transformer method is validated and analyzed using two lithium-ion battery datasets, NASA and CALCE. The experimental results indicate that the proposed Q-Transformer method exhibits superior predictive performance than other popular methods. The errors in terms of RMSE, MAPE, and MD-MAPE are mostly within about 5%. The proposed Q-Transformer method shows promising potential for extensive application in BESS.",
     "keywords": [
       "Battery energy storage systems",
-      "Degradation prediction",
       "Lithium-ion batteries",
-      "Quantile loss",
-      "Transformer"
+      "Degradation prediction",
+      "Transformer",
+      "Quantile loss"
     ],
     "tldr": null,
     "primary_area": null,
@@ -1077,8 +1121,14 @@
     "author_ids": [
       "https://orcid.org/0000-0002-5011-5370"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Trajectory-following control is a crucial challenge for virtual rail trains (VRTs), directly impacting tracking accuracy, path width requirements, and operational safety. Traditional model-based control methods, struggle with nonlinear dynamics and require highly accurate system models, while purely data-driven deep learning methods lack physical interpretability and robustness. To address these challenges, this paper proposes a novel Physics-Informed Deep Learning Control Strategy that integrates Lagrangian dynamics equations into a deep neural network, forming a Deep Lagrangian Neural Network (DLNN). This approach ensures that the learned control model retains essential physical properties while capturing complex vehicle dynamics. The DLNN serves as an inverse model within the control framework, mapping desired trajectories to control inputs. Experimental results on circular, lane-change, and obstacle-avoidance maneuvers demonstrate that the DLNN model significantly reduces lateral deviation and yaw rate errors compared to traditional Multi-Layer Perceptron (MLP)-based models. The DLNN exhibits strong generalization capability across different trajectory geometries and benefits from online learning, allowing continuous adaptation to new driving conditions. These findings highlight the potential of physics-informed deep learning in intelligent rail transit systems, providing a more accurate, interpretable, and robust control framework for virtual rail train trajectory following.",
+    "keywords": [
+      "Trajectory-following control",
+      "Deep Lagrangian neural network",
+      "Physic-informed",
+      "Virtual rail train",
+      "Intelligent transportation systems"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -1150,8 +1200,14 @@
       "https://orcid.org/0000-0001-9054-5132",
       "https://orcid.org/0000-0002-3264-7189"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Hydraulic pumps have been widely used in various application domains, especially in aerospace and industrial machinery. Therefore, the accurate prediction of the performance degradation and remaining useful life (RUL) is crucial for ensuring the high reliability and safety of hydraulic pump pressure supply systems. However, the hydraulic pump performance degradation is a complex multi-factor coupling process, which is affected by the wear of internal key friction pairs and external operating conditions. This paper proposes a method that integrates failure mechanisms with data-driven approaches to forecast the degradation trajectory of hydraulic pumps, considering both the wear and operating conditions. Based on the friction and wear failure mechanism, wear evaluation models for three key friction pairs are first developed, and the wear of the hydraulic pump is evaluated by the output of the model. A Long Short-Term Memory (LSTM) network is then used to construct the mapping relationship between the wear level and return oil flow of the hydraulic pump. Afterwards, the dynamic model is iterated by updating the degradation sensitive parameters of three pairs of key friction pairs. Finally, the effectiveness of the proposed physics-informed LSTM (PI-LSTM) network framework is verified on four collected hydraulic pump degradation datasets, and compared with those of state-of-the-art methods.",
+    "keywords": [
+      "Failure mechanism",
+      "Degradation",
+      "Prognosis",
+      "Physics-informed machine learning",
+      "Hydraulic piston pump"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -1221,8 +1277,14 @@
       "https://orcid.org/0000-0002-9591-2971",
       "https://orcid.org/0000-0002-1370-3691"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Water-hydraulic high-speed on/off valves (HSVs) are critical control components, such as water-hydraulic manipulators (WHMs) and underwater flotation regulation systems. These systems are characterized by their numerous applications and demanding dynamic performance requirements. Therefore, ensuring effective data monitoring and performance safeguards for these valves is crucial to the overall functionality of hydraulic control systems. However, due to the complex multi-physics field coupling of HSVs, data-driven machine learning (ML) methods evidently cannot achieve accurate degradation prediction for high-performance HSVs. To tackle this issue, the present study proposes a physical information-based neural networks (PINNs) that incorporates convolutional neural network (CNN), bidirectional long short-term memory network (BiLSTM), and the Attention method to accurately predict the degradation process of HSV performance. In these proposed methods, the inclusion of physical knowledge in the form of differential equations into the loss function enhances convergence towards the actual physical failure mechanism during network training. The results demonstrate a significant reduction in RMSE by 30.27% for the physical information-based CNN-BiLSTM-Attention·(PICNN-BiLSTM-Attention) model compared to the traditional CNN-BiLSTM-Attention model, accompanied by an improved R2 value by 2.95%. Comparative analyses with other approaches are conducted to evaluate error and fitting effects, confirming that our proposed method effectively enhances prediction accuracy for HSV performance degradation.",
+    "keywords": [
+      "Machine learning",
+      "CNN-BiLSTM-Attention",
+      "Physical information-based neural networks (PINNs)",
+      "Degradation mechanism",
+      "High-speed on/off valve (HSV)"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -1290,7 +1352,7 @@
     "author_ids": [
       "https://orcid.org/0000-0002-7385-9460"
     ],
-    "abstract": null,
+    "abstract": "The wear of friction pairs is one of the most common failure mechanisms for axial piston pumps and its accurate detection is essential for ensuring safety and reliability of hydraulic systems. The existing studies on the wear detection of friction pairs in axial piston pumps is focused on data-driven fault diagnosis models, but these black-box data-driven models are limited by poor interpretability and physical inconsistency. To overcome this limitation, this paper proposes an interpretable wear detection method for the friction pairs of axial piston pumps based on physics informed neural networks. First, we establish an ordinary differential equation (ODE) for the time derivative of discharge pressure to relate the instantaneous discharge pressure with the fluid film thicknesses in friction pairs that represent the wear condition of axial piston pumps. Second, we develop a physics informed neural network and a multi-parameter dynamic identification method to identify the fluid film thickness in each friction pair by inversely solving the ODE based on observed discharge pressure signals. Finally, we propose an interpretable wear detection method based on the pump's volumetric efficiency and effect size of fluid film thickness. Experimental results suggest that the identification results of fluid film thickness in the friction pairs have a good physical consistency, and the proposed method can locate the worn friction pair with a high model interpretability.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -1428,8 +1490,13 @@
     "author_ids": [
       "https://orcid.org/0000-0002-6971-2909"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Due to the increasing interest in the security of the battery system, precise and rapid work on the state of health (SOH) and remaining useful life (RUL) evaluation of lithium batteries (LIBs) is necessary in practice. In this article, a MC-CNN-TimesNet model is proposed to predict the SOH and RUL of lithium batteries. This model captures the deep-state characteristics of lithium battery aging by capturing the dependencies within and between different time scales. In addition, a Tree-structured Parzen Estimation (TPE) algorithm is used in the optimization of model parameters. In this study, we also conducted correlation analysis by Pearson Correlation Coefficient (PCC) on the input voltage, current, temperature, time, and capacity data to select the features with higher correlation with SOH and RUL. Based on the Principal Correlation Analysis (PCA), the result of the PCC is reconstructed to remove the redundant characteristic information. Then, the min–max character scaling algorithm is used to regularize all characters to speed up the training process. Finally, a comparative validation of different models was performed on the NASA dataset, CALCE dataset, and MIT dataset. The results indicate that SOH and RUL can be predicted with an average root mean square error (RMSE) within 1.5%.",
+    "keywords": [
+      "Lithium-ion batteries",
+      "SOH",
+      "RUL",
+      "CNN-TimesNet"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -1492,8 +1559,14 @@
       "Yuejian Chen"
     ],
     "author_ids": [],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Blending hydrogen into the existing natural gas pipelines is an effective way to reduce hydrogen transportation costs and facilitate the rapid adoption of hydrogen energy. However, the impact of hydrogen embrittlement on the burst pressure and remaining life of corroded pipelines is not well understood, which poses a significant challenge to pipeline integrity management. To overcome this challenge, this study examines the impact of hydrogen embrittlement on the mechanical properties of pipeline steel and utilizes finite element analysis to calculate the burst pressure of pipelines under varying corrosion geometrical parameters and hydrogen partial pressures. The results obtained are used to train a genetic algorithm-backpropagation (GA-BP) neural network model that predicts burst pressure for hydrogen-blended natural gas pipelines. Additionally, the corrosion maximum depth that can lead to pipeline failure is determined and the prediction of the remaining useful life is realized by integrating corrosion growth models. The findings indicate that the impact of hydrogen embrittlement on the burst pressure of corroded X52 pipelines is negligible. However, for corroded X80 pipelines, hydrogen embrittlement results in a reduction in the burst pressure of approximately 6 %, leading to a remaining useful life loss of around 0.24 years.",
+    "keywords": [
+      "Hydrogen-blended natural gas pipeline",
+      "Hydrogen embrittlement",
+      "Corrosion",
+      "Burst pressure model",
+      "Pipeline integrity management"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -1562,8 +1635,13 @@
     "author_ids": [
       "https://orcid.org/0000-0002-2816-327X"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Accurately monitoring the health degradation of batteries is critical for ensuring the safety and reliability of electrochemical energy storage systems. While great progress has been made in this area by machine learning, a significant but overlooked challenge is the prohibitive demand for large high-quality degradation data for model training. Here, we reveal that although ubiquitous incomplete charging curves cannot derive state of health (SOH) labels, they provide valuable degradation knowledge that can effectively contribute to the development of SOH estimation models. We propose a knowledge-guided method that has high flexibility in using charging segments to estimate the SOH. More importantly, it takes advantage of incremental capacity indicators obtained from incomplete charging curves to guide the training of a deep neural network (DNN). The resulting pre-trained DNN can quickly adapt to SOH estimation with very few SOH labels. Validations show that using only 50 charging segments with SOH labels, our knowledge-guided DNN achieves an SOH estimation root mean square error of 21.08 mAh for 0.74 Ah batteries, which is 60 % less compared with conventional methods. Further validations on 3 datasets covering different battery chemistries and operating conditions confirm the superiority of the proposed method. Our work highlights the promise of employing domain knowledge to advance machine learning models for health monitoring purposes.",
+    "keywords": [
+      "Battery energy storage",
+      "Battery degradation",
+      "State of health",
+      "Machine learning"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -1629,8 +1707,15 @@
       "https://orcid.org/0000-0002-4167-1084",
       "https://orcid.org/0000-0002-9401-1979"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Tropical cyclones (TCs) pose severe risks to power transmission systems, yet conventional Numerical Weather Prediction (NWP) models lack the resolution to resolve sub-kilometer wind dynamics critical for infrastructure risk assessment. This study introduces a Real-time Wind Forecast Correction (RWFC) model, a deep learning framework that dynamically refines mesoscale NWP forecasts during TCs by assimilating multi-source observational data. The RWFC integrates Convolutional Neural Network and Bidirectional Long Short-Term Memory (CNN-BiLSTM) to capture spatiotemporal wind-terrain interactions, with a custom loss function balancing accuracy and conservative bias for proactive risk mitigation. Validated during Typhoon Hagupit (2020) in Zhejiang Province, China, the RWFC reduced wind speed and direction mean absolute errors (MAE) by 78 % (6.47 to 1.41 m/s) and 50 % (53.57° to 26.79°), respectively, compared to raw NWP forecasts. By interpolating corrections from sparse observational sites, it achieved province-scale MAE reductions of 56 %, demonstrating robust generalizability. When applied to Zhejiang’s transmission grid, RWFC lowered the number of projected high-risk towers by 98 %, enabling precise, terrain-sensitive risk predictions. The framework bridges NWP’s physical rigor with deep learning’s adaptive capacity, offering a scalable solution for enhancing grid resilience during evolving TCs. This work advances real-time disaster management by transforming coarse forecasts into actionable, high-resolution risk insights for critical infrastructure.",
+    "keywords": [
+      "Tropical cyclones",
+      "Wind forecast correction",
+      "Deep learning",
+      "Risk prediction",
+      "Transmission system resilience",
+      "Real-time data assimilation"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -1697,8 +1782,15 @@
     "author_ids": [
       "https://orcid.org/0000-0003-1973-4592"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "The structural safety of bridges, particularly the ability to predict the damage states of reinforced concrete (RC) piers under seismic action, has become a critical issue in structural engineering. This study employs deep learning techniques to enable efficient prediction and assessment of damage states in-service RC bridge piers subjected to seismic events. To support model training, a parametric sample set of 100 bridge piers is generated using Latin Hypercube Sampling, leading to the development of a comprehensive seismic response database containing 66,000 samples across 15 defined damage states. These databases account for inherent seismic randomness, complex failure modes, and time-dependent composite evaluation indicators. A novel deep learning framework, CC-ViT, based on the Vision Transformer architecture, is proposed. This framework integrates Continuous Wavelet Transform, Context Anchored Attention, and DropKey techniques to enhance feature extraction and model generalization. Multiple models are trained and evaluated in a supervised learning setting. Comparative analysis reveals that CC-ViT achieved the highest test accuracy at 85 %. Grad-CAM-based interpretability analysis further confirms that CC-ViT effectively captures critical regions in the seismic response spectrum, supporting informed and explainable decision-making. To facilitate practical implementation, an end-to-end interactive software tool has been developed for efficient prediction of pier damage states. The findings contribute valuable insights for data-driven decision-making aimed at enhancing infrastructure safety and maintenance in smart cities.",
+    "keywords": [
+      "Damage state prediction",
+      "Vision Transformer",
+      "Continuous wavelet transform",
+      "Seismic response database",
+      "RC pier",
+      "Interpretable analysis"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -1762,8 +1854,13 @@
       "Kuo-Wei Liao"
     ],
     "author_ids": [],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Fragility curves are essential in seismic risk assessment and performance-based design in structural engineering. The most accurate method to create these curves is through extensive Non-linear Time History Analysis (NLTHA) at various seismic intensities, assessing reliability across different PGAs. However, traditional fragility curves, constrained by computational costs, often oversimplified. This research introduces an innovative Autoregressive Neural Network (ARNN) for predicting structures’ time-history response during earthquakes, enabling more efficient fragility curve generation through cost-effective Monte Carlo Simulation (MCS). The ARNN’s unique input layer, which includes modal analysis to extract structural periods, windowed earthquake data, and structural responses, enables the handling of multiple structural parameters. Additionally, ARNN allows a single time history record to be partitioned into multiple training data sets, enhancing the efficiency of the machine learning. Differing from traditional fragility curves, this approach considers uncertainties in both ground motion and structural components, requiring 10–20 NLTHA records for ground motion alone and 125 to 300 records when considering both uncertainties. This methodology’s effectiveness is demonstrated through three numerical examples, including a nonlinear column, a damper-equipped structure, and a base-isolated building, significantly enhancing structural reliability and safety in seismic evaluations.",
+    "keywords": [
+      "Nonlinear time history analysis",
+      "Autoregressive neural network",
+      "Fragility curve",
+      "Passive control device"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -1905,8 +2002,16 @@
     "author_ids": [
       "https://orcid.org/0000-0002-0956-9987"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Ensuring storage tank farm safety involves systematic engineering. Tank fire with a large ullage height is a common type of accident and poses a serious threat to tank farms due to the air restrictions by ullage height. This study investigates the impact of ullage height on flame morphology, air entrainment, and burning behaviors through experiments and computational fluid dynamics (CFD) simulations. Results showed that ullage height of the tank significantly affect burning rate, flame morphology and air entrainment. Three burning regimes were identified as ullage height changes. Experimental and simulation data were then used in a machine learning (ML) model, which combines particle swarm optimization (PSO) and back-propagation neural networks (BPNN) to predict the mass burning rate and internal flow field. The input datasets included the tank diameter, ullage height, experimental mass burning rate, and the internal flow field predicted by the CFD model. The predicted results by the ML model agree well with the experimental and numerical data. It was shown that the larger number of the training datasets, the more accurate predictions. The new model provides a fast and efficient way to predict the burning behaviors and supports risk assessment for tank fire accidents with limited experimental and numerical inputs.",
+    "keywords": [
+      "Tank fire",
+      "Air entrainment",
+      "Ullage height",
+      "Tank Fire",
+      "CFD modelling",
+      "Machine learning",
+      "Artificial intelligence"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -2049,8 +2154,14 @@
       "https://orcid.org/0000-0002-4375-0149",
       "https://orcid.org/0000-0002-8879-7266"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Lithium batteries are the most commonly used energy storage devices, and predicting their remaining useful life (RUL) is crucial. But in existing methods, single-model structures generally struggle to parallelly process the spatio-temporal correlations of features. Although multi-model fusion can enhance prediction accuracy, accurately allocating contributions from different models remains challenging. Therefore, this paper proposes a Deep Reinforcement Learning Fusion Network (DRLFN) for predicting the RUL of lithium batteries. This method initially integrates LSTM and Transformer for preliminary RUL predictions of lithium batteries. The prediction results are then fused and optimized using a Deep Q-Network (DQN). The process distinguishes regular and irregular prediction regions based on the spatial distribution of prediction errors in the validation set. For regular regions, common prediction bias patterns are identified and divided into sub-intervals, with a DQN exploring optimal model weight combinations within each sub-interval. For irregular regions, credibility scores based on individual model prediction errors are assigned, and the model with the higher score is selected for each prediction. Experiments utilize the lithium battery dataset from the MIT-Stanford-Toyota Research Center. By comparing the performance with mainstream models, the effectiveness and superiority of DRLFN for predicting the RUL of lithium batteries is validated.",
+    "keywords": [
+      "Remaining useful life",
+      "Deep q-network",
+      "Transformer",
+      "Long short-term memory",
+      "Lithium battery"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -2118,8 +2229,14 @@
       "https://orcid.org/0000-0001-6817-8436",
       "https://orcid.org/0000-0002-9200-904X"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Urban drainage systems (UDS) face significant challenges in managing rising stormwater loads because of changing climate conditions. Sustainable stormwater management solutions like green infrastructure together with existing UDS can be implemented optimally, but catchment-scale design is computationally difficult. To solve this problem, this study proposes and evaluates an efficient Gaussian process-based surrogate framework for optimizing green infrastructure and UDS under existing and future extreme rainfall conditions in order to minimize retrofit life cycle cost of infrastructures, building damage cost, outlet peak flow and maximize UDS’s resilience. Furthermore, the computational performances of the surrogate-based optimization framework and traditional optimization algorithm (i.e., NSGA-II) were also compared. Rainfall will increase in future periods compared to baseline period, and the frequency will shift from low to high-intensity events. The surrogate-based optimal designs of sustainable stormwater infrastructures demonstrated a maximum increase of 760 % and 18.59 % in damage cost and outlet peak flow, and a decrease in UDS’s resilience of -13.15 % for 50-year return periods in the far future period. Furthermore, the Gaussian process-based surrogate framework was 72.3 % faster than NSGA-II in computational performance evaluation, with maximum hypervolume improvement (i.e., convergence rate) for solving optimization problems in the first 100 iterations and limited improvement after that.",
+    "keywords": [
+      "Gaussian process",
+      "Resilience",
+      "Climate change",
+      "Green infrastructure",
+      "Urban drainage systems"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -2186,8 +2303,14 @@
     "author_ids": [
       "https://orcid.org/0000-0003-4019-8587"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Second-life lithium-ion batteries (SL-LIBs) from electric vehicles offer significant potential for extending battery life and reducing environmental impact. Accurate state-of-health (SOH) estimation is critical for ensuring their safe and efficient reuse, but it is challenging due to the heterogeneous aging process and incomplete first-life data. To overcome these challenges, we propose a Bayesian calibrated physics-informed neural network (PINN) framework for SOH estimation, integrating physical degradation models, data-driven calibration techniques and uncertainty quantification. The framework uses simulation data generated by the porous electrode theory-based degradation models to train a governing equation approximator, which serves as a constraint in the PINN for SOH estimation. The Bayesian SOH estimator is trained on real-world data under the guidance of the pretrained governing equation, and leverages Monte Carlo Dropout for uncertainty quantification. Additionally, a physics model calibrator is introduced to bridge the gap between the physics-based model and real-world data, ensuring a more precise representation of actual degradation. Experimental results on a self-designed SL-LIB dataset, consisting of 84 retired batteries across 21 different working conditions, demonstrate that the proposed framework significantly outperforms existing methods.",
+    "keywords": [
+      "SOH estimation",
+      "Second-life batteries",
+      "Physics-informed neural networks",
+      "Uncertainty quantification",
+      "Monte Carlo Dropout"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -2263,8 +2386,14 @@
     "author_ids": [
       "https://orcid.org/0000-0002-8938-5474"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Accurately predicting the remaining useful life of lithium-ion batteries is crucial for ensuring the operational safety and reliability of energy systems. However, conventional models assume constant degradation patterns under varying operational conditions and lack an interactive mechanism to update model structure or parameters using newly acquired battery data. To address this issue, this paper proposes an interactive prognostics framework integrating a deep learning model, a statistical process, and an interactive mechanism to jointly predict the remaining useful life of lithium-ion batteries. A deep learning model is developed based on a multi-scale cross-attention network, which employs a dual-channel network integrated through a cross-attention mechanism to estimate the capacity of the lithium-ion batteries. Meanwhile, the capacity degradation of lithium-ion batteries is modeled as a statistical process governed by a switching state-space model, whose parameters and capacity states are dynamically updated via an expectation-maximization algorithm. Afterward, the interactive prognostics mechanism iteratively integrates capacity estimation from both the multi-scale cross-attention network and switching state-space model models. Each model’s capacity estimates are used to update the parameters of the other, to recursively update the remaining useful life prognostics of lithium-ion batteries. The proposed approach is validated by two case studies, which demonstrate the effectiveness and superiority of the presented model.",
+    "keywords": [
+      "Condition monitoring",
+      "Remaining useful life prediction",
+      "Health prognostics",
+      "Deep learning",
+      "Degradation model"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
