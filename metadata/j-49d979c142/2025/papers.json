@@ -1214,8 +1214,14 @@
       "Jun Xiong"
     ],
     "author_ids": [],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Positional arc-directed energy deposition (DED) is a highly anticipated technique with high degrees of freedom for fabricating overhang structures without support structures and positioners. Nevertheless, the immaturity of monitoring and control techniques for ensuring a stable deposition process in positional arc-DED is the main challenge in achieving reliable and automatic manufacturing of metal components. This study aims to identify the molten pool state and diagnose the occurrence of hump and drop defects in positional arc-DED based on deep learning. Five convolutional neural network (CNN) models are used to perform the classification task of molten pool states to determine the optimal architecture of the defect detection model based on their classification performance. A target recognition framework, called YOLOv5s, is used to construct a hump defect diagnosis model and a drop defect diagnosis model to diagnose the occurrence of hump and drop defects, respectively. Compared to other CNN classification models, ResNet18 can effectively balance the performance and the computational resource requirement, obtaining an excellent classification accuracy of 0.996. The maximum detection error of the hump defect diagnosis model for extracting the molten pool height and length is less than 0.68 mm. The molten pool dimensional ratio is used to evaluate the probability of the hump defect occurrence. The molten pool dimensional ratio increases gradually during one formation cycle of the hump defect. The drop defect diagnosis model successfully avoids the interference of the burning arc and obtains an accurate detection result, with a maximum detection error of less than 2.09 mm2. The molten pool area is introduced to evaluate the probability of the drop defect occurrence in positional arc-DED, which decreases first and then increases as the drop falls from the molten pool. This study lays a solid foundation for controlling the stability of the deposition process in positional arc-DED.",
+    "keywords": [
+      "Additive manufacturing",
+      "Arc-directed energy deposition",
+      "Deep learning",
+      "Defect classification",
+      "Objective recognition"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -1990,8 +1996,14 @@
       "https://orcid.org/0000-0001-5769-1859",
       "https://orcid.org/0000-0002-7359-7405"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Production anomaly has always been one of the main influencing factors that prevent discrete manufacturing workshops from maintaining stability and agility. Proactive anomaly detection can evaluate the production state and serves as a crucial foundation for preventive maintenance decision. Knowledge graph enables the use of multi-source manufacturing data as a data foundation for proactive anomaly detection. Although rich manufacturing data can comprehensively depict complex manufacturing process, constructing an accurate proactive anomaly detection model remains challenging because of insufficient analysis of the local and temporal features of the manufacturing process. This paper presents a link prediction model based on a deep graph neural network to solve the problem. Specifically, the manufacturing knowledge graph is constructed through OPC UA information model, Bert model and OWL semantic mapping model to organize multi-source heterogeneous data. The deep autoencoder model with local graph learning and the Seq2Seq model with attention mechanism are trained to analyze the neighboring relationship and the temporal correlation of the manufacturing elements, respectively. Finally, the link prediction model is designed by integrating both local and temporal features, with a restructured loss function to improve training effectiveness. Experiments suggest that the designed link prediction model has better prediction performance and is at least 25.6 % higher than the baseline models on the mean reciprocal rank.",
+    "keywords": [
+      "Anomaly detection",
+      "Link prediction",
+      "Multi-source data",
+      "Manufacturing knowledge graph",
+      "Local graph learning"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -3756,8 +3768,17 @@
       "https://orcid.org/0000-0002-7609-3739",
       "https://orcid.org/0000-0003-3744-1371"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "The electric vehicle (EV) market is rapidly growing, with battery modules playing a central role in this transformation. However, optimizing production throughput in battery module assembly is challenging due to the complexity of multi-stage processes and bottlenecks that limit overall efficiency. Traditional solutions, such as direct shop floor adjustments, simulation models, and digital twins (DT), can be costly and less scalable. This study proposes a digital twin surrogate (DTS) model, integrating machine learning techniques—Linear Regression, Support Vector Regression, K-Nearest Neighbors, Random Forest Regression, Deep Neural Networks, XGBoost, and Long Short-Term Memory networks—to estimate throughput and predict future machine states. The impact of dataset size and aggregation methods on model performance is also examined, providing shop managers with insights into how production line variations affect throughput.",
+    "keywords": [
+      "Battery manufacturing",
+      "Machine learning",
+      "ML",
+      "Digital twin",
+      "DT",
+      "Battery pack assembly",
+      "Electric vehicles",
+      "EVs"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -4807,8 +4828,14 @@
       "Aisheng Jiang"
     ],
     "author_ids": [],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Cutting tool wear monitoring is crucial for enabling predictive maintenance in machining processes. However, uncertainties in tool degradation during small-batch personalized machining present significant challenges to achieving accurate monitoring. This study addresses the randomness of tool wear through a dual-level approach: data and model. At the data level, an empirical tool wear model is developed based on nonlinear wear mechanisms, which is integrated with a domain-discriminative generative adversarial network to construct a target domain tool wear data generation framework. At the model level, a feature extractor tailored for transfer learning is designed using nonlinear relationships inherent in tool wear mechanisms, complemented by fine-tuning the classifier with the generated target domain tool life cycle data to handle domain shifts caused by randomness. The proposed method is validated using both public datasets and workshop experiments under both fixed and variable cutting conditions. Compared with baseline models, ablation models, and several state-of-the-art data generation and transfer learning models, the proposed approach demonstrates superior adaptability and robustness in handling the randomness in tool wear, even with highly imbalanced and small datasets. The results confirm the effectiveness of the proposed method in tool wear monitoring for small-batch personalized machining processes.",
+    "keywords": [
+      "Tool wear monitoring",
+      "Deep transfer learning",
+      "Data generation network",
+      "Small sample",
+      "Small batch production"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -4897,8 +4924,14 @@
       "https://orcid.org/0000-0001-6404-0106",
       "https://orcid.org/0000-0002-1960-431X"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Prognostics and Health Management (PHM) plays a crucial role in enhancing the reliability and safety of engineering systems. Recently, physics-informed machine learning (PIML) methods have gained significant attention for their ability to incorporate domain-specific knowledge into data-driven models. This paper proposes a novel approach that integrates symbolic regression with recursive modeling to develop a robust framework for PHM of dynamic processes. Our framework was applied to a manufacturing process to build a generic model for tool wear prognostics across various machining scenarios. The proposed method integrates domain knowledge of milling processes under different conditions with recursive models using symbolic regression to achieve accurate and robust tool wear predictions. A recursive feature model and a recursive tool wear model were developedto accurately predict future tool wear, taking into consideration the strong correlation between features extracted from sensor signals and tool wear. The Genetic Programming-based Toolbox for Identification of Physical Systems (GPTIPS) was employed for symbolic regression. The results illustrate that the proposed framework can capture the dynamics of tool wear by recursively updating predictions with new data and can derive simple, interpretable mathematical expressions that represent the physical characteristics of the tool wear process. Benchmarking analysis demonstrated the effectiveness of the proposed approach, achieving lower root-mean-square error (RMSE) compared to other tool wear prognostic models in the literature.",
+    "keywords": [
+      "Explainable AI",
+      "Hybrid model",
+      "Surrogate model",
+      "Genetic programming",
+      "Tool wear"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -6644,8 +6677,13 @@
       "https://orcid.org/0000-0003-0262-1292",
       "https://orcid.org/0000-0001-5035-9466"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Tool wear recognition is critical to improve the safety and reliability of machining operations with real-time tool status assessment. Conventional deep learning-based (DL-based) recognition approaches map time-frequency representations (TFRs) of the monitoring signals to tool wear with neural networks. However, data-driven mapping suffers from hardships in excavating wear-sensitive information due to the lack of explicit constraints on wear mechanisms, resulting in inferior recognition performance and recognition results against physical laws. To address this issue, this paper develops a time-frequency refining physics-informed orthogonal network (TFRPION). Firstly, a hierarchical time-frequency refining strategy consisting of energy concentration and adaptive amplitude modulation is conducted to emphasize machining dynamics-related characteristic frequency components in TFRs, highlighting wear-sensitive signal features. Secondly, an orthogonal network module maps features from the refined TFRs by capturing temporal amplitude variations within characteristic frequency components, improving the physical representational capability for the TFR mapping process. Thirdly, a physical network module and a modified loss function that take wear mechanisms into account are integrated to regularize the calculation path and optimization of the proposed network, enhancing the physical consistency between its mapping process and wear mechanisms. The feasibility and effectiveness of the proposed network are verified with collected spindle current signals in high-speed milling tool wear recognition experiments.",
+    "keywords": [
+      "Tool wear recognition",
+      "Time-frequency representation",
+      "Wear mechanism",
+      "Physics-informed network"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -8508,8 +8546,13 @@
       "Yan Wang"
     ],
     "author_ids": [],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "With the increasing adoption of electric vehicles (EVs), the volume of retired power batteries has surged accordingly. In the context of sustainable development and a circular economy, the disassembly process of retired power battery for reuse is regarded as a crucial approach to addressing resource shortages and environmental pollution. To achieve the efficient disassembly of retired power batteries in human-robot collaborative (HRC) scenarios. Firstly, a mapping network between task units and task executors is established using a multilayer perceptron (MLP) neural network, based on the complexity of the tasks and the state of workers. Secondly, a Stackelberg Double Deep Q-Network (SDDQN) algorithm is proposed by integrating the leader-follower characteristics of the Stackelberg model with the Deep Q-Network (DQN) algorithm to address the task planning problem in HRC disassembly. Finally, the effectiveness of the proposed method is validated through two case studies. Compared to Nash Q-learning, Independent Q-learning, and the conventional DDQN algorithm, it demonstrates superior performance in terms of task completion time and average cumulative rewards. Additionally, the proposed method exhibits strong robustness against unexpected environmental disturbances.",
+    "keywords": [
+      "Task planning",
+      "Stackelberg model",
+      "Multi-agent deep reinforcement learning",
+      "Human-robot collaborative"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -9233,8 +9276,14 @@
       "https://orcid.org/0000-0002-9004-9339",
       "https://orcid.org/0009-0002-8305-4233"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Semiconductor wafer fabrication, as a large-scale and complex discrete manufacturing system, presents significant challenges in shop floor scheduling due to its scale, uncertainty, and re-entrant processing. Additionally, effectively leveraging historical scheduling decision data remains a challenge, limiting the ability of scheduling algorithms to accurately assess the current system state. To address these issues, this paper proposes a reinforcement learning-based optimisation method guided by decision graphs. First, we introduce a multidimensional heterogeneous disambiguation graph to comprehensively represent the operational state of the wafer manufacturing system. Second, we design a graph neural network to characterise the multidimensional disambiguation graph and learn from historical decision-making experiences. Finally, we propose a decision graph-guided action strategy that optimises the reinforcement learning policy, improving training efficiency and the accuracy of action selection. Experimental results demonstrate that our method achieves superior generalisation performance and outperforms traditional approaches. This study provides an effective solution for optimising scheduling in semiconductor wafer manufacturing systems.",
+    "keywords": [
+      "Wafer manufacturing system scheduling",
+      "Multi-dimensional heterogeneous disambiguation graph",
+      "Decision graph-guided action strategy",
+      "Graph neural network",
+      "Reinforcement learning"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -9322,8 +9371,14 @@
     "author_ids": [
       "https://orcid.org/0000-0002-7002-0563"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Accurate wear estimation of milling tools is critical for enhancing the productivity and reliability of machining processes, ensuring consistent product quality while minimizing unexpected tool failure, downtime and machining costs. Traditional approaches, often based on pure experimental and data-driven machine learning (ML) methods, demand extensive, costly wear testing to gather the necessary datasets, which limits their utility in practical industrial monitoring. To address this gap, this work presents a novel physics-informed machine learning (PIML) approach of wear estimation by integrating analytical models with ML techniques. The PIML model utilizes a wear-inclusive thermo-mechanical model to estimating cutting forces considering flank wear and edge forces, with special focus on its adaptation to milling operations and addressing the complexities of milling dynamics. The methodology is demonstrated on Steel 1050, a widely used medium-carbon steel alloy in industrial machining applications. As shown by the results, this hybrid model shows high predictive accuracy, achieving R² values exceeding 98 % for force prediction and 95 % for tool wear estimation, with corresponding RMSE values below 14 N and 8 µm, respectively. Notably, the use of the PIML framework improved tool wear prediction accuracy by over 16 % compared to using ML alone. Another important finding is the significant role of edge forces under severe wear conditions, with their contribution to average cutting forces increasing from 40 % to 57 % at low feed rates, and from 27 % to 45 % at higher feed rates. Using this enhanced model, a simulation-based dataset was generated to train an inverse ML model for estimating tool wear considering milling forces and cutting parameters. The inverse ML model exhibited robust predictive performance, offering a practical and accurate solution for tool wear estimation. This study emphasizes the promising potential of integrating thermo-mechanical model with ML algorithms in machining applications, establishing a foundation of tool wear condition monitoring through milling force data. The presented approach can contribute to enhanced process control, optimized tool usage, and reduced operational costs. Furthermore, it supports the transition to Industry 4.0 by enabling automation and unsupervised manufacturing, where real-time tool wear monitoring and adaptive control can be achieved with minimal human intervention, driving more intelligent and efficient manufacturing systems.",
+    "keywords": [
+      "Thermo-mechanical force model",
+      "Machine learning",
+      "Flank wear",
+      "Intelligent manufacturing",
+      "Steel 1050 machining"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -12053,8 +12108,13 @@
       "https://orcid.org/0000-0002-5784-1455",
       "https://orcid.org/0000-0001-6911-651X"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "The machining performance of five-axis machining can be significantly improved by partitioning the part surface into subregions, each of which is machined using an adaptive iso-scallop height method. This approach is particularly beneficial when employing non-spherical cutting tools, as it allows for a diverse range of effective cutting radii that can be optimally tailored to the geometry of each subregion. Current surface partition-based five-axis machining methods begin by partitioning the surface into patches based on geometric constraints, followed by generating the tool path for each partitioned patch. However, this stepwise approach fails to incorporate critical objectives such as machining efficiency, smooth tool orientation, and interference avoidance during the surface partitioning process. Consequently, both the surface partitioning results and the subsequently generated tool paths tend to be sub-optimal. In this research, we introduce a novel Physics-Informed Neural Network (PINN) called the Neural Surface Partitioner (NSP) designed to jointly and near-optimally partition surfaces while generating tool orientations for non-spherical cutting tools. By directly integrating comprehensive issues into the NSP’s loss function, we create a surface partitioning matrix that enables effective partitioning of freeform surfaces. Simultaneously, the NSP generates a tool orientation scalar field, which is employed to produce iso-scallop Cutter Contact (CC) curves while ensuring smooth and interference-free tool orientation. To validate the advantages of the tool paths generated by the proposed NSP, we conducted both computer simulations and physical cutting experiments. The results demonstrate that the average cutting width achieved by our method significantly exceeds that of two benchmark methods, leading to drastically reduced path lengths of up to 42.9 % and machining times of up to 44.8 %.",
+    "keywords": [
+      "Five-axis machining",
+      "Freeform surface partitioning",
+      "Non-spherical tool",
+      "Physics-informed neural network"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
