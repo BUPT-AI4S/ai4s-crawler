@@ -46,7 +46,10 @@ def main():
     archive = read(ARCHIVE)
     feedback = read(FEEDBACK)
     if len(annual) != snapshot['totals']['papers'] or len(annual) < 300000:
-        raise RuntimeError('Full annual LFS bibliography does not match its snapshot')
+        raise RuntimeError(
+            f'Full annual LFS bibliography does not match its snapshot: '
+            f'annual={len(annual)}, snapshot={snapshot["totals"]["papers"]}'
+        )
     if len(source) != 1280 or archive['official_total'] != 1280:
         raise RuntimeError('IJCAI source or official proceedings count changed')
     source_keys = {key(p) for p in source}
