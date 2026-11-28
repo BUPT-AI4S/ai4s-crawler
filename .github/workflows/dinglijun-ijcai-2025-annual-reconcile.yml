@@ -1,0 +1,42 @@
+name: Reconcile Ding Lijun IJCAI 2025 annual catalogue
+on:
+  push:
+    branches: ['review/dinglijun-2025-20261128']
+    paths:
+      - '.github/workflows/dinglijun-ijcai-2025-annual-reconcile.yml'
+      - 'reviews/2025/audits/sync_dinglijun_ijcai_annual.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: dinglijun-ijcai-2025-annual-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          lfs: false
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /.gitattributes
+            /metadata/2025/papers.json
+            /metadata/2025/snapshot.json
+            /metadata/ijcai/2025/papers.json
+            /reviews/2025/audits/dinglijun-ijcai-2025-reconciliation.json
+            /reviews/2025/audits/sync_dinglijun_ijcai_annual.py
+            /reviews/2025/feedback/dinglijun.json
+      - name: Retrieve full annual LFS bibliography
+        run: git lfs pull --include='metadata/2025/papers.json' --exclude=''
+      - name: Verify and remove eight misattributed workshop records
+        run: python reviews/2025/audits/sync_dinglijun_ijcai_annual.py
+      - name: Commit corrected annual catalogue to the review branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add metadata/2025/papers.json metadata/2025/snapshot.json reviews/2025/feedback/dinglijun.json
+          git diff --cached --quiet && exit 0
+          git commit -m 'Reconcile IJCAI 2025 annual bibliography with official proceedings'
+          git push origin HEAD:${{ github.ref_name }}
