@@ -1,0 +1,161 @@
+{
+  "code": "srds",
+  "raw_file": "/tmp/lzk25-srds-papers.json",
+  "manifest_file": "/tmp/lzk25-srds-manifest.json",
+  "match_by": "title",
+  "evidence_urls": [
+    "https://ieeexplore.ieee.org/xpl/conhome/11360325/proceeding"
+  ],
+  "scope": "SRDS 2025主会35篇及Workshop 12篇，共47篇研究论文；IEEE目录61条排除14条前置、委员会、演讲者和索引材料；按会议年份2025，不按2026入库日期。",
+  "audit_details": {
+    "ieee_total_items": 61,
+    "excluded_frontmatter": [
+      {
+        "title": "Proceedings",
+        "url": "https://ieeexplore.ieee.org/document/11360351/"
+      },
+      {
+        "title": "Title Page",
+        "url": "https://ieeexplore.ieee.org/document/11360435/"
+      },
+      {
+        "title": "Copyright Page",
+        "url": null
+      },
+      {
+        "title": "Table of Contents",
+        "url": null
+      },
+      {
+        "title": "Message from the General Chairs",
+        "url": "https://ieeexplore.ieee.org/document/11360409/"
+      },
+      {
+        "title": "Message from the Program Chairs",
+        "url": "https://ieeexplore.ieee.org/document/11360472/"
+      },
+      {
+        "title": "Message from the Workshop Co-Chairs: SRDS 2025",
+        "url": "https://ieeexplore.ieee.org/document/11360444/"
+      },
+      {
+        "title": "Organizing Committee",
+        "url": null
+      },
+      {
+        "title": "Steering Committee",
+        "url": null
+      },
+      {
+        "title": "Program Committee: SRDS 2025",
+        "url": null
+      },
+      {
+        "title": "Reviewers: SRDS 2025",
+        "url": null
+      },
+      {
+        "title": "Speakers",
+        "url": "https://ieeexplore.ieee.org/document/11360366/"
+      },
+      {
+        "title": "Sponsors",
+        "url": "https://ieeexplore.ieee.org/document/11360342/"
+      },
+      {
+        "title": "Author Index",
+        "url": null
+      }
+    ],
+    "main_papers": 35,
+    "workshop_papers": 12,
+    "retrieval": "正常Chrome展开每页75条，读取全部61项官方题名及论文链接；47篇研究论文与固定全量规范化题名逐项完全一致。"
+  },
+  "abstract_source": "IEEE Xplore official abstract",
+  "coverage_note": "SRDS 2025官方61条目录排除14条前置及索引材料后47篇，与全量题名逐项完全匹配；保留主会与Workshop同口径。原2篇候选完成精筛，另核实4篇已采集漏筛并携IEEE原摘要补入：风机声学维护、无人机搜救视觉、机场安全测距及桅杆腐蚀检测。现6篇候选为5纳入、1排除，候选原摘要、规范中英标签齐全，无待定或未审。",
+  "previous_publication_note": "NSDI经PR #298合并，最新公开监控1篇纳入，issues=[]、缺摘要与待同步0。",
+  "screening_scope": "47篇题名及现有摘要线索；对风机、无人机、机场安全、联邦传感异常及云KPI等11项线索阅读摘要，其中4篇漏筛从IEEE浏览器核验原摘要。",
+  "default_screening_note": "通用分布式软件、区块链、安全隐私、模型或协议性能优化，未呈现AI直接服务具体领域研究的明确线索。",
+  "screening_notes": {
+    "4": "去中心化AI/ML软件栈架构与拟定评测指标，未呈现实证领域科学任务。",
+    "12": "通用云边缘任务放置优化，在合成任务图上比较性能，未呈现专门科学研究任务。",
+    "39": "云服务KPI故障发现与运维可观测性方法，未体现领域科学研究任务。",
+    "41": "通用网络入侵检测模型，未体现专门科学任务。",
+    "44": "安全平台架构与各领域未来验证规划，未显示AI参与已完成的领域研究。",
+    "46": "通用纵向联邦隐私和特征异质性框架，领域数据仅用作通用检测性能基准。"
+  },
+  "existing_decisions": [
+    {
+      "index": 1398,
+      "decision": "include",
+      "domain": "AI 用于工程科学",
+      "rationale": "无人机自主搜救整合AI人体检测与DARP/STC分区规划，AI角色限定为具体机器人感知，不将生成树覆盖本身称为学习模型。",
+      "evidence_location": "IEEE Xplore官方原摘要",
+      "evidence_urls": [
+        "https://ieeexplore.ieee.org/document/11360371"
+      ],
+      "verified_metadata": {
+        "url": "https://ieeexplore.ieee.org/document/11360371",
+        "doi": "10.1109/SRDS69199.2025.00056"
+      }
+    }
+  ],
+  "additions": [
+    {
+      "raw_index": 21,
+      "decision": "include",
+      "domain": "AI 用于工程科学",
+      "rationale": "微调wav2vec并用联邦学习从风机声学数据识别运行状态，实证评测集中式与联邦模型，为风机预测维护提供机械状态识别方法。",
+      "evidence_location": "IEEE Xplore官方论文页原摘要，正常Chrome核验",
+      "evidence_urls": [
+        "https://ieeexplore.ieee.org/document/11360369"
+      ],
+      "verified_metadata": {
+        "url": "https://ieeexplore.ieee.org/document/11360369"
+      },
+      "verified_abstract": "Wind energy plays a pivotal role in the global shift toward sustainable energy systems. However, the maintenance of wind turbines remains a significant challenge due to their distributed nature, harsh environmental exposure, and the high cost of unplanned downtime. In this work, a novel architecture for predictive maintenance of wind turbines based on continuous acoustic monitoring is presented, based upon OASEES—a decentralized, intelligent, and programmable edge framework that spans the full computing continuum. The proposed system leverages low-cost recording equipment to capture turbine-generated sound data, which are processed locally at the edge using Federated Learning, thus preserving data privacy and reducing communication overhead. A pre-trained deep learning model based on wav2vec is fine-tuned to classify turbine operational states, using labeled acoustic datasets. The effectiveness of the architecture, which, to the best of the authors' knowledge, is among the first to utilize the said distributed learning paradigm for acoustic-based wind turbine predictive maintenance, is validated in a proof-of-concept experimental setting using a publicly available relevant dataset, where both centralized and federated training methods are evaluated. The results demonstrate promising classification accuracy, with the federated model achieving over 78 % accuracy, closely matching the centralized baseline."
+    },
+    {
+      "raw_index": 23,
+      "decision": "include",
+      "domain": "AI 用于工程科学",
+      "rationale": "以YOLOv11n及KCF从无人机主摄像头识别人车并跟踪，结合周视摄像头支持灾后搜救，属于具体自主机器人视觉工程。",
+      "evidence_location": "IEEE Xplore官方论文页原摘要，正常Chrome核验",
+      "evidence_urls": [
+        "https://ieeexplore.ieee.org/document/11360354"
+      ],
+      "verified_metadata": {
+        "url": "https://ieeexplore.ieee.org/document/11360354"
+      },
+      "verified_abstract": "This paper presents a novel processing architecture for unmanned aerial vehicles (UAVs), designed to support small search-and-rescue teams operating in post-disaster environments. The proposed system consists of two main components. The primary component is dedicated to vehicle and person detection and tracking. It utilizes a Raspberry Pi 5 paired with a Coral TPU Accelerator to process input from the UAV's main camera, leveraging a YOLOv11n neural network and the KCF tracking algorithm. This capability is essential for following the rescue team's vehicle and locating survivors. When a network connection is available, this subsystem transmits captured images to a remote server for further analysis. The secondary component is a peripheral vision subsystem, powered by a Raspberry Pi Zero 2 W. It processes input from four peripheral cameras connected to a Luxonis OAK-FFC-4P board. It is tasked with identifying critical conditions and communicating the findings to the main processing unit, which in turn alerts the operator. Once appropriate instructions are received, the UAV is redirected to the specified location to perform a focused search for survivors."
+    },
+    {
+      "raw_index": 33,
+      "decision": "include",
+      "domain": "AI 用于工程科学",
+      "rationale": "用机器视觉检测飞机与人员，并估计三维距离以研究机场近机安全测量，原摘要报告距离计算95%准确率和约16帧每秒。",
+      "evidence_location": "IEEE Xplore官方论文页原摘要，正常Chrome核验",
+      "evidence_urls": [
+        "https://ieeexplore.ieee.org/document/11360421"
+      ],
+      "verified_metadata": {
+        "url": "https://ieeexplore.ieee.org/document/11360421"
+      },
+      "verified_abstract": "The increasing movement of personnel and vehicles in airport taxiway areas raises the risk of ground accidents involving aircraft. This paper presents a real-time, camera-based monitoring system designed to prevent such incidents by detecting personnel in proximity to aircraft and issuing timely alerts. The proposed solution integrates advanced computer vision techniques with a client-server architecture, where a lightweight edge device transmits captured frames to a remote server for intensive processing. The system (i) detects aircraft, (ii) detects personnel, (iii) calculates the distance between each aircraft and the camera, (iv) calculates the distance between each detected person and the camera, and (v) calculates the 3D distance between aircraft and personnel. In case a person is identified within a predefined safety radius around an aircraft, an audio alarm is immediately triggered to warn ground staff. Experimental results demonstrate that the system achieves an accuracy of \n95%\n in calculating the aircraft-to-person distance. By combining machine learning, real-time processing, and automated hazard evaluation, the system reduces reliance on human observation, minimizes the risk of human error, and enhances overall airport ground safety. The complete pipeline achieves a frame processing rate of approximately 16 frames per second, ensuring timely and continuous monitoring of fast-moving targets."
+    },
+    {
+      "raw_index": 35,
+      "decision": "include",
+      "domain": "AI 用于工程科学",
+      "rationale": "用YOLOv5在真实通信桅杆巡检场景分类四类腐蚀，结合无人机分布式处理与能耗监测，实证研究基础设施缺陷检测。",
+      "evidence_location": "IEEE Xplore官方论文页原摘要，正常Chrome核验",
+      "evidence_urls": [
+        "https://ieeexplore.ieee.org/document/11360391"
+      ],
+      "verified_metadata": {
+        "url": "https://ieeexplore.ieee.org/document/11360391"
+      },
+      "verified_abstract": "Unmanned Aerial Vehicles (UAVs) are increasingly deployed in inspection and monitoring missions, yet onboard computation and communication impose significant energy burdens that limit flight time and operational scope. In this work, we introduce a novel, blockchain-enabled framework-grounded in the Distributed Autonomous Organization (DAO) paradigm-for orchestrating distributed analytics across a swarm of UAVs. Leveraging the OASEES project's smart-contract architecture, each drone embeds a Metrics Module for real-time power monitoring, a Behavioral Module for adaptive control, and a Blockchain Agent that autonomously proposes, votes on, and executes collective decisions. Three concurrent threads-Proposal Trigger, Voting, and Action Execution-enable fully decentralized governance of swarm behavior: from detecting critical energy thresholds and formulating swarm-wide conservation maneuvers, to executing approved strategies across all members. We validate our framework in a UAV-based infrastructure inspection scenario, employing a YOLOv5 object-detection pipeline to classify four corrosion classes on a telecommunications mast under three video-capture modalities (short-distance, long-distance, and horizontally concatenated streams). Across all configurations, our system achieves near-perfect precision, recall, and mean Average Precision (mAP50-95 \n≈0.995\n), demonstrating both the efficacy of distributed workload inference and the feasibility of treating a single drone as a multi-feed processor. These results underscore the potential of DAO-driven UAV swarms for energy-aware, resilient aerial analytics, and pave the way for fully decentralized 5G/6G-enabled airborne networks."
+    }
+  ]
+}

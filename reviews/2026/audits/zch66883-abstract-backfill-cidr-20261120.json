@@ -1,0 +1,148 @@
+{
+ "owner": "zch66883",
+ "github_username": "zch66883",
+ "year": 2026,
+ "checked_at": "2026-11-20",
+ "input_main_commit": "35d29c11eb7bb388e86032cbe98f108aa602582d",
+ "delivery": "CIDR 2026 abstract disposition records: 3 regular papers filled from official proceedings PDFs; 2 keynote talks excluded as non-paper conference items.",
+ "source_policy": "Filled abstracts are taken from the official CIDR 2026 proceedings PDFs hosted on cidrdb.org. Excluded records are keynote talks without a proceedings paper or abstract; no abstract was generated from title, authors or press material.",
+ "records": [
+  {
+   "source_code": "cidr",
+   "source_title": "Conference on Innovative DataSystems Research",
+   "kind": "会议",
+   "year": 2026,
+   "id": "https://dblp.org/rec/conf/cidr/ArnsNPKC26",
+   "doi": null,
+   "title": "Event Horizon: Asymmetric Dependencies for Fast Geo-Distributed Operations.",
+   "authors": [
+    "Jonathan Arns",
+    "Harald Ng",
+    "Kyriakos Psarakis",
+    "Asterios Katsifodimos",
+    "Paris Carbone"
+   ],
+   "original_abstract": null,
+   "checked_at": "2026-11-20",
+   "checked_by": "朱长昊",
+   "abstract": "Low-latency geo-distributed applications currently face the barrier of cross-site coordination for ensuring state consistency. Existing mixed-consistency models leverage the existence of strongly- and weakly-consistent operations in a given application, to avoid coordination whenever possible. However, existing approaches are rather pessimistic, coordinating more than is necessary. In this paper, we introduce Semi-Linearizability (SL): a consistency model that executes application operations with linearizability guarantees only when strictly necessary, avoiding over-coordination. Specifically, we propose novel operation semantics that can encode ordering relationships between application operations and map them to coordination primitives. Our proposed semantics can be used to reason over latent, asymmetric dependencies between different operations and optimize their execution. We show how SL enables a new class of safe, uncoordinated operations that previous models would otherwise execute under globally strict order, while offering substantial performance gains without violating application invariants. To demonstrate the advantages of SL, we implemented DeMon, a system that achieves four orders of magnitude lower latency on the most frequent operation in the widely used RUBiS benchmark compared to state-of-the-art systems.",
+   "abstract_source": "official_proceedings_pdf",
+   "abstract_source_url": "https://www.cidrdb.org/cidr2026/papers/p20-arns.pdf",
+   "status": "filled",
+   "chain": "official_program:pdf_link > official_proceedings_pdf:abstract_verified",
+   "audit_file": "zch66883_2026_abstract_fill_cidr_20261120.json"
+  },
+  {
+   "source_code": "cidr",
+   "source_title": "Conference on Innovative DataSystems Research",
+   "kind": "会议",
+   "year": 2026,
+   "id": "https://dblp.org/rec/conf/cidr/NarasayyaC26",
+   "doi": null,
+   "title": "Leveraging Query Optimizers to Verify the Soundness of LLM-based Query Rewrites for Real-World Workloads, and More.",
+   "authors": [
+    "Vivek R. Narasayya",
+    "Surajit Chaudhuri"
+   ],
+   "original_abstract": null,
+   "checked_at": "2026-11-20",
+   "checked_by": "朱长昊",
+   "abstract": "Query rewriting is one of the techniques used by application developers and DBAs to tune poorly performing queries. Recently, LLM-based query rewriting techniques have been proposed, and these show significant performance improvements on industry benchmark queries. We conduct an extensive empirical evaluation on Microsoft SQL Server using real-world queries on private enterprise databases in order to quantify the effectiveness of LLM-based query rewriting. We find that LLM-based rewriting shows promise even in real-world queries. However, since LLMs cannot guarantee semantic equivalence of the rewrite, checking if the rewritten query is indeed equivalent is a major impediment that limits the practical adoption of LLM-based rewriting today. We present a sound and efficient technique that leverages built-in capabilities of the query optimizer to verify semantic equivalence. Finally, we observe that LLM-based rewrites can be a source from which query optimizer developers can identify candidate transformation rules which are missing from their optimizer. We present a few such rules we identified based on our experiences with LLM-based rewrites for real-world and benchmark queries in Microsoft SQL Server.",
+   "abstract_source": "official_proceedings_pdf",
+   "abstract_source_url": "https://www.cidrdb.org/cidr2026/papers/p33-narasayya.pdf",
+   "status": "filled",
+   "chain": "official_program:pdf_link > official_proceedings_pdf:abstract_verified",
+   "audit_file": "zch66883_2026_abstract_fill_cidr_20261120.json"
+  },
+  {
+   "source_code": "cidr",
+   "source_title": "Conference on Innovative DataSystems Research",
+   "kind": "会议",
+   "year": 2026,
+   "id": "https://dblp.org/rec/conf/cidr/YogatamaYKSKCTP26",
+   "doi": null,
+   "title": "Rethinking Analytical Processing in the GPU Era.",
+   "authors": [
+    "Bobbi Yogatama",
+    "Yifei Yang",
+    "Kevin Kristensen",
+    "Devesh Sarda",
+    "Abigale Kim",
+    "Adrian Cockcroft",
+    "Yu Teng",
+    "Joshua Patterson",
+    "Gregory Kimball",
+    "Wes McKinney",
+    "Weiwei Gong",
+    "Xiangyao Yu"
+   ],
+   "original_abstract": null,
+   "checked_at": "2026-11-20",
+   "checked_by": "朱长昊",
+   "abstract": "The era of GPU-powered data analytics has arrived. In this paper, we argue that recent advances in hardware (e.g., larger GPU memory, faster interconnect and IO, and declining cost) and software (e.g., composable data systems and mature libraries) have removed the key barriers that have limited the wider adoption of GPU data analytics. We present Sirius, a prototype open-source GPU-native SQL engine that offers drop-in acceleration for diverse data systems. Sirius treats GPU as the primary engine and leverages libraries like libcudf for high-performance relational operators. It provides drop-in acceleration for existing databases by leveraging the standard Substrait query representation, replacing the CPU engine without changing the user-facing interface. Sirius achieves 8.3× and 7.4× better cost efficiency on TPC-H and ClickBench, respectively, when integrated with single-node DuckDB, and delivers up to 12.5× speedup when integrated with Apache Doris distributed engine.",
+   "abstract_source": "official_proceedings_pdf",
+   "abstract_source_url": "https://www.cidrdb.org/cidr2026/papers/p12-yogatama.pdf",
+   "status": "filled",
+   "chain": "official_program:pdf_link > official_proceedings_pdf:abstract_verified",
+   "audit_file": "zch66883_2026_abstract_fill_cidr_20261120.json"
+  },
+  {
+   "source_code": "cidr",
+   "source_title": "Conference on Innovative DataSystems Research",
+   "kind": "会议",
+   "year": 2026,
+   "id": "https://dblp.org/rec/conf/cidr/000126",
+   "doi": null,
+   "title": "How to Give AI a Bad Carbon Footprint.",
+   "authors": [
+    "David A. Patterson 0001"
+   ],
+   "original_abstract": null,
+   "checked_at": "2026-11-20",
+   "checked_by": "朱长昊",
+   "abstract": "exclude",
+   "exclude_rule": "C1_conf_matter",
+   "exclude_type": "会议非研究轨（主题报告）",
+   "exclude_reason": "CIDR 2026（第 16 届 Conference on Innovative Data Systems Research，2026-01-18 至 21，美国 Chaminade）官网程序页将该条列为 Keynote 2 主题报告，仅列报告题名与讲者，无论文集论文 PDF、摘要正文或 DOI。该条为会议主题报告，不计入研究论文摘要补录。",
+   "evidence_url": "https://www.cidrdb.org/cidr2026/program.html",
+   "action": "fill_abstract_with_exclude",
+   "audit_file": "zch66883_2026_cidr_keynote_exclude_20261120.json"
+  },
+  {
+   "source_code": "cidr",
+   "source_title": "Conference on Innovative DataSystems Research",
+   "kind": "会议",
+   "year": 2026,
+   "id": "https://dblp.org/rec/conf/cidr/Isaacs26",
+   "doi": null,
+   "title": "Analyzing Metastable Failures.",
+   "authors": [
+    "Rebecca Isaacs"
+   ],
+   "original_abstract": null,
+   "checked_at": "2026-11-20",
+   "checked_by": "朱长昊",
+   "abstract": "exclude",
+   "exclude_rule": "C1_conf_matter",
+   "exclude_type": "会议非研究轨（主题报告）",
+   "exclude_reason": "CIDR 2026（第 16 届 Conference on Innovative Data Systems Research，2026-01-18 至 21，美国 Chaminade）官网程序页将该条列为 Keynote 1 主题报告，仅列报告题名与讲者，无论文集论文 PDF、摘要正文或 DOI。该条为会议主题报告，不计入研究论文摘要补录。",
+   "evidence_url": "https://www.cidrdb.org/cidr2026/program.html",
+   "action": "fill_abstract_with_exclude",
+   "audit_file": "zch66883_2026_cidr_keynote_exclude_20261120.json"
+  }
+ ],
+ "summary": {
+  "records": 5,
+  "abstract_filled": 3,
+  "excluded": 2,
+  "venues": {
+   "cidr": 5
+  },
+  "metadata_rows_updated": 0,
+  "metadata_source_urls_added": 0,
+  "source_files": {
+   "zch66883_2026_abstract_fill_cidr_20261120.json": 3,
+   "zch66883_2026_cidr_keynote_exclude_20261120.json": 2
+  }
+ }
+}

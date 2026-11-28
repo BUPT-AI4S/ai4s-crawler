@@ -1,1 +1,69 @@
-[]
+[
+  {
+    "id": "https://dblp.org/rec/conf/nsdi/WangL00M025",
+    "venue": "nsdi",
+    "year": 2025,
+    "track": "unverified",
+    "title": "Resolving Packets from Counters: Enabling Multi-scale Network Traffic Super Resolution via Composable Large Traffic Model.",
+    "authors": [
+      "Xizheng Wang",
+      "Libin Liu 0001",
+      "Li Chen 0008",
+      "Dan Li 0001",
+      "Yukai Miao",
+      "Yu Bai 0021"
+    ],
+    "author_ids": [
+      "https://dblp.org/pid/245/8239",
+      "https://dblp.org/pid/59/8294-1",
+      "https://dblp.org/pid/c/LiChen8",
+      "https://dblp.org/pid/48/4185-1",
+      "https://dblp.org/pid/204/0178",
+      "https://dblp.org/pid/03/6325-21"
+    ],
+    "abstract": "Realistic fine-grained traffic traces are valuable to numerous applications in both academia and industry. However, obtaining them directly from devices is significantly challenging, while coarse-grained counters are readily available on almost all network devices. None of existing work can restore fine-grained traffic traces from counters, which we call network traffic super-resolution (TSR). To this end, we propose ZOOMSYNTH, the first TSR system that can achieve packet-level trace synthesis with counter traces as input. Following the basic structure of the TSR task, we design the Granular Traffic Transformer (GTT) model and the Composable Large Traffic Model (CLTM). CLTM is a tree of GTT models, and the GTT models in each layer perform upscaling on a particular granularity, which allows each GTT model to capture the traffic characteristics at this resolution. Using CLTM, we synthesize fine-grained traces from counters. We also leverage a rule-following model to comprehend counter rules (e.g. ACLs) when available, guiding the generations of fine-grained traces. We implement ZOOMSYNTH and perform extensive evaluations. Results show that, with only second-level counter traces, ZOOMSYNTH achieves synthesis quality comparable to existing solutions that takes packet-level traces as input. CLTM can also be fine-tuned to support downstream tasks. For example, ZOOMSYNTH with fine-tuned CLTM outperforms the existing solution by 27.5% and 9.8% in anomaly detection and service recognition tasks, respectively. To promote future research, we release the pre-trained CLTM-1.8B model weights along with its source code.",
+    "keywords": [],
+    "tldr": null,
+    "primary_area": null,
+    "presentation": null,
+    "doi": null,
+    "pages": "1541-1561",
+    "bibtex": null,
+    "url": "https://www.usenix.org/conference/nsdi25/presentation/wang-xizheng-resolving",
+    "pdf_url": null,
+    "code_url": null,
+    "project_url": null,
+    "published": "2025",
+    "source": "sparql.dblp.org+publisher",
+    "venue_type": "conference",
+    "journal_title": null,
+    "issn": null,
+    "article_type": "Conference Paper",
+    "screening_status": "ready",
+    "conference_title": "Symposium on Network System Design and Implementation",
+    "ccf_rank": "A",
+    "ccf_field": "计算机网络",
+    "ccf_catalog_version": "2026-v7",
+    "ccf_paper_status": "unverified",
+    "dblp_key": "https://dblp.org/rec/conf/nsdi/WangL00M025",
+    "dblp_toc": "https://dblp.org/db/conf/nsdi/nsdi2025",
+    "booktitle": "NSDI",
+    "abstract_source": {
+      "url": "https://www.usenix.org/conference/nsdi25/presentation/wang-xizheng-resolving",
+      "source": "USENIX official paper abstract",
+      "checked_at": "2026-11-19",
+      "checked_by": "龙兆科"
+    },
+    "ai4s_candidate_supplement": {
+      "owner": "龙兆科",
+      "snapshot_at": "2026-11-09T10:51:18+08:00",
+      "checked_at": "2026-11-19",
+      "reason": "verified_existing_catalogue_paper_omitted_from_initial_keyword_filter",
+      "evidence_urls": [
+        "https://www.usenix.org/conference/nsdi25/presentation/wang-xizheng-resolving",
+        "https://www.usenix.org/system/files/nsdi25-wang-xizheng-resolving.pdf"
+      ],
+      "audit_file": "reviews/2025/AlearnerDL/closure-20261119/nsdi-initial-filter-audit.json"
+    }
+  }
+]

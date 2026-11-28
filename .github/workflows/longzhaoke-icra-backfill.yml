@@ -1,0 +1,131 @@
+name: Complete verified ICRA 2026 catalogue backfill
+on:
+  workflow_dispatch:
+  push:
+    branches: ['review/longzhaoke-2026-icra-supplement-20261119']
+    paths: ['.github/workflows/longzhaoke-icra-backfill.yml']
+permissions:
+  contents: write
+concurrency:
+  group: longzhaoke-icra-backfill-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          lfs: false
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /.gitattributes
+            /metadata/2026/snapshot.json
+            /metadata/2026/papers.json
+            /metadata/icra/2026/papers.json
+            /reviews/2026/AlearnerDL.json
+            /reviews/2026/AlearnerDL-icra-supplement-20261119.json
+            /reviews/2026/feedback/AlearnerDL.json
+      - name: Retrieve existing annual bibliography
+        run: git lfs pull --include='metadata/2026/papers.json' --exclude=''
+      - name: Validate and synchronize the two publisher-verified omissions
+        shell: python
+        run: |
+          import copy, hashlib, json
+          from pathlib import Path
+          def read(name):
+              return json.loads(Path(name).read_text(encoding='utf-8'))
+          def write(name, data):
+              with Path(name).open('w', encoding='utf-8') as stream:
+                  json.dump(data, stream, ensure_ascii=False, indent=2)
+                  stream.write('\n')
+          def identity(p):
+              return (p['venue'], p['year'], p['id'].lower())
+          expected = {'10.1109/icra57385.2026.11696636', '10.1109/icra57385.2026.11696132'}
+          supplement = read('reviews/2026/AlearnerDL-icra-supplement-20261119.json')
+          assert len(supplement) == 2 and {p['id'].lower() for p in supplement} == expected
+          for p in supplement:
+              r = p['ai4s_review']
+              assert p['venue'] == 'icra' and p['year'] == 2026
+              assert r['owner'] == '龙兆科' and r['decision'] == 'exclude'
+              assert r['snapshot_at'] == '2026-11-08T21:38:12.854071+08:00'
+              assert len(p['abstract']) > 100 and p['abstract'] == r['verified_metadata']['abstract']
+              assert p['url'].startswith('https://ieeexplore.ieee.org/document/')
+              assert p['url'] in r['verified_metadata']['evidence_urls']
+          reviews = [p for p in read('reviews/2026/AlearnerDL.json') if p['venue'] == 'icra']
+          assert len(reviews) == 183
+          assert all(p['ai4s_review']['owner'] == '龙兆科' and p['ai4s_review']['decision'] in ('include','exclude') for p in reviews)
+          feedback_path = 'reviews/2026/feedback/AlearnerDL.json'
+          feedback = read(feedback_path)
+          rows = [r for r in feedback if r.get('source_code') == 'icra']
+          assert len(rows) == 1
+          row = rows[0]
+          assert row['owner'] == '龙兆科' and row['official_total'] == 1875
+          reconciliation = row['catalogue_reconciliation']
+          assert reconciliation['same_scope_extra'] == reconciliation['same_scope_duplicate'] == 0
+          assert set(reconciliation.get('missing_ids', [])) in (expected, set())
+          plain = [{k: copy.deepcopy(v) for k,v in p.items() if k != 'ai4s_review'} for p in supplement]
+          source_path = 'metadata/icra/2026/papers.json'
+          source = read(source_path)
+          before_ids = {identity(p) for p in source}
+          assert len(source) == len(before_ids) and len(source) in (1873,1875)
+          for p in plain:
+              if identity(p) not in before_ids:
+                  source.append(p)
+          assert len(source) == 1875 and len({identity(p) for p in source}) == 1875
+          annual_path = 'metadata/2026/papers.json'
+          annual = read(annual_path)
+          annual_icra = [p for p in annual if p['venue'] == 'icra']
+          assert {identity(p) for p in annual_icra} == before_ids
+          annual_added = 0
+          for p in plain:
+              if identity(p) not in before_ids:
+                  annual.append(copy.deepcopy(p))
+                  annual_added += 1
+          manifest_path = 'metadata/2026/snapshot.json'
+          manifest = read(manifest_path)
+          entries = [s for s in manifest['sources'] if s['source'] == 'icra']
+          assert len(entries) == 1 and entries[0]['papers'] == len(before_ids)
+          assert manifest['captured_at'] == '2026-11-08T21:38:12.854071+08:00'
+          if annual_added:
+              write(source_path, source)
+              write(annual_path, annual)
+              entry = entries[0]
+              old_with = entry['with_abstract']
+              entry['papers'] = len(source)
+              entry['with_abstract'] = sum(bool(p.get('abstract')) for p in source)
+              manifest['totals']['papers'] += annual_added
+              manifest['totals']['with_abstract'] += entry['with_abstract'] - old_with
+              digest = hashlib.sha256()
+              with Path(annual_path).open('rb') as stream:
+                  for chunk in iter(lambda: stream.read(1024*1024), b''):
+                      digest.update(chunk)
+              manifest['annual_files']['papers.json'] = {'sha256':digest.hexdigest(), 'bytes':Path(annual_path).stat().st_size}
+              manifest['longzhaoke_icra_20261119_backfill'] = {
+                  'base_snapshot_at':manifest['captured_at'], 'added_records':2,
+                  'source_papers':1875, 'candidate_additions':0,
+                  'review_file':'reviews/2026/AlearnerDL-icra-supplement-20261119.json',
+                  'note':'Two official omissions screened and excluded; annual and per-source bibliographies synchronized.'}
+              write(manifest_path, manifest)
+          row['checked_at'] = '2026-11-19'
+          row['snapshot_papers'] = 1875
+          row['next_actions'] = []
+          row['coverage_note'] = '在原有 IEEE Xplore 1882 条目录核对（剔除 7 条前置/附属条目）基础上，补录两篇漏采正文及官方原始摘要。两篇均已逐篇筛查并排除；原 183 篇候选的 56 篇纳入、127 篇排除保持不变。按 DOI 校验后，分源及年度全量均为 1875 篇、同范围遗漏/多余/重复均为 0。历史全量摘要缺口保留，候选审核所需摘要已齐备。'
+          row['catalogue_reconciliation'] = {'current_raw_count':1875,'same_scope_missing':0,'same_scope_extra':0,'same_scope_duplicate':0,'missing_ids':[]}
+          row['collection_state_resolution'] = {
+              'status':'resolved_for_candidate_review','original_state':'abstract_incomplete',
+              'reason':'full_catalogue_abstract_gap_candidates_complete',
+              'checked_by':'龙兆科','checked_at':'2026-11-19','evidence_urls':row['evidence_urls']}
+          write(feedback_path, feedback)
+          print(json.dumps({'source_total':len(source),'annual_added':annual_added,'candidate_reviews':len(reviews),'supplement_excluded':2}))
+      - name: Commit synchronized data to the current branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add metadata/2026/snapshot.json metadata/2026/papers.json metadata/icra/2026/papers.json reviews/2026/feedback/AlearnerDL.json
+          if git diff --cached --quiet; then
+            echo 'Verified ICRA bibliography already synchronized.'
+            exit 0
+          fi
+          git commit -m 'Complete ICRA 2026 official catalogue synchronization for 龙兆科'
+          git push origin HEAD:${{ github.ref_name }}

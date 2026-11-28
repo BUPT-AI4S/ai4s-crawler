@@ -35,6 +35,57 @@ jobs:
           sparse-checkout: |
             /metadata/*/snapshot.json
             /metadata/*/ai4s.json
+            /metadata/cvpr/2026/papers.json
+            /metadata/cvpr/2026/ai4s.json
+            /metadata/ecai/2026/papers.json
+            /metadata/ecai/2026/ai4s.json
+            /metadata/j-0a94e1dd0b/2026/papers.json
+            /metadata/j-0a94e1dd0b/2026/ai4s.json
+            /metadata/j-2360cc9d11/2026/papers.json
+            /metadata/j-2360cc9d11/2026/ai4s.json
+            /metadata/j-23d3f85df7/2026/papers.json
+            /metadata/j-23d3f85df7/2026/ai4s.json
+            /metadata/j-32e580f9bf/2026/papers.json
+            /metadata/j-32e580f9bf/2026/ai4s.json
+            /metadata/j-3d73a601f6/2026/papers.json
+            /metadata/j-3d73a601f6/2026/ai4s.json
+            /metadata/j-39f29a2f07/2026/papers.json
+            /metadata/j-39f29a2f07/2026/ai4s.json
+            /metadata/j-6f25cc9655/2026/papers.json
+            /metadata/j-6f25cc9655/2026/ai4s.json
+            /metadata/j-73ae0ea805/2026/papers.json
+            /metadata/j-73ae0ea805/2026/ai4s.json
+            /metadata/j-937d0240eb/2026/papers.json
+            /metadata/j-937d0240eb/2026/ai4s.json
+            /metadata/j-999aedec01/2026/papers.json
+            /metadata/j-999aedec01/2026/ai4s.json
+            /metadata/j-a11637a2e7/2026/papers.json
+            /metadata/j-a11637a2e7/2026/ai4s.json
+            /metadata/j-b906b6f81f/2026/papers.json
+            /metadata/j-b906b6f81f/2026/ai4s.json
+            /metadata/j-bfcb6ab02b/2026/papers.json
+            /metadata/j-bfcb6ab02b/2026/ai4s.json
+            /metadata/j-c554736351/2026/papers.json
+            /metadata/j-c554736351/2026/ai4s.json
+            /metadata/j-f28cf1469d/2026/papers.json
+            /metadata/j-f28cf1469d/2026/ai4s.json
+            /metadata/j-9596fa43cd/2026/papers.json
+            /metadata/j-9596fa43cd/2026/ai4s.json
+            /metadata/j-f6416922ec/2026/papers.json
+            /metadata/j-f6416922ec/2026/ai4s.json
+            /metadata/j-f72e35bac7/2026/papers.json
+            /metadata/j-f72e35bac7/2026/ai4s.json
+            /metadata/ncomms/2026/papers.json
+            /metadata/ncomms/2026/ai4s.json
+            /metadata/nature-celldisc/2026/papers.json
+            /metadata/nature-celldisc/2026/ai4s.json
+            /metadata/nprot/2026/papers.json
+            /metadata/nprot/2026/ai4s.json
+            /metadata/natcomputsci/2026/papers.json
+            /metadata/natcomputsci/2026/ai4s.json
+            /metadata/npjscilearn/2026/papers.json
+            /metadata/npjscilearn/2026/ai4s.json
+            /metadata/*/review-scope-baseline.json
             /reviews/venue-review.csv
             /reviews/owners.json
             /reviews/owner-activity.json
@@ -45,11 +96,24 @@ jobs:
             /reviews/*/*/coverage.csv
             /reviews/*/*/conference-crawl-check.csv
             /reviews/*/feedback/*.json
+            /reviews/2026/audits/sync_wangwanting_2026.py
+            /reviews/2026/audits/lixueting_verified_fulltext_metrics.py
+            /reviews/2026/audits/wangwanting-2026-cvpr-recovered.json
+            /reviews/2026/audits/wangwanting-2026-ecai-catalogue-diff.json
+            /reviews/2026/audits/wangwanting-2026-natcomputsci-official-seven.json
+            /reviews/2026/audits/wangwanting-2026-smart-learning-catalogue.json
+            /reviews/2026/audits/wangwanting-2026-molecular-neurodegeneration-catalogue.json
+            /reviews/2026/audits/wangwanting-2026-science-immunology-catalogue.json
+            /reviews/2026/audits/wangwanting-2026-nprot-official-catalogue.json
+            /reviews/2026/audits/wangwanting-2026-cell-discovery-catalogue.json
             /reviews/*/actions/*.md
             /monitor-feedback-format.md
       - uses: actions/checkout@v6
         with:
           repository: BUPT-AI4S/BUPT-AI4S.github.io
+          # Verified compatibility release, including the full-catalogue abstract status policy.
+          # Pin its immutable commit so the public live feed uses the validated rules.
+          ref: 4c2c9d4b642265958678480cfe8ea36e4ed6a3ff
           path: monitor-tools
           sparse-checkout: |
             tools/build_owner_activity.py
@@ -80,7 +144,9 @@ jobs:
                   || echo "::warning::$(basename "$year_dir") 候选摘要恢复失败"
               done
             fi
+            python reviews/2026/audits/sync_wangwanting_2026.py
             python ../monitor-tools/tools/build_review_monitor.py --source . --output reviews/monitor-data.json
+            python reviews/2026/audits/lixueting_verified_fulltext_metrics.py --repo . --monitor-tools ../monitor-tools
             python ../monitor-tools/tools/generate_review_actions.py --input reviews/monitor-data.json --reviews reviews
             cp ../monitor-tools/static/review-monitor-guide.md monitor-feedback-format.md
           }

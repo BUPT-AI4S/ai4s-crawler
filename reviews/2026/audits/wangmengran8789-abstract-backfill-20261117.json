@@ -1,0 +1,85 @@
+{
+  "owner": "王梦冉",
+  "year": 2026,
+  "latest_main_checked": "a31165d54c9b66cc5bb5f190774ea34b9ad0ffb1",
+  "candidate_sha256": "d680b02631df9f815a42654cc1290b58f41f8cc52b74429786b2874f0c497a62",
+  "exports": [
+    {
+      "issue_url": "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/451/suppl/C",
+      "export_file": "reviews/2026/audits/wangmengran8789-cmame-451-suppl-C-abstracts-20261117.bib",
+      "export_sha256": "0bac3e44833b3322084df45ba7be1a0a3b0049906ccb6d2cf520eaf896845b0d",
+      "exported_count": 51,
+      "workflow": "Select all; uncheck Editorial Board; Export citations; Export citation and abstract to BibTeX"
+    },
+    {
+      "issue_url": "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/450/suppl/C",
+      "export_file": "reviews/2026/audits/wangmengran8789-cmame-450-suppl-C-abstracts-20261117.bib",
+      "export_sha256": "9245347e5fedfdde139a53dc748a7a64fb837f3391e8e7d2f1347b3b5223f443",
+      "exported_count": 52,
+      "workflow": "Select all; uncheck Editorial Board; Export citations; Export citation and abstract to BibTeX"
+    },
+    {
+      "issue_url": "https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering/vol/452/part/PB",
+      "export_file": "reviews/2026/audits/wangmengran8789-cmame-452-part-PB-abstracts-20261117.bib",
+      "export_sha256": "663b0c603c3968e48f4e43b008cdee8c87c639f684e7489e88539ba17bf705a9",
+      "exported_count": 30,
+      "workflow": "Select all; uncheck Editorial Board; Export citations; Export citation and abstract to BibTeX"
+    }
+  ],
+  "abstracts_recovered": 5,
+  "new_content_reviews": 0,
+  "matched_records": [
+    {
+      "id": "10.1016/j.cma.2025.118677",
+      "venue": "j-1ba458f82d",
+      "title": "Benchmarking and extending grid-based, meshfree, and physics-informed neural network methods for the generalized probability density evolution equation",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0045782525009491",
+      "export_file": "reviews/2026/audits/wangmengran8789-cmame-451-suppl-C-abstracts-20261117.bib",
+      "abstract": "The generalized probability density evolution equation (GDEE) effectively describes stochastic behaviors in dynamic physical systems. Its numerical solution framework, the probability density evolution method (PDEM), faces challenges such as grid sensitivity, numerical dissipation and dispersion, and artificial reflections due to absorbing boundaries in time-dependent reliability analysis. This study evaluates representative seven numerical methods: three grid-based (finite difference with total variation diminishing limiter, finite volume with weighted essentially non-oscillatory reconstruction, and discontinuous Galerkin with total variation bounded limiter), two meshfree methods (radial basis function and reproducing kernel particle collocation), and two physics-informed neural networks (PINNs, employing both multilayer perceptron and Kolmogorov-Arnold network architectures), through two illustrative examples: the Euler-Bernoulli beam under random excitations, and the nonlinear Kirchhoff plate with random initial conditions and parameters. Results highlight that meshfree methods significantly reduce grid sensitivity and numerical dispersion, making them ideal for pure probability density evolution scenarios. Conversely, grid-based methods facilitate stable and accurate implementations of absorbing boundary conditions, particularly suited to reliability problems, with finite volume method demonstrating superior precision. PINNs show versatility and promise, but remain computationally inefficient compared to classical numerical schemes. Overall, this study provides a systematic benchmark of grid-based, meshfree, and PINN-based solvers for the GDEE within the PDEM framework and extends this framework to time-dependent reliability analysis with absorbing boundaries.",
+      "previous_decision": "pending",
+      "content_review_performed": false
+    },
+    {
+      "id": "10.1016/j.cma.2025.118674",
+      "venue": "j-1ba458f82d",
+      "title": "Eig-PIELM: an efficient mesh-free method for eigenvalue problems using physics-informed extreme learning machines",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0045782525009466",
+      "export_file": "reviews/2026/audits/wangmengran8789-cmame-451-suppl-C-abstracts-20261117.bib",
+      "abstract": "We propose Eig-PIELM, a novel framework that extends physics-informed extreme learning machines (PIELM) to solve linear eigenvalue problems efficiently and accurately. Our method reformulates governing differential equations into a compact algebraic system that can be solved directly without iterative procedures. In contrast to penalty-based least squares approaches that impose boundary conditions only approximately, we enforce boundary conditions exactly at the discrete boundary collocation points through algebraic projection onto the boundary-admissible subspace. This exact enforcement improves accuracy, avoids errors associated with soft constraints, and eliminates the computational overhead of tuning penalty parameters. The framework preserves the core computational advantages of extreme learning machines, requiring only a single linear solve without backpropagation, while maintaining the mesh-free nature of physics-informed neural approaches. Unlike iterative schemes that solve separately for each mode, our method enables simultaneous computation of the complete eigenvalue spectrum in one pass. We demonstrate the method’s robustness through benchmark problems in 1D and 2D, achieving accuracies comparable to finite element methods without employing meshes, penalty parameters, or iterative techniques. The mesh-free structure, computational efficiency, and high accuracy of Eig-PIELM make it particularly valuable for parametric studies in mechanical, acoustic, and electromechanical systems requiring rapid frequency spectrum analysis.",
+      "previous_decision": "pending",
+      "content_review_performed": false
+    },
+    {
+      "id": "10.1016/j.cma.2025.118253",
+      "venue": "j-1ba458f82d",
+      "title": "A multi-stage physics-informed neural network for high-resolution reconstruction of physical fields with sharp gradients",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0045782525005250",
+      "export_file": "reviews/2026/audits/wangmengran8789-cmame-450-suppl-C-abstracts-20261117.bib",
+      "abstract": "Physics-informed neural networks (PINNs) show promise for predicting and reconstructing physical fields, but they often perform poorly when handling high-order differential terms and regions with sharp gradients, such as stress concentrations. These limitations are primarily due to early convergence to local minima, driven by numerical instability from coupling differential terms of varying orders. This instability is especially problematic when sharp local gradients occur, reducing the accuracy and reliability of predictions. Here we propose an enhanced PINN architecture for reconstructing mechanical fields with sharp gradients. By employing a multi-stage loss design and normalization strategies, the proposed method improves predictive stability and accuracy. Extensive experiments on stress concentration and thermoelastic problems with inhomogeneous inclusions show that the model outperforms classical PINNs, achieving high-resolution reconstruction—up to 87 times finer than finite element sampling nodes. This approach enables a more targeted and efficient training process by incorporating partial physics during pre-training and full physical constraints in later stages. The result is improved convergence, higher prediction accuracy, enhanced resolution of local field features, and increased robustness against local minima.",
+      "previous_decision": "pending",
+      "content_review_performed": false
+    },
+    {
+      "id": "10.1016/j.cma.2026.118764",
+      "venue": "j-1ba458f82d",
+      "title": "Physics informed surface autoencoders for thin shell analysis",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0045782526000381",
+      "export_file": "reviews/2026/audits/wangmengran8789-cmame-452-part-PB-abstracts-20261117.bib",
+      "abstract": "We present a physics-informed surface autoencoder (PISA) framework for Kirchhoff-Love thin shell analysis. The method constructs global C1 surface parameterizations directly from unstructured point clouds for both single-patch surfaces homeomorphic to disks, and multi-patch parameterizations for closed genus-zero surfaces. In the multi-patch case, a classification network assigns probabilistic labels to points, and the autoencoder learns overlapping charts with smooth transitions, ensuring global C1 continuity. With the learned parameterizations, we introduce a decoder for the displacement field and compute differential geometric quantities such as the metric and second fundamental form in the reference and deformed surfaces. Then, we enforce equilibrium by minimizing the total potential energy. The approach is validated on classical shell benchmarks, including the Scordelis-Lo roof, pinched cylinder, and hemisphere under pressure. We showcase the flexibility of the framework with complex geometries such as the Stanford Bunny and dura mater. Compared with traditional spline-based parameterizations and existing machine learning approaches, PISA offers a pipeline for generating smooth surface maps for complex geometries and integrates the surface representation into the physics-informed solver. Importantly, the thin shell analysis pipeline proposed works directly with unstructured point cloud data. Thus, this PISA framework’s potential applications range from engineering structures to biological membranes such as heart valves, skin, and dura mater.",
+      "previous_decision": "pending",
+      "content_review_performed": false
+    },
+    {
+      "id": "10.1016/j.cma.2026.118789",
+      "venue": "j-1ba458f82d",
+      "title": "Efficiently training SciML models with derivative-informed training data using order truncated imaginary numbers",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0045782526000630",
+      "export_file": "reviews/2026/audits/wangmengran8789-cmame-452-part-PB-abstracts-20261117.bib",
+      "abstract": "The SciML community constantly faces challenges in data acquisition, which often results in sparse data for training. Incorporating derivatives during training has been shown to improve predictions from learned models in cases with sparse data. However, acquiring training data derivatives and computing corresponding model derivatives during fitness evaluations significantly increases the time required for both steps, which mitigates the benefits of leveraging derivatives in practice. Additionally, these issues are increased with increasing derivative order. In this work, these training steps are accelerated by using a hypercomplex algebra method, Order Truncated Imaginary (OTI) numbers, for efficient and accurate acquisition and computation of the requisite derivatives. Also presented is an assessment of using derivatives of arbitrary order in the training of symbolic regression (SR) models, termed derivative-informed training data for genetic programming with SR (DITD-GPSR). The effectiveness of the DITD-GPSR method is demonstrated using an optimization test function, a nonlinear oscillatory function, and a thick-walled cylinder solid mechanics problem. The results show that the DITD-GPSR method commonly requires just 10% of the training data to achieve similar accuracy to conventional GPSR, and the DITD-GPSR evolves to the exact equations in far fewer evolution steps, up to 100 times in some cases. Implementing OTI numbers enabled the computation of higher-order derivatives with negligible increase in compute time compared to exponential growth using conventional auto-differentiation.",
+      "previous_decision": "pending",
+      "content_review_performed": false
+    }
+  ],
+  "remaining_empty": 393,
+  "scope_note": "本轮仅补原候选摘要；其余导出记录不作自动精筛或补录；单卷不代表全年目录核验。"
+}

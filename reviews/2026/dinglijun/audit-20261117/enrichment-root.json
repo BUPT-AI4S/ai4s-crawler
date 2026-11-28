@@ -1,0 +1,37 @@
+{
+  "10.1016/j.media.2026.104006": {
+    "doi": "10.1016/j.media.2026.104006",
+    "abstract": "Accurate classification of echocardiographic views is fundamental for automated cardiac analysis. However, clinical practice relies on a large, heterogeneous set of fine-grained acquisitions that introduce substantial inter-observer variability. Existing studies have primarily focused on limited view sets, often collapsing specialised views into broad categories, which limits their clinical relevance. We address this limitation by introducing TTE47, the first publicly available benchmark comprising 47 clinically meaningful views annotated independently by three experts. This dataset enables the rigorous quantification of inter-observer agreement and establishes a foundation for reproducible, clinically relevant evaluation. To tackle the dual challenges of subtle inter-class distinctions and structured label variability, we propose a novel supervised contrastive learning framework incorporating a tailored loss function. Our method outperforms cross-entropy and standard supervised contrastive baselines, achieving leading performance among evaluated methods on TTE47 and surpassing prior work on TMED-2 without dataset-specific pretraining, using a model pretrained on TTE47. Beyond accuracy, we introduce clustering-based metrics, Detection Rate and Label Recovery Precision, that measure semantic coherence and the model’s ability to resist annotation variability. Results show that the learned feature space aligns more strongly with underlying anatomical structure than with any single annotator’s style, enabling resilience to label shifts and maintaining robustness comparable to human-level disagreement. By integrating multi-expert evaluation, robust representation learning, and interpretable feature-space analysis, this work establishes a scalable and clinically relevant framework for fine-grained echo view classification. Our findings highlight the potential of contrastive pretraining to standardise interpretation, mitigate subjectivity, and enhance the reliability of AI-assisted echocardiography in diverse clinical settings.",
+    "evidence_urls": [
+      "https://linkinghub.elsevier.com/retrieve/pii/S1361841526000757"
+    ],
+    "cleaning_note": "输入字段前置Highlights后含完整原摘要，仅移除前置Highlights，不生成摘要。"
+  },
+  "10.1016/j.mam.2026.101515": {
+    "doi": "10.1016/j.mam.2026.101515",
+    "article_type": "Editorial",
+    "abstract_absence_confirmed": true,
+    "evidence_urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/42749609/",
+      "https://mdanderson.elsevierpure.com/en/publications/artificial-intelligence-and-the-future-of-molecular-aspects-of-me/"
+    ]
+  },
+  "10.1016/j.ese.2026.100711": {
+    "doi": "10.1016/j.ese.2026.100711",
+    "abstract": "Water depth, as a direct indicator of a river's continuous underwater topography, provides crucial information for studies such as investigating channel morphological evolution, modeling sediment transport, and quantifying material flux. Conventional approaches to acquiring localized water depth, involving in situ measurements or methods based on remote sensing imagery, are mostly employed in clear rivers at small scales. However, these techniques encounter substantial limitations when applied to extensive river reaches with high-sediment-concentration flow, where accurately determining water depth is generally only achievable through in situ field measurements. Here we present an intelligent model named RivDepth, designed to obtain water depth distributions in rivers with relatively high suspended sediment concentrations (SSC) exceeding 1 kg m−3. By integrating satellite-acquired spectral variables and an optically derived SSC proxy as inputs, together with an “AI expert” module capable of inference, decision-making, and prediction, the proposed model captures the coupled depth–reflectance–SSC relationship patterns of sample pixels. This enables pixel-wise retrieval of large-scale water depth distributions in high-SSC rivers. RivDepth was trained and tested on the lower Yellow River, one of the rivers with the highest SSC in the world. The proposed model delivered accurate depth estimates, achieving an R2 of 0.896, RMSE of 0.456 m, MAE of 0.228 m, and ME of −0.020 m. Shapley additive explanations-based feature-importance analysis indicates that shortwave infrared bands, the red band, a red-edge band, the water vapor band, the aerosol/blue band, and the SSC proxy are among the most influential predictors of water depth in this high-SSC river. Their contributions vary spatially in a complex, non-monotonic manner. This study presents a feasible and robust method for large-scale water-depth retrieval in rivers with high SSC. Furthermore, it provides a valuable reference for large-scale hydrological monitoring and basin-scale integrated management by integrating remote sensing imagery with in situ observations.",
+    "keywords": [
+      "River depth distribution",
+      "Intelligent retrieval",
+      "AI expert",
+      "Multi-source remote sensing",
+      "High-SSC river"
+    ],
+    "article_type": "Original Research",
+    "evidence_urls": [
+      "https://www.sciencedirect.com/sdfe/arp/cite?pii=S2666498426000566&format=text%2Fx-bibtex&withabstract=true",
+      "https://doi.org/10.1016/j.ese.2026.100711",
+      "https://www.sciopen.com/article/10.1016/j.ese.2026.100711"
+    ],
+    "cleaning_note": "官方完整BibTeX摘要；修复原observations.截断字段，保留数学花括号。"
+  }
+}

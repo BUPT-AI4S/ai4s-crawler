@@ -1,0 +1,86 @@
+{
+  "code": "icpc",
+  "raw_file": "/tmp/lzk25-icpc-papers.json",
+  "manifest_file": "/tmp/lzk25-icpc-manifest.json",
+  "match_by": "title",
+  "evidence_urls": [
+    "https://ieeexplore.ieee.org/xpl/conhome/11025805/proceeding"
+  ],
+  "scope": "ICPC 2025正式论文集各分轨59篇；IEEE目录69条排除10条前置、委员会、主题演讲及索引材料。",
+  "audit_details": {
+    "ieee_total_items": 69,
+    "excluded_frontmatter": [
+      {
+        "title": "Half Title Page",
+        "url": "https://ieeexplore.ieee.org/document/11025932/"
+      },
+      {
+        "title": "Title Page iii",
+        "url": "https://ieeexplore.ieee.org/document/11025929/"
+      },
+      {
+        "title": "Copyright and Reprint Permissions",
+        "url": null
+      },
+      {
+        "title": "Table of Contents",
+        "url": null
+      },
+      {
+        "title": "Message from the ICPC 2025 Chairs",
+        "url": "https://ieeexplore.ieee.org/document/11025892/"
+      },
+      {
+        "title": "Organizing Committee",
+        "url": null
+      },
+      {
+        "title": "Steering Committee",
+        "url": null
+      },
+      {
+        "title": "Program Committees",
+        "url": null
+      },
+      {
+        "title": "Keynotes Speaker",
+        "url": "https://ieeexplore.ieee.org/document/11025907/"
+      },
+      {
+        "title": "Author Index",
+        "url": null
+      }
+    ],
+    "retrieval": "正常Chrome每页75条读取69项官方题名及链接，59篇研究论文与固定全量规范化题名逐项完全匹配。"
+  },
+  "abstract_source": "IEEE Xplore official abstract",
+  "coverage_note": "ICPC 2025官方69条目录排除10条前置及索引后59篇，与全量题名逐项完全匹配。原1篇候选按通用软件缺陷定位工具保留排除；核实补入1篇教育测评研究，官方原摘要明确构建27966条评分量规数据并比较44种LLM/训练方法组合以预测教师作业评分。现2篇候选为1纳入、1排除，无缺摘要、待定或未审。",
+  "previous_publication_note": "ISSRE经PR #303合并，最新公开监控14篇（7纳入、7排除）、issues=[]、缺摘要及待同步0。",
+  "screening_scope": "59篇题名及现有摘要线索；对科学编程、作业评分、定理证明器学习、TensorFlow社区、学生理解、个性化可读性及教育调试器等8项线索阅读摘要。评分论文从IEEE浏览器核验完整原摘要。",
+  "default_screening_note": "通用软件维护、代码生成、测试、程序理解与代码质量工具，未呈现AI直接服务领域科学研究的明确线索。",
+  "screening_notes": {
+    "7": "57名科学家的编程实践问卷调查，LLM是被讨论的工具，未实证作为该研究的分析方法。",
+    "23": "对学生学习定理证明器的问卷和定性分析，未显示AI方法参与。",
+    "34": "以TensorFlow为对象的代码审查定量/定性研究，ML框架是研究对象，非研究方法。",
+    "39": "日记研究学生的程序理解流程，未显示AI分析方法。",
+    "45": "以LLM比较个体代码可读性工具与现有分类器，贡献为代码评估模型及基准标签质量，未开展专门认知过程建模或教育干预研究。",
+    "48": "教育图形调试器采用执行轨迹与状态可视化，未显示AI方法。",
+    "49": "科学计算Notebook的方法命名规则与语法统计，未显示AI研究方法。"
+  },
+  "additions": [
+    {
+      "raw_index": 16,
+      "decision": "include",
+      "domain": "AI 用于社会科学",
+      "rationale": "构建27966条教师量规评分数据，实证比较44种LLM与提示/微调组合对学生程序的部分得分和教学约束评定，直接研究教育测评方法。",
+      "evidence_location": "IEEE Xplore官方完整原摘要",
+      "evidence_urls": [
+        "https://ieeexplore.ieee.org/abstract/document/11025882"
+      ],
+      "verified_abstract": "In a typical introductory programming course, grading of student submitted programs is often done manually by examining the source code prior to assigning the final grade for reasons such as checking for compliance to some criteria (e.g. ‘Use iteration, not recursion’, or ‘do not use additional arrays'), or for allotting partial marks. A rubric is often used by graders to grade according such criteria. However, manual grading of source code can be labor-intensive and impractical for large-scale online courses. Therefore, in this paper, we propose techniques based on Large Language Models (LLM) for code to automatically grade student programs according to instructor-specified rubrics. Leveraging a dataset of 27966 datapoints that we created, we study a total of 44 combinations of different open source LLMs and methodologies including Zero-Shot prompting, Few-Shot prompting, Supervised Fine Tuning, QLoRA, Direct Preference Optimization (DPO), code scrambling and code augmentation. To our knowledge, we are the first to address the generalized source code grading problem and to propose a solution with promising results. We find that among the models we studied, while Codestral 22B achieves a high micro-accuracy of 85% without any fine-tuning, Qwen-2.5-Coder-7B-Instruct with DPO fine-tuning achieves the same micro-accuracy with only 35 % of the GPU memory usage and 10 % of the inference time taken by Codestral 22B.",
+      "verified_metadata": {
+        "url": "https://ieeexplore.ieee.org/abstract/document/11025882"
+      }
+    }
+  ]
+}

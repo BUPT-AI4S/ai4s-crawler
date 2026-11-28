@@ -76,7 +76,7 @@
       "https://dblp.org/pid/415/4919",
       "https://dblp.org/pid/183/7693"
     ],
-    "abstract": null,
+    "abstract": "Popularity bias is a pervasive challenge in recommender systems, where a few popular items dominate attention while the majority of less popular items remain underexposed. This imbalance can reduce recommendation quality and lead to unfair item exposure. Although existing mitigation methods address this issue to some extent, they often lack transparency in how they operate. In this paper, we propose a post-hoc approach, PopSteer, that leverages a Sparse Autoencoder (SAE) to both interpret and mitigate popularity bias in recommendation models. The SAE is trained to replicate a trained model's behavior while enabling neuron-level interpretability. By introducing synthetic users with strong preferences for either popular or unpopular items, we identify neurons encoding popularity signals through their activation patterns. We then steer recommendations by adjusting the activations of the most biased neurons. Experiments on three public datasets with a sequential recommendation model demonstrate that PopSteer significantly enhances fairness with minimal impact on accuracy, while providing interpretable insights and fine-grained control over the fairness–accuracy trade-off.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -121,7 +121,10 @@
         ]
       },
       "method_evidence": []
-    }
+    },
+    "abstract_source": "semantic_scholar",
+    "abstract_source_url": "https://www.semanticscholar.org/paper/e50553035c96a8ef06ceeaa5781ee0965254b17e",
+    "abstract_verified_at": "2026-11-19"
   },
   {
     "id": "10.1145/3774905.3795859",
@@ -489,7 +492,7 @@
       "https://dblp.org/pid/23/8667",
       "https://dblp.org/pid/30/5648"
     ],
-    "abstract": null,
+    "abstract": "exclude",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -534,7 +537,8 @@
         ]
       },
       "method_evidence": []
-    }
+    },
+    "abstract_verified_at": "2026-11-19"
   },
   {
     "id": "10.1145/3774905.3795610",
@@ -1657,7 +1661,7 @@
       "https://dblp.org/pid/222/9752",
       "https://dblp.org/pid/08/1554"
     ],
-    "abstract": null,
+    "abstract": "Accurate forecasting of Avian Influenza Virus (AIV) outbreaks within wild bird populations necessitates models that account for complex, multi-scale transmission patterns driven by diverse factors. While conventional spatiotemporal epidemic models are robust for human-centric diseases, they rely on spatial homophily and diffusive transmission between geographic regions. This simplification is incomplete for AIV as it neglects valuable genomic information critical for capturing dynamics like high-frequency reassortment and lineage turnover at the case level (e.g., genetic descent across regions), which are essential for understanding AIV spread. To address these limitations, we systematically formulate the AIV forecasting problem and propose BLUE (bi-layer genomic-aware heterogeneous graph fusion pipeline). This pipeline integrates genetic, spatial, and ecological data to achieve highly accurate outbreak forecasting. It 1) defines a multi-layered graph structure incorporating information from diverse sources and multiple layers (case and location), 2) applies cross-relation smoothing to smooth information flow across edge types, 3) performs graph fusion that preserves critical structural patterns backed by theoretical spectral guarantees, and 4) forecasts future outbreaks using an autoregressive graph sequence model to capture transmission dynamics. To support research, we release the Avian-US dataset, which provides comprehensive genetic, spatial, and ecological data on US avian influenza outbreaks. BLUE demonstrates superior performance over existing baselines, highlighting the efficacy of integrating multi-layer information for infectious disease forecasting. The code is available at: https://github.com/cruiseresearchgroup/BLUE.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -1704,7 +1708,10 @@
         ]
       },
       "method_evidence": []
-    }
+    },
+    "abstract_source": "semantic_scholar",
+    "abstract_source_url": "https://www.semanticscholar.org/paper/92fcffa585fe3c10930a0043ab4cd2e75c2f9b46",
+    "abstract_verified_at": "2026-11-19"
   },
   {
     "id": "10.1145/3774904.3792976",
@@ -2197,7 +2204,7 @@
       "https://dblp.org/pid/377/0004",
       "https://dblp.org/pid/255/6518-1"
     ],
-    "abstract": null,
+    "abstract": "Accurate rainfall forecasting is essential for climate and disaster management, but precipitation exhibits extreme zero inflation that modern time-series Foundation Models (TSFMs) fundamentally cannot represent due to their continuous regression outputs. This structural mismatch causes pervasive drizzle-like false alarms, miscalibrated nonzero intensities, and severely underdetected extremes, while retraining large TSFMs is computationally prohibitive and environmentally unsustainable for most regions. We present a training-free wrapper that corrects zero inflation for frozen TSFMs without updating any parameters. Our method restores discrete zero mass using empirical occurrence statistics, aligns positive-value distributions via probability-integral transforms, and applies Generalized Pareto tail mapping for extreme-value consistency. Experiments on South Australian rainfall show substantial gains with negligible overhead (<5,ms per forecast, compared to hundreds of GPU-hours for retraining). The proposed wrapper enables carbon-neutral, globally deployable climate services and directly advances the goals of UN SDG~13 (Climate Action).",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -2247,7 +2254,10 @@
         ]
       },
       "method_evidence": []
-    }
+    },
+    "abstract_source": "semantic_scholar",
+    "abstract_source_url": "https://www.semanticscholar.org/paper/d5d796d133cfb1303476f978bf1748df69915d41",
+    "abstract_verified_at": "2026-11-19"
   },
   {
     "id": "10.1145/3774904.3792977",
@@ -2700,7 +2710,7 @@
       "https://dblp.org/pid/383/0560",
       "https://dblp.org/pid/403/4970"
     ],
-    "abstract": null,
+    "abstract": "Graph anomaly detection (GAD) identifies nodes, edges, and subgraphs that deviate from normal patterns, playing a key role in cybersecurity, finance, and web technologies. However, existing deep learning paradigms trained on fixed datasets struggle to generalize to unseen graphs, while current graph foundation models (GFMs) face inherent challenges in anomaly detection. Their generalization objectives conflict with the rarity and divergence of anomalies, and existing attempts to develop GFMs for GAD mainly fall into two directions: single-task cross-domain models and domain-specific multi-task models. The former transfers knowledge across domains but fails to capture cross-level dependencies, whereas the latter handles multiple tasks jointly but lacks cross-domain adaptability. Both rely heavily on labeled data, limiting scalability. These limitations highlight the need for a unified unsupervised graph foundation model capable of generalizing across domains and detecting anomalies at multiple levels. We propose GFM-UAD, a Graph Foundation Model for Unified Anomaly Detection. It is pretrained on a single dataset and performs multi-level anomaly detection across unlabeled domains. To address anomaly scarcity, GFM-UAD extracts high-confidence normal samples and synthesizes diverse anomalies through adversarial generation. By freezing the backbone and fine-tuning the detection head with distribution alignment and message passing, the model adapts flexibly to unseen environments without supervision. Experiments across multiple datasets demonstrate that GFM-UAD achieves superior accuracy and generalization, establishing a foundation for future unsupervised graph foundation models in anomaly detection.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -2740,7 +2750,10 @@
       "status": "unclassified",
       "evidence": {},
       "method_evidence": []
-    }
+    },
+    "abstract_source": "semantic_scholar",
+    "abstract_source_url": "https://www.semanticscholar.org/paper/a82932a62509b68efabd24880f5f349104692e96",
+    "abstract_verified_at": "2026-11-19"
   },
   {
     "id": "10.1145/3774905.3794678",
@@ -2817,7 +2830,7 @@
       "https://dblp.org/pid/275/4669",
       "https://dblp.org/pid/267/2864-5"
     ],
-    "abstract": null,
+    "abstract": "Urban spatio-temporal prediction under extreme conditions (e.g., heavy rain) is challenging due to event rarity and dynamics. Existing data-driven approaches that incorporate weather as auxiliary input often rely on coarse-grained descriptors and lack dedicated mechanisms to capture fine-grained spatio-temporal effects. Although recent methods adopt causal techniques to improve out-of-distribution generalization, they typically overlook temporal dynamics or depend on fixed confounder stratification. To address these limitations, we propose WED-Net (Weather-Effect Disentanglement Network), a dual-branch Transformer architecture that separates intrinsic and weather-induced traffic patterns via self- and cross-attention, enhanced with memory banks and fused through adaptive gating. To further promote disentanglement, we introduce a discriminator that explicitly distinguishes weather conditions. Additionally, we design a causal data augmentation strategy that perturbs non-causal parts while preserving causal structures, enabling improved generalization under rare scenarios. Experiments on taxi-flow datasets from three cities demonstrate that WED-Net delivers robust performance under extreme weather conditions, highlighting its potential to support safer mobility, highlighting its potential to support safer mobility, disaster preparedness, and urban resilience in real-world settings. The code is publicly available at https://github.com/HQ-LV/WED-Net.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -2862,7 +2875,10 @@
         ]
       },
       "method_evidence": []
-    }
+    },
+    "abstract_source": "openalex",
+    "abstract_source_url": "https://doi.org/10.48550/arxiv.2601.22586",
+    "abstract_verified_at": "2026-11-19"
   },
   {
     "id": "10.1145/3774904.3792402",
@@ -3049,7 +3065,7 @@
       "https://dblp.org/pid/413/9426",
       "https://dblp.org/pid/46/999-2"
     ],
-    "abstract": null,
+    "abstract": "Large Language Models (LLMs) possess strong representation and reasoning capabilities, but their application to structure-based drug design (SBDD) is limited by insufficient understanding of protein structures and unpredictable molecular generation. To address these challenges, we propose Exploration-Augmented Latent Inference for LLMs (ELILLM), a framework that reinterprets the LLM generation process as an encoding, latent space exploration, and decoding workflow. ELILLM explicitly explores portions of the design problem beyond the model's current knowledge while using a decoding module to handle familiar regions, generating chemically valid and synthetically reasonable molecules. In our implementation, Bayesian optimization guides the systematic exploration of latent embeddings, and a position-aware surrogate model efficiently predicts binding affinity distributions to inform the search. Knowledge-guided decoding further reduces randomness and effectively imposes chemical validity constraints. We demonstrate ELILLM on the CrossDocked2020 benchmark, showing strong controlled exploration and high binding affinity scores compared with seven baseline methods. These results demonstrate that ELILLM can effectively enhance LLMs capabilities for SBDD.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -3096,7 +3112,10 @@
         ]
       },
       "method_evidence": []
-    }
+    },
+    "abstract_source": "openalex",
+    "abstract_source_url": "https://doi.org/10.48550/arxiv.2601.15333",
+    "abstract_verified_at": "2026-11-19"
   },
   {
     "id": "10.1145/3774904.3793049",
@@ -3124,7 +3143,7 @@
       "https://dblp.org/pid/22/1199-6",
       "https://dblp.org/pid/78/1467-1"
     ],
-    "abstract": null,
+    "abstract": "The shortage of mental health professionals has driven the web to become a primary avenue for accessible psychological support. While Large Language Models (LLMs) offer promise for scalable web-based counseling, existing approaches often lack emotional understanding, adaptive strategies, and long-term memory. These limitations pose risks to digital well-being, as disjointed interactions can fail to support vulnerable users effectively. To address these gaps, we introduce TheraMind, a strategic and adaptive agent designed for trustworthy online longitudinal counseling. The cornerstone of TheraMind is a novel dual-loop architecture that decouples the complex counseling process into an Intra-Session Loop for tactical dialogue management and a Cross-Session Loop for strategic therapeutic planning. The Intra-Session Loop perceives the patient's emotional state to dynamically select response strategies while leveraging cross-session memory to ensure continuity. Crucially, the Cross-Session Loop empowers the agent with long-term adaptability by evaluating the efficacy of the applied therapy after each session and adjusting the method for subsequent interactions. We validate our approach in a high-fidelity simulation environment grounded in real clinical cases. Extensive evaluations show that TheraMind outperforms other methods, especially on multi-session metrics like Coherence, Flexibility, and Therapeutic Attunement, validating the effectiveness of its dual-loop design in emulating strategic, adaptive, and longitudinal therapeutic behavior. The code is publicly available at https://github.com/Emo-gml/TheraMind.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -3169,7 +3188,10 @@
         ]
       },
       "method_evidence": []
-    }
+    },
+    "abstract_source": "semantic_scholar",
+    "abstract_source_url": "https://www.semanticscholar.org/paper/d3dd7adad58244a453beecbe7c39db40952096c9",
+    "abstract_verified_at": "2026-11-19"
   },
   {
     "id": "10.1145/3774904.3792080",
@@ -4506,7 +4528,7 @@
       "https://dblp.org/pid/51/3710-7",
       "https://dblp.org/pid/l/JimingLiu-1"
     ],
-    "abstract": null,
+    "abstract": "exclude",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -4551,7 +4573,8 @@
         ]
       },
       "method_evidence": []
-    }
+    },
+    "abstract_verified_at": "2026-11-19"
   },
   {
     "id": "10.1145/3774904.3792532",
@@ -4573,7 +4596,7 @@
       "https://dblp.org/pid/55/1832",
       "https://dblp.org/pid/57/5087"
     ],
-    "abstract": null,
+    "abstract": "Detecting data that deviates from normal behavior in dynamic graphs is an important hotspot. In the real world, anomaly detection is widely applied across various domains. However, existing anomaly detection methods typically assume static input graphs, failing to capture dynamic information in real-world scenarios. In addition, during the evolution of node representations over time, standard updating mechanisms lack the ability to selectively preserve important features. To address these issues, this paper constructs a dynamic graph anomaly detection framework (DyConAD) that enhances model perception of dynamic information through memory enhancement strategies and multi-scale similarity-based anomaly scoring mechanisms. Additionally, we also design a dynamic graph construction method that extracts time-aware shapelet and establishes spatiotemporal relationships between these shapelet. Experimental validation is conducted on four real-world datasets and three public datasets from the UCR Time Series Archive. Results demonstrate that our proposed method outperforms existing approaches across multiple datasets, achieving effective improvements in both detection accuracy and efficiency.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -4614,7 +4637,10 @@
       "status": "unclassified",
       "evidence": {},
       "method_evidence": []
-    }
+    },
+    "abstract_source": "semantic_scholar",
+    "abstract_source_url": "https://www.semanticscholar.org/paper/58da3fce3ede31af8ca4c519469be9bee8552dac",
+    "abstract_verified_at": "2026-11-19"
   },
   {
     "id": "10.1145/3774904.3792138",
@@ -5024,7 +5050,7 @@
       "https://dblp.org/pid/38/1956-7",
       "https://dblp.org/pid/33/1903"
     ],
-    "abstract": null,
+    "abstract": "exclude",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -5069,7 +5095,8 @@
         ]
       },
       "method_evidence": []
-    }
+    },
+    "abstract_verified_at": "2026-11-19"
   },
   {
     "id": "10.1145/3774904.3792189",
@@ -6079,7 +6106,7 @@
       "https://dblp.org/pid/84/6889-28",
       "https://dblp.org/pid/w/ZhengWang1"
     ],
-    "abstract": null,
+    "abstract": "exclude",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -6124,7 +6151,9 @@
         ]
       },
       "method_evidence": []
-    }
+    },
+    "abstract_source_url": "https://doi.org/10.1145/3774904.3792646",
+    "abstract_verified_at": "2026-11-19"
   },
   {
     "id": "10.1145/3774904.3792804",
@@ -6164,7 +6193,7 @@
       "https://dblp.org/pid/01/2888",
       "https://dblp.org/pid/p/DanPei"
     ],
-    "abstract": null,
+    "abstract": "A practical log anomaly detection system for large-scale web services, suitable for real industrial deployment, should exhibit three key characteristics: fidelity to decisive lexical cues, human-auditable explanations, and low inference latency. Existing approaches often compromise one or more of these requirements by discarding crucial tokens during parsing, obscuring decisions through dense embeddings, or incurring heavy computational costs. We introduce Smart Eye, a deployable two-stage key pattern retrieval framework that employs large language models (LLMs) strictly as proposal engines, coupled with a deterministic verifier. In Stage I, the system enhances recall of anomalous logs under a configurable false positive budget using budgeted maximum coverage selection. In Stage II, precision is monotonically improved by refining parent patterns into specialized child patterns and introducing targeted exclusions. These essential patterns, extracted by LLMs and then confirmed, will be formulated into regular expressions to enable efficient online matching of anomalous logs. We provide both theoretical justification and a practical implementation that runs efficiently on commodity CPUs. When evaluated on three real world Huawei Cloud Core log datasets, Smart Eye achieves state-of-the-art anomaly detection with a average F1 score of 0.9877, outperforming the strongest neural baseline. Moreover, it produces human interpretable evidence chains and supports low latency inference. These results demonstrate that combining LLM-guided proposal generation with deterministic verification forms a robust and deployable alternative to traditional end to end embedding pipelines for industrial log analysis.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -6205,7 +6234,10 @@
       "status": "unclassified",
       "evidence": {},
       "method_evidence": []
-    }
+    },
+    "abstract_source": "semantic_scholar",
+    "abstract_source_url": "https://www.semanticscholar.org/paper/ec384a6051d48568949d680a6a7f1494f4cdc8bf",
+    "abstract_verified_at": "2026-11-19"
   },
   {
     "id": "10.1145/3774904.3792239",
@@ -6717,7 +6749,7 @@
       "https://dblp.org/pid/18/0",
       "https://dblp.org/pid/49/6363"
     ],
-    "abstract": null,
+    "abstract": "Knowledge Tracing (KT) is a core task in intelligent tutoring systems, designed to model the dynamic evolution of students' knowledge states by predicting their performance on specific problems. However, existing KT models, primarily developed for traditional subject domains, exhibit poor generalization to programming tasks due to several distinct challenges. First, student responses in programming tasks are characterized by high uncertainty. Second, programming tasks typically provide continuous scores based on the proportion of passed test cases, in contrast to the binary correctness assumed by traditional KT models, with these test-case-based scores often being noisy. Third, most KT models rely exclusively on the understanding of knowledge concepts for performance prediction, whereas success in programming tasks is heavily contingent upon logical reasoning and problem-specific comprehension. To address these issues, we propose an LLM-driven Interaction Enrichment Framework (MIE) to mitigate high uncertainty and problematic labeling, and introduce the Multi-Level Programming Knowledge Tracing (MLPKT) model to capture students' knowledge states across multiple dimensions. MLPKT conducts multi-layer analysis of student submissions to identify the root causes of errors and assign semantically meaningful fine-grained labels. Additionally, we propose a three-level, three-phase KT architecture that captures knowledge dynamics across three dimensions—problems, concepts, and logical skills—through the phases of learning, forgetting/reinforcement, and application. Extensive experiments on three datasets demonstrate that MIE+MLPKT consistently outperforms 18 baseline methods. Our code is available at: https://anonymous.4open.science/r/MIE-MLPKT-D654.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -6765,7 +6797,10 @@
         ]
       },
       "method_evidence": []
-    }
+    },
+    "abstract_source": "semantic_scholar",
+    "abstract_source_url": "https://www.semanticscholar.org/paper/b8f3c0ea45bc833eaaadd1a134de47c6e574489f",
+    "abstract_verified_at": "2026-11-19"
   },
   {
     "id": "10.1145/3774905.3794677",
@@ -8027,7 +8062,7 @@
       "https://dblp.org/pid/86/11269",
       "https://dblp.org/pid/70/6443-1"
     ],
-    "abstract": null,
+    "abstract": "Weakly supervised histopathology segmentation is a hot topic in the computer vision community by generating pixel-level masks with image-level labels due to the expensive and time-intensive pixel-level annotations. The inter-class homogeneity and intra-class heterogeneity are challenging issues for histopathological image segmentation. Recent works addressing these issues mainly focus on learning intra-class similarity, resulting in the spurious features of each category being captured and the discriminative ability of feature representation for each category being decreased. In this paper, we propose a hierarchical prompt contrastive method for histopathological image segmentation with hierarchical text prompt contrastive loss and hierarchical class prompt contrastive loss. Specifically, for hierarchical text prompt contrastive loss, we align the features of different layers from the image encoder to the adaptive text prompt for each category by adding linear layers following a frozen text encoder. Then we can generate several classification activation maps to produce high-confidence pseudo segmentation masks, and they are aligned to text features for contrastive learning with the foundation model to generate more confident segmentation masks. While in hierarchical class prompt contrastive loss, the subclass prompts are obtained by dividing each category into several clusters. Then an intra-class contrastive strategy and an inter-class contrastive strategy are developed by aligning the subclass prompt to the image. These contrastive losses are adopted to guarantee that the structures within each category are preserved and the discriminative ability of different categories is improved. Extensive experiments show that the proposed method outperforms the state-of-the-art methods on the popular benchmark datasets.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -8078,7 +8113,10 @@
       "method_evidence": [
         "contrastive learning"
       ]
-    }
+    },
+    "abstract_source": "semantic_scholar",
+    "abstract_source_url": "https://www.semanticscholar.org/paper/d7ccc3883c9068b9347da79c80d8451f8cd1b708",
+    "abstract_verified_at": "2026-11-19"
   },
   {
     "id": "10.1145/3774904.3792434",
@@ -8686,7 +8724,7 @@
       "https://dblp.org/pid/124/3625",
       "https://dblp.org/pid/49/6363"
     ],
-    "abstract": null,
+    "abstract": "exclude",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -8731,7 +8769,8 @@
         ]
       },
       "method_evidence": []
-    }
+    },
+    "abstract_verified_at": "2026-11-19"
   },
   {
     "id": "10.1145/3774904.3792224",
@@ -9094,7 +9133,7 @@
       "https://dblp.org/pid/189/3729-1",
       "https://dblp.org/pid/l/ChenLi11"
     ],
-    "abstract": null,
+    "abstract": "Precision pathology relies on detecting fine-grained morphological abnormalities within specific Regions of Interest (ROIs), as these local, texture-rich cues—rather than global slide contexts—drive expert diagnostic reasoning. While Vision-Language (V-L) models promise data efficiency by leveraging semantic priors, adapting them faces a critical Granularity Mismatch, where generic representations fail to resolve such subtle defects. Current adaptation methods often treat modalities as independent streams, failing to ground semantic prompts in ROI-specific visual contexts. To bridge this gap, we propose the Hierarchical Adaptation and Alignment Framework (HAAF ). At its core is a novel Cross-Level Scaled Alignment (CLSA) mechanism that enforces a sequential calibration order: visual features first inject context into text prompts to generate content-adaptive descriptors, which then spatially guide the visual encoder to spotlight anomalies. Additionally, a dual-branch inference strategy integrates semantic scores with geometric prototypes to ensure stability in few-shot settings. Experiments on four benchmarks show HAAF significantly outperforms state-of-the-art methods and effectively scales with domain-specific backbones (e.g., CONCH) in low-resource scenarios.",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -9147,7 +9186,10 @@
         ]
       },
       "method_evidence": []
-    }
+    },
+    "abstract_source": "semantic_scholar",
+    "abstract_source_url": "https://www.semanticscholar.org/paper/295f140c892cbc4a5b13759a092309268efc67c1",
+    "abstract_verified_at": "2026-11-19"
   },
   {
     "id": "10.1145/3774904.3792464",
@@ -9253,7 +9295,7 @@
       "https://dblp.org/pid/63/5448-2",
       "https://dblp.org/pid/78/4623"
     ],
-    "abstract": null,
+    "abstract": "exclude",
     "keywords": [],
     "tldr": null,
     "primary_area": null,
@@ -9298,7 +9340,8 @@
         ]
       },
       "method_evidence": []
-    }
+    },
+    "abstract_verified_at": "2026-11-19"
   },
   {
     "id": "10.1145/3774904.3792574",
