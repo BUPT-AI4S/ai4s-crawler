@@ -21,9 +21,12 @@ def main():
         if p.get('ai4s_review', {}).get('decision') == 'include':
             by_source[p['venue']].append(p)
     updated = 0
+    actions_updated = 0
     unfinished = []
     for row in feedback:
-        if ISSUE not in row.get('issues', []):
+        has_issue = ISSUE in row.get('issues', [])
+        has_action = any('正式元数据' in x for x in row.get('next_actions', []))
+        if not (has_issue or has_action):
             continue
         source = row['source_code']
         items = by_source[source]
@@ -36,17 +39,20 @@ def main():
         if missing:
             unfinished.append({'source_code': source, 'included': len(items), 'unverified': missing})
             continue
-        row['issues'] = [x for x in row['issues'] if x != ISSUE]
-        row['next_actions'] = [
-            '从出版社补齐候选原摘要。' if x == '从出版社补齐候选原摘要并核对纳入条目的正式元数据。' else x
-            for x in row.get('next_actions', []) if x != '核对纳入条目的正式元数据。'
-        ]
-        row['coverage_note'] = (row.get('coverage_note', '').rstrip() + f' 2026-11-28：本来源纳入 {len(items)} 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 {AUDIT_URL}。')
-        row['checked_at'] = str(date.today())
-        updated += 1
+        if has_issue:
+            row['issues'] = [x for x in row['issues'] if x != ISSUE]
+            row['coverage_note'] = (row.get('coverage_note', '').rstrip() + f' 2026-11-28：本来源纳入 {len(items)} 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 {AUDIT_URL}。')
+            row['checked_at'] = str(date.today())
+            updated += 1
+        if has_action:
+            row['next_actions'] = [
+                '从出版社补齐候选原摘要。' if x == '从出版社补齐候选原摘要并核对纳入条目的正式元数据。' else x
+                for x in row.get('next_actions', []) if x != '核对纳入条目的正式元数据。'
+            ]
+            actions_updated += 1
     FEEDBACK.write_text(json.dumps(feedback, ensure_ascii=False, indent=2) + '\n')
     UNFINISHED.write_text(json.dumps({'checked_at': str(date.today()), 'sources': unfinished}, ensure_ascii=False, indent=2) + '\n')
-    print(json.dumps({'metadata_issues_closed': updated, 'remaining_sources': len(unfinished), 'remaining_papers': sum(len(x['unverified']) for x in unfinished)}, ensure_ascii=False))
+    print(json.dumps({'metadata_issues_closed': updated, 'metadata_actions_updated': actions_updated, 'remaining_sources': len(unfinished), 'remaining_papers': sum(len(x['unverified']) for x in unfinished)}, ensure_ascii=False))
 
 
 if __name__ == '__main__':
