@@ -163,8 +163,14 @@
       "https://orcid.org/0000-0002-3583-1707",
       "https://orcid.org/0000-0002-4506-6877"
     ],
-    "abstract": null,
-    "keywords": [],
+    "abstract": "Weather and climate forecasts use the distribution of sea surface temperature (SST) as a critical factor in atmosphere-ocean interactions. High spatial resolution SST data are typically produced using infrared sensors, which use channels with wavelengths ranging from approximately 3.7 to 12 µm. However, SST data retrieved from infrared sensor-based satellites often contain noise and missing areas due to cloud contamination. Therefore, while reconstructing SST under clouds, it is necessary to consider observational noise. In this study, we present the context-aware reconstruction diffusion model for SST (CARE-SST), a denoising diffusion probabilistic model designed to reconstruct SST in cloud-covered regions and reduce observational noise. By conditioning on a reverse diffusion process, CARE-SST can integrate historical satellite data and reduce observational noise. The methodology involves using visible infrared imaging radiometer suite (VIIRS) data and the optimum interpolation SST product as a background. To evaluate the effectiveness of our method, a reconstruction using a fixed mask was performed with 10,578 VIIRS SST data from 2022. The results showed that the mean absolute error and the root mean squared error (RMSE) were 0.23 °C and 0.31 °C, respectively, preserving small-scale features. In real cloud reconstruction scenarios, the proposed model incorporated historical VIIRS SST data and buoy observations, enhancing the quality of reconstructed SST data, particularly in regions with large cloud cover. Relative to other analysis products, such as the operational SST and sea ice analysis, as well as the multi-scale ultra-high-resolution SST, our model showcased a more refined gradient field without blurring effects. In the power spectral density comparison for the Agulhas Current (35-45° S and 10-40° E), only CARE-SST demonstrated feature resolution within 10 km, highlighting superior feature resolution compared to other SST analysis products. Validation against buoy data indicated high performance, with RMSEs (and MAEs) of 0.22 °C (0.16 °C) for the Gulf Stream, 0.27 °C (0.20 °C) for the Kuroshio Current, 0.34 °C (0.25 °C) for the Agulhas Current, and 0.25 °C (0.10 °C) for the Mediterranean Sea. Furthermore, the model maintained robust spatial patterns in global mapping results for selected dates. This study highlights the potential of deep learning models in generating high-resolution, gap-filled SST data on a global scale, offering a foundation for improving deep learning-based data assimilation.",
+    "keywords": [
+      "Denoising diffusion probabilistic model",
+      "Data fusion",
+      "High resolution",
+      "Sea surface temperature",
+      "Global mapping"
+    ],
     "tldr": null,
     "primary_area": null,
     "presentation": null,
@@ -180,8 +186,8 @@
     "venue_type": "journal",
     "journal_title": "ISPRS Journal of Photogrammetry and Remote Sensing",
     "issn": "0924-2716",
-    "article_type": "unknown",
-    "screening_status": "needs_abstract",
+    "article_type": "Article",
+    "screening_status": "ready",
     "conference_title": null,
     "ccf_rank": null,
     "ccf_field": null,
