@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-28T08:05:12.381376+00:00",
-  "commit": "81fd6e976382489e76d486996292b57ff907b047",
-  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/81fd6e976382489e76d486996292b57ff907b047/",
+  "generated_at": "2026-11-28T12:13:02.322212+00:00",
+  "commit": "60faeb72e0a2bca49727d7e51d8242168c1e5f2d",
+  "repository": "https://github.com/BUPT-AI4S/ai4s-crawler/blob/60faeb72e0a2bca49727d7e51d8242168c1e5f2d/",
   "years": [
     {
       "year": 2024,
@@ -26391,15 +26391,18 @@
           "open_issues": 0,
           "status": "complete",
           "last_update": {
-            "at": "2026-11-26T04:17:20-08:00",
-            "author": "AlearnerDL",
-            "subject": "Record 2026 Crossref totals for Wang Wanting sources",
+            "at": "2026-11-28T04:09:13-08:00",
+            "author": "ebo",
+            "subject": "Verify Wang Wanting 2026 included-paper metadata online",
             "area": "reviews",
             "paths": [
-              "reviews/2026/feedback/Blueblue1101.json"
+              "reviews/2026/Blueblue1101.json",
+              "reviews/2026/audits/enrich_wangwanting_2026_publisher.py",
+              "reviews/2026/audits/finalize_wangwanting_2026_metadata.py",
+              "reviews/2026/audits/verify_wangwanting_2026_metadata.py"
             ]
           },
-          "commits_7d": 19
+          "commits_7d": 20
         },
         {
           "owner": "王梦冉",
@@ -51137,15 +51140,18 @@
           "open_issues": 49,
           "status": "not_started",
           "last_update": {
-            "at": "2026-11-26T04:17:20-08:00",
-            "author": "AlearnerDL",
-            "subject": "Record 2026 Crossref totals for Wang Wanting sources",
+            "at": "2026-11-28T04:09:13-08:00",
+            "author": "ebo",
+            "subject": "Verify Wang Wanting 2026 included-paper metadata online",
             "area": "reviews",
             "paths": [
-              "reviews/2026/feedback/Blueblue1101.json"
+              "reviews/2026/Blueblue1101.json",
+              "reviews/2026/audits/enrich_wangwanting_2026_publisher.py",
+              "reviews/2026/audits/finalize_wangwanting_2026_metadata.py",
+              "reviews/2026/audits/verify_wangwanting_2026_metadata.py"
             ]
           },
-          "commits_7d": 19
+          "commits_7d": 20
         },
         {
           "owner": "南耀笛",
@@ -54719,7 +54725,7 @@
           "official_total": 398,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 0167-7799。逐源 394 条，登记 398 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选27篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。",
+          "coverage_note": "候选27篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-28：本来源纳入 11 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://doi.org/10.1016/j.tibtech.2025.07.026",
             "https://pubmed.ncbi.nlm.nih.gov/41173722/",
@@ -54737,11 +54743,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
@@ -54960,7 +54964,7 @@
           "official_total": 378,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 2590-2385。逐源 377 条，登记 378 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选16篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 4 条审核，其中纳入 1 条；正式摘要与文种证据见本轮审计文件。 2026-11-18进一步核对原站缺摘要记录，新增纳入 1 条（原摘要与证据见 reviews/2026/audits/wangwanting-2026-missing-abstract-ai-title-followup.json）。 2026-11-19 原站缺摘要扩展核查 3 条：纳入 1、排除 2；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。 2026-11-19 科学对象/模型题名缺摘要核查 6 条，纳入 0、排除 6；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。 2026-11-19 剩余 AI 方法题名风险核查 5 条，纳入 3、排除 2；出版社摘要与题名分层见 audits/wangwanting-2026-residual-ai-cue-missing-audit.json。",
+          "coverage_note": "候选16篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 4 条审核，其中纳入 1 条；正式摘要与文种证据见本轮审计文件。 2026-11-18进一步核对原站缺摘要记录，新增纳入 1 条（原摘要与证据见 reviews/2026/audits/wangwanting-2026-missing-abstract-ai-title-followup.json）。 2026-11-19 原站缺摘要扩展核查 3 条：纳入 1、排除 2；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。 2026-11-19 科学对象/模型题名缺摘要核查 6 条，纳入 0、排除 6；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。 2026-11-19 剩余 AI 方法题名风险核查 5 条，纳入 3、排除 2；出版社摘要与题名分层见 audits/wangwanting-2026-residual-ai-cue-missing-audit.json。 2026-11-28：本来源纳入 18 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://www.cell.com/matter/abstract/S2590-2385(25)00520-X",
             "https://www.sciencedirect.com/science/article/abs/pii/S2590238525005259",
@@ -54980,11 +54984,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "继续检索余下全量缺摘要中的潜在漏筛论文，并按官网证据处理。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
@@ -56164,7 +56166,7 @@
           "official_total": 124,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 0166-2236。逐源 121 条，登记 124 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选3篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。",
+          "coverage_note": "候选3篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-28：本来源纳入 2 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://api.crossref.org/journals/0166-2236/works?filter=from-pub-date:2026-01-01,until-pub-date:2026-12-31,until-created-date:2026-11-08,type:journal-article&rows=0"
           ],
@@ -56174,11 +56176,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
@@ -56638,7 +56638,7 @@
           "official_total": 188,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 1043-2760。逐源 187 条，登记 188 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选1篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。",
+          "coverage_note": "候选1篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-28：本来源纳入 1 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://api.crossref.org/journals/1043-2760/works?filter=from-pub-date:2026-01-01,until-pub-date:2026-12-31,until-created-date:2026-11-08,type:journal-article&rows=0"
           ],
@@ -56648,11 +56648,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
@@ -56759,7 +56757,7 @@
           "official_total": 1270,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 0926-3373。逐源 1284 条，登记 1270 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选9篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 3 条审核，其中纳入 3 条；正式摘要与文种证据见本轮审计文件。 2026-11-19 科学对象/模型题名缺摘要核查 6 条，纳入 0、排除 6；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。",
+          "coverage_note": "候选9篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 3 条审核，其中纳入 3 条；正式摘要与文种证据见本轮审计文件。 2026-11-19 科学对象/模型题名缺摘要核查 6 条，纳入 0、排除 6；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。 2026-11-28：本来源纳入 11 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://www.sciencedirect.com/science/article/abs/pii/S0926337325007313",
             "https://www.sciencedirect.com/science/article/abs/pii/S092633732500815X",
@@ -56775,11 +56773,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "继续检索余下全量缺摘要中的潜在漏筛论文，并按官网证据处理。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
@@ -56813,7 +56809,7 @@
           "official_total": 139,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 2590-1168。逐源 139 条，登记 139 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选14篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 3 条审核，其中纳入 3 条；正式摘要与文种证据见本轮审计文件。 2026-11-19 原站缺摘要扩展核查 9 条：纳入 5、排除 4；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。 2026-11-19 科学对象/模型题名缺摘要核查 27 条，纳入 9、排除 18；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。 2026-11-19 剩余 AI 方法题名风险核查 1 条，纳入 1、排除 0；出版社摘要与题名分层见 audits/wangwanting-2026-residual-ai-cue-missing-audit.json。",
+          "coverage_note": "候选14篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 3 条审核，其中纳入 3 条；正式摘要与文种证据见本轮审计文件。 2026-11-19 原站缺摘要扩展核查 9 条：纳入 5、排除 4；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。 2026-11-19 科学对象/模型题名缺摘要核查 27 条，纳入 9、排除 18；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。 2026-11-19 剩余 AI 方法题名风险核查 1 条，纳入 1、排除 0；出版社摘要与题名分层见 audits/wangwanting-2026-residual-ai-cue-missing-audit.json。 2026-11-28：本来源纳入 31 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://www.sciencedirect.com/science/article/abs/pii/S2590116826000044?via%3Dihub",
             "https://www.sciencedirect.com/science/article/abs/pii/S259011682600007X?via%3Dihub",
@@ -56833,11 +56829,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "继续检索余下全量缺摘要中的潜在漏筛论文，并按官网证据处理。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
@@ -57825,7 +57819,7 @@
           "official_total": 1075,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 1364-0321。逐源 1075 条，登记 1075 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选44篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 34 条审核，其中纳入 29 条；正式摘要与文种证据见本轮审计文件。 2026-11-18进一步核对原站缺摘要记录，新增纳入 5 条（原摘要与证据见 reviews/2026/audits/wangwanting-2026-missing-abstract-ai-title-followup.json）。 2026-11-19 原站缺摘要扩展核查 20 条：纳入 12、排除 8；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。 2026-11-19 科学对象/模型题名缺摘要核查 40 条，纳入 1、排除 39；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。 2026-11-19 剩余 AI 方法题名风险核查 5 条，纳入 5、排除 0；出版社摘要与题名分层见 audits/wangwanting-2026-residual-ai-cue-missing-audit.json。",
+          "coverage_note": "候选44篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 34 条审核，其中纳入 29 条；正式摘要与文种证据见本轮审计文件。 2026-11-18进一步核对原站缺摘要记录，新增纳入 5 条（原摘要与证据见 reviews/2026/audits/wangwanting-2026-missing-abstract-ai-title-followup.json）。 2026-11-19 原站缺摘要扩展核查 20 条：纳入 12、排除 8；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。 2026-11-19 科学对象/模型题名缺摘要核查 40 条，纳入 1、排除 39；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。 2026-11-19 剩余 AI 方法题名风险核查 5 条，纳入 5、排除 0；出版社摘要与题名分层见 audits/wangwanting-2026-residual-ai-cue-missing-audit.json。 2026-11-28：本来源纳入 83 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://www.sciencedirect.com/science/article/abs/pii/S1364032125008536?via%3Dihub",
             "https://www.sciencedirect.com/science/article/abs/pii/S1364032125009475?via%3Dihub",
@@ -57854,11 +57848,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "继续检索余下全量缺摘要中的潜在漏筛论文，并按官网证据处理。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
@@ -58245,7 +58237,7 @@
           "official_total": 414,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 0896-6273。逐源 413 条，登记 414 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选28篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-19 科学对象/模型题名缺摘要核查 1 条，纳入 0、排除 1；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。",
+          "coverage_note": "候选28篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-19 科学对象/模型题名缺摘要核查 1 条，纳入 0、排除 1；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。 2026-11-28：本来源纳入 14 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://www.sciencedirect.com/science/article/pii/S0896627325008001",
             "https://www.sciencedirect.com/science/article/pii/S0896627325008967",
@@ -58262,11 +58254,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "继续检索余下全量缺摘要中的潜在漏筛论文，并按官网证据处理。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
@@ -60622,7 +60612,7 @@
           "official_total": 59,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 2666-7924。逐源 58 条，登记 59 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选9篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。",
+          "coverage_note": "候选9篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-28：本来源纳入 7 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://api.crossref.org/journals/2666-7924/works?filter=from-pub-date:2026-01-01,until-pub-date:2026-12-31,until-created-date:2026-11-08,type:journal-article&rows=0"
           ],
@@ -60632,11 +60622,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
@@ -61086,7 +61074,7 @@
           "official_total": 316,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 1946-6234。逐源 316 条，登记 316 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选13篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。",
+          "coverage_note": "候选13篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-28：本来源纳入 10 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://pubmed.ncbi.nlm.nih.gov/42873898/",
             "https://api.crossref.org/journals/1946-6234/works?filter=from-pub-date:2026-01-01,until-pub-date:2026-12-31,until-created-date:2026-11-08,type:journal-article&rows=0"
@@ -61097,11 +61085,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
@@ -61636,7 +61622,7 @@
           "official_total": 73,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 0031-6997。逐源 73 条，登记 73 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选7篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。",
+          "coverage_note": "候选7篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-28：本来源纳入 4 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://pubmed.ncbi.nlm.nih.gov/41337871/",
             "https://pubmed.ncbi.nlm.nih.gov/41806469/",
@@ -61648,11 +61634,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
@@ -61935,7 +61919,7 @@
           "official_total": 177,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 1471-4914。逐源 175 条，登记 177 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选5篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。",
+          "coverage_note": "候选5篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-28：本来源纳入 1 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://pubmed.ncbi.nlm.nih.gov/42859105/",
             "https://api.crossref.org/journals/1471-4914/works?filter=from-pub-date:2026-01-01,until-pub-date:2026-12-31,until-created-date:2026-11-08,type:journal-article&rows=0"
@@ -61946,11 +61930,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
@@ -61983,7 +61965,7 @@
           "official_total": 288,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 1573-7462。逐源 287 条，登记 288 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选79篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。",
+          "coverage_note": "候选79篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-28：本来源纳入 48 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://link.springer.com/article/10.1007/s10462-026-11501-0",
             "https://link.springer.com/article/10.1007/s10462-026-11596-5",
@@ -62002,11 +61984,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
@@ -62097,7 +62077,7 @@
           "official_total": 350,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 2451-9294。逐源 349 条，登记 350 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选8篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 1 条审核，其中纳入 1 条；正式摘要与文种证据见本轮审计文件。 2026-11-19 原站缺摘要扩展核查 3 条：纳入 1、排除 2；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。 2026-11-19 科学对象/模型题名缺摘要核查 4 条，纳入 0、排除 4；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。",
+          "coverage_note": "候选8篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 1 条审核，其中纳入 1 条；正式摘要与文种证据见本轮审计文件。 2026-11-19 原站缺摘要扩展核查 3 条：纳入 1、排除 2；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。 2026-11-19 科学对象/模型题名缺摘要核查 4 条，纳入 0、排除 4；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。 2026-11-28：本来源纳入 7 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://www.sciencedirect.com/science/article/abs/pii/S2451929425005121",
             "https://www.sciencedirect.com/science/article/abs/pii/S2451929426000677",
@@ -62111,11 +62091,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "继续检索余下全量缺摘要中的潜在漏筛论文，并按官网证据处理。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
@@ -64162,7 +64140,7 @@
           "official_total": 365,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 1097-2765。逐源 356 条，登记 365 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选22篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。",
+          "coverage_note": "候选22篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-28：本来源纳入 13 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://www.sciencedirect.com/science/article/pii/S1097276526006738",
             "https://www.sciencedirect.com/science/article/pii/S1097276526006155",
@@ -64178,11 +64156,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
@@ -64660,7 +64636,7 @@
           "official_total": 136,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 2095-2686。逐源 135 条，登记 136 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选2篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。",
+          "coverage_note": "候选2篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-28：本来源纳入 2 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://api.crossref.org/journals/2095-2686/works?filter=from-pub-date:2026-01-01,until-pub-date:2026-12-31,until-created-date:2026-11-08,type:journal-article&rows=0"
           ],
@@ -64670,11 +64646,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
@@ -64867,7 +64841,7 @@
           "official_total": 636,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 0924-2244。逐源 643 条，登记 636 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选30篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 24 条审核，其中纳入 20 条；正式摘要与文种证据见本轮审计文件。 2026-11-18进一步核对原站缺摘要记录，新增纳入 9 条（原摘要与证据见 reviews/2026/audits/wangwanting-2026-missing-abstract-ai-title-followup.json）。 2026-11-18余下高风险缺摘要标题已核对，另纳入 1 条；正式摘要和年归属证据见最终审计文件。 2026-11-19 原站缺摘要扩展核查 34 条：纳入 7、排除 27；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。 2026-11-19 科学对象/模型题名缺摘要核查 16 条，纳入 4、排除 12；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。 2026-11-19 剩余 AI 方法题名风险核查 8 条，纳入 7、排除 1；出版社摘要与题名分层见 audits/wangwanting-2026-residual-ai-cue-missing-audit.json。",
+          "coverage_note": "候选30篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 24 条审核，其中纳入 20 条；正式摘要与文种证据见本轮审计文件。 2026-11-18进一步核对原站缺摘要记录，新增纳入 9 条（原摘要与证据见 reviews/2026/audits/wangwanting-2026-missing-abstract-ai-title-followup.json）。 2026-11-18余下高风险缺摘要标题已核对，另纳入 1 条；正式摘要和年归属证据见最终审计文件。 2026-11-19 原站缺摘要扩展核查 34 条：纳入 7、排除 27；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。 2026-11-19 科学对象/模型题名缺摘要核查 16 条，纳入 4、排除 12；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。 2026-11-19 剩余 AI 方法题名风险核查 8 条，纳入 7、排除 1；出版社摘要与题名分层见 audits/wangwanting-2026-residual-ai-cue-missing-audit.json。 2026-11-28：本来源纳入 67 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://doi.org/10.1016/j.tifs.2025.105464",
             "https://www.sciencedirect.com/science/article/abs/pii/S0924224425006193?via%3Dihub",
@@ -64898,11 +64872,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "继续检索余下全量缺摘要中的潜在漏筛论文，并按官网证据处理。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
@@ -65323,7 +65295,7 @@
           "official_total": 886,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 2405-8297。逐源 880 条，登记 886 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选28篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 3 条审核，其中纳入 3 条；正式摘要与文种证据见本轮审计文件。 2026-11-19 原站缺摘要扩展核查 7 条：纳入 4、排除 3；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。 2026-11-19 科学对象/模型题名缺摘要核查 23 条，纳入 3、排除 20；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。",
+          "coverage_note": "候选28篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 3 条审核，其中纳入 3 条；正式摘要与文种证据见本轮审计文件。 2026-11-19 原站缺摘要扩展核查 7 条：纳入 4、排除 3；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。 2026-11-19 科学对象/模型题名缺摘要核查 23 条，纳入 3、排除 20；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。 2026-11-28：本来源纳入 35 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://www.sciencedirect.com/science/article/abs/pii/S2405829725008013?via%3Dihub",
             "https://www.sciencedirect.com/science/article/abs/pii/S2405829726000309?via%3Dihub",
@@ -65356,11 +65328,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "继续检索余下全量缺摘要中的潜在漏筛论文，并按官网证据处理。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
@@ -66827,7 +66797,7 @@
           "official_total": 957,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 1005-0302。逐源 989 条，登记 957 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选9篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 20 条审核，其中纳入 20 条；正式摘要与文种证据见本轮审计文件。 2026-11-19 原站缺摘要扩展核查 9 条：纳入 1、排除 8；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。 2026-11-19 科学对象/模型题名缺摘要核查 18 条，纳入 0、排除 18；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。 2026-11-19 剩余 AI 方法题名风险核查 1 条，纳入 1、排除 0；出版社摘要与题名分层见 audits/wangwanting-2026-residual-ai-cue-missing-audit.json。",
+          "coverage_note": "候选9篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 20 条审核，其中纳入 20 条；正式摘要与文种证据见本轮审计文件。 2026-11-19 原站缺摘要扩展核查 9 条：纳入 1、排除 8；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。 2026-11-19 科学对象/模型题名缺摘要核查 18 条，纳入 0、排除 18；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。 2026-11-19 剩余 AI 方法题名风险核查 1 条，纳入 1、排除 0；出版社摘要与题名分层见 audits/wangwanting-2026-residual-ai-cue-missing-audit.json。 2026-11-28：本来源纳入 31 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://www.sciencedirect.com/science/article/abs/pii/S100503022500489X?via%3Dihub",
             "https://www.sciencedirect.com/science/article/abs/pii/S1005030225009223?via%3Dihub",
@@ -66843,11 +66813,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "继续检索余下全量缺摘要中的潜在漏筛论文，并按官网证据处理。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
@@ -67273,7 +67241,7 @@
           "official_total": 982,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 2095-4956。逐源 1029 条，登记 982 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选36篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 6 条审核，其中纳入 6 条；正式摘要与文种证据见本轮审计文件。 2026-11-19 原站缺摘要扩展核查 7 条：纳入 3、排除 4；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。 2026-11-19 科学对象/模型题名缺摘要核查 23 条，纳入 2、排除 21；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。",
+          "coverage_note": "候选36篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 6 条审核，其中纳入 6 条；正式摘要与文种证据见本轮审计文件。 2026-11-19 原站缺摘要扩展核查 7 条：纳入 3、排除 4；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。 2026-11-19 科学对象/模型题名缺摘要核查 23 条，纳入 2、排除 21；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。 2026-11-28：本来源纳入 45 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://www.sciencedirect.com/science/article/abs/pii/S2095495625006941?via%3Dihub",
             "https://www.sciencedirect.com/science/article/abs/pii/S2095495625007181?via%3Dihub",
@@ -67316,11 +67284,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "继续检索余下全量缺摘要中的潜在漏筛论文，并按官网证据处理。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
@@ -67354,7 +67320,7 @@
           "official_total": 57,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 1044-579X。逐源 57 条，登记 57 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选2篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。",
+          "coverage_note": "候选2篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-28：本来源纳入 1 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://doi.org/10.1016/j.semcancer.2025.12.009",
             "https://api.crossref.org/journals/1044-579X/works?filter=from-pub-date:2026-01-01,until-pub-date:2026-12-31,until-created-date:2026-11-08,type:journal-article&rows=0"
@@ -67365,11 +67331,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
@@ -67542,7 +67506,7 @@
           "official_total": 788,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 1542-3565。逐源 779 条，登记 788 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选10篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 6 条审核，其中纳入 0 条；正式摘要与文种证据见本轮审计文件。 2026-11-19 科学对象/模型题名缺摘要核查 9 条，纳入 0、排除 9；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。",
+          "coverage_note": "候选10篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 6 条审核，其中纳入 0 条；正式摘要与文种证据见本轮审计文件。 2026-11-19 科学对象/模型题名缺摘要核查 9 条，纳入 0、排除 9；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。 2026-11-28：本来源纳入 8 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://www.sciencedirect.com/science/article/pii/S1542356525006135/pdfft",
             "https://github.com/BUPT-AI4S/ai4s-crawler/blob/review/wangwanting-2026-full-corpus-20261118/reviews/2026/audits/full-corpus-publisher-abstract-audit.json",
@@ -67554,11 +67518,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "继续检索余下全量缺摘要中的潜在漏筛论文，并按官网证据处理。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
@@ -67693,7 +67655,7 @@
           "official_total": 374,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 2666-7762。逐源 371 条，登记 374 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选2篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。",
+          "coverage_note": "候选2篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-28：本来源纳入 2 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://api.crossref.org/journals/2666-7762/works?filter=from-pub-date:2026-01-01,until-pub-date:2026-12-31,until-created-date:2026-11-08,type:journal-article&rows=0"
           ],
@@ -67703,11 +67665,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
@@ -69305,7 +69265,7 @@
           "official_total": 194,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 1364-6613。逐源 190 条，登记 194 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选13篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 1 条审核，其中纳入 0 条；正式摘要与文种证据见本轮审计文件。",
+          "coverage_note": "候选13篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 1 条审核，其中纳入 0 条；正式摘要与文种证据见本轮审计文件。 2026-11-28：本来源纳入 2 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://doi.org/10.1016/j.tics.2025.09.002",
             "https://www.sciencedirect.com/science/article/pii/S1364661325003493",
@@ -69321,11 +69281,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
@@ -71258,7 +71216,7 @@
           "official_total": 140,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 2542-5196。逐源 138 条，登记 140 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选2篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。",
+          "coverage_note": "候选2篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-28：本来源纳入 1 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://api.crossref.org/journals/2542-5196/works?filter=from-pub-date:2026-01-01,until-pub-date:2026-12-31,until-created-date:2026-11-08,type:journal-article&rows=0"
           ],
@@ -71268,11 +71226,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
@@ -71664,7 +71620,7 @@
           "official_total": 210,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 0966-842X。逐源 207 条，登记 210 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选5篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。",
+          "coverage_note": "候选5篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-28：本来源纳入 1 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://doi.org/10.1016/j.tim.2026.04.010",
             "https://www.sciencedirect.com/science/article/pii/S0966842X26001927",
@@ -71676,11 +71632,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
@@ -71832,7 +71786,7 @@
           "official_total": 1009,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 1566-2535。逐源 1030 条，登记 1009 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选77篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 21 条审核，其中纳入 18 条；正式摘要与文种证据见本轮审计文件。 2026-11-18进一步核对原站缺摘要记录，新增纳入 6 条（原摘要与证据见 reviews/2026/audits/wangwanting-2026-missing-abstract-ai-title-followup.json）。 2026-11-18再核对 Information Fusion 原站 27 篇缺摘要记录，新增纳入 6 条、排除 21 条；原文摘要见后续审计文件。 2026-11-18余下高风险缺摘要标题已核对，另纳入 1 条；正式摘要和年归属证据见最终审计文件。 2026-11-19 原站缺摘要扩展核查 63 条：纳入 35、排除 28；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。 2026-11-19 科学对象/模型题名缺摘要核查 69 条，纳入 66、排除 3；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。 2026-11-19 剩余 AI 方法题名风险核查 44 条，纳入 39、排除 5；出版社摘要与题名分层见 audits/wangwanting-2026-residual-ai-cue-missing-audit.json。 2026-11-26回查先前230条题名低优先线索，Information Fusion中一篇科学知识演化研究获出版社原摘要和Research article类型证据，纳入并回填候选。",
+          "coverage_note": "候选77篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 21 条审核，其中纳入 18 条；正式摘要与文种证据见本轮审计文件。 2026-11-18进一步核对原站缺摘要记录，新增纳入 6 条（原摘要与证据见 reviews/2026/audits/wangwanting-2026-missing-abstract-ai-title-followup.json）。 2026-11-18再核对 Information Fusion 原站 27 篇缺摘要记录，新增纳入 6 条、排除 21 条；原文摘要见后续审计文件。 2026-11-18余下高风险缺摘要标题已核对，另纳入 1 条；正式摘要和年归属证据见最终审计文件。 2026-11-19 原站缺摘要扩展核查 63 条：纳入 35、排除 28；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。 2026-11-19 科学对象/模型题名缺摘要核查 69 条，纳入 66、排除 3；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。 2026-11-19 剩余 AI 方法题名风险核查 44 条，纳入 39、排除 5；出版社摘要与题名分层见 audits/wangwanting-2026-residual-ai-cue-missing-audit.json。 2026-11-26回查先前230条题名低优先线索，Information Fusion中一篇科学知识演化研究获出版社原摘要和Research article类型证据，纳入并回填候选。 2026-11-28：本来源纳入 237 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://doi.org/10.1016/j.inffus.2025.103414",
             "https://www.sciencedirect.com/science/article/pii/S1566253525004075",
@@ -71888,11 +71842,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "继续检索余下全量缺摘要中的潜在漏筛论文，并按官网证据处理。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
@@ -72050,7 +72002,7 @@
           "official_total": 872,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 2211-2855。逐源 891 条，登记 872 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选11篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 12 条审核，其中纳入 12 条；正式摘要与文种证据见本轮审计文件。 2026-11-18进一步核对原站缺摘要记录，新增纳入 2 条（原摘要与证据见 reviews/2026/audits/wangwanting-2026-missing-abstract-ai-title-followup.json）。 2026-11-19 原站缺摘要扩展核查 20 条：纳入 13、排除 7；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。 2026-11-19 科学对象/模型题名缺摘要核查 16 条，纳入 3、排除 13；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。 2026-11-19 剩余 AI 方法题名风险核查 5 条，纳入 3、排除 2；出版社摘要与题名分层见 audits/wangwanting-2026-residual-ai-cue-missing-audit.json。",
+          "coverage_note": "候选11篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 12 条审核，其中纳入 12 条；正式摘要与文种证据见本轮审计文件。 2026-11-18进一步核对原站缺摘要记录，新增纳入 2 条（原摘要与证据见 reviews/2026/audits/wangwanting-2026-missing-abstract-ai-title-followup.json）。 2026-11-19 原站缺摘要扩展核查 20 条：纳入 13、排除 7；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。 2026-11-19 科学对象/模型题名缺摘要核查 16 条，纳入 3、排除 13；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。 2026-11-19 剩余 AI 方法题名风险核查 5 条，纳入 3、排除 2；出版社摘要与题名分层见 audits/wangwanting-2026-residual-ai-cue-missing-audit.json。 2026-11-28：本来源纳入 43 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://www.sciencedirect.com/science/article/abs/pii/S2211285525009851?via%3Dihub",
             "https://www.sciencedirect.com/science/article/abs/pii/S2211285526003678?via%3Dihub",
@@ -72067,11 +72019,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "继续检索余下全量缺摘要中的潜在漏筛论文，并按官网证据处理。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
@@ -72105,7 +72055,7 @@
           "official_total": 1202,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 2090-1232。逐源 1195 条，登记 1202 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选85篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-19 原站缺摘要扩展核查 1 条：纳入 0、排除 1；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。",
+          "coverage_note": "候选85篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-19 原站缺摘要扩展核查 1 条：纳入 0、排除 1；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。 2026-11-28：本来源纳入 67 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://doi.org/10.1016/j.jare.2025.07.007",
             "https://doi.org/10.1016/j.jare.2025.10.067",
@@ -72120,11 +72070,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "继续检索余下全量缺摘要中的潜在漏筛论文，并按官网证据处理。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
@@ -73240,7 +73188,7 @@
           "official_total": null,
           "official_scope": "",
           "reference_check": null,
-          "coverage_note": "候选57篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-19访问官网2026年All目录8页，显示142条、去重141个文章ID；与11月8日快照135篇逐项比对，官网独有7篇、本地独有1篇Research Briefing（官网页可访问）。7篇逐篇核实：3篇纳入AI4S，4篇按内容或文章类型排除；其中11月5日与6日两篇早于快照，其余晚于快照。官网All分页边界重复且遗漏Research Briefing，不能用表面相等的总数宣称同口径核销。 年度LFS全量与逐源书目按唯一键对账：142篇，2026-11-26。",
+          "coverage_note": "候选57篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-19访问官网2026年All目录8页，显示142条、去重141个文章ID；与11月8日快照135篇逐项比对，官网独有7篇、本地独有1篇Research Briefing（官网页可访问）。7篇逐篇核实：3篇纳入AI4S，4篇按内容或文章类型排除；其中11月5日与6日两篇早于快照，其余晚于快照。官网All分页边界重复且遗漏Research Briefing，不能用表面相等的总数宣称同口径核销。 年度LFS全量与逐源书目按唯一键对账：142篇，2026-11-26。 2026-11-28：本来源纳入 56 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://pypi.org/project/panospace/",
             "https://www.nature.com/articles/s43588-025-00943-1",
@@ -73263,12 +73211,11 @@
             "unreviewed": 0
           },
           "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。",
             "官网All目录142条有1条跨页重复、另遗漏本地有效Research Briefing；逐源文件拟补7篇，年度快照未重建，年度同口径总数未核销。",
             "官网同口径总数尚未确认。"
           ],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "核实7篇官方缺口补入逐源书目、3篇AI4S纳入候选；按官网各类型目录和新快照重算唯一DOI总量。",
             "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
@@ -73302,7 +73249,7 @@
           "official_total": 292,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 2397-334X。逐源 292 条，登记 292 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选4篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。",
+          "coverage_note": "候选4篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-28：本来源纳入 3 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://api.crossref.org/journals/2397-334X/works?filter=from-pub-date:2026-01-01,until-pub-date:2026-12-31,until-created-date:2026-11-08,type:journal-article&rows=0"
           ],
@@ -73312,11 +73259,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
@@ -73477,7 +73422,7 @@
           "official_total": 241,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 2397-3374。逐源 241 条，登记 241 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选20篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-19 原站缺摘要扩展核查 1 条：纳入 0、排除 1；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。",
+          "coverage_note": "候选20篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-19 原站缺摘要扩展核查 1 条：纳入 0、排除 1；逐条原摘要及文种见 audits/wangwanting-2026-broad-method-missing-abstract-audit.json。 2026-11-28：本来源纳入 12 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://www.nature.com/articles/s41562-025-02379-z",
             "https://www.nature.com/articles/s41562-026-02582-6",
@@ -73489,11 +73434,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "继续检索余下全量缺摘要中的潜在漏筛论文，并按官网证据处理。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
@@ -75409,7 +75352,7 @@
           "official_total": 264,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 1552-4450。逐源 263 条，登记 264 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选5篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。",
+          "coverage_note": "候选5篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-28：本来源纳入 5 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://api.crossref.org/journals/1552-4450/works?filter=from-pub-date:2026-01-01,until-pub-date:2026-12-31,until-created-date:2026-11-08,type:journal-article&rows=0"
           ],
@@ -75419,11 +75362,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
@@ -75518,7 +75459,7 @@
           "official_total": null,
           "official_scope": "",
           "reference_check": null,
-          "coverage_note": "候选766篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 58 条审核，其中纳入 58 条；正式摘要与文种证据见本轮审计文件。",
+          "coverage_note": "候选766篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-18全量目录漏筛核对新增 58 条审核，其中纳入 58 条；正式摘要与文种证据见本轮审计文件。 2026-11-28：本来源纳入 727 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://www.nature.com/articles/s41467-025-68229-8",
             "https://www.nature.com/articles/s41467-026-68392-6",
@@ -75587,11 +75528,10 @@
           },
           "issues": [
             "年度官网同口径总量尚未核对；未知不视为零。",
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。",
             "官网同口径总数尚未确认。"
           ],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "统一年度口径核对官网总量，处理差额。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "核对官网全年目录，或使用可靠替代来源完成同口径对账并记录证据。"
@@ -75785,7 +75725,7 @@
           "official_total": 322,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 1097-6256。逐源 320 条，登记 322 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选23篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-19 科学对象/模型题名缺摘要核查 1 条，纳入 0、排除 1；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。",
+          "coverage_note": "候选23篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-19 科学对象/模型题名缺摘要核查 1 条，纳入 0、排除 1；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。 2026-11-28：本来源纳入 19 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://www.nature.com/articles/s41593-026-02350-9",
             "https://www.nature.com/articles/s41593-026-02382-1",
@@ -75799,11 +75739,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "继续检索余下全量缺摘要中的潜在漏筛论文，并按官网证据处理。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
@@ -75897,7 +75835,7 @@
           "official_total": 252,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 1752-0894。逐源 248 条，登记 252 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选8篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。",
+          "coverage_note": "候选8篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-28：本来源纳入 8 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://api.crossref.org/journals/1752-0894/works?filter=from-pub-date:2026-01-01,until-pub-date:2026-12-31,until-created-date:2026-11-08,type:journal-article&rows=0"
           ],
@@ -75907,11 +75845,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
@@ -76191,7 +76127,7 @@
           "official_total": 305,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 2058-5276。逐源 304 条，登记 305 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选10篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-19 科学对象/模型题名缺摘要核查 1 条，纳入 0、排除 1；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。",
+          "coverage_note": "候选10篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-19 科学对象/模型题名缺摘要核查 1 条，纳入 0、排除 1；逐篇见 audits/wangwanting-2026-science-model-missing-abstract-audit.json。 2026-11-28：本来源纳入 9 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://api.crossref.org/journals/2058-5276/works?filter=from-pub-date:2026-01-01,until-pub-date:2026-12-31,until-created-date:2026-11-08,type:journal-article&rows=0"
           ],
@@ -76201,11 +76137,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "继续检索余下全量缺摘要中的潜在漏筛论文，并按官网证据处理。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
@@ -76341,7 +76275,7 @@
           "official_total": 382,
           "official_scope": "Crossref 出版社 DOI 登记参照：出版年 2026；截至 2026-11-08 已登记的 journal-article；ISSN 1745-2473。逐源 381 条，登记 382 条；DOI 差异见 audits/wangwanting-2026-crossref-check-20261126.csv。",
           "reference_check": null,
-          "coverage_note": "候选7篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。",
+          "coverage_note": "候选7篇；全部候选已完成初审；逐篇决定依据原摘要及已记录的正文补证。git网络无法解析github.com；规则和个人行动清单已通过浏览器检查。年度全量与当前main候选内容仍需同步核对。 2026-11-28：本来源纳入 5 篇，逐篇以出版社登记的 Crossref DOI、题名、作者、正式落地页（CVPR 为 CVF 官方论文页）在线核验；结果写入 verified_metadata，未匹配 0 篇。证据见 reviews/2026/audits/wangwanting-2026-metadata-verification.json。",
           "evidence_urls": [
             "https://api.crossref.org/journals/1745-2473/works?filter=from-pub-date:2026-01-01,until-pub-date:2026-12-31,until-created-date:2026-11-08,type:journal-article&rows=0"
           ],
@@ -76351,11 +76285,9 @@
             "pending": 0,
             "unreviewed": 0
           },
-          "issues": [
-            "纳入结论基于原摘要及已记录的正文补证；除verified_metadata已明确记录者，正式元数据在线核验仍未完成。"
-          ],
+          "issues": [],
           "actions": [
-            "从出版社补齐候选原摘要并核对纳入条目的正式元数据。",
+            "从出版社补齐候选原摘要。",
             "同步最新main候选，按(venue, year, id)对照，避免覆盖他人修改。",
             "核对已报告的官网总数与采集范围、年份和文献类型是否可比。"
           ],
@@ -80244,18 +80176,21 @@
           "delivered": 47,
           "official": 47,
           "pending": 0,
-          "open_issues": 38,
+          "open_issues": 2,
           "status": "in_progress",
           "last_update": {
-            "at": "2026-11-26T04:17:20-08:00",
-            "author": "AlearnerDL",
-            "subject": "Record 2026 Crossref totals for Wang Wanting sources",
+            "at": "2026-11-28T04:09:13-08:00",
+            "author": "ebo",
+            "subject": "Verify Wang Wanting 2026 included-paper metadata online",
             "area": "reviews",
             "paths": [
-              "reviews/2026/feedback/Blueblue1101.json"
+              "reviews/2026/Blueblue1101.json",
+              "reviews/2026/audits/enrich_wangwanting_2026_publisher.py",
+              "reviews/2026/audits/finalize_wangwanting_2026_metadata.py",
+              "reviews/2026/audits/verify_wangwanting_2026_metadata.py"
             ]
           },
-          "commits_7d": 19
+          "commits_7d": 20
         },
         {
           "owner": "龙兆科",
@@ -80396,7 +80331,7 @@
           "delivered": 47,
           "official": 47,
           "pending": 0,
-          "open_issues": 38,
+          "open_issues": 2,
           "status": "in_progress"
         }
       },
@@ -80406,15 +80341,18 @@
         "2025"
       ],
       "last_update": {
-        "at": "2026-11-26T04:17:20-08:00",
-        "author": "AlearnerDL",
-        "subject": "Record 2026 Crossref totals for Wang Wanting sources",
+        "at": "2026-11-28T04:09:13-08:00",
+        "author": "ebo",
+        "subject": "Verify Wang Wanting 2026 included-paper metadata online",
         "area": "reviews",
         "paths": [
-          "reviews/2026/feedback/Blueblue1101.json"
+          "reviews/2026/Blueblue1101.json",
+          "reviews/2026/audits/enrich_wangwanting_2026_publisher.py",
+          "reviews/2026/audits/finalize_wangwanting_2026_metadata.py",
+          "reviews/2026/audits/verify_wangwanting_2026_metadata.py"
         ]
       },
-      "commits_7d": 19
+      "commits_7d": 20
     },
     {
       "owner": "李雪婷",
@@ -80815,9 +80753,9 @@
   ],
   "owner_activity": {
     "available": true,
-    "generated_at": "2026-11-28T08:04:10.825218+00:00",
+    "generated_at": "2026-11-28T12:12:23.213896+00:00",
     "history_available": true,
-    "commit": "81fd6e976382489e76d486996292b57ff907b047",
-    "commits_scanned": 1547
+    "commit": "60faeb72e0a2bca49727d7e51d8242168c1e5f2d",
+    "commits_scanned": 1549
   }
 }
